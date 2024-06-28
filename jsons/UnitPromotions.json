@@ -3,7 +3,7 @@
 	{
 		"name": "Heal Instantly",
 		"uniques": ["Heal this unit by [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
-		"unitTypes": ["Siege","Scout","Assult","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 0,
 		"row": 0
 
@@ -14,22 +14,22 @@
 	{
 		"name": "Stewardship",
 		"uniques": ["[+5]% XP gained from combat","[+5] HP when healing"],
-		"unitTypes": ["Siege","Scout","Assult","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 1,
 		"row": 0
 	},
 	{
 		"name": "Centralised Command",
 		"uniques": ["[Great General] is earned [+50]% faster","[+5]% Strength <when fighting in [Open terrain] tiles>","[+33]% Damage when intercepting"],
-		"unitTypes": ["Siege","Scout","Assult","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"prerequisites": ["Stewardship"],
 		"column": 1,
 		"row": 1
 	},
 	{
-		"name": "Mass Assult",
+		"name": "Mass Assault",
 		"uniques": ["[+33]% Strength <vs cities>","[+10]% Strength <when fighting in [Open terrain] tiles>"],
-		"unitTypes": ["Siege","Scout","Assult","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"prerequisites": ["Centralised Command"],
 		"column": 1,
 		"row": 2
@@ -37,7 +37,7 @@
 	{
 		"name": "Resourceful Army",
 		"uniques": ["[+10]% Strength <vs [Wounded] units>","[+10]% Strength <when fighting in [Rough terrain] tiles>","Damage taken from interception reduced by [25]%"],
-		"unitTypes": ["Siege","Scout","Assult","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"prerequisites": ["Stewardship"],
 		"column": 2,
 		"row": 1
@@ -45,7 +45,7 @@
 	{
 		"name": "Use of Terrain",
 		"uniques": ["[+1] Movement","No defensive terrain penalty"],
-		"unitTypes": ["Siege","Scout","Assult","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier"],
 		"prerequisites": ["Resourceful Army"],
 		"column": 2,
 		"row": 2
@@ -53,14 +53,14 @@
 	{
 		"name": "Long Range Logistic",
 		"uniques": ["[+13] HP when healing <in [Foreign Land] tiles>","All adjacent units heal [+5] HP when healing"],
-		"unitTypes": ["Siege","Scout","Assult","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 3,
 		"row": 1
 	},
 	{
 		"name": "Extra Supply",
 		"uniques": ["[+15] HP when healing <in [Friendly Land] tiles>","All adjacent units heal [+2] HP when healing"],
-		"unitTypes": ["Siege","Scout","Assult","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 4,
 		"row": 1
 	},
@@ -75,7 +75,7 @@
 	{
 		"name": "Field Medic",
 		"uniques": ["[+10] HP when healing","All adjacent units heal [+3] HP when healing"],
-		"unitTypes": ["Scout","Assult","Rider","Close Combat","Ranged Combat"],
+		"unitTypes": ["Scout","Assault","Rider","Close Combat","Ranged Combat"],
 		"column": 5,
 		"row": 1
 	},
@@ -90,7 +90,7 @@
 	{
 		"name": "Hardened",
 		"uniques": ["[+5]% Strength"],
-		"unitTypes": ["Siege","Scout","Assult","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 7,
 		"row": 0
 	},
@@ -98,7 +98,7 @@
 		"name": "Veteran",
 		"prerequisites": ["Fast Recovery","City Guard","Fire Rotation","Weakpoint Observation","Combined Arms","Pilliging","Rotation Tactic","Top Speed","Priating","Anti-Air Firepower","Rapid Interception","Carpet Bombing"],
 		"uniques": ["[+25]% Strength"],
-		"unitTypes": ["Siege","Scout","Assult","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 7,
 		"row": 5
 	},
@@ -107,7 +107,7 @@
 		"name": "Shock Doctrine",
 		"prerequisites": ["Hardened"],
 		"uniques": ["[+25]% Strength <when attacking>"],
-		"unitTypes": ["Close Combat","Assult"],
+		"unitTypes": ["Close Combat","Assault"],
 		"column": 7,
 		"row": 1
 
@@ -116,7 +116,7 @@
 		"name": "Rapid Engagement",
 		"prerequisites": ["Shock Doctrine"],
 		"uniques": ["[1] additional attacks per turn"],
-		"unitTypes": ["Close Combat","Assult"],
+		"unitTypes": ["Close Combat","Assault"],
 		"column": 7,
 		"row": 2
 	},
@@ -124,7 +124,7 @@
 		"name": "Devistating Charge",
 		"prerequisites": ["Rapid Engagement"],
 		"uniques": ["[+33]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes": ["Close Combat","Assult"],
+		"unitTypes": ["Close Combat","Assault"],
 		"column": 7,
 		"row": 3
 
@@ -133,7 +133,7 @@
 		"name": "Fast Recovery",
 		"prerequisites": ["Devistating Charge"],
 		"uniques": ["Unit will heal every turn, even if it performs an action"],
-		"unitTypes": ["Close Combat","Assult"],
+		"unitTypes": ["Close Combat","Assault"],
 		"column": 7,
 		"row": 4
 
@@ -150,7 +150,7 @@
 	{
 		"name": "Reinforced Position",
 		"prerequisites": ["Defence Doctrine"],
-		"uniques": ["[+33]% Strength <vs [Ranged Combat] units> <when defending>","[+10]% Strength <vs [Assult] units> <when defending>","[+10]% Strength <vs [Rider] units> <when defending>","[+10]% Strength <vs [Helicopter] units> <when defending>"],
+		"uniques": ["[+33]% Strength <vs [Ranged Combat] units> <when defending>","[+10]% Strength <vs [Assault] units> <when defending>","[+10]% Strength <vs [Rider] units> <when defending>","[+10]% Strength <vs [Helicopter] units> <when defending>"],
 		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 8,
 		"row": 2
@@ -247,7 +247,7 @@
 		"name": "Intensive Doctrine",
 		"prerequisites": ["Hardened"],
 		"uniques": ["[+33]% Strength <when fighting in [Open terrain] tiles>"],
-		"unitTypes": ["Close Combat","Assult","Close Combat Ship"],
+		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 11,
 		"row": 1
 
@@ -256,7 +256,7 @@
 		"name": "Formation",
 		"prerequisites": ["Intensive Doctrine"],
 		"uniques": ["[+17]% Strength <vs [Massed] units>"],
-		"unitTypes": ["Close Combat","Assult","Close Combat Ship"],
+		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 11,
 		"row": 2
 	},
@@ -264,7 +264,7 @@
 		"name": "Swift Formation",
 		"prerequisites": ["Formation"],
 		"uniques": ["[+25]% Strength <when defending>"],
-		"unitTypes": ["Close Combat","Assult","Close Combat Ship"],
+		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 11,
 		"row": 3
 
@@ -272,8 +272,8 @@
 	{
 		"name": "Combined Arms",
 		"prerequisites": ["Swift Formation"],
-		"uniques": ["[+10]% Strength <vs [Ranged Combat] units><when defending>","[+10]% Strength <vs [Close Combat] units><when attacking>","[+10]% Strength <vs [Rider] units><when attacking>","[+10]% Strength <vs [Assult] units><when defending>","[+10]% Strength <vs [Close Combat Ship] units><when attacking>","[+10]% Strength <vs [Ranged Combat Ship] units><when defending>"],
-		"unitTypes": ["Close Combat","Assult","Close Combat Ship"],
+		"uniques": ["[+10]% Strength <vs [Ranged Combat] units><when defending>","[+10]% Strength <vs [Close Combat] units><when attacking>","[+10]% Strength <vs [Rider] units><when attacking>","[+10]% Strength <vs [Assault] units><when defending>","[+10]% Strength <vs [Close Combat Ship] units><when attacking>","[+10]% Strength <vs [Ranged Combat Ship] units><when defending>"],
+		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 11,
 		"row": 4
 
@@ -314,19 +314,19 @@
 
 	},
 	{
-		"name": "Assult Doctrine",
+		"name": "Assault Doctrine",
 		"prerequisites": ["Hardened"],
 		"uniques": ["[+10]% Strength <when attacking>"],
-		"unitTypes": ["Assult","Submarine"],
+		"unitTypes": ["Assault","Submarine"],
 		"column": 13,
 		"row": 1
 
 	},
 	{
 		"name": "High Speed Charge",
-		"prerequisites": ["Assult Doctrine"],
+		"prerequisites": ["Assault Doctrine"],
 		"uniques": ["[+25]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes": ["Assult","Submarine"],
+		"unitTypes": ["Assault","Submarine"],
 		"column": 13,
 		"row": 2
 	},
@@ -334,7 +334,7 @@
 		"name": "Breakthrough",
 		"prerequisites": ["High Speed Charge"],
 		"uniques": ["[+33]% Strength <vs [Close Combat] units> <when attacking>","[+33]% Strength <vs [Close Combat Ship] units> <when attacking>"],
-		"unitTypes": ["Assult","Submarine"],
+		"unitTypes": ["Assault","Submarine"],
 		"column": 13,
 		"row": 3
 
@@ -343,7 +343,7 @@
 		"name": "Rotation Tactic",
 		"prerequisites": ["Breakthrough"],
 		"uniques": ["[1] additional attacks per turn"],
-		"unitTypes": ["Assult","Submarine"],
+		"unitTypes": ["Assault","Submarine"],
 		"column": 13,
 		"row": 4
 
@@ -526,7 +526,7 @@
 	///Equipments
 	{
 		"name": "Primitive Arms",
-		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assult"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
 		"uniques":["This Promotion is free"],
 		"column": 19,
 		"row": 0
@@ -544,7 +544,7 @@
 		"name": "Mace",
 		"prerequisites": ["Primitive Arms"],
 		"uniques": ["[+7]% Strength"],
-		"unitTypes": ["Close Combat","Scout","Rider","Assult"],
+		"unitTypes": ["Close Combat","Scout","Rider","Assault"],
 		"column": 19,
 		"row": 2
 
@@ -562,7 +562,7 @@
 		"name": "Lightshield",
 		"prerequisites": ["Primitive Arms"],
 		"uniques": ["[+10]% Strength <vs [Edged] units> <before the [Renaissance era]>","[+3] HP when healing <before the [Renaissance era]>"],
-		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assult","Siege"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege"],
 		"column": 19,
 		"row": 4
 
@@ -585,7 +585,7 @@
 		"name": "War Axe",
 		"prerequisites": ["Classical Arms"],
 		"uniques": ["[+25]% Strength <when attacking> <before the [Imperial era]>"],
-		"unitTypes": ["Close Combat","Rider","Assult"],
+		"unitTypes": ["Close Combat","Rider","Assault"],
 		"column": 20,
 		"row": 2
 
@@ -612,7 +612,7 @@
 		"name": "Strip Armour",
 		"prerequisites": ["Classical Arms"],
 		"uniques": ["[+25]% Strength <vs [Edged] units> <before the [Medieval era]>","[+5]% Strength <vs [Blunt] units> <before the [Imperial era]>"],
-		"unitTypes": ["Close Combat","Assult","Close Combat Ship"],
+		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 21,
 		"row": 1
 
@@ -656,7 +656,7 @@
 	},
 	{
 		"name": "Medieval Arms", 
-		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assult","Siege","Close Combat Ship","Ranged Combat Ship"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege","Close Combat Ship","Ranged Combat Ship"],
 		"uniques":["Unavailable"],
 		"column": 23,
 		"row": 0
@@ -665,7 +665,7 @@
 		"name": "Halberd",
 		"prerequisites": ["Medieval Arms"],
 		"uniques": ["[+27]% Strength <before the [Imperial era]>","[+13]% Strength <vs [Mounted] units> <before the [Imperial era]>"],
-		"unitTypes": ["Close Combat","Rider","Assult"],
+		"unitTypes": ["Close Combat","Rider","Assault"],
 		"column": 23,
 		"row": 1
 
@@ -674,8 +674,8 @@
 	{
 		"name": "Warhammer",
 		"prerequisites": ["Medieval Arms"],
-		"uniques": ["[+17]% Strength <before the [Renaissance era]>","[+33]% Strength <vs [Assult] units> <before the [Imperial era]>"],
-		"unitTypes": ["Close Combat","Rider","Assult"],
+		"uniques": ["[+17]% Strength <before the [Renaissance era]>","[+33]% Strength <vs [Assault] units> <before the [Imperial era]>"],
+		"unitTypes": ["Close Combat","Rider","Assault"],
 		"column": 23,
 		"row": 2
 
@@ -692,7 +692,7 @@
 	{
 		"name": "Crossbow",
 		"prerequisites": ["Medieval Arms"],
-		"uniques": ["[+20]% Strength <before the [Renaissance era]>","[+10]% Strength <vs [Assult] units> <before the [Imperial era]>"],
+		"uniques": ["[+20]% Strength <before the [Renaissance era]>","[+10]% Strength <vs [Assault] units> <before the [Imperial era]>"],
 		"unitTypes": ["Ranged Combat"],
 		"requiredTech": "Engineering",
 		"column": 24,
@@ -712,7 +712,7 @@
 		"name": "Chainmail Armour",
 		"prerequisites": ["Medieval Arms"],
 		"uniques": ["[+33]% Strength <vs [Edged] units> <before the [Imperial era]>","[+10]% Strength <vs [Blunt] units> <before the [Imperial era]>"],
-		"unitTypes": ["Close Combat","Rider","Assult"],
+		"unitTypes": ["Close Combat","Rider","Assault"],
 		"column": 25,
 		"row": 1
 
@@ -721,7 +721,7 @@
 		"name": "Padded Armour",
 		"prerequisites": ["Medieval Arms"],
 		"uniques": ["[+25]% Strength <vs [Edged] units> <before the [Imperial era]>"],
-		"unitTypes": ["Close Combat","Rider","Assult","Ranged Combat","Scout"],
+		"unitTypes": ["Close Combat","Rider","Assault","Ranged Combat","Scout"],
 		"column": 25,
 		"row": 2
 	},
@@ -737,7 +737,7 @@
 	{
 		"name": "Armor Piercing Projectile",
 		"prerequisites": ["Medieval Arms"],
-		"uniques": ["[+25]% Strength <vs [Assult] units> <before the [Imperial era]>"],
+		"uniques": ["[+25]% Strength <vs [Assault] units> <before the [Imperial era]>"],
 		"unitTypes": ["Ranged Combat"],
 		"column": 25,
 		"row": 4
@@ -761,7 +761,7 @@
 		"name": "Plate Armour",
 		"prerequisites": ["Renaissance Arms"],
 		"uniques": ["[+50]% Strength <vs [Edged] units>","[+10]% Strength <vs [Gunpowder] units>"],
-		"unitTypes": ["Close Combat","Rider","Assult"],
+		"unitTypes": ["Close Combat","Rider","Assault"],
 		"column": 26,
 		"row": 1
 
@@ -770,7 +770,7 @@
 		"name": "Partial Plate Armour",
 		"prerequisites": ["Renaissance Arms"],
 		"uniques": ["[+33]% Strength <vs [Edged] units>","[+5]% Strength <vs [Gunpowder] units>"],
-		"unitTypes": ["Close Combat","Assult","Ranged Combat","Scout"],
+		"unitTypes": ["Close Combat","Assault","Ranged Combat","Scout"],
 		"column": 26,
 		"row": 2
 
@@ -779,7 +779,7 @@
 		"name": "Wheellock Pistol",
 		"prerequisites": ["Renaissance Arms"],
 		"uniques": ["[+33]% Strength <vs [Infantry] units> <before the [Industrial era]>"],
-		"unitTypes": ["Rider","Assult"],
+		"unitTypes": ["Rider","Assault"],
 		"column": 26,
 		"row": 3
 
@@ -803,7 +803,7 @@
 	{
 		"name": "Anti-tank Rifle",
 		"prerequisites": ["Industrial Arms"],
-		"uniques": ["Only available <after discovering [Rifling]>","[+15]% Strength <vs [Assult] units>"],
+		"uniques": ["Only available <after discovering [Rifling]>","[+15]% Strength <vs [Assault] units>"],
 		"unitTypes": ["Close Combat","Ranged Combat","Scout"],
 		"column": 27,
 		"row": 2
@@ -838,7 +838,7 @@
 	{
 		"name": "Sapper Corps",
 		"prerequisites": ["Industrial Arms"],
-		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assult","Siege"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege"],
 		"uniques": ["Only available <after discovering [Dynamite]>","[+33]% Strength <vs cities>","[+33]% Strength <when fighting in [City center] tiles>","[+33]% Strength <when fighting in [Citadel] tiles>","[+10]% Strength <when fighting in [Rough terrain] tiles>"],
 		"column": 28,
 		"row": 3
@@ -846,7 +846,7 @@
 	{
 		"name": "Spy Plane",
 		"prerequisites": ["Industrial Arms"],
-		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assult","Siege"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege"],
 		"uniques": ["Only available <after discovering [Replaceable Parts]>","[+1] Sight","[+25]% Strength <vs cities>","[+25]% Strength <when fighting in [Rough terrain] tiles>"],
 		"column": 28,
 		"row": 4
@@ -860,7 +860,7 @@
 	{
 		"name": "Rocket Launcher",
 		"prerequisites": ["Modern Arms"],
-		"uniques": ["Only available <after discovering [Ballistics]>","[+25]% Strength <vs [Assult] units>","[+25]% Strength <vs [Rider] units>","[+25]% Strength <vs [Low Altitude Aircraft] units>"],
+		"uniques": ["Only available <after discovering [Ballistics]>","[+25]% Strength <vs [Assault] units>","[+25]% Strength <vs [Rider] units>","[+25]% Strength <vs [Low Altitude Aircraft] units>"],
 		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 29,
 		"row": 1
@@ -879,7 +879,7 @@
 	{
 		"name": "Recoilless Rifle",
 		"prerequisites": ["Modern Arms"],
-		"uniques": ["Only available <after discovering [Advanced Ballistics]>","[+30]% Strength <vs [Assult] units>","[+30]% Strength <vs [Rider] units>"],
+		"uniques": ["Only available <after discovering [Advanced Ballistics]>","[+30]% Strength <vs [Assault] units>","[+30]% Strength <vs [Rider] units>"],
 		"unitTypes": ["Scout","Rider"],
 		"column": 29,
 		"row": 3
@@ -912,7 +912,7 @@
 	{
 		"name": "AT Guns",
 		"prerequisites": ["Modern Arms"],
-		"uniques": ["[+25]% Strength <vs [Assult] units>","[+10]% Strength <vs [Rider] units>"],
+		"uniques": ["[+25]% Strength <vs [Assault] units>","[+10]% Strength <vs [Rider] units>"],
 		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider"],
 		"column": 29,
 		"row": 7
@@ -921,7 +921,7 @@
 		"name": "Extra Armour Plates",
 		"prerequisites": ["Modern Arms"],
 		"uniques": ["[+25]% Strength <vs [Gunpowder] units>"],
-		"unitTypes": ["Assult"],
+		"unitTypes": ["Assault"],
 		"column": 30,
 		"row": 1
 
@@ -929,8 +929,8 @@
 	{
 		"name": "AP Rounds",
 		"prerequisites": ["Modern Arms"],
-		"uniques": ["[+33]% Strength <vs [Assult] units>"],
-		"unitTypes": ["Assult"],
+		"uniques": ["[+33]% Strength <vs [Assault] units>"],
+		"unitTypes": ["Assault"],
 		"column": 30,
 		"row": 2
 
@@ -938,8 +938,8 @@
 	{
 		"name": "HE Rounds",
 		"prerequisites": ["Modern Arms"],
-		"uniques": ["[+20]% Strength <vs [{non-[Assult]} {Land}] units>","[+10]% Strength <vs cities>"],
-		"unitTypes": ["Assult"],
+		"uniques": ["[+20]% Strength <vs [{non-[Assault]} {Land}] units>","[+10]% Strength <vs cities>"],
+		"unitTypes": ["Assault"],
 		"column": 30,
 		"row": 3
 
@@ -948,7 +948,7 @@
 		"name": "AA Machine Gun",
 		"prerequisites": ["Modern Arms"],
 		"uniques": ["[15]% chance to intercept air attacks","[+25]% Strength <vs [Air] units>","[+25]% Strength <vs [Low Altitude Aircraft] units>"],
-		"unitTypes": ["Assult"],
+		"unitTypes": ["Assault"],
 		"column": 30,
 		"row": 4
 	},
@@ -1007,7 +1007,7 @@
 		"name": "Camoflage",
 		"prerequisites": ["Atomic Arms"],
 		"uniques": ["Invisible to non-adjacent units","May withdraw before melee ([20]%)"],
-		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assult"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
 		"column": 32,
 		"row": 2
 
@@ -1016,7 +1016,7 @@
 		"name": "Reactive Armour",
 		"prerequisites": ["Atomic Arms"],
 		"uniques": ["[+25]% Strength <when defending>","[+15]% Strength <when attacking>"],
-		"unitTypes": ["Rider","Assult"],
+		"unitTypes": ["Rider","Assault"],
 		"column": 32,
 		"row": 3
 
@@ -1025,7 +1025,7 @@
 		"name": "NBC Suit",
 		"prerequisites": ["Atomic Arms"],
 		"uniques": ["[+25]% Strength <when fighting in [Fallout] tiles>"],
-		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assult"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
 		"column": 32,
 		"row": 4
 
@@ -1040,7 +1040,7 @@
 		"name": "Drones",
 		"prerequisites": ["Information Arms"],
 		"uniques": ["[+10]% Strength","[+1] Sight"],
-		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assult","Siege","Close Combat Ship","Ranged Combat Ship","Carrier","Submarine","Helicopter"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege","Close Combat Ship","Ranged Combat Ship","Carrier","Submarine","Helicopter"],
 		"column": 33,
 		"row": 1
 
@@ -1049,7 +1049,7 @@
 		"name": "Hacking Equipment",
 		"prerequisites": ["Information Arms"],
 		"uniques": ["[-15]% Strength for enemy [Military] units in adjacent [All] tiles"],
-		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assult","Siege","Close Combat Ship","Ranged Combat Ship","Carrier","Submarine","Helicopter"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege","Close Combat Ship","Ranged Combat Ship","Carrier","Submarine","Helicopter"],
 		"column": 33,
 		"row": 2
 
