@@ -733,11 +733,10 @@
 	{
 		"name": "Carbon Capture",
 		"hurryCostModifier": 0,
-		"production":3,
+		"production":1,
 		"percentStatBonus": {"production": -30,"culture":10,"science":10},
 		"maintenance": 	5,
-		"uniques": ["Power Building","[-1 Production] from [Coal] tiles [in this city]","Provides [1] [Coal]"],
-		"requiredTech": "Steam Power"
+		"uniques": ["Unbuildable","Unsellable","Power Building","[+10]% [Science] from every [Coal Plant] [in this city]","[+10]% [Culture] from every [Coal Plant] [in this city]","[-30]% [Production] from every [Coal Plant] [in this city]","[-1 Production] from [Coal] tiles [in this city]","Provides [1] [Coal]"]
 	},
 	{
 		"name": "Hydro Plant",
@@ -863,7 +862,7 @@
 	{
 		"name": "Intergration",
 		"maintenance": 3,
-		"uniques": ["Can only be built <in [Annexed] cities>","Remove extra unhappiness from annexed cities"],
+		"uniques": ["Can only be built <in [Annexed] cities>","Remove extra unhappiness from annexed cities","Destroyed when the city is captured"],
 		"hurryCostModifier": 50,
 		"requiredTech": "Paper Making"
 	},
@@ -1294,7 +1293,7 @@
 		"name": "Satilelite System",
 		"isNationalWonder": true,
 		"percentStatBonus": {"science": 25},
-		"uniques": ["Infrasturcture","Reveals the entire map","[+25]% [Science] [in all cities]","[+25]% [Production] [in all cities]","[+1] Movement"],
+		"uniques": ["Infrastructure","Reveals the entire map","[+25]% [Science] [in all cities]","[+25]% [Production] [in all cities]","[+1] Movement"],
 		"requiredTech": "Satellites"
 	},
 	{
@@ -1476,7 +1475,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","units gain the [Medieval Arms] promotion <before the [Renaissance era]>","units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>","[+25]% Production when constructing [Military] units <in cities with [Watermill>]","Destroyed when the city is captured"],
+		"uniques": ["Military Building","units gain the [Medieval Arms] promotion <before the [Renaissance era]>","units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>","[+25]% Production when constructing [Military] units <in cities with [Watermill]>]","Destroyed when the city is captured"],
 		"requiredTech": "Armorments"
 	},
 	{
@@ -1502,7 +1501,7 @@
 		"uniques": ["Military Building","Unsellable","Provide [2] [Standing Army Maintainance]","[+1 Production] from [Extraction Improvement] tiles [in this city]","units gain the [Modern Arms] promotion <starting from the [Modern era]>","units gain the [Atomic Arms] promotion <starting from the [Atomic era]>","units gain the [Information Arms] promotion <starting from the [Information era]>","Destroyed when the city is captured"],
 		"requiredTech": "Industrialization"
 	},
-
+	///alt
 	{
 		"name": "Weapon Parts Factory",
 		"hurryCostModifier": 25,
@@ -1770,7 +1769,7 @@
 		"isWonder": true,
 		"uniques": ["Only available <after adopting [The One True God]>","[+20]% [Faith] [in all cities]", "May choose [1] additional [Follower] beliefs when [founding] a religion"],
 		"requiredTech": "Calendar",
-		"quote": "'(1) God is the Creator of all created beings; (2) He is premundane and has no peer or associate; (3) the whole universe is created...' - Judah ben Elijah Hadassi"
+		"quote": "'1. Belief in the existence of the Creator, who is perfect in every manner of existence and is the Primary Cause of all that exists.2. The belief in God's absolute and unparalleled unity.3. The belief in God's non-corporeality, nor that He will be affected by any physical occurrences, such as movement, or rest, or dwelling.' - Rabbi Moshe ben Maimon"
 	},
 	{
 		"name": "Ancestral Temple",
@@ -1780,7 +1779,7 @@
 		"greatPersonPoints": {"Great General": 1},
 		"uniques": ["Only available <after adopting [Ancestor Worship]>","[+1] [Culture] [in all cities]","[+1] [Food] [in all cities]", "[+25]% Production when constructing [Settler] units [in all cities]"],
 		"requiredTech": "Calendar",
-		"quote": "'To forget one's ancestors is to be a brook without a source, a tree without roots.' - Chinese proverb"
+		"quote": "'When one drinks water, one must not forget where it comes from' - Chinese proverb"
 	},
 	{
 		"name": "Stonehenge",
@@ -1893,7 +1892,7 @@
 		"isWonder": true,
 		"uniques": ["Only available <after adopting [The One True God]>","Free [Great Prophet] appears", "Hidden when religion is disabled"],
 		"requiredTech": "Masonry",
-		"quote": "'The Christian catacombs represent simplicity and earthiness; the cathedrals, transcendence and wonder.' - Russell Moore"
+		"quote": "'The Christian catacombs represent simplicity and earthiness, the cathedrals, transcendence and wonder.' - Russell Moore"
 	},
 	{
 		"name": "Church of Holy Wisdom",
@@ -2493,7 +2492,7 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Redistribution of Means of Production(Anarchist)]>","Triggers a global alert upon completion","Destroyed when the city is captured","[-1 Gold,+1 Production] from all [Economic Building] buildings [in all cities]","[+1 Happiness, -1 Gold] per [3] population [in all cities]"],
+		"uniques": ["Only available <after adopting [Redistribution of Means of Production(Anarchist)]>","Triggers a global alert upon completion","Destroyed when the city is captured","[-1 Gold, +1 Production] from all [Economic Building] buildings [in all cities]","[+1 Happiness, -1 Gold] per [3] population [in all cities]"],
 		"requiredTech": "Economics"
 	},
 	/// Special buildings

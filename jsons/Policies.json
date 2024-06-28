@@ -589,12 +589,12 @@
             "Domination": 40,
             "Scientific": 50
         },
-        "uniques": ["[-20]% Gold cost of upgrading <for [Military] units>","[-20]% Gold cost of upgrading <for [Military] units> <after adopting [Militant]>","[-1 Faith] [in all cities]","Comment [Enables you to build Chartered Company,a Political/Economic Building]","Only available <before adopting [Revolution]>"
+        "uniques": ["[-20]% Gold cost of upgrading <for [Military] units>","[-20]% Gold cost of upgrading <for [Military] units> <after adopting [Militant]>","[-1 Faith] [in all cities]","Comment [Enables you to build Chartered Company,a Political/Economic Building only available in annexed cities]","Only available <before adopting [Revolution]>"
         ],
         "policies": [
             {
                 "name": "Colonialism",
-                "uniques": ["Comment [Enables you to build Colony Plantation, Generates lots of gold]","[+1] Movement <for [Settler] units>"
+                "uniques": ["Comment [Enables you to build Colony Plantation, An improvement that generates lots of gold]","[+1] Movement <for [Settler] units>"
                 ],
                 "row": 1,
                 "column": 3
@@ -616,7 +616,7 @@
             },
             {
                 "name": "Nationalism",
-                "uniques": ["[+10%] [Culture] [in all cities]","[+10%] [Culture] from every [Wonder] <after adopting [Scholarship]>","[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>"
+                "uniques": ["[+10]% [Culture] [in all cities]","[+10]% [Culture] from every [Wonder] <after adopting [Scholarship]>","[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>"
                 ],
                 "row": 3,
                 "prerequisites":["Iron fists"],
@@ -639,7 +639,7 @@
             "Domination": 40,
             "Scientific": 50
         },
-        "uniques": ["[-10]%  [Culture] [in all cities]","[-10]%  [Gold] [in all cities]","Provides [-5] [Noble Army Maintainance]","[+10]% [Culture] [in all cities] <after adopting [Humanitarianism]>","Comment [Enables you to build Revolutionaries, a Cheaper Granadier that boosts nearby units morale.]","Only available <before adopting [Imperialism]>"
+        "uniques": ["[-10]% [Culture] [in all cities]","[-10]% [Gold] [in all cities]","Provides [-5] [Noble Army Maintainance]","[+10]% [Culture] [in all cities] <after adopting [Humanitarianism]>","Comment [Enables you to build Revolutionaries, a Cheaper Granadier that boosts nearby units morale.]","Only available <before adopting [Imperialism]>"
         ],
         "policies": [
             {
@@ -727,7 +727,7 @@
                 "column": 3
             },
             {
-                "name": "AgriCultural Fundings",
+                "name": "Agricultural Fundings(Liberalism)",
                 "uniques": ["[+1 Food] from every [Agricultural Improvement]","[+1 Food] from every [Agriculture]","[-2 Gold] from every [Agriculture]"
                 ],
                 "prerequisites":["Privatised Property"],
@@ -744,7 +744,7 @@
             },
             {
                 "name": "Liberalism Complete",
-                "uniques": ["[+25]% [Gold] from every [Political Building]","[+50]% Production when constructing [Economy Building] [in all cities]"
+                "uniques": ["[+25]% [Gold] from every [Political Building]","[+50]% Production when constructing [Economic Building] [in all cities]"
                 ]
             }
         ]
@@ -792,7 +792,7 @@
                 "column": 4
             },
             {
-                "name": "AgriCultural Fundings(Conservative)",
+                "name": "Agricultural Fundings(Conservative)",
                 "uniques": ["[+1 Food] from every [Agricultural Improvement]","[+1 Food] from every [Agriculture]","[-2 Gold] from every [Agriculture]"],
                 "prerequisites":["Mixed Economy"],
                 "row": 2,
@@ -823,7 +823,7 @@
             "Domination": 50,
             "Scientific": 40
         },
-        "uniques": ["Only available <before adopting [Socialism]>","Only available <before adopting [Liberalism]>","Only available <before adopting [Conservatism]>","Only available <before adopting [Anarchism]>","Comment [Enables you to build Hall of People,an unique wonder that futher increases production when constructing units]","Comment [Enables you to build Protection Squadron, A limited unit that is an alternative from normal troops, having higher regeneration.]"
+        "uniques": ["Only available <before adopting [Socialism]>","Only available <before adopting [Liberalism]>","Only available <before adopting [Conservatism]>","Only available <before adopting [Anarchism]>","Comment [Enables you to build Hall of People,an unique wonder that futher increases production when constructing units]","Comment [Enables you to build Protection Squadron, A limited unit that is an alternative from Heavy Infantry, having higher strength and regeneration. One civ can only have 5 of them at a time]"
         ],
         "policies": [
             {
@@ -850,7 +850,7 @@
             },
             {
                 "name": "Secret police",
-                "uniques": ["[-1 Culture,+1 Happiness] from every [Political Building] [in all cities]","[+10]% City Strength from defensive buildings"],
+                "uniques": ["[-1 Culture, +1 Happiness] from every [Political Building] [in all cities]","[+10]% City Strength from defensive buildings"],
                 "prerequisites":["Militarised Nation"],
                 "row": 2,
                 "column": 4
@@ -956,7 +956,7 @@
         "policies": [
             {
                 "name": "Abolishment of Government",
-                "uniques": ["[-1 Culture, -1 Gold] from every [Political Building]","[-50]% Culture cost of natural border growth <during a Golden Age>",
+                "uniques": ["[-1 Culture, -1 Gold] from every [Political Building]","[-50]% Culture cost of natural border growth [in all cities] <during a Golden Age>",
 					"[+50]% [Food] <during a Golden Age>",
 					"[+50]% [Production] <during a Golden Age>",
 					"[+50]% [Gold] <during a Golden Age>",
@@ -999,7 +999,7 @@
             },
             {
                 "name": "Direct Democracy",
-                "uniques": ["[-1 Culture,+1 Happiness] from every [Political Building] [in all cities]","Gain a free [Monument] [in all cities]","Gain a free [Town Square] [in all cities]"
+                "uniques": ["[-1 Culture, +1 Happiness] from every [Political Building] [in all cities]","Gain a free [Monument] [in all cities]","Gain a free [Town Square] [in all cities]"
 
                 ],
                 "prerequisites":["Diversity of Opinions"],
@@ -1049,7 +1049,7 @@
             },
             {
                 "name": "Decarbonization",
-                "uniques": ["Gain a free [Carbon apture] <in cities with [Coal Plant]>","Comment [Upgrade all existing and future Coal Plant with 'Carbon apture',a style that provides more science and culture at cost of production]"
+                "uniques": ["Gain a free [Carbon Capture] <in all cities>","Comment [Upgrade all existing and future Coal Plant with 'Carbon Capture',a style that provides more science and culture at cost of production]"
                 ],
                 "prerequisites":["Protected Areas","Sustainable Power Source","Decarbonization"],
                 "row": 3,
@@ -1211,7 +1211,7 @@
             },
             {
                 "name": "Utopia",
-                "uniques": ["[+100]% Production when constructing a [Overwhelming Superiority] buildings"
+                "uniques": ["[+100]% Production when constructing [Overwhelming Superiority] buildings [in all cities]"
                 ],
                 "prerequisites":["Scarcity Reduction","Usage of AI","Internet of Humans and Things","Complete Welfare"],
                 "row": 2,
