@@ -347,7 +347,8 @@
 		"happiness": 1,
 		"hurryCostModifier": 0,
 		"uniques": ["Light Industry",
-			"[+1 Gold] from [Grain] tiles [in this city]","[+1 Gold] from [Tuber] tiles [in this city]"],
+			"[+1 Gold] from [Grain] tiles [in this city]","[+1 Gold] from [Tuber] tiles [in this city]",
+			"[+1 Production] <in cities with a [Guild Complex]>"],
 		"requiredTech": "Pottery"
 	},
 	{
@@ -359,7 +360,8 @@
 		"uniques": ["Light Industry","Provides [1] [Alcohol] <with [Grain]>",
 					"Provides [1] [Alcohol] <with [Grape]>",
 					"Provides [1] [Alcohol] <with [Tuber]>",
-					"Provides [1] [Alcohol] <with [Fruit]>"
+					"Provides [1] [Alcohol] <with [Fruit]>",
+			"[+1 Production] <in cities with a [Guild Complex]>"
 				],
 		"requiredTech": "Pottery"
 	},
@@ -370,7 +372,8 @@
 		"happiness": 1,
 		"hurryCostModifier": 5,
 		"uniques": ["Light Industry",
-			"[+2 Production] from [Clay] tiles [in this city]"
+			"[+2 Production] from [Clay] tiles [in this city]",
+			"[+1 Production] <in cities with a [Guild Complex]>"
 			],
 		"requiredTech": "Pottery"
 	},
@@ -386,7 +389,8 @@
 			"[+1 Production] from [Caprinae] tiles [in this city]",
 			"[+1 Production] from [Cotton] tiles [in this city]",
 			"[+1 Gold] from [Furs] tiles [in this city]",
-			"[+1 Gold] from [Silk] tiles [in this city]"
+			"[+1 Gold] from [Silk] tiles [in this city]",
+			"[+1 Production] <in cities with a [Guild Complex]>"
 			],
 		"requiredNearbyImprovedResources": ["Bovine","Caprinae","Furs","Cotton","Silk"],
 		"requiredTech": "Animal Husbandry"
@@ -403,7 +407,7 @@
 		"uniques": ["Light Industry",
 			"[+1 Production] from [Lumber Improvement] tiles [in this city]",
 			"[+1 Production] from [Extraction Improvement] tiles [in this city]",
-			"[+1 Food] from [Agricultural Improvement] tiles [in this city] <after discovering [Plows]>"],
+			"[+1 Food] from [Agricultural Improvement] tiles [in this city] <after discovering [Plows]>","[+1 Production] <in cities with a [Guild Complex]>"],
 		"requiredTech": "Bronze Working"
 	},
 	{
@@ -411,7 +415,7 @@
 		"maintenance": 2,
 		"specialistSlots": {"Engineer": 1,"Artist": 1},
 		"uniques": ["Light Industry",
-			"[+1 Gold] from [Lumber Improvement] tiles [in this city]","[+1 Gold] from [Hard Wood] tiles [in this city]"],
+			"[+1 Gold] from [Lumber Improvement] tiles [in this city]","[+1 Gold] from [Hard Wood] tiles [in this city]","[+1 Production] <in cities with a [Guild Complex]>"],
 		"hurryCostModifier": 25,
 		"requiredTech": "Carpentry"
 	},
@@ -424,7 +428,8 @@
 		"uniques": ["Light Industry",
 			"[+1 Gold] from [Precious Mineral] tiles [in this city]",
 			"[+1 Gold] from [Ivory] tiles [in this city]",
-			"[+1 Gold] from [Coral] tiles [in this city]"
+			"[+1 Gold] from [Coral] tiles [in this city]",
+			"[+1 Production] <in cities with a [Guild Complex]>"
 			],
 		"requiredTech": "Currency"
 	},
@@ -434,9 +439,8 @@
 		"specialistSlots": {"Engineer":1},
 		"hurryCostModifier": 0,
 		"uniques": ["Light Industry",
-			"[+1 Gold] from all [Educational Building] buildings [in this city]",
-			"[+1 Gold] from all [Research Building] buildings [in this city]",
-			"[+1 Gold] from all [Cultural Building] buildings [in this city]"
+			"[+1 Gold] from every specialist [in this city]",
+			"[+1 Production] <in cities with a [Guild Complex]>"
 			],
 		"requiredTech": "Paper Making"
 	},
@@ -445,7 +449,7 @@
 		"maintenance": 2,
 		"specialistSlots": {"Engineer": 1,"Scientist": 1,"Merchant": 1,"Artist": 1},
 		"percentStatBonus": {"production": 10},
-		"uniques": ["Light Industry","[+1 Production] from all [Light Industry] buildings [in this city]"
+		"uniques": ["Light Industry"
 			],
 		"hurryCostModifier": 25,
 		"requiredTech": "Guilds"
@@ -575,7 +579,7 @@
 		"specialistSlots": {"Engineer": 2},
 		"hurryCostModifier": 25,
 		"uniques": ["Light Industry",
-					"[+1 Production] from all [Infrastructure] buildings [in this city]",
+					"[+1 Production] from every specialist [in this city]",
 					"Consumes [1] [Microchips]"],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "3D Printers"
@@ -600,7 +604,7 @@
 		"specialistSlots": {"Engineer": 1},		
 		"hurryCostModifier": 0,
 		"uniques": ["Heavy Industry",
-			"[+5]% Production when constructing [All] units [in this city]",
+			"[+5]% Production when constructing [All] units [in this city]"
 			],
 		"requiredNearbyImprovedResources": ["Metal", "Minerals"],	
 		"requiredTech": "Bronze Working"
@@ -717,7 +721,7 @@
 		"hurryCostModifier": 0,
 		"specialistSlots": {"Engineer": 2},
 		"maintenance": 3,
-		"uniques": ["Infrastructure","[+2 Production] from all [Power Building] buildings [in this city]"],
+		"uniques": ["Infrastructure","[+2 Production] from [Power Plant] tiles [in this city]"],
 		"requiredTech": "Electricity"
 	},
 	{
@@ -726,7 +730,7 @@
 		"production":5,
 		"percentStatBonus": {"production": 25},
 		"maintenance": 3,
-		"uniques": ["Power Building","[+1 Production] from [Coal] tiles [in this city]","Consumes [1] [Coal]"],
+		"uniques": ["Power Building","[+1 Production] from [Coal] tiles [in this city]","Consumes [1] [Coal]","[+2 Production] <in cities with a [Power Grid]>"],
 		"requiredTech": "Steam Power"
 	},
 	
@@ -743,7 +747,7 @@
 		"maintenance": 3,
 		"production": 5,
 		"percentStatBonus": {"production": 10},
-		"uniques": ["Power Building","Must be on [River]","[+1 Production] from [River] tiles [in this city]"],
+		"uniques": ["Power Building","Must be on [River]","[+1 Production] from [River] tiles [in this city]","[+2 Production] <in cities with a [Power Grid]>"],
 		"hurryCostModifier": 0,
 		"requiredTech": "Electricity"
 	},
@@ -752,7 +756,7 @@
 		"maintenance": 3,
 		"production":3,
 		"percentStatBonus": {"production": 10},
-		"uniques": ["Power Building","[+1 Production] from [Desert] tiles [in this city]"],
+		"uniques": ["Power Building","[+1 Production] from [Desert] tiles [in this city]","[+2 Production] <in cities with a [Power Grid]>"],
 		"requiredTech": "Ecology"	
 	},
 	{
@@ -767,7 +771,7 @@
 		"production": 5,
 		"science": 4,
 		"percentStatBonus": {"production": 25,"science": 10},
-		"uniques": ["Power Building","Consumes [1] [Uranium] <before discovering [Nuclear Fusion]>","Consumes [0] [Uranium] <after discovering [Nuclear Fusion]>"],
+		"uniques": ["Power Building","Consumes [1] [Uranium] <before discovering [Nuclear Fusion]>","Consumes [0] [Uranium] <after discovering [Nuclear Fusion]>","[+2 Production] <in cities with a [Power Grid]>"],
 		"requiredTech": "Nuclear Fission"
 	},
 	{
@@ -1438,7 +1442,7 @@
 	},
 	{
 		"name": "National Defense Department",
-		"isWonder": true,
+		"isNationalWonder": true,
 		"culture": 3,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"uniques": ["Military Building","Provides [2] [Standing Army Maintainance]","[-33]% Gold cost of upgrading <for [Military] units>"],
@@ -1690,7 +1694,7 @@
 		"hurryCostModifier": 15,
 		"specialistSlots": {"Merchant": 2},
 		"percentStatBonus": {"gold": 25},
-		"uniques": ["Economic Building","[+1 Gold] from all [Economic Building] buildings [in this city]","[+1 Gold] per [5] population [in this city]"],
+		"uniques": ["Economic Building","[+1 Gold] from every [Economic Building] [in this city]","[+1 Gold] per [5] population [in this city]"],
 		"requiredTech": "Banking"
 	},
 	{
@@ -1734,7 +1738,7 @@
 		"gold": 3,
 		"specialistSlots": {"Merchant": 4},
 		"percentStatBonus": {"gold": 10},
-		"uniques": ["Economic Building","[+1 Gold] from all [Light Industry] buildings [in this city]","[+1 Gold] from all [Heavy Industry] buildings [in this city]","[+1 Gold] per [3] population [in this city]"],
+		"uniques": ["Economic Building","[+1 Gold] from every [Light Industry] [in this city]","[+1 Gold] from every [Heavy Industry] [in this city]","[+1 Gold] per [3] population [in this city]"],
 		"hurryCostModifier": 15,
 		"requiredBuilding": "Bank",
 		"requiredTech": "Telegram"
@@ -1809,7 +1813,7 @@
 		"happiness": 1,
 		"isWonder": true,
 		"greatPersonPoints": {"Great General": 1},
-        "uniques": ["Only available <after adopting [God of the Open Sky]>","[+1 Food] from [Pasture] tiles [in this city]","[+1 Food] from [Mechanised Livestock Farm] tiles [in this city]", "[+15]% Production when constructing [Mounted] [in all cities]"],
+        "uniques": ["Only available <after adopting [God of the Open Sky]>","[+1 Food] from [Pasture] tiles [in this city]","[+1 Food] from [Mechanised Livestock Farm] tiles [in this city]", "[+15]% Production when constructing [Mounted] units [in all cities]"],
 		"requiredTech": "Animal Husbandry",
 		"quote": "'Full Moon rises to the sky, Why aren't there clouds around? I am waiting for a beautiful girl, why haven't you come?' - Meeting at Ovoo by Mala Qinfu, 1951 "
 	},
@@ -2122,7 +2126,7 @@
 		"name": "The Great Colosseum",
 		"culture": 2,
 		"happiness": 1,
-		"isNationalWonder": true,
+		"isWonder": true,
 		"uniques": ["[+1 Gold, +1 Happiness] per [3] population [in capital]"],
 		"requiredTech": "Masonry",
 		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
@@ -2428,7 +2432,7 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Socialism]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+3 Production] from all [Political Building] buildings [in all cities]","[-25]% construction time for [All] improvements <when not at war>","[+40]% Production when constructing [Heavy Industry] buildings [in all cities] <when not at war>","[+25]% Production when constructing [Military Industry] buildings [in all cities] <when at war>"],
+		"uniques": ["Only available <after adopting [Socialism]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+3 Production] from all [Political Building] buildings","[-25]% construction time for [All] improvements <when not at war>","[+40]% Production when constructing [Heavy Industry] buildings [in all cities] <when not at war>","[+25]% Production when constructing [Military Industry] buildings [in all cities] <when at war>"],
 		"requiredTech": "Economics"
 	},
 	{
@@ -2436,7 +2440,7 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Fascism]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+1 Gold] from all [Light Industry] buildings [in all cities]","[-2 Gold, +1 Happiness, +2 Culture] from all [Economic Building] buildings [in all cities]","[+1 Production] from all [Military Industry] buildings [in all cities]"],
+		"uniques": ["Only available <after adopting [Fascism]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+1 Gold] from all [Light Industry] buildings","[-2 Gold, +1 Happiness, +2 Culture] from all [Economic Building] buildings","[+1 Production] from all [Military Industry] buildings [in all cities]"],
 		"requiredTech": "Economics"
 	},	
 	{
@@ -2476,7 +2480,7 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Mixed Economy]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+1 Gold] from all [Light Industry] buildings [in all cities]","[+1 Gold] from all [Heavy Industry] buildings [in all cities]","[-1 Gold, +1 Happiness, +2 Culture] from all [Economic Building] buildings","[+1 Production] from all [Military Industry] buildings [in all cities]"],
+		"uniques": ["Only available <after adopting [Mixed Economy]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+1 Gold] from all [Light Industry] buildings","[+1 Gold] from all [Heavy Industry] buildings","[-1 Gold, +1 Happiness, +2 Culture] from all [Economic Building] buildings","[+1 Production] from all [Military Industry] buildings"],
 		"requiredTech": "Economics"
 	},	
 	{
@@ -2492,7 +2496,7 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Redistribution of Means of Production(Anarchist)]>","Triggers a global alert upon completion","Destroyed when the city is captured","[-1 Gold, +1 Production] from all [Economic Building] buildings [in all cities]","[+1 Happiness, -1 Gold] per [3] population [in all cities]"],
+		"uniques": ["Only available <after adopting [Redistribution of Means of Production(Anarchist)]>","Triggers a global alert upon completion","Destroyed when the city is captured","[-1 Gold, +1 Production] from all [Economic Building] buildings","[+1 Happiness, -1 Gold] per [3] population [in all cities]"],
 		"requiredTech": "Economics"
 	},
 	/// Special buildings
