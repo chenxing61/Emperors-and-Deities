@@ -738,9 +738,8 @@
 		"name": "Carbon Capture",
 		"hurryCostModifier": 0,
 		"production":1,
-		"percentStatBonus": {"production": -30,"culture":10,"science":10},
 		"maintenance": 	5,
-		"uniques": ["Unbuildable","Unsellable","Power Building","[+10]% [Science] from every [Coal Plant] [in this city]","[+10]% [Culture] from every [Coal Plant] [in this city]","[-30]% [Production] from every [Coal Plant] [in this city]","[-1 Production] from [Coal] tiles [in this city]","Provides [1] [Coal]"]
+		"uniques": ["Unbuildable","Unsellable","Power Building","[+10]% [Science] <in cities with a [Coal Plant]>","[+10]% [Culture] <in cities with a [Coal Plant]>","[-30]% [Production] <in cities with a [Coal Plant]>","[-1 Production] from [Coal] tiles [in this city]","Provides [1] [Coal]"]
 	},
 	{
 		"name": "Hydro Plant",
@@ -1694,7 +1693,7 @@
 		"hurryCostModifier": 15,
 		"specialistSlots": {"Merchant": 2},
 		"percentStatBonus": {"gold": 25},
-		"uniques": ["Economic Building","[+1 Gold] from every [Economic Building] [in this city]","[+1 Gold] per [5] population [in this city]"],
+		"uniques": ["Economic Building","[+1 Gold] per [5] population [in this city]"],
 		"requiredTech": "Banking"
 	},
 	{
@@ -1738,7 +1737,7 @@
 		"gold": 3,
 		"specialistSlots": {"Merchant": 4},
 		"percentStatBonus": {"gold": 10},
-		"uniques": ["Economic Building","[+1 Gold] from every [Light Industry] [in this city]","[+1 Gold] from every [Heavy Industry] [in this city]","[+1 Gold] per [3] population [in this city]"],
+		"uniques": ["Economic Building","[+1 Gold] per [3] population [in this city]"],
 		"hurryCostModifier": 15,
 		"requiredBuilding": "Bank",
 		"requiredTech": "Telegram"
@@ -2244,7 +2243,7 @@
 		"gold": 6,
 		"greatPersonPoints": {"Great Merchant": 1},
 		"isWonder": true,
-		"uniques": ["[+1 Happiness, +2 Culture, +3 Gold] from all [Citadel] buildings [in all cities]",
+		"uniques": ["[+1 Happiness, +2 Culture, +3 Gold] from all [Citadel] buildings",
 			"Must have an owned [Mountain] within [2] tiles"],
 		"requiredTech": "Railroads",
 		"quote": "'...the location is one of the most beautiful to be found, holy and unapproachable, a worthy temple for the divine friend who has brought salvation and true blessing to the world.' - King Ludwig II of Bavaria"
@@ -2440,7 +2439,7 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Fascism]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+1 Gold] from all [Light Industry] buildings","[-2 Gold, +1 Happiness, +2 Culture] from all [Economic Building] buildings","[+1 Production] from all [Military Industry] buildings [in all cities]"],
+		"uniques": ["Only available <after adopting [Fascism]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+1 Gold] from all [Light Industry] buildings","[-2 Gold, +1 Happiness, +2 Culture] from all [Economic Building] buildings","[+1 Production] from all [Military Industry] buildings"],
 		"requiredTech": "Economics"
 	},	
 	{
