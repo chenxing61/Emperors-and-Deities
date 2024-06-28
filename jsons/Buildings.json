@@ -648,7 +648,7 @@
 		"name": "Oil Refinery",
 		"maintenance": 5,
 		"science": 1,
-		"uniques": ["Heavy Industry","Consumes [2] [Oil]","Provide [5] [Fuel]","Provides [2] [Industrial Chemicals]","[+3 Production] from [Oil] tiles [in this city]"],
+		"uniques": ["Heavy Industry","Consumes [2] [Oil]","Provides [5] [Fuel]","Provides [2] [Industrial Chemicals]","[+3 Production] from [Oil] tiles [in this city]"],
 		"hurryCostModifier": 0,		
 		"requiredNearbyImprovedResources": ["Oil"],	
 		"requiredTech": "Combustion"
@@ -709,7 +709,7 @@
 		"hurryCostModifier": 0,
 		"percentStatBonus": {"production": 25},
 		"maintenance": 3,
-		"uniques": ["Heavy Industry","[+1 Production] from [Coal] tiles [in this city]","Consumes [1] [Coal]","Provide [2] [Fuel]"],
+		"uniques": ["Heavy Industry","[+1 Production] from [Coal] tiles [in this city]","Consumes [1] [Coal]","Provides [2] [Fuel]"],
 		"requiredTech": "Synthetic Materials"
 	},
 	{
@@ -1394,7 +1394,7 @@
 		"name": "Barrack",
 		"hurryCostModifier": 25,
 		"maintenance": 2,
-		"uniques": ["Military Building","[Military] units gain the [Hardened] promotion","New [Military] units start with [20] Experience [in this city]","Provide [2] [Standing Army Maintainance]", "Destroyed when the city is captured"],
+		"uniques": ["Military Building","[Military] units gain the [Hardened] promotion","New [Military] units start with [20] Experience [in this city]","Provides [2] [Standing Army Maintainance]", "Destroyed when the city is captured"],
 		"requiredTech": "Copper Working"
 	},
 	{
@@ -1402,7 +1402,7 @@
 		"maintenance": 5,
 		"culture": 1,
 		"isNationalWonder": true,
-		"uniques": ["Military Building","Provide [3] [Standing Army Maintainance]","All newly-trained [Military] units [in this city] receive the [Elite Training] promotion"],
+		"uniques": ["Military Building","Provides [3] [Standing Army Maintainance]","All newly-trained [Military] units [in this city] receive the [Elite Training] promotion"],
 		"requiredTech": "Tactics"
 	},
 	{
@@ -1418,7 +1418,7 @@
 		"cityStrength": 5,
 		"cityHealth": 5,
 		"hurryCostModifier": 25,
-		"uniques": ["Military Building","Provide [2] [Standing Army Maintainance]","New [Military] units start with [15] Experience [in this city]","Destroyed when the city is captured"],
+		"uniques": ["Military Building","Provides [2] [Standing Army Maintainance]","New [Military] units start with [15] Experience [in this city]","Destroyed when the city is captured"],
 		"requiredTech": "Concrete"
 	},
 	{
@@ -1441,7 +1441,7 @@
 		"isWonder": true,
 		"culture": 3,
 		"greatPersonPoints": {"Great Engineer": 2},
-		"uniques": ["Military Building","Provide [2] [Standing Army Maintainance]","[-33]% Gold cost of upgrading <for [Military] units>"],
+		"uniques": ["Military Building","Provides [2] [Standing Army Maintainance]","[-33]% Gold cost of upgrading <for [Military] units>"],
 		"requiredTech": "Telegram",
 		"quote": "'In preparing for battle I have always found that plans are useless, but planning is indispensable.' - Dwight D. Eisenhower"
 	},
@@ -1459,7 +1459,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","Provide [1] [Standing Army Maintainance]","New [Mounted] units start with [10] Experience [in this city]", "Destroyed when the city is captured"],
+		"uniques": ["Military Building","Provides [1] [Standing Army Maintainance]","New [Mounted] units start with [10] Experience [in this city]", "Destroyed when the city is captured"],
 		"requiredTech": "Stirrup"
 	},
 	{
@@ -1498,7 +1498,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"production": 3,
-		"uniques": ["Military Building","Unsellable","Provide [2] [Standing Army Maintainance]","[+1 Production] from [Extraction Improvement] tiles [in this city]","units gain the [Modern Arms] promotion <starting from the [Modern era]>","units gain the [Atomic Arms] promotion <starting from the [Atomic era]>","units gain the [Information Arms] promotion <starting from the [Information era]>","Destroyed when the city is captured"],
+		"uniques": ["Military Building","Unsellable","Provides [2] [Standing Army Maintainance]","[+1 Production] from [Extraction Improvement] tiles [in this city]","units gain the [Modern Arms] promotion <starting from the [Modern era]>","units gain the [Atomic Arms] promotion <starting from the [Atomic era]>","units gain the [Information Arms] promotion <starting from the [Information era]>","Destroyed when the city is captured"],
 		"requiredTech": "Industrialization"
 	},
 	///alt
@@ -1544,7 +1544,7 @@
 		"maintenance": 3,
 		"production":-1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","Provide [2] [Standing Army Maintainance]","[+25]% Production when constructing [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units [in this city]","New [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units start with [15] Experience [in this city]","Destroyed when the city is captured"],
+		"uniques": ["Military Building","Provides [2] [Standing Army Maintainance]","[+25]% Production when constructing [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units [in this city]","New [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units start with [15] Experience [in this city]","Destroyed when the city is captured"],
 		"requiredTech": "Navigation"
 	},
 	{
@@ -1562,7 +1562,7 @@
 		"maintenance": 2,
 		"production":-1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","Provide [1] [Standing Army Maintainance]","New [Military] units start with [15] Experience [in this city]"],
+		"uniques": ["Military Building","Provides [1] [Standing Army Maintainance]","New [Military] units start with [15] Experience [in this city]"],
 		"requiredTech": "Construction"
 	},
 	{
@@ -1572,7 +1572,7 @@
 		"production":-1,
 		"hurryCostModifier": 25,
 		"requiredTech": "Steel",
-		"uniques": ["Military Building","Provide [1] [Standing Army Maintainance]","New [Military] units start with [25] Experience [in this city]"]
+		"uniques": ["Military Building","Provides [1] [Standing Army Maintainance]","New [Military] units start with [25] Experience [in this city]"]
 	},
 
 ///defence
@@ -2094,7 +2094,7 @@
 		"culture": 3,
 		"isWonder": true,
 		"requiredTech": "Construction",
-		"uniques":["Allied City-States provide [Science] equal to [15]% of what they produce for themselves","Allied City-States provide [Culture] equal to [15]% of what they produce for themselves","Allied City-States provide [Gold] equal to [15]% of what they produce for themselves"],
+		"uniques":["Allied City-States Provides [Science] equal to [15]% of what they produce for themselves","Allied City-States Provides [Culture] equal to [15]% of what they produce for themselves","Allied City-States Provides [Gold] equal to [15]% of what they produce for themselves"],
 		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu"
 	},
 	{
@@ -2320,7 +2320,7 @@
 		"name": "International Space Station",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist": 2},
-		"uniques": ["Space Race Building","[+25]% Production when constructing [Spaceship part] units [in all cities]","Allied City-States provide [Science] equal to [25]% of what they produce for themselves"],
+		"uniques": ["Space Race Building","[+25]% Production when constructing [Spaceship part] units [in all cities]","Allied City-States Provides [Science] equal to [25]% of what they produce for themselves"],
 		"requiredTech": "Space Stations",
 		"quote": "'The wonder is, not that the field of stars is so vast, but that man has measured it.' - Anatole France"
 	},
