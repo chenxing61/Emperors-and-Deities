@@ -1,0 +1,83 @@
+[
+    ///Civilian
+    {
+        "name": "Civilian",
+        "movementType": "Land"
+    },
+    {
+        "name": "Civil Ship",
+        "movementType": "Water"
+    },
+    ///Majority
+
+    {
+        "name": "Close Combat",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Combat",
+        "movementType": "Land"
+    },
+    {
+        "name": "Close Combat Ship",
+        "movementType": "Water"
+    },
+    {
+        "name": "Ranged Combat Ship",
+        "movementType": "Water"
+    },
+
+    ///Special
+    {
+        "name": "Siege",
+        "movementType": "Land"
+    },
+    {
+        "name": "Scout",
+        "movementType": "Land"
+    },
+    {
+        "name": "Assult",
+        "movementType": "Land"
+    },
+    {
+        "name": "Rider",
+        "movementType": "Land",
+        "uniques":["Can move after attacking"]
+    },
+    {
+        "name": "Submarine",
+        "movementType": "Water",
+        "uniques": ["Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Submarine] units"]
+    },
+    {
+        "name": "Carrier",
+        "movementType": "Water"
+    },
+    {
+        "name": "Helicopter",
+        "movementType": "Land",
+        "uniques": ["Can pass through impassable tiles"]
+    },
+    ///Air
+    {
+        "name": "Fighter",
+        "movementType": "Air",
+        "uniques": ["Aircraft", "[+4] Sight", "Can see over obstacles", "Can perform Air Sweep"]
+    },
+    {
+        "name": "Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Atomic Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Missile",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking", "Cannot be intercepted"]
+    }
+]

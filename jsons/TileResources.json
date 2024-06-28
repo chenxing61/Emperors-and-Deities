@@ -1,0 +1,735 @@
+[	
+	// Bonus resources
+	{
+		"name": "Bovine",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland"],
+		"food": 1,
+		"improvedBy": ["Pasture","Mechanised Livestock Farm"],
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Herd","Textile",
+			"Generated on every [18] tiles <in [{Featureless} {Grassland}] tiles>",
+					"Generated on every [22] tiles <in [{Featureless} {Grassland}] tiles> <in [Hill] Regions>"]
+	},
+	{
+		"name": "Caprinae",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Hill"],
+		"food": 1,
+		"improvedBy": ["Pasture","Mechanised Livestock Farm"],
+		"improvementStats": {"food": 1},
+		"uniques": [
+			"Herd","Textile",
+			"Generated on every [13] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+					"Generated on every [8] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]> <in tiles without [Fresh Water]> <in [Hill] Regions>"]
+	},
+	{
+		"name": "Wild Animals",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains","Grassland","Tundra","Snow"], // Tundra only if lowland
+		"food": 1,
+		"improvedBy": ["Camp"],
+		"improvementStats": {"gold": 1},
+		"uniques": ["Hunt",
+					"Generated on every [8] tiles <in [{Tundra}{Forest}] tiles>",
+					"Generated on every [12] tiles <in [{Featureless} {Tundra}] tiles>",
+					"Generated on every [16] tiles <in [{Plains} {Forest}] tiles> <in tiles without [Hill]>",
+					"Generated on every [16] tiles <in [{Grassland}{Forest}] tiles> <in tiles without [Hill]>",
+					"Generated on every [16] tiles <in [{Featureless} {Tundra}] tiles> <in [Hill] Regions>",
+					"Generated on every [28] tiles <in [Forest] tiles> <in [Hill] Regions>",
+					"Generated on every [28] tiles <in [Plains] tiles> <in [Hill] Regions>",
+					"Generated on every [28] tiles <in [Snow] tiles>",
+					"Generated on every [28] tiles <in [Grassland] tiles>"]
+	},
+	{
+		"name": "Fruit",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Jungle","Forest"],
+		"food": 1,
+		"improvedBy": ["Manual Plantation","Permaculture"],
+		"improvementStats": {"food": 1},
+		"uniques": ["Crops",
+					"Generated on every [20] tiles <in [Forest] tiles>",
+					"Generated on every [18] tiles <in [Forest] tiles> <in [Hill] Regions>",
+					"Generated on every [16] tiles <in [Jungle] tiles>",
+					"Generated on every [14] tiles <in [Jungle] tiles> <in [Hill] Regions>"]
+	},
+	{
+		"name": "Grain",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains","Flood plains","Desert","Tundra"], // Desert only if fresh water
+		"food": 1,
+		"improvedBy": ["Manual Farm","Mechanised Farm","Permaculture"],
+		"uniques": ["Crops",
+					"Generated on every [27] tiles <in [{Featureless} {Plains}] tiles>",
+					"Generated on every [10] tiles <in [DesertFresh Water] tiles> <in tiles without [Hill]>",
+					"Generated on every [20] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
+					"Generated on every [20] tiles <in [{Fresh Water}{Desert}] tiles> <in tiles without [Hill]> <in [Hill] Regions>",
+					"Generated on every [27] tiles <in [Tundra] tiles> <in tiles without [Hill]>",
+					"Generated on every [24] tiles <in [Tundra] tiles> <in [Hill] Regions>"]
+	},
+	{
+		"name": "Tuber",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains","Jungle","Forest","Hill"],
+		"food": 2,
+		"improvedBy": ["Manual Farm","Mechanised Farm","Permaculture"],
+		"uniques": ["Crops",	
+					"Generated on every [27] tiles <in [{Featureless} {Plains}] tiles>",
+					"Generated on every [20] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
+					"Generated on every [14] tiles <in [Jungle] tiles>",
+					"Generated on every [14] tiles <in [Forest] tiles>"]
+	},
+	{
+		"name": "Hard Wood",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Jungle","Forest"],
+		"production": 1,
+		"improvedBy": ["Manual Lumber mill","Tree Plantation","Mechanised Lumber mill"],
+		"improvementStats": {"production": 1},
+		"uniques": ["Generated on every [18] tiles <in [Forest] tiles>",
+					"Generated on every [22] tiles <in [Forest] tiles> <in [Hill] Regions>",
+					"Generated on every [18] tiles <in [Jungle] tiles>",
+					"Generated on every [12] tiles <in [Jungle] tiles> <in [Hill] Regions>"]
+	},
+	{
+		"name": "Stone",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland","Desert","Tundra"],
+		"production": 1,
+		"improvedBy": ["Quarry"],
+		"improvementStats": {"production": 1},
+		"uniques": ["Rock",
+					"Generated on every [20] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+					"Generated on every [15] tiles <in [{Featureless} {Tundra}] tiles>",
+					"Generated on every [19] tiles <in [{Featureless} {Desert}] tiles>"]
+	},
+	{
+		"name": "Clay",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Flood plains"],
+		"improvedBy": ["Quarry"],
+		"improvementStats": {"production": 1},
+		"uniques": ["Useful mineral",
+					"Generated on every [20] tiles <in [{Featureless} {Grassland}] tiles> <in [Fresh Water] tiles>,",
+					"Generated on every [20] tiles <in [{Featureless} {Plains}] tiles> <in [Fresh Water] tiles>",
+					"Generated on every [18] tiles <in [FeaturelessFlood plains] tiles>"]
+	},
+	{
+		"name": "Minerals",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland","Desert","Tundra"],
+		"production": 2,
+		"improvedBy": ["Manual Mine","Mechanised Mine"],
+		"uniques": ["Useful mineral",
+					"Generated on every [15] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+					"Generated on every [20] tiles <in [{Featureless} {Grassland}] tiles> <in [Hill] Regions>",
+					"Generated on every [20] tiles <in [{Featureless} {Tundra}] tiles>",
+					"Generated on every [20] tiles <in [{Featureless} {Desert}] tiles>",
+					"Generated on every [15] tiles <in [{Featureless} {Tundra}] tiles> <in [Hill] Regions>",
+					"Generated on every [15] tiles <in [{Featureless} {Desert}] tiles> <in [Hill] Regions>"]
+	},
+	{
+		"name": "Coastal Fish",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Coast","Lakes","Atoll"],
+		"food": 1,
+		"improvedBy": ["Coast Fishing Boats"],
+		"uniques": [
+					"Generated on every [10] tiles <in [{Featureless} {Coast}] tiles>",
+					"Generated on every [14] tiles <in [Lakes] tiles>",
+					"Generated on every [7] tiles <in [Atoll] tiles>"]
+	},
+	{
+		"name": "Natural Gas",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Coast","Ocean"],
+		"production": 1,
+		"improvementStats": {"production": 1},
+		"improvedBy": ["Offshore Platform"],
+		"uniques": ["Chemicals",
+					"Generated on every [25] tiles <in [{Featureless} {Coast}] tiles>",
+					"Generated on every [15] tiles <in [FeaturelessOcean] tiles>"]
+	},
+	// Strategic resources
+	{
+		"name": "Horse",
+		"resourceType": "Strategic",
+		"revealedBy": "Animal Husbandry",
+		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill"], // Hill only if plains or grassland
+		"production": 1,
+		"improvedBy": ["Pasture"],
+		"improvementStats": {"production": 1},
+		"uniques": ["Herd",
+					"Guaranteed with Strategic Balance resource option",
+					"Generated with weight [100] <in [{Featureless} {Grassland}] tiles>",
+					"Generated with weight [100] <in [{Featureless} {Plains}] tiles>",
+					"Minor deposits generated with weight [10] <in [{Grassland} {Hill}] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+					"Minor deposits generated with weight [10] <in [{Plains} {Hill}] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+					"Minor deposits generated with weight [100] <in [{Featureless} {Grassland}] tiles> <in [Fresh Water] tiles>",
+					"Minor deposits generated with weight [20] <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+					"Minor deposits generated with weight [30] <in [{Featureless} {Plains}] tiles>"],
+		"majorDepositAmount": {"sparse": 4, "default": 4, "abundant": 6},
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
+	},
+	{
+		"name": "Metal",
+		"resourceType": "Strategic",
+		"revealedBy": "Bronze Working",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra","Snow","Hill","Marsh"],
+		"production": 1,
+		"improvedBy": ["Manual Mine","Mechanised Mine"],
+		"uniques": ["Useful mineral",
+					"Guaranteed with Strategic Balance resource option",
+					"Generated with weight [45] <in [{Featureless} {Tundra}] tiles>",
+					"Generated with weight [35] <in [{Featureless} {Desert}] tiles>",
+					"Generated with weight [50] <in [Hill] tiles>",
+					"Minor deposits generated with weight [10] <in [Marsh] tiles> <in tiles without [Hill]>",
+					"Minor deposits generated with weight [10] <in [{Jungle} {Hill}] tiles>",
+					"Minor deposits generated with weight [20] <in [Forest] tiles>",
+					"Minor deposits generated with weight [20] <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+					"Minor deposits generated with weight [30] <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+					"Minor deposits generated with weight [20] <in [{Featureless} {Plains}] tiles>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Desert}] tiles>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Tundra}] tiles>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Snow}] tiles>"],
+		"majorDepositAmount": {"sparse": 6, "default": 10, "abundant": 12},
+		"minorDepositAmount": {"sparse": 4, "default": 5, "abundant": 6}
+	},
+	{
+		"name": "Coal",
+		"resourceType": "Strategic",
+		"revealedBy": "Coal Working",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Jungle","Forest","Marsh"],
+		"production": 1,
+		"improvedBy": ["Manual Mine","Mechanised Mine"],
+		"improvementStats": {"production": 1},
+		"uniques": ["Useful mineral",
+					"Generated with weight [35] <in [Hill] tiles>",
+					"Generated with weight [30] <in [Jungle] tiles> <in tiles without [Hill]>",
+					"Generated with weight [30] <in [Forest] tiles> <in tiles without [Hill]>",
+					"Minor deposits generated with weight [10] <in [Marsh] tiles> <in tiles without [Hill]>",
+					"Minor deposits generated with weight [10] <in [Jungle] tiles>",
+					"Minor deposits generated with weight [10] <in [Forest] tiles>",
+					"Minor deposits generated with weight [20] <in [{Grassland} {Hill}] tiles>",
+					"Minor deposits generated with weight [20] <in [{Plains} {Hill}] tiles>",
+					"Minor deposits generated with weight [30] <in [{Desert} {Hill}] tiles>",
+					"Minor deposits generated with weight [30] <in [{Tundra} {Hill}] tiles>",
+					"Minor deposits generated with weight [30] <in [{Snow} {Hill}] tiles>"],
+		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 10},
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
+	},
+	{
+		"name": "Oil",
+		"resourceType": "Strategic",
+		"revealedBy": "Geology",
+		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Snow","Marsh","Jungle"],
+		"production": 1,
+		"improvedBy": ["Oil well","Offshore Platform"],
+		"improvementStats": {"production": 3},
+		"uniques": ["Chemicals",
+					"Deposits in [Coast] tiles always provide [4] resources",
+					"Guaranteed with Strategic Balance resource option",
+					"Generated with weight [65] <in [Marsh] tiles> <in tiles without [Hill]>",
+					"Generated with weight [40] <in [{Featureless} {Tundra}] tiles>",
+					"Generated with weight [60] <in [{Featureless} {Snow}] tiles>",
+					"Generated with weight [65] <in [{Featureless} {Desert}] tiles>",
+					"Generated with weight [100] <in [{Featureless} {Coast}] tiles>",
+					"Minor deposits generated with weight [20] <in [Marsh] tiles> <in tiles without [Hill]>",
+					"Minor deposits generated with weight [10] <in [Jungle] tiles> <in tiles without [Hill]>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Desert}] tiles>",
+					"Minor deposits generated with weight [20] <in [{Featureless} {Tundra}] tiles>",
+					"Minor deposits generated with weight [20] <in [{Featureless} {Snow}] tiles>"],
+		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 9},
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
+	},
+	{
+		"name": "Aluminum",
+		"resourceType": "Strategic",
+		"revealedBy": "Geology",
+		"terrainsCanBeFoundOn": ["Desert","Tundra","Hill","Snow","Jungle"],
+		"production": 1,
+		"improvedBy": ["Manual Mine","Mechanised Mine"],
+		"improvementStats": {"production": 1},
+		"uniques": ["Useful mineral",
+					"Generated with weight [15] <in [{Featureless} {Tundra}] tiles>",
+					"Generated with weight [15] <in [{Featureless} {Snow}] tiles>",
+					"Generated with weight [39] <in [Hill] tiles>",
+					"Minor deposits generated with weight [20] <in [Jungle] tiles>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Desert}] tiles>"],
+		"majorDepositAmount": {"sparse": 5, "default": 8, "abundant": 10},
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
+	},
+	{
+		"name": "Uranium",
+		"resourceType": "Strategic",
+		"revealedBy": "Geology",
+		"terrainsCanBeFoundOn": ["Marsh","Jungle","Forest","Tundra","Snow"],
+		"production": 1,
+		"improvedBy": ["Manual Mine","Mechanised Mine"],
+		"improvementStats": {"production": 1},
+		"uniques": ["Useful mineral",
+					"Generated with weight [35] <in [Marsh] tiles> <in tiles without [Hill]>",
+					"Generated with weight [70] <in [Jungle] tiles> <in tiles without [Hill]>",
+					"Generated with weight [70] <in [Forest] tiles> <in tiles without [Hill]>",
+					"Minor deposits generated with weight [10] <in [Forest] tiles>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Tundra}] tiles>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Snow}] tiles>"],
+		"majorDepositAmount": {"sparse": 2, "default": 4, "abundant": 4},
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
+	},
+	///The Unit limit
+	{
+		"name": "Standing Army Maintainance",
+		"resourceType": "Strategic",
+		"revealedBy": "Animal Husbandry"
+	},
+	{
+		"name": "Noble Army Maintainance",
+		"resourceType": "Strategic",
+		"revealedBy": "Animal Husbandry"
+	},
+	///The Industrial parts
+	{
+		"name": "Steel",
+		"resourceType": "Strategic",
+		"uniques": ["Stockpiled"],
+		"revealedBy": "Steel"
+	},
+	{
+		"name": "Industrial Chemicals",
+		"resourceType": "Strategic",
+		"uniques": ["Stockpiled"],
+		"revealedBy": "Chemistry"
+	},
+	{
+		"name": "Fuel",
+		"resourceType": "Strategic",
+		"uniques": ["Stockpiled"],
+		"revealedBy": "Combustion"
+	},
+	{
+		"name": "Graphene",
+		"resourceType": "Strategic",
+		"uniques": ["Stockpiled"],
+		"revealedBy": "Graphene"
+	},
+	{
+		"name": "Weapon Parts",
+		"resourceType": "Strategic",
+		"uniques": ["Stockpiled"],
+		"revealedBy": "Iron Working"
+	},
+	{
+		"name": "Vehicle Parts",
+		"resourceType": "Strategic",
+		"uniques": ["Stockpiled"],
+		"revealedBy": "Replaceable Parts"
+	},
+	{
+		"name": "Ship Parts",
+		"resourceType": "Strategic",
+		"uniques": ["Stockpiled"],
+		"revealedBy": "Ship Making"
+	},
+	{
+		"name": "Aircraft Parts",
+		"resourceType": "Strategic",
+		"uniques": ["Stockpiled"],
+		"revealedBy": "Flight"
+	},
+	{
+		"name": "Electronic Parts",
+		"resourceType": "Strategic",
+		"uniques": ["Stockpiled"],
+		"revealedBy": "Electronics"
+	},
+	{
+		"name": "Microchips",
+		"resourceType": "Strategic",
+		"uniques": ["Stockpiled"],
+		"revealedBy": "Computer"
+	},
+	// Luxury resources
+	// Animal sourced
+	{
+		"name": "Furs",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Forest","Tundra"],
+		"production": 1,
+		"gold": 2,
+		"improvedBy": ["Camp"],
+		"improvementStats": {"gold": 1},
+		"uniques": ["Hunt",
+					"Generated with weight [40] <in [Tundra] Regions>",
+					"Generated with weight [10] <in [Forest] Regions>",
+					"Generated near City States with weight [15]"]
+	},
+	{
+		"name": "Ivory",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains","Grassland"],
+		"gold": 3,
+		"improvedBy": ["Camp"],
+		"improvementStats": {"gold": 1},
+		"uniques": ["Hunt",
+					"Generated with weight [35] <in [Plains] Regions>",
+					"Generated with weight [15] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [GrasslandFresh Water] tiles>"]
+	},
+	
+	{
+		"name": "Silk",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Forest","Jungle"],
+		"gold": 3,
+		"improvedBy": ["Manual Plantation","Permaculture"],
+		"uniques": ["Textile",
+					"Generated with weight [5] <in [Jungle] Regions>",
+					"Generated with weight [30] <in [Forest] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]",
+					"Doesn't generate naturally <in [Hill] tiles>"]
+	},
+	{
+		"name": "Whale",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Coast","Ocean"],
+		"food": 1,
+		"gold": 2,
+		"production": 1,
+		"improvedBy": ["Coast Fishing Boats"],
+		"uniques": [
+					"Generated on every [25] tiles <in [Ocean] tiles>",
+					"Generated with weight [35] <in [Tundra] Regions>",
+					"Generated with weight [10] <in [Forest] Regions>",
+					"Generated with weight [10] <in [Hill] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [10] <in [Grassland] Regions>",
+					"Generated with weight [20] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]"]
+	},
+	{
+		"name": "Crab",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"food": 1,
+		"gold": 2,
+		"improvedBy": ["Coast Fishing Boats"],
+		"uniques": [
+					"Generated with weight [30] <in [Tundra] Regions>",
+					"Generated with weight [5] <in [Jungle] Regions>",
+					"Generated with weight [10] <in [Forest] Regions>",
+					"Generated with weight [10] <in [Hill] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [20] <in [Grassland] Regions>",
+					"Generated with weight [20] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]"]
+	},
+	
+	{
+		"name": "Pearl",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"gold": 3,
+		"improvedBy": ["Coast Fishing Boats"],
+		"uniques": [
+					"Generated with weight [20] <in [Jungle] Regions>",
+					"Generated with weight [10] <in [Forest] Regions>",
+					"Generated with weight [5] <in [Desert] Regions>",
+					"Generated with weight [15] <in [Hill] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [10] <in [Grassland] Regions>",
+					"Generated with weight [20] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]"]
+	},
+	{
+		"name": "Coral",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Coast","Ocean"],
+		"gold": 3,
+		"improvedBy": ["Coast Fishing Boats"],
+		"uniques": [
+					"Generated with weight [20] <in [Jungle] Regions>",
+					"Generated with weight [5] <in [Desert] Regions>",			
+					"Generated with weight [20] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]"]
+	},
+	// Plant sourced
+	{
+		"name": "Cotton",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Grassland","Flood plains"],
+		"production": 1,
+		"gold": 2,
+		"improvedBy": ["Manual Plantation","Permaculture"],
+		"uniques": ["Textile","Generated with weight [15] <in [Desert] Regions>",
+					"Generated with weight [30] <in [Grassland] Regions>",
+					"Generated with weight [15] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Hill] tiles>"]
+	},
+	{
+		"name": "Dyes",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Marsh"],
+		"culture":1,
+		"gold": 3,
+		"improvedBy": ["Manual Plantation","Permaculture"],
+		"uniques": ["Chemicals",
+					"Generated with weight [5] <in [Tundra] Regions>",
+					"Generated with weight [5] <in [Jungle] Regions>",
+					"Generated with weight [30] <in [Forest] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Hill] tiles>"]
+	},
+	{
+		"name": "Incense",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains","Desert","Flood plains"],
+		"faith": 1,
+		"gold": 3,
+		"improvedBy": ["Manual Plantation","Permaculture"],
+		"uniques": ["Generated with weight [35] <in [Desert] Regions>",
+					"Generated with weight [10] <in [Plains] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]"]
+	},
+	{
+		"name": "Spices",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Marsh"],
+		"food": 1,
+		"gold": 3,
+		"improvedBy": ["Manual Plantation","Permaculture"],
+		"uniques": ["Generated with weight [30] <in [Jungle] Regions>",
+					"Generated with weight [10] <in [Forest] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [5] <in [Grassland] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]",
+					"Doesn't generate naturally <in [Hill] tiles>",
+					"Doesn't generate naturally <in [{Tundra} {Forest}] tiles>"]
+	},
+	{
+		"name": "Grape",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Grassland","Plains"],
+		"food": 2,
+		"gold": 2,
+		"improvedBy": ["Manual Plantation","Permaculture"],
+		"uniques": ["Crops","Generated with weight [35] <in [Hill] Regions>",
+					"Generated with weight [15] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]"]
+	},
+	{
+		"name": "Sugar",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Flood plains","Grassland","Marsh"],
+		// Technically sugar can also be placed on lowland jungles which then *turn* into marsh.
+		"food": 1,
+		"gold": 2,
+		"improvedBy": ["Manual Plantation","Permaculture"],
+		"uniques": ["Crops","Generated with weight [20] <in [Jungle] Regions>",
+					"Generated with weight [15] <in [Desert] Regions>",
+					"Generated with weight [20] <in [Grassland] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Grassland] tiles> <in tiles without [Fresh Water]>"]
+	},
+	{
+		"name": "Citrus",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Flood plains"],
+		"food": 1,
+		"gold": 2,
+		"improvedBy": ["Manual Plantation","Permaculture"],
+		"uniques": ["Crops","Generated with weight [35] <in [Jungle] Regions>",
+					"Generated with weight [5] <in [Forest] Regions>",
+					"Generated with weight [5] <in [Desert] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]",
+					"Doesn't generate naturally <in [Tundra] tiles>"]
+	},
+	{
+		"name": "Cocoa",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Forest"], // Forest only if flat, non-tundra
+		"food": 1,
+		"gold": 2,
+		"improvedBy": ["Manual Plantation","Permaculture"],
+		"uniques": ["Crops","Generated with weight [35] <in [Jungle] Regions> ",
+			"Generated with weight [5] <in [Forest] Regions><in tiles without [Hill]>",
+			"Generated with weight [5] <in [Hybrid] Regions>",
+			"Generated near City States with weight [15]",
+			"Doesn't generate naturally <in [Tundra] tiles>"]
+	},
+	{
+		"name": "Tea Leave",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Forest"],
+		"culture": 1,
+		"gold": 2,
+		"improvedBy": ["Manual Plantation","Permaculture"],
+		"uniques": ["Crops","Generated with weight [20] <in [Hill] Regions> ",
+			"Generated with weight [20] <in [Jungle] Regions> ",
+			"Generated with weight [5] <in [Forest] Regions><in tiles without [Hill]>",
+			"Generated with weight [5] <in [Hybrid] Regions>",
+			"Generated near City States with weight [15]",
+			"Doesn't generate naturally <in [Tundra] tiles>"]
+	},
+	{
+		"name": "Coffee",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Forest"],
+		"culture": 1,
+		"gold": 2,
+		"improvedBy": ["Manual Plantation","Permaculture"],
+		"uniques": ["Crops","Generated with weight [30] <in [Jungle] Regions> ",
+			"Generated with weight [5] <in [Forest] Regions><in tiles without [Hill]>",
+			"Generated with weight [5] <in [Hybrid] Regions>",
+			"Generated near City States with weight [15]",
+			"Doesn't generate naturally <in [Tundra] tiles>"]
+	},
+	{
+		"name": "Truffles",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Forest","Marsh","Jungle"],
+		"gold": 3,
+		"improvedBy": ["Camp"],
+		"improvementStats": {"gold": 1},
+		"uniques": ["Crops","Generated with weight [5] <in [Jungle] Regions>",
+					"Generated with weight [30] <in [Forest] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [5] <in [Grassland] Regions>",
+					"Generated with weight [10] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]",
+					"Doesn't generate naturally <in [ForestHill] tiles>",
+					"Doesn't generate naturally <in [{Tundra} {Forest}] tiles>"]
+	},
+	{
+		"name": "Gems",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Hill"],
+		"gold": 3,
+		"improvedBy": ["Manual Mine","Mechanised Mine"],
+		"uniques": ["Precious mineral","Generated with weight [5] <in [Tundra] Regions>",
+					"Generated with weight [20] <in [Jungle] Regions>",
+					"Generated with weight [15] <in [Hill] Regions>",
+					"Generated with weight [5] <in [Grassland] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>"]
+	},
+	{
+		"name": "Gold Ore", // Not called "Gold" in order to not conflict with siege type units for translations
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Desert","Hill","Forest","Jungle"],
+		"gold": 4,
+		"improvedBy": ["Manual Mine","Mechanised Mine"],
+		"uniques": ["Precious mineral","Generated with weight [25] <in [Desert] Regions>",
+					"Generated with weight [30] <in [Hill] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>",
+					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>"]
+	},
+	{
+		"name": "Silver Ore",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Tundra","Grassland"],
+		"gold": 4,
+		"improvedBy": ["Manual Mine","Mechanised Mine"],
+		"uniques": ["Precious mineral","Generated with weight [25] <in [Tundra] Regions>",
+					"Generated with weight [30] <in [Hill] Regions>",
+					"Generated with weight [20] <in [Grassland] Regions>",
+					"Generated with weight [10] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>",
+					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>",
+					"Doesn't generate naturally <in [{Tundra} {Hill}] tiles>",
+					"Doesn't generate naturally <in [GrasslandFresh Water] tiles>",
+					"Doesn't generate naturally <in [{Grassland} {Hill}] tiles>"
+		]
+	},
+
+	{
+		"name": "Marble",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Desert","Plains","Hill","Grassland"],
+		"gold": 3,
+		"improvedBy": ["Quarry"],
+		"improvementStats": {"production": 1},
+		"uniques": ["Rock","[+15]% Production when constructing [All] wonders [in all cities]",
+					"Special placement during map generation",
+					"Doesn't generate naturally <in [GrasslandFresh Water] tiles>"]
+	},
+
+
+	{
+		"name": "Rich Copper Ore",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Grassland","Tundra"],
+		"production":1,
+		"gold": 2,
+		"improvedBy": ["Manual Mine","Mechanised Mine"],
+		"uniques": ["Useful mineral","Precious mineral","Generated with weight [15] <in [Tundra] Regions>",
+					"Generated with weight [5] <in [Jungle] Regions>",
+					"Generated with weight [5] <in [Forest] Regions>",
+					"Generated with weight [10] <in [Desert] Regions>",
+					"Generated with weight [30] <in [Hill] Regions>",
+					"Generated with weight [20] <in [Grassland] Regions>",
+					"Generated with weight [20] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [GrasslandFresh Water] tiles>",
+					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>",
+					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]> <in tiles without [Tundra]>"]
+	},
+
+
+	{
+		"name": "Halite",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Desert","Tundra","Plains","Forest"],
+		"gold": 2,
+		"food": 1,
+		"improvedBy": ["Manual Mine","Mechanised Mine"],
+		"improvementStats": {"food": 1},
+		"uniques": ["Chemicals","Generated with weight [15] <in [Tundra] Regions>",
+					"Generated with weight [5] <in [Forest] Regions>",
+					"Generated with weight [15] <in [Desert] Regions>",
+					"Generated with weight [10] <in [Hill] Regions>",
+					"Generated with weight [25] <in [Plains] Regions>",
+					"Generated with weight [15] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [ForestHill] tiles>"]
+	},
+
+	{
+		"name": "Unique jewelry",
+		"resourceType": "Luxury",
+		"gold": 4,
+		"uniques": ["Can only be created by Mercantile City-States"]
+	},
+	{
+		"name": "Unique porcelain",
+		"resourceType": "Luxury",
+		"gold": 4,
+		"uniques": ["Can only be created by Mercantile City-States"]
+	},
+	{
+		"name": "Famous Wine",
+		"resourceType": "Luxury",
+		"gold": 4,
+		"uniques": ["Can only be created by Mercantile City-States"]
+	},
+	{
+		"name": "Alcohol",
+		"resourceType": "Luxury",
+		"gold": 2
+	}
+]
+

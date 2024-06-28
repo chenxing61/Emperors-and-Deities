@@ -1,0 +1,430 @@
+[
+	//Spectator
+    //Not "Excluded from map editor" as it serves as placeholder for "Any Civ" starting locations
+	{
+		"name": "Spectator",
+		"outerColor": [255,255,255],
+//		"innerColor": [255,255,255]
+	},
+	//nations
+	{
+		
+		"name": "Mediterranean",
+		"leaderName": "Greeks, Romans and many others",
+		"adjective": ["Mediterranean"],
+		"startBias": ["Avoid [Tundra]","Coast","Plain"],
+		"startIntroPart1": "Mediterranean Civilization is a huge bundle of nations ranging from Mycenaean Greece to Spainish Empire and many more, held together by the same ocean and climate, it has brought thought provoking advances for humanity as a whole.",
+		"startIntroPart2": "Inherit the legacy of Caesar or follow the wisdom of Aristotle. Which one should it be?",
+		"declaringWar": "Our interest conflicted, and you should step away.",
+		"attacked": "If you were wiser, you would've chosen a way of peace.",
+		"defeated": "You can destroy our body, building towers upon our wonder, but our legacy remains.",
+		"introduction": "Greetings, stranger from other worldly land.",
+		"neutralHello": "Maybe we share the same ideal afterall...",
+		"hateHello":"Beware of your action." ,
+		"tradeRequest": "For the greater good of humanity, We should exchange our goods.",
+		"outerColor": [255, 255, 255],
+		"innerColor": [65, 141, 254],
+		"favoredReligion": "Orthodox Church",
+		"uniqueName": "From Constatinople To Gibraltar",
+		"uniques": [],
+		"cities": ["Argos","Athens","Sparta","Rome","Antium","Cumae","Neapolis","Ravenna","Arretium","Constantinople","Ephesus","Marseille","Barcelona","Nice","Adrianople","Nicaea","Antioch","Palermo"],
+        "spyNames": ["Jason", "Helena", "Alexa", "Cletus", "Kassandra", "Andres", "Flavius", "Regula", "Servius","Señor X", "Topolino", "Serpiente"]
+	},
+	{
+		"name": "West Asia",
+		"leaderName": "Mesopotamia, Persian and many others",
+		"adjective": ["West Asian"],
+		"startBias": ["Avoid [Tundra]","Hill","Oasis"],
+		"startIntroPart1": "West Asian Civilization is a huge bundle of nations ranging from Babylon to Kazakhstan and many more, inhabiting middle of eurosia, it was the birth place of the earliest Civilisations.",
+		"startIntroPart2": "Inherit the legacy of Darius the Great or follow the wisdom of the Last Prophet. Which one should it be?",
+
+		"declaringWar": "Our interest conflicted, and you should step away.",
+		"attacked": "If you were wiser, you would've chosen a way of peace.",
+		"defeated": "You can destroy our body, ravage our country for resources, but our legacy remains.",
+		"introduction": "Greetings, stranger from other worldly land.",
+
+		"neutralHello": "Maybe we share the same ideal afterall...",
+		"hateHello":"Beware of your action." ,
+
+		"tradeRequest": "For the greater good of humanity, We should exchange our goods.",
+
+		"outerColor": [30, 120, 0],
+		"innerColor": [255, 242, 0],
+		"favoredReligion": "Sunni Islam",
+		"uniqueName": "From Asia Minor To Afghanistan",
+		"uniques": [],
+		"cities": ["Babylon","Akkad","Dur-Kurigalzu","Nippur","Persepolis","Parsagadae","Susa","Ecbatana","Mecca","Medina","Damascus","Baghdad","Edirne","Ankara","Bursa","Konya"],
+        "spyNames": ["Azi","Dabir","Firuz","Gaspar","Shahzad","Aga","Ibrahim", "Bayezid", "Sokollu", "Mahmut", "Uveys", "Roxelana"]
+	},
+	{
+		"name": "East Asia",
+		"leaderName": "China, Japan and many others",
+		"adjective": ["East Asian"],
+		"startBias": ["Avoid [Tundra]","Hill","Plain"],
+		"startIntroPart1": "East Asian Civilization is a medium-sized bundle of nations, mainly the Dynasties of China, Japan and Korea, inhabiting the east most isolated lands, where paper, gunpowder and fireworks came from.",
+		"startIntroPart2": "Inherit the legacy of Yin Zhen or follow the wisdom of the Hundred Schools of thoughts. Which one should it be?",
+
+		"declaringWar": "Our interest conflicted, and you should step away.",
+		"attacked": "If you were wiser, you would've chosen a way of peace.",
+		"defeated": "You can destroy our body, enslave our people, but our legacy remains.",
+		"introduction": "Greetings, stranger from other worldly land.",
+
+		"neutralHello": "Maybe we share the same ideal afterall...",
+		"hateHello":"Beware of your action." ,
+
+		"tradeRequest": "For the greater good of humanity, We should exchange our goods.",
+
+		"outerColor": [255, 247, 0],
+		"innerColor": [0, 0, 0],
+		"favoredReligion": "Confucianism",
+		"uniqueName": "From Vietnam to Kamchatka",
+		"uniques": [],
+		"cities": ["Chang An","Luo Yang","Jian Kang","Yan Jing","Fan Yu","Cheng Du","Liao Ning","Kyoto","Osaka","Edo","Satsuma","Seoul","Pyongyang"],
+        "spyNames": ["Azi","Dabir","Firuz","Gaspar","Shahzad","Aga","Ibrahim", "Bayezid", "Sokollu", "Mahmut", "Uveys", "Roxelana"]
+	},
+	//
+	{
+		"name": "Florence",
+		"adjective": ["Florentine"],
+		"cityStateType": "Library of Wisdom",
+		"startBias": ["Plain"],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "And so the flower of Florence falls to barbaric hands...",
+		"outerColor": [0, 0, 0],
+		"innerColor": [62,197,252],
+		"cities": ["Florence"]
+	},
+	{
+		"name": "Hanoi",
+		"adjective": ["Hanoi"],
+		"cityStateType": "Distinctively Cultured",
+		"startBias": ["Jungle"],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "So this is how it feels to die...",
+		"outerColor": [0, 0, 0],
+        "innerColor": [51,51,255],
+		"cities": ["Hanoi"]
+	},
+	{
+		"name": "Kabul",
+		"adjective": ["Kabul"],
+		"cityStateType": "Middleman of the continent",
+		"startBias": ["Hill"],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "Unacceptable!",
+		"outerColor": [0, 0, 0],
+		"innerColor": [168,38,102],
+		"cities": ["Kabul"]
+	},
+	{
+		"name": "Palembang",
+		"adjective": ["Palembang"],
+		"cityStateType": "Middleman of the continent",
+		"startBias": ["Coast"],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "Today, the Malay people obey you, but do not think this is over...",
+		"outerColor": [0, 0, 0],
+		"innerColor": [0,102,102],
+		"cities": ["Kuala Lumpur"]
+	},
+	{
+		"name": "Lhasa",
+		"adjective": ["tibetano"],
+		"cityStateType": "Holy Ground",
+		"startBias": ["Hill"],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "Perhaps now we will find peace in death...",
+		"outerColor": [0, 0, 0],
+		"innerColor": [204,102,0],
+		"cities": ["Lhasa"]
+	},
+	{
+		"name": "Milan",
+		"adjective": ["Milanese"],
+		"cityStateType": "Spectacular Craftsman",
+		"startBias": ["Plain"],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "You fiend! History shall remember this!",
+		"outerColor": [0, 0, 0],
+		"innerColor": [185,132,66],
+		"cities": ["Milan"]
+	},
+	{
+		"name": "Stockholm",
+		"adjective": ["Swedish"],
+		"cityStateType": "Mercenary State",
+		"startBias": ["Tundra"],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "The day of judgement has come to us. But rest assured, the same will go for you!",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,178,102],
+		"cities": ["Stockholm"]
+	},
+	{
+		"name": "Manila",
+		"adjective": ["Manilan"],
+		"cityStateType": "Food Exporter",
+		"startBias": ["Coast"],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "Ah, Gods! Why have you forsaken us?",
+		"outerColor": [0, 0, 0],
+		"innerColor": [96,96,96],
+		"cities": ["Manila"]
+	},
+	{
+		"name": "Mogadishu",
+		"adjective": ["Mogadishu"],
+		"cityStateType": "Resource Hoarder",
+		"startBias": ["Coast"],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "Congratulations, conqueror. This tribe serves you now.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [224,224,224],
+		"cities": ["Mogadishu"]
+	},
+
+	{
+		"name": "Ur",
+		"adjective": ["Ur"],
+		"cityStateType": "Library of Wisdom",
+		"startBias": ["Coast"],
+
+		"declaringWar": "I will enjoy hearing your last breath as you witness the destruction of your realm!",
+		"attacked": "Why do we fight? Because Inanna demands it. Now, witness the power of the Sumerians!",
+		"defeated": "What treachery has struck us? No, what evil?",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,69,0],
+		"cities": ["Ur"]
+	},
+	{
+		"name": "Venice",
+		"adjective": ["Venetian"],
+		"cityStateType": "Middleman of the continent",
+		"startBias": ["Coast"],
+
+		"declaringWar": "You have revealed your purposes a bit too early, my friend...",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "A wrong calculation, on my part.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [153,204,255],
+		"cities": ["Venice"]
+	},
+
+	{
+		"name": "Antwerp",
+		"adjective": ["Antwerp"],
+		"cityStateType": "Spectacular Craftsman",
+		"startBias": ["Coast"],
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "They will write songs of this.... pray that they shall be in your favor.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [194,97,255],
+		"cities": ["Antwerp"]
+	},
+	{
+		"name": "Genoa",
+		"adjective": ["Genoese"],
+		"cityStateType": "Mercenary State",
+		"startBias": ["Coast"],
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "How barbaric. Those who live by the sword shall perish by the sword.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [45,255,86],
+		"cities": ["Genoa"]
+	},
+	{
+		"name": "Kathmandu",
+		"adjective": ["Kathmandu"],
+		"cityStateType": "Mercenary State",
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "We... defeated? No... we had so much work to do!",
+		"outerColor": [0, 0, 0],
+		"innerColor": [151,125,0],
+		"cities": ["Kathmandu"]
+	},
+	{
+		"name": "Singapore",
+		"adjective": ["Singaporean"],
+		"cityStateType": "Middleman of the continent",
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "Perhaps, in another world, we could have been friends...",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,255,0],
+		"cities": ["Singapore"]
+	},
+	{
+		"name": "Tyre",
+		"adjective": ["Tyrian"],
+		"cityStateType": "Resource Hoarder",
+		"startBias": ["Coast"],
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "We never fully trusted you from the start.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,97,255],
+		"cities": ["Tyre"]
+	},
+	{
+		"name": "Zanzibar",
+		"adjective": ["Zanzibar"],
+		"cityStateType": "Resource Hoarder",
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "May the Heavens forgive you for inflicting this humiliation to our people.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,153,255],
+		"cities": ["Zanzibar"]
+	},
+
+	{
+		"name": "Almaty",
+		"adjective": ["Almaty"],
+		"cityStateType": "Middleman of the continent",
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "How could we fall to the likes of you?!",
+		"outerColor": [0, 0, 0],
+		"innerColor": [152,0,241],
+		"cities": ["Almaty"]
+	},
+	{
+		"name": "Belgrade",
+		"adjective": ["Belgrade"],
+		"cityStateType": "Distinctively Cultured",
+
+		"declaringWar": "Let's have a nice little War, shall we?",
+		"attacked": "If you need your nose bloodied, we'll happily serve.",
+		"defeated": "The serbian guerilla will never stop haunting you!",
+		"outerColor": [0, 0, 0],
+		"innerColor": [211,180,113],
+		"cities": ["Belgrade"]
+	},
+	{
+		"name": "Dublin",
+		"adjective": ["Irish"],
+		"cityStateType": "Food Exporter",
+
+		"declaringWar": "War lingers in our hearts. Why carry on with a false peace?",
+		"attacked": "You gormless radger! You'll dine on your own teeth before you set foot in Ireland!",
+		"defeated": "A lonely wind blows through the highlands today. A dirge for Ireland. Can you hear it?",
+		"outerColor": [0, 0, 0],
+		"innerColor": [211,180,113],
+		"cities": ["Dublin"]
+	},
+	{
+		"name": "Edinburgh",
+		"adjective": ["Scottish"],
+		"cityStateType": "Distinctively Cultured",
+
+		"declaringWar": "You shall stain this land no longer with your vileness! To arms, my countrymen - we ride to war!",
+		"attacked": "Traitorous man! The Celtic peoples will not stand for such wanton abuse and slander - I shall have your head!",
+		"defeated": "Vile ruler, know that you 'won' this war in name only!",
+		"outerColor": [0, 0, 0],
+		"innerColor": [0,102,102],
+		"cities": ["Edinburgh"]
+	},
+	{
+		"name": "M'Banza-Kongo",
+		"adjective": ["M'Banza-Kongo"],
+		"cityStateType": "Distinctively Cultured",
+
+		"declaringWar": "Do you really think you can walk over us so easily? I will not let it happen. Not to Kongo - not to my people!",
+		"attacked": "We are no strangers to war. You have strayed from the right path, and now we will correct it.",
+		"defeated": "You are nothing but a glorified barbarian. Cruel, and ruthless.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,128,0],
+		"cities": ["M'Banza-Kongo"]
+	},
+	{
+		"name": "Sidon",
+		"adjective": ["Sidon"],
+		"cityStateType": "Middleman of the continent",
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "What a fine battle! Sidon is willing to serve you!",
+		"outerColor": [0, 0, 0],
+		"innerColor": [250,128,114],
+		"cities": ["Sidon"]
+	},
+	{
+		"name": "Valletta",
+		"adjective": ["maltese"],
+		"cityStateType": "Mercenary State",
+
+		"declaringWar": "We don't like your face. To arms!",
+		"attacked": "You will see you have just bitten off more than you can chew.",
+		"defeated": "This ship may sink, but our spirits will linger.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [0,102,102],
+		"cities": ["Valletta"]
+	},
+
+	{
+		"name": "Bratislava",
+		"adjective": ["Bratislava"],
+		"cityStateType": "Distinctively Cultured",
+
+		"declaringWar": "I didn't want to do this. We declare war.",
+		"attacked": "I will fear no evil. For god is with me!",
+		"defeated": "Why have you forsaken us my lord?",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,255,255],
+		"cities": ["Bratislava"]
+	},
+	{
+		"name": "Cahokia",
+		"adjective": ["Cahokia"],
+		"cityStateType": "Food Exporter",
+
+		"declaringWar": "We have wanted this for a LONG time. War it shall be.",
+		"attacked": "Very well, we will kick you back to the ancient era!",
+		"defeated": "This isn't how it is supposed to be!",
+		"outerColor": [0, 0, 0],
+		"innerColor": [203, 253, 232],
+		"cities": ["Cahokia"]
+	},
+	{
+		"name": "Jerusalem",
+		"adjective": ["Jerusalem"],
+		"cityStateType": "Holy Ground",
+
+		"declaringWar": "By god's grace we will not allow these atrocities to occur any longer. We declare war!",
+		"attacked": "May god have mercy on your evil soul.",
+		"defeated": "I for one welcome our new conquer overlord!",
+		"outerColor": [0, 0, 0],
+		"innerColor": [198,255,192],
+		"cities": ["Jerusalem"]
+	},
+
+
+
+	//Barbarian
+	{
+		"name": "Barbarians",
+		"outerColor": [0,0,0],
+        "innerColor": [185,12,12],
+		"uniques": ["Can only heal by pillaging", "Excluded from map editor"]
+	}
+
+]
