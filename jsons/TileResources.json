@@ -27,6 +27,7 @@
 	{
 		"name": "Wild Animals",
 		"resourceType": "Bonus",
+		"revealedBy":"Trapping",
 		"terrainsCanBeFoundOn": ["Plains","Grassland","Tundra","Snow"], // Tundra only if lowland
 		"food": 1,
 		"improvedBy": ["Camp"],
@@ -359,6 +360,7 @@
 		"terrainsCanBeFoundOn": ["Forest","Tundra"],
 		"production": 1,
 		"gold": 2,
+		"revealedBy":"Trapping",
 		"improvedBy": ["Camp"],
 		"improvementStats": {"gold": 1},
 		"uniques": ["Hunt",
@@ -371,6 +373,7 @@
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Plains","Grassland"],
 		"gold": 3,
+		"revealedBy":"Trapping",
 		"improvedBy": ["Camp"],
 		"improvementStats": {"gold": 1},
 		"uniques": ["Hunt",
