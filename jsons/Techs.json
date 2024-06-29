@@ -42,8 +42,14 @@
 				"quote": "'He who commands the sea has command of everything.' - Themistocles"
 			},
 			{
-				"name": "Copper Working",
+				"name": "Calendar",
 				"row": 3,
+				"prerequisites": ["Agriculture"],
+				"quote": "'So teach us to number our days, so that we may apply our hearts unto wisdom.' - Bible Psalms 90:12"
+			},
+			{
+				"name": "Copper Working",
+				"row": 4,
 				"prerequisites": ["Fire Making"],
 				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
 			},
@@ -53,12 +59,7 @@
 				"prerequisites": ["Fire Making"],
 				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
 			},
-			{
-				"name": "Calendar",
-				"row": 6,
-				"prerequisites": ["Agriculture"],
-				"quote": "'So teach us to number our days, so that we may apply our hearts unto wisdom.' - Bible Psalms 90:12"
-			},
+
 			{
 				"name": "Animal Husbandry",
 				"row": 7,
@@ -102,6 +103,7 @@
 				"name": "Plows",
 				"row": 7,
 				"prerequisites": ["Animal Husbandry"],
+				"uniques":["Comment [Civilian Blacksmith buffs Agricultral improvements to have +1 Food.]"],
 				"quote": "'But farmers are patient men tried by brutal seasons, and if they weren't plagued by dreams of generation, few would keep plowing, spring after spring.' - Richard Powers"
 			},
 			{
@@ -187,7 +189,7 @@
 			{
 				"name": "Iron Working",
 				"row": 3,
-				"prerequisites": ["Bronze Working"],
+				"prerequisites": ["Mining"],
 				"quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
 			},
 			{
