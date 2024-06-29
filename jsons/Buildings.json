@@ -1086,8 +1086,9 @@
 		"faith": 2,
 		"food":-1,
 		"percentStatBonus": {"culture": 5,"gold": 5},
+		
 		"uniques": ["Worship Place","Unbuildable","Hidden when religion is disabled"],
-		"requiredTech":"Calendar"
+		"requiredTech": "Theology",
 	},
 	{
 		"name": "Cathedral",
@@ -1538,7 +1539,7 @@
 		"maintenance": 2,
 		"production":-1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","[+30]% Production when constructing [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units [in this city]","Destroyed when the city is captured"],
+		"uniques": ["Must be next to [Coast]","Military Building","[+30]% Production when constructing [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units [in this city]","Destroyed when the city is captured"],
 		"requiredTech": "Dry Dock"
 	},
 	{
@@ -1547,7 +1548,7 @@
 		"maintenance": 3,
 		"production":-1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","Provides [2] [Standing Army Maintainance]","[+25]% Production when constructing [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units [in this city]","New [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units start with [15] Experience [in this city]","Destroyed when the city is captured"],
+		"uniques": ["Must be next to [Coast]","Military Building","Provides [2] [Standing Army Maintainance]","[+25]% Production when constructing [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units [in this city]","New [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units start with [15] Experience [in this city]","Destroyed when the city is captured"],
 		"requiredTech": "Navigation"
 	},
 	{
@@ -1556,7 +1557,7 @@
 		"maintenance": 2,
 		"production":-1,
 		"requiredBuilding": "Military Factory Complex",
-		"uniques": ["Military Building","Provides [2] [Ship Parts]","Consumes [2] [Steel]","[+25]% Production when constructing [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units [in this city]","Destroyed when the city is captured"],
+		"uniques": ["Must be next to [Coast]","Military Building","Provides [2] [Ship Parts]","Consumes [2] [Steel]","[+25]% Production when constructing [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units [in this city]","Destroyed when the city is captured"],
 		"requiredTech": "Ship Armour"
 	},
 	{
