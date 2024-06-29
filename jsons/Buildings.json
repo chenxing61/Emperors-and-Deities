@@ -1469,7 +1469,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","units gain the [Classical Arms] promotion","Destroyed when the city is captured"],
+		"uniques": ["Military Building","[Military] units gain the [Classical Arms] promotion","Destroyed when the city is captured"],
 		"requiredTech": "Iron Working"
 	},
 	{
@@ -1477,7 +1477,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","units gain the [Medieval Arms] promotion <before the [Renaissance era]>","units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>","[+25]% Production when constructing [Military] units <in cities with [Watermill]>]","Destroyed when the city is captured"],
+		"uniques": ["Military Building","[Military] units gain the [Medieval Arms] promotion <before the [Renaissance era]>","[Military] units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>","[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <before the [Industrial era]>","Destroyed when the city is captured"],
 		"requiredTech": "Armorments"
 	},
 	{
@@ -1485,7 +1485,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","units [in this city] gain the [Industrial Arms] promotion <starting from the [Industrial era]>","Destroyed when the city is captured"],
+		"uniques": ["Military Building","[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>","Destroyed when the city is captured"],
 		"requiredTech": "Gunpowder"
 	},
 	{
@@ -1500,7 +1500,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"production": 3,
-		"uniques": ["Military Building","Unsellable","Provides [2] [Standing Army Maintainance]","[+1 Production] from [Extraction Improvement] tiles [in this city]","units gain the [Modern Arms] promotion <starting from the [Modern era]>","units gain the [Atomic Arms] promotion <starting from the [Atomic era]>","units gain the [Information Arms] promotion <starting from the [Information era]>","Destroyed when the city is captured"],
+		"uniques": ["Military Building","Unsellable","Provides [2] [Standing Army Maintainance]","[+1 Production] from [Extraction Improvement] tiles [in this city]","[Military] units gain the [Modern Arms] promotion <starting from the [Modern era]>","[Military] units gain the [Atomic Arms] promotion <starting from the [Atomic era]>","[Military] units gain the [Information Arms] promotion <starting from the [Information era]>","Destroyed when the city is captured"],
 		"requiredTech": "Industrialization"
 	},
 	///alt
@@ -1801,7 +1801,7 @@
 		"happiness": 1,
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 1},
-        "uniques": ["Only available <after adopting [Sprit in Everything]>","[+1 Faith] per [3] population [in all cities]","[+15]% Production when constructing [Levy Army] [in all cities]"],
+        "uniques": ["Only available <after adopting [Sprit in Everything]>","[+1 Faith] per [3] population [in all cities]","[+15]% Production when constructing [Levy Army] units [in all cities]"],
 		"requiredTech": "Calendar",
 		"quote": "'You must be absolutely honest and true in the depicting of a totem for meaning is attached to every line. You must be most particular about detail and proportion.' - Emily Carr"
 	},
@@ -1988,7 +1988,7 @@
 		"happiness": 3,
 		"isWonder": true,
 		"requiredTech": "Mathematics",
-		"uniques": ["Only available <before adopting [The One True God]>","2 Free [Missionary] units appear"],
+		"uniques": ["Only available <before adopting [The One True God]>","[2] free [Missionary] units appear"],
 		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
 	},
 	{
@@ -2043,7 +2043,7 @@
 		"greatPersonPoints": {"Great Scientist": 1,"Great Artist": 1},
 		"isWonder": true,
 		"requiredTech": "Writing",
-		"uniques": ["Free [Great Scientist] appear"],
+		"uniques": ["Free [Great Scientist] appears"],
 		"quote": "'Libraries are as the shrine where all the relics of the ancient saints, full of true virtue, and all that without delusion or imposture are preserved and reposed.' - Sir Francis Bacon"
 	},
 	{
@@ -2096,7 +2096,7 @@
 		"culture": 3,
 		"isWonder": true,
 		"requiredTech": "Construction",
-		"uniques":["Allied City-States Provides [Science] equal to [15]% of what they produce for themselves","Allied City-States Provides [Culture] equal to [15]% of what they produce for themselves","Allied City-States Provides [Gold] equal to [15]% of what they produce for themselves"],
+		"uniques":["Allied City-States provide [Science] equal to [15]% of what they produce for themselves","Allied City-States provide [Culture] equal to [15]% of what they produce for themselves","Allied City-States provide [Gold] equal to [15]% of what they produce for themselves"],
 		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu"
 	},
 	{
