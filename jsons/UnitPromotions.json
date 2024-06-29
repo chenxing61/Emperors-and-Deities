@@ -78,6 +78,7 @@
 		"name": "Field Medic",
 		"uniques": ["[+10] HP when healing","All adjacent units heal [+3] HP when healing"],
 		"unitTypes": ["Scout","Assault","Rider","Close Combat","Ranged Combat"],
+		"prerequisites": ["Stewardship"],
 		"column": 5,
 		"row": 1
 	},
@@ -85,6 +86,7 @@
 		"name": "Technicians",
 		"uniques": ["[+10] HP when healing","All adjacent units heal [+3] HP when healing"],
 		"unitTypes": ["Siege","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"prerequisites": ["Stewardship"],
 		"column": 6,
 		"row": 1
 	},
@@ -571,6 +573,7 @@
 	},
 	{
 		"name": "Classical Arms",
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
 		"column": 20,
 		"row": 0
 	},
@@ -659,7 +662,6 @@
 	{
 		"name": "Medieval Arms", 
 		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege","Close Combat Ship","Ranged Combat Ship"],
-		"uniques":["Unavailable"],
 		"column": 23,
 		"row": 0
 	},
@@ -756,6 +758,7 @@
 	},
 	{
 		"name": "Renaissance Arms", 
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
 		"column": 26,
 		"row": 0
 	},
@@ -788,6 +791,7 @@
 	},
 	{
 		"name": "Industrial Arms",
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
 		"column": 27,
 		"row": 0
 
@@ -855,6 +859,7 @@
 	},
 	{
 		"name": "Modern Arms",
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
 		"column": 29,
 		"row": 0
 
@@ -992,6 +997,7 @@
 	},
 	{
 		"name": "Atomic Arms",
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
 		"column": 32,
 		"row": 0
 
@@ -1034,6 +1040,7 @@
 	},
 	{
 		"name": "Information Arms",
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
 		"column": 33,
 		"row": 0
 
