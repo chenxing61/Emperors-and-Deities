@@ -83,19 +83,19 @@
 		"techs": [
 			{
 				"name": "Bronze Working",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Copper Working"],
 				"quote": "'Here Hector entered, with a spear eleven cubits long in his hand; the bronze point gleamed in front of him, and was fastened to the shaft of the spear by a ring of gold.' - Homer"
 			},
 			{
 				"name": "The Wheel",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Copper Working"],
 				"quote": "'Wisdom and virtue are like the two wheels of a cart.' - Japanese proverb"
 			},
 			{
 				"name": "Writing",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Pottery"],
 				"quote": "'He who destroys a good book kills reason itself.' - John Milton"
 			},
@@ -115,7 +115,7 @@
 			{
 				"name": "Trade Network",
 				"row": 9,
-				"prerequisites": ["Animal Husbandry"],
+				"prerequisites": ["Trapping","Animal Husbandry"],
 				"uniques": ["Enables conversion of city production to [Gold]"],
 				"quote": "'Every nation lives by exchanging.' - Adam Smith"
 			}
@@ -143,7 +143,7 @@
 			{
 				"name": "Mathematics",
 				"row": 5,
-				"prerequisites": ["Writing"],
+				"prerequisites": ["Currency","Trade Network","Writing"],
 				"quote": "'Mathematics is the gate and key to the sciences.' - Roger Bacon"
 			},
 			{
@@ -167,7 +167,7 @@
 			{
 				"name": "Horseback Riding",
 				"row": 9,
-				"prerequisites": ["Trapping","The Wheel"],
+				"prerequisites": ["Plows","The Wheel"],
 				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
 			}
 
@@ -195,7 +195,7 @@
 			{
 				"name": "Paper Making",
 				"row": 5,
-				"prerequisites": ["Carpentry"],
+				"prerequisites": ["Mathematics","Drama and Poetry","Carpentry"],
 				"quote": "'All I need is a sheet of paper and something to write with, and then I can turn the world upside down.' - Friedrich Nietzsche"
 			},
 			{
@@ -223,13 +223,13 @@
 			{
 				"name": "Optics",
 				"row": 2,
-				"prerequisites": ["Iron Working"],
+				"prerequisites": ["Dry Dock","Iron Working"],
 				"quote": "'He made an instrument to know if the moon shine at full or no.' - Samuel Butler"
 			},
 			{
 				"name": "Philosophy",
 				"row": 4,
-				"prerequisites": ["Mathematics"],
+				"prerequisites": ["Paper Making"],
 				"quote": "'There is only one good, knowledge, and one evil, ignorance.' - Socrates"
 			},
 			{
@@ -257,7 +257,7 @@
 			{
 				"name": "Ship Making",
 				"row": 2,
-				"prerequisites": ["Construction"],
+				"prerequisites": ["Optics","Construction"],
 				"quote": "'I cannot imagine any condition which would cause a ship to founder �?? Modern shipbuilding has gone beyond that.'�?? Capt. E.J. Smith, RMS Titanic"
 			},
 			{
@@ -269,7 +269,7 @@
 			{
 				"name": "Alchemy",
 				"row": 7,
-				"prerequisites": ["Currency"],
+				"prerequisites": ["Philosophy","Construction"],
 				"uniques": ["Enables conversion of city production to [Science]"],
 				"quote": "'Maybe the real gold is the friend we made along the way' - An original Meme"
 			},
@@ -303,14 +303,14 @@
 			{
 				"name": "Engineering",
 				"row": 6,
-				"prerequisites": ["Construction"],
+				"prerequisites": ["Alchemy","Irrigation"],
 				"uniques": ["Roads connect tiles across rivers"],
 				"quote": "'Instrumental or mechanical science is the noblest and, above all others, the most useful.' - Leonardo da Vinci"
 			},
 
 			{
 				"name": "Tactics",
-				"row": 10,
+				"row": 9,
 				"prerequisites": ["Armorments"],
 				"quote": "'Tactics mean doing what you can with what you have.' - Saul Alinsky"
 			}
@@ -334,7 +334,7 @@
 			{
 				"name": "Physics",
 				"row": 7,
-				"prerequisites": ["Engineering"],
+				"prerequisites": ["Compass","Engineering"],
 				"quote": "'Measure what is measurable, and make measurable what is not so.' - Galileo Galilei"
 			},
 			{
@@ -369,13 +369,13 @@
 			{
 				"name": "Guilds",
 				"row": 7,
-				"prerequisites": ["Civil Service"],
+				"prerequisites": ["Diplomacy","Civil Service"],
 				"quote": "'The merchants and the traders have come; their profits are pre-ordained...' - Sri Guru Granth Sahib"
 			},
 			{
 				"name": "Crop Rotation",
 				"row": 8,
-				"prerequisites": ["Irrigation"],
+				"prerequisites": ["Civil Service"],
 				"quote": "'Unless you purposefully create spontaneity, your network will likely suffer the same fate as a garden that never experiences Crop Rotation—productivity will decrease.' - Marissa King"
 			}
 		]
@@ -396,18 +396,18 @@
 			{
 				"name": "Apprenticeship",
 				"row": 4,
-				"prerequisites": ["Coal Working"],
+				"prerequisites": ["Guilds"],
 				"quote": "'We are all apprentices in a craft where no one ever becomes a master.'- Ernest Hemingway"
 			},
 			{
 				"name": "Education",
 				"row": 5,
-				"prerequisites": ["Civil Service"],
+				"prerequisites": ["Crop Rotation"],
 				"quote": "'Education is the best provision for old age.' - Aristotle"
 			},
 			{
 				"name": "Printing Press",
-				"row": 9,
+				"row": 8,
 				"prerequisites": ["Guilds"],
 				"quote": "'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times'"
 			}
@@ -424,7 +424,7 @@
 			{
 				"name": "Machinery",
 				"row": 2,
-				"prerequisites": ["Steel","Guilds"],
+				"prerequisites": ["Steel","Apprenticeship"],
 				"uniques": ["Improves movement speed on roads"],
 				"quote": "'The press is the best instrument for enlightening the mind of man, and improving him as a rational, moral and social being.' - Thomas Jefferson"
 			},
@@ -460,7 +460,7 @@
 				"name": "Monocular",
 				"row": 2,
 				"uniques": ["[+1] Sight"],
-				"prerequisites": ["Education"],
+				"prerequisites": ["Machinery","Heliocentrism"],
 				"quote": "'Vision without execution is delusion.' - Thomas A. Edison"
 			},
 			{
@@ -472,7 +472,7 @@
 			{
 				"name": "Acoustics",
 				"row": 6,
-				"prerequisites": ["Education"],
+				"prerequisites": ["Heliocentrism","Banking"],
 				"quote": "'Their rising all at once was as the sound of thunder heard remote' - Milton"
 			},
 			{
@@ -493,7 +493,7 @@
 			{
 				"name": "Navigation",
 				"row": 2,
-				"prerequisites": ["Monocular","Heliocentrism"],
+				"prerequisites": ["Monocular"],
 				"quote": "'The winds and the waves are always on the side of the ablest navigators.' - Edward Gibbon"
 			},
 			{
@@ -517,13 +517,13 @@
 			{
 				"name": "Economics",
 				"row": 6,
-				"prerequisites": ["Banking","Scientific Theory"],
+				"prerequisites": ["Acoustics","Scientific Theory"],
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
 			{
 				"name": "Architecture",
 				"row": 8,
-				"prerequisites": ["Acoustics","Banking","Engineering"],
+				"prerequisites": ["Acoustics"],
 				"quote": "'Architecture begins where engineering ends.' - Walter Gropius"
 			},
 
@@ -707,7 +707,7 @@
 			{
 				"name": "Refrigeration",
 				"row": 6,
-				"prerequisites": ["Biology", "Electricity"], 
+				"prerequisites": ["Electricity"], 
 				"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
 			},
 			{
@@ -752,13 +752,13 @@
 			{
 				"name": "Computer",
 				"row": 8,
-				"prerequisites": ["Ballistics","Electronics"],
+				"prerequisites": ["Mobile Tactics","Electronics"],
 				"quote": "'Computer are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			},
 			{
 				"name": "Combined Arms",
 				"row": 9,
-				"prerequisites": ["Ballistics","Combustion"],
+				"prerequisites": ["Mobile Tactics"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			},
 			{
@@ -786,7 +786,7 @@
 			{
 				"name": "Ecology",
 				"row": 5,
-				"prerequisites": ["Telecommunications","Plastics","Pharmaceuticals"],
+				"prerequisites": ["Telecommunications","Plastics"],
 				"quote": "'Only within the moment of time represented by the present century has one species, man, acquired significant power to alter the nature of his world.' - Rachel Carson"
 			},
 			{
@@ -837,25 +837,25 @@
 			{
 				"name": "Internet",
 				"row": 6,
-				"prerequisites": ["Telecommunications","Satellites"],
+				"prerequisites": ["Lasers","Satellites"],
 				"quote": "'Haters are just confused admirers.' - Justin Bieber"
 			},
 			{
 				"name": "Robotic",
 				"row": 7,
-				"prerequisites": ["Rocketry","Computer"],
+				"prerequisites": ["Stealth","Advanced Ballistics"],
 				"uniques":["Comment [Increases the Production of Electronic Parts and Microchips]"],
 				"quote": "'1. A robot may not injure a human being or, through inaction, allow a human being to come to harm. 2. A robot must obey any orders given to it by human beings, except when such orders would conflict with the First Law. 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.' - Isaac Asimov"
 			},
 			{
 				"name": "Drone Warfare",
-				"row": 10,
+				"row": 8,
 				"prerequisites": ["Advanced Ballistics"],
 				"quote":"'Flying drones is like discovering a new superpower.' - Chris Anderson"
 			},
 			{
 				"name": "Space Stations",
-				"row": 11,
+				"row": 10,
 				"prerequisites": ["Satellites"],
 				"quote": "'We've learned a lot by building the International Space Station, the good, the bad. But, the fact is is that working together as a team, unity aboard that space station, we can accomplish great things.' - Gene Kranz"
 			}
@@ -884,7 +884,7 @@
 			{
 				"name": "Sustainability",
 				"row": 6,
-				"prerequisites": ["Ecology"],
+				"prerequisites": ["Globalisation"],
 				"quote": "'There must be more to life than having everything!'- Maurice Sendak"
 			},
 			{
@@ -924,7 +924,7 @@
 			{
 				"name": "Nuclear Fusion",
 				"row": 4,
-				"prerequisites": ["Particle Physics", "Satellites", "Robotic"],
+				"prerequisites": ["Particle Physics", "Satellites"],
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
 			{
@@ -942,12 +942,12 @@
 			{
 				"name": "Railguns",
 				"row": 7,
-				"prerequisites": ["Lasers", "Particle Physics"],
+				"prerequisites": ["Graphene"],
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
 			{
 				"name": "Space Elevators",
-				"row": 8,
+				"row": 10,
 				"prerequisites": ["Graphene", "Space Stations"],
 				"quote": "'To boldly go where no one has gone before.' - Stephen Hawking"
 			}
