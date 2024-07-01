@@ -96,7 +96,7 @@
 	{
 		"name": "Aqueduct",
 		"maintenance": 2,
-		"happiness": 2,
+		"happiness": 1,
 		"hurryCostModifier": 5,
 		"uniques": ["Infrastructure",
 			"[-5]% Unhappiness from [Population] [in this city]",
@@ -233,7 +233,7 @@
 	{
 		"name": "Road Network",
 		"maintenance": 1,
-		"happiness": 2,
+		"happiness": 1,
 		"percentStatBonus": {
 							"food": 10,
 							"production": 10,
@@ -368,7 +368,6 @@
 		"name": "Pottery Workshop",
 		"maintenance": 1,
 		"production": 1,
-		"happiness": 1,
 		"hurryCostModifier": 5,
 		"uniques": ["Light Industry",
 			"[+2 Production] from [Clay] tiles [in this city]",
@@ -380,7 +379,6 @@
 		"name": "Textile workshop",
 		"maintenance": 1,
 		"production": 1,
-		"happiness": 1,
 		"gold": 1,
 		"hurryCostModifier": 5,
 		"uniques": ["Light Industry",
@@ -397,7 +395,6 @@
 	{
 		"name": "Civilian Blacksmith",
 		"maintenance": 2,
-		"happiness": 1,
 		"percentStatBonus": {
 			"food": 5,
 			"production": 5},
@@ -527,7 +524,6 @@
 	{
 		"name": "Plastic Factory",
 		"maintenance": 3,
-		"happiness": 1,
 		"production":3,
 		"percentStatBonus":{"gold":20},
 		"specialistSlots": {"Engineer": 2},
@@ -618,7 +614,7 @@
 			"Provides [1] [Steel]",
 			"Consumes [1] [Metal]"],
 		"requiredNearbyImprovedResources": ["Metal", "Minerals"],	
-		"requiredTech": "Steel"
+		"requiredTech": "Steels"
 	},
 	{
 		"name": "Steel Mill",
@@ -627,10 +623,13 @@
 		"hurryCostModifier": 0,		
 		"uniques": ["Heavy Industry","[+10]% Production when constructing [All] buildings [in this city]",
 			"Consumes [3] [Metal] <before discovering [Industrialization]>",
+			"Consumes [2] [Coal] <before discovering [Industrialization]>",
 			"Provides [4] [Steel]",
 			"Consumes [4] [Metal] <after discovering [Industrialization]> <before discovering [Electricity]>",
+			"Consumes [3] [Coal] <after discovering [Industrialization]> <before discovering [Electricity]>",
 			"Provides [2] [Steel] <after discovering [Industrialization]>",
 			"Consumes [3] [Metal] <after discovering [Electricity]>",
+			"Consumes [1] [Coal] <after discovering [Industrialization]> <before discovering [Electricity]>",
 			"Provides [2] [Steel] <after discovering [Electricity]> <in cities with a [Power Building]>"],
 		"requiredTech": "Metallurgy"
 	},
@@ -810,7 +809,7 @@
 	{
 		"name": "City Hall",
 		"maintenance": 3,
-		"happiness": 2,
+		"happiness": 1,
 		"culture": 2,
 		"cityStrength": 2,
 		"specialistSlots": {"Governor": 1},
@@ -878,7 +877,7 @@
 	{
 		"name": "Police station",
 		"maintenance": 2,
-		"happiness": 3,
+		"happiness": 2,
 		"hurryCostModifier": 25,
 		"uniques": ["Political Building","[-10]% Unhappiness from [Population] [in this city]"],
 		"requiredTech": "Architecture"
@@ -928,7 +927,7 @@
 	{
 		"name": "Garden",
 		"maintenance": 3,
-		"happiness": 2,
+		"happiness": 1,
 		"specialistSlots": {"Artist": 1},
 		"uniques": ["Cultural Building","[+25]% Great Person generation [in this city]", "Must be next to [Fresh water]"],
 		"hurryCostModifier": 25,
@@ -1476,7 +1475,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","[Military] units gain the [Medieval Arms] promotion <before the [Renaissance era]>","[Military] units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>","[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <before the [Industrial era]>","Destroyed when the city is captured"],
+		"uniques": ["Military Building","[Military] units gain the [Medieval Arms] promotion","[Military] units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>","[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <before the [Industrial era]>","Destroyed when the city is captured"],
 		"requiredTech": "Armorments"
 	},
 	{
@@ -1572,7 +1571,7 @@
 		"cityHealth": 10,
 		"production":-1,
 		"hurryCostModifier": 25,
-		"requiredTech": "Steel",
+		"requiredTech": "Steels",
 		"uniques": ["Military Building","Provides [1] [Standing Army Maintainance]","New [Military] units start with [25] Experience [in this city]"]
 	},
 
