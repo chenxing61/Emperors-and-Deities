@@ -42,7 +42,7 @@
 	{
 		"name": "Irrigation System",
 		"maintenance": 3,
-		"percentStatBonus": {"food": 25},
+		"percentStatBonus": {"food": 10},
 		"hurryCostModifier": 25,
 		"uniques": ["Infrastructure","[+1 Food] from [Fresh water] tiles [in this city]","Only available <in cities without a [Agricultural Water Storage]>"],
 		"requiredTech": "Irrigation"
@@ -1535,7 +1535,7 @@
 		"maintenance": 2,
 		"production":-1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Must be next to [Coast]","Military Building","[+30]% Production when constructing [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units [in this city]","Destroyed when the city is captured"],
+		"uniques": ["Must be next to [Coast]","Military Building","[+30]% Production when constructing [{Galley} {Sailing Ship} {Engine Ship} {Nuclear powered Ship}] units [in this city]","Destroyed when the city is captured"],
 		"requiredTech": "Dry Dock"
 	},
 	{
@@ -1544,7 +1544,7 @@
 		"maintenance": 3,
 		"production":-1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Must be next to [Coast]","Military Building","Provides [2] [Standing Army Maintainance]","[+25]% Production when constructing [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units [in this city]","New [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units start with [15] Experience [in this city]","Destroyed when the city is captured"],
+		"uniques": ["Must be next to [Coast]","Military Building","Provides [2] [Standing Army Maintainance]","[+25]% Production when constructing [{Galley} {Sailing Ship} {Engine Ship}{Nuclear powered Ship}] units [in this city]","New [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units start with [15] Experience [in this city]","Destroyed when the city is captured"],
 		"requiredTech": "Navigation"
 	},
 	{
@@ -1553,7 +1553,7 @@
 		"maintenance": 2,
 		"production":-1,
 		"requiredBuilding": "Military Factory Complex",
-		"uniques": ["Must be next to [Coast]","Military Building","Provides [2] [Ship Parts]","Consumes [2] [Steel]","[+25]% Production when constructing [{Galley}{Sailing Ship}{Engine Ship}{Nuclear powered Ship}] units [in this city]","Destroyed when the city is captured"],
+		"uniques": ["Must be next to [Coast]","Military Building","Provides [2] [Ship Parts]","Consumes [2] [Steel]","[+25]% Production when constructing [{Galley} {Sailing Ship} {Engine Ship} {Nuclear powered Ship}] units [in this city]","Destroyed when the city is captured"],
 		"requiredTech": "Ship Armour"
 	},
 	{
@@ -1690,7 +1690,7 @@
 		"hurryCostModifier": 15,
 		"specialistSlots": {"Merchant": 2},
 		"percentStatBonus": {"gold": 25},
-		"uniques": ["Economic Building","[+1 Gold] per [5] population [in this city]"],
+		"uniques": ["Economic Building","Only available <before adopting [Plutocracy]>","[+1 Gold] per [5] population [in this city]"],
 		"requiredTech": "Banking"
 	},
 	{
@@ -1699,7 +1699,7 @@
 		"specialistSlots": {"Governor":1},
 		"maintenance": 2,
 		"hurryCostModifier": 25,
-		"uniques": ["Economic Building","Political Building","Can only be built <in [Annexed] cities>"],
+		"uniques": ["Economic Building","Political Building","Can only be built <in [Annexed] cities>","Only available <after adopting [Imperialism]>"],
 		"requiredTech": "Banking"
 	},
 	{
@@ -2079,7 +2079,7 @@
 	{
 		"name": "Hanging Gardens",
 		"greatPersonPoints": {"Great Artist": 1},
-		"food": 4,
+		"food": 2,
 		"culture": 3,
 		"happiness": 1,
 		"isWonder": true,
@@ -2516,7 +2516,7 @@
 		"name": "Overwhelming Superiority",
 		"cost": 1500,
 		"isNationalWonder": true,
-		"uniques": ["Hidden until [6] social policy branches have been completed", "Triggers a global alert upon build start",
+		"uniques": ["Hidden until [8] social policy branches have been completed", "Triggers a global alert upon build start",
 			"Triggers a Cultural Victory upon completion", "Hidden when [Policy] Victory is disabled", "Cannot be hurried"]
 	},
 

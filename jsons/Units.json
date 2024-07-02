@@ -3,6 +3,7 @@
 		"name": "Worker",
 		"unitType": "Civilian",
 		"movement": 2,
+		"upgradesTo":"Mechanised Worker",
 		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"],
 		"cost": 70
 	},
@@ -19,27 +20,28 @@
 		"cost": 210
 	},
 	{
-		"name": "Galley Work Ships",
+		"name": "Galley Work Ship",
 		"unitType": "Civil Ship",
 		"movement": 2,
 		"cost": 50,
 		"requiredTech": "Sailing",
-		"uniques": ["Cannot enter ocean tiles","[+1] Movement <after discovering [Shipmaking]>","[+1] Movement <after discovering [Steam Power]>","Can build [Water] improvements on tiles","Automation is a primary action"]
+		"upgradesTo":"Modern Work Ship",
+		"uniques": ["Cannot enter ocean tiles","[+1] Movement <after discovering [Ship Making]>","[+1] Movement <after discovering [Steam Power]>","Can build [Water] improvements on tiles","Automation is a primary action"]
 	},
 	{
-		"name": "Modern Work Ships",
+		"name": "Modern Work Ship",
 		"unitType": "Civil Ship",
 		"movement": 2,
 		"requiredBuilding": "Naval Dockyard",
 		"cost": 160,
 		"requiredTech": "Advanced Ship Making",
-		"uniques": ["Consumes [1] [Ship Parts]","[+1] Movement <after discovering [Shipmaking]>","[+1] Movement <after discovering [Steam Power]>","Can build [Water] improvements on tiles","[-25]% construction time for [All] improvements","Automation is a primary action"]
+		"uniques": ["Consumes [1] [Ship Parts]","[+1] Movement <after discovering [Ship Making]>","[+1] Movement <after discovering [Steam Power]>","Can build [Water] improvements on tiles","[-25]% construction time for [All] improvements","Automation is a primary action"]
 	},
 	{
 		"name": "Settler",
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 110,
+		"cost": 90,
 		"obsoleteTech":"Navigation",
 		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction","Requires at least [3] population","[+1] Movement <after discovering [Horse Collar]>"],
 		"hurryCostModifier": 20
@@ -48,7 +50,7 @@
 		"name": "Pioneer",
 		"unitType": "Civilian",
 		"movement": 3,
-		"cost": 190,
+		"cost": 180,
 		"requiredTech":"Navigation",
 		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction","Requires at least [1] population","[+1] Movement <after discovering [Combustion]>","[+1] Sight"],
 		"hurryCostModifier": 10
@@ -236,7 +238,7 @@
 		"attackSound": "arrow"
 	},
 	{
-		"name": "Mercenary Archers",
+		"name": "Mercenary Archer",
 		"unitType": "Ranged Combat",
 		"movement": 2,
 		"strength": 20,
@@ -259,7 +261,7 @@
 		"cost": 90,
 		"requiredTech": "Engineering",
 		"obsoleteTech": "Hand Cannon",
-		"upgradesTo": "Heavy Musketeer",
+		"upgradesTo": "Hand Cannoneer",
 		"requiredResource":"Standing Army Maintainance",
 		"uniques": ["Consumes [1] [Weapon Parts]","Edged","Massed","Standing Army","Infantry","Never appears as a Barbarian unit"],
 		"promotions":["The Standing Army"],
@@ -274,12 +276,12 @@
 		"range":1,
 		"cost": 130,
 		"requiredTech": "Engineering",
-		"uniques": ["Unbuildable","Only available <in cities with a [Mercenary Office]>","Can upgrade to [Mercenary Blunderbussier] <after discovering [Hand Cannon]>","Infantry","Skirmish","Mercenary Army","Edged","Never appears as a Barbarian unit"],
+		"uniques": ["Unbuildable","Only available <in cities with a [Mercenary Office]>","Can upgrade to [Mercenary Hand Cannoneer] <after discovering [Hand Cannon]>","Infantry","Skirmish","Mercenary Army","Edged","Never appears as a Barbarian unit"],
 		"promotions": ["Mercenary Habit"],
 		"attackSound": "shot"
 	},
 	{
-		"name": "Heavy Musketeer",
+		"name": "Hand Cannoneer",
 		"unitType": "Ranged Combat",
 		"movement": 2,
 		"strength": 30,
@@ -294,7 +296,7 @@
 		"attackSound": "shot"
 	},
 	{
-		"name": "Mercenary Blunderbussier",
+		"name": "Mercenary Hand Cannoneer",
 		"unitType": "Ranged Combat",
 		"movement": 2,
 		"strength": 31,
@@ -366,7 +368,7 @@
 		"requiredTech": "Dynamite",
 		"obsoleteTech": "Combined Arms",
 		"requiredResource":"Standing Army Maintainance",
-		"uniques": ["Consumes [1] [Weapon Parts]","Gunpowder","Massed","Standing Army","Infantry","Never appears as a Barbarian unit"],
+		"uniques": ["Consumes [1] [Weapon Parts]","Gunpowder","Massed","Standing Army","Infantry","Can pass through impassable tiles","Never appears as a Barbarian unit"],
 		"promotions":["Resourceful Army","The Standing Army"],
 		"attackSound": "shot"
 	},
@@ -381,7 +383,7 @@
 		"upgradesTo":"Exoskeleton Spec Ops",
 		"requiredTech": "Combined Arms",
 		"requiredResource":"Standing Army Maintainance",
-		"uniques": ["Invisible to non-adjacent units","Consumes [2] [Weapon Parts]","Consumes [1] [Electronic Parts]","Gunpowder","Skirmish","Standing Army","Infantry","Never appears as a Barbarian unit"],
+		"uniques": ["Invisible to non-adjacent units","Consumes [2] [Weapon Parts]","Consumes [1] [Electronic Parts]","Gunpowder","Skirmish","Standing Army","Infantry","Can pass through impassable tiles","Never appears as a Barbarian unit"],
 		"promotions":["Skirmisher Training","The Standing Army"],
 		"attackSound": "shot"
 	},
@@ -395,7 +397,7 @@
 		"cost": 360,
 		"requiredTech": "Exoskeleton",
 		"requiredResource":"Standing Army Maintainance",
-		"uniques": ["Invisible to non-adjacent units","Consumes [2] [Weapon Parts]","Consumes [1] [Microchips]","Gunpowder","Skirmish","Standing Army","Mechanised","Never appears as a Barbarian unit"],
+		"uniques": ["Invisible to non-adjacent units","Consumes [2] [Weapon Parts]","Consumes [1] [Microchips]","Gunpowder","Skirmish","Standing Army","Mechanised","Can pass through impassable tiles","Never appears as a Barbarian unit"],
 		"promotions":["Skirmisher Training","The Standing Army","Transport Plane"],
 		"attackSound": "shot"
 	},
@@ -1177,7 +1179,7 @@
 		"rangedStrength": 85,
 		"range": 5,
 		"cost": 360,
-		"requiredTech": "Dynamite",
+		"requiredTech": "Railguns",
 		"requiredResource":"Standing Army Maintainance",
 		"uniques": ["Only available <if [Military Factory Complex] is constructed>","Consumes [2] [Weapon Parts]","Consumes [1] [Graphene]","Gunpowder","Massed","Standing Army","Mechanised","[+100]% Strength <vs [Massed] units> <when attacking>","Ranged attacks may be performed over obstacles","[+100]% Strength <vs cities> <when attacking>","[-75]% Strength <when defending>","Can move after attacking","Blast radius [1]","Never appears as a Barbarian unit"],
 		"promotions": ["The Standing Army","Transport Truck"],
