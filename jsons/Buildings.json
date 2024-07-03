@@ -368,7 +368,7 @@
 		"name": "Pottery Workshop",
 		"maintenance": 1,
 		"production": 1,
-		"hurryCostModifier": 5,
+		"hurryCostModifier": 0,
 		"uniques": ["Light Industry",
 			"[+2 Production] from [Clay] tiles [in this city]",
 			"[+1 Production] <in cities with a [Guild Complex]>"
@@ -376,11 +376,11 @@
 		"requiredTech": "Pottery"
 	},
 	{
-		"name": "Textile workshop",
+		"name": "Textile Workshop",
 		"maintenance": 1,
 		"production": 1,
 		"gold": 1,
-		"hurryCostModifier": 5,
+		"hurryCostModifier": 0,
 		"uniques": ["Light Industry",
 			"[+1 Production] from [Bovine] tiles [in this city]",
 			"[+1 Production] from [Caprinae] tiles [in this city]",
@@ -398,7 +398,7 @@
 		"percentStatBonus": {
 			"food": 5,
 			"production": 5},
-		"hurryCostModifier": 10,
+		"hurryCostModifier": 25,
 		"uniques": ["Light Industry",
 			"[+1 Production] from [Lumber Improvement] tiles [in this city] <after discovering [Carpentry]>",
 			"[+1 Production] from [Extraction Improvement] tiles [in this city]",
@@ -411,7 +411,7 @@
 		"specialistSlots": {"Engineer": 1,"Artist": 1},
 		"uniques": ["Light Industry",
 			"[+1 Gold] from [Lumber Improvement] tiles [in this city]","[+1 Gold] from [Hard Wood] tiles [in this city]","[+1 Production] <in cities with a [Guild Complex]>"],
-		"hurryCostModifier": 25,
+		"hurryCostModifier": 0,
 		"requiredTech": "Carpentry"
 	},
 	{
@@ -448,6 +448,13 @@
 			],
 		"hurryCostModifier": 25,
 		"requiredTech": "Guilds"
+	},
+	{
+		"name": "Light Industry Expansion",
+		"cost": 400,
+		"uniques": ["Gain a free [Bakery] [in this city]","Gain a free [Brewery] [in this city]","Gain a free [Pottery Workshop] [in this city]","Gain a free [Civilian Blacksmith] [in this city]","Gain a free [Paper Maker] [in this city]"],
+		"hurryCostModifier": -30,
+		"requiredTech": "Apprenticeship"
 	},
 	{
 		"name": "Civilian Factory Complex",
@@ -595,10 +602,11 @@
 	{
 		"name": "Foundry",
 		"maintenance": 1,
+		"production": 2,
 		"specialistSlots": {"Engineer": 1},		
 		"hurryCostModifier": 0,
 		"uniques": ["Heavy Industry",
-			"[+5]% Production when constructing [All] units [in this city]"
+			"[+10]% Production when constructing [All] units [in this city]"
 			],
 		"requiredNearbyImprovedResources": ["Metal", "Minerals"],	
 		"requiredTech": "Bronze Working"
@@ -1394,7 +1402,7 @@
 		"name": "Barrack",
 		"hurryCostModifier": 25,
 		"maintenance": 2,
-		"uniques": ["Military Building","[Military] units gain the [Hardened] promotion","New [Military] units start with [20] Experience [in this city]","Provides [2] [Standing Army Maintainance]", "Destroyed when the city is captured"],
+		"uniques": ["Military Building","[Military] units gain the [Hardened] promotion","New [Military] units start with [20] Experience [in this city]","Provides [1] [Standing Army Maintainance]", "Destroyed when the city is captured"],
 		"requiredTech": "Copper Working"
 	},
 	{
@@ -1467,7 +1475,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","[Military] units gain the [Classical Arms] promotion","Destroyed when the city is captured"],
+		"uniques": ["Military Building","New [Infantry] units start with [10] Experience [in this city]","[Military] units gain the [Classical Arms] promotion","Destroyed when the city is captured"],
 		"requiredTech": "Iron Working"
 	},
 	{
@@ -1483,7 +1491,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>","Destroyed when the city is captured"],
+		"uniques": ["Military Building","New [Gunpowder] units start with [10] Experience [in this city]","[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>","Destroyed when the city is captured"],
 		"requiredTech": "Gunpowder"
 	},
 	{
