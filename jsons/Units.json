@@ -584,7 +584,7 @@
 		"upgradesTo":"Security Company",
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Replaceable Parts",
-		"uniques": ["Only available <in cities with a [Mercenary Office]>","Unbuildable","Gunpowder","Massed","Mercenary Army","Infantry"],
+		"uniques": ["Only available <in cities with a [Mercenary Office]>","Unbuildable","Gunpowder","Massed","Mercenary Army","Infantry","Never appears as a Barbarian unit"],
 		"promotions":["Mercenary Habit"],
 		"attackSound": "metalhit"
 	},
@@ -598,8 +598,8 @@
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo":"Heavy Infantry",
 		"requiredResource":"Standing Army Maintainance",
-		"uniques": ["Only available <after adopting [Revolution]>","Gunpowder","Edged","Infantry","Massed","Standing Army","Consumes [1] [Weapon Parts]","Never appears as a Barbarian unit"],
-		"promotions":["The Standing Army","Revolutionaries Ability"],
+		"uniques": ["Only available <after adopting [Revolution]>","Gunpowder","Edged","Infantry","Massed","Standing Army","Consumes [1] [Weapon Parts]","[+5]% Strength bonus for [Military] units within [2] tiles","Never appears as a Barbarian unit"],
+		"promotions":["The Standing Army"],
 		"attackSound": "shot"
 	},
 	{
@@ -722,7 +722,7 @@
 		"strength": 65,
 		"cost": 210,
 		"requiredTech": "Replaceable Parts",
-		"uniques": ["Only available <in cities with a [Mercenary Office]>","Unbuildable","Gunpowder","Massed","Mercenary Army","Infantry"],
+		"uniques": ["Only available <in cities with a [Mercenary Office]>","Unbuildable","Gunpowder","Massed","Mercenary Army","Infantry","Never appears as a Barbarian unit"],
 		"promotions":["Mercenary Habit"],
 		"attackSound": "metalhit"
 	},
@@ -1681,8 +1681,9 @@
 		"rangedStrength": 7,
 		"range":1,
 		"uniqueTo": "Barbarians",
+		"requiredTech": "Animal Husbandry",
 		"obsoleteTech": "Industrialization",
-		"uniques": ["Edged","Mounted","Massed","Barbaric","Levy Army","[+50]% Strength <starting from the [Classical era]>","[+100]% Strength <starting from the [Medival era]>","[+100]% Strength <starting from the [Renaissance era]>","[+100]% Strength <starting from the [Imperial era]>","Can move after attacking"],
+		"uniques": ["Edged","Mounted","Massed","Barbaric","Levy Army","[+50]% Strength <starting from the [Classical era]>","[+200]% Strength <starting from the [Medival era]>","[+100]% Strength <starting from the [Renaissance era]>","[+200]% Strength <starting from the [Imperial era]>","Can move after attacking"],
 		"promotions":["Barbaric"],
 		"attackSound": "metalhit"
 	},
@@ -1692,6 +1693,7 @@
 		"movement": 2,
 		"strength": 10,
 		"uniqueTo": "Barbarians",
+		"requiredTech":"Astronomy",
 		"uniques": ["Edged","Sailing Ship","Massed","Barbaric","Levy Army","Cannot enter ocean tiles <before discovering [Monocular]>","[+100]% Strength <starting from the [Medival era]>","[+100]% Strength <starting from the [Renaissance era]>","[+100]% Strength <starting from the [Imperial era]>","Can move after attacking","Invisible to non-adjacent units"],
 		"promotions":["Barbaric"],
 		"attackSound": "metalhit"
