@@ -360,14 +360,14 @@
 					"Provides [1] [Alcohol] <with [Grape]>",
 					"Provides [1] [Alcohol] <with [Tuber]>",
 					"Provides [1] [Alcohol] <with [Fruit]>",
-			"[+1 Production] <in cities with a [Guild Complex]>"
-				],
+			"[+1 Production] <in cities with a [Guild Complex]>"],
 		"requiredTech": "Pottery"
 	},
 	{
 		"name": "Pottery Workshop",
 		"maintenance": 1,
 		"production": 2,
+		"gold": 2,
 		"hurryCostModifier": 0,
 		"uniques": ["Light Industry",
 			"[+2 Production] from [Clay] tiles [in this city]",
@@ -398,6 +398,7 @@
 		"percentStatBonus": {
 			"food": 5,
 			"production": 5},
+		"specialistSlots": {"Engineer":1},
 		"hurryCostModifier": 25,
 		"uniques": ["Light Industry",
 			"[+1 Production] from [Lumber Improvement] tiles [in this city] <after discovering [Carpentry]>",
