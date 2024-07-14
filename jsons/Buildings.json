@@ -345,14 +345,14 @@
 	{
 		"name": "Infrastructure Expansion",
 		"cost": 450,
-		"uniques": ["Infrastructure","Gain a free [Aqueduct] [in this city]","Gain a free [Healer's Hut] [in this city]","Gain a free [Granary] [in this city]","Gain a free [Road Network] [in this city]"],
+		"uniques": ["Unsellable","Infrastructure","Gain a free [Aqueduct] [in this city]","Gain a free [Healer's Hut] [in this city]","Gain a free [Granary] [in this city]","Gain a free [Road Network] [in this city]"],
 		"hurryCostModifier": 10,
 		"requiredTech": "Apprenticeship"
 	},
 	{
 		"name": "Martine Expansion",
 		"cost": 200,
-		"uniques": ["Infrastructure","Gain a free [Fishing ports] [in this city]","Gain a free [Lighthouse] [in this city]","Must be next to [Coast]"],
+		"uniques": ["Unsellable","Infrastructure","Gain a free [Fishing ports] [in this city]","Gain a free [Lighthouse] [in this city]","Must be next to [Coast]"],
 		"hurryCostModifier": 10,
 		"requiredTech": "Apprenticeship"
 	},
@@ -477,7 +477,7 @@
 	{
 		"name": "Light Industry Expansion",
 		"cost": 400,
-		"uniques": ["Infrastructure","Gain a free [Bakery] [in this city]","Gain a free [Brewery] [in this city]","Gain a free [Pottery Workshop] [in this city]","Gain a free [Civilian Blacksmith] [in this city]","Gain a free [Paper Maker] [in this city]"],
+		"uniques": ["Unsellable","Infrastructure","Gain a free [Bakery] [in this city]","Gain a free [Brewery] [in this city]","Gain a free [Pottery Workshop] [in this city]","Gain a free [Civilian Blacksmith] [in this city]","Gain a free [Paper Maker] [in this city]"],
 		"hurryCostModifier": 10,
 		"requiredTech": "Apprenticeship"
 	},
@@ -825,6 +825,14 @@
 					"Provides [1] [Standing Army Maintainance]",
 					"[+25]% Production when constructing [All] buildings [in this city]",
 					"[+25]% Production when constructing [{Civilian} {Civil Ship}] units [in this city]",
+					"Gain a free [Medieval Era Start] [in this city] <if starting in the [Medieval era]>",
+					"Gain a free [Renaissance Era Start] [in this city] <if starting in the [Renaissance era]>",
+					"Gain a free [Imperial Era Start] [in this city] <if starting in the [Imperial era]>",
+					"Gain a free [Industrial Era Start] [in this city] <if starting in the [Industrial era]>",
+					"Gain a free [Modern Era Start] [in this city] <if starting in the [Modern era]>",
+					"Gain a free [Atomic Era Start] [in this city] <if starting in the [Atomic era]>",
+					"Gain a free [Information Era Start] [in this city] <if starting in the [Information era]>",
+					"Gain a free [Future Era Start] [in this city] <if starting in the [Future era]>",
 					"Indicates the capital city"]
 	},
 	{
@@ -1712,7 +1720,7 @@
 	{
 		"name": "Business Expansion",
 		"cost": 400,
-		"uniques": ["Economic Building","Gain a free [Hunter's Hut] [in this city]","Gain a free [Livestock Market] [in this city]","Gain a free [Crops Market] [in this city]","Gain a free [Trading Post] [in this city]"],
+		"uniques": ["Unsellable","Economic Building","Gain a free [Hunter's Hut] [in this city]","Gain a free [Livestock Market] [in this city]","Gain a free [Crops Market] [in this city]","Gain a free [Trading Post] [in this city]"],
 		"hurryCostModifier": 10,
 		"requiredTech": "Banking"
 	},
@@ -2583,5 +2591,37 @@
 		"uniques": ["Triggers voting for the Diplomatic Victory", "Hidden when [Diplomatic] Victory is disabled", "Triggers a global alert upon completion"],
 		"quote": "'More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that is why we have the United Nations.' - Kofi Annan"
 	},
-
+///Starting maintainance
+	{
+		"name": "Medieval Era Start",
+		"uniques": ["Limited to [1] per Civilization","Only available <if starting in the [Medieval era]>","Unbuildable","Unsellable","Provides [3] [Metal]","Provides [3] [Standing Army Maintainance]"]
+	},
+	{
+		"name": "Renaissance Era Start",
+		"uniques": ["Limited to [1] per Civilization","Only available <if starting in the [Renaissance era]>","Unbuildable","Unsellable","Provides [3] [Metal]","Provides [3] [Standing Army Maintainance]"]
+	},
+	{
+		"name": "Imperial Era Start",
+		"uniques": ["Limited to [1] per Civilization","Only available <if starting in the [Imperial era]>","Unbuildable","Unsellable","Provides [4] [Weapon Parts]","Provides [4] [Standing Army Maintainance]"]
+	},
+	{
+		"name": "Industrial Era Start",
+		"uniques": ["Limited to [1] per Civilization","Only available <if starting in the [Industrial era]>","Unbuildable","Unsellable","Provides [5] [Weapon Parts]","Provides [5] [Standing Army Maintainance]"]
+	},
+	{
+		"name": "Modern Era Start",
+		"uniques": ["Limited to [1] per Civilization","Only available <if starting in the [Modern era]>","Unbuildable","Unsellable","Provides [5] [Weapon Parts]","Provides [5] [Standing Army Maintainance]"]
+	},
+	{
+		"name": "Atomic Era Start",
+		"uniques": ["Limited to [1] per Civilization","Only available <if starting in the [Atomic era]>","Unbuildable","Unsellable","Provides [5] [Weapon Parts]","Provides [5] [Standing Army Maintainance]"]
+	},
+	{
+		"name": "Information Era Start",
+		"uniques": ["Limited to [1] per Civilization","Only available <if starting in the [Information era]>","Unbuildable","Unsellable","Provides [5] [Vehicle Parts]","Provides [5] [Weapon Parts]","Provides [5] [Standing Army Maintainance]"]
+	},
+	{
+		"name": "Future Era Start",
+		"uniques": ["Limited to [1] per Civilization","Only available <if starting in the [Future era]>","Unbuildable","Unsellable","Provides [5] [Fuel]","Provides [5] [Vehicle Parts]","Provides [5] [Weapon Parts]","Provides [5] [Standing Army Maintainance]"]
+	},
 ]
