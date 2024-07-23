@@ -31,11 +31,11 @@
 	{
 		"name": "Modern Work Ship",
 		"unitType": "Civil Ship",
-		"movement": 2,
+		"movement": 4,
 		"requiredBuilding": "Naval Dockyard",
 		"cost": 160,
 		"requiredTech": "Advanced Ship Making",
-		"uniques": ["Consumes [1] [Ship Parts]","[+1] Movement <after discovering [Ship Making]>","[+1] Movement <after discovering [Steam Power]>","Can build [Water] improvements on tiles","[-25]% construction time for [All] improvements","Automation is a primary action"]
+		"uniques": ["Consumes [1] [Ship Parts]","Can build [Water] improvements on tiles","[-25]% construction time for [All] improvements","Automation is a primary action"]
 	},
 	{
 		"name": "Settler",
@@ -867,7 +867,6 @@
 		"movement": 3,
 		"strength": 28,
 		"cost": 95,
-		"upgradesTo":"Heavy Cavalry",
 		"requiredTech": "Stirrup",
 		"obsoleteTech": "Tactics",
 		"requiredResource":"Standing Army Maintainance",

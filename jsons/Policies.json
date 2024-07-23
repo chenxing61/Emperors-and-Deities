@@ -21,7 +21,7 @@
                             "[+1 Faith] [in all cities]"
                 ],
                 "row": 1,
-                "column": 3
+                "column": 2
             },
             {
                 "name": "Leader Worship",
@@ -29,7 +29,7 @@
                             "[+1 Gold] [in all cities connected to capital]"
                 ],
                 "row": 1,
-                "column": 5
+                "column": 4
             },
             {
                 "name": "Warth of Gods",
@@ -37,7 +37,7 @@
                             "[+5]% Strength <for [All] units> <upon founding a Pantheon>",
                             "[+20]% Production when constructing [Military] units [in all cities] <when at war>"
                 ],
-                "requires": ["Creation Myths"],
+                "requires": ["Creation Myths","Leader Worship"],
                 "row": 3,
                 "column": 2
             },
@@ -103,7 +103,7 @@
                 ],
                 "requires": ["Praying Ritual"],
                 "row": 3,
-                "column": 5
+                "column": 3
             },
             {
                 "name": "Monotheism Complete",
@@ -144,7 +144,7 @@
                 "name": "Mouth To Ear",
                 "uniques": ["[+1 Culture] per [5] population [in all cities]","[+33]% Production when constructing [Light Industry] buildings [in all cities connected to capital]"
                 ],
-                "row": 1,
+                "row": 2,
                 "column": 5
             },
             {
@@ -191,20 +191,21 @@
                 "row": 2,
                 "column": 1
             },
-            {
-                "name": "Military Nobilities",
-                "uniques": ["Provides [1] [Noble Army Maintainance]","Provides [2] [Standing Army Maintainance]","Provides [1] [Noble Army Maintainance] <after adopting [Chiefdom]>","[+25]% Production when constructing [Static Defense] buildings [in all cities]"
-                ],
-                "requires": ["Military Tradition"],
-                "row": 2,
-                "column": 3
-            },
+            
             {
                 "name": "Early Mobilisation",
                 "uniques": ["[+25]% Production when constructing [Levy Army] units [in all cities]","[Gold] cost of purchasing [All] units [-10]%"
                 ],
                 "requires": ["Military Tradition"],
                 "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Military Nobilities",
+                "uniques": ["Provides [1] [Noble Army Maintainance]","Provides [2] [Standing Army Maintainance]","Provides [1] [Noble Army Maintainance] <after adopting [Chiefdom]>","[+25]% Production when constructing [Static Defense] buildings [in all cities]"
+                ],
+                "requires": ["Military Tradition"],
+                "row": 3,
                 "column": 5
             },
             {
@@ -293,21 +294,21 @@
                 "name": "Trade Alliance",
                 "uniques": ["Gifts of Gold to City-States generate [25]% more Influence","[+50]% resources gifted by City-States","[-25]% maintenance on road & railroads"
                 ],
-                "row": 1,
+                "row": 2,
                 "column": 3
             },
             {
                 "name": "Convoys and Mecenary",
                 "uniques": ["[Gold] cost of purchasing [All] units [-10]%","[+1] Sight <for [{Military} {Water}] units>"
                 ],
-                "row": 1,
+                "row": 2,
                 "column": 5
             },
             {
                 "name": "Monopoly",
                 "uniques": ["[+1] Happiness from each type of luxury resource","[+25]% Production when constructing [Economic Building] buildings [in all cities]"],
                 "requires": ["Patreonage","Trade Alliance","Convoys and Mecenary"],
-                "row": 2,
+                "row": 3,
                 "column": 3
             },
             {
@@ -391,28 +392,29 @@
 
                 ],
                 "row": 1,
-                "column": 2
+                "column": 3
             },
             {
-                "name": "Military Nobles",
-                "uniques": ["Comment [Enables you to build Knights and its equivalents but disables your acess to build Heavy Cavalry]","[-1 Gold] [in all cities]","[+1] Happiness from each type of luxury resource <after adopting [Plutocracy]>"
+                "name": "Knighthood",
+                "uniques": ["Comment [Enables you to build Knights and its equivalents but disables your access to build Heavy Cavalry]","[-1 Gold] [in all cities]","[+1] Happiness from each type of luxury resource <after adopting [Plutocracy]>"
                 ],
-                "row": 1,
-                "column": 4
+                "row": 2,
+                "column": 1
             },
             {
                 "name": "Manorialism",
                 "uniques": ["Comment [Enables you to build Manor,an improvement that provides Noble Army Maintainance and Culture at cost of limited development]","[+1 Gold] from every [Light Industry]","[+1 Culture] from every [Static Defense]"],
 
                 "row": 2,
-                "column": 2
+                "column": 5
             },
             {
                 "name": "Personal Union",
                 "uniques": ["Can spend Gold to annex or puppet a City-State that has been your ally for [12] turns.<before adopting [Monotheism]>","Can spend Gold to annex or puppet a City-State that has been your ally for [8] turns.<after adopting [Monotheism]>"
                 ],
-                "row": 2,
-                "column": 4
+                "requires":["Vassalage"],
+                "row": 3,
+                "column": 3
             },
             {
                 "name": "Feudalism Complete",
@@ -444,16 +446,14 @@
             },
             {
                 "name": "Scholasticism",
-                "uniques": ["[+1 Faith] from every [Educational Building]","[+5]% [Science] from every [Worship Place]","Comment [Enables Missionary to aid research in city centre tiles after adopting Schlorship]"
-
-                ],
+                "uniques": ["[+1 Faith] from every [Educational Building]","[+5]% [Science] from every [Worship Place]","Comment [Enables Missionary to aid research in city centre tiles after adopting Schlorship]"],
                 "row": 1,
                 "column": 5
             },
             {
                 "name": "Sanctity",
                 "uniques": ["[Faith] cost of purchasing [Missionary] units [-25]%","[Faith] cost of purchasing [Inquisitor] units [-25]%","Gain a free [Enhancer] belief <after adopting [Monotheism]>","[+3 Culture] from every [Practice Ground] <after adopting [Polytheism]>"],
-                "requires":["Scholasticism"],
+                "requires":["Theology Conferences","Scholasticism"],
                 "row": 2,
                 "column": 3
             },
@@ -461,6 +461,7 @@
                 "name": "Proxy of the god",
                 "uniques": ["[+1 Faith] from every [Political Building]","[+2 Gold] from every [Political Building] <after adopting [Plutocracy]>","[+2 Culture, +1 Science] from every [Organise Place]"
                 ],
+                "requires":["Sanctity"],
                 "row": 3,
                 "column": 3
             },
@@ -507,7 +508,7 @@
                 "uniques": ["[+5 Culture] from every [Palace]","[+1 Culture] from every [Political Building]","Provides [2] [Standing Army Maintainance]","[+5]% Strength <for [All] units>"],
                 "requires":["The Theses on the Door"],
                 "row": 3,
-                "column": 3
+                "column": 1
             },
             {
                 "name": "Denominations",
@@ -550,7 +551,7 @@
             {
                 "name": "Education Focus",
                 "uniques": ["Science gained from research agreements [+50]%","[+1 Science] per [3] population [in all cities] <in cities with at least [10] [Population]>","[+1 Culture] from every [Educational Building] <after adopting [Scholarship]>"],
-                "prerequisites":["Rise of Citizens"],
+                "requires":["Rise of Citizens"],
                 "row": 2,
                 "column": 1
             },
@@ -558,7 +559,7 @@
                 "name": "Virtue Politics",
                 "uniques": ["[+1 Culture] from [Policy Improvement] tiles [in all cities]","[+25]% Golden Age length","[+2 Culture] from every [Organise Place] <after adopting [Theocracy]>"
                 ],
-                "prerequisites":["Rise of Citizens"],
+                "requires":["Rise of Citizens"],
                 "row": 2,
                 "column": 5
             },
@@ -567,7 +568,7 @@
                 "name": "Humanitarianism",
                 "uniques": ["[+2 Happiness] [in all cities]","[+25]% growth [in all cities]","[+10]% Strength <for [Levy Army] units>"
                 ],
-                "prerequisites":["Education Focus","Virtue Politics"],
+                "requires":["Education Focus","Virtue Politics"],
                 "row": 3,
                 "column": 3
             },
@@ -603,7 +604,7 @@
                 "name": "Naval Supriority",
                 "uniques": ["[+25]% Production when constructing [Sailing Ship] units [in all cities]","[+15]% Production when constructing [Sailing Ship] units [in all cities] <after adopting [Plutocracy]>"
                 ],
-                "prerequisites":["Colonialism"],
+                "requires":["Colonialism"],
                 "row": 2,
                 "column": 1
             },
@@ -619,7 +620,7 @@
                 "uniques": ["[+10]% [Culture] [in all cities]","[+10]% [Culture] from every [Wonder] <after adopting [Scholarship]>","[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>"
                 ],
                 "row": 3,
-                "prerequisites":["Iron fists"],
+                "requires":["Iron fists"],
                 "column": 3
             },
             {
@@ -653,7 +654,7 @@
                 "name": "Collective Rule",
                 "uniques": ["[-25]% construction time for [All] improvements","[+25]% growth [in all cities]"
                 ],
-                "prerequisites":["Long Live the Revoltion!"],
+                "requires":["Long Live the Revoltion!"],
                 "row": 2,
                 "column": 3
             },
@@ -663,7 +664,7 @@
                     "[+5]% Production when constructing [All] buildings [in all cities]",
                     "Each city founded increases culture cost of policies [25]% less than normal"
                 ],
-                "prerequisites":["Collective Rule"],
+                "requires":["Collective Rule"],
                 "row": 3,
                 "column": 1
             },
@@ -671,7 +672,7 @@
                 "name": "Spreading the Revolution",
                 "uniques": ["Resting point for Influence with City-States is increased by [20]","Allied City-States will occasionally gift Great People","Allied City-States provide [Culture] equal to [25]% of what they produce for themselves"
                 ],
-                "prerequisites":["Collective Rule"],
+                "requires":["Collective Rule"],
                 "row": 3,
                 "column": 5
             },
@@ -714,7 +715,7 @@
             {
                 "name": "Cater to Profiteers",
                 "uniques": ["[+1 Gold] from every [Economic Building]","[+1 Gold] from every [Educational Building]","[+1 Gold] from every [Light Industry]","[+1 Gold] from every [Heavy Industry]","[-1 Happiness] [in all cities]"],
-                "prerequisites":["Privatised Property"],
+                "requires":["Privatised Property"],
                 "row": 2,
                 "column": 1
             },
@@ -722,7 +723,7 @@
                 "name": "Neo-colonialism",
                 "uniques": ["Gifts of Gold to City-States generate [+25]% more Influence","[+1] Happiness from each type of luxury resource","Resting point for Influence with City-States is increased by [-20]"
                 ],
-                "prerequisites":["Privatised Property"],
+                "requires":["Privatised Property"],
                 "row": 2,
                 "column": 3
             },
@@ -730,7 +731,7 @@
                 "name": "Agricultural Fundings(Liberalism)",
                 "uniques": ["[+1 Food] from every [Agricultural Improvement]","[+1 Food] from every [Agriculture]","[-2 Gold] from every [Agriculture]"
                 ],
-                "prerequisites":["Privatised Property"],
+                "requires":["Privatised Property"],
                 "row": 2,
                 "column": 5
             },
@@ -738,7 +739,7 @@
                 "name": "Democratic Crusaders",
                 "uniques": ["[+25]% Production when constructing [Military Building] buildings [in all cities]","Militaristic City-States grant units [2] times as fast when you are at war with a common nation"
                 ],
-                "prerequisites":["Freedom of Experssion","Neo-colonialism"],
+                "requires":["Neo-colonialism"],
                 "row": 3,
                 "column": 3
             },
@@ -787,14 +788,14 @@
             {
                 "name": "Religion and Country",
                 "uniques": ["[+1 Faith] from every [Political Building]","[+10]% Strength <for [Levy Army] units>","[+1 Culture] per [5] population [in all cities] <after adopting [Polytheism]>","[+1 Culture] from every [Organise Place] <after adopting [Monotheism]>"],
-                "prerequisites":["Romantised Tradition","Class Conciliation(Conservative)"],
+                "requires":["Romantised Tradition","Class Conciliation(Conservative)"],
                 "row": 2,
                 "column": 4
             },
             {
                 "name": "Agricultural Fundings(Conservative)",
                 "uniques": ["[+1 Food] from every [Agricultural Improvement]","[+1 Food] from every [Agriculture]","[-2 Gold] from every [Agriculture]"],
-                "prerequisites":["Mixed Economy"],
+                "requires":["Mixed Economy"],
                 "row": 2,
                 "column": 1
             },
@@ -802,7 +803,7 @@
                 "name": "De-radicalise",
                 "uniques": ["[-1 Culture] from every [Educational Building]","[-25]% City-State Influence degradation","[-25]% Unhappiness from [Specialists] [in all cities]"
                 ],
-                "prerequisites":["Religion and Country"],
+                "requires":["Religion and Country"],
                 "row": 3,
                 "column": 4
             },
@@ -851,7 +852,7 @@
             {
                 "name": "Secret police",
                 "uniques": ["[-1 Culture, +1 Happiness] from every [Political Building]","[+10]% City Strength from defensive buildings"],
-                "prerequisites":["Militarised Nation"],
+                "requires":["Militarised Nation"],
                 "row": 2,
                 "column": 4
             },
@@ -859,7 +860,7 @@
             {
                 "name": "Foriegn puppets",
                 "uniques": ["[-25]% City-State Influence degradation","Military Units gifted from City-States start with [20] XP"],
-                "prerequisites":["Militarised Nation"],
+                "requires":["Militarised Nation"],
                 "row": 2,
                 "column": 2
             },
@@ -867,7 +868,7 @@
                 "name": "National superiority",
                 "uniques": ["[+15]% Strength","[+25]% Production when constructing [Military] units [in all cities]"
                 ],
-                "prerequisites":["Populism","Class Conciliation(Fascism)","Militarised Nation"],
+                "requires":["Populism","Class Conciliation(Fascism)","Militarised Nation"],
                 "row": 3,
                 "column": 3
             },
@@ -900,7 +901,7 @@
             {
                 "name": "Nationalization",
                 "uniques": ["[+25]% [Science] from every [Civilian Factory Complex]","[+50]% Production when constructing [Heavy Industry] buildings [in all cities]","[-25]% maintenance on road & railroads"],
-                "prerequisites":["Redistribution of Means of Production(Socialism)"],
+                "requires":["Redistribution of Means of Production(Socialism)"],
                 "row": 2,
                 "column": 1
             },
@@ -908,7 +909,7 @@
             {
                 "name": "Red Army",
                 "uniques": ["[Military] units gain the [Commissar] promotion","[+1 Happiness] [in annexed cities]"],
-                "prerequisites":["Redistribution of Means of Production(Socialism)"],
+                "requires":["Redistribution of Means of Production(Socialism)"],
                 "row": 2,
                 "column": 5
             },
@@ -916,21 +917,21 @@
                 "name": "Comintern",
                 "uniques": ["Gifts of Gold to City-States generate [50]% more Influence","[+50]% resources gifted by City-States"
                 ],
-                "prerequisites":["Redistribution of Means of Production(Socialism)"],
+                "requires":["Redistribution of Means of Production(Socialism)"],
                 "row": 2,
                 "column": 3
             },
             {
                 "name": "Interal Purges",
                 "uniques": ["[+1 Happiness, -2 Culture] [in all cities]","[+5]% Culture cost of adopting new Policies","[-5]% Culture cost of adopting new Policies <after adopting [Humanitarianism]>"],
-                "prerequisites":["Redistribution of Means of Production(Socialism)"],
+                "requires":["Comintern"],
                 "row": 3,
                 "column": 1
             },
             {
                 "name": "Collective Democracy",
                 "uniques": ["[+1 Culture] per [4] population [in all cities]","[-10]% Unhappiness from [Population] [in all cities]"],
-                "prerequisites":["Redistribution of Means of Production(Socialism)"],
+                "requires":["Nationalization"],
                 "row": 3,
                 "column": 5
             },
@@ -969,7 +970,7 @@
                 "name": "Redistribution of Means of Production(Anarchist)",
                 "uniques": ["Comment [Enables you to choose your economy route in your capital.]"
                 ],
-                "prerequisites":["Abolishment of Government"],
+                "requires":["Abolishment of Government"],
                 "row": 2,
                 "column": 1
             },
@@ -977,7 +978,7 @@
                 "name": "Militia Army",
                 "uniques": ["Comment [Enables you to construct Advanced Guerrilla, A Modern levy skirmisher Infantry unit.]"
                 ],
-                "prerequisites":["Redistribution of Means of Production(Anarchist)"],
+                "requires":["Redistribution of Means of Production(Anarchist)"],
                 "row": 3,
                 "column": 1
             },
@@ -993,7 +994,7 @@
                 "name": "Diversity of Opinions",
                 "uniques": ["[-25]% Food consumption by specialists [in all cities]","[+33]% Strength for cities <when defending>"
                 ],
-                "prerequisites":["Complete Autonomy"],
+                "requires":["Complete Autonomy"],
                 "row": 2,
                 "column": 5
             },
@@ -1002,7 +1003,7 @@
                 "uniques": ["[-1 Culture, +1 Happiness] from every [Political Building]","Gain a free [Monument] [in all cities]","Gain a free [Town Square] [in all cities]"
 
                 ],
-                "prerequisites":["Diversity of Opinions"],
+                "requires":["Diversity of Opinions"],
                 "row": 3,
                 "column": 5
             },
@@ -1031,14 +1032,14 @@
                 "uniques": ["[+3 Culture] from every [Garden]","[+3 Culture] from every [Holiday Resort]"
                 ],
                 "row": 1,
-                "column": 2
+                "column": 1
             },
             {
                 "name": "Sustainable Power Source",
                 "uniques": ["[+10]% [Production] from every [Hydro Plant]","[+10]% [Production] from every [Solar Plant]","[+15]% [Production] from every [Recycling Center]","[+5]% [Production] from every [Infrastructure] <after adopting [Anarchism]>"
                 ],
                 "row": 1,
-                "column": 4
+                "column": 5
             },
             {
                 "name": "Water Purification",
@@ -1051,7 +1052,7 @@
                 "name": "Decarbonization",
                 "uniques": ["Gain a free [Carbon Capture] [in all cities]","Comment [Upgrade all existing and future Coal Plant with 'Carbon Capture',a style that provides more science and culture at cost of production]"
                 ],
-                "prerequisites":["Protected Areas","Sustainable Power Source","Decarbonization"],
+                "requires":["Protected Areas","Sustainable Power Source","Water Purification"],
                 "row": 3,
                 "column": 3
             },
@@ -1094,7 +1095,7 @@
                 "name": "Every-man-a-terminal",
                 "uniques": ["[+2 Production] from every specialist [in all cities]"
                 ],
-                "prerequisites":["Reformed Bureaucracy","Advanced Planning"],
+                "requires":["Reformed Bureaucracy","Advanced Planning"],
                 "row": 2,
                 "column": 3
             },
@@ -1102,7 +1103,7 @@
                 "name": "Effective governing",
                 "uniques": ["[-10]% maintenance cost for buildings [in all cities]"
                 ],
-                "prerequisites":["Every-man-a-terminal"],
+                "requires":["Every-man-a-terminal"],
                 "row": 3,
                 "column": 3
             },
@@ -1143,24 +1144,27 @@
                 "name": "High Academies",
                 "uniques": ["[+100]% Yield from every [Great Improvement]"
                 ],
+                "requires":["Science Cities"],
                 "row": 3,
-                "column": 2
-            },
-            {
-                "name": "Control of the Orbit",
-                "uniques": ["[+50]% Production when constructing [Space Race Building] buildings [in all cities]"
-                ],
-                "row": 3,
-                "column": 4
+                "column": 5
             },
             {
                 "name": "Space exploration",
                 "uniques": ["[+10]% [Production] from every [Space Race Building]"
                 ],
-                "prerequisites":["Visions of future","Science Cities","High Academies","Control of the Orbit"],
+                "requires":["Visions of future"],
                 "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Control of the Orbit",
+                "uniques": ["[+50]% Production when constructing [Space Race Building] buildings [in all cities]"
+                ],
+                "requires":["Space exploration"],
+                "row": 3,
                 "column": 3
             },
+            
             {
                 "name": "Space Race Complete",
                 "uniques": ["[2] Free Technologies"
@@ -1199,22 +1203,24 @@
                 "name": "Internet of Humans and Things",
                 "uniques": ["[+10]% growth [in all cities]","[+10]% Production when constructing [All] buildings [in all cities]"
                 ],
-                "row": 3,
-                "column": 1
+                "requires":["Usage of AI"],
+                "row": 2,
+                "column": 5
             },
             {
                 "name": "Complete Welfare",
                 "uniques": ["[+1 Happiness] per [4] social policies adopted"
                 ],
-                "row": 3,
-                "column": 5
+                "requires":["Scarcity Reduction"],
+                "row": 2,
+                "column": 1
             },
             {
                 "name": "Utopia",
                 "uniques": ["[+100]% Production when constructing [Overwhelming Superiority] buildings [in all cities]"
                 ],
-                "prerequisites":["Scarcity Reduction","Usage of AI","Internet of Humans and Things","Complete Welfare"],
-                "row": 2,
+                "requires":["Internet of Humans and Things","Complete Welfare"],
+                "row": 3,
                 "column": 3
             },
             {
@@ -1255,22 +1261,24 @@
                 "name": "Reinforced Organs",
                 "uniques": ["[+25]% growth [in all cities]","[+1 Culture] from every [Infrastructure]"
                 ],
-                "row": 3,
+                "requires":["Prostheics"],
+                "row": 2,
                 "column": 1
             },
             {
                 "name": "Modification Laws",
                 "uniques": ["[+2 Culture] from every [Research Building]"
                 ],
-                "row": 3,
+                "requires":["Gene Purification"],
+                "row": 2,
                 "column": 5
             },
             {
                 "name": "Ubermersh",
                 "uniques": ["[+20]% Strength","[+1] Movement <for [All] units>"
                 ],
-                "prerequisites":["Prostheics","Gene Purification","Reinforced Organs","Modification Laws"],
-                "row": 2,
+                "requires":["Reinforced Organs","Modification Laws"],
+                "row": 3,
                 "column": 3
             },
             {
