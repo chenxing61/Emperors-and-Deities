@@ -4,10 +4,8 @@
     "description": "Build a road to connect your capital to our city.",
     "influence": 50,
     "weightForCityStateType": {
-        "Friendly": 2,
-        "Hostile": 0.2,
-        "Maritime": 1.2,
-        "Mercantile": 1.5
+        "Friendly": 1,
+        "Hostile": 0.1
     }
   },
   {
@@ -17,33 +15,64 @@
     "influence": 50,
     "minimumCivs": 1,
       "weightForCityStateType": {
-          "Cultured": 3,
-          "Maritime": 3,
-          "Mercantile": 3,
-          "Militaristic": 9,
-          "Religious": 3
+        "Distinctively Cultured": 1,
+        "Library of Wisdom": 5,
+        "Food Exporter": 1,
+        "Middleman of the continent": 1,
+        "Resource Hoarder": 1,
+        "Mercenary State": 1,
+        "Holy Ground": 5,
+        "Labour Centre": 5,
+        "Spectacular Craftsman": 1,
+        "Wonder Engineer": 1
       }
   },
   {
     "name": "Connect Resource",
     "description": "In order to make our civilizations stronger, connect [tileResource] to your trade network.",
       "weightForCityStateType": {
-          "Maritime": 2,
-          "Mercantile": 3
+        "Distinctively Cultured": 1,
+        "Library of Wisdom": 1,
+        "Food Exporter": 1,
+        "Middleman of the continent": 5,
+        "Resource Hoarder": 5,
+        "Mercenary State": 5,
+        "Holy Ground": 1,
+        "Labour Centre": 1,
+        "Spectacular Craftsman": 5,
+        "Wonder Engineer": 1
       }
   },
   {
     "name": "Construct Wonder",
     "description": "We recommend you to start building [wonder] to show the whole world your civilization strength.",
       "weightForCityStateType": {
-          "Cultured": 3
+          "Distinctively Cultured": 5,
+        "Library of Wisdom": 5,
+        "Food Exporter": 1,
+        "Middleman of the continent": 1,
+        "Resource Hoarder": 1,
+        "Mercenary State": 1,
+        "Holy Ground": 5,
+        "Labour Centre": 1,
+        "Spectacular Craftsman": 1,
+        "Wonder Engineer": 5
       }
   },
   {
     "name": "Acquire Great Person",
     "description": "Great People can change the course of a Civilization! You will be rewarded for acquiring a new [greatPerson].",
       "weightForCityStateType": {
-          "Cultured": 3
+          "Distinctively Cultured": 5,
+        "Library of Wisdom": 5,
+        "Food Exporter": 1,
+        "Middleman of the continent": 1,
+        "Resource Hoarder": 1,
+        "Mercenary State": 1,
+        "Holy Ground": 5,
+        "Labour Centre": 1,
+        "Spectacular Craftsman": 1,
+        "Wonder Engineer": 5
       }
   },
   {
@@ -52,8 +81,7 @@
     "influence": 80,
       "weightForCityStateType": {
           "Hostile": 2,
-          "Friendly": 0.2,
-          "Militaristic": 2
+          "Friendly": 0.2
       }
   },
   {
@@ -61,16 +89,32 @@
     "description": "You have yet to discover where [civName] set up their cities. You will be rewarded for finding their territories.",
     "influence": 35,
       "weightForCityStateType": {
-          "Maritime": 3,
-          "Mercantile": 2
+          "Distinctively Cultured": 3,
+        "Library of Wisdom": 5,
+        "Food Exporter": 5,
+        "Middleman of the continent": 5,
+        "Resource Hoarder": 1,
+        "Mercenary State": 5,
+        "Holy Ground": 1,
+        "Labour Centre": 1,
+        "Spectacular Craftsman": 1,
+        "Wonder Engineer": 1
       }
   },
   {
     "name": "Find Natural Wonder",
     "description": "Send your best explorers on a quest to discover Natural Wonders. Nobody knows the location of [naturalWonder] yet.",
       "weightForCityStateType": {
-          "Hostile": 0.3,
-          "Militaristic": 0.5
+          "Distinctively Cultured": 1,
+        "Library of Wisdom": 5,
+        "Food Exporter": 1,
+        "Middleman of the continent": 5,
+        "Resource Hoarder": 1,
+        "Mercenary State": 1,
+        "Holy Ground": 5,
+        "Labour Centre": 1,
+        "Spectacular Craftsman": 1,
+        "Wonder Engineer": 1
       }
   },
   /* G&K */
@@ -80,11 +124,16 @@
     "influence": 20,
     "duration": 30,
       "weightForCityStateType": {
-          "Cultured": 3,
-          "Maritime": 3,
-          "Mercantile": 3.5,
-          "Militaristic": 2,
-          "Religious": 3
+          "Distinctively Cultured": 3,
+        "Library of Wisdom": 5,
+        "Food Exporter": 3,
+        "Middleman of the continent": 5,
+        "Resource Hoarder": 5,
+        "Mercenary State": 5,
+        "Holy Ground": 5,
+        "Labour Centre": 5,
+        "Spectacular Craftsman": 5,
+        "Wonder Engineer": 5
       }
   },
   {
@@ -93,11 +142,16 @@
     "influence": 20,
     "duration": 30,
       "weightForCityStateType": {
-          "Cultured": 3.5,
-          "Maritime": 3,
-          "Mercantile": 3,
-          "Militaristic": 2,
-          "Religious": 3
+        "Distinctively Cultured": 5,
+        "Library of Wisdom": 10,
+        "Food Exporter": 5,
+        "Middleman of the continent": 5,
+        "Resource Hoarder": 5,
+        "Mercenary State": 0.1,
+        "Holy Ground": 10,
+        "Labour Centre": 5,
+        "Spectacular Craftsman": 5,
+        "Wonder Engineer": 5
       }
   },
   {
@@ -107,11 +161,16 @@
     "duration": 30,
     "minimumCivs": 3,
       "weightForCityStateType": {
-          "Cultured": 2,
-          "Maritime": 0.5,
-          "Mercantile": 0.5,
-          "Militaristic": 0.5,
-          "Religious": 0.5
+          "Distinctively Cultured": 5,
+        "Library of Wisdom": 5,
+        "Food Exporter": 1,
+        "Middleman of the continent": 1,
+        "Resource Hoarder": 1,
+        "Mercenary State": 1,
+        "Holy Ground": 1,
+        "Labour Centre": 1,
+        "Spectacular Craftsman": 1,
+        "Wonder Engineer": 1
       }
   },
   {
@@ -121,11 +180,16 @@
     "duration": 30,
     "minimumCivs": 3,
       "weightForCityStateType": {
-          "Cultured": 0.5,
-          "Maritime": 0.5,
-          "Mercantile": 0.5,
-          "Militaristic": 0.5,
-          "Religious": 2
+          "Distinctively Cultured": 1,
+        "Library of Wisdom": 1,
+        "Food Exporter": 1,
+        "Middleman of the continent": 1,
+        "Resource Hoarder": 1,
+        "Mercenary State": 0.1,
+        "Holy Ground": 5,
+        "Labour Centre": 1,
+        "Spectacular Craftsman": 1,
+        "Wonder Engineer": 1
       }
   },
   {
@@ -135,7 +199,16 @@
     "duration": 30,
     "minimumCivs": 3,
       "weightForCityStateType": {
-          "Religious": 0.5
+        "Distinctively Cultured": 1,
+        "Library of Wisdom": 1,
+        "Food Exporter": 1,
+        "Middleman of the continent": 1,
+        "Resource Hoarder": 1,
+        "Mercenary State": 0.1,
+        "Holy Ground": 5,
+        "Labour Centre": 5,
+        "Spectacular Craftsman": 5,
+        "Wonder Engineer": 5
       }
   },
   {
@@ -146,7 +219,16 @@
     "duration": 30,
     "minimumCivs": 2,
       "weightForCityStateType": {
-          "Mercantile": 1.5
+          "Distinctively Cultured": 1,
+        "Library of Wisdom": 3,
+        "Food Exporter": 1,
+        "Middleman of the continent": 3,
+        "Resource Hoarder": 1,
+        "Mercenary State": 3,
+        "Holy Ground": 3,
+        "Labour Centre": 3,
+        "Spectacular Craftsman": 3,
+        "Wonder Engineer": 3
       }
   },
   {
@@ -164,18 +246,32 @@
     "description": "We have been forced to pay tribute to [civName]! We need you to tell the world of their ill deeds.",
     "duration": 30,
       "weightForCityStateType": {
-          "Cultured": 1.5,
-          "Maritime": 2,
-          "Mercantile": 1.5,
-          "Militaristic": 1.5,
-          "Religious": 2.5
+        "Distinctively Cultured": 10,
+        "Library of Wisdom": 1,
+        "Food Exporter": 1,
+        "Middleman of the continent": 1,
+        "Resource Hoarder": 1,
+        "Mercenary State": 1,
+        "Holy Ground": 10,
+        "Labour Centre":1,
+        "Spectacular Craftsman": 1,
+        "Wonder Engineer": 1
       }
   },
   {
     "name": "Spread Religion",
     "description": "We have heard the tenets of [religionName] and are most curious. Will you send missionaries to teach us about your religion?",
       "weightForCityStateType": {
-          "Religious": 3
+          "Distinctively Cultured": 1,
+        "Library of Wisdom": 1,
+        "Food Exporter": 1,
+        "Middleman of the continent": 1,
+        "Resource Hoarder": 1,
+        "Mercenary State": 1,
+        "Holy Ground": 10,
+        "Labour Centre":1,
+        "Spectacular Craftsman": 1,
+        "Wonder Engineer": 1
       }
   }
   /* BNW */
