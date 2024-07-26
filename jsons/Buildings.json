@@ -1435,6 +1435,7 @@
 		"name": "Barrack",
 		"hurryCostModifier": 25,
 		"maintenance": 2,
+		"cityStrength": 5,
 		"uniques": ["Military Building","[Military] units gain the [Hardened] promotion","New [Military] units start with [20] Experience [in this city]","Provides [1] [Standing Army Maintainance]", "Destroyed when the city is captured"],
 		"requiredTech": "Copper Working"
 	},
@@ -1442,6 +1443,7 @@
 		"name": "Elite Barrack",
 		"maintenance": 5,
 		"culture": 1,
+		"cityStrength": 5,
 		"isNationalWonder": true,
 		"uniques": ["Military Building","Provides [3] [Standing Army Maintainance]","All newly-trained [Military] units [in this city] receive the [Elite Training] promotion"],
 		"requiredTech": "Tactics"
@@ -1625,6 +1627,16 @@
 		"cityHealth": 30,
 		"hurryCostModifier": 25,
 		"requiredTech": "Masonry",
+		"uniques": ["Static Defense","Destroyed when the city is captured"]
+	},
+	{
+		"name": "Watch Tower",
+		"maintenance": 1,
+		"happiness": 1,
+		"cityStrength": 10,
+		"cityHealth": 20,
+		"hurryCostModifier": 25,
+		"requiredTech": "Construction",
 		"uniques": ["Static Defense","Destroyed when the city is captured"]
 	},
 	{
