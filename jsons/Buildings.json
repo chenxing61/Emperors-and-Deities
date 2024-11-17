@@ -1,5 +1,18 @@
 [
 ///Line 0
+///{
+///		"name": "buildingName",
+///		"cost":,
+///		"isWonder": tf,
+///		"culture":,
+///		"uniques": ["filter",
+///					"feature",
+///					"condition"],
+///		"obsoleteTech":"",
+///		"requiredTech": "",
+///		"quote": ""
+///		"hurryCostModifier": 
+///	},
 	{
 		"name": "Monument",
 		"cost":30,
@@ -101,7 +114,6 @@
 	{
 		"name": "Textile Workshop",
 		"maintenance": 1,
-		"hurryCostModifier": 0,
 		"uniques": ["Light Industry",
 			"[+1 Culture] per [3] population [in this city]",
 			"[+1 Production] from [Bovine] tiles [in this city]",
@@ -112,95 +124,119 @@
 			"[+1 Production] <in cities with a [Guild Complex]>"
 			],
 		"requiredNearbyImprovedResources": ["Bovine","Caprinae","Furs","Cotton","Silk"],
-		"requiredTech": "Animal Husbandry"
+		"requiredTech": "Animal Husbandry",
+		"hurryCostModifier": 0
 	},
 	{
 		"name": "Barrack",
-		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"cityStrength": 5,
-		"uniques": ["Military Building","All newly-trained [Military] units [in this city] receive the [Hardened] promotion","New [Military] units start with [20] Experience [in this city]","Provides [1] [Standing Army Maintainance]", "Destroyed when the city is captured"],
-		"requiredTech": "Copper Working"
+		"uniques": ["Military Building",
+					"All newly-trained [Military] units [in this city] receive the [Hardened] promotion",
+					"New [Military] units start with [20] Experience [in this city]",
+					"Provides [1] [Standing Army Maintainance]",
+					"Destroyed when the city is captured"],
+		"requiredTech": "Copper Working",
+		"hurryCostModifier": 15
 	},
 	{
 		"name": "Ancestral Temple",
+		"isWonder": true,
 		"culture": 1,
 		"happiness": 2,
-		"isWonder": true,
 		"greatPersonPoints": {"Great General": 1},
-		"uniques": ["Only available <after adopting [Ancestor Worship]>","[+1 Culture] [in all cities]","[+1 Food] [in all cities]", "[+25]% Production when constructing [Settler] units [in all cities]"],
+		"uniques": ["[+1 Culture] [in all cities]",
+					"[+1 Food] [in all cities]",
+		 			"[+25]% Production when constructing [Settler] units [in all cities]",
+					"Only available <after adopting [Ancestor Worship]>"],
 		"requiredTech": "Calendar",
 		"quote": "'When one drinks water, one must not forget where it comes from' - Chinese proverb"
 	},
 	{
 		"name": "Complex of Totems",
+		"isWonder": true,
 		"culture": 2,
 		"happiness": 1,
-		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 1},
-        "uniques": ["Only available <after adopting [Sprit in Everything]>","[+1 Faith] per [3] population [in all cities]","[+15]% Production when constructing [Levy Army] units [in all cities]"],
+        "uniques": ["[+1 Faith] per [3] population [in all cities]",
+					"[+15]% Production when constructing [Levy Army] units [in all cities]",
+					"Only available <after adopting [Sprit in Everything]>"],
 		"requiredTech": "Calendar",
 		"quote": "'You must be absolutely honest and true in the depicting of a totem for meaning is attached to every line. You must be most particular about detail and proportion.' - Emily Carr"
 	},
 	{
 		"name": "First Temple of the One True God",
-		"faith": 5,
-		"happiness": 1,
 		"isWonder": true,
-		"uniques": ["Only available <after adopting [The One True God]>","[+20]% [Faith] [in all cities]", "May choose [1] additional [Follower] beliefs when [founding] a religion"],
+		"faith": 3,
+		"happiness": 1,
+		"uniques": ["[+20]% [Faith] [in all cities]", 
+					"Gain a free [Follower] belief",
+					"Only available <after adopting [The One True God]>"],
 		"requiredTech": "Calendar",
 		"quote": "'1. Belief in the existence of the Creator, who is perfect in every manner of existence and is the Primary Cause of all that exists.2. The belief in God's absolute and unparalleled unity.3. The belief in God's non-corporeality, nor that He will be affected by any physical occurrences, such as movement, or rest, or dwelling.' - Rabbi Moshe ben Maimon"
 	},
 	{
 		"name": "Temple of the Hunting God",
-		"culture": 2,
-		"happiness": 1,
 		"isWonder": true,
-		"greatPersonPoints": {"Great Artist": 1},
-        "uniques": ["Only available <after adopting [Hunting Tradition]>","[+10]% [Food] [in all cities]", "[+15]% Production when constructing [Skirmish] units [in all cities]"],
+		"culture": 1,
+		"happiness": 1,
+		"gold":2,
+		"greatPersonPoints": {"Great General": 1},
+        "uniques": ["[+1 Food] from all [Hunter's Hut] buildings", 
+					"[+10]% Production when constructing [Ranged Combat] units [in all cities]",
+					"[+10]% Production when constructing [Skirmish] units [in all cities]",
+					"Only available <after adopting [Hunting Tradition]>"],
 		"requiredTech": "Trapping",
 		"quote": "'It is not so much for its beauty that the forest makes a claim upon men's hearts, as for that subtle something, that quality of air, that emanation from old trees, that so wonderfully changes and renews a weary spirit.' - Robert Louis Stevenson"
 	},
 	
 	{
 		"name": "Great Stone Mound",
-		"culture": 2,
-		"happiness": 1,
 		"isWonder": true,
+		"culture": 3,
+		"happiness": 1,
 		"greatPersonPoints": {"Great General": 1},
-        "uniques": ["Only available <after adopting [God of the Open Sky]>","[+1 Food] from [Pasture] tiles [in this city]","[+1 Food] from [Mechanised Livestock Farm] tiles [in this city]", "[+15]% Production when constructing [Mounted] units [in all cities]"],
+        "uniques": ["[+1 Food] from [Pasture] tiles [in this city]",
+					"[+1 Food] from [Mechanised Livestock Farm] tiles [in this city]", 
+					"[+15]% Production when constructing [Mounted] units [in all cities]",
+					"Only available <after adopting [God of the Open Sky]>"],
 		"requiredTech": "Animal Husbandry",
 		"quote": "'Full Moon rises to the sky, Why aren't there clouds around? I am waiting for a beautiful girl, why haven't you come?' - Meeting at Ovoo by Mala Qinfu, 1951 "
 	},
 	{
 		"name": "Shrine of Rain God",
-		"culture": 1,
-		"happiness": 1,
 		"isWonder": true,
-		"uniques": ["Only available <before adopting [The One True God]>","[+2 Food] [in all cities]"],
+		"culture": 2,
+		"happiness": 2,
+		"greatPersonPoints": {"Great Prophet": 1},
+		"uniques": ["[+2 Food] [in all cities]",
+					"Only available <before adopting [The One True God]>"],
 		"requiredTech": "Calendar",
 		"quote": "'The common people pray for rain, healthy children and a summer that never ends. It is no matter to them if the high lords play their game of thrones, so long as they are left in peace.' - George R.R. Martin"
 	},
 
 	{
 		"name": "Shrine of the Harvest God",
-		"culture": 2,
-		"happiness": 1,
 		"isWonder": true,
+		"culture": 3,
+		"happiness": 1,
 		"greatPersonPoints": {"Great Artist": 1},
-        "uniques": ["Only available <after adopting [Harvest Ritual]>","[+1 Food] from [Manual Farm] tiles [in this city]","[+1 Food] from [Mechanised Farm] tiles [in this city]","[+1 Food] from [Permaculture] tiles [in this city]","[+10]% Production when constructing [Civilian] units [in all cities]"],
+        "uniques": ["[+1 Food] from [Manual Farm] tiles [in this city]",
+					"[+1 Food] from [Mechanised Farm] tiles [in this city]",
+					"[+1 Food] from [Permaculture] tiles [in this city]",
+					"[+10]% Production when constructing [Civilian] units [in all cities]",
+					"Only available <after adopting [Harvest Ritual]>"],
 		"requiredTech": "Calendar",
 		"quote": "'Dancing along the sacred trees, Competeting in drums and flutes to please the god of the soils' - Wang Wei"
 	},
 	{
 		"name": "Stonehenge",
-		"faith": 3,
+		"isWonder": true,
 		"culture": 1,
 		"science": 1,
-		"happiness": 1,
-		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 1},
-		"uniques": ["Only available <after adopting [Belief in stars]>","Free [Great Prophet] appears"],
+		"uniques": ["Free [Great Prophet] appears",
+					"Only available <after adopting [Belief in stars]>"],
 		"requiredTech": "Calendar",
 		"quote": "'Time crumbles things; everything grows old and is forgotten under the power of time' - Aristotle"
 	},
@@ -213,16 +249,19 @@
 		"cityStrength": 2,
 		"specialistSlots": {"Governor": 1},
 		"uniques": ["Political Building",
-					"[-5]% Unhappiness from [Specialists] [in this city]",
+					"[-10]% Unhappiness from [Specialists] [in this city]",
 					"Destroyed when the city is captured"],
-		"hurryCostModifier": 10,
-		"requiredTech": "Writing"
+		"requiredTech": "Writing",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Library",
 		"maintenance": 1,
 		"specialistSlots": {"Scientist": 1,"Artist": 1},
-		"uniques": ["Educational Building","[+1 Science] per [4] population [in this city]","[+1 Happiness] <after discovering [Drama and Poetry]>","[+3 Culture] <after discovering [Archaeology]>"],
+		"uniques": ["Educational Building",
+					"[+1 Science] per [4] population [in this city]",
+					"[+1 Happiness] <after discovering [Drama and Poetry]>",
+					"[+3 Culture] <after discovering [Archaeology]>"],
 		"requiredTech": "Writing",
 		"hurryCostModifier": 25
 	},
@@ -231,75 +270,77 @@
 		"maintenance": 1,
 		"food": 3,
 		"production": 1,
-		"hurryCostModifier": 25,
 		"uniques": ["Agricultural Buildings","Must be on [River]"],
-		"requiredTech": "The Wheel"
+		"requiredTech": "The Wheel",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Civilian Blacksmith",
 		"maintenance": 2,
-		"percentStatBonus": {
-			"food": 5,
-			"production": 5},
 		"specialistSlots": {"Engineer":1},
-		"hurryCostModifier": 25,
 		"uniques": ["Light Industry",
-			"[+1 Production] from [Lumber Improvement] tiles [in this city] <after discovering [Carpentry]>",
-			"[+1 Production] from [Extraction Improvement] tiles [in this city]",
-			"[+1 Food] from [Agricultural Improvement] tiles [in this city] <after discovering [Plows]>","[+1 Production] <in cities with a [Guild Complex]>"],
+					"[+1 Production] from [Extraction Improvement] tiles [in this city]",
+					"[+1 Food] from [Agricultural Improvement] tiles [in this city] <after discovering [Plows]>",
+					"[+1 Production] from [Lumber Improvement] tiles [in this city] <after discovering [Construction]>",
+					"[+1 Production] <in cities with a [Guild Complex]>"],
 		"obsoleteTech":"Apprenticeship",
-		"requiredTech": "Bronze Working"
+		"requiredTech": "Bronze Working",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Foundry",
 		"maintenance": 1,
 		"production": 2,
 		"specialistSlots": {"Engineer": 1},		
-		"hurryCostModifier": 0,
 		"uniques": ["Heavy Industry",
 			"[+10]% Production when constructing [All] units [in this city]"
 			],
 		"requiredNearbyImprovedResources": ["Metal", "Minerals"],	
-		"requiredTech": "Bronze Working"
+		"requiredTech": "Bronze Working",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Mint",
-		"gold": 2,
-		"maintenance": 0,
+		"uniques": ["Economic Building",
+					"[+2 Gold] from [Gold Ore] tiles [in this city]",
+					"[+2 Gold] from [Silver Ore] tiles [in this city]",
+					"[+1 Gold] per [2] population [in this city] <every [3] turns>"],
 		"requiredNearbyImprovedResources": ["Gold Ore", "Silver Ore"],
-		"hurryCostModifier": 25,
-		"uniques": ["Economic Building","[+2 Gold] from [Gold Ore] tiles [in this city]", "[+2 Gold] from [Silver Ore] tiles [in this city]","[+1 Gold] per [2] population [in this city]"],
-		"requiredTech": "Currency"
+		"requiredTech": "Currency",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Livestock Market",
 		"gold": 1,
-		"uniques":["Economic Building","[+1 Gold] from [Herd] tiles [in this city]"],
+		"uniques":["Economic Building",
+				"[+1 Gold] from [Herd] tiles [in this city]",
+				"Must have an owned [Pasture] within [4] tiles"],
 		"obsoleteTech":"Banking",
 		"requiredTech": "Trade Network",
-		"hurryCostModifier": 25
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Crops Market",
 		"gold": 1,
-		"uniques":["Economic Building","[+1 Gold] from [Crops] tiles [in this city]"],
+		"uniques":["Economic Building",
+				   "[+1 Gold] from [Crops] tiles [in this city]"],
 		"obsoleteTech":"Banking",
 		"requiredTech": "Trade Network",
-		"hurryCostModifier": 25
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Jewellery Workshop",
 		"maintenance": 1,
 		"specialistSlots": {"Merchant": 1,"Artist": 1},
-		"requiredNearbyImprovedResources": ["Gold Ore", "Silver Ore","Rich Copper Ore","Ivory","Gems"],
-		"hurryCostModifier": 0,
 		"uniques": ["Light Industry",
 			"[+1 Gold] from [Precious Mineral] tiles [in this city]",
 			"[+1 Gold] from [Ivory] tiles [in this city]",
 			"[+1 Gold] from [Coral] tiles [in this city]",
 			"[+1 Production] <in cities with a [Guild Complex]>"
 			],
-		"requiredTech": "Currency"
+		"requiredNearbyImprovedResources": ["Gold Ore", "Silver Ore","Rich Copper Ore","Ivory","Gems"],
+		"requiredTech": "Currency",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Road Network",
@@ -307,101 +348,123 @@
 		"happiness": 1,
 		"percentStatBonus": {
 							"food": 5,
-							"production": 5},
-							
-		"uniques": ["Infrastructure","Must have an owned [Road] within [1] tiles","[+1]% [Gold] from Trade Routes",
-			"[+1]% growth [in all cities]","[-5]% maintenance cost for buildings [in this city]",
-			"[+1 Production] from [Infrastructure Improvement] tiles [in this city]"
+							"production": 5,
+							"gold": 5},
+		"uniques": ["Infrastructure",
+			"[+1]% [Gold] from Trade Routes",
+			"[+1]% growth [in all cities]",
+			"[-5]% maintenance cost for buildings [in this city]"
 			],
-		"hurryCostModifier": 10,
 		"obsoleteTech":"Apprenticeship",
-		"requiredTech": "Trade Network"
+		"requiredTech": "Trade Network",
+		"hurryCostModifier": 10
 	},
-	
 	{
 		"name": "Tarvern",
 		"maintenance": 1,
 		"happiness": 2,
-		"hurryCostModifier": 25,
-		"uniques": ["Entertainment Building","Consumes [2] [Alcohol]","Destroyed when the city is captured"],
-		"requiredTech": "Currency"
+		"uniques": ["Entertainment Building",
+					"Consumes [2] [Alcohol]",
+					"Destroyed when the city is captured"],
+		"requiredTech": "Currency",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Desert Trade Network",
-		"culture": 1,
 		"isWonder": true,
-		"greatPersonPoints": {"Great Engineer": 1},
-		"uniques": ["Must be next to [Desert]", "[+1 Food, +1 Production] from [Desert] tiles without [Flood plains] [in this city]", "Gain a free [Trading Post] [in this city]", "[+6 Culture] [in this city] <after discovering [Archaeology]>"],
+		"culture": 1,
+		"greatPersonPoints": {"Great Merchant": 1},
+		"uniques": [
+					"[+1 Food, +1 Production] from [Desert] tiles without [Flood plains] [in this city]", 
+					"Gain a free [Trading Post] [in this city]", 
+					"[+6 Culture] [in this city] <after discovering [Archaeology]>",
+					"Must be next to [Desert]"],
 		"requiredTech": "Currency",
 		"quote": "'...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...' - Indiana Jones"
 	},
 	{
 		"name": "City of Mystery",
-		"culture": 1,
 		"isWonder": true,
+		"culture": 1,
 		"greatPersonPoints": {"Great Engineer": 1},
-		"uniques": ["Must be next to [Desert]", "[+1 Science, +1 Culture] from [Desert] tiles without [Flood plains] [in this city]", "Gain a free [University] [in this city]", "[+6 Culture] [in this city] <after discovering [Archaeology]>"],
+		"uniques": ["[+1 Science, +1 Culture] from [Desert] tiles without [Flood plains] [in this city]",
+					"Gain a free [University] [in this city]",
+					"[+6 Culture] [in this city] <after discovering [Archaeology]>",
+					"Must be next to [Desert]"],
 		"requiredTech": "Currency",
 		"quote": "'I've always wanted to go to Timbuktu. First of all I think it has the best name of anywhere in the world.' - David Tang"
 	},
 	{
 		"name": "The Statue of Sea God",
-		"culture": 1,
-		"happiness": 1,
 		"isWonder": true,
+		"culture": 2,
+		"happiness": 1,
 		"greatPersonPoints": {"Great Artist": 1},
-		"uniques": ["Only available <after adopting [Marine Tradition]>","[+1 Food] from [Coast] tiles [in this city]", "[+25]% Production when constructing [Water] units [in all cities]"],
+		"uniques": [
+					"[+1 Food] from [Coast] tiles [in this city]", 
+					"[+25]% Production when constructing [Water] units [in all cities]",
+					"[+10]% Production when constructing [Economic Building] buildings [in all cities]",
+					"Only available <after adopting [Marine Tradition]>"],
 		"requiredTech": "Bronze Working",
 		"quote": "'At once she prayed intensely to Poseidon:'Hear me, Sea-lord, you who embrace the earth - don't deny our wishes, bring our prayers to pass!' - The Odyssey, Book 3, lines 61-69."
 	},
 	{
 		"name": "The Statue of Thunder God",
+		"isWonder": true,
 		"happiness": 2,
 		"gold": 3,
-		"isWonder": true,
-		"uniques": ["Only available <before adopting [The One True God]>","[+10]% Strength <for [All] units> <vs cities> <when attacking>"],
+		"uniques": ["[+10]% Strength <for [All] units> <vs cities> <when attacking>",
+					"Only available <before adopting [The One True God]>"],
 		"requiredTech": "Bronze Working",
 		"quote": "'He spoke, the son of Kronos, and nodded his head with the dark brows, and the immortally anointed hair of the great god swept from his divine head, and all Olympos was shaken' - The Iliad"
 	},
 	{
 		"name": "The Statue of Sun God",
+		"isWonder": true,
 		"cost": 185,
 		"culture": 3,
 		"happiness": 1,
-		"greatPersonPoints": {"Great Merchant": 1},
-		"isWonder": true,
-		"uniques": ["Only available <before adopting [The One True God]>","Must be next to [Coast]", "[+1 Gold] from [Water] tiles [in this city]"],
+		"greatPersonPoints": {"Great Merchant": 2},
+		"uniques": ["[+1 Gold] from [Water] tiles [in this city]",
+					"Only available <before adopting [The One True God]>",
+					"Must be next to [Coast]"],
 		"requiredTech": "Bronze Working",
 		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
 	},
 	{
 		"name": "The Great Library",
+		"isWonder": true,
 		"science": 2,
 		"culture": 1,
 		"happiness": 1,
 		"greatPersonPoints": {"Great Scientist": 2},
-		"isWonder": true,
-		"requiredTech": "Writing",
 		"uniques": ["Gain a free [Library] [in this city]"],
+		"requiredTech": "Writing",
 		"quote": "'Libraries are as the shrine where all the relics of the ancient saints, full of true virtue, and all that without delusion or imposture are preserved and reposed.' - Sir Francis Bacon"
 	},
 	{
 		"name": "The First University",
+		"isWonder": true,
 		"science": 1,
 		"culture": 2,
 		"happiness": 1,
 		"greatPersonPoints": {"Great Artist": 1},
-		"isWonder": true,
-		"requiredTech": "Writing",
 		"uniques": ["Free [Great Scientist] appears"],
+		"requiredTech": "Writing",
 		"quote": "'Learning without thinking leads to confusion; Thinking without learning ends to vain.' - Confucius"
 	},
 	{
 		"name": "Mausoleum of Afterlife",
+		"isWonder": true,
 		"happiness": 3,
 		"greatPersonPoints": {"Great Engineer": 1},
-		"isWonder": true,
-		"uniques": ["Only available <after adopting [Belief in Afterlife]>","[+1 Faith] <starting from the [Ancient era]>","[+1 Faith] <starting from the [Classical era]>","[+1 Culture] <starting from the [Medieval era]>","[+2 Culture] <starting from the [Renaissance era]>","[+2 Culture] <starting from the [Imperial era]>","[+3 Science] <starting from the [Modern era]>"],
+		"uniques": ["[+1 Faith] <starting from the [Ancient era]>",
+					"[+1 Faith] <starting from the [Classical era]>",
+					"[+1 Culture] <starting from the [Medieval era]>",
+					"[+2 Culture] <starting from the [Renaissance era]>",
+					"[+2 Culture] <starting from the [Imperial era]>",
+					"[+3 Science] <starting from the [Modern era]>",
+					"Only available <after adopting [Belief in Afterlife]>"],
 		"requiredTech": "The Wheel",
 		"quote": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge"
 	},
@@ -412,60 +475,63 @@
 		"culture": 1,
 		"happiness": 1,
 		"specialistSlots": {"Merchant": 1},
-		"hurryCostModifier": 25,
-		"uniques": ["Cultural Building","[-10]% Culture cost of natural border growth [in this city]","Destroyed when the city is captured"],
-		"requiredTech": "Drama and Poetry"
+		"uniques": ["Cultural Building",
+					"[-10]% Culture cost of natural border growth [in this city]",
+					"Destroyed when the city is captured"],
+		"requiredTech": "Drama and Poetry",
+		"hurryCostModifier": 25
 	},
-
-
 	{
 		"name": "Stone Works",
 		"maintenance": 1,
-		"specialistSlots": {"Artist": 1},
 		"production": 1,
+		"specialistSlots": {"Artist": 1},
 		"uniques": ["Heavy Industry",
 			"[+1 Production] from [Stone] tiles [in this city]",
 			"[+1 Production] from [Marble] tiles [in this city]",
-			"[+10]% Production when constructing [All] buildings [in this city]"],
-		"hurryCostModifier": 0,			
+			"[+10]% Production when constructing [All] buildings [in this city]",
+			"[+1 Production] <in cities with a [Guild Complex]>"],
+				
 		"requiredNearbyImprovedResources": ["Marble", "Stone"],
-		"requiredTech": "Masonry"		
+		"requiredTech": "Masonry",
+		"hurryCostModifier": 25	
 	},
 	{
 		"name": "Furniture Workshop",
 		"maintenance": 2,
 		"specialistSlots": {"Engineer": 1,"Artist": 1},
 		"uniques": ["Light Industry",
-			"[+1 Gold] from [Lumber Improvement] tiles [in this city]","[+1 Gold] from [Hard Wood] tiles [in this city]","[+1 Production] <in cities with a [Guild Complex]>"],
-		"hurryCostModifier": 0,
+					"[+1 Gold] from [Lumber Improvement] tiles [in this city]",
+					"[+1 Gold] from [Hard Wood] tiles [in this city]",
+					"[+1 Production] <in cities with a [Guild Complex]>"],
 		"obsoleteTech":"Apprenticeship",
-		"requiredTech": "Carpentry"
+		"requiredTech": "Carpentry",
+		"hurryCostModifier": 10
 	},
-
 	{
 		"name": "Temple",
+		"maintenance": 1,
 		"faith": 2,
 		"culture": 1,
-		"maintenance": 2,
-		"hurryCostModifier": 25,
 		"requiredTech": "Drama and Poetry",
-		"uniques": ["Worship Place","Hidden when religion is disabled","Destroyed when the city is captured"]
+		"uniques": ["Worship Place","Hidden when religion is disabled","Destroyed when the city is captured"],
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Stable",
-		"maintenance": 3,
-		"happiness": 2,
+		"maintenance": 2,
+		"happiness": 1,
 		"percentStatBonus": {
+							"food":5,
 							"production": 5,
 							"gold":5},
-
 		"uniques": ["Infrastructure",
-			"[+15]% Production when constructing [Mounted] units [in this city]",
-			"[+1 Production] from [Horse] tiles [in this city]",
-			"[+1 Gold] from [Horse] tiles [in this city]"],
-		"hurryCostModifier": 10,
+					"[+10]% Production when constructing [Mounted] units [in this city]",
+					"[+1 Production] from [Horse] tiles [in this city]",
+					"[+1 Gold] from [Horse] tiles [in this city]"],
 		"requiredNearbyImprovedResources": ["Horse"],
-		"requiredTech": "Horseback Riding"
+		"requiredTech": "Horseback Riding",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Walls",
@@ -473,19 +539,19 @@
 		"happiness": 1,
 		"cityStrength": 5,
 		"cityHealth": 30,
-		"hurryCostModifier": 25,
+		"uniques": ["Static Defense","Destroyed when the city is captured"],
 		"requiredTech": "Masonry",
-		"uniques": ["Static Defense","Destroyed when the city is captured"]
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Great Awakening Temple",
+		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 1},
 		"faith":2,
 		"culture": 2,
 		"happiness": 3,
-		"isWonder": true,
 		"requiredTech": "Mathematics",
-		"uniques": ["Only available <before adopting [The One True God]>","[2] free [Missionary] units appear"],
+		"uniques": ["[2] free [Missionary] units appear","Only available <before adopting [The One True God]>"],
 		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
 	},
 	{
