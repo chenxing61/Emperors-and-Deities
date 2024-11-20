@@ -521,12 +521,13 @@
 	},
 	{
 		"name": "Temple",
-		"maintenance": 1,
 		"faith": 2,
 		"culture": 1,
 		"requiredTech": "Drama and Poetry",
-		"uniques": ["Worship Place","Hidden when religion is disabled","Destroyed when the city is captured"],
-		"hurryCostModifier": 25
+		"uniques": ["Worship Place",
+					"Hidden when religion is disabled",
+					"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
 	},
 	{
 		"name": "Stable",
@@ -569,7 +570,7 @@
 	{
 		"name": "Hanging Temple",
 		"isWonder": true,
-		"faith": 3,
+		"faith": 2,
 		"happiness": 2,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"uniques": ["Only available <before adopting [Monotheism]>",
@@ -580,28 +581,30 @@
 
 	{
 		"name": "Mausoleum of Wealth",
+		"isWonder": true,
 		"culture": 1,
 		"happiness": 1,
 		"greatPersonPoints": {"Great Merchant": 1},
-		"isWonder": true,
 		"uniques": ["Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>","[+1 Gold] from [Mineral] tiles [in this city]"],
 		"requiredTech": "Masonry",
 		"quote": "'The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men's lives.' - Pericles"
 	},
 	{
 		"name": "The Great Catacomb",
-		"faith": 5,
+		"faith": 3,
 		"happiness": 1,
 		"isWonder": true,
-		"uniques": ["Free [Great Prophet] appears", "Hidden when religion is disabled","Only available <after adopting [Monotheism]>"],
+		"uniques": ["Free [Great Prophet] appears", 
+					"Hidden when religion is disabled",
+					"Only available <after adopting [Monotheism]>"],
 		"requiredTech": "Masonry",
 		"quote": "'The Christian catacombs represent simplicity and earthiness, the cathedrals, transcendence and wonder.' - Russell Moore"
 	},
 	{
 		"name": "The Great Colosseum",
-		"culture": 2,
-		"happiness": 1,
 		"isWonder": true,
+		"culture": 3,
+		"greatPersonPoints":{"Great General":2},
 		"uniques": ["[+1 Gold, +1 Happiness] per [3] population [in capital]"],
 		"requiredTech": "Masonry",
 		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
@@ -622,20 +625,26 @@
 ///Line 4
 	{
 		"name": "Dry Dock",
-		"hurryCostModifier": 25,
-		"maintenance": 2,
+		"maintenance": 1,
 		"production":-1,
+		"uniques": ["Military Building",
+					"[+50]% Production when constructing [{Galley} {Sailing Ship} {Engine Ship} {Nuclear powered Ship}] units [in this city]",
+					"Destroyed when the city is captured",
+					"Must be next to [Coast]"],
 		"requiredBuilding": "Barrack",
-		"uniques": ["Must be next to [Coast]","Military Building","[+30]% Production when constructing [{Galley} {Sailing Ship} {Engine Ship} {Nuclear powered Ship}] units [in this city]","Destroyed when the city is captured"],
-		"requiredTech": "Dry Dock"
+		"requiredTech": "Dry Dock",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Military Blacksmith",
-		"hurryCostModifier": 25,
 		"maintenance": 1,
+		"uniques": ["Military Building",
+		"New [Military] units start with [10] Experience [in this city]",
+		"[Military] units gain the [Classical Arms] promotion",
+		"Destroyed when the city is captured"],
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","New [Infantry] units start with [10] Experience [in this city]","[Military] units gain the [Classical Arms] promotion","Destroyed when the city is captured"],
-		"requiredTech": "Iron Working"
+		"requiredTech": "Iron Working",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Paper Maker",
