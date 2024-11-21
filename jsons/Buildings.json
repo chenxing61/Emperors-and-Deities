@@ -1253,27 +1253,27 @@
 		"maintenance": 2,
 		"specialistSlots": {"Engineer": 1,"Scientist": 1,"Merchant": 1,"Artist": 1},
 		"percentStatBonus": {"production": 10},
-		"uniques": ["Light Industry"
-			],
-		"hurryCostModifier": 25,
-		"requiredTech": "Guilds"
+		"uniques": ["Light Industry"],
+		"requiredTech": "Guilds",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Castle of Great Egret",
-		"culture": 3,
 		"isWonder": true,
+		"culture": 3,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"uniques": ["[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
-			"Gain a free [Citadel] [in this city]"],
+					"Gain a free [Citadel] [in this city]"],
 		"requiredTech": "Gunpowder",
 		"quote": "'Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.' - Yamamoto Tsunetomo"
+		
 	},
 	{
 		"name": "Captial of Mountain Range",
-		"gold": 5,
+		"isWonder": true,
+		"gold": 3,
 		"greatPersonPoints": {"Great Merchant": 1},
 		"culture": 1,
-		"isWonder": true,
 		"uniques": ["[+25]% [Gold] from Trade Routes","Must have an owned [Mountain] within [2] tiles"],
 		"requiredTech": "Guilds",
 		"quote": "'Few romances can ever surpass that of the granite citadel on top of the beetling precipices of Machu Picchu, the crown of Inca Land.' - Hiram Bingham"
@@ -1284,67 +1284,89 @@
 		"maintenance": 2,
 		"specialistSlots": {"Engineer": 1},	
 		"percentStatBonus":{"production":10},
-		"hurryCostModifier": 0,
 		"uniques": ["Heavy Industry",
 			"[+1 Production] from [Useful Mineral] tiles [in this city]",
 			"Provides [1] [Steel]",
 			"Consumes [1] [Metal]"],
 		"requiredNearbyImprovedResources": ["Metal", "Minerals"],	
-		"requiredTech": "Steels"
+		"requiredTech": "Steels",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Arsenal",
 		"maintenance": 3,
+		"cityStrength": 10,
 		"cityHealth": 10,
-		"production":-1,
-		"hurryCostModifier": 25,
+		"uniques": ["Military Building",
+					"Provides [1] [Standing Army Maintainance]",
+					"New [Military] units start with [25] Experience [in this city]"],
 		"requiredTech": "Steels",
-		"uniques": ["Military Building","Provides [1] [Standing Army Maintainance]","New [Military] units start with [25] Experience [in this city]"]
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Light Industry Expansion",
 		"cost": 400,
-		"uniques": ["Unsellable","Infrastructure","Gain a free [Bakery] [in this city]","Gain a free [Brewery] [in this city]","Gain a free [Pottery Workshop] [in this city]","Gain a free [Civilian Blacksmith] [in this city]","Gain a free [Paper Maker] [in this city]"],
+		"uniques": ["Unsellable",
+					"Infrastructure",
+					"Gain a free [Bakery] [in this city]",
+					"Gain a free [Brewery] [in this city]",
+					"Gain a free [Pottery Workshop] [in this city]",
+					"Gain a free [Civilian Blacksmith] [in this city]",
+					"Gain a free [Paper Maker] [in this city]"],
+		"requiredTech": "Apprenticeship",
 		"hurryCostModifier": 10,
-		"requiredTech": "Apprenticeship"
 	},
 	{
 		"name": "Infrastructure Expansion",
 		"cost": 450,
-		"uniques": ["Unsellable","Infrastructure","Gain a free [Aqueduct] [in this city]","Gain a free [Healer's Hut] [in this city]","Gain a free [Granary] [in this city]","Gain a free [Road Network] [in this city]"],
-		"hurryCostModifier": 10,
-		"requiredTech": "Apprenticeship"
+		"uniques": ["Unsellable",
+					"Infrastructure",
+					"Gain a free [Aqueduct] [in this city]",
+					"Gain a free [Healer's Hut] [in this city]",
+					"Gain a free [Granary] [in this city]",
+					"Gain a free [Road Network] [in this city]"],
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Martine Expansion",
 		"cost": 200,
-		"uniques": ["Unsellable","Infrastructure","Gain a free [Fishing ports] [in this city]","Gain a free [Lighthouse] [in this city]","Must be next to [Coast]"],
-		"hurryCostModifier": 10,
-		"requiredTech": "Apprenticeship"
+		"uniques": ["Unsellable",
+					"Infrastructure",
+					"Gain a free [Fishing ports] [in this city]",
+					"Gain a free [Lighthouse] [in this city]",
+					"Must be next to [Coast]"],
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "University",
-		"maintenance": 2,
-		"hurryCostModifier": 15,
+		"maintenance": 3,
 		"percentStatBonus": {"science": 25,"culture":25},
 		"specialistSlots": {"Scientist": 2},
-		"uniques": ["Educational Building","[Great Artist] is earned [+20]% faster","[Great Engineer] is earned [+20]% faster","[Great Scientist] is earned [+20]% faster"],
-		"requiredTech": "Education"
+		"uniques": ["Educational Building",
+					"[Great Artist] is earned [+20]% faster",
+					"[Great Engineer] is earned [+20]% faster",
+					"[Great Scientist] is earned [+20]% faster"],
+		"requiredTech": "Education",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Military Academy",
-		"hurryCostModifier": 0,
 		"maintenance": 3,
-		"uniques": ["Military Building","New [Military] units start with [20] Experience [in this city]","All newly-trained [Military] units [in this city] receive the [Tactic Research] promotion","Destroyed when the city is captured"],
-		"requiredTech": "Education"
+		"uniques": ["Military Building",
+					"New [Military] units start with [20] Experience [in this city]",
+					"All newly-trained [Military] units [in this city] receive the [Tactic Research] promotion",
+					"Destroyed when the city is captured"],
+		"requiredTech": "Education",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Newspaper Agency",
 		"maintenance": 3,
-		"culture": 2,
-		"gold": 2,
 		"happiness": 1,
 		"specialistSlots": {"Merchant":1},
+		"percentStatBonus":{"culture":33,"gold":10}
 		"hurryCostModifier": 10,
 		"uniques": ["Cultural Building","[+2 Culture] [in this city] <after discovering [Electricity]>","Destroyed when the city is captured"],
 		"requiredTech": "Printing Press"
