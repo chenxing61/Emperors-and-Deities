@@ -1797,10 +1797,10 @@
 		"percentStatBonus": {"production": 20},
 		"specialistSlots": {"Engineer": 2},
 		"uniques": ["Heavy Industry",
-					"[+15]% Production when constructing [Heavy Industry] buildings [in this city] <before discovering [Electricity]>",
-					"[+25]% Production when constructing [Light Industry] buildings [in this city] <before discovering [Electricity]>",
-					"[+25]% Production when constructing [Heavy Industry] buildings [in this city] <after discovering [Electricity]>",
-					"[+40]% Production when constructing [Light Industry] buildings [in this city] <after discovering [Electricity]>"],
+					"[+5]% Production when constructing [Heavy Industry] buildings [in all cities] <before discovering [Electricity]>",
+					"[+10]% Production when constructing [Light Industry] buildings [in all cities] <before discovering [Electricity]>",
+					"[+10]% Production when constructing [Heavy Industry] buildings [in all cities] <after discovering [Electricity]>",
+					"[+20]% Production when constructing [Light Industry] buildings [in all cities] <after discovering [Electricity]>"],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 10
@@ -1814,29 +1814,30 @@
 					"Provides [2] [Standing Army Maintainance]",
 					"[+1 Production] from [Extraction Improvement] tiles [in this city]",
 					"[Military] units gain the [Modern Arms] promotion <starting from the [Modern era]>",
-					"[Military] units gain the [Atomic Arms] promotion <starting from the [Atomic era]>",
-					"[Military] units gain the [Information Arms] promotion <starting from the [Information era]>",
+					
+					
 					"Destroyed when the city is captured"],
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 25
 	},
 	{
 		"name": "The Big Clock Tower",
-		"culture": 1,
-		"gold": 4,
-		"happiness": 1,
-		"greatPersonPoints": {"Great Merchant": 2},
 		"isWonder": true,
+		"culture": 2,
+		"happiness": 2,
+		"greatPersonPoints": {"Great Merchant": 2},
 		"uniques": ["[Gold] cost of purchasing items in cities [-15]%"],
-		"requiredTech": "Industrialization",
-		"quote": "'To achieve great things, two things are needed: a plan, and not quite enough time.' - Leonard Bernstein"
+		"quote": "'To achieve great things, two things are needed: a plan, and not quite enough time.' - Leonard Bernstein",
+		"requiredTech": "Industrialization"
 	},
 	{
 		"name": "National Museum",
 		"isNationalWonder": true,
-		"percentStatBonus": {"culture": 50},
 		"culture": 8,
-		"uniques": ["Cultural Building","Only available <if [Museum] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city"],
+		"percentStatBonus": {"culture": 50},
+		"uniques": ["Cultural Building",
+					"Only available <if [Museum] is constructed in all [non-[Puppeted]] cities>", 
+					"Cost increases by [30] per owned city"],
 		"requiredTech": "Archaeology"
 	},
 	{
@@ -1854,22 +1855,26 @@
 		"maintenance": 5,
 		"specialistSlots": {"Engineer": 1},
 		"percentStatBonus": {"food": 25,"production":5},
-		"hurryCostModifier": 25,
 		"uniques": ["Agricultural Buildings","[+1 Food] from [Mechanised Farm] tiles [in this city]"],
 		"requiredBuilding":"Car Factory",
-		"requiredTech": "Replaceable Parts"
+		"requiredTech": "Replaceable Parts",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Highway Network",
 		"maintenance": 3,
 		"happiness": 2,
 		"percentStatBonus": {
-							"food": 5,
+							"food": 10,
 							"production": 10,
-							"gold":5},
-							
-		"uniques": ["Infrastructure","Must have an owned [Road] within [1] tiles","[+5]% growth [in all cities]","[-5]% maintenance cost for buildings [in this city]","[+1 Production] from [Infrastructure Improvement] tiles [in this city]"
-			],
+							"gold":10},	
+		"uniques": ["Infrastructure",
+		"Must have an owned [Road] within [1] tiles",
+		"[+3]% [Gold] from Trade Routes",
+		"[+3]% growth [in all cities]",
+		"[-5]% maintenance cost for buildings [in this city]",
+		"[+1 Production] from [Infrastructure Improvement] tiles [in this city]"
+		],
 		"hurryCostModifier": 10,
 		"requiredTech": "Replaceable Parts"
 	},
@@ -1919,7 +1924,7 @@
 		"name": "Arms Testing Ground",
 		"maintenance": 3,
 		"hurryCostModifier": 25,
-		"uniques": ["Military Building","New [Military] units start with [5] Experience [in this city]","All newly-trained [Military] units [in this city] receive the [Weapon Research] promotion","Destroyed when the city is captured"],
+		"uniques": ["Military Building","New [Military] units start with [5] Experience [in this city]","All newly-trained [Military] units [in this city] receive the [Weapon Research] promotion","[Military] units gain the [Atomic Arms] promotion <starting from the [Atomic era]>","Destroyed when the city is captured"],
 		"requiredTech": "Replaceable Parts"
 	},
 	{
@@ -2120,7 +2125,7 @@
 		"maintenance": 2,
 		"production":-1,
 		"requiredBuilding": "Military Factory Complex",
-		"uniques": ["Military Building","Provides [3] [Vehicle Parts]","Consumes [2] [Alloy]"],
+		"uniques": ["Military Building","[Military] units gain the [Information Arms] promotion <starting from the [Information era]>","Provides [3] [Vehicle Parts]","Consumes [2] [Alloy]"],
 		"requiredTech": "Combustion"
 	},
 	{
