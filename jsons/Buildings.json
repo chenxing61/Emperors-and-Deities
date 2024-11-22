@@ -1814,8 +1814,6 @@
 					"Provides [2] [Standing Army Maintainance]",
 					"[+1 Production] from [Extraction Improvement] tiles [in this city]",
 					"[Military] units gain the [Modern Arms] promotion <starting from the [Modern era]>",
-					
-					
 					"Destroyed when the city is captured"],
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 25
@@ -1862,100 +1860,104 @@
 	},
 	{
 		"name": "Highway Network",
-		"maintenance": 3,
+		"maintenance":5,
 		"happiness": 2,
 		"percentStatBonus": {
 							"food": 10,
 							"production": 10,
 							"gold":10},	
 		"uniques": ["Infrastructure",
-		"Must have an owned [Road] within [1] tiles",
-		"[+3]% [Gold] from Trade Routes",
-		"[+3]% growth [in all cities]",
-		"[-5]% maintenance cost for buildings [in this city]",
-		"[+1 Production] from [Infrastructure Improvement] tiles [in this city]"
+					"Must have an owned [Road] within [1] tiles",
+					"[+4]% [Gold] from Trade Routes",
+					"[+4]% growth [in all cities]",
+					"[-5]% maintenance cost for buildings [in this city]",
+					"[+1 Production] from [Infrastructure Improvement] tiles [in this city]"
 		],
-		"hurryCostModifier": 10,
-		"requiredTech": "Replaceable Parts"
+		"requiredTech": "Replaceable Parts",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Tools Factory",
-		"maintenance": 2,
-		"specialistSlots": {"Engineer": 1},
+		"maintenance": 3,
 		"percentStatBonus": {
-			"food": 10,
-			"production": 15},
-		"hurryCostModifier": 10,
-		"uniques": ["Light Industry","[+1 Production] per [3] population [in this city]"],
+			"food": 5,
+			"production": 25},
+		"specialistSlots": {"Engineer": 1},
+		"uniques": ["Light Industry","[+1 Production] per [5] population [in this city]"],
 		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "Replaceable Parts"
+		"requiredTech": "Replaceable Parts",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Textile Factory",
 		"maintenance": 3,
-		"production": 2,
-		"happiness": 2,
-		"specialistSlots": {"Engineer": 1,"Artist": 1},
+		"production": 1,
+		"happiness": 1,
+		"specialistSlots": {"Artist": 1},
 		"uniques": ["Light Industry",			
-			"[+1 Production] from [Bovine] tiles [in this city]",
-			"[+1 Production] from [Caprinae] tiles [in this city]",
-			"[+1 Production] from [Cotton] tiles [in this city]",
-			"[+1 Gold] from [Furs] tiles [in this city]",
-			"[+1 Gold] from [Silk] tiles [in this city]"],
+					"[+1 Production, +1 Gold] from [Textile] tiles [in this city]"],
 		"requiredNearbyImprovedResources": ["Bovine","Furs","Caprinae","Cotton","Silk"],
-		"hurryCostModifier": 10,
 		"requiredBuilding": "Civilian Factory Complex",	
-		"requiredTech": "Replaceable Parts"
+		"requiredTech": "Replaceable Parts",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Furniture Factory",
 		"maintenance": 3,
 		"happiness": 1,
-		"specialistSlots": {"Engineer": 2,"Artist": 1},
-		"uniques": ["Light Industry","[+1 Gold] from [Jungle] tiles [in this city]",
+		"specialistSlots": {"Engineer": 1,"Artist": 1},
+		"uniques": ["Light Industry",
+					"[+1 Gold] from [Lumber Improvement] tiles [in this city]",
+					"[+1 Gold] from [Jungle] tiles [in this city]",
 					"[+2 Gold] from [Hard Wood] tiles [in this city]",
 					"[+4 Production, +2 Gold, +2 Science] [in this city] <with [Electronic Parts]>",
 					"Consumes [1] [Electronic Parts] <with [Electronic Parts]>"],
-		"hurryCostModifier": 25,
 		"requiredBuilding": "Civilian Factory Complex",	
-		"requiredTech": "Replaceable Parts"
+		"requiredTech": "Replaceable Parts",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Arms Testing Ground",
-		"maintenance": 3,
-		"hurryCostModifier": 25,
-		"uniques": ["Military Building","New [Military] units start with [5] Experience [in this city]","All newly-trained [Military] units [in this city] receive the [Weapon Research] promotion","[Military] units gain the [Atomic Arms] promotion <starting from the [Atomic era]>","Destroyed when the city is captured"],
-		"requiredTech": "Replaceable Parts"
+		"maintenance": 5,
+		"uniques": ["Military Building",
+					"New [Military] units start with [5] Experience [in this city]",
+					"All newly-trained [Military] units [in this city] receive the [Weapon Research] promotion",
+					"[Military] units gain the [Atomic Arms] promotion <starting from the [Atomic era]>",
+					"Destroyed when the city is captured"],
+		"requiredTech": "Replaceable Parts",
+		"hurryCostModifier": 50
 	},
 	{
 		"name": "Weapon Parts Factory",
-		"hurryCostModifier": 25,
 		"maintenance": 2,
 		"production":-1,
 		"requiredBuilding": "Military Factory Complex",
 		"uniques": ["Military Building","Provides [4] [Weapon Parts]","Consumes [2] [Alloy]"],
-		"requiredTech": "Replaceable Parts"
+		"requiredTech": "Replaceable Parts",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Cannery",
 		"maintenance": 3,
-		"hurryCostModifier": 25,
-		"uniques": ["Light Industry","[+1 Food] from [Herd] tiles [in this city]",
-					"[+1 Food] from [Crops] tiles [in this city]"],
+		"uniques": ["Light Industry",
+					"[+1 Food] from [Herd] tiles [in this city]",
+					"[+1 Food] from [Crops] tiles [in this city]",
+					"[+1 Food] from [Coastal Fish] tiles [in this city]"],
 		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "Mass Production"
+		"requiredTech": "Mass Production",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Soda Factory",
 		"maintenance": 3,
-		"percentStatBonus": {
-			"gold": 10},
-		"happiness": 2,
-		"culture": 2,
-		"hurryCostModifier": 25,
-		"uniques": ["Light Industry"],
+		"happiness": 3,
+		"culture": 1,
+		"percentStatBonus": {"gold": 10},
+		"uniques": ["Light Industry",
+					"[-10]% Culture cost of natural border growth [in this city]"],
 		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "Mass Production"
+		"requiredTech": "Mass Production",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Printing Factory",
@@ -1963,64 +1965,71 @@
 		"culture": 3,
 		"happiness": 1,
 		"specialistSlots": {"Engineer":1},
-		"hurryCostModifier": 10,
+		"percentStatBonus":{"culture":5,"science":10},
+		"uniques": ["Cultural Building",
+					"Only available <in cities without a [Printing House]>",
+					"Destroyed when the city is captured"],
 		"requiredBuilding": "Civilian Factory Complex",
-		"uniques": ["Cultural Building","Only available <in cities without a [Printing House]>","Destroyed when the city is captured"],
-		"requiredTech": "Mass Production"
+		"requiredTech": "Mass Production",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Government Complex",
-		"maintenance": 3,
+		"maintenance": 5,
 		"happiness": 2,
 		"culture": 2,
-		"cityStrength": 4,
-		"specialistSlots": {"Governor": 2},
+		"cityStrength": 5,
+		"specialistSlots": {"Governor": 1},
 		"uniques": ["Political Building",
-					"[-10]% Unhappiness from [Specialists] [in this city] <before adopting [Anarchism]>",
-					"[-10]% Unhappiness from [Population] [in this city] <in cities with a [Anarchist Ruling]>",
+					"[-20]% Unhappiness from [Specialists] [in this city] <before adopting [Anarchism]>",
+					"[-20]% Unhappiness from [Population] [in this city] <in cities with a [Anarchist Ruling]>",
 					"Destroyed when the city is captured"],
-		"hurryCostModifier": 40,
-		"requiredTech":"Telegram"
+		"requiredTech":"Telegram",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Stock Exchange",
 		"gold": 3,
-		"specialistSlots": {"Merchant": 4},
-		"percentStatBonus": {"gold": 10},
-		"uniques": ["Economic Building","[+1 Gold] per [3] population [in this city]"],
-		"hurryCostModifier": 15,
+		"specialistSlots": {"Merchant": 3},
+		"uniques": ["Economic Building",
+					"[+1 Gold] from every specialist [in this city]"],
 		"requiredBuilding": "Bank",
-		"requiredTech": "Telegram"
+		"requiredTech": "Telegram",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Cement Work",
 		"maintenance": 3,
-		"production": 3,
+		"cityHealth":5,
 		"specialistSlots": {"Engineer": 2},
 		"uniques": ["Heavy Industry",
-			"[+1 Production] from [Stone] tiles [in this city]",
-			"[+25]% Production when constructing [All] buildings [in this city]"],
-		"hurryCostModifier": 0,	
+					"[+1 Production] from [Stone] tiles [in this city]",
+					"[+10]% Production when constructing [All] buildings [in all cities]"],
 		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "Concrete"
+		"requiredTech": "Concrete",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Military Base",
 		"maintenance": 3,
-		"cityStrength": 5,
-		"cityHealth": 5,
-		"hurryCostModifier": 25,
-		"uniques": ["Military Building","Provides [2] [Standing Army Maintainance]","New [Military] units start with [15] Experience [in this city]","Destroyed when the city is captured"],
-		"requiredTech": "Concrete"
+		"cityStrength": 10,
+		"uniques": ["Military Building",
+					"Provides [2] [Standing Army Maintainance]",
+					"New [Military] units start with [15] Experience [in this city]",
+					"Destroyed when the city is captured"],
+		"requiredTech": "Concrete",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Bunker",
 		"maintenance": 2,
 		"cityStrength": 5,
 		"cityHealth": 50,
-		"hurryCostModifier": 25,
 		"requiredTech": "Concrete",
-		"uniques": ["Static Defense","Population loss from nuclear attacks [-15]% [in this city]","Destroyed when the city is captured"]
+		"uniques": ["Static Defense",
+					"Population loss from nuclear attacks [-15]% [in this city]",
+					"Destroyed when the city is captured"],
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Train station",
@@ -2028,22 +2037,25 @@
 		"happiness": 2,
 		"percentStatBonus": {
 							"food": 10,
-							"production": 20,
-							"gold":15},
-							
-		"uniques": ["Infrastructure","Must have an owned [Railroad] within [1] tiles",
-			"[+5]% growth [in all cities]","[-5]% maintenance cost for buildings [in this city]","[+1 Gold] from [Infrastructure Improvement] tiles [in this city]"
-			],
-		"hurryCostModifier": 10,
-		"requiredTech": "Railroads"
+							"production": 25,
+							"gold":25},
+		"uniques": ["Infrastructure",
+					"[+5]% [Gold] from Trade Routes",
+					"[+5]% growth [in all cities]",
+					"[-5]% maintenance cost for buildings [in this city]",
+					"Must have an owned [Railroad] within [1] tiles"
+					],
+		"requiredTech": "Railroads",
+		"hurryCostModifier": 10
 	},
 
 	{
 		"name": "Statue of Liberty",
-		"culture": 1,
+		"culture": 3,
 		"isWonder": true,
-		"greatPersonPoints": {"Great Engineer": 2},
-		"uniques": ["Only available <after adopting [Liberalism]>","[+25]% Production when constructing [Gold] buildings [in all cities]"],
+		"greatPersonPoints": {"Great Engineer": 3,"Great Artist": 3},
+		"uniques": ["[+25]% Production when constructing [Gold] buildings [in all cities]",
+					"Only available <after adopting [Liberalism]>"],
 		"requiredTech": "Replaceable Parts",
 		"quote": "'Give me your tired, your poor, your huddled masses yearning to breathe free, the wretched refuse of your teeming shore. Send these, the homeless, tempest-tossed to me, I lift my lamp beside the golden door!' - Emma Lazarus"
 	},
@@ -2052,7 +2064,8 @@
 		"faith": 5,
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 2},
-		"uniques": ["Only available <after adopting [Conservatism]>","May buy [Culture] buildings with [Faith] [in all cities]"],
+		"uniques": ["May buy [Culture] buildings with [Faith] [in all cities]",
+					"Only available <after adopting [Conservatism]>"],
 		"requiredTech": "Replaceable Parts",
 		"quote": "'Give me your tired, your poor, your huddled masses yearning to breathe free, the wretched refuse of your teeming shore. Send these, the homeless, tempest-tossed to me, I lift my lamp beside the golden door!' - Emma Lazarus"
 	},
