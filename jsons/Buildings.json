@@ -2626,7 +2626,9 @@
 		"name": "Graphene Lab",
 		"maintenance": 10,
 		"science": 5,
-		"uniques": ["Research Building","Provides [2] [Graphene]"],
+		"uniques": ["Research Building",
+					"Provides [2] [Graphene]",
+					"Consumes [1] [Coal]"],
 		"requiredBuilding":"University",
 		"requiredTech": "Graphene",
 		"hurryCostModifier": 25
@@ -2684,10 +2686,9 @@
 		"name": "Polar Frontier",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist": 5},
-		"uniques": [
-		"[+3 Science] from [Snow] tiles [in this city]",
-		"[+3 Science] from [Ice] tiles [in this city]",
-		"Must have an owned [Snow] within [4] tiles"],
+		"uniques": ["[+3 Science] from [Snow] tiles [in this city]",
+					"[+3 Science] from [Ice] tiles [in this city]",
+					"Must have an owned [Snow] within [4] tiles"],
 		"requiredTech": "Sustainability",
 		"quote": "'I seemed to vow to myself that some day I would go to the region of ice and snow and go on and on till I came to one of the poles of the earth, the end of the axis upon which this great round ball turns.' - Ernest Shackleton"
 	},
@@ -2743,7 +2744,7 @@
 		"name": "Arena",
 		"maintenance": 1,
 		"happiness": 2,
-		"uniques": ["Entertainment Building","Only available <after adopting [Militant]>","[-5]% Unhappiness from [Population] [in this city]"],
+		"uniques": ["Entertainment Building","Only available <after adopting [Militant]>","[-5]% Unhappiness from [Population] [in this city]","Destroyed when the city is captured"],
 		"requiredTech":"Drama and Poetry",
 		"hurryCostModifier": 25
 	},
@@ -2758,38 +2759,47 @@
 	{
 		"name": "Primitive Property Sector",
 		"percentStatBonus": {"gold": 20},
-		"hurryCostModifier": 25,
+		
 		"uniques": ["Economic Building",
 					"Only available <after adopting [Plutocracy]>",
 					"[-10]% Production when constructing [All] buildings [in this city]",
-					"[+1 Gold] per [5] population [in this city]"],
-		"requiredTech": "Philosophy"
+					"[+1 Gold] per [5] population [in this city]","Destroyed when the city is captured"],
+		"requiredTech": "Philosophy",
+		"hurryCostModifier": 0
 	},
 	{
 		"name": "Jousing Place",
 		"happiness": 1,
-		"hurryCostModifier": 25,
-		"uniques": ["Entertainment Building","Only available <after adopting [Feudalism]>","[-5]% Unhappiness from [Population] [in this city]","New [Military] units start with [5] Experience [in this city]"],
+		"uniques": ["Entertainment Building",
+					"[-5]% Unhappiness from [Population] [in this city]",
+					"New [Military] units start with [5] Experience [in this city]",
+					"Only available <after adopting [Feudalism]>"],
 		"requiredBuilding": "Town Square",
-		"requiredTech":"Tactics"
+		"requiredTech":"Tactics",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Examination Hall",
 		"maintenance": 2,
-		"hurryCostModifier": 15,
 		"happiness": 1,
-		"culture": 2,
-		"uniques": ["Political Building","Educational Building","Only available <after adopting [Meritocracy]>","New [Military] units start with [5] Experience [in this city]"],
-		"requiredTech": "Civil Service"
+		"culture": 1,
+		"uniques": ["Political Building",
+					"Educational Building","New [Military] units start with [5] Experience [in this city]",
+					"Only available <after adopting [Meritocracy]>","Destroyed when the city is captured"],
+		"requiredTech": "Civil Service",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Chartered Company",
-		"percentStatBonus": {"gold": 25,"production": 15},
-		"specialistSlots": {"Governor":1},
 		"maintenance": 2,
-		"hurryCostModifier": 25,
-		"uniques": ["Economic Building","Political Building","Can only be built <in [Annexed] cities>","Only available <after adopting [Imperialism]>"],
-		"requiredTech": "Banking"
+		"percentStatBonus": {"gold": 33,"production": 25},
+		"specialistSlots": {"Governor":1},
+		"uniques": ["Economic Building",
+					"Political Building",
+					"Can only be built <in [Annexed] cities>",
+					"Only available <after adopting [Imperialism]>","Destroyed when the city is captured"],
+		"requiredTech": "Banking",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Commune",
@@ -2797,28 +2807,37 @@
 		"production": 2,
 		"cityStrength": 5,
 		"specialistSlots": {"Artist": 1,"Merchant": 1,"Engineer": 1,"Scientist": 1},
-		"uniques": ["Political Building","Only available <after adopting [Anarchism]>",
+		"uniques": ["Political Building",
 					"[+3 Happiness, -5 Gold] per [5] population [in this city]",
+					"[+10]% Golden Age length",
+					"Only available <after adopting [Anarchism]>",
 					"Destroyed when the city is captured"],
-		"hurryCostModifier": 0,
-		"requiredTech":"Radio"
+		"requiredTech":"Radio",
+		"hurryCostModifier": 0
 	},
 	{
 		"name": "Anarchist Ruling",
 		"culture":2,
-		"percentStatBonus":{"food":-10,"production":-10,"science":10,"culture":10,"faith":-10,"gold":-25},
-		"uniques": ["Political Building","Only available <after adopting [Anarchism]>",
+		"percentStatBonus":{"food":-5,"production":-5,"science":17,"culture":17,"faith":-5,"gold":-10},
+		"uniques": ["Political Building",
 					"[-3 Happiness] <in cities without a [Commune]>",
+					"Only available <after adopting [Anarchism]>",	
 					"Destroyed when the city is captured"],
-		"hurryCostModifier": 0,
 		"requiredTech":"Radio"
 	},
 	{
 		"name": "Carbon Capture",
-		"hurryCostModifier": 0,
+		"maintenance": 3,
 		"production":1,
-		"maintenance": 	5,
-		"uniques": ["Unbuildable","Unsellable","Power Building","[+10]% [Science] <in cities with a [Coal Plant]>","[+10]% [Culture] <in cities with a [Coal Plant]>","[-30]% [Production] <in cities with a [Coal Plant]>","[-1 Production] from [Coal] tiles [in this city]","Provides [1] [Coal]"]
+		"uniques": ["Unbuildable",
+					"Unsellable",
+					"Power Building",
+					"[+10]% [Science] <in cities with a [Coal Plant]>",
+					"[+10]% [Culture] <in cities with a [Coal Plant]>",
+					"[-20]% [Production] <in cities with a [Coal Plant]>",
+					"[-1 Production] from [Coal] tiles [in this city]",
+					"Provides [1] [Coal]","Destroyed when the city is captured"],
+		"requiredTech":"Sustainability"
 	},
 
 	///Routes under ideology
@@ -2827,7 +2846,12 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Socialism]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+1 Culture, +1 Gold, +1 Production] from [Agricultural Improvement] tiles [in all cities]","[+1 Culture, +1 Gold, +1 Production] from [Lumber Improvement] tiles [in all cities]","[+25]% Production when constructing [Light Industry] buildings [in all cities]"],
+		"uniques": ["Only available <after adopting [Socialism]>",
+					"Triggers a global alert upon completion",
+					"[+1 Culture, +1 Production] from [Agricultural Improvement] tiles [in all cities]",
+					"[+1 Culture, +1 Production] from [Lumber Improvement] tiles [in all cities]",
+					"[+25]% Production when constructing [Light Industry] buildings [in all cities]",
+					"Destroyed when the city is captured"],
 		"requiredTech": "Economics"
 	},	
 	{
@@ -2835,7 +2859,12 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Socialism]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+3 Production] from all [Political Building] buildings","[-25]% construction time for [All] improvements <when not at war>","[+40]% Production when constructing [Heavy Industry] buildings [in all cities] <when not at war>","[+25]% Production when constructing [Military Industry] buildings [in all cities] <when at war>"],
+		"uniques": ["Only available <after adopting [Socialism]>",
+					"Triggers a global alert upon completion","Destroyed when the city is captured",
+					"[+3 Production] from all [Political Building] buildings",
+					"[-25]% construction time for [All] improvements <when not at war>",
+					"[+40]% Production when constructing [Heavy Industry] buildings [in all cities] <when not at war>",
+					"[+25]% Production when constructing [Military Industry] buildings [in all cities] <when at war>"],
 		"requiredTech": "Economics"
 	},
 	{
@@ -2843,7 +2872,12 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Fascism]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+1 Gold] from all [Light Industry] buildings","[-2 Gold, +1 Happiness, +2 Culture] from all [Economic Building] buildings","[+1 Production] from all [Military Industry] buildings"],
+		"uniques": ["Only available <after adopting [Fascism]>",
+					"Triggers a global alert upon completion",
+					"[+2 Gold] from all [Light Industry] buildings",
+					"[-2 Gold, +1 Happiness, +1 Culture] from all [Economic Building] buildings",
+					"[+3 Production] from all [Military Industry] buildings",
+					"Destroyed when the city is captured"],
 		"requiredTech": "Economics"
 	},	
 	{
@@ -2851,23 +2885,38 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Fascism]>","Triggers a global alert upon completion","Destroyed when the city is captured","[-1 Happiness] [in all cities]","[+25]% Production when constructing [Military] units [in all cities]","[+40]% Production when constructing [Military Industry] buildings [in all cities]","[+2 Happiness] [in annexed city]"],
+		"uniques": ["Only available <after adopting [Fascism]>",
+					"Triggers a global alert upon completion",
+					"Destroyed when the city is captured",
+					"[-1 Happiness] [in all cities]",
+					"[+25]% Production when constructing [Military] units [in all cities]",
+					"[+40]% Production when constructing [Military Industry] buildings [in all cities]",
+					"[+2 Happiness] [in annexed city]"],
 		"requiredTech": "Economics"
 	},
 	{
 		"name": "Market interventionism",
 		"cost": 1,
-		"specialistSlots":{"Governor":2},
+		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Privatised Property]>","Triggers a global alert upon completion","Destroyed when the city is captured","[-1 Gold] from all [Economic Building] buildings","[-1 Gold] from all [Political Building] buildings","[Gold] cost of purchasing items in cities [-25]%","[+1 Happiness] per [3] population [in all cities]"],
+		"uniques": ["Only available <after adopting [Privatised Property]>",
+					"Triggers a global alert upon completion","Destroyed when the city is captured",
+					"[-1 Gold] from all [Economic Building] buildings",
+					"[-1 Gold] from all [Political Building] buildings",
+					"[Gold] cost of purchasing items in cities [-33]%",
+					"[+1 Happiness] per [3] population [in all cities]"],
 		"requiredTech": "Economics"
 	},	
 	{
 		"name": "Free Market Focus",
 		"cost": 1,
-		"specialistSlots":{"Governor":1},
+		"greatPersonPoints":{"Great Merchant":5},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Privatised Property]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+5]% [Science] [in all cities]","[+50]% [Gold] [in all cities]","[Gold] cost of purchasing items in cities [+20]%"],
+		"uniques": ["Only available <after adopting [Privatised Property]>",
+					"Triggers a global alert upon completion","Destroyed when the city is captured",
+					"[+5]% [Science] [in all cities]",
+					"[+50]% [Gold] [in all cities]",
+					"[Gold] cost of purchasing items in cities [+25]%"],
 		"requiredTech": "Economics"
 	},
 	{
@@ -2875,7 +2924,12 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Mixed Economy]>","Triggers a global alert upon completion","Destroyed when the city is captured","[-1 Gold] from all [Economic Building] buildings","[-1 Gold] from all [Political Building] buildings","[Gold] cost of purchasing items in cities [-25]%","[+1 Happiness] per [3] population [in all cities]"],
+		"uniques": ["Only available <after adopting [Mixed Economy]>",
+					"Triggers a global alert upon completion","Destroyed when the city is captured",
+					"[-1 Gold] from all [Economic Building] buildings",
+					"[-1 Gold] from all [Political Building] buildings",
+					"[Gold] cost of purchasing items in cities [-33]%",
+					"[+1 Happiness] per [3] population [in all cities]"],
 		"requiredTech": "Economics"
 	},
 	{
@@ -2883,7 +2937,12 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Mixed Economy]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+1 Gold] from all [Light Industry] buildings","[+1 Gold] from all [Heavy Industry] buildings","[-1 Gold, +1 Happiness, +2 Culture] from all [Economic Building] buildings","[+1 Production] from all [Military Industry] buildings"],
+		"uniques": ["Only available <after adopting [Fascism]>",
+					"Triggers a global alert upon completion",
+					"[+2 Gold] from all [Light Industry] buildings",
+					"[-2 Gold, +1 Happiness, +1 Culture] from all [Economic Building] buildings",
+					"[+3 Production] from all [Military Industry] buildings",
+					"Destroyed when the city is captured"],
 		"requiredTech": "Economics"
 	},	
 	{
@@ -2891,15 +2950,24 @@
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Redistribution of Means of Production(Anarchist)]>","Triggers a global alert upon completion","Destroyed when the city is captured","[+1 Science, +1 Culture, +3 Gold, +3 Production] per [10] population [in all cities]","[+1 Happiness, -1 Gold] per [3] population [in all cities]"],
+		"uniques": ["Only available <after adopting [Redistribution of Means of Production(Anarchist)]>",
+					"Triggers a global alert upon completion",
+					"Destroyed when the city is captured",
+					"[+1 Science, +1 Culture, +3 Gold, +3 Production] per [10] population [in all cities]",
+					"[+33]% Production when constructing [Commune] buildings [in all cities]"],
 		"requiredTech": "Economics"
 	},	
 	{
-		"name": "Mutualism Focus",
+		"name": "Cooperative Focus",
 		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Redistribution of Means of Production(Anarchist)]>","Triggers a global alert upon completion","Destroyed when the city is captured","[-1 Gold, +1 Production] from all [Economic Building] buildings","[+1 Happiness, -1 Gold] per [3] population [in all cities]"],
+		"uniques": ["Only available <after adopting [Socialism]>",
+					"Triggers a global alert upon completion",
+					"[+1 Culture, +1 Production] from [Agricultural Improvement] tiles [in all cities]",
+					"[+1 Culture, +1 Production] from [Lumber Improvement] tiles [in all cities]",
+					"[+25]% Production when constructing [Light Industry] buildings [in all cities]",
+					"Destroyed when the city is captured"],
 		"requiredTech": "Economics"
 	},
 	/// Special buildings
