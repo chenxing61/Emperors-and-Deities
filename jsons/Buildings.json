@@ -2431,155 +2431,191 @@
 		"happiness": 2,
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 2},
-		"uniques": ["Only available <after adopting [Monotheism]>","[-10]% Culture cost of adopting new Policies","Hidden when religion is disabled"],
-		"requiredTech": "Plastics",
-		"quote": "'Come to me, all who labor and are heavy burdened, and I will give you rest.' - New Testament, Matthew 11:28"
+		"uniques": ["Only available <after adopting [Monotheism]>",
+					"[-10]% Culture cost of adopting new Policies","Hidden when religion is disabled"],
+		"quote": "'Come to me, all who labor and are heavy burdened, and I will give you rest.' - New Testament, Matthew 11:28",
+		"requiredTech": "Plastics"
 	},
 	{
 		"name": "The Grand Pantheon",
 		"isWonder": true,
 		"happiness": 5,
 		"specialistSlots":{"Artist":3},
-		"uniques": ["Only available <before adopting [Monotheism]>","[+2 Culture] per [4] social policies adopted","Hidden when religion is disabled"],
-		"requiredTech": "Plastics",
-		"quote": "'Come to me, all who labor and are heavy burdened, and I will give you rest.' - New Testament, Matthew 11:28"
+		"uniques": ["Only available <before adopting [Monotheism]>",
+					"[+2 Culture] per [4] social policies adopted","Hidden when religion is disabled"],
+		"quote": "'Cattle die,kinsmen die,all men are mortal. Words of praise will never perish nor a noble name.'- The Havamal",
+		"requiredTech": "Plastics"
 	},
 	{
 		"name": "Media Centre",
 		"isWonder": true,
 		"culture": 5,
-		"greatPersonPoints": {"Great Artist": 3},
-		"uniques": ["[+2 Happiness] [in all cities]", "Gain a free [Broadcast Tower] [in all cities]","Gifts of Gold to City-States generate [25]% more Influence"],
-		"requiredTech": "Telecommunications",
-		"quote": "'Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules.' - Douglas Adams"
+		"greatPersonPoints": {"Great Artist": 5},
+		"uniques": ["[+1 Happiness] [in all cities]",
+					"Allied City-States provide [Culture] equal to [25]% of what they produce for themselves"],
+		"quote": "'Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules.' - Douglas Adams",
+		"requiredTech": "Telecommunications"
 	},
 ///Line 19
 	{
 		"name": "Nuclear Plant",
 		"maintenance": 5,
-		"production": 5,
+		"production": 6,
 		"science": 4,
 		"percentStatBonus": {"production": 25,"science": 10},
-		"uniques": ["Power Building","Consumes [1] [Uranium] <before discovering [Nuclear Fusion]>","Consumes [0] [Uranium] <after discovering [Nuclear Fusion]>","[+2 Production] <in cities with a [Power Grid]>"],
-		"requiredTech": "Nuclear Fission"
+		"uniques": ["Power Building","Consumes [1] [Uranium] <before discovering [Nuclear Fusion]>",
+					"Consumes [0] [Uranium] <after discovering [Nuclear Fusion]>",
+					"[+2 Production] <in cities with a [Power Grid]>"],
+		"requiredTech": "Nuclear Fission",
+		"hurryCostModifier":25
 	},
 	{
 		"name": "Bomb Shelter",
-		"cityHealth": 10,
 		"maintenance": 3,
+		"cityHealth": 10,
+		"uniques": ["Static Defense",
+					"Population loss from nuclear attacks [-75]% [in this city]",
+					"Damage to garrison from nuclear attacks [-75]% [in this city]"],
 		"requiredTech": "Nuclear Fission",
-		"uniques": ["Static Defense","Population loss from nuclear attacks [-75]% [in this city]","Damage to garrison from nuclear attacks [-75]% [in this city]"]
+		"hurryCostModifier":25
 	},
 	{
 		"name": "Solar Plant",
-		"maintenance": 3,
-		"production":3,
-		"percentStatBonus": {"production": 10},
-		"uniques": ["Power Building","[+1 Production] from [Desert] tiles [in this city]","[+2 Production] <in cities with a [Power Grid]>"],
-		"requiredTech": "Ecology"	
+		"maintenance": 2,
+		"production":4,
+		"percentStatBonus": {"production": 15},
+		"uniques": ["Power Building",
+					"[+1 Production] from [Desert] tiles [in this city]",
+					"[+2 Production] <in cities with a [Power Grid]>"],
+		"requiredTech": "Ecology",
+		"hurryCostModifier":25
 	},
 	{
 		"name": "Recycling Center",
 		"maintenance": 5,
-		"uniques": ["Heavy Industry","Provides [2] [Metal]","Provides [2] [Aluminum]","Limited to [3] per Civilization"],
+		"uniques": ["Heavy Industry",
+					"Provides [2] [Metal]",
+					"Provides [2] [Aluminum]",
+					"Provides [1] [Industrial Chemicals]",
+					"Limited to [3] per Civilization"],
 		"requiredTech": "Ecology"
 	},
 	{
 		"name": "Microchip Factory",
 		"maintenance": 5,
-		"uniques": ["Light Industry","Provides [3] [Microchips]",
+		"uniques": ["Light Industry",
+					"Provides [3] [Microchips]",
 					"Provides [2] [Microchips] <after discovering [Robotic]>"],
-		"hurryCostModifier": 25,
 		"requiredBuilding": "Civilian Factory Complex",	
-		"requiredTech": "Lasers"
+		"requiredTech": "Lasers",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Opera House of Dolphin",
 		"isWonder": true,
-		"percentStatBonus": {"culture": 25},
+		"happiness":3,
+		"percentStatBonus": {"culture": 33},
 		"uniques": ["[+2 Culture] from [Coast] tiles [in this city]","Must be next to [Coast]"],
-		"requiredTech": "Ecology",
-		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying"
+		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying",
+		"requiredTech": "Ecology"
 	},
 	{
 		"name": "Great Dam",
 		"isWonder": true,
-		"greatPersonPoints": {"Great Engineer": 2},
+		"greatPersonPoints": {"Great Engineer": 3},
 		"percentStatBonus": {"production": 50},
-		"uniques": ["Must be on [River]","Must have an owned [Mountain] within [2] tiles"],
-		"requiredTech": "Ecology",
-		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying"
+		"uniques": ["[+2 Production, +1 Gold] from [Hydro Plant] buildings [in all cities]",
+					"Population loss from nuclear attacks [-15]% [in this city]",
+					"Must have an owned [Mountain] within [2] tiles",
+					"Must be on [River]"],
+		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying",
+		"requiredTech": "Ecology"
 	},
 	{
 		"name": "Satilelite System",
 		"isNationalWonder": true,
-		"percentStatBonus": {"science": 25},
-		"uniques": ["Infrastructure","Reveals the entire map","[+25]% [Science] [in all cities]","[+25]% [Production] [in all cities]","[+1] Movement"],
+		"percentStatBonus": {"science": 33},
+		"uniques": ["Infrastructure",
+					"Reveals the entire map",
+					"[+25]% [Science] [in all cities]",
+					"[+25]% [Production] [in all cities]",
+					"[+5]% [Gold] from Trade Routes",
+					"[+1] Movement"],
 		"requiredTech": "Satellites"
 	},
 ///Line 20
 	{
 		"name": "Partical Acclerator",
 		"maintenance": 5,
-		"science": 10,
-		"percentStatBonus": {"science": 25},
-		"uniques": ["Research Building","[Great Scientist] is earned [+20]% faster"],
-		"requiredTech": "Particle Physics"
+		"science": 8,
+		"percentStatBonus": {"science": 33},
+		"uniques": ["Research Building",
+					"[Great Scientist] is earned [+25]% faster"],
+		"requiredTech": "Particle Physics",
+		"hurryCostModifier":50
 	},
 	{
 		"name": "WAN Support",		
 		"maintenance": 5,
 		"happiness": 2,
-		"uniques": ["Infrastructure","[+1 Culture] per [2] population [in this city]","[-5]% maintenance cost for buildings [in this city]"],
-		"hurryCostModifier": 5,
+		"uniques": ["Infrastructure",
+					"[+1 Culture] per [2] population [in this city]",
+					"[-5]% maintenance cost for buildings [in all cities]"],
 		"requiredBuilding": "Broadcast Tower",
-		"requiredTech": "Internet"
+		"requiredTech": "Internet",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Video Game Industry",
-		"happiness": 3,
-		"percentStatBonus": {"gold": 10},
+		"happiness": 1,
+		"percentStatBonus": {"gold": 15},
 		"specialistSlots":{"Artist":1,"Merchant":1},
-		"hurryCostModifier": 25,
-		"uniques": ["Entertainment Building","Consumes [1] [Electronic Parts]"],
-		"requiredTech": "Internet"
+		"uniques": ["Entertainment Building",
+					"Consumes [1] [Electronic Parts]"],
+		"requiredTech": "Internet",
+		"hurryCostModifier": 10
 	},
-
 	{
 		"name": "Drone Control Centre",
 		"maintenance": 5,
-		"specialistSlots": {"Engineer": 3},
+		"specialistSlots": {"Engineer": 1,"Scientist":1},
 		"percentStatBonus": {
 			"food": 10,
 			"production": 10,
-			"gold":10},
-		"uniques": ["Infrastructure","[+10]% Production when constructing [All] buildings [in this city]"],
-		"hurryCostModifier": 25,
+			"gold":10,
+			"culture":5,
+			"science":10},
+		"uniques": ["Infrastructure",
+					"[-5]% maintenance cost for buildings [in this city]",
+					"[+10]% Production when constructing [All] buildings [in this city]"],
 		"requiredBuilding": "Drone Factory",
-		"requiredTech": "Drone Warfare"
+		"requiredTech": "Drone Warfare",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "International Space Station",
 		"isWonder": true,
-		"greatPersonPoints": {"Great Scientist": 2},
-		"uniques": ["Space Race Building","[+25]% Production when constructing [Spaceship part] units [in all cities]","Allied City-States provide [Science] equal to [25]% of what they produce for themselves"],
+		"greatPersonPoints": {"Great Scientist": 3},
+		"uniques": ["Space Race Building",
+					"[+25]% Production when constructing [Spaceship part] units [in all cities]",
+					"Allied City-States provide [Science] equal to [25]% of what they produce for themselves"],
 		"requiredTech": "Space Stations",
-		"quote": "'The wonder is, not that the field of stars is so vast, but that man has measured it.' - Anatole France"
+		"quote": "'The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever.'-Konstantin Tsiolkovsky"
 	},
 	{
 		"name": "Space Telescope",
 		"isWonder": true,
-		"greatPersonPoints": {"Great Scientist": 2},
+		"greatPersonPoints": {"Great Scientist": 3},
 		"uniques": ["Space Race Building","[1] free [Great Scientist] units appear",
-			"[+25]% Production when constructing [Spaceship part] units [in all cities]"],
+					"[+25]% Production when constructing [Spaceship part] units [in all cities]"],
 		"requiredTech": "Space Stations",
-		"quote": "'The wonder is, not that the field of stars is so vast, but that man has measured it.' - Anatole France"
+		"quote": "'The universe is not only stranger than we imagine, it is stranger than we can imagine.'-Sir Arthur Eddington"
 	},
 	{
 		"name": "FAST",
 		"isWonder": true,
-		"greatPersonPoints": {"Great Scientist": 10},
-		"uniques": ["Space Race Building","[+25]% Production when constructing [Spaceship part] units [in all cities]"],
+		"greatPersonPoints": {"Great Scientist": 5},
+		"uniques": ["Space Race Building","[+33]% Production when constructing [Spaceship part] units [in all cities]"],
 		"requiredTech": "Space Stations",
 		"quote": "'The wonder is, not that the field of stars is so vast, but that man has measured it.' - Anatole France"
 	},
@@ -2588,56 +2624,72 @@
 
 	{
 		"name": "Graphene Lab",
-		"maintenance": 5,
-		"science": 3,
+		"maintenance": 10,
+		"science": 5,
 		"uniques": ["Research Building","Provides [2] [Graphene]"],
-		"hurryCostModifier": 25,
-		"requiredTech": "Graphene"
+		"requiredBuilding":"University",
+		"requiredTech": "Graphene",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "E-commerce Firm Complex",
-		"gold": 5,
-		"percentStatBonus": {"gold": 25},
-		"specialistSlots": {"Merchant": 2,"Artist":1,"Engineer":1},
-		"uniques": ["Economic Building","[+1 Gold] per [4] population [in this city]"],
-		"hurryCostModifier": 15,
+		"percentStatBonus": {"gold": 42},
+		"specialistSlots": {"Merchant": 2},
+		"uniques": ["Economic Building","[+3 Gold] per [10] population [in this city]"],
 		"requiredBuilding": "Bank",
-		"requiredTech": "E-commerce"
+		"requiredTech": "E-commerce",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Drone Factory",
 		"maintenance": 5,
-		"specialistSlots": {"Engineer": 2},
-		"hurryCostModifier": 25,
+		"specialistSlots": {"Engineer": 3},
 		"uniques": ["Light Industry",
 					"[+1 Production] from every specialist [in this city]",
 					"Consumes [1] [Microchips]"],
 		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "3D Printers"
+		"requiredTech": "3D Printers",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Public 3D Printer",
+		"maintenance": 10,
+		"percentStatBonus": {
+			"production": 25},
+		"uniques": ["Light Industry","[+1 Production] per [1] population [in this city]"],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "3D Printers",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Pyramid Habitat",
 		"isWonder": true,
 		"percentStatBonus": {"food": 20,"production": 20,"culture": 20,"science": 20,"gold": 20},
-		"uniques": ["[+1] population [in all cities]","Must be next to [Coast]"],
-		"requiredTech": "Graphene",
-		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying"
+		"uniques": ["[+50]% growth [in all coastal cities]",
+					"Must be next to [Coast]"],
+		"quote": "'I dream things that never were and ask, 'Why not?' - Dante Bini",
+		"requiredTech": "Graphene"
 	},
 	{
 		"name": "Underwater City",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist": 5},
-		"uniques": ["Must have an owned [Ocean] within [4] tiles","[+1 Science, +2 Production] from [Coast] tiles [in this city]","[+4 Science] from [Ocean] tiles [in this city]"],
-		"requiredTech": "Graphene",
-		"quote": "'The wonder is, not that the field of stars is so vast, but that man has measured it.' - Anatole France"
+		"uniques": ["[+1 Science, +2 Production] from [Coast] tiles [in this city]",
+					"[+4 Science] from [Ocean] tiles [in this city]",
+					"Must have an owned [Ocean] within [4] tiles"],
+		"quote": "'Almost a quarter of our planet is a single mountain range and we didn't enter it until after Neil Armstrong and Buzz Aldrin went to the moon. So we went to the moon, played golf up there, before we went to the largest feature on our own planet.' - Robert Ballard",
+		"requiredTech": "Graphene"
 	},
 	{
 		"name": "Polar Frontier",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist": 5},
-		"uniques": ["Must have an owned [Snow] within [4] tiles","[+3 Science] from [Snow] tiles [in this city]","[+3 Science] from [Ice] tiles [in this city]"],
+		"uniques": [
+		"[+3 Science] from [Snow] tiles [in this city]",
+		"[+3 Science] from [Ice] tiles [in this city]",
+		"Must have an owned [Snow] within [4] tiles"],
 		"requiredTech": "Sustainability",
-		"quote": "'The wonder is, not that the field of stars is so vast, but that man has measured it.' - Anatole France"
+		"quote": "'I seemed to vow to myself that some day I would go to the region of ice and snow and go on and on till I came to one of the poles of the earth, the end of the axis upon which this great round ball turns.' - Ernest Shackleton"
 	},
 ///Line 22
 
@@ -2673,7 +2725,6 @@
 		"culture": 1,
 		"uniques": ["Worship Place","Only available <after adopting [Polytheism]>","Hidden when religion is disabled","Destroyed when the city is captured"],
 		"requiredTech":"Calendar"
-
 	},
 	{
 		"name": "Shaman's Hut",
@@ -2692,17 +2743,17 @@
 		"name": "Arena",
 		"maintenance": 1,
 		"happiness": 2,
-		"hurryCostModifier": 25,
 		"uniques": ["Entertainment Building","Only available <after adopting [Militant]>","[-5]% Unhappiness from [Population] [in this city]"],
-		"requiredTech":"Drama and Poetry"
+		"requiredTech":"Drama and Poetry",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Forum",
-		"specialistSlots": {"Scientist": 1,"Artist": 1,"Governor": 1},
 		"maintenance": 2,
-		"hurryCostModifier": 25,
+		"specialistSlots": {"Scientist": 1,"Artist": 1},
 		"uniques": ["Political Building","Cultural Building","Only available <after adopting [Scholarship]>","Destroyed when the city is captured"],
-		"requiredTech":"Philosophy"
+		"requiredTech":"Philosophy",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Primitive Property Sector",
