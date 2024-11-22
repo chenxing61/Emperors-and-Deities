@@ -759,7 +759,7 @@
 					"[Military] units gain the [Medieval Arms] promotion",
 					"[Military] units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>",
 					"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <before the [Industrial era]>",
-					"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <after the [Industrial era]><after discovering [Electricity]>",
+					"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <starting from the [Industrial era]><after discovering [Electricity]>",
 					"Destroyed when the city is captured"],
 		"requiredTech": "Armorments",
 		"hurryCostModifier": 25
@@ -1286,7 +1286,7 @@
 		"percentStatBonus":{"production":10},
 		"uniques": ["Heavy Industry",
 			"[+1 Production] from [Useful Mineral] tiles [in this city]",
-			"Provides [1] [Steel]",
+			"Provides [1] [Alloy]",
 			"Consumes [1] [Metal]"],
 		"requiredNearbyImprovedResources": ["Metal", "Minerals"],	
 		"requiredTech": "Steels",
@@ -1547,20 +1547,20 @@
 		"requiredTech": "Navigation"
 	},
 	{
-		"name": "Steel Mill",
+		"name": "Alloy Mill",
 		"maintenance": 3,
 		"production": 2,
 		"hurryCostModifier": 0,		
 		"uniques": ["Heavy Industry","[+10]% Production when constructing [All] buildings [in this city]",
 			"Consumes [3] [Metal] <before discovering [Industrialization]>",
 			"Consumes [2] [Coal] <before discovering [Industrialization]>",
-			"Provides [4] [Steel]",
+			"Provides [4] [Alloy]",
 			"Consumes [4] [Metal] <after discovering [Industrialization]> <before discovering [Electricity]>",
 			"Consumes [3] [Coal] <after discovering [Industrialization]> <before discovering [Electricity]>",
-			"Provides [2] [Steel] <after discovering [Industrialization]>",
+			"Provides [2] [Alloy] <after discovering [Industrialization]>",
 			"Consumes [3] [Metal] <after discovering [Electricity]>",
 			"Consumes [1] [Coal] <after discovering [Industrialization]> <before discovering [Electricity]>",
-			"Provides [2] [Steel] <after discovering [Electricity]> <in cities with a [Power Building]>"],
+			"Provides [2] [Alloy] <after discovering [Electricity]> <in cities with a [Power Building]>"],
 		"requiredTech": "Metallurgy"
 	},
 	{
@@ -1677,12 +1677,12 @@
 ///Line 14
 	{
 		"name": "Naval Dockyard",
-		"hurryCostModifier": 25,
 		"maintenance": 2,
 		"production":-1,
 		"requiredBuilding": "Military Factory Complex",
-		"uniques": ["Must be next to [Coast]","Military Building","Provides [2] [Ship Parts]","Consumes [2] [Steel]","[+25]% Production when constructing [{Galley} {Sailing Ship} {Engine Ship} {Nuclear powered Ship}] units [in this city]","Destroyed when the city is captured"],
-		"requiredTech": "Ship Armour"
+		"uniques": ["Military Building","Provides [2] [Ship Parts]","[+25]% Production when constructing [Water] units [in this city]","Consumes [2] [Alloy]","Must be next to [Coast]","Destroyed when the city is captured"],
+		"requiredTech": "Ship Armour",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Hospital",
@@ -1726,7 +1726,6 @@
 		"name": "Coal Plant",
 		"hurryCostModifier": 0,
 		"production":5,
-		"percentStatBonus": {"production": 25},
 		"maintenance": 3,
 		"uniques": ["Power Building","[+1 Production] from [Coal] tiles [in this city]","Consumes [1] [Coal]","[+2 Production] <in cities with a [Power Grid]>"],
 		"requiredTech": "Steam Power"
@@ -1751,9 +1750,9 @@
 	{
 		"name": "Machine Tool Factory",
 		"maintenance": 3,
-		"production": 5,
+		"production": 3,
 		"science": 1,
-		"percentStatBonus": {"production": 10},
+		"percentStatBonus": {"production": 20},
 		"specialistSlots": {"Engineer": 2},
 		"uniques": ["Heavy Industry",
 			"[+15]% Production when constructing [Heavy Industry] buildings [in this city] <before discovering [Electricity]>",
@@ -1766,11 +1765,19 @@
 	},
 	{
 		"name": "Military Factory Complex",
-		"hurryCostModifier": 25,
+		
 		"maintenance": 1,
 		"production": 3,
-		"uniques": ["Military Building","Unsellable","Provides [2] [Standing Army Maintainance]","[+1 Production] from [Extraction Improvement] tiles [in this city]","[Military] units gain the [Modern Arms] promotion <starting from the [Modern era]>","[Military] units gain the [Atomic Arms] promotion <starting from the [Atomic era]>","[Military] units gain the [Information Arms] promotion <starting from the [Information era]>","Destroyed when the city is captured"],
-		"requiredTech": "Industrialization"
+		"uniques": ["Military Building",
+		"Unsellable",
+		"Provides [2] [Standing Army Maintainance]",
+		"[+1 Production] from [Extraction Improvement] tiles [in this city]",
+		"[Military] units gain the [Modern Arms] promotion <starting from the [Modern era]>",
+		"[Military] units gain the [Atomic Arms] promotion <starting from the [Atomic era]>",
+		"[Military] units gain the [Information Arms] promotion <starting from the [Information era]>",
+		"Destroyed when the city is captured"],
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "The Big Clock Tower",
@@ -1872,7 +1879,7 @@
 		"maintenance": 2,
 		"production":-1,
 		"requiredBuilding": "Military Factory Complex",
-		"uniques": ["Military Building","Provides [4] [Weapon Parts]","Consumes [2] [Steel]"],
+		"uniques": ["Military Building","Provides [4] [Weapon Parts]","Consumes [2] [Alloy]"],
 		"requiredTech": "Replaceable Parts"
 	},
 	{
@@ -2064,7 +2071,7 @@
 		"maintenance": 2,
 		"production":-1,
 		"requiredBuilding": "Military Factory Complex",
-		"uniques": ["Military Building","Provides [3] [Vehicle Parts]","Consumes [2] [Steel]"],
+		"uniques": ["Military Building","Provides [3] [Vehicle Parts]","Consumes [2] [Alloy]"],
 		"requiredTech": "Combustion"
 	},
 	{
@@ -2177,7 +2184,7 @@
 		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying"
 	},
 	{
-		"name": "Tower of Curving Steel",
+		"name": "Tower of Curving Alloy",
 		"culture": 3,
 		"happiness": 2,
 		"greatPersonPoints": {"Great Merchant": 2},
