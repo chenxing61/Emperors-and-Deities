@@ -1,70 +1,91 @@
 [
 	{
 		"name": "Worker",
+		"cost": 70,
 		"unitType": "Civilian",
 		"movement": 2,
-		"requiredTech": "Fire Making",
+		"uniques": ["Can build [Land] improvements on tiles",
+					"Automation is a primary action"],
 		"upgradesTo":"Mechanised Worker",
-		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"],
-		"cost": 70
+		"requiredTech": "Fire Making",
+		"hurryCostModifier": 25
+		
 	},
 	{
 		"name": "Mechanised Worker",
+		"cost": 210,
 		"unitType": "Civilian",
 		"movement": 4,
-		"requiredBuilding": "Construction Vehicle Factory",
-		"requiredTech": "Combustion",
-		"uniques": ["[-25]% construction time for [All] improvements",
-					"Mechanised","Can build [Land] improvements on tiles", 
+		"uniques": ["Mechanised",
+					"[-50]% construction time for [All] improvements",
+					"Can build [Land] improvements on tiles", 
 					"Automation is a primary action"],
 		"promotions":["Transport Truck"],
-		"cost": 210
+		"requiredBuilding": "Construction Vehicle Factory",
+		"requiredTech": "Combustion",
+		"hurryCostModifier": 25
+		
 	},
 	{
 		"name": "Galley Work Ship",
+		"cost": 55,
 		"unitType": "Civil Ship",
 		"movement": 2,
-		"cost": 50,
-		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles",
+					"[+1] Movement <after discovering [Ship Making]>",
+					"Can build [Water] improvements on tiles",
+					"Automation is a primary action"],
 		"upgradesTo":"Modern Work Ship",
-		"uniques": ["Cannot enter ocean tiles","[+1] Movement <after discovering [Ship Making]>","[+1] Movement <after discovering [Steam Power]>","Can build [Water] improvements on tiles","Automation is a primary action"]
+		"requiredTech": "Sailing",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Modern Work Ship",
+		"cost": 175,
 		"unitType": "Civil Ship",
 		"movement": 4,
+		"uniques": ["[-50]% construction time for [All] improvements",
+					"Can build [Water] improvements on tiles",
+					"Consumes [1] [Ship Parts]",
+					"Automation is a primary action"],
 		"requiredBuilding": "Naval Dockyard",
-		"cost": 160,
 		"requiredTech": "Advanced Ship Making",
-		"uniques": ["Consumes [1] [Ship Parts]","Can build [Water] improvements on tiles","[-25]% construction time for [All] improvements","Automation is a primary action"]
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Settler",
+		"cost": 90,
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 90,
+		"uniques": ["Founds a new city <by consuming this unit>",
+					"Excess Food converted to Production when under construction",
+					"[+1] Movement <after discovering [Horse Collar]>",
+					"Requires at least [3] population"],
 		"requiredTech": "Fire Making",
 		"obsoleteTech":"Navigation",
-		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction","Requires at least [3] population","[+1] Movement <after discovering [Horse Collar]>"],
-		"hurryCostModifier": 20
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Pioneer",
+		"cost": 180,
 		"unitType": "Civilian",
 		"movement": 3,
-		"cost": 180,
+		"uniques": ["Founds a new city <by consuming this unit>",
+					"Excess Food converted to Production when under construction",
+					"[+1] Movement <after discovering [Combustion]>",
+					"[+1] Sight",
+					"Requires at least [1] population"],
 		"requiredTech":"Navigation",
-		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction","Requires at least [1] population","[+1] Movement <after discovering [Combustion]>","[+1] Sight"],
 		"hurryCostModifier": 10
 	},
 ///Scouts
 	{
 		"name": "Wanderer",
+		"cost": 25,
 		"unitType": "Scout",
 		"movement": 2,
 		"strength": 5,
 		"upgradesTo":"Adventurer",
-		"cost": 25,
 		"requiredTech": "Hunting and Fishing",
 		"obsoleteTech": "Astronomy",
 		"uniques": ["Standing Army","Infantry","Skirmish","Edged","Never appears as a Barbarian unit"],
@@ -81,7 +102,7 @@
 		"requiredTech": "Astronomy",
 		"obsoleteTech": "Monocular",
 		"uniques": ["Only available <in cities with a [Mercenary Office]>","Mercenary Army","Infantry","Skirmish","Edged","Never appears as a Barbarian unit"],
-		"promotions": ["Scouting Unit","Mercenary Habit"],
+		"promotions": ["Mercenary Habit","Scouting Unit"],
 		"attackSound": "metalhit"
 	},
 	{
@@ -1769,9 +1790,9 @@
 		"unitType": "Civilian",
 		"uniques": [
             "Can Spread Religion <for [4] movement> <[2] times> <after which this unit is consumed>",
-            "May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+            "May enter foreign tiles without open borders, but loses [50] religious strength each turn it ends there",
 			"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
-			"Gain [30]-[60] [Science] <upon ending a turn in a [City center] tile> <after adopting [Scholasticism]> <after adopting [Scholarship]>",
+			"Gain [1]-[3] [Science] <upon ending a turn in a [City center] tile> <after adopting [Scholasticism]> <after adopting [Scholarship]>",
 			"[-1] Sight", "Unbuildable", "Religious Unit", "Hidden when religion is disabled"],
 		"movement": 4,
 		"religiousStrength": 200
