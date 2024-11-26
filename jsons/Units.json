@@ -916,13 +916,13 @@
 		"name": "Knight",
 		"unitType": "Assault",
 		"movement": 3,
-		"strength": 35,
+		"strength": 37,
 		"cost": 130,
 		"upgradesTo":"Pistol Knight",
 		"requiredTech": "Tactics",
 		"obsoleteTech": "Hand Cannon",
 		"requiredResource":"Noble Army Maintainance",
-		"uniques": ["Only available <if [Military Stable] is constructed>","Consumes [1] [Horse]","Edged","Massed","Noble Army","Mounted","Never appears as a Barbarian unit"],
+		"uniques": ["Only available <if [Military Stable] is constructed>","Only available <after adopting [Knighthood]>","Consumes [1] [Horse]","Edged","Massed","Noble Army","Mounted","Never appears as a Barbarian unit"],
 		"promotions":["The Noble Army","Chivalry","Chainmail Armour"],
 		"attackSound": "horse"
 	},
@@ -941,7 +941,7 @@
 		"attackSound": "horse"
 	},
 	{
-		"name": "Pistol Knight",
+		"name": "Royal Knight",
 		"unitType": "Assault",
 		"movement": 3,
 		"strength": 48,
