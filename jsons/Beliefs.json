@@ -87,19 +87,18 @@
     {
         "name": "Generosity",
         "type": "Follower",
-        "uniques": ["[-2 Gold, +1 Food, +1 Happiness] from all [Worship Place] buildings"]
+        "uniques": ["[-3 Gold, +1 Food, +1 Happiness] from all [Worship Place] buildings"]
     },
     {
         "name": "Into the Vulgarity",
         "type": "Follower",
         "uniques": ["[+1]% [Production] from every follower, up to [20]%",
-                    "[+1]% [Food] from every follower, up to [20]%"]
+                    "[+1]% [Food] from every follower, up to [10]%"]
     },
     {
         "name": "Virtues and Discipline",
         "type": "Follower",
-        "uniques": ["[+1]% [Culture] from every follower, up to [20]%",
-                    "[+1]% [Food] from every follower, up to [20]%"]
+        "uniques": ["[+1]% [Culture] from every follower, up to [33]%"]
     },
     {
         "name": "Saints Worship",
@@ -124,14 +123,14 @@
     },    
 
     {
-        "name": "Laws of the god",
+        "name": "Laws of the God",
         "type": "Follower",
         "uniques": ["Only available <after adopting [Theocracy]>","[+1 Faith, +1 Culture, +1 Gold] from all [Political Building] buildings <in cities with at least [3] [Followers of this Religion]>"]
     },
     {
-        "name": "Divine Intervention",
+        "name": "Holy Guidance",
         "type": "Follower",
-        "uniques": ["Only available <after adopting [Theocracy]>","[+2]% [Culture] from every follower, up to [50]%"]
+        "uniques": ["Only available <after adopting [Theocracy]>","[+1 Happiness] from every [Organize Place]"]
     },
 
     ///Fantasy
@@ -143,7 +142,7 @@
     {
         "name": "Extravagant Rituals",
         "type": "Follower",
-        "uniques": ["Only available <before adopting [Monotheism]>","Only available <before adopting [Karma]>","May buy [Altar] buildings with [Faith] [in cities following this religion]","Comment [Enables you to buy Altar and The Master Shrine, Altar is a Worship Place that gives various bonuses at cost of food.The Master Shrine is a wonder gives huge and various stat bonuses]"]
+        "uniques": ["Only available <before adopting [Monotheism]>","Only available <before adopting [Karma]>","May buy [Altar] buildings with [Faith] [in cities following this religion]","Comment [Enables you to buy Altar and The Master Shrine, Altar is a Worship Place that gives various bonuses at cost of food.The Master Shrine is a wonder gives huge stat bonuses]"]
     },
     ////////////////////////////////////// Enhancer beliefs ///////////////////////////////////////
     {
@@ -154,12 +153,12 @@
     {
         "name": "Pilgrimage",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Meissiah Worship]>","Only available <before adopting [Papal Primacy]>","Comment [Enables you to buy Mosque and House of God, Mosque is a Organise Place that gives faith bonus to Holy city.House of God is a wonder that gives huge stats]","May buy [Mosque] buildings with [Faith] [in cities following this religion]","[+2 Faith] for each global city following this religion"]
+        "uniques": ["Only available <after adopting [Prophet Worship]>","Comment [Enables you to buy Mosque and House of God, Mosque is a Organise Place that gives faith bonus to Holy city.House of God is a wonder that gives huge stats]","May buy [Mosque] buildings with [Faith] [in cities following this religion]","[+2 Faith] for each global city following this religion"]
     },
     {
         "name": "Papal Primacy",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Meissiah Worship]>","Only available <before adopting [Pilgrimage]>","Comment [Enables you to buy Cathedral and Holy See, Cathedral is a Organise Place that gives 1 Artist Slot.Holy See is a wonder that gives Governor Slot and huge stats]","May buy [Cathedral] buildings with [Faith] [in cities following this religion]","Resting point for Influence with City-States following this religion [+15]"]
+        "uniques": ["Only available <after adopting [Meissiah Worship]>","Comment [Enables you to buy Cathedral and Holy See, Cathedral is a Organise Place that gives 1 Artist Slot. Holy See is a wonder that gives Governor Slot and huge stats]","May buy [Cathedral] buildings with [Faith] [in cities following this religion]","Resting point for Influence with City-States following this religion [+15]"]
     },
     {
         "name": "Order of the Faith",
@@ -169,13 +168,12 @@
     {
         "name": "Monastic Warrior",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Monasticism]>","Comment [Enables the Monastery to enhance your newly trained unit with a special promotion.]"]
+        "uniques": ["Only available <after adopting [Monasticism]>","Comment [Enables the Monastery to enhance your newly trained unit with a special promotion that increases their Strength.]"]
     },
     {
         "name": "Holy War",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Theocracy]>","[+20]% Strength <for [All] units> <when fighting in [Enemy Land] tiles>","[Faith] cost of purchasing [Inquisitor] units [-50]%","Comment [Enables you to build religious ruling in other religions' Holy cities and achieve the zealotry victory finishing building all of them]"]
-        // ToDo: Should only be enemy territory of cities that follow this religion
+        "uniques": ["Only available <after adopting [Theocracy]>","[+20]% Strength <for [All] units> <when fighting in [Enemy Land] tiles>","[Faith] cost of purchasing [Inquisitor] units [-50]%"]
     },
     {
         "name": "Defender of the Faith",
@@ -186,12 +184,12 @@
     {
         "name": "Tithe",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Meissiah Worship]>","Only available <after adopting [Theocracy]>","[+3 Gold] from every [5] global followers [in all cities]"]
+        "uniques": ["Only available <after adopting [Monotheism]>","Only available <after adopting [Theocracy]>","[+3 Gold] from every [5] global followers [in all cities]"]
     },
     {
         "name": "Heretic Tax",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Meissiah Worship]>","Only available <after adopting [Theocracy]>","[+1 Gold] from every [5] global followers [in all cities]","[+5 Gold] <in [Annexed] cities>"]
+        "uniques": ["Only available <after adopting [Monotheism]>","Only available <after adopting [Theocracy]>","[+1 Gold] from every [5] global followers [in all cities]","[+5 Gold] <in [Annexed] cities>"]
     },
     ///Development
     {
@@ -214,7 +212,7 @@
     {
         "name": "Missionary Zeal",
         "type": "Enhancer",
-        "uniques": ["Religion naturally spreads to cities [+2] tiles away","[+25]% Spread Religion Strength <for [Missionary] units>"]
+        "uniques": ["Religion naturally spreads to cities [+2] tiles away","[+50]% Spread Religion Strength <for [Missionary] units>"]
     },
     {
         "name": "Religious Texts",

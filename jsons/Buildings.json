@@ -53,7 +53,7 @@
 
 ///Line 1
 	{
-		"name": "Fishing Ports",
+		"name": "Fishing Port",
 		"food": 1,
 		"uniques": ["Marine Infrastructure",
 					"[+1 Food] from [Coast] tiles [in this city]",
@@ -265,7 +265,7 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Watermill",
+		"name": "WaterMill",
 		"maintenance": 1,
 		"food": 3,
 		"production": 1,
@@ -294,7 +294,8 @@
 		"uniques": ["Heavy Industry",
 			"[+10]% Production when constructing [All] units [in this city]","Provides [1] [Metal]"
 			],
-		"requiredNearbyImprovedResources": ["Metal", "Minerals"],	
+		"requiredNearbyImprovedResources": ["Metal", "Minerals"],
+		"requiredBuilding":"Civilian Blacksmith",
 		"requiredTech": "Bronze Working",
 		"hurryCostModifier": 25
 	},
@@ -305,6 +306,7 @@
 					"[+2 Gold] from [Silver Ore] tiles [in this city]",
 					"[+1 Gold] per [2] population [in this city] <every [3] turns>"],
 		"requiredNearbyImprovedResources": ["Gold Ore", "Silver Ore"],
+		"requiredBuilding":"Civilian Blacksmith",
 		"requiredTech": "Currency",
 		"hurryCostModifier": 25
 	},
@@ -501,7 +503,6 @@
 			"[+1 Production] from [Marble] tiles [in this city]",
 			"[+10]% Production when constructing [All] buildings [in this city]",
 			"[+1 Production] <in cities with a [Guild Complex]>"],
-				
 		"requiredNearbyImprovedResources": ["Marble", "Stone"],
 		"requiredTech": "Masonry",
 		"hurryCostModifier": 25	
@@ -513,7 +514,8 @@
 		"uniques": ["Light Industry",
 					"[+1 Gold] from [Lumber Improvement] tiles [in this city]",
 					"[+1 Gold] from [Hard Wood] tiles [in this city]",
-					"[+1 Production] <in cities with a [Guild Complex]>"],
+					"[+1 Production] <in cities with a [Guild Complex]>",
+					"Must have an owned [Lumber Improvement] within [4] tiles"],
 		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Carpentry",
 		"hurryCostModifier": 10
@@ -540,6 +542,7 @@
 					"[+10]% Production when constructing [Mounted] units [in this city]",
 					"[+1 Production] from [Horse] tiles [in this city]",
 					"[+1 Gold] from [Horse] tiles [in this city]"],
+		"requiredBuilding":"Road Network",
 		"requiredNearbyImprovedResources": ["Horse"],
 		"requiredTech": "Horseback Riding",
 		"hurryCostModifier": 10
@@ -660,7 +663,7 @@
 	},
 	{
 		"name": "Circus",
-		"happiness": 2,
+		"happiness": 1,
 		"specialistSlots": {"Artist": 1},
 		"uniques": ["Entertainment Building"],
 		"requiredBuilding": "Town Square",
@@ -676,7 +679,7 @@
 					"Destroyed when the city is captured"],
 		"requiredBuilding": "Barrack",
 		"requiredTech": "Stirrup",
-		"hurryCostModifier": 25,
+		"hurryCostModifier": 25
 	},
 
 	{
@@ -698,6 +701,7 @@
 					"[+5]% growth [in this city]",
 					"[+1 Food] from [Water Improvement] tiles [in this city]","Must be next to [Coast]"],
 		"obsoleteTech":"Apprenticeship",
+		"requiredBuilding":"Fishing Port",
 		"requiredTech": "Optics",
 		"hurryCostModifier": 10
 	},
@@ -718,6 +722,7 @@
 		"specialistSlots": {"Governor": 1},
 		"uniques": ["Political Building",
 					"[-10]% Unhappiness from [Population] [in this city]"],
+		"requiredBuilding":"Town Hall",
 		"requiredTech": "Philosophy",
 		"hurryCostModifier": 25
 	},
@@ -726,8 +731,8 @@
 		"hurryCostModifier": 25,
 		"maintenance": 2,
 		"production":-1,
-		"requiredBuilding": "Barrack",
 		"uniques": ["Military Building","Provides [1] [Standing Army Maintainance]","New [Military] units start with [15] Experience [in this city]"],
+		"requiredBuilding": "Military Blacksmith",
 		"requiredTech": "Construction"
 	},
 	{
@@ -737,6 +742,7 @@
 		"cityStrength": 5,
 		"cityHealth": 15,
 		"uniques": ["Static Defense","Destroyed when the city is captured"],
+		"requiredBuilding":"Walls",
 		"requiredTech": "Construction",
 		"hurryCostModifier": 25
 	},
@@ -746,26 +752,26 @@
 		"specialistSlots": {"Merchant": 1},
 		"uniques":["Economic Building","[+1 Production, +1 Gold] from [Luxury resource] tiles [in this city]"],
 		"obsoleteTech":"Banking",
+		"requiredBuilding":"Road Network",
 		"requiredTech": "Construction",
 		"hurryCostModifier": 15
 	},
 	{
 		"name": "Armour Workshop",
 		"maintenance": 1,
-		"requiredBuilding": "Barrack",
 		"uniques": ["Military Building",
 					"[Military] units gain the [Medieval Arms] promotion",
 					"[Military] units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>",
-					"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <before the [Industrial era]>",
-					"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <starting from the [Industrial era]><after discovering [Electricity]>",
+					"[+25]% Production when constructing [Land] units [in this city] <in cities with a [WaterMill]> <before the [Industrial era]>",
+					"[+25]% Production when constructing [Land] units [in this city] <in cities with a [WaterMill]> <starting from the [Industrial era]><after discovering [Electricity]>",
 					"Destroyed when the city is captured"],
+		"requiredBuilding": "Military Blacksmith",
 		"requiredTech": "Armorments",
 		"hurryCostModifier": 25
 	},
 	{
 		"name": "Windmill",
 		"maintenance": 1,
-		"food": 2,
 		"percentStatBonus": {"food": 20},
 		"specialistSlots": {"Engineer": 1},
 		"uniques": ["Agricultural Buildings","Must not be on [Hill]"],
@@ -829,7 +835,8 @@
 	},
 	{
 		"name": "Tea House",
-		"maintenance": 1,
+		"maintenance": 2,
+		"happiness": 1,
 		"specialistSlots": {"Artist": 1},
 		"uniques": ["Cultural Building",
 					"Provides [1] [Tea Leave]",
@@ -861,6 +868,7 @@
 		"uniques": ["Cultural Building",
 					"[+25]% Great Person generation [in this city]",
 					"Must be next to [Fresh water]"],
+		"requiredBuilding": "Town Square",
 		"requiredTech": "Irrigation",
 		"hurryCostModifier": 25
 	},
@@ -894,8 +902,8 @@
 					"[+1 Gold] from [Water resource] tiles [in this city]",
 					"Connects trade routes over water",
 					"Must be next to [Coast]"],
-		"requiredTech": "Compass",
 		"requiredBuilding":"Lighthouse",
+	    "requiredTech": "Compass",
 		"hurryCostModifier": 10
 	},
 	{
@@ -906,7 +914,7 @@
 		"uniques": ["Cultural Building",
 					"[+2 Happiness] [in this city] <after discovering [Electricity]>",
 					"Destroyed when the city is captured"],
-		"requiredBuilding": "Town Square",
+		"requiredBuilding": "Circus",
 		"requiredTech": "Theology",
 		"hurryCostModifier": 15
 	},
@@ -918,6 +926,7 @@
 					"[-5]% Unhappiness from [Population] [in this city]",
 					"[25]% Food is carried over after population increases [in this city]"],
 		"obsoleteTech": "Apprenticeship",
+		"requiredBuilding":"Civilian Blacksmith",
 		"requiredTech": "Engineering",
 		"hurryCostModifier": 25
 	},
@@ -929,6 +938,7 @@
 					"Consumes [3] [Metal]",
 					"[+50]% Production when constructing [Military Factory Complex] buildings [in this city]",
 					"Destroyed when the city is captured"],
+		"requiredBuilding":"Military Blacksmith",
 		"requiredTech": "Engineering",
 		"hurryCostModifier": 25
 	},
@@ -939,6 +949,7 @@
 		"cityHealth": 20,
 		"uniques": ["Static Defense",
 					"Destroyed when the city is captured"],
+		"requiredBuilding":"Watch Tower",
 		"requiredTech": "Engineering",
 		"hurryCostModifier": 25
 	},
@@ -952,6 +963,7 @@
 		"uniques": ["Military Building",
 					"Provides [3] [Standing Army Maintainance]",
 					"All newly-trained [Military] units [in this city] receive the [Elite Training] promotion"],
+		"requiredBuilding":"Barrack",
 		"requiredTech": "Tactics"
 	},
 	{
@@ -1040,7 +1052,7 @@
 		"gold": 2,
 		"faith": 8,
 		"science": 1,
-		"greatPersonPoints": {"Great Scientist": 2,"Great Artist": 2},
+		"greatPersonPoints": {"Great Scientist": 3},
 		"specialistSlots":{"Governor":1},
 		"uniques": ["Organise Place",
 		            "[+100]% Natural religion spread [in this city]",
@@ -1070,11 +1082,10 @@
 		"name": "The Master Shrine",
 		"isNationalWonder": true,
 		"cost": 125,
-		"culture": 2,
+		"culture": 5,
 		"faith": 3,
 		"gold": 3,
 		"food":-3,
-		"greatPersonPoints": {"Great General": 3},
 		"uniques": ["Organise Place",
 					"[+75]% Natural religion spread [in this city]",
 					"Only available <if [Altar] is constructed in all [non-[Puppeted]] cities>", 
@@ -1172,8 +1183,8 @@
 
 	{
 		"name": "Department of Administration",
-		"maintenance": 3,
 		"isNationalWonder": true,
+		"maintenance": 3,
 		"specialistSlots": {"Governor": 1},
 		"uniques": ["Political Building",
 					"[-5]% Unhappiness from [Specialists] [in all cities connected to capital]",
@@ -1183,18 +1194,7 @@
 					"Only available <if [Town Hall] is constructed in all [non-[Puppeted]] cities>",
 					"Cost increases by [50] per owned city",
 					"Destroyed when the city is captured"],
-		"hurryCostModifier": 40,
 		"requiredTech":"Civil Service"
-	},
-	
-	{
-		"name": "Religious Ruling",
-		"specialistSlots":{"Governor":1},
-		"uniques": ["Political Building",
-					"Only available <after adopting [Holy War]>",
-					"Hidden when religion is disabled",
-					"Can only be built <in [in holy cities] cities>"],
-		"requiredTech": "Civil Service"
 	},
 	{
 		"name": "The City of Well",
@@ -1239,7 +1239,7 @@
 					"New [Gunpowder] units start with [10] Experience [in this city]",
 					"[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>",
 					"Destroyed when the city is captured"],
-		"requiredBuilding": "Barrack",
+		"requiredBuilding": "Military Blacksmith",
 		"requiredTech": "Gunpowder",
 		"hurryCostModifier": 25
 	},
@@ -1261,6 +1261,7 @@
 		"specialistSlots": {"Engineer": 1,"Scientist": 1,"Merchant": 1,"Artist": 1},
 		"percentStatBonus": {"production": 10},
 		"uniques": ["Light Industry"],
+		"requiredBuilding":"City Hall",
 		"requiredTech": "Guilds",
 		"hurryCostModifier": 25
 	},
@@ -1295,7 +1296,8 @@
 			"[+1 Production] from [Useful Mineral] tiles [in this city]",
 			"Provides [1] [Alloy]",
 			"Consumes [1] [Metal]"],
-		"requiredNearbyImprovedResources": ["Metal", "Minerals"],	
+		"requiredNearbyImprovedResources": ["Metal", "Minerals"],
+		"requiredBuilding":"Foundry",
 		"requiredTech": "Steels",
 		"hurryCostModifier": 25
 	},
@@ -1307,6 +1309,7 @@
 		"uniques": ["Military Building",
 					"Provides [1] [Standing Army Maintainance]",
 					"New [Military] units start with [25] Experience [in this city]"],
+		"requiredBuilding":"Armory",
 		"requiredTech": "Steels",
 		"hurryCostModifier": 25
 	},
@@ -1355,6 +1358,7 @@
 					"[Great Artist] is earned [+20]% faster",
 					"[Great Engineer] is earned [+20]% faster",
 					"[Great Scientist] is earned [+20]% faster"],
+		"requiredBuilding":"Library",
 		"requiredTech": "Education",
 		"hurryCostModifier": 25
 	},
@@ -1365,6 +1369,7 @@
 					"New [Military] units start with [20] Experience [in this city]",
 					"All newly-trained [Military] units [in this city] receive the [Tactic Research] promotion",
 					"Destroyed when the city is captured"],
+		"requiredBuilding":"Library",
 		"requiredTech": "Education",
 		"hurryCostModifier": 25
 	},
@@ -1374,7 +1379,8 @@
 		"happiness": 1,
 		"specialistSlots": {"Merchant":1},
 		"percentStatBonus":{"culture":20,"gold":10},
-		"uniques": ["Cultural Building","[+2 Culture] [in this city] <after discovering [Electricity]>","Destroyed when the city is captured"],
+		"uniques": ["Cultural Building","[+3 Culture] [in this city] <after discovering [Electricity]>","Destroyed when the city is captured"],
+		"requiredBuilding":"Town Square",
 		"requiredTech": "Printing Press",
 		"hurryCostModifier": 10
 	},
@@ -1412,7 +1418,7 @@
 	},
 ///Line 11
 	{
-		"name": "Modern Windmill",
+		"name": "Agricultural Machinery Workshop",
 		"maintenance": 2,
 		"food": 3,
 		"percentStatBonus": {"food": 25},
@@ -1575,7 +1581,7 @@
 					"New [{Military} {Water}] units start with [15] Experience [in this city]",
 					"Must be next to [Coast]",
 					"Destroyed when the city is captured"],
-		"requiredBuilding": "Barrack",
+		"requiredBuilding": "Lighthouse",
 		"requiredTech": "Navigation",
 		"hurryCostModifier": 25
 	},
@@ -1614,6 +1620,7 @@
 		"happiness": 2,
 		"uniques": ["Infrastructure",
 					"[25]% Food is carried over after population increases [in this city]"],
+		"requiredBuilding":"City Hall",
 		"requiredTech": "Architecture",
 		"hurryCostModifier": 25
 	},
@@ -1622,6 +1629,7 @@
 		"maintenance": 1,
 		"uniques": ["Political Building",
 					"[-10]% Unhappiness from [Population] [in this city]"],
+		"requiredBuilding":"City Hall",
 		"requiredTech": "Architecture",
 		"hurryCostModifier": 25
 	},
@@ -1631,7 +1639,7 @@
 		"uniques": ["Military Building",
 					"[+50]% Production when constructing [Military] units [in this city]",
 					"Destroyed when the city is captured"],
-		"requiredBuilding": "Barrack",
+		"requiredBuilding":"City Hall",
 		"requiredTech": "Military Science",
 		"hurryCostModifier": 25
 	},
@@ -1747,7 +1755,6 @@
 					"Destroyed when the city is captured"],
 		"requiredTech": "Archaeology",
 		"hurryCostModifier": 25
-		
 	},
 	{
 		"name": "Art Gallery",
@@ -1771,8 +1778,8 @@
 	},
 	{
 		"name": "Holiday Resort",
-		"maintenance": 3,
-		"happiness": 3,
+		"maintenance": 5,
+		"happiness": 1,
 		"percentStatBonus": {"gold": 10},
 		"uniques": ["Entertainment Building","[-5]% Unhappiness from [Specialists] [in all cities]"],
 		"requiredTech": "Steam Power",
@@ -1780,10 +1787,10 @@
 	},
 	{
 		"name": "Civilian Factory Complex",
-		"maintenance": 1,
+		"maintenance": 10,
 		"uniques": [
 			"Unsellable","Light Industry",
-			"[+1 Production] from [Extraction Improvement] tiles [in this city]"],
+			"[+1 Production] from [resource] tiles [in this city]"],
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 25
 		
@@ -1805,12 +1812,11 @@
 	},
 	{
 		"name": "Military Factory Complex",
-		"maintenance": 5,
+		"maintenance": 10,
 		"production": -1,
 		"uniques": ["Military Building",
 					"Unsellable",
 					"Provides [2] [Standing Army Maintainance]",
-					"[+1 Production] from [Extraction Improvement] tiles [in this city]",
 					"[Military] units gain the [Modern Arms] promotion <starting from the [Modern era]>",
 					"Destroyed when the city is captured"],
 		"requiredTech": "Industrialization",
@@ -1871,6 +1877,7 @@
 					"[-5]% maintenance cost for buildings [in this city]",
 					"[+1 Production] from [Infrastructure Improvement] tiles [in this city]"
 		],
+		"requiredBuilding":"Road Network",
 		"requiredTech": "Replaceable Parts",
 		"hurryCostModifier": 10
 	},
@@ -1929,8 +1936,8 @@
 		"name": "Weapon Parts Factory",
 		"maintenance": 2,
 		"production":-1,
-		"requiredBuilding": "Military Factory Complex",
 		"uniques": ["Military Building","Provides [4] [Weapon Parts]","Consumes [2] [Alloy]"],
+		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Replaceable Parts",
 		"hurryCostModifier": 25
 	},
