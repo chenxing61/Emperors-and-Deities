@@ -324,17 +324,18 @@
 		"buildingCost": 120,
 		"wonderCost": 300,
 		"techs": [
-			{
-				"name": "Physics",
-				"row": 3,
-				"prerequisites": ["Compass","Engineering"],
-				"quote": "'Measure what is measurable, and make measurable what is not so.' - Galileo Galilei"
-			},
+
 			{
 				"name": "Civil Service",
 				"row": 5,
 				"prerequisites": ["Theology"],
 				"quote": "'The only thing that saves us from the bureaucracy is its inefficiency' - Eugene McCarthy"
+			},
+			{
+				"name": "Physics",
+				"row": 7,
+				"prerequisites": ["Compass","Engineering"],
+				"quote": "'Measure what is measurable, and make measurable what is not so.' - Galileo Galilei"
 			},
 			{
 				"name": "Diplomacy",
@@ -361,7 +362,7 @@
 			},
 			
 			{
-				"name": "Gunpowder Making",
+				"name": "Gunpowder",
 				"row": 4,
 				"prerequisites": ["Physics"],
 				"quote": "'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
@@ -390,7 +391,7 @@
 			{
 				"name": "Steels",
 				"row": 3,
-				"prerequisites": ["Coal Working","Gunpowder Making"],
+				"prerequisites": ["Coal Working"],
 				"quote": "'John Henry said to his Captain, / 'A man ain't nothin' but a man, / And before I'll let your steam drill beat me down, / I'll die with the hammer in my hand.'' - Anonymous: The Ballad of John Henry, the Steel-Drivin' Man"
 			},
 			{
@@ -485,7 +486,7 @@
 	},
 	{
 		"columnNumber": 13,
-		"era": "Imperial era",
+		"era": "Industrial era",
 		"techCost": 1050,
 		"buildingCost": 250,
 		"wonderCost": 625,
@@ -605,7 +606,7 @@
 			{
 				"name": "Replaceable Parts",
 				"row": 5,
-				"prerequisites": ["Industrialization","Steam Power","Rifling"],
+				"prerequisites": ["Industrialization","Steam Power"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
 			{
@@ -715,7 +716,6 @@
 			{
 				"name": "Radar",
 				"row": 8,
-				"unique":["[+1] Sight"],
 				"prerequisites": ["Ballistics","Radio"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
