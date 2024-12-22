@@ -12,7 +12,7 @@
             "Religious": 10
         },
         "uniques": ["Only available <before adopting [Monotheism]>",
-                    "Comment [Enables you to build Shrines]"
+                    "Comment [Enables you to build Shrines, a low cost 'Worship Place' that produces culture in addition to faith]"
         ],
         "policies": [
             {
@@ -70,7 +70,7 @@
             "Zealotry": 30,
             "Religious": 30
         },
-        "uniques": ["Only available <before adopting [Polytheism]>","Comment [Enables you to build Chaples]"],
+        "uniques": ["Only available <before adopting [Polytheism]>","Comment [Enables you to build Chaples, a low cost 'Worship Place' that produces faith exclusively]"],
         "policies": [
             {
                 "name": "Testaments",
@@ -84,7 +84,7 @@
             {
                 "name": "Idol Abolishment",
                 "uniques": ["[-1 Faith] [in all cities]",
-                "[Gold] cost of purchasing [[Worship Place]] buildings [-33]%"
+                "[Gold] cost of purchasing ['Worship Place'] buildings [-33]%"
                 ],
                 "requires": ["Testaments"],
                 "row": 2,
@@ -143,14 +143,14 @@
             },
             {
                 "name": "Mouth To Ear",
-                "uniques": ["[+1 Culture] per [5] population [in all cities]","[+33]% Production when constructing [[Light Industry]] buildings [in all cities connected to capital]"
+                "uniques": ["[+1 Culture] per [5] population [in all cities]","[+33]% Production when constructing ['Light Industry'] buildings [in all cities connected to capital]"
                 ],
                 "row": 2,
                 "column": 5
             },
             {
                 "name": "Early Monarchy",
-                "uniques": ["[+1 Gold] from every [[Political Building]]"
+                "uniques": ["[+1 Gold] from every ['Political Building']"
                 ],
                 "requires": ["Early Colonial Activity","Mouth To Ear"],
                 "row": 3,
@@ -175,7 +175,7 @@
             "Religious": 10
         },
         "uniques": ["[-20]% Gold cost of upgrading <for [Military] units>",
-                    "Comment [Enables you to build Arena,an Entertainment Building]"
+                    "Comment [Enables you to build Arena,an 'Entertainment Building']"
         ],
         "policies": [
             {
@@ -234,13 +234,13 @@
         },
         "uniques": ["[+25]% Great Person generation [in all cities]",
         "[+25]% Great Person generation [in capital cities] <after adopting [Chiefdom]>",
-        "Comment [Enables you to build Forum,a Political/[Cultural Building]]"
+        "Comment [Enables you to build Forum,a 'Political/Cultural Building']"
         ],
         "policies": [
             {
                 "name": "Pass on the Wisdom",
-                "uniques": ["[+25]% Production when constructing [[Educational Building]] buildings [in all cities]",
-                "[+1 Faith] from every [[Educational Building]]<after adopting [Monotheism]>"
+                "uniques": ["[+25]% Production when constructing ['Educational Building'] buildings [in all cities]",
+                "[+1 Faith] from every ['Educational Building']<after adopting [Monotheism]>"
                 ],
                 "row": 1,
                 "column": 3
@@ -298,9 +298,9 @@
             {
                 "name": "Patreonage",
                 "uniques": ["[Gold] cost of purchasing [All] buildings [-10]%",
-                "[Gold] cost of purchasing [[Worship Place]] buildings [-10]% <after adopting [Monotheism]>",
-                "[Gold] cost of purchasing [[Cultural Building]] buildings [-10]% <after adopting [Polytheism]>",
-                "[Gold] cost of purchasing [[Political Building]] buildings [-10]% <after adopting [Chiefdom]>"
+                "[Gold] cost of purchasing ['Worship Place'] buildings [-10]% <after adopting [Monotheism]>",
+                "[Gold] cost of purchasing ['Cultural Building'] buildings [-10]% <after adopting [Polytheism]>",
+                "[Gold] cost of purchasing ['Political Building'] buildings [-10]% <after adopting [Chiefdom]>"
                 ],
                 "row": 1,
                 "column": 1
@@ -321,7 +321,7 @@
             },
             {
                 "name": "Monopoly",
-                "uniques": ["[+1] Happiness from each type of luxury resource","[+25]% Production when constructing [[Economic Building]] buildings [in all cities]"],
+                "uniques": ["[+1] Happiness from each type of luxury resource","[+25]% Production when constructing ['Economic Building'] buildings [in all cities]"],
                 "requires": ["Patreonage","Trade Alliance","Convoys and Mecenary"],
                 "row": 3,
                 "column": 3
@@ -366,17 +366,17 @@
                 "uniques": ["[+1 Happiness] [in all cities connected to capital]",
                 "[-10]% maintenance cost for buildings [in all cities connected to capital]",
                 "[+10]% Strength <for [Standing Army] units> <after adopting [Militant]>",
-                "[+1 Faith] from every [[Practice Ground]] <after adopting [Monotheism]>",
-                "[+1 Faith] from every [[Organise Place]] <after adopting [Monotheism]>"
+                "[+1 Faith] from every ['Practice Ground'] <after adopting [Monotheism]>",
+                "[+1 Faith] from every ['Organise Place'] <after adopting [Monotheism]>"
                 ],
                 "row": 1,
                 "column": 5
             },
             {
                 "name": "Court of Wises",
-                "uniques": ["[+10]% [Culture] from every [[Political Building]]",
-                "[+10]% [Gold] from every [[Political Building]]",
-                "[+10]% [Gold] from every [[Political Building]] <after adopting [Plutocracy]>"
+                "uniques": ["[+10]% [Culture] from every ['Political Building']",
+                "[+10]% [Gold] from every ['Political Building']",
+                "[+10]% [Gold] from every ['Political Building'] <after adopting [Plutocracy]>"
                 ],
                 "requires":["Imperial Examinations","Supervisory System"],
                 "row": 2,
@@ -414,7 +414,7 @@
             "Zealotry": 50,
             "Religious": 20
         },
-        "uniques": ["[+1 Gold] from every [Agricultural Improvement]",
+        "uniques": ["[+1 Gold] from every ['Agricultural Improvement']",
         "Comment [Enables you to build Jousting Place, an entertainment building.]",
         "Only available <before adopting [Meritocracy]>",
         "Only available <before adopting [Theocracy]>"
@@ -441,7 +441,7 @@
             },
             {
                 "name": "Manorialism",
-                "uniques": ["Comment [Enables you to build Manor,an improvement that provides Noble Army Maintainance and Culture at cost of limited development]","[+1 Gold] from every [[Light Industry]]","[+1 Culture] from every [Static Defense]"],
+                "uniques": ["Comment [Enables you to build Manor,an improvement that provides Noble Army Maintainance and Culture at cost of limited development]","[+1 Gold] from every ['Light Industry']","[+1 Culture] from every [Static Defense]"],
 
                 "row": 2,
                 "column": 5
@@ -456,7 +456,7 @@
             },
             {
                 "name": "Feudalism Complete",
-                "uniques": ["Militaristic City-States grant units [2] times as fast when you are at war with a common nation","[+25]% Production when constructing [[Worship Place]] buildings [in all cities]<after adopting [Polytheism]>"
+                "uniques": ["Militaristic City-States grant units [2] times as fast when you are at war with a common nation","[+25]% Production when constructing ['Worship Place'] buildings [in all cities]<after adopting [Polytheism]>"
                 ]
             }
         ]
@@ -478,26 +478,26 @@
         "policies": [
             {
                 "name": "Theology Conferences",
-                "uniques": ["[+1 Faith] from every specialist [in all cities]","[Faith] cost of purchasing [[Worship Place]] buildings [-20]%"],
+                "uniques": ["[+1 Faith] from every specialist [in all cities]","[Faith] cost of purchasing ['Worship Place'] buildings [-20]%"],
                 "row": 1,
                 "column": 1
             },
             {
                 "name": "Scholasticism",
-                "uniques": ["[+1 Faith] from every [[Educational Building]]","[+5]% [Science] from every [[Worship Place]]","Comment [Enables Missionary to aid research in city centre tiles after adopting Schlorship]"],
+                "uniques": ["[+1 Faith] from every ['Educational Building']","[+5]% [Science] from every ['Worship Place']","Comment [Enables Missionary to aid research in city centre tiles after adopting Schlorship]"],
                 "row": 1,
                 "column": 5
             },
             {
                 "name": "Sanctity",
-                "uniques": ["[Faith] cost of purchasing [Missionary] units [-25]%","[Faith] cost of purchasing [Inquisitor] units [-25]%","Gain a free [Enhancer] belief <after adopting [Monotheism]>","[+3 Culture] from every [[Practice Ground]] <after adopting [Polytheism]>"],
+                "uniques": ["[Faith] cost of purchasing [Missionary] units [-25]%","[Faith] cost of purchasing [Inquisitor] units [-25]%","Gain a free [Enhancer] belief <after adopting [Monotheism]>","[+3 Culture] from every ['Practice Ground'] <after adopting [Polytheism]>"],
                 "requires":["Theology Conferences","Scholasticism"],
                 "row": 2,
                 "column": 3
             },
             {
                 "name": "Proxy of the god",
-                "uniques": ["[+1 Faith] from every [[Political Building]]","[+2 Gold] from every [[Political Building]] <after adopting [Plutocracy]>","[+2 Culture, +1 Science] from every [[Organise Place]]"
+                "uniques": ["[+1 Faith] from every ['Political Building']","[+2 Gold] from every ['Political Building'] <after adopting [Plutocracy]>","[+2 Culture, +1 Science] from every ['Organise Place']"
                 ],
                 "requires":["Sanctity"],
                 "row": 3,
@@ -505,7 +505,7 @@
             },
             {
                 "name": "Theocracy Complete",
-                "uniques": ["[+25]% Natural religion spread [in all non-occupied cities]","[+50]% Production when constructing [[Organise Place]] buildings [in all cities connected to capital]","Gain a free [Enhancer] belief"
+                "uniques": ["[+25]% Natural religion spread [in all non-occupied cities]","[+50]% Production when constructing ['Organise Place'] buildings [in all cities connected to capital]","Gain a free [Enhancer] belief"
                 ]
             }
         ]
@@ -522,12 +522,12 @@
             "Zealotry": 0,
             "Religious": 40
         },
-        "uniques": ["Only available <before adopting [Theocracy]>","[-10]% Culture cost of adopting new Policies","[+1 Happiness, +2 Culture] [in all cities] <after adopting [Polytheism]>","[+3 Faith] from every [[Organise Place]] <after adopting [Monotheism]>"
+        "uniques": ["Only available <before adopting [Theocracy]>","[-10]% Culture cost of adopting new Policies","[+1 Happiness, +2 Culture] [in all cities] <after adopting [Polytheism]>","[+3 Faith] from every ['Organise Place'] <after adopting [Monotheism]>"
         ],
         "policies": [
             {
                 "name": "Skepticism",
-                "uniques": ["[+1 Science] from every [[Practice Ground]]","[+1 Science] from every [[Political Building]] <after adopting [Scholarship]>"
+                "uniques": ["[+1 Science] from every ['Practice Ground']","[+1 Science] from every ['Political Building'] <after adopting [Scholarship]>"
 
                 ],
                 "row": 1,
@@ -535,7 +535,7 @@
             },
             {
                 "name": "The Theses on the Door",
-                "uniques": ["[-1 Gold] from every [[Worship Place]]","[-1 Happiness] from every [[Organise Place]]","[+1 Happiness] from every [[Organise Place]] <after adopting [Meritocracy]>","[+2 Culture] from every [[Educational Building]]"
+                "uniques": ["[-1 Gold] from every ['Worship Place']","[-1 Happiness] from every ['Organise Place']","[+1 Happiness] from every ['Organise Place'] <after adopting [Meritocracy]>","[+2 Culture] from every ['Educational Building']"
                 ],
                 "requires":["Skepticism"],
                 "row": 2,
@@ -543,7 +543,7 @@
             },
             {
                 "name": "National Religion",
-                "uniques": ["[+5 Culture] from every [Palace]","[+1 Culture] from every [[Political Building]]","Provides [2] [Standing Army Maintainance]","[+5]% Strength <for [All] units>"],
+                "uniques": ["[+5 Culture] from every [Palace]","[+1 Culture] from every ['Political Building']","Provides [2] [Standing Army Maintainance]","[+5]% Strength <for [All] units>"],
                 "requires":["The Theses on the Door"],
                 "row": 3,
                 "column": 1
@@ -580,7 +580,7 @@
         "policies": [
             {
                 "name": "Rise of Citizens",
-                "uniques": ["[+33]% Production when constructing [[Infrastructure]] buildings [in all cities]","[Gold] cost of purchasing [[Infrastructure]] buildings [-10]% <after adopting [Plutocracy]>"
+                "uniques": ["[+33]% Production when constructing ['Infrastructure'] buildings [in all cities]","[Gold] cost of purchasing ['Infrastructure'] buildings [-10]% <after adopting [Plutocracy]>"
 
                 ],
                 "row": 1,
@@ -588,14 +588,14 @@
             },
             {
                 "name": "Education Focus",
-                "uniques": ["Science gained from research agreements [+50]%","[+1 Science] per [3] population [in all cities] <in cities with at least [10] [Population]>","[+1 Culture] from every [[Educational Building]] <after adopting [Scholarship]>"],
+                "uniques": ["Science gained from research agreements [+50]%","[+1 Science] per [3] population [in all cities] <in cities with at least [10] [Population]>","[+1 Culture] from every ['Educational Building'] <after adopting [Scholarship]>"],
                 "requires":["Rise of Citizens"],
                 "row": 2,
                 "column": 1
             },
             {
                 "name": "Virtue Politics",
-                "uniques": ["[+1 Culture] from [Policy Improvement] tiles [in all cities]","[+25]% Golden Age length","[+2 Culture] from every [[Organise Place]] <after adopting [Theocracy]>"
+                "uniques": ["[+1 Culture] from [Policy Improvement] tiles [in all cities]","[+25]% Golden Age length","[+2 Culture] from every ['Organise Place'] <after adopting [Theocracy]>"
                 ],
                 "requires":["Rise of Citizens"],
                 "row": 2,
@@ -752,7 +752,7 @@
             },
             {
                 "name": "Cater to Profiteers",
-                "uniques": ["[+1 Gold] from every [[Economic Building]]","[+1 Gold] from every [[Educational Building]]","[+1 Gold] from every [[Light Industry]]","[+1 Gold] from every [[Heavy Industry]]","[-1 Happiness] [in all cities]"],
+                "uniques": ["[+1 Gold] from every ['Economic Building']","[+1 Gold] from every ['Educational Building']","[+1 Gold] from every ['Light Industry']","[+1 Gold] from every ['Heavy Industry']","[-1 Happiness] [in all cities]"],
                 "requires":["Privatised Property"],
                 "row": 2,
                 "column": 1
@@ -767,7 +767,7 @@
             },
             {
                 "name": "Agricultural Fundings(Liberalism)",
-                "uniques": ["[+1 Food] from every [Agricultural Improvement]","[+1 Food] from every [[Agricultural Building]]","[-2 Gold] from every [[Agricultural Building]]"
+                "uniques": ["[+1 Food] from every ['Agricultural Improvement']","[+1 Food] from every ['Agricultural Building']","[-2 Gold] from every ['Agricultural Building']"
                 ],
                 "requires":["Privatised Property"],
                 "row": 2,
@@ -775,7 +775,7 @@
             },
             {
                 "name": "Democratic Crusaders",
-                "uniques": ["[+25]% Production when constructing [Military Building] buildings [in all cities]","Militaristic City-States grant units [2] times as fast when you are at war with a common nation"
+                "uniques": ["[+25]% Production when constructing ['Military Building'] buildings [in all cities]","Militaristic City-States grant units [2] times as fast when you are at war with a common nation"
                 ],
                 "requires":["Neo-colonialism"],
                 "row": 3,
@@ -783,7 +783,7 @@
             },
             {
                 "name": "Liberalism Complete",
-                "uniques": ["[+25]% [Gold] from every [[Political Building]]","[+50]% Production when constructing [[Economic Building]] buildings [in all cities]"
+                "uniques": ["[+25]% [Gold] from every ['Political Building']","[+50]% Production when constructing ['Economic Building'] buildings [in all cities]"
                 ]
             }
         ]
@@ -825,21 +825,21 @@
             },
             {
                 "name": "Religion and Country",
-                "uniques": ["[+1 Faith] from every [[Political Building]]","[+10]% Strength <for [Levy Army] units>","[+1 Culture] per [5] population [in all cities] <after adopting [Polytheism]>","[+1 Culture] from every [[Organise Place]] <after adopting [Monotheism]>"],
+                "uniques": ["[+1 Faith] from every ['Political Building']","[+10]% Strength <for [Levy Army] units>","[+1 Culture] per [5] population [in all cities] <after adopting [Polytheism]>","[+1 Culture] from every ['Organise Place'] <after adopting [Monotheism]>"],
                 "requires":["Romantised Tradition","Class Conciliation(Conservative)"],
                 "row": 2,
                 "column": 4
             },
             {
                 "name": "Agricultural Fundings(Conservative)",
-                "uniques": ["[+1 Food] from every [Agricultural Improvement]","[+1 Food] from every [[Agricultural Building]]","[-2 Gold] from every [[Agricultural Building]]"],
+                "uniques": ["[+1 Food] from every ['Agricultural Improvement']","[+1 Food] from every ['Agricultural Building']","[-2 Gold] from every ['Agricultural Building']"],
                 "requires":["Mixed Economy"],
                 "row": 2,
                 "column": 1
             },
             {
                 "name": "De-radicalise",
-                "uniques": ["[-1 Culture] from every [[Educational Building]]","[-25]% City-State Influence degradation","[-25]% Unhappiness from [Specialists] [in all cities]"
+                "uniques": ["[-1 Culture] from every ['Educational Building']","[-25]% City-State Influence degradation","[-25]% Unhappiness from [Specialists] [in all cities]"
                 ],
                 "requires":["Religion and Country"],
                 "row": 3,
@@ -862,7 +862,7 @@
             "Domination": 50,
             "Scientific": 40
         },
-        "uniques": ["Only available <before adopting [Socialism]>","Only available <before adopting [Liberalism]>","Only available <before adopting [Conservatism]>","Only available <before adopting [Anarchism]>","Comment [Enables you to build Hall of Nation,an unique wonder that futher increases production when constructing units]","Comment [Enables you to build Protection Squadron, A limited unit that is an alternative from Heavy Infantry, having higher strength and regeneration. One civ can only have 5 of them at a time]"
+        "uniques": ["Only available <before adopting [Socialism]>","Only available <before adopting [Liberalism]>","Only available <before adopting [Conservatism]>","Only available <before adopting [Anarchism]>","Comment [Enables you to build Hall of Nation,an unique wonder that increases strength against the civilisation that have more cities than you.]","Comment [Enables you to build Protection Squadron, A limited unit that is an alternative from Heavy Infantry, having higher strength and regeneration. One civ can only have 5 of them at a time]"
         ],
         "policies": [
             {
@@ -886,7 +886,7 @@
             },
             {
                 "name": "Secret police",
-                "uniques": ["[-2 Culture, +1 Happiness] from every [[Political Building]]","[+10]% City Strength from defensive buildings"],
+                "uniques": ["[-2 Culture, +1 Happiness] from every ['Political Building']","[+10]% City Strength from defensive buildings"],
                 "requires":["Militarised Nation"],
                 "row": 2,
                 "column": 4
@@ -908,7 +908,7 @@
             },
             {
                 "name": "Fascism Complete",
-                "uniques": ["[+25]% Strength <when attacking> <for [Military] units> <when fighting units from a Civilization with more Cities than you>"
+                "uniques": ["[+10]% Strength <when attacking> <for [Military] units>"
                 ]
             }
         ]
@@ -934,7 +934,7 @@
             },
             {
                 "name": "Nationalization",
-                "uniques": ["[+25]% [Science] from every [Civilian Factory Complex]","[+50]% Production when constructing [[Heavy Industry]] buildings [in all cities]","[-25]% maintenance on road & railroads"],
+                "uniques": ["[+25]% [Science] from every [Civilian Factory Complex]","[+50]% Production when constructing ['Heavy Industry'] buildings [in all cities]","[-25]% maintenance on road & railroads"],
                 "requires":["Redistribution of Means of Production(Socialism)"],
                 "row": 2,
                 "column": 1
@@ -971,7 +971,7 @@
             },
             {
                 "name": "Socialism Complete",
-                "uniques": ["[+1 Production] from every [Extraction Improvement]","[+1 Science, +1 Production] from every [[Educational Building]]"
+                "uniques": ["[+1 Production] from every [Extraction Improvement]","[+1 Science, +1 Production] from every ['Educational Building']"
                 ]
             }
         ]
@@ -991,7 +991,7 @@
         "policies": [
             {
                 "name": "Abolishment of Government",
-                "uniques": ["[-1 Culture, -1 Gold] from every [[Political Building]]","[-50]% Culture cost of natural border growth [in all cities] <during a Golden Age>",
+                "uniques": ["[-1 Culture, -1 Gold] from every ['Political Building']","[-50]% Culture cost of natural border growth [in all cities] <during a Golden Age>",
 					"[+50]% [Food] <during a Golden Age>",
 					"[+50]% [Production] <during a Golden Age>",
 					"[+50]% [Gold] <during a Golden Age>",
@@ -1034,7 +1034,7 @@
             },
             {
                 "name": "Direct Democracy",
-                "uniques": ["[-1 Culture, +1 Happiness] from every [[Political Building]]","Gain a free [Monument] [in all cities]","Gain a free [Town Square] [in all cities]"
+                "uniques": ["[-1 Culture, +1 Happiness] from every ['Political Building']","Gain a free [Monument] [in all cities]","Gain a free [Town Square] [in all cities]"
 
                 ],
                 "requires":["Diversity of Opinions"],
@@ -1070,7 +1070,7 @@
             },
             {
                 "name": "Sustainable Power Source",
-                "uniques": ["[+10]% [Production] from every [Hydro Plant]","[+10]% [Production] from every [Solar Plant]","[+15]% [Production] from every [Recycling Center]","[+5]% [Production] from every [[Infrastructure]] <after adopting [Anarchism]>"
+                "uniques": ["[+10]% [Production] from every [Hydro Plant]","[+10]% [Production] from every [Solar Plant]","[+15]% [Production] from every [Recycling Center]","[+5]% [Production] from every ['Infrastructure'] <after adopting [Anarchism]>"
                 ],
                 "row": 1,
                 "column": 5
@@ -1108,12 +1108,12 @@
             "Domination": 40,
             "Scientific": 50
         },
-        "uniques": ["[+50]% Production when constructing [[Light Industry]] buildings [in all cities]"
+        "uniques": ["[+50]% Production when constructing ['Light Industry'] buildings [in all cities]"
         ],
         "policies": [
             {
                 "name": "Reformed Bureaucracy",
-                "uniques": ["[+2 Science] from every [[Political Building]]","[+2 Science] from every [[Research Building]]"
+                "uniques": ["[+2 Science] from every ['Political Building']","[+2 Science] from every [[Research Building]]"
                 ],
                 "row": 1,
                 "column": 1
@@ -1163,7 +1163,7 @@
         "policies": [
             {
                 "name": "Visions of future",
-                "uniques": ["[+1 Science] from every [Policy Improvement]","[+1 Science] from every [Wonder]"],
+                "uniques": ["[+1 Science] from every ['Policy Improvement']","[+1 Science] from every [Wonder]"],
                 "row": 1,
                 "column": 2
             },
@@ -1184,7 +1184,7 @@
             },
             {
                 "name": "Space exploration",
-                "uniques": ["[+10]% [Production] from every [[Space Race Building]]"
+                "uniques": ["[+10]% [Production] from every ['Space Race Building']"
                 ],
                 "requires":["Visions of future"],
                 "row": 2,
@@ -1192,7 +1192,7 @@
             },
             {
                 "name": "Control of the Orbit",
-                "uniques": ["[+50]% Production when constructing [[Space Race Building]] buildings [in all cities]"
+                "uniques": ["[+50]% Production when constructing ['Space Race Building'] buildings [in all cities]"
                 ],
                 "requires":["Space exploration"],
                 "row": 3,
@@ -1216,19 +1216,19 @@
             "Domination": 40,
             "Scientific": 50
         },
-        "uniques": ["[+50]% Production when constructing [[Light Industry]] buildings [in all cities]","[+50]% Production when constructing [[Heavy Industry]] buildings [in all cities]"
+        "uniques": ["[+50]% Production when constructing ['Light Industry'] buildings [in all cities]","[+50]% Production when constructing ['Heavy Industry'] buildings [in all cities]"
         ],
         "policies": [
             {
                 "name": "Scarcity Reduction",
-                "uniques": ["[+1 Food] from every [Agricultural Improvement]","[+1 Gold] from every [Extraction Improvement]"
+                "uniques": ["[+1 Food] from every ['Agricultural Improvement']","[+1 Gold] from every [Extraction Improvement]"
                 ],
                 "row": 1,
                 "column": 1
             },
             {
                 "name": "Usage of AI",
-                "uniques": ["[+40]% [Science] from every [[Research Building]]"
+                "uniques": ["[+33]% [Science] from every ['Research Building']"
                 ],
                 "row": 1,
                 "column": 5
@@ -1274,7 +1274,7 @@
             "Domination": 40,
             "Scientific": 50
         },
-        "uniques": ["[+3 Food] from every [[Agricultural Building]]"
+        "uniques": ["[+3 Food] from every ['Agricultural Building']"
         ],
         "policies": [
             {
@@ -1286,14 +1286,14 @@
             },
             {
                 "name": "Gene Purification",
-                "uniques": ["[+25]% growth [in all cities]","[+1 Culture] from every [[Infrastructure]]"
+                "uniques": ["[+25]% growth [in all cities]","[+1 Culture] from every ['Infrastructure']"
                 ],
                 "row": 1,
                 "column": 5
             },
             {
                 "name": "Reinforced Organs",
-                "uniques": ["[+25]% growth [in all cities]","[+1 Culture] from every [[Infrastructure]]"
+                "uniques": ["[+25]% growth [in all cities]","[+1 Culture] from every ['Infrastructure']"
                 ],
                 "requires":["Prostheics"],
                 "row": 2,
@@ -1301,7 +1301,7 @@
             },
             {
                 "name": "Modification Laws",
-                "uniques": ["[+2 Culture] from every [[Research Building]]"
+                "uniques": ["[+2 Culture] from every ['Research Building']"
                 ],
                 "requires":["Gene Purification"],
                 "row": 2,
