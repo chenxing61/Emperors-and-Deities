@@ -259,7 +259,7 @@
 	{
 		"name": "Formation",
 		"prerequisites": ["Intensive Doctrine"],
-		"uniques": ["[+25]% Strength <vs [[Dense Formation]] units>"],
+		"uniques": ["[+25]% Strength <vs ['Dense Formation'] units>"],
 		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 11,
 		"row": 2
@@ -451,7 +451,7 @@
 	{
 		"name": "Anti-Air Firepower",
 		"prerequisites": ["Faster Shift"],
-		"uniques": ["[+33]% Strength <vs [Low Altitude Aircraft] units>","[+33]% Strength <vs [Bomber] units> <when defending>"],
+		"uniques": ["[+33]% Strength <vs ['Low Altitude Aircraft'] units>","[+33]% Strength <vs [Bomber] units> <when defending>"],
 		"unitTypes": ["Carrier"],
 		"column": 16,
 		"row": 4
@@ -617,7 +617,7 @@
 	{
 		"name": "Strip Armour",
 		"prerequisites": ["Classical Arms"],
-		"uniques": ["[+25]% Strength <vs [[Edged Weapons]] units> <before the [Medieval era]>","[+5]% Strength <vs [[Siege Weapons]] units> <before the [Imperial era]>"],
+		"uniques": ["[+15]% Strength <vs ['Edged Weapons'] units> <before the [Medieval era]>","[+10]% Strength <vs ['Edged Weapons'] units> <before the [Imperial era]>","[+5]% Strength <vs ['Siege Weapons'] units> <before the [Imperial era]>"],
 		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 21,
 		"row": 1
@@ -626,7 +626,7 @@
 	{
 		"name": "Textile Armour",
 		"prerequisites": ["Classical Arms"],
-		"uniques": ["[+20]% Strength <vs [[Edged Weapons]] units> <before the [Imperial era]>"],
+		"uniques": ["[+20]% Strength <vs ['Edged Weapons'] units> <before the [Imperial era]>"],
 		"unitTypes": ["Ranged Combat","Scout","Rider"],
 		"column": 21,
 		"row": 2
@@ -635,7 +635,7 @@
 	{
 		"name": "Heavyshield",
 		"prerequisites": ["Classical Arms"],
-		"uniques": ["[+40]% Strength <vs [[Edged Weapons]] units> <when defending> <before the [Imperial era]>","[-25]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"
+		"uniques": ["[+40]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Imperial era]>","[-25]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"
 	],
 		"unitTypes": ["Close Combat","Siege"],
 		"column": 21,
@@ -717,7 +717,7 @@
 	{
 		"name": "Chainmail Armour",
 		"prerequisites": ["Medieval Arms"],
-		"uniques": ["[+33]% Strength <vs [[Edged Weapons]] units> <before the [Imperial era]>","[+10]% Strength <vs [[Siege Weapons]] units> <before the [Imperial era]>"],
+		"uniques": ["[+33]% Strength <vs ['Edged Weapons'] units> <before the [Imperial era]>","[+10]% Strength <vs ['Siege Weapons'] units> <before the [Imperial era]>"],
 		"unitTypes": ["Close Combat","Rider","Assault"],
 		"column": 25,
 		"row": 1
@@ -726,7 +726,7 @@
 	{
 		"name": "Padded Armour",
 		"prerequisites": ["Medieval Arms"],
-		"uniques": ["[+25]% Strength <vs [[Edged Weapons]] units> <before the [Imperial era]>"],
+		"uniques": ["[+25]% Strength <vs ['Edged Weapons'] units> <before the [Imperial era]>"],
 		"unitTypes": ["Close Combat","Rider","Assault","Ranged Combat","Scout"],
 		"column": 25,
 		"row": 2
@@ -752,7 +752,7 @@
 	{
 		"name": "Gunpowder Projectile",
 		"prerequisites": ["Medieval Arms"],
-		"uniques": ["Only available <after discovering [Gunpowder]>","[+50]% Strength <before the [Imperial era]>"],
+		"uniques": ["Only available <after discovering [Gunpowder Working]>","[+50]% Strength <before the [Imperial era]>"],
 		"unitTypes": ["Siege"],
 		"column": 25,
 		"row": 5
@@ -768,7 +768,7 @@
 	{
 		"name": "Plate Armour",
 		"prerequisites": ["Renaissance Arms"],
-		"uniques": ["[+50]% Strength <vs [[Edged Weapons]] units>","[+10]% Strength <vs [Gunpowder] units>"],
+		"uniques": ["[+50]% Strength <vs ['Edged Weapons'] units>","[+10]% Strength <vs ['Firearms'] units>"],
 		"unitTypes": ["Close Combat","Rider","Assault"],
 		"column": 26,
 		"row": 1
@@ -777,7 +777,7 @@
 	{
 		"name": "Partial Plate Armour",
 		"prerequisites": ["Renaissance Arms"],
-		"uniques": ["[+33]% Strength <vs [[Edged Weapons]] units>","[+5]% Strength <vs [Gunpowder] units>"],
+		"uniques": ["[+33]% Strength <vs ['Edged Weapons'] units>","[+5]% Strength <vs ['Firearms'] units>"],
 		"unitTypes": ["Close Combat","Assault","Ranged Combat","Scout"],
 		"column": 26,
 		"row": 2
@@ -786,7 +786,7 @@
 	{
 		"name": "Wheellock Pistol",
 		"prerequisites": ["Renaissance Arms"],
-		"uniques": ["[+33]% Strength <vs [[Infantry]] units> <before the [Industrial era]>"],
+		"uniques": ["[+33]% Strength <vs ['Infantry'] units> <before the [Industrial era]>"],
 		"unitTypes": ["Rider","Assault"],
 		"column": 26,
 		"row": 3
@@ -871,7 +871,7 @@
 	{
 		"name": "Rocket Launcher",
 		"prerequisites": ["Modern Arms"],
-		"uniques": ["Only available <after discovering [Ballistics]>","[+25]% Strength <vs [Assault] units>","[+25]% Strength <vs [Rider] units>","[+25]% Strength <vs [Low Altitude Aircraft] units>"],
+		"uniques": ["Only available <after discovering [Ballistics]>","[+25]% Strength <vs [Assault] units>","[+25]% Strength <vs [Rider] units>","[+25]% Strength <vs ['Low Altitude Aircraft'] units>"],
 		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 29,
 		"row": 1
@@ -907,7 +907,7 @@
 	{
 		"name": "Transport Plane",
 		"prerequisites": ["Modern Arms"],
-		"uniques": ["Only available <after discovering [Radar]>","Consumes [1] [Aircraft Parts]","Consumes [1] [Fuel]","May Paradrop up to [5] tiles from inside friendly territory","[+5] HP when healing <in [Foreign Land] tiles>"],
+		"uniques": ["Only available <after discovering [Radar]>","Consumes [1] [Aircraft Parts]","Consumes [1] [Fuel]","May Paradrop up to [5] tiles from inside friendly territory","[+10] HP when healing <in [Foreign Land] tiles>"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat"],
 		"column": 29,
 		"row": 5
@@ -915,7 +915,7 @@
 	{
 		"name": "AA Guns",
 		"prerequisites": ["Modern Arms"],
-		"uniques": ["[25]% chance to intercept air attacks","[+33]% Strength <vs [Air] units>","[+33]% Strength <vs [Low Altitude Aircraft] units>"],
+		"uniques": ["[25]% chance to intercept air attacks","[+33]% Strength <vs [Air] units>","[+33]% Strength <vs ['Low Altitude Aircraft'] units>"],
 		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider"],
 		"column": 29,
 		"row": 6
@@ -931,7 +931,7 @@
 	{
 		"name": "Extra Armour Plates",
 		"prerequisites": ["Modern Arms"],
-		"uniques": ["[+25]% Strength <vs [Gunpowder] units>"],
+		"uniques": ["[+25]% Strength <vs ['Firearms'] units>"],
 		"unitTypes": ["Assault"],
 		"column": 30,
 		"row": 1
@@ -958,7 +958,7 @@
 	{
 		"name": "AA Machine Gun",
 		"prerequisites": ["Modern Arms"],
-		"uniques": ["[15]% chance to intercept air attacks","[+25]% Strength <vs [Air] units>","[+25]% Strength <vs [Low Altitude Aircraft] units>"],
+		"uniques": ["[15]% chance to intercept air attacks","[+25]% Strength <vs [Air] units>","[+25]% Strength <vs ['Low Altitude Aircraft'] units>"],
 		"unitTypes": ["Assault"],
 		"column": 30,
 		"row": 4
@@ -1109,7 +1109,7 @@
 	},
 	{
 		"name": "Skirmisher Training", 
-		"uniques": ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles","[+10]% Strength <when defending>","[-20]% Strength <vs [[Mounted]] units> <when defending>","[-20]% Strength <vs [[Mechanised]] units> <when defending>","Ignores Zone of Control"]
+		"uniques": ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles","[+10]% Strength <when defending>","[-20]% Strength <vs ['Mounted'] units> <when defending>","[-20]% Strength <vs ['Mechanised'] units> <when defending>","Ignores Zone of Control"]
 	},
 	{
 		"name": "Tactic Research", // Military Academy
@@ -1125,11 +1125,11 @@
 	},
 	{
 		"name": "The Standing Army", 
-		"uniques": ["[+25]% Strength <vs [[Levy Army]] units>"]
+		"uniques": ["[+25]% Strength <vs ['Levy Army'] units>"]
 	},
 	{
 		"name": "The Noble Army", 
-		"uniques": ["[+35]% Strength <vs [[Levy Army]] units>","[+15]% Strength <vs [[Standing Army]] units>"]
+		"uniques": ["[+35]% Strength <vs ['Levy Army'] units>","[+15]% Strength <vs ['Standing Army'] units>"]
 	},
 	{
 		"name": "Mercenary Habit", 
