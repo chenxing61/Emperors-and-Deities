@@ -74,7 +74,7 @@
 		"movement": 3,
 		"strength": 9,
 		"requiredResource":"Standing Army Maintainance",
-		"uniques": ["Cannot enter ocean tiles","'Standing Army'","'Galley'","'Dense Formation'","'Edged Weapons'","Never appears as a Barbarian unit"],
+		"uniques": ["'Standing Army'","'Galley'","'Dense Formation'","'Edged Weapons'","Cannot enter ocean tiles","Never appears as a Barbarian unit"],
 		"promotions": ["The Standing Army"],
 		"upgradesTo":"Heavy Galley Fleet",
 		"requiredTech": "Sailing",
@@ -95,31 +95,47 @@
 		"attackSound": "nonmetalhit"
 	},
 	{
-		"name": "Early Rider",
-		"unitType": "Rider",
-		"movement": 3,
-		"strength": 9,
-		"cost": 48,
-		"requiredTech": "Animal Husbandry",
-		"obsoleteTech": "Stirrup",
-		"requiredResource":"Standing Army Maintainance",
-		"uniques": ["Consumes [1] [Horse]","Can upgrade to [Light Cavalry] <after discovering [Stirrup]>","'Edged Weapons'","'Mounted'","'Dense Formation'","'Standing Army'","[-50]% Strength <vs cities> <when attacking>","Never appears as a Barbarian unit"],
-		"promotions":["The Standing Army"],
-		"attackSound": "nonmetalhit"
-	},
-	{
 		"name": "Chariot",
 		"unitType": "Assault",
 		"movement": 2,
-		"strength": 15,
+		"strength": 16,
 		"cost": 65,
 		"upgradesTo":"Cataphract", 
 		"requiredTech": "Animal Husbandry",
 		"obsoleteTech": "Stirrup",
 		"requiredResource":"Standing Army Maintainance",
-		"uniques": ["Consumes [1] [Horse]","'Mounted'","'Edged Weapons'","'Dense Formation'","'Standing Army'","[-50]% Strength <when defending>","[-30]% Strength <vs cities> <when attacking>","Never appears as a Barbarian unit"],
+		"uniques": ["Consumes [1] [Horse]","'Standing Army'","'Mounted'","'Dense Formation'","'Edged Weapons'","[-33]% Strength <when defending>","[-33]% Strength <vs cities> <when attacking>","Never appears as a Barbarian unit"],
 		"promotions":["The Standing Army"],
 		"attackSound": "horse"
+	},
+///Line 2
+	{
+		"name": "Early Swordsman",
+		"unitType": "Close Combat",
+		"movement": 2,
+		"strength": 14,
+		"cost": 50,
+		"uniques": ["'Standing Army'","'Infantry'","'Dense Formation'","'Edged Weapons'","[+15]% Strength <when fighting in [Rough terrain] tiles>","Never appears as a Barbarian unit"],
+		"promotions":["The Standing Army"],
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Armorments",
+		"upgradesTo":"Swordsman",
+		"requiredResource":"Standing Army Maintainance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Early Rider",
+		"unitType": "Rider",
+		"movement": 3,
+		"strength": 14,
+		"cost": 48,
+		"uniques": ["Consumes [1] [Horse]","'Standing Army'","'Mounted'","'Dense Formation'","'Edged Weapons'","[-50]% Strength <vs cities> <when attacking>","Never appears as a Barbarian unit"],
+		"promotions":["The Standing Army"],
+		"requiredResource":"Standing Army Maintainance",
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Stirrup",
+		"upgradesTo":"Light Cavalry",
+		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Mechanised Worker",
@@ -590,20 +606,7 @@
 		"attackSound": "shot"
 	},
 ///SCC
-	{
-		"name": "Early Swordsman",
-		"unitType": "Close Combat",
-		"movement": 2,
-		"strength": 14,
-		"cost": 50,
-		"upgradesTo":"Swordsman",
-		"requiredTech": "Bronze Working",
-		"obsoleteTech": "Armorments",
-		"requiredResource":"Standing Army Maintainance",
-		"uniques": ["'Edged Weapons'","'Dense Formation'","'Standing Army'","'Infantry'","[+20]% Strength <when fighting in [Rough terrain] tiles>","Never appears as a Barbarian unit"],
-		"promotions":["The Standing Army"],
-		"attackSound": "metalhit"
-	},
+	
 	{
 		"name": "Swordsman",
 		"unitType": "Close Combat",

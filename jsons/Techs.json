@@ -180,17 +180,18 @@
 		"buildingCost": 85,
 		"wonderCost": 275,
 		"techs": [
-			{
-				"name": "Dry Dock",
-				"row": 2,
-				"prerequisites": ["Carpentry"],
-				"quote": "'There is nothing but a plank between a sailor and eternity.' - Samuel Butler"
-			},
+			
 			{
 				"name": "Iron Working",
 				"row": 3,
 				"prerequisites": ["Mining"],
 				"quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
+			},
+			{
+				"name": "Dry Dock",
+				"row": 4,
+				"prerequisites": ["Carpentry"],
+				"quote": "'There is nothing but a plank between a sailor and eternity.' - Samuel Butler"
 			},
 			{
 				"name": "Paper Making",
@@ -223,7 +224,7 @@
 			{
 				"name": "Optics",
 				"row": 2,
-				"prerequisites": ["Dry Dock","Iron Working"],
+				"prerequisites": ["Astronomy","Dry Dock","Iron Working"],
 				"quote": "'He made an instrument to know if the moon shine at full or no.' - Samuel Butler"
 			},
 			{
