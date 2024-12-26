@@ -891,6 +891,14 @@
 	},
 ///Line 7
 	{
+		"name": "Agricultural Water Storage",
+		"maintenance": 2,
+		"food": 5,
+		"uniques": ["'Infrastructure'","Only available <in cities without a [Irrigation System]>"],
+		"requiredTech": "Engineering",
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Trading Port",
 		"maintenance": 1,
 		"percentStatBonus": {"gold": 10},
@@ -1198,9 +1206,8 @@
 		"isWonder": true,
 		"food":2,
 		"production":2,
-		"happiness": 2,
-		"percentStatBonus":{"culture":25,"gold":25},
-		"uniques": ["[+50]% Golden Age length"],
+		"happiness": 1,
+		"percentStatBonus":{"culture":15,"gold":15},
 		"quote": "'The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come.' - The Books of Chilam Balam",
 		"requiredTech": "Civil Service"
 	},
