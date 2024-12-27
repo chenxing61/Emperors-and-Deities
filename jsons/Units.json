@@ -1028,7 +1028,7 @@
 		"cost": 400,
 		"requiredTech": "Nuclear Fusion",
 		"requiredResource":"Standing Army Maintainance",
-		"uniques": ["Consumes [2] [Vehicle Parts]","Energy","'Dense Formation'","'Standing Army'","'Mechanised'","Can move after attacking","Never appears as a Barbarian unit"],
+		"uniques": ["Consumes [2] [Vehicle Parts]","'Energy'","'Dense Formation'","'Standing Army'","'Mechanised'","Can move after attacking","Never appears as a Barbarian unit"],
 		"promotions":["The Standing Army","Transport Plane","Nuclear Powered"],
 		"attackSound": "gdrAttack"
 	},
@@ -1040,7 +1040,7 @@
 		"cost": 750,
 		"requiredTech": "Robotic",
 		"requiredResource":"Standing Army Maintainance",
-		"uniques": ["Consumes [2] [Vehicle Parts]","Consumes [2] [Uranium]","Energy","'Dense Formation'","'Standing Army'","'Mechanised'","Can move after attacking","Wonder Weapon","Never appears as a Barbarian unit","Limited to [1] per Civilization"],
+		"uniques": ["Consumes [2] [Vehicle Parts]","Consumes [2] [Uranium]","'Energy'","'Dense Formation'","'Standing Army'","'Mechanised'","Can move after attacking","'Wonder Weapon'","Never appears as a Barbarian unit","Limited to [1] per Civilization"],
 		"promotions":["The Standing Army","Nuclear Powered"],
 		"attackSound": "gdrAttack"
 	},
@@ -1469,7 +1469,7 @@
 		"range": 5,
 		"cost": 410,
 		"requiredResource":"Standing Army Maintainance",
-		"uniques": ["Only available <if [Naval Dockyard] is constructed>","[-100]% maintenance costs <upon ending a turn in a [City center] tile>","Consumes [1] [Fuel]","Consumes [2] [Ship Parts]","Consumes [1] [Graphene]","Consumes [1] [Microchips]","Energy","'Dense Formation'","'Engine Ship'","'Standing Army'","Never appears as a Barbarian unit","[+100]% Strength <vs cities> <when attacking>","[+1] Sight","Can see invisible [Barbaric] units","Blast radius [1]"],
+		"uniques": ["Only available <if [Naval Dockyard] is constructed>","[-100]% maintenance costs <upon ending a turn in a [City center] tile>","Consumes [1] [Fuel]","Consumes [2] [Ship Parts]","Consumes [1] [Graphene]","Consumes [1] [Microchips]","'Firearms'","'Dense Formation'","'Engine Ship'","'Standing Army'","Never appears as a Barbarian unit","[+100]% Strength <vs cities> <when attacking>","[+1] Sight","Can see invisible [Barbaric] units","Blast radius [1]"],
 		"promotions": ["The Standing Army"],
 		"requiredTech": "Railguns",
 		"attackSound":"gdrAttack"
@@ -1829,7 +1829,7 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"cost": 1000,
-		"requiredTech": "Advanced Ballistics",
+		"requiredTech": "Railguns",
 		"requiredResource": "Aluminum",
 		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Space Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [3] per Civilization"]
 		// costs 1500 in BNW
@@ -1839,7 +1839,7 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"cost": 1000,
-		"requiredTech": "Satellites",
+		"requiredTech": "Space ELevator",
 		"requiredResource": "Graphene",
 		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Space Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization"]
 		// costs 1500 in BNW
@@ -1849,7 +1849,7 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"cost": 1000,
-		"requiredTech": "Particle Physics",
+		"requiredTech": "Nuclear Fusion",
 		"requiredResource": "Uranium",
 		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Space Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization"]
 		// costs 1500 in BNW

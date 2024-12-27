@@ -1915,17 +1915,7 @@
 		"requiredTech": "Replaceable Parts",
 		"hurryCostModifier": 10
 	},
-	{
-		"name": "Arms Testing Ground",
-		"maintenance": 5,
-		"uniques": ["'Military Building'",
-					"New [Military] units start with [5] Experience [in this city]",
-					"All newly-trained [Military] units [in this city] receive the [Weapon Research] promotion",
-					"[Military] units gain the [Atomic Arms] promotion <starting from the [Atomic era]>",
-					"Destroyed when the city is captured"],
-		"requiredTech": "Replaceable Parts",
-		"hurryCostModifier": 50
-	},
+	
 	{
 		"name": "Weapon Parts Factory",
 		"maintenance": 2,
@@ -2047,7 +2037,17 @@
 		"requiredTech": "Railroads",
 		"hurryCostModifier": 10
 	},
-
+	{
+		"name": "Arms Testing Ground",
+		"maintenance": 5,
+		"uniques": ["'Military Building'",
+					"New [Military] units start with [5] Experience [in this city]",
+					"All newly-trained [Military] units [in this city] receive the [Weapon Research] promotion",
+					"[Military] units gain the [Atomic Arms] promotion <starting from the [Atomic era]>",
+					"Destroyed when the city is captured"],
+		"requiredTech": "Dynamite",
+		"hurryCostModifier": 50
+	},
 	{
 		"name": "Statue of Liberty",
 		"isWonder": true,
