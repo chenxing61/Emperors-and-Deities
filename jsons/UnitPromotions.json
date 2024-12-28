@@ -538,7 +538,7 @@
 	{
 		"name": "Javalin",
 		"prerequisites": ["Primitive Arms"],
-		"uniques": ["[+100]% Strength <vs [{non-[Wounded]}]> <vs [Close Combat] units> <before the [Medieval era]>"],
+		"uniques": ["[+100]% Strength <vs [{non-[Wounded]}]> <vs [Close Combat] units> <before the [Renaissance era]>"],
 		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider"],
 		"column": 19,
 		"row": 1
@@ -618,7 +618,7 @@
 		"name": "Strip Armour",
 		"prerequisites": ["Classical Arms"],
 		"uniques": ["[+15]% Strength <vs ['Edged Weapons'] units> <before the [Medieval era]>","[+10]% Strength <vs ['Edged Weapons'] units> <before the [Imperial era]>","[+5]% Strength <vs ['Siege Weapons'] units> <before the [Imperial era]>"],
-		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
+		"unitTypes": ["Close Combat","Assault"],
 		"column": 21,
 		"row": 1
 
@@ -1100,6 +1100,10 @@
 		"uniques": ["[+30]% Strength","[+5] HP when healing"]
 	},
 	{
+		"name": "Sailor Origin", 
+		"uniques": ["Eliminates combat penalty for attacking across a coast","[+50]% Strength <when defending> <when [Embarked]>"]
+	},
+	{
 		"name": "Marine Training", 
 		"uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast","[+100]% Strength <when defending> <when [Embarked]>"]
 	},
@@ -1133,11 +1137,11 @@
 	},
 	{
 		"name": "Mercenary Habit", 
-		"uniques": ["[+50]% XP gained from combat","Earn [-10]% of the damage done to [Military] units as [Gold]"]
+		"uniques": ["[+50]% XP gained from combat","Earn [-25]% of the damage done to [Military] units as [Gold]","Gain [-1] [Gold] <every [5] turns>"]
 	},
 	{
 		"name": "Barbaric", 
-		"uniques": ["[-75]% maintenance costs","[+10]% XP gained from combat","[+1] Movement","No movement cost to pillage"]
+		"uniques": ["Earn [15]% of the damage done to [Military] units as [Gold]","No movement cost to pillage"]
 	},
 	{
 		"name": "Asymmetric Warfare", 

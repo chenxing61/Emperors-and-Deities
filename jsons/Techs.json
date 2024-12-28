@@ -205,12 +205,7 @@
 				"prerequisites": ["Horseback Riding"],
 				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
 			},
-			{
-				"name": "Stirrup",
-				"row": 9,
-				"prerequisites": ["Horseback Riding"],
-				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
-			}
+
 
 		]
 	},
@@ -242,7 +237,7 @@
 			{
 				"name": "Armorments",
 				"row": 9,
-				"prerequisites": ["Stirrup","Iron Working"],
+				"prerequisites": ["Horse Collar","Iron Working"],
 				"quote": "'There is only one good, knowledge, and one evil, ignorance.' - Socrates"
 			}
 
@@ -255,6 +250,7 @@
 		"buildingCost": 120,
 		"wonderCost": 300,
 		"techs": [
+
 			{
 				"name": "Ship Making",
 				"row": 2,
@@ -265,6 +261,7 @@
 				"name": "Wood Block Printing",
 				"row": 5,
 				"prerequisites": ["Philosophy"],
+				"uniques":["Religion naturally spreads to cities [+1] tiles away"],
 				"quote": "'Unlike sitting at a computer screen, printing is very direct and hands-on.' - Christian Marclay"
 			},
 			{
@@ -279,6 +276,12 @@
 				"row": 8,
 				"prerequisites": ["Construction"],
 				"quote": "'The man who has grit enough to bring about the afforestation or the irrigation of a country is not less worthy of honor than its conqueror.' - Sir John Arthur Thomson"
+			}
+			{
+				"name": "Stirrup",
+				"row": 9,
+				"prerequisites": ["Armorments"],
+				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
 			}
 		]
 	},
@@ -389,9 +392,15 @@
 		"wonderCost": 400,
 		"techs": [
 			{
+				"name": "Hand Cannon",
+				"row": 2,
+				"prerequisites": ["Gunpowder Making"],
+				"quote": "'The Grandfather of Blunderbuss' - CX61"
+			},
+			{
 				"name": "Steels",
 				"row": 3,
-				"prerequisites": ["Coal Working","Gunpowder Making"],
+				"prerequisites": ["Coal Working"],
 				"quote": "'John Henry said to his Captain, / 'A man ain't nothin' but a man, / And before I'll let your steam drill beat me down, / I'll die with the hammer in my hand.'' - Anonymous: The Ballad of John Henry, the Steel-Drivin' Man"
 			},
 			{
@@ -428,12 +437,6 @@
 				"prerequisites": ["Steels","Apprenticeship"],
 				"uniques": ["Improves movement speed on roads"],
 				"quote": "'The press is the best instrument for enlightening the mind of man, and improving him as a rational, moral and social being.' - Thomas Jefferson"
-			},
-			{
-				"name": "Hand Cannon",
-				"row": 3,
-				"prerequisites": ["Steels"],
-				"quote": "'The Grandfather of Blunderbuss' - CX61"
 			},
 			{
 				"name": "Heliocentrism",
@@ -762,7 +765,7 @@
 			{
 				"name": "Combined Arms",
 				"row": 9,
-				"prerequisites": ["Mobile Tactics"],
+				"prerequisites": ["Electronics","Radar","Mobile Tactics"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			},
 			{
@@ -950,7 +953,7 @@
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
 			{
-				"name": "Space Elevators",
+				"name": "Space Elevator",
 				"row": 10,
 				"prerequisites": ["Graphene", "Space Stations"],
 				"quote": "'To boldly go where no one has gone before.' - Stephen Hawking"
@@ -967,7 +970,7 @@
 			{
 				"name": "Future Tech",
 				"row": 5,
-				"prerequisites": ["Nanotechnology","Terraforming","Clone Organs","Nuclear Fusion","Railguns","Space Elevators"],
+				"prerequisites": ["Nanotechnology","Terraforming","Clone Organs","Nuclear Fusion","Railguns","Space Elevator"],
 				"uniques": ["Can be continually researched"],
 				"quote": "'I think we agree, the past is over.' - George W. Bush",
                 "civilopediaText": [{"text": "Who knows what the future holds?"}]

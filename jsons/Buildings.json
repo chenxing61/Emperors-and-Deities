@@ -129,7 +129,7 @@
 		"name": "Barrack",
 		"maintenance": 1,
 		"cityStrength": 5,
-		"uniques": ["'Military Building'",
+		"uniques": ["'Military Building'",					
 					"All newly-trained [Military] units [in this city] receive the [Hardened] promotion",
 					"New [Military] units start with [20] Experience [in this city]",
 					"Provides [1] [Standing Army Maintainance]",
@@ -357,6 +357,15 @@
 		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
+	},
+	{
+		"name": "Mercenary Office",
+		"cost": 50,
+		"maintenance": 1,
+		"uniques": ["'Military Building'","May buy ['Mercenary Army'] units with [Gold] [in this city]"],
+		"requiredBuilding": "Barrack",
+		"requiredTech": "Trade Network",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Tarvern",
@@ -642,6 +651,7 @@
 		"uniques": ["'Military Building'",
 					"New [Military] units start with [10] Experience [in this city]",
 					"[Military] units gain the [Classical Arms] promotion",
+					"Comment [Enables you to build new Siege Units unlocked by Engineering]",
 					"Destroyed when the city is captured"],
 		"requiredBuilding": "Barrack",
 		"requiredTech": "Iron Working",
@@ -869,15 +879,7 @@
 		"requiredTech": "Irrigation",
 		"hurryCostModifier": 25
 	},
-	{
-		"name": "Mercenary Office",
-		"cost": 50,
-		"maintenance": 1,
-		"uniques": ["'Military Building'","May buy ['Mercenary Army'] units with [Gold] [in this city]",],
-		"requiredBuilding": "Barrack",
-		"requiredTech": "Wood Block Printing",
-		"hurryCostModifier": 25
-	},
+
 	{
 		"name": "White Horse Temple",
 		"isWonder": true,
@@ -1424,10 +1426,10 @@
 	{
 		"name": "Agricultural Machinery Workshop",
 		"maintenance": 2,
-		"food": 3,
+		"food": 2,
 		"percentStatBonus": {"food": 25},
 		"specialistSlots": {"Engineer": 1},
-		"uniques": ["'Agricultural Building'","Must not be on [Hill]"],
+		"uniques": ["'Agricultural Building'"],
 		"requiredTech": "Machinery",
 		"hurryCostModifier": 25
 	},
@@ -1506,7 +1508,7 @@
 		"uniques": ["'Educational Building'",
 					"[+1 Science] per [3] population [in this city]",
 					"Only available <after enhancing a religion>",
-					"Only available <in cities without a [Private school]>",
+					"Only available <in cities without a [Private School]>",
 					"Only available <in cities without a [Public School]>",
 					"Only available <when religion is enabled>"
 					],
@@ -2864,7 +2866,7 @@
 					"[+2 Production] from all ['Political Building'] buildings",
 					"[-25]% construction time for [All] improvements <when not at war>",
 					"[+40]% Production when constructing ['Heavy Industry'] buildings [in all cities] <when not at war>",
-					"[+25]% Production when constructing ['Military Industry'] buildings [in all cities] <when at war>"],
+					"[+25]% Production when constructing ['Military Building'] buildings [in all cities] <when at war>"],
 		"requiredTech": "Economics"
 	},
 	{
@@ -2876,7 +2878,7 @@
 					"Triggers a global alert upon completion",
 					"[+2 Gold] from all ['Light Industry'] buildings",
 					"[-2 Gold, +1 Happiness, +1 Culture] from all ['Economic Building'] buildings",
-					"[+2 Production] from all ['Military Industry'] buildings",
+					"[+2 Production] from all ['Military Building'] buildings",
 					"Destroyed when the city is captured"],
 		"requiredTech": "Economics"
 	},	
@@ -2889,9 +2891,9 @@
 					"Triggers a global alert upon completion",
 					"Destroyed when the city is captured",
 					"[-1 Happiness] [in all cities]",
-					"[+25]% Production when constructing [Military] units [in all cities]",
-					"[+40]% Production when constructing ['Military Industry'] buildings [in all cities]",
-					"[+2 Happiness] [in annexed city]"],
+					"[+33]% Production when constructing [Military] units [in all cities]",
+					"[+33]% Production when constructing ['Military Building'] buildings [in all cities]",
+					"[+2 Happiness] [in annexed cities]"],
 		"requiredTech": "Economics"
 	},
 	{
@@ -2941,7 +2943,7 @@
 					"Triggers a global alert upon completion",
 					"[+2 Gold] from all ['Light Industry'] buildings",
 					"[-2 Gold, +1 Happiness, +1 Culture] from all ['Economic Building'] buildings",
-					"[+2 Production] from all ['Military Industry'] buildings",
+					"[+2 Production] from all ['Military Building'] buildings",
 					"Destroyed when the city is captured"],
 		"requiredTech": "Economics"
 	},	
@@ -2983,10 +2985,20 @@
 		"name": "Space Program",
 		"cost": 750,
 		"isNationalWonder": true,
-		"uniques": ["'Space Race Building'","Enables construction of Spaceship parts", "Triggers a global alert upon completion",
+		"uniques": ["Enables construction of Spaceship parts", "Triggers a global alert upon completion",
 			"Only available <when [Scientific] Victory is enabled>", "Cannot be hurried","Destroyed when the city is captured"],
 		"requiredTech": "Rocketry"
 	},
+	{
+		"name": "GDR Project",
+		"cost": 500,
+		"isNationalWonder": true,
+		"uniques": ["Comment [Enables you to achieve the dream of building mechas.]",
+		"Triggers a global alert upon completion",
+		"Cannot be hurried",
+		"Destroyed when the city is captured"],
+		"requiredTech": "Robotic"
+	}
 	{
 		"name": "Overwhelming Superiority",
 		"cost": 1500,
