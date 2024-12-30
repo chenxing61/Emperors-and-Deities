@@ -28,7 +28,7 @@
 	},
 	{
 		"name": "Mass Assault",
-		"uniques": ["[+33]% Strength <vs cities>","[+23]% Strength <when fighting in [Open terrain] tiles>"],
+		"uniques": ["[+25]% Strength <vs cities>","[+23]% Strength <when fighting in [Open terrain] tiles>"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"prerequisites": ["Centralised Command"],
 		"column": 1,
@@ -136,16 +136,15 @@
 	{
 		"name": "Fast Regrouping",
 		"prerequisites": ["Devistating Charge"],
-		"uniques": ["Unit will heal every turn, even if it performs an action","[-10] HP when healing"],
+		"uniques": ["Unit will heal every turn, even if it performs an action","[-5] HP when healing"],
 		"unitTypes": ["Close Combat","Assault"],
 		"column": 7,
 		"row": 4
-
 	},
 	{
 		"name": "Defence Doctrine",
 		"prerequisites": ["Hardened"],
-		"uniques": ["[+20]% Strength <when defending>"],
+		"uniques": ["[+15]% Strength <when defending>"],
 		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 8,
 		"row": 1
@@ -171,7 +170,7 @@
 	{
 		"name": "Old Guard",
 		"prerequisites": ["Ambushing"],
-		"uniques": ["[+33]% Strength <in [City center] tiles>","[+33]% Strength <in [Fort] tiles>","[+33]% Strength <in [Trench] tiles>"],
+		"uniques": ["[+33]% Strength <in [City center] tiles>","[+25]% Strength <in [Fort] tiles>","[+25]% Strength <in [Trench] tiles>"],
 		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 8,
 		"row": 4
@@ -189,7 +188,7 @@
 	{
 		"name": "Barrage",
 		"prerequisites": ["Firepower Doctrine"],
-		"uniques": ["[+15]% Strength <vs ['Dense Formation'] units> <when attacking>","[+5]% Strength <vs ['Skirmishers'] units> <when attacking>"],
+		"uniques": ["[+20]% Strength <vs [Close Combat] units> <when attacking>","[+20]% Strength <vs [Rider] units> <when attacking>"],
 		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship","Helicopter"],
 		"column": 9,
 		"row": 2
@@ -197,7 +196,7 @@
 	{
 		"name": "Ammo Supply",
 		"prerequisites": ["Barrage"],
-		"uniques": ["[+15]% Strength <when adjacent to a [Ranged Combat] unit>"],
+		"uniques": ["[1] additional attacks per turn"],
 		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship","Helicopter"],
 		"column": 9,
 		"row": 3
@@ -206,7 +205,7 @@
 	{
 		"name": "Firing Rotation",
 		"prerequisites": ["Ammo Supply"],
-		"uniques": ["[1] additional attacks per turn"],
+		"uniques": ["[+25]% Strength <when adjacent to a [Ranged Combat] unit>","[+25]% Strength <when adjacent to a [Siege] unit>","[+25]% Strength <when adjacent to a [Ranged Combat Ship] unit>"],
 		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship","Helicopter"],
 		"column": 9,
 		"row": 4
@@ -215,7 +214,7 @@
 	{
 		"name": "Accuracy Doctrine",
 		"prerequisites": ["Hardened"],
-		"uniques": ["[+1] Range","[+10]% Strength <vs ['Skirmishers'] units>"],
+		"uniques": ["[+10]% Strength <vs ['Skirmishers'] units>","[+15]% Strength <vs cities> <when attacking>"],
 		"unitTypes": ["Ranged Combat","Siege"],
 		"column": 10,
 		"row": 1
@@ -224,7 +223,7 @@
 	{
 		"name": "Sharpshooting",
 		"prerequisites": ["Accuracy Doctrine"],
-		"uniques": ["[+25]% Strength <when fighting in [Rough terrain] tiles>","[+15]% Strength <vs cities>"],
+		"uniques": ["[+1] Range","[+25]% Strength <when fighting in [Rough terrain] tiles>"],
 		"unitTypes": ["Ranged Combat","Siege"],
 		"column": 10,
 		"row": 2
@@ -250,7 +249,7 @@
 	{
 		"name": "Intensive Doctrine",
 		"prerequisites": ["Hardened"],
-		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"uniques": ["[+25]% Strength <when fighting in [Open terrain] tiles>"],
 		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 11,
 		"row": 1
@@ -276,7 +275,7 @@
 	{
 		"name": "Combined Arms",
 		"prerequisites": ["Swift Formation"],
-		"uniques": ["[+10]% Strength <vs [Ranged Combat] units><when defending>","[+10]% Strength <vs [Close Combat] units><when attacking>","[+10]% Strength <vs [Rider] units> <when attacking>","[+10]% Strength <vs [Assault] units><when defending>","[+10]% Strength <vs [Close Combat Ship] units><when attacking>","[+10]% Strength <vs [Ranged Combat Ship] units><when defending>"],
+		"uniques": ["[+10]% Strength <vs [Ranged Combat] units><when defending>","[+10]% Strength <vs [Close Combat] units> <when attacking>","[+10]% Strength <vs [Rider] units> <when attacking>","[+10]% Strength <vs [Assault] units><when defending>","[+10]% Strength <vs [Close Combat Ship] units><when attacking>","[+10]% Strength <vs [Ranged Combat Ship] units><when defending>"],
 		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 11,
 		"row": 4
@@ -416,7 +415,7 @@
 	{
 		"name": "Priating",
 		"prerequisites": ["Ship Grabbing"],
-		"uniques": ["No movement cost to pillage", "[+5]% Strength <when fighting in [Foreign Land] tiles>"],
+		"uniques": ["No movement cost to pillage", "[+25]% Strength <when fighting in [Foreign Land] tiles>"],
 		"unitTypes": ["Close Combat Ship"],
 		"column": 15,
 		"row": 4
@@ -425,7 +424,7 @@
 	{
 		"name": "BVR Doctrine",
 		"prerequisites": ["Hardened"],
-		"uniques": ["[+5]% Strength <when defending>","Can carry [1] extra [Aircraft] units"],
+		"uniques": ["[+10]% Strength <when defending>","Can carry [1] extra [Aircraft] units"],
 		"unitTypes": ["Carrier"],
 		"column": 16,
 		"row": 1
@@ -1081,7 +1080,7 @@
 	///Uniques
 	{
 		"name": "Elite Training", 
-		"uniques": ["[+25]% Strength"]
+		"uniques": ["[+10]% Strength","[+25]% XP gained from combat"]
 	},
 	{
 		"name": "Monastic Training", 
