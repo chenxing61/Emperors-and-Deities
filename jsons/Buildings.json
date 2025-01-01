@@ -81,7 +81,7 @@
 		"uniques": ["'Light Industry'",
 					"[+1 Gold] from [Grain] tiles [in this city]",
 					"[+1 Gold] from [Tuber] tiles [in this city]",
-					"[+1 Production] <in cities with a [Guild Complex]>"],
+					],
 		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -94,7 +94,7 @@
 					"Provides [1] [Alcohol] <with [Grape]>",
 					"Provides [1] [Alcohol] <with [Tuber]> <after discovering [Chemistry]>",
 					"Provides [2] [Alcohol] <with [Fruit]>",
-					"[+1 Production] <in cities with a [Guild Complex]>"],
+					],
 		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 0
@@ -105,7 +105,7 @@
 		"uniques": ["'Light Industry'",
 			"[+1 Production] per [3] population [in this city]",
 			"[+2 Production] from [Clay] tiles [in this city]",
-			"[+1 Production] <in cities with a [Guild Complex]>"
+			
 			],
 		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Pottery",
@@ -119,7 +119,7 @@
 					"[+1 Production] from ['Textile'] tiles [in this city]",
 					"[+1 Gold] from [Furs] tiles [in this city]",
 					"[+1 Gold] from [Silk] tiles [in this city]",
-					"[+1 Production] <in cities with a [Guild Complex]>"
+					
 			],
 		"requiredNearbyImprovedResources": ["Bovine","Caprinae","Furs","Cotton","Silk"],
 		"requiredTech": "Animal Husbandry",
@@ -279,7 +279,7 @@
 					"[+1 Production] from ['Extraction Improvement'] tiles [in this city]",
 					"[+1 Food] from ['Agricultural Improvement'] tiles [in this city] <after discovering [Plows]>",
 					"[+1 Production] from ['Lumber Improvement'] tiles [in this city] <after discovering [Construction]>",
-					"[+1 Production] <in cities with a [Guild Complex]>"],
+					],
 		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Bronze Working",
 		"hurryCostModifier": 25
@@ -335,7 +335,7 @@
 			"[+1 Gold] from ['Precious Mineral'] tiles [in this city]",
 			"[+1 Gold] from [Ivory] tiles [in this city]",
 			"[+1 Gold] from [Coral] tiles [in this city]",
-			"[+1 Production] <in cities with a [Guild Complex]>"
+			
 			],
 		"requiredNearbyImprovedResources": ["Gold Ore", "Silver Ore","Rich Copper Ore","Ivory","Gems"],
 		"requiredTech": "Currency",
@@ -506,8 +506,7 @@
 		"specialistSlots": {"Artist": 1},
 		"uniques": ["'Heavy Industry'",
 			"[+1 Production] from ['Rock'] tiles [in this city]",
-			"[+10]% Production when constructing [All] buildings [in this city]",
-			"[+1 Production] <in cities with a [Guild Complex]>"],
+			"[+10]% Production when constructing [All] buildings [in this city]"],
 		"requiredNearbyImprovedResources": ["Marble", "Stone"],
 		"requiredTech": "Masonry",
 		"hurryCostModifier": 25	
@@ -519,7 +518,6 @@
 		"uniques": ["'Light Industry'",
 					"[+1 Gold] from ['Lumber Improvement'] tiles [in this city]",
 					"[+1 Gold] from [Hard Wood] tiles [in this city]",
-					"[+1 Production] <in cities with a [Guild Complex]>",
 					"Must have an owned ['Lumber Improvement'] within [4] tiles"],
 		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Carpentry",
@@ -662,7 +660,7 @@
 		"specialistSlots": {"Artist":1},
 		"uniques": ["'Light Industry'",
 					"[+1 Gold] from every specialist [in this city]",
-					"[+1 Production] <in cities with a [Guild Complex]>"
+					
 					],
 		"requiredTech": "Paper Making",
 		"hurryCostModifier": 10
@@ -1152,13 +1150,22 @@
 		"quote": "'Things always seem fairer when we look back at them, and it is out of that inaccessible tower of the past that Longing leans and beckons.' - James Russell Lowell"
 	},
 	{
-		"name": "Great Wall",
+		"name": "Great Wall Plan",
+		"cost":250,
 		"isWonder": true,
 		"greatPersonPoints": {"Great General": 3},
-		"uniques": ["Enemy [Land] units must spend [1] extra movement points when inside your territory <before discovering [Dynamite]>",
-					"[+1 Gold] from [Luxury resource] tiles [in all cities]"],
+		"uniques": ["Comment[Enable you to build 4 Great Wall Passes in your cities. Which stops enemy mounted units effectively.]","[+1 Gold] from [Luxury resource] tiles [in all cities]"],
 		"requiredTech": "Engineering",
 		"quote": "'The art of war teaches us to rely not on the likelihood of the enemy's not attacking, but rather on the fact that we have made our position unassailable.' - Sun Tzu"
+	},
+	{
+		"name": "Great Wall Pass",
+		"cost":80,
+		"maintenance": 2,
+		"cityStrength": 10,
+		"cityHealth": 10,
+		"uniques": ["'Static Defense'","Enemy ['Mounted'] units must spend [1] extra movement points when inside your territory <in this city>","Only available <if [Great Wall Plan] is constructed>","Limited to [4] per Civilization","Cannot be purchased","Destroyed when the city is captured"],
+		"requiredTech": "Engineering"
 	},
 	{
 		"name": "Red Castle",
@@ -1264,8 +1271,7 @@
 		"name": "Guild Complex",
 		"maintenance": 2,
 		"specialistSlots": {"Engineer": 1,"Scientist": 1,"Merchant": 1,"Artist": 1},
-		"percentStatBonus": {"production": 10},
-		"uniques": ["'Light Industry'"],
+		"uniques": ["'Light Industry'","[+1 Production] from all ['Light Industry'] buildings <in this city>"],
 		"requiredBuilding":"City Hall",
 		"requiredTech": "Guilds",
 		"hurryCostModifier": 25
