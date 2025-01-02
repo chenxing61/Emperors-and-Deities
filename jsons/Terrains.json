@@ -33,7 +33,7 @@
             "Occurs at temperature between [0.7] and [0.8] and humidity between [0.7] and [1]",
             "Occurs at temperature between [0.6] and [0.8] and humidity between [0.4] and [0.6]",
             "[+1] to Fertility for Map Generation",
-            "A Region is formed with at least [30]% [Grassland] tiles, with priority [7]",
+            "A Region is formed with at least [40]% [Grassland] tiles, with priority [7]",
             "Considered [Desirable] when determining start locations",
             "Considered [Food] when determining start locations <in [Jungle] Regions>",
             "Considered [Food] when determining start locations <in [Forest] Regions>",
@@ -81,7 +81,7 @@
             "Occurs at temperature between [-0.6] and [-0.4] and humidity between [0.2] and [0.4]",
             "Occurs at temperature between [-0.5] and [-0.4] and humidity between [0] and [0.2]",
             "[+2] to Fertility for Map Generation",
-            "A Region is formed with at least [30]% [Tundra] tiles and [Snow] tiles, with priority [1]",
+            "A Region is formed with at least [40]% [Tundra] tiles and [Snow] tiles, with priority [1]",
             "Considered [Food] when determining start locations <in [Tundra] Regions>",
             "Considered [Desirable] when determining start locations <in [Tundra] Regions>",
             "Becomes [Plains] when adjacent to [River]",
@@ -301,9 +301,9 @@
 		"name": "Canal",
 		"type": "TerrainFeature",
 		"occursOn": ["Coast"],
-		"movementCost": 2,
+		"movementCost": 1,
 		"uniques": [
-			"Doesn't generate naturally","Units ending their turn on this terrain take [5] damage <for [Water] units>"
+			"Doesn't generate naturally"
 		],
 		"civilopediaText": [
 			{

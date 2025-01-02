@@ -120,7 +120,7 @@
 	{
 		"name": "Minerals",
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Grassland","Desert","Tundra"],
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra"],
 		"production": 2,
 		"improvedBy": ["Manual Mine","Mechanised Mine"],
 		"uniques": ["'Useful Mineral'",
@@ -143,6 +143,14 @@
 					"Generated on every [7] tiles <in [Atoll] tiles>"]
 	},
 	{
+		"name": "Deep Sea Fish",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Ocean"],
+		"food": 1,
+		"improvedBy": ["Coast Fishing Boats"],
+		"uniques": ["Stockpiled","Generated on every [18] tiles <in [{Featureless} {Ocean}] tiles>"]
+	},
+	{
 		"name": "Natural Gas",
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": ["Coast","Ocean"],
@@ -152,7 +160,7 @@
 		"improvedBy": ["Offshore Platform"],
 		"uniques": ["'Chemicals'",
 					"Generated on every [25] tiles <in [{Featureless} {Coast}] tiles>",
-					"Generated on every [15] tiles <in [FeaturelessOcean] tiles>"]
+					"Generated on every [15] tiles <in [{Featureless} {Ocean}] tiles>"]
 	},
 	// Strategic resources
 	{
@@ -226,12 +234,13 @@
 		"name": "Oil",
 		"resourceType": "Strategic",
 		"revealedBy": "Geology",
-		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Snow","Marsh","Jungle"],
+		"terrainsCanBeFoundOn": ["Desert","Coast","Ocean","Tundra","Snow","Marsh","Jungle"],
 		"production": 1,
 		"improvedBy": ["Oil well","Offshore Platform"],
 		"improvementStats": {"production": 3},
 		"uniques": ["'Chemicals'",
 					"Deposits in [Coast] tiles always provide [4] resources",
+					"Deposits in [Ocean] tiles always provide [8] resources",
 					"Guaranteed with Strategic Balance resource option",
 					"Generated with weight [65] <in [Marsh] tiles> <in tiles without [Hill]>",
 					"Generated with weight [40] <in [{Featureless} {Tundra}] tiles>",
@@ -242,7 +251,7 @@
 					"Minor deposits generated with weight [10] <in [Jungle] tiles> <in tiles without [Hill]>",
 					"Minor deposits generated with weight [10] <in [{Featureless} {Desert}] tiles>",
 					"Minor deposits generated with weight [20] <in [{Featureless} {Tundra}] tiles>",
-					"Minor deposits generated with weight [20] <in [{Featureless} {Snow}] tiles>"],
+					"Minor deposits generated with weight [20] <in [{Featureless} {Snow}] tiles>","Generated with weight [50] <in [{Featureless} {Ocean}] tiles>"],
 		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 9},
 		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
 	},
@@ -608,9 +617,24 @@
 					"Generated with weight [30] <in [Forest] Regions>",
 					"Generated with weight [5] <in [Plains] Regions>",
 					"Generated with weight [5] <in [Grassland] Regions>",
+					"Generated with weight [20] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]",
+					"Doesn't generate naturally <in [{Tundra} {Forest}] tiles>"]
+	},
+	{
+		"name": "Honey",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Forest","Marsh","Jungle"],
+		"gold": 2,
+		"production":1,
+		"improvedBy": ["Camp"],
+		"improvementStats": {"food": 1},
+		"uniques": ["'Crops'","Generated with weight [5] <in [Jungle] Regions>",
+					"Generated with weight [35] <in [Forest] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [5] <in [Grassland] Regions>",
 					"Generated with weight [10] <in [Hybrid] Regions>",
 					"Generated near City States with weight [15]",
-					"Doesn't generate naturally <in [ForestHill] tiles>",
 					"Doesn't generate naturally <in [{Tundra} {Forest}] tiles>"]
 	},
 	{
@@ -730,6 +754,7 @@
 		"gold": 4,
 		"uniques": ["Can only be created by Mercantile City-States"]
 	},
+	///Special res
 	{
 		"name": "Alcohol",
 		"resourceType": "Luxury",
