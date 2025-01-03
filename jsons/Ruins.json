@@ -1,7 +1,7 @@
 [
     {
         "name": "discover cultural artifacts",
-        "notification": "We have discovered cultural artifacts in the ruins! (+30 culture)",
+        "notification": "We have discovered cultural artifacts in the ruins! (+[cultureAmount] Culture)",
         "uniques": ["Gain [30] [Culture] <(modified by game speed)>"],
         "color": "#cf8ff7"
     },
@@ -9,13 +9,13 @@
         "name": "squatters willing to work for you",
         "notification": "A [Worker] has joined us!",
         "uniques": ["Free [Worker] found in the ruins"],
-        "excludedDifficulties": ["Prince", "King", "Emperor", "Immortal", "Deity"]
+        "excludedDifficulties": ["Playing Fair", "Battle of Wit and Strength", "Disadvantaged", "Hardcore", "Doomed to Fail"]
     },
     {
         "name": "squatters wishing to settle under your rule",
         "notification": "A [Settler] has joined us!",
         "uniques": ["Free [Settler] found in the ruins"],
-        "excludedDifficulties": ["Warlord","Prince","King","Emperor","Immortal","Deity"]
+        "excludedDifficulties": ["Casual","Playing Fair","Battle of Wit and Strength","Disadvantaged","Hardcore","Doomed to Fail"]
     },
     {
         "name": "your exploring unit receives training",
@@ -43,17 +43,17 @@
     {
         "name": "advanced weaponry for your explorer",
         "notification": "Our unit finds advanced weaponry hidden in the ruins!",
-        "uniques": ["This Unit upgrades for free including special upgrades <before turn number [50]>"]
+        "uniques": ["[This Unit] upgrades for free including special upgrades <before turn number [50]>"]
     },
     {
         "name": "reveal nearby Barbarian camps",
         "notification": "You find evidence of Barbarian activity. Nearby Barbarian camps are revealed! And some golds.",
-        "uniques": ["Gain [25]-[75] [Gold]","Reveal up to [All] [Barbarian encampment] within a [20] tile radius"]
+        "uniques": ["Gain [25]-[75] [Gold]","Reveal up to [All] [Barbarian encampment] within a [30] tile radius"]
     },
     {
         "name": "find a crudely-drawn map",
         "notification": "We have found a crudely-drawn map in the ruins!",
-        "uniques": ["From a randomly chosen tile [4] tiles away from the ruins, reveal tiles up to [4] tiles away with [80]% chance"]
+        "uniques": ["From a randomly chosen tile [3] tiles away from the ruins, reveal tiles up to [5] tiles away with [80]% chance"]
     },
     {
         "name": "discover holy symbols",
