@@ -555,7 +555,7 @@
 	{
 		"name": "Slinger",
 		"prerequisites": ["Primitive Arms"],
-		"uniques": ["[+20]% Strength <vs [Dense Formation] units> <before the [Medieval era]>","[+5]% Strength <vs ['Dense Formation'] units> <starting from the [Medieval era]>"],
+		"uniques": ["[+20]% Strength <vs ['Dense Formation'] units> <before the [Medieval era]>","[+5]% Strength <vs ['Dense Formation'] units> <starting from the [Medieval era]>"],
 		"unitTypes": ["Close Combat","Ranged Combat","Scout"],
 		"column": 19,
 		"row": 3
@@ -1124,7 +1124,7 @@
 	},
 	{
 		"name": "The Levy Army", 
-		"uniques": ["Gain [-1] [Gold] <every [3] turns>","Gain [-1] [Gold] <when not at war> <every [3] turns>","Gain [-1] [Gold] <starting from the [Industrial era]> <every [3] turns>","Gain [+1] [Gold] <before the [Ancient era]> <every [3] turns>"]
+		"uniques": ["Gain [-1] [Gold] <every [3] turns>","Gain [-1] [Gold] <when not at war> <every [3] turns><before adopting [Military Tradition]>","Gain [-1] [Gold] <starting from the [Industrial era]> <every [3] turns>","Gain [+1] [Gold] <before the [Ancient era]> <every [3] turns>"]
 	},
 	{
 		"name": "The Standing Army", 
@@ -1137,6 +1137,10 @@
 	{
 		"name": "Mercenary Habit", 
 		"uniques": ["[+50]% XP gained from combat","Earn [-25]% of the damage done to [Military] units as [Gold]","Gain [-1] [Gold] <every [5] turns>"]
+	},
+	{
+		"name": "Merchant", 
+		"uniques": ["[-10]% Strength <vs ['Standing Army'] units>","Gain [2] [Gold] <upon ending a turn in a [City center] tile>"]
 	},
 	{
 		"name": "Barbaric", 
