@@ -89,42 +89,57 @@
     {
         "name": "Monasticism",
         "type": "Follower",
-        "uniques": ["[-25]% Unhappiness from [Specialists] [in cities following this religion]",
-                "May buy [Monastery] buildings with [Faith] [in cities following this religion]",
-                "Comment [Enables you to buy Monastery,a Practice ground that lessen unhappiness]"]
+        "uniques": [
+            "[-25]% Unhappiness from [Specialists] [in cities following this religion]",
+            "May buy [Monastery] buildings with [Faith] [in cities following this religion]",
+            "Comment [Enables you to buy Monastery,a Practice ground that lessen unhappiness]"]
     },
     {
         "name": "Generosity",
         "type": "Follower",
-        "uniques": ["[-3 Gold, +2 Food, +1 Happiness] from all ['Worship Place'] buildings"]
+        "uniques": [
+            "[Gold] cost of purchasing ['Worship'] buildings [-33]%",
+            "[-2 Gold, +2 Food, +1 Happiness] from all ['Worship Place'] buildings"]
     },
     {
         "name": "Into the Vulgarity",
         "type": "Follower",
-        "uniques": ["[+1]% [Production] from every follower, up to [20]%",
-                    "[+1]% [Food] from every follower, up to [10]%"]
+        "uniques": [
+            "[+1]% [Production] from every follower, up to [20]%",
+            "[+1]% [Food] from every follower, up to [10]%"]
     },
     {
         "name": "Virtues and Discipline",
         "type": "Follower",
-        "uniques": ["[+1]% [Culture] from every follower, up to [33]%"]
+        "uniques": [
+            "[+1]% [Culture] from every follower, up to [33]%"]
     },
     {
         "name": "Saints Worship",
         "type": "Follower",
-        "uniques": ["[+1 Faith] from all ['Worship Place'] buildings"]
+        "uniques": [
+            "[+25]% Production when constructing ['Worship Place'] buildings [in all cities]",
+            "[+1 Faith] from all ['Worship Place'] buildings"]
     },
     {
         "name": "Mysticism",
         "type": "Follower",
-        "uniques": ["[-1 Science, +1 Happiness, +1 Faith] from all ['Worship Place'] buildings"]
+        "uniques": [
+            "[-1 Science, +1 Happiness, +1 Faith] from all ['Worship Place'] buildings"]
     },
     {
         "name": "Belief in Afterlife",
         "type": "Follower",
-        "uniques": ["[-1 Gold, +1 Faith] from every ['Worship Place']","[-1 Gold, +1 Happiness] from every ['Practice Ground']"]
+        "uniques": [
+            "[-1 Gold, +1 Faith] from every ['Worship Place']",
+            "[-1 Gold, +3 Happiness] from every ['Practice Ground']",
+            "Comment [Enables you to build Mausoleum of Afterlife, a Wonder that increases its production as it ages.]"]
     },
-
+    {
+        "name": "Religious Art",
+        "type": "Follower",
+        "uniques": ["[+2 Faith, +1 Culture] from every [Wonder]","[+1 Culture] from all ['Worship Place'] buildings"]
+    },
     {
         "name": "Karma",
         "type": "Follower",
@@ -134,12 +149,12 @@
     {
         "name": "Laws of the God",
         "type": "Follower",
-        "uniques": ["Only available <after adopting [Theocracy]>","[+1 Faith, +1 Culture, +1 Gold] from all ['Political Building'] buildings <in cities with at least [3] [Followers of this Religion]>"]
+        "uniques": ["Only available <after adopting [Theocracy]>","[+1 Faith, +1 Culture, +1 Gold] from all ['Political Building'] buildings <in cities with at least [3] [Followers of this Religion]>","[+1 Happiness] from [Holy site] tiles [in cities following this religion]"]
     },
     {
         "name": "Holy Guidance",
         "type": "Follower",
-        "uniques": ["Only available <after adopting [Theocracy]>","[+1 Happiness] from every ['Organise Place']"]
+        "uniques": ["Only available <after adopting [Theocracy]>","[+13]% Production when constructing [All] wonders [in holy cities]","[+1 Happiness] from every [Faith] Building","[+3 Culture] from [Holy site] tiles [in cities following this religion]"]
     },
 
     ///Fantasy
@@ -157,22 +172,22 @@
     {
         "name": "Interfaith Dialogue",
         "type": "Enhancer",
-        "uniques": ["When spreading religion to a city, gain [10] times the amount of followers of other religions as [Science]","When spreading religion to a city, gain [10] times the amount of followers of other religions as [Culture]"]
+        "uniques": ["Religion naturally spreads to cities [+2] tiles away","When spreading religion to a city, gain [10] times the amount of followers of other religions as [Science]","When spreading religion to a city, gain [10] times the amount of followers of other religions as [Culture]"]
     },
     {
         "name": "Pilgrimage",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Prophet Worship]>","Comment [Enables you to buy Mosque and House of God, Mosque is a 'Organise Place' that gives faith bonus to Holy city. House of God is a wonder that gives huge stats]","May buy [Mosque] buildings with [Faith] [in cities following this religion]","[+2 Faith] for each global city following this religion"]
+        "uniques": ["Comment [Enables you to buy Mosque and House of God, Mosque is a 'Organise Place' that gives faith bonus to Holy city. House of God is a wonder that gives huge stats]","May buy [Mosque] buildings with [Faith] [in cities following this religion]","[+2 Faith] for each global city following this religion"]
     },
     {
         "name": "Papal Primacy",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Meissiah Worship]>","Comment [Enables you to buy Cathedral and Holy See, Cathedral is a 'Organise Place' that gives 1 Artist Slot. Holy See is a wonder that gives Governor Slot and huge stats]","May buy [Cathedral] buildings with [Faith] [in cities following this religion]","Resting point for Influence with City-States following this religion [+15]"]
+        "uniques": ["Comment [Enables you to buy Cathedral and Holy See, Cathedral is a 'Organise Place' that gives 1 Artist Slot. Holy See is a wonder that gives Governor Slot and huge stats]","May buy [Cathedral] buildings with [Faith] [in cities following this religion]","Resting point for Influence with City-States following this religion [+15]"]
     },
     {
         "name": "Order of the Faith",
         "type": "Enhancer",
-        "uniques": ["May buy [{Military} {Land} {non-['Mercenary Army']}] units with [Faith] for [2] times their normal Production cost <before the [Imperial era]>","[Faith] cost of purchasing [Missionary] units [-50]%"]
+        "uniques": ["May buy [{Military} {Land} {non-['Mercenary Army']}] units with [Faith] for [2] times their normal Production cost <before the [Imperial era]> <in cities with at least [5] [Followers of this Religion]>","[Faith] cost of purchasing [Missionary] units [-50]%"]
     },
     {
         "name": "Monastic Warrior",
@@ -182,18 +197,18 @@
     {
         "name": "Holy War",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Theocracy]>","[+20]% Strength <for [All] units> <when fighting in [Enemy Land] tiles>","[Faith] cost of purchasing [Inquisitor] units [-50]%"]
+        "uniques": ["Only available <after adopting [Theocracy]>","[+20]% Strength <for [All] units> <when fighting in [Foriegn Land] tiles>","[Faith] cost of purchasing [Inquisitor] units [-50]%","[+2 Production] from [Holy site] tiles [in cities following this religion]"]
     },
     {
         "name": "Defender of the Faith",
         "type": "Enhancer",
-        "uniques": ["[+20]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>","[+5] HP when healing"]
+        "uniques": ["[+20]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>","[+5] HP when healing <in cities with at least [5] [Followers of this Religion]>"]
         // ToDo: Should only be friendly territory of cities that follow this religion
     },
     {
         "name": "Tithe",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Monotheism]>","Only available <after adopting [Theocracy]>","[+3 Gold] from every [5] global followers [in all cities]"]
+        "uniques": ["Only available <after adopting [Monotheism]>","Only available <after adopting [Theocracy]>","[+3 Gold] from every [5] global followers [in all cities]","[+3 Gold] from [Holy site] tiles [in cities following this religion]"]
     },
     {
         "name": "Heretic Tax",
@@ -209,42 +224,37 @@
     {
         "name": "Religious Unity",
         "type": "Enhancer",
-        "uniques": ["[+75]% Natural religion spread [in City-State cities]"]
+        "uniques": ["Only available <after adopting [Theocracy]>","[+75]% Natural religion spread [in City-State cities]","Militaristic City-States grant units [2] times as fast when you are at war with a common nation","[+2 Production] from [Holy site] tiles [in cities following this religion]"]
     },
     ///Spread
     {
         "name": "Mentorship",
         "type": "Enhancer",
-        "uniques": ["[+2 Faith] from all ['Educational Building'] buildings","May buy ['Educational Building'] buildings with [Faith] [in cities following this religion]"]
+        "uniques": ["[+1 Faith] from all ['Educational Building'] buildings","May buy ['Educational Building'] buildings with [Faith] [in cities following this religion]"]
     },
 
     {
         "name": "Missionary Zeal",
         "type": "Enhancer",
-        "uniques": ["Religion naturally spreads to cities [+2] tiles away","[+50]% Spread Religion Strength <for [Missionary] units>"]
+        "uniques": ["[+1] Movement <for [Missionary] units>","[+3] Sight <for [Missionary] units>","[+100]% Spread Religion Strength <for [Missionary] units>"]
     },
     {
         "name": "Religious Texts",
         "type": "Enhancer",
         "uniques": ["Religion naturally spreads to cities [+1] tiles away","[+34]% Natural religion spread [in all cities]", "[+34]% Natural religion spread [in all cities] <after discovering [Printing Press]>"]
     },
-
     {
         "name": "Reliquary",
         "type": "Enhancer",
-        "uniques": ["Gain [50] [Faith] <upon expending a [Great Person] unit> <(modified by game speed)>","Gain [50] [Culture] <upon expending a [Great Person] unit> <(modified by game speed)>"]
+        "uniques": ["Gain [50] [Faith] <upon expending a [Great Person] unit> <(modified by game speed)>","Gain [50] [Culture] <upon expending a [Great Person] unit> <(modified by game speed)>","Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>"]
     },
 
     {
         "name": "Religion Stories",
         "type": "Enhancer",
-        "uniques": ["[+2 Faith] from all ['Cultural Building'] buildings <in cities with at least [5] [Followers of this Religion]>"]
+        "uniques": ["[+1 Faith] from all ['Cultural Building'] buildings","May buy ['Cultural Building'] buildings with [Faith] [in all cities]"]
     },
-    {
-        "name": "Religious Art",
-        "type": "Enhancer",
-        "uniques": ["[+1 Culture, +1 Gold] from all ['Worship Place'] buildings"]
-    },
+
 ///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
 
     ///Common

@@ -277,6 +277,23 @@
 		"hurryCostModifier": 10
 	},
 	{
+		"name": "Road Network",
+		"maintenance": 2,
+		"happiness": 1,
+		"percentStatBonus": {
+							"food": 5,
+							"production": 5,
+							"gold": 5},
+		"uniques": ["'Infrastructure'",
+			"[+1]% [Gold] from Trade Routes",
+			"[+1]% growth [in all cities]",
+			"[-5]% maintenance cost for buildings [in this city]"
+			],
+		"obsoleteTech":"Apprenticeship",
+		"requiredTech": "The Wheel",
+		"hurryCostModifier": 10
+	},
+	{
 		"name": "Civilian Blacksmith",
 		"maintenance": 2,
 		"specialistSlots": {"Engineer":1},
@@ -345,23 +362,7 @@
 		"requiredTech": "Currency",
 		"hurryCostModifier": 10
 	},
-	{
-		"name": "Road Network",
-		"maintenance": 2,
-		"happiness": 1,
-		"percentStatBonus": {
-							"food": 5,
-							"production": 5,
-							"gold": 5},
-		"uniques": ["'Infrastructure'",
-			"[+1]% [Gold] from Trade Routes",
-			"[+1]% growth [in all cities]",
-			"[-5]% maintenance cost for buildings [in this city]"
-			],
-		"obsoleteTech":"Apprenticeship",
-		"requiredTech": "Trade Network",
-		"hurryCostModifier": 10
-	},
+
 	{
 		"name": "Mercenary Office",
 		"cost": 50,
@@ -391,21 +392,10 @@
 					"Gain a free [Trading Post] [in this city]", 
 					"[+6 Culture] [in this city] <after discovering [Archaeology]>",
 					"Must be next to [Desert]"],
-		"requiredTech": "Currency",
+		"requiredTech": "Trade Network",
 		"quote": "'...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...' - Indiana Jones"
 	},
-	{
-		"name": "City of Mystery",
-		"isWonder": true,
-		"culture": 1,
-		"greatPersonPoints": {"Great Engineer": 1},
-		"uniques": ["'Educational Building'","[+1 Science, +1 Culture] from [Desert] tiles without [Flood plains] [in this city]",
-					"Gain a free [University] [in this city]",
-					"[+6 Culture] [in this city] <after discovering [Archaeology]>",
-					"Must be next to [Desert]"],
-		"requiredTech": "Currency",
-		"quote": "'I've always wanted to go to Timbuktu. First of all I think it has the best name of anywhere in the world.' - David Tang"
-	},
+	
 	{
 		"name": "Hanging Gardens",
 		"greatPersonPoints": {"Great Artist": 1},
@@ -592,7 +582,18 @@
 		"requiredTech": "Mathematics",
 		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
 	},
-
+	{
+		"name": "City of Mystery",
+		"isWonder": true,
+		"culture": 1,
+		"greatPersonPoints": {"Great Engineer": 1},
+		"uniques": ["'Educational Building'","[+1 Science, +1 Culture] from [Desert] tiles without [Flood plains] [in this city]",
+					"Gain a free [University] [in this city]",
+					"[+6 Culture] [in this city] <after discovering [Archaeology]>",
+					"Must be next to [Desert]"],
+		"requiredTech": "Drama and Poetry",
+		"quote": "'I've always wanted to go to Timbuktu. First of all I think it has the best name of anywhere in the world.' - David Tang"
+	},
 	{
 		"name": "Mausoleum of Wealth",
 		"isWonder": true,
@@ -1376,7 +1377,7 @@
 		"name": "University",
 		"maintenance": 3,
 		"percentStatBonus": {"science": 25,"culture":25},
-		"specialistSlots": {"Scientist": 2},
+		"specialistSlots": {"Scientist": 2,"Engineer": 2},
 		"uniques": ["'Educational Building'",
 					"[Great Artist] is earned [+20]% faster",
 					"[Great Engineer] is earned [+20]% faster",
@@ -2279,7 +2280,7 @@
 		"isWonder": true,
 		"greatPersonPoints": {"Great General": 5},
 		"percentStatBonus": {"culture": 25},
-		"uniques": ["Only available <after adopting [Fascism]>","[+25]% Strength <when attacking> <for [Military] units> <when fighting units from a Civilization with more Cities than you>"],
+		"uniques": ["Only available <after adopting [Fascism]>","[+25]% Strength <when attacking> <for [Military] units>"],
 		"quote": "'If you win, you need not have to explain...If you lose, you should not be there to explain!' - Austrian Mustache Man",
 		"requiredTech": "Electricity"
 	},
@@ -2778,13 +2779,13 @@
 		"maintenance": 1,
 		"culture": 1,
 		"specialistSlots": {"Scientist": 1,"Artist": 1},
-		"uniques": ["'Political Building'","'Cultural Building'","Only available <after adopting [Scholarship]>","Destroyed when the city is captured"],
+		"uniques": ["'Political Building'","'Cultural Building'","[+25]% Great Person generation [in this city]","Only available <after adopting [Scholarship]>","Destroyed when the city is captured"],
 		"requiredTech":"Philosophy",
 		"hurryCostModifier": 25
 	},
 	{
 		"name": "Primitive Property Sector",
-		"percentStatBonus": {"gold": 20},
+		"percentStatBonus": {"gold": 15},
 		"uniques": ["'Economic Building'",
 					"Only available <after adopting [Plutocracy]>",
 					"[-10]% Production when constructing [All] buildings [in this city]",
@@ -2797,7 +2798,6 @@
 		"happiness": 1,
 		"uniques": ["'Entertainment Building'",
 					"[-5]% Unhappiness from [Population] [in this city]",
-					"New [Military] units start with [5] Experience [in this city]",
 					"Only available <after adopting [Feudalism]>"],
 		"requiredBuilding": "Town Square",
 		"requiredTech":"Tactics",
@@ -2807,10 +2807,10 @@
 		"name": "Examination Hall",
 		"maintenance": 2,
 		"happiness": 1,
-		"culture": 1,
+		"culture": 2,
 		"uniques": ["'Political Building'",
-					"'Educational Building'","New [Military] units start with [5] Experience [in this city]",
-					"Only available <after adopting [Meritocracy]>","Destroyed when the city is captured"],
+					"'Educational Building'","[+3]% Production towards any buildings that already exist in the Capital","New [Military] units start with [5] Experience [in this city]","New [Military] units start with [5] Experience [in this city] <after adopting [Military Tradition]>",
+					"Only available <after adopting [Imperial Examinations]>","Destroyed when the city is captured"],
 		"requiredTech": "Civil Service",
 		"hurryCostModifier": 25
 	},
