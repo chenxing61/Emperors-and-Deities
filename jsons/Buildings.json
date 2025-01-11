@@ -22,6 +22,7 @@
 					"[+1 Gold] <after discovering [Theology]>",
 					"Destroyed when the city is captured"],
 		"requiredTech": "Agriculture",
+		"obsoleteTech":"Acoustics",
 		"hurryCostModifier": 0
 	},
 	{
@@ -132,6 +133,7 @@
 					"Provides [1] [Standing Army Maintainance]",
 					"Destroyed when the city is captured"],
 		"requiredTech": "Copper Working",
+		"obsoleteTech":"Apprenticeship",
 		"hurryCostModifier": 15
 	},
 	{
@@ -254,6 +256,7 @@
 					"[-10]% Unhappiness from [Specialists] [in this city]",
 					"Destroyed when the city is captured"],
 		"requiredTech": "Writing",
+		"obsoleteTech":"Acoustics",
 		"hurryCostModifier": 10
 	},
 	{
@@ -265,6 +268,7 @@
 					"[+1 Happiness] <after discovering [Drama and Poetry]>",
 					"[+3 Culture] <after discovering [Archaeology]>"],
 		"requiredTech": "Writing",
+		"obsoleteTech":"Acoustics",
 		"hurryCostModifier": 25
 	},
 	{
@@ -494,6 +498,7 @@
 					"[-10]% Culture cost of natural border growth [in this city]",
 					"Destroyed when the city is captured"],
 		"requiredTech": "Drama and Poetry",
+		"obsoleteTech":"Acoustics",
 		"hurryCostModifier": 25
 	},
 	{
@@ -556,6 +561,7 @@
 		"uniques": ["'Static Defense'",
 					"Destroyed when the city is captured"],
 		"requiredTech": "Masonry",
+		"obsoleteTech":"Apprenticeship",
 		"hurryCostModifier": 25
 	},
 	{
@@ -663,6 +669,7 @@
 					"Destroyed when the city is captured"],
 		"requiredBuilding": "Barrack",
 		"requiredTech": "Iron Working",
+		"obsoleteTech":"Apprenticeship",
 		"hurryCostModifier": 25
 	},
 	{
@@ -782,6 +789,7 @@
 					"Destroyed when the city is captured"],
 		"requiredBuilding": "Military Blacksmith",
 		"requiredTech": "Armorments",
+		"obsoleteTech":"Apprenticeship",
 		"hurryCostModifier": 25
 	},
 	{
@@ -1266,6 +1274,7 @@
 					"Destroyed when the city is captured"],
 		"requiredBuilding": "Military Blacksmith",
 		"requiredTech": "Gunpowder Making",
+		"obsoleteTech":"Apprenticeship",
 		"hurryCostModifier": 25
 	},
 	{
@@ -1372,6 +1381,20 @@
 					"Must be next to [Coast]"],
 		"requiredTech": "Apprenticeship",
 		"hurryCostModifier": 10
+	},
+	{
+		"name": "Military Expansion",
+		"cost": 520,
+		"uniques": ["Unsellable",
+					"'Military Building'",
+					"Gain a free [Barrack] [in this city]",
+					"Gain a free [Walls] [in this city]",
+					"Gain a free [Military Blacksmith] [in this city]",
+					"Gain a free [Military Stable] [in this city]",
+					"Gain a free [Armour Workshop] [in this city]",
+					"Gain a free [Firearms Workshop] [in this city]"],
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": -10
 	},
 	{
 		"name": "University",
@@ -1572,6 +1595,18 @@
 		"requiredBuilding": "Town Square",
 		"requiredTech": "Acoustics",
 		"hurryCostModifier": 25
+	},
+	{
+		"name": "Civil Expansion",
+		"cost": 400,
+		"uniques": ["Unsellable",
+					"'Infrastructure'",
+					"Gain a free [Monument] [in this city]",
+					"Gain a free [Town Hall] [in this city]",
+					"Gain a free [Library] [in this city]",
+					"Gain a free [Town Square] [in this city]"],
+		"requiredTech": "Acoustics",
+		"hurryCostModifier": -10
 	},
 	{
 		"name": "Chapel of Great Art",
