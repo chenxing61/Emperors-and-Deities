@@ -2827,6 +2827,55 @@
 		"hurryCostModifier": 10
 	},
 	{
+		"name": "Failed Bourgeoisie Revolution",
+		"isNationalWonder":true,
+		"uniques": ["Consumes [1] [Revolution Oppotunity]","Unbuildable","Unsellable",
+					"Provides [2] [Noble Army Maintainance]",
+                	"Provides [2] [Horse]",
+					"[+33]% Strength <for ['Noble Army'] units>",
+					"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Peaceful Bourgeoisie Revolution",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+					"Provides [1] [Standing Army Maintainance]",
+                "Provides [1] [Weapon Parts]",
+					"[-10]% Strength <for ['Noble Army'] units>",
+					"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Chaotic Bourgeoisie Revolution",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"Provides [2] [Standing Army Maintainance]",
+                "Provides [2] [Weapon Parts]",
+                "[Revolutionaries] units gain the [Hardened] promotion",
+                "[Revolutionaries] units gain the [Shock Doctrine] promotion",
+                "[Revolutionaries] units gain the [Stewardship] promotion",
+				"[+5]% Strength <for ['Standing Army'] units>",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Violent Bourgeoisie Revolution",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"Provides [3] [Standing Army Maintainance]",
+                "Provides [3] [Weapon Parts]",
+				"[Revolutionaries] units gain the [Hardened] promotion",
+                "[Revolutionaries] units gain the [Shock Doctrine] promotion",
+                "[Revolutionaries] units gain the [Defence Doctrine] promotion",
+                "[Revolutionaries] units gain the [Stewardship] promotion",
+                "[Revolutionaries] units gain the [Resourceful Army] promotion",
+				"[+10]% Strength <for ['Standing Army'] units>",
+                "[+10]% [Culture] [in all cities]",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Commune",
 		"food":2,
 		"production": 2,

@@ -31,7 +31,7 @@
             },
             {
                 "name": "Panthon Incorperation",
-                "uniques": ["[+25]% Production when constructing [Military] units <in cities with a [Shrine]>","[+50]% Production when constructing [Intergration] buildings [in annexed cities]"
+                "uniques": ["[+25]% Production when constructing [Military] units [in all cities] <in cities with a [Shrine]>","[+50]% Production when constructing [Intergration] buildings [in annexed cities]"
                 ],
                 "requires": ["Apotheosis of Leaders"],
                 "row": 2,
@@ -339,7 +339,7 @@
             "Scientific": 20,
             "Religious": 0
         },
-        "uniques": ["[+5]% Production [in all cities]",
+        "uniques": ["[+5]% [Production] [in all cities]",
         "Only available <before adopting [Feudalism]>",
         "Only available <before adopting [Theocracy]>"
         ],
@@ -428,7 +428,7 @@
                 "name": "Manorialism",
                 "uniques": ["Comment [Enables you to build Manor,an 'policy improvement' that provides noble army maintainance and culture at cost of less potential food production increase]",
                 "[+1 Gold] from every ['Light Industry']",
-                "[+2 Culture] from every [Manor] tile <after adopting [Philosopher King]>"],
+                "[+2 Culture] from every [Manor] <after adopting [Philosopher King]>"],
                 "row": 2,
                 "column": 5
             },
@@ -660,7 +660,7 @@
         "[+1 Happiness] [in all cities]",
         "Triggers a [Bourgeoisie Revolution!] event",
         "Only available <before adopting [Imperialism]>",
-        "Consumes [1] [Revolution Oppotunity]",
+        "Only available <with [Revolution Oppotunity]>",
         "Comment [Revolution Oppotunity is automatically gained upon entering Imperial Era.]"
         ],
         "policies": [
@@ -684,7 +684,7 @@
             {
                 "name": "Paliments",
                 "uniques": [
-                "[+5]% Production [in all cities]",
+                "[+5]% [Production] [in all cities]",
                 "Each city founded increases culture cost of policies [17]% less than normal"
                 ],
                 "requires":["Collective Rule"],
@@ -853,12 +853,12 @@
             "Domination": 50,
             "Scientific": 30
         },
-        "uniques": ["Cities are razed [0.5] times as fast","Only available <before adopting [Socialism]>","Only available <before adopting [Liberalism]>","Only available <before adopting [Conservatism]>","Only available <before adopting [Anarchism]>","Comment [Enables you to build Hall of Nation,an unique wonder that increases strength of attacks.]"
+        "uniques": ["Cities are razed [2] times as fast","Only available <before adopting [Socialism]>","Only available <before adopting [Liberalism]>","Only available <before adopting [Conservatism]>","Only available <before adopting [Anarchism]>","Comment [Enables you to build Hall of Nation,an unique wonder that increases strength of attacks.]"
         ],
         "policies": [
             {
                 "name": "Populism",
-                "uniques": ["[-5 Culture] [in all cities]","[+20 Culture] [in cities being razed]","[+25]% Strength <when attacking> <for [Military] units> <when fighting units from a Civilization with more Cities than you>","Provides the cheapest ['Military Building'] building in your first [4] cities for free"],
+                "uniques": ["[-3 Culture] [in all cities]","[+55 Culture] [in cities being razed]","[+25]% Strength <when attacking> <for [Military] units> <when fighting units from a Civilization with more Cities than you>"],
                 "row": 1,
                 "column": 1
             },
