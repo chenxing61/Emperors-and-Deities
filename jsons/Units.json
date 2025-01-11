@@ -150,6 +150,7 @@
 		"upgradesTo":"Explorer",
 		"requiredTech": "Astronomy",
 		"obsoleteTech": "Monocular",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "metalhit"
 	},
 	{
@@ -195,6 +196,7 @@
 		"requiredTech": "Paper Making",
 		"obsoleteTech": "Engineering",
 		"upgradesTo":"Mercenary Crossbowman",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "arrow"
 	},
 	{
@@ -352,6 +354,7 @@
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Flintlock",
 		"upgradesTo":"Mercenary Musketeer",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "metalhit"
 	},
 ///Line 6
@@ -379,6 +382,7 @@
 		"promotions": ["Mercenary Habit","Merchant"],
 		"requiredTech": "Ship Making",
 		"obsoleteTech": "Monocular",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "throw"
 	},
 	{
@@ -405,6 +409,7 @@
 		"requiredTech": "Stirrup",
 		"obsoleteTech": "Flintlock",
 		"upgradesTo":"Hussar",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "horse"
 	},
 	///Line 7
@@ -437,6 +442,7 @@
 		"requiredTech": "Engineering",
 		"obsoleteTech": "Hand Cannon",
 		"upgradesTo": "Mercenary Hand Cannoneer",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "crossbow"
 	},
 	{
@@ -575,6 +581,7 @@
 		"upgradesTo":"Mercenary Skirmisher",
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "shot"
 	},
 	{
@@ -678,6 +685,7 @@
 		"requiredTech": "Monocular",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo":"Recon Unit",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "metalhit"
 	},
 	{
@@ -734,6 +742,7 @@
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo":"Security Company",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "shot"
 	},
 	{
@@ -835,6 +844,7 @@
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo":"Security Company",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "shot"
 	},
 	{
@@ -1069,9 +1079,10 @@
 		"cost": 210,
 		"movement": 2,
 		"strength": 65,
-		"uniques": ["Unbuildable <for [Human player] Civilizations>","Can only be built <in cities with a [Mercenary Office]>","'Firearms'","'Dense Formation'","'Mercenary Army'","'Infantry'","Can move immediately once bought","Never appears as a Barbarian unit"],
+		"uniques": ["Unbuildable <for [Human player] Civilizations>","Can only be built <in cities with a [Mercenary Office]>","'Mercenary Army'","'Infantry'","'Dense Formation'","'Firearms'","Can move immediately once bought","Never appears as a Barbarian unit"],
 		"promotions":["Mercenary Habit"],
 		"requiredTech": "Replaceable Parts",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "metalhit"
 	},
 	{

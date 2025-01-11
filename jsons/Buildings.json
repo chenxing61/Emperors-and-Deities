@@ -367,7 +367,7 @@
 		"name": "Mercenary Office",
 		"cost": 50,
 		"maintenance": 1,
-		"uniques": ["'Military Building'","May buy ['Mercenary Army'] units with [Gold] [in this city]"],
+		"uniques": ["'Military Building'","May buy ['Mercenary Army'] units with [Gold] [in this city]","Provides [2] [Mercenary Contracts]"],
 		"requiredBuilding": "Barrack",
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 25
@@ -377,7 +377,7 @@
 		"maintenance": 1,
 		"happiness": 2,
 		"uniques": ["'Entertainment Building'",
-					"Consumes [2] [Alcohol]",
+					"Consumes [2] [Alcohol]","Provides [1] [Mercenary Contract]",
 					"Destroyed when the city is captured"],
 		"requiredTech": "Currency",
 		"hurryCostModifier": 25
@@ -765,7 +765,7 @@
 		"name": "Trading Post",
 		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
-		"uniques":["'Economic Building'","[+1 Production, +1 Gold] from [Luxury resource] tiles [in this city]"],
+		"uniques":["'Economic Building'","Provides [1] [Mercenary Contract]","[+1 Production, +1 Gold] from [Luxury resource] tiles [in this city]"],
 		"obsoleteTech":"Banking",
 		"requiredBuilding":"Road Network",
 		"requiredTech": "Construction",
@@ -1284,7 +1284,7 @@
 		"name": "Guild Complex",
 		"maintenance": 2,
 		"specialistSlots": {"Engineer": 1,"Scientist": 1,"Merchant": 1,"Artist": 1},
-		"uniques": ["'Light Industry'","[+1 Production] from all ['Light Industry'] buildings <in this city>"],
+		"uniques": ["'Light Industry'","Provides [1] [Mercenary Contract]","[+1 Production] from all ['Light Industry'] buildings <in this city>"],
 		"requiredBuilding":"City Hall",
 		"requiredTech": "Guilds",
 		"hurryCostModifier": 25
