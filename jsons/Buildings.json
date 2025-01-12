@@ -886,9 +886,8 @@
 		"culture": 1,
 		"happiness": 1,
 		"uniques": ["'Organise Place'",
-					"Only available <before adopting [Monotheism]>",
 					"Gain a free [Temple] [in this city]",
-					"Resting point for Influence with City-States following this religion [+10]"],
+					"Resting point for Influence with City-States following this religion [+10]","Only available <before adopting [Monotheism]>"],
 		"quote": "'I have a shining pearl, used to be covered by dust and chores, today they are gone for the rest of my life,it shines through thousands of mountains and rivers' - Chai Lin Yu Guru",
 		"requiredTech": "Wood Block Printing"
 	},
@@ -1421,7 +1420,7 @@
 		"uniques": ["'Cultural Building'",
 					"[+1 Happiness] [in this city] <after discovering [Electricity]>",
 					"Only available <after adopting [Humanism]>",
-					"Destroyed when the city is captured"],
+					"Destroyed when the city is captured","Only available <before discovering [Mass Production]>"],
 		"requiredBuilding": "Town Square",
 		"requiredTech": "Printing Press",
 		"hurryCostModifier": 10
@@ -1653,6 +1652,14 @@
 		"requiredNearbyImprovedResources": ["Aluminum"],		
 		"requiredTech": "Metallurgy",
 		"hurryCostModifier": 25		
+	},
+	{
+		"name": "Chemistry Lab",
+		"maintenance": 3,
+		"specialistSlots": {"Scientist": 1},
+		"uniques": ["'Research Building'","Provides [1] [Industrial Chemicals]"],
+		"requiredBuilding":"University",
+		"requiredTech": "Chemistry"
 	},
 	{
 		"name": "Sewer",
@@ -2008,6 +2015,15 @@
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Mass Production",
 		"hurryCostModifier": 10
+	},
+	{
+		"name": "Physic Lab",
+		"maintenance": 5,
+		"specialistSlots": {"Scientist": 1},
+		"percentStatBonus":{"science":25},
+		"uniques": ["'Research Building'","[Great Scientist] is earned [+5]% faster"],
+		"requiredBuilding":"University",
+		"requiredTech": "Telegram"
 	},
 	{
 		"name": "Government Complex",
@@ -2404,30 +2420,13 @@
 		"requiredResource":"Industrial Chemicals",
 		"hurryCostModifier": 10
 	},
+
+
 	{
-		"name": "Physic Lab",
-		"maintenance": 5,
-		"specialistSlots": {"Scientist": 1},
-		"percentStatBonus":{"science":25},
-		"uniques": ["'Research Building'","[Great Scientist] is earned [+5]% faster"],
-		"requiredBuilding":"University",
-		"requiredTech": "Plastics"
-	},
-	{
-		"name": "Chemistry Lab",
-		"maintenance": 3,
-		"specialistSlots": {"Scientist": 1},
-		"uniques": ["'Research Building'","Provides [1] [Industrial Chemicals]"],
-		"requiredBuilding":"University",
-		"requiredResource":"Industrial Chemicals",
-		"requiredTech": "Plastics"
-	},
-	{
-		"name": "Junior College",
+		"name": "Technical School",
 		"maintenance": 3,
 		"specialistSlots": {"Engineer": 2,"Scientist":2,"Artist":2,"Merchant":2},
 		"uniques": ["'Educational Building'"],
-		"requiredBuilding":"University",
 		"requiredTech": "Plastics"
 	},
 	{
