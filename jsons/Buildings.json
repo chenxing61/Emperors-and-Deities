@@ -54,8 +54,8 @@
 		"food": 1,
 		"uniques": ["'Marine Infrastructure'",
 					"[+1 Food] from [Coast] tiles [in this city]",
-					"Consumes [1] [Deep Sea Fish(Stored)] <when number of [Deep Sea Fish(Stored)] is more than [0]>",
-					"[+5 Food, +3 Gold] <when above [0] [Deep Sea Fish(Stored)]><when number of [Deep Sea Fish(Stored)] is more than [0]>",
+					"Consumes [1] [Deep Sea Fish(Stored)] <when above [1] [Deep Sea Fish(Stored)]>",
+					"[+5 Food, +3 Gold] <when above [1] [Deep Sea Fish(Stored)]>",
 					"Comment [When will we be able to get those big fish?]",
 					"Must be next to [Coast]"],
 		"requiredTech": "Sailing",
@@ -1976,25 +1976,9 @@
 					"[+1 Food] from ['Crops'] tiles [in this city]",
 					"[+1 Food] from [Coastal Fish] tiles [in this city]",
 					
-					"Consumes [1] [Deep Sea Fish(Stored)] <when number of [Deep Sea Fish(Stored)] is more than [0]>",
+					"Consumes [3] [Deep Sea Fish(Stored)] <when above [3] [Deep Sea Fish(Stored)]>",
 
-					"[+5 Food, +3 Gold] <when above [0] [Deep Sea Fish(Stored)]><when number of [Deep Sea Fish(Stored)] is more than [0]>",
-				
-					"Consumes [1] [Deep Sea Fish(Stored)] <when number of [Deep Sea Fish(Stored)] is more than [1]>",
-
-					"[+5 Food, +3 Gold] <when above [0] [Deep Sea Fish(Stored)]><when number of [Deep Sea Fish(Stored)] is more than [1]>",
-				
-					"Consumes [1] [Deep Sea Fish(Stored)] <when number of [Deep Sea Fish(Stored)] is more than [2]>",
-
-					"[+5 Food, +3 Gold] <when above [0] [Deep Sea Fish(Stored)]><when number of [Deep Sea Fish(Stored)] is more than [2]>",
-				
-					"Consumes [1] [Deep Sea Fish(Stored)] <when number of [Deep Sea Fish(Stored)] is more than [3]>",
-
-					"[+5 Food, +3 Gold] [in this city] <when above [0] [Deep Sea Fish(Stored)]><when number of [Deep Sea Fish(Stored)] is more than [3]>",
-				
-					"Consumes [1] [Deep Sea Fish(Stored)] <when number of [Deep Sea Fish(Stored)] is more than [3]> <when number of [Deep Sea Fish(Stored)] is less than [5]>",
-
-					"[+5 Food, +3 Gold] <when above [0] [Deep Sea Fish(Stored)]><when number of [Deep Sea Fish(Stored)] is more than [3]><when number of [Deep Sea Fish(Stored)] is less than [5]>"
+					"[+15 Food, +9 Gold] <when above [0] [Deep Sea Fish(Stored)]><when number of [Deep Sea Fish(Stored)] is more than [3]>"
 					],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Mass Production",
