@@ -8,7 +8,6 @@
 ///		"uniques": ["filter",
 ///					"feature",
 ///					"condition"],
-///		"obsoleteTech":"",
 ///		"requiredTech": "",
 ///		"quote": ""
 ///		"hurryCostModifier": 
@@ -20,9 +19,8 @@
 		"uniques": ["'Cultural Building'",
 					"[-2]% Culture cost of natural border growth [in all cities]",
 					"[+1 Gold] <after discovering [Theology]>",
-					"Destroyed when the city is captured"],
+					"Destroyed when the city is captured","Only available <before discovering [Acoustics]>"],
 		"requiredTech": "Agriculture",
-		"obsoleteTech":"Acoustics",
 		"hurryCostModifier": 0
 	},
 	{
@@ -37,8 +35,7 @@
 		"name": "Healer's Hut",
 		"happiness": 1,
 		"uniques": ["'Infrastructure'",
-					"[All] Units adjacent to this city heal [5] HP per turn when healing"],
-		"obsoleteTech":"Apprenticeship",
+					"[All] Units adjacent to this city heal [5] HP per turn when healing","Only available <before discovering [Apprenticeship]>"],
 		"requiredTech": "Hunting and Fishing",
 		"hurryCostModifier": 0
 	},
@@ -46,8 +43,7 @@
 		"name": "Hunter's Hut",
 		"food": 1,
 		"uniques": ["'Economic Building'",
-					"[+1 Gold] from ['Hunt'] tiles [in this city]"],
-		"obsoleteTech":"Banking",
+					"[+1 Gold] from ['Hunt'] tiles [in this city]","Only available <before discovering [Banking]>"],
 		"requiredTech": "Hunting and Fishing",
 		"hurryCostModifier": 0
 	},
@@ -62,7 +58,6 @@
 					"[+5 Food, +3 Gold] [in this city] <when above [0] [Deep Sea Fish(Stored)]><when number of [Deep Sea Fish(Stored)] is more than [0]>",
 					"Comment [When will we be able to get those big fish?]",
 					"Must be next to [Coast]"],
-		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Sailing",
 		"hurryCostModifier": 5
 	},
@@ -74,8 +69,7 @@
 			"'Agricultural Building'",
 			"[+1 Food] from [Fruit] tiles [in this city]",
 			"[+1 Food] from [Grain] tiles [in this city]",
-			"[+1 Food] from [Tuber] tiles [in this city]"],
-		"obsoleteTech":"Apprenticeship",
+			"[+1 Food] from [Tuber] tiles [in this city]","Only available <before discovering [Apprenticeship]>"],
 		"requiredTech":"Pottery",
 		"hurryCostModifier": 5
 	},
@@ -84,9 +78,8 @@
 		"happiness": 1,
 		"uniques": ["'Light Industry'",
 					"[+1 Gold] from [Grain] tiles [in this city]",
-					"[+1 Gold] from [Tuber] tiles [in this city]"
+					"[+1 Gold] from [Tuber] tiles [in this city]","Only available <before discovering [Apprenticeship]>"
 					],
-		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
 	},
@@ -97,9 +90,8 @@
 					"Provides [1] [Alcohol] <with [Grain]>",
 					"Provides [1] [Alcohol] <with [Grape]>",
 					"Provides [1] [Alcohol] <with [Tuber]> <after discovering [Chemistry]>",
-					"Provides [2] [Alcohol] <with [Fruit]>"
+					"Provides [2] [Alcohol] <with [Fruit]>","Only available <before discovering [Apprenticeship]>"
 					],
-		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 0
 	},
@@ -111,9 +103,8 @@
 			"[+1 Production] per [5] population [in this city]<in cities with between [9] and [15] [Population]>",
 			"[+1 Production] per [8] population [in this city]<in cities with between [15] and [24] [Population]>",
 			"[+1 Production] per [10] population [in this city]",
-			"[+2 Production] from [Clay] tiles [in this city]"
+			"[+2 Production] from [Clay] tiles [in this city]","Only available <before discovering [Apprenticeship]>"
 			],
-		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 0
 	},
@@ -140,9 +131,8 @@
 					"All newly-trained [Military] units [in this city] receive the [Hardened] promotion",
 					"New [Military] units start with [15] Experience [in this city]",
 					"Provides [1] [Standing Army Maintainance]",
-					"Destroyed when the city is captured"],
+					"Destroyed when the city is captured","Only available <before discovering [Apprenticeship]>"],
 		"requiredTech": "Copper Working",
-		"obsoleteTech":"Apprenticeship",
 		"hurryCostModifier": 15
 	},
 	{
@@ -262,9 +252,8 @@
 		"cityStrength": 2,
 		"specialistSlots": {"Governor": 1},
 		"uniques": ["'Political Building'",
-					"Destroyed when the city is captured"],
+					"Destroyed when the city is captured","Only available <before discovering [Acoustics]>"],
 		"requiredTech": "Writing",
-		"obsoleteTech":"Acoustics",
 		"hurryCostModifier": 10
 	},
 	{
@@ -274,9 +263,8 @@
 		"uniques": ["'Educational Building'",
 					"[+1 Science] per [4] population [in this city]",
 					"[+1 Happiness] <after discovering [Drama and Poetry]>",
-					"[+3 Culture] <after discovering [Archaeology]>"],
+					"[+3 Culture] <after discovering [Archaeology]>","Only available <before discovering [Acoustics]>"],
 		"requiredTech": "Writing",
-		"obsoleteTech":"Acoustics",
 		"hurryCostModifier": 25
 	},
 	{
@@ -299,9 +287,8 @@
 		"uniques": ["'Infrastructure'",
 			"[+1]% [Gold] from Trade Routes",
 			"[+1]% growth [in all cities]",
-			"[-5]% maintenance cost for buildings [in this city]"
+			"[-5]% maintenance cost for buildings [in this city]","Only available <before discovering [Apprenticeship]>"
 			],
-		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "The Wheel",
 		"hurryCostModifier": 10
 	},
@@ -312,9 +299,8 @@
 		"uniques": ["'Light Industry'",
 					"[+1 Production] from ['Extraction Improvement'] tiles [in this city]",
 					"[+1 Food] from ['Agricultural Improvement'] tiles [in this city] <after discovering [Plows]>",
-					"[+1 Production] from ['Lumber Improvement'] tiles [in this city] <after discovering [Construction]>"
+					"[+1 Production] from ['Lumber Improvement'] tiles [in this city] <after discovering [Construction]>","Only available <before discovering [Apprenticeship]>"
 					],
-		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Bronze Working",
 		"hurryCostModifier": 25
 	},
@@ -347,8 +333,7 @@
 		"gold": 1,
 		"uniques":["'Economic Building'",
 				"[+1 Gold] from ['Herd'] tiles [in this city]",
-				"Must have an owned [Pasture] within [4] tiles"],
-		"obsoleteTech":"Banking",
+				"Must have an owned [Pasture] within [4] tiles","Only available <before discovering [Banking]>"],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
 	},
@@ -356,8 +341,7 @@
 		"name": "Crops Market",
 		"gold": 1,
 		"uniques":["'Economic Building'",
-				   "[+1 Gold] from ['Crops'] tiles [in this city]"],
-		"obsoleteTech":"Banking",
+				   "[+1 Gold] from ['Crops'] tiles [in this city]","Only available <before discovering [Banking]>"],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
 	},
@@ -504,9 +488,8 @@
 		"happiness": 1,
 		"uniques": ["'Cultural Building'","[+1 Gold] from all ['Economic Building'] buildings <in this city>",
 					"[-10]% Culture cost of natural border growth [in this city]",
-					"Destroyed when the city is captured"],
+					"Destroyed when the city is captured","Only available <before discovering [Acoustics]>"],
 		"requiredTech": "Drama and Poetry",
-		"obsoleteTech":"Acoustics",
 		"hurryCostModifier": 25
 	},
 	{
@@ -529,7 +512,6 @@
 					"[+1 Gold] from ['Lumber Improvement'] tiles [in this city]",
 					"[+1 Gold] from [Hard Wood] tiles [in this city]",
 					"Must have an owned ['Lumber Improvement'] within [4] tiles"],
-		"obsoleteTech":"Apprenticeship",
 		"requiredTech": "Carpentry",
 		"hurryCostModifier": 10
 	},
@@ -567,9 +549,8 @@
 		"cityStrength": 5,
 		"cityHealth": 30,
 		"uniques": ["'Static Defense'",
-					"Destroyed when the city is captured"],
+					"Destroyed when the city is captured","Only available <before discovering [Apprenticeship]>"],
 		"requiredTech": "Masonry",
-		"obsoleteTech":"Apprenticeship",
 		"hurryCostModifier": 25
 	},
 	{
@@ -674,10 +655,9 @@
 					"New [Military] units start with [10] Experience [in this city]",
 					"[Military] units gain the [Classical Arms] promotion",
 					"Comment [Enables you to build new Siege Units unlocked by Engineering]",
-					"Destroyed when the city is captured"],
+					"Destroyed when the city is captured","Only available <before discovering [Apprenticeship]>"],
 		"requiredBuilding": "Barrack",
 		"requiredTech": "Iron Working",
-		"obsoleteTech":"Apprenticeship",
 		"hurryCostModifier": 25
 	},
 	{
@@ -729,8 +709,7 @@
 		"happiness": 1,
 		"uniques": ["'Marine Infrastructure'",
 					"[+5]% growth [in this city]",
-					"[+1 Food] from ['Water Improvement'] tiles [in this city]","Must be next to [Coast]"],
-		"obsoleteTech":"Apprenticeship",
+					"[+1 Food] from ['Water Improvement'] tiles [in this city]","Must be next to [Coast]","Only available <before discovering [Apprenticeship]>"],
 		"requiredBuilding":"Fishing Port",
 		"requiredTech": "Optics",
 		"hurryCostModifier": 10
@@ -780,8 +759,7 @@
 		"name": "Trading Post",
 		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
-		"uniques":["'Economic Building'","Provides [1] [Mercenary Contract]","[+1 Production, +1 Gold] from [Luxury resource] tiles [in this city]"],
-		"obsoleteTech":"Banking",
+		"uniques":["'Economic Building'","Provides [1] [Mercenary Contract]","[+1 Production, +1 Gold] from [Luxury resource] tiles [in this city]","Only available <before discovering [Banking]>"],
 		"requiredBuilding":"Road Network",
 		"requiredTech": "Construction",
 		"hurryCostModifier": 15
@@ -794,10 +772,9 @@
 					"[Military] units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>",
 					"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <before the [Industrial era]>",
 					"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <starting from the [Industrial era]><after discovering [Electricity]>",
-					"Destroyed when the city is captured"],
+					"Destroyed when the city is captured","Only available <before discovering [Apprenticeship]>"],
 		"requiredBuilding": "Military Blacksmith",
 		"requiredTech": "Armorments",
-		"obsoleteTech":"Apprenticeship",
 		"hurryCostModifier": 25
 	},
 	{
@@ -956,8 +933,7 @@
 		"happiness": 1,
 		"uniques": ["'Infrastructure'",
 					"[-5]% Unhappiness from [Population] [in this city]",
-					"[25]% Food is carried over after population increases [in this city]"],
-		"obsoleteTech": "Apprenticeship",
+					"[25]% Food is carried over after population increases [in this city]","Only available <before discovering [Apprenticeship]>"],
 		"requiredBuilding":"Civilian Blacksmith",
 		"requiredTech": "Engineering",
 		"hurryCostModifier": 25
@@ -1279,10 +1255,9 @@
 		"uniques": ["'Military Building'",
 					"New ['Firearms'] units start with [10] Experience [in this city]",
 					"[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>",
-					"Destroyed when the city is captured"],
+					"Destroyed when the city is captured","Only available <before discovering [Apprenticeship]>"],
 		"requiredBuilding": "Military Blacksmith",
 		"requiredTech": "Gunpowder Making",
-		"obsoleteTech":"Apprenticeship",
 		"hurryCostModifier": 25
 	},
 	{
