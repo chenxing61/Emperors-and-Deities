@@ -147,8 +147,21 @@
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": ["Ocean"],
 		"food": 1,
-		"improvedBy": ["Coast Fishing Boats"],
+		"improvedBy": ["Deep Sea Fishing Boats"],
 		"uniques": ["Stockpiled","Generated on every [18] tiles <in [{Featureless} {Ocean}] tiles>"]
+	},
+	{
+		"name": "Deep Sea Fish",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Ocean"],
+		"food": 1,
+		"improvedBy": ["Deep Sea Fishing Boats"],
+		"uniques": ["Generated on every [18] tiles <in [{Featureless} {Ocean}] tiles>"]
+	},
+	{
+		"name": "Deep Sea Fish(Stored)",
+		"resourceType": "Bonus",
+		"uniques": ["Stockpiled"]
 	},
 	{
 		"name": "Natural Gas",
@@ -156,11 +169,15 @@
 		"terrainsCanBeFoundOn": ["Coast","Ocean"],
 		"production": 1,
 		"revealedBy":"Geology",
-		"improvementStats": {"production": 1},
 		"improvedBy": ["Offshore Platform"],
 		"uniques": ["'Chemicals'",
 					"Generated on every [25] tiles <in [{Featureless} {Coast}] tiles>",
 					"Generated on every [15] tiles <in [{Featureless} {Ocean}] tiles>"]
+	},
+	{
+		"name": "Natural Gas(Stored)",
+		"resourceType": "Bonus",
+		"uniques": ["Stockpiled"]
 	},
 	// Strategic resources
 	{

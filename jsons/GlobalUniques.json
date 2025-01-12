@@ -1,11 +1,21 @@
 {
     "name": "Global uniques",
     "uniques": [
+        //Nerf for general gameplay
         "[-33]% growth [in all cities] <in cities with at least [10] [Population]>",
+        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [10] [Population]>",
         "[-33]% growth [in all cities] <in cities with at least [20] [Population]>",
-        "[-33]% growth [in all cities] <in cities with at least [30] [Population]>",
-        "[-34]% growth [in all cities] <in cities with at least [40] [Population]>",
+        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [20] [Population]>",
+        "[-34]% growth [in all cities] <in cities with at least [30] [Population]>",
+        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [30] [Population]>",
+        "[-33]% growth [in all cities] <in cities with at least [40] [Population]>",
+        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [40] [Population]>",
+        "[-33]% growth [in all cities] <in cities with at least [50] [Population]>",
+        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [50] [Population]>",
+        "[-34]% growth [in all cities] <in cities with at least [60] [Population]>",
+        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [60] [Population]>",
         "[-50]% growth [in all cities] <when between [-10] and [0] Happiness>",
+        //Vanilla
         "Nullifies Growth [in all cities] <when below [-10] Happiness>",
         "[-25]% [Production] [in all cities] <when below [-10] Happiness>",
         "[-15]% Strength <for [All] units> <when below [-10] Happiness>",
@@ -14,6 +24,7 @@
         "Cannot build [Settler] units <when below [-15] Happiness>",
         "Cannot build [Pioneer] units <when below [-15] Happiness>",
         "Rebel units may spawn <when below [-15] Happiness>",
+        ///NO Bankruptcy too
         "Cannot build [Worker] units <when below [-10] [Gold]>",
         "Cannot build [Mechanised Worker] units <when below [-10] [Gold]>",
         "[-15]% Strength <for [All] units> <when below [-10] [Gold]>",
@@ -21,7 +32,7 @@
         "[-25]% [Production] [in all cities] <when below [-10] [Gold]>",
         "[-50]% [Production] [in all cities] <when below [-100] [Gold]>",
         "[-1] Sight <for [Embarked] units>",
-        "Notified of new Barbarian encampments",
+        //Prevents AI from spamming units
         "Cannot build ['Levy Army'] units <when not at war> <starting from the [Medieval era]> <for [AI player] Civilizations>",
         "Cannot build ['Firearms'] units <when below [-10] [Weapon Parts]>",
         "Cannot build ['Motorised'] units <when below [-10] [Vehicle Parts]>",
@@ -32,20 +43,19 @@
         "Cannot build ['Mechanised'] units <when below [-10] [Fuel]>",
         "Cannot build ['Engine Ship'] units <when below [-10] [Fuel]>",
         "Cannot build [Air] units <when below [-10] [Fuel]>",
-        "[-33]% Culture cost of adopting new Policies",
+        //Make Room for new policies
+        "[-25]% Culture cost of adopting new Policies",
         "Each city founded increases culture cost of policies [33]% less than normal",
+        //Mechanics
+        "Notified of new Barbarian encampments",
         "Provides [1] [Revolution Oppotunity] <starting from the [Imperial era]>"
         // TODO: Implement the uniques below
         // "[+20]% [Culture] [in all cities] <during a golden age>",
         // "[+20]% [Production] [in all cities] <during a golden age>",
-
         // "[+10]% growth [in all cities] <during We Love The King Day>",
-
         // "Nullifies All Yield <while is in resistance>",
-
         // "[-25]% [Science] [in pupetted cities]" -- Imo cityFilters should ideally become conditionals anyway
         // "[-25]% [Culture] [in pupetted cities]"
-
         // "[+20]% [Production] [in cities connected via railroad]"
     ]
 }

@@ -1,4 +1,4 @@
-[
+[   
 	{
 		"name": "Manual Farm",
 		"terrainsCanBeBuiltOn": ["Plains","Flood plains"],
@@ -7,7 +7,6 @@
 		"techRequired": "Agriculture",
 		"uniques": ["'Agricultural Improvement'","Can also be built on tiles adjacent to fresh water",
 			"[-1 Food] from [Grassland] tiles",
-			"[+1 Food] from [Fresh water] tiles <after discovering [Irrigation]>",
 			"[+1 Food] <after discovering [Crop Rotation]>",
             "Pillaging this improvement yields approximately [+18 Gold]"],
 		"shortcutKey": "F"
@@ -28,10 +27,9 @@
 		"name": "Mechanised Farm",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains"],
 		"food": 4,
-		"turnsToBuild": 14,
+		"turnsToBuild": 12,
 		"techRequired": "Fertilizer",
-		"uniques": ["'Agricultural Improvement'","Can also be built on tiles adjacent to fresh water",
-			"[+1 Food] from [Fresh water] tiles",
+		"uniques": ["'Agricultural Improvement'",
 			"[+1 Food] for each adjacent [Power Plant]", 
 			"[+2 Food] <after discovering [Gene Modification]>", 
             "Pillaging this improvement yields approximately [+36 Gold]"],
@@ -40,7 +38,7 @@
 	{
 		"name": "Permaculture",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains","Hill","Tundra"],
-		"food": 5,
+		"food": 4,
 		"culture": 2,
 		"science": 2,
 		"turnsToBuild": 14,
@@ -129,7 +127,8 @@
 		"food": 3,
 		"turnsToBuild": 14,
 		"techRequired": "Biology",
-		"uniques": ["'Agricultural Improvement'","[+1 Food] for each adjacent [Power Plant]", "Pillaging this improvement yields approximately [+20 Gold]"],
+		"uniques": ["'Agricultural Improvement'","[+1 Food] for each adjacent [Power Plant]",
+					"Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "P"
 	}, 
 	{
@@ -137,7 +136,12 @@
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains"],
 		"turnsToBuild": 9,
 		"techRequired": "Horse Collar",
-		"uniques": ["'Infrastructure Improvement'","[+1 Gold] for each adjacent [Bonus resource]", "[+2 Gold] for each adjacent [Luxury resource]","[+1 Gold] for each adjacent [Bonus resource] <after discovering [Economics]>", "[+2 Gold] for each adjacent [Luxury resource] <after discovering [Economics]>","Pillaging this improvement yields approximately [+20 Gold]"],
+		"uniques": ["'Infrastructure Improvement'",
+					"[+1 Gold] for each adjacent [Bonus resource]",
+					"[+2 Gold] for each adjacent [Luxury resource]",
+					"[+1 Gold] for each adjacent [Bonus resource] <after discovering [Economics]>",
+					"[+1 Gold] for each adjacent [Luxury resource] <after discovering [Economics]>",
+					"Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "C"
 	},	
 	{
@@ -145,7 +149,11 @@
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains"],
 		"turnsToBuild": 9,
 		"techRequired": "Flintlock",
-		"uniques": ["'Infrastructure Improvement'","[+1 Production] for each adjacent [Strategic resource]","[+1 Production] for each adjacent [Strategic resource] <after discovering [Military Science]>","[+1 Production] for each adjacent [Strategic resource] <after discovering [Replaceable Parts]>","Pillaging this improvement yields approximately [+20 Gold]"],
+		"uniques": ["'Infrastructure Improvement'",
+					"[+1 Production] for each adjacent [Strategic resource]",
+					"[+1 Production] for each adjacent [Strategic resource] <after discovering [Military Science]>",
+					"[+1 Production] for each adjacent [Strategic resource] <after discovering [Replaceable Parts]>",
+					"Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "S"
 	},
 	{
@@ -164,7 +172,7 @@
 		"food": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Sailing",
-		"uniques": ["'Water Improvement'","[+1 Gold] <after discovering [Compass]>", "Pillaging this improvement yields approximately [+10 Gold]"],
+		"uniques": ["'Water Improvement'","Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "F"
 	},
 	{
@@ -180,11 +188,9 @@
 	{
 		"name": "Deep Sea Fishing Boats",
 		"terrainsCanBeBuiltOn": ["Ocean"],
-		"food": 5,
-		"gold": 2,
-		"turnsToBuild": 14,
+		"turnsToBuild": 12,
 		"techRequired": "Refrigeration",
-		"uniques": ["'Water Improvement'","Pillaging this improvement yields approximately [+10 Gold]","Cannot be built on [Water] tiles <with [1] to [6] neighboring [Deep Sea Fishing Boats] tiles>"],
+		"uniques": ["'Water Improvement'","Provides [1] [Deep Sea Fish]","Can only be built to improve a resource","Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "F"
 	},
 	{
@@ -194,6 +200,19 @@
 		"food": 1,
 		"techRequired": "Hunting and Fishing",
 		"uniques": ["Does not need removal of [Forest]","Does not need removal of [Jungle]","[+1 Gold] <after discovering [Economics]>","Pillaging this improvement yields approximately [+10 Gold]"],
+		"shortcutKey": "C"
+	},
+	// Land Grab!
+	{
+		"name": "Claimed Ocean",
+		"turnsToBuild": 1,
+		"terrainsCanBeBuiltOn": ["Ocean"],
+		"techRequired": "Steam Power",
+		"uniques": [
+			"'Water Improvement'",
+			"Can be built just outside your borders",
+			"Gain control over [Ocean] tiles in a [1]-tile radius"
+		],
 		"shortcutKey": "C"
 	},
 	// Policy
@@ -261,7 +280,7 @@
 		"name": "Offshore Platform",
 		"techRequired": "Refrigeration",
 		"turnsToBuild": 9,
-		"uniques": ["'Water Improvement'","'Extraction Improvement'","Can only be built to improve a resource", "Can only be built on [Water] tiles", "Pillaging this improvement yields approximately [+20 Gold]"],
+		"uniques": ["'Water Improvement'","'Extraction Improvement'","Can only be built to improve a resource", "Can only be built on [Water] tiles","Provides [1] [Natural Gas(Stored)] <in [{Ocean} {Natural Gas}] tiles>","Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "P"
 	},
 	{
@@ -403,7 +422,7 @@
 	{
 		"name": "Landmark",
 		"terrainsCanBeBuiltOn": ["Land"],
-		"culture": 6,
+		"culture": 4,
 		"uniques": ["Great Improvement",
 					"[+1 Culture] <after discovering [Philosophy]>",
 					"[+1 Culture] <after discovering [Theology]>",
