@@ -6,9 +6,9 @@
 		"turnsToBuild": 7,
 		"techRequired": "Agriculture",
 		"uniques": ["'Agricultural Improvement'","Can also be built on tiles adjacent to fresh water",
-			"[-1 Food] from [Grassland] tiles",
 			"[+1 Food] <after discovering [Crop Rotation]>",
             "Pillaging this improvement yields approximately [+18 Gold]"],
+		"civilopediaText":[{"text":"Human society tend to rely on agriculture more than anything, especially after they invented taxes. If you see this improvement in lake? They probably started to throw dirt into the lake and make it the new farmland."}],
 		"shortcutKey": "F"
 	},
 	{
@@ -21,18 +21,20 @@
 			"[+1 Food] <after discovering [Crop Rotation]>",
 			"Can only be built to improve a resource",
             "Pillaging this improvement yields approximately [+18 Gold]"],
+		"civilopediaText":[{"text":"Planting crops other than common vegetable and carbonhydrate rich crops takes many trials and error, eventually this experimentation pays off. Because the silk from silk road, spice from spice trade comes from somewhere."}],
 		"shortcutKey": "P"
 	},
 	{
 		"name": "Mechanised Farm",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains"],
 		"food": 4,
-		"turnsToBuild": 12,
+		"turnsToBuild": 7,
 		"techRequired": "Fertilizer",
 		"uniques": ["'Agricultural Improvement'",
 			"[+1 Food] for each adjacent [Power Plant]", 
 			"[+2 Food] <after discovering [Gene Modification]>", 
             "Pillaging this improvement yields approximately [+36 Gold]"],
+		"civilopediaText":[{"text":"With invention of many machines that can replace humble cows and farmers. The farm becomes automated"}],
 		"shortcutKey": "F"
 	},
 	{
@@ -41,7 +43,7 @@
 		"food": 4,
 		"culture": 2,
 		"science": 2,
-		"turnsToBuild": 14,
+		"turnsToBuild": 10,
 		"techRequired": "Sustainability",
 		"uniques": ["'Agricultural Improvement'","[+2 Food] from [Fresh water] tiles","Can also be built on tiles adjacent to fresh water","Pillaging this improvement yields approximately [+36 Gold]"],
 		"shortcutKey": "P"
@@ -50,7 +52,7 @@
 		"name": "Terrace farm",
 		"terrainsCanBeBuiltOn": ["Hill","Mountain"],
 		"food": 1,
-		"turnsToBuild": 7,
+		"turnsToBuild": 10,
 		"uniques": [
 			"'Agricultural Improvement'","Cannot be built on [Bonus resource] tiles",
 			"[+1 Culture] for each adjacent [Mountain]",
@@ -74,7 +76,7 @@
 		"food": 1,
 		"production": 2,
 		"gold": 1,
-		"turnsToBuild": 11,
+		"turnsToBuild": 10,
 		"techRequired": "Ecology",
 		"uniques": ["'Lumber Improvement'","[+1 Production] from [Fresh water] tiles","Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "L"
@@ -85,7 +87,7 @@
 		"production": 3,
 		"gold": 2,
 		"food": -1,
-		"turnsToBuild": 14,
+		"turnsToBuild": 7,
 		"techRequired": "Replaceable Parts",
 		"uniques": ["'Lumber Improvement'","[+1 Production] for each adjacent [Power Plant]", "Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "L"
@@ -104,7 +106,7 @@
 		"name": "Mechanised Mine",
 		"terrainsCanBeBuiltOn": ["Hill"],
 		"production": 3,
-		"turnsToBuild": 14,
+		"turnsToBuild": 7,
 		"techRequired": "Steam Power",
 		"uniques": ["'Extraction Improvement'","[+1 Production] for each adjacent [Power Plant]", "Pillaging this improvement yields approximately [+40 Gold]"],
 		"shortcutKey": "M"
@@ -125,7 +127,7 @@
 		"name": "Mechanised Livestock Farm",
 		"terrainsCanBeBuiltOn": ["Hill","Grassland","Tundra"],
 		"food": 3,
-		"turnsToBuild": 14,
+		"turnsToBuild": 10,
 		"techRequired": "Biology",
 		"uniques": ["'Agricultural Improvement'","[+1 Food] for each adjacent [Power Plant]",
 					"Pillaging this improvement yields approximately [+20 Gold]"],
@@ -170,7 +172,7 @@
 		"name": "Coast Fishing Boats",
 		"terrainsCanBeBuiltOn": ["Coast"],
 		"food": 1,
-		"turnsToBuild": 7,
+		"turnsToBuild": 4,
 		"techRequired": "Sailing",
 		"uniques": ["'Water Improvement'","Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "F"
@@ -180,7 +182,7 @@
 		"terrainsCanBeBuiltOn": ["Coast"],
 		"food": 3,
 		"gold": 1,
-		"turnsToBuild": 14,
+		"turnsToBuild": 7,
 		"techRequired": "Biology",
 		"uniques": ["'Water Improvement'","[+1 Food] for each adjacent [Power Plant]","[+1 Food] <after discovering [Plastics]>","Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "F"
@@ -188,7 +190,7 @@
 	{
 		"name": "Deep Sea Fishing Boats",
 		"terrainsCanBeBuiltOn": ["Ocean"],
-		"turnsToBuild": 12,
+		"turnsToBuild": 10,
 		"techRequired": "Refrigeration",
 		"uniques": ["'Water Improvement'","Provides [2] [Deep Sea Fish(Stored)]","Can only be built to improve a resource","Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "F"
@@ -227,6 +229,7 @@
 		"techRequired": "Agriculture",
 		"uniques": ["'Policy Improvement'","'Agricultural Improvement'","Only available <after adopting [Desert Tradition]>",
             "Pillaging this improvement yields approximately [+18 Gold]"],
+		"civilopediaText":[{"text":"Naturally, the most habitable land in the desert becomes some sort of a big settlement."}],
 		"shortcutKey": "O"
 	},
 	{
@@ -236,7 +239,8 @@
 		"culture": 1,
 		"happiness": 1,
 		"turnsToBuild": 8,
-		"uniques": ["'Policy Improvement'","Only available <after adopting [Manorialism]>","Gives a defensive bonus of [25]%","Provides [1] [Noble Army Maintainance]","Comment [Also known as Castles]","Pillaging this improvement yields approximately [+36 Gold]"],
+		"uniques": ["'Policy Improvement'","Only available <after adopting [Manorialism]>","Gives a defensive bonus of [25]%","Provides [1] [Noble Army Maintainance]","Pillaging this improvement yields approximately [+36 Gold]"],
+		"civilopediaText":[{"text":"Its where those lords and their serfs lives, in another word, its the lord's castle and their pieces of land."}],
 		"shortcutKey": "M"
 	},
 	{
@@ -252,6 +256,8 @@
 		"name": "Natural Reserve",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Snow","Oasis"],
 		"happiness": 2,
+		"science":2,
+		"culture":2,
 		"turnsToBuild": 14,
 		"uniques": ["'Policy Improvement'","Only available <after adopting [Sustainability]>","[+1 Science, +1 Culture] for each adjacent [Forest]","[+1 Science, +1 Culture] for each adjacent [Jungle]","[-1 Science, -1 Culture] for each adjacent ['Extraction Improvement']","[-1 Science, -1 Culture] for each adjacent ['Agricultural Improvement']","Pillaging this improvement yields approximately [+1 Gold]"],
 		"shortcutKey": "N"
@@ -259,7 +265,7 @@
 	{
 		"name": "Science City",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Snow","Oasis"],
-		"science": 4,
+		"science": 6,
 		"happiness":1,
 		"turnsToBuild": 16,
 		"uniques": ["'Policy Improvement'","Only available <after adopting [Science Cities]>","[+2 Science] <after discovering [Computer]>", 
@@ -285,7 +291,8 @@
 	},
 	{
 		"name": "Quarry",
-		"turnsToBuild": 8,
+		"turnsToBuild": 7,
+		"production":1,
 		"techRequired": "Masonry",
 		"uniques": ["'Extraction Improvement'","[+1 Production] <after discovering [Chemistry]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "Q"
@@ -339,11 +346,11 @@
 	{
 		"name": "Canal Construction",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra"],
+		"turnsToBuild": 10, 
 		"uniques": [
 			"Turn this tile into a [Coast] tile","Turn this tile into a [Canal] tile",
 			"Cannot be built on [Hill] tiles","Can only be built on [Coastal] tiles",
 			"Cannot be built on [Land] tiles <with [3] to [6] neighboring [Canal] tiles>"],
-		"turnsToBuild": 10, 
 		"techRequired": "Engineering"
 	},
 	// Removals
