@@ -727,7 +727,6 @@
 	{
 		"name": "Courthouse",
 		"maintenance": 1,
-		"specialistSlots": {"Governor": 1},
 		"uniques": ["'Political Building'",
 					"[-10]% Unhappiness from [Population] [in this city]"],
 		"requiredBuilding":"Town Hall",
@@ -1327,56 +1326,7 @@
 		"requiredTech": "Steels",
 		"hurryCostModifier": 25
 	},
-	{
-		"name": "Light Industry Expansion",
-		"cost": 400,
-		"uniques": ["Unsellable",
-					"'Infrastructure'",
-					"Gain a free [Bakery] [in this city]",
-					"Gain a free [Brewery] [in this city]",
-					"Gain a free [Pottery Workshop] [in this city]",
-					"Gain a free [Civilian Blacksmith] [in this city]",
-					"Gain a free [Paper Maker] [in this city]"],
-		"requiredTech": "Apprenticeship",
-		"hurryCostModifier": -10
-	},
-	{
-		"name": "Infrastructure Expansion",
-		"cost": 450,
-		"uniques": ["Unsellable",
-					"'Infrastructure'",
-					"Gain a free [Aqueduct] [in this city]",
-					"Gain a free [Healer's Hut] [in this city]",
-					"Gain a free [Granary] [in this city]",
-					"Gain a free [Road Network] [in this city]"],
-		"requiredTech": "Apprenticeship",
-		"hurryCostModifier": -10
-	},
-	{
-		"name": "Martine Expansion",
-		"cost": 200,
-		"uniques": ["Unsellable",
-					"'Marine Infrastructure'",
-					"Gain a free [Fishing Port] [in this city]",
-					"Gain a free [Lighthouse] [in this city]",
-					"Must be next to [Coast]"],
-		"requiredTech": "Apprenticeship",
-		"hurryCostModifier": 10
-	},
-	{
-		"name": "Military Expansion",
-		"cost": 520,
-		"uniques": ["Unsellable",
-					"'Military Building'",
-					"Gain a free [Barrack] [in this city]",
-					"Gain a free [Walls] [in this city]",
-					"Gain a free [Military Blacksmith] [in this city]",
-					"Gain a free [Military Stable] [in this city]",
-					"Gain a free [Armour Workshop] [in this city]",
-					"Gain a free [Firearms Workshop] [in this city]"],
-		"requiredTech": "Apprenticeship",
-		"hurryCostModifier": -10
-	},
+
 	{
 		"name": "University",
 		"maintenance": 5,
@@ -1462,28 +1412,18 @@
 		"specialistSlots": {"Scientist": 1},
 		"requiredBuilding":"University",
 		"uniques": ["'Research Building'",
-		"[Great Scientist] is earned [+30]% faster",
 		"Must have an owned [Mountain] within [2] tiles"],
 		"requiredTech": "Heliocentrism",
 		"hurryCostModifier": 25
 	},
-	{
-		"name": "Business Expansion",
-		"cost": 300,
-		"uniques": ["Unsellable",
-					"'Economic Building'",
-					"Gain a free [Hunter's Hut] [in this city]",
-					"Gain a free [Crops Market] [in this city]",
-					"Gain a free [Trading Post] [in this city]"],
-		"requiredTech": "Banking",
-		"hurryCostModifier": -50
-	},
+
 	{
 		"name": "Bank",
-		"specialistSlots": {"Merchant": 1},
 		"percentStatBonus": {"gold": 25},
+		"specialistSlots": {"Merchant": 1},
 		"uniques": ["'Economic Building'",
-					"[+1 Gold] per [5] population [in this city]"],
+					"[+1 Gold] per [5] population [in this city]",
+					"[Great Merchant] is earned [+5]% faster"],
 		"requiredTech": "Banking",
 		"hurryCostModifier": 10
 	},
@@ -1577,18 +1517,6 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Civil Expansion",
-		"cost": 400,
-		"uniques": ["Unsellable",
-					"'Infrastructure'",
-					"Gain a free [Monument] [in this city]",
-					"Gain a free [Town Hall] [in this city]",
-					"Gain a free [Library] [in this city]",
-					"Gain a free [Town Square] [in this city]"],
-		"requiredTech": "Acoustics",
-		"hurryCostModifier": -10
-	},
-	{
 		"name": "Chapel of Great Art",
 		"isWonder": true,
 		"culture": 3,
@@ -1637,18 +1565,17 @@
 					"Provides [2] [Alloy] <after discovering [Industrialization]>",
 					"Consumes [3] [Metal] <after discovering [Electricity]>",
 					"Consumes [1] [Coal] <after discovering [Industrialization]> <before discovering [Electricity]>",
-					"Provides [2] [Alloy] <after discovering [Electricity]> <in cities with a [Power Building]>"],
+					"Provides [2] [Alloy] <after discovering [Electricity]> <in cities with a [Power Grid]>"],
 		"requiredTech": "Metallurgy",
 		"hurryCostModifier": 25
 	},
 	{
 		"name": "Aluminium Mill",
 		"maintenance": 3,
-		"production": 1,
 		"science": 2,	
 		"uniques": ["'Heavy Industry'",
 			"Provides [1] [Aluminum]",
-			"Provides [2] [Aluminum] <after discovering [Electricity]> <in cities with a [Power Building]>"],	
+			"Provides [2] [Aluminum] <after discovering [Electricity]> <in cities with a [Power Grid]>","[+2 Production] from [Aluminum] tiles [in this city]"],	
 		"requiredNearbyImprovedResources": ["Aluminum"],		
 		"requiredTech": "Metallurgy",
 		"hurryCostModifier": 25		
@@ -1675,7 +1602,7 @@
 		"name": "Police station",
 		"maintenance": 3,
 		"uniques": ["'Political Building'",
-					"[-10]% Unhappiness from [Population] [in this city]"],
+					"[-10]% Unhappiness from [Population] [in this city]","[-25]% enemy spy effectiveness [in this city]"],
 		"requiredBuilding":"City Hall",
 		"requiredTech": "Architecture",
 		"hurryCostModifier": 25
@@ -1777,7 +1704,7 @@
 	},
 	{
 		"name": "Fertilizer Factory",
-		"maintenance": 5,
+		"maintenance": 3,
 		"uniques": ["'Agricultural Building'",
 					"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]"],
 		"requiredBuilding":"Civilian Factory Complex",
@@ -1795,7 +1722,7 @@
 	},
 	{
 		"name": "Art Gallery",
-		"maintenance": 8,
+		"maintenance": 5,
 		"culture": 3,
 		"specialistSlots": {"Artist": 1},
 		"uniques": ["'Cultural Building'","Destroyed when the city is captured"],
@@ -1916,10 +1843,14 @@
 		"name": "Highway Network",
 		"maintenance":5,
 		"happiness": 2,
+		"percentStatBonus": {
+							"food": 5,
+							"production": 5,
+							"gold": 5},
 		"uniques": ["'Infrastructure'",
 					"Must have an owned [Road] within [1] tiles",
 					"[+1]% [Gold] from Trade Routes",
-					"[+2]% growth [in all cities]",
+					"[+4]% growth [in all cities]",
 					"[-5]% maintenance cost for buildings [in this city]",
 					"[+1 Production] from ['Infrastructure Improvement'] tiles [in this city]"
 		],
@@ -2083,15 +2014,15 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Train station",
+		"name": "Train Station",
 		"maintenance": 5,
 		"happiness": 2,
 		"percentStatBonus": {
 							"food": 10,
-							"production": 25,
-							"gold":25},
+							"production": 20,
+							"gold":10},
 		"uniques": ["'Infrastructure'",
-					"[+5]% [Gold] from Trade Routes",
+					"[+1]% [Gold] from Trade Routes",
 					"[+5]% growth [in all cities]",
 					"[-5]% maintenance cost for buildings [in this city]",
 					"Must have an owned [Railroad] within [1] tiles"
@@ -2217,18 +2148,17 @@
 	{
 		"name": "Power Grid",
 		"maintenance": 3,
-		"specialistSlots": {"Engineer": 2},
 		"uniques": ["'Infrastructure'",
 					"[+2 Production] from [Power Plant] tiles [in this city]",
-					"Comment [Provide boosts to power plant buildings in the city.]"],
+					"Comment ['Power Buildings' channel their production into Power Grid in all cities. The More Power Building you build, the stronger this building becomes(Each 'Power Buildings' provides +2 Production).]"],
 		"requiredTech": "Electricity",
 		"hurryCostModifier": 25
 	},
 	{
 		"name": "Hydro Plant",
 		"maintenance": 3,
-		"production":3,
 		"percentStatBonus": {"production": 25},
+		"specialistSlots":{"Engineer":1},
 		"uniques": ["'Power Building'",
 					"[+1 Production] from [River] tiles [in this city]",
 					"[+2 Production] [in all cities] <in cities with a [Power Grid]>",
@@ -2430,7 +2360,7 @@
 		"requiredTech": "Plastics"
 	},
 	{
-		"name": "Cellular network",
+		"name": "Cellular Network",
 		"maintenance": 5,
 		"happiness": 2,
 		"uniques": ["'Infrastructure'","[-2]% maintenance cost for buildings [in all cities]"],
@@ -2512,7 +2442,7 @@
 		"science": 4,
 		"percentStatBonus": {"production": 25,"science": 10},
 		"uniques": ["'Power Building'",
-					"Consumes [1] [Uranium] <before discovering [Nuclear Fusion]>",
+					"Consumes [2] [Uranium] <before discovering [Nuclear Fusion]>",
 					"Consumes [0] [Uranium] <after discovering [Nuclear Fusion]>",
 					"[+4 Production] [in all cities] <in cities with a [Power Grid]>"],
 		"requiredTech": "Nuclear Fission",
@@ -3091,7 +3021,81 @@
 		"requiredTech": "Economics"
 	},
 	/// Special buildings
-
+	{
+		"name": "Light Industry Expansion",
+		"cost": 220,
+		"uniques": ["Unsellable",
+					"'Infrastructure'",
+					"Gain a free [Bakery] [in this city]",//40
+					"Gain a free [Brewery] [in this city]",//40
+					"Gain a free [Pottery Workshop] [in this city]",//40
+					"Gain a free [Civilian Blacksmith] [in this city]",//40
+					"Gain a free [Paper Maker] [in this city]"],//80
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Infrastructure Expansion",
+		"cost": 340,
+		"uniques": ["Unsellable",
+					"'Infrastructure'",
+					"Gain a free [Aqueduct] [in this city]",//120
+					"Gain a free [Healer's Hut] [in this city]",//20
+					"Gain a free [Clinic] [in this city]",//100
+					"Gain a free [Granary] [in this city]",//40
+					"Gain a free [Road Network] [in this city]"],//40
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Martine Expansion",
+		"cost": 365,
+		"uniques": ["Unsellable",
+					"'Marine Infrastructure'",
+					"Gain a free [Fishing Port] [in this city]",//40
+					"Gain a free [Lighthouse] [in this city]",//100
+					"Gain a free [Dry Dock] [in this city]",//85
+					"Gain a free [Trading Port] [in this city]",//120
+					"Must be next to [Coast]"],
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Military Expansion",
+		"cost": 525,
+		"uniques": ["Unsellable",
+					"'Military Building'",
+					"Gain a free [Barrack] [in this city]",//40
+					"Gain a free [Military Blacksmith] [in this city]",//85
+					"Gain a free [Military Stable] [in this city]",//120
+					"Gain a free [Armour Workshop] [in this city]",//100
+					"Gain a free [Firearms Workshop] [in this city]"],//160
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Business Expansion",
+		"cost": 180,
+		"uniques": ["Unsellable",
+					"'Economic Building'",
+					"Gain a free [Hunter's Hut] [in this city]",//20
+					"Gain a free [Crops Market] [in this city]",//40
+					"Gain a free [Trading Post] [in this city]"],//100
+		"requiredTech": "Banking",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Civil Expansion",
+		"cost": 195,
+		"uniques": ["Unsellable",
+					"'Infrastructure'",
+					"Gain a free [Monument] [in this city]",//20
+					"Gain a free [Town Hall] [in this city]",//40
+					"Gain a free [Library] [in this city]",//40
+					"Gain a free [Town Square] [in this city]"],//75
+		"requiredTech": "Acoustics",
+		"hurryCostModifier": 0
+	},
 	{
 		"name": "Nuclear Option",
 		"cost": 750,
