@@ -712,11 +712,12 @@
 		"strength": 45,
 		"rangedStrength": 48,
 		"range": 2,
-		"uniques": ["Only available <if [Firearms Workshop] is constructed>","Consumes [1] [Weapon Parts]","'Standing Army'","'Infantry'","'Dense Formation'","'Firearms'","[+100]% Strength <vs ['Dense Formation'] units> <when attacking>","[+100]% Strength <vs cities> <when attacking>","Never appears as a Barbarian unit"],
+		"uniques": ["Consumes [1] [Weapon Parts]","'Standing Army'","'Infantry'","'Dense Formation'","'Firearms'","[+100]% Strength <vs ['Dense Formation'] units> <when attacking>","[+100]% Strength <vs cities> <when attacking>","Never appears as a Barbarian unit"],
 		"promotions": ["The Standing Army"],
 		"requiredTech":"Scientific Theory",
 		"obsoleteTech":"Dynamite",
 		"upgradesTo": "Howitzer",
+		"requiredBuilding":"Firearms Workship",
 		"requiredResource":"Standing Army Maintainance",
 		"attackSound": "cannon"
 	},
@@ -726,11 +727,12 @@
 		"movement": 2,
 		"strength": 45,
 		"cost": 140,
+		"uniques": ["Consumes [1] [Weapon Parts]","'Levy Army'","'Infantry'","'Dense Formation'","'Firearms'","Never appears as a Barbarian unit"],
+		"promotions":["The Levy Army"],
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Rifling",
 		"upgradesTo":"Rifleman",
-		"uniques": ["Only available <if [Firearms Workshop] is constructed>","'Firearms'","'Edged Weapons'","'Infantry'","'Dense Formation'","'Levy Army'","Consumes [1] [Weapon Parts]","Never appears as a Barbarian unit"],
-		"promotions":["The Levy Army"],
+		"requiredBuilding":"Firearms Workship",
 		"attackSound": "shot"
 	},
 	{
@@ -739,7 +741,7 @@
 		"cost": 140,
 		"movement": 2,
 		"strength": 48,
-		"uniques": ["Only available <if [Firearms Workshop] is constructed>","Unbuildable <for [Human player] Civilizations>","Can only be built <in cities with a [Mercenary Office]>","'Mercenary Army'","'Infantry'","'Firearms'","'Dense Formation'","Can move immediately once bought","Never appears as a Barbarian unit","[+33]% Strength <after discovering [Rifling]>"],
+		"uniques": ["Unbuildable <for [Human player] Civilizations>","Can only be built <in cities with a [Mercenary Office]>","'Mercenary Army'","'Infantry'","'Firearms'","'Dense Formation'","Can move immediately once bought","Never appears as a Barbarian unit","[+33]% Strength <after discovering [Rifling]>"],
 		"promotions":["Mercenary Habit"],
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Replaceable Parts",
@@ -753,12 +755,13 @@
 		"cost": 155,
 		"movement": 2,
 		"strength": 54,
+		"uniques": ["Only available <before adopting [Long Live the Revolution!]>","Consumes [1] [Weapon Parts]","'Standing Army'","'Infantry'","'Firearms'","'Dense Formation'","[+15]% Strength <when fighting in [Rough terrain] tiles>","Never appears as a Barbarian unit","[+33]% Strength <after discovering [Rifling]>"],
+		"promotions":["The Standing Army"],
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo":"Heavy Infantry",
+		"requiredBuilding":"Firearms Workship",
 		"requiredResource":"Standing Army Maintainance",
-		"uniques": ["Only available <if [Firearms Workshop] is constructed>","Consumes [1] [Weapon Parts]","'Standing Army'","'Infantry'","'Firearms'","'Dense Formation'","[+15]% Strength <when fighting in [Rough terrain] tiles>","Never appears as a Barbarian unit","[+33]% Strength <after discovering [Rifling]>"],
-		"promotions":["The Standing Army"],
 		"attackSound": "shot"
 	},
 	{
@@ -767,12 +770,13 @@
 		"cost": 125,
 		"movement": 2,
 		"strength": 54,
-		"uniques": ["Only available <if [Firearms Workshop] is constructed>","Only available <after adopting [Revolution]>","Consumes [1] [Weapon Parts]","'Standing Army'","'Firearms'","'Infantry'","'Dense Formation'","[+7]% Strength bonus for [Military] units within [2] tiles","Never appears as a Barbarian unit","[+33]% Strength <after discovering [Rifling]>"],
+		"uniques": ["Only available <after adopting [Long Live the Revolution!]>","Consumes [1] [Weapon Parts]","'Standing Army'","'Firearms'","'Infantry'","'Dense Formation'","[+7]% Strength bonus for [Military] units within [2] tiles","Never appears as a Barbarian unit","[+33]% Strength <after discovering [Rifling]>"],
 		"promotions":["The Standing Army"],
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo":"Heavy Infantry",
 		"requiredResource":"Standing Army Maintainance",
+		"requiredBuilding":"Firearms Workship",
 		"attackSound": "shot"
 	},
 	{
@@ -1064,13 +1068,27 @@
 		"attackSound": "shot"
 	},
 	{
+		"name": "Elite Guard",
+		"unitType": "Close Combat",
+		"cost": 240,
+		"movement": 2,
+		"strength": 70,
+		"uniques": ["Consumes [1] [Weapon Parts]","'Noble Army'","'Infantry'","'Dense Formation'","'Firearms'","Only available <after adopting [Romantised Tradition]>","Never appears as a Barbarian unit"],
+		"promotions":["The Noble Army","Machinegun"],
+		"requiredTech": "Replaceable Parts",
+		"obsoleteTech": "Mobile Tactics",
+		"requiredResource":"Noble Army Maintainance",
+		"upgradesTo":"Mechanised Elite Guard",
+		"attackSound": "shot"
+	},
+	{
 		"name": "Protection Squadron",
 		"unitType": "Close Combat",
 		"cost": 250,
 		"movement": 2,
 		"strength": 70,
 		"uniques": ["Only available <after adopting [Militarised Nation]>","Limited to [5] per Civilization","Consumes [1] [Weapon Parts]","'Standing Army'","'Infantry'","'Dense Formation'","'Firearms'","Never appears as a Barbarian unit"],
-		"promotions":["Protection Squadron Ability","Machinegun"],
+		"promotions":["'Standing Army'","Protection Squadron Ability","Machinegun"],
 		"requiredTech": "Replaceable Parts",
 		"obsoleteTech": "Mobile Tactics",
 		"attackSound": "shot"
@@ -1337,6 +1355,20 @@
 		"requiredTech": "Mobile Tactics",
 		"obsoleteTech":	"Exoskeleton",
 		"requiredResource":"Standing Army Maintainance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mechanised Elite Guard",
+		"unitType": "Close Combat",
+		"cost": 240,
+		"movement": 2,
+		"strength": 73,
+		"uniques": ["'Noble Army'","'Mechanised'","'Dense Formation'","'Firearms'","Consumes [1] [Weapon Parts]","Never appears as a Barbarian unit"],
+		"promotions":["The Noble Army","Transport Truck"],
+		"requiredBuilding":"Military Factory Complex",
+		"requiredTech": "Mobile Tactics",
+		"obsoleteTech":	"Exoskeleton",
+		"requiredResource":"Noble Army Maintainance",
 		"attackSound": "shot"
 	},
 	{
