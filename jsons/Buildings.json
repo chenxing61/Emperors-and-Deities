@@ -1715,6 +1715,7 @@
 		"name": "Museum",
 		"maintenance": 5,
 		"uniques": ["'Cultural Building'",
+					"'Educational Building'",
 					"[+1 Culture] per [4] population [in this city]",
 					"Destroyed when the city is captured"],
 		"requiredTech": "Archaeology",
@@ -1833,7 +1834,7 @@
 		"name": "Agricultural Machinery Factory",
 		"maintenance": 5,
 		"specialistSlots": {"Engineer": 1},
-		"percentStatBonus": {"food": 25,"production":5},
+		"percentStatBonus": {"food": 25},
 		"uniques": ["'Agricultural Building'","[+1 Food] from [Mechanised Farm] tiles [in this city]"],
 		"requiredBuilding":"Car Factory",
 		"requiredTech": "Replaceable Parts",
@@ -1861,10 +1862,9 @@
 	{
 		"name": "Tools Factory",
 		"maintenance": 3,
-		"percentStatBonus": {
-			"production": 15},
+		"percentStatBonus": {"production": 15},
 		"specialistSlots": {"Engineer": 1},
-		"uniques": ["'Light Industry'","[+1 Production] per [8] population [in this city]"],
+		"uniques": ["'Light Industry'","[+1 Production] per [5] population [in this city]"],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Replaceable Parts",
 		"hurryCostModifier": 10
@@ -1900,11 +1900,18 @@
 	{
 		"name": "Weapon Parts Factory",
 		"maintenance": 2,
-		"production":-1,
-		"uniques": ["'Military Building'","Provides [4] [Weapon Parts]","Consumes [2] [Alloy]"],
+		"percentStatBonus":{"production":-5},
+		"uniques": ["'Military Building'","Provides [3] [Weapon Parts]","Consumes [1] [Alloy]","[+25]% Production when constructing ['Firearms'] units [in this city]"],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Replaceable Parts",
 		"hurryCostModifier": 25
+	},
+	{
+		"name": "Technical School",
+		"maintenance": 3,
+		"specialistSlots": {"Engineer": 1,"Scientist":1,"Artist":1,"Merchant":1},
+		"uniques": ["'Educational Building'","[+1 Production] from every ['Educational Building'] [in this city]"],
+		"requiredTech": "Mass Production"
 	},
 	{
 		"name": "Cannery",
@@ -2225,9 +2232,8 @@
 		"maintenance": 3,
 		"happiness": 1,
 		"percentStatBonus": {
-			"food": 5,
-			"production": 5,
-			"gold":25,
+			"gold":10,
+			"production":10,
 			"culture":5,
 			"science":5	},
 		"uniques": ["'Infrastructure'",
@@ -2284,6 +2290,17 @@
 					"Provides [2] [Fuel]",
 					"Consumes [1] [Coal]"
 		],
+		"requiredTech": "Synthetic Materials",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Chemical plant",
+		"maintenance": 3,
+		"uniques": ["'Heavy Industry'",
+					"[+1 Production] from ['Chemical'] tiles [in this city]",
+					"Consumes [2] [Industrial Chemicals] <when above [2] [Industrial Chemicals]>",
+					"[+8 Production, +10 Gold] <when above [2] [Industrial Chemicals]>"
+					],
 		"requiredTech": "Synthetic Materials",
 		"hurryCostModifier": 25
 	},
@@ -2349,15 +2366,6 @@
 		"requiredTech": "Plastics",
 		"requiredResource":"Industrial Chemicals",
 		"hurryCostModifier": 10
-	},
-
-
-	{
-		"name": "Technical School",
-		"maintenance": 3,
-		"specialistSlots": {"Engineer": 2,"Scientist":2,"Artist":2,"Merchant":2},
-		"uniques": ["'Educational Building'"],
-		"requiredTech": "Plastics"
 	},
 	{
 		"name": "Cellular Network",
