@@ -1832,6 +1832,17 @@
 		"attackSound": "shot"
 	},
 	{
+		"name": "Spring Pizazz",
+		"unitType": "Close Combat",
+		"movement": 6,
+		"strength": 6,
+		"uniqueTo": "Barbarians",
+		"uniques": ["'Infantry'","'Dense Formation'","'Barbaric Army'","'Blunt Weapon'","Adjacent enemy units ending their turn take [1] damage"],
+		"promotions":["Barbaric"],
+		"requiredTech": "Future Tech",
+		"attackSound": "nonmetalhit"
+	},
+	{
 		"name": "Priate",
 		"unitType": "Close Combat Ship",
 		"movement": 2,
