@@ -2866,6 +2866,26 @@
 		"hurryCostModifier": 0
 	},
 	{
+		"name": "Polytheistic Root",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"[+25]% Production when constructing ['Military Buildings'] buildings [in all cities] <in cities with a [Shrine]>",
+                "[25]% of excess happiness converted to [Culture]",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Monotheistic Root",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"Gain a free [Follower] belief",
+                "[Faith] cost of purchasing ['Organise Place'] buildings [-10]%",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "National Unity",
 		"isNationalWonder":true,
 		"uniques": ["Unbuildable","Unsellable",
@@ -2883,6 +2903,35 @@
 		"hurryCostModifier": 0
 	},
 	{
+		"name": "Ancient Wisdom",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"[+33]% Production when constructing ['Cultural Building'] buildings [in all cities]",
+                "[+3 Faith, +3 Science, +3 Culture] <in cities with at least [5] [Population]>",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Ancient Honor",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"No damage penalty for wounded units",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Ancient Wealth",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"[+10]% [Gold] from Trade Routes",
+                "[+1] Happiness from each type of luxury resource",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Neo Feudalism",
 		"isNationalWonder":true,
 		"uniques": ["Unbuildable","Unsellable",
@@ -2895,6 +2944,39 @@
 				"[Elite Guard] units gain the [Fast Regrouping] promotion",
 				"[Elite Guard] units gain the [Chivalry] promotion",
 				"[+1 Food, +1 Gold, +2 Culture] from every [Manor]",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Bureaucracy Tradition",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"Gain a free [Examination Hall] [in all cities]",
+				"[+10]% [Science] from every [Examination Hall]",
+                "[-10]% maintenance cost for buildings [in all cities connected to capital]",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Theocracy Asended",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"[+3]% [Science] from every ['Organise Place']",
+                "May buy ['Research Building'] buildings with [800] [Faith] [in all cities]",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Nation That Has No Enemies",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"[+5 Happiness] [in all cities]",
+                "Resting point for Influence with City-States is increased by [25]",
+                "Allied City-States provide [Culture] equal to [33]% of what they produce for themselves",
+                "City-State Influence recovers at twice the normal rate",
 				"Triggers a global alert upon completion",
 				"Destroyed when the city is captured"],
 		"hurryCostModifier": 0
@@ -3040,7 +3122,6 @@
 					"Only available <in [Capital] cities>",
 					"Triggers a global alert upon completion",
 					"Destroyed when the city is captured",
-					"[-1 Happiness] [in all cities]",
 					"[+33]% Production when constructing [Military] units [in all cities]",
 					"[+33]% Production when constructing ['Military Building'] buildings [in all cities]",
 					"[+2 Happiness] [in annexed cities]"],
