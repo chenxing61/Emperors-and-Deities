@@ -434,7 +434,7 @@
             },
             {
                 "name": "Personal Union",
-                "uniques": ["[+50]% Production when constructing [Intergration] buildings [in annexed cities]","Can spend Gold to annex or puppet a City-State that has been your ally for [15] turns <before adopting [Virtue Politics]>","Can spend Gold to annex or puppet a City-State that has been your ally for [8] turns <after adopting [Virtue Politics]>"
+                "uniques": ["[+50]% Production when constructing [Intergration] buildings [in annexed cities]","Can spend Gold to annex or puppet a City-State that has been your Ally for [15] turns <before adopting [Virtue Politics]>","Can spend Gold to annex or puppet a City-State that has been your Ally for [8] turns <after adopting [Virtue Politics]>"
                 ],
                 "requires":["Vassalage"],
                 "row": 3,
@@ -873,7 +873,8 @@
             },
             {
                 "name": "Conservatism Complete",
-                "uniques": ["Double quantity of [Noble Army Maintainance] produced","[-33]% spy effectiveness [in all cities]"
+                "uniques": ["Double quantity of [Noble Army Maintainance] produced",
+                            "[-33]% spy effectiveness [in all cities]"
                 ]
             }
         ]
@@ -888,34 +889,43 @@
             "Domination": 50,
             "Scientific": 30
         },
-        "uniques": ["Cities are razed [2] times as fast","Only available <before adopting [Socialism]>","Only available <before adopting [Liberalism]>","Only available <before adopting [Conservatism]>","Only available <before adopting [Anarchism]>","Comment [Enables you to build Hall of Nation,an unique wonder that increases strength of attacks.]"
+        "uniques": ["Cities are razed [2] times as fast",
+                    "Only available <before adopting [Socialism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Only available <before adopting [Conservatism]>",
+                    "Only available <before adopting [Anarchism]>",
+                    "Comment [Enables you to build Hall of Nation,an unique wonder that increases strength of attacks.]"
         ],
         "policies": [
             {
                 "name": "Populism",
-                "uniques": ["[-3 Culture] [in all cities]","[+55 Culture] [in cities being razed]","[+25]% Strength <when attacking> <for [Military] units> <when fighting units from a Civilization with more Cities than you>"],
+                "uniques": ["[-3 Culture] [in all cities]",
+                            "[+55 Culture] [in cities being razed]",
+                            "[+25]% Strength <when attacking> <for [Military] units> <when fighting units from a Civilization with more Cities than you>"],
                 "row": 1,
                 "column": 1
             },
             {
                 "name": "Class Conciliation(Fascism)",
-                "uniques": ["[-2 Gold, +5 Happiness] [in all cities]","[+10]% growth [in all cities]","Provides the cheapest [Culture] building in your first [5] cities for free"
+                "uniques": ["[-2 Gold, +5 Happiness] [in all cities]",
+                            "[+10]% growth [in all cities]",
+                            "Provides the cheapest [Culture] building in your first [5] cities for free"
                 ],
                 "row": 1,
                 "column": 3
             },
             {
                 "name": "Militarised Nation",
-                "uniques": ["Comment [Enables you to choose your economy route in your capital.]","Comment [Enables you to build Protection Squadron, A limited unit that is an alternative from Heavy Infantry, having higher strength and regeneration. One civ can only have 5 of them at a time]"],
+                "uniques": ["Comment [Enables you to choose your economy route in your capital.]",
+                            "Comment [Enables you to build Protection Squadron, A limited unit that is an alternative from Heavy Infantry, having higher strength and regeneration. One civ can only have 5 of them at a time]"],
                 "row": 1,
                 "column": 5
             },
             {
                 "name": "Secret police",
-                "uniques": [
-                "[-2 Culture, +1 Happiness] from every ['Political Building']",
-                "[+20]% City Strength from defensive buildings",
-                "[-25]% enemy spy effectiveness [in all cities]"],
+                "uniques": ["[-1 Culture, +1 Happiness] from every ['Political Building']",
+                            "[+20]% City Strength from defensive buildings",
+                            "[-25]% enemy spy effectiveness [in all cities]"],
                 "requires":["Militarised Nation"],
                 "row": 2,
                 "column": 4
@@ -924,22 +934,23 @@
             {
                 "name": "Foriegn puppets",
                 "uniques": ["[-25]% City-State Influence degradation",
-                "Military Units gifted from City-States start with [20] XP",
-                "[+25]% Production when constructing [Intergration] buildings [in annexed cities]"],
+                            "Military Units gifted from City-States start with [20] XP",
+                            "[+25]% Production when constructing [Intergration] buildings [in annexed cities]"],
                 "requires":["Militarised Nation"],
                 "row": 2,
                 "column": 2
             },
             {
                 "name": "National superiority",
-                "uniques": ["[+15]% Strength","[+25]% Production when constructing [Military] units [in all cities]"],
+                "uniques": ["[+10]% Strength <for [Land] units>",
+                            "[+25]% Production when constructing [Military] units [in all cities]"],
                 "requires":["Populism","Class Conciliation(Fascism)","Militarised Nation"],
                 "row": 3,
                 "column": 3
             },
             {
                 "name": "Fascism Complete",
-                "uniques": ["[+10]% Strength <when attacking> <for [Military] units>"
+                "uniques": ["New [Militart] units start with [10] Experience [in all cities]","[+33]% growth [in all cities]"
                 ]
             }
         ]
@@ -954,7 +965,13 @@
             "Domination": 40,
             "Scientific": 50
         },
-        "uniques": ["Only available <after adopting [Revolution]>","Only available <before adopting [Fascism]>","Only available <before adopting [Liberalism]>","Only available <before adopting [Conservatism]>","Only available <before adopting [Anarchism]>","Comment [Enables you to build Tower of Constructivism, giving you futher production when building any building that provides culture.]"
+        "uniques": ["[+1 Production] from every specialist [in all cities]",
+                    "Only available <after adopting [Revolution]>",
+                    "Only available <before adopting [Fascism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Only available <before adopting [Conservatism]>",
+                    "Only available <before adopting [Anarchism]>",
+                    "Comment [Enables you to build Tower of Constructivism, giving you futher production when building any building that provides culture.]"
         ],
         "policies": [
             {
