@@ -12,7 +12,7 @@
                 "Gain a free [Failed Bourgeoisie Revolution] [in capital]",
                 "Free [Great General] appears",
                 "[2] free [Royal Cuirassier] units appear"]
-            }
+            },
             {
                 "text": "Peaceful Transition.",
                 "uniques": [
@@ -166,5 +166,109 @@
                 ]
             }
         ]
-    }
+    },
+    {
+        "name": "Socialist Revolution!",
+        "text": "As the gap between classes widen, the capitalists started to go overboard with their mistreatment of the working class. After struggles in the politics and countless protest, another revolution has unveiled. The Bourgeoisie had it coming... But how did this went down?",
+        "choices": [
+            {
+                "text": "The Revolution has failed.",
+                "uniques": [
+                "Comment [The revolution is dead. The government of capitalists continue their ruling, long term negative impact for any attempt at reforms, short term negative effects on economy and 8 turns of remaining Communist Revolt, But the route to Conservatism is unlocked]",
+                "Adopt [Conservatism]",
+                "Remove [Socialism] and refund [100]% of its cost",
+                "Gain a free [Failed Socialist Revolution] [in capital]",
+                "[3] free [Security Company] units appear"]
+            }
+            {
+                "text": "Socialist Democracy will save the day..",
+                "uniques": [
+                "Comment [Is this even a revolution when at least half of the bourgeoisie are still up on their place? Who knows. The conflict is resolved peacefully but there are long term consequences toward policy and industry development]",
+                "Free Social Policy",
+                "Gain a free [Peaceful Socialist Revolution] [in capital]"]
+            },
+            {
+                "text": "The workers have their chains all crushed into dust!",
+                "uniques": [
+                "Comment [One revolt, followed by many, the capitalist system died by a thousand cut. And a new nation ruled by workers is built.]",
+                "Gain a free [Violent Socialist Revolution] [in capital]"]
+            },
+            {
+                "text": "",
+                "uniques": [
+                "Comment [One revolt, followed by many, the capitalist system died by a thousand cut. And a new nation ruled by workers is built.]",
+                "Gain a free [Violent Socialist Revolution] [in capital]"]
+            }
+        ]
+    },
+    {
+        "name": "New economy policies.",
+        "text": "We've rebuilt our government in pursuit to adapt to the new era, but the current economy policy is outdated. We will need a economy reform before we can do anything else.",
+        "choices": [
+            {
+                "text": "Free Market",
+                "uniques": [
+                "Only available <after adopting [Liberalism]>",
+                "Comment [We should believe in the unseen hand and solve all our problems with massive amount of capitals.]",
+                "Gain a free [Free Market Focus] [in capital]"]
+            },
+            {
+                "text": "Market Interventionism",
+                "uniques": [
+                "Only available <before adopting [Anarchism]>",
+                "Only available <before adopting [Fascism]>",
+                "Only available <before adopting [Socialism]>",
+                "Comment [The unseen hand of market economy is not to be fully relied upon. We should spend effort to properly and use more refined policy to guide our nation's productivity.]",
+                "Gain a free [Market Interventionism] [in capital]"]
+            },
+            {
+                "text": "Stability First",
+                "uniques": [
+                "Only available <before adopting [Anarchism]>",
+                "Only available <before adopting [Socialism]>",
+                "Only available <before adopting [Liberalism]>",
+                "Comment [Our economy must serve the national unity first and formost, nothing is impossible when our nation is strong and its people united.]",
+                "Gain a free [Corporatism Focus] [in capital]"]
+            },
+            {
+                "text": "The might of our military overshadows any greed!",
+                "uniques": [
+                "Only available <before adopting [Anarchism]>",
+                "Only available <before adopting [Socialism]>",
+                "Only available <before adopting [Liberalism]>",
+                "Only available <before adopting [Conservatism]>",
+                "Comment [Nothing is beyond the power of winning in a direct conflict. We must direct all our effort into military!]",
+                "Gain a free [Militristic Economy] [in capital]"]
+            },           
+            {
+                "text": "Centralised Economic Planning",
+                "uniques": [
+                "Only available <before adopting [Anarchism]>",
+                "Only available <before adopting [Liberalism]>",
+                "Only available <before adopting [Fascism]>",
+                "Only available <before adopting [Conservatism]>",
+                "Comment [The market economy only benefits capitalists and speculators, our new socialist economy should maximise our development potential and distributes the goods to those who need it.]",
+                "Gain a free [Planned Economy] [in capital]"]
+            },
+            {
+                "text": "Decentralised Economic",
+                "uniques": [
+                "Only available <before adopting [Fascism]>",
+                "Only available <before adopting [Liberalism]>",
+                "Only available <before adopting [Conservatism]>",
+                "Comment [The economy suffered from monopoly and hierarchy, we should liberate the economy in favour of enabling peoples'agency to work for the masses. With nationalised industries and policies being guiding forces.]",
+                "Gain a free [Cooperative Economy] [in capital]"]
+            },
+            {
+                "text": "Self-Management Economic",
+                "uniques": [
+                "Only available <before adopting [Fascism]>",
+                "Only available <before adopting [Socialism]>",
+                "Only available <before adopting [Liberalism]>",
+                "Only available <before adopting [Conservatism]>",
+                "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and Free will shall reign surpreme.]",
+                "Gain a free [Self-management Focus] [in capital]"]
+            },
+        ]
+    },
 ]

@@ -965,7 +965,7 @@
             "Domination": 40,
             "Scientific": 50
         },
-        "uniques": ["[+1 Production] from every specialist [in all cities]",
+        "uniques": [
                     "Only available <after adopting [Revolution]>",
                     "Only available <before adopting [Fascism]>",
                     "Only available <before adopting [Liberalism]>",
@@ -976,13 +976,15 @@
         "policies": [
             {
                 "name": "Redistribution of Means of Production(Socialism)",
-                "uniques": ["Comment [Enables you to choose your economy route in your capital.]"],
+                "uniques": ["[+1 Production] from every specialist [in all cities]","Comment [Enables you to choose your economy route in your capital.]"],
                 "row": 1,
                 "column": 3
             },
             {
                 "name": "Nationalization",
-                "uniques": ["[+25]% [Science] from every [Civilian Factory Complex]","[+50]% Production when constructing ['Heavy Industry'] buildings [in all cities]","[-25]% maintenance on road & railroads"],
+                "uniques": ["[+33]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
+                "[+33]% Production when constructing ['Power Building'] buildings [in all cities]",
+                "[-25]% maintenance on road & railroads"],
                 "requires":["Redistribution of Means of Production(Socialism)"],
                 "row": 2,
                 "column": 1
