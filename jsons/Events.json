@@ -6,19 +6,18 @@
             {
                 "text": "The Revolution has failed.",
                 "uniques": [
-                "Comment [The revolution is dead. The government of nobilities continue their ruling.]",
+                "Comment [The revolution is dead. The government of nobilities continue their ruling, long term negative impact for any attempt at reforms, short term negative effects on economy. But 'Noble Army' strength are increased by a third permanently.]",
+
                 "Remove [Revolution] and refund [100]% of its cost",
-                "[-33]% [Culture] [in all cities] <for [5] turns>",
-                "[-17]% [Culture] [in all cities] <for [15] turns>",
-                "[-33]% [Gold] [in all cities] <for [5] turns>",
                 "Gain a free [Failed Bourgeoisie Revolution] [in capital]",
                 "Free [Great General] appears",
                 "[2] free [Royal Cuirassier] units appear"]
             }
             {
                 "text": "Peaceful Transition.",
-                "uniques": ["[-25]% [Culture] [in all cities] <for [20] turns>",
-                "[-10]% [Gold] [in all cities] <for [20] turns>",
+                "uniques": [
+                "Comment [Long term societal divide hinders futher policy and economic development. But the revolution have its main goal achieved]",
+
                 "Free Social Policy",
                 "Gain a free [Peaceful Bourgeoisie Revolution] [in capital]",
                 "Free [Revolutionaries] appears"]
@@ -26,20 +25,145 @@
             {
                 "text": "Both negotiations and conflicts are happening...",
                 "uniques": [
-                "Comment [The revolution...is chaotic. Some cities have peacefully transitioned their power to the new ruling class, while some starts to infight violently.]",
-                "[-10]% [Culture] [in all cities] <for [20] turns>",
-                "Rebel units may spawn <for [8] turns>",
+                "Comment [The revolution...is chaotic. Some cities have peacefully transitioned their power to the new ruling class, while some starts to infight violently. Rebel unit will spawn for 8 turns, but there are overall less side effects. All Revolutionaries gain some basic promotions and the 'Standing Army' gains 5% strength bonus permanently.]",
+                
                 "Gain a free [Chaotic Bourgeoisie Revolution] [in capital]",
                 "[2] free [Revolutionaries] units appear"]
             },
             {
                 "text": "Clean the parasites!",
                 "uniques": [
-                "Comment [The revolution violently shaked the basis of our society, but our society is able to leap toward progressiveness!]",
-                "Rebel units may spawn <for [24] turns>",
-                "[-33]% [Gold] [in all cities] <for [15] turns>",
+                "Comment [The revolution violently shaked the basis of our society, but our society is able to leap toward progressiveness! Rebel unit will spawn for 24 turns and the economy will suffer for a while, but the will of the revolution is well preserved and people are more accepting to societal changes. All Revolutionaries gain many promotions and the 'Standing Army' gains 10% strength bonus permanently.]",
+
                 "Gain a free [Violent Bourgeoisie Revolution] [in capital]",
                 "[3] free [Revolutionaries] units appear"]
+            }
+        ]
+    },
+    {
+        "name": "The Legacy We Inhereited.",
+        "text": "Through out the history of our grand civilisation, what aspect should guide us to the future?",
+        "choices": [
+            {
+                "text": "We have no history",
+                "uniques": [
+                "Comment [How does one get conservative with no tradition to begin with?]",
+                "Only available <if starting in the [Industrial era]>",
+                "Gain a free [How?] [in capital]"
+                ]
+            },
+            {
+                "text": "We have no history!",
+                "uniques": [
+                "Comment [How does one get conservative with no tradition to begin with?]",
+                "Only available <if starting in the [Atomic era]>",
+                "Gain a free [How?] [in capital]"
+                ]
+            },
+            {
+                "text": "We have no history?",
+                "uniques": [
+                "Comment [How does one get conservative with no tradition to begin with?]",
+                "Only available <if starting in the [Information era]>",
+                "Gain a free [How?] [in capital]"
+                ]
+            },
+            {
+                "text": "We have no history...",
+                "uniques": [
+                "Comment [How does one get conservative with no tradition to begin with?]",
+                "Only available <if starting in the [Future era]>",
+                "Gain a free [How?] [in capital]"
+                ]
+            },
+            {
+                "text": "The Gods",
+                "uniques": [
+                "Comment [The polytheistic root of our faith leads us to splendor, we are the most blessed out of all civilisation in the world.]",
+                "Only available <after adopting [Polytheism]>",
+                "Gain a free [Polytheistic Root] [in capital]"]
+            },
+            {
+                "text": "Our Lord",
+                "uniques": [
+                "Comment [The monotheistic root of our faith leads us to connect with the truth, the faith is our sword and our plow.]",
+                "Only available <after adopting [Monotheism]>",
+                "Gain a free [Monotheistic Root] [in capital]"
+                
+                ]
+            },
+            {
+                "text": "Our will to unite",
+                "uniques": [
+                "Comment [The power of unity has guided us through most of our history, without it, where would we be?]",
+                "Only available <after adopting [Unity]>",
+                "[2] free [Elite Guard] units appear",
+                "Gain a free [National Unity] [in capital]"
+                ]
+            },
+            {
+                "text": "Our wisdom",
+                "uniques": [
+                "Comment [Our civilisation were once master of philosophy. They lived with great wisdom and we shall never give it up.]",
+                "Only available <after adopting [Scholarship]>",
+                "Gain a free [Ancient Wisdom] [in capital]"
+                ]
+            },
+            {
+                "text": "Our honor",
+                "uniques": [
+                "Comment [Our civilisation were once the most honored warriors. They died with honor and we shall never give it up.]",
+                "Only available <after adopting [Militant]>",
+                "Gain a free [Ancient Honor] [in capital]",
+                "Free [Great General] appears"]
+            }
+            {
+                "text": "Our wealth",
+                "uniques": [
+                "Comment [Our civilisation were once the smartest traders. They left us with all the capital and insights so that we may stay flourished]",
+                "Only available <after adopting [Plutocracy]>",
+                "Gain a free [Ancient Wealth] [in capital]"
+                ]
+            },
+            {
+                "text": "Our noble bloodline",
+                "uniques": [
+                "Comment [Our ruiling class has the purest blood with virtues passing down from father to son, we will stay true to the noble blood.]",
+                "Only available <after adopting [Feudalism]>",
+                "[2] free [Elite Guard] units appear",
+                "Gain a free [Neo Feudalism] [in capital]"]
+            },
+            {
+                "text": "Our efficient bureaucracy",
+                "uniques": [
+                "Comment [The fair and great system our ancestor has passed onto us is a testament to our longevity.]",
+                "Only available <after adopting [Meritocracy]>",
+                "Gain a free [Bureaucracy Tradition] [in capital]"
+                ]
+            },
+            {
+                "text": "Our divinity",
+                "uniques": [
+                "Comment [Our civilisation has engraved our faith into everything, we are reaching for ultimate goals.]",
+                "Only available <after adopting [Theocracy]>","Gain a free [Theocracy Asended] [in capital]"
+               ]
+            },
+            {
+                "text": "Our humanitarianistic view",
+                "uniques": [
+                "Comment [We are the pioneer for progressive value to love all human beings. We will spread our care to the world for it to become a better place.]",
+                "Only available <after adopting [Humanism]>","Gain a free [Nation That Has No Enemies] [in capital]"
+                
+                ]
+            },
+            {
+                "text": "Our glorious empire",
+                "uniques": [
+                "Comment [Flower and Beauty doesnt keep our splendor. Iron and Blood Does!]",
+                "Only available <after adopting [Imperialism]>",
+                "[2] free [Elite Guard] units appear",
+                "Gain a free [Pride and Prejudice] [in capital]"
+                ]
             }
         ]
     }

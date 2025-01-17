@@ -434,7 +434,7 @@
             },
             {
                 "name": "Personal Union",
-                "uniques": ["[+50]% Production when constructing [Intergration] buildings [in annexed cities]","Can spend Gold to annex or puppet a City-State that has been your ally for [15] turns <before adopting [Virtue Politics]>","Can spend Gold to annex or puppet a City-State that has been your ally for [8] turns <after adopting [Virtue Politics]>"
+                "uniques": ["[+50]% Production when constructing [Intergration] buildings [in annexed cities]","Can spend Gold to annex or puppet a City-State that has been your Ally for [15] turns <before adopting [Virtue Politics]>","Can spend Gold to annex or puppet a City-State that has been your Ally for [8] turns <after adopting [Virtue Politics]>"
                 ],
                 "requires":["Vassalage"],
                 "row": 3,
@@ -615,7 +615,7 @@
                 "column": 1
             },
             {
-                "name": "Iron fists",
+                "name": "Iron Fists",
                 "uniques": [
                 "[+25]% [Gold] [in annexed cities]",
                 "[-1 Happiness] [in annexed cities]",
@@ -634,7 +634,7 @@
                 "[+1 Culture] from every ['Military Building'] <after adopting [Knighthood]>"
                 ],
                 "row": 3,
-                "requires":["Iron fists"],
+                "requires":["Iron Fists"],
                 "column": 3
             },
             {
@@ -668,14 +668,16 @@
                 "name": "Long Live the Revolution!",
                 "uniques": [
                 "[+25]% Production when constructing ['Standing Army'] units [in all cities]",
-                "Comment [Enables you to build Revolutionaries, a Cheaper Granadier that boosts nearby unit's strength.]"
+                "Comment [Enables you to build Revolutionaries, a Cheaper Granadier that may have extra promotion if the right event is chosen.]"
                 ],
                 "row": 1,
                 "column": 3
             },
             {
                 "name": "Collective Rule",
-                "uniques": ["[-33]% construction time for [All] improvements","[+25]% growth [in all cities]"
+                "uniques": [
+                "[-25]% construction time for [All] improvements",
+                "[+25]% growth [in all cities]"
                 ],
                 "requires":["Long Live the Revolution!"],
                 "row": 2,
@@ -722,35 +724,46 @@
             "Domination": 40,
             "Scientific": 50
         },
-        "uniques": ["Only available <before adopting [Socialism]>","Only available <before adopting [Conservatism]>","Only available <before adopting [Fascism]>","Only available <before adopting [Anarchism]>","Comment [Enables you to build Statue of Liberty,an unique wonder]"
+        "uniques": ["[+1] Happiness from each type of luxury resource",
+                    "Comment [Enables you to build Statue of Liberty, an unique wonder that increase production toward building any buildings that produce gold.]",
+                    "Only available <before adopting [Socialism]>",
+                    "Only available <before adopting [Conservatism]>",
+                    "Only available <before adopting [Fascism]>",
+                    "Only available <before adopting [Anarchism]>"
         ],
         "policies": [
             {
                 "name": "Privatised Property",
-                "uniques": ["Comment [Enables you to choose your economy route in your capital.]"
-
-                ],
+                "uniques": ["Comment [Enables you to build Property Sector, an 'Economic Building' that exchanges building speed with lower gold cost of purchasing buildings and gold production.]",
+                            "[+10]% [Culture] from every [Primitive Property Sector] <after adopting [Plutocracy]>",
+                            "Comment [Enables you to choose your economy route in your capital.]","May buy items in puppet cities"],
                 "row": 1,
                 "column": 1
             },
             {
                 "name": "Freedom of Experssion",
-                "uniques": ["[-25]% Food consumption by specialists [in all cities]","[+33]% Strength for cities <when defending>"
-
-                ],
+                "uniques": [
+                            "[-33]% Food consumption by specialists [in all cities]",
+                            "[-20]% Unhappiness from [Specialists] [in all cities]",
+                            "[-13]% Unhappiness from [Specialists] [in all cities] <after adopting [Scholarship]>",
+                            "[+10]% [Science] <while the empire is happy> <after adopting [Education Focus]>",
+                            "[+10]% [Culture] <while the empire is happy> <after adopting [Nationalism]>"
+                        ],
                 "row": 1,
                 "column": 5
             },
             {
                 "name": "Cater to Profiteers",
-                "uniques": ["[+1 Gold] from every ['Economic Building']","[+1 Gold] from every ['Educational Building']","[+1 Gold] from every ['Light Industry']","[+1 Gold] from every ['Heavy Industry']","[-1 Happiness] [in all cities]"],
+                "uniques": ["[+1]% [Gold] from every ['Economic Building']"],
                 "requires":["Privatised Property"],
                 "row": 2,
                 "column": 1
             },
             {
                 "name": "Neo-colonialism",
-                "uniques": ["Gifts of Gold to City-States generate [+25]% more Influence","[+1] Happiness from each type of luxury resource","Resting point for Influence with City-States is increased by [-20]"
+                "uniques": ["Gifts of Gold to City-States generate [+33]% more Influence",
+                            "Allied City-States provide [Gold] equal to [33]% of what they produce for themselves",
+                            "Resting point for Influence with City-States is increased by [-50]"
                 ],
                 "requires":["Privatised Property"],
                 "row": 2,
@@ -758,7 +771,10 @@
             },
             {
                 "name": "Agricultural Fundings(Liberalism)",
-                "uniques": ["[+1 Food] from every ['Agricultural Improvement']","[+1 Food] from every ['Agricultural Building']","[-2 Gold] from every ['Agricultural Building']"
+                "uniques": [
+                            "[Gold] cost of purchasing ['Agricultural Building'] buildings [-10]% <if [Free Market Focus] is constructed>",
+                            "[+33]% Production when constructing ['Agricultural Building'] buildings [in all cities] <if [Market Interventionism] is constructed>",
+                            "[+3 Food, -2 Gold] from every ['Agricultural Building']"
                 ],
                 "requires":["Privatised Property"],
                 "row": 2,
@@ -766,15 +782,19 @@
             },
             {
                 "name": "Democratic Crusaders",
-                "uniques": ["[+25]% Production when constructing ['Military Building'] buildings [in all cities]","Militaristic City-States grant units [2] times as fast when you are at war with a common nation"
-                ],
-                "requires":["Neo-colonialism"],
+                "uniques": [
+                            "[+33]% Production when constructing ['Military Building'] buildings [in all cities]",
+                            "Gain an extra spy",
+                            "[+33]% Production when constructing ['Standing Army'] units [in all cities] <after adopting [Militant]>"
+                            ],
+                "requires":["Cater to Profiteers","Neo-colonialism"],
                 "row": 3,
                 "column": 3
             },
             {
                 "name": "Liberalism Complete",
-                "uniques": ["[+25]% [Gold] from every ['Political Building']","[+50]% Production when constructing ['Economic Building'] buildings [in all cities]"
+                "uniques": ["[+50]% Yield from every [Great Improvement]",
+                            "[50]% of excess happiness converted to [Science]"
                 ]
             }
         ]
@@ -789,48 +809,63 @@
             "Domination": 40,
             "Scientific": 50
         },
-        "uniques": ["Only available <before adopting [Socialism]>","Only available <before adopting [Liberalism]>","Only available <before adopting [Fascism]>","Only available <before adopting [Anarchism]>","Comment [Enables you to build Cathedral of the Holy Family, an unique wonder that gives you the ability to buy any building that provides culture with faith.]"
+        "uniques": [
+            "[+1 Culture] from every ['Cultural Building']",
+            "Only available <before adopting [Revolution]>",
+            "Only available <before adopting [Socialism]>",
+            "Only available <before adopting [Liberalism]>",
+            "Only available <before adopting [Fascism]>",
+            "Only available <before adopting [Anarchism]>",
+            "Comment [Enables you to build Cathedral of the Holy Family, an unique wonder that gives you the ability to buy any building that provides culture with faith.]"
         ],
         "policies": [
             {
                 "name": "Mixed Economy",
-                "uniques": ["Comment [Enables you to choose your economy route in your capital.]"
-
+                "uniques": [
+                    "[+10]% Production when constructing [All] buildings [in all cities]",
+                    "[Gold] cost of purchasing items in cities [-5]%",
+                    "Comment [Enables you to choose your economy route in your capital.]"
                 ],
                 "row": 1,
                 "column": 1
             },
             {
                 "name": "Romantised Tradition",
-                "uniques": ["Gain a free [Monument] [in all cities] <after adopting [Unity]>","Gain a free [Library] [in all cities] <after adopting [Scholarship]>","Gain a free [Barrack] [in all cities] <after adopting [Militant]>","Gain a free [Primitive Property Sector] [in all cities] <after adopting [Plutocracy]>","Comment [Enables you to build Elite Guards, A Noble Alternative to Heavy Infantry that speacialises in defence]"],
+                "uniques": ["Triggers a [The Legacy We Inhereited.] event",
+                "Comment [Enables you to build Elite Guards, A Noble Alternative to Heavy Infantry that may have extra promotion if the right event is chosen.]"],
                 "row": 1,
                 "column": 3
             },
             {
                 "name": "Class Conciliation(Conservative)",
-                "uniques": ["[+1 Happiness, -2 Gold] [in all cities]","[+25]% growth [in all cities]","Provides the cheapest [Culture] building in your first [4] cities for free"
-
-                ],
+                "uniques": ["[-2 Gold, +5 Happiness] [in all cities]","[+10]% growth [in all cities]","Provides the cheapest [Culture] building in your first [5] cities for free"],
                 "row": 1,
                 "column": 5
             },
             {
                 "name": "Religion and Country",
-                "uniques": ["[+1 Faith] from every ['Political Building']","[+10]% Strength <for ['Levy Army'] units>","[+1 Culture] per [5] population [in all cities] <after adopting [Polytheism]>","[+1 Culture] from every ['Organise Place'] <after adopting [Monotheism]>"],
+                "uniques": ["[+1 Faith, +1 Happiness] from every ['Political Building']",
+                "[+10]% Strength <for ['Levy Army'] units>",
+                "[+5 Culture] from every [Natural Wonder] <after adopting [Polytheism]>",
+                "[+3 Culture] from every [Holy site] <after adopting [Monotheism]>"],
                 "requires":["Romantised Tradition","Class Conciliation(Conservative)"],
                 "row": 2,
                 "column": 4
             },
             {
                 "name": "Agricultural Fundings(Conservative)",
-                "uniques": ["[+1 Food] from every ['Agricultural Improvement']","[+1 Food] from every ['Agricultural Building']","[-2 Gold] from every ['Agricultural Building']"],
+                "uniques": ["[Gold] cost of purchasing ['Agricultural Building'] buildings [-10]% <if [Corporatism Study] is constructed>",
+                            "[+33]% Production when constructing ['Agricultural Building'] buildings [in all cities] <if [Market Interventionism Study] is constructed>",
+                            "[+3 Food, -2 Gold] from every ['Agricultural Building']"],
                 "requires":["Mixed Economy"],
                 "row": 2,
                 "column": 1
             },
             {
                 "name": "De-radicalise",
-                "uniques": ["[-1 Culture] from every ['Educational Building']","[-25]% City-State Influence degradation","[-25]% Unhappiness from [Specialists] [in all cities]"
+                "uniques": ["[-10]% [Culture] from every ['Educational Building']",
+                "[-33]% City-State Influence degradation",
+                "[-10]% Unhappiness from [Population] [in all cities]"
                 ],
                 "requires":["Religion and Country"],
                 "row": 3,
@@ -838,7 +873,8 @@
             },
             {
                 "name": "Conservatism Complete",
-                "uniques": ["[+50]% Golden Age length"
+                "uniques": ["Double quantity of [Noble Army Maintainance] produced",
+                            "[-33]% spy effectiveness [in all cities]"
                 ]
             }
         ]
@@ -853,34 +889,43 @@
             "Domination": 50,
             "Scientific": 30
         },
-        "uniques": ["Cities are razed [2] times as fast","Only available <before adopting [Socialism]>","Only available <before adopting [Liberalism]>","Only available <before adopting [Conservatism]>","Only available <before adopting [Anarchism]>","Comment [Enables you to build Hall of Nation,an unique wonder that increases strength of attacks.]"
+        "uniques": ["Cities are razed [2] times as fast",
+                    "Only available <before adopting [Socialism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Only available <before adopting [Conservatism]>",
+                    "Only available <before adopting [Anarchism]>",
+                    "Comment [Enables you to build Hall of Nation,an unique wonder that increases strength of attacks.]"
         ],
         "policies": [
             {
                 "name": "Populism",
-                "uniques": ["[-3 Culture] [in all cities]","[+55 Culture] [in cities being razed]","[+25]% Strength <when attacking> <for [Military] units> <when fighting units from a Civilization with more Cities than you>"],
+                "uniques": ["[-3 Culture] [in all cities]",
+                            "[+55 Culture] [in cities being razed]",
+                            "[+25]% Strength <when attacking> <for [Military] units> <when fighting units from a Civilization with more Cities than you>"],
                 "row": 1,
                 "column": 1
             },
             {
                 "name": "Class Conciliation(Fascism)",
-                "uniques": ["[+1 Happiness, -2 Gold] [in all cities]","[+25]% growth [in all cities]","Provides the cheapest [Production] building in your first [4] cities for free"
+                "uniques": ["[-2 Gold, +5 Happiness] [in all cities]",
+                            "[+10]% growth [in all cities]",
+                            "Provides the cheapest [Culture] building in your first [5] cities for free"
                 ],
                 "row": 1,
                 "column": 3
             },
             {
                 "name": "Militarised Nation",
-                "uniques": ["Comment [Enables you to choose your economy route in your capital.]","Comment [Enables you to build Protection Squadron, A limited unit that is an alternative from Heavy Infantry, having higher strength and regeneration. One civ can only have 5 of them at a time]"],
+                "uniques": ["Comment [Enables you to choose your economy route in your capital.]",
+                            "Comment [Enables you to build Protection Squadron, A limited unit that is an alternative from Heavy Infantry, having higher strength and regeneration. One civ can only have 5 of them at a time]"],
                 "row": 1,
                 "column": 5
             },
             {
                 "name": "Secret police",
-                "uniques": [
-                "[-2 Culture, +1 Happiness] from every ['Political Building']",
-                "[+20]% City Strength from defensive buildings",
-                "[-25]% enemy spy effectiveness [in all cities]"],
+                "uniques": ["[-1 Culture, +1 Happiness] from every ['Political Building']",
+                            "[+20]% City Strength from defensive buildings",
+                            "[-25]% enemy spy effectiveness [in all cities]"],
                 "requires":["Militarised Nation"],
                 "row": 2,
                 "column": 4
@@ -889,22 +934,23 @@
             {
                 "name": "Foriegn puppets",
                 "uniques": ["[-25]% City-State Influence degradation",
-                "Military Units gifted from City-States start with [20] XP",
-                "[+25]% Production when constructing [Intergration] buildings [in annexed cities]"],
+                            "Military Units gifted from City-States start with [20] XP",
+                            "[+25]% Production when constructing [Intergration] buildings [in annexed cities]"],
                 "requires":["Militarised Nation"],
                 "row": 2,
                 "column": 2
             },
             {
                 "name": "National superiority",
-                "uniques": ["[+15]% Strength","[+25]% Production when constructing [Military] units [in all cities]"],
+                "uniques": ["[+10]% Strength <for [Land] units>",
+                            "[+25]% Production when constructing [Military] units [in all cities]"],
                 "requires":["Populism","Class Conciliation(Fascism)","Militarised Nation"],
                 "row": 3,
                 "column": 3
             },
             {
                 "name": "Fascism Complete",
-                "uniques": ["[+10]% Strength <when attacking> <for [Military] units>"
+                "uniques": ["New [Militart] units start with [10] Experience [in all cities]","[+33]% growth [in all cities]"
                 ]
             }
         ]
@@ -919,7 +965,13 @@
             "Domination": 40,
             "Scientific": 50
         },
-        "uniques": ["Only available <after adopting [Revolution]>","Only available <before adopting [Fascism]>","Only available <before adopting [Liberalism]>","Only available <before adopting [Conservatism]>","Only available <before adopting [Anarchism]>","Comment [Enables you to build Tower of Constructivism, giving you futher production when building any building that provides culture.]"
+        "uniques": ["[+1 Production] from every specialist [in all cities]",
+                    "Only available <after adopting [Revolution]>",
+                    "Only available <before adopting [Fascism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Only available <before adopting [Conservatism]>",
+                    "Only available <before adopting [Anarchism]>",
+                    "Comment [Enables you to build Tower of Constructivism, giving you futher production when building any building that provides culture.]"
         ],
         "policies": [
             {
