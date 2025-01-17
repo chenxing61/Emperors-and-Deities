@@ -179,25 +179,52 @@
                 "Remove [Socialism] and refund [100]% of its cost",
                 "Gain a free [Failed Socialist Revolution] [in capital]",
                 "[3] free [Security Company] units appear"]
-            }
+            },
             {
                 "text": "Socialist Democracy will save the day..",
                 "uniques": [
-                "Comment [Is this even a revolution when at least half of the bourgeoisie are still up on their place? Who knows. The conflict is resolved peacefully but there are long term consequences toward policy and industry development]",
+                "Comment [Is this even a revolution when at least half of the bourgeoisie are still up on their place? Who knows. The conflict is resolved peacefully but there are long term consequences toward policy and industry development, planned economy is not available in this route.]",
                 "Free Social Policy",
-                "Gain a free [Peaceful Socialist Revolution] [in capital]"]
+                "[1] free [Red Army Troop] units appear",
+                "Gain a free [Socialist Democracy Reform] [in capital]"]
             },
             {
-                "text": "The workers have their chains all crushed into dust!",
+                "text": "The Workers have nothing to lose but their chains, they have a world to win.",
                 "uniques": [
-                "Comment [One revolt, followed by many, the capitalist system died by a thousand cut. And a new nation ruled by workers is built.]",
-                "Gain a free [Violent Socialist Revolution] [in capital]"]
+                "Comment [One revolt, followed by many, the capitalist system died by a thousand cut. And a new nation ruled by workers is built. Gold and food production takes a hit due to the civil war. Civilian Industries now provide bonuses to culture and a bonus to production is now provided to all cities. Newly born red army specialises into tactics. Remaining reactionary revolt continues for 10 turns.]",
+                "[3] free [Red Army Troop] units appear",
+                "Gain a free [Worker's Socialist Revolution] [in capital]"]
             },
             {
-                "text": "",
+                "text": "Workers, Farmers, Soldiers, Students, all shall be united to bring down the capitalists!",
                 "uniques": [
-                "Comment [One revolt, followed by many, the capitalist system died by a thousand cut. And a new nation ruled by workers is built.]",
-                "Gain a free [Violent Socialist Revolution] [in capital]"]
+                "Comment [Compare to a worker's revolution, this revolution is a combined effort of all proletariats alike, althought that makes the process of revolution much faster, but the organisation of the new country is much more complicated. Culture ,gold and food production takes a bigger hit, but 'Educational Buildings' and 'Agricultural Building' provides production bonus and a culture boost is applied to all cities. Newly born red army specialises into command structure. Remaining reactionary revolt continues for 10 turns.]",
+                "[5] free [Red Army Troop] units appear",
+                "Gain a free [United Socialist Revolution] [in capital]"]
+            }
+        ]
+    },
+    {
+        "name": "Anarchist Revolution!",
+        "text": "As the gap between classes widen, the capitalists started to go overboard with their mistreatment of the working class. After struggles in the politics and countless protest, another revolution has unveiled. The Bourgeoisie had it coming... But how did this went down?",
+        "choices": [
+            {
+                "text": "The Revolution has failed.",
+                "uniques": [
+                "Comment [The revolution is dead. The government of capitalists continue their ruling, long term negative impact for any attempt at reforms, short term negative effects on economy and 8 turns of remaining Anarchist Revolt, But the route to Conservatism is unlocked]",
+                "Adopt [Conservatism]",
+                "Remove [Anarchism] and refund [100]% of its cost",
+                "Gain a free [Failed Anarchist Revolution] [in capital]",
+                "[3] free [Security Company] units appear"]
+            },
+            {
+                "text": "What we proclaim is the Right to Well-Being; Well-Being for All!",
+                "uniques": [
+                "Comment [One revolt, followed by many, the capitalist system died by a thousand cut. And a new nation ruled by workers is built. Culture, Gold, Science, Food production takes a hit due to the civil war and the disbanding of government. Remaining reactionary revolt continues for 15 turns.]",
+                "Comment [Installs 'Anarchist Ruling' in all of your cities,an alternative ruling style that replaces the intergration. It is free and built instantly, only providing small amount of debuff and needs Commune to be built to nullify its downsides.]",
+                "Adopt [Abolishment of Government]",
+                "[3] free [Modern Guerrilla] units appear",
+                "Gain a free [Worker's Socialist Revolution] [in capital]"]
             }
         ]
     },
@@ -247,11 +274,12 @@
                 "Only available <before adopting [Liberalism]>",
                 "Only available <before adopting [Fascism]>",
                 "Only available <before adopting [Conservatism]>",
+                "Only available <when above [0] [Revolution Oppotunity]>",
                 "Comment [The market economy only benefits capitalists and speculators, our new socialist economy should maximise our development potential and distributes the goods to those who need it.]",
                 "Gain a free [Planned Economy] [in capital]"]
             },
             {
-                "text": "Decentralised Economic",
+                "text": "Decentralised Economy",
                 "uniques": [
                 "Only available <before adopting [Fascism]>",
                 "Only available <before adopting [Liberalism]>",
@@ -260,15 +288,15 @@
                 "Gain a free [Cooperative Economy] [in capital]"]
             },
             {
-                "text": "Self-Management Economic",
+                "text": "Self-Management Economy",
                 "uniques": [
                 "Only available <before adopting [Fascism]>",
                 "Only available <before adopting [Socialism]>",
                 "Only available <before adopting [Liberalism]>",
                 "Only available <before adopting [Conservatism]>",
-                "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and Free will shall reign surpreme.]",
+                "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and free will shall reign surpreme.]",
                 "Gain a free [Self-management Focus] [in capital]"]
-            },
+            }
         ]
     },
 ]
