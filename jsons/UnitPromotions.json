@@ -802,7 +802,11 @@
 	{
 		"name": "Mortar",
 		"prerequisites": ["Industrial Arms"],
-		"uniques": ["[+25]% Strength <when fighting in [Rough terrain] tiles>","[+25]% Strength <when fighting in [Trench] tiles>","[+15]% Strength <when fighting in [Fort] tiles>","[+10]% Strength <when fighting in [Citadel] tiles>","[+25]% Strength <vs cities>"],
+		"uniques": ["[+25]% Strength <when fighting in [Rough terrain] tiles>",
+		"[+25]% Strength <when fighting in [Trench] tiles>",
+		"[+15]% Strength <when fighting in [Fort] tiles>",
+		"[+10]% Strength <when fighting in [Citadel] tiles>",
+		"[+25]% Strength <when attacking> <vs cities>"],
 		"unitTypes": ["Close Combat","Ranged Combat","Scout"],
 		"column": 27,
 		"row": 1
@@ -820,7 +824,12 @@
 	{
 		"name": "Machinegun",
 		"prerequisites": ["Industrial Arms"],
-		"uniques": ["[+15]% Strength <when defending>"],
+		"uniques": [
+			"[+30]% Strength <when defending> <when fighting in [Open terrain] tiles> <vs ['Infantry'] units>",
+			"[+15]% Strength <when defending> <when fighting in [Rough terrain] tiles> <vs ['Infantry'] units>",
+			"[+15]% Strength <when defending> <when fighting in [Open terrain] tiles> <vs [non-{'Infantry'}] units>",
+			"[+7]% Strength <when defending> <when fighting in [Rough terrain] tiles> <vs [non-{'Infantry'}] units>"
+		],
 		"unitTypes": ["Close Combat","Ranged Combat","Scout"],
 		"column": 27,
 		"row": 3
@@ -829,7 +838,8 @@
 	{
 		"name": "Landmine",
 		"prerequisites": ["Industrial Arms"],
-		"uniques": ["Only available <after discovering [Dynamite]>","[+15]% Strength <when defending>"],
+		"uniques": ["Only available <after discovering [Dynamite]>",
+					"[+25]% Strength <when defending>"],
 		"unitTypes": ["Close Combat","Ranged Combat","Scout"],
 		"column": 28,
 		"row": 1
@@ -838,7 +848,8 @@
 	{
 		"name": "Grenade",
 		"prerequisites": ["Industrial Arms"],
-		"uniques": ["Only available <after discovering [Dynamite]>","[+15]% Strength <when attacking>"],
+		"uniques": ["Only available <after discovering [Dynamite]>",
+					"[+20]% Strength <when attacking> <vs ['Infantry'] units>","[+10]% Strength <when attacking> <vs [non-{'Infantry'}] units>"],
 		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider"],
 		"column": 28,
 		"row": 2
@@ -847,7 +858,14 @@
 		"name": "Sapper Corps",
 		"prerequisites": ["Industrial Arms"],
 		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege"],
-		"uniques": ["Only available <after discovering [Dynamite]>","[+25]% Strength <vs cities>","[+25]% Strength <when fighting in [City center] tiles>","[+25]% Strength <when fighting in [Fort] tiles>","[+25]% Strength <when fighting in [Trench] tiles>","[+25]% Strength <when fighting in [Citadel] tiles>","[+10]% Strength <when fighting in [Rough terrain] tiles>"],
+		"uniques": [
+			"Only available <after discovering [Dynamite]>",
+			"[+25]% Strength <vs cities>",
+			"[+25]% Strength <when fighting in [City center] tiles>",
+			"[+25]% Strength <when defending> <when fighting in [Fort] tiles>","[+25]% Strength <when fighting in [Trench] tiles>",
+			"[+25]% Strength <when defending> <when fighting in [Citadel] tiles>",
+			"[+10]% Strength <when defending> <when fighting in [Rough terrain] tiles>",
+			"Can build [{Trench}] improvements on tiles"],
 		"column": 28,
 		"row": 3
 	},
@@ -855,7 +873,10 @@
 		"name": "Scouting Corps",
 		"prerequisites": ["Industrial Arms"],
 		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege"],
-		"uniques": ["Only available <after discovering [Replaceable Parts]>","[+1] Sight","Can see invisible [All] units"],
+		"uniques": ["Only available <after discovering [Replaceable Parts]>",
+		"[+15]% Strength <when attacking>",
+		"[+1] Sight",
+		"Can see invisible [Land] units"],
 		"column": 28,
 		"row": 4
 	},
@@ -1091,7 +1112,7 @@
 	},
 	{
 		"name": "Commissar",
-		"uniques": ["[+10]% Strength","[+25]% XP gained from combat"]
+		"uniques": ["[+33]% XP gained from combat"]
 	},
 	{
 		"name": "Protection Squadron Ability",
@@ -1102,16 +1123,33 @@
 		"uniques": ["Eliminates combat penalty for attacking across a coast","[+50]% Strength <when defending> <when [Embarked]>"]
 	},
 	{
+		"name": "Hill People Origin", 
+		"uniques": ["Can pass through impassable tiles","Double movement in [Hill]"]
+	},
+	{
 		"name": "Marine Training", 
 		"uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast","[+100]% Strength <when defending> <when [Embarked]>"]
 	},
 	{
+		"name": "Mountaineer Training", 
+		"uniques": ["Can pass through impassable tiles","Ranged attacks may be performed over obstacles","Double movement in [Hill]","Double movement in [Mountain]"]
+	},
+	{
 		"name": "Scouting Unit", 
-		"uniques": ["[-25]% Strength <when attacking>","Withdraws before melee combat <with [50]% chance>","Unit will heal every turn, even if it performs an action","[-25]% maintenance costs","Ignores Zone of Control"]
+		"uniques": ["[-25]% Strength <when attacking>",
+					"Withdraws before melee combat <with [50]% chance>",
+					"Unit will heal every turn, even if it performs an action",
+					"[-25]% maintenance costs",
+					"Can see over obstacles",
+					"Ignores Zone of Control"]
 	},
 	{
 		"name": "Skirmisher Training", 
-		"uniques": ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles","[+10]% Strength <when defending>","[-20]% Strength <vs ['Mounted'] units> <when defending>","[-20]% Strength <vs ['Mechanised'] units> <when defending>","Ignores Zone of Control"]
+		"uniques": ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+					"[+10]% Strength <when defending>",
+					"[-20]% Strength <vs ['Mounted'] units> <when defending>",
+					"[-20]% Strength <vs ['Mechanised'] units> <when defending>",
+					"Ignores Zone of Control"]
 	},
 	{
 		"name": "Tactic Research", // Military Academy
@@ -1123,7 +1161,13 @@
 	},
 	{
 		"name": "The Levy Army", 
-		"uniques": ["[+100]% maintenance costs","Gain [-1] [Gold] <every [1] turns>","Gain [-1] [Gold] <when not at war> <every [1] turns><before adopting [Military Tradition]>","Gain [-1] [Gold] <starting from the [Renaissance era]> <every [1] turns>","Gain [-2] [Gold] <starting from the [Imperial era]> <every [1] turns>","Gain [-2] [Gold] <starting from the [Industrial era]> <every [1] turns>","Gain [+1] [Gold] <before the [Ancient era]> <every [2] turns>"]
+		"uniques": ["[+100]% maintenance costs",
+		"Gain [-1] [Gold] <every [1] turns>",
+		"Gain [-1] [Gold] <when not at war> <every [1] turns><before adopting [Military Tradition]>",
+		"Gain [-1] [Gold] <starting from the [Renaissance era]> <every [1] turns>",
+		"Gain [-2] [Gold] <starting from the [Imperial era]> <every [1] turns>",
+		"Gain [-2] [Gold] <starting from the [Industrial era]> <every [1] turns> <before adopting [Militia Army]>",
+		"Gain [+1] [Gold] <before the [Ancient era]> <every [2] turns>"]
 	},
 	{
 		"name": "The Standing Army", 
@@ -1139,7 +1183,7 @@
 	},
 	{
 		"name": "Merchant", 
-		"uniques": ["[-10]% Strength <vs ['Standing Army'] units>","Gain [2] [Gold] <upon ending a turn in a [City center] tile>"]
+		"uniques": ["[-10]% Strength <vs ['Standing Army'] units>","Gain [2] [Gold] <upon ending a turn in a [City center] tile>","Gain [2] [Gold] <upon ending a turn in a [Civilian Market] tile>"]
 	},
 	{
 		"name": "Barbaric", 
@@ -1151,6 +1195,6 @@
 	},
 	{
 		"name": "Nuclear Powered", 
-		"uniques": ["[+25]% maintenance costs","Consumes [1] [Uranium]","[+5] HP when healing","[+2] Movement"]
+		"uniques": ["[+100]% maintenance costs","Consumes [1] [Uranium]","[+5] HP when healing","[+2] Movement"]
 	}
 ]

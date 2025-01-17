@@ -449,7 +449,7 @@
 		"culture": 1,
 		"happiness": 1,
 		"greatPersonPoints": {"Great Scientist": 2},
-		"uniques": ["'Educational Building'","Gain a free [Library] [in this city]"],
+		"uniques": ["Gain a free [Library] [in this city]"],
 		"requiredTech": "Writing",
 		"quote": "'Libraries are as the shrine where all the relics of the ancient saints, full of true virtue, and all that without delusion or imposture are preserved and reposed.' - Sir Francis Bacon"
 	},
@@ -460,7 +460,7 @@
 		"culture": 2,
 		"happiness": 1,
 		"greatPersonPoints": {"Great Artist": 1},
-		"uniques": ["'Educational Building'","Free [Great Scientist] appears"],
+		"uniques": ["Free [Great Scientist] appears"],
 		"requiredTech": "Writing",
 		"quote": "'Learning without thinking leads to confusion; Thinking without learning ends to vain.' - Confucius"
 	},
@@ -582,7 +582,7 @@
 		"isWonder": true,
 		"culture": 1,
 		"greatPersonPoints": {"Great Engineer": 1},
-		"uniques": ["'Educational Building'","[+1 Science, +1 Culture] from [Desert] tiles without [Flood plains] [in this city]",
+		"uniques": ["[+1 Science, +1 Culture] from [Desert] tiles without [Flood plains] [in this city]",
 					"Gain a free [University] [in this city]",
 					"[+6 Culture] [in this city] <after discovering [Archaeology]>",
 					"Must be next to [Desert]"],
@@ -627,8 +627,7 @@
 		"culture":-1,
 		"isNationalWonder": true,
 		"specialistSlots": {"Artist": 3},
-		"uniques": ["'Cultural Building'",
-					"[-25]% Culture cost of natural border growth [in all cities]",
+		"uniques": ["[-25]% Culture cost of natural border growth [in all cities]",
 					"[+25]% Great Person generation [in this city]",
 					"Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>", 
 					"Cost increases by [30] per owned city"],
@@ -695,7 +694,7 @@
 		"name": "Intergration",
 		"maintenance": 3,
 		"culture":-3,
-		"uniques": ["Can only be built <in [Annexed] cities>","Remove extra unhappiness from annexed cities","Destroyed when the city is captured"],
+		"uniques": ["Only available <before adopting [Anarchism]>","Can only be built <in [Annexed] cities>","Remove extra unhappiness from annexed cities","Destroyed when the city is captured"],
 		"hurryCostModifier": 50,
 		"requiredTech": "Paper Making"
 	},
@@ -1201,8 +1200,7 @@
 		"isNationalWonder": true,
 		"maintenance": 3,
 		"specialistSlots": {"Governor": 1},
-		"uniques": ["'Political Building'",
-					"[-5]% Unhappiness from [Specialists] [in all cities connected to capital]",
+		"uniques": ["[-5]% Unhappiness from [Specialists] [in all cities connected to capital]",
 					"[-25]% Gold cost of acquiring tiles [in all cities connected to capital]",
 					"[+10]% Production when constructing [All] units [in all cities connected to capital]",
 					"[+10]% Production when constructing [All] buildings [in all cities connected to capital]",
@@ -1431,9 +1429,8 @@
 		"name": "National Academy of Science",
 		"isNationalWonder": true,
 		"science": 5,
-		"percentStatBonus": {"science": 25},
-		"uniques": ["'Educational Building'",
-					"Science gained from research agreements [+50]%",
+		"percentStatBonus": {"science": 50},
+		"uniques": ["Science gained from research agreements [+100]%",
 					"Only available <if [University] is constructed in all [non-[Puppeted]] cities>",
 					"Cost increases by [30] per owned city"],
 		"requiredTech":"Heliocentrism"
@@ -2332,7 +2329,7 @@
 	{
 		"name": "Electronic Factory",
 		"maintenance": 10,
-		"uniques": ["'Light Industry'","Provides [3] [Electronic Parts]",
+		"uniques": ["'High Tech Industry'","Provides [3] [Electronic Parts]",
 					"Provides [2] [Electronic Parts] <after discovering [Robotic]>",
 					"Consumes [1] [Industrial Chemicals]",
 					"Consumes [1] [Alloy]","[Military] units gain the [Information Arms] promotion <starting from the [Information era]>"],
@@ -2391,7 +2388,7 @@
 		"maintenance": 5,
 		"happiness": 1,
 		"specialistSlots": {"Engineer": 1,"Scientist": 1},
-		"uniques": ["'Light Industry'",
+		"uniques": ["'High Tech Industry'",
 					"[+2 Production] per [10] population [in this city]",
 					"[+1 Culture, +1 Science] per [10] population [in this city] <in cities with a [Cellular Network]>",
 					"[+1 Production, +1 Culture, +1 Science] per [5] population [in this city] <in cities with a [WAN Support]>",
@@ -2480,16 +2477,24 @@
 		"name": "Recycling Center",
 		"maintenance": 5,
 		"uniques": ["'Heavy Industry'",
-					"Provides [2] [Metal]",
-					"Provides [2] [Aluminum]",
-					"Provides [1] [Industrial Chemicals]",
-					"Limited to [3] per Civilization"],
+					"Provides [1] [Waste Material] <in cities with at least [10] [Population]>","Provides [1] [Waste Material] <in cities with at least [20] [Population]>","Provides [1] [Waste Material] <in cities with at least [30] [Population]>","Provides [1] [Waste Material] <in cities with at least [40] [Population]>"
+					],
+		"requiredTech": "Ecology"
+	},
+	{
+		"name": "Recycling Factory",
+		"maintenance": 5,
+		"uniques": ["'Heavy Industry'",
+					"Consumes [3] [Waste Material]",
+					"Provides [2] [Alloy]",
+					"Provides [1] [Aluminum]",
+					"Provides [1] [Industrial Chemicals]"],
 		"requiredTech": "Ecology"
 	},
 	{
 		"name": "Microchip Factory",
 		"maintenance": 5,
-		"uniques": ["'Light Industry'",
+		"uniques": ["'High Tech Industry'",
 					"Provides [3] [Microchips]",
 					"Provides [2] [Microchips] <after discovering [Robotic]>"],
 		"requiredBuilding": "Civilian Factory Complex",	
@@ -2554,9 +2559,9 @@
 	{
 		"name": "Video Game Industry",
 		"happiness": 1,
-		"percentStatBonus": {"gold": 15},
+		"percentStatBonus": {"gold": 25},
 		"specialistSlots":{"Artist":1,"Merchant":1},
-		"uniques": ["'Entertainment Building'",
+		"uniques": ["'Entertainment Building'","''High Tech Industry''",
 					"Consumes [1] [Electronic Parts]"],
 		"requiredTech": "Internet",
 		"hurryCostModifier": 10
@@ -2629,7 +2634,7 @@
 		"name": "Drone Factory",
 		"maintenance": 5,
 		"specialistSlots": {"Engineer": 1},
-		"uniques": ["'Light Industry'",
+		"uniques": ["'High Tech Industry'",
 					"[+1 Production] from every specialist [in this city]",
 					"Consumes [1] [Microchips]"],
 		"requiredBuilding": "Civilian Factory Complex",
@@ -2641,7 +2646,7 @@
 		"maintenance": 10,
 		"percentStatBonus": {
 			"production": 25},
-		"uniques": ["'Light Industry'","[+1 Production] per [1] population [in this city]"],
+		"uniques": ["'High Tech Industry'","[+1 Production] per [1] population [in this city]"],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "3D Printers",
 		"hurryCostModifier": 10
@@ -2676,7 +2681,82 @@
 		"quote": "'I seemed to vow to myself that some day I would go to the region of ice and snow and go on and on till I came to one of the poles of the earth, the end of the axis upon which this great round ball turns.' - Ernest Shackleton"
 	},
 ///Line 22
-
+///Expansion
+	{
+		"name": "Light Industry Expansion",
+		"cost": 220,
+		"uniques": ["Unsellable",
+					"'Infrastructure'",
+					"Gain a free [Bakery] [in this city]",//40
+					"Gain a free [Brewery] [in this city]",//40
+					"Gain a free [Pottery Workshop] [in this city]",//40
+					"Gain a free [Civilian Blacksmith] [in this city]",//40
+					"Gain a free [Paper Maker] [in this city]"],//80
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Infrastructure Expansion",
+		"cost": 340,
+		"uniques": ["Unsellable",
+					"'Infrastructure'",
+					"Gain a free [Aqueduct] [in this city]",//120
+					"Gain a free [Healer's Hut] [in this city]",//20
+					"Gain a free [Clinic] [in this city]",//100
+					"Gain a free [Granary] [in this city]",//40
+					"Gain a free [Road Network] [in this city]"],//40
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Martine Expansion",
+		"cost": 365,
+		"uniques": ["Unsellable",
+					"'Marine Infrastructure'",
+					"Gain a free [Fishing Port] [in this city]",//40
+					"Gain a free [Lighthouse] [in this city]",//100
+					"Gain a free [Dry Dock] [in this city]",//85
+					"Gain a free [Trading Port] [in this city]",//120
+					"Must be next to [Coast]"],
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Military Expansion",
+		"cost": 525,
+		"uniques": ["Unsellable",
+					"'Military Building'",
+					"Gain a free [Barrack] [in this city]",//40
+					"Gain a free [Military Blacksmith] [in this city]",//85
+					"Gain a free [Military Stable] [in this city]",//120
+					"Gain a free [Armour Workshop] [in this city]",//100
+					"Gain a free [Firearms Workshop] [in this city]"],//160
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Business Expansion",
+		"cost": 180,
+		"uniques": ["Unsellable",
+					"'Economic Building'",
+					"Gain a free [Hunter's Hut] [in this city]",//20
+					"Gain a free [Crops Market] [in this city]",//40
+					"Gain a free [Trading Post] [in this city]"],//100
+		"requiredTech": "Banking",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Civil Expansion",
+		"cost": 195,
+		"uniques": ["Unsellable",
+					"'Infrastructure'",
+					"Gain a free [Monument] [in this city]",//20
+					"Gain a free [Town Hall] [in this city]",//40
+					"Gain a free [Library] [in this city]",//40
+					"Gain a free [Town Square] [in this city]"],//75
+		"requiredTech": "Acoustics",
+		"hurryCostModifier": 0
+	},
 
 ///Special
 	{
@@ -2783,6 +2863,7 @@
 	{
 		"name": "Chartered Company",
 		"maintenance": 2,
+		"happiness":-2,
 		"percentStatBonus": {"gold": 33,"production": 25},
 		"specialistSlots": {"Governor":1},
 		"uniques": ["'Economic Building'",
@@ -2792,67 +2873,7 @@
 		"requiredTech": "Banking",
 		"hurryCostModifier": 10
 	},
-	{
-		"name": "Failed Bourgeoisie Revolution",
-		"isNationalWonder":true,
-		"uniques": ["Consumes [1] [Revolution Oppotunity]","Unbuildable","Unsellable",
-					"Provides [2] [Noble Army Maintainance]",
-                	"Provides [2] [Horse]",
-					"[+33]% Strength <for ['Noble Army'] units>",
-					"[-33]% [Culture] [in all cities] <for [10] turns>",
-               	 	"[-33]% [Gold] [in all cities] <for [5] turns>",
-					"Triggers a global alert upon completion","Destroyed when the city is captured"],
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Peaceful Bourgeoisie Revolution",
-		"isNationalWonder":true,
-		"uniques": ["Unbuildable","Unsellable",
-					"Provides [1] [Standing Army Maintainance]",
-                	"Provides [1] [Weapon Parts]",
-					"[-25]% [Culture] [in all cities] <for [15] turns>",
-                	"[-10]% [Gold] [in all cities] <for [15] turns>",
-					"[-10]% Strength <for ['Noble Army'] units>",
-					"Triggers a global alert upon completion",
-					"Destroyed when the city is captured"],
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Chaotic Bourgeoisie Revolution",
-		"isNationalWonder":true,
-		"uniques": ["Unbuildable","Unsellable",
-				"Provides [2] [Standing Army Maintainance]",
-                "Provides [2] [Weapon Parts]",
-                "[Revolutionaries] units gain the [Hardened] promotion",
-                "[Revolutionaries] units gain the [Shock Doctrine] promotion",
-                "[Revolutionaries] units gain the [Stewardship] promotion",
-				"[+5]% Strength <for ['Standing Army'] units>",
-				"[-10]% [Culture] [in all cities] <for [10] turns>",
-				"[-10]% [Gold] [in all cities] <for [10] turns>",
-                "Rebel units may spawn <for [8] turns>",
-				"Triggers a global alert upon completion",
-				"Destroyed when the city is captured"],
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Violent Bourgeoisie Revolution",
-		"isNationalWonder":true,
-		"uniques": ["Unbuildable","Unsellable",
-				"Provides [3] [Standing Army Maintainance]",
-                "Provides [3] [Weapon Parts]",
-				"[Revolutionaries] units gain the [Hardened] promotion",
-                "[Revolutionaries] units gain the [Shock Doctrine] promotion",
-                "[Revolutionaries] units gain the [Defence Doctrine] promotion",
-                "[Revolutionaries] units gain the [Stewardship] promotion",
-                "[Revolutionaries] units gain the [Resourceful Army] promotion",
-				"[+10]% Strength <for ['Standing Army'] units>",
-                "[+10]% [Culture] [in all cities]",
-				"Rebel units may spawn <for [24] turns>",
-                "[-33]% [Gold] [in all cities] <for [10] turns>",
-				"Triggers a global alert upon completion",
-				"Destroyed when the city is captured"],
-		"hurryCostModifier": 0
-	},
+
 	{
 		"name": "Property Sector",
 		"percentStatBonus": {"gold": 25},
@@ -3009,14 +3030,15 @@
 	},
 	{
 		"name": "Commune",
-		"food":2,
+		"food":3,
 		"production": 2,
 		"cityStrength": 5,
 		"specialistSlots": {"Artist": 1,"Merchant": 1,"Engineer": 1,"Scientist": 1},
 		"uniques": ["'Political Building'",
-					"[+3 Happiness, -5 Gold] per [5] population [in this city]",
+					"[+3 Happiness, -3 Gold] per [5] population [in this city]",
 					"[+1 Production] from all ['Light Industry'] buildings <in this city>",
-					"[+5]% Golden Age length",
+					"[+2]% Great Person generation [in all cities]",
+					"[+2]% Golden Age length",
 					"Only available <after adopting [Anarchism]>",
 					"Destroyed when the city is captured"],
 		"requiredTech":"Radio",
@@ -3024,10 +3046,11 @@
 	},
 	{
 		"name": "Anarchist Ruling",
-		"culture":2,
-		"percentStatBonus":{"food":-5,"production":-5,"science":17,"culture":17,"faith":-5,"gold":-10},
+		"culture":3,
+		"percentStatBonus":{"production":-5,"science":17,"culture":17,"faith":-5,"gold":-10},
 		"uniques": ["'Political Building'",
 					"[-3 Happiness] <in cities without a [Commune]>",
+					"Remove extra unhappiness from annexed cities",
 					"Only available <after adopting [Anarchism]>",	
 					"Destroyed when the city is captured"],
 		"requiredTech":"Radio"
@@ -3038,10 +3061,11 @@
 		"production":1,
 		"uniques": ["Unbuildable",
 					"Unsellable",
-					"'Power Building'",
+					"'Heavy Industry'",
+					"Provides [1] [Waste Material]",
 					"[+10]% [Science] <in cities with a [Coal Plant]>",
 					"[+10]% [Culture] <in cities with a [Coal Plant]>",
-					"[-20]% [Production] <in cities with a [Coal Plant]>",
+					"[-10]% [Production] <in cities with a [Coal Plant]>",
 					"[-1 Production] from [Coal] tiles [in this city]",
 					"Provides [1] [Coal]","Destroyed when the city is captured"],
 		"requiredTech":"Sustainability"
@@ -3050,11 +3074,9 @@
 	///Routes under ideology
 	{
 		"name": "Market Interventionism",
-		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Privatised Property]>",
-					"Only available <in [Capital] cities>",
+		"uniques": ["Unbuildable","Unsellable",
 					"Triggers a global alert upon completion","Destroyed when the city is captured",
 					"[+1]% [Production] from every ['Economic Building']",
 					"[-33]% [Gold] [in all cities]",
@@ -3064,209 +3086,91 @@
 	},	
 	{
 		"name": "Free Market Focus",
-		"cost": 1,
 		"specialistSlots":{"Merchant":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Privatised Property]>",
-					"Only available <in [Capital] cities>",
+		"uniques": ["Unbuildable","Unsellable",
 					"Triggers a global alert upon completion","Destroyed when the city is captured",
 					"[+1]% [Gold] from every ['Political Building']",
 					"[-10]% maintenance cost for buildings [in all cities]",
 					"[+33]% [Gold] [in all cities]",
-					"[Gold] cost of purchasing items in cities [+25]%"],
-		"requiredTech": "Economics"
-	},
-	{
-		"name": "Cooperative Economy",
-		"cost": 1,
-		"specialistSlots":{"Governor":1},
-		"isNationalWonder": true,
-		"uniques": [
-					"Only available <after adopting [Redistribution of Means of Production(Socialism)]>",
-					"Only available <in [Capital] cities>",
-					"Triggers a global alert upon completion",
-					"[+1 Production] from ['Agricultural Improvement'] tiles [in all cities]",
-					"[+1 Culture, +1 Production] from ['Lumber Improvement'] tiles [in all cities]",
-					"[+25]% Production when constructing ['Light Industry'] buildings [in all cities]",
-					"Destroyed when the city is captured"],
-		"requiredTech": "Economics"
-	},	
-	{
-		"name": "Planned Economy",
-		"cost": 1,
-		"specialistSlots":{"Governor":1},
-		"isNationalWonder": true,
-		"uniques": [
-					"Only available <after adopting [Redistribution of Means of Production(Socialism)]>",
-					"Only available <in [Capital] cities>",
-					"Triggers a global alert upon completion","Destroyed when the city is captured",
-					"[+2 Production] from all ['Political Building'] buildings",
-					"[-25]% construction time for [All] improvements <when not at war>",
-					"[+50]% Production when constructing ['Heavy Industry'] buildings [in all cities] <when not at war>",
-					"[+25]% Production when constructing ['Military Building'] buildings [in all cities] <when at war>"],
+					"[Gold] cost of purchasing items in cities [+33]%"],
 		"requiredTech": "Economics"
 	},
 	{
 		"name": "Corporatism Focus",
-		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Fascism]>",
-					"Only available <in [Capital] cities>",
+		"uniques": ["Unbuildable","Unsellable",
 					"Triggers a global alert upon completion",
-					"[+2 Gold] from all ['Light Industry'] buildings",
-					"[-2 Gold, +1 Happiness, +1 Culture] from all ['Economic Building'] buildings",
-					"[+2 Production] from all ['Military Building'] buildings",
+					"[+3 Gold] from all ['Light Industry'] buildings",
+					"[-2 Gold, +3 Happiness, +3 Culture] from all ['Economic Building'] buildings",
+					"[+3 Production] from all ['Military Building'] buildings",
 					"Destroyed when the city is captured"],
 		"requiredTech": "Economics"
 	},	
 	{
 		"name": "Militristic Economy",
-		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Fascism]>",
-					"Only available <in [Capital] cities>",
+		"uniques": ["Unbuildable","Unsellable",
 					"Triggers a global alert upon completion",
 					"Destroyed when the city is captured",
-					"[+33]% Production when constructing [Military] units [in all cities]",
-					"[+33]% Production when constructing ['Military Building'] buildings [in all cities]",
+					"[+100]% Production when constructing ['Standing Army'] units [in all cities]",
+					"[+100]% Production when constructing ['Military Building'] buildings [in all cities]",
+					"[+100]% Production when constructing ['Static Defense'] buildings [in all cities]",
 					"[+2 Happiness] [in annexed cities]"],
 		"requiredTech": "Economics"
 	},
-
 	{
-		"name": "Market Interventionism Study",
-		"cost": 1,
+		"name": "Cooperative Economy",
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Mixed Economy]>",
-					"Only available <in [Capital] cities>",
+		"uniques": ["Unbuildable","Unsellable",
+					"Triggers a global alert upon completion",
+					"[+1 Gold] from every specialist [in all cities]",
+					"[+1 Culture, +1 Production] from ['Agricultural Improvement'] tiles [in all cities]",
+					"[+1 Culture, +1 Production] from ['Water Improvement'] tiles [in all cities]",
+					"[+1 Culture, +1 Science] from ['Lumber Improvement'] tiles [in all cities]",
+					"[+1 Culture, +1 Food] from ['Extraction Improvement'] tiles [in all cities]",
+					"[+2 Science] from ['Policy Improvement'] tiles [in all cities]",
+					"[+33]% Production when constructing ['Light Industry'] buildings [in all cities]",
+					"Destroyed when the city is captured"],
+		"requiredTech": "Economics"
+	},	
+	{
+		"name": "Planned Economy",
+		"specialistSlots":{"Governor":2},
+		"isNationalWonder": true,
+		"uniques": [
+					"Unbuildable","Unsellable",
 					"Triggers a global alert upon completion","Destroyed when the city is captured",
-					"[+1]% [Production] from every ['Economic Building']",
-					"[-33]% [Gold] [in all cities]",
-					"[Gold] cost of purchasing items in cities [-25]%",
-					"[-25]% construction time for [All] improvements <when not at war>"],
+					"[+1]% [Production] from every ['Political Building']",
+					"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital] <when not at war>",
+					"[+33]% Production when constructing ['Military Building'] buildings [in all cities connected to capital] <when not at war>",
+					"[+25]% Production when constructing ['Space Race Building'] buildings [in all cities connected to capital] <when not at war>",
+					"[+25]% Production when constructing [All] wonders [in all cities connected to capital] <when not at war>",
+					"[-33]% construction time for [All] improvements <when not at war>",
+					"[+100]% Production when constructing ['Military Building'] buildings [in all cities connected to capital] <when at war>",
+					"[+33]% Production when constructing [Military] units [in all cities connected to capital] <when at war>"
+					],
 		"requiredTech": "Economics"
 	},
 	{
-		"name": "Corporatism Study",
-		"cost": 1,
-		"specialistSlots":{"Governor":1},
-		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Fascism]>",
-					"Triggers a global alert upon completion",
-					"Only available <in [Capital] cities>",
-					"[+2 Gold] from all ['Light Industry'] buildings",
-					"[-2 Gold, +3 Happiness, +2 Culture] from all ['Economic Building'] buildings",
-					"[+3]% [Production] from every ['Military Building']",
-					"Destroyed when the city is captured"],
-		"requiredTech": "Economics"
-	},	
-	{
 		"name": "Self-management Focus",
-		"cost": 1,
 		"specialistSlots":{"Governor":1},
 		"isNationalWonder": true,
-		"uniques": ["Only available <after adopting [Redistribution of Means of Production(Anarchist)]>",
-					"Only available <in [Capital] cities>",
+		"uniques": ["Unbuildable","Unsellable",
 					"Triggers a global alert upon completion",
 					"Destroyed when the city is captured",
-					"[+1 Science, +1 Culture, +3 Gold, +3 Production] per [10] population [in all cities]",
+					"[-25]% maintenance on road & railroads",
+					"[Gold] cost of purchasing ['Levy Army'] units [-33]%",
+					"[+3 Science] per [3] social policies adopted",
+					"[+1 Science, +1 Culture, +3 Gold, +5 Production] per [10] population [in all cities]",
 					"[+33]% Production when constructing [Commune] buildings [in all cities]"],
-		"requiredTech": "Economics"
-	},	
-	{
-		"name": "Cooperative Focus",
-		"cost": 1,
-		"specialistSlots":{"Governor":1},
-		"isNationalWonder": true,
-		"uniques": [
-					"Only available <after adopting [Redistribution of Means of Production(Anarchist)]>",
-					"Only available <in [Capital] cities>",
-					"Triggers a global alert upon completion",
-					"[+1 Culture, +1 Production] from ['Agricultural Improvement'] tiles [in all cities]",
-					"[+1 Culture, +1 Production] from ['Lumber Improvement'] tiles [in all cities]",
-					"[+25]% Production when constructing ['Light Industry'] buildings [in all cities]",
-					"Destroyed when the city is captured"],
 		"requiredTech": "Economics"
 	},
 	/// Special buildings
-	{
-		"name": "Light Industry Expansion",
-		"cost": 220,
-		"uniques": ["Unsellable",
-					"'Infrastructure'",
-					"Gain a free [Bakery] [in this city]",//40
-					"Gain a free [Brewery] [in this city]",//40
-					"Gain a free [Pottery Workshop] [in this city]",//40
-					"Gain a free [Civilian Blacksmith] [in this city]",//40
-					"Gain a free [Paper Maker] [in this city]"],//80
-		"requiredTech": "Apprenticeship",
-		"hurryCostModifier": -25
-	},
-	{
-		"name": "Infrastructure Expansion",
-		"cost": 340,
-		"uniques": ["Unsellable",
-					"'Infrastructure'",
-					"Gain a free [Aqueduct] [in this city]",//120
-					"Gain a free [Healer's Hut] [in this city]",//20
-					"Gain a free [Clinic] [in this city]",//100
-					"Gain a free [Granary] [in this city]",//40
-					"Gain a free [Road Network] [in this city]"],//40
-		"requiredTech": "Apprenticeship",
-		"hurryCostModifier": -25
-	},
-	{
-		"name": "Martine Expansion",
-		"cost": 365,
-		"uniques": ["Unsellable",
-					"'Marine Infrastructure'",
-					"Gain a free [Fishing Port] [in this city]",//40
-					"Gain a free [Lighthouse] [in this city]",//100
-					"Gain a free [Dry Dock] [in this city]",//85
-					"Gain a free [Trading Port] [in this city]",//120
-					"Must be next to [Coast]"],
-		"requiredTech": "Apprenticeship",
-		"hurryCostModifier": -25
-	},
-	{
-		"name": "Military Expansion",
-		"cost": 525,
-		"uniques": ["Unsellable",
-					"'Military Building'",
-					"Gain a free [Barrack] [in this city]",//40
-					"Gain a free [Military Blacksmith] [in this city]",//85
-					"Gain a free [Military Stable] [in this city]",//120
-					"Gain a free [Armour Workshop] [in this city]",//100
-					"Gain a free [Firearms Workshop] [in this city]"],//160
-		"requiredTech": "Apprenticeship",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Business Expansion",
-		"cost": 180,
-		"uniques": ["Unsellable",
-					"'Economic Building'",
-					"Gain a free [Hunter's Hut] [in this city]",//20
-					"Gain a free [Crops Market] [in this city]",//40
-					"Gain a free [Trading Post] [in this city]"],//100
-		"requiredTech": "Banking",
-		"hurryCostModifier": -25
-	},
-	{
-		"name": "Civil Expansion",
-		"cost": 195,
-		"uniques": ["Unsellable",
-					"'Infrastructure'",
-					"Gain a free [Monument] [in this city]",//20
-					"Gain a free [Town Hall] [in this city]",//40
-					"Gain a free [Library] [in this city]",//40
-					"Gain a free [Town Square] [in this city]"],//75
-		"requiredTech": "Acoustics",
-		"hurryCostModifier": 0
-	},
+
 	{
 		"name": "Nuclear Option",
 		"cost": 750,
@@ -3284,7 +3188,7 @@
 	},
 	{
 		"name": "GDR Project",
-		"cost": 500,
+		"cost": 1000,
 		"isNationalWonder": true,
 		"uniques": ["Comment [Enables you to achieve the dream of building mechas.]",
 		"Triggers a global alert upon completion",
@@ -3294,7 +3198,7 @@
 	}
 	{
 		"name": "Overwhelming Superiority",
-		"cost": 1500,
+		"cost": 2500,
 		"isNationalWonder": true,
 		"uniques": ["Hidden until [8] social policy branches have been completed", "Triggers a global alert upon build start",
 			"Triggers a Cultural Victory upon completion", "Only available <when [Policy] Victory is enabled>", "Cannot be hurried"]
@@ -3303,8 +3207,6 @@
 	{
 		"name": "United Nations",
 		"isWonder": true,
-		"culture": 1,
-		"greatPersonPoints": {"Great Merchant": 2},
 		"requiredTech": "Globalisation",
 		"uniques": ["Triggers voting for the Diplomatic Victory", "Only available <when [Diplomatic] Victory is enabled>", "Triggers a global alert upon completion"],
 		"quote": "'More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that is why we have the United Nations.' - Kofi Annan"
@@ -3342,4 +3244,169 @@
 		"name": "Future Era Start",
 		"uniques": ["Limited to [1] per Civilization","Only available <if starting in the [Future era]>","Unbuildable","Unsellable","Provides [5] [Fuel]","Provides [5] [Vehicle Parts]","Provides [5] [Weapon Parts]","Provides [5] [Standing Army Maintainance]"]
 	}
+	{
+		"name": "Failed Bourgeoisie Revolution",
+		"isNationalWonder":true,
+		"uniques": ["Consumes [1] [Revolution Oppotunity]","Unbuildable","Unsellable",
+					"Provides [2] [Noble Army Maintainance]",
+                	"Provides [2] [Horse]",
+					"[+33]% Strength <for ['Noble Army'] units>",
+					"[-33]% [Culture] [in all cities] <for [10] turns>",
+               	 	"[-33]% [Gold] [in all cities] <for [5] turns>",
+					"Triggers a global alert upon completion","Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Peaceful Bourgeoisie Revolution",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+					"Provides [1] [Standing Army Maintainance]",
+                	"Provides [1] [Weapon Parts]",
+					"[-25]% [Culture] [in all cities] <for [15] turns>",
+                	"[-10]% [Gold] [in all cities] <for [15] turns>",
+					"[-10]% Strength <for ['Noble Army'] units>",
+					"Triggers a global alert upon completion",
+					"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Chaotic Bourgeoisie Revolution",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"Provides [2] [Standing Army Maintainance]",
+                "Provides [2] [Weapon Parts]",
+                "[Revolutionaries] units gain the [Hardened] promotion",
+                "[Revolutionaries] units gain the [Shock Doctrine] promotion",
+                "[Revolutionaries] units gain the [Stewardship] promotion",
+				"[+5]% Strength <for ['Standing Army'] units>",
+				"[-10]% [Culture] [in all cities] <for [10] turns>",
+				"[-10]% [Gold] [in all cities] <for [10] turns>",
+                "Rebel units may spawn <for [8] turns>",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Violent Bourgeoisie Revolution",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"Provides [3] [Standing Army Maintainance]",
+                "Provides [3] [Weapon Parts]",
+				"[Revolutionaries] units gain the [Hardened] promotion",
+                "[Revolutionaries] units gain the [Shock Doctrine] promotion",
+                "[Revolutionaries] units gain the [Defence Doctrine] promotion",
+                "[Revolutionaries] units gain the [Stewardship] promotion",
+                "[Revolutionaries] units gain the [Resourceful Army] promotion",
+				"[+10]% Strength <for ['Standing Army'] units>",
+                "[+10]% [Culture] [in all cities]",
+				"Rebel units may spawn <for [24] turns>",
+                "[-33]% [Gold] [in all cities] <for [10] turns>",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Failed Socialist Revolution",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+					"Consumes [1] [Revolution Oppotunity]",
+					"Provides [3] [Mercenary Contract]",
+					"[+15]% Strength <for ['Mercenary Army'] units>",
+					"[+15]% Strength",
+					"[-25]% [Culture] [in all cities] <for [5] turns>",
+					"[-25]% [Culture] [in all cities] <for [10] turns>",
+               	 	"[-33]% [Gold] [in all cities] <for [5] turns>",
+					"Triggers a global alert upon completion","Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Socialist Democracy Reform",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+					"Consumes [1] [Revolution Oppotunity]",
+					"Provides [1] [Standing Army Maintainance]",
+                	"Provides [1] [Weapon Parts]",
+					"[-25]% [Culture] [in all cities] <for [15] turns>",
+                	"[-10]% [Gold] [in all cities] <for [15] turns>",
+					"[+15]% [Happiness] [in all cities]",
+					"Triggers a global alert upon completion",
+					"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Worker's Socialist Revolution",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"Provides [3] [Standing Army Maintainance]",
+                "Provides [3] [Weapon Parts]",
+				"[Red Army Troop] units gain the [Hardened] promotion",
+                "[Red Army Troop] units gain the [Firepower Doctrine] promotion",
+                "[Red Army Troop] units gain the [Barrage] promotion",
+				"[Red Army Troop] units gain the [Accuracy Doctrine] promotion",
+                "[Red Army Troop] units gain the [Stewardship] promotion",
+                "[Red Army Troop] units gain the [Centralised Command] promotion",
+                "[+1]% [Culture] from every ['Heavy Industry']",
+				"[+1]% [Culture] from every ['Light Industry']",
+				"[+10]% [Production] [in all cities]",
+				"Rebel units may spawn <for [10] turns>",
+                "[-33]% [Gold] [in all cities] <for [5] turns>",
+				"[-10]% [Food] [in all cities] <for [5] turns>",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "United Socialist Revolution",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+				"Provides [5] [Standing Army Maintainance]",
+                "Provides [5] [Weapon Parts]",
+				"[Red Army Troop] units gain the [Hardened] promotion",
+                "[Red Army Troop] units gain the [Firepower Doctrine] promotion",
+				"[Red Army Troop] units gain the [Accuracy Doctrine] promotion",
+                "[Red Army Troop] units gain the [Stewardship] promotion",
+                "[Red Army Troop] units gain the [Centralised Command] promotion",
+                "[Red Army Troop] units gain the [Resourceful Army] promotion",
+				"[Red Army Troop] units gain the [Field Medic] promotion",
+                "[+25]% [Culture] [in all cities]",
+				"[+1]% [Production] from every ['Educational Building']",
+				"[+1]% [Production] from every ['Agricultural Building']",
+				"Rebel units may spawn <for [10] turns>",
+				"[-50]% [Culture] [in all cities] <for [8] turns>",
+                "[-33]% [Gold] [in all cities] <for [8] turns>",
+				"[-10]% [Food] [in all cities] <for [8] turns>",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Failed Anarchist Revolution",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+					"Consumes [1] [Revolution Oppotunity]",
+					"Provides [3] [Mercenary Contract]",
+					"[+15]% Strength <for ['Mercenary Army'] units>",
+					"[+15]% Strength",
+					"[-25]% [Culture] [in all cities] <for [5] turns>",
+					"[-25]% [Culture] [in all cities] <for [10] turns>",
+               	 	"[-33]% [Gold] [in all cities] <for [5] turns>",
+					"Triggers a global alert upon completion","Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "The last revolution",
+		"isNationalWonder":true,
+		"uniques": ["Unbuildable","Unsellable",
+                "Provides [3] [Weapon Parts]",
+				"[+50]% growth [in all cities]",
+				
+				"Rebel units may spawn <for [15] turns>",
+                "[-50]% [Gold] [in all cities] <for [10] turns>",
+				"[-50]% [Culture] [in all cities] <for [10] turns>",
+				"[-25]% [Science] [in all cities] <for [10] turns>",
+				"[-10]% [Food] [in all cities] <for [10] turns>",
+				"Triggers a global alert upon completion",
+				"Destroyed when the city is captured"],
+		"hurryCostModifier": 0
+	},
 ]
