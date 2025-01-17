@@ -13,14 +13,14 @@
 ///General
 	{
 		"name": "Stewardship",
-		"uniques": ["[+5]% XP gained from combat","[+5] HP when healing","[+1] Movement <when fighting in [Friendly Land] tiles>"],
+		"uniques": ["[+5]% XP gained from combat","[+1] Movement <when fighting in [Friendly Land] tiles>"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 1,
 		"row": 0
 	},
 	{
 		"name": "Centralised Command",
-		"uniques": ["[Great General] is earned [+50]% faster","[+10]% Strength <when fighting in [Open terrain] tiles>","[+33]% Damage when intercepting"],
+		"uniques": ["[Great General] is earned [50]% faster","[+10]% Strength <when fighting in [Open terrain] tiles>","[+33]% Damage when intercepting"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"prerequisites": ["Stewardship"],
 		"column": 1,
@@ -555,7 +555,7 @@
 	{
 		"name": "Slinger",
 		"prerequisites": ["Primitive Arms"],
-		"uniques": ["[+20]% Strength <vs ['Dense Formation'] units> <before the [Medieval era]>","[+5]% Strength <vs ['Dense Formation'] units> <starting from the [Medieval era]>"],
+		"uniques": ["[+33]% Strength <vs ['Dense Formation'] units> <before the [Medieval era]>","[+10]% Strength <vs ['Dense Formation'] units> <starting from the [Medieval era]><before the [Renaissance era]>"],
 		"unitTypes": ["Close Combat","Ranged Combat","Scout"],
 		"column": 19,
 		"row": 3
@@ -568,7 +568,6 @@
 		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
 		"column": 19,
 		"row": 4
-
 	},
 	{
 		"name": "Classical Arms",
@@ -607,7 +606,7 @@
 	{
 		"name": "Short Bow",
 		"prerequisites": ["Classical Arms"],
-		"uniques": ["[+33]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"],
+		"uniques": ["[+25]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"],
 		"unitTypes": ["Ranged Combat","Rider"],
 		"column": 20,
 		"row": 4
@@ -634,9 +633,9 @@
 	{
 		"name": "Heavyshield",
 		"prerequisites": ["Classical Arms"],
-		"uniques": ["[+40]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Imperial era]>","[-25]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"
+		"uniques": ["[+33]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Imperial era]>","[-15]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"
 	],
-		"unitTypes": ["Close Combat","Siege"],
+		"unitTypes": ["Close Combat","Siege","Close Combat Ship"],
 		"column": 21,
 		"row": 3
 
@@ -644,8 +643,8 @@
 	{
 		"name": "Sharpnel Rounds",
 		"prerequisites": ["Classical Arms"],
-		"uniques": ["[+33]% Strength <vs [Land] units>"],
-		"unitTypes": ["Siege"],
+		"uniques": ["[+33]% Strength <vs ['Dense Fromation'] units>"],
+		"unitTypes": ["Siege","Ranged Combat Ship"],
 		"column": 22,
 		"row": 1
 
@@ -654,7 +653,7 @@
 		"name": "Flaming Rounds",
 		"prerequisites": ["Classical Arms"],
 		"uniques": ["[+33]% Strength <vs cities>"],
-		"unitTypes": ["Siege"],
+		"unitTypes": ["Siege","Ranged Combat Ship"],
 		"column": 22,
 		"row": 2
 
