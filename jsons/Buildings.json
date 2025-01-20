@@ -76,6 +76,7 @@
 	{
 		"name": "Bakery",
 		"happiness": 1,
+		"food": 1,
 		"uniques": ["'Light Industry'",
 					"[+1 Gold] from [Grain] tiles [in this city]",
 					"[+1 Gold] from [Tuber] tiles [in this city]","Only available <before discovering [Apprenticeship]>"
@@ -86,6 +87,7 @@
 	{
 		"name": "Brewery",
 		"happiness": 1,
+		"gold": 1,
 		"uniques": ["'Light Industry'",
 					"Provides [1] [Alcohol] <with [Grain]>",
 					"Provides [1] [Alcohol] <with [Grape]>",
@@ -93,7 +95,7 @@
 					"Provides [2] [Alcohol] <with [Fruit]>","Only available <before discovering [Apprenticeship]>"
 					],
 		"requiredTech": "Pottery",
-		"hurryCostModifier": 0
+		"hurryCostModifier": 5
 	},
 	{
 		"name": "Pottery Workshop",
@@ -116,9 +118,9 @@
 					"[+1 Culture] per [5] population [in this city]<in cities with between [9] and [15] [Population]>",
 					"[+1 Culture] per [8] population [in this city]<in cities with between [15] and [24] [Population]>",
 					"[+1 Culture] per [10] population [in this city]",
-					"[+1 Production] from ['Textile'] tiles [in this city]",
-					"[+1 Gold] from [Furs] tiles [in this city]",
-					"[+1 Gold] from [Silk] tiles [in this city]"],
+					"[+1 Production] from [{improved}{'Textile'}] tiles [in this city]",
+					"[+1 Gold] from [{improved}{Furs}] tiles [in this city]",
+					"[+1 Gold] from [{improved}{Silk}] tiles [in this city]"],
 		"requiredNearbyImprovedResources": ["Bovine","Caprinae","Furs","Cotton","Silk"],
 		"requiredTech": "Animal Husbandry",
 		"hurryCostModifier": 0
@@ -235,7 +237,7 @@
 		"name": "Stonehenge",
 		"isWonder": true,
 		"culture": 1,
-		"science": 1,
+		"science": 2,
 		"greatPersonPoints": {"Great Artist": 1},
 		"uniques": ["'Practice Ground'",
 					"Free [Great Prophet] appears",
@@ -510,7 +512,6 @@
 		"specialistSlots": {"Engineer": 1,"Artist": 1},
 		"uniques": ["'Light Industry'",
 					"[+1 Gold] from ['Lumber Improvement'] tiles [in this city]",
-					"[+1 Gold] from [Hard Wood] tiles [in this city]",
 					"Must have an owned ['Lumber Improvement'] within [4] tiles"],
 		"requiredTech": "Carpentry",
 		"hurryCostModifier": 10
@@ -661,7 +662,7 @@
 	},
 	{
 		"name": "Paper Maker",
-		"maintenance": 2,
+		"maintenance": 1,
 		"specialistSlots": {"Artist":1},
 		"uniques": ["'Light Industry'",
 					"[+1 Gold] from every specialist [in this city]"
@@ -671,7 +672,7 @@
 	},
 	{
 		"name": "Circus",
-		"happiness": 1,
+		"happiness": 2,
 		"specialistSlots": {"Artist": 1},
 		"uniques": ["'Entertainment Building'"],
 		"requiredBuilding": "Town Square",
@@ -681,7 +682,7 @@
 	{
 		"name": "Military Stable",
 		"maintenance": 1,
-		"uniques": ["'Military Building'",
+		"uniques": ["'Military Building'","Provides [1] [Horse]",
 					"Provides [1] [Standing Army Maintainance]",
 					"New [Mounted] units start with [10] Experience [in this city]",
 					"Destroyed when the city is captured","Only available <before discovering [Apprenticeship]>"],
@@ -693,7 +694,7 @@
 	{
 		"name": "Intergration",
 		"maintenance": 3,
-		"culture":-3,
+		"percentStatBonus":{"culture":-10},
 		"uniques": ["Only available <before adopting [Anarchism]>","Can only be built <in [Annexed] cities>","Remove extra unhappiness from annexed cities","Destroyed when the city is captured"],
 		"hurryCostModifier": 50,
 		"requiredTech": "Paper Making"
@@ -717,8 +718,7 @@
 		"maintenance": 1,
 		"happiness": 1,
 		"uniques": ["'Infrastructure'",
-					"[-5]% Unhappiness from [Population] [in this city]",
-					"[+10]% growth [in this city]"],
+					"[+15]% growth [in this city]"],
 		"requiredBuilding": "Healer's Hut",
 		"requiredTech": "Philosophy",
 		"hurryCostModifier": 25
@@ -726,6 +726,7 @@
 	{
 		"name": "Courthouse",
 		"maintenance": 1,
+		"happiness": 2,
 		"uniques": ["'Political Building'",
 					"[-10]% Unhappiness from [Population] [in this city]"],
 		"requiredBuilding":"Town Hall",
@@ -807,10 +808,10 @@
 	},
 	{
 		"name": "Statues of Molten Weapons",
+		"isWonder": true,
 		"production": 2,
 		"culture": 1,
 		"happiness": 1,
-		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 1},
 		"uniques":["[-25]% construction time for [All] improvements <when not at war>",
 					"[1] free [Worker] units appear"],
