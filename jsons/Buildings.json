@@ -1567,7 +1567,7 @@
 					"Provides [2] [Alloy] <after discovering [Industrialization]>",
 					"Consumes [3] [Metal] <after discovering [Electricity]>",
 					"Consumes [1] [Coal] <after discovering [Industrialization]> <before discovering [Electricity]>",
-					"Provides [2] [Alloy] <after discovering [Electricity]> <in cities with a [Power Grid]>"],
+					"Provides [2] [Alloy] <after discovering [Electricity]> <in cities with a [Power Grid]>","Only available <when above [0] [Metal]>","Only available <when above [0] [Coal]>"],
 		"requiredTech": "Metallurgy",
 		"hurryCostModifier": 25
 	},
@@ -1683,7 +1683,7 @@
 		"maintenance": 5,
 		"production":-1,
 		"uniques": ["'Military Building'","'Marine Infrastructure'",
-					"Provides [2] [Ship Parts]",
+					"Provides [3] [Ship Parts]",
 					"[+25]% Production when constructing [Water] units [in this city]",
 					"Consumes [2] [Alloy]",
 					"Must be next to [Coast]",
@@ -1739,7 +1739,7 @@
 		"uniques": ["'Power Building'",
 					"[+2 Production] from [Coal] tiles [in this city]",
 					"[+2 Production] [in all cities] <in cities with a [Power Grid]>",
-					"Consumes [1] [Coal]"],
+					"Consumes [1] [Coal]","Only available <when above [0] [Coal]>"],
 		"requiredTech": "Steam Power",
 		"hurryCostModifier": 25
 	},
@@ -1760,7 +1760,7 @@
 					"Provides [3] [Fuel]",
 					"Provides [1] [Industrial Chemicals]",
 					"[+3 Production] from [Natural Gas] tiles [in this city]",
-					"Consumes [1] [Natural Gas(Stored)]"],
+					"Consumes [1] [Natural Gas(Stored)]","Only available <when above [0] [Natural Gas(Stored)]>"],
 		"requiredTech": "Steam Power",
 		"requiredResource":"Natural Gas(Stored)",
 		"hurryCostModifier": 25
@@ -1921,9 +1921,8 @@
 					"[+1 Food] from ['Herd'] tiles [in this city]",
 					"[+1 Food] from ['Crops'] tiles [in this city]",
 					"[+1 Food] from [Coastal Fish] tiles [in this city]",
-					
+					"[+2 Happiness] <after discovering [Refrigeration]>",
 					"Consumes [3] [Deep Sea Fish(Stored)] <when above [3] [Deep Sea Fish(Stored)]>",
-
 					"[+15 Food, +9 Gold] <when above [0] [Deep Sea Fish(Stored)]><when number of [Deep Sea Fish(Stored)] is more than [3]>"
 					],
 		"requiredBuilding": "Civilian Factory Complex",
@@ -2107,10 +2106,9 @@
 		"science": 1,
 		"uniques": ["'Heavy Industry'",
 					"Provides [5] [Fuel]",
-					"Provides [2] [Industrial Chemicals]",
+					"Provides [1] [Industrial Chemicals]",
 					"[+3 Production] from [Oil] tiles [in this city]",
-					"Consumes [2] [Oil]"],
-		"requiredNearbyImprovedResources": ["Oil"],	
+					"Consumes [1] [Oil]","Only available <when above [0] [Oil]>"],
 		"requiredTech": "Combustion",
 		"hurryCostModifier": 25
 	},
@@ -2123,7 +2121,7 @@
 		"uniques": ["'Heavy Industry'",
 					"[+50]% Production when constructing ['Motorised'] units [in this city]",
 					"[+25]% Production when constructing ['Mechanised'] units [in this city]",
-					"Provides [1] [Vehicle Parts]"],
+					"Provides [2] [Vehicle Parts]"],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Combustion",
 		"hurryCostModifier": 25
@@ -2146,9 +2144,9 @@
 		"maintenance": 3,
 		"production":-1,
 		"uniques": ["'Military Building'",
-					"Provides [3] [Vehicle Parts]",
+					"Provides [5] [Vehicle Parts]",
 					"Provides [2] [Vehicle Parts] <after discovering [Plastics]>",
-					"Consumes [2] [Alloy]"],
+					"Consumes [2] [Alloy]","Only available <when above [0] [Alloy]>"],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Combustion",
 		"hurryCostModifier": 25
