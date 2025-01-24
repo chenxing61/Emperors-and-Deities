@@ -15,7 +15,7 @@
 		"name": "Manual Plantation",
 		"food": 1,
 		"gold": 1,
-		"turnsToBuild": 7,
+		"turnsToBuild": 10,
 		"techRequired": "Agriculture",
 		"uniques": ["'Agricultural Improvement'",
 			"[+1 Food] <after discovering [Crop Rotation]>",
@@ -276,9 +276,10 @@
 
 	{
 		"name": "Oil well",
+		"production":1,
 		"turnsToBuild": 9,
 		"techRequired": "Chemistry",
-		"uniques": ["'Extraction Improvement'","Can only be built to improve a resource", "Cannot be built on [Water] tiles", "Pillaging this improvement yields approximately [+20 Gold]"],
+		"uniques": ["'Extraction Improvement'","Can only be built to improve a resource", "Cannot be built on [Water] tiles", "Provides [1] [Natural Gas(Stored)] <in [Natural Gas] tiles>","Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "W"
 	},
 	{
