@@ -1,0 +1,92 @@
+[
+  /*
+
+      Here is a template to show what values should be filled in. 
+      Use the description at http://civdata.com/, and adjust the numbers accordingly.
+      Even then, its up to personal interpretation.
+      To generate lines with multiple parameters I used the funciton: (FirstParam + (SeccondParam - 5) / 2)
+      Note: BNW leaders are included for now.
+  {
+      "name": "Template",
+      // Stats focused personalities
+      "culture": Culture,
+      "faith": Religion,
+      "food": Growth,
+      "gold": Gold,
+      "happiness": Happiness,
+      "production": Production,
+      "science": Science,
+      // Behavour focused personalities
+      "military": Military Training,
+      "aggressive": Offensive or (10 - defensive) which ever is higher,
+      "declareWar": War,
+      "commerce": Gold + Chattiness,
+      "diplomacy": Diplomatic Balance + Friendly,
+      "loyal": Loyalty + Defense,
+      "expansion": Expansion,
+
+      "priorities": {
+          "Tradition": Culture + Wonder,
+          "Liberty": Expansion + TileImprovement,
+          "Honor": Boldness + War,
+          "Commerce": Gold + Chatiness,
+          "Patronage": CityStateCompetitiveness + CSFriendly,
+          "Piety": Faith + CS Friendly,
+          "Rationalism": Science + Spaceship,
+          "Freedom": Hapiness + Growth,
+          "Autocracy": Boldness + Military training,
+          "Order": Defensive + Production
+      },
+      "civilopediaText": [
+          {"text": "Alexander the Great, born in Macedon, was one of the most skilled generals, even more by his young age, and in only 17 years he conquered all the Greek known world."}
+      ]
+  },*/
+  {
+    "name": "Greeks, Romans, Iberians and many others",
+    "preferredVictoryType":"Diplomatic",
+    // Behavour focused personalities
+    "military": 8,
+    "aggressive": 8,
+    "declareWar": 5,
+    "commerce": 10,
+    "diplomacy": 12,
+    "loyal": 10,
+    "expansion": 12
+  },
+  {
+    "name": "Semites, Persians, Turks and many others",
+    "preferredVictoryType":"Religious",
+    // Behavour focused personalities
+    "military": 12,
+    "aggressive": 10,
+    "declareWar": 15,
+    "commerce": 18,
+    "diplomacy": 10,
+    "loyal": 8,
+    "expansion": 8
+  },
+  {
+    "name": "Han People, Yamato People and many others",
+    "preferredVictoryType":"Policy",
+    // Behavour focused personalities
+    "military": 8,
+    "aggressive": 6,
+    "declareWar": 5,
+    "commerce": 8,
+    "diplomacy": 20,
+    "loyal": 5,
+    "expansion": 15
+  },
+  {
+    "name": "Celts, Germanen, Slavs and many others",
+    "preferredVictoryType":"Domination",
+    // Behavour focused personalities
+    "military": 15,
+    "aggressive": 5,
+    "declareWar": 15,
+    "commerce": 12,
+    "diplomacy": 10,
+    "loyal": 8,
+    "expansion": 8
+  }
+]
