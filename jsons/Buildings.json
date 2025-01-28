@@ -626,7 +626,6 @@
 	{
 		"name": "National Epic",
 		"maintenance": 3,
-		"culture":-1,
 		"isNationalWonder": true,
 		"specialistSlots": {"Artist": 3},
 		"uniques": ["[-25]% Culture cost of natural border growth [in all cities]",
@@ -640,7 +639,7 @@
 	{
 		"name": "Dry Dock",
 		"maintenance": 1,
-		"production":-1,
+		"percentStatBonus":{"production":-5},
 		"uniques": ["'Military Building'","'Marine Infrastructure'",
 					"[+50]% Production when constructing [Water] units [in this city]",
 					"Destroyed when the city is captured",
@@ -739,7 +738,7 @@
 		"name": "Armory",
 		"hurryCostModifier": 25,
 		"maintenance": 2,
-		"production":-1,
+		"percentStatBonus":{"production":-5},
 		"uniques": ["'Military Building'","Provides [1] [Standing Army Maintainance]","New [Military] units start with [15] Experience [in this city]"],
 		"requiredBuilding": "Military Blacksmith",
 		"requiredTech": "Construction"
@@ -1543,7 +1542,7 @@
 	{
 		"name": "Military Port",
 		"maintenance": 3,
-		"production":-1,
+		"percentStatBonus":{"production":-10},
 		"uniques": ["'Military Building'","'Marine Infrastructure'",
 					"Provides [2] [Standing Army Maintainance]",
 					"[+25]% Production when constructing [{Military} {Water}] units [in this city]",
@@ -1681,7 +1680,7 @@
 	{
 		"name": "Naval Dockyard",
 		"maintenance": 5,
-		"production":-1,
+		"percentStatBonus":{"production":-10},
 		"uniques": ["'Military Building'","'Marine Infrastructure'",
 					"Provides [3] [Ship Parts]",
 					"[+25]% Production when constructing [Water] units [in this city]",
@@ -1793,7 +1792,7 @@
 	{
 		"name": "Military Factory Complex",
 		"maintenance": 10,
-		"production": -1,
+		"percentStatBonus":{"production":-5},
 		"uniques": ["'Military Building'",
 					"Unsellable",
 					"Provides [2] [Standing Army Maintainance]",
@@ -1891,18 +1890,33 @@
 		"uniques": ["'Light Industry'",
 					"[+1 Gold] from ['Lumber Improvement'] tiles [in this city]",
 					"[+1 Gold] from [Hard Wood] tiles [in this city]",
-					"[+4 Production, +2 Gold, +2 Science] [in this city] <with [Electronic Parts]>",
-					"Consumes [1] [Electronic Parts] <with [Electronic Parts]>"],
+					],
 		"requiredBuilding": "Civilian Factory Complex",	
 		"requiredTech": "Replaceable Parts",
 		"hurryCostModifier": 10
 	},
-	
+	{
+		"name": "Electrical Appliance Factory",
+		"maintenance": 3,
+		"happiness": 2,
+		"production":4,
+		"science":2,
+		"specialistSlots": {"Engineer": 2},
+		"uniques": ["'High Tech Industry'",
+					"Consumes [1] [Electronic Parts]"],
+		"requiredBuilding": "Furniture Factory",	
+		"requiredTech": "Replaceable Parts",
+		"hurryCostModifier": 10
+	},
 	{
 		"name": "Weapon Parts Factory",
 		"maintenance": 2,
 		"percentStatBonus":{"production":-5},
-		"uniques": ["'Military Building'","Provides [5] [Weapon Parts]","Consumes [1] [Alloy]","[+25]% Production when constructing ['Firearms'] units [in this city]"],
+		"uniques": ["'Military Building'",
+		"Provides [5] [Weapon Parts]",
+		"[+25]% Production when constructing ['Firearms'] units [in this city]",
+		"Consumes [1] [Alloy]"
+		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Replaceable Parts",
 		"hurryCostModifier": 25
@@ -1911,7 +1925,8 @@
 		"name": "Technical School",
 		"maintenance": 3,
 		"specialistSlots": {"Engineer": 1,"Scientist":1,"Artist":1,"Merchant":1},
-		"uniques": ["'Educational Building'","[+1 Production] from all ['Educational Building'] buildings <in this city>"],
+		"uniques": ["'Educational Building'",
+					"[+1 Production] from all ['Educational Building'] buildings <in this city>"],
 		"requiredTech": "Mass Production"
 	},
 	{
@@ -1947,7 +1962,7 @@
 		"happiness": 1,
 		"specialistSlots": {"Engineer":1},
 		"percentStatBonus":{"culture":5,"science":10},
-		"uniques": ["'Cultural Building'","'Light Industry'",
+		"uniques": ["'Light Industry'",
 					"Only available <in cities without a [Printing House]>",
 					"Destroyed when the city is captured"],
 		"requiredBuilding": "Civilian Factory Complex",
@@ -1959,7 +1974,8 @@
 		"maintenance": 5,
 		"specialistSlots": {"Scientist": 1},
 		"percentStatBonus":{"science":25},
-		"uniques": ["'Research Building'","[Great Scientist] is earned [+5]% faster"],
+		"uniques": ["'Research Building'",
+					"[Great Scientist] is earned [+5]% faster"],
 		"requiredBuilding":"University",
 		"requiredTech": "Telegram"
 	},
@@ -2112,7 +2128,6 @@
 		"requiredTech": "Combustion",
 		"hurryCostModifier": 25
 	},
-
 	{
 		"name": "Car Factory",
 		"maintenance": 8,
@@ -2142,7 +2157,7 @@
 	{
 		"name": "Military Vehicle Factory",
 		"maintenance": 3,
-		"production":-1,
+		"percentStatBonus":{"production":-10},
 		"uniques": ["'Military Building'",
 					"Provides [5] [Vehicle Parts]",
 					"Provides [2] [Vehicle Parts] <after discovering [Plastics]>",
@@ -2212,16 +2227,18 @@
 		"name": "Stadium",
 		"maintenance": 3,
 		"happiness": 3,
-		"uniques": ["'Entertainment Building'","[-5]% Unhappiness from [Population] [in this city]"],
+		"uniques": ["'Entertainment Building'",
+					"[-5]% Unhappiness from [Population] [in this city]"],
 		"requiredTech": "Radio",
 		"hurryCostModifier": 25
 	},
 	{
 		"name": "Aircraft Factory",
 		"maintenance": 3,
-		"production":-1,
-		"science":-1,
-		"uniques": ["'Military Building'","Provides [2] [Aircraft Parts]","Consumes [2] [Aluminum]"],
+		"percentStatBonus":{"production":-10},
+		"uniques": ["'Military Building'",
+					"Provides [3] [Aircraft Parts]",
+					"Consumes [2] [Aluminum]"],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Flight",
 		"hurryCostModifier": 25
@@ -2315,7 +2332,6 @@
 		"requiredTech": "Pharmaceuticals",
 		"hurryCostModifier": 0
 	},
-
 	{
 		"name": "Bio Lab",
 		"maintenance": 10,

@@ -147,12 +147,14 @@
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": ["Ocean"],
 		"food": 1,
+		"revealedBy":"Compass",
 		"improvedBy": ["Deep Sea Fishing Boats"],
 		"uniques": ["Generated on every [18] tiles <in [{Featureless} {Ocean}] tiles>"]
 	},
 	{
 		"name": "Deep Sea Fish(Stored)",
 		"resourceType": "Strategic",
+		"revealedBy":"Compass",
 		"uniques": ["Stockpiled"]
 	},
 	{
@@ -169,6 +171,7 @@
 	{
 		"name": "Natural Gas(Stored)",
 		"resourceType": "Strategic",
+		"revealedBy":"Geology",
 		"uniques": ["Stockpiled"]
 	},
 	// Strategic resources
@@ -448,7 +451,7 @@
 		"food": 1,
 		"gold": 2,
 		"improvedBy": ["Coast Fishing Boats","Aquaculture"],
-		"uniques": [
+		"uniques": ["Generated on every [25] tiles <in [Ocean] tiles>",
 					"Generated with weight [30] <in [Tundra] Regions>",
 					"Generated with weight [5] <in [Jungle] Regions>",
 					"Generated with weight [10] <in [Forest] Regions>",
@@ -465,7 +468,7 @@
 		"terrainsCanBeFoundOn": ["Coast"],
 		"gold": 3,
 		"improvedBy": ["Coast Fishing Boats","Aquaculture"],
-		"uniques": [
+		"uniques": ["Generated on every [25] tiles <in [Ocean] tiles>",
 					"Generated with weight [20] <in [Jungle] Regions>",
 					"Generated with weight [10] <in [Forest] Regions>",
 					"Generated with weight [5] <in [Desert] Regions>",
@@ -482,6 +485,7 @@
 		"gold": 3,
 		"improvedBy": ["Coast Fishing Boats","Deep Sea Fishing Boats"],
 		"uniques": [
+					"Generated on every [25] tiles <in [Ocean] tiles>",
 					"Generated with weight [20] <in [Jungle] Regions>",
 					"Generated with weight [5] <in [Desert] Regions>",			
 					"Generated with weight [20] <in [Hybrid] Regions>",
@@ -628,6 +632,7 @@
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Forest","Marsh","Jungle"],
 		"gold": 3,
+		"revealedBy":"Trapping",
 		"improvedBy": ["Camp"],
 		"improvementStats": {"gold": 1},
 		"uniques": ["'Crops'","Generated with weight [5] <in [Jungle] Regions>",
@@ -645,6 +650,7 @@
 		"gold": 2,
 		"production":1,
 		"improvedBy": ["Camp"],
+		"revealedBy":"Trapping",
 		"improvementStats": {"food": 1},
 		"uniques": ["'Crops'","Generated with weight [5] <in [Jungle] Regions>",
 					"Generated with weight [35] <in [Forest] Regions>",
