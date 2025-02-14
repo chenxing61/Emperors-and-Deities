@@ -221,7 +221,7 @@
 	{
 		"name": "Industrial Complex Expansion",
 		"cost": 600,
-		"uniques": ["Unsellable","'Expansion'","'Heavy Industry'",
+		"uniques": ["Unsellable","'Expansion'",
 					"Comment [Only when all buildings in this package have not been built, this package is available.]",
 					"Only available <in cities without a [Civilian Factory Complex]>",
 					"Only available <in cities without a [Military Factory Complex]>",
@@ -234,7 +234,7 @@
 	{
 		"name": "Light Industry Modernisation",
 		"cost": 810,
-		"uniques": ["Unsellable","'Modernisation'","'Light Industry'",
+		"uniques": ["Unsellable","'Modernisation'",
 					"Comment [Only when all buildings in this package have not been built, this package is available.]",
 					"Only available <in cities without a [Textile Factory]>",
 					"Only available <in cities without a [Furniture Factory]>",
@@ -243,6 +243,67 @@
 					"Gain a free [Furniture Factory] [in this city]",//300
 					"Gain a free [Tools Factory] [in this city]"],//300
 		"requiredTech": "Replaceable Parts",
+		"requiredBuilding":"Civilian Factory Complex",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Agriculture Modernisation",
+		"cost": 810,
+		"uniques": ["Unsellable","'Modernisation'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Fertilizer Factory]>",
+					"Only available <in cities without a [Agricultural Machinery Factory]>",
+					"Gain a free [Fertilizer Factory] [in this city]",//300
+					"Gain a free [Agricultural Machinery Factory] [in this city]"],//300
+		"requiredTech": "Replaceable Parts",
+		"requiredBuilding":"Civilian Factory Complex",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Food Industry Modernisation",
+		"cost": 1500,
+		"uniques": ["Unsellable","'Modernisation'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Fertilizer Factory]>",
+					"Only available <in cities without a [Agricultural Machinery Factory]>",
+					"Only available <in cities without a [Cannery]>",
+					"Only available <in cities without a [Soda Factory]>",
+					"Gain a free [Fertilizer Factory] [in this city]",//300
+					"Gain a free [Agricultural Machinery Factory] [in this city]",//400
+					"Gain a free [Cannery] [in this city]",//400
+					"Gain a free [Soda Factory] [in this city]"],//400
+		"requiredTech": "Replaceable Parts",
+		"requiredBuilding":"Civilian Factory Complex",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Heavy Industry Modernisation",
+		"cost": 800,
+		"uniques": ["Unsellable","'Modernisation'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Machine Tool Factory]>",
+					"Only available <in cities without a [Cement Work]>",
+					"Gain a free [Machine Tool Factory] [in this city]",//300
+					"Gain a free [Cement Work] [in this city]",//400
+					"[+25]% Production when constructing [{'Heavy Industry'}{Industrial era}] buildings [in this city]",
+					"[+25]% Production when constructing [{'Heavy Industry'}{Modern era}] buildings [in this city]"],
+		"requiredTech": "Concrete",
+		"requiredBuilding":"Civilian Factory Complex",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Research Expansion",
+		"cost": 800,
+		"uniques": ["Unsellable","'Expansion'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Physic Lab]>",
+					"Only available <in cities without a [Chemistry Lab]>",
+					"Only available <in cities without a [Bio Lab]>",
+					"Gain a free [Physic Lab] [in this city]",//160
+					"Gain a free [Chemistry Lab] [in this city]",//160
+					"Gain a free [Bio Lab] [in this city]"],//160
+		"requiredTech": "Pharmaceuticals",
+		"requiredBuilding":"University",
 		"hurryCostModifier": -25
 	},
 	///Line 0
