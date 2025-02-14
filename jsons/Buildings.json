@@ -247,19 +247,6 @@
 		"hurryCostModifier": -25
 	},
 	{
-		"name": "Agriculture Modernisation",
-		"cost": 810,
-		"uniques": ["Unsellable","'Modernisation'",
-					"Comment [Only when all buildings in this package have not been built, this package is available.]",
-					"Only available <in cities without a [Fertilizer Factory]>",
-					"Only available <in cities without a [Agricultural Machinery Factory]>",
-					"Gain a free [Fertilizer Factory] [in this city]",//300
-					"Gain a free [Agricultural Machinery Factory] [in this city]"],//300
-		"requiredTech": "Replaceable Parts",
-		"requiredBuilding":"Civilian Factory Complex",
-		"hurryCostModifier": -25
-	},
-	{
 		"name": "Food Industry Modernisation",
 		"cost": 1500,
 		"uniques": ["Unsellable","'Modernisation'",
@@ -1895,7 +1882,7 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Police station",
+		"name": "Police Station",
 		"maintenance": 3,
 		"uniques": ["'Political Building'",
 					"[-10]% Unhappiness from [Population] [in this city]","[-25]% enemy spy effectiveness [in this city]"],
@@ -2343,7 +2330,7 @@
 					"[+1]% [Gold] from Trade Routes",
 					"[+5]% growth [in all cities]",
 					"[-5]% maintenance cost for buildings [in this city]",
-					"Only available <in all cities connected to capital>"
+					"Only available <in cities connected to the capital>"
 					],
 		"requiredTech": "Railroads",
 		"hurryCostModifier": 10
