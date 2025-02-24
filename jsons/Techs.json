@@ -253,7 +253,7 @@
 		"techs": [
 
 			{
-				"name": "Ship Making",
+				"name": "Shipbuilding",
 				"row": 2,
 				"prerequisites": ["Optics","Construction"],
 				"quote": "'I cannot imagine any condition which would cause a ship to founder , Modern shipbuilding has gone beyond that.'- Capt. E.J. Smith, RMS Titanic"
@@ -296,7 +296,7 @@
 			{
 				"name": "Compass",
 				"row": 2,
-				"prerequisites": ["Ship Making"],
+				"prerequisites": ["Shipbuilding"],
 				"quote": "'I find the great thing in this world is not so much where we stand, as in what direction we are moving.' - Oliver Wendell Holmes"
 			},
 			{
@@ -603,7 +603,7 @@
 		"wonderCost": 750,
 		"techs": [
 			{
-				"name": "Advanced Ship Making",
+				"name": "Advanced Shipbuilding",
 				"row": 2,
 				"prerequisites": ["Industrialization","Ship Armour"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
@@ -682,7 +682,7 @@
 			{
 				"name": "Ballistics",
 				"row": 10,
-				"prerequisites": ["Dynamite","Advanced Ship Making"],
+				"prerequisites": ["Dynamite","Advanced Shipbuilding"],
 				"quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"
 			}
 		]
@@ -850,7 +850,7 @@
 				"quote": "'Haters are just confused admirers.' - Justin Bieber"
 			},
 			{
-				"name": "Robotic",
+				"name": "Robotics",
 				"row": 7,
 				"prerequisites": ["Stealth","Advanced Ballistics"],
 				"uniques":["Comment [Increases the Production of Electronic Parts and Microchips]"],
@@ -899,7 +899,7 @@
 			{
 				"name": "3D Printers",
 				"row": 7,
-				"prerequisites": ["Robotic","Internet"],
+				"prerequisites": ["Robotics","Internet"],
 				"quote": "'How has anyone not spoke anything about 3D printers yet?' - Mod author"
 			},
 			{
@@ -911,7 +911,7 @@
 			{
 				"name": "Exoskeleton",
 				"row": 9,
-				"prerequisites": ["Robotic","Lasers"],
+				"prerequisites": ["Robotics","Lasers"],
 				"quote": "'Bugs never bug my head. They are amazing. It is the activities of humans which actually bug me all the time.' - Munia Khan"
 			}
 		]

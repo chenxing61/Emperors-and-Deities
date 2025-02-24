@@ -3,5 +3,6 @@
 
  The Mod is WIP so civs dont have their unique features currently and late game(info age) kinda sucks.
 
- Credit to buckeeter aka Wadaling for making transitional vector icons and tile sets.
+ Credit to buckeeter aka Wadaling for making full vector icons and tile sets.
+ EmperorPenguin for helping with proofreading 
  

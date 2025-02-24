@@ -63,7 +63,7 @@
 		"unitType": "Civil Ship",
 		"movement": 2,
 		"uniques": ["'Galley'","Cannot enter ocean tiles",
-					"[+1] Movement <after discovering [Ship Making]>",
+					"[+1] Movement <after discovering [Shipbuilding]>",
 					"Can build [Water] improvements on tiles",
 					"Automation is a primary action"],
 		"upgradesTo":"Modern Work Ship",
@@ -81,7 +81,7 @@
 		"promotions": ["The Standing Army"],
 		"upgradesTo":"Heavy Galley Fleet",
 		"requiredTech": "Sailing",
-		"obsoleteTech": "Ship Making",
+		"obsoleteTech": "Shipbuilding",
 		"attackSound": "arrow"
 	},
 	{
@@ -175,7 +175,7 @@
 		"cost": 60,
 		"movement": 4,
 		"strength": 12,
-		"uniques": ["'Standing Army'","'Sailing Ship'","'Dense Formation'","'Siege Weapons'","[+25]% Strength <after discovering [Ship Making]>","[This Unit] takes [15] damage <upon ending a turn in a [Ocean] tile>","Never appears as a Barbarian unit"],
+		"uniques": ["'Standing Army'","'Sailing Ship'","'Dense Formation'","'Siege Weapons'","[+25]% Strength <after discovering [Shipbuilding]>","[This Unit] takes [15] damage <upon ending a turn in a [Ocean] tile>","Never appears as a Barbarian unit"],
 		"promotions": ["The Standing Army"],
 		"requiredTech": "Astronomy",
 		"obsoleteTech": "Machinery",
@@ -411,7 +411,7 @@
 		"strength": 24,
 		"uniques": ["'Standing Army'","'Galley'","'Dense Formation'","'Siege Weapons'","Cannot enter ocean tiles","Never appears as a Barbarian unit"],
 		"promotions": ["The Standing Army"],
-		"requiredTech": "Ship Making",
+		"requiredTech": "Shipbuilding",
 		"obsoleteTech": "Monocular",
 		"upgradesTo":"Cannon Galley Fleet",
 		"requiredResource":"Standing Army Maintainance",
@@ -425,7 +425,7 @@
 		"strength": 18,
 		"uniques": ["Can transform to [Three-masted Ship] <removing the [Mercenary Habit] promotion/status><removing the [Merchant] promotion/status><after discovering [Monocular]>","'Mercenary Army'","'Sailing Ship'","'Dense Formation'","'Siege Weapons'","[This Unit] takes [15] damage <upon ending a turn in a [Ocean] tile>","Never appears as a Barbarian unit"],
 		"promotions": ["Mercenary Habit","Merchant"],
-		"requiredTech": "Ship Making",
+		"requiredTech": "Shipbuilding",
 		"obsoleteTech": "Monocular",
 		"requiredResource":"Mercenary Contract",
 		"attackSound": "throw"
@@ -581,7 +581,7 @@
 		"uniques": ["'Levy Army'","'Sailing Ship'","'Skirmishers'","'Firearms'","[This Unit] takes [10] damage <upon ending a turn in a [Ocean] tile>","Never appears as a Barbarian unit"],
 		"promotions": ["The Levy Army","Skirmisher Training"],
 		"requiredTech": "Machinery",
-		"obsoleteTech": "Advanced Ship Making",
+		"obsoleteTech": "Advanced Shipbuilding",
 		"attackSound": "cannon"
 	},
 	{
@@ -743,7 +743,7 @@
 		"uniques": ["Consumes [1] [Weapon Parts]","'Standing Army'","'Galley'","'Dense Formation'","'Firearms'","Cannot enter ocean tiles","Never appears as a Barbarian unit"],
 		"promotions": ["The Standing Army"],
 		"requiredTech": "Monocular",
-		"obsoleteTech": "Advanced Ship Making",
+		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo":"Torpedo Boat Flotilla",
 		"requiredResource":"Standing Army Maintainance",
 		"attackSound": "cannon"
@@ -860,7 +860,7 @@
 		"uniques": ["Consumes [2] [Weapon Parts]","'Standing Army'","'Sailing Ship'","'Dense Formation'","'Firearms'","Can see invisible [Barbaric] units","Never appears as a Barbarian unit"],
 		"promotions": ["The Standing Army"],
 		"requiredTech": "Navigation",
-		"obsoleteTech": "Advanced Ship Making",
+		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo":"Battleship Fleet",
 		"requiredResource":"Standing Army Maintainance",
 		"attackSound": "cannon"
@@ -947,7 +947,7 @@
 		"uniques": ["Consumes [1] [Coal]","Consumes [1] [Ship Parts]","'Standing Army'","'Engine Ship'","'Dense Formation'","'Firearms'","Can see invisible [Barbaric] units","Never appears as a Barbarian unit"],
 		"promotions": ["The Standing Army"],
 		"requiredTech": "Ship Armour",
-		"obsoleteTech": "Advanced Ship Making",
+		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo":"Battleship Fleet",
 		"requiredResource":"Standing Army Maintainance",
 		"attackSound": "cannon"
@@ -1001,7 +1001,7 @@
 					"Can build [Water] improvements on tiles",
 					"Automation is a primary action"],
 		"requiredBuilding": "Port",
-		"requiredTech": "Advanced Ship Making",
+		"requiredTech": "Advanced Shipbuilding",
 		"hurryCostModifier": 10
 	},
 	{
@@ -1012,7 +1012,7 @@
 		"strength": 68,
 		"uniques": ["Consumes [1] [Weapon Parts]","'Standing Army'","'Infantry'","'Dense Formation'","'Firearms'","Never appears as a Barbarian unit"],
 		"promotions":["The Standing Army","Marine Training"],
-		"requiredTech": "Advanced Ship Making",
+		"requiredTech": "Advanced Shipbuilding",
 		"obsoleteTech": "Combined Arms",
 		"requiredResource":"Standing Army Maintainance",
 		"attackSound": "shot"
@@ -1023,7 +1023,7 @@
 		"movement": 5,
 		"strength": 53,
 		"cost": 170,
-		"requiredTech": "Advanced Ship Making",
+		"requiredTech": "Advanced Shipbuilding",
 		"requiredResource":"Standing Army Maintainance",
 		"uniques": ["Consumes [1] [Ship Parts]","'Firearms'","'Dense Formation'","'Engine Ship'","'Standing Army'","Cannot enter ocean tiles","Never appears as a Barbarian unit"],
 		"promotions": ["The Standing Army"],
@@ -1039,7 +1039,7 @@
 		"uniques": ["Consumes [1] [Ship Parts]","Consumes [1] [Fuel]","'Standing Army'","'Engine Ship'","'Skirmishers'","'Firearms'","Can only attack [Water] tiles","[+50]% Strength <when attacking>","[-25]% Strength <when defending>","Invisible to non-adjacent units","Never appears as a Barbarian unit"],
 		"promotions": ["The Standing Army"],
 		"requiredBuilding": "Military Port",
-		"requiredTech": "Advanced Ship Making",
+		"requiredTech": "Advanced Shipbuilding",
 		"upgradesTo":"Nuclear Submarines",
 		"requiredResource":"Standing Army Maintainance",
 		"attackSound": "torpedo"
@@ -1053,7 +1053,7 @@
 		"uniques": ["Consumes [1] [Fuel]","Consumes [1] [Ship Parts]","'Standing Army'","'Engine Ship'","'Dense Formation'","'Firearms'", "Can only attack [Water] tiles","[+15]% Strength <when defending>","Can see invisible [Water] units","Never appears as a Barbarian unit"],
 		"promotions": ["The Standing Army"],
 		"requiredBuilding": "Military Port",
-		"requiredTech": "Advanced Ship Making",
+		"requiredTech": "Advanced Shipbuilding",
 		"requiredResource":"Standing Army Maintainance",
 		"attackSound": "shipguns"
 	},
@@ -1067,7 +1067,7 @@
 		"uniques": ["Can upgrade to [Missile Crusier] <after discovering [Rocketry]>","Consumes [1] [Fuel]","Consumes [1] [Ship Parts]","'Standing Army'","'Engine Ship'","'Dense Formation'","'Firearms'","[+30]% Strength <vs [Close Combat Ship] units>","Never appears as a Barbarian unit"],
 		"promotions": ["The Standing Army"],
 		"requiredBuilding": "Military Port",
-		"requiredTech": "Advanced Ship Making",
+		"requiredTech": "Advanced Shipbuilding",
 		"upgradesTo":"Nuclear Battleship Fleet",
 		"requiredResource":"Standing Army Maintainance",
 		"attackSound": "shipguns"
@@ -1727,7 +1727,7 @@
 		"uniques": ["Only available <if [GDR Project] is constructed>","Consumes [3] [Vehicle Parts]","Consumes [1] [Uranium]","[+100]% maintenance costs","Limited to [1] per Civilization","'Standing Army'","'Mechanised'","'Giants'","'Firearms'","'Wonder Weapons'","Can move after attacking","Never appears as a Barbarian unit"],
 		"promotions":["The Standing Army"],
 		"requiredResource":"Standing Army Maintainance",
-		"requiredTech": "Robotic",
+		"requiredTech": "Robotics",
 		"attackSound": "gdrAttack"
 	},
 	{
