@@ -3,6 +3,7 @@
 
  The Mod is WIP so civs dont have their unique features currently and late game(info age) kinda sucks.
 
- Credit to buckeeter aka Wadaling for making full vector icons and tile sets.
- EmperorPenguin for helping with proofreading 
- 
+ Credit to 
+ Buckeeter aka Wadaling for making full vector icons and tile sets.
+ EmperorPenguin for help with proofreading 
+ FastDoubloon115_ for help with playtesting
