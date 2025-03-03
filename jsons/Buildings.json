@@ -314,6 +314,17 @@
 		"hurryCostModifier": 0
 	},
 	{
+		"name": "Qanat",
+		"uniqueTo":"Central and West Asia",
+		"replaces":"Well",
+		"food": 2,
+		"uniques": ["'Agricultural Building'",
+					"[+5]% growth [in this city]",
+					"Must not be on [River]"],
+		"requiredTech": "Agriculture",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Healer's Hut",
 		"happiness": 1,
 		"uniques": ["'Infrastructure'",
@@ -344,6 +355,21 @@
 		"hurryCostModifier": 5
 	},
 	{
+		"name": "Emporion",
+		"uniqueTo":"Mediterranean",
+		"replaces":"Fishing Port",
+		"food": 1,
+		"uniques": ["'Marine Infrastructure'",
+					"Connects trade routes over water",
+					"[+1 Food] from [Coast] tiles [in this city]",
+					"Consumes [1] [Deep Sea Fish(Stored)] <when above [1] [Deep Sea Fish(Stored)]>",
+					"[+5 Food, +3 Gold] <when above [1] [Deep Sea Fish(Stored)]>",
+					"Comment [When will we be able to get those big fish?]",
+					"Must be next to [Coast]"],
+		"requiredTech": "Sailing",
+		"hurryCostModifier": 5
+	},
+	{
 		"name": "Granary",
 		"maintenance": 1,
 		"food": 2,
@@ -352,6 +378,23 @@
 			"[+1 Food] from [Fruit] tiles [in this city]",
 			"[+1 Food] from [Grain] tiles [in this city]",
 			"[+1 Food] from [Tuber] tiles [in this city]"],
+		"requiredTech":"Pottery",
+		"hurryCostModifier": 5
+	},
+	{
+		"name": "Wei Ji",
+		"uniqueTo":"East Asia",
+		"replaces":"Granary",
+		"maintenance": 1,
+		"food": 2,
+		"production":1,
+		"cityHealth":5,
+		"uniques": [
+			"'Agricultural Building'",
+			"[+1 Food] from [Fruit] tiles [in this city]",
+			"[+1 Food] from [Grain] tiles [in this city]",
+			"[+1 Food] from [Tuber] tiles [in this city]"
+			],
 		"requiredTech":"Pottery",
 		"hurryCostModifier": 5
 	},
@@ -422,6 +465,7 @@
 	{
 		"name": "Ancestral Temple",
 		"isWonder": true,
+		"faith": 1,
 		"culture": 1,
 		"happiness": 2,
 		"greatPersonPoints": {"Great General": 1},
@@ -435,8 +479,9 @@
 	{
 		"name": "Complex of Totems",
 		"isWonder": true,
-		"culture": 2,
-		"happiness": 1,
+		"faith": 1,
+		"culture": 1,
+		"happiness": 2,
 		"greatPersonPoints": {"Great Artist": 1},
         "uniques": ["'Organise Place'",
 					"[+1 Faith] per [3] population [in all cities]",
@@ -460,13 +505,14 @@
 	{
 		"name": "Temple of the Hunting God",
 		"isWonder": true,
+		"food":1,
 		"culture": 1,
 		"happiness": 1,
 		"gold":2,
 		"greatPersonPoints": {"Great General": 1},
         "uniques": ["'Practice Ground'",
 					"[+1 Food] from all [Hunter's Hut] buildings", 
-					"[+10]% Production when constructing [Ranged Combat] units [in all cities]",
+					"[+5]% Production when constructing [Ranged Combat] units [in all cities]",
 					"[+10]% Production when constructing ['Skirmishers'] units [in all cities]",
 					"Only available <after adopting [Hunting Tradition]>"],
 		"requiredTech": "Trapping",
