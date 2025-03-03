@@ -98,6 +98,21 @@
 		"attackSound": "nonmetalhit"
 	},
 	{
+		"name": "Warband",
+		"unitType": "Close Combat",
+		"uniqueTo":"Europa",
+		"replaces":"Brute Warrior",
+		"cost": 45,
+		"movement": 2,
+		"strength": 9,
+		"uniques": ["Limited to [3] per Civilization","Can transform to [Early Swordsman] <after discovering [Bronze Working]><removing the [The Levy Army] promotion/status><costs [1] [metal]>","'Levy Army'","'Infantry'","'Dense Formation'","'Edged Weapons'","Never appears as a Barbarian unit"],
+		"promotions":["The Levy Army","Stewardship"],
+		"requiredTech": "Copper Working",
+		"obsoleteTech": "Iron Working",
+		"upgradesTo":"Spearman",
+		"attackSound": "nonmetalhit"
+	},
+	{
 		"name": "Chariot",
 		"unitType": "Assault",
 		"cost": 65,
@@ -112,9 +127,24 @@
 		"attackSound": "horse"
 	},
 	{
+		"name": "War Cart",
+		"uniqueTo":"Central and West Asia",
+		"unitType": "Assault",
+		"cost": 60,
+		"movement": 3,
+		"strength": 13,
+		"upgradesTo":"Cataphract", 
+		"requiredTech": "Animal Husbandry",
+		"obsoleteTech": "Stirrup",
+		"requiredResource":"Standing Army Maintainance",
+		"uniques": ["'Standing Army'","'Mounted'","'Dense Formation'","'Edged Weapons'","[-33]% Strength <when defending>","[-33]% Strength <vs cities> <when attacking>","Never appears as a Barbarian unit"],
+		"promotions":["The Standing Army"],
+		"attackSound": "nonmetalhit"
+	},
+	{
 		"name": "Noble Chariot",
 		"unitType": "Assault",
-		"cost": 65,
+		"cost": 70,
 		"movement": 3,
 		"strength": 18,
 		"upgradesTo":"Cataphract", 
@@ -123,6 +153,22 @@
 		"requiredResource":"Noble Army Maintainance",
 		"uniques": ["Consumes [1] [Horse]","'Noble Army'","'Mounted'","'Dense Formation'","'Edged Weapons'","[-20]% Strength <when defending>","[-33]% Strength <vs cities> <when attacking>","Never appears as a Barbarian unit"],
 		"promotions":["The Noble Army"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Gaulish Karros",
+		"uniqueTo":"Europa",
+		"replaces":"Noble Chariot",
+		"unitType": "Assault",
+		"cost": 65,
+		"movement": 3,
+		"strength": 18,
+		"upgradesTo":"Cataphract", 
+		"requiredTech": "Animal Husbandry",
+		"obsoleteTech": "Stirrup",
+		"requiredResource":"Noble Army Maintainance",
+		"uniques": ["Consumes [1] [Horse]","'Noble Army'","'Mounted'","'Dense Formation'","'Edged Weapons'","[-20]% Strength <when defending>","[-20]% Strength <vs cities> <when attacking>","Never appears as a Barbarian unit"],
+		"promotions":["The Noble Army","Assault Doctrine"],
 		"attackSound": "horse"
 	},
 ///Line 2
@@ -140,7 +186,36 @@
 		"requiredResource":"Standing Army Maintainance",
 		"attackSound": "metalhit"
 	},
-
+	{
+		"name": "Gong Shi Colonizer",
+		"uniqueTo":"East Asia",
+		"unitType": "Close Combat",
+		"cost": 70,
+		"movement": 2,
+		"strength": 14,
+		"uniques": ["Only available <after adopting [Early Colonization]>","'Noble Army'","'Infantry'","'Dense Formation'","'Edged Weapons'","[+25]% Strength <after discovering [Armorments]>","[+50]% Strength <after discovering [Tactics]>","Founds a new puppet city <by consuming this unit>","Never appears as a Barbarian unit"],
+		"promotions":["The Noble Army"],
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Armorments",
+		"requiredResource":"Noble Army Maintainance",
+		"attackSound":"metalhit"
+	},
+	{
+		"name": "Hoplite",
+		"uniqueTo":"Mediterranean",
+		"replaces":"Early Swordsman",
+		"unitType": "Close Combat",
+		"cost": 43,
+		"movement": 2,
+		"strength": 16,
+		"uniques": ["'Standing Army'","'Infantry'","'Dense Formation'","'Edged Weapons'","Never appears as a Barbarian unit"],
+		"promotions":["The Standing Army","Intensive Doctrine"],
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Armorments",
+		"upgradesTo":"Swordsman",
+		"requiredResource":"Standing Army Maintainance",
+		"attackSound": "metalhit"
+	},
 ///Line 3
 	{
 		"name": "Adventurer",
@@ -180,6 +255,40 @@
 		"requiredTech": "Astronomy",
 		"obsoleteTech": "Machinery",
 		"upgradesTo":"Three-masted Ship",
+		"requiredResource":"Standing Army Maintainance",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Long Boat Fleet",
+		"uniqueTo":"Europa",
+		"replaces":"Sailing Ships",
+		"unitType": "Close Combat Ship",
+		"cost": 60,
+		"movement": 4,
+		"strength": 15,
+		"uniques": ["'Standing Army'","'Sailing Ship'","'Dense Formation'","'Siege Weapons'","[+25]% Strength <after discovering [Shipbuilding]>","[This Unit] takes [10] damage <upon ending a turn in a [Ocean] tile>","Never appears as a Barbarian unit"],
+		"promotions": ["The Standing Army","Sailing Doctrine"],
+		"requiredTech": "Astronomy",
+		"obsoleteTech": "Machinery",
+		"upgradesTo":"Three-masted Ship",
+		"requiredResource":"Standing Army Maintainance",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Early Crossbowman",
+		"uniqueTo":"East Asia",
+		"replaces":"Archer",
+		"unitType": "Ranged Combat",
+		"cost": 60,
+		"movement": 2,
+		"strength": 14,
+		"rangedStrength": 18,
+		"range":1,
+		"uniques": ["'Standing Army'","'Infantry'","'Edged Weapons'","'Dense Formation'","Never appears as a Barbarian unit"],
+		"promotions":["The Standing Army","Crossbow"],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Engineering",
+		"upgradesTo": "Crossbowman",
 		"requiredResource":"Standing Army Maintainance",
 		"attackSound": "arrow"
 	},
@@ -316,6 +425,7 @@
 		"upgradesTo":"Pike and Shot",
 		"attackSound":"metalhit"
 	},
+
 	{
 		"name": "Garrison",
 		"unitType": "Close Combat",
@@ -403,6 +513,22 @@
 		"attackSound": "metalhit"
 	},
 ///Line 6
+	{
+		"name": "Lou Chuan Fleet",
+		"uniqueTo":"East Asia",
+		"replaces":"Heavy Galley Fleet",
+		"unitType": "Close Combat Ship",
+		"cost": 110,
+		"movement": 3,
+		"strength": 26,
+		"uniques": ["'Standing Army'","'Galley'","'Dense Formation'","'Siege Weapons'","Cannot enter ocean tiles","Never appears as a Barbarian unit"],
+		"promotions": ["The Standing Army","Intensive Doctrine"],
+		"requiredTech": "Shipbuilding",
+		"obsoleteTech": "Monocular",
+		"upgradesTo":"Cannon Galley Fleet",
+		"requiredResource":"Standing Army Maintainance",
+		"attackSound": "throw"
+	},
 	{
 		"name": "Heavy Galley Fleet",
 		"unitType": "Close Combat Ship",
