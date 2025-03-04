@@ -10,33 +10,36 @@
   {
     "name": "New Game",
     "civilopediaText": [
-      {"text":"You may notice the icons are different, props to bucketeer for making these icons.\nMore importantly, settling near fresh water now gives +2 Food to your cities and grants access to more river buildings afterward. There are also more changes toward the resources and tile improvements, overall theres much more rewards in development. But a crucial thing is that luxury resources dont reward happiness anymore.\nThey rewards large amount of gold to maintain your future empires instead."}
+      {"text":"You may notice the icons are different, props to bucketeer for making these icons.\nMore importantly, settling near fresh water now gives +2 Food to your cities and grants access to more river buildings afterward. There are also more changes toward the resources and tile improvements, overall theres much more rewards in development. But a crucial thing is that luxury resources dont reward happiness anymore.\nThey rewards large amount of stats to maintain your future empires instead."}
+    ]
+  }
+  {
+    "name": "Happiness",
+    "steps": [
+      "As cities grow in size and influence, you have to deal with a happiness mechanic which repersents your ability to rule your empire.\nAs your cities grow in population you’ll find that it is more and more difficult to keep your empire well governed."    ,
+      "If your empire’s happiness ever goes below zero the population growth rate of your cities will suffer.\nIf your empire becomes severely out of control (as indicated by the smiley-face icon at the top of the interface)\n  your armies will have a big penalty slapped on to their overall combat effectiveness."
     ]
   },
-    {
-        "name": "UI Tips",
-        "civilopediaText": [
-            {"text":"Toggle notification list display","header":5,"color":"#fa0"},
-            {"text":"On the World screen, swipe the notification list to the right to temporarily hide it. Click the \"Bell\" button to display them again."},
-            {"text":"The default state for the notification list can be set in Options > Display > UI - Notifications on world screen."},
-            {},
-            {"text":"Additional controls for the construction queue","header":5,"color":"#fa0"},
-            {"text":"Right-click or long press a construction item to open a popup menu with additional controls, allowing to manage production of the same item in all cities, by issuing the commands from the same City screen."},
-            {"text":"The \"Disable\" option moves an item to a separated \"Disabled\" tab, preventing its automatic queueing by the \"Auto-assign city production\" option. To move a disabled item back to its initial place, enter again the popup menu, and choose \"Enable\"."},
-            {"text":"Disabled items are set globally and persistent: they are not reset in a new game, or by restarting Unciv."},
-            {},
-            {"text":"Queue multiple technologies in different branches","header":5,"color":"#fa0"},
-            {"text":"On the Tech screen, right-click or long press a technology to automatically queue it, even if this tech is in another branch than the item currently researched. Prerequisite techs to research will also be automatically queued."},
-            {"text":"Right-click or long press multiple techs to append them to the research queue, whatever their branch is."},
-            {},
-            {"text":"Upgrade multiple units of the same type","header":5,"color":"#fa0"},
-            {"text":"On the World screen, select an unit that can be upgraded, then right-click or long press the \"Upgrade\" button to open a popup menu allowing to upgrade all units of this type at once."},
-            {"text":"In the Units overview, the same upgrade menu is available by clicking the unit icon in the \"Upgrade\" column. When an unit is upgradeable, the icon is lit if conditions are met (enough gold and/or resources), otherwise it is dimmed."},
-            {},
-            {"text":"Reveal known resources on world screen","header":5,"color":"#fa0"},
-            {"text":"In the Resources overview, click on a resource icon to center the world screen on tiles already discovered and providing this resource."},
-            {"text":"Alternatively, click on the \"Unimproved\" number to center the world screen only on owned tiles where the resource is not improved."},
-            {"text":"If more than one tile is available, click repeatedly on the notification to cycle through all of them."}
-        ]
-    }
+  {
+    "name": "Unhappiness",
+    "steps": [
+      "It seems that your citizens are unhappy!\nWhile unhappy, your civilization will suffer many detrimental effects, increasing in severity as unhappiness gets higher.",
+      "Unhappiness has two main causes: Population and cities.\n  Each city causes 3 unhappiness, and each population, 1",
+      "There are 2 main ways to combat unhappiness:\n  by building happiness buildings for your population\n  or by adopting appriate policies/beliefs in your religion."
+    ]
+  },
+  {
+    "name": "Luxury Resource",
+    "steps": [
+      "Luxury resources within your domain and with their specific improvement are connected to your trade network.\nEach unique Luxury resource tile provides a lot of gold and other stats, but extra resources of the same type don't add anything, so use them for trading with other civilizations to activate we love king day more often!"
+    ]
+  },
+  {
+    "name": "Strategic Resource",
+    "steps": [
+      "Strategic resources within your domain and with their specific improvement are connected to your trade network.\nStrategic resources allow you to train units and construct buildings that require those specific resources, for example the Horseman requires Horses.",
+	    "Unlike Luxury Resources, each Strategic Resource on the map provides more than one of that resource.\nThe top bar keeps count of how many unused strategic resources you own.\nA full drilldown of resources is available in the Resources tab in the Overview screen.",
+      "You will also be able to produce Strategic Resources if you have certain bonus resources and corresponding buildings.n/Strategic Resources can also be made into more advanced ones to produce powerful units."
+    ]
+  },
 ]
