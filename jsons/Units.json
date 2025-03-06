@@ -2131,16 +2131,27 @@
 		"religiousStrength": 1000
 	},
 	{
-		"name": "Great General",
+		"name": "Great Commander",
 		"unitType": "Civilian",
 		"uniques": [
-            "Empire enters a [8]-turn Golden Age <by consuming this unit>",
-            "[+15]% Strength bonus for [Military] units within [2] tiles",
-            "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+            "[+15]% Strength bonus for [Military] units within [2] tiles <before discovering [Tactics]>",
+			"[+20]% Strength bonus for [Military] units within [3] tiles <after discovering [Tactics]><before discovering [Radio]>",
+			"[+25]% Strength bonus for [Military] units within [4] tiles <after discovering [Radio]>",
+			"Can be earned through combat",
+			"Triggers a [Great Commander's Retirement] event <by consuming this unit>",
 			"Great Person - [War]", "Unbuildable", "Uncapturable"],
 		"movement": 2
 	},
-
+	{
+		"name": "Great Strategist",
+		"unitType": "Civilian",
+		"uniques": [
+            "Empire enters a [10]-turn Golden Age <by consuming this unit>",
+            "All adjacent units heal [+15] HP when healing", "[+15] HP when healing",
+            "Can instantly construct a [Citadel] improvement <[2] times> <after which this unit is consumed>",
+			"Great Person - [Strategy]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
 	/* Religious units */
 
 	{

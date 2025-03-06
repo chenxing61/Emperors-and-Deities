@@ -3,6 +3,31 @@
     
     ///Civilisation Events
 
+    ///Unit Events
+    {
+        "name": "Great Commander's Retirement",
+        "text": "Well every story has an end. The Great Commander finally steps down from his position in the army. But how does it play out is a story of its own.",
+        "choices": [
+            {
+                "text": "Honorable Retirement",
+                "uniques": [
+                "Comment [The Great Commander has inspired countless people. His retirement is well deserved. He will be idolised.]",
+                "Gain [25]-[50] [Culture] <(modified by game speed)><before the [Medieval era]>",
+                "Gain [50]-[100] [Culture] <(modified by game speed)><starting from the [Medieval era]><before the [Industrial era]>",
+                "Gain [100]-[200] [Culture] <(modified by game speed)><starting from the [Industrial era]>",
+                "Gain [75]-[150] [Gold] <(modified by game speed)><before the [Medieval era]>",
+                "Gain [150]-[225] [Gold] <(modified by game speed)><starting from the [Medieval era]><before the [Industrial era]>",
+                "Gain [225]-[300] [Gold] <(modified by game speed)><starting from the [Industrial era]>"
+                ]
+            },
+            {
+                "text": "Backstabbed",
+                "uniques": [
+                "Comment [Lets just say that there are no perfect man. It would seems like power struggle and other caused this General to step down. Maybe he was too greedy? Too proud of himself? The history can't give a clear answer.]",
+                "Gain an extra spy"]
+            }
+        ]
+    },
     ///Ideology Events
     {
         "name": "Bourgeoisie Revolution!",

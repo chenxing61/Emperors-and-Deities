@@ -469,7 +469,7 @@
 		"faith": 1,
 		"culture": 1,
 		"happiness": 2,
-		"greatPersonPoints": {"Great General": 1},
+		"greatPersonPoints": {"Great Strategist": 1},
 		"uniques": ["'Worship Place'",
 					"[+1 Culture, +1 Food] [in all cities]",
 		 			"[+25]% Production when constructing [Settler] units [in all cities]",
@@ -510,7 +510,7 @@
 		"culture": 1,
 		"happiness": 1,
 		"gold":2,
-		"greatPersonPoints": {"Great General": 1},
+		"greatPersonPoints": {"Great Strategist": 1},
         "uniques": ["'Practice Ground'",
 					"[+1 Food] from all [Hunter's Hut] buildings", 
 					"[+5]% Production when constructing [Ranged Combat] units [in all cities]",
@@ -525,7 +525,7 @@
 		"isWonder": true,
 		"culture": 2,
 		"happiness": 1,
-		"greatPersonPoints": {"Great General": 1},
+		"greatPersonPoints": {"Great Strategist": 1},
         "uniques": ["'Organise Place'",
 					"[+1 Food] from [Pasture] tiles [in this city]",
 					"[+1 Food] from [Mechanised Livestock Farm] tiles [in this city]", 
@@ -1016,7 +1016,7 @@
 		"name": "The Great Colosseum",
 		"isWonder": true,
 		"culture": 3,
-		"greatPersonPoints":{"Great General":2},
+		"greatPersonPoints":{"Great Strategist":2},
 		"uniques": ["[+1 Gold, +1 Happiness] per [3] population [in capital]"],
 		"requiredTech": "Masonry",
 		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
@@ -1569,7 +1569,7 @@
 		"isWonder": true,
 		"faith": 1,
 		"happiness": 1,
-		"greatPersonPoints":{"Great General":1},
+		"greatPersonPoints":{"Great Strategist":1},
 		"cost": 100,
 		"uniques": ["'Worship Place'","Only available <after adopting [Monotheism]>",
 					"Only available <after adopting [Pilgrimage]>",
@@ -1608,7 +1608,7 @@
 		"name": "Great Wall Plan",
 		"cost":250,
 		"isWonder": true,
-		"greatPersonPoints": {"Great General": 3},
+		"greatPersonPoints": {"Great Strategist": 3},
 		"uniques": ["Comment [Enable you to build 4 Great Wall Passes in your cities. Which stops enemy mounted units effectively.]","[+1 Gold] from [Luxury resource] tiles [in all cities]","Provides [4] [Great Wall Logistic]"],
 		"requiredTech": "Engineering",
 		"quote": "'The art of war teaches us to rely not on the likelihood of the enemy's not attacking, but rather on the fact that we have made our position unassailable.' - Sun Tzu"
@@ -1796,6 +1796,7 @@
 	{
 		"name": "Military Academy",
 		"maintenance": 3,
+		"greatPersonPoints":{"Great Strategist":1},
 		"uniques": ["'Military Building'",
 					"New [Military] units start with [20] Experience [in this city]",
 					"All newly-trained [Military] units [in this city] receive the [Tactic Research] promotion",
@@ -2102,8 +2103,8 @@
 		"name": "The Great Arc of Triumphant",
 		"isWonder": true,
 		"culture": 5,
-		"greatPersonPoints": {"Great General": 3},
-		"uniques": ["Free [Great General] appears", "New [Military] units start with [20] Experience [in this city]"],
+		"greatPersonPoints": {"Great Strategist": 3},
+		"uniques": ["Free [Great Commander] appears", "New [Military] units start with [20] Experience [in this city]"],
 		"quote": "'Pale Death beats equally at the poor man's gate and at the palaces of kings.' - Horace",
 		"requiredTech": "Military Science"
 	},
@@ -2560,7 +2561,7 @@
 		"name": "National Defense Department",
 		"isNationalWonder": true,
 		"culture": 3,
-		"greatPersonPoints": {"Great General": 5},
+		"greatPersonPoints": {"Great Strategist": 5},
 		"uniques": ["'Military Building'",
 					"Provides [3] [Standing Army Maintainance]",
 					"[-33]% Gold cost of upgrading <for [Military] units>"],
@@ -2722,7 +2723,7 @@
 	{
 		"name": "Hall of the Nation",
 		"isWonder": true,
-		"greatPersonPoints": {"Great General": 5},
+		"greatPersonPoints": {"Great Strategist": 5},
 		"percentStatBonus": {"culture": 25},
 		"uniques": ["Only available <after adopting [Fascism]>","[+25]% Strength <when attacking> <for [Military] units>"],
 		"quote": "'If you win, you need not have to explain...If you lose, you should not be there to explain!' - Austrian Mustache Man",
@@ -3718,7 +3719,7 @@
 	{
 		"name": "Future Era Start",
 		"uniques": ["Limited to [1] per Civilization","Only available <if starting in the [Future era]>","Unbuildable","Unsellable","Provides [5] [Fuel]","Provides [5] [Vehicle Parts]","Provides [5] [Weapon Parts]","Provides [5] [Standing Army Maintainance]"]
-	}
+	},
 	{
 		"name": "Failed Bourgeoisie Revolution",
 		"isNationalWonder":true,
