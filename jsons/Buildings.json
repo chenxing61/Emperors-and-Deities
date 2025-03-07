@@ -126,7 +126,7 @@
 					"Gain a free [Hunter's Hut] [in this city]",//20
 					"Gain a free [Crops Market] [in this city]",//40
 					"Gain a free [Trading Post] [in this city]"],//100
-		"requiredTech": "Banking",
+		"requiredTech": "Diplomacy",
 		"hurryCostModifier": -25
 	},
 	{
@@ -186,7 +186,7 @@
 					"Gain a free [Opera House] [in this city]",//200
 					"Gain a free [Museum] [in this city]",//160
 					"Gain a free [Art Gallery] [in this city]"],//160
-		"requiredTech": "Acoustics",
+		"requiredTech": "Railroads",
 		"hurryCostModifier": -25
 	},
 	{
@@ -693,7 +693,7 @@
 		"gold": 1,
 		"uniques":["'Economic Building'",
 				"[+1 Gold] from ['Herd'] tiles [in this city]",
-				"Must have an owned [Pasture] within [4] tiles"],
+				"Must have an owned [Pasture] within [3] tiles"],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
 	},
@@ -1179,7 +1179,7 @@
 	{
 		"name": "Courthouse",
 		"maintenance": 1,
-		"happiness": 2,
+		"happiness": 1,
 		"uniques": ["'Political Building'",
 					"[-10]% Unhappiness from [Population] [in this city]"],
 		"requiredBuilding":"Town Hall",
@@ -1367,10 +1367,10 @@
 	{
 		"name": "Theatre",
 		"maintenance": 1,
-		"happiness": 2,
+		"happiness": 1,
 		"specialistSlots": {"Artist": 1},
 		"uniques": ["'Cultural Building'",
-					"[+2 Happiness] [in this city] <after discovering [Electricity]>",
+					"[+1 Happiness] [in this city] <after discovering [Electricity]>",
 					"Destroyed when the city is captured"],
 		"requiredBuilding": "Circus",
 		"requiredTech": "Theology",
@@ -1478,7 +1478,7 @@
 		"cost": 0,
 		"culture": 2,
 		"faith": 1,
-		"happiness": 2,
+		"happiness": 1,
 		"science":1,
 		"uniques": ["'Practice Ground'",
 					"Unbuildable",
@@ -1686,7 +1686,7 @@
 	},
 		{
 		"name": "Cathedral of Patience",
-		"culture": 1,
+		"culture": 4,
 		"faith": 4,
 		"gold": -2,
 		"happiness": 1,
@@ -1954,7 +1954,7 @@
 		"name": "Opera House",
 		"maintenance": 2,
 		"culture": 3,
-		"happiness": 2,
+		"happiness": 1,
 		"specialistSlots": {"Artist": 1},
 		"uniques": ["'Cultural Building'","Destroyed when the city is captured"],
 		"requiredBuilding": "Town Square",
@@ -2082,7 +2082,7 @@
 	{
 		"name": "Porcelain Tower",
 		"isWonder": true,
-		"culture": 3,
+		"culture": 4,
 		"happiness": 1,
 		"greatPersonPoints": {"Great Scientist": 3},
 		"uniques": ["Gifts of Gold to City-States generate [25]% more Influence"],
@@ -2093,7 +2093,7 @@
 		"name": "Magificent Tomb of Lost Love",
 		"isWonder": true,
 		"culture": 2,
-		"happiness": 2,
+		"happiness": 3,
 		"greatPersonPoints": {"Great Artist": 3},
 		"uniques": ["Empire enters golden age"],
 		"quote": "'The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time.' - Rabindranath Tagore",
@@ -2147,7 +2147,7 @@
 	{
 		"name": "Hospital",
 		"maintenance": 3,
-		"happiness": 3,
+		"happiness": 2,
 		"uniques": ["'Infrastructure'",
 					"[-10]% Unhappiness from [Population] [in this city]",
 					"[+25]% growth [in this city]",
@@ -2269,8 +2269,7 @@
 		"isNationalWonder": true,
 		"culture": 8,
 		"percentStatBonus": {"culture": 50},
-		"uniques": ["'Cultural Building'",
-					"Only available <if [Museum] is constructed in all [non-[Puppeted]] cities>", 
+		"uniques": ["Only available <if [Museum] is constructed in all [non-[Puppeted]] cities>", 
 					"Cost increases by [30] per owned city"],
 		"requiredTech": "Archaeology"
 	},
@@ -2679,7 +2678,7 @@
 	{
 		"name": "Stadium",
 		"maintenance": 3,
-		"happiness": 3,
+		"happiness": 2,
 		"uniques": ["'Entertainment Building'",
 					"[-5]% Unhappiness from [Population] [in this city]"],
 		"requiredTech": "Radio",
