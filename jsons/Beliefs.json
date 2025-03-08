@@ -4,7 +4,7 @@
         "name": "Ancestor Worship",
         "type": "Pantheon",
         "uniques": ["Comment [Unlocks Ancestral Temple]",
-                    "[+2 Faith] from every [Monument]","[+10]% growth [in cities following this religion]"]
+                    "[+2 Faith] from every [Monument]"]
     },
     {
         "name": "Belief in Stars",
@@ -23,21 +23,28 @@
         "name": "Goddess of the Aurora",
         "type": "Pantheon",
         "uniques": ["May buy [Igloo] buildings for [55] [Faith] [in cities following this religion]",
-        "[+1 Faith] from every [Tundra] <before the [Medieval era]>","[+1 Faith] from every [Snow]","[+2 Faith] from every [Snow] <before the [Medieval era]>","[+2 Faith] from every [Ice]","[+3 Faith] from every [Snow] <before the [Medieval era]>"]
+                    "[+1 Faith] from every [Tundra] <before the [Medieval era]>",
+                    "[+1 Faith] from every [Snow]",
+                    "[+2 Faith] from every [Snow] <before the [Medieval era]>",
+                    "[+2 Faith] from every [Ice]",
+                    "[+3 Faith] from every [Ice] <before the [Medieval era]>"]
     },
     {
         "name": "Desert Tradition",
         "type": "Pantheon",
-        "uniques": ["Comment [Enables your civ to build Oasis Dwelling.]","May buy [Road Network] buildings with [Faith] [in cities following this religion]",
-        "[+1 Faith] from every [Desert]<before the [Medieval era]>"]
+        "uniques": ["Comment [Enables your civ to build Oasis Dwelling.]",
+                    "May buy [Road Network] buildings with [Faith] [in cities following this religion]",
+                    "[+1 Faith] from every [Desert] <before the [Medieval era]>"]
     },
     {
         "name": "Sacred Water",
         "type": "Pantheon",
-        "uniques": ["May buy [Shaman's Hut] buildings for [55] [Faith] [in cities following this religion]",
-        "[+1 Faith] in cities on [Fresh Water] tiles",
-        "[+1 Happiness] in cities on [River] tiles",
-        "[+1 Happiness] from [Oasis] tiles [in all cities]","[+1 Happiness] from [Lakes] tiles [in all cities]"]
+        "uniques": [
+            "May buy [Well] buildings for [55] [Faith] [in cities following this religion]",
+            "[+1 Faith] in cities on [Fresh Water] tiles",
+            "[+1 Happiness] in cities on [River] tiles",
+            "[+1 Happiness] from [Oasis] tiles [in all cities]",
+            "[+1 Happiness] from [Lakes] tiles [in all cities]"]
     },
     {
         "name":"Mother Nature",
@@ -54,52 +61,44 @@
         "type": "Pantheon",
         "uniques": ["Comment [Unlocks Great Stone Mound]",
                     "[+1 Faith] from every [Grassland] <before the [Medieval era]>",
-                    "[+1 Culture] from [Pasture] tiles [in all cities]",
-                    "[+1 Culture] from [Mechanised Livestock Farm] tiles [in all cities]"]
+                    "[+1 Culture] from ['Herd'] tiles [in all cities]"]
     },
         ///Traditions
     {
         "name": "Marine Tradition",
         "type": "Pantheon",
         "uniques": ["Comment [Unlocks Statue of the Sea God]",
-        "[+1 Gold] from every [Coast Fishing Boats]",
-        "[+1 Gold] from every [Aquaculture]",
-        "[+1 Gold] from every [Deep Sea Fishing Boats]",
-        "[+2 Culture] from all ['Marine Infrastructure'] buildings",
-        "[+1 Faith] from every [Ocean] <before the [Medieval era]>"]
+                    "[+1 Gold] from every [Coast Fishing Boats]",
+                    "[+1 Gold] from every [Aquaculture]",
+                    "[+1 Gold] from every [Deep Sea Fishing Boats]",
+                    "[+2 Culture] from all ['Marine Infrastructure'] buildings",
+                    "[+1 Faith] from every [Ocean] <before the [Medieval era]>"]
     },
     {
         "name": "Hunting Tradition",
         "type": "Pantheon",
-        "uniques": [
-        "Comment [Unlocks Temple of the Hunting God]","[+1 Food] from every [Camp]",
-        "[+1 Production] from every [Camp]",
-        "[+1 Faith] from every [Forest] <before the [Medieval era]>"]
+        "uniques": ["Comment [Unlocks Temple of the Hunting God]",
+                    "[+1 Culture] from every [Camp]",
+                    "[+1 Production] from every [Camp] <before the [Medieval era]>",
+                    "[+2 Faith] from every ['Hunt'] <before the [Classical era]>"]
     },
     {
         "name": "Harvest Ritual",
         "type": "Pantheon",
         "uniques": ["Comment [Unlocks Shrine of the Harvest God]",
-        "[+1 Culture] from [Manual Farm] tiles [in all cities]",
-        "[+1 Culture] from [Terrace Farm] tiles [in all cities]",
-        "[+1 Culture] from [Manual Plantation] tiles [in all cities]",
-        "[+1 Culture] from [Mechanised Farm] tiles [in all cities]",
-        "[+1 Culture] from [Permaculture] tiles [in all cities]",
-        "[+1 Faith] from every ['Agricultural Building']"]
+                    "[+1 Culture] from [Manual Farm] tiles [in all cities]",
+                    "[+1 Culture] from [Terrace Farm] tiles [in all cities]",
+                    "[+1 Culture] from [Manual Plantation] tiles [in all cities]",
+                    "[+1 Culture] from [Mechanised Farm] tiles [in all cities]",
+                    "[+1 Culture] from [Permaculture] tiles [in all cities]",
+                    "[+1 Faith] from every ['Agricultural Building']"]
     },
 
 ///////////////////////////////////////// Follower beliefs /////////////////////////////////////////
 
     ///Common Bonus
 
-    {
-        "name": "Monasticism",
-        "type": "Follower",
-        "uniques": [
-            "[-15]% Unhappiness from [Specialists] [in cities following this religion]",
-            "May buy [Monastery] buildings with [Faith] [in cities following this religion]",
-            "Comment [Enables you to buy Monastery,a Practice ground that lessen unhappiness]"]
-    },
+
     {
         "name": "Generosity",
         "type": "Follower",
@@ -150,45 +149,61 @@
     {
         "name": "Religious Art",
         "type": "Follower",
-        "uniques": ["[+2 Faith, +1 Culture] from every [Wonder]","[+1 Culture] from all ['Worship Place'] buildings"]
+        "uniques": ["[+2 Faith, +1 Culture] from every [Wonder]",
+                    "[+1 Culture] from all ['Worship Place'] buildings"]
     },
-    {
-        "name": "Karma",
-        "type": "Follower",
-        "uniques": ["Only available <before adopting [Monotheism]>",
-                    "Only available <before adopting [Extravagant Rituals]>",
-                    "Comment [Enables you to buy Pagoda and Tower of Devotion, Pagoda is a Practice ground that gives 1 happiness.Tower of Devotion is a wonder that gives great person points and other gold and culture bonuses]",
-                    "May buy [Pagoda] buildings with [Faith] [in cities following this religion]",
-                    "[+15]% growth [in this city] <when not at war>",
-                    "[-1 Faith, +3 Production] [in cities following this religion] <when at war>"]
-    },    
+
 
     {
         "name": "Laws of the God",
         "type": "Follower",
         "uniques": ["Only available <after adopting [Theocracy]>",
-                     "[+1 Faith, +1 Gold] from all ['Political Building'] buildings <in cities with at least [3] [Followers of this Religion]>",
-                     "[+2 Culture, +2 Happiness] from [Holy site] tiles [in cities following this religion]"]
+                     "May buy ['Political Building'] buildings with [Faith] [in all cities]",
+                     "[+2 Culture, +2 Happiness] from [Holy site] tiles [in cities following this religion]",
+                     "[+3 Culture] from ['Core of Religion'] buildings [in cities following this religion]"]
     },
     {
         "name": "Holy Guidance",
         "type": "Follower",
         "uniques": ["Only available <after adopting [Theocracy]>",
-                    "[+13]% Production when constructing [All] wonders [in holy cities]",
-                    "[+1 Happiness] from all [Faith] buildings",
-                    "[+3 Culture] from [Holy site] tiles [in cities following this religion]"]
+                    "[+25]% Production when constructing [All] wonders [in holy cities]",
+                    "[+3 Culture] from [Holy site] tiles [in cities following this religion]",
+                    "[+3 Happiness] from ['Core of Religion'] buildings [in cities following this religion]"]
     },
-
+    {
+        "name": "Monasticism",
+        "type": "Follower",
+        "uniques": [
+            "[-15]% Unhappiness from [Specialists] [in cities following this religion]",
+            "May buy [Monastery] buildings with [Faith] [in cities following this religion]",
+            "Comment [Enables you to buy Monastery,a Practice ground that lessen unhappiness]"]
+    },
+    {
+        "name": "Karma",
+        "type": "Follower",
+        "uniques": ["Only available <before adopting [Monotheism]>",
+                    "Only available <before adopting [Papal Primacy]>",
+                    "Only available <before adopting [Pilgrimage]>",
+                    "Only available <before adopting [Extravagant Rituals]>",
+                    "Comment [Enables you to buy Pagoda and Tower of Devotion, Pagoda is a 'Practice Ground' that provides all sorts of intangible resources. The Master Shrine is a 'Religion Core' national wonder.]",
+                    "May buy [Pagoda] buildings with [Faith] [in cities following this religion]",
+                    "[+15]% growth [in this city] <when not at war>",
+                    "[-1 Faith, +3 Production] [in cities following this religion] <when at war>"]
+    },    
     ///Fantasy
     {
         "name": "Praise the Nature",
         "type": "Follower",
-        "uniques": ["[+1 Happiness] from every [Garden]","[+1 Culture] from [Forest] tiles [in cities following this religion]","[+1 Culture] from [Jungle] tiles [in cities following this religion]","[+1 Culture] from [Mountain] tiles [in cities following this religion]"]
+        "uniques": ["[+1 Happiness] from every [Garden]","[+1 Culture] from [Forest] tiles [in cities following this religion]","[+1 Culture] from [Jungle] tiles [in cities following this religion]","[+2 Culture] from [Mountain] tiles [in cities following this religion]"]
     },
     {
         "name": "Extravagant Rituals",
         "type": "Follower",
-        "uniques": ["Only available <before adopting [Monotheism]>","Only available <before adopting [Karma]>","May buy [Altar] buildings with [Faith] [in cities following this religion]","Comment [Enables you to buy Altar and The Master Shrine, Altar is a Worship Place that gives various bonuses at cost of food.The Master Shrine is a wonder gives huge stat bonuses]"]
+        "uniques": ["Only available <before adopting [Monotheism]>",
+                    "Only available <before adopting [Karma]>",
+                    "Only available <before adopting [Papal Primacy]>",
+                    "Only available <before adopting [Pilgrimage]>",
+                    "May buy [Altar] buildings with [Faith] [in cities following this religion]","Comment [Enables you to buy Altar and The Master Shrine, altar is a 'Worship Place' that provides large amount of happiness but decreases food and gold output of a city. The Master Shrine is a 'Religion Core' national wonder.]"]
     },
     ////////////////////////////////////// Enhancer beliefs ///////////////////////////////////////
     {
@@ -199,27 +214,41 @@
     {
         "name": "Pilgrimage",
         "type": "Enhancer",
-        "uniques": ["Comment [Enables you to buy Mosque and House of God, Mosque is a 'Organise Place' that gives faith bonus to Holy city. House of God is a wonder that gives huge stats]","May buy [Mosque] buildings with [Faith] [in cities following this religion]","[+2 Faith] for each global city following this religion"]
+        "uniques": ["Only available <before adopting [Papal Primacy]>",
+                    "Only available <before adopting [Karma]>",
+                    "Only available <before adopting [Extravagant Rituals]>",
+                    "Comment [Enables you to buy Mosque and House of God, Mosque is a 'Organise Place' that gives faith bonus to Holy city. House of God is a 'Religion Core' national wonder.]",
+                    "May buy [Mosque] buildings with [Faith] [in cities following this religion]",
+                    "[+2 Faith] for each global city following this religion"]
     },
     {
         "name": "Papal Primacy",
         "type": "Enhancer",
-        "uniques": ["Comment [Enables you to buy Cathedral and Holy See, Cathedral is a 'Organise Place' that gives 1 Artist Slot. Holy See is a wonder that gives Governor Slot and huge stats]","May buy [Cathedral] buildings with [Faith] [in cities following this religion]","Resting point for Influence with City-States following this religion [+15]"]
+        "uniques": ["Only available <before adopting [Karma]>",
+                    "Only available <before adopting [Pilgrimage]>",
+                    "Only available <before adopting [Extravagant Rituals]>","Comment [Enables you to buy Cathedral and Holy See, Cathedral is a 'Organise Place' that provide cultural bonuses. Holy See is a 'Religion Core' national wonder.]",
+                    "May buy [Cathedral] buildings with [Faith] [in cities following this religion]",
+                    "Resting point for Influence with City-States following this religion [+15]"]
     },
     {
         "name": "Order of the Faith",
         "type": "Enhancer",
-        "uniques": ["May buy [{Military} {Land} {non-['Mercenary Army']}] units with [Faith] for [2] times their normal Production cost <before the [Imperial era]> <in cities with at least [5] [Followers of this Religion]>","[Faith] cost of purchasing [Missionary] units [-50]%"]
+        "uniques": ["May buy [{Military} {Land} {non-['Mercenary Army']}] units with [Faith] for [2] times their normal Production cost <before the [Imperial era]> <in cities with at least [10] [Followers of this Religion]>",
+                    "[Faith] cost of purchasing [Missionary] units [-50]%"]
     },
     {
         "name": "Monastic Warrior",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Monasticism]>","Comment [Enables the Monastery to enhance your newly trained unit with a special promotion that increases their Strength.]"]
+        "uniques": ["Only available <after adopting [Monasticism]>",
+        "Comment [Enables the Monastery to enhance your newly trained unit with a special promotion that increases their Strength.]"]
     },
     {
         "name": "Holy War",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Theocracy]>","[+20]% Strength <for [All] units> <in [Foreign Land] tiles>","[Faith] cost of purchasing [Inquisitor] units [-50]%","[+2 Production] from [Holy site] tiles [in cities following this religion]"]
+        "uniques": ["Only available <after adopting [Theocracy]>",
+                    "[+20]% Strength <for [All] units> <in [Foreign Land] tiles>",
+                    "[Faith] cost of purchasing [Inquisitor] units [-50]%",
+                    "[+2 Production] from [Holy site] tiles [in cities following this religion]"]
     },
     {
         "name": "Defender of the Faith",
@@ -230,29 +259,32 @@
     {
         "name": "Tithe",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Monotheism]>","Only available <after adopting [Theocracy]>","[+3 Gold] from every [5] global followers [in all cities]","[+3 Gold] from [Holy site] tiles [in cities following this religion]"]
+        "uniques": ["Only available <after adopting [Monotheism]>","Only available <after adopting [Theocracy]>","[+3 Gold] from every [5] global followers [in all cities]","[+3 Gold] from [Holy site] tiles [in cities following this religion]","[+3 Gold] from ['Core of Religion'] buildings [in cities following this religion]"]
     },
     {
         "name": "Heretic's Tax",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Monotheism]>","Only available <after adopting [Theocracy]>","[+1 Gold] from every [5] global followers [in all cities]","[+5 Gold] <in [Annexed] cities>"]
+        "uniques": ["Only available <after adopting [Monotheism]>","Only available <after adopting [Theocracy]>","[+1 Gold] from every [5] global followers [in all cities]","[+5 Gold] <in [Annexed] cities>","[+3 Gold] from ['Core of Religion'] buildings [in cities following this religion]"]
     },
     ///Development
     {
         "name": "Initiation Rites",
         "type": "Enhancer",
-        "uniques": ["[+200 Gold] when a city adopts this religion for the first time <(modified by game speed)>"]
+        "uniques": ["[+200 Gold] when a city adopts this religion for the first time <(modified by game speed)>","[+1 Gold] from all ['Worship Place'] buildings"]
     },
     {
         "name": "Religious Unity",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Theocracy]>","[+75]% Natural religion spread [in City-State cities]","Militaristic City-States grant units [2] times as fast when you are at war with a common nation","[+2 Production] from [Holy site] tiles [in cities following this religion]"]
+        "uniques": ["Only available <after adopting [Theocracy]>",
+                    "[+75]% Natural religion spread [in City-State cities]",
+                    "Militaristic City-States grant units [2] times as fast when you are at war with a common nation",
+                    "[+2 Production] from [Holy site] tiles [in cities following this religion]"]
     },
     ///Spread
     {
         "name": "Mentorship",
         "type": "Enhancer",
-        "uniques": ["[+1 Faith] from all ['Educational Building'] buildings","May buy ['Educational Building'] buildings with [Faith] [in cities following this religion]"]
+        "uniques": ["[+1 Faith] from all ['Educational Building'] buildings","May buy ['Educational Building'] buildings with [Faith] [in cities following this religion]","[+3 Science] from ['Core of Religion'] buildings [in cities following this religion]"]
     },
 
     {
@@ -274,7 +306,7 @@
     {
         "name": "Religion Stories",
         "type": "Enhancer",
-        "uniques": ["[+1 Faith] from all ['Cultural Building'] buildings","May buy ['Cultural Building'] buildings with [Faith] [in all cities]"]
+        "uniques": ["[+1 Faith] from all ['Cultural Building'] buildings","May buy ['Cultural Building'] buildings with [Faith] [in all cities]","[+3 Culture] from ['Core of Religion'] buildings [in cities following this religion]"]
     },
 
 ///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
@@ -284,12 +316,12 @@
     {
         "name": "Benevolent",
         "type": "Founder",
-        "uniques": ["Only available <before adopting [Monotheism]>","[+1 Happiness] for each global city following this religion","[+15]% growth [in all cities] <when not at war>"]
+        "uniques": ["Only available <before adopting [Monotheism]>","[+1 Happiness] for each global city following this religion","[+25]% growth [in all cities] <when not at war>"]
     },
     {
         "name": "Inner Peace",
         "type": "Founder",
-        "uniques": ["Only available <before adopting [Monotheism]>","[+2 Culture] for each global city following this religion <while the empire is happy>","[+1 Science] for each global city following this religion <when not at war>"]
+        "uniques": ["Only available <before adopting [Monotheism]>","[+2 Culture, +2 Science] for each global city following this religion <when not at war>"]
     },
     {
         "name": "Reincarnation",
@@ -316,6 +348,6 @@
     {
         "name": "Prophet Worship",
         "type": "Founder",
-        "uniques": ["Only available <after adopting [Monotheism]>","[+3 Culture] from [Holy site] tiles [in all cities]"]
+        "uniques": ["Only available <after adopting [Monotheism]>","[+1 Production] from all ['Worship Place'] buildings"]
     }
 ]
