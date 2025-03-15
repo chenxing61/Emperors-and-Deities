@@ -1060,10 +1060,10 @@
                     "Gain a free [Anarchist Ruling] [in all cities]",
                     "[-1 Culture] from every ['Political Building']",
                     "[-50]% Culture cost of natural border growth [in all cities] <during a Golden Age>",
-                    "[+50]% [Food] <during a Golden Age>",
-                    "[+50]% [Production] <during a Golden Age>",
-                    "[+50]% [Gold] <during a Golden Age>",
-                    "[+50]% [Faith] <during a Golden Age>"
+                    "[+25]% [Food] <during a Golden Age>",
+                    "[+25]% [Production] <during a Golden Age>",
+                    "[+25]% [Gold] <during a Golden Age>",
+                    "[+25]% [Faith] <during a Golden Age>"
                 ],
                 "row": 1,
                 "column": 1
@@ -1081,7 +1081,7 @@
                 "uniques": [
                             "Comment [Enables you to construct Modern Guerrilla, A Modern levy skirmisher Infantry unit.]",
                             "Comment ['Levy Army' Units maintainance past Industrial era decrased by 2 Gold]",
-                            "[+15]% Strength <for ['Levy Army'] units>"
+                            
                 ],
                 "requires":["Redistribution of Means of Production(Anarchist)"],
                 "row": 3,
@@ -1100,7 +1100,6 @@
             {
                 "name": "Diversity of Opinions",
                 "uniques": ["[-20]% Culture cost of adopting new Policies",
-                            "[-33]% Food consumption by specialists [in all cities]",
                             "[+50]% Strength for cities"
                 ],
                 "requires":["Complete Autonomy"],
@@ -1118,7 +1117,7 @@
             },
             {
                 "name": "Anarchism Complete",
-                "uniques": ["[+100]% Golden Age length","Provides [10] [Standing Army Maintainance]"
+                "uniques": ["[+15]% Strength <for ['Levy Army'] units>","[-33]% Food consumption by specialists [in all cities]"
                 ]
             }
         ]
