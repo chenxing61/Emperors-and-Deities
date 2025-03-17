@@ -2,25 +2,27 @@
 ///Generally Apply
 	{
 		"name": "Heal Instantly",
-		"uniques": ["[This Unit] heals [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"uniques": ["[This Unit] heals [50] HP", 
+					"Doing so will consume this opportunity to choose a Promotion"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 0,
 		"row": 0
-
     },
-
 
 ///General
 	{
 		"name": "Stewardship",
-		"uniques": ["[+5]% XP gained from combat","[+1] Movement <when fighting in [Friendly Land] tiles>"],
+		"uniques": ["[+5]% XP gained from combat",
+					"[+1] Movement <when fighting in [Friendly Land] tiles>"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 1,
 		"row": 0
 	},
 	{
 		"name": "Centralised Command",
-		"uniques": ["[Great Commander] is earned [50]% faster","[+10]% Strength <when fighting in [Open terrain] tiles>","[+33]% Damage when intercepting"],
+		"uniques": ["Great General provides double combat bonus",
+					"[+10]% XP gained from combat",
+					"[+33]% Damage when intercepting"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"prerequisites": ["Stewardship"],
 		"column": 1,
@@ -28,7 +30,9 @@
 	},
 	{
 		"name": "Mass Assault",
-		"uniques": ["[+25]% Strength <vs cities>","[+23]% Strength <when fighting in [Open terrain] tiles>"],
+		"uniques": ["[Great Commander] is earned [25]% faster",
+					"[+10]% Strength <when attacking> <when fighting in [Open terrain] tiles>",
+					"[+25]% Strength <vs cities>"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"prerequisites": ["Centralised Command"],
 		"column": 1,
@@ -36,7 +40,9 @@
 	},
 	{
 		"name": "Resourceful Army",
-		"uniques": ["[+10]% Strength <vs [Wounded] units>","[+10]% Strength <when fighting in [Rough terrain] tiles>","Damage taken from interception reduced by [33]%"],
+		"uniques": ["[+10]% Strength <when attacking> <vs [Wounded] units>",
+					"[+10]% Strength <when attacking> <when fighting in [Rough terrain] tiles>",
+					"Damage taken from interception reduced by [33]%"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"prerequisites": ["Stewardship"],
 		"column": 2,
@@ -44,7 +50,9 @@
 	},
 	{
 		"name": "Use of Terrain",
-		"uniques": ["[+1] Movement","No defensive terrain penalty","[+10]% Strength <when fighting in [Rough terrain] tiles>"],
+		"uniques": ["[+1] Movement",
+					"No defensive terrain penalty",
+					"[+15]% Strength <when attacking> <when fighting in [Rough terrain] tiles>"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier"],
 		"prerequisites": ["Resourceful Army"],
 		"column": 2,
@@ -52,7 +60,8 @@
 	},
 	{
 		"name": "Long Range Logistic",
-		"uniques": ["[+13] HP when healing <in [Foreign Land] tiles>","All adjacent units heal [+5] HP when healing"],
+		"uniques": ["Gain [-3] [Gold] <every [1] turns>",
+					"[+10] HP when healing <in [Foreign Land] tiles>"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"prerequisites": ["Stewardship"],
 		"column": 3,
@@ -60,7 +69,8 @@
 	},
 	{
 		"name": "Extra Supply",
-		"uniques": ["[+15] HP when healing <in [Friendly Land] tiles>","All adjacent units heal [+2] HP when healing"],
+		"uniques": ["Gain [-3] [Gold] <every [1] turns>",
+					"[+15] HP when healing <in [Friendly Land] tiles>"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"prerequisites": ["Stewardship"],
 		"column": 4,
@@ -68,7 +78,11 @@
 	},
 	{
 		"name": "Supply Ship",
-		"uniques": ["[+2] HP when healing","May heal outside of friendly territory","All adjacent units heal [+5] HP when healing"],
+		"uniques": ["Only available <after discovering [Compass]>",
+					"[+5] HP when healing",
+					"[+2] HP when healing <after discovering [Monocular]>",
+					"[+3] HP when healing <after discovering [Advanced Shipbuilding]>",
+					"May heal outside of friendly territory"],
 		"unitTypes": ["Close Combat Ship","Ranged Combat Ship","Submarine","Carrier"],
 		"prerequisites": ["Long Range Logistic"],
 		"column": 3,
@@ -76,7 +90,14 @@
 	},
 	{
 		"name": "Field Medic",
-		"uniques": ["[+10] HP when healing","All adjacent units heal [+3] HP when healing"],
+		"uniques": ["[+3] HP when healing",
+					"[+2] HP when healing <after discovering [Apprenticeship]>",
+					"[+2] HP when healing <after discovering [Biology]>",
+					"[+3] HP when healing <after discovering [Pharmaceuticals]>",
+					"All adjacent units heal [+2] HP when healing",
+					"All adjacent units heal [+1] HP when healing <after discovering [Apprenticeship]>",
+					"All adjacent units heal [+1] HP when healing <after discovering [Biology]>",
+					"All adjacent units heal [+1] HP when healing <after discovering [Pharmaceuticals]>"],
 		"unitTypes": ["Scout","Assault","Rider","Close Combat","Ranged Combat"],
 		"prerequisites": ["Stewardship"],
 		"column": 5,
@@ -84,16 +105,22 @@
 	},
 	{
 		"name": "Technicians",
-		"uniques": ["[+10] HP when healing","All adjacent units heal [+3] HP when healing"],
-		"unitTypes": ["Siege","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"uniques": ["[+3] HP when healing",
+					"[+2] HP when healing <after discovering [Physics]>",
+					"[+2] HP when healing <after discovering [Machinery]>",
+					"[+3] HP when healing <after discovering [Mass Prodcution]>",
+					"All adjacent units heal [+2] HP when healing",
+					"All adjacent units heal [+1] HP when healing <after discovering [Physics]>",
+					"All adjacent units heal [+1] HP when healing <after discovering [Machinery]>",
+					"All adjacent units heal [+1] HP when healing <after discovering [Mass Prodcution]>"],
+		"unitTypes": ["Siege","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"prerequisites": ["Stewardship"],
 		"column": 6,
 		"row": 1
 	},
-///General
 	{
 		"name": "Hardened",
-		"uniques": ["[+5]% Strength"],
+		"uniques": ["[+5]% XP gained from combat","[+5]% Strength"],
 		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 7,
 		"row": 0
@@ -110,7 +137,8 @@
 	{
 		"name": "Shock Doctrine",
 		"prerequisites": ["Hardened"],
-		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles>"],
+		"uniques": ["[+5]% Strength <when attacking>",
+					"[+10]% Strength <when attacking> <when fighting in [Open terrain] tiles>"],
 		"unitTypes": ["Close Combat","Assault"],
 		"column": 7,
 		"row": 1
@@ -127,7 +155,7 @@
 	{
 		"name": "Devistating Charge",
 		"prerequisites": ["Rapid Engagement"],
-		"uniques": ["[+20]% Strength <when attacking>"],
+		"uniques": ["[+15]% Strength <when attacking> <vs [Wounded] units>"],
 		"unitTypes": ["Close Combat","Assault"],
 		"column": 7,
 		"row": 3
@@ -136,7 +164,8 @@
 	{
 		"name": "Fast Regrouping",
 		"prerequisites": ["Devistating Charge"],
-		"uniques": ["Unit will heal every turn, even if it performs an action","[-5] HP when healing"],
+		"uniques": ["Unit will heal every turn, even if it performs an action",
+					"[-5] HP when healing"],
 		"unitTypes": ["Close Combat","Assault"],
 		"column": 7,
 		"row": 4
@@ -144,7 +173,8 @@
 	{
 		"name": "Defence Doctrine",
 		"prerequisites": ["Hardened"],
-		"uniques": ["[+15]% Strength <when defending>"],
+		"uniques": ["[+10]% Strength <when defending>",
+					"[+5]% Strength <vs ['Skirmishers']> <when defending>"],
 		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 8,
 		"row": 1
@@ -153,7 +183,12 @@
 	{
 		"name": "Reinforced Position",
 		"prerequisites": ["Defence Doctrine"],
-		"uniques": ["[+25]% Strength <vs [Ranged Combat] units> <when defending>","[+10]% Strength <vs [Assault] units> <when defending>","[+10]% Strength <vs [Rider] units> <when defending>","[+10]% Strength <vs [Helicopter] units> <when defending>"],
+		"uniques": ["[+25]% Strength <vs [Ranged Combat] units> <when defending>",
+					"[+10]% Strength <vs [Siege] units> <when defending>",
+					"[+10]% Strength <vs ['Mounted'] units> <when defending>",
+					"[+10]% Strength <vs ['Motorised'] units> <when defending>",
+					"[+10]% Strength <vs ['Mechanised'] units> <when defending>",
+					"[+10]% Strength <vs ['Low Altitude Aircraft'] units> <when defending>"],
 		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 8,
 		"row": 2
@@ -161,7 +196,7 @@
 	{
 		"name": "Ambushing",
 		"prerequisites": ["Reinforced Position"],
-		"uniques": ["[+20]% Strength <when fighting in [Rough terrain] tiles>"],
+		"uniques": ["[+25]% Strength <vs ['Dense Formation'] units> <when fighting in [Rough terrain] tiles>"],
 		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 8,
 		"row": 3
@@ -170,7 +205,10 @@
 	{
 		"name": "Old Guard",
 		"prerequisites": ["Ambushing"],
-		"uniques": ["[+33]% Strength <in [City center] tiles>","[+25]% Strength <in [Fort] tiles>","[+25]% Strength <in [Trench] tiles>"],
+		"uniques": ["[+10]% XP gained from combat",
+					"[+25]% Strength <when attacking> <in [City center] tiles>",
+					"[+15]% Strength <in [Fort] tiles>",
+					"[+15]% Strength <in [Trench] tiles>"],
 		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 8,
 		"row": 4
@@ -179,7 +217,8 @@
 	{
 		"name": "Firepower Doctrine",
 		"prerequisites": ["Hardened"],
-		"uniques": ["[+10]% Strength <vs ['Dense Formation'] units>"],
+		"uniques": ["[+5]% Strength <when attacking>",
+					"[+10]% Strength <when attacking> <vs ['Dense Formation'] units>"],
 		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship","Helicopter"],
 		"column": 9,
 		"row": 1
@@ -188,7 +227,11 @@
 	{
 		"name": "Barrage",
 		"prerequisites": ["Firepower Doctrine"],
-		"uniques": ["[+20]% Strength <vs [Close Combat] units> <when attacking>","[+20]% Strength <vs [Rider] units> <when attacking>"],
+		"uniques": ["[+10]% Strength <when above [50] HP>",
+					"[+10]% Strength <vs [Close Combat] units> <when attacking>",
+					"[+10]% Strength <vs [Close Combat Ship] units> <when attacking>",
+					"[+10]% Strength <vs [Rider] units> <when attacking>"
+					],
 		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship","Helicopter"],
 		"column": 9,
 		"row": 2
@@ -196,7 +239,7 @@
 	{
 		"name": "Ammo Supply",
 		"prerequisites": ["Barrage"],
-		"uniques": ["[1] additional attacks per turn"],
+		"uniques": ["[1] additional attacks per turn <if it hasn't used other actions yet>"],
 		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship","Helicopter"],
 		"column": 9,
 		"row": 3
@@ -205,7 +248,9 @@
 	{
 		"name": "Firing Rotation",
 		"prerequisites": ["Ammo Supply"],
-		"uniques": ["[+25]% Strength <when adjacent to a [Ranged Combat] unit>","[+25]% Strength <when adjacent to a [Siege] unit>","[+25]% Strength <when adjacent to a [Ranged Combat Ship] unit>"],
+		"uniques": ["[+15]% Strength <when adjacent to a [Ranged Combat] unit>",
+					"[+15]% Strength <when adjacent to a [Ranged Combat Ship] unit>",
+					"[+15]% Strength <when adjacent to a [Siege] unit>"],
 		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship","Helicopter"],
 		"column": 9,
 		"row": 4
@@ -214,16 +259,17 @@
 	{
 		"name": "Accuracy Doctrine",
 		"prerequisites": ["Hardened"],
-		"uniques": ["[+10]% Strength <vs ['Skirmishers'] units>","[+15]% Strength <vs cities> <when attacking>"],
+		"uniques": ["[+5]% XP gained from combat",
+					"[+25]% Strength <vs ['Skirmishers'] units> <when attacking>"],
 		"unitTypes": ["Ranged Combat","Siege"],
 		"column": 10,
 		"row": 1
-
 	},
 	{
 		"name": "Sharpshooting",
 		"prerequisites": ["Accuracy Doctrine"],
-		"uniques": ["[+1] Range","[+25]% Strength <when fighting in [Rough terrain] tiles>"],
+		"uniques": ["[+1] Range",
+					"[+10]% Strength <when fighting in [Rough terrain] tiles>"],
 		"unitTypes": ["Ranged Combat","Siege"],
 		"column": 10,
 		"row": 2
@@ -240,7 +286,8 @@
 	{
 		"name": "Weakpoint Observation",
 		"prerequisites": ["Ammo Conservation"],
-		"uniques": ["[+20]% Strength <when attacking>"],
+		"uniques": ["[+20]% Strength <when attacking> <vs [Wounded] units>",
+					"[+25]% Strength <vs cities> <when attacking>"],
 		"unitTypes": ["Ranged Combat","Siege"],
 		"column": 10,
 		"row": 4
@@ -249,7 +296,8 @@
 	{
 		"name": "Intensive Doctrine",
 		"prerequisites": ["Hardened"],
-		"uniques": ["[+25]% Strength <when fighting in [Open terrain] tiles>"],
+		"uniques": ["[+5]% Strength",
+					"[+15]% Strength <when fighting in [Open terrain] tiles>"],
 		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 11,
 		"row": 1
@@ -266,7 +314,7 @@
 	{
 		"name": "Swift Formation",
 		"prerequisites": ["Formation"],
-		"uniques": ["[+25]% Strength <when defending>"],
+		"uniques": ["[+25]% Strength <vs ['Mounted'] units>"],
 		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 11,
 		"row": 3
