@@ -9,7 +9,6 @@
         "movementType": "Water"
     },
     ///Majority
-
     {
         "name": "Close Combat",
         "movementType": "Land"
@@ -26,7 +25,6 @@
         "name": "Ranged Combat Ship",
         "movementType": "Water"
     },
-
     ///Special
     {
         "name": "Siege",
@@ -43,12 +41,18 @@
     {
         "name": "Rider",
         "movementType": "Land",
-        "uniques":["Can move after attacking"]
+        "uniques": [
+            "Can move after attacking"
+        ]
     },
     {
         "name": "Submarine",
         "movementType": "Water",
-        "uniques": ["Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Submarine] units"]
+        "uniques": [
+            "Can enter ice tiles",
+            "Invisible to non-adjacent units",
+            "Can see invisible [Submarine] units"
+        ]
     },
     {
         "name": "Carrier",
@@ -57,27 +61,42 @@
     {
         "name": "Helicopter",
         "movementType": "Land",
-        "uniques": ["Can pass through impassable tiles"]
+        "uniques": [
+            "Can pass through impassable tiles",
+            "May travel on Water tiles without embarking"
+        ]
     },
     ///Air
     {
         "name": "Fighter",
         "movementType": "Air",
-        "uniques": ["Aircraft", "[+4] Sight", "Can see over obstacles", "Can perform Air Sweep"]
+        "uniques": [
+            "Aircraft",
+            "[+4] Sight",
+            "Can see over obstacles",
+            "Can perform Air Sweep"
+        ]
     },
     {
         "name": "Bomber",
         "movementType": "Air",
-        "uniques": ["Aircraft"]
+        "uniques": [
+            "Aircraft"
+        ]
     },
     {
         "name": "Atomic Bomber",
         "movementType": "Air",
-        "uniques": ["Aircraft"]
+        "uniques": [
+            "Aircraft"
+        ]
     },
     {
         "name": "Missile",
         "movementType": "Air",
-        "uniques": ["Self-destructs when attacking", "Cannot be intercepted"]
+        "uniques": [
+            "Self-destructs when attacking",
+            "Cannot be intercepted"
+        ]
     }
 ]
