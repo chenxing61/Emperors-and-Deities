@@ -404,8 +404,8 @@
 		"happiness": 1,
 		"food": 1,
 		"uniques": ["'Light Industry'",
-					"[+1 Gold] from [Grain] tiles [in this city]",
-					"[+1 Gold] from [Tuber] tiles [in this city]"
+					"[+1 Gold] from [{improved}{Grain}] tiles [in this city]",
+					"[+1 Gold] from [{improved}{Tuber}] tiles [in this city]"
 					],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -431,7 +431,8 @@
 			"[+1 Production] per [5] population [in this city]<in cities with between [9] and [15] [Population]>",
 			"[+1 Production] per [8] population [in this city]<in cities with between [15] and [24] [Population]>",
 			"[+1 Production] per [10] population [in this city]<in cities with at least [24] [Population]>",
-			"[+2 Production] from [Clay] tiles [in this city]"
+			"[+1 Production] from [Clay] tiles [in this city]",
+			"[+1 Production] from [{improved}{Clay}] tiles [in this city]"
 			],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 0
@@ -675,12 +676,18 @@
 	},
 	{
 		"name": "Mint",
-		"uniques": ["'Economic Building'",
-					"[+2 Gold] from [Gold Ore] tiles [in this city]",
-					"[+2 Gold] from [Silver Ore] tiles [in this city]",
+		"uniques": ["'Economic Building'","'Political Building'",
+					"[+1 Gold] from [Gold Ore] tiles [in this city]",
+					"[+1 Gold] from [Silver Ore] tiles [in this city]",
+					"[+1 Gold] from [Rich Copper Ore] tiles [in this city]",
+					
+					"[+1 Gold] from [{improved}{Gold Ore}] tiles [in this city]",
+					"[+1 Gold] from [{improved}{Silver Ore}] tiles [in this city]",
+					"[+1 Gold] from [{improved}{Rich Copper Ore}] tiles [in this city]",
+
 					"[+2 Gold] from [Cocoa] tiles [in this city]",
-					"[+1 Gold] per [2] population [in this city] <every [3] turns>"],
-		"requiredNearbyImprovedResources": ["Gold Ore", "Silver Ore", "Cocoa"],
+					"[+1 Gold] per [3] population [in this city]"],
+		"requiredNearbyImprovedResources": ["Gold Ore", "Silver Ore", "Rich Copper Ore", "Cocoa"],
 		"requiredBuilding":"Civilian Blacksmith",
 		"requiredTech": "Currency",
 		"hurryCostModifier": 25
@@ -688,8 +695,9 @@
 	{
 		"name": "Livestock Market",
 		"gold": 1,
+		"production":1,
 		"uniques":["'Economic Building'",
-				"[+1 Gold] from ['Herd'] tiles [in this city]",
+				"[+1 Gold] from [{improved}{'Herd'}] tiles [in this city]",
 				"Must have an owned [Pasture] within [3] tiles"],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
@@ -698,18 +706,25 @@
 		"name": "Crops Market",
 		"gold": 1,
 		"uniques":["'Economic Building'",
-				   "[+1 Gold] from ['Crops'] tiles [in this city]"],
+					"[+1 Gold] from [Incense] tiles [in this city]",
+					"[+1 Gold] from [Spices] tiles [in this city]",
+					"[+1 Gold] from [Grape] tiles [in this city]",
+					"[+1 Gold] from [Sugar] tiles [in this city]",
+					"[+1 Gold] from [Cocoa] tiles [in this city]",
+
+					"[+1 Gold] from [{improved}{'Crops'}] tiles [in this city]"
+				],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
 	},
 	{
 		"name": "Jewellery Workshop",
 		"maintenance": 1,
-		"specialistSlots": {"Merchant": 1,"Artist": 1},
+		"specialistSlots": {"Artist": 1},
 		"uniques": ["'Light Industry'",
-			"[+1 Gold] from ['Precious Mineral'] tiles [in this city]",
-			"[+1 Gold] from [Ivory] tiles [in this city]",
-			"[+1 Gold] from [Coral] tiles [in this city]"
+			"[+1 Gold] from [{improved}{'Precious Mineral'}] tiles [in this city]",
+			"[+1 Gold] from [{improved}{Ivory}] tiles [in this city]",
+			"[+1 Gold] from [{improved}{Coral}] tiles [in this city]"
 			],
 		"requiredNearbyImprovedResources": ["Gold Ore", "Silver Ore","Rich Copper Ore","Ivory","Gems","Coral"],
 		"requiredTech": "Currency",
