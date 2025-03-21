@@ -643,7 +643,6 @@
 		"upgradesTo": "Hussar",
 		"attackSound": "arrow"
 	},
-	///Line 4
 	{
 		"name": "Javalineer",
 		"unitType": "Ranged Combat",
@@ -664,11 +663,13 @@
 			"Skirmisher Training",
 			"Javalin"
 		],
-		"requiredTech": "Iron Working",
+		"requiredTech": "Mining",
 		"obsoleteTech": "Tactics",
 		"upgradesTo": "Levy Archer",
 		"attackSound": "arrow"
 	},
+	
+	///Line 4
 	{
 		"name": "Spearman",
 		"unitType": "Close Combat",
@@ -966,6 +967,34 @@
 		"attackSound": "horse"
 	},
 	///Line 7
+	{
+		"name": "Proto-Flamethrower",
+		"unitType": "Siege",
+		"cost": 100,
+		"movement": 2,
+		"strength": 20,
+		"rangedStrength": 25,
+		"range": 1,
+		"uniques": [
+			"Consumes [1] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+50]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"[+75]% Strength <vs cities> <when attacking>",
+			"Only available <if [Alchemy Lab] is constructed>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Engineering",
+		"obsoleteTech": "Steels",
+		"upgradesTo": "Cannon",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": ""
+	},
 	{
 		"name": "Crossbowman",
 		"unitType": "Ranged Combat",
@@ -1630,7 +1659,7 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredTech": "Flintlock",
+		"requiredTech": "Carriage",
 		"obsoleteTech": "Rifling",
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "horse"
@@ -1696,7 +1725,7 @@
 			"Skirmisher Training",
 			"The Standing Army"
 		],
-		"requiredTech": "Military Science",
+		"requiredTech": "Cartridge",
 		"obsoleteTech": "Replaceable Parts",
 		"requiredResource": "Standing Army Maintainance",
 		"upgradesTo": "Sharpshooter",
@@ -1724,7 +1753,7 @@
 			"Mercenary Habit",
 			"Skirmisher Training"
 		],
-		"requiredTech": "Military Science",
+		"requiredTech": "Cartridge",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Security Company",
 		"requiredResource": "Mercenary Contract",

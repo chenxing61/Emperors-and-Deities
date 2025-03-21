@@ -1188,20 +1188,18 @@
 		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
 	},
 	{
-		"name": "Hanging Temple",
+		"name": "White Horse Temple",
 		"isWonder": true,
-		"faith": 2,
-		"happiness": 2,
-		"greatPersonPoints": {
-			"Great Engineer": 2
-		},
+		"culture": 1,
+		"happiness": 1,
 		"uniques": [
-			"'Worship Place'",
-			"Only available <before adopting [Monotheism]>",
-			"When spreading religion to a city, gain [5] times the amount of followers of other religions as [Culture]"
+			"'Organise Place'",
+			"Gain a free [Temple] [in this city]",
+			"Resting point for Influence with City-States following this religion [+10]",
+			"Only available <before adopting [Monotheism]>"
 		],
-		"requiredTech": "Mathematics",
-		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
+		"quote": "'I have a shining pearl, used to be covered by dust and chores, today they are gone for the rest of my life,it shines through thousands of mountains and rivers' - Chai Lin Yu Guru",
+		"requiredTech": "Mathematics"
 	},
 	{
 		"name": "City of Mystery",
@@ -1565,7 +1563,7 @@
 			"Allied City-States provide [Gold] equal to [15]% of what they produce for themselves"
 		],
 		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu",
-		"requiredTech": "Construction"
+		"requiredTech": "Horse Collar"
 	},
 	{
 		"name": "Statues of Molten Weapons",
@@ -1581,7 +1579,7 @@
 			"[1] free [Worker] units appear"
 		],
 		"quote": "'He forcefully collected the weapons from everywhere under the sky, concentrated them in Xian Yang, made 12 giant bronze statues.' - Jia Yi",
-		"requiredTech": "Construction"
+		"requiredTech": "Forging"
 	},
 	{
 		"name": "The Temple of Prophet",
@@ -1670,6 +1668,38 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Hanging Temple",
+		"isWonder": true,
+		"faith": 2,
+		"happiness": 2,
+		"greatPersonPoints": {
+			"Great Engineer": 2
+		},
+		"uniques": [
+			"'Worship Place'",
+			"Only available <before adopting [Monotheism]>",
+			"When spreading religion to a city, gain [5] times the amount of followers of other religions as [Culture]"
+		],
+		"requiredTech": "Wood Block Printing",
+		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
+	},
+	{
+		"name": "Alchemy Lab",
+		"maintenance": 3,
+		"specialistSlots": {
+			"Engineer": 1,
+			"Scientist":2
+		},
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Military Building'",
+			"'Research Building'",
+			"Gain a free [Chemistry Lab] [in this city] <after discovering [Chemistry]>"
+		],
+		"requiredTech":"Alchemy"
+	},
+	{
 		"name": "Garden",
 		"maintenance": 3,
 		"happiness": 1,
@@ -1685,20 +1715,7 @@
 		"requiredTech": "Irrigation",
 		"hurryCostModifier": 25
 	},
-	{
-		"name": "White Horse Temple",
-		"isWonder": true,
-		"culture": 1,
-		"happiness": 1,
-		"uniques": [
-			"'Organise Place'",
-			"Gain a free [Temple] [in this city]",
-			"Resting point for Influence with City-States following this religion [+10]",
-			"Only available <before adopting [Monotheism]>"
-		],
-		"quote": "'I have a shining pearl, used to be covered by dust and chores, today they are gone for the rest of my life,it shines through thousands of mountains and rivers' - Chai Lin Yu Guru",
-		"requiredTech": "Wood Block Printing"
-	},
+
 	///Line 7
 	{
 		"name": "Agricultural Water Storage",
