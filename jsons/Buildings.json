@@ -870,9 +870,9 @@
 	{
 		"name": "Road Network",
 		"maintenance": 2,
-		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[+1]% [Gold] from Trade Routes",
 			"[+1]% growth [in all cities]",
 			"[-5]% maintenance cost for buildings [in this city]"
@@ -1051,9 +1051,9 @@
 		"name": "Town Square",
 		"maintenance": 1,
 		"culture": 1,
-		"happiness": 1,
 		"uniques": [
 			"'Cultural Building'",
+			"Provides [1] [Living Condition]",
 			"[+1 Gold] from all ['Economic Building'] buildings <in this city>",
 			"[-10]% Culture cost of natural border growth [in this city]",
 			"Destroyed when the city is captured"
@@ -1380,7 +1380,7 @@
 	{
 		"name": "Circus",
 		"cost": 40,
-		"happiness": 1,
+		"happiness": 2,
 		"specialistSlots": {
 			"Artist": 1
 		},
@@ -1443,6 +1443,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[+15]% growth [in this city]"
 		],
 		"requiredBuilding": "Healer's Hut",
@@ -1748,9 +1749,9 @@
 	{
 		"name": "Aqueduct",
 		"maintenance": 2,
-		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[-5]% Unhappiness from [Population] [in this city]",
 			"[25]% Food is carried over after population increases [in this city]"
 		],
@@ -2679,9 +2680,9 @@
 	{
 		"name": "Sewer",
 		"maintenance": 5,
-		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [2] [Living Condition]",
 			"[25]% Food is carried over after population increases [in this city]"
 		],
 		"requiredBuilding": "City Hall",
@@ -2693,7 +2694,7 @@
 		"maintenance": 3,
 		"uniques": [
 			"'Political Building'",
-			"[-10]% Unhappiness from [Population] [in this city]",
+			"Provides [1] [Living Condition]",
 			"[-25]% enemy spy effectiveness [in this city]"
 		],
 		"requiredBuilding": "City Hall",
@@ -2815,7 +2816,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
-			"[-10]% Unhappiness from [Population] [in this city]",
+			"Provides [2] [Living Condition]",
 			"[+25]% growth [in this city]",
 			"[All] Units adjacent to this city heal [10] HP per turn when healing"
 		],
@@ -2877,7 +2878,7 @@
 	{
 		"name": "Holiday Resort",
 		"maintenance": 5,
-		"happiness": 1,
+		"happiness": 2,
 		"percentStatBonus": {
 			"gold": 10
 		},
@@ -3020,6 +3021,7 @@
 		"uniques": [
 			"'Infrastructure'",
 			"Must have an owned [Road] within [1] tiles",
+			"Provides [1] [Living Condition]",
 			"[+1]% [Gold] from Trade Routes",
 			"[+4]% growth [in all cities]",
 			"[-5]% maintenance cost for buildings [in this city]",
@@ -3285,6 +3287,7 @@
 		},
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[+1]% [Gold] from Trade Routes",
 			"[+5]% growth [in all cities]",
 			"[-5]% maintenance cost for buildings [in this city]",
@@ -3449,6 +3452,7 @@
 		"maintenance": 3,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [2] [Living Condition]",
 			"[+2 Production] from [Power Plant] tiles [in this city]",
 			"Comment ['Power Buildings' channel their production into Power Grid in all cities. The More Power Building you build, the stronger this building becomes(Each 'Power Buildings' provides +2 Production).]"
 		],
@@ -3504,6 +3508,7 @@
 		"maintenance": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[-1]% maintenance cost for buildings [in all cities]"
 		],
 		"requiredTech": "Radio",
@@ -3561,6 +3566,7 @@
 		},
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[+5]% growth [in all cities]",
 			"[-5]% maintenance cost for buildings [in this city]"
 		],
@@ -3722,7 +3728,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
-			"[-10]% Unhappiness from [Population] [in this city]",
+			"Provides [2] [Living Condition]",
 			"[+1 Culture] from [Fresh water] tiles [in this city]",
 			"[20]% Food is carried over after population increases [in this city]"
 		],
@@ -3754,6 +3760,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[-2]% maintenance cost for buildings [in all cities]"
 		],
 		"requiredBuilding": "Telephone Circuit",
@@ -4004,6 +4011,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[+1 Culture] per [2] population [in this city]",
 			"[-2]% maintenance cost for buildings [in all cities]"
 		],
@@ -4013,9 +4021,9 @@
 	},
 	{
 		"name": "Video Game Industry",
-		"happiness": 1,
+		"happiness": 2,
 		"percentStatBonus": {
-			"gold": 25
+			"gold": 10
 		},
 		"specialistSlots": {
 			"Artist": 1,
@@ -4398,7 +4406,7 @@
 	{
 		"name": "Arena",
 		"maintenance": 2,
-		"happiness": 1,
+		"happiness": 2,
 		"culture": 1,
 		"uniques": [
 			"'Entertainment Building'",
@@ -4444,7 +4452,7 @@
 	},
 	{
 		"name": "Jousing Place",
-		"happiness": 1,
+		"happiness": 2,
 		"uniques": [
 			"'Entertainment Building'",
 			"[-5]% Unhappiness from [Population] [in this city]",

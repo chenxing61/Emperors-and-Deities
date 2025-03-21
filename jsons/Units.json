@@ -17,12 +17,13 @@
 	},
 	{
 		"name": "Galley Work Ship",
-		"cost": 35,
+		"cost": 55,
 		"unitType": "Civil Ship",
 		"movement": 2,
 		"uniques": [
 			"'Galley'",
 			"Cannot enter ocean tiles",
+			"Gain [1]-[3] [Food] <upon ending a turn in a [Coast] tile>",
 			"[+1] Movement <after discovering [Shipbuilding]>",
 			"Can build [Water] improvements on tiles",
 			"Automation is a primary action"
@@ -1398,7 +1399,7 @@
 			"The Standing Army"
 		],
 		"requiredTech": "Machinery",
-		"obsoleteTech": "Scientific Theory",
+		"obsoleteTech": "Carriage",
 		"upgradesTo": "Field Gun",
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "artillery"

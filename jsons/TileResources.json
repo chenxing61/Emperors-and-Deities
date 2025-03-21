@@ -554,14 +554,14 @@
 			"Minor deposits generated with weight [10] <in [{Featureless} {Snow}] tiles>"
 		],
 		"majorDepositAmount": {
-			"sparse": 2,
-			"default": 4,
-			"abundant": 4
+			"sparse": 5,
+			"default": 7,
+			"abundant": 11
 		},
 		"minorDepositAmount": {
-			"sparse": 1,
-			"default": 2,
-			"abundant": 3
+			"sparse": 3,
+			"default": 4,
+			"abundant": 7
 		}
 	},
 	///The Unit limit
@@ -1390,6 +1390,13 @@
 	},
 	///Special res
 	{
+		"name": "Living Condition",
+		"resourceType": "Strategic",
+		"uniques":["City-level resource",
+		"Comment [Every 5 Population costs 1 Living Condition.]",
+		"Comment [If Living Condition goes down into negative, happiness production will suffer, until -100%, which is -4 Living Condition,-4 Living Condition also nullifies all growth in the city. Building infrastructure or settling city near waters increase the living condition.]"]
+	},
+	{
 		"name": "Alcohol",
 		"resourceType": "Luxury",
 		"gold": 1
@@ -1407,6 +1414,7 @@
 	{
 		"name": "Revolution Oppotunity",
 		"resourceType": "Strategic",
+		"uniques":["Cannot be traded"],
 		"revealedBy": "Engineering"
 	}
 ]

@@ -248,6 +248,29 @@
             "Comment [Enables you to buy Altar and The Master Shrine, altar is a 'Worship Place' that provides large amount of happiness but decreases food and gold output of a city. The Master Shrine is a 'Religion Core' national wonder.]"
         ]
     },
+    ///Monotheism
+    {
+        "name": "Pilgrimage",
+        "type": "Follower",
+        "uniques": [
+            "Only available <before adopting [Papal Primacy]>",
+            "Only available <before adopting [Karma]>",
+            "Only available <before adopting [Extravagant Rituals]>",
+            "Comment [Enables you to buy Mosque and House of God, Mosque is a 'Organise Place' that gives faith bonus to Holy city. House of God is a 'Religion Core' national wonder.]",
+            "May buy [Mosque] buildings with [Faith] [in cities following this religion]"
+        ]
+    },
+    {
+        "name": "Papal Primacy",
+        "type": "Follower",
+        "uniques": [
+            "Only available <before adopting [Karma]>",
+            "Only available <before adopting [Pilgrimage]>",
+            "Only available <before adopting [Extravagant Rituals]>",
+            "Comment [Enables you to buy Cathedral and Holy See, Cathedral is a 'Organise Place' that provide cultural bonuses. Holy See is a 'Religion Core' national wonder.]",
+            "May buy [Cathedral] buildings with [Faith] [in cities following this religion]"
+        ]
+    },
     ////////////////////////////////////// Enhancer beliefs ///////////////////////////////////////
     {
         "name": "Interfaith Dialogue",
@@ -258,30 +281,7 @@
             "When spreading religion to a city, gain [10] times the amount of followers of other religions as [Culture]"
         ]
     },
-    {
-        "name": "Pilgrimage",
-        "type": "Enhancer",
-        "uniques": [
-            "Only available <before adopting [Papal Primacy]>",
-            "Only available <before adopting [Karma]>",
-            "Only available <before adopting [Extravagant Rituals]>",
-            "Comment [Enables you to buy Mosque and House of God, Mosque is a 'Organise Place' that gives faith bonus to Holy city. House of God is a 'Religion Core' national wonder.]",
-            "May buy [Mosque] buildings with [Faith] [in cities following this religion]",
-            "[+2 Faith] for each global city following this religion"
-        ]
-    },
-    {
-        "name": "Papal Primacy",
-        "type": "Enhancer",
-        "uniques": [
-            "Only available <before adopting [Karma]>",
-            "Only available <before adopting [Pilgrimage]>",
-            "Only available <before adopting [Extravagant Rituals]>",
-            "Comment [Enables you to buy Cathedral and Holy See, Cathedral is a 'Organise Place' that provide cultural bonuses. Holy See is a 'Religion Core' national wonder.]",
-            "May buy [Cathedral] buildings with [Faith] [in cities following this religion]",
-            "Resting point for Influence with City-States following this religion [+15]"
-        ]
-    },
+
     {
         "name": "Order of the Faith",
         "type": "Enhancer",
