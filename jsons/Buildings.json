@@ -164,8 +164,8 @@
 			"Gain a free [Monument] [in this city]", //20
 			"Gain a free [Town Hall] [in this city]", //40
 			"Gain a free [Library] [in this city]", //40
-			"Gain a free [Town Square] [in this city]"
-		], //75
+			"Gain a free [Town Square] [in this city]" //75
+		], 
 		"requiredTech": "Education",
 		"hurryCostModifier": -25
 	},
@@ -200,8 +200,8 @@
 			"Only available <in cities without a [Military Academy]>",
 			"Gain a free [Medical School] [in this city]", //160
 			"Gain a free [University] [in this city]", //160
-			"Gain a free [Military Academy] [in this city]"
-		], //160
+			"Gain a free [Military Academy] [in this city]" //160
+		], 
 		"requiredTech": "Acoustics",
 		"hurryCostModifier": -25
 	},
@@ -217,8 +217,8 @@
 			"Only available <in cities without a [Art Gallery]>",
 			"Gain a free [Opera House] [in this city]", //200
 			"Gain a free [Museum] [in this city]", //160
-			"Gain a free [Art Gallery] [in this city]"
-		], //160
+			"Gain a free [Art Gallery] [in this city]" //160
+		], 
 		"requiredTech": "Railroads",
 		"hurryCostModifier": -25
 	},
@@ -234,8 +234,8 @@
 			"Only available <in cities without a [Highway Network]>",
 			"Gain a free [Sewer] [in this city]", //250
 			"Gain a free [Hospital] [in this city]", //300
-			"Gain a free [Highway Network] [in this city]"
-		], //400
+			"Gain a free [Highway Network] [in this city]" //400
+		], 
 		"requiredTech": "Radio",
 		"hurryCostModifier": -25
 	},
@@ -252,8 +252,8 @@
 			"Gain a free [Newspaper Agency] [in this city]", //160
 			"Gain a free [Police Station] [in this city]", //250
 			"Gain a free [Commune] [in this city] <after adopting [Complete Autonomy]>",
-			"Gain a free [Government Complex] [in this city]"
-		], //400
+			"Gain a free [Government Complex] [in this city]" //400
+		], 
 		"requiredTech": "Telegram",
 		"hurryCostModifier": -25
 	},
@@ -284,8 +284,8 @@
 			"Only available <in cities without a [Tools Factory]>",
 			"Gain a free [Textile Factory] [in this city]", //300
 			"Gain a free [Furniture Factory] [in this city]", //300
-			"Gain a free [Tools Factory] [in this city]"
-		], //300
+			"Gain a free [Tools Factory] [in this city]" //300
+		], 
 		"requiredTech": "Replaceable Parts",
 		"requiredBuilding": "Civilian Factory Complex",
 		"hurryCostModifier": -25
@@ -304,8 +304,8 @@
 			"Gain a free [Fertilizer Factory] [in this city]", //300
 			"Gain a free [Agricultural Machinery Factory] [in this city]", //400
 			"Gain a free [Cannery] [in this city]", //400
-			"Gain a free [Soda Factory] [in this city]"
-		], //400
+			"Gain a free [Soda Factory] [in this city]" //400
+		], 
 		"requiredTech": "Replaceable Parts",
 		"requiredBuilding": "Civilian Factory Complex",
 		"hurryCostModifier": -25
@@ -340,8 +340,8 @@
 			"Only available <in cities without a [Bio Lab]>",
 			"Gain a free [Physic Lab] [in this city]", //160
 			"Gain a free [Chemistry Lab] [in this city]", //160
-			"Gain a free [Bio Lab] [in this city]"
-		], //160
+			"Gain a free [Bio Lab] [in this city]" //160
+		], 
 		"requiredTech": "Pharmaceuticals",
 		"requiredBuilding": "University",
 		"hurryCostModifier": -25
@@ -353,7 +353,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Cultural Building'",
-			"[-2]% Culture cost of natural border growth [in all cities]",
+			"[-1]% Culture cost of natural border growth [in all cities]",
 			"[+1 Gold] <after discovering [Theology]>",
 			"Destroyed when the city is captured"
 		],
@@ -393,20 +393,10 @@
 		"requiredTech": "Hunting and Fishing",
 		"hurryCostModifier": 0
 	},
-	{
-		"name": "Hunter's Hut",
-		"food": 1,
-		"uniques": [
-			"'Economic Building'",
-			"[+1 Gold] from ['Hunt'] tiles [in this city]"
-		],
-		"requiredTech": "Hunting and Fishing",
-		"hurryCostModifier": 0
-	},
 	///Line 1
 	{
 		"name": "Fishing Port",
-		"food": 1,
+		"food": 2,
 		"uniques": [
 			"'Marine Infrastructure'",
 			"[+1 Food] from [Coast] tiles [in this city]",
@@ -545,6 +535,107 @@
 		"hurryCostModifier": 15
 	},
 	{
+		"name": "Hunter's Hut",
+		"cost":20,
+		"food": 1,
+		"uniques": [
+			"'Economic Building'",
+			"[+1 Gold] from ['Hunt'] tiles [in this city]"
+		],
+		"requiredTech": "Trapping",
+		"hurryCostModifier": 0
+	},
+	///Line 2
+	{
+		"name": "Watermill",
+		"food": 2,
+		"production": 1,
+		"uniques": [
+			"'Agricultural Building'",
+			"Must be on [River]"
+		],
+		"requiredTech": "The Wheel",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Foundry",
+		"maintenance": 1,
+		"production": 1,
+		"specialistSlots": {
+			"Engineer": 1
+		},
+		"uniques": [
+			"'Heavy Industry'",
+			"[+10]% Production when constructing [All] units [in this city]",
+			"Provides [1] [Metal]"
+		],
+		"requiredNearbyImprovedResources": [
+			"Metal",
+			"Minerals"
+		],
+		"requiredTech": "Bronze Working",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Mint",
+		"uniques": [
+			"'Economic Building'",
+			"'Political Building'",
+			"[+1 Gold] from [Gold Ore] tiles [in this city]",
+			"[+1 Gold] from [Silver Ore] tiles [in this city]",
+			"[+1 Gold] from [Rich Copper Ore] tiles [in this city]",
+			"[+1 Gold] from [{improved}{Gold Ore}] tiles [in this city]",
+			"[+1 Gold] from [{improved}{Silver Ore}] tiles [in this city]",
+			"[+1 Gold] from [{improved}{Rich Copper Ore}] tiles [in this city]",
+			"[+2 Gold] from [Cocoa] tiles [in this city]",
+			"[+1 Gold] per [3] population [in this city]"
+		],
+		"requiredNearbyImprovedResources": [
+			"Gold Ore",
+			"Silver Ore",
+			"Rich Copper Ore",
+			"Cocoa"
+		],
+		"requiredTech": "Currency",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Jewellery Workshop",
+		"maintenance": 1,
+		"specialistSlots": {
+			"Artist": 1
+		},
+		"uniques": [
+			"'Light Industry'",
+			"[+1 Gold] from [{improved}{'Precious Mineral'}] tiles [in this city]",
+			"[+1 Gold] from [{improved}{Ivory}] tiles [in this city]",
+			"[+1 Gold] from [{improved}{Coral}] tiles [in this city]"
+		],
+		"requiredNearbyImprovedResources": [
+			"Gold Ore",
+			"Silver Ore",
+			"Rich Copper Ore",
+			"Ivory",
+			"Gems",
+			"Coral"
+		],
+		"requiredTech": "Currency",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Tarvern",
+		"maintenance": 1,
+		"happiness": 2,
+		"uniques": [
+			"'Entertainment Building'",
+			"Consumes [2] [Alcohol]",
+			"Provides [1] [Mercenary Contract]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Currency",
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Ancestral Temple",
 		"isWonder": true,
 		"faith": 1,
@@ -611,7 +702,7 @@
 			"[+10]% Production when constructing ['Skirmishers'] units [in all cities]",
 			"Only available <after adopting [Hunting Tradition]>"
 		],
-		"requiredTech": "Trapping",
+		"requiredTech": "Calendar",
 		"quote": "'It is not so much for its beauty that the forest makes a claim upon men's hearts, as for that subtle something, that quality of air, that emanation from old trees, that so wonderfully changes and renews a weary spirit.' - Robert Louis Stevenson"
 	},
 	{
@@ -629,7 +720,7 @@
 			"[+15]% Production when constructing ['Mounted'] units [in all cities]",
 			"Only available <after adopting [God of the Open Sky]>"
 		],
-		"requiredTech": "Animal Husbandry",
+		"requiredTech": "Calendar",
 		"quote": "'Full Moon rises to the sky, Why aren't there clouds around? I am waiting for a beautiful girl, why haven't you come?' - Meeting at Ovoo by Mala Qinfu, 1951 "
 	},
 	{
@@ -683,7 +774,27 @@
 		"requiredTech": "Calendar",
 		"quote": "'Time crumbles things; everything grows old and is forgotten under the power of time' - Aristotle"
 	},
-	/// Line 2
+	{
+		"name": "Mausoleum of Afterlife",
+		"isWonder": true,
+		"happiness": 3,
+		"greatPersonPoints": {
+			"Great Engineer": 1
+		},
+		"uniques": [
+			"'Worship Place'",
+			"[+2 Faith] <starting from the [Ancient era]>",
+			"[+2 Faith] <starting from the [Classical era]>",
+			"[+2 Culture] <starting from the [Medieval era]>",
+			"[+2 Culture] <starting from the [Renaissance era]>",
+			"[+3 Science] <starting from the [Imperial era]>",
+			"[+3 Science] <starting from the [Modern era]>",
+			"Only available <after adopting [Belief in Afterlife]>"
+		],
+		"requiredTech": "The Wheel",
+		"quote": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge"
+	},
+	/// Line 3
 	{
 		"name": "Basilica",
 		"uniqueTo": "Mediterranean",
@@ -757,87 +868,18 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Watermill",
-		"food": 2,
-		"production": 1,
-		"uniques": [
-			"'Agricultural Building'",
-			"Must be on [River]"
-		],
-		"requiredTech": "The Wheel",
-		"hurryCostModifier": 10
-	},
-	{
 		"name": "Road Network",
 		"maintenance": 2,
-		"happiness": 1,
+		"happiness":1,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[+1]% [Gold] from Trade Routes",
 			"[+1]% growth [in all cities]",
 			"[-5]% maintenance cost for buildings [in this city]"
 		],
-		"requiredTech": "The Wheel",
+		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
-	},
-	{
-		"name": "Civilian Blacksmith",
-		"maintenance": 2,
-		"specialistSlots": {
-			"Engineer": 1
-		},
-		"uniques": [
-			"'Light Industry'",
-			"[+1 Production] from ['Extraction Improvement'] tiles [in this city]",
-			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city] <after discovering [Plows]>",
-			"[+1 Production] from ['Lumber Improvement'] tiles [in this city] <after discovering [Construction]>"
-		],
-		"requiredTech": "Bronze Working",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Foundry",
-		"maintenance": 1,
-		"production": 1,
-		"specialistSlots": {
-			"Engineer": 1
-		},
-		"uniques": [
-			"'Heavy Industry'",
-			"[+10]% Production when constructing [All] units [in this city]",
-			"Provides [1] [Metal]"
-		],
-		"requiredNearbyImprovedResources": [
-			"Metal",
-			"Minerals"
-		],
-		"requiredBuilding": "Civilian Blacksmith",
-		"requiredTech": "Bronze Working",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Mint",
-		"uniques": [
-			"'Economic Building'",
-			"'Political Building'",
-			"[+1 Gold] from [Gold Ore] tiles [in this city]",
-			"[+1 Gold] from [Silver Ore] tiles [in this city]",
-			"[+1 Gold] from [Rich Copper Ore] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Gold Ore}] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Silver Ore}] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Rich Copper Ore}] tiles [in this city]",
-			"[+2 Gold] from [Cocoa] tiles [in this city]",
-			"[+1 Gold] per [3] population [in this city]"
-		],
-		"requiredNearbyImprovedResources": [
-			"Gold Ore",
-			"Silver Ore",
-			"Rich Copper Ore",
-			"Cocoa"
-		],
-		"requiredBuilding": "Civilian Blacksmith",
-		"requiredTech": "Currency",
-		"hurryCostModifier": 25
 	},
 	{
 		"name": "Livestock Market",
@@ -867,29 +909,6 @@
 		"hurryCostModifier": 10
 	},
 	{
-		"name": "Jewellery Workshop",
-		"maintenance": 1,
-		"specialistSlots": {
-			"Artist": 1
-		},
-		"uniques": [
-			"'Light Industry'",
-			"[+1 Gold] from [{improved}{'Precious Mineral'}] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Ivory}] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Coral}] tiles [in this city]"
-		],
-		"requiredNearbyImprovedResources": [
-			"Gold Ore",
-			"Silver Ore",
-			"Rich Copper Ore",
-			"Ivory",
-			"Gems",
-			"Coral"
-		],
-		"requiredTech": "Currency",
-		"hurryCostModifier": 10
-	},
-	{
 		"name": "Mercenary Office",
 		"cost": 50,
 		"maintenance": 1,
@@ -898,21 +917,7 @@
 			"May buy ['Mercenary Army'] units with [Gold] [in this city]",
 			"Provides [1] [Mercenary Contract]"
 		],
-		"requiredBuilding": "Barrack",
 		"requiredTech": "Trade Network",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Tarvern",
-		"maintenance": 1,
-		"happiness": 2,
-		"uniques": [
-			"'Entertainment Building'",
-			"Consumes [2] [Alcohol]",
-			"Provides [1] [Mercenary Contract]",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Currency",
 		"hurryCostModifier": 25
 	},
 	{
@@ -928,7 +933,6 @@
 			"'Cultural Building'",
 			"[+25]% Great Person generation [in this city]"
 		],
-		"requiredBuilding": "Town Square",
 		"requiredTech": "Plows",
 		"hurryCostModifier": 10
 	},
@@ -969,7 +973,7 @@
 		"culture": 2,
 		"happiness": 1,
 		"greatPersonPoints": {
-			"Great Artist": 1
+			"Great Artist": 3
 		},
 		"uniques": [
 			"'Worship Place'",
@@ -985,7 +989,7 @@
 		"name": "The Statue of Thunder God",
 		"isWonder": true,
 		"happiness": 2,
-		"gold": 3,
+		"gold": 5,
 		"uniques": [
 			"'Worship Place'",
 			"[+10]% Strength <for [All] units> <vs cities> <when attacking>",
@@ -1001,7 +1005,7 @@
 		"culture": 3,
 		"happiness": 1,
 		"greatPersonPoints": {
-			"Great Merchant": 2
+			"Great Merchant": 4
 		},
 		"uniques": [
 			"'Worship Place'",
@@ -1042,34 +1046,15 @@
 		"requiredTech": "Writing",
 		"quote": "'Learning without thinking leads to confusion; Thinking without learning ends to vain.' - Confucius"
 	},
-	{
-		"name": "Mausoleum of Afterlife",
-		"isWonder": true,
-		"happiness": 3,
-		"greatPersonPoints": {
-			"Great Engineer": 1
-		},
-		"uniques": [
-			"'Worship Place'",
-			"[+2 Faith] <starting from the [Ancient era]>",
-			"[+2 Faith] <starting from the [Classical era]>",
-			"[+2 Culture] <starting from the [Medieval era]>",
-			"[+2 Culture] <starting from the [Renaissance era]>",
-			"[+3 Science] <starting from the [Imperial era]>",
-			"[+3 Science] <starting from the [Modern era]>",
-			"Only available <after adopting [Belief in Afterlife]>"
-		],
-		"requiredTech": "The Wheel",
-		"quote": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge"
-	},
+
 	///Line 3
 	{
 		"name": "Town Square",
 		"maintenance": 1,
 		"culture": 1,
-		"happiness": 1,
 		"uniques": [
 			"'Cultural Building'",
+			"Provides [1] [Living Condition]",
 			"[+1 Gold] from all ['Economic Building'] buildings <in this city>",
 			"[-10]% Culture cost of natural border growth [in this city]",
 			"Destroyed when the city is captured"
@@ -1204,20 +1189,18 @@
 		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
 	},
 	{
-		"name": "Hanging Temple",
+		"name": "White Horse Temple",
 		"isWonder": true,
-		"faith": 2,
-		"happiness": 2,
-		"greatPersonPoints": {
-			"Great Engineer": 2
-		},
+		"culture": 1,
+		"happiness": 1,
 		"uniques": [
-			"'Worship Place'",
-			"Only available <before adopting [Monotheism]>",
-			"When spreading religion to a city, gain [5] times the amount of followers of other religions as [Culture]"
+			"'Organise Place'",
+			"Gain a free [Temple] [in this city]",
+			"Resting point for Influence with City-States following this religion [+10]",
+			"Only available <before adopting [Monotheism]>"
 		],
-		"requiredTech": "Mathematics",
-		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
+		"quote": "'I have a shining pearl, used to be covered by dust and chores, today they are gone for the rest of my life,it shines through thousands of mountains and rivers' - Chai Lin Yu Guru",
+		"requiredTech": "Mathematics"
 	},
 	{
 		"name": "City of Mystery",
@@ -1384,20 +1367,6 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Military Blacksmith",
-		"maintenance": 1,
-		"uniques": [
-			"'Military Building'",
-			"New [Military] units start with [10] XP [in this city]",
-			"[Military] units gain the [Classical Arms] promotion",
-			"Comment [Enables you to build new Siege Units unlocked by Engineering]",
-			"Destroyed when the city is captured"
-		],
-		"requiredBuilding": "Barrack",
-		"requiredTech": "Iron Working",
-		"hurryCostModifier": 25
-	},
-	{
 		"name": "Paper Maker",
 		"maintenance": 1,
 		"uniques": [
@@ -1410,7 +1379,7 @@
 	{
 		"name": "Circus",
 		"cost": 40,
-		"happiness": 1,
+		"happiness": 2,
 		"specialistSlots": {
 			"Artist": 1
 		},
@@ -1422,18 +1391,19 @@
 		"hurryCostModifier": 10
 	},
 	{
-		"name": "Military Stable",
-		"maintenance": 1,
+		"name": "Armory",
+		"hurryCostModifier": 25,
+		"maintenance": 2,
+		"percentStatBonus": {
+			"production": -5
+		},
 		"uniques": [
 			"'Military Building'",
-			"Provides [1] [Horse]",
 			"Provides [1] [Standing Army Maintainance]",
-			"New [Mounted] units start with [10] XP [in this city]",
-			"Destroyed when the city is captured"
+			"New [Military] units start with [15] XP [in this city]"
 		],
-		"requiredBuilding": "Barrack",
-		"requiredTech": "Stirrup",
-		"hurryCostModifier": 25
+		"requiredBuilding": "Military Blacksmith",
+		"requiredTech": "Logistics"
 	},
 	{
 		"name": "Intergration",
@@ -1472,6 +1442,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[+15]% growth [in this city]"
 		],
 		"requiredBuilding": "Healer's Hut",
@@ -1490,21 +1461,7 @@
 		"requiredTech": "Philosophy",
 		"hurryCostModifier": 25
 	},
-	{
-		"name": "Armory",
-		"hurryCostModifier": 25,
-		"maintenance": 2,
-		"percentStatBonus": {
-			"production": -5
-		},
-		"uniques": [
-			"'Military Building'",
-			"Provides [1] [Standing Army Maintainance]",
-			"New [Military] units start with [15] XP [in this city]"
-		],
-		"requiredBuilding": "Military Blacksmith",
-		"requiredTech": "Construction"
-	},
+
 	{
 		"name": "Watch Tower",
 		"maintenance": 1,
@@ -1568,6 +1525,20 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Military Stable",
+		"maintenance": 1,
+		"uniques": [
+			"'Military Building'",
+			"Provides [1] [Horse]",
+			"Provides [1] [Standing Army Maintainance]",
+			"New [Mounted] units start with [10] XP [in this city]",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding": "Barrack",
+		"requiredTech": "Horse Collar",
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "The Great Lighthouse",
 		"isWonder": true,
 		"culture": 1,
@@ -1593,7 +1564,7 @@
 			"Allied City-States provide [Gold] equal to [15]% of what they produce for themselves"
 		],
 		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu",
-		"requiredTech": "Construction"
+		"requiredTech": "Horse Collar"
 	},
 	{
 		"name": "Statues of Molten Weapons",
@@ -1609,7 +1580,7 @@
 			"[1] free [Worker] units appear"
 		],
 		"quote": "'He forcefully collected the weapons from everywhere under the sky, concentrated them in Xian Yang, made 12 giant bronze statues.' - Jia Yi",
-		"requiredTech": "Construction"
+		"requiredTech": "Forging"
 	},
 	{
 		"name": "The Temple of Prophet",
@@ -1627,6 +1598,32 @@
 		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
 	},
 	/// Line 6
+	{
+		"name": "Civilian Blacksmith",
+		"maintenance": 3,
+		"uniques": [
+			"'Light Industry'",
+			"[+1 Production] from ['Extraction Improvement'] tiles [in this city]",
+			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]",
+			"[+1 Production] from ['Lumber Improvement'] tiles [in this city]"
+		],
+		"requiredTech": "Forging",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Military Blacksmith",
+		"maintenance": 1,
+		"uniques": [
+			"'Military Building'",
+			"New [Military] units start with [10] XP [in this city]",
+			"[Military] units gain the [Classical Arms] promotion",
+			"Comment [Enables you to build new Siege Units unlocked by Engineering]",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding": "Barrack",
+		"requiredTech": "Forging",
+		"hurryCostModifier": 25
+	},
 	{
 		"name": "Irrigation System",
 		"maintenance": 3,
@@ -1672,6 +1669,38 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Hanging Temple",
+		"isWonder": true,
+		"faith": 2,
+		"happiness": 2,
+		"greatPersonPoints": {
+			"Great Engineer": 2
+		},
+		"uniques": [
+			"'Worship Place'",
+			"Only available <before adopting [Monotheism]>",
+			"When spreading religion to a city, gain [5] times the amount of followers of other religions as [Culture]"
+		],
+		"requiredTech": "Wood Block Printing",
+		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
+	},
+	{
+		"name": "Alchemy Lab",
+		"maintenance": 3,
+		"specialistSlots": {
+			"Engineer": 1,
+			"Scientist":2
+		},
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Military Building'",
+			"'Research Building'",
+			"Gain a free [Chemistry Lab] [in this city] <after discovering [Chemistry]>"
+		],
+		"requiredTech":"Alchemy"
+	},
+	{
 		"name": "Garden",
 		"maintenance": 3,
 		"happiness": 1,
@@ -1687,20 +1716,7 @@
 		"requiredTech": "Irrigation",
 		"hurryCostModifier": 25
 	},
-	{
-		"name": "White Horse Temple",
-		"isWonder": true,
-		"culture": 1,
-		"happiness": 1,
-		"uniques": [
-			"'Organise Place'",
-			"Gain a free [Temple] [in this city]",
-			"Resting point for Influence with City-States following this religion [+10]",
-			"Only available <before adopting [Monotheism]>"
-		],
-		"quote": "'I have a shining pearl, used to be covered by dust and chores, today they are gone for the rest of my life,it shines through thousands of mountains and rivers' - Chai Lin Yu Guru",
-		"requiredTech": "Wood Block Printing"
-	},
+
 	///Line 7
 	{
 		"name": "Agricultural Water Storage",
@@ -1751,9 +1767,9 @@
 	{
 		"name": "Aqueduct",
 		"maintenance": 2,
-		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[-5]% Unhappiness from [Population] [in this city]",
 			"[25]% Food is carried over after population increases [in this city]"
 		],
@@ -1900,7 +1916,7 @@
 			"'Core of Religion'",
 			"[+100]% Natural religion spread [in this city]",
 			"[+1 Faith] from every [Governor] <in this city>",
-			"Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>",
+			"Only available <if [Cathedral] is constructed in all [non-[Puppeted]] cities>",
 			"Only available <when religion is enabled>",
 			"Can only be built <in [in holy cities] cities>"
 		],
@@ -1923,7 +1939,7 @@
 			"'Core of Religion'",
 			"[+100]% Natural religion spread [in this city]",
 			"[+1 Faith] from every [Governor] <in this city>",
-			"Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>",
+			"Only available <if [Mosque] is constructed in all [non-[Puppeted]] cities>",
 			"Only available <when religion is enabled>",
 			"Can only be built <in [in holy cities] cities>"
 		],
@@ -1946,7 +1962,7 @@
 			"'Core of Religion'",
 			"[+100]% Natural religion spread [in this city]",
 			"[+1 Culture] from every [Governor] <in this city>",
-			"Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>",
+			"Only available <if [Pagoda] is constructed in all [non-[Puppeted]] cities>",
 			"Only available <when religion is enabled>",
 			"Can only be built <in [in holy cities] cities>"
 		],
@@ -1970,7 +1986,7 @@
 			"'Core of Religion'",
 			"[+100]% Natural religion spread [in this city]",
 			"[+1 Culture] from every [Governor] <in this city>",
-			"Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>",
+			"Only available <if [Altar] is constructed in all [non-[Puppeted]] cities>",
 			"Unbuildable",
 			"Only available <when religion is enabled>"
 		],
@@ -2682,9 +2698,9 @@
 	{
 		"name": "Sewer",
 		"maintenance": 5,
-		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [2] [Living Condition]",
 			"[25]% Food is carried over after population increases [in this city]"
 		],
 		"requiredBuilding": "City Hall",
@@ -2696,7 +2712,7 @@
 		"maintenance": 3,
 		"uniques": [
 			"'Political Building'",
-			"[-10]% Unhappiness from [Population] [in this city]",
+			"Provides [1] [Living Condition]",
 			"[-25]% enemy spy effectiveness [in this city]"
 		],
 		"requiredBuilding": "City Hall",
@@ -2818,7 +2834,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
-			"[-10]% Unhappiness from [Population] [in this city]",
+			"Provides [2] [Living Condition]",
 			"[+25]% growth [in this city]",
 			"[All] Units adjacent to this city heal [10] HP per turn when healing"
 		],
@@ -2880,7 +2896,7 @@
 	{
 		"name": "Holiday Resort",
 		"maintenance": 5,
-		"happiness": 1,
+		"happiness": 2,
 		"percentStatBonus": {
 			"gold": 10
 		},
@@ -3023,6 +3039,7 @@
 		"uniques": [
 			"'Infrastructure'",
 			"Must have an owned [Road] within [1] tiles",
+			"Provides [1] [Living Condition]",
 			"[+1]% [Gold] from Trade Routes",
 			"[+4]% growth [in all cities]",
 			"[-5]% maintenance cost for buildings [in this city]",
@@ -3197,7 +3214,9 @@
 		},
 		"uniques": [
 			"'Research Building'",
-			"[Great Scientist] is earned [+5]% faster"
+			"[Great Scientist] is earned [+5]% faster",
+			"[+1 Science] [in this city] <after discovering [Relativity Theory]>",
+			"[+1 Science] [in this city] <after discovering [Quantum Theory]>"
 		],
 		"requiredBuilding": "University",
 		"requiredTech": "Telegram"
@@ -3286,6 +3305,7 @@
 		},
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[+1]% [Gold] from Trade Routes",
 			"[+5]% growth [in all cities]",
 			"[-5]% maintenance cost for buildings [in this city]",
@@ -3450,6 +3470,7 @@
 		"maintenance": 3,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [2] [Living Condition]",
 			"[+2 Production] from [Power Plant] tiles [in this city]",
 			"Comment ['Power Buildings' channel their production into Power Grid in all cities. The More Power Building you build, the stronger this building becomes(Each 'Power Buildings' provides +2 Production).]"
 		],
@@ -3505,6 +3526,7 @@
 		"maintenance": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[-1]% maintenance cost for buildings [in all cities]"
 		],
 		"requiredTech": "Radio",
@@ -3562,6 +3584,7 @@
 		},
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[+5]% growth [in all cities]",
 			"[-5]% maintenance cost for buildings [in this city]"
 		],
@@ -3706,12 +3729,24 @@
 	},
 	/// Line 18
 	{
+		"name": "Uranium Enrichment Facility",
+		"maintenance": 10,
+		"uniques": [
+			"'Heavy Industry'",
+			"Consumes [3] [Uranium]",
+			"Consumes [0] [Uranium]",
+			"Provides [1] [Enriched Uranium]"
+		],
+		"requiredTech": "Uranium Enrichment",
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Sewage Treatment Plant",
 		"maintenance": 5,
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
-			"[-10]% Unhappiness from [Population] [in this city]",
+			"Provides [2] [Living Condition]",
 			"[+1 Culture] from [Fresh water] tiles [in this city]",
 			"[20]% Food is carried over after population increases [in this city]"
 		],
@@ -3743,6 +3778,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[-2]% maintenance cost for buildings [in all cities]"
 		],
 		"requiredBuilding": "Telephone Circuit",
@@ -3854,9 +3890,9 @@
 		},
 		"uniques": [
 			"'Power Building'",
-			"Consumes [2] [Uranium] <before discovering [Nuclear Fusion]>",
-			"Consumes [0] [Uranium] <after discovering [Nuclear Fusion]>",
-			"[+4 Production] [in all cities] <in cities with a [Power Grid]>"
+			"Consumes [1] [Enriched Uranium] <before discovering [Nuclear Fusion]>",
+			"Consumes [0] [Enriched Uranium] <after discovering [Nuclear Fusion]>",
+			"[+3 Production] [in all cities] <in cities with a [Power Grid]>"
 		],
 		"requiredTech": "Nuclear Fission",
 		"hurryCostModifier": 25
@@ -3993,6 +4029,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
+			"Provides [1] [Living Condition]",
 			"[+1 Culture] per [2] population [in this city]",
 			"[-2]% maintenance cost for buildings [in all cities]"
 		],
@@ -4002,9 +4039,9 @@
 	},
 	{
 		"name": "Video Game Industry",
-		"happiness": 1,
+		"happiness": 2,
 		"percentStatBonus": {
-			"gold": 25
+			"gold": 10
 		},
 		"specialistSlots": {
 			"Artist": 1,
@@ -4034,7 +4071,7 @@
 			"[+10]% Production when constructing [All] buildings [in this city]"
 		],
 		"requiredBuilding": "Drone Factory",
-		"requiredTech": "Drone Warfare",
+		"requiredTech": "Remote Control",
 		"hurryCostModifier": 25
 	},
 	{
@@ -4179,7 +4216,7 @@
 			"[+3 Science] from [Ice] tiles [in this city]",
 			"Must have an owned [Snow] within [4] tiles"
 		],
-		"requiredTech": "Sustainability",
+		"requiredTech": "Renewable Energy",
 		"quote": "'I seemed to vow to myself that some day I would go to the region of ice and snow and go on and on till I came to one of the poles of the earth, the end of the axis upon which this great round ball turns.' - Ernest Shackleton"
 	},
 	///Line 22
@@ -4387,7 +4424,7 @@
 	{
 		"name": "Arena",
 		"maintenance": 2,
-		"happiness": 1,
+		"happiness": 2,
 		"culture": 1,
 		"uniques": [
 			"'Entertainment Building'",
@@ -4433,7 +4470,7 @@
 	},
 	{
 		"name": "Jousing Place",
-		"happiness": 1,
+		"happiness": 2,
 		"uniques": [
 			"'Entertainment Building'",
 			"[-5]% Unhappiness from [Population] [in this city]",
@@ -4739,7 +4776,7 @@
 			"Provides [1] [Coal]",
 			"Destroyed when the city is captured"
 		],
-		"requiredTech": "Sustainability"
+		"requiredTech": "Renewable Energy"
 	},
 	///Routes under ideology
 	{
@@ -4886,7 +4923,7 @@
 			"Cannot be hurried",
 			"Destroyed when the city is captured"
 		],
-		"requiredTech": "Atomic Theory"
+		"requiredTech": "Nuclear Fission"
 	},
 	{
 		"name": "Space Program",

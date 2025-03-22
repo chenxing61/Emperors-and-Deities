@@ -166,6 +166,7 @@
 	{
 		"name": "Long Range Logistic",
 		"uniques": [
+			"Only available <after discovering [Logistics]>",
 			"Gain [-3] [Gold] <every [1] turns>",
 			"[+10] HP when healing <in [Foreign Land] tiles>"
 		],
@@ -194,6 +195,7 @@
 	{
 		"name": "Extra Supply",
 		"uniques": [
+			"Only available <after discovering [Logistics]>",
 			"Gain [-3] [Gold] <every [1] turns>",
 			"[+15] HP when healing <in [Friendly Land] tiles>"
 		],
@@ -1989,13 +1991,28 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"[+33]% Strength <vs ['Mechanised'] units>"
+			"[+20]% Strength <vs ['Mechanised'] units>"
 		],
 		"unitTypes": [
 			"Assault"
 		],
 		"column": 30,
 		"row": 2
+	},
+	{
+		"name": "Depleted Uranium Rounds",
+		"prerequisites": [
+			"Modern Arms"
+		],
+		"uniques": [
+			"Only available <after discovering [Uranium Enrichment]>",
+			"[+33]% Strength <vs ['Mechanised'] units>"
+		],
+		"unitTypes": [
+			"Assault"
+		],
+		"column": 30,
+		"row": 3
 	},
 	{
 		"name": "HE Rounds",
@@ -2010,7 +2027,7 @@
 			"Assault"
 		],
 		"column": 30,
-		"row": 3
+		"row": 4
 	},
 	{
 		"name": "AA Machine Gun",
@@ -2026,7 +2043,7 @@
 			"Assault"
 		],
 		"column": 30,
-		"row": 4
+		"row": 5
 	},
 	{
 		"name": "Extra Screening Ship",

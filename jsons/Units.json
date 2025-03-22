@@ -16,6 +16,23 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Galley Work Ship",
+		"cost": 55,
+		"unitType": "Civil Ship",
+		"movement": 2,
+		"uniques": [
+			"'Galley'",
+			"Cannot enter ocean tiles",
+			"Gain [1]-[3] [Food] <upon ending a turn in a [Coast] tile>",
+			"[+1] Movement <after discovering [Shipbuilding]>",
+			"Can build [Water] improvements on tiles",
+			"Automation is a primary action"
+		],
+		"upgradesTo": "Modern Work Ship",
+		"requiredTech": "Fire Making",
+		"hurryCostModifier": 10
+	},
+	{
 		"name": "Settler",
 		"cost": 90,
 		"unitType": "Civilian",
@@ -80,22 +97,7 @@
 		"attackSound": "arrow"
 	},
 	///line 2
-	{
-		"name": "Galley Work Ship",
-		"cost": 55,
-		"unitType": "Civil Ship",
-		"movement": 2,
-		"uniques": [
-			"'Galley'",
-			"Cannot enter ocean tiles",
-			"[+1] Movement <after discovering [Shipbuilding]>",
-			"Can build [Water] improvements on tiles",
-			"Automation is a primary action"
-		],
-		"upgradesTo": "Modern Work Ship",
-		"requiredTech": "Sailing",
-		"hurryCostModifier": 10
-	},
+
 	{
 		"name": "Galley Fleet",
 		"unitType": "Close Combat Ship",
@@ -165,109 +167,6 @@
 		"obsoleteTech": "Iron Working",
 		"upgradesTo": "Spearman",
 		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Chariot",
-		"unitType": "Assault",
-		"cost": 65,
-		"movement": 3,
-		"strength": 16,
-		"upgradesTo": "Cataphract",
-		"requiredTech": "Animal Husbandry",
-		"obsoleteTech": "Stirrup",
-		"requiredResource": "Standing Army Maintainance",
-		"uniques": [
-			"Consumes [1] [Horse]",
-			"'Standing Army'",
-			"'Mounted'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"[-33]% Strength <when defending>",
-			"[-33]% Strength <vs cities> <when attacking>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"attackSound": "horse"
-	},
-	{
-		"name": "War Cart",
-		"uniqueTo": "Central and West Asia",
-		"unitType": "Assault",
-		"cost": 60,
-		"movement": 3,
-		"strength": 13,
-		"upgradesTo": "Cataphract",
-		"requiredTech": "Animal Husbandry",
-		"obsoleteTech": "Stirrup",
-		"requiredResource": "Standing Army Maintainance",
-		"uniques": [
-			"'Standing Army'",
-			"'Mounted'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"[-33]% Strength <when defending>",
-			"[-33]% Strength <vs cities> <when attacking>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Noble Chariot",
-		"unitType": "Assault",
-		"cost": 70,
-		"movement": 3,
-		"strength": 18,
-		"upgradesTo": "Cataphract",
-		"requiredTech": "Animal Husbandry",
-		"obsoleteTech": "Stirrup",
-		"requiredResource": "Noble Army Maintainance",
-		"uniques": [
-			"Consumes [1] [Horse]",
-			"'Noble Army'",
-			"'Mounted'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"[-20]% Strength <when defending>",
-			"[-33]% Strength <vs cities> <when attacking>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Noble Army"
-		],
-		"attackSound": "horse"
-	},
-	{
-		"name": "Gaulish Karros",
-		"uniqueTo": "Europa",
-		"replaces": "Noble Chariot",
-		"unitType": "Assault",
-		"cost": 65,
-		"movement": 3,
-		"strength": 18,
-		"upgradesTo": "Cataphract",
-		"requiredTech": "Animal Husbandry",
-		"obsoleteTech": "Stirrup",
-		"requiredResource": "Noble Army Maintainance",
-		"uniques": [
-			"Consumes [1] [Horse]",
-			"'Noble Army'",
-			"'Mounted'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"[-20]% Strength <when defending>",
-			"[-20]% Strength <vs cities> <when attacking>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Noble Army",
-			"Assault Doctrine"
-		],
-		"attackSound": "horse"
 	},
 	///Line 2
 	{
@@ -344,6 +243,109 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "metalhit"
 	},
+	{
+		"name": "Chariot",
+		"unitType": "Assault",
+		"cost": 65,
+		"movement": 3,
+		"strength": 16,
+		"upgradesTo": "Cataphract",
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Stirrup",
+		"requiredResource": "Standing Army Maintainance",
+		"uniques": [
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[-33]% Strength <when defending>",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"attackSound": "horse"
+	},
+	{
+		"name": "War Cart",
+		"uniqueTo": "Central and West Asia",
+		"unitType": "Assault",
+		"cost": 60,
+		"movement": 3,
+		"strength": 13,
+		"upgradesTo": "Cataphract",
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Stirrup",
+		"requiredResource": "Standing Army Maintainance",
+		"uniques": [
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[-33]% Strength <when defending>",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Noble Chariot",
+		"unitType": "Assault",
+		"cost": 70,
+		"movement": 3,
+		"strength": 18,
+		"upgradesTo": "Cataphract",
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Stirrup",
+		"requiredResource": "Noble Army Maintainance",
+		"uniques": [
+			"Consumes [1] [Horse]",
+			"'Noble Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[-20]% Strength <when defending>",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Noble Army"
+		],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Gaulish Karros",
+		"uniqueTo": "Europa",
+		"replaces": "Noble Chariot",
+		"unitType": "Assault",
+		"cost": 65,
+		"movement": 3,
+		"strength": 18,
+		"upgradesTo": "Cataphract",
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Stirrup",
+		"requiredResource": "Noble Army Maintainance",
+		"uniques": [
+			"Consumes [1] [Horse]",
+			"'Noble Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[-20]% Strength <when defending>",
+			"[-20]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Assault Doctrine"
+		],
+		"attackSound": "horse"
+	},
 	///Line 3
 	{
 		"name": "Adventurer",
@@ -415,8 +417,8 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredTech": "Astronomy",
-		"obsoleteTech": "Machinery",
+		"requiredTech": "Dry Dock",
+		"obsoleteTech": "Cartography",
 		"upgradesTo": "Three-masted Ship",
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "arrow"
@@ -443,7 +445,7 @@
 			"Sailing Doctrine"
 		],
 		"requiredTech": "Astronomy",
-		"obsoleteTech": "Machinery",
+		"obsoleteTech": "Cartography",
 		"upgradesTo": "Three-masted Ship",
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "arrow"
@@ -520,7 +522,7 @@
 		"promotions": [
 			"Mercenary Habit"
 		],
-		"requiredTech": "Paper Making",
+		"requiredTech": "Logistics",
 		"obsoleteTech": "Engineering",
 		"upgradesTo": "Mercenary Crossbowman",
 		"requiredResource": "Mercenary Contract",
@@ -636,12 +638,11 @@
 			"Skirmisher Training"
 		],
 		"requiredTech": "Horseback Riding",
-		"obsoleteTech": "Flintlock",
+		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintainance",
 		"upgradesTo": "Hussar",
 		"attackSound": "arrow"
 	},
-	///Line 4
 	{
 		"name": "Javalineer",
 		"unitType": "Ranged Combat",
@@ -662,11 +663,13 @@
 			"Skirmisher Training",
 			"Javalin"
 		],
-		"requiredTech": "Iron Working",
+		"requiredTech": "Mining",
 		"obsoleteTech": "Tactics",
 		"upgradesTo": "Levy Archer",
 		"attackSound": "arrow"
 	},
+	
+	///Line 4
 	{
 		"name": "Spearman",
 		"unitType": "Close Combat",
@@ -691,31 +694,59 @@
 		"attackSound": "metalhit"
 	},
 	{
-		"name": "Garrison",
+		"name": "Swordsman",
 		"unitType": "Close Combat",
-		"cost": 50,
+		"cost": 70,
 		"movement": 2,
-		"strength": 15,
+		"strength": 24,
 		"uniques": [
-			"Only available <after adopting [Provincial Government]>",
-			"'Levy Army'",
+			"Can upgrade to [Revolutionaries] <after discovering [Flintlock]><after adopting [Long Live the Revolution!]>",
+			"Consumes [1] [Metal]",
+			"'Standing Army'",
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[+33]% Strength <after discovering [Armorments]>",
-			"[+50]% Strength <after discovering [Tactics]>",
-			"[+13]% Strength <in [Friendly Land] tiles> <when defending>",
-			"[-33]% Strength <when attacking>",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+25]% Strength <after discovering [Tactics]>",
+			"[+10]% Strength <after discovering [Steels]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army",
-			"Stewardship",
-			"Defence Doctrine"
+			"The Standing Army"
 		],
 		"requiredTech": "Iron Working",
-		"obsoleteTech": "Hand Cannon",
-		"upgradesTo": "Pike and Shot",
+		"obsoleteTech": "Flintlock",
+		"upgradesTo": "Grenadier",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Noble Swordsman",
+		"unitType": "Close Combat",
+		"cost": 50,
+		"movement": 2,
+		"strength": 26,
+		"uniques": [
+			"Can upgrade to [Knight] <after discovering [Tactics]><after adopting [Feudalism]>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]><after adopting [Long Live the Revolution!]><removing the [The Noble Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]><removing the [The Noble Army] promotion/status>",
+			"Consumes [1] [Metal]",
+			"'Noble Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+25]% Strength <after discovering [Tactics]>",
+			"[+10]% Strength <after discovering [Steels]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Chainmail Armour"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Flintlock",
+		"requiredResource": "Noble Army Maintainance",
 		"attackSound": "metalhit"
 	},
 	///Line 5
@@ -750,62 +781,6 @@
 		"attackSound": "horse"
 	},
 	{
-		"name": "Swordsman",
-		"unitType": "Close Combat",
-		"cost": 70,
-		"movement": 2,
-		"strength": 24,
-		"uniques": [
-			"Can upgrade to [Revolutionaries] <after discovering [Flintlock]><after adopting [Long Live the Revolution!]>",
-			"Consumes [1] [Metal]",
-			"'Standing Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
-			"[+25]% Strength <after discovering [Tactics]>",
-			"[+10]% Strength <after discovering [Steels]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredTech": "Armorments",
-		"obsoleteTech": "Flintlock",
-		"upgradesTo": "Grenadier",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Noble Swordsman",
-		"unitType": "Close Combat",
-		"cost": 50,
-		"movement": 2,
-		"strength": 26,
-		"uniques": [
-			"Can upgrade to [Knight] <after discovering [Tactics]><after adopting [Feudalism]>",
-			"Can transform to [Revolutionaries] <after discovering [Flintlock]><after adopting [Long Live the Revolution!]><removing the [The Noble Army] promotion/status>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]><removing the [The Noble Army] promotion/status>",
-			"Consumes [1] [Metal]",
-			"'Noble Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
-			"[+25]% Strength <after discovering [Tactics]>",
-			"[+10]% Strength <after discovering [Steels]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Noble Army",
-			"Chainmail Armour"
-		],
-		"requiredTech": "Armorments",
-		"obsoleteTech": "Flintlock",
-		"requiredResource": "Noble Army Maintainance",
-		"attackSound": "metalhit"
-	},
-	{
 		"name": "Mercenary Swordsman",
 		"unitType": "Close Combat",
 		"cost": 72,
@@ -834,6 +809,34 @@
 		"attackSound": "metalhit"
 	},
 	///Line 6
+	{
+		"name": "Garrison",
+		"unitType": "Close Combat",
+		"cost": 50,
+		"movement": 2,
+		"strength": 15,
+		"uniques": [
+			"Only available <after adopting [Provincial Government]>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+33]% Strength <after discovering [Armorments]>",
+			"[+50]% Strength <after discovering [Tactics]>",
+			"[+13]% Strength <in [Friendly Land] tiles> <when defending>",
+			"[-33]% Strength <when attacking>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Levy Army",
+			"Stewardship",
+			"Defence Doctrine"
+		],
+		"requiredTech": "Logistics",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
+		"attackSound": "metalhit"
+	},
 	{
 		"name": "Lou Chuan Fleet",
 		"uniqueTo": "East Asia",
@@ -890,7 +893,7 @@
 		"movement": 3,
 		"strength": 18,
 		"uniques": [
-			"Can transform to [Three-masted Ship] <removing the [Mercenary Habit] promotion/status><removing the [Merchant] promotion/status><after discovering [Monocular]>",
+			"Can transform to [Three-masted Ship] <removing the [Mercenary Habit] promotion/status><removing the [Merchant] promotion/status><after discovering [Cartography]>",
 			"'Mercenary Army'",
 			"'Sailing Ship'",
 			"'Dense Formation'",
@@ -929,7 +932,7 @@
 			"The Standing Army"
 		],
 		"requiredTech": "Stirrup",
-		"obsoleteTech": "Flintlock",
+		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintainance",
 		"upgradesTo": "Hussar",
 		"attackSound": "horse"
@@ -958,10 +961,38 @@
 			"Mercenary Habit"
 		],
 		"requiredTech": "Stirrup",
-		"obsoleteTech": "Flintlock",
+		"obsoleteTech": "Carriage",
 		"upgradesTo": "Hussar",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "horse"
+	},
+	{
+		"name": "Proto-Flamethrower",
+		"unitType": "Siege",
+		"cost": 75,
+		"movement": 2,
+		"strength": 20,
+		"rangedStrength": 25,
+		"range": 1,
+		"uniques": [
+			"Consumes [1] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+50]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"[+75]% Strength <vs cities> <when attacking>",
+			"Only available <if [Alchemy Lab] is constructed>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Alchemy",
+		"obsoleteTech": "Steels",
+		"upgradesTo": "Cannon",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "fire"
 	},
 	///Line 7
 	{
@@ -1219,7 +1250,7 @@
 		"uniques": [
 			"Only available <if [Firearms Workshop] is constructed>",
 			"Can upgrade to [Skirmisher] <after discovering [Military Science]>",
-			"Can upgrade to [Field Gun] <after discovering [Military Science]>",
+			"Can upgrade to [Field Gun] <after discovering [Carriage]>",
 			"Consumes [1] [Weapon Parts]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -1348,7 +1379,7 @@
 		"uniques": [
 			"Only available <if [Firearms Workshop] is constructed>",
 			"Can upgrade to [Siege Bombard] <after discovering [Machinery]>",
-			"Can upgrade to [Field Gun] <after discovering [Scientific Theory]>",
+			"Can upgrade to [Field Gun] <after discovering [Carriage]>",
 			"Consumes [1] [Metal]",
 			"Consumes [1] [Weapon Parts]",
 			"'Standing Army'",
@@ -1366,7 +1397,7 @@
 			"The Standing Army"
 		],
 		"requiredTech": "Steels",
-		"obsoleteTech": "Scientific Theory",
+		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "artillery"
 	},
@@ -1397,7 +1428,7 @@
 			"The Standing Army"
 		],
 		"requiredTech": "Machinery",
-		"obsoleteTech": "Scientific Theory",
+		"obsoleteTech": "Carriage",
 		"upgradesTo": "Field Gun",
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "artillery"
@@ -1419,7 +1450,7 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredTech": "Machinery",
+		"requiredTech": "Cartography",
 		"obsoleteTech": "Ship Armour",
 		"upgradesTo": "Ironclad Fleet",
 		"requiredResource": "Standing Army Maintainance",
@@ -1498,7 +1529,7 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredTech": "Scientific Theory",
+		"requiredTech": "Carriage",
 		"obsoleteTech": "Dynamite",
 		"upgradesTo": "Howitzer",
 		"requiredBuilding": "Firearms Workshop",
@@ -1628,7 +1659,7 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredTech": "Flintlock",
+		"requiredTech": "Carriage",
 		"obsoleteTech": "Rifling",
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "horse"
@@ -1694,7 +1725,7 @@
 			"Skirmisher Training",
 			"The Standing Army"
 		],
-		"requiredTech": "Military Science",
+		"requiredTech": "Cartridge",
 		"obsoleteTech": "Replaceable Parts",
 		"requiredResource": "Standing Army Maintainance",
 		"upgradesTo": "Sharpshooter",
@@ -1722,7 +1753,7 @@
 			"Mercenary Habit",
 			"Skirmisher Training"
 		],
-		"requiredTech": "Military Science",
+		"requiredTech": "Cartridge",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Security Company",
 		"requiredResource": "Mercenary Contract",
@@ -2654,7 +2685,7 @@
 		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Mobile Tactics",
-		"obsoleteTech": "Exoskeleton",
+		"obsoleteTech": "Haptics",
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "shot"
 	},
@@ -2679,7 +2710,7 @@
 		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Mobile Tactics",
-		"obsoleteTech": "Exoskeleton",
+		"obsoleteTech": "Haptics",
 		"requiredResource": "Noble Army Maintainance",
 		"attackSound": "shot"
 	},
@@ -2965,9 +2996,9 @@
 		"rangedStrength": 150,
 		"range": 10,
 		"cost": 550,
-		"requiredTech": "Atomic Theory",
+		"requiredTech": "Nuclear Fission",
 		"uniques": [
-			"Consumes [3] [Uranium]",
+			"Consumes [3] [Enriched Uranium]",
 			"Nuclear weapon of Strength [1]",
 			"Only available <if [Nuclear Option] is constructed>",
 			"Self-destructs when attacking",
@@ -2984,7 +3015,7 @@
 		"cost": 300,
 		"uniques": [
 			"Consumes [1] [Ship Parts]",
-			"Consumes [1] [Uranium]",
+			"Consumes [1] [Enriched Uranium]",
 			"[+100]% maintenance costs",
 			"'Standing Army'",
 			"'Nuclear powered Ship'",
@@ -3012,7 +3043,7 @@
 		"rangedStrength": 80,
 		"uniques": [
 			"Consumes [1] [Ship Parts]",
-			"Consumes [1] [Uranium]",
+			"Consumes [1] [Enriched Uranium]",
 			"[+100]% maintenance costs",
 			"'Standing Army'",
 			"'Nuclear powered Ship'",
@@ -3038,7 +3069,7 @@
 		"strength": 67,
 		"uniques": [
 			"Consumes [1] [Ship Parts]",
-			"Consumes [1] [Uranium]",
+			"Consumes [1] [Enriched Uranium]",
 			"[+100]% maintenance costs",
 			"'Standing Army'",
 			"'Nuclear powered Ship'",
@@ -3065,7 +3096,7 @@
 		"range": 5,
 		"uniques": [
 			"Consumes [1] [Ship Parts]",
-			"Consumes [1] [Uranium]",
+			"Consumes [1] [Enriched Uranium]",
 			"[+100]% maintenance costs",
 			"Consumes [1] [Electronic Parts]",
 			"'Standing Army'",
@@ -3138,7 +3169,7 @@
 		"range": 32,
 		"uniques": [
 			"Only available <if [Nuclear Option] is constructed>",
-			"Consumes [1] [Uranium]",
+			"Consumes [1] [Enriched Uranium]",
 			"Nuclear weapon of Strength [2]",
 			"Blast radius [4]",
 			"Never appears as a Barbarian unit"
@@ -3215,7 +3246,7 @@
 		"movement": 5,
 		"strength": 50,
 		"requiredResource": "Standing Army Maintainance",
-		"requiredTech": "Drone Warfare",
+		"requiredTech": "Data Science",
 		"uniques": [
 			"Consumes [1] [Microchips]",
 			"'Standing Army'",
@@ -3243,7 +3274,7 @@
 		"uniques": [
 			"Only available <if [GDR Project] is constructed>",
 			"Consumes [3] [Vehicle Parts]",
-			"Consumes [1] [Uranium]",
+			"Consumes [1] [Enriched Uranium]",
 			"[+100]% maintenance costs",
 			"Limited to [1] per Civilization",
 			"'Standing Army'",
@@ -3285,7 +3316,7 @@
 			"The Standing Army",
 			"Skirmisher Training"
 		],
-		"requiredTech": "Exoskeleton",
+		"requiredTech": "Haptics",
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "shot"
 	},
@@ -3295,7 +3326,7 @@
 		"cost": 360,
 		"movement": 2,
 		"strength": 85,
-		"requiredTech": "Exoskeleton",
+		"requiredTech": "Haptics",
 		"requiredResource": "Standing Army Maintainance",
 		"uniques": [
 			"Consumes [1] [Weapon Parts]",
@@ -3323,7 +3354,7 @@
 			"Only available <if [GDR Project] is constructed>",
 			"Consumes [2] [Vehicle Parts]",
 			"Consumes [1] [Graphene]",
-			"Consumes [1] [Uranium]",
+			"Consumes [1] [Enriched Uranium]",
 			"[+100]% maintenance costs",
 			"'Standing Army'",
 			"'Mechanised'",
@@ -3840,7 +3871,7 @@
 		"movement": 2,
 		"cost": 2000,
 		"requiredTech": "Nuclear Fusion",
-		"requiredResource": "Uranium",
+		"requiredResource": "Enriched Uranium",
 		"uniques": [
 			"Spaceship part",
 			"Cannot be purchased",

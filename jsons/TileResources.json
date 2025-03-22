@@ -3,6 +3,7 @@
 	{
 		"name": "Bovine",
 		"resourceType": "Bonus",
+		"revealedBy": "Animal Husbandry",
 		"terrainsCanBeFoundOn": [
 			"Grassland"
 		],
@@ -24,6 +25,7 @@
 	{
 		"name": "Caprinae",
 		"resourceType": "Bonus",
+		"revealedBy": "Animal Husbandry",
 		"terrainsCanBeFoundOn": [
 			"Hill"
 		],
@@ -211,6 +213,7 @@
 	{
 		"name": "Minerals",
 		"resourceType": "Bonus",
+		"revealedBy": "Copper Working",
 		"terrainsCanBeFoundOn": [
 			"Grassland",
 			"Plains",
@@ -235,6 +238,7 @@
 	{
 		"name": "Coastal Fish",
 		"resourceType": "Bonus",
+		"revealedBy":"Sailing",
 		"terrainsCanBeFoundOn": [
 			"Coast",
 			"Lakes",
@@ -254,11 +258,11 @@
 	{
 		"name": "Deep Sea Fish",
 		"resourceType": "Bonus",
+		"revealedBy": "Compass",
 		"terrainsCanBeFoundOn": [
 			"Ocean"
 		],
 		"food": 1,
-		"revealedBy": "Compass",
 		"improvedBy": [
 			"Deep Sea Fishing Boats"
 		],
@@ -550,14 +554,14 @@
 			"Minor deposits generated with weight [10] <in [{Featureless} {Snow}] tiles>"
 		],
 		"majorDepositAmount": {
-			"sparse": 2,
-			"default": 4,
-			"abundant": 4
+			"sparse": 5,
+			"default": 7,
+			"abundant": 11
 		},
 		"minorDepositAmount": {
-			"sparse": 1,
-			"default": 2,
-			"abundant": 3
+			"sparse": 3,
+			"default": 4,
+			"abundant": 7
 		}
 	},
 	///The Unit limit
@@ -566,16 +570,14 @@
 		"resourceType": "Strategic",
 		"uniques": [
 			"Cannot be traded"
-		],
-		"revealedBy": "Animal Husbandry"
+		]
 	},
 	{
 		"name": "Noble Army Maintainance",
 		"resourceType": "Strategic",
 		"uniques": [
 			"Cannot be traded"
-		],
-		"revealedBy": "Animal Husbandry"
+		]
 	},
 	{
 		"name": "Mercenary Contract",
@@ -583,7 +585,7 @@
 		"uniques": [
 			"Cannot be traded"
 		],
-		"revealedBy": "Animal Husbandry"
+		"revealedBy": "Currency"
 	},
 	///The Industrial parts
 	{
@@ -665,6 +667,14 @@
 			"Stockpiled"
 		],
 		"revealedBy": "Computer"
+	},
+	{
+		"name": "Enriched Uranium",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Stockpiled"
+		],
+		"revealedBy": "Uranium Enrichment"
 	},
 	// Luxury resources
 	// Animal sourced
@@ -770,6 +780,7 @@
 	{
 		"name": "Crab",
 		"resourceType": "Luxury",
+		"revealedBy":"Sailing",
 		"terrainsCanBeFoundOn": [
 			"Coast"
 		],
@@ -798,6 +809,7 @@
 	{
 		"name": "Pearl",
 		"resourceType": "Luxury",
+		"revealedBy":"Sailing",
 		"terrainsCanBeFoundOn": [
 			"Coast"
 		],
@@ -824,6 +836,7 @@
 	{
 		"name": "Coral",
 		"resourceType": "Luxury",
+		"revealedBy":"Sailing",
 		"terrainsCanBeFoundOn": [
 			"Coast",
 			"Ocean"
@@ -1170,6 +1183,7 @@
 	{
 		"name": "Gems",
 		"resourceType": "Luxury",
+		"revealedBy": "Copper Working",
 		"terrainsCanBeFoundOn": [
 			"Jungle",
 			"Forest",
@@ -1197,6 +1211,7 @@
 	{
 		"name": "Gold Ore", // Not called "Gold" in order to not conflict with siege type units for translations
 		"resourceType": "Luxury",
+		"revealedBy": "Copper Working",
 		"terrainsCanBeFoundOn": [
 			"Desert",
 			"Hill",
@@ -1225,6 +1240,7 @@
 	{
 		"name": "Silver Ore",
 		"resourceType": "Luxury",
+		"revealedBy": "Copper Working",
 		"terrainsCanBeFoundOn": [
 			"Hill",
 			"Forest",
@@ -1282,6 +1298,7 @@
 	{
 		"name": "Rich Copper Ore",
 		"resourceType": "Luxury",
+		"revealedBy": "Copper Working",
 		"terrainsCanBeFoundOn": [
 			"Hill",
 			"Forest",
@@ -1318,6 +1335,7 @@
 	{
 		"name": "Halite",
 		"resourceType": "Luxury",
+		"revealedBy": "Copper Working",
 		"terrainsCanBeFoundOn": [
 			"Desert",
 			"Tundra",
@@ -1372,6 +1390,13 @@
 	},
 	///Special res
 	{
+		"name": "Living Condition",
+		"resourceType": "Strategic",
+		"uniques":["City-level resource",
+		"Comment [Every 5 Population costs 1 Living Condition.]",
+		"Comment [If Living Condition goes down into negative, happiness production will suffer, until -100%, which is -4 Living Condition,-4 Living Condition also nullifies all growth in the city. Building infrastructure or settling city near waters increase the living condition.]"]
+	},
+	{
 		"name": "Alcohol",
 		"resourceType": "Luxury",
 		"gold": 1
@@ -1389,6 +1414,7 @@
 	{
 		"name": "Revolution Oppotunity",
 		"resourceType": "Strategic",
+		"uniques":["Cannot be traded"],
 		"revealedBy": "Engineering"
 	}
 ]
