@@ -1,5 +1,5 @@
 [
-	///line 1
+	///line 0
 	{
 		"name": "Worker",
 		"cost": 70,
@@ -8,7 +8,7 @@
 		"uniques": [
 			"Can build [Land] improvements on tiles",
 			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
-			"[This Unit] takes [15] damage <upon ending a turn in a [Ocean] tile>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Automation is a primary action"
 		],
 		"upgradesTo": "Mechanised Worker",
@@ -43,7 +43,7 @@
 			"[+2] Movement <before turn number [2]>",
 			"[+2] Sight <before turn number [2]>",
 			"[+1] Movement <after discovering [Horse Collar]>",
-			"[This Unit] takes [15] damage <upon ending a turn in a [Ocean] tile>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Requires at least [3] population"
 		],
 		"requiredTech": "Fire Making",
@@ -63,7 +63,9 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
+			
 		],
 		"promotions": [
 			"Scouting Unit"
@@ -85,6 +87,7 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -96,8 +99,7 @@
 		"obsoleteTech": "Iron Working",
 		"attackSound": "arrow"
 	},
-	///line 2
-
+	///line 1
 	{
 		"name": "Galley Fleet",
 		"unitType": "Close Combat Ship",
@@ -132,6 +134,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -152,11 +155,12 @@
 		"strength": 9,
 		"uniques": [
 			"Limited to [3] per Civilization",
-			"Can transform to [Early Swordsman] <removing the [The Levy Army] promotion/status> <after discovering [Bronze Working]><costs [+1 Gold] stats>",
+			"Can transform to [Early Swordsman] <removing the [The Levy Army] promotion/status> <after discovering [Bronze Working]> <costs [+1 Gold] stats>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -181,6 +185,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"[+15]% Strength <when fighting in [Rough terrain] tiles>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -208,6 +213,7 @@
 			"[+25]% Strength <after discovering [Armorments]>",
 			"[+50]% Strength <after discovering [Tactics]>",
 			"Founds a new puppet city <by consuming this unit>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -231,6 +237,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -261,6 +268,7 @@
 			"'Edged Weapons'",
 			"[-33]% Strength <when defending>",
 			"[-33]% Strength <vs cities> <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -286,6 +294,7 @@
 			"'Edged Weapons'",
 			"[-33]% Strength <when defending>",
 			"[-33]% Strength <vs cities> <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -299,10 +308,7 @@
 		"cost": 70,
 		"movement": 3,
 		"strength": 18,
-		"upgradesTo": "Cataphract",
-		"requiredTech": "The Wheel",
-		"obsoleteTech": "Stirrup",
-		"requiredResource": "Noble Army Maintainance",
+
 		"uniques": [
 			"Consumes [1] [Horse]",
 			"'Noble Army'",
@@ -311,11 +317,16 @@
 			"'Edged Weapons'",
 			"[-20]% Strength <when defending>",
 			"[-33]% Strength <vs cities> <when attacking>",
+			"Can transform to [Cataphract] <after discovering [Armorments]><removing the [The Noble Army] promotion/status>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
 			"The Noble Army"
 		],
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Armorments",
+		"requiredResource": "Noble Army Maintainance",
 		"attackSound": "horse"
 	},
 	{
@@ -326,10 +337,6 @@
 		"cost": 65,
 		"movement": 3,
 		"strength": 18,
-		"upgradesTo": "Cataphract",
-		"requiredTech": "The Wheel",
-		"obsoleteTech": "Stirrup",
-		"requiredResource": "Noble Army Maintainance",
 		"uniques": [
 			"Consumes [1] [Horse]",
 			"'Noble Army'",
@@ -338,12 +345,17 @@
 			"'Edged Weapons'",
 			"[-20]% Strength <when defending>",
 			"[-20]% Strength <vs cities> <when attacking>",
+			"Can transform to [Cataphract] <after discovering [Armorments]><removing the [The Noble Army] promotion/status>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
 			"The Noble Army",
 			"Assault Doctrine"
 		],
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Armorments",
+		"requiredResource": "Noble Army Maintainance",
 		"attackSound": "horse"
 	},
 	///Line 3
@@ -355,13 +367,13 @@
 		"strength": 11,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
 			"Can move immediately once bought",
 			"[+100]% Strength <vs ['Barbaric Army'] units> <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -381,7 +393,7 @@
 		"movement": 3,
 		"strength": 10,
 		"uniques": [
-			"Limited to [5] per Civilization",
+			"Limited to [3] per Civilization",
 			"Can upgrade to [Explorer] <after discovering [Monocular]>",
 			"Can upgrade to [Recon Unit] <after discovering [Replaceable Parts]>",
 			"'Standing Army'",
@@ -390,6 +402,7 @@
 			"'Edged Weapons'",
 			"May enter foreign tiles without open borders",
 			"[-100]% Strength <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -399,6 +412,289 @@
 		"obsoleteTech": "Replaceable Parts",
 		"attackSound": "metalhit"
 	},
+	///Line 4
+	{
+		"name": "Javalineer",
+		"unitType": "Ranged Combat",
+		"cost": 50,
+		"movement": 2,
+		"strength": 10,
+		"rangedStrength": 14,
+		"range": 1,
+		"uniques": [
+			"'Levy Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Levy Army",
+			"Skirmisher Training",
+			"Javalin"
+		],
+		"requiredTech": "Mining",
+		"obsoleteTech": "Tactics",
+		"upgradesTo": "Levy Archer",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Early Rider",
+		"unitType": "Rider",
+		"cost": 60,
+		"movement": 3,
+		"strength": 14,
+		"uniques": [
+			"Only available <if [Military Stable] is constructed>",
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[-50]% Strength <vs cities> <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredResource": "Standing Army Maintainance",
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Stirrup",
+		"upgradesTo": "Light Cavalry",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Horse Archer",
+		"unitType": "Rider",
+		"cost": 69,
+		"movement": 4,
+		"strength": 12,
+		"rangedStrength": 15,
+		"uniques": [
+			"Only available <if [Military Stable] is constructed>",
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+33]% Strength <after discovering [Stirrup]>",
+			"[+25]% Strength <after discovering [Armorments]>",
+			"[+25]% Strength <after discovering [Tactics]>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintainance",
+		"upgradesTo": "Hussar",
+		"attackSound": "arrow"
+	},
+	///Line 5
+	{
+		"name": "Archer",
+		"unitType": "Ranged Combat",
+		"cost": 65,
+		"movement": 2,
+		"strength": 14,
+		"rangedStrength": 18,
+		"range": 1,
+		"uniques": [
+			"'Standing Army'",
+			"'Infantry'",
+			"'Edged Weapons'",
+			"'Dense Formation'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Engineering",
+		"upgradesTo": "Crossbowman",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Early Crossbowman",
+		"uniqueTo": "East Asia",
+		"replaces": "Archer",
+		"unitType": "Ranged Combat",
+		"cost": 60,
+		"movement": 2,
+		"strength": 14,
+		"rangedStrength": 18,
+		"range": 1,
+		"uniques": [
+			"'Standing Army'",
+			"'Infantry'",
+			"'Edged Weapons'",
+			"'Dense Formation'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Crossbow"
+		],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Engineering",
+		"upgradesTo": "Crossbowman",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Catapult",
+		"unitType": "Siege",
+		"cost": 65,
+		"movement": 2,
+		"strength": 12,
+		"rangedStrength": 15,
+		"range": 2,
+		"uniques": [
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+100]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Physics",
+		"upgradesTo": "Trebuchet",
+		"requiredResource": "Standing Army Maintainance",
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
+		"name": "Balista",
+		"unitType": "Siege",
+		"cost": 65,
+		"movement": 2,
+		"strength": 10,
+		"rangedStrength": 15,
+		"range": 2,
+		"uniques": [
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+50]% Strength <vs cities> <when attacking>",
+			"[+50]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Engineering",
+		"upgradesTo": "Heavy Balista",
+		"requiredResource": "Standing Army Maintainance",
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
+		"name": "Spearman",
+		"unitType": "Close Combat",
+		"cost": 50,
+		"movement": 2,
+		"strength": 14,
+		"uniques": [
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <after discovering [Armorments]>",
+			"[+50]% Strength <after discovering [Tactics]>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Levy Army"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Swordsman",
+		"unitType": "Close Combat",
+		"cost": 70,
+		"movement": 2,
+		"strength": 24,
+		"uniques": [
+			"Can upgrade to [Revolutionaries] <after discovering [Flintlock]><after adopting [Long Live the Revolution!]>",
+			"Consumes [1] [Metal]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+25]% Strength <after discovering [Tactics]>",
+			"[+10]% Strength <after discovering [Steels]>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Flintlock",
+		"upgradesTo": "Grenadier",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Noble Swordsman",
+		"unitType": "Close Combat",
+		"cost": 50,
+		"movement": 2,
+		"strength": 26,
+		"uniques": [
+			"Can upgrade to [Knight] <after discovering [Tactics]><after adopting [Feudalism]>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]><after adopting [Long Live the Revolution!]><removing the [The Noble Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]><removing the [The Noble Army] promotion/status>",
+			"Consumes [1] [Metal]",
+			"'Noble Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+25]% Strength <after discovering [Tactics]>",
+			"[+10]% Strength <after discovering [Steels]>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Chainmail Armour"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Flintlock",
+		"requiredResource": "Noble Army Maintainance",
+		"attackSound": "metalhit"
+	},
+	///Line 6
 	{
 		"name": "Sailing Ships",
 		"unitType": "Close Combat Ship",
@@ -411,7 +707,7 @@
 			"'Dense Formation'",
 			"'Siege Weapons'",
 			"[+25]% Strength <after discovering [Shipbuilding]>",
-			"[This Unit] takes [15] damage <upon ending a turn in a [Ocean] tile>",
+			"[This Unit] takes [15] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -450,306 +746,8 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "arrow"
 	},
-	{
-		"name": "Early Crossbowman",
-		"uniqueTo": "East Asia",
-		"replaces": "Archer",
-		"unitType": "Ranged Combat",
-		"cost": 60,
-		"movement": 2,
-		"strength": 14,
-		"rangedStrength": 18,
-		"range": 1,
-		"uniques": [
-			"'Standing Army'",
-			"'Infantry'",
-			"'Edged Weapons'",
-			"'Dense Formation'",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army",
-			"Crossbow"
-		],
-		"requiredTech": "Mathematics",
-		"obsoleteTech": "Engineering",
-		"upgradesTo": "Crossbowman",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Archer",
-		"unitType": "Ranged Combat",
-		"cost": 65,
-		"movement": 2,
-		"strength": 14,
-		"rangedStrength": 18,
-		"range": 1,
-		"uniques": [
-			"'Standing Army'",
-			"'Infantry'",
-			"'Edged Weapons'",
-			"'Dense Formation'",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredTech": "Mathematics",
-		"obsoleteTech": "Engineering",
-		"upgradesTo": "Crossbowman",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Mercenary Archer",
-		"unitType": "Ranged Combat",
-		"cost": 60,
-		"movement": 2,
-		"strength": 14,
-		"rangedStrength": 18,
-		"range": 1,
-		"uniques": [
-			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
-			"'Infantry'",
-			"'Skirmishers'",
-			"'Mercenary Army'",
-			"'Edged Weapons'",
-			"Can move immediately once bought",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"Mercenary Habit"
-		],
-		"requiredTech": "Logistics",
-		"obsoleteTech": "Engineering",
-		"upgradesTo": "Mercenary Crossbowman",
-		"requiredResource": "Mercenary Contract",
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Catapult",
-		"unitType": "Siege",
-		"cost": 65,
-		"movement": 2,
-		"strength": 12,
-		"rangedStrength": 15,
-		"range": 2,
-		"uniques": [
-			"'Standing Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Siege Weapons'",
-			"[+100]% Strength <vs cities> <when attacking>",
-			"No defensive terrain bonus",
-			"Must set up to ranged attack",
-			"[-1] Sight",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredTech": "Mathematics",
-		"obsoleteTech": "Physics",
-		"upgradesTo": "Trebuchet",
-		"requiredResource": "Standing Army Maintainance",
-		"hurryCostModifier": 20,
-		"attackSound": "throw"
-	},
-	{
-		"name": "Balista",
-		"unitType": "Siege",
-		"cost": 65,
-		"movement": 2,
-		"strength": 10,
-		"rangedStrength": 15,
-		"range": 2,
-		"uniques": [
-			"'Standing Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Siege Weapons'",
-			"[+50]% Strength <vs cities> <when attacking>",
-			"[+50]% Strength <vs ['Dense Formation'] units> <when attacking>",
-			"No defensive terrain bonus",
-			"Must set up to ranged attack",
-			"[-1] Sight",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredTech": "Mathematics",
-		"obsoleteTech": "Engineering",
-		"upgradesTo": "Heavy Balista",
-		"requiredResource": "Standing Army Maintainance",
-		"hurryCostModifier": 20,
-		"attackSound": "throw"
-	},
-	{
-		"name": "Early Rider",
-		"unitType": "Rider",
-		"cost": 60,
-		"movement": 3,
-		"strength": 14,
-		"uniques": [
-			"Only available <if [Military Stable] is constructed>",
-			"Consumes [1] [Horse]",
-			"'Standing Army'",
-			"'Mounted'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"No defensive terrain bonus",
-			"[-50]% Strength <vs cities> <when attacking>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredResource": "Standing Army Maintainance",
-		"requiredTech": "Horseback Riding",
-		"obsoleteTech": "Stirrup",
-		"upgradesTo": "Light Cavalry",
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Horse Archer",
-		"unitType": "Rider",
-		"cost": 69,
-		"movement": 4,
-		"strength": 12,
-		"rangedStrength": 16,
-		"uniques": [
-			"Only available <if [Military Stable] is constructed>",
-			"Consumes [1] [Horse]",
-			"'Standing Army'",
-			"'Mounted'",
-			"'Skirmishers'",
-			"'Edged Weapons'",
-			"No defensive terrain bonus",
-			"[+25]% Strength <after discovering [Stirrup]>",
-			"[+25]% Strength <after discovering [Armorments]>",
-			"[+25]% Strength <after discovering [Tactics]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army",
-			"Skirmisher Training"
-		],
-		"requiredTech": "Horseback Riding",
-		"obsoleteTech": "Carriage",
-		"requiredResource": "Standing Army Maintainance",
-		"upgradesTo": "Hussar",
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Javalineer",
-		"unitType": "Ranged Combat",
-		"cost": 50,
-		"movement": 2,
-		"strength": 10,
-		"rangedStrength": 14,
-		"range": 1,
-		"uniques": [
-			"'Levy Army'",
-			"'Infantry'",
-			"'Skirmishers'",
-			"'Edged Weapons'",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Levy Army",
-			"Skirmisher Training",
-			"Javalin"
-		],
-		"requiredTech": "Mining",
-		"obsoleteTech": "Tactics",
-		"upgradesTo": "Levy Archer",
-		"attackSound": "arrow"
-	},
-	
-	///Line 4
-	{
-		"name": "Spearman",
-		"unitType": "Close Combat",
-		"cost": 50,
-		"movement": 2,
-		"strength": 14,
-		"uniques": [
-			"'Levy Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"[+25]% Strength <after discovering [Armorments]>",
-			"[+50]% Strength <after discovering [Tactics]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Levy Army"
-		],
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Hand Cannon",
-		"upgradesTo": "Pike and Shot",
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Swordsman",
-		"unitType": "Close Combat",
-		"cost": 70,
-		"movement": 2,
-		"strength": 24,
-		"uniques": [
-			"Can upgrade to [Revolutionaries] <after discovering [Flintlock]><after adopting [Long Live the Revolution!]>",
-			"Consumes [1] [Metal]",
-			"'Standing Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
-			"[+25]% Strength <after discovering [Tactics]>",
-			"[+10]% Strength <after discovering [Steels]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Flintlock",
-		"upgradesTo": "Grenadier",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Noble Swordsman",
-		"unitType": "Close Combat",
-		"cost": 50,
-		"movement": 2,
-		"strength": 26,
-		"uniques": [
-			"Can upgrade to [Knight] <after discovering [Tactics]><after adopting [Feudalism]>",
-			"Can transform to [Revolutionaries] <after discovering [Flintlock]><after adopting [Long Live the Revolution!]><removing the [The Noble Army] promotion/status>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]><removing the [The Noble Army] promotion/status>",
-			"Consumes [1] [Metal]",
-			"'Noble Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
-			"[+25]% Strength <after discovering [Tactics]>",
-			"[+10]% Strength <after discovering [Steels]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Noble Army",
-			"Chainmail Armour"
-		],
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Flintlock",
-		"requiredResource": "Noble Army Maintainance",
-		"attackSound": "metalhit"
-	},
-	///Line 5
+
+	///Line 7
 	{
 		"name": "Cataphract",
 		"unitType": "Assault",
@@ -769,6 +767,7 @@
 			"Can move after attacking",
 			"No defensive terrain bonus",
 			"[-25]% Strength <vs cities> <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -797,6 +796,7 @@
 			"[+25]% Strength <after discovering [Tactics]>",
 			"[+10]% Strength <after discovering [Steels]>",
 			"Can move immediately once bought",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -808,7 +808,6 @@
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "metalhit"
 	},
-	///Line 6
 	{
 		"name": "Garrison",
 		"unitType": "Close Combat",
@@ -825,6 +824,7 @@
 			"[+50]% Strength <after discovering [Tactics]>",
 			"[+13]% Strength <in [Friendly Land] tiles> <when defending>",
 			"[-33]% Strength <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -837,6 +837,36 @@
 		"upgradesTo": "Pike and Shot",
 		"attackSound": "metalhit"
 	},
+	{
+		"name": "Mercenary Archer",
+		"unitType": "Ranged Combat",
+		"cost": 60,
+		"movement": 2,
+		"strength": 14,
+		"rangedStrength": 18,
+		"range": 1,
+		"uniques": [
+			"Unbuildable <for [Human player] Civilizations>",
+			"Can only be built <in cities with a [Mercenary Office]>",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Mercenary Army'",
+			"'Edged Weapons'",
+			"Can move immediately once bought",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"Mercenary Habit"
+		],
+		"requiredTech": "Logistics",
+		"obsoleteTech": "Engineering",
+		"upgradesTo": "Mercenary Crossbowman",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "arrow"
+	},
+	///Line 6
+
 	{
 		"name": "Lou Chuan Fleet",
 		"uniqueTo": "East Asia",
@@ -898,7 +928,7 @@
 			"'Sailing Ship'",
 			"'Dense Formation'",
 			"'Siege Weapons'",
-			"[This Unit] takes [15] damage <upon ending a turn in a [Ocean] tile>",
+			"[This Unit] takes [15] damage <upon ending a turn in a [Ocean] tile><before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -926,6 +956,7 @@
 			"No defensive terrain bonus",
 			"[+25]% Strength <after discovering [Armorments]>",
 			"[+25]% Strength <after discovering [Tactics]>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -955,6 +986,7 @@
 			"[+25]% Strength <after discovering [Armorments]>",
 			"[+25]% Strength <after discovering [Tactics]>",
 			"Can move immediately once bought",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -983,6 +1015,7 @@
 			"[+50]% Strength <vs ['Dense Formation'] units> <when attacking>",
 			"[+75]% Strength <vs cities> <when attacking>",
 			"Only available <if [Alchemy Lab] is constructed>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1009,6 +1042,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1036,6 +1070,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"Can move immediately once bought",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1060,6 +1095,7 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1085,6 +1121,7 @@
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit",
 			"Only available <before adopting [Knighthood]>"
 		],
@@ -1113,6 +1150,7 @@
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1146,6 +1184,7 @@
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1178,6 +1217,7 @@
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1228,6 +1268,7 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1256,6 +1297,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Firearms'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1282,6 +1324,7 @@
 			"'Skirmishers'",
 			"'Firearms'",
 			"Can move immediately once bought",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1304,6 +1347,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1329,6 +1373,7 @@
 			"'Dense Formation'",
 			"'Standing Army'",
 			"'Mounted'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1355,6 +1400,7 @@
 			"'Dense Formation'",
 			"'Noble Army'",
 			"'Mounted'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1391,6 +1437,7 @@
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1422,6 +1469,7 @@
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1444,7 +1492,6 @@
 			"'Sailing Ship'",
 			"'Dense Formation'",
 			"'Firearms'",
-			"[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -1652,7 +1699,6 @@
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"Only available <if [Military Stable] is constructed>",
 			"No defensive terrain bonus",
 			"Never appears as a Barbarian unit"
 		],
@@ -1817,9 +1863,9 @@
 	{
 		"name": "Dragoons",
 		"unitType": "Close Combat",
-		"cost": 175,
+		"cost": 155,
 		"movement": 3,
-		"strength": 48,
+		"strength": 55,
 		"uniques": [
 			"Consumes [1] [Weapon Parts]",
 			"Consumes [1] [Horse]",
@@ -1829,6 +1875,10 @@
 			"'Infantry'",
 			"Only available <if [Military Stable] is constructed>",
 			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Shock Doctrine"
 		],
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Replaceable Parts",
@@ -3451,7 +3501,6 @@
 		"uniqueTo": "Barbarians",
 		"obsoleteTech": "Industrialization",
 		"uniques": [
-			"Cannot enter ocean tiles",
 			"'Barbaric Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -3459,7 +3508,8 @@
 			"[+50]% Strength <starting from the [Classical era]>",
 			"[+100]% Strength <starting from the [Medieval era]>",
 			"[+100]% Strength <starting from the [Renaissance era]>",
-			"[+100]% Strength <starting from the [Imperial era]>"
+			"[+100]% Strength <starting from the [Imperial era]>",
+			"Cannot enter ocean tiles"
 		],
 		"promotions": [
 			"Barbaric"
@@ -3505,9 +3555,9 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[+100]% Strength <starting from the [Medieval era]>",
+			"[+50]% Strength <starting from the [Medieval era]>",
 			"[+100]% Strength <starting from the [Renaissance era]>",
-			"[+50]% Strength <starting from the [Imperial era]>"
+			"[+100]% Strength <starting from the [Imperial era]>"
 		],
 		"promotions": [
 			"Barbaric"
@@ -3530,9 +3580,8 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
-			"[+50]% Strength <starting from the [Classical era]>",
-			"[+100]% Strength <starting from the [Medieval era]>",
-			"[+100]% Strength <starting from the [Renaissance era]>"
+			"[+50]% Strength <starting from the [Medieval era]>",
+			"[+50]% Strength <starting from the [Renaissance era]>"
 		],
 		"promotions": [
 			"Barbaric",
@@ -3555,7 +3604,7 @@
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[+100]% Strength <starting from the [Medieval era]>",
+			"[+50]% Strength <starting from the [Medieval era]>",
 			"[+100]% Strength <starting from the [Renaissance era]>",
 			"[+100]% Strength <starting from the [Imperial era]>"
 		],
@@ -3668,6 +3717,7 @@
 			"[+100]% Strength <starting from the [Renaissance era]>",
 			"[+100]% Strength <starting from the [Imperial era]>",
 			"Can move after attacking",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Invisible to non-adjacent units"
 		],
 		"promotions": [

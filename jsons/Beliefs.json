@@ -22,7 +22,7 @@
         "type": "Pantheon",
         "uniques": [
             "Comment [Unlocks Complex of Totems]",
-            "[+1 Faith] per [5] population [in all cities]",
+            "[+1 Faith] per [6] population [in all cities]",
             "May buy [Monument] buildings for [30] [Faith] [in cities following this religion]"
         ]
     },
@@ -44,7 +44,7 @@
         "type": "Pantheon",
         "uniques": [
             "Comment [Enables your civ to build Oasis Dwelling.]",
-            "May buy [Road Network] buildings with [Faith] [in cities following this religion]",
+            "May buy [Road Network] buildings for [100] [Faith] [in cities following this religion]",
             "[+1 Faith] from every [Desert] <before the [Medieval era]>"
         ]
     },
@@ -88,7 +88,7 @@
             "[+1 Gold] from every [Coast Fishing Boats]",
             "[+1 Gold] from every [Aquaculture]",
             "[+1 Gold] from every [Deep Sea Fishing Boats]",
-            "[+2 Culture] from all ['Marine Infrastructure'] buildings",
+            "[+1 Culture, +1 Gold] from all ['Marine Infrastructure'] buildings",
             "[+1 Faith] from every [Ocean] <before the [Medieval era]>"
         ]
     },
@@ -99,7 +99,7 @@
             "Comment [Unlocks Temple of the Hunting God]",
             "[+1 Culture] from every [Camp]",
             "[+1 Production] from every [Camp] <before the [Medieval era]>",
-            "[+2 Faith] from every ['Hunt'] <before the [Classical era]>"
+            "[+1 Faith] from every ['Hunt'] <before the [Classical era]>"
         ]
     },
     {
@@ -108,7 +108,6 @@
         "uniques": [
             "Comment [Unlocks Shrine of the Harvest God]",
             "[+1 Culture] from [Manual Farm] tiles [in all cities]",
-            "[+1 Culture] from [Terrace Farm] tiles [in all cities]",
             "[+1 Culture] from [Manual Plantation] tiles [in all cities]",
             "[+1 Culture] from [Mechanised Farm] tiles [in all cities]",
             "[+1 Culture] from [Permaculture] tiles [in all cities]",
@@ -122,7 +121,7 @@
         "type": "Follower",
         "uniques": [
             "[Gold] cost of purchasing ['Worship Place'] buildings [-33]%",
-            "[-2 Gold, +2 Food, +1 Happiness] from all ['Worship Place'] buildings"
+            "[-1 Gold, +1 Happiness] from all ['Worship Place'] buildings"
         ]
     },
     {
@@ -154,15 +153,15 @@
         "type": "Follower",
         "uniques": [
             "[-1 Science, +1 Happiness, +1 Faith] from all ['Worship Place'] buildings",
-            "[+5 Faith] from [Landmark] tiles [in all cities]"
+            "[+3 Faith] from [Landmark] tiles [in all cities]"
         ]
     },
     {
         "name": "Epicureanism",
         "type": "Follower",
         "uniques": [
-            "[-3 Gold, +1 Happiness, +1 Faith] from all ['Entertainment Building'] buildings",
-            "[+3 Happiness] from [Landmark] tiles [in all cities]"
+            "[+1 Faith] from all ['Entertainment Building'] buildings",
+            "[+2 Happiness] from [Landmark] tiles [in all cities]"
         ]
     },
     {
@@ -220,9 +219,7 @@
             "Only available <before adopting [Pilgrimage]>",
             "Only available <before adopting [Extravagant Rituals]>",
             "Comment [Enables you to buy Pagoda and Tower of Devotion, Pagoda is a 'Practice Ground' that provides all sorts of intangible resources. The Master Shrine is a 'Religion Core' national wonder.]",
-            "May buy [Pagoda] buildings with [Faith] [in cities following this religion]",
-            "[+15]% growth [in this city] <when not at war>",
-            "[-1 Faith, +3 Production] [in cities following this religion] <when at war>"
+            "May buy [Pagoda] buildings with [Faith] [in cities following this religion]"
         ]
     },
     ///Fantasy
@@ -230,6 +227,7 @@
         "name": "Praise the Nature",
         "type": "Follower",
         "uniques": [
+            "Provide [1] [Living Condition] [in cities following this religion]",
             "[+1 Happiness] from every [Garden]",
             "[+1 Culture] from [Forest] tiles [in cities following this religion]",
             "[+1 Culture] from [Jungle] tiles [in cities following this religion]",
@@ -276,7 +274,7 @@
         "name": "Interfaith Dialogue",
         "type": "Enhancer",
         "uniques": [
-            "Religion naturally spreads to cities [+2] tiles away",
+            "Religion naturally spreads to cities [+1] tiles away",
             "When spreading religion to a city, gain [10] times the amount of followers of other religions as [Science]",
             "When spreading religion to a city, gain [10] times the amount of followers of other religions as [Culture]"
         ]
@@ -286,8 +284,9 @@
         "name": "Order of the Faith",
         "type": "Enhancer",
         "uniques": [
-            "May buy [{Military} {Land} {non-['Mercenary Army']}] units with [Faith] for [2] times their normal Production cost <before the [Imperial era]> <in cities with at least [10] [Followers of this Religion]>",
-            "[Faith] cost of purchasing [Missionary] units [-50]%"
+            "May buy [{Military} {Land} {'Noble Army'} {non-['Mercenary Army']}] units with [Faith] for [1] times their normal Production cost <before the [Imperial era]> <in cities with at least [8] [Followers of this Religion]>",
+            "Provide [3] [Noble Army Maintainance]",
+            "[Faith] cost of purchasing [Missionary] units [-25]%"
         ]
     },
     {
@@ -295,6 +294,7 @@
         "type": "Enhancer",
         "uniques": [
             "Only available <after adopting [Monasticism]>",
+            "May buy [{Military} {Land} {'Standing Army'} {non-['Mercenary Army']} {non-[Siege]}] units with [Faith] for [2] times their normal Production cost <before the [Imperial era]> <in cities with a [Monastery]>",
             "Comment [Enables the Monastery to enhance your newly trained unit with a special promotion that increases their Strength.]"
         ]
     },
@@ -303,9 +303,9 @@
         "type": "Enhancer",
         "uniques": [
             "Only available <after adopting [Theocracy]>",
-            "[+20]% Strength <for [All] units> <in [Foreign Land] tiles>",
+            "[+10]% Strength <for [All] units> <in [Foreign Land] tiles>",
             "[Faith] cost of purchasing [Inquisitor] units [-50]%",
-            "[+2 Production] from [Holy site] tiles [in cities following this religion]"
+            "[+3 Production] from [Holy site] tiles [in cities following this religion]"
         ]
     },
     {
@@ -323,9 +323,9 @@
         "uniques": [
             "Only available <after adopting [Monotheism]>",
             "Only available <after adopting [Theocracy]>",
-            "[+3 Gold] from every [5] global followers [in all cities]",
-            "[+3 Gold] from [Holy site] tiles [in cities following this religion]",
-            "[+3 Gold] from every ['Core of Religion'] <in cities following our religion>"
+            "[+3 Gold] from every [10] global followers [in all cities]",
+            "[+5 Gold] from [Holy site] tiles [in cities following this religion]",
+            "[+5 Gold] from every ['Core of Religion'] <in cities following our religion>"
         ]
     },
     {
@@ -334,7 +334,7 @@
         "uniques": [
             "Only available <after adopting [Monotheism]>",
             "Only available <after adopting [Theocracy]>",
-            "[+1 Gold] from every [5] global followers [in all cities]",
+            "[+1 Culture] from every [5] global followers [in all cities]",
             "[+5 Gold] <in [Annexed] cities>",
             "[+3 Gold] from every ['Core of Religion'] <in cities following our religion>"
         ]
