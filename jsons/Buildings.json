@@ -165,7 +165,7 @@
 			"Gain a free [Town Hall] [in this city]", //40
 			"Gain a free [Library] [in this city]", //40
 			"Gain a free [Town Square] [in this city]" //75
-		], 
+		],
 		"requiredTech": "Education",
 		"hurryCostModifier": -25
 	},
@@ -201,7 +201,7 @@
 			"Gain a free [Medical School] [in this city]", //160
 			"Gain a free [University] [in this city]", //160
 			"Gain a free [Military Academy] [in this city]" //160
-		], 
+		],
 		"requiredTech": "Acoustics",
 		"hurryCostModifier": -25
 	},
@@ -218,7 +218,7 @@
 			"Gain a free [Opera House] [in this city]", //200
 			"Gain a free [Museum] [in this city]", //160
 			"Gain a free [Art Gallery] [in this city]" //160
-		], 
+		],
 		"requiredTech": "Railroads",
 		"hurryCostModifier": -25
 	},
@@ -235,7 +235,7 @@
 			"Gain a free [Sewer] [in this city]", //250
 			"Gain a free [Hospital] [in this city]", //300
 			"Gain a free [Highway Network] [in this city]" //400
-		], 
+		],
 		"requiredTech": "Radio",
 		"hurryCostModifier": -25
 	},
@@ -253,7 +253,7 @@
 			"Gain a free [Police Station] [in this city]", //250
 			"Gain a free [Commune] [in this city] <after adopting [Complete Autonomy]>",
 			"Gain a free [Government Complex] [in this city]" //400
-		], 
+		],
 		"requiredTech": "Telegram",
 		"hurryCostModifier": -25
 	},
@@ -285,7 +285,7 @@
 			"Gain a free [Textile Factory] [in this city]", //300
 			"Gain a free [Furniture Factory] [in this city]", //300
 			"Gain a free [Tools Factory] [in this city]" //300
-		], 
+		],
 		"requiredTech": "Replaceable Parts",
 		"requiredBuilding": "Civilian Factory Complex",
 		"hurryCostModifier": -25
@@ -305,7 +305,7 @@
 			"Gain a free [Agricultural Machinery Factory] [in this city]", //400
 			"Gain a free [Cannery] [in this city]", //400
 			"Gain a free [Soda Factory] [in this city]" //400
-		], 
+		],
 		"requiredTech": "Replaceable Parts",
 		"requiredBuilding": "Civilian Factory Complex",
 		"hurryCostModifier": -25
@@ -341,7 +341,7 @@
 			"Gain a free [Physic Lab] [in this city]", //160
 			"Gain a free [Chemistry Lab] [in this city]", //160
 			"Gain a free [Bio Lab] [in this city]" //160
-		], 
+		],
 		"requiredTech": "Pharmaceuticals",
 		"requiredBuilding": "University",
 		"hurryCostModifier": -25
@@ -536,7 +536,7 @@
 	},
 	{
 		"name": "Hunter's Hut",
-		"cost":20,
+		"cost": 20,
 		"food": 1,
 		"uniques": [
 			"'Economic Building'",
@@ -870,7 +870,7 @@
 	{
 		"name": "Road Network",
 		"maintenance": 2,
-		"happiness":1,
+		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
 			"Provides [1] [Living Condition]",
@@ -1046,7 +1046,6 @@
 		"requiredTech": "Writing",
 		"quote": "'Learning without thinking leads to confusion; Thinking without learning ends to vain.' - Confucius"
 	},
-
 	///Line 3
 	{
 		"name": "Town Square",
@@ -1129,6 +1128,39 @@
 		],
 		"requiredTech": "Carpentry",
 		"hurryCostModifier": 10
+	},
+	{
+		"name": "Makeshift Housing",
+		"buildingCost": 20,
+		"maintenance": 3,
+		"percentStatBonus": {
+			"food": -10,
+			"production": -5
+		},
+		"uniques": [
+			"Only available <when below [-1] [Living Condition]>",
+			"Provides [1] [Living Condition]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Carpentry",
+		"hurryCostModifier": -50
+	},
+	{
+		"name": "Slum",
+		"buildingCost": 30,
+		"maintenance": 3,
+		"percentStatBonus": {
+			"food": -10,
+			"production": -5
+		},
+		"uniques": [
+			"Only available <when below [-3] [Living Condition]>",
+			"Provides [1] [Living Condition]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Carpentry",
+		"requiredBuilding":"Makeshift Housing",
+		"hurryCostModifier": -50
 	},
 	{
 		"name": "Temple",
@@ -1461,7 +1493,6 @@
 		"requiredTech": "Philosophy",
 		"hurryCostModifier": 25
 	},
-
 	{
 		"name": "Watch Tower",
 		"maintenance": 1,
@@ -1686,11 +1717,11 @@
 	},
 	{
 		"name": "Alchemy Lab",
-		"cost":150,
+		"cost": 150,
 		"maintenance": 3,
 		"specialistSlots": {
 			"Engineer": 1,
-			"Scientist":2
+			"Scientist": 2
 		},
 		"uniques": [
 			"Unbuildable",
@@ -1699,7 +1730,7 @@
 			"'Research Building'",
 			"Gain a free [Chemistry Lab] [in this city] <after discovering [Chemistry]>"
 		],
-		"requiredTech":"Alchemy"
+		"requiredTech": "Alchemy"
 	},
 	{
 		"name": "Garden",
@@ -1717,7 +1748,6 @@
 		"requiredTech": "Irrigation",
 		"hurryCostModifier": 25
 	},
-
 	///Line 7
 	{
 		"name": "Agricultural Water Storage",
@@ -4732,6 +4762,7 @@
 		},
 		"uniques": [
 			"'Political Building'",
+			"Provides [1] [Living Condition]",
 			"[+3 Happiness, -3 Gold] per [5] population [in this city]",
 			"[+1 Production] from all ['Light Industry'] buildings <in this city>",
 			"[+2]% Great Person generation [in all cities]",
@@ -4754,6 +4785,7 @@
 		},
 		"uniques": [
 			"'Political Building'",
+			"Provides [1] [Living Condition]",
 			"[-3 Happiness] <in cities without a [Commune]>",
 			"Remove extra unhappiness from annexed cities",
 			"Only available <after adopting [Anarchism]>",
