@@ -2530,10 +2530,9 @@
 	},
 	{
 		"name": "Religious School",
-		"maintenance": 3,
+		"maintenance": 5,
 		"percentStatBonus": {
 			"science": 25,
-			"culture": 15,
 			"faith": 20
 		},
 		"specialistSlots": {
@@ -2542,7 +2541,8 @@
 		},
 		"uniques": [
 			"'Educational Building'",
-			"[+1 Science] per [3] population [in this city]",
+			"[+1 Science] per [5] population [in this city]",
+			"[+1 Science] from all ['Core of Religion'] buildings <in [All] cities>",
 			"Only available <after enhancing a religion>",
 			"Only available <in cities without a [Private School]>",
 			"Only available <in cities without a [Public School]>",
@@ -2559,8 +2559,7 @@
 			"gold": 10
 		},
 		"specialistSlots": {
-			"Scientist": 1,
-			"Artist": 1,
+			"Scientist": 2,
 			"Merchant": 1
 		},
 		"uniques": [
@@ -2574,7 +2573,7 @@
 	},
 	{
 		"name": "Public School",
-		"maintenance": 3,
+		"maintenance": 5,
 		"percentStatBonus": {
 			"science": 25,
 			"culture": 15,
@@ -2586,6 +2585,7 @@
 		},
 		"uniques": [
 			"'Educational Building'",
+			"Provides [1] [Living Condition]",
 			"Only available <in cities without a [Religious School]>",
 			"Only available <in cities without a [Private School]>",
 			"[-1 Gold, +1 Science] per [3] population [in this city]"
