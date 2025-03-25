@@ -2532,7 +2532,7 @@
 		"name": "Religious School",
 		"maintenance": 3,
 		"percentStatBonus": {
-			"science": 10,
+			"science": 25,
 			"culture": 15,
 			"faith": 20
 		},
@@ -2553,9 +2553,8 @@
 	},
 	{
 		"name": "Private School",
-		"maintenance": 1,
 		"percentStatBonus": {
-			"science": 10,
+			"science": 25,
 			"culture": 10,
 			"gold": 10
 		},
@@ -2575,12 +2574,11 @@
 	},
 	{
 		"name": "Public School",
-		"maintenance": 5,
+		"maintenance": 3,
 		"percentStatBonus": {
-			"science": 15,
+			"science": 25,
 			"culture": 15,
-			"production": 5,
-			"food": 5
+			"production": 5
 		},
 		"specialistSlots": {
 			"Scientist": 2,
@@ -2590,7 +2588,7 @@
 			"'Educational Building'",
 			"Only available <in cities without a [Religious School]>",
 			"Only available <in cities without a [Private School]>",
-			"[+1 Science] per [3] population [in this city]"
+			"[-1 Gold, +1 Science] per [3] population [in this city]"
 		],
 		"requiredTech": "Scientific Theory",
 		"hurryCostModifier": 0
