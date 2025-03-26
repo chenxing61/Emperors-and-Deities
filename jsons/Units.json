@@ -467,6 +467,37 @@
 		"attackSound": "metalhit"
 	},
 	{
+		"name": "Elephant Rider",
+		"unitType": "Rider",
+		"cost": 80,
+		"movement": 2,
+		"strength": 20,
+		"uniques": [
+			"Only available <if [Military Stable] is constructed>",
+			"Consumes [1] [Ivory]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Blunt Weapons'",
+			"No defensive terrain bonus",
+			"[+50]% Strength <after discovering [Armorments]>",
+			"[+25]% Strength <after discovering [Tactics]>",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"[-33]% Strength <vs ['Siege Weapons'] units>",
+			"[-33]% Strength <vs ['Firearms'] units>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintainance",
+		"upgradesTo": "Hussar",
+		"attackSound": "metalhit"
+	},
+	{
 		"name": "Horse Archer",
 		"unitType": "Rider",
 		"cost": 69,
