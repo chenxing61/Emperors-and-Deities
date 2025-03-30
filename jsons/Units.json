@@ -440,6 +440,34 @@
 		"attackSound": "arrow"
 	},
 	{
+		"name": "Nubian Archer",
+		"uniqueTo":"North Africa",
+		"unitType": "Ranged Combat",
+		"cost": 40,
+		"movement": 2,
+		"strength": 10,
+		"rangedStrength": 14,
+		"range": 1,
+		"uniques": [
+			"'Levy Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Levy Army",
+			"Skirmisher Training",
+			"Accuracy Doctrine",
+			"Short Bow"
+		],
+		"requiredTech": "Mining",
+		"obsoleteTech": "Tactics",
+		"upgradesTo": "Levy Archer",
+		"attackSound": "arrow"
+	},
+	{
 		"name": "Early Rider",
 		"unitType": "Rider",
 		"cost": 60,

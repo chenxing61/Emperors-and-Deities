@@ -348,6 +348,18 @@
 	},
 	///Line 0
 	{
+		"name": "Obelisk",
+		"uniqueTo":"North Africa",
+		"cost": 25,
+		"happiness":1,
+		"uniques": [
+			"Gain a free [Monument] [in this city]",
+			"Only available <after adopting [Unity]>"
+		],
+		"requiredTech": "Agriculture",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Monument",
 		"cost": 30,
 		"culture": 1,
@@ -553,6 +565,19 @@
 		"uniques": [
 			"'Agricultural Building'",
 			"Must be on [River]"
+		],
+		"requiredTech": "The Wheel",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Early Irrigation System",
+		"uniqueTo":"North Africa",
+		"uniques": [
+			"'Agricultural Building'",
+			"[+1 Food] from [{Fresh water}{'Agricultural Improvement'}] tiles [in this city]",
+			"Must be on [River]",
+			"Only available <in cities without a [Irrigation System]>",
+			"Only available <in cities without a [Agricultural Water Storage]>"
 		],
 		"requiredTech": "The Wheel",
 		"hurryCostModifier": 10
@@ -1302,7 +1327,6 @@
 		"uniques": [
 			"[-25]% Culture cost of natural border growth [in all cities]",
 			"[+25]% Great Person generation [in this city]",
-			"Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [20] per owned city"
 		],
 		"requiredTech": "Drama and Poetry"
@@ -1313,7 +1337,6 @@
 		"replaces": "National Epic",
 		"maintenance": 3,
 		"isNationalWonder": true,
-		"happiness": 3,
 		"specialistSlots": {
 			"Artist": 2,
 			"Governor": 1
@@ -1321,13 +1344,13 @@
 		"uniques": [
 			"Provides the cheapest [Happiness] building in your first [9] cities for free",
 			"[+25]% Great Person generation [in this city]",
-			"Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [20] per owned city"
 		],
 		"requiredTech": "Drama and Poetry"
 	},
 	{
 		"name": "The Epic of Gilgamesh",
+		"cost":80,
 		"uniqueTo": "Central and West Asia",
 		"replaces": "National Epic",
 		"maintenance": 3,
@@ -1337,11 +1360,11 @@
 		},
 		"uniques": [
 			"[-10]% Culture cost of adopting new Policies",
-			"[+5]% [Faith] [in all cities]",
+			"[+10]% [Faith] [in all cities]",
 			"[+25]% Great Person generation [in this city]",
-			"Cost increases by [10] per owned city"
+			"Cost increases by [30] per owned city"
 		],
-		"requiredTech": "Drama and Poetry"
+		"requiredTech": "Animal Husbandry"
 	},
 	{
 		"name": "The Acropolis",
@@ -1355,9 +1378,7 @@
 		},
 		"uniques": [
 			"[+25]% [Science] [in this city]",
-			"[-25]% Culture cost of natural border growth [in all cities]",
 			"[+25]% Great Person generation [in this city]",
-			"Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [20] per owned city"
 		],
 		"requiredTech": "Drama and Poetry"
@@ -1375,12 +1396,46 @@
 			"[+10]% Great Person generation [in all cities]",
 			"Military Units gifted from City-States start with [20] XP",
 			"[+10]% Strength",
-			"Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>",
+			"Cost increases by [20] per owned city"
+		],
+		"requiredTech": "Drama and Poetry"
+	},
+	{
+		"name": "The Valley of Emperors",
+		"uniqueTo":"North Africa",
+		"maintenance": 3,
+		"isNationalWonder": true,
+		"specialistSlots": {
+			"Artist": 3,
+			"Governor":1
+		},
+		"uniques": [
+			"'Core of Religion'",
+			"[+25]% Great Person generation [in this city]",
 			"Cost increases by [20] per owned city"
 		],
 		"requiredTech": "Drama and Poetry"
 	},
 	///Line 4
+	{
+		"name": "U-Shaped Harbour",
+		"uniqueTo":"North Africa",
+		"maintenance": 1,
+		"uniques": [
+			"'Military Building'",
+			"'Marine Infrastructure'",
+			"Free [Galley Fleet] appears <before discovering [Shipbuilding]>",
+			"Free [Heavy Galley Fleet] appears <after discovering [Shipbuilding]> <before discovering [Monocular]>",
+			"Free [Cannon Galley Fleet] appears <after discovering [Monocular]> <before discovering [Advanced Shipbuilding]>",
+			"Free [Torpedo Boat Flotilla] appears <after discovering [Advanced Shipbuilding]>",
+			"[+50]% Production when constructing [Water] units [in this city]",
+			"Destroyed when the city is captured",
+			"Must be next to [Coast]"
+		],
+		"requiredBuilding": "Barrack",
+		"requiredTech": "Dry Dock",
+		"hurryCostModifier": 25
+	},
 	{
 		"name": "Dry Dock",
 		"maintenance": 1,
@@ -1661,6 +1716,7 @@
 		"uniques": [
 			"'Infrastructure'",
 			"[+1 Food] from [{Fresh water}{'Agricultural Improvement'}] tiles [in this city]",
+			"Only available <in cities without a [Early Irrigation System]>",
 			"Only available <in cities without a [Agricultural Water Storage]>"
 		],
 		"requiredTech": "Irrigation",
@@ -4278,7 +4334,7 @@
 	},
 	{
 		"name": "Shrine",
-		"buildingCost": 20,
+		"cost": 20,
 		"faith": 1,
 		"culture": 1,
 		"uniques": [
@@ -4293,7 +4349,7 @@
 		"name": "She Ji Shrine",
 		"uniqueTo": "East Asia",
 		"replaces": "Shrine",
-		"buildingCost": 20,
+		"cost": 20,
 		"faith": 1,
 		"culture": 1,
 		"uniques": [
@@ -4309,7 +4365,7 @@
 		"name": "Naos",
 		"uniqueTo": "Mediterranean",
 		"replaces": "Shrine",
-		"buildingCost": 20,
+		"cost": 20,
 		"faith": 1,
 		"culture": 1,
 		"uniques": [
@@ -4325,7 +4381,7 @@
 		"name": "Ziggurats",
 		"uniqueTo": "Central and West Asia",
 		"replaces": "Shrine",
-		"buildingCost": 40,
+		"cost": 30,
 		"faith": 2,
 		"culture": 1,
 		"cityHealth": 5,
@@ -4342,12 +4398,27 @@
 		"name": "Druid Shrine",
 		"uniqueTo": "Europa",
 		"replaces": "Shrine",
-		"buildingCost": 30,
+		"cost": 30,
 		"faith": 1,
 		"culture": 1,
 		"happiness": 1,
 		"uniques": [
 			"'Practice Ground'",
+			"Only available <after adopting [Polytheism]>",
+			"Only available <when religion is enabled>",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Calendar"
+	},
+	{
+		"name": "Manor of Gods",
+		"uniqueTo":"North Africa",
+		"cost": 30,
+		"percentStatBonus":{"gold":10},
+		"faith": 2,
+		"culture": 1,
+		"uniques": [
+			"'Worship Place'",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -4421,10 +4492,25 @@
 		],
 		"requiredTech": "Calendar"
 	},
+	
+	{
+		"name": "Atun's Shrine",
+		"uniqueTo":"North Africa",
+		"cost": 20,
+		"faith": 2,
+		"culture": 1,
+		"uniques": [
+			"'Worship Place'",
+			"Only available <after adopting [Polytheism]>",
+			"Only available <when religion is enabled>",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Calendar"
+	},
 	{
 		"name": "Parish",
 		"uniqueTo": "Mediterranean",
-		"buildingCost": 1,
+		"cost": 1,
 		"uniques": [
 			"Limited to [5] per Civilization",
 			"[+1 Faith] per [5] population [in this city] <in cities with between [9] and [15] [Population]>",
@@ -5291,5 +5377,5 @@
 			"Destroyed when the city is captured"
 		],
 		"hurryCostModifier": 0
-	},
+	}
 ]
