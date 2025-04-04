@@ -8,10 +8,12 @@
  EmperorPenguin for help with proofreading, bug fixing advices
  FastDoubloon115_ for help with playtesting
 
-Special thanks to:
-(I cant remember their name so I will list out their works)
-Authors of Deciv and Deciv redux, Outlaw of waste, Alpha frontier, Leaders mission 1 and 2, CS reworked, Rek mod, The great unciv rework and the rest of the community. 
----
-Great mods and bad mods both pushed me to this point. Its all your fault!
+ Special thanks to:
+ (I cant remember their name so I will list out their works)
+ Authors of Deciv and Deciv redux, Outlaw of waste, Alpha frontier, Leaders mission 1 and 2, CS reworked, Rek mod, The great unciv rework and the rest of the community. 
+ ---
+ Great mods and bad mods both pushed me to this point. Its all your fault!
+
+ Feedback goes to official unciv discord's Emperors and Deities thread, or just open a issue here!
 
 
