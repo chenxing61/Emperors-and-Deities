@@ -16,4 +16,8 @@
 
  Feedback goes to official unciv discord's Emperors and Deities thread, or just open a issue here!
 
+ Feel free to translate this mod and send them to author
+ Simpified Chinese Translation done by CX61 himself
+ Russian Translation done by Nori_Bori from discord with help of Genemi AI
+
 
