@@ -805,7 +805,63 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "arrow"
 	},
-
+	{
+		"name": "Garrison",
+		"unitType": "Close Combat",
+		"cost": 50,
+		"movement": 2,
+		"strength": 15,
+		"uniques": [
+			"Only available <after adopting [Provincial Government]>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+33]% Strength <after discovering [Armorments]>",
+			"[+50]% Strength <after discovering [Tactics]>",
+			"[+13]% Strength <in [Friendly Land] tiles> <when defending>",
+			"[-33]% Strength <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Levy Army",
+			"Stewardship",
+			"Defence Doctrine"
+		],
+		"requiredTech": "Logistics",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Mercenary Archer",
+		"unitType": "Ranged Combat",
+		"cost": 60,
+		"movement": 2,
+		"strength": 14,
+		"rangedStrength": 18,
+		"range": 1,
+		"uniques": [
+			"Unbuildable <for [Human player] Civilizations>",
+			"Can only be built <in cities with a [Mercenary Office]>",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Mercenary Army'",
+			"'Edged Weapons'",
+			"Can move immediately once bought",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"Mercenary Habit"
+		],
+		"requiredTech": "Logistics",
+		"obsoleteTech": "Engineering",
+		"upgradesTo": "Mercenary Crossbowman",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "arrow"
+	},
 	///Line 7
 	{
 		"name": "Cataphract",
@@ -867,65 +923,7 @@
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "metalhit"
 	},
-	{
-		"name": "Garrison",
-		"unitType": "Close Combat",
-		"cost": 50,
-		"movement": 2,
-		"strength": 15,
-		"uniques": [
-			"Only available <after adopting [Provincial Government]>",
-			"'Levy Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"[+33]% Strength <after discovering [Armorments]>",
-			"[+50]% Strength <after discovering [Tactics]>",
-			"[+13]% Strength <in [Friendly Land] tiles> <when defending>",
-			"[-33]% Strength <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Levy Army",
-			"Stewardship",
-			"Defence Doctrine"
-		],
-		"requiredTech": "Logistics",
-		"obsoleteTech": "Hand Cannon",
-		"upgradesTo": "Pike and Shot",
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Mercenary Archer",
-		"unitType": "Ranged Combat",
-		"cost": 60,
-		"movement": 2,
-		"strength": 14,
-		"rangedStrength": 18,
-		"range": 1,
-		"uniques": [
-			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
-			"'Infantry'",
-			"'Skirmishers'",
-			"'Mercenary Army'",
-			"'Edged Weapons'",
-			"Can move immediately once bought",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"Mercenary Habit"
-		],
-		"requiredTech": "Logistics",
-		"obsoleteTech": "Engineering",
-		"upgradesTo": "Mercenary Crossbowman",
-		"requiredResource": "Mercenary Contract",
-		"attackSound": "arrow"
-	},
-	///Line 6
-
+	///Line 8
 	{
 		"name": "Lou Chuan Fleet",
 		"uniqueTo": "East Asia",
@@ -1086,7 +1084,7 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "fire"
 	},
-	///Line 7
+	///Line 9
 	{
 		"name": "Crossbowman",
 		"unitType": "Ranged Combat",
@@ -1256,7 +1254,7 @@
 		"hurryCostModifier": 20,
 		"attackSound": "throw"
 	},
-	///Line 8
+	///Line 9
 	{
 		"name": "Trebuchet",
 		"unitType": "Siege",
@@ -1289,29 +1287,27 @@
 		"hurryCostModifier": 20,
 		"attackSound": "throw"
 	},
-	///Line 9
-	///Line 10
+	///Line 12
 	{
-		"name": "Gun Boat",
-		"unitType": "Ranged Combat Ship",
-		"cost": 80,
-		"movement": 3,
-		"strength": 28,
-		"rangedStrength": 35,
+		"name": "Three-masted Ship",
+		"unitType": "Close Combat Ship",
+		"cost": 105,
+		"movement": 4,
+		"strength": 40,
 		"uniques": [
-			"'Levy Army'",
+			"'Standing Army'",
 			"'Sailing Ship'",
-			"'Skirmishers'",
+			"'Dense Formation'",
 			"'Firearms'",
-			"[This Unit] takes [10] damage <upon ending a turn in a [Ocean] tile>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army",
-			"Skirmisher Training"
+			"The Standing Army"
 		],
-		"requiredTech": "Machinery",
-		"obsoleteTech": "Advanced Shipbuilding",
+		"requiredTech": "Cartography",
+		"obsoleteTech": "Ship Armour",
+		"upgradesTo": "Ironclad Fleet",
+		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "cannon"
 	},
 	{
@@ -1507,7 +1503,81 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "artillery"
 	},
-	///Line 11
+	///Line 13
+	{
+		"name": "Cannon Galley Fleet",
+		"unitType": "Close Combat Ship",
+		"cost": 120,
+		"movement": 4,
+		"strength": 45,
+		"uniques": [
+			"Consumes [1] [Weapon Parts]",
+			"'Standing Army'",
+			"'Galley'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Monocular",
+		"obsoleteTech": "Advanced Shipbuilding",
+		"upgradesTo": "Torpedo Boat Flotilla",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Explorer",
+		"unitType": "Scout",
+		"cost": 100,
+		"movement": 4,
+		"strength": 30,
+		"uniques": [
+			"Unbuildable <for [Human player] Civilizations>",
+			"Can only be built <in cities with a [Mercenary Office]>",
+			"Can transform to [Recon Unit] <removing the [Mercenary Habit] promotion/status><after discovering [Replaceable Parts]>",
+			"'Mercenary Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Can move immediately once bought",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"Scouting Unit",
+			"Mercenary Habit",
+			"Sailor Origin"
+		],
+		"requiredTech": "Monocular",
+		"obsoleteTech": "Replaceable Parts",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Gun Boat",
+		"unitType": "Ranged Combat Ship",
+		"cost": 80,
+		"movement": 3,
+		"strength": 28,
+		"rangedStrength": 35,
+		"uniques": [
+			"'Levy Army'",
+			"'Sailing Ship'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"[This Unit] takes [10] damage <upon ending a turn in a [Ocean] tile>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Levy Army",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Machinery",
+		"obsoleteTech": "Advanced Shipbuilding",
+		"attackSound": "cannon"
+	},
 	{
 		"name": "Siege Bombard",
 		"unitType": "Siege",
@@ -1540,80 +1610,7 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "artillery"
 	},
-	{
-		"name": "Three-masted Ship",
-		"unitType": "Close Combat Ship",
-		"cost": 105,
-		"movement": 4,
-		"strength": 40,
-		"uniques": [
-			"'Standing Army'",
-			"'Sailing Ship'",
-			"'Dense Formation'",
-			"'Firearms'",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredTech": "Cartography",
-		"obsoleteTech": "Ship Armour",
-		"upgradesTo": "Ironclad Fleet",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "cannon"
-	},
-	///Line 12
-	{
-		"name": "Explorer",
-		"unitType": "Scout",
-		"cost": 100,
-		"movement": 4,
-		"strength": 30,
-		"uniques": [
-			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
-			"Can transform to [Recon Unit] <removing the [Mercenary Habit] promotion/status><after discovering [Replaceable Parts]>",
-			"'Mercenary Army'",
-			"'Infantry'",
-			"'Skirmishers'",
-			"'Firearms'",
-			"Can move immediately once bought",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"Scouting Unit",
-			"Mercenary Habit",
-			"Sailor Origin"
-		],
-		"requiredTech": "Monocular",
-		"obsoleteTech": "Replaceable Parts",
-		"requiredResource": "Mercenary Contract",
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Cannon Galley Fleet",
-		"unitType": "Close Combat Ship",
-		"cost": 120,
-		"movement": 4,
-		"strength": 45,
-		"uniques": [
-			"Consumes [1] [Weapon Parts]",
-			"'Standing Army'",
-			"'Galley'",
-			"'Dense Formation'",
-			"'Firearms'",
-			"Cannot enter ocean tiles",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredTech": "Monocular",
-		"obsoleteTech": "Advanced Shipbuilding",
-		"upgradesTo": "Torpedo Boat Flotilla",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "cannon"
-	},
+	///Line 14
 	{
 		"name": "Field Gun",
 		"unitType": "Siege",
@@ -1769,7 +1766,7 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "horse"
 	},
-	///Line 13
+	///Line 15
 	{
 		"name": "Pioneer",
 		"cost": 180,
@@ -1864,6 +1861,7 @@
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "shot"
 	},
+	///line 16
 	{
 		"name": "Cuirassier",
 		"unitType": "Assault",
@@ -1945,7 +1943,7 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "shot"
 	},
-	///Line 14
+	///Line 17
 	{
 		"name": "Ironclad Fleet",
 		"unitType": "Close Combat Ship",
@@ -2045,7 +2043,7 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "shot"
 	},
-	///Line 15
+	///Line 18
 	{
 		"name": "Modern Work Ship",
 		"cost": 175,
@@ -2415,7 +2413,7 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "artillery"
 	},
-	///Line 16
+	///Line 17
 	{
 		"name": "Mechanised Worker",
 		"cost": 210,
@@ -2538,194 +2536,7 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "tankshot"
 	},
-	{
-		"name": "Carrier Fleet",
-		"unitType": "Carrier",
-		"cost": 300,
-		"movement": 4,
-		"strength": 50,
-		"uniques": [
-			"Consumes [1] [Fuel]",
-			"Consumes [1] [Ship Parts]",
-			"'Standing Army'",
-			"'Engine Ship'",
-			"'Dense Formation'",
-			"'Firearms'",
-			"Never appears as a Barbarian unit",
-			"Can carry [3] [Aircraft] units"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredBuilding": "Military Port",
-		"upgradesTo": "Nuclear Carrier Fleet",
-		"requiredTech": "Flight",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "shipguns"
-	},
-	{
-		"name": "Propeller Fighter",
-		"unitType": "Fighter",
-		"cost": 240,
-		"movement": 1,
-		"strength": 55,
-		"rangedStrength": 60,
-		"range": 5,
-		"interceptRange": 5,
-		"uniques": [
-			"Consumes [1] [Fuel]",
-			"Consumes [1] [Aircraft Parts]",
-			"'Standing Army'",
-			"'Propeller Aircraft'",
-			"'Dense Formation'",
-			"'Firearms'",
-			"'Standing Army'",
-			"Can perform Air Sweep",
-			"[-33]% Strength <vs [Land] units> <when attacking>",
-			"[50]% chance to intercept air attacks",
-			"[40]% chance to intercept air attacks <after discovering [Radar]>",
-			"[+125]% Strength <vs [Bomber] units>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredBuilding": "Military Factory Complex",
-		"requiredTech": "Flight",
-		"obsoleteTech": "Rocketry",
-		"upgradesTo": "Jet Fighter",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "machinegun"
-	},
-	{
-		"name": "Propeller Bomber",
-		"unitType": "Bomber",
-		"cost": 270,
-		"movement": 1,
-		"strength": 55,
-		"rangedStrength": 65,
-		"range": 6,
-		"uniques": [
-			"Consumes [1] [Fuel]",
-			"Consumes [1] [Aircraft Parts]",
-			"'Standing Army'",
-			"'Propeller Aircraft'",
-			"'Dense Formation'",
-			"'Firearms'",
-			"[+25]% Strength <vs cities> <when attacking>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredBuilding": "Military Factory Complex",
-		"requiredTech": "Flight",
-		"upgradesTo": "Jet Bomber",
-		"obsoleteTech": "Rocketry",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "bombing"
-	},
-	{
-		"name": "Early Paratrooper",
-		"unitType": "Close Combat",
-		"cost": 300,
-		"movement": 2,
-		"strength": 63,
-		"uniques": [
-			"Consumes [1] [Weapon Parts]",
-			"'Standing Army'",
-			"'Infantry'",
-			"'Firearms'",
-			"'Dense Formation'",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army",
-			"Transport Plane"
-		],
-		"requiredTech": "Flight",
-		"obsoleteTech": "Lasers",
-		"upgradesTo": "Paratrooper",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "shot"
-	},
-	{
-		"name": "AA Guns",
-		"unitType": "Ranged Combat",
-		"cost": 175,
-		"movement": 2,
-		"strength": 55,
-		"rangedStrength": 60,
-		"range": 2,
-		"uniques": [
-			"Consumes [2] [Weapon Parts]",
-			"'Standing Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Firearms'",
-			"[50]% chance to intercept air attacks",
-			"[40]% chance to intercept air attacks <after discovering [Radar]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredBuilding": "Military Factory Complex",
-		"requiredTech": "Ballistics",
-		"obsoleteTech": "Lasers",
-		"upgradesTo": "AA Missle System",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "shot"
-	},
-	{
-		"name": "Rocket Artillery",
-		"unitType": "Siege",
-		"cost": 250,
-		"movement": 3,
-		"strength": 55,
-		"rangedStrength": 65,
-		"range": 2,
-		"uniques": [
-			"Only available <if [Military Factory Complex] is constructed>",
-			"Consumes [2] [Weapon Parts]",
-			"'Standing Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Firearms'",
-			"[+25]% Strength <vs ['Dense Formation'] units> <when attacking>",
-			"[+25]% Strength <vs cities> <when attacking>",
-			"[-25]% Strength <when defending>",
-			"Ranged attacks may be performed over obstacles",
-			"Can move after attacking",
-			"Blast radius [1]",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredBuilding": "Military Factory Complex",
-		"requiredTech": "Ballistics",
-		"upgradesTo": "Missile System",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "missile"
-	},
-	{
-		"name": "Early Missile",
-		"unitType": "Missile",
-		"cost": 100,
-		"movement": 1,
-		"strength": 20,
-		"rangedStrength": 65,
-		"range": 6,
-		"uniques": [
-			"[-100]% maintenance costs",
-			"Never appears as a Barbarian unit"
-		],
-		"requiredBuilding": "Military Factory Complex",
-		"requiredTech": "Ballistics",
-		"attackSound": "missile"
-	},
-	///Line 17
+	///Line 18
 	{
 		"name": "Modern Guerrilla",
 		"unitType": "Ranged Combat",
@@ -2853,7 +2664,294 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "artillery"
 	},
-	///Line 18
+	{
+		"name": "Carrier Fleet",
+		"unitType": "Carrier",
+		"cost": 300,
+		"movement": 4,
+		"strength": 50,
+		"uniques": [
+			"Consumes [1] [Fuel]",
+			"Consumes [1] [Ship Parts]",
+			"'Standing Army'",
+			"'Engine Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit",
+			"Can carry [3] [Aircraft] units"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredBuilding": "Military Port",
+		"upgradesTo": "Nuclear Carrier Fleet",
+		"requiredTech": "Flight",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Propeller Fighter",
+		"unitType": "Fighter",
+		"cost": 240,
+		"movement": 1,
+		"strength": 55,
+		"rangedStrength": 60,
+		"range": 5,
+		"interceptRange": 5,
+		"uniques": [
+			"Consumes [1] [Fuel]",
+			"Consumes [1] [Aircraft Parts]",
+			"'Standing Army'",
+			"'Propeller Aircraft'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"'Standing Army'",
+			"Can perform Air Sweep",
+			"[-33]% Strength <vs [Land] units> <when attacking>",
+			"[50]% chance to intercept air attacks",
+			"[40]% chance to intercept air attacks <after discovering [Radar]>",
+			"[+125]% Strength <vs [Bomber] units>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredBuilding": "Military Factory Complex",
+		"requiredTech": "Flight",
+		"obsoleteTech": "Rocketry",
+		"upgradesTo": "Jet Fighter",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Propeller Bomber",
+		"unitType": "Bomber",
+		"cost": 270,
+		"movement": 1,
+		"strength": 55,
+		"rangedStrength": 65,
+		"range": 6,
+		"uniques": [
+			"Consumes [1] [Fuel]",
+			"Consumes [1] [Aircraft Parts]",
+			"'Standing Army'",
+			"'Propeller Aircraft'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+25]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredBuilding": "Military Factory Complex",
+		"requiredTech": "Flight",
+		"upgradesTo": "Jet Bomber",
+		"obsoleteTech": "Rocketry",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Early Paratrooper",
+		"unitType": "Close Combat",
+		"cost": 300,
+		"movement": 2,
+		"strength": 63,
+		"uniques": [
+			"Consumes [1] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Firearms'",
+			"'Dense Formation'",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Transport Plane"
+		],
+		"requiredTech": "Flight",
+		"obsoleteTech": "Lasers",
+		"upgradesTo": "Paratrooper",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "shot"
+	},
+	///Line 19
+	{
+		"name": "AA Guns",
+		"unitType": "Ranged Combat",
+		"cost": 175,
+		"movement": 2,
+		"strength": 55,
+		"rangedStrength": 60,
+		"range": 2,
+		"uniques": [
+			"Consumes [2] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[50]% chance to intercept air attacks",
+			"[40]% chance to intercept air attacks <after discovering [Radar]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredBuilding": "Military Factory Complex",
+		"requiredTech": "Ballistics",
+		"obsoleteTech": "Lasers",
+		"upgradesTo": "AA Missle System",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Rocket Artillery",
+		"unitType": "Siege",
+		"cost": 250,
+		"movement": 3,
+		"strength": 55,
+		"rangedStrength": 65,
+		"range": 2,
+		"uniques": [
+			"Only available <if [Military Factory Complex] is constructed>",
+			"Consumes [2] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+25]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"[+25]% Strength <vs cities> <when attacking>",
+			"[-25]% Strength <when defending>",
+			"Ranged attacks may be performed over obstacles",
+			"Can move after attacking",
+			"Blast radius [1]",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredBuilding": "Military Factory Complex",
+		"requiredTech": "Ballistics",
+		"upgradesTo": "Missile System",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "missile"
+	},
+	{
+		"name": "Early Missile",
+		"unitType": "Missile",
+		"cost": 100,
+		"movement": 1,
+		"strength": 20,
+		"rangedStrength": 65,
+		"range": 6,
+		"uniques": [
+			"[-100]% maintenance costs",
+			"Never appears as a Barbarian unit"
+		],
+		"requiredBuilding": "Military Factory Complex",
+		"requiredTech": "Ballistics",
+		"attackSound": "missile"
+	},
+	///Line 21
+	{
+		"name": "Atomic Bomb",
+		"unitType": "Atomic Bomber",
+		"movement": 1,
+		"strength": 150,
+		"rangedStrength": 150,
+		"range": 10,
+		"cost": 550,
+		"requiredTech": "Nuclear Fission",
+		"uniques": [
+			"Consumes [3] [Enriched Uranium]",
+			"Nuclear weapon of Strength [1]",
+			"Only available <if [Nuclear Option] is constructed>",
+			"Self-destructs when attacking",
+			"Blast radius [2]",
+			"Never appears as a Barbarian unit"
+		],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Nuclear Submarines",
+		"unitType": "Submarine",
+		"movement": 6,
+		"strength": 63,
+		"cost": 300,
+		"uniques": [
+			"Consumes [1] [Ship Parts]",
+			"Consumes [1] [Enriched Uranium]",
+			"[+100]% maintenance costs",
+			"'Standing Army'",
+			"'Nuclear powered Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can only attack [Water] tiles",
+			"[+25]% Strength <when attacking>",
+			"[+5] HP when healing",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredBuilding": "Military Port",
+		"requiredTech": "Nuclear Fission",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "Nuclear Battleship Fleet",
+		"unitType": "Ranged Combat Ship",
+		"cost": 450,
+		"movement": 5,
+		"strength": 74,
+		"rangedStrength": 80,
+		"uniques": [
+			"Consumes [1] [Ship Parts]",
+			"Consumes [1] [Enriched Uranium]",
+			"[+100]% maintenance costs",
+			"'Standing Army'",
+			"'Nuclear powered Ship'",
+			"'Firearms'",
+			"'Dense Formation'",
+			"Never appears as a Barbarian unit",
+			"[+33]% Strength <vs [Carrier] units>",
+			"[+5] HP when healing",
+			"Can see invisible [Barbaric] units"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Nuclear Fission",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Nuclear Carrier Fleet",
+		"unitType": "Carrier",
+		"cost": 400,
+		"movement": 5,
+		"strength": 67,
+		"uniques": [
+			"Consumes [1] [Ship Parts]",
+			"Consumes [1] [Enriched Uranium]",
+			"[+100]% maintenance costs",
+			"'Standing Army'",
+			"'Nuclear powered Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can carry [5] [Aircraft] units",
+			"[+5] HP when healing",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Nuclear Fission",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "shipguns"
+	},
+
 	{
 		"name": "Spec Ops",
 		"unitType": "Ranged Combat",
@@ -2994,6 +3092,7 @@
 		"requiredTech": "Combined Arms",
 		"attackSound": "torpedo"
 	},
+	///Line 22
 	{
 		"name": "Jet Fighter",
 		"unitType": "Fighter",
@@ -3074,7 +3173,7 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "shipguns"
 	},
-	///Line 19
+	///Line 23
 	{
 		"name": "Paratrooper",
 		"unitType": "Close Combat",
@@ -3096,104 +3195,6 @@
 		"requiredTech": "Lasers",
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "shot"
-	},
-	{
-		"name": "Atomic Bomb",
-		"unitType": "Atomic Bomber",
-		"movement": 1,
-		"strength": 150,
-		"rangedStrength": 150,
-		"range": 10,
-		"cost": 550,
-		"requiredTech": "Nuclear Fission",
-		"uniques": [
-			"Consumes [3] [Enriched Uranium]",
-			"Nuclear weapon of Strength [1]",
-			"Only available <if [Nuclear Option] is constructed>",
-			"Self-destructs when attacking",
-			"Blast radius [2]",
-			"Never appears as a Barbarian unit"
-		],
-		"attackSound": "nuke"
-	},
-	{
-		"name": "Nuclear Submarines",
-		"unitType": "Submarine",
-		"movement": 6,
-		"strength": 63,
-		"cost": 300,
-		"uniques": [
-			"Consumes [1] [Ship Parts]",
-			"Consumes [1] [Enriched Uranium]",
-			"[+100]% maintenance costs",
-			"'Standing Army'",
-			"'Nuclear powered Ship'",
-			"'Dense Formation'",
-			"'Firearms'",
-			"Can only attack [Water] tiles",
-			"[+25]% Strength <when attacking>",
-			"[+5] HP when healing",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredBuilding": "Military Port",
-		"requiredTech": "Nuclear Fission",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "torpedo"
-	},
-	{
-		"name": "Nuclear Battleship Fleet",
-		"unitType": "Ranged Combat Ship",
-		"cost": 450,
-		"movement": 5,
-		"strength": 74,
-		"rangedStrength": 80,
-		"uniques": [
-			"Consumes [1] [Ship Parts]",
-			"Consumes [1] [Enriched Uranium]",
-			"[+100]% maintenance costs",
-			"'Standing Army'",
-			"'Nuclear powered Ship'",
-			"'Firearms'",
-			"'Dense Formation'",
-			"Never appears as a Barbarian unit",
-			"[+33]% Strength <vs [Carrier] units>",
-			"[+5] HP when healing",
-			"Can see invisible [Barbaric] units"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredTech": "Nuclear Fission",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "shipguns"
-	},
-	{
-		"name": "Nuclear Carrier Fleet",
-		"unitType": "Carrier",
-		"cost": 400,
-		"movement": 5,
-		"strength": 67,
-		"uniques": [
-			"Consumes [1] [Ship Parts]",
-			"Consumes [1] [Enriched Uranium]",
-			"[+100]% maintenance costs",
-			"'Standing Army'",
-			"'Nuclear powered Ship'",
-			"'Dense Formation'",
-			"'Firearms'",
-			"Can carry [5] [Aircraft] units",
-			"[+5] HP when healing",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredTech": "Nuclear Fission",
-		"requiredResource": "Standing Army Maintainance",
-		"attackSound": "shipguns"
 	},
 	{
 		"name": "Nuclear Missile Crusier",
@@ -3219,11 +3220,10 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredTech": "Nuclear Fission",
+		"requiredTech": "Lasers",
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "shipguns"
 	},
-	///Line 20
 	{
 		"name": "Stealth Bomber",
 		"unitType": "Bomber",
@@ -3347,33 +3347,7 @@
 		"requiredTech": "Lasers",
 		"attackSound": "missile"
 	},
-	///Line 21
-	{
-		"name": "Spy Drone",
-		"unitType": "Scout",
-		"cost": 200,
-		"movement": 5,
-		"strength": 50,
-		"requiredResource": "Standing Army Maintainance",
-		"requiredTech": "Data Science",
-		"uniques": [
-			"Consumes [1] [Microchips]",
-			"'Standing Army'",
-			"'Low Altitude Aircraft'",
-			"'Skirmishers'",
-			"'Firearms'",
-			"Can see over obstacles",
-			"Invisible to non-adjacent units",
-			"Can see invisible [All] units",
-			"[+2] Sight",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army",
-			"Scouting Unit"
-		],
-		"attackSound": "jetgun"
-	},
+	///Line 25
 	{
 		"name": "The Prototype",
 		"unitType": "Assault",
@@ -3401,6 +3375,34 @@
 		"requiredTech": "Robotics",
 		"attackSound": "gdrAttack"
 	},
+	///Line 28
+	{
+		"name": "Spy Drone",
+		"unitType": "Scout",
+		"cost": 200,
+		"movement": 5,
+		"strength": 50,
+		"requiredResource": "Standing Army Maintainance",
+		"requiredTech": "Data Science",
+		"uniques": [
+			"Consumes [1] [Microchips]",
+			"'Standing Army'",
+			"'Low Altitude Aircraft'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Can see over obstacles",
+			"Invisible to non-adjacent units",
+			"Can see invisible [All] units",
+			"[+2] Sight",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Scouting Unit"
+		],
+		"attackSound": "jetgun"
+	},
+
 	{
 		"name": "Exoskeleton Spec Ops",
 		"unitType": "Ranged Combat",
@@ -3452,7 +3454,7 @@
 		],
 		"attackSound": "shot"
 	},
-	///Line 23
+	///Line 29
 	{
 		"name": "Assult Mecha",
 		"unitType": "Assault",
@@ -3481,6 +3483,7 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "gdrAttack"
 	},
+	///Line 30
 	{
 		"name": "Railgun",
 		"unitType": "Siege",
