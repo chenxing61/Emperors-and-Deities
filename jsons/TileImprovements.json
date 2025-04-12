@@ -12,6 +12,8 @@
 			"'Agricultural Improvement'",
 			"Can also be built on tiles adjacent to fresh water",
 			"[+1 Food] <after discovering [Crop Rotation]>",
+			"Cannot be built on [Hill] tiles",
+			"Cannot be built on [Coast] tiles",
 			"Pillaging this improvement yields approximately [+18 Gold]"
 		],
 		"civilopediaText": [
@@ -57,6 +59,8 @@
 			"[-2 Food] from [Desert] tiles",
 			"[+1 Food] for each adjacent [Power Plant]",
 			"[+2 Food] <after discovering [Designer Genetic]>",
+			"Cannot be built on [Hill] tiles",
+			"Cannot be built on [Coast] tiles",
 			"Pillaging this improvement yields approximately [+36 Gold]"
 		],
 		"civilopediaText": [
@@ -76,7 +80,7 @@
 			"Hill",
 			"Tundra"
 		],
-		"food": 4,
+		"food": 3,
 		"culture": 2,
 		"science": 2,
 		"turnsToBuild": 10,
@@ -85,6 +89,8 @@
 			"'Agricultural Improvement'",
 			"[+2 Food] from [Fresh water] tiles",
 			"Can also be built on tiles adjacent to fresh water",
+			"Cannot be built on [Hill] tiles",
+			"Cannot be built on [Coast] tiles",
 			"Pillaging this improvement yields approximately [+36 Gold]"
 		],
 		"shortcutKey": "P"
@@ -133,7 +139,7 @@
 			"Jungle"
 		],
 		"food": 1,
-		"production": 2,
+		"production": 1,
 		"gold": 1,
 		"turnsToBuild": 10,
 		"techRequired": "Ecology",
@@ -752,9 +758,11 @@
 		"science": 4,
 		"uniques": [
 			"Great Improvement",
-			"[+2 Science] <after discovering [Philosophy]>",
-			"[+2 Science] <after discovering [Physics]>",
-			"[+2 Science] <after discovering [Scientific Theory]>",
+			"[+1 Science] <after discovering [Philosophy]>",
+			"[+1 Science] <after discovering [Physics]>",
+			"[+1 Science] <after discovering [Scientific Theory]>",
+			"[+1 Science] <after discovering [Relativity Theory]>",
+			"[+1 Science] <after discovering [Quantum Theory]>",
 			"[+2 Science] <after discovering [Computer]>",
 			"[+2 Science] <after discovering [Particle Physics]>",
 			"Removes removable features when built",
@@ -889,7 +897,6 @@
 			"Irremovable",
 			"Unbuildable",
 			"Excluded from map editor",
-			"Provides [1] [Living Condition] <in this city>",
 			"Provides [1] [Living Condition] <in [Coastal] cities> <in this city>",
 			"Provides [1] [Living Condition] <within [1] tiles of a [Fresh water]> <in this city>",
 			"Consumes [1] [Living Condition] <in cities with at least [5] [Population]> <in this city>",
