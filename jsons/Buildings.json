@@ -899,7 +899,6 @@
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
-			"Provides [1] [Living Condition] <in this city>",
 			"[+1]% [Gold] from Trade Routes",
 			"[+1]% growth [in all cities]",
 			"[-5]% maintenance cost for buildings [in this city]"
@@ -1106,7 +1105,7 @@
 		"name": "Bazzar",
 		"uniqueTo": "Central and West Asia",
 		"replaces": "Town Square",
-		"buildingCost": 85,
+		"cost": 85,
 		"maintenance": 2,
 		"culture": 1,
 		"happiness": 1,
@@ -1157,10 +1156,10 @@
 	},
 	{
 		"name": "Makeshift Housing",
-		"buildingCost": 20,
+		"cost": 20,
 		"maintenance": 3,
 		"percentStatBonus": {
-			"food": -10,
+			"food": -5,
 			"production": -5
 		},
 		"uniques": [
@@ -1173,11 +1172,11 @@
 	},
 	{
 		"name": "Slum",
-		"buildingCost": 30,
+		"cost": 30,
 		"maintenance": 3,
 		"percentStatBonus": {
 			"food": -10,
-			"production": -5
+			"production": -10
 		},
 		"uniques": [
 			"Only available <when below [-3] [Living Condition]>",
@@ -1526,7 +1525,7 @@
 	},
 	{
 		"name": "Clinic",
-		"maintenance": 1,
+		"maintenance": 2,
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
@@ -1872,8 +1871,9 @@
 			"'Military Building'",
 			"Provides [2] [Weapon Parts] <before discovering [Physics]>",
 			"Consumes [3] [Metal] <before discovering [Physics]>",
-			"Provides [3] [Weapon Parts] <after discovering [Physics]>",
-			"Consumes [2] [Metal] <after discovering [Physics]>",
+			"Provides [2] [Weapon Parts] <after discovering [Physics]>",
+			"Consumes [2] [Metal] <after discovering [Physics]><before discovering [Replaceable Parts]>",
+			"Consumes [1] [Alloy] <after discovering [Replaceable Parts]>",
 			"[+50]% Production when constructing [Military Factory Complex] buildings [in this city]",
 			"Destroyed when the city is captured"
 		],
@@ -2217,7 +2217,7 @@
 	{
 		"name": "Department of Administration",
 		"isNationalWonder": true,
-		"maintenance": 3,
+		"maintenance": 10,
 		"specialistSlots": {
 			"Governor": 1
 		},
@@ -2385,12 +2385,14 @@
 	},
 	{
 		"name": "Arsenal",
-		"maintenance": 3,
-		"cityStrength": 10,
-		"cityHealth": 10,
+		"maintenance": 5,
+		"cityStrength": 5,
+		"cityHealth": 5,
+		"percentStatBonus":{"production":-5},
 		"uniques": [
 			"'Military Building'",
 			"Provides [1] [Standing Army Maintainance]",
+			"Provides [1] [Weapon Parts]",
 			"New [Military] units start with [25] XP [in this city]"
 		],
 		"requiredBuilding": "Armory",
@@ -2920,7 +2922,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
-			"Provides [2] [Living Condition] <in this city>",
+			"Provides [1] [Living Condition] <in this city>",
 			"[+25]% growth [in this city]",
 			"[All] Units adjacent to this city heal [10] HP per turn when healing"
 		],
@@ -3214,9 +3216,9 @@
 		},
 		"uniques": [
 			"'Military Building'",
-			"Provides [5] [Weapon Parts]",
+			"Provides [4] [Weapon Parts]",
 			"[+25]% Production when constructing ['Firearms'] units [in this city]",
-			"Consumes [1] [Alloy]"
+			"Consumes [2] [Alloy]"
 		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Replaceable Parts",
@@ -3556,7 +3558,7 @@
 		"maintenance": 3,
 		"uniques": [
 			"'Infrastructure'",
-			"Provides [2] [Living Condition] <in this city>",
+			"Provides [1] [Living Condition] <in this city>",
 			"[+2 Production] from [Power Plant] tiles [in this city]",
 			"Comment ['Power Buildings' channel their production into Power Grid in all cities. The More Power Building you build, the stronger this building becomes(Each 'Power Buildings' provides +2 Production).]"
 		],
@@ -3609,10 +3611,9 @@
 	},
 	{
 		"name": "Telephone Circuit",
-		"maintenance": 1,
+		"maintenance": 3,
 		"uniques": [
 			"'Infrastructure'",
-			"Provides [1] [Living Condition] <in this city>",
 			"[-1]% maintenance cost for buildings [in all cities]"
 		],
 		"requiredTech": "Radio",
@@ -3831,7 +3832,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
-			"Provides [2] [Living Condition] <in this city>",
+			"Provides [1] [Living Condition] <in this city>",
 			"[+1 Culture] from [Fresh water] tiles [in this city]",
 			"[20]% Food is carried over after population increases [in this city]"
 		],
@@ -4454,7 +4455,7 @@
 	},
 	{
 		"name": "Chapel",
-		"buildingCost": 20,
+		"cost": 20,
 		"faith": 2,
 		"uniques": [
 			"'Worship Place'",
@@ -4468,7 +4469,7 @@
 		"name": "Tai Yi Shrine",
 		"uniqueTo": "East Asia",
 		"replaces": "Chapel",
-		"buildingCost": 20,
+		"cost": 20,
 		"faith": 2,
 		"happiness": 1,
 		"uniques": [
@@ -4526,7 +4527,7 @@
 	{
 		"name": "Sanhedrin",
 		"uniqueTo": "Central and West Asia",
-		"buildingCost": 60,
+		"cost": 60,
 		"faith": 2,
 		"uniques": [
 			"Gain a free [Courthouse] [in this city]",
@@ -4687,7 +4688,6 @@
 			"Unbuildable",
 			"Unsellable",
 			"Provides [2] [Noble Army Maintainance]",
-			"Provides [2] [Weapon Parts]",
 			"[Elite Guard] units gain the [Hardened] promotion",
 			"[Elite Guard] units gain the [Defence Doctrine] promotion",
 			"[Elite Guard] units gain the [Reinforced Position] promotion",
@@ -4745,7 +4745,6 @@
 			"Unbuildable",
 			"Unsellable",
 			"Provides [2] [Noble Army Maintainance]",
-			"Provides [2] [Weapon Parts]",
 			"[Elite Guard] units gain the [Hardened] promotion",
 			"[Elite Guard] units gain the [Stewardship] promotion",
 			"[Elite Guard] units gain the [Shock Doctrine] promotion",
@@ -4807,7 +4806,6 @@
 			"Unbuildable",
 			"Unsellable",
 			"Provides [3] [Noble Army Maintainance]",
-			"Provides [3] [Weapon Parts]",
 			"[Elite Guard] units gain the [Hardened] promotion",
 			"[Elite Guard] units gain the [Stewardship] promotion",
 			"[Elite Guard] units gain the [Long Range Logistic] promotion",
@@ -4846,10 +4844,11 @@
 		},
 		"uniques": [
 			"'Political Building'",
-			"[+3 Happiness, -3 Gold] per [5] population [in this city]",
+			"Provides [1] [Living Condition] <in this city>",
+			"[-3 Gold] per [5] population [in this city]",
 			"[+1 Production] from all ['Light Industry'] buildings <in this city>",
 			"[+2]% Great Person generation [in all cities]",
-			"[+2]% Golden Age length",
+			"[+1]% Golden Age length",
 			"Only available <after adopting [Anarchism]>",
 			"Destroyed when the city is captured"
 		],
@@ -4868,7 +4867,6 @@
 		},
 		"uniques": [
 			"'Political Building'",
-			"Provides [1] [Living Condition] <in this city>",
 			"[-3 Happiness] <in cities without a [Commune]>",
 			"Remove extra unhappiness from annexed cities",
 			"Only available <after adopting [Anarchism]>",
@@ -5130,6 +5128,7 @@
 			"Only available <if starting in the [Industrial era]>",
 			"Unbuildable",
 			"Unsellable",
+			"Provides [1] [Fuel]",
 			"Provides [5] [Weapon Parts]",
 			"Provides [5] [Standing Army Maintainance]"
 		]
@@ -5141,7 +5140,8 @@
 			"Only available <if starting in the [Modern era]>",
 			"Unbuildable",
 			"Unsellable",
-			"Provides [5] [Weapon Parts]",
+			"Provides [2] [Fuel]",
+			"Provides [2] [Weapon Parts]",
 			"Provides [5] [Standing Army Maintainance]"
 		]
 	},
@@ -5152,7 +5152,8 @@
 			"Only available <if starting in the [Atomic era]>",
 			"Unbuildable",
 			"Unsellable",
-			"Provides [5] [Weapon Parts]",
+			"Provides [2] [Fuel]",
+			"Provides [2] [Weapon Parts]",
 			"Provides [5] [Standing Army Maintainance]"
 		]
 	},
@@ -5163,8 +5164,9 @@
 			"Only available <if starting in the [Information era]>",
 			"Unbuildable",
 			"Unsellable",
-			"Provides [5] [Vehicle Parts]",
-			"Provides [5] [Weapon Parts]",
+			"Provides [2] [Fuel]",
+			"Provides [2] [Vehicle Parts]",
+			"Provides [2] [Weapon Parts]",
 			"Provides [5] [Standing Army Maintainance]"
 		]
 	},
@@ -5176,8 +5178,8 @@
 			"Unbuildable",
 			"Unsellable",
 			"Provides [5] [Fuel]",
-			"Provides [5] [Vehicle Parts]",
-			"Provides [5] [Weapon Parts]",
+			"Provides [2] [Vehicle Parts]",
+			"Provides [2] [Weapon Parts]",
 			"Provides [5] [Standing Army Maintainance]"
 		]
 	},
@@ -5206,7 +5208,6 @@
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
 			"Provides [1] [Standing Army Maintainance]",
-			"Provides [1] [Weapon Parts]",
 			"[-25]% [Culture] [in all cities] <for [15] turns>",
 			"[-10]% [Gold] [in all cities] <for [15] turns>",
 			"[-10]% Strength <for ['Noble Army'] units>",
@@ -5223,7 +5224,6 @@
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
 			"Provides [2] [Standing Army Maintainance]",
-			"Provides [2] [Weapon Parts]",
 			"[Revolutionaries] units gain the [Hardened] promotion",
 			"[Revolutionaries] units gain the [Shock Doctrine] promotion",
 			"[Revolutionaries] units gain the [Stewardship] promotion",
@@ -5244,7 +5244,6 @@
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
 			"Provides [3] [Standing Army Maintainance]",
-			"Provides [3] [Weapon Parts]",
 			"[Revolutionaries] units gain the [Hardened] promotion",
 			"[Revolutionaries] units gain the [Shock Doctrine] promotion",
 			"[Revolutionaries] units gain the [Defence Doctrine] promotion",
@@ -5285,7 +5284,6 @@
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
 			"Provides [1] [Standing Army Maintainance]",
-			"Provides [1] [Weapon Parts]",
 			"[-25]% [Culture] [in all cities] <for [15] turns>",
 			"[-10]% [Gold] [in all cities] <for [15] turns>",
 			"[+15]% [Happiness] [in all cities]",
@@ -5302,7 +5300,6 @@
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
 			"Provides [3] [Standing Army Maintainance]",
-			"Provides [3] [Weapon Parts]",
 			"[Red Army Troop] units gain the [Hardened] promotion",
 			"[Red Army Troop] units gain the [Firepower Doctrine] promotion",
 			"[Red Army Troop] units gain the [Barrage] promotion",
@@ -5328,7 +5325,6 @@
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
 			"Provides [5] [Standing Army Maintainance]",
-			"Provides [5] [Weapon Parts]",
 			"[Red Army Troop] units gain the [Hardened] promotion",
 			"[Red Army Troop] units gain the [Firepower Doctrine] promotion",
 			"[Red Army Troop] units gain the [Accuracy Doctrine] promotion",
@@ -5373,7 +5369,6 @@
 			"Unbuildable",
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
-			"Provides [8] [Weapon Parts]",
 			"[+50]% growth [in all cities]",
 			"Rebel units may spawn <for [15] turns>",
 			"[-50]% [Gold] [in all cities] <for [10] turns>",
