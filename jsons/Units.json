@@ -16,6 +16,22 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Mechanised Worker",
+		"cost": 210,
+		"unitType": "Civilian",
+		"movement": 4,
+		"uniques": [
+			"'Mechanised'",
+			"Costs [5] [Vehicle Parts]",
+			"[-50]% construction time for [All] improvements",
+			"Can build [Land] improvements on tiles",
+			"Automation is a primary action"
+		],
+		"requiredBuilding": "Construction Vehicle Factory",
+		"requiredTech": "Combustion",
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Galley Work Ship",
 		"cost": 55,
 		"unitType": "Civil Ship",
@@ -30,6 +46,20 @@
 		],
 		"upgradesTo": "Modern Work Ship",
 		"requiredTech": "Fire Making",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Modern Work Ship",
+		"cost": 175,
+		"unitType": "Civil Ship",
+		"movement": 4,
+		"uniques": [
+			"[-50]% construction time for [All] improvements",
+			"Can build [Water] improvements on tiles",
+			"Automation is a primary action"
+		],
+		"requiredBuilding": "Port",
+		"requiredTech": "Advanced Shipbuilding",
 		"hurryCostModifier": 10
 	},
 	{
@@ -49,6 +79,21 @@
 		"requiredTech": "Fire Making",
 		"obsoleteTech": "Navigation",
 		"hurryCostModifier": 25
+	},
+	{
+		"name": "Pioneer",
+		"cost": 180,
+		"unitType": "Civilian",
+		"movement": 3,
+		"uniques": [
+			"Founds a new city <by consuming this unit>",
+			"Excess Food converted to Production when under construction",
+			"[+1] Movement <after discovering [Combustion]>",
+			"[+1] Sight",
+			"Requires at least [1] population"
+		],
+		"requiredTech": "Navigation",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Wanderer",
@@ -443,6 +488,7 @@
 		"name": "Nubian Archer",
 		"uniqueTo":"North Africa",
 		"unitType": "Ranged Combat",
+		"replaces":"Javalineer",
 		"cost": 40,
 		"movement": 2,
 		"strength": 10,
@@ -1767,21 +1813,7 @@
 		"attackSound": "horse"
 	},
 	///Line 15
-	{
-		"name": "Pioneer",
-		"cost": 180,
-		"unitType": "Civilian",
-		"movement": 3,
-		"uniques": [
-			"Founds a new city <by consuming this unit>",
-			"Excess Food converted to Production when under construction",
-			"[+1] Movement <after discovering [Combustion]>",
-			"[+1] Sight",
-			"Requires at least [1] population"
-		],
-		"requiredTech": "Navigation",
-		"hurryCostModifier": 10
-	},
+
 	{
 		"name": "Frigade Fleet",
 		"unitType": "Ranged Combat Ship",
@@ -2044,20 +2076,7 @@
 		"attackSound": "shot"
 	},
 	///Line 18
-	{
-		"name": "Modern Work Ship",
-		"cost": 175,
-		"unitType": "Civil Ship",
-		"movement": 4,
-		"uniques": [
-			"[-50]% construction time for [All] improvements",
-			"Can build [Water] improvements on tiles",
-			"Automation is a primary action"
-		],
-		"requiredBuilding": "Port",
-		"requiredTech": "Advanced Shipbuilding",
-		"hurryCostModifier": 10
-	},
+
 	{
 		"name": "Early Marines",
 		"unitType": "Close Combat",
@@ -2414,21 +2433,7 @@
 		"attackSound": "artillery"
 	},
 	///Line 17
-	{
-		"name": "Mechanised Worker",
-		"cost": 210,
-		"unitType": "Civilian",
-		"movement": 4,
-		"uniques": [
-			"'Mechanised'",
-			"[-50]% construction time for [All] improvements",
-			"Can build [Land] improvements on tiles",
-			"Automation is a primary action"
-		],
-		"requiredBuilding": "Construction Vehicle Factory",
-		"requiredTech": "Combustion",
-		"hurryCostModifier": 25
-	},
+
 	{
 		"name": "Motorised Infantry",
 		"unitType": "Rider",
