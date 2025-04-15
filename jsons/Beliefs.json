@@ -406,12 +406,20 @@
         ]
     },
     ///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
-    ///Common
+
+    ///Philsophical
     {
-        "name": "Benevolent",
+        "name": "Dualism",
         "type": "Founder",
         "uniques": [
-            "Only available <before adopting [Monotheism]>",
+            "[+1 Faith] from all ['Cultural Building'] buildings",
+            "[+2 Culture] from every ['Organise Place']"
+        ]
+    },
+    {
+        "name": "Benevolence",
+        "type": "Founder",
+        "uniques": [
             "[+1 Happiness] for each global city following this religion",
             "[+25]% growth [in all cities] <when not at war>"
         ]
@@ -420,10 +428,11 @@
         "name": "Inner Peace",
         "type": "Founder",
         "uniques": [
-            "Only available <before adopting [Monotheism]>",
+            "[+1 Happiness] from every ['Practice Ground']",
             "[+2 Culture, +2 Science] for each global city following this religion <when not at war>"
         ]
     },
+    ///Remain Pagan
     {
         "name": "Reincarnation",
         "type": "Founder",
@@ -446,7 +455,7 @@
         "type": "Founder",
         "uniques": [
             "Only available <before adopting [Monotheism]>",
-            "[+1 Happiness] from every [Wonder]"
+            "[+2 Happiness] from every [Wonder]"
         ]
     },
     ///Abraham
@@ -464,6 +473,14 @@
         "uniques": [
             "Only available <after adopting [Monotheism]>",
             "[+1 Production] from all ['Worship Place'] buildings"
+        ]
+    },
+    {
+        "name": "Dedication to the True God",
+        "type": "Founder",
+        "uniques": [
+            "Only available <after adopting [Monotheism]>",
+            "Gain a free [Enhancer] belief <upon enhancing a Religion>"
         ]
     }
 ]
