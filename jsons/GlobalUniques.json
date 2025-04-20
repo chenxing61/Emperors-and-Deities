@@ -22,10 +22,10 @@
         "[-10]% growth [in all cities] <in cities with at least [180] [Population]>",
         "[-5]% growth [in all cities] <in cities with at least [190] [Population]>",
         "[-10]% growth [in all cities] <in cities with at least [200] [Population]>",
-        "[-10]% [Happiness] [in all cities] <when below [-1] [Living Condition]>",
-        "[-20]% [Happiness] [in all cities] <when below [-1] [Living Condition]>",
-        "[-30]% [Happiness] [in all cities] <when below [-2] [Living Condition]>",
-        "[-40]% [Happiness] [in all cities] <when below [-3] [Living Condition]>",
+        "[-25]% [Happiness] [in all cities] <when below [-1] [Living Condition]>",
+        "[-25]% [Happiness] [in all cities] <when below [-2] [Living Condition]>",
+        "[-25]% [Happiness] [in all cities] <when below [-3] [Living Condition]>",
+        "[-25]% [Happiness] [in all cities] <when below [-4] [Living Condition]>",
         "Nullifies Growth [in all cities] <when below [-3] [Living Condition]>",
         //Vanilla
         "[-25]% growth [in all cities] <when between [-5] and [-1] Happiness>",
@@ -47,7 +47,8 @@
         "[-50]% [Production] [in all cities] <when below [-100] [Gold]>",
         "[-1] Sight <for [Embarked] units>",
         //Prevents AI from spamming units
-        "Cannot build ['Levy Army'] units <when not at war> <starting from the [Medieval era]> <for [AI player] Civilizations>",
+        "Cannot build ['Levy Army'] units <when not at war> <starting from the [Classical era]> <for [AI player] Civilizations>",
+        "Cannot build ['Mercenary Army'] units <when not at war> <starting from the [Classical era]> <for [AI player] Civilizations>",
         "Cannot build ['Firearms'] units <when below [-10] [Weapon Parts]>",
         "Cannot build ['Motorised'] units <when below [-10] [Vehicle Parts]>",
         "Cannot build ['Mechanised'] units <when below [-10] [Vehicle Parts]>",
@@ -58,8 +59,6 @@
         "Cannot build ['Engine Ship'] units <when below [-10] [Fuel]>",
         "Cannot build [Air] units <when below [-10] [Fuel]>",
         "[+33]% Faith cost of generating Great Prophet equivalents",
-        //Make Room for new policies
-        "[-10]% Culture cost of adopting new Policies",
         //Various Mechanics
         "Notified of new Barbarian encampments",
         "Provides [1] [Revolution Oppotunity] <starting from the [Imperial era]>",

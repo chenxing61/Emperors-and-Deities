@@ -442,7 +442,7 @@
 	{
 		"name": "Granary",
 		"maintenance": 1,
-		"food": 2,
+		"food": 1,
 		"uniques": [
 			"'Agricultural Building'",
 			"[+1 Food] from [Fruit] tiles [in this city]",
@@ -457,7 +457,7 @@
 		"uniqueTo": "East Asia",
 		"replaces": "Granary",
 		"maintenance": 1,
-		"food": 2,
+		"food": 1,
 		"production": 1,
 		"cityHealth": 5,
 		"uniques": [
@@ -475,15 +475,14 @@
 		"food": 1,
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Gold] from [{improved}{Grain}] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Tuber}] tiles [in this city]"
+			"[+1 Gold] from [{improved} {Grain}] tiles [in this city]",
+			"[+1 Gold] from [{improved} {Tuber}] tiles [in this city]"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
 	},
 	{
 		"name": "Brewery",
-		"happiness": 1,
 		"gold": 1,
 		"uniques": [
 			"'Light Industry'",
@@ -505,7 +504,7 @@
 			"[+1 Production] per [8] population [in this city]<in cities with between [15] and [24] [Population]>",
 			"[+1 Production] per [10] population [in this city]<in cities with at least [24] [Population]>",
 			"[+1 Production] from [Clay] tiles [in this city]",
-			"[+1 Production] from [{improved}{Clay}] tiles [in this city]"
+			"[+1 Production] from [{improved} {Clay}] tiles [in this city]"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 0
@@ -519,9 +518,9 @@
 			"[+1 Culture] per [5] population [in this city]<in cities with between [9] and [15] [Population]>",
 			"[+1 Culture] per [8] population [in this city]<in cities with between [15] and [24] [Population]>",
 			"[+1 Culture] per [10] population [in this city] <in cities with at least [24] [Population]>",
-			"[+1 Production] from [{improved}{'Textile'}] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Furs}] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Silk}] tiles [in this city]"
+			"[+1 Production] from [{improved} {'Textile'}] tiles [in this city]",
+			"[+1 Gold] from [{improved} {Furs}] tiles [in this city]",
+			"[+1 Gold] from [{improved} {Silk}] tiles [in this city]"
 		],
 		"requiredNearbyImprovedResources": [
 			"Bovine",
@@ -586,7 +585,6 @@
 	{
 		"name": "Foundry",
 		"maintenance": 1,
-		"production": 1,
 		"specialistSlots": {
 			"Engineer": 1
 		},
@@ -610,9 +608,9 @@
 			"[+1 Gold] from [Gold Ore] tiles [in this city]",
 			"[+1 Gold] from [Silver Ore] tiles [in this city]",
 			"[+1 Gold] from [Rich Copper Ore] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Gold Ore}] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Silver Ore}] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Rich Copper Ore}] tiles [in this city]",
+			"[+1 Gold] from [{improved} {Gold Ore}] tiles [in this city]",
+			"[+1 Gold] from [{improved} {Silver Ore}] tiles [in this city]",
+			"[+1 Gold] from [{improved} {Rich Copper Ore}] tiles [in this city]",
 			"[+2 Gold] from [Cocoa] tiles [in this city]",
 			"[+1 Gold] per [3] population [in this city]"
 		],
@@ -633,9 +631,9 @@
 		},
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Gold] from [{improved}{'Precious Mineral'}] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Ivory}] tiles [in this city]",
-			"[+1 Gold] from [{improved}{Coral}] tiles [in this city]"
+			"[+1 Gold] from [{improved} {'Precious Mineral'}] tiles [in this city]",
+			"[+1 Gold] from [{improved} {Ivory}] tiles [in this city]",
+			"[+1 Gold] from [{improved} {Coral}] tiles [in this city]"
 		],
 		"requiredNearbyImprovedResources": [
 			"Gold Ore",
@@ -879,14 +877,14 @@
 	},
 	{
 		"name": "Library",
-		"maintenance": 1,
+		"maintenance": 2,
 		"specialistSlots": {
 			"Scientist": 1,
 			"Artist": 1
 		},
 		"uniques": [
 			"'Educational Building'",
-			"[+1 Science] per [4] population [in this city]",
+			"[+1 Science] per [5] population [in this city]",
 			"[+1 Happiness] <after discovering [Drama and Poetry]>",
 			"[+3 Culture] <after discovering [Archaeology]>"
 		],
@@ -912,7 +910,7 @@
 		"production": 1,
 		"uniques": [
 			"'Economic Building'",
-			"[+1 Gold] from [{improved}{'Herd'}] tiles [in this city]",
+			"[+1 Gold] from [{improved} {'Herd'}] tiles [in this city]",
 			"Must have an owned [Pasture] within [3] tiles"
 		],
 		"requiredTech": "Trade Network",
@@ -928,7 +926,7 @@
 			"[+1 Gold] from [Grape] tiles [in this city]",
 			"[+1 Gold] from [Sugar] tiles [in this city]",
 			"[+1 Gold] from [Cocoa] tiles [in this city]",
-			"[+1 Gold] from [{improved}{'Crops'}] tiles [in this city]"
+			"[+1 Gold] from [{improved} {'Crops'}] tiles [in this city]"
 		],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
@@ -1808,7 +1806,7 @@
 	{
 		"name": "Agricultural Water Storage",
 		"maintenance": 2,
-		"food": 5,
+		"food": 3,
 		"uniques": [
 			"'Infrastructure'",
 			"Only available <in cities without a [Irrigation System]>"
@@ -4498,7 +4496,7 @@
 	},
 	
 	{
-		"name": "Atun's Shrine",
+		"name": "Aten's Shrine",
 		"uniqueTo":"North Africa",
 		"cost": 20,
 		"faith": 2,
