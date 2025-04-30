@@ -1,5 +1,118 @@
 ///Government stuff
 [
+	///Routes under ideology
+	{
+		"name": "Market Interventionism",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"Triggers a global alert upon completion",
+			"Destroyed when the city is captured",
+			"[+1]% [Production] from every ['Economic Building']",
+			"[-33]% [Gold] [in all cities]",
+			"[Gold] cost of purchasing items in cities [-25]%",
+			"[-25]% construction time for [All] improvements <when not at war>"
+		],
+		"requiredTech": "Economics"
+	},
+	{
+		"name": "Free Market Focus",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"Triggers a global alert upon completion",
+			"Destroyed when the city is captured",
+			"[+1]% [Gold] from every ['Political Building']",
+			"[-10]% maintenance cost for buildings [in all cities]",
+			"[+33]% [Gold] [in all cities]",
+			"[Gold] cost of purchasing items in cities [+33]%"
+		],
+		"requiredTech": "Economics"
+	},
+	{
+		"name": "Corporatism Focus",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"Triggers a global alert upon completion",
+			"[+3 Gold] from all ['Light Industry'] buildings",
+			"[-2 Gold, +3 Happiness, +3 Culture] from all ['Economic Building'] buildings",
+			"[+3 Production] from all ['Military Building'] buildings",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Economics"
+	},
+	{
+		"name": "Militristic Economy",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"Triggers a global alert upon completion",
+			"Destroyed when the city is captured",
+			"[+100]% Production when constructing ['Standing Army'] units [in all cities]",
+			"[+100]% Production when constructing ['Military Building'] buildings [in all cities]",
+			"[+100]% Production when constructing ['Static Defense'] buildings [in all cities]",
+			"[+2 Happiness] [in annexed cities]"
+		],
+		"requiredTech": "Economics"
+	},
+	{
+		"name": "Cooperative Economy",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"Triggers a global alert upon completion",
+			"[+1 Gold] from every specialist [in all cities]",
+			"[+1 Culture, +1 Production] from ['Agricultural Improvement'] tiles [in all cities]",
+			"[+1 Culture, +1 Production] from ['Water Improvement'] tiles [in all cities]",
+			"[+1 Culture, +1 Science] from ['Lumber Improvement'] tiles [in all cities]",
+			"[+1 Culture, +1 Food] from ['Extraction Improvement'] tiles [in all cities]",
+			"[+2 Science] from ['Policy Improvement'] tiles [in all cities]",
+			"[+33]% Production when constructing ['Light Industry'] buildings [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Economics"
+	},
+	{
+		"name": "Planned Economy",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"Triggers a global alert upon completion",
+			"Destroyed when the city is captured",
+			"[+1]% [Production] from every ['Political Building']",
+			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital] <when not at war>",
+			"[+33]% Production when constructing ['Military Building'] buildings [in all cities connected to capital] <when not at war>",
+			"[+25]% Production when constructing ['Space Race Building'] buildings [in all cities connected to capital] <when not at war>",
+			"[+25]% Production when constructing [All] wonders [in all cities connected to capital] <when not at war>",
+			"[-33]% construction time for [All] improvements <when not at war>",
+			"[+100]% Production when constructing ['Military Building'] buildings [in all cities connected to capital] <when at war>",
+			"[+33]% Production when constructing [Military] units [in all cities connected to capital] <when at war>"
+		],
+		"requiredTech": "Economics"
+	},
+	{
+		"name": "Self-management Focus",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"Triggers a global alert upon completion",
+			"Destroyed when the city is captured",
+			"[-25]% maintenance on road & railroads",
+			"[Gold] cost of purchasing ['Levy Army'] units [-33]%",
+			"[+3 Science] per [3] social policies adopted",
+			"[+1 Science, +1 Culture, +3 Gold, +5 Production] per [10] population [in all cities]",
+			"[+33]% Production when constructing [Commune] buildings [in all cities]"
+		],
+		"requiredTech": "Economics"
+	},
 	{
 		"name": "Harmony",
 		"isNationalWonder": true, 
@@ -218,18 +331,9 @@
 					"[-10]% Culture cost of adopting new Policies",
                     "Moves to new capital when capital changes"],
 	},
-		///Modern
+	///Modern
 	{
-		"name": "Nation States",
-		"isNationalWonder": true, 
-	    "uniques": ["Unbuildable",
-                    "Unsellable",
-					"'Civilisation Form'"
-					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
-	},
-	{
-		"name": "Nation States",
+		"name": "Fascist Autocracy",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
@@ -239,6 +343,24 @@
 	},
 	{
 		"name": "Socialist Republics",
+		"isNationalWonder": true, 
+	    "uniques": ["Unbuildable",
+                    "Unsellable",
+					"'Civilisation Form'"
+					"[-10]% Culture cost of adopting new Policies",
+                    "Moves to new capital when capital changes"],
+	},
+	{
+		"name": "Socialist Parliment Union",
+		"isNationalWonder": true, 
+	    "uniques": ["Unbuildable",
+                    "Unsellable",
+					"'Civilisation Form'"
+					"[-10]% Culture cost of adopting new Policies",
+                    "Moves to new capital when capital changes"],
+	},
+	{
+		"name": "Anarchist Alliances",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",

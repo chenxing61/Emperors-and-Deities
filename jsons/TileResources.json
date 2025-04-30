@@ -1368,7 +1368,6 @@
 	{
 		"name": "Unique jewelry",
 		"resourceType": "Luxury",
-		"gold": 4,
 		"uniques": [
 			"Can only be created by Mercantile City-States"
 		]
@@ -1376,7 +1375,6 @@
 	{
 		"name": "Unique porcelain",
 		"resourceType": "Luxury",
-		"gold": 4,
 		"uniques": [
 			"Can only be created by Mercantile City-States"
 		]
@@ -1384,34 +1382,38 @@
 	{
 		"name": "Famous Wine",
 		"resourceType": "Luxury",
-		"gold": 4,
 		"uniques": [
 			"Can only be created by Mercantile City-States"
 		]
 	},
 	///Special res
 	{
+		"name": "Great Wall Logistic",
+		"resourceType": "Strategic",
+		"uniques":["Cannot be traded"],
+		"revealedBy": "Engineering"
+	},
+	///Civilian Products
+	{
+		"name": "Alcohol",
+		"resourceType": "Luxury"
+	},
+	///City Byproducts
+	{
 		"name": "Living Condition",
 		"resourceType": "Strategic",
-		"uniques":["City-level resource",
+		"uniques":["Cannot be traded",
+		"City-level resource",
 		"Comment [Every 5 Population costs 1 Living Condition.]",
 		"Comment [If Living Condition goes down into negative, happiness production will suffer, until -100%, which is -4 Living Condition,-4 Living Condition also nullifies all growth in the city. Building infrastructure or settling city near waters increase the living condition.]"]
 	},
-	{
-		"name": "Alcohol",
-		"resourceType": "Luxury",
-		"gold": 1
-	},
+
 	{
 		"name": "Waste Material",
 		"resourceType": "Strategic",
 		"revealedBy": "Ecology"
 	},
-	{
-		"name": "Great Wall Logistic",
-		"resourceType": "Strategic",
-		"revealedBy": "Engineering"
-	},
+	///Government Products
 	{
 		"name": "Revolution Oppotunity",
 		"resourceType": "Strategic",
