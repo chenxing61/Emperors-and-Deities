@@ -1,6 +1,39 @@
 [
     ///Natural Disaster Events
     ///Civilisation Events
+    {
+        "name": "Enact Policies",
+        "text": "Decisions reguarding the civilisation's internal affair.",
+        "choices": [
+            {
+                "text": "Total mobilisation in every cities!",
+                "uniques": [
+                    "Comment [We need more soldiers at the frontline.]",
+                    "Gain a free [Call to Arms] [in all cities] <in cities with at least [5] [Population]>",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Disband the Levies.",
+                "uniques": [
+                    "Only available <when not at war>",
+                    "Comment [Since there are currently no conflict, we may disband our levied armies.]",
+                    "Remove [Call to Arms] [in all cities]",
+                    "Gain a free [Disbanding Levies] [in capital]",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Changing Economic Policies",
+                "uniques": [
+                    "Only available <if ['Economic Policy'] is constructed>",
+                    "Comment [If the current economic policies fail to meet the situation...]",
+                    "Triggers a [Changing economy policies] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            }
+        ]
+    },
     ///Unit Events
     {
         "name": "Great Commander's Retirement",
@@ -267,7 +300,7 @@
         ]
     },
     {
-        "name": "New economy policies.",
+        "name": "New economy policies",
         "text": "We've rebuilt our government in pursuit to adapt to the new era, but the current economy policy is outdated. We will need a economy reform before we can do anything else.",
         "choices": [
             {
@@ -301,10 +334,7 @@
             {
                 "text": "The might of our military overshadows any greed!",
                 "uniques": [
-                    "Only available <before adopting [Anarchism]>",
-                    "Only available <before adopting [Socialism]>",
-                    "Only available <before adopting [Liberalism]>",
-                    "Only available <before adopting [Conservatism]>",
+                    "Only available <after adopting [Militarised Nation]>",
                     "Comment [Nothing is beyond the power of winning in a direct conflict. We must direct all our effort into military!]",
                     "Gain a free [Militristic Economy] [in capital]"
                 ]
@@ -334,14 +364,97 @@
             {
                 "text": "Self-Management Economy",
                 "uniques": [
-                    "Only available <before adopting [Fascism]>",
-                    "Only available <before adopting [Socialism]>",
-                    "Only available <before adopting [Liberalism]>",
-                    "Only available <before adopting [Conservatism]>",
+                    "Only available <after adopting [Redistribution of Means of Production(Anarchist)]>",
                     "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and free will shall reign surpreme.]",
                     "Gain a free [Self-management Focus] [in capital]"
                 ]
             }
         ]
     },
+    {
+        "name": "Changing economy policies",
+        "text": "The previous policies may have provent to be less potent. A rearrangement is thus needed.",
+        "choices": [
+            {
+                "text": "Free Market",
+                "uniques": [
+                    "Only available <after adopting [Privatised Property]>",
+                    "Comment [We should believe in the unseen hand and solve all our problems with massive amount of capitals.]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Free Market Focus] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
+            },
+            {
+                "text": "Market Interventionism",
+                "uniques": [
+                    "Only available <before adopting [Anarchism]>",
+                    "Only available <before adopting [Fascism]>",
+                    "Only available <before adopting [Socialism]>",
+                    "Comment [The unseen hand of market economy is not to be fully relied upon. We should spend effort to properly and use more refined policy to guide our nation's productivity.]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Market Interventionism] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
+            },
+            {
+                "text": "Stability First",
+                "uniques": [
+                    "Only available <before adopting [Anarchism]>",
+                    "Only available <before adopting [Socialism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Comment [Our economy must serve the national unity first and formost, nothing is impossible when our nation is strong and its people united.]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Corporatism Focus] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
+            },
+            {
+                "text": "The might of our military overshadows any greed!",
+                "uniques": [
+                    "Only available <after adopting [Militarised Nation]>",
+                    "Comment [Nothing is beyond the power of winning in a direct conflict. We must direct all our effort into military!]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Militristic Economy] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
+            },
+            {
+                "text": "Centralised Economic Planning",
+                "uniques": [
+                    "Only available <before adopting [Anarchism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Only available <before adopting [Fascism]>",
+                    "Only available <before adopting [Conservatism]>",
+                    "Only available <when above [0] [Revolution Oppotunity]>",
+                    "Comment [The market economy only benefits capitalists and speculators, our new socialist economy should maximise our development potential and distributes the goods to those who need it.]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Planned Economy] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
+            },
+            {
+                "text": "Decentralised Economy",
+                "uniques": [
+                    "Only available <before adopting [Fascism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Only available <before adopting [Conservatism]>",
+                    "Comment [The economy suffered from monopoly and hierarchy, we should liberate the economy in favour of enabling peoples'agency to work for the masses. With nationalised industries and policies being guiding forces.]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Cooperative Economy] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
+            },
+            {
+                "text": "Self-Management Economy",
+                "uniques": [
+                    "Only available <after adopting [Redistribution of Means of Production(Anarchist)]>",
+                    "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and free will shall reign surpreme.]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Self-management Focus] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
+            }
+        ]
+    }
 ]

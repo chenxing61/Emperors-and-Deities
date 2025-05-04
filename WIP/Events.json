@@ -1,6 +1,42 @@
 [
     ///Natural Disaster Events
     ///Civilisation Events
+    {
+        "name": "Shift in Politic",
+        "text": "The structure of our civilisation changes to adapt to the time. What path shall we partake?",
+        "choices": [
+            {
+                "text": "City States",
+                "uniques": [
+                    "Comment [The Great Commander has inspired countless people. His retirement is well deserved. He will be idolised.]",
+                ]
+            },
+            {
+                "text": "Early Empire",
+                "uniques": [
+                    "Comment [The Great Commander has inspired countless people. His retirement is well deserved. He will be idolised.]",
+                ]
+            },
+            {
+                "text": "Kingdoms",
+                "uniques": [
+                    "Comment [Lets just say that there are no perfect man. It would seems like power struggle and other caused this General to step down. Maybe he was too greedy? Too proud of himself? The history can't give a clear answer.]",
+                ]
+            },
+            {
+                "text": "Large Empires",
+                "uniques": [
+                    "Comment [The Great Commander has inspired countless people. His retirement is well deserved. He will be idolised.]",
+                ]
+            },
+            {
+                "text": "Republics",
+                "uniques": [
+                    "Comment [Lets just say that there are no perfect man. It would seems like power struggle and other caused this General to step down. Maybe he was too greedy? Too proud of himself? The history can't give a clear answer.]",
+                ]
+            }
+        ]
+    },
     ///Unit Events
     {
         "name": "Great Commander's Retirement",
@@ -267,7 +303,7 @@
         ]
     },
     {
-        "name": "New economy policies.",
+        "name": "New economy policies",
         "text": "We've rebuilt our government in pursuit to adapt to the new era, but the current economy policy is outdated. We will need a economy reform before we can do anything else.",
         "choices": [
             {
@@ -343,83 +379,5 @@
                 ]
             }
         ]
-    },
-    {
-        "name": "Changing economy policies.",
-        "text": "The previous policies may have provent to be less potent. A rearrangement is thus needed.",
-        "choices": [
-            {
-                "text": "Free Market",
-                "uniques": [
-                    "Only available <after adopting [Liberalism]>",
-                    "Comment [We should believe in the unseen hand and solve all our problems with massive amount of capitals.]",
-                    "Gain a free [Free Market Focus] [in capital]"
-                ]
-            },
-            {
-                "text": "Market Interventionism",
-                "uniques": [
-                    "Only available <before adopting [Anarchism]>",
-                    "Only available <before adopting [Fascism]>",
-                    "Only available <before adopting [Socialism]>",
-                    "Comment [The unseen hand of market economy is not to be fully relied upon. We should spend effort to properly and use more refined policy to guide our nation's productivity.]",
-                    "Gain a free [Market Interventionism] [in capital]"
-                ]
-            },
-            {
-                "text": "Stability First",
-                "uniques": [
-                    "Only available <before adopting [Anarchism]>",
-                    "Only available <before adopting [Socialism]>",
-                    "Only available <before adopting [Liberalism]>",
-                    "Comment [Our economy must serve the national unity first and formost, nothing is impossible when our nation is strong and its people united.]",
-                    "Gain a free [Corporatism Focus] [in capital]"
-                ]
-            },
-            {
-                "text": "The might of our military overshadows any greed!",
-                "uniques": [
-                    "Only available <before adopting [Anarchism]>",
-                    "Only available <before adopting [Socialism]>",
-                    "Only available <before adopting [Liberalism]>",
-                    "Only available <before adopting [Conservatism]>",
-                    "Comment [Nothing is beyond the power of winning in a direct conflict. We must direct all our effort into military!]",
-                    "Gain a free [Militristic Economy] [in capital]"
-                ]
-            },
-            {
-                "text": "Centralised Economic Planning",
-                "uniques": [
-                    "Only available <before adopting [Anarchism]>",
-                    "Only available <before adopting [Liberalism]>",
-                    "Only available <before adopting [Fascism]>",
-                    "Only available <before adopting [Conservatism]>",
-                    "Only available <when above [0] [Revolution Oppotunity]>",
-                    "Comment [The market economy only benefits capitalists and speculators, our new socialist economy should maximise our development potential and distributes the goods to those who need it.]",
-                    "Gain a free [Planned Economy] [in capital]"
-                ]
-            },
-            {
-                "text": "Decentralised Economy",
-                "uniques": [
-                    "Only available <before adopting [Fascism]>",
-                    "Only available <before adopting [Liberalism]>",
-                    "Only available <before adopting [Conservatism]>",
-                    "Comment [The economy suffered from monopoly and hierarchy, we should liberate the economy in favour of enabling peoples'agency to work for the masses. With nationalised industries and policies being guiding forces.]",
-                    "Gain a free [Cooperative Economy] [in capital]"
-                ]
-            },
-            {
-                "text": "Self-Management Economy",
-                "uniques": [
-                    "Only available <before adopting [Fascism]>",
-                    "Only available <before adopting [Socialism]>",
-                    "Only available <before adopting [Liberalism]>",
-                    "Only available <before adopting [Conservatism]>",
-                    "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and free will shall reign surpreme.]",
-                    "Gain a free [Self-management Focus] [in capital]"
-                ]
-            }
-        ]
-    },
+    }
 ]

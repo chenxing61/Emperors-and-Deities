@@ -113,80 +113,121 @@
 		],
 		"requiredTech": "Economics"
 	},
+	///State of affair
 	{
 		"name": "Harmony",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation State'"
+					"'Civilisation State'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Strive",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation State'"
-					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+					"'Civilisation State'",
+                    "Moves to new capital when capital changes"]
 	},
-	///Diplomacy
+	{
+		"name": "Struggle",
+		"isNationalWonder": true, 
+	    "uniques": ["Unbuildable",
+                    "Unsellable",
+					"'Civilisation State'",
+                    "Moves to new capital when capital changes"]
+	},
+	///Pre-Atomic Era Diplomacy
 	{
 		"name": "Cultral Exchange",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation State'"
+					"'Agreement'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Military Alliance",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation State'"
+					"'Agreement'",
+					"Enables Defensive Pacts",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Trade Alliance",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation State'"
+					"'Agreement'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
-	T1
+	///Atomic Era
+		{
+		"name": "Reseach Exchange",
+		"isNationalWonder": true, 
+	    "uniques": ["Unbuildable",
+                    "Unsellable",
+					"'Agreement'",
+					"[-10]% Culture cost of adopting new Policies",
+                    "Moves to new capital when capital changes"]
+	},
+		{
+		"name": "Collective Security",
+		"isNationalWonder": true, 
+	    "uniques": ["Unbuildable",
+                    "Unsellable",
+					"'Agreement'",
+					"Enables Defensive Pacts",
+					"[-10]% Culture cost of adopting new Policies",
+                    "Moves to new capital when capital changes"]
+	},
+			{
+		"name": "Economic Community",
+		"isNationalWonder": true, 
+	    "uniques": ["Unbuildable",
+                    "Unsellable",
+					"'Agreement'",
+					"[-10]% Culture cost of adopting new Policies",
+                    "Moves to new capital when capital changes"]
+	},
 	///Neolithic
 	{
 		"name": "Tribes",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
+					"Provides [2] [Standing Army Maintainance]",
+					"Provides [1] [Noble Army Maintainance]",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Tribal Union",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
-					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+					"'Civilisation Form'",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [2] [Noble Army Maintainance]",
+					"Enables Defensive Pacts",
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Nomadic Tribes",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	///Ancient
 	{
@@ -194,36 +235,35 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Early Empire",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	///Classical
-	T2
 	{
 		"name": "Feudal Empire",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable", 
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
                     "Moves to new capital when capital changes"],
 	},
 	{
-		"name": "Unified Empire",
+		"name": "Centralised Empire",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable", 
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
                     "Moves to new capital when capital changes"],
 	},
@@ -232,76 +272,65 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	///Medival
-	T3
 	{
 		"name": "Kingdoms",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
-	},
-	{
-		"name": "Empires",
-		"isNationalWonder": true, 
-	    "uniques": ["Unbuildable",
-                    "Unsellable",
-					"'Civilisation Form'"
-					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Empire of Electors",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Celestial Empire",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Theocratic Empire",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	}
 	///Renaissance
-	T4
 	{
 		"name": "Colonial Empires",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Autocratic Empire",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	///Imperial
 	{
@@ -309,27 +338,27 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "United States",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Multi-Cultral Monarchy",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	///Modern
 	{
@@ -337,35 +366,36 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Socialist Republics",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Socialist Parliment Union",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
 	{
 		"name": "Anarchist Alliances",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'"
+					"'Civilisation Form'",
 					"[-10]% Culture cost of adopting new Policies",
-                    "Moves to new capital when capital changes"],
+                    "Moves to new capital when capital changes"]
 	},
+	///Atomic
 ]

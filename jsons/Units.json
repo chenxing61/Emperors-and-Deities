@@ -1,5 +1,5 @@
 [
-	///line 0
+	///CV
 	{
 		"name": "Worker",
 		"cost": 70,
@@ -95,6 +95,7 @@
 		"requiredTech": "Navigation",
 		"hurryCostModifier": 10
 	},
+	///line 0
 	{
 		"name": "Wanderer",
 		"cost": 25,
@@ -103,7 +104,7 @@
 		"strength": 5,
 		"uniques": [
 			"Can upgrade to [Adventurer] <after discovering [Astronomy]>",
-			"Can upgrade to [Envoy] <after discovering [Astronomy]>",
+			"Can upgrade to [Envoy] <after discovering [Astronomy]><for [non-[City-State]] Civilizations>",
 			"'Standing Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -128,6 +129,7 @@
 		"rangedStrength": 7,
 		"range": 1,
 		"uniques": [
+			"Unbuildable",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -139,7 +141,6 @@
 			"Skirmisher Training",
 			"The Levy Army"
 		],
-		"upgradesTo": "Javalineer",
 		"requiredTech": "Hunting and Fishing",
 		"obsoleteTech": "Iron Working",
 		"attackSound": "arrow"
@@ -175,6 +176,7 @@
 		"movement": 2,
 		"strength": 8,
 		"uniques": [
+			"Unbuildable",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -439,6 +441,7 @@
 		"strength": 10,
 		"uniques": [
 			"Limited to [2] per Civilization",
+			"Unbuildable <for [City-State] Civilizations>",
 			"Can upgrade to [Explorer] <after discovering [Monocular]>",
 			"Can upgrade to [Recon Unit] <after discovering [Replaceable Parts]>",
 			"'Standing Army'",
@@ -467,6 +470,7 @@
 		"rangedStrength": 14,
 		"range": 1,
 		"uniques": [
+			"Unbuildable",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -724,6 +728,7 @@
 		"movement": 2,
 		"strength": 14,
 		"uniques": [
+			"Unbuildable",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -852,7 +857,7 @@
 		"attackSound": "arrow"
 	},
 	{
-		"name": "Garrison",
+		"name": "Garrison Spearman",
 		"unitType": "Close Combat",
 		"cost": 50,
 		"movement": 2,
@@ -871,13 +876,13 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army",
+			"The Garrison Army",
 			"Stewardship",
 			"Defence Doctrine"
 		],
 		"requiredTech": "Logistics",
 		"obsoleteTech": "Hand Cannon",
-		"upgradesTo": "Pike and Shot",
+		"upgradesTo":"Garrison Pike and Shot",
 		"attackSound": "metalhit"
 	},
 	{
@@ -1460,6 +1465,34 @@
 		"attackSound": "shot"
 	},
 	{
+		"name": "Garrison Pike and Shot",
+		"unitType": "Close Combat",
+		"cost": 100,
+		"movement": 2,
+		"strength": 33,
+		"uniques": [
+			"Only available <after adopting [Provincial Government]>",
+			"Can transform to [Musketeer] <after discovering [Flintlock]><removing the [The Garrison Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]><removing the [The Garrison Army] promotion/status>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+13]% Strength <in [Friendly Land] tiles> <when defending>",
+			"[-33]% Strength <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Garrison Army",
+			"Stewardship",
+			"Defence Doctrine"
+		],
+		"requiredTech": "Hand Cannon",
+		"obsoleteTech": "Flintlock",
+		"attackSound": "shot"
+	},
+	{
 		"name": "Pistoleer",
 		"unitType": "Assault",
 		"cost": 150,
@@ -1521,7 +1554,7 @@
 		"cost": 135,
 		"movement": 2,
 		"strength": 27,
-		"rangedStrength": 42,
+		"rangedStrength": 40,
 		"range": 2,
 		"uniques": [
 			"Only available <if [Firearms Workshop] is constructed>",
@@ -1630,7 +1663,7 @@
 		"cost": 160,
 		"movement": 2,
 		"strength": 28,
-		"rangedStrength": 50,
+		"rangedStrength": 35,
 		"range": 2,
 		"uniques": [
 			"Only available <if [Firearms Workshop] is constructed>",
@@ -1640,7 +1673,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Siege Weapons'",
-			"[+150]% Strength <vs cities> <when attacking>",
+			"[+200]% Strength <vs cities> <when attacking>",
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
@@ -2011,7 +2044,7 @@
 		"range": 1,
 		"uniques": [
 			"Can upgrade to [Modern Guerrilla] <after adopting [Anarchism]> <after discovering [Mobile Tactics]>",
-			"Can transform to [Red Army Troop] <after adopting [Red Army]><removing the [The Levy Army] promotion/status><removing the [Skirmisher Training] promotion/status>",
+			"Can transform to [Red Army Troop] <after adopting [Red Army]> <removing the [The Levy Army] promotion/status><removing the [Skirmisher Training] promotion/status>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -2109,7 +2142,7 @@
 		"requiredTech": "Advanced Shipbuilding",
 		"requiredResource": "Standing Army Maintainance",
 		"uniques": [
-			"Consumes [1] [Ship Parts]",
+			"Costs [10] [Ship Parts]",
 			"'Firearms'",
 			"'Dense Formation'",
 			"'Engine Ship'",
@@ -2498,7 +2531,7 @@
 			"'Skirmishers'",
 			"'Firearms'",
 			"No defensive terrain bonus",
-			"[+10]% Strength <vs [Infantry] units> <when attacking>",
+			"[+10]% Strength <vs ['Infantry'] units> <when attacking>",
 			"No defensive terrain bonus",
 			"Never appears as a Barbarian unit"
 		],
@@ -2887,7 +2920,7 @@
 			"Consumes [1] [Enriched Uranium]",
 			"[+100]% maintenance costs",
 			"'Standing Army'",
-			"'Nuclear powered Ship'",
+			"'Nuclear Powered Ship'",
 			"'Dense Formation'",
 			"'Firearms'",
 			"Can only attack [Water] tiles",
@@ -2915,7 +2948,7 @@
 			"Consumes [1] [Enriched Uranium]",
 			"[+100]% maintenance costs",
 			"'Standing Army'",
-			"'Nuclear powered Ship'",
+			"'Nuclear Powered Ship'",
 			"'Firearms'",
 			"'Dense Formation'",
 			"Never appears as a Barbarian unit",
@@ -2941,7 +2974,7 @@
 			"Consumes [1] [Enriched Uranium]",
 			"[+100]% maintenance costs",
 			"'Standing Army'",
-			"'Nuclear powered Ship'",
+			"'Nuclear Powered Ship'",
 			"'Dense Formation'",
 			"'Firearms'",
 			"Can carry [5] [Aircraft] units",
@@ -3214,7 +3247,7 @@
 			"[+100]% maintenance costs",
 			"Consumes [1] [Electronic Parts]",
 			"'Standing Army'",
-			"'Nuclear powered Ship'",
+			"'Nuclear Powered Ship'",
 			"'Dense Formation'",
 			"'Firearms'",
 			"Blast radius [1]",
@@ -3339,7 +3372,7 @@
 			"'Standing Army'",
 			"'Motorised'",
 			"[-100]% Strength <vs cities> <when attacking>",
-			"[-100]% Strength <vs [land] units> <when attacking>",
+			"[-100]% Strength <vs [Land] units> <when attacking>",
 			"[100]% chance to intercept air attacks",
 			"Never appears as a Barbarian unit"
 		],
@@ -3570,6 +3603,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"Cannot embark",
 			"[+50]% Strength <starting from the [Classical era]>",
 			"[+100]% Strength <starting from the [Medieval era]>",
 			"[+100]% Strength <starting from the [Renaissance era]>",
@@ -3589,11 +3623,11 @@
 		"rangedStrength": 7,
 		"range": 1,
 		"uniques": [
-			"Cannot enter ocean tiles",
 			"'Barbaric Army'",
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"Cannot embark",
 			"[+50]% Strength <starting from the [Classical era]>",
 			"[+200]% Strength <starting from the [Medieval era]>",
 			"[+200]% Strength <starting from the [Renaissance era]>",
@@ -3615,11 +3649,11 @@
 		"strength": 10,
 		"uniqueTo": "Barbarians",
 		"uniques": [
-			"Cannot enter ocean tiles",
 			"'Barbaric Army'",
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"Cannot embark",
 			"[+50]% Strength <starting from the [Medieval era]>",
 			"[+100]% Strength <starting from the [Renaissance era]>",
 			"[+100]% Strength <starting from the [Imperial era]>"
@@ -3640,11 +3674,11 @@
 		"range": 1,
 		"uniqueTo": "Barbarians",
 		"uniques": [
-			"Cannot enter ocean tiles",
 			"'Barbaric Army'",
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
+			"Cannot embark",
 			"[+50]% Strength <starting from the [Medieval era]>",
 			"[+50]% Strength <starting from the [Renaissance era]>"
 		],
@@ -3664,11 +3698,11 @@
 		"strength": 12,
 		"uniqueTo": "Barbarians",
 		"uniques": [
-			"Cannot enter ocean tiles",
 			"'Barbaric Army'",
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"Cannot embark",
 			"[+50]% Strength <starting from the [Medieval era]>",
 			"[+100]% Strength <starting from the [Renaissance era]>",
 			"[+100]% Strength <starting from the [Imperial era]>"
@@ -3688,11 +3722,11 @@
 		"rangedStrength": 50,
 		"uniqueTo": "Barbarians",
 		"uniques": [
-			"Cannot enter ocean tiles",
 			"'Barbaric Army'",
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Firearms'",
+			"Cannot embark",
 			"[+25]% Strength <starting from the [Industrial era]>",
 			"[+25]% Strength <starting from the [Modern era]>"
 		],
@@ -3709,11 +3743,11 @@
 		"strength": 50,
 		"uniqueTo": "Barbarians",
 		"uniques": [
-			"Cannot enter ocean tiles",
 			"'Extremeist Militias'",
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Firearms'",
+			"Cannot embark",
 			"[+50]% Strength <starting from the [Modern era]>"
 		],
 		"promotions": [
@@ -3730,12 +3764,12 @@
 		"strength": 53,
 		"uniqueTo": "Barbarians",
 		"uniques": [
-			"Cannot enter ocean tiles",
 			"'Extremeist Militias'",
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Firearms'",
 			"'Levy Army'",
+			"Cannot embark",
 			"[+50]% Strength <starting from the [Atomic era]>"
 		],
 		"promotions": [
@@ -3756,8 +3790,8 @@
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
-			"'Extremeist Militias'",
 			"'Firearms'",
+			"Cannot embark",
 			"[+25]% Strength <starting from the [Industrial era]>",
 			"[+25]% Strength <starting from the [Modern era]>"
 		],
@@ -3780,7 +3814,6 @@
 			"'Edged Weapons'",
 			"[+100]% Strength <starting from the [Medieval era]>",
 			"[+100]% Strength <starting from the [Renaissance era]>",
-			"[+100]% Strength <starting from the [Imperial era]>",
 			"Can move after attacking",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Invisible to non-adjacent units"

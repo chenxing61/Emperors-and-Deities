@@ -2,25 +2,25 @@
     "name": "Global uniques",
     "uniques": [
         //Nerf for general gameplay
-        "[-5]% growth [in all cities] <in cities with at least [10] [Population]>",
+        "[-10]% growth [in all cities] <in cities with at least [10] [Population]>",
         "[-10]% growth [in all cities] <in cities with at least [20] [Population]>",
-        "[-5]% growth [in all cities] <in cities with at least [30] [Population]>",
+        "[-10]% growth [in all cities] <in cities with at least [30] [Population]>",
         "[-10]% growth [in all cities] <in cities with at least [40] [Population]>",
-        "[-5]% growth [in all cities] <in cities with at least [50] [Population]>",
+        "[-10]% growth [in all cities] <in cities with at least [50] [Population]>",
         "[-10]% growth [in all cities] <in cities with at least [60] [Population]>",
-        "[-5]% growth [in all cities] <in cities with at least [70] [Population]>",
+        "[-10]% growth [in all cities] <in cities with at least [70] [Population]>",
         "[-10]% growth [in all cities] <in cities with at least [80] [Population]>",
-        "[-5]% growth [in all cities] <in cities with at least [90] [Population]>",
+        "[-10]% growth [in all cities] <in cities with at least [90] [Population]>",
         "[-10]% growth [in all cities] <in cities with at least [100] [Population]>",
-        "[-5]% growth [in all cities] <in cities with at least [110] [Population]>",
+        "[-10]% growth [in all cities] <in cities with at least [110] [Population]>",
         "[-10]% growth [in all cities] <in cities with at least [120] [Population]>",
-        "[-5]% growth [in all cities] <in cities with at least [130] [Population]>",
+        "[-10]% growth [in all cities] <in cities with at least [130] [Population]>",
         "[-10]% growth [in all cities] <in cities with at least [140] [Population]>",
-        "[-5]% growth [in all cities] <in cities with at least [150] [Population]>",
+        "[-10]% growth [in all cities] <in cities with at least [150] [Population]>",
         "[-10]% growth [in all cities] <in cities with at least [160] [Population]>",
-        "[-5]% growth [in all cities] <in cities with at least [170] [Population]>",
+        "[-10]% growth [in all cities] <in cities with at least [170] [Population]>",
         "[-10]% growth [in all cities] <in cities with at least [180] [Population]>",
-        "[-5]% growth [in all cities] <in cities with at least [190] [Population]>",
+        "[-10]% growth [in all cities] <in cities with at least [190] [Population]>",
         "[-10]% growth [in all cities] <in cities with at least [200] [Population]>",
         "[-25]% [Happiness] [in all cities] <when below [-1] [Living Condition]>",
         "[-25]% [Happiness] [in all cities] <when below [-2] [Living Condition]>",
@@ -28,16 +28,21 @@
         "[-25]% [Happiness] [in all cities] <when below [-4] [Living Condition]>",
         "Nullifies Growth [in all cities] <when below [-3] [Living Condition]>",
         //Vanilla
+
         "[-25]% growth [in all cities] <when between [-5] and [-1] Happiness>",
+        "[-5]% Strength <for [All] units> <when between [-5] and [-1] Happiness>",
         "[-25]% growth [in all cities] <when between [-10] and [-6] Happiness>",
+
         "Nullifies Growth [in all cities] <when below [-10] Happiness>",
         "[-25]% [Production] [in all cities] <when below [-10] Happiness>",
         "[-15]% Strength <for [All] units> <when below [-10] Happiness>",
+        "Rebel units may spawn <when below [-10] Happiness>",
+
         "[-50]% [Production] [in all cities] <when below [-15] Happiness>",
         "[-33]% Strength <for [All] units> <when below [-15] Happiness>",
         "Cannot build [Settler] units <when below [-15] Happiness>",
         "Cannot build [Pioneer] units <when below [-15] Happiness>",
-        "Rebel units may spawn <when below [-15] Happiness>",
+        
         ///NO Bankruptcy too
         "Cannot build [Worker] units <when below [-10] [Gold]>",
         "Cannot build [Mechanised Worker] units <when below [-10] [Gold]>",
@@ -47,7 +52,6 @@
         "[-50]% [Production] [in all cities] <when below [-100] [Gold]>",
         "[-1] Sight <for [Embarked] units>",
         //Prevents AI from spamming units
-        "Cannot build ['Levy Army'] units <when not at war> <starting from the [Classical era]> <for [AI player] Civilizations>",
         "Cannot build ['Mercenary Army'] units <when not at war> <starting from the [Classical era]> <for [AI player] Civilizations>",
         "Cannot build ['Firearms'] units <when below [-10] [Weapon Parts]>",
         "Cannot build ['Motorised'] units <when below [-10] [Vehicle Parts]>",
@@ -63,7 +67,10 @@
         "Notified of new Barbarian encampments",
         "Provides [1] [Revolution Oppotunity] <starting from the [Imperial era]>",
         "Provides [1] [Revolution Oppotunity] <starting from the [Modern era]>",
-        "Enables Defensive Pacts"
+        "Remove [Disbanding Levies] [in capital] <when number of [['Levy Army'] Units] is less than [1]> <upon turn end>",
+        "Gain a free [Call to Arms] [in all cities] <when at war> <for [AI player] Civilizations>",
+        "Remove [Call to Arms] [in all cities] <when not at war> <for [AI player] Civilizations>",
+        "Gain a free [Disbanding Levies] [in capital] <when not at war> <for [AI player] Civilizations>"
         // TODO: Implement the uniques below
         // "[+20]% [Culture] [in all cities] <during a golden age>",
         // "[+20]% [Production] [in all cities] <during a golden age>",

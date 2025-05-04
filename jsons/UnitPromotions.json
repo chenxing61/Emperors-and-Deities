@@ -1255,7 +1255,7 @@
 		],
 		"uniques": [
 			"[+18]% Strength <when fighting in [Open terrain] tiles> <before the [Imperial era]>",
-			"[+15]% Strength <when fighting in [Open terrain] tiles> <when defending> <vs [{'Mounted'}{'Edged Weapons'}{Rider}] units> <before the [Imperial era]>"
+			"[+15]% Strength <when fighting in [Open terrain] tiles> <when defending> <vs [{'Mounted'} {'Edged Weapons'} {Rider}] units> <before the [Imperial era]>"
 		],
 		"unitTypes": [
 			"Close Combat"
@@ -1367,7 +1367,7 @@
 		],
 		"uniques": [
 			"Gain [-1] [Gold] <every [1] turns>",
-			"[+33]% Strength <vs ['Dense Fromation'] units> <when attacking>"
+			"[+33]% Strength <vs ['Dense Formation'] units> <when attacking>"
 		],
 		"unitTypes": [
 			"Siege",
@@ -1689,8 +1689,8 @@
 		"uniques": [
 			"Only available <after discovering [Combustion]>",
 			"Gain [-1] [Gold] <every [1] turns>",
-			"[+15]% Strength <vs [{'Mechanised'}{Assault}] units>",
-			"[+18]% Strength <vs [{'Mechanised'}{Assault}] units> <when defending>"
+			"[+15]% Strength <vs [{'Mechanised'} {Assault}] units>",
+			"[+18]% Strength <vs [{'Mechanised'} {Assault}] units> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1708,10 +1708,10 @@
 		"uniques": [
 			"Only available <after discovering [Mass Production]>",
 			"Gain [-2] [Gold] <every [1] turns>",
-			"[+25]% Strength <when defending> <when fighting in [Open terrain] tiles> <vs [{non-['Mechanised']}] units>",
-			"[+15]% Strength <when defending> <when fighting in [Rough terrain] tiles> <vs [{non-['Mechanised']}] units>",
-			"[+15]% Strength <when attacking> <when fighting in [Open terrain] tiles> <vs [{non-['Mechanised']}] units>",
-			"[+7]% Strength <when attacking> <when fighting in [Rough terrain] tiles> <vs [{non-['Mechanised']}] units>"
+			"[+25]% Strength <when defending> <when fighting in [Open terrain] tiles> <vs [non-['Mechanised']] units>",
+			"[+15]% Strength <when defending> <when fighting in [Rough terrain] tiles> <vs [non-['Mechanised']] units>",
+			"[+15]% Strength <when attacking> <when fighting in [Open terrain] tiles> <vs [non-['Mechanised']] units>",
+			"[+7]% Strength <when attacking> <when fighting in [Rough terrain] tiles> <vs [non-['Mechanised']] units>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1748,7 +1748,7 @@
 		"uniques": [
 			"Only available <after discovering [Dynamite]>",
 			"[+20]% Strength <when attacking> <vs ['Infantry'] units>",
-			"[+10]% Strength <when attacking> <vs [{non-['Infantry']}] units>"
+			"[+10]% Strength <when attacking> <vs [non-['Infantry']] units>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1837,9 +1837,9 @@
 			"Only available <after discovering [Rocketry]>",
 			"Gain [-2] [Gold] <every [1] turns>",
 			"[+5]% Strength",
-			"[+20]% Strength <vs [{'Mechanised'}{Assault}] units>",
-			"[+20]% Strength <vs [{'Motorised'}{Rider}] units>",
-			"[+20]% Strength <vs [{'Mechanised'}{Rider}] units>",
+			"[+20]% Strength <vs [{'Mechanised'} {Assault}] units>",
+			"[+20]% Strength <vs [{'Motorised'} {Rider}] units>",
+			"[+20]% Strength <vs [{'Mechanised'} {Rider}] units>",
 			"[+20]% Strength <vs ['Low Altitude Aircraft'] units> <after discovering [Lasers]>"
 		],
 		"unitTypes": [
@@ -1875,9 +1875,9 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Advanced Ballistics]>",
-			"[+25]% Strength <vs [{'Mechanised'}{Assault}] units>",
-			"[+25]% Strength <vs [{'Motorised'}{Rider}] units>",
-			"[+25]% Strength <vs [{'Mechanised'}{Rider}] units>"
+			"[+25]% Strength <vs [{'Mechanised'} {Assault}] units>",
+			"[+25]% Strength <vs [{'Motorised'} {Rider}] units>",
+			"[+25]% Strength <vs [{'Mechanised'} {Rider}] units>"
 		],
 		"unitTypes": [
 			"Scout",
@@ -2207,6 +2207,23 @@
 		"row": 4
 	},
 	{
+		"name": "AEW",
+		"prerequisites": [
+			"Atomic Arms"
+		],
+		"uniques": [
+			"[+1] Sight",
+			"Can see invisible [non-[Future era]] units <after discovering [LiDAR]>"
+		],
+		"unitTypes": [
+			"Close Combat Ship",
+			"Ranged Combat Ship",
+			"Carrier"
+		],
+		"column": 33,
+		"row": 2
+	},
+	{
 		"name": "Information Arms",
 		"unitTypes": [
 			"Close Combat",
@@ -2221,7 +2238,7 @@
 		"uniques": [
 			"Only available <starting from the [Information era]>"
 		],
-		"column": 33,
+		"column": 34,
 		"row": 0
 	},
 	{
@@ -2246,7 +2263,7 @@
 			"Submarine",
 			"Helicopter"
 		],
-		"column": 33,
+		"column": 35,
 		"row": 1
 	},
 	{
@@ -2270,26 +2287,10 @@
 			"Submarine",
 			"Helicopter"
 		],
-		"column": 33,
+		"column": 35,
 		"row": 2
 	},
-	{
-		"name": "AEW",
-		"prerequisites": [
-			"Information Arms"
-		],
-		"uniques": [
-			"[+2] Sight",
-			"[+20]% Strength <when defending>"
-		],
-		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Carrier"
-		],
-		"column": 35,
-		"row": 1
-	},
+
 	///Uniques
 	{
 		"name": "Elite Training",
@@ -2363,7 +2364,6 @@
 			"[-25]% Strength <when attacking>",
 			"Withdraws before melee combat <with [50]% chance>",
 			"Unit will heal every turn, even if it performs an action",
-			"[-25]% maintenance costs",
 			"Can see over obstacles",
 			"Ignores Zone of Control"
 		]
@@ -2371,8 +2371,8 @@
 	{
 		"name": "Skirmisher Training",
 		"uniques": [
+			"[-5]% Strength <when attacking>",
 			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-			"[+10]% Strength <when defending>",
 			"[-20]% Strength <vs ['Mounted'] units> <when defending>",
 			"[-20]% Strength <vs ['Mechanised'] units> <when defending>",
 			"Ignores Zone of Control"
@@ -2393,13 +2393,14 @@
 	{
 		"name": "The Levy Army",
 		"uniques": [
-			"[+100]% maintenance costs",
-			"Gain [-1] [Gold] <every [1] turns>",
-			"Gain [-1] [Gold] <when not at war> <every [1] turns><before adopting [Military Tradition]>",
-			"Gain [-1] [Gold] <starting from the [Renaissance era]> <every [1] turns>",
-			"Gain [-2] [Gold] <starting from the [Imperial era]> <every [1] turns>",
-			"Gain [-2] [Gold] <starting from the [Industrial era]> <every [1] turns> <before adopting [Militia Army]>",
-			"Gain [+1] [Gold] <before the [Ancient era]> <every [2] turns>"
+			"[This Unit] is destroyed <if [Disbanding Levies] is constructed> <upon turn end>"
+		]
+	},
+	{
+		"name": "The Garrison Army",
+		"uniques": [
+			"Gain [-3] [Gold] <every [1] turns>",
+			"Can build [Fort] improvements at a [-33]% rate"
 		]
 	},
 	{
