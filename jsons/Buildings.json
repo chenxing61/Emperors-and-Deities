@@ -16,7 +16,7 @@
 		"cost": 0,
 		"uniques": [
 			"Unsellable",
-			"Unbuildable <for [AI player] Civilizations>",
+			"Unbuildable",
 			"Only available <in [Capital] cities>",
 			"Comment [Act upon internal affairs as if you are ruling a country. For examples, you can disband levies to mitigate the downside and increase stability of the civilization.]",
 			"Triggers a [Enact Policies] event"
@@ -563,9 +563,10 @@
 		"uniques": [
 			"'Light Industry'",
 			"Provides [1] [Alcohol] <with [Grain]>",
+			"Provides [1] [Alcohol] <with [Fruit]>",
 			"Provides [1] [Alcohol] <with [Grape]>",
-			"Provides [1] [Alcohol] <with [Tuber]> <after discovering [Chemistry]>",
-			"Provides [1] [Alcohol] <with [Fruit]>"
+			"Provides [1] [Alcohol] <with [Sugar]> <after discovering [Chemistry]>",
+			"Provides [1] [Alcohol] <with [Tuber]> <after discovering [Chemistry]>"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -766,8 +767,7 @@
 		},
 		"uniques": [
 			"'Organise Place'",
-			"[+1 Faith] per [3] population [in all cities]",
-			"[+15]% Production when constructing ['Levy Army'] units [in all cities]",
+			"[+1 Faith] per [3] population [in all cities] <in cities with a [Shrine]>",
 			"Only available <after adopting [Animism]>"
 		],
 		"requiredTech": "Calendar",
@@ -1207,13 +1207,29 @@
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from ['Rock'] tiles [in this city]",
-			"[+10]% Production when constructing [All] buildings [in this city]"
+			"[+1]% Production when constructing [All] buildings [in all cities]"
 		],
 		"requiredNearbyImprovedResources": [
 			"Marble",
 			"Stone"
 		],
 		"requiredTech": "Masonry",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Brick Works",
+		"maintenance": 1,
+		"production": 1,
+		"uniques": [
+			"'Heavy Industry'",
+			"[+1 Production] from [Clay] tiles [in this city]",
+			"[+1]% Production when constructing [All] buildings [in all cities]"
+		],
+		"requiredNearbyImprovedResources": [
+			"Clay"
+		],
+		"requiredTech": "Masonry",
+		"requiredBuilding":"Pottery Workshop",
 		"hurryCostModifier": 25
 	},
 	{
@@ -1233,10 +1249,9 @@
 	},
 	{
 		"name": "Makeshift Housing",
-		"cost": 20,
-		"maintenance": 3,
+		"cost": 50,
 		"percentStatBonus": {
-			"food": -5,
+			"food": -3,
 			"production": -5
 		},
 		"uniques": [
@@ -1249,10 +1264,9 @@
 	},
 	{
 		"name": "Slum",
-		"cost": 30,
-		"maintenance": 3,
+		"cost": 50,
 		"percentStatBonus": {
-			"food": -10,
+			"food": -5,
 			"production": -10
 		},
 		"uniques": [
@@ -2090,7 +2104,7 @@
 		"requiredTech": "Theology"
 	},
 	{
-		"name": "Holy see",
+		"name": "Holy See",
 		"isNationalWonder": true,
 		"cost": 125,
 		"faith": 4,
@@ -5543,7 +5557,7 @@
 					"Enables Research agreements",
 					"Enables Open Borders agreements",
 					"Enables Defensive Pacts",
-					"Empire enters golden age <if [Mausoleum of Unifier] is constructed>",
+					"Empire enters golden age <if [Mausoleum of the Unifier] is constructed>",
 					"Triggers a global alert upon completion",
                     "Moves to new capital when capital changes"]
 	},
@@ -5893,7 +5907,7 @@
 					"Provides [3] [Noble Army Maintainance]",
 					"[+2 Culture, +1 Happiness] from every [Governor]",
 					"[+100]% Production when constructing ['Consolidation'] buildings [in all cities]",
-					"Comment [Unique Ability: Commonwealth, You can still build ['Agreements'] via events.]",
+					"Comment [Unique Ability: Commonwealth, You can still build ['Agreement'] via events.]",
 					"Comment [If you ever have your [Influence] go down into 5 or below, You will lose this['Civilization Form'].]",
 					"Gain a free [Republics] [in capital] <for [1] turns> <when below [5] [Influence]>",
 					"Remove [Unified] [in all cities] <when below [5] [Influence]>",
