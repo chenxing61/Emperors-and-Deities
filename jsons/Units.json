@@ -121,6 +121,30 @@
 		"attackSound": "nonmetalhit"
 	},
 	{
+		"name": "Hunter Gatherer",
+		"unitType": "Ranged Combat",
+		"movement": 2,
+		"strength": 5,
+		"rangedStrength": 7,
+		"range": 1,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can build [Camp] improvements at a [-33]% rate",
+			"Can build [Manual Plantation] improvements on tiles",
+			"Can build [Manual Farm] improvements on tiles",
+			"[+1] population in a random city <by consuming this unit><after discovering [Bronze Working]>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"requiredTech": "Hunting and Fishing",
+		"obsoleteTech": "Bronze Working",
+		"attackSound": "arrow"
+	},
+	{
 		"name": "Primal Warrior",
 		"unitType": "Ranged Combat",
 		"cost": 40,
@@ -139,10 +163,10 @@
 		],
 		"promotions": [
 			"Skirmisher Training",
-			"The Levy Army"
+			"The Levied Army"
 		],
 		"requiredTech": "Hunting and Fishing",
-		"obsoleteTech": "Iron Working",
+		"obsoleteTech": "Mining",
 		"attackSound": "arrow"
 	},
 	///line 1
@@ -185,11 +209,35 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army"
+			"The Levied Army"
 		],
 		"requiredTech": "Copper Working",
 		"obsoleteTech": "Iron Working",
-		"upgradesTo": "Spearman",
+		"attackSound": "nonmetalhit"
+	},
+		{
+		"name": "Garrison Warrior",
+		"unitType": "Close Combat",
+		"cost": 40,
+		"movement": 2,
+		"strength": 8,
+		"uniques": [
+			"Only available <after adopting [Unity]>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+13]% Strength <in [Friendly Land] tiles> <when defending>",
+			"[-33]% Strength <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Garrison Army"
+		],
+		"requiredTech": "Copper Working",
+		"obsoleteTech": "Logistics",
+		"upgradesTo":"Garrison Spearman",
 		"attackSound": "nonmetalhit"
 	},
 	{
@@ -202,7 +250,7 @@
 		"strength": 9,
 		"uniques": [
 			"Limited to [3] per Civilization",
-			"Can transform to [Early Swordsman] <removing the [The Levy Army] promotion/status> <after discovering [Bronze Working]> <costs [+1 Gold] stats>",
+			"Can transform to [Early Swordsman] <removing the [The Levied Army] promotion/status> <after discovering [Bronze Working]> <costs [+1 Gold] stats>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -211,7 +259,7 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army",
+			"The Levied Army",
 			"Stewardship"
 		],
 		"requiredTech": "Copper Working",
@@ -479,7 +527,7 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army",
+			"The Levied Army",
 			"Skirmisher Training",
 			"Javalin"
 		],
@@ -492,15 +540,15 @@
 		"name": "Nubian Archer",
 		"uniqueTo":"North Africa",
 		"unitType": "Ranged Combat",
-		"replaces":"Javalineer",
+		"replaces":"Mercenary Javalineer",
 		"cost": 40,
 		"movement": 2,
 		"strength": 10,
 		"rangedStrength": 14,
 		"range": 1,
 		"uniques": [
-			"Can transform to [Archer] <removing the [The Levy Army] promotion/status> <after discovering [Mathematics]> <costs [+1 Gold] stats>",
-			"'Levy Army'",
+			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <after discovering [Mathematics]> <costs [+1 Gold] stats>",
+			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
@@ -508,7 +556,7 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army",
+			"Mercenary Habit",
 			"Skirmisher Training",
 			"Accuracy Doctrine",
 			"Short Bow"
@@ -516,6 +564,34 @@
 		"requiredTech": "Mining",
 		"obsoleteTech": "Tactics",
 		"upgradesTo": "Levy Archer",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Mercenary Javalineer",
+		"unitType": "Ranged Combat",
+		"cost": 50,
+		"movement": 2,
+		"strength": 10,
+		"rangedStrength": 14,
+		"range": 1,
+		"uniques": [
+			"Unbuildable <for [Human player] Civilizations>",
+			"Can only be built <in cities with a [Mercenary Office]>",
+			"'Mercenary Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"Mercenary Habit",
+			"Skirmisher Training",
+			"Javalin"
+		],
+		"requiredTech": "Mining",
+		"obsoleteTech": "Logistics",
+		"upgradesTo": "Mercenary Archer",
 		"attackSound": "arrow"
 	},
 	{
@@ -532,6 +608,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"No defensive terrain bonus",
+			"[+1] Sight",
 			"[-50]% Strength <vs cities> <when attacking>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
@@ -580,7 +657,7 @@
 		"name": "Horse Archer",
 		"unitType": "Rider",
 		"cost": 69,
-		"movement": 4,
+		"movement": 3,
 		"strength": 12,
 		"rangedStrength": 15,
 		"uniques": [
@@ -591,6 +668,7 @@
 			"'Skirmishers'",
 			"'Edged Weapons'",
 			"No defensive terrain bonus",
+			"[+1] Sight",
 			"[+33]% Strength <after discovering [Stirrup]>",
 			"[+25]% Strength <after discovering [Armorments]>",
 			"[+25]% Strength <after discovering [Tactics]>",
@@ -740,7 +818,7 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army"
+			"The Levied Army"
 		],
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Hand Cannon",
@@ -864,7 +942,7 @@
 		"movement": 2,
 		"strength": 15,
 		"uniques": [
-			"Only available <after adopting [Provincial Government]>",
+			"Only available <after adopting [Unity]>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -1053,7 +1131,7 @@
 		"name": "Light Cavalry",
 		"cost": 63,
 		"unitType": "Rider",
-		"movement": 4,
+		"movement": 3,
 		"strength": 21,
 		"uniques": [
 			"Only available <if [Military Stable] is constructed>",
@@ -1063,6 +1141,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"No defensive terrain bonus",
+			"[+1] Sight",
 			"[+25]% Strength <after discovering [Armorments]>",
 			"[+25]% Strength <after discovering [Tactics]>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
@@ -1081,7 +1160,7 @@
 		"name": "Mercenary Rider",
 		"unitType": "Rider",
 		"cost": 75,
-		"movement": 4,
+		"movement": 3,
 		"strength": 18,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
@@ -1209,7 +1288,7 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army",
+			"The Levied Army",
 			"Skirmisher Training"
 		],
 		"requiredTech": "Tactics",
@@ -1340,6 +1419,32 @@
 		"hurryCostModifier": 20,
 		"attackSound": "throw"
 	},
+	{
+		"name": "Mercenary Heavy Cavalry",
+		"unitType": "Assault",
+		"cost": 130,
+		"movement": 3,
+		"strength": 31,
+		"uniques": [
+			"Unbuildable <for [Human player] Civilizations>",
+			"Can only be built <in cities with a [Mercenary Office]>",
+			"'Mercenary Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit",
+			"Only available <before adopting [Knighthood]>"
+		],
+		"promotions": [
+			"Mercenary Habit"
+		],
+		"requiredTech": "Diplomacy",
+		"obsoleteTech": "Hand Cannon",
+		"requiredResource": "Mercenary Contract",
+		"upgradesTo": "Mercenary Pistoleer",
+		"attackSound": "horse"
+	},
 	///Line 12
 	{
 		"name": "Three-masted Ship",
@@ -1381,7 +1486,7 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army",
+			"The Levied Army",
 			"Skirmisher Training"
 		],
 		"requiredTech": "Hand Cannon",
@@ -1461,7 +1566,7 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army"
+			"The Levied Army"
 		],
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Flintlock",
@@ -1475,7 +1580,7 @@
 		"movement": 2,
 		"strength": 33,
 		"uniques": [
-			"Only available <after adopting [Provincial Government]>",
+			"Only available <after adopting [Unity]>",
 			"Can transform to [Musketeer] <after discovering [Flintlock]><removing the [The Garrison Army] promotion/status>",
 			"Can transform to [Grenadier] <after discovering [Flintlock]><removing the [The Garrison Army] promotion/status>",
 			"'Levy Army'",
@@ -1507,9 +1612,9 @@
 			"Only available <before adopting [Knighthood]>",
 			"Costs [6] [Weapon Parts]",
 			"Consumes [1] [Horse]",
+			"'Standing Army'",
 			"'Firearms'",
 			"'Dense Formation'",
-			"'Standing Army'",
 			"'Mounted'",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
@@ -1522,6 +1627,32 @@
 		"obsoleteTech": "Military Science",
 		"upgradesTo": "Cuirassier",
 		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Mercenary Pistoleer",
+		"unitType": "Assault",
+		"cost": 150,
+		"movement": 3,
+		"strength": 36,
+		"uniques": [
+			"Can transform to [Cuirassier] <after discovering [Rifling]><removing the [Mercenary Habit] promotion/status>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"Can only be built <in cities with a [Mercenary Office]>",
+			"'Mercenary Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit",
+			"Only available <before adopting [Knighthood]>"
+		],
+		"promotions": [
+			"Mercenary Habit"
+		],
+		"requiredTech": "Hand Cannon",
+		"obsoleteTech": "Military Science",
+		"requiredResource": "Mercenary Contract",
 		"attackSound": "horse"
 	},
 	{
@@ -1655,7 +1786,7 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army",
+			"The Levied Army",
 			"Skirmisher Training"
 		],
 		"requiredTech": "Machinery",
@@ -1738,7 +1869,7 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army"
+			"The Levied Army"
 		],
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Rifling",
@@ -1770,6 +1901,29 @@
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Security Company",
 		"requiredResource": "Mercenary Contract",
+		"attackSound": "shot"
+	},
+	{
+		"name": "State Militia Musketeer",
+		"unitType": "Close Combat",
+		"movement": 2,
+		"strength": 50,
+		"cost": 140,
+		"uniques": [
+			"Only available <if [United States] is constructed>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Garrison Army"
+		],
+		"requiredTech": "Flintlock",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "State Militia Rifleman",
+		"requiredBuilding": "Firearms Workshop",
 		"attackSound": "shot"
 	},
 	{
@@ -1830,7 +1984,7 @@
 		"name": "Hussar",
 		"unitType": "Rider",
 		"cost": 120,
-		"movement": 4,
+		"movement": 3,
 		"strength": 55,
 		"uniques": [
 			"Only available <if [Military Stable] is constructed>",
@@ -1840,6 +1994,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"No defensive terrain bonus",
+			"[+1] Sight",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -2049,7 +2204,7 @@
 		"range": 1,
 		"uniques": [
 			"Can upgrade to [Modern Guerrilla] <after adopting [Anarchism]> <after discovering [Mobile Tactics]>",
-			"Can transform to [Red Army Troop] <after adopting [Red Army]> <removing the [The Levy Army] promotion/status><removing the [Skirmisher Training] promotion/status>",
+			"Can transform to [Red Army Troop] <after adopting [Red Army]> <removing the [The Levied Army] promotion/status><removing the [Skirmisher Training] promotion/status>",
 			"Unbuildable",
 			"'Levy Army'",
 			"'Infantry'",
@@ -2058,7 +2213,7 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army",
+			"The Levied Army",
 			"Skirmisher Training",
 			"Skirmishing Doctrine"
 		],
@@ -2081,17 +2236,39 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army"
+			"The Levied Army"
 		],
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Mobile Tactics",
 		"upgradesTo": "Modern Conscript",
 		"attackSound": "shot"
 	},
+		{
+		"name": "State Militia Rifleman",
+		"unitType": "Close Combat",
+		"movement": 2,
+		"strength": 62,
+		"cost": 140,
+		"uniques": [
+			"Can transform to [Heavy Infantry] <after discovering [Replaceable Parts]><removing the [The Garrison Army] promotion/status>",
+			"Only available <if [United States] is constructed>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Garrison Army"
+		],
+		"requiredTech": "Rifling",
+		"requiredBuilding": "Firearms Workshop",
+		"attackSound": "shot"
+	},
 	{
 		"name": "Modern Cavalry",
 		"unitType": "Rider",
-		"movement": 4,
+		"movement": 3,
 		"strength": 65,
 		"cost": 160,
 		"uniques": [
@@ -2254,6 +2431,7 @@
 			"'Mounted'",
 			"'Skirmishers'",
 			"'Firearms'",
+			"[+1] Sight",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -2373,7 +2551,6 @@
 		"strength": 65,
 		"uniques": [
 			"Only available <after adopting [Militarised Nation]>",
-			"Limited to [5] per Civilization",
 			"Costs [21] [Weapon Parts]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -2388,6 +2565,7 @@
 		],
 		"requiredTech": "Replaceable Parts",
 		"obsoleteTech": "Mobile Tactics",
+		"requiredResource":"Protection Squadron Volunteer",
 		"attackSound": "shot"
 	},
 	{
@@ -2599,7 +2777,7 @@
 			"[50]% chance to intercept air attacks"
 		],
 		"promotions": [
-			"The Levy Army",
+			"The Levied Army",
 			"Skirmisher Training",
 			"Skirmishing Doctrine",
 			"Resourceful Army"
@@ -2623,7 +2801,7 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
-			"The Levy Army",
+			"The Levied Army",
 			"Sapper Corps"
 		],
 		"requiredTech": "Mobile Tactics",
@@ -3702,7 +3880,7 @@
 	{
 		"name": "Rouge Aristrocrat",
 		"unitType": "Assault",
-		"movement": 2,
+		"movement": 3,
 		"strength": 12,
 		"uniqueTo": "Barbarians",
 		"uniques": [
@@ -3834,7 +4012,7 @@
 		"attackSound": "metalhit"
 	},
 	{
-		"name": "Priate Fleets",
+		"name": "Pirate Fleets",
 		"unitType": "Close Combat Ship",
 		"movement": 2,
 		"strength": 40,
@@ -3917,6 +4095,7 @@
 			"Removes other religions when spreading religion",
 			"May found a religion <if it hasn't used other actions yet>",
 			"May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
+			"Free Social Policy <after enhancing a religion> <by consuming this unit> <if it hasn't used other actions yet> <if [Theocratic Empire] is constructed in all [Capital] cities>",
 			"May enter foreign tiles without open borders",
 			"[-1] Sight",
 			"Great Person - [Faith]",

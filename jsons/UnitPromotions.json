@@ -1781,7 +1781,7 @@
 			"[+25]% Strength <when fighting in [Trench] tiles>",
 			"[+25]% Strength <when defending> <when fighting in [Citadel] tiles>",
 			"[+10]% Strength <when defending> <when fighting in [Rough terrain] tiles>",
-			"Can build [Trench] improvements at a [-25]% rate"
+			"Can build [Trench] improvements on tiles"
 		],
 		"column": 28,
 		"row": 3
@@ -2391,16 +2391,17 @@
 		]
 	},
 	{
-		"name": "The Levy Army",
+		"name": "The Levied Army",
 		"uniques": [
-			"[This Unit] is destroyed <if [Disbanding Levies] is constructed> <upon turn end>"
+			"[This Unit] is destroyed <if [Levies Disbandment] is constructed> <upon turn end>"
 		]
 	},
 	{
 		"name": "The Garrison Army",
 		"uniques": [
 			"Gain [-3] [Gold] <every [1] turns>",
-			"Can build [Fort] improvements at a [-33]% rate"
+			"Can build [Fort] improvements at a [-33]% rate",
+			"Can build [Trench] improvements at a [-33]% rate"
 		]
 	},
 	{

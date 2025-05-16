@@ -1,4 +1,17 @@
 [
+	///Government Products
+	{
+		"name": "Revolution Oppotunity",
+		"resourceType": "Strategic",
+		"uniques":["Cannot be traded"],
+		"revealedBy": "Engineering"
+	},
+	{
+		"name": "Influence",
+		"resourceType": "Strategic",
+		"uniques":["Stockpiled","Cannot be traded"],
+		"revealedBy": "Writing"
+	}
 	// Bonus resources
 	{
 		"name": "Bovine",
@@ -618,6 +631,13 @@
 			"Cannot be traded"
 		],
 		"revealedBy": "Currency"
+	},
+	{
+		"name": "Protection Squadron Volunteer",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Cannot be traded"
+		]
 	},
 	///The Industrial parts
 	{
@@ -1440,23 +1460,18 @@
 		"uniques":["Cannot be traded",
 		"City-level resource",
 		"Comment [Every 5 Population costs 1 Living Condition.]",
-		"Comment [If Living Condition goes down into negative, happiness production will suffer, until -100%, which is -4 Living Condition,-4 Living Condition also nullifies all growth in the city. Building infrastructure or settling city near waters increase the living condition.]"]
+		"Comment [If [Living Condition] goes down into negative, [Happiness] production and city growth will suffer, until -100%, which is -4 [Living Condition],-4 [Living Condition] also nullifies all growth in the city. Building 'infrastructure' or settling city near rivers increase the [Living Condition].]"]
 	},
 	{
 		"name": "Artifact",
 		"resourceType": "Strategic",
-		"uniques":["City-level resource"]
-	}
+		"uniques":["City-level resource"],
+		"revealedBy":"Archaeology"
+	},
 	{
 		"name": "Waste Material",
 		"resourceType": "Strategic",
 		"revealedBy": "Ecology"
 	},
-	///Government Products
-	{
-		"name": "Revolution Oppotunity",
-		"resourceType": "Strategic",
-		"uniques":["Cannot be traded"],
-		"revealedBy": "Engineering"
-	}
+
 ]

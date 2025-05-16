@@ -18,12 +18,12 @@
 			"Unsellable",
 			"Unbuildable <for [AI player] Civilizations>",
 			"Only available <in [Capital] cities>",
-			"Comment [Act upon internal affairs like disbanding levies.]",
+			"Comment [Act upon internal affairs as if you are ruling a country. For examples, you can disband levies to mitigate the downside and increase stability of the civilization.]",
 			"Triggers a [Enact Policies] event"
 		]
 	},
 	{
-		"name": "Disbanding Levies",
+		"name": "Levies Disbandment",
 		"cost": 0,
 		"uniques": [
 			"Unsellable",
@@ -38,15 +38,13 @@
 			"Unsellable",
 			"Unbuildable <for [AI player] Civilizations>",
 			"Only available <in cities with at least [5] [Population]>",
-			"[-1 Happiness] [in this city]",
+			"[-1 Happiness] [in this city] <before adopting [Militia Army]>",
 			"[-1 Happiness] [in this city] <before adopting [Military Tradition]>",
-			"[-15]% [Gold] [in this city] <for [3] turns>",
-			"[-15]% [Food] [in this city] <for [3] turns>",
-			"[-15]% [Production] [in this city] <for [3] turns>",
-			"[-15]% [Science] [in this city] <for [3] turns>",
-			"[-15]% [Culture] [in this city] <for [3] turns>",
-			"Comment [Spawns free levy army units to help with warfare.]",
-			"Comment [The number and type of unit spawned depends on the military building in the city and your technological, cultural advancement.]",
+			"[-15]% [Gold] [in this city] <for [5] turns> <if [Militristic Economy] is not constructed>",
+			"[-15]% [Food] [in this city] <for [10] turns> <if [Militristic Economy] is not constructed>",
+			"[-15]% [Production] [in this city] <for [5] turns> <if [Militristic Economy] is not constructed>",
+			"Comment [Spawns free 'Levy Army' units to help with warfare.]",
+			"Comment [The number and type of unit spawned depends on the 'Military Building' in the city and your technological, cultural advancement.]",
 
 			"Free [Primal Warrior] appears <before discovering [Mining]> <hidden from users>",
 			"Free [Brute Warrior] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [non-[Europa]] Civilizations> <hidden from users>",
@@ -55,19 +53,13 @@
 			"Free [Javalineer] appears <after discovering [Mining]> <before discovering [Tactics]> <for [non-[North Africa]] Civilizations> <hidden from users>",
 			"Free [Nubian Archer] appears <after discovering [Mining]> <before discovering [Tactics]> <for [North Africa] Civilizations> <hidden from users>",
 
-			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <before adopting [Provincial Government]> <hidden from users>",
-			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <before adopting [Provincial Government]> <in cities with a [Armory]> <hidden from users>",
-
-			"Free [Garrison Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <after adopting [Provincial Government]> <hidden from users>",
-			"Free [Garrison Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <after adopting [Provincial Government]> <in cities with a [Armory]> <hidden from users>",
+			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <hidden from users>",
+			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <in cities with a [Armory]> <hidden from users>",
 
 			"Free [Levy Archer] appears <after discovering [Tactics]> <before discovering [Hand Cannon]> <hidden from users>",
 
 			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <hidden from users>",
 			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <in cities with a [Armory]> <hidden from users>",
-
-			"Free [Garrison Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <after adopting [Provincial Government]> <hidden from users>",
-			"Free [Garrison Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <after adopting [Provincial Government]> <in cities with a [Armory]> <hidden from users>",
 
 			"Free [Levy Crossbowman] appears <after discovering [Hand Cannon]> <before discovering [Rifling]> <hidden from users>",
 
@@ -307,11 +299,11 @@
 		"hurryCostModifier": -25
 	},
 	{
-		"name": "Infrastructure Modernisation",
+		"name": "Infrastructure Modernization",
 		"cost": 950,
 		"uniques": [
 			"Unsellable",
-			"'Modernisation'",
+			"'Modernization'",
 			"Comment [Only when all buildings in this package have not been built, this package is available.]",
 			"Only available <in cities without a [Sewer]>",
 			"Only available <in cities without a [Hospital]>",
@@ -324,11 +316,11 @@
 		"hurryCostModifier": -25
 	},
 	{
-		"name": "Civil Modernisation",
+		"name": "Civil Modernization",
 		"cost": 810,
 		"uniques": [
 			"Unsellable",
-			"'Modernisation'",
+			"'Modernization'",
 			"Comment [Only when all buildings in this package have not been built, this package is available.]",
 			"Only available <in cities without a [Newspaper Agency]>",
 			"Only available <in cities without a [Police Station]>",
@@ -357,11 +349,11 @@
 		"hurryCostModifier": -25
 	},
 	{
-		"name": "Light Industry Modernisation",
+		"name": "Light Industry Modernization",
 		"cost": 810,
 		"uniques": [
 			"Unsellable",
-			"'Modernisation'",
+			"'Modernization'",
 			"Comment [Only when all buildings in this package have not been built, this package is available.]",
 			"Only available <in cities without a [Textile Factory]>",
 			"Only available <in cities without a [Furniture Factory]>",
@@ -375,11 +367,11 @@
 		"hurryCostModifier": -25
 	},
 	{
-		"name": "Food Industry Modernisation",
+		"name": "Food Industry Modernization",
 		"cost": 1500,
 		"uniques": [
 			"Unsellable",
-			"'Modernisation'",
+			"'Modernization'",
 			"Comment [Only when all buildings in this package have not been built, this package is available.]",
 			"Only available <in cities without a [Fertilizer Factory]>",
 			"Only available <in cities without a [Agricultural Machinery Factory]>",
@@ -395,11 +387,11 @@
 		"hurryCostModifier": -25
 	},
 	{
-		"name": "Heavy Industry Modernisation",
+		"name": "Heavy Industry Modernization",
 		"cost": 800,
 		"uniques": [
 			"Unsellable",
-			"'Modernisation'",
+			"'Modernization'",
 			"Comment [Only when all buildings in this package have not been built, this package is available.]",
 			"Only available <in cities without a [Machine Tool Factory]>",
 			"Only available <in cities without a [Cement Work]>",
@@ -449,7 +441,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Cultural Building'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"[-1]% Culture cost of natural border growth [in all cities]",
 			"[+1 Gold] <after discovering [Theology]>",
 			"Destroyed when the city is captured"
@@ -559,8 +551,8 @@
 		"food": 1,
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Gold] from [{improved} {Grain}] tiles [in this city]",
-			"[+1 Gold] from [{improved} {Tuber}] tiles [in this city]"
+			"[+1 Gold] from [{'Agricultural Improvement'} {Grain}] tiles [in this city]",
+			"[+1 Gold] from [{'Agricultural Improvement'} {Tuber}] tiles [in this city]"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -588,7 +580,7 @@
 			"[+1 Production] per [8] population [in this city] <in cities with between [15] and [24] [Population]>",
 			"[+1 Production] per [10] population [in this city]<in cities with at least [24] [Population]>",
 			"[+1 Production] from [Clay] tiles [in this city]",
-			"[+1 Production] from [{improved} {Clay}] tiles [in this city]"
+			"[+1 Production] from [{'Extraction Improvement'} {Clay}] tiles [in this city]"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 0
@@ -602,9 +594,9 @@
 			"[+1 Culture] per [5] population [in this city] <in cities with between [9] and [15] [Population]>",
 			"[+1 Culture] per [8] population [in this city] <in cities with between [15] and [24] [Population]>",
 			"[+1 Culture] per [10] population [in this city] <in cities with at least [24] [Population]>",
-			"[+1 Production] from [{improved} {'Textile'}] tiles [in this city]",
-			"[+1 Gold] from [{improved} {Furs}] tiles [in this city]",
-			"[+1 Gold] from [{improved} {Silk}] tiles [in this city]"
+			"[+1 Production] from [{'Agricultural Improvement'} {'Textile'}] tiles [in this city]",
+			"[+1 Gold] from [{Camp} {Furs}] tiles [in this city]",
+			"[+1 Gold] from [{'Agricultural Improvement'} {Silk}] tiles [in this city]"
 		],
 		"requiredNearbyImprovedResources": [
 			"Bovine",
@@ -692,11 +684,11 @@
 			"[+1 Gold] from [Gold Ore] tiles [in this city]",
 			"[+1 Gold] from [Silver Ore] tiles [in this city]",
 			"[+1 Gold] from [Rich Copper Ore] tiles [in this city]",
-			"[+1 Gold] from [{improved} {Gold Ore}] tiles [in this city]",
-			"[+1 Gold] from [{improved} {Silver Ore}] tiles [in this city]",
-			"[+1 Gold] from [{improved} {Rich Copper Ore}] tiles [in this city]",
+			"[+1 Gold] from [{'Extraction Improvement'} {Gold Ore}] tiles [in this city]",
+			"[+1 Gold] from [{'Extraction Improvement'} {Silver Ore}] tiles [in this city]",
+			"[+1 Gold] from [{'Extraction Improvement'} {Rich Copper Ore}] tiles [in this city]",
 			"[+2 Gold] from [Cocoa] tiles [in this city]",
-			"[+1 Gold] per [3] population [in this city]"
+			"[+1 Gold] per [4] population [in this city]"
 		],
 		"requiredNearbyImprovedResources": [
 			"Gold Ore",
@@ -715,9 +707,9 @@
 		},
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Gold] from [{improved} {'Precious Mineral'}] tiles [in this city]",
-			"[+1 Gold] from [{improved} {Ivory}] tiles [in this city]",
-			"[+1 Gold] from [{improved} {Coral}] tiles [in this city]",
+			"[+1 Gold] from [{'Extraction Improvement'} {'Precious Mineral'}] tiles [in this city]",
+			"[+1 Gold] from [{Camp} {Ivory}] tiles [in this city]",
+			"[+1 Gold] from [{'Water Improvement'} {Coral}] tiles [in this city]",
 			"Consumes [1] [Glass] <with [Glass]>",
 			"[+1 Gold] <with [Glass]>"
 		],
@@ -995,7 +987,7 @@
 		"production": 1,
 		"uniques": [
 			"'Economic Building'",
-			"[+1 Gold] from [{improved} {'Herd'}] tiles [in this city]",
+			"[+1 Gold] from [{'Agricultural Improvement'} {'Herd'}] tiles [in this city]",
 			"Must have an owned [Pasture] within [3] tiles"
 		],
 		"requiredTech": "Trade Network",
@@ -1011,7 +1003,7 @@
 			"[+1 Gold] from [Grape] tiles [in this city]",
 			"[+1 Gold] from [Sugar] tiles [in this city]",
 			"[+1 Gold] from [Cocoa] tiles [in this city]",
-			"[+1 Gold] from [{improved} {'Crops'}] tiles [in this city]"
+			"[+1 Gold] from [{'Agricultural Improvement'} {'Crops'}] tiles [in this city]"
 		],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
@@ -1177,6 +1169,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Cultural Building'",
+			"Provides [1] [Living Condition] <in this city>",
 			"[+1 Gold] from all ['Economic Building'] buildings <in this city>",
 			"[-10]% Culture cost of natural border growth [in this city]",
 			"Destroyed when the city is captured"
@@ -1195,6 +1188,7 @@
 		"uniques": [
 			"'Cultural Building'",
 			"'Economic Building'",
+			"Provides [1] [Living Condition] <in this city>",
 			"[+25]% Production when constructing ['Economic Building'] buildings [in this city]",
 			"[+1 Gold] from all ['Economic Building'] buildings <in this city>",
 			"[-10]% Culture cost of natural border growth [in this city]",
@@ -1401,6 +1395,20 @@
 		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
 	},
 	{
+		"name": "The Grand Ditch",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Engineer": 1
+		},
+		"uniques": [
+			"Gain a free [Irrigation System] [in this city]",
+			"[+10]% growth [in all cities]",
+			"[+2 Faith, +2 Culture] <starting from the [Medieval era]>"
+		],
+		"requiredTech": "Mining",
+		"quote": "'The land of abundance' - The idiom used to describe the province after Du Jiang Yan was built."
+	},
+	{
 		"name": "National Epic",
 		"maintenance": 3,
 		"isNationalWonder": true,
@@ -1425,7 +1433,7 @@
 			"Governor": 1
 		},
 		"uniques": [
-			"Provides the cheapest [Happiness] building in your first [9] cities for free",
+			"Provides the cheapest [Happiness] building in your first [4] cities for free",
 			"[+25]% Great Person generation [in this city]",
 			"Cost increases by [20] per owned city"
 		],
@@ -1570,7 +1578,7 @@
 		},
 		"uniques": [
 			"'Military Building'",
-			"Comment [Increases Call to Arms's amount of free close combat unit given.]",
+			"Comment [Increases [Call to Arms]'s amount of free close combat unit given.]",
 			"Provides [1] [Standing Army Maintainance]",
 			"New [Military] units start with [15] XP [in this city]"
 		],
@@ -1610,7 +1618,6 @@
 	},
 	{
 		"name": "Glass Workshop",
-		"cost": 125,
 		"production": 1,
 		"science":1,
 		"uniques": [
@@ -1743,9 +1750,8 @@
 		"isWonder": true,
 		"culture": 3,
 		"uniques": [
-			"Allied City-States provide [Science] equal to [15]% of what they produce for themselves",
-			"Allied City-States provide [Culture] equal to [15]% of what they produce for themselves",
-			"Allied City-States provide [Gold] equal to [15]% of what they produce for themselves"
+			"Provides [1] [Influence]",
+			"Comment [Every time your civ became unified, enter a golden age.]"
 		],
 		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu",
 		"requiredTech": "Horse Collar"
@@ -1773,7 +1779,7 @@
 		},
 		"uniques": [
 			"'Organise Place'",
-			"[+25]% [Culture] [in all cities] <before the [Renaissance era]>"
+			"[+15]% [Culture] [in all cities] <before the [Renaissance era]>"
 		],
 		"requiredTech": "Philosophy",
 		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
@@ -2254,7 +2260,7 @@
 			"Great Strategist": 3
 		},
 		"uniques": [
-			"Comment [Enable you to build 4 Great Wall Passes in your cities. Which stops enemy mounted units effectively.]",
+			"Comment [Enable you to build 4 [Great Wall Pass]es in your cities. Which stops enemy mounted units effectively.]",
 			"[+1 Gold] from [Luxury resource] tiles [in all cities]",
 			"Provides [4] [Great Wall Logistic]"
 		],
@@ -2400,6 +2406,7 @@
 		},
 		"uniques": [
 			"'Educational Building'",
+			"Provides [1] [Living Condition] <in this city>",
 			"[-5]% Unhappiness from [Population] [in this city]",
 			"All newly-trained [relevant] units [in this city] receive the [Field Medic] promotion"
 		],
@@ -2660,7 +2667,7 @@
 			"science": 50
 		},
 		"uniques": [
-			"Science gained from research agreements [+100]%",
+			"Science gained from research agreements [+50]%",
 			"Only available <if [University] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [30] per owned city"
 		],
@@ -2786,7 +2793,7 @@
 			"'Worship Place'",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
-			"[+25]% [Culture] [in all cities]"
+			"[+15]% [Culture] [in all cities]"
 		],
 		"requiredTech": "Acoustics",
 		"quote": "'I live and love in God's peculiar light.' - Michelangelo Buonarroti"
@@ -2829,7 +2836,7 @@
 		"uniques": [
 			"'Military Building'",
 			"'Marine Infrastructure'",
-			"Comment [One more Free Levy Water Unit appears when calling to arms]",
+			"Comment [One more Free Levy Water Unit appears when [Call to Arms] is ordered]",
 			"Provides [2] [Standing Army Maintainance]",
 			"[+25]% Production when constructing [{Military} {Water}] units [in this city]",
 			"New [{Military} {Water}] units start with [15] XP [in this city]",
@@ -2920,11 +2927,26 @@
 		"maintenance": 10,
 		"uniques": [
 			"'Military Building'",
-			"Comment [Increases Call to Arms's amount of free unit.]",
+			"Comment [Increases [Call to Arms]'s amount of free unit.]",
 			"[+25]% Production when constructing [Military] units [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "City Hall",
+		"requiredTech": "Military Science",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Recuitment Center",
+		"maintenance": 10,
+		"uniques": [
+			"Only available <if [Fascist Autocracy] is constructed>",
+			"'Military Building'",
+			"Gain a free [Mobilization Department] [in this city]",
+			"Comment [Increases [Call to Arms]'s amount of free unit.]",
+			"Provides [1] [Protection Squadron Volunteer]",
+			"[+33]% Production when constructing [Military] units [in this city]",
+			"Destroyed when the city is captured"
+		],
 		"requiredTech": "Military Science",
 		"hurryCostModifier": 25
 	},
@@ -3060,7 +3082,7 @@
 		"uniques": [
 			"'Cultural Building'",
 			"'Educational Building'",
-			"Consumes [4] [Artifact]",
+			"Consumes [5] [Artifact]",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Archaeology",
@@ -3242,7 +3264,7 @@
 			"Must have an owned [Road] within [1] tiles",
 			"Provides [1] [Living Condition] <in this city>",
 			"[+1]% [Gold] from Trade Routes",
-			"[+4]% growth [in all cities]",
+			"[+2]% growth [in all cities]",
 			"[-5]% maintenance cost for buildings [in this city]",
 			"[+1 Production] from ['Infrastructure Improvement'] tiles [in this city]"
 		],
@@ -3505,9 +3527,8 @@
 		},
 		"uniques": [
 			"'Infrastructure'",
-			"Provides [1] [Living Condition] <in this city>",
 			"[+1]% [Gold] from Trade Routes",
-			"[+5]% growth [in all cities]",
+			"[+2]% growth [in all cities]",
 			"[-5]% maintenance cost for buildings [in this city]",
 			"Only available <in cities connected to the capital>"
 		],
@@ -3673,7 +3694,7 @@
 		"maintenance": 3,
 		"uniques": [
 			"'Infrastructure'",
-			"Provides [1] [Living Condition] <in this city>",
+			"Provides [2] [Living Condition] <in this city>",
 			"[+2 Production] from [Power Plant] tiles [in this city]",
 			"Comment ['Power Building' channel their production into Power Grid in all cities. The More Power Building you build, the stronger this building becomes(Each 'Power Building' provides +2 Production).]"
 		],
@@ -3781,14 +3802,12 @@
 		"happiness": 1,
 		"percentStatBonus": {
 			"gold": 10,
-			"production": 10,
 			"culture": 5,
 			"science": 5
 		},
 		"uniques": [
 			"'Infrastructure'",
-			"Provides [1] [Living Condition] <in this city>",
-			"[+5]% growth [in all cities]",
+			"[+3]% growth [in all cities]",
 			"[-5]% maintenance cost for buildings [in this city]"
 		],
 		"requiredTech": "Flight",
@@ -4085,12 +4104,12 @@
 	{
 		"name": "Media Centre",
 		"isWonder": true,
-		"culture": 5,
+		"percentStatBonus":{"culture":33},
 		"greatPersonPoints": {
-			"Great Artist": 5
+			"Great Artist": 3
 		},
 		"uniques": [
-			"[+1 Happiness] [in all cities]",
+			"Provides [1] [Influence]",
 			"Allied City-States provide [Culture] equal to [25]% of what they produce for themselves"
 		],
 		"quote": "'Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules.' - Douglas Adams",
@@ -4452,7 +4471,10 @@
 			"'Political Building'",
 			"[+25]% Production when constructing [All] buildings [in this city]",
 			"[+25]% Production when constructing [{Civilian} {Civil Ship}] units [in this city]",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Gain a free [Neolithic Era Start] [in this city] <if starting in the [Neolithic era]>",
+			"Gain a free [Ancient Era Start] [in this city] <if starting in the [Ancient era]>",
+			"Gain a free [Classical Era Start] [in this city] <if starting in the [Classical era]>",
 			"Gain a free [Medieval Era Start] [in this city] <if starting in the [Medieval era]>",
 			"Gain a free [Renaissance Era Start] [in this city] <if starting in the [Renaissance era]>",
 			"Gain a free [Imperial Era Start] [in this city] <if starting in the [Imperial era]>",
@@ -4471,7 +4493,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -4487,8 +4509,8 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
-			"[-10]% Culture cost of natural border growth [in this city]",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Creates a [Manual Farm] improvement on a specific tile",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -4504,7 +4526,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"[+15]% Production when constructing [Faith] wonders [in this city]",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
@@ -4523,7 +4545,7 @@
 		"cityStrength": 2,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -4540,7 +4562,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Practice Ground'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -4556,7 +4578,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -4569,7 +4591,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Practice Ground'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Unbuildable",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -4581,10 +4603,10 @@
 		"culture": 1,
 		"uniques": [
 			"'Economic Building'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Unbuildable",
 			"Only available <when religion is enabled>",
-			"Must have an owned [Snow] within [4] tiles",
+			"Must have an owned [Snow] within [3] tiles",
 			"Gain a free [Hunter's Hut] [in this city]",
 			"[+1 Culture, +1 Food] from [Camp] tiles [in this city]",
 			"Destroyed when the city is captured"
@@ -4597,7 +4619,7 @@
 		"faith": 2,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -4613,7 +4635,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -4628,7 +4650,7 @@
 		"faith": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -4637,14 +4659,14 @@
 	},
 	
 	{
-		"name": "Aten's Shrine",
+		"name": "Shrine of Aten",
 		"uniqueTo":"North Africa",
 		"cost": 20,
 		"faith": 2,
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -4673,7 +4695,7 @@
 		"faith": 2,
 		"uniques": [
 			"Gain a free [Courthouse] [in this city]",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -4687,7 +4709,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Entertainment Building'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Only available <after adopting [Militant]>",
 			"[-10]% Unhappiness from [Population] [in this city]",
 			"Destroyed when the city is captured"
@@ -4707,7 +4729,7 @@
 		"uniques": [
 			"'Political Building'",
 			"'Cultural Building'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"[+25]% Great Person generation [in this city]",
 			"Only available <after adopting [Scholarship]>",
 			"Destroyed when the city is captured"
@@ -4722,7 +4744,7 @@
 		},
 		"uniques": [
 			"'Economic Building'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Only available <after adopting [Plutocracy]>",
 			"[-10]% Production when constructing [All] buildings [in this city]",
 			"[+1 Gold] per [5] population [in this city]",
@@ -4732,11 +4754,11 @@
 		"hurryCostModifier": 0
 	},
 	{
-		"name": "Jousing Place",
+		"name": "Jousting Place",
 		"happiness": 2,
 		"uniques": [
 			"'Entertainment Building'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"[-5]% Unhappiness from [Population] [in this city]",
 			"Only available <after adopting [Feudalism]>"
 		],
@@ -4755,7 +4777,7 @@
 		"uniques": [
 			"'Political Building'",
 			"'Educational Building'",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>",
+			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"[+3]% Production towards any buildings that already exist in the Capital",
 			"New [Military] units start with [5] XP [in this city]",
 			"New [Military] units start with [5] XP [in this city] <after adopting [Military Tradition]>",
@@ -4855,7 +4877,7 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"[+33]% Production when constructing ['Cultural Building'] buildings [in all cities]",
+			"[+33]% Production when constructing ['Educational Building'] buildings [in all cities]",
 			"[+3 Faith, +3 Science, +3 Culture] <in cities with at least [5] [Population]>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
@@ -4898,7 +4920,6 @@
 			"[Elite Guard] units gain the [Stewardship] promotion",
 			"[Elite Guard] units gain the [Shock Doctrine] promotion",
 			"[Elite Guard] units gain the [Devistating Charge] promotion",
-			"[Elite Guard] units gain the [Fast Regrouping] promotion",
 			"[Elite Guard] units gain the [Chivalry] promotion",
 			"[+1 Food, +1 Gold, +2 Culture] from every [Manor]",
 			"Triggers a global alert upon completion",
@@ -4939,8 +4960,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"[+5 Happiness] [in all cities]",
-			"Resting point for Influence with City-States is increased by [25]",
 			"Allied City-States provide [Culture] equal to [33]% of what they produce for themselves",
 			"City-State Influence recovers at twice the normal rate",
 			"Triggers a global alert upon completion",
@@ -4993,9 +5012,10 @@
 		},
 		"uniques": [
 			"'Political Building'",
-			"Provides [1] [Living Condition] <in this city>",
-			"[-3 Gold] per [5] population [in this city]",
-			"[+1]% Great Person generation [in all cities]",
+			"[+4 Happiness, +4 Culture] [in this city] <after adopting [Complete Autonomy]>",
+			"Provides [1] [Living Condition] <in this city> <after adopting [Direct Democracy]>",
+			"Provides [1] [Standing Army Maintainance] <after adopting [Militia Army]>",
+			"[+1]% Great Person generation [in all cities] <after adopting [Diversity of Opinions]>",
 			"[+1]% Golden Age length",
 			"Only available <after adopting [Anarchism]>",
 			"Destroyed when the city is captured"
@@ -5006,13 +5026,6 @@
 	{
 		"name": "Anarchist Ruling",
 		"culture": 3,
-		"percentStatBonus": {
-			"production": -5,
-			"science": 17,
-			"culture": 17,
-			"faith": -5,
-			"gold": -10
-		},
 		"uniques": [
 			"[-3 Happiness] <in cities without a [Commune]>",
 			"Remove extra unhappiness from annexed cities",
@@ -5039,146 +5052,146 @@
 		],
 		"requiredTech": "Renewable Energy"
 	},
-	///Routes under ideology
+	///'Economic Policy'
+	
 	{
-		"name": "Market Interventionism",
-		"specialistSlots": {
-			"Governor": 1
-		},
+		"name": "Mercantilism",
 		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"Destroyed when the city is captured",
+			"[Gold] cost of purchasing items in cities [-10]%",
+			"Provides [3] [Alloy]",
+			"Provides [3] [Coal]",
+			"Moves to new capital when capital changes"
+		],
+		"requiredTech": "Economics"
+	},
+		{
+		"name": "Free Trade",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Economic Policy'",
+			"Triggers a global alert upon completion",
+			"[+33]% [Gold] [in all cities]",
+			"Moves to new capital when capital changes"
+		],
+		"requiredTech": "Economics"
+	},
+	{
+		"name": "Market Interventionism",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Economic Policy'",
+			"Triggers a global alert upon completion",
 			"[+1]% [Production] from every ['Economic Building']",
 			"[-33]% [Gold] [in all cities]",
 			"[Gold] cost of purchasing items in cities [-25]%",
-			"[-25]% construction time for [All] improvements <when not at war>"
+			"Moves to new capital when capital changes"
 		],
-		"requiredTech": "Economics"
+		"requiredTech": "Telegram"
 	},
 	{
 		"name": "Free Market Focus",
-		"specialistSlots": {
-			"Merchant": 1
-		},
 		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"Destroyed when the city is captured",
 			"[+1]% [Gold] from every ['Political Building']",
-			"[-10]% maintenance cost for buildings [in all cities]",
+			"[-15]% maintenance cost for buildings [in all cities]",
 			"[+33]% [Gold] [in all cities]",
-			"[Gold] cost of purchasing items in cities [+33]%"
+			"[Gold] cost of purchasing items in cities [+33]%",
+			"Moves to new capital when capital changes"
 		],
-		"requiredTech": "Economics"
+		"requiredTech": "Telegram"
 	},
 	{
 		"name": "Corporatism Focus",
-		"specialistSlots": {
-			"Governor": 1
-		},
 		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"[+3 Gold] from all ['Light Industry'] buildings",
-			"[-2 Gold, +3 Happiness, +3 Culture] from all ['Economic Building'] buildings",
+			"[+2 Gold] from all ['Light Industry'] buildings",
+			"[-1 Gold, +1 Happiness, +1 Culture] from all ['Economic Building'] buildings",
 			"[+3 Production] from all ['Military Building'] buildings",
-			"Destroyed when the city is captured"
+			"Moves to new capital when capital changes"
 		],
-		"requiredTech": "Economics"
+		"requiredTech": "Telegram"
 	},
 	{
 		"name": "Militristic Economy",
-		"specialistSlots": {
-			"Governor": 1
-		},
 		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"Destroyed when the city is captured",
-			"[+100]% Production when constructing ['Standing Army'] units [in all cities]",
+			"Comment [[Call to Arms] no longer provides lasting downsides other than [Happiness] drain.]",
 			"[+100]% Production when constructing ['Military Building'] buildings [in all cities]",
 			"[+100]% Production when constructing ['Static Defense'] buildings [in all cities]",
-			"[+2 Happiness] [in annexed cities]"
+			"Moves to new capital when capital changes"
 		],
-		"requiredTech": "Economics"
+		"requiredTech": "Telegram"
+	},
+	{
+		"name": "Planned Economy",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Economic Policy'",
+			"Triggers a global alert upon completion",
+			"[Gold] cost of purchasing ['Expansion'] buildings [-50]%",
+			"[Gold] cost of purchasing ['Consolidation'] buildings [-50]%",
+			"[Gold] cost of purchasing ['Modernization'] buildings [-50]%",
+			"[+100]% Production when constructing ['Expansion'] buildings [in all cities connected to capital]",
+			"[+150]% Production when constructing ['Consolidation'] buildings [in all cities connected to capital]",
+			"[+200]% Production when constructing ['Modernization'] buildings [in all cities connected to capital]",
+			"[+1]% [Science] from every ['Heavy Industry']",
+			"[+1]% [Culture] from every ['Infrastructure']",
+			"Moves to new capital when capital changes"
+		],
+		"requiredTech": "Telegram"
 	},
 	{
 		"name": "Cooperative Economy",
-		"specialistSlots": {
-			"Governor": 1
-		},
 		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"[+1 Gold] from every specialist [in all cities]",
 			"[+1 Culture, +1 Production] from ['Agricultural Improvement'] tiles [in all cities]",
 			"[+1 Culture, +1 Production] from ['Water Improvement'] tiles [in all cities]",
 			"[+1 Culture, +1 Science] from ['Lumber Improvement'] tiles [in all cities]",
 			"[+1 Culture, +1 Food] from ['Extraction Improvement'] tiles [in all cities]",
-			"[+2 Science] from ['Policy Improvement'] tiles [in all cities]",
-			"[+33]% Production when constructing ['Light Industry'] buildings [in all cities]",
-			"Destroyed when the city is captured"
+			"Moves to new capital when capital changes"
 		],
-		"requiredTech": "Economics"
-	},
-	{
-		"name": "Planned Economy",
-		"specialistSlots": {
-			"Governor": 2
-		},
-		"isNationalWonder": true,
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"'Economic Policy'",
-			"Triggers a global alert upon completion",
-			"Destroyed when the city is captured",
-			"[+1]% [Production] from every ['Political Building']",
-			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital] <when not at war>",
-			"[+33]% Production when constructing ['Military Building'] buildings [in all cities connected to capital] <when not at war>",
-			"[+25]% Production when constructing ['Space Race Building'] buildings [in all cities connected to capital] <when not at war>",
-			"[+25]% Production when constructing [All] wonders [in all cities connected to capital] <when not at war>",
-			"[-33]% construction time for [All] improvements <when not at war>",
-			"[+100]% Production when constructing ['Military Building'] buildings [in all cities connected to capital] <when at war>",
-			"[+33]% Production when constructing [Military] units [in all cities connected to capital] <when at war>"
-		],
-		"requiredTech": "Economics"
+		"requiredTech": "Telegram"
 	},
 	{
 		"name": "Self-management Focus",
-		"specialistSlots": {
-			"Governor": 1
-		},
 		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"Destroyed when the city is captured",
-			"[-25]% maintenance on road & railroads",
-			"[Gold] cost of purchasing ['Levy Army'] units [-33]%",
-			"[+3 Science] per [3] social policies adopted",
 			"[+1 Science, +1 Culture, +3 Gold, +5 Production] per [10] population [in all cities]",
-			"[+33]% Production when constructing [Commune] buildings [in all cities]"
+			"[+33]% Production when constructing [Commune] buildings [in all cities]",
+			"Moves to new capital when capital changes"
 		],
-		"requiredTech": "Economics"
+		"requiredTech": "Telegram"
 	},
 	/// Special buildings
 	{
@@ -5234,7 +5247,7 @@
 	{
 		"name": "United Nations",
 		"isWonder": true,
-		"requiredTech": "Globalisation",
+		"requiredTech": "Globalization",
 		"uniques": [
 			"Triggers voting for the Diplomatic Victory",
 			"Only available <when [Diplomatic] Victory is enabled>",
@@ -5242,122 +5255,19 @@
 		],
 		"quote": "'More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that is why we have the United Nations.' - Kofi Annan"
 	},
-	///Starting maintainance
-	{
-		"name": "Medieval Era Start",
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Only available <if starting in the [Medieval era]>",
-			"Unbuildable",
-			"Unsellable",
-			"Provides [3] [Metal]",
-			"Provides [3] [Standing Army Maintainance]",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Renaissance Era Start",
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Only available <if starting in the [Renaissance era]>",
-			"Unbuildable",
-			"Unsellable",
-			"Provides [3] [Metal]",
-			"Provides [3] [Standing Army Maintainance]",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Imperial Era Start",
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Only available <if starting in the [Imperial era]>",
-			"Unbuildable",
-			"Unsellable",
-			"Provides [4] [Weapon Parts]",
-			"Provides [4] [Standing Army Maintainance]",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Industrial Era Start",
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Only available <if starting in the [Industrial era]>",
-			"Unbuildable",
-			"Unsellable",
-			"Provides [1] [Fuel]",
-			"Provides [5] [Weapon Parts]",
-			"Provides [5] [Standing Army Maintainance]",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Modern Era Start",
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Only available <if starting in the [Modern era]>",
-			"Unbuildable",
-			"Unsellable",
-			"Provides [2] [Fuel]",
-			"Provides [2] [Weapon Parts]",
-			"Provides [5] [Standing Army Maintainance]",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Atomic Era Start",
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Only available <if starting in the [Atomic era]>",
-			"Unbuildable",
-			"Unsellable",
-			"Provides [2] [Fuel]",
-			"Provides [2] [Weapon Parts]",
-			"Provides [5] [Standing Army Maintainance]",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Information Era Start",
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Only available <if starting in the [Information era]>",
-			"Unbuildable",
-			"Unsellable",
-			"Provides [2] [Fuel]",
-			"Provides [2] [Vehicle Parts]",
-			"Provides [2] [Weapon Parts]",
-			"Provides [5] [Standing Army Maintainance]",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Future Era Start",
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Only available <if starting in the [Future era]>",
-			"Unbuildable",
-			"Unsellable",
-			"Provides [5] [Fuel]",
-			"Provides [2] [Vehicle Parts]",
-			"Provides [2] [Weapon Parts]",
-			"Provides [5] [Standing Army Maintainance]",
-			"Moves to new capital when capital changes"
-		]
-	},
+
+	///'Outcome'
 	{
 		"name": "Failed Bourgeoisie Revolution",
 		"isNationalWonder": true,
 		"uniques": [
-			"Consumes [1] [Revolution Oppotunity]",
 			"Unbuildable",
 			"Unsellable",
+			"'Outcome'",
+			"Consumes [1] [Revolution Oppotunity]",
 			"Provides [2] [Noble Army Maintainance]",
 			"Provides [2] [Horse]",
 			"[+33]% Strength <for ['Noble Army'] units>",
-			"[-33]% [Culture] [in all cities] <for [10] turns>",
-			"[-33]% [Gold] [in all cities] <for [5] turns>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		],
@@ -5370,6 +5280,7 @@
 			"Unbuildable",
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
+			"'Outcome'",
 			"Provides [1] [Standing Army Maintainance]",
 			"[-25]% [Culture] [in all cities] <for [15] turns>",
 			"[-10]% [Gold] [in all cities] <for [15] turns>",
@@ -5386,6 +5297,7 @@
 			"Unbuildable",
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
+			"'Outcome'",
 			"Provides [2] [Standing Army Maintainance]",
 			"[Revolutionaries] units gain the [Hardened] promotion",
 			"[Revolutionaries] units gain the [Shock Doctrine] promotion",
@@ -5406,6 +5318,7 @@
 			"Unbuildable",
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
+			"'Outcome'",
 			"Provides [3] [Standing Army Maintainance]",
 			"[Revolutionaries] units gain the [Hardened] promotion",
 			"[Revolutionaries] units gain the [Shock Doctrine] promotion",
@@ -5414,8 +5327,6 @@
 			"[Revolutionaries] units gain the [Resourceful Army] promotion",
 			"[+10]% Strength <for ['Standing Army'] units>",
 			"[+10]% [Culture] [in all cities]",
-			"Rebel units may spawn <for [24] turns>",
-			"[-33]% [Gold] [in all cities] <for [10] turns>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		],
@@ -5428,12 +5339,10 @@
 			"Unbuildable",
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
+			"'Outcome'",
 			"Provides [3] [Mercenary Contract]",
 			"[+15]% Strength <for ['Mercenary Army'] units>",
 			"[+15]% Strength",
-			"[-25]% [Culture] [in all cities] <for [5] turns>",
-			"[-25]% [Culture] [in all cities] <for [10] turns>",
-			"[-33]% [Gold] [in all cities] <for [5] turns>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		],
@@ -5446,10 +5355,9 @@
 			"Unbuildable",
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
+			"'Outcome'",
 			"Provides [1] [Standing Army Maintainance]",
-			"[-25]% [Culture] [in all cities] <for [15] turns>",
-			"[-10]% [Gold] [in all cities] <for [15] turns>",
-			"[+15]% [Happiness] [in all cities]",
+			"[+8]% [Happiness] [in all cities]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		],
@@ -5462,6 +5370,7 @@
 			"Unbuildable",
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
+			"'Outcome'",
 			"Provides [3] [Standing Army Maintainance]",
 			"[Red Army Troop] units gain the [Hardened] promotion",
 			"[Red Army Troop] units gain the [Firepower Doctrine] promotion",
@@ -5469,12 +5378,8 @@
 			"[Red Army Troop] units gain the [Accuracy Doctrine] promotion",
 			"[Red Army Troop] units gain the [Stewardship] promotion",
 			"[Red Army Troop] units gain the [Centralised Command] promotion",
-			"[+1]% [Culture] from every ['Heavy Industry']",
-			"[+1]% [Culture] from every ['Light Industry']",
+			"Adopt [Nationalization]",
 			"[+10]% [Production] [in all cities]",
-			"Rebel units may spawn <for [10] turns>",
-			"[-33]% [Gold] [in all cities] <for [5] turns>",
-			"[-10]% [Food] [in all cities] <for [5] turns>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		],
@@ -5487,6 +5392,7 @@
 			"Unbuildable",
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
+			"'Outcome'",
 			"Provides [5] [Standing Army Maintainance]",
 			"[Red Army Troop] units gain the [Hardened] promotion",
 			"[Red Army Troop] units gain the [Firepower Doctrine] promotion",
@@ -5495,13 +5401,8 @@
 			"[Red Army Troop] units gain the [Centralised Command] promotion",
 			"[Red Army Troop] units gain the [Resourceful Army] promotion",
 			"[Red Army Troop] units gain the [Field Medic] promotion",
-			"[+25]% [Culture] [in all cities]",
-			"[+1]% [Production] from every ['Educational Building']",
-			"[+1]% [Production] from every ['Agricultural Building']",
-			"Rebel units may spawn <for [10] turns>",
-			"[-50]% [Culture] [in all cities] <for [8] turns>",
-			"[-33]% [Gold] [in all cities] <for [8] turns>",
-			"[-10]% [Food] [in all cities] <for [8] turns>",
+			"Adopt [Nationalization]",
+			"[+10]% [Culture] [in all cities]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		],
@@ -5514,12 +5415,9 @@
 			"Unbuildable",
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
+			"'Outcome'",
 			"Provides [3] [Mercenary Contract]",
 			"[+15]% Strength <for ['Mercenary Army'] units>",
-			"[+15]% Strength",
-			"[-25]% [Culture] [in all cities] <for [5] turns>",
-			"[-25]% [Culture] [in all cities] <for [10] turns>",
-			"[-33]% [Gold] [in all cities] <for [5] turns>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		],
@@ -5532,15 +5430,709 @@
 			"Unbuildable",
 			"Unsellable",
 			"Consumes [1] [Revolution Oppotunity]",
-			"[+50]% growth [in all cities]",
-			"Rebel units may spawn <for [15] turns>",
-			"[-50]% [Gold] [in all cities] <for [10] turns>",
-			"[-50]% [Culture] [in all cities] <for [10] turns>",
-			"[-25]% [Science] [in all cities] <for [10] turns>",
-			"[-10]% [Food] [in all cities] <for [10] turns>",
+			"'Outcome'",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		],
 		"hurryCostModifier": 0
+	},
+	{
+		"name": "Anti-Fascism Legacy",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"Consumes [1] [Revolution Oppotunity]",
+			"'Outcome'",
+			"[+8]% [Happiness] [in all cities]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		],
+		"hurryCostModifier": 0
+	},
+	///Government stuff
+	///State of affair
+	{
+		"name": "Harmony",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization State'",
+					"[+10]% growth [in all cities]",
+					"[+10]% [Gold] from Trade Routes",
+					"[+10]% [Culture] [in all cities]",
+					"Influence of all other civilizations with all city-states degrades [-25]% faster",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Peace",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization State'",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Struggle", 
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization State'",
+					"[-20]% [Gold] from Trade Routes",
+					"[-15]% [Culture] [in all cities]",
+					"[-15]% [Science] [in all cities]",
+					"[-10]% [Production] [in all cities]",
+					"[-5]% [Food] [in all cities]",
+					"[-10]% Strength <for [All] units>",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Strive",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization State'",
+					"[-33]% [Gold] from Trade Routes",
+					"[-25]% [Culture] [in all cities]",
+					"[-25]% [Science] [in all cities]",
+					"[-10]% [Food] [in all cities]",
+					"[-10]% [Production] [in all cities]",
+					"[-18]% Strength <for [All] units>",
+					"Rebel units may spawn",
+					"Cannot build [Settler] units",
+        			"Cannot build [Pioneer] units",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Anarchy",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization State'",
+					"Rebel units may spawn",
+					"[-100]% [Gold] from Trade Routes <before adopting [Anarchism]>",
+					"[-33]% [Culture] [in all cities] <before adopting [Anarchism]>",
+					"[-33]% [Science] [in all cities] <before adopting [Anarchism]>",
+					"[-25]% [Food] [in all cities] <before adopting [Anarchism]>",
+					"[-25]% [Production] [in all cities] <before adopting [Anarchism]>",
+					"[-25]% Strength <for [All] units> <before adopting [Anarchism]>",
+					"Cannot build [Settler] units <before adopting [Anarchism]>",
+        			"Cannot build [Pioneer] units <before adopting [Anarchism]>",
+					"Cannot build [Worker] units <before adopting [Anarchism]>",
+        			"Cannot build [Mechanised Worker] units <before adopting [Anarchism]>",
+					"Cannot build [Galley Work Ship] units <before adopting [Anarchism]>",
+        			"Cannot build [Modern Work Ship] units <before adopting [Anarchism]>",
+
+					"[-15]% [Gold] from Trade Routes <after adopting [Anarchism]>",
+					"[+17]% [Culture] [in all cities] <after adopting [Anarchism]>",
+					"[+17]% [Science] [in all cities] <after adopting [Anarchism]>",
+					"[-5]% [Production] [in all cities] <after adopting [Anarchism]>",
+					"[-10]% Strength <for [All] units> <after adopting [Anarchism]> <before adopting [Militia Army]>",
+
+                    "Moves to new capital when capital changes"]
+	},
+	///Pre-Atomic Era Diplomacy
+	{
+		"name": "Unified",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"Consumes [1] [Influence]",
+					"Remove ['Divided'] [in all cities]",
+					"Remove ['Agreement'] [in all cities]",
+					"Enables Research agreements",
+					"Enables Open Borders agreements",
+					"Enables Defensive Pacts",
+					"Empire enters golden age <if [Mausoleum of Unifier] is constructed>",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Cultural Exchange",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Agreement'",
+					"Consumes [1] [Influence]",
+					"Enables Research agreements",
+					"[-10]% Culture cost of adopting new Policies",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Military Alliance",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Agreement'",
+					"Enables Defensive Pacts",
+					"Enables Open Borders agreements",
+					"[+25]% Production when constructing [Military] units [in all cities]",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Trade Alliance",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Agreement'",
+					"Consumes [1] [Influence]",
+					"[+18]% Production when constructing ['Infrastructure'] buildings [in all cities]",
+					"[-25]% maintenance on road & railroads",
+                    "Moves to new capital when capital changes"]
+	},
+	///Atomic Era
+		{
+		"name": "Reseach Exchange",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Agreement'",
+					"Consumes [1] [Influence]",
+					"Enables Research agreements",
+					"[-15]% Culture cost of adopting new Policies",
+					"Science gained from research agreements [+50]%",
+					"[+50]% Yield from every [Great Improvement]",
+                    "Moves to new capital when capital changes"]
+	},
+		{
+		"name": "Collective Security",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Agreement'",
+					"Enables Defensive Pacts",
+					"Enables Open Borders agreements",
+					"[+25]% Production when constructing [Military] units [in all cities]",
+                    "Moves to new capital when capital changes"]
+	},
+			{
+		"name": "Economic Community",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Agreement'",
+					"Consumes [1] [Influence]",
+					"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities]",
+					"[-50]% maintenance on road & railroads",
+                    "Moves to new capital when capital changes"]
+	},
+	///Neolithic
+	{
+		"name": "Tribes",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'Divided'",
+					"Provides [1] [Influence]",
+					"Provides [1] [Standing Army Maintainance]",
+					"[-3]% Culture cost of adopting new Policies",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Tribal Union",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [2] [Influence]",
+					"Provides [1] [Standing Army Maintainance]",
+					"Provides [1] [Noble Army Maintainance]",
+					"[+15]% growth [in all cities]",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Nomadic Tribes",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'Divided'",
+					"Provides [1] [Influence]",
+					"Provides [2] [Standing Army Maintainance]",
+					"[-10]% Culture cost of adopting new Policies",
+                    "Moves to new capital when capital changes"]
+	},
+	///Ancient
+	{
+		"name": "City States",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'Divided'",
+					"Provides [1] [Influence]",
+					"Provides [1] [Standing Army Maintainance]",
+					"Provides [1] [Noble Army Maintainance]",
+					"[-5]% Culture cost of adopting new Policies",
+					"[20]% Strength for cities",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Early Empire",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [1] [Influence]",
+					"Provides [1] [Standing Army Maintainance]",
+					"Provides [2] [Noble Army Maintainance]",
+					"[+10]% growth [in all cities]",
+					"[+15]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+	///Classical
+	{
+		"name": "Feudal Empire",
+		"isNationalWonder": true, 
+	    "uniques": ["Unbuildable", 
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [1] [Influence]",
+					"Provides [2] [Standing Army Maintainance]",
+					"Provides [3] [Noble Army Maintainance]",
+					"[+2 Culture] from every [Governor]",
+					"New ['Noble Army'] units start with [25] XP [in all cities]",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"],
+	},
+	{
+		"name": "Centralized Empire",
+		"isNationalWonder": true, 
+	    "uniques": ["Unbuildable", 
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [1] [Influence]",
+					"Provides [2] [Standing Army Maintainance]",
+					"Provides [2] [Noble Army Maintainance]",
+					"[+1 Production] from every [Governor]",
+					"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Sucessor States",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'Divided'",
+					"Provides [1] [Influence]",
+					"Provides [2] [Standing Army Maintainance]",
+					"Provides [2] [Noble Army Maintainance]",
+					"[+5]% growth [in all cities]",
+					"[-7]% Culture cost of adopting new Policies",
+					"[10]% Strength for cities",
+                    "Moves to new capital when capital changes"]
+	},
+	///Medival
+	{
+		"name": "Kingdoms",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'Divided'",
+					"Provides [1] [Influence]",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [2] [Noble Army Maintainance]",
+					"[-7]% Culture cost of adopting new Policies",
+					"Free [Knight] appears",
+					"[20]% Strength for cities",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Empire of Electors",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [2] [Influence]",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [5] [Noble Army Maintainance]",
+					"[+20]% growth [in all cities]",
+					"[20]% Strength for cities",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Celestial Empire",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [1] [Influence]",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [2] [Noble Army Maintainance]",
+					"[+1 Production] from every [Governor]",
+					"[+10]% [Science] [in all cities]",
+					"Gifts of Gold to City-States generate [25]% more Influence",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Theocratic Empire",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [1] [Influence]",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [3] [Noble Army Maintainance]",
+					"[Faith] cost of purchasing [Faith] buildings [-23]%",
+					"[+1 Faith] from every ['Political Building']",
+					"Comment [Enable [Great Prophet] to give free policy after your religion is enhanced]",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	}
+	///Renaissance
+	{
+		"name": "Colonial Empires",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					"Provides [2] [Influence]",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [3] [Noble Army Maintainance]",
+					"[Gold] cost of purchasing [Civilian] units [-33]%",
+					"Gain a free [Martine Expansion] [in all cities] <in [Coastal] cities>",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Autocratic Empire",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [1] [Influence]",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [4] [Noble Army Maintainance]",
+					"[+1 Production] from ['Extraction Improvement'] tiles [in all cities]",
+					"New [{'Standing Army'} {Land}] units start with [15] XP [in all cities]",
+					"Gain a free [Military Expansion] [in all non-occupied cities]",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+	///Imperial
+	{
+		"name": "Republics",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'Divided'",
+					"Provides [1] [Influence]",
+					"Provides [4] [Standing Army Maintainance]",
+					"Provides [1] [Noble Army Maintainance]",
+					"[-13]% Culture cost of adopting new Policies",
+					"[30]% Strength for cities",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Federation",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [1] [Influence]",
+					"Provides [5] [Standing Army Maintainance]",
+					"[+20]% growth [in all cities]",
+					"[-18]% construction time for [All] improvements <when not at war>",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "United States",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [1] [Influence]",
+					"Provides [4] [Standing Army Maintainance]",
+					"[Gold] cost of purchasing [Civilian] units [-17]%",
+					"May buy [Great Engineer] units with [Gold] [in all cities]",
+					"Comment [Unique Unit: [State Millitia Musketeer] and [State Millitia Rifleman], which are garrison units..]",
+					"Comment [Cannot Enter [Harmony] State.]",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Personal Union",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [1] [Influence]",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [3] [Noble Army Maintainance]",
+					"[+2 Culture, +1 Happiness] from every [Governor]",
+					"[+100]% Production when constructing ['Consolidation'] buildings [in all cities]",
+					"Comment [Unique Ability: Commonwealth, You can still build ['Agreements'] via events.]",
+					"Comment [If you ever have your [Influence] go down into 5 or below, You will lose this['Civilization Form'].]",
+					"Gain a free [Republics] [in capital] <for [1] turns> <when below [5] [Influence]>",
+					"Remove [Unified] [in all cities] <when below [5] [Influence]>",
+					"Remove [Personal Union] [in all cities] <when below [5] [Influence]>",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+	///Modern
+	{
+		"name": "Fascist Autocracy",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [1] [Influence]",
+					"Provides [4] [Standing Army Maintainance]",
+					"Provides [3] [Protection Squadron Volunteer]",
+					"New [{'Standing Army'} {Land}] units start with [10] XP [in all cities]",
+					"[+50]% Production when constructing [non-[Civilian]] units [in all cities]",
+					"[+3 Happiness] [in annexed cities]",
+					"Comment [Unique Building: [Recuitment Center]. Replaces [Mobilization Department] and acts as its upgrade. Increases the limit for [Protection Squardron]s.]",
+					"Comment [Cannot pursue any victory condition other than Domination... Unless?]",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Socialist Republics",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'United'",
+					
+					"Provides [1] [Influence]",
+					"Provides [4] [Standing Army Maintainance]",
+					"[+1]% [Production] from every ['Political Building']",
+					"[-33]% construction time for [All] improvements <when not at war>",
+					"[+25]% Production when constructing [All] wonders [in all cities connected to capital] <when not at war>",
+					"Comment [Unique Ability: Socialist Education. Can enfact a new policy. To increase the [Science] and [Culture] gain at cost of[Gold].]",
+					"Comment [If you ever have your [Happiness] go down into below 20, you will lose this['Civilization Form'].]",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Anarchist Alliances",
+	    "uniques": ["Limited to [1] per Civilization",
+					"Unbuildable",
+                    "Unsellable",
+					"'Civilization Form'",
+					"'Divided'",
+					"Provides [1] [Influence]",
+					"Provides [4] [Standing Army Maintainance]",
+					"[-50]% Culture cost of adopting new Policies",
+					"Comment [You are permanently under [Anarchy] status, but its negative effects has been gutted.]",
+					"Triggers a global alert upon completion",
+                    "Moves to new capital when capital changes"]
+	},
+		///Starting maintainance
+	{
+		"name": "Neolithic Era Start",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Only available <if starting in the [Neolithic era]>",
+			"Unbuildable",
+			"Unsellable",
+			"Gain a free [Peace] [in capital] <for [1] turns>",
+			"Gain a free [Tribes] [in capital] <for [1] turns>",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Ancient Era Start",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Only available <if starting in the [Ancient era]>",
+			"Unbuildable",
+			"Unsellable",
+			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [City States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [City States] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Tribes] [in capital] <for [1] turns> <for [Europa] Civilizations>",
+			"Gain a free [Early Empire] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Classical Era Start",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Only available <if starting in the [Medieval era]>",
+			"Unbuildable",
+			"Unsellable",
+			"Gain a free [Peace] [in capital] <for [1] turns>",
+			"Gain a free [Sucessor States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Sucessor States] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Early Empire] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [Europa] Civilizations>",
+			"Gain a free [Centralized Empire] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Medieval Era Start",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Only available <if starting in the [Medieval era]>",
+			"Unbuildable",
+			"Unsellable",
+			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Centralized Empire] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Feudal Empire] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Centralized Empire] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [Europa] Civilizations>",
+			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Renaissance Era Start",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Only available <if starting in the [Renaissance era]>",
+			"Unbuildable",
+			"Unsellable",
+			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Theocratic Empire] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Celestial Empire] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Empire of Electors] [in capital] <for [1] turns> <for [Europa] Civilizations>",
+			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Imperial Era Start",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Only available <if starting in the [Imperial era]>",
+			"Unbuildable",
+			"Unsellable",
+			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Colonial Empires] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Theocratic Empire] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Celestial Empire] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Colonial Empires] [in capital] <for [1] turns> <for [Europa] Civilizations>",
+			"Gain a free [Colonial Empires] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Industrial Era Start",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Only available <if starting in the [Industrial era]>",
+			"Unbuildable",
+			"Unsellable",
+			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Celestial Empire] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Personal Union] [in capital] <for [1] turns> <for [Europa] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Provides [1] [Fuel]",
+			"Provides [1] [Standing Army Maintainance]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Modern Era Start",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Only available <if starting in the [Modern era]>",
+			"Unbuildable",
+			"Unsellable",
+			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Europa] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Provides [2] [Fuel]",
+			"Provides [1] [Standing Army Maintainance]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Atomic Era Start",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Only available <if starting in the [Atomic era]>",
+			"Unbuildable",
+			"Unsellable",
+			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Socialist Republics] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Europa] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Provides [2] [Fuel]",
+			"Provides [1] [Standing Army Maintainance]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Information Era Start",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Only available <if starting in the [Information era]>",
+			"Unbuildable",
+			"Unsellable",
+			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Socialist Republics] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Europa] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Provides [2] [Fuel]",
+			"Provides [1] [Standing Army Maintainance]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Future Era Start",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Only available <if starting in the [Future era]>",
+			"Unbuildable",
+			"Unsellable",
+			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Socialist Republics] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Federation] [in capital] <for [1] turns> <for [Europa] Civilizations>",
+			"Provides [5] [Fuel]",
+			"Provides [1] [Standing Army Maintainance]",
+			"Moves to new capital when capital changes"
+		]
 	}
 ]

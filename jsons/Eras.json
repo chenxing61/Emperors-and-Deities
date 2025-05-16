@@ -5,7 +5,7 @@
         "startingSettlerCount": 1, // These values should not include the values given in Difficulties.json
         "startingWorkerCount": 0,
         "startingMilitaryUnitCount": 1,
-        "startingMilitaryUnit": "Primal Warrior",
+        "startingMilitaryUnit": "Hunter Gatherer",
         "settlerPopulation": 1,
         "baseUnitBuyCost": 200,
         "embarkDefense": 3,
@@ -22,8 +22,8 @@
         "researchAgreementCost": 150,
         "startingSettlerCount": 1, // These values should not include the values given in Difficulties.json
         "startingWorkerCount": 1,
-        "startingMilitaryUnitCount": 1,
-        "startingMilitaryUnit": "Brute Warrior",
+        "startingMilitaryUnitCount": 2,
+        "startingMilitaryUnit": "Hunter Gatherer",
         "startingCulture": 150,
         "settlerPopulation": 1,
         "baseUnitBuyCost": 200,
@@ -42,7 +42,7 @@
         "startingSettlerCount": 1,
         "startingWorkerCount": 1,
         "startingMilitaryUnitCount": 2,
-        "startingMilitaryUnit": "Spearman",
+        "startingMilitaryUnit": "Early Swordsman",
         "startingGold": 50,
         "startingCulture": 300,
         "settlerPopulation": 1,
@@ -71,6 +71,7 @@
         // But where is the modularity? The excluding of very specific wonders? That is no fun.
         // So we just write down the entire long list (sorted by era!) every time instead.
         "startingObsoleteWonders": [],
+        "uniques":["Every major Civilization gains a spy once a civilization enters this era"],
         "baseUnitBuyCost": 200,
         "embarkDefense": 6,
         "startPercent": 25,
@@ -197,7 +198,7 @@
             "Civil Consolidation",
             "Education Expansion",
             "Cultural Expansion",
-            "Civil Modernisation",
+            "Civil Modernization",
             "Industrial Complex Expansion"
         ],
         "startingObsoleteWonders": [],
@@ -237,9 +238,9 @@
             "Civil Consolidation",
             "Education Expansion",
             "Cultural Expansion",
-            "Civil Modernisation",
+            "Civil Modernization",
             "Industrial Complex Expansion",
-            "Infrastructure Modernisation"
+            "Infrastructure Modernization"
         ],
         "startingObsoleteWonders": [],
         "baseUnitBuyCost": 800,
@@ -278,9 +279,9 @@
             "Civil Consolidation",
             "Education Expansion",
             "Cultural Expansion",
-            "Civil Modernisation",
+            "Civil Modernization",
             "Industrial Complex Expansion",
-            "Infrastructure Modernisation"
+            "Infrastructure Modernization"
         ],
         "startingObsoleteWonders": [],
         "baseUnitBuyCost": 1000,
@@ -321,9 +322,9 @@
             "Civil Consolidation",
             "Education Expansion",
             "Cultural Expansion",
-            "Civil Modernisation",
+            "Civil Modernization",
             "Industrial Complex Expansion",
-            "Infrastructure Modernisation"
+            "Infrastructure Modernization"
         ],
         "startingObsoleteWonders": [],
         "baseUnitBuyCost": 1000,

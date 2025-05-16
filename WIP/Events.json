@@ -1,38 +1,113 @@
 [
     ///Natural Disaster Events
-    ///Civilisation Events
+    ///Civilization Events
     {
         "name": "Shift in Politic",
-        "text": "The structure of our civilisation changes to adapt to the time. What path shall we partake?",
+        "text": "The structure of our civilization changes to adapt to the time. What path shall we partake?",
         "choices": [
             {
-                "text": "City States",
+                "text": "No significant changes",
+                "uniques": [
+                    "Comment [We are still a bunch of countries prone to infighting and invasion, but what we do have is countless oppotunities.]",
+                ]
+            },
+            {
+                "text": "We are able to unify ourselves!",
+                "uniques": [
+                    "Comment [The unification has been accomplished by the largest fish in the pond. We are now an Empire!]",
+                ]
+            },
+            {
+                "text": "The empire of the past crumbles...",
+                "uniques": [
+                    "Comment [Our unification cannot last onto another stage of the world. Maybe its ultimately for the better, as it was stale.]",
+                ]
+            },
+            {
+                "text": "Our empire lasts onto another era!",
+                "uniques": [
+                    "Comment [Our empire survives... Maybe we can reform it continuesly unto forever.]",
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Reformation of the Empire",
+        "text": "If an empire is stale in upward mobility, political reform and other essential aspect, it would fall behind, and crumble to ash.",
+        "choices": [
+            {
+                "text": "We can use our new formed policy.",
+                "uniques": [
+                    "Comment [We are still a bunch of countries prone to infighting and invasion, but what we do have is countless oppotunities.]",
+                ]
+            },
+            {
+                "text": "Our most recent interests shall spearhead it",
+                "uniques": [
+                    "Comment [The unification has been accomplished by the largest fish in the pond. We are now an Empire!]",
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Stablising our side of the globe",
+        "text": "The structure of our civilization changes to adapt to the time. What path shall we partake?",
+        "choices": [
+            {
+                "text": "We must make haste before situation gets any worse",
+                "uniques": [
+                ]
+            },
+            {
+                "text": "Ruling a country requires patience and subtlety",
+                "uniques": [
+                ]
+            },
+            {
+                "text": "Can we wait?",
+                "uniques": [
+                ]
+            },
+        ]
+    },
+    {
+        "name": "Building Alliance",
+        "text": "Our civilisation consists of multiple countries. If they do not unify themselves. We are at the danger of being foods on a plate.",
+        "choices": [
+            {
+                "text": "[Millitary Alliance] is the most practical",
                 "uniques": [
                     "Comment [The Great Commander has inspired countless people. His retirement is well deserved. He will be idolised.]",
                 ]
             },
             {
-                "text": "Early Empire",
+                "text": "[Cultural Exchange] is the most elegant",
                 "uniques": [
                     "Comment [The Great Commander has inspired countless people. His retirement is well deserved. He will be idolised.]",
                 ]
             },
             {
-                "text": "Kingdoms",
-                "uniques": [
-                    "Comment [Lets just say that there are no perfect man. It would seems like power struggle and other caused this General to step down. Maybe he was too greedy? Too proud of himself? The history can't give a clear answer.]",
-                ]
-            },
-            {
-                "text": "Large Empires",
+                "text": "[Trade Alliance] is the most attractive",
                 "uniques": [
                     "Comment [The Great Commander has inspired countless people. His retirement is well deserved. He will be idolised.]",
                 ]
             },
             {
-                "text": "Republics",
+                "text": "[Collective Security] secures our footing",
                 "uniques": [
-                    "Comment [Lets just say that there are no perfect man. It would seems like power struggle and other caused this General to step down. Maybe he was too greedy? Too proud of himself? The history can't give a clear answer.]",
+                    "Comment [The Great Commander has inspired countless people. His retirement is well deserved. He will be idolised.]",
+                ]
+            },
+            {
+                "text": "[Reseach Exchange] secures our progess",
+                "uniques": [
+                    "Comment [The Great Commander has inspired countless people. His retirement is well deserved. He will be idolised.]",
+                ]
+            },
+            {
+                "text": "[Economic Community] secures our interest",
+                "uniques": [
+                    "Comment [The Great Commander has inspired countless people. His retirement is well deserved. He will be idolised.]",
                 ]
             }
         ]
@@ -90,7 +165,7 @@
             {
                 "text": "Both negotiations and conflicts are happening...",
                 "uniques": [
-                    "Comment [The revolution...is chaotic. Some cities have peacefully transitioned their power to the new ruling class, while some starts to infight violently. Rebel unit will spawn for 8 turns, but there are overall less side effects. All Revolutionaries gain some basic promotions and the 'Standing Army' gains 5% strength bonus permanently.]",
+                    "Comment [The revolution...is chaotic. Some cities have peacefully transitioned their power to the new ruling class, while some starts to infight violently. Our civilization has entered a state of struggle. All Revolutionaries gain some basic promotions and the 'Standing Army' gains 5% strength bonus permanently.]",
                     "Gain a free [Chaotic Bourgeoisie Revolution] [in capital]",
                     "[2] free [Revolutionaries] units appear"
                 ]
@@ -98,7 +173,7 @@
             {
                 "text": "Clean the parasites!",
                 "uniques": [
-                    "Comment [The revolution violently shaked the basis of our society, but our society is able to leap toward progressiveness! Rebel unit will spawn for 24 turns and the economy will suffer for a while, but the will of the revolution is well preserved and people are more accepting to societal changes. All Revolutionaries gain many promotions and the 'Standing Army' gains 10% strength bonus permanently.]",
+                    "Comment [The revolution violently shaked the basis of our society, but our society is able to leap toward progressiveness! the civilization enters a state of strive, but the will of the revolution is well preserved and people are more accepting to societal changes. All Revolutionaries gain many promotions and the 'Standing Army' gains 10% strength bonus permanently.]",
                     "Gain a free [Violent Bourgeoisie Revolution] [in capital]",
                     "[3] free [Revolutionaries] units appear"
                 ]
@@ -107,7 +182,7 @@
     },
     {
         "name": "The Legacy We Inhereited.",
-        "text": "Through out the history of our grand civilisation, what aspect should guide us to the future?",
+        "text": "Through out the history of our grand civilization, what aspect should guide us to the future?",
         "choices": [
             {
                 "text": "We have no history!",
@@ -144,7 +219,7 @@
             {
                 "text": "The Gods",
                 "uniques": [
-                    "Comment [The polytheistic root of our faith leads us to splendor, we are the most blessed out of all civilisation in the world.]",
+                    "Comment [The polytheistic root of our faith leads us to splendor, we are the most blessed out of all civilization in the world.]",
                     "Only available <after adopting [Polytheism]>",
                     "Gain a free [Polytheistic Root] [in capital]"
                 ]
@@ -169,7 +244,7 @@
             {
                 "text": "Our wisdom",
                 "uniques": [
-                    "Comment [Our civilisation were once master of philosophy. They lived with great wisdom and we shall never give it up.]",
+                    "Comment [Our civilization were once master of philosophy. They lived with great wisdom and we shall never give it up.]",
                     "Only available <after adopting [Scholarship]>",
                     "Gain a free [Ancient Wisdom] [in capital]"
                 ]
@@ -177,7 +252,7 @@
             {
                 "text": "Our honor",
                 "uniques": [
-                    "Comment [Our civilisation were once the most honored warriors. They died with honor and we shall never give it up.]",
+                    "Comment [Our civilization were once the most honored warriors. They died with honor and we shall never give it up.]",
                     "Only available <after adopting [Militant]>",
                     "Gain a free [Ancient Honor] [in capital]",
                     "Free [Great Commander] appears"
@@ -186,7 +261,7 @@
             {
                 "text": "Our wealth",
                 "uniques": [
-                    "Comment [Our civilisation were once the smartest traders. They left us with all the capital and insights so that we may stay flourished]",
+                    "Comment [Our civilization were once the smartest traders. They left us with all the capital and insights so that we may stay flourished]",
                     "Only available <after adopting [Plutocracy]>",
                     "Gain a free [Ancient Wealth] [in capital]"
                 ]
@@ -211,7 +286,7 @@
             {
                 "text": "Our divinity",
                 "uniques": [
-                    "Comment [Our civilisation has engraved our faith into everything, we are reaching for ultimate goals.]",
+                    "Comment [Our civilization has engraved our faith into everything, we are reaching for ultimate goals.]",
                     "Only available <after adopting [Theocracy]>",
                     "Gain a free [Theocracy Asended] [in capital]"
                 ]
@@ -269,7 +344,7 @@
             {
                 "text": "Workers, Farmers, Soldiers, Students, all shall be united to bring down the capitalists!",
                 "uniques": [
-                    "Comment [Compare to a worker's revolution, this revolution is a combined effort of all proletariats alike, althought that makes the process of revolution much faster, but the organisation of the new country is much more complicated. Culture ,gold and food production takes a bigger hit, but 'Educational Buildings' and 'Agricultural Building' provides production bonus and a culture boost is applied to all cities. Newly born red army specialises into command structure. Remaining reactionary revolt continues for 10 turns.]",
+                    "Comment [Compare to a worker's revolution, this revolution is a combined effort of all proletariats alike, althought that makes the process of revolution much faster, but the organization of the new country is much more complicated. Culture ,gold and food production takes a bigger hit, but 'Educational Buildings' and 'Agricultural Building' provides production bonus and a culture boost is applied to all cities. Newly born red army specialises into command structure. Remaining reactionary revolt continues for 10 turns.]",
                     "[5] free [Red Army Troop] units appear",
                     "Gain a free [United Socialist Revolution] [in capital]"
                 ]

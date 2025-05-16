@@ -1,134 +1,24 @@
 ///Government stuff
 [
-	///Routes under ideology
-	{
-		"name": "Market Interventionism",
-		"isNationalWonder": true,
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"Triggers a global alert upon completion",
-			"Destroyed when the city is captured",
-			"[+1]% [Production] from every ['Economic Building']",
-			"[-33]% [Gold] [in all cities]",
-			"[Gold] cost of purchasing items in cities [-25]%",
-			"[-25]% construction time for [All] improvements <when not at war>"
-		],
-		"requiredTech": "Economics"
-	},
-	{
-		"name": "Free Market Focus",
-		"isNationalWonder": true,
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"Triggers a global alert upon completion",
-			"Destroyed when the city is captured",
-			"[+1]% [Gold] from every ['Political Building']",
-			"[-10]% maintenance cost for buildings [in all cities]",
-			"[+33]% [Gold] [in all cities]",
-			"[Gold] cost of purchasing items in cities [+33]%"
-		],
-		"requiredTech": "Economics"
-	},
-	{
-		"name": "Corporatism Focus",
-		"isNationalWonder": true,
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"Triggers a global alert upon completion",
-			"[+3 Gold] from all ['Light Industry'] buildings",
-			"[-2 Gold, +3 Happiness, +3 Culture] from all ['Economic Building'] buildings",
-			"[+3 Production] from all ['Military Building'] buildings",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Economics"
-	},
-	{
-		"name": "Militristic Economy",
-		"isNationalWonder": true,
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"Triggers a global alert upon completion",
-			"Destroyed when the city is captured",
-			"[+100]% Production when constructing ['Standing Army'] units [in all cities]",
-			"[+100]% Production when constructing ['Military Building'] buildings [in all cities]",
-			"[+100]% Production when constructing ['Static Defense'] buildings [in all cities]",
-			"[+2 Happiness] [in annexed cities]"
-		],
-		"requiredTech": "Economics"
-	},
-	{
-		"name": "Cooperative Economy",
-		"isNationalWonder": true,
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"Triggers a global alert upon completion",
-			"[+1 Gold] from every specialist [in all cities]",
-			"[+1 Culture, +1 Production] from ['Agricultural Improvement'] tiles [in all cities]",
-			"[+1 Culture, +1 Production] from ['Water Improvement'] tiles [in all cities]",
-			"[+1 Culture, +1 Science] from ['Lumber Improvement'] tiles [in all cities]",
-			"[+1 Culture, +1 Food] from ['Extraction Improvement'] tiles [in all cities]",
-			"[+2 Science] from ['Policy Improvement'] tiles [in all cities]",
-			"[+33]% Production when constructing ['Light Industry'] buildings [in all cities]",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Economics"
-	},
-	{
-		"name": "Planned Economy",
-		"isNationalWonder": true,
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"Triggers a global alert upon completion",
-			"Destroyed when the city is captured",
-			"[+1]% [Production] from every ['Political Building']",
-			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital] <when not at war>",
-			"[+33]% Production when constructing ['Military Building'] buildings [in all cities connected to capital] <when not at war>",
-			"[+25]% Production when constructing ['Space Race Building'] buildings [in all cities connected to capital] <when not at war>",
-			"[+25]% Production when constructing [All] wonders [in all cities connected to capital] <when not at war>",
-			"[-33]% construction time for [All] improvements <when not at war>",
-			"[+100]% Production when constructing ['Military Building'] buildings [in all cities connected to capital] <when at war>",
-			"[+33]% Production when constructing [Military] units [in all cities connected to capital] <when at war>"
-		],
-		"requiredTech": "Economics"
-	},
-	{
-		"name": "Self-management Focus",
-		"isNationalWonder": true,
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"Triggers a global alert upon completion",
-			"Destroyed when the city is captured",
-			"[-25]% maintenance on road & railroads",
-			"[Gold] cost of purchasing ['Levy Army'] units [-33]%",
-			"[+3 Science] per [3] social policies adopted",
-			"[+1 Science, +1 Culture, +3 Gold, +5 Production] per [10] population [in all cities]",
-			"[+33]% Production when constructing [Commune] buildings [in all cities]"
-		],
-		"requiredTech": "Economics"
-	},
 	///State of affair
 	{
 		"name": "Harmony",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation State'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization State'",
+					"[+10]% growth [in all cities]",
+					"[+10]% [Gold] from Trade Routes",
+					"[+5]% [Culture] [in all cities]",
+					Influence of all other civilizations with all city-states degrades [-25]% faster
                     "Moves to new capital when capital changes"]
 	},
 	{
-		"name": "Strive",
+		"name": "Peace",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation State'",
+					"'Civilization State'",
                     "Moves to new capital when capital changes"]
 	},
 	{
@@ -136,16 +26,71 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation State'",
+					"'Civilization State'",
+					"[-20]% [Gold] from Trade Routes",
+					"[-10]% [Culture] [in all cities]",
+					"[-10]% [Science] [in all cities]",
+					"[-10]% [Production] [in all cities]",
+					"[-5]% [Food] [in all cities]",
+					"[-5]% Strength <for [All] units>",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Strive",
+		"isNationalWonder": true, 
+	    "uniques": ["Unbuildable",
+                    "Unsellable",
+					"'Civilization State'",
+					"[-33]% [Gold] from Trade Routes",
+					"[-25]% [Culture] [in all cities]",
+					"[-25]% [Science] [in all cities]",
+					"[-10]% [Food] [in all cities]",
+					"[-10]% [Production] [in all cities]",
+					"[-10]% Strength <for [All] units>",
+					"Rebel units may spawn",
+					"Cannot build [Settler] units",
+        			"Cannot build [Pioneer] units",
+                    "Moves to new capital when capital changes"]
+	},
+	{
+		"name": "Anarchy",
+		"isNationalWonder": true, 
+	    "uniques": ["Unbuildable",
+                    "Unsellable",
+					"'Civilization State'",
+					"[-100]% [Gold] from Trade Routes",
+					"[-33]% [Culture] [in all cities]",
+					"[-33]% [Science] [in all cities]",
+					"[-25]% [Food] [in all cities]",
+					"[-25]% [Production] [in all cities]",
+					"[-20]% Strength <for [All] units>",
+					"Rebel units may spawn",
+					"Cannot build [Settler] units",
+        			"Cannot build [Pioneer] units",
+					"Cannot build [Worker] units",
+        			"Cannot build [Mechanised Worker] units",
+					"Cannot build [Galley Work Ship] units",
+        			"Cannot build [Modern Work Ship] units",
                     "Moves to new capital when capital changes"]
 	},
 	///Pre-Atomic Era Diplomacy
+	{
+		"name": "Unified",
+		"isNationalWonder": true, 
+	    "uniques": ["Unbuildable",
+                    "Unsellable",
+					"Enables Research agreements",
+					"Enables Open Borders agreements",
+					"Enables Defensive Pacts",
+                    "Moves to new capital when capital changes"]
+	},
 	{
 		"name": "Cultral Exchange",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
 					"'Agreement'",
+					"Enables Research agreements",
 					"[-10]% Culture cost of adopting new Policies",
                     "Moves to new capital when capital changes"]
 	},
@@ -156,7 +101,8 @@
                     "Unsellable",
 					"'Agreement'",
 					"Enables Defensive Pacts",
-					"[-10]% Culture cost of adopting new Policies",
+					"Enables Open Borders agreements",
+					"[+25]% Production when constructing [Military] units [in all cities]",
                     "Moves to new capital when capital changes"]
 	},
 	{
@@ -165,7 +111,8 @@
 	    "uniques": ["Unbuildable",
                     "Unsellable",
 					"'Agreement'",
-					"[-10]% Culture cost of adopting new Policies",
+					"[+5]% [Gold] from Trade Routes",
+					"[-25]% maintenance on road & railroads",
                     "Moves to new capital when capital changes"]
 	},
 	///Atomic Era
@@ -175,7 +122,10 @@
 	    "uniques": ["Unbuildable",
                     "Unsellable",
 					"'Agreement'",
-					"[-10]% Culture cost of adopting new Policies",
+					"Enables Research agreements",
+					"[-15]% Culture cost of adopting new Policies",
+					Science gained from research agreements [+50]%
+					"[+50]% Yield from every [Great Improvement]"
                     "Moves to new capital when capital changes"]
 	},
 		{
@@ -185,7 +135,8 @@
                     "Unsellable",
 					"'Agreement'",
 					"Enables Defensive Pacts",
-					"[-10]% Culture cost of adopting new Policies",
+					"Enables Open Borders agreements",
+					"[+25]% Production when constructing [Military] units [in all cities]",
                     "Moves to new capital when capital changes"]
 	},
 			{
@@ -194,7 +145,8 @@
 	    "uniques": ["Unbuildable",
                     "Unsellable",
 					"'Agreement'",
-					"[-10]% Culture cost of adopting new Policies",
+					"[+20]% [Gold] from Trade Routes",
+					"[-50]% maintenance on road & railroads",
                     "Moves to new capital when capital changes"]
 	},
 	///Neolithic
@@ -203,9 +155,8 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"Provides [2] [Standing Army Maintainance]",
-					"Provides [1] [Noble Army Maintainance]",
+					"'Civilization Form'",
+					"Provides [1] [Standing Army Maintainance]",
 					"[-10]% Culture cost of adopting new Policies",
                     "Moves to new capital when capital changes"]
 	},
@@ -214,10 +165,10 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"Provides [3] [Standing Army Maintainance]",
-					"Provides [2] [Noble Army Maintainance]",
-					"Enables Defensive Pacts",
+					"'Civilization Form'",
+					"Provides [1] [Standing Army Maintainance]",
+					"Provides [1] [Noble Army Maintainance]",
+					"[+15]% growth [in all cities]",
                     "Moves to new capital when capital changes"]
 	},
 	{
@@ -225,7 +176,8 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
+					"'Civilization Form'",
+					"Provides [2] [Standing Army Maintainance]",
 					"[-10]% Culture cost of adopting new Policies",
                     "Moves to new capital when capital changes"]
 	},
@@ -235,8 +187,11 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [1] [Standing Army Maintainance]",
+					"Provides [1] [Noble Army Maintainance]",
+					"[-13]% Culture cost of adopting new Policies",
+					"[20]% Strength for cities",
                     "Moves to new capital when capital changes"]
 	},
 	{
@@ -244,8 +199,11 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [1] [Standing Army Maintainance]",
+					"Provides [2] [Noble Army Maintainance]",
+					"[+10]% growth [in all cities]",
+					"[+15]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]"
                     "Moves to new capital when capital changes"]
 	},
 	///Classical
@@ -254,8 +212,11 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable", 
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [2] [Standing Army Maintainance]",
+					"Provides [3] [Noble Army Maintainance]",
+					"[+2 Culture] from every [Governor]",
+					"New ['Noble Army'] units start with [25] XP [in all cities]"
                     "Moves to new capital when capital changes"],
 	},
 	{
@@ -263,8 +224,11 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable", 
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [2] [Standing Army Maintainance]",
+					"Provides [2] [Noble Army Maintainance]",
+					"[+1 Production] from every [Governor]",
+					"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]"
                     "Moves to new capital when capital changes"],
 	},
 	{
@@ -272,8 +236,12 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
+					"'Civilization Form'",
+					"Provides [2] [Standing Army Maintainance]",
+					"Provides [2] [Noble Army Maintainance]",
+					"[+5]% growth [in all cities]",
 					"[-10]% Culture cost of adopting new Policies",
+					"[10]% Strength for cities",
                     "Moves to new capital when capital changes"]
 	},
 	///Medival
@@ -282,8 +250,12 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [2] [Noble Army Maintainance]",
+					"[-17]% Culture cost of adopting new Policies",
+					"Free [Knight] Appears",
+					"[20]% Strength for cities",
                     "Moves to new capital when capital changes"]
 	},
 	{
@@ -291,8 +263,11 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [5] [Noble Army Maintainance]",
+					"[+20]% growth [in all cities]",
+					"[20]% Strength for cities",
                     "Moves to new capital when capital changes"]
 	},
 	{
@@ -300,8 +275,12 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [2] [Noble Army Maintainance]",
+					"[+1 Production] from every [Governor]",
+					"[+10]% [Science] [in all cities]",
+					"Gifts of Gold to City-States generate [25]% more Influence",
                     "Moves to new capital when capital changes"]
 	},
 	{
@@ -309,8 +288,12 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [3] [Noble Army Maintainance]",
+					"[Faith] cost of purchasing [Faith] buildings [-23]%"
+					"[+1 Faith] from every ['Political Building']",
+					"Comment [Enable [Great Prophet] to give free policy after your religion is enhanced]"
                     "Moves to new capital when capital changes"]
 	}
 	///Renaissance
@@ -319,8 +302,12 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [3] [Noble Army Maintainance]",
+					"[Gold] cost of purchasing [Civilian] units [-33]%",
+					"New ['Sailing Ship'] units start with [25] XP [in all cities]",
+					"Gain a free [Martine Expansion] [in all costal cities]"
                     "Moves to new capital when capital changes"]
 	},
 	{
@@ -328,8 +315,12 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [3] [Standing Army Maintainance]",
+					"Provides [4] [Noble Army Maintainance]",
+					"[+1 Production] from ['Extraction Improvement'] tiles [in all cities]",
+					"New [{'Standing Army'} {Land}] units start with [25] XP [in all cities]",
+					"Gain a free [Military Expansion] [in all non-occupied cities]",
                     "Moves to new capital when capital changes"]
 	},
 	///Imperial
@@ -338,8 +329,11 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [4] [Standing Army Maintainance]",
+					"Provides [1] [Noble Army Maintainance]",
+					"[-23]% Culture cost of adopting new Policies",
+					"[30]% Strength for cities",
                     "Moves to new capital when capital changes"]
 	},
 	{
@@ -347,17 +341,27 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [4] [Standing Army Maintainance]",
+					"[Gold] cost of purchasing [Civilian] units [-17]%",
+					
+					"May buy [Great Engineer] units with [Gold] [in all cities]",
+					"Comment [Unique Unit: State Millitia, Replaces Musketeer and Rifleman, more of them appear upon [Call to Arms].],
+					"Comment [Cannot Enter [Harmony] State.],
                     "Moves to new capital when capital changes"]
 	},
 	{
-		"name": "Multi-Cultral Monarchy",
+		"name": "Personal Union",
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [4] [Standing Army Maintainance]",
+					"Provides [3] [Noble Army Maintainance]",
+					"[+2 Culture, +1 Happiness] from every [Governor]",
+					"[+100]% Production when constructing ['Consolidation'] buildings [in all cities]",
+					"Comment [Unique Ability: Commonwealth, You can still build alliances.]",
+					"Comment [If you ever have your influence go down into 5 or below, You will lose this form.]
                     "Moves to new capital when capital changes"]
 	},
 	///Modern
@@ -366,8 +370,13 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [4] [Standing Army Maintainance]",
+					"New [{'Standing Army'} {Land}] units start with [10] XP [in all cities]",
+					"[+50]% Production when constructing [non-[Civilian]] units [in all cities]",
+					"[+3 Happiness] [in annexed cities]"
+					"Comment [Unique Building: Recuitment Center. Replaces Mobilisation Office and acts as its upgrade. Increases the limit for Protection Squardron.]
+					"Comment [Cannot Presuade Any Victory Condition other than Domination... Unless?]
                     "Moves to new capital when capital changes"]
 	},
 	{
@@ -375,8 +384,11 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [4] [Standing Army Maintainance]",
+					"[+1]% [Production] from every ['Political Building']",
+					"Comment [Unique Building: Recuitment Center. Replaces Mobilisation Office and acts as its upgrade. Increases the limit for Protection Squardron.]
+					"Comment [Cannot Presuade Any Victory Condition other than Domination... Unless?]
                     "Moves to new capital when capital changes"]
 	},
 	{
@@ -384,8 +396,11 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
-					"[-10]% Culture cost of adopting new Policies",
+					"'Civilization Form'",
+					"Provides [4] [Standing Army Maintainance]",
+					"[+1]% [Production] from every ['Political Building']",
+					"[-33]% construction time for [All] improvements <when not at war>",
+					"[+25]% Production when constructing [All] wonders [in all cities connected to capital] <when not at war>",
                     "Moves to new capital when capital changes"]
 	},
 	{
@@ -393,7 +408,7 @@
 		"isNationalWonder": true, 
 	    "uniques": ["Unbuildable",
                     "Unsellable",
-					"'Civilisation Form'",
+					"'Civilization Form'",
 					"[-10]% Culture cost of adopting new Policies",
                     "Moves to new capital when capital changes"]
 	},
