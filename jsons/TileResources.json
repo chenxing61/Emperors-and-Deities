@@ -9,7 +9,9 @@
 	{
 		"name": "Influence",
 		"resourceType": "Strategic",
-		"uniques":["Stockpiled","Cannot be traded"],
+		"uniques":["Stockpiled",
+		"Comment [You require this resource to change government form,If [Happiness] is at 5, 10, 30 or above, you gain a maximum of 3 [Influence] per turn from [Happiness] and a extra 2 [Influence] from being in a golden age.\nIf [Happiness] is below 5, -5, -10, -15, -20 or below, you can lose a maximum of 10 [Influence] per turn.\nIf [Gold] is below -100,-200,-300 or below, you can lose a maximum of 5 [Influence] from bankruptcy per turn.\nWhen you are at negative [Influence], you have a chance of triggering stability lose event, which chance gradually increases while your Influence goes even futher into the negative. The lowest stability you can get is [Anarchy].\nWhen below -10 [Influence] you cannot increase stability.]",
+		"Cannot be traded"],
 		"revealedBy": "Writing"
 	}
 	// Bonus resources
