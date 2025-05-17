@@ -12,7 +12,7 @@
                     "Instantly gain [3] [Influence]",
                     "[-15]% [Gold] [in all cities] <for [3] turns>",
                     "[-15]% [Production] [in all cities] <for [3] turns>",
-                    "Gain [-75] [Gold] <(modified by game speed)>"
+                    "Gain [-100] [Gold] <(modified by game speed)>"
                 ]
             },
             {
@@ -23,7 +23,7 @@
                     "Instantly gain [5] [Influence]",
                     "[-15]% [Gold] [in all cities] <for [5] turns>",
                     "[-15]% [Production] [in all cities] <for [5] turns>",
-                    "Gain [-100] [Gold] <(modified by game speed)>"
+                    "Gain [-200] [Gold] <(modified by game speed)>"
                 ]
             },
             {
@@ -114,6 +114,16 @@
                     "Only available <if [Unified] is constructed>",
                     "Instantly consumes [10] [Influence]",
                     "Triggers a [Reformation of the unified state] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Increasing Stability.",
+                "uniques": [
+                    "Only available <if [Peace] is constructed> <if [United States] is not constructed>",
+                    "Only available <when number of [Influence] is more than [10]>",
+                    "Comment [We must make out empire even more stable]",
+                    "Triggers a [Stablising our side of the globe] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
                 ]
             },
@@ -331,6 +341,18 @@
         "text": "The peace is no more. We are suffering from effects of low stability.",
         "choices": [
             {
+                "text": "Building a harmonious civilization is essential",
+                "uniques": [
+                "Comment [We can make it so that it takes more to unstablise our civilisation]",
+                "Instantly consumes [15] [Influence]",
+                "Gain [-250] [Gold] <(modified by game speed)>",
+                "Gain [-150] [Faith] <(modified by game speed)> <before the [Renaissance era]>",
+                "Gain [-300] [Faith] <(modified by game speed)> <starting from the [Renaissance era]>",
+                "Gain a free [Harmony] [in capital] <if [Peace] is constructed> <hidden from users>",
+                "Remove [Peace] [in capital] <if [Peace] is constructed> <hidden from users>"
+                ]
+            },
+            {
                 "text": "We must make haste before situation gets any worse",
                 "uniques": [
                 "Comment [By investing a vast amount of social-political capital, we can stablise the situation quickly.]",
@@ -371,7 +393,7 @@
             {
                 "text": "[Military Alliance] is the most practical",
                 "uniques": [
-                    "Only available <before the [Industrial era]>",
+                    "Only available <before the [Industrial era]> <if [Collective Security] is not constructed>",
                     "Instantly consumes [8] [Influence]",
                     "Gain [-125] [Gold] <(modified by game speed)>",
                     "Gain a free [Military Alliance] [in capital]"
@@ -380,7 +402,7 @@
             {
                 "text": "[Cultural Exchange] is the most elegant",
                 "uniques": [
-                    "Only available <before the [Industrial era]>",
+                    "Only available <before the [Industrial era]> <if [Reseach Exchange] is not constructed>",
                     "Instantly consumes [8] [Influence]",
                     "Gain [-125] [Gold] <(modified by game speed)>",
                     "Gain a free [Cultural Exchange] [in capital]"
@@ -389,7 +411,7 @@
             {
                 "text": "[Trade Alliance] is the most attractive",
                 "uniques": [
-                    "Only available <before the [Industrial era]>",
+                    "Only available <before the [Industrial era]> <if [Economic Community] is not constructed>",
                     "Instantly consumes [8] [Influence]",
                     "Gain [-125] [Gold] <(modified by game speed)>",
                     "Gain a free [Trade Alliance] [in capital]"
