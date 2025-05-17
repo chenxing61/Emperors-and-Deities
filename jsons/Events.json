@@ -209,7 +209,7 @@
             {
                 "text": "We are able to unify ourselves!",
                 "uniques": [
-                    "Only available <when above [25] [Influence]> <while the empire is happy>",
+                    "Only available <when above [20] [Influence]> <while the empire is happy>",
                     "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
                     "Only available <if [Unified] is not constructed> <if [Struggle] is not constructed> <if [Strive] is not constructed> <if [Anarchy] is not constructed>",
                     
@@ -253,7 +253,7 @@
                     "Only available <when above [20] [Influence]> <if [Struggle] is not constructed> <if [Strive] is not constructed> <if [Anarchy] is not constructed>",
                     "Comment [Our empire with all its specialties survives... Maybe we can reform it continuesly unto forever.]",
                     "Only available <if [Unified] is constructed>",
-                    "Instantly consumes [30] [Influence]",
+                    "Instantly consumes [20] [Influence]",
                     "Triggers a [Reformation of the unified state] event"
                 ]
             }
@@ -331,7 +331,8 @@
             {
                 "text": "Can we wait?",
                 "uniques": [
-                "Comment [We need more contemplation...]"
+                "Comment [We need more contemplation...]",
+                "Instantly gain [10] [Influence]"
                 ]
             }
         ]
@@ -355,6 +356,8 @@
             {
                 "text": "We must make haste before situation gets any worse",
                 "uniques": [
+                "Only available <if [Peace] is not constructed>",
+                "Only available <if [Harmony] is not constructed>",
                 "Comment [By investing a vast amount of social-political capital, we can stablise the situation quickly.]",
                 "Instantly consumes [20] [Influence]",
                 "Gain [-200] [Gold] <(modified by game speed)>",
@@ -367,6 +370,8 @@
             {
                 "text": "Ruling a country requires patience and subtlety",
                 "uniques": [
+                "Only available <if [Peace] is not constructed>",
+                "Only available <if [Harmony] is not constructed>",
                 "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
                 "Instantly consumes [8] [Influence]",
                 "Gain [-125] [Gold] <(modified by game speed)>",
