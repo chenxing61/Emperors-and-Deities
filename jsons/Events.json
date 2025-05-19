@@ -10,8 +10,8 @@
                     "Only available <if [Harmony] is constructed>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [3] [Influence]",
-                    "[-15]% [Gold] [in all cities] <for [3] turns>",
-                    "[-15]% [Production] [in all cities] <for [3] turns>"
+                    "[-10]% [Gold] [in all cities] <for [3] turns>",
+                    "[-10]% [Production] [in all cities] <for [3] turns>"
                 ]
             },
             {
@@ -20,24 +20,42 @@
                     "Only available <if [Peace] is constructed>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [5] [Influence]",
-                    "[-15]% [Gold] [in all cities] <for [5] turns>",
-                    "[-15]% [Production] [in all cities] <for [5] turns>"
+                    "[-10]% [Gold] [in all cities] <for [5] turns>",
+                    "[-10]% [Production] [in all cities] <for [5] turns>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
+                    "Only available <if [Harmony] is constructed>",
                     "Comment [Lose your current stability and enter a worse state.]",
-
                     "Gain a free [Peace] [in capital] <if [Harmony] is constructed> <hidden from users>",
-                    "Remove [Harmony] [in all cities] <if [Harmony] is constructed> <hidden from users>",
-
+                    "Remove [Harmony] [in all cities] <if [Harmony] is constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Only available <if [Peace] is constructed>",
+                    "Comment [Lose your current stability and enter a worse state.]",
                     "Gain a free [Struggle] [in capital] <if [Peace] is constructed> <hidden from users>",
-                    "Remove [Peace] [in all cities] <if [Peace] is constructed> <hidden from users>",
-
+                    "Remove [Peace] [in all cities] <if [Peace] is constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Only available <if [Struggle] is constructed>",
+                    "Comment [Lose your current stability and enter a worse state.]",
                     "Gain a free [Strive] [in capital] <if [Struggle] is constructed> <hidden from users>",
-                    "Remove [Struggle] [in all cities] <if [Struggle] is constructed> <hidden from users>",
-
+                    "Remove [Struggle] [in all cities] <if [Struggle] is constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Only available <if [Strive] is constructed>",
+                    "Comment [Lose your current stability and enter a worse state.]",
                     "Gain a free [Anarchy] [in capital] <if [Strive] is constructed> <hidden from users>",
                     "Remove [Strive] [in all cities] <if [Strive] is constructed> <hidden from users>"
                 ]
