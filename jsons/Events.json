@@ -248,7 +248,7 @@
                     "Comment [Our unification cannot last onto another stage of the world. Maybe its ultimately for the better, as it was stale.]",
                     "Only available <if [Unified] is constructed>",
                     "Remove ['United'] [in all cities] <hidden from users>",
-                    "Remove [Unified] [in all cities] <hidden from users>",
+                    
                     "Gain a free [Sucessor States] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [City States] [in capital] <during the [Ancient era]> <hidden from users>",
                     "Gain a free [Sucessor States] [in capital] <during the [Classical era]> <hidden from users>",
@@ -469,6 +469,22 @@
             }
         ]
     },
+        {
+        "name": "Disolution of Union",
+        "text": "As the civ enters its downfall, the Union crumbles away.",
+        "choices": [
+            {
+                "text": "No!",
+                "uniques": [
+                    "Remove ['Civilization State'] [in all cities]",
+                    "Gain a free [Struggle] [in capital]",
+                    "Remove ['Civilization Form'] [in all cities]",
+                    "Remove [Unified] [in all cities]",
+                    "Gain a free [Republics] [in capital]"
+                ]
+            }
+        ]
+    },
     ///Unit Events
     {
         "name": "Great Commander's Retirement",
@@ -544,7 +560,6 @@
                     "Remove ['Civilization State'] [in all cities]",
                     "Gain a free [Strife] [in capital]",
                     "Remove ['Civilization Form'] [in all cities]",
-                    "Remove [Unified] [in all cities] <hidden from users>",
                     "Gain a free [Republics] [in capital]"
                 ]
             }
@@ -703,7 +718,6 @@
                     "Remove ['Civilization State'] [in all cities]",
                     "Gain a free [Struggle] [in capital]",
                     "Remove ['Civilization Form'] [in all cities]",
-                    "Gain a free [Unified] [in capital] <hidden from users>",
                     "Gain a free [Fascist Autocracy] [in capital]"
                 ]
             }
@@ -785,7 +799,7 @@
                     "[8] free [Modern Guerrilla] units appear",
                     "Gain a free [The Last Revolution] [in capital]",
                     "Remove ['Civilization State'] [in all cities]",
-                    "Remove [Unified] [in all cities] <hidden from users>",
+                    
                     "Gain a free [Anarchy] [in capital]",
                     "Gain a free [Anarchist Alliances] [in capital]"
                 ]
