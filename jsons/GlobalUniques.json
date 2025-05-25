@@ -55,9 +55,11 @@
         "Triggers a [Chaos Ensue] event <when between [-21] and [-25] [Influence]> <with [30]% chance> <upon turn start>",
         "Triggers a [Chaos Ensue] event <when between [-31] and [-35] [Influence]> <with [35]% chance> <upon turn start>",
         "Triggers a [Chaos Ensue] event <when below [-35] [Influence]> <with [50]% chance> <upon turn start>",
+        
         "Triggers a [Shift in Politic] event <upon entering a new era> <starting from the [Classical era]>",
-        "Gain a free [Unified] [in capital] <if ['United'] is constructed in all [Capital] cities>",
-        "Remove [Unified] [in capital] <if ['Divided'] is constructed in all [Capital] cities>",
+
+        "Gain a free [Unified] [in capital] <if ['United'] is constructed in all [Capital] cities> <upon turn end>",
+        "Remove [Unified] [in capital] <if ['Divided'] is constructed in all [Capital] cities> <upon turn end>",
         "[-1] Sight <for [Embarked] units>",
         //Prevents AI from spamming units
         "Cannot build ['Mercenary Army'] units <when not at war> <starting from the [Classical era]> <for [AI player] Civilizations>",
@@ -77,21 +79,17 @@
         "Provides [1] [Revolution Oppotunity] <starting from the [Modern era]>",
         "Remove [Levies Disbandment] [in capital] <when number of [[The Levied Army] Units] is less than [1]> <upon turn end>",
         //AI
+
         "Gain a free [Call to Arms] [in all cities] <when at war> <for [AI player] Civilizations>",
-        "Remove [Call to Arms] [in all cities] <when not at war> <for [AI player] Civilizations>",
-        "Gain a free [Levies Disbandment] [in capital] <when not at war> <for [AI player] Civilizations>",
+        "Remove [Call to Arms] [in all cities] <when not at war> <for [AI player] Civilizations> <upon turn end>",
+        "Gain a free [Levies Disbandment] [in capital] <when not at war> <for [AI player] Civilizations> <for [3] turns>",
 
-        "Gain a free [Strife] [in capital] <if [Anarchy] is constructed> <when above [0] [Influence]> <for [AI player] Civilizations>",
-        "Remove [Anarchy] [in all cities] <when above [0] [Influence]> <for [AI player] Civilizations>",
-        "Instantly consumes [10] [Influence] <if [Anarchy] is constructed> <when above [0] [Influence]> <for [AI player] Civilizations>",
+        "Triggers a [Stablising our side of the globe] event <if [Anarchy] is constructed> <when above [0] [Influence]> <for [AI player] Civilizations> <upon turn start>",
 
-        "Gain a free [Struggle] [in capital] <if [Strife] is constructed> <when above [5] [Influence]> <for [AI player] Civilizations>",
-        "Remove [Strife] [in all cities] <when above [5] [Influence]> <for [AI player] Civilizations>",
-        "Instantly consumes [5] [Influence] <if [Struggle] is constructed> <when above [5] [Influence]> <for [AI player] Civilizations>",
+        "Triggers a [Stablising our side of the globe] event <if [Strife] is constructed> <when above [5] [Influence]> <for [AI player] Civilizations> <upon turn start>",
 
-        "Gain a free [Peace] [in capital] <if [Struggle] is constructed> <when above [10] [Influence]> <for [AI player] Civilizations>",
-        "Remove [Struggle] [in all cities] <when above [10] [Influence]> <for [AI player] Civilizations>",
-        "Instantly consumes [5] [Influence] <if [Peace] is constructed> <when above [10] [Influence]> <for [AI player] Civilizations>"
+        "Triggers a [Stablising our side of the globe] event <if [Struggle] is constructed> <when above [10] [Influence]> <for [AI player] Civilizations> <upon turn start>"
+
         // TODO: Implement the uniques below
         // "[+20]% [Culture] [in all cities] <during a golden age>",
         // "[+20]% [Production] [in all cities] <during a golden age>",

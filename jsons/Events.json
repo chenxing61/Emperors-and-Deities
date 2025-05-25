@@ -214,6 +214,9 @@
                     "Gain a free [City States] [in capital] <if [Tribes] is constructed> <starting from the [Classical era]> <before the [Medieval era]> <hidden from users>",
                     "Remove [Tribes] [in all cities] <if [Tribes] is constructed> <starting from the [Classical era]> <before the [Medieval era]> <hidden from users>",
 
+                    "Gain a free [Kingdoms] [in capital] <if [Sucessor States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
+                    "Remove [Sucessor States] [in all cities] <if [Sucessor States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
+
                     "Gain a free [Kingdoms] [in capital] <if [City States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
                     "Remove [City States] [in all cities] <if [City States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
 
@@ -359,48 +362,75 @@
             {
                 "text": "Building a harmonious civilization is essential",
                 "uniques": [
+                "Only available <if [Peace] is constructed> <when above [-10] [Influence]>",
                 "Comment [We can make it so that it takes more to unstablise our civilisation]",
                 "Instantly consumes [15] [Influence]",
                 "Gain [-250] [Gold] <(modified by game speed)>",
                 "Gain [-150] [Faith] <(modified by game speed)> <before the [Renaissance era]>",
                 "Gain [-300] [Faith] <(modified by game speed)> <starting from the [Renaissance era]>",
-                "Gain a free [Harmony] [in capital] <if [Peace] is constructed> <hidden from users>",
-                "Remove [Peace] [in capital] <if [Peace] is constructed> <hidden from users>"
+                "Gain a free [Harmony] [in capital] <hidden from users>",
+                "Remove [Peace] [in capital] <hidden from users>"
                 ]
             },
             {
                 "text": "We must make haste before situation gets any worse",
                 "uniques": [
-                "Only available <if [Peace] is not constructed> <when above [-10] [Influence]>",
-                "Only available <if [Harmony] is not constructed>",
+                "Only available <if [Anarchy] is constructed>",
                 "Comment [By investing a vast amount of social-political capital, we can stablise the situation quickly.]",
                 "Instantly consumes [10] [Influence]",
                 "Gain [-200] [Gold] <(modified by game speed)>",
-                "Gain a free [Struggle] [in capital] <if [Anarchy] is constructed> <hidden from users>",
-                "Remove [Anarchy] [in capital] <if [Anarchy] is constructed> <hidden from users>",
-                "Gain a free [Peace] [in capital] <if [Strife] is constructed> <hidden from users>",
-                "Remove [Strife] [in capital] <if [Strife] is constructed> <hidden from users>"
+                "Gain a free [Struggle] [in capital] <hidden from users>",
+                "Remove [Anarchy] [in capital] <hidden from users>"
+                ]
+            },
+            {
+                "text": "We must make haste before situation gets any worse",
+                "uniques": [
+                "Only available <if [Strife] is constructed>",
+                "Comment [By investing a vast amount of social-political capital, we can stablise the situation quickly.]",
+                "Instantly consumes [10] [Influence]",
+                "Gain [-200] [Gold] <(modified by game speed)>",
+                "Gain a free [Peace] [in capital] <hidden from users>",
+                "Remove [Strife] [in capital] <hidden from users>"
                 ]
             },
             {
                 "text": "Ruling a country requires patience and subtlety",
                 "uniques": [
-                "Only available <if [Peace] is not constructed> <when above [-10] [Influence]>",
-                "Only available <if [Harmony] is not constructed>",
+                "Only available <if [Anarchy] is constructed>",
                 "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
                 "Instantly consumes [5] [Influence]",
                 "Gain [-125] [Gold] <(modified by game speed)>",
-                "Gain a free [Peace] [in capital] <if [Struggle] is constructed> <hidden from users>",
-                "Remove [Struggle] [in capital] <if [Struggle] is constructed> <hidden from users>",
-                "Gain a free [Struggle] [in capital] <if [Strife] is constructed> <hidden from users>",
-                "Remove [Strife] [in capital] <if [Strife] is constructed> <hidden from users>",
-                "Gain a free [Strife] [in capital] <if [Anarchy] is constructed> <hidden from users>",
-                "Remove [Anarchy] [in capital] <if [Anarchy] is constructed> <hidden from users>"
+                "Gain a free [Strife] [in capital] <hidden from users>",
+                "Remove [Anarchy] [in capital] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Ruling a country requires patience and subtlety",
+                "uniques": [
+                "Only available <if [Strife] is constructed>",
+                "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
+                "Instantly consumes [5] [Influence]",
+                "Gain [-125] [Gold] <(modified by game speed)>",
+                "Gain a free [Struggle] [in capital] <hidden from users>",
+                "Remove [Strife] [in capital] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Ruling a country requires patience and subtlety",
+                "uniques": [
+                "Only available <if [Struggle] is constructed>",
+                "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
+                "Instantly consumes [5] [Influence]",
+                "Gain [-125] [Gold] <(modified by game speed)>",
+                "Gain a free [Peace] [in capital] <hidden from users>",
+                "Remove [Struggle] [in capital] <hidden from users>"
                 ]
             },
             {
                 "text": "Can we wait?",
                 "uniques": [
+                "Only available <for [non-[AI player]] Civilizations>",
                 "Comment [We need more contemplation...]"
                 ]
             }
