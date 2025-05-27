@@ -2,18 +2,20 @@
     "name": "Global uniques",
     "uniques": [
         //Nerf for general gameplay
-        "[-10]% growth [in all cities] <when below [2] [Living Condition]>",
-        "[-25]% growth [in all cities] <when below [1] [Living Condition]>",
-        "[-25]% growth [in all cities] <when below [0] [Living Condition]>",
-        "[-25]% growth [in all cities] <when below [-1] [Living Condition]>",
-        "[-35]% growth [in all cities] <when below [-2] [Living Condition]>",
-        "Nullifies Growth [in all cities] <when below [-3] [Living Condition]>",
+        "[-25]% growth [in all cities] <in cities with at least [10] [Population]>",
+        "[-25]% growth [in all cities] <in cities with at least [20] [Population]>",
+        "[-25]% growth [in all cities] <in cities with at least [30] [Population]>",
+        "[-25]% growth [in all cities] <in cities with at least [40] [Population]>",
+        "[-25]% growth [in all cities] <in cities with at least [50] [Population]>",
+        "[-25]% growth [in all cities] <in cities with at least [60] [Population]>",
 
-        "[-20]% [Happiness] [in all cities] <when below [1] [Living Condition]>",
-        "[-20]% [Happiness] [in all cities] <when below [0] [Living Condition]>",
-        "[-20]% [Happiness] [in all cities] <when below [-1] [Living Condition]>",
-        "[-20]% [Happiness] [in all cities] <when below [-2] [Living Condition]>",
-        "[-20]% [Happiness] [in all cities] <when below [-3] [Living Condition]>",
+        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [10] [Population]>",
+        "[+25]% Unhappiness from [Population] [in all cities] <in cities with at least [20] [Population]>",
+        "[+30]% Unhappiness from [Population] [in all cities] <in cities with at least [30] [Population]>",
+        "[+35]% Unhappiness from [Population] [in all cities] <in cities with at least [40] [Population]>",
+        "[+40]% Unhappiness from [Population] [in all cities] <in cities with at least [50] [Population]>",
+        "[+45]% Unhappiness from [Population] [in all cities] <in cities with at least [60] [Population]>",
+        "[+50]% Unhappiness from [Population] [in all cities] <in cities with at least [70] [Population]>",
         //Influence
 
         "Provides [-1] [Influence] <when below [10] [Happiness]> <upon turn start> <starting from the [Imperial era]>",
