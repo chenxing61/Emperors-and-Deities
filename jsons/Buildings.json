@@ -41,9 +41,9 @@
 			"Only available <in cities with at least [5] [Population]>",
 			"[-1 Happiness] [in this city] <before adopting [Militia Army]>",
 			"[-1 Happiness] [in this city] <before adopting [Military Tradition]>",
-			"[-15]% [Gold] [in this city] <for [5] turns> <if [Militristic Economy] is constructed in all [Capital] cities>",
-			"[-15]% [Food] [in this city] <for [10] turns> <if [Militristic Economy] is constructed in all [Capital] cities>",
-			"[-15]% [Production] [in this city] <for [5] turns> <if [Militristic Economy] is constructed in all [Capital] cities>",
+			"[-15]% [Gold] [in this city] <if [Militristic Economy] is not constructed>",
+			"[-15]% [Food] [in this city] <if [Militristic Economy] is not constructed>",
+			"[-15]% [Production] [in this city] <if [Militristic Economy] is not constructed>",
 			"Comment [Spawns free 'Levy Army' units to help with warfare.]",
 			"Comment [The number and type of unit spawned depends on the 'Military Building' in the city and your technological, cultural advancement.]",
 			"Free [Primal Warrior] appears <before discovering [Mining]> <hidden from users>",
@@ -2500,9 +2500,10 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
+            "[+100]% Production when constructing [Alloy Mill] buildings [in this city]",
 			"[+1 Production] from ['Useful Mineral'] tiles [in this city]",
-			"Provides [1] [Alloy]",
-			"Consumes [1] [Metal]"
+			"Provides [1] [Alloy] <in cities without a [Alloy Mill]>",
+			"Consumes [1] [Metal] <in cities without a [Alloy Mill]>"
 		],
 		"requiredNearbyImprovedResources": [
 			"Metal",
@@ -2523,8 +2524,8 @@
 		"uniques": [
 			"'Military Building'",
 			"Provides [1] [Standing Army Maintainance]",
-			"Provides [1] [Weapon Parts]",
-			"New [Military] units start with [25] XP [in this city]"
+			"Provides [1] [Weapon Parts] <every [2] turns>",
+			"New [Military] units start with [20] XP [in this city]"
 		],
 		"requiredBuilding": "Armory",
 		"requiredTech": "Steels",
@@ -2532,15 +2533,15 @@
 	},
 	{
 		"name": "University",
-		"maintenance": 8,
+		"maintenance": 5,
 		"percentStatBonus": {
 			"science": 25,
-			"culture": 25
+			"culture": 10
 		},
 		"specialistSlots": {
 			"Scientist": 2,
 			"Artist": 2,
-			"Engineer": 2
+			"Engineer": 1
 		},
 		"uniques": [
 			"'Educational Building'",
@@ -2559,6 +2560,7 @@
 			"Great Strategist": 2
 		},
 		"uniques": [
+            "'Educational Building'",
 			"'Military Building'",
 			"New [Military] units start with [20] XP [in this city]",
 			"All newly-trained [Military] units [in this city] receive the [Tactic Research] promotion",
@@ -2575,12 +2577,11 @@
 			"Merchant": 1
 		},
 		"percentStatBonus": {
-			"culture": 10,
+			"culture": 5,
 			"gold": 5
 		},
 		"uniques": [
 			"'Cultural Building'",
-			"[+3 Culture] [in this city] <after discovering [Electricity]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Town Square",
@@ -2597,7 +2598,6 @@
 		},
 		"uniques": [
 			"'Cultural Building'",
-			"[+1 Happiness] [in this city] <after discovering [Electricity]>",
 			"Only available <after adopting [Humanism]>",
 			"Destroyed when the city is captured",
 			"Only available <before discovering [Mass Production]>"
@@ -2625,6 +2625,7 @@
 	{
 		"name": "Tilting Bell Tower",
 		"isWonder": true,
+        "happiness":3,
 		"percentStatBonus": {
 			"culture": 25
 		},
@@ -2632,7 +2633,7 @@
 			"Great Artist": 3
 		},
 		"uniques": [
-			"[+25]% Great Person generation [in all cities]",
+			"[+15]% Great Person generation [in all cities]",
 			"Free Great Person",
 			"Must be on [River]"
 		],
@@ -2651,25 +2652,24 @@
 			"Engineer": 1
 		},
 		"uniques": [
-			"'Agricultural Building'"
+			"'Agricultural Building'",
+            "[+1]% Production when constructing ['Agricultural Building'] buildings [in all cities]"
 		],
 		"requiredTech": "Machinery",
 		"hurryCostModifier": 25
 	},
 	{
 		"name": "Observatory",
-		"maintenance": 2,
+		"maintenance": 5,
 		"percentStatBonus": {
 			"science": 25
 		},
-		"specialistSlots": {
-			"Scientist": 1
-		},
-		"requiredBuilding": "University",
 		"uniques": [
 			"'Research Building'",
+            "Only available <with [Glass]>",
 			"Must have an owned [Mountain] within [2] tiles"
 		],
+        "requiredBuilding": "University",
 		"requiredTech": "Heliocentrism",
 		"hurryCostModifier": 25
 	},
@@ -2684,7 +2684,7 @@
 		"uniques": [
 			"'Economic Building'",
 			"[+1 Gold] per [5] population [in this city]",
-			"[Great Merchant] is earned [+5]% faster"
+			"[Great Merchant] is earned [+1]% faster"
 		],
 		"requiredTech": "Banking",
 		"hurryCostModifier": 10
@@ -2723,7 +2723,7 @@
 	{
 		"name": "Bastion",
 		"maintenance": 3,
-		"cityStrength": 10,
+		"cityStrength": 20,
 		"cityHealth": 30,
 		"greatPersonPoints": {
 			"Great Strategist": 1
@@ -2740,7 +2740,8 @@
 		"maintenance": 5,
 		"percentStatBonus": {
 			"science": 25,
-			"faith": 20
+            "culture": 10,
+			"faith": 10
 		},
 		"specialistSlots": {
 			"Scientist": 2,
@@ -2760,6 +2761,7 @@
 	},
 	{
 		"name": "Private School",
+        "maintenance": 3,
 		"percentStatBonus": {
 			"science": 25,
 			"culture": 10,
@@ -2767,6 +2769,7 @@
 		},
 		"specialistSlots": {
 			"Scientist": 2,
+            "Artist": 1,
 			"Merchant": 1
 		},
 		"uniques": [
@@ -2835,8 +2838,8 @@
 	},
 	{
 		"name": "Imperial Palace",
+        "isWonder": true,
 		"culture": 5,
-		"isWonder": true,
 		"specialistSlots": {
 			"Governor": 3
 		},
@@ -2850,14 +2853,16 @@
 	{
 		"name": "Cargo Port",
 		"maintenance": 5,
+        "percentStatBonus":{
+            "gold":10
+        },
 		"uniques": [
 			"'Marine Infrastructure'",
 			"[+1 Gold] from [Bonus resource] tiles [in this city]",
-			"[+1 Gold] from [Luxury resource] tiles [in this city]",
-			"[+25]% Production when constructing [Water] units [in this city]",
+			"[+1]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
 			"Must be next to [Coast]"
 		],
-		"requiredBuilding": "Lighthouse",
+		"requiredBuilding": "Trading Port",
 		"requiredTech": "Navigation",
 		"hurryCostModifier": 10
 	},
@@ -2865,10 +2870,10 @@
 		"name": "Military Port",
 		"maintenance": 3,
 		"percentStatBonus": {
-			"production": -10
+			"production": -5
 		},
 		"greatPersonPoints": {
-			"Great Strategist": 2
+			"Great Strategist": 1
 		},
 		"uniques": [
 			"'Military Building'",
@@ -2880,7 +2885,7 @@
 			"Must be next to [Coast]",
 			"Destroyed when the city is captured"
 		],
-		"requiredBuilding": "Lighthouse",
+		"requiredBuilding": "Trading Port",
 		"requiredTech": "Navigation",
 		"hurryCostModifier": 25
 	},
@@ -2913,7 +2918,7 @@
 		"uniques": [
 			"'Heavy Industry'",
 			"Provides [1] [Aluminum]",
-			"Provides [2] [Aluminum] <after discovering [Electricity]> <in cities with a [Power Grid]>",
+			"Provides [2] [Aluminum] <in cities with a [Power Grid]>",
 			"[+2 Production] from [Aluminum] tiles [in this city]"
 		],
 		"requiredNearbyImprovedResources": [
@@ -3478,7 +3483,7 @@
 		},
 		"uniques": [
 			"'Research Building'",
-			"[Great Scientist] is earned [+5]% faster",
+			"[Great Scientist] is earned [+1]% faster",
 			"[+1 Science] [in this city] <after discovering [Relativity Theory]>",
 			"[+1 Science] [in this city] <after discovering [Quantum Theory]>"
 		],
@@ -3940,9 +3945,10 @@
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from ['Chemicals'] tiles [in this city]",
-			"Consumes [2] [Industrial Chemicals] <when above [2] [Industrial Chemicals]>",
-			"[+8 Production, +10 Gold] <when above [2] [Industrial Chemicals]>"
+            "Provides [1] [Industrial Chemicals] <with [Minerals]>",
+            "Provides [1] [Industrial Chemicals] <with [Stone]>"
 		],
+        "requiredNearbyImprovedResources":["Minerals","Stone"],
 		"requiredTech": "Synthetic Materials",
 		"hurryCostModifier": 25
 	},
@@ -4045,7 +4051,9 @@
 			"Engineer": 1
 		},
 		"uniques": [
-			"'Heavy Industry'"
+			"'Heavy Industry'",
+            "Consumes [2] [Industrial Chemicals] <when above [2] [Industrial Chemicals]>",
+			"[+8 Production, +10 Gold] <when above [2] [Industrial Chemicals]>"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Plastics",
