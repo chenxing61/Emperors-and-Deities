@@ -1270,6 +1270,40 @@
 		"attackSound": "crossbow"
 	},
 	{
+		"name": "Palace Guard",
+		"unitType": "Close Combat",
+		"cost": 70,
+		"movement": 2,
+		"strength": 31,
+		"uniques": [
+			"Limited to [3] per Civilization",
+			"Only available <if [Celestial Empire] is constructed>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]><after adopting [Long Live the Revolution!]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]><removing the [The Noble Army] promotion/status>",
+			"Consumes [1] [Metal]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+15]% Strength <after discovering [Steels]>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Hardened",
+			"Stewardship",
+			"Shock Doctrine",
+			"Chainmail Armour",
+			"Halberd"
+		],
+		"requiredTech": "Tactics",
+		"obsoleteTech": "Flintlock",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "metalhit"
+	},
+	{
 		"name": "Levy Archer",
 		"unitType": "Ranged Combat",
 		"cost": 60,

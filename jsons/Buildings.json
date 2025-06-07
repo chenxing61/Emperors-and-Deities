@@ -75,6 +75,20 @@
 			"Destroyed when the city is captured"
 		]
 	},
+	{
+		"name": "Remove Slums",
+		"cost": 100,
+		"uniques": [
+			"Only available <in cities with a [Slum]>",
+			"Unbuildable",
+			"Remove [Slum] [in this city]",
+			"[-1] population [in this city]",
+			"Remove [Remove Slums] [in this city] <hidden from users>",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding":"Town Hall",
+		"requiredTech": "Paper Making"
+	},
 	///Expansion
 	{
 		"name": "Agricultural Expansion(River)",
@@ -548,6 +562,7 @@
 	},
 	{
 		"name": "Brewery",
+		"happiness": 1,
 		"gold": 1,
 		"uniques": [
 			"'Light Industry'",
@@ -1233,35 +1248,7 @@
 		"requiredTech": "Carpentry",
 		"hurryCostModifier": 10
 	},
-	{
-		"name": "Makeshift Housing",
-		"cost": 50,
-		"percentStatBonus": {
-			"food": -3,
-			"production": -5
-		},
-		"uniques": [
-			"Unavailable",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Carpentry",
-		"hurryCostModifier": -50
-	},
-	{
-		"name": "Slum",
-		"cost": 50,
-		"percentStatBonus": {
-			"food": -5,
-			"production": -10
-		},
-		"uniques": [
-			"Unavailable",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Carpentry",
-		"requiredBuilding": "Makeshift Housing",
-		"hurryCostModifier": -50
-	},
+
 	{
 		"name": "Temple",
 		"faith": 2,
@@ -1426,7 +1413,7 @@
 			"Artist": 3
 		},
 		"uniques": [
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"[-25]% Culture cost of natural border growth [in all cities]",
 			"[+25]% Great Person generation [in this city]",
 			"Cost increases by [20] per owned city"
@@ -1444,7 +1431,7 @@
 			"Governor": 1
 		},
 		"uniques": [
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides the cheapest [Happiness] building in your first [4] cities for free",
 			"[+25]% Great Person generation [in this city]",
 			"Cost increases by [20] per owned city"
@@ -1462,7 +1449,7 @@
 			"Artist": 3
 		},
 		"uniques": [
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"[-10]% Culture cost of adopting new Policies",
 			"[+10]% [Faith] [in all cities]",
 			"[+25]% Great Person generation [in this city]",
@@ -1481,7 +1468,7 @@
 			"Scientist": 2
 		},
 		"uniques": [
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"[+25]% [Science] [in this city]",
 			"[+25]% Great Person generation [in this city]",
 			"Cost increases by [20] per owned city"
@@ -1498,7 +1485,7 @@
 			"Artist": 3
 		},
 		"uniques": [
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"[+10]% Great Person generation [in all cities]",
 			"Military Units gifted from City-States start with [20] XP",
 			"[+5]% Strength",
@@ -1518,7 +1505,7 @@
 		},
 		"uniques": [
 			"'Core of Religion'",
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"[+25]% Great Person generation [in this city]",
 			"Cost increases by [20] per owned city"
 		],
@@ -1769,7 +1756,7 @@
 		"isWonder": true,
 		"culture": 3,
 		"uniques": [
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Comment [Every time your civ became unified, enter a golden age.]"
 		],
 		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu",
@@ -2121,7 +2108,7 @@
 		},
 		"uniques": [
 			"'Core of Religion'",
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"[+100]% Natural religion spread [in this city]",
 			"[+2 Faith] from every [Governor] <in this city>",
 			"Only available <if [Cathedral] is constructed in at least [6] of [non-[Puppeted]] cities>",
@@ -2145,7 +2132,7 @@
 		},
 		"uniques": [
 			"'Core of Religion'",
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"[+100]% Natural religion spread [in this city]",
 			"[+3 Faith] from every [Governor] <in this city>",
 			"Only available <if [Mosque] is constructed in at least [6] of [non-[Puppeted]] cities>",
@@ -2169,7 +2156,7 @@
 		},
 		"uniques": [
 			"'Core of Religion'",
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"[+100]% Natural religion spread [in this city]",
 			"[+2 Culture] from every [Governor] <in this city>",
 			"Only available <if [Pagoda] is constructed in at least [6] of [non-[Puppeted]] cities>",
@@ -2194,7 +2181,7 @@
 		},
 		"uniques": [
 			"'Core of Religion'",
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"[+100]% Natural religion spread [in this city]",
 			"[+1 Culture, +1 Gold] from every [Governor] <in this city>",
 			"Only available <if [Altar] is constructed in at least [6] of [non-[Puppeted]] cities>",
@@ -2210,7 +2197,7 @@
 		"isWonder": true,
 		"uniques": [
 			"'Organise Place'",
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"Only available <after adopting [Monotheism]>",
 			"Gain a free [Chapel] [in this city]",
 			"Gain a free [Enhancer] belief",
@@ -2251,7 +2238,7 @@
 		},
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <after adopting [Pilgrimage]>",
 			"Gain a free [Mosque] [in this city]",
@@ -2270,7 +2257,7 @@
 		},
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"Only available <before adopting [Monotheism]>",
 			"Gain a free [Enhancer] belief"
 		],
@@ -2348,7 +2335,7 @@
 			"Governor": 1
 		},
 		"uniques": [
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"[-5]% Unhappiness from [Specialists] [in all cities connected to capital]",
 			"[-25]% Gold cost of acquiring tiles [in all cities connected to capital]",
 			"[+10]% Production when constructing [All] units [in all cities connected to capital]",
@@ -2382,7 +2369,7 @@
 		"isWonder": true,
 		"uniques": [
 			"'Organise Place'",
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>"
 		],
@@ -2401,7 +2388,7 @@
 		"isWonder": true,
 		"uniques": [
 			"'Organise Place'",
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"Gain a free [Cathedral] [in this city]",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>"
@@ -2616,7 +2603,7 @@
 		},
 		"uniques": [
 			"'Practice Ground'",
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"[+25]% [Faith] [in all cities]"
 		],
 		"quote": "'The temple is like no other building in the world. It has towers and decoration and all the refinements which the human genius can conceive of.' - Antonio da Magdalena",
@@ -2697,7 +2684,7 @@
 			"science": 50
 		},
 		"uniques": [
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Science gained from research agreements [+50]%",
 			"Only available <if [University] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [30] per owned city"
@@ -2828,7 +2815,7 @@
 		},
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"[+15]% [Culture] [in all cities]"
@@ -3012,7 +2999,7 @@
 			"Great Scientist": 3
 		},
 		"uniques": [
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"Gifts of Gold to City-States generate [25]% more Influence"
 		],
 		"quote": "'Things always seem fairer when we look back at them, and it is out of that inaccessible tower of the past that Longing leans and beckons.' - James Russell Lowell",
@@ -3027,7 +3014,7 @@
 			"Great Artist": 3
 		},
 		"uniques": [
-			"Provides [1] [Piety]",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"Empire enters golden age"
 		],
 		"quote": "'The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time.' - Rabindranath Tagore",
@@ -3056,7 +3043,7 @@
 		},
 		"uniques": [
 			"'Economic Building'",
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"[+1 Gold] from [resource] tiles [in all cities]",
 			"Only available <if [Bank] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [30] per owned city"
@@ -3264,7 +3251,7 @@
 			"culture": 50
 		},
 		"uniques": [
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Only available <if [Museum] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [30] per owned city"
 		],
@@ -3662,7 +3649,7 @@
 		},
 		"uniques": [
 			"'Military Building'",
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
 			"[-33]% Gold cost of upgrading <for [Military] units>"
 		],
@@ -4162,7 +4149,7 @@
 			"Great Artist": 3
 		},
 		"uniques": [
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Allied City-States provide [Culture] equal to [25]% of what they produce for themselves"
 		],
 		"quote": "'Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules.' - Douglas Adams",
@@ -4288,7 +4275,7 @@
 			"science": 33
 		},
 		"uniques": [
-			"Provides [1] [Influence]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Reveals the entire map",
 			"[+25]% [Science] [in all cities]",
 			"[+25]% [Production] [in all cities]",
@@ -4524,17 +4511,17 @@
 			"[+25]% Production when constructing [All] buildings [in this city]",
 			"[+25]% Production when constructing [{Civilian} {Civil Ship}] units [in this city]",
 			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
-			"Gain a free [Neolithic Era Start] [in this city] <if starting in the [Neolithic era]>",
-			"Gain a free [Ancient Era Start] [in this city] <if starting in the [Ancient era]>",
-			"Gain a free [Classical Era Start] [in this city] <if starting in the [Classical era]>",
-			"Gain a free [Medieval Era Start] [in this city] <if starting in the [Medieval era]>",
-			"Gain a free [Renaissance Era Start] [in this city] <if starting in the [Renaissance era]>",
-			"Gain a free [Imperial Era Start] [in this city] <if starting in the [Imperial era]>",
-			"Gain a free [Industrial Era Start] [in this city] <if starting in the [Industrial era]>",
-			"Gain a free [Modern Era Start] [in this city] <if starting in the [Modern era]>",
-			"Gain a free [Atomic Era Start] [in this city] <if starting in the [Atomic era]>",
-			"Gain a free [Information Era Start] [in this city] <if starting in the [Information era]>",
-			"Gain a free [Future Era Start] [in this city] <if starting in the [Future era]>",
+			"Gain a free [Neolithic Era Start] [in this city] <for [1] turns> <if starting in the [Neolithic era]>",
+			"Gain a free [Ancient Era Start] [in this city] <for [1] turns> <if starting in the [Ancient era]>",
+			"Gain a free [Classical Era Start] [in this city] <for [1] turns> <if starting in the [Classical era]>",
+			"Gain a free [Medieval Era Start] [in this city] <for [1] turns> <if starting in the [Medieval era]>",
+			"Gain a free [Renaissance Era Start] [in this city] <for [1] turns> <if starting in the [Renaissance era]>",
+			"Gain a free [Imperial Era Start] [in this city] <for [1] turns> <if starting in the [Imperial era]>",
+			"Gain a free [Industrial Era Start] [in this city] <for [1] turns> <if starting in the [Industrial era]>",
+			"Gain a free [Modern Era Start] [in this city] <for [1] turns> <if starting in the [Modern era]>",
+			"Gain a free [Atomic Era Start] [in this city] <for [1] turns> <if starting in the [Atomic era]>",
+			"Gain a free [Information Era Start] [in this city] <for [1] turns> <if starting in the [Information era]>",
+			"Gain a free [Future Era Start] [in this city] <for [1] turns> <if starting in the [Future era]>",
 			"Indicates the capital city"
 		]
 	},
@@ -4736,7 +4723,7 @@
 			"Limited to [5] per Civilization",
 			"[+1 Faith] per [5] population [in this city] <in cities with between [9] and [15] [Population]>",
 			"[+1 Faith] per [8] population [in this city] <in cities with between [15] and [24] [Population]>",
-			"[+1 Faith] per [10] population [in this city] <in cities with at least [24] [Population]>",
+			"[+2 Faith] per [5] population [in this city] <in cities with at least [24] [Population]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5254,7 +5241,7 @@
 		"cost": 450,
 		"isNationalWonder": true,
 		"uniques": [
-			"Only available <when above [3] [Piety]>",
+			"Only available <when above [3] [Piety]> <when [Religious] Victory is enabled>",
 			"Triggers a global alert upon build start",
 			"Cannot be hurried",
 			"Destroyed when the city is captured"
@@ -5606,6 +5593,7 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
+			"Provides [10] [Influence Limit]",
 			"Consumes [1] [Influence]",
 			"Remove ['Divided'] [in all cities]",
 			"Remove ['Agreement'] [in all cities]",
@@ -5623,6 +5611,7 @@
 			"Unbuildable",
 			"Unsellable",
 			"'Agreement'",
+			"Provides [10] [Influence Limit]",
 			"Consumes [1] [Influence]",
 			"Enables Research agreements",
 			"[-10]% Culture cost of adopting new Policies",
@@ -5647,6 +5636,7 @@
 			"Unbuildable",
 			"Unsellable",
 			"'Agreement'",
+			"Provides [10] [Influence Limit]",
 			"Consumes [1] [Influence]",
 			"[+18]% Production when constructing ['Infrastructure'] buildings [in all cities]",
 			"[-25]% maintenance on road & railroads",
@@ -5660,6 +5650,7 @@
 			"Unbuildable",
 			"Unsellable",
 			"'Agreement'",
+			"Provides [10] [Influence Limit]",
 			"Consumes [1] [Influence]",
 			"Enables Research agreements",
 			"[-15]% Culture cost of adopting new Policies",
@@ -5686,6 +5677,7 @@
 			"Unbuildable",
 			"Unsellable",
 			"'Agreement'",
+			"Provides [10] [Influence Limit]",
 			"Consumes [1] [Influence]",
 			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities]",
 			"[-50]% maintenance on road & railroads",
@@ -5700,7 +5692,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Provides [1] [Influence]",
+			"Provides [10] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
 			"[-3]% Culture cost of adopting new Policies",
 			"Moves to new capital when capital changes"
@@ -5713,7 +5706,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [1] [Influence]",
+			"Provides [10] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
 			"Provides [1] [Noble Army Maintainance]",
 			"[+15]% growth [in all cities]",
@@ -5727,7 +5721,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Provides [1] [Influence]",
+			"Provides [10] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
 			"[-10]% Culture cost of adopting new Policies",
 			"Moves to new capital when capital changes"
@@ -5741,7 +5736,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Provides [1] [Influence]",
+			"Provides [15] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
 			"Provides [1] [Noble Army Maintainance]",
 			"[-5]% Culture cost of adopting new Policies",
@@ -5756,7 +5752,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [1] [Influence]",
+			"Provides [15] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
 			"Provides [2] [Noble Army Maintainance]",
 			"[+10]% growth [in all cities]",
@@ -5773,7 +5770,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [1] [Influence]",
+			"Provides [20] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
 			"Provides [3] [Noble Army Maintainance]",
 			"[+2 Culture] from every [Governor]",
@@ -5789,7 +5787,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [1] [Influence]",
+			"Provides [20] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
 			"Provides [2] [Noble Army Maintainance]",
 			"[+1 Production] from every [Governor]",
@@ -5805,7 +5804,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Provides [1] [Influence]",
+			"Provides [20] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
 			"Provides [2] [Noble Army Maintainance]",
 			"[+5]% growth [in all cities]",
@@ -5822,7 +5822,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Provides [1] [Influence]",
+			"Provides [25] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
 			"Provides [2] [Noble Army Maintainance]",
 			"[-7]% Culture cost of adopting new Policies",
@@ -5838,14 +5839,46 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [2] [Influence]",
+			"Provides [25] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
 			"Provides [5] [Noble Army Maintainance]",
 			"[+20]% growth [in all cities]",
 			"[20]% Strength for cities",
+			"Comment [Enable you to give [Free City] and [Prince Elector Territory] bonuses to cities, [Free City] provides economical bonuses while [Prince Elector Territory] provides military bonuses]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
+	},
+	{
+		"name": "Free City",
+		"cost": 1,
+		"cityHealth":5,
+		"percentStatBonus":{"gold":10,
+							"science":5},
+		"uniques": [
+			"Instantly consumes [10] [Influence]",
+			"Only available <in cities without a [Prince Elector Territory]> <when above [0] [influence]>",
+			"[+25]% Production when constructing ['Economic Building'] buildings [in this city]",
+			"Only available <if [Empire of Electors] is constructed in all [Capital] cities>",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech":"Guilds"
+	},
+	{
+		"name": "Prince Elector Territory",
+		"cost": 1,
+		"cityHealth":10,
+		"cityStrength":10,
+		"uniques": [
+			"Instantly consumes [10] [Influence]",
+			"Only available <in cities without a [Free City]> <when above [0] [influence]>",
+			"New ['Noble Army'] units start with [10] XP [in this city]",
+			"[+2 Gold] from ['Policy Improvement'] tiles [in this city]",
+			"Only available <if [Empire of Electors] is constructed in all [Capital] cities>",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Armorments"
 	},
 	{
 		"name": "Celestial Empire",
@@ -5854,12 +5887,14 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [1] [Influence]",
+			"Provides [25] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
 			"Provides [2] [Noble Army Maintainance]",
 			"[+1 Production] from every [Governor]",
 			"[+10]% [Science] [in all cities]",
 			"Gifts of Gold to City-States generate [25]% more Influence",
+			"Comment [Enable you to build [Palace Guard]s, a variant of [Swordsman] that has extra promotion.]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
@@ -5871,11 +5906,13 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [1] [Influence]",
+			"Provides [25] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
 			"Provides [3] [Noble Army Maintainance]",
 			"[Faith] cost of purchasing [Faith] buildings [-23]%",
 			"[+1 Faith] from every ['Political Building']",
+			"[+17]% Faith cost of generating Great Prophet equivalents",
 			"Comment [Enable [Great Prophet] to give free policy after your religion is enhanced]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
@@ -5889,7 +5926,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [2] [Influence]",
+			"Provides [30] [Influence Limit]",
+			"Provides [2] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
 			"Provides [3] [Noble Army Maintainance]",
 			"[Gold] cost of purchasing [Civilian] units [-33]%",
@@ -5905,11 +5943,12 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [1] [Influence]",
+			"Provides [30] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
 			"Provides [4] [Noble Army Maintainance]",
 			"[+1 Production] from ['Extraction Improvement'] tiles [in all cities]",
-			"New [{'Standing Army'} {Land}] units start with [15] XP [in all cities]",
+			"New [{'Standing Army'} {Land}] units start with [10] XP [in all cities]",
 			"Gain a free [Military Expansion] [in all non-occupied cities]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
@@ -5923,7 +5962,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Provides [1] [Influence]",
+			"Provides [35] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
 			"Provides [1] [Noble Army Maintainance]",
 			"[-13]% Culture cost of adopting new Policies",
@@ -5938,7 +5978,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [1] [Influence]",
+			"Provides [35] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [5] [Standing Army Maintainance]",
 			"[+20]% growth [in all cities]",
 			"[-18]% construction time for [All] improvements <when not at war>",
@@ -5953,7 +5994,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [1] [Influence]",
+			"Provides [35] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
 			"[Gold] cost of purchasing [Civilian] units [-17]%",
 			"May buy [Great Engineer] units with [Gold] [in all cities]",
@@ -5970,7 +6012,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [1] [Influence]",
+			"Provides [35] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
 			"Provides [3] [Noble Army Maintainance]",
 			"[+2 Culture, +1 Happiness] from every [Governor]",
@@ -5990,7 +6033,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [1] [Influence]",
+			"Provides [40] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
 			"Provides [3] [Protection Squadron Volunteer]",
 			"New [{'Standing Army'} {Land}] units start with [10] XP [in all cities]",
@@ -6009,7 +6053,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [1] [Influence]",
+			"Provides [40] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
 			"[+1]% [Production] from every ['Political Building']",
 			"[-33]% construction time for [All] improvements <when not at war>",
@@ -6028,7 +6073,8 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Provides [1] [Influence]",
+			"Provides [40] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
 			"[-50]% Culture cost of adopting new Policies",
 			"Comment [You are permanently under [Anarchy] status, but its negative effects has been gutted.]",
@@ -6206,5 +6252,18 @@
 			"Provides [1] [Standing Army Maintainance]",
 			"Moves to new capital when capital changes"
 		]
+	},
+	///Negatives
+	{
+		"name": "Slum",
+		"cost": 50,
+		"percentStatBonus": {
+			"food": -5,
+			"production": -10
+		},
+		"uniques": [
+			"Unavailable"
+		],
+		"hurryCostModifier": -50
 	}
 ]

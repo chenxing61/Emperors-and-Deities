@@ -132,14 +132,14 @@
         "uniques": [
             "Only available <before the [Medieval era]> <after turn number [1]>",
             "Comment [Enables you to build Garrison Units, a variant of Levy close combat units that has bonus promotions and have expertise in defense, they can also be trained like the standing army.]",
-            "Remove [Tribes] [in all cities]",
+            "Remove [Tribes] [in all cities] <for [2] turns>",
             "Gain a free [Tribal Union] [in capital] <for [2] turns> <before the [Classical era]>"
         ],
         "policies": [
             {
                 "name": "Chiefdom Confederation",
                 "uniques": [
-                    "Provides [1] [Influence]",
+                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
                     "[+50]% Production when constructing [Town Hall] buildings [in all cities]",
                     "[+50]% Production when constructing [Basilica] buildings [in all cities]",
                     "[+50]% Production when constructing [Satrap's Manor] buildings [in all cities]",
@@ -298,7 +298,8 @@
                 "name": "Schools of Thought",
                 "uniques": [
                     "[+1 Science, +1 Culture] <in cities with at least [5] [Population]>",
-                    "Allied City-States provide [Science] equal to [25]% of what they produce for themselves"
+                    "Allied City-States provide [Science] equal to [25]% of what they produce for themselves",
+                    "Allied City-States provide [Culture] equal to [25]% of what they produce for themselves"
                 ],
                 "requires": [
                     "Inherit the Wisdom"
@@ -309,7 +310,7 @@
             {
                 "name": "Philosopher King",
                 "uniques": [
-                    "[+1 Happiness] per [3] social policies adopted",
+                    "[+1 Happiness] per [2] social policies adopted",
                     "[+25]% Golden Age length",
                     "[25]% of excess happiness converted to [Culture] <after adopting [Expanded Mythology]>"
                 ],
@@ -333,8 +334,12 @@
         "name": "Plutocracy",
         "era": "Classical era",
         "uniques": [
-            "[+10]% [Gold] from Trade Routes",
-            "Comment [Enables you to build [Primitive Property Sector], an 'Economic Building' that exchanges building speed with [Gold] production]"
+            "Comment [[+50]% [Production] when constructing ['Infrastructure']s and ['Marine Infrastructure']s of Classical era and Medieval era in all cities]",
+            "[+50]% Production when constructing [{Medieval era} {'Infrastructure'}] buildings [in all cities] <hidden from users>",
+            "[+50]% Production when constructing [{Classical era} {'Infrastructure'}] buildings [in all cities] <hidden from users>",
+            "[+50]% Production when constructing [{Medieval era} {'Marine Infrastructure'}] buildings [in all cities] <hidden from users>",
+            "[+50]% Production when constructing [{Classical era} {'Marine Infrastructure'}] buildings [in all cities] <hidden from users>",
+            "Comment [Enables you to build [Primitive Property Sector], an 'Economic Building' that exchanges building speed with [Gold] production] <hidden from users>"
         ],
         "policies": [
             {
@@ -424,7 +429,7 @@
             {
                 "name": "Court of Scholars",
                 "uniques": [
-                    "Provides [1] [Influence]",
+                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
                     "[100]% Great Person generation [in capital]"
                 ],
                 "requires": [
@@ -437,8 +442,8 @@
             {
                 "name": "Provincial Government",
                 "uniques": [
-                    "[+15]% Production when constructing ['Infrastructure'] buildings [in all cities]",
-                    
+                    "[+5]% [Production] [in all cities] <while the empire is happy>",
+                    "[+50]% Production when constructing [City Hall] buildings [in all cities]"
                 ],
                 "requires": [
                     "Imperial Examinations",
@@ -842,7 +847,7 @@
             {
                 "name": "Neo-colonialism",
                 "uniques": [
-                    "Provides [1] [Influence]",
+                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
                     "Allied City-States provide [Gold] equal to [33]% of what they produce for themselves",
                     "Resting point for Influence with City-States is increased by [-50]"
                 ],
@@ -1069,7 +1074,7 @@
                 "name": "Fascism Complete",
                 "uniques": [
                     "Instantly provides [10] [Influence]",
-                    "Provides [1] [Influence]",
+                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
                     "[+33]% growth [in all cities]"
                 ]
             }
@@ -1128,7 +1133,7 @@
             {
                 "name": "Comintern",
                 "uniques": [
-                    "Provides [1] [Influence]",
+                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
                     "[+50]% resources gifted by City-States",
                     "Military Units gifted from City-States start with [25] XP"
                 ],
@@ -1234,7 +1239,7 @@
             {
                 "name": "Diversity of Opinions",
                 "uniques": [
-                    "Provides [1] [Influence]",
+                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
                     "Comment [[Commune] provides 1% great person generation in all cities]"
                 ],
                 "requires": [
@@ -1325,7 +1330,7 @@
                 "uniques": [
                     "Instantly provides [10] [Influence]",
                     "Empire enters golden age",
-                    "Provides [1] [Influence]",
+                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
                     "[+25]% Great Person generation [in all cities]"
                 ]
             }
@@ -1444,7 +1449,7 @@
             {
                 "name": "Control of the Orbit",
                 "uniques": [
-                    "Provides [1] [Influence]",
+                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
                     "[+20]% Production when constructing [Spaceship part] units [in all cities]"
                 ],
                 "requires": [
@@ -1513,7 +1518,7 @@
             {
                 "name": "Utopia",
                 "uniques": [
-                    "Provides [1] [Influence]",
+                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
                     "[+100]% Production when constructing [Overwhelming Superiority] buildings [in all cities]"
                 ],
                 "requires": [

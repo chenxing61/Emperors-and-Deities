@@ -31,7 +31,7 @@
         "name": "Goddess of the Aurora",
         "type": "Pantheon",
         "uniques": [
-            "May buy [Igloo] buildings for [55] [Faith] [in cities following this religion]",
+            "May buy [Igloo] buildings for [40] [Faith] [in cities following this religion]",
             "[+1 Faith] from every [Tundra] <before the [Medieval era]>",
             "[+1 Faith] from every [Snow]",
             "[+2 Faith] from every [Snow] <before the [Medieval era]>",
@@ -44,7 +44,7 @@
         "type": "Pantheon",
         "uniques": [
             "Comment [Enables your civ to build [Oasis Dwelling].]",
-            "May buy [Road Network] buildings for [100] [Faith] [in cities following this religion]",
+            "May buy [Road Network] buildings for [50] [Faith] [in cities following this religion]",
             "[+1 Faith] from every [Desert] <before the [Medieval era]>"
         ]
     },
@@ -52,7 +52,7 @@
         "name": "Sacred Water",
         "type": "Pantheon",
         "uniques": [
-            "May buy [Well] buildings for [55] [Faith] [in cities following this religion]",
+            "May buy [Well] buildings for [20] [Faith] [in cities following this religion]",
             "[+1 Faith] in cities on [Fresh Water] tiles",
             "[+1 Happiness] in cities on [River] tiles",
             "[+1 Happiness] from [Oasis] tiles [in all cities]",
@@ -92,7 +92,7 @@
             "[+1 Culture] from every [Deep Sea Fishing Boats]",
             "[+1 Culture, +1 Gold] from all ['Marine Infrastructure'] buildings",
             "[+1 Faith] from every [Coast] <before the [Medieval era]>",
-            "[+1 Faith] from every [Ocean] <before the [Medieval era]>"
+            "[+1 Faith] from every [Ocean]"
         ]
     },
     {
@@ -144,6 +144,14 @@
         ]
     },
     {
+        "name": "Sacred Mathematics",
+        "type": "Follower",
+        "uniques": [
+            "[+1]% [Science] from every follower, up to [10]%",
+            "[+3 Faith] from [Academy] tiles [in all cities]"
+        ]
+    },
+    {
         "name": "Saints Worship",
         "type": "Follower",
         "uniques": [
@@ -155,7 +163,7 @@
         "name": "Mysticism",
         "type": "Follower",
         "uniques": [
-            "[-1 Science, +2 Happiness, +2 Faith] from all ['Worship Place'] buildings",
+            "[-2 Science, +2 Happiness, +2 Faith] from all ['Worship Place'] buildings",
             "[+5 Faith] from [Landmark] tiles [in all cities]"
         ]
     },
@@ -164,7 +172,7 @@
         "type": "Follower",
         "uniques": [
             "[+1 Faith] from all ['Entertainment Building'] buildings",
-            "[+2 Happiness] from [Landmark] tiles [in all cities]"
+            "[+3 Happiness] from [Landmark] tiles [in all cities]"
         ]
     },
     {
@@ -277,8 +285,9 @@
         "type": "Enhancer",
         "uniques": [
             "Religion naturally spreads to cities [+1] tiles away",
-            "When spreading religion to a city, gain [10] times the amount of followers of other religions as [Science]",
-            "When spreading religion to a city, gain [10] times the amount of followers of other religions as [Culture]"
+            "When spreading religion to a city, gain [6] times the amount of followers of other religions as [Science]",
+            "When spreading religion to a city, gain [10] times the amount of followers of other religions as [Culture]",
+            "[+1 Happiness] from every [5] global followers [in non-enemy foreign cities]"
         ]
     },
 
@@ -356,7 +365,7 @@
         "type": "Enhancer",
         "uniques": [
             "Only available <after adopting [Theocracy]>",
-            "[+75]% Natural religion spread [in City-State cities]",
+            "[+50]% Natural religion spread [in City-State cities]",
             "Militaristic City-States grant units [2] times as fast when you are at war with a common nation",
             "[+3 Production] from [Holy site] tiles [in cities following this religion]"
         ]
@@ -370,7 +379,14 @@
             "[+3 Science] from every ['Core of Religion'] <in cities following our religion>"
         ]
     },
-    
+    {
+        "name": "Religion Epics",
+        "type": "Enhancer",
+        "uniques": [
+            "May buy ['Cultural Building'] buildings with [Faith] [in all cities]",
+            "[+5 Culture] from every ['Core of Religion'] <in cities following our religion>"
+        ]
+    },
     {
         "name": "Missionary Zeal",
         "type": "Enhancer",
@@ -384,9 +400,8 @@
         "name": "Religious Texts",
         "type": "Enhancer",
         "uniques": [
-            "Religion naturally spreads to cities [+1] tiles away",
-            "[+34]% Natural religion spread [in all cities]",
-            "[+34]% Natural religion spread [in all cities] <after discovering [Printing Press]>"
+            "[+25]% Natural religion spread [in all cities]",
+            "[+25]% Natural religion spread [in all cities] <after discovering [Printing Press]>"
         ]
     },
     {
@@ -398,14 +413,7 @@
             "Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>"
         ]
     },
-    {
-        "name": "Religion Stories",
-        "type": "Enhancer",
-        "uniques": [
-            "May buy ['Cultural Building'] buildings with [Faith] [in all cities]",
-            "[+3 Culture] from every ['Core of Religion'] <in cities following our religion>"
-        ]
-    },
+    
     ///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
 
     ///Philsophical
@@ -447,8 +455,7 @@
         "type": "Founder",
         "uniques": [
             "Only available <before adopting [Monotheism]>",
-            "Gain a free [Pantheon] belief",
-            "[+1 Happiness] from every [5] global followers [in non-enemy foreign cities]"
+            "Gain a free [Pantheon] belief"
         ]
     },
     {
@@ -473,7 +480,8 @@
         "type": "Founder",
         "uniques": [
             "Only available <after adopting [Monotheism]>",
-            "[+1 Production] from all ['Worship Place'] buildings"
+            "[+1 Production] from all ['Worship Place'] buildings",
+            "[+1 Science] from all ['Organise Place'] buildings"
         ]
     },
     {
@@ -481,6 +489,7 @@
         "type": "Founder",
         "uniques": [
             "Only available <after adopting [Monotheism]>",
+            "[Faith] cost of purchasing items in cities [-5]%",
             "Gain a free [Enhancer] belief <upon enhancing a Religion>"
         ]
     }

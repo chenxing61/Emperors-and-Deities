@@ -7,9 +7,10 @@
             {
                 "text": "We need to take precaution!",
                 "uniques": [
-                    "Only available <if [Harmony] is constructed>",
+                    "Only available <if [Harmony] is constructed> <when above [0] [influence]>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [3] [Influence]",
+                    "Gain [-150] [Gold] <(modified by game speed)>",
                     "[-10]% [Gold] [in all cities] <for [3] turns>",
                     "[-10]% [Production] [in all cities] <for [3] turns>"
                 ]
@@ -17,9 +18,10 @@
             {
                 "text": "We need to take precaution!",
                 "uniques": [
-                    "Only available <if [Peace] is constructed>",
+                    "Only available <if [Peace] is constructed> <when above [0] [influence]>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [5] [Influence]",
+                    "Gain [-150] [Gold] <(modified by game speed)>",
                     "[-10]% [Gold] [in all cities] <for [5] turns>",
                     "[-10]% [Production] [in all cities] <for [5] turns>"
                 ]
@@ -65,6 +67,57 @@
                 "uniques": [
                     "Only available <if [Anarchy] is constructed>",
                     "Comment [Yep, theres nothing worse. Go ahead and try to return to a somewhat normal form.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Wealth Gap Widens",
+        "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Happiness]! As inequality in wealth is detrimental to societal stability.",
+        "choices": [
+            {
+                "text": "We need to take precaution!",
+                "uniques": [
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    ""
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Rampent Corruption",
+        "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Happiness]! As unjust ruling causes outrage in your towns.",
+        "choices": [
+            {
+                "text": "We need to take precaution!",
+                "uniques": [
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    ""
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Vagrancy Crisis",
+        "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Happiness]! As more and more yeoman loses their land to giant landlords, they either became serfs or vargants. Which exacerbates the risk of revolts and the decline of living condition.",
+        "choices": [
+            {
+                "text": "We need to take precaution!",
+                "uniques": [
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    ""
                 ]
             }
         ]
@@ -127,7 +180,7 @@
             {
                 "text": "State Reform",
                 "uniques": [
-                    "Only available <if [Unified] is constructed>",
+                    "Only available <if [Unified] is constructed> <when above [0] [influence]>",
                     "Instantly consumes [10] [Influence]",
                     "Triggers a [Reformation of the unified state] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
