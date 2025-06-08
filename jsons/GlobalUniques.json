@@ -12,11 +12,11 @@
 
         "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [10] [Population]>",
         "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [20] [Population]>",
-        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [30] [Population]>",
-        "[+25]% Unhappiness from [Population] [in all cities] <in cities with at least [40] [Population]>",
-        "[+30]% Unhappiness from [Population] [in all cities] <in cities with at least [50] [Population]>",
-        "[+35]% Unhappiness from [Population] [in all cities] <in cities with at least [60] [Population]>",
-        "[+40]% Unhappiness from [Population] [in all cities] <in cities with at least [70] [Population]>",
+        "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [30] [Population]>",
+        "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [40] [Population]>",
+        "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [50] [Population]>",
+        "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [60] [Population]>",
+        "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [70] [Population]>",
         //Influence
 
         "Provides [-1] [Influence] <when below [10] [Happiness]> <upon turn start> <starting from the [Imperial era]>",
@@ -34,6 +34,10 @@
         "Provides [1] [Influence] <when above [9] [Happiness]> <upon turn start>",
         "Provides [1] [Influence] <when above [29] [Happiness]> <upon turn start>",
         "Provides [2] [Influence] <during a Golden Age>",
+
+        "Triggers a [Wealth Gap Widens] event <when below [0] [Happiness]> <with [10]% chance> <upon turn end>",
+        "Triggers a [Rampent Corruption] event <when below [0] [Happiness]> <with [10]% chance> <upon turn end>",
+        "Triggers a [Vagrancy Crisis] event <when below [0] [Happiness]> <with [10]% chance> <upon turn end>",
 
         "Triggers a [Chaos Ensue] event <if [Unified] is constructed> <when below [10] [Happiness]> <with [3]% chance> <upon turn start> <starting from the [Medieval era]>",
         "Triggers a [Chaos Ensue] event <if [Unified] is constructed> <when below [5] [Happiness]> <with [10]% chance> <upon turn start> <starting from the [Medieval era]>",

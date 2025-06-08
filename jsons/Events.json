@@ -78,12 +78,15 @@
             {
                 "text": "We need to take precaution!",
                 "uniques": [
+                    "Only available <when above [0] [Influence]>",
+                    "Instantly consumes [3] [Influence]",
+                    "Gain [-100] [Gold] <(modified by game speed)>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
-                    ""
+                    "Gain a free [Slum] [in all cities] <in cities with at least [3] [Population]>"
                 ]
             }
         ]
@@ -94,13 +97,15 @@
         "choices": [
             {
                 "text": "We need to take precaution!",
-                "uniques": [
+                "uniques": ["Only available <when above [0] [Influence]>",
+                    "Instantly consumes [3] [Influence]",
+                    "Gain [-100] [Gold] <(modified by game speed)>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
-                    ""
+                    "Gain a free [Unjust Ruling] [in all cities] <in cities with at least [1] [Governor]>"
                 ]
             }
         ]
@@ -111,13 +116,15 @@
         "choices": [
             {
                 "text": "We need to take precaution!",
-                "uniques": [
+                "uniques": ["Only available <when above [0] [Influence]>",
+                    "Instantly consumes [3] [Influence]",
+                    "Gain [-100] [Gold] <(modified by game speed)>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
-                    ""
+                    "Gain a free [Peasant Rebellion] [in all cities] <in cities with at least [5] [Population]>"
                 ]
             }
         ]
@@ -180,7 +187,7 @@
             {
                 "text": "State Reform",
                 "uniques": [
-                    "Only available <if [Unified] is constructed> <when above [0] [Influence]>",
+                    "Only available <if [Unified] is constructed> <when above [10] [Influence]>",
                     "Instantly consumes [10] [Influence]",
                     "Triggers a [Reformation of the unified state] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -190,7 +197,7 @@
                 "text": "Increasing Stability.",
                 "uniques": [
                     "Only available <if [Peace] is constructed> <if [United States] is not constructed>",
-                    "Only available <when number of [Influence] is more than [10]>",
+                    "Only available <when number of [Influence] is more than [5]>",
                     "Comment [We must make our empire even more stable]",
                     "Triggers a [Stablising our side of the globe] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -200,7 +207,7 @@
                 "text": "Increasing Stability.",
                 "uniques": [
                     "Only available <if [Struggle] is constructed>",
-                    "Only available <when number of [Influence] is more than [10]>",
+                    "Only available <when number of [Influence] is more than [5]>",
                     "Comment [We must take action against the coming chaos.]",
                     "Triggers a [Stablising our side of the globe] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -210,7 +217,7 @@
                 "text": "Increasing Stability.",
                 "uniques": [
                     "Only available <if [Strife] is constructed>",
-                    "Only available <when number of [Influence] is more than [10]>",
+                    "Only available <when number of [Influence] is more than [5]>",
                     "Comment [We must take action against the coming chaos.]",
                     "Triggers a [Stablising our side of the globe] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -220,7 +227,7 @@
                 "text": "Increasing Stability.",
                 "uniques": [
                     "Only available <if [Anarchy] is constructed> <before adopting [Anarchism]>",
-                    "Only available <when number of [Influence] is more than [10]>",
+                    "Only available <when number of [Influence] is more than [5]>",
                     "Comment [We must take action against the coming chaos.]",
                     "Triggers a [Stablising our side of the globe] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"

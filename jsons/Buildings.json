@@ -77,13 +77,41 @@
 	},
 	{
 		"name": "Remove Slums",
-		"cost": 100,
+		"cost": 80,
 		"uniques": [
 			"Only available <in cities with a [Slum]>",
 			"Unbuildable",
 			"Remove [Slum] [in this city]",
-			"[-1] population [in this city]",
+			"[+1] population [in this city]",
 			"Remove [Remove Slums] [in this city] <hidden from users>",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding":"Town Hall",
+		"requiredTech": "Paper Making"
+	},
+	{
+		"name": "Clear Corruption",
+		"cost": 80,
+		"uniques": [
+			"Only available <in cities with a [Unjust Ruling]>",
+			"Unbuildable",
+			"Remove [Unjust Ruling] [in this city]",
+			"Instantly provides [3] [Influence]",
+			"Remove [Clear Corruption] [in this city] <hidden from users>",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding":"Town Hall",
+		"requiredTech": "Paper Making"
+	},
+	{
+		"name": "Stop Rebellion",
+		"cost": 80,
+		"uniques": [
+			"Only available <in cities with a [Peasant Rebellion]>",
+			"Unbuildable",
+			"Remove [Peasant Rebellion] [in this city]",
+			"Instantly provides [3] [Influence]",
+			"Remove [Stop Rebellion] [in this city] <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding":"Town Hall",
@@ -6258,11 +6286,34 @@
 		"name": "Slum",
 		"cost": 50,
 		"percentStatBonus": {
-			"food": -5,
-			"production": -10
+			"food": -15,
+			"production": -5
 		},
 		"uniques": [
 			"Unavailable"
+		],
+		"hurryCostModifier": -50
+	},
+	{
+		"name": "Unjust Ruling",
+		"cost": 50,
+		"percentStatBonus": {
+			"production": -5,
+			"gold":	-10,
+			"culture": -10,
+			"faith":-5
+		},
+		"uniques": [
+			"Unavailable"
+		],
+		"hurryCostModifier": -50
+	},
+	{
+		"name": "Peasant Rebellion",
+		"cost": 50,
+		"uniques": [
+			"Unavailable",
+			"Rebel units may spawn"
 		],
 		"hurryCostModifier": -50
 	}
