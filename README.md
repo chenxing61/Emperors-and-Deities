@@ -4,7 +4,7 @@
  The Mod is WIP so civs dont have their unique features currently and late game(info age) kinda sucks.
 
  Credit to 
- Buckeeter aka Wadaling for making full vector icons and tile sets.
+ Buckeeter aka Wadaling for making full vector icons(another credit to flaticon.com) and tile sets.
  EmperorPenguin for help with proofreading, bug fixing advices
  FastDoubloon115_ for help with playtesting
 
@@ -16,8 +16,10 @@
 
  Feedback goes to official unciv discord's Emperors and Deities thread, or just open a issue here!
 
- Feel free to translate this mod and send them to author
- Simpified Chinese Translation done by CX61 himself
- Russian Translation done by Nori_Bori from discord with help of Genemi AI
+ Feel free to translate this mod and send them to me, so that I may implement it in the mod.
+
+ Traditional & Simpified Chinese Translation done by CX61 himself.
+
+ Russian Translation done by Nori_Bori from discord with help of Genemi AI.
 
 
