@@ -735,9 +735,7 @@
 	{
 		"name": "Jewellery Workshop",
 		"maintenance": 1,
-		"specialistSlots": {
-			"Artist": 1
-		},
+		"culture":1,
 		"uniques": [
 			"'Light Industry'",
 			"[+1 Gold] from [{'Extraction Improvement'} {'Precious Mineral'}] tiles [in this city]",
@@ -1230,9 +1228,7 @@
 		"name": "Stone Works",
 		"maintenance": 1,
 		"production": 1,
-		"specialistSlots": {
-			"Artist": 1
-		},
+		"culture":1,
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from ['Rock'] tiles [in this city]",
@@ -1264,9 +1260,9 @@
 	{
 		"name": "Furniture Workshop",
 		"maintenance": 2,
+		"culture":1,
 		"specialistSlots": {
-			"Engineer": 1,
-			"Artist": 1
+			"Engineer": 1
 		},
 		"uniques": [
 			"'Light Industry'",
@@ -1438,7 +1434,7 @@
 		"maintenance": 3,
 		"isNationalWonder": true,
 		"specialistSlots": {
-			"Artist": 3
+			"Artist": 2
 		},
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -1474,7 +1470,7 @@
 		"maintenance": 3,
 		"isNationalWonder": true,
 		"specialistSlots": {
-			"Artist": 3
+			"Artist": 2
 		},
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -1528,7 +1524,7 @@
 		"isNationalWonder": true,
 		"faith": 3,
 		"specialistSlots": {
-			"Artist": 3,
+			"Artist": 2,
 			"Governor": 1
 		},
 		"uniques": [
@@ -1592,9 +1588,7 @@
 		"name": "Circus",
 		"cost": 40,
 		"happiness": 2,
-		"specialistSlots": {
-			"Artist": 1
-		},
+		"gold":1,
 		"uniques": [
 			"'Entertainment Building'"
 		],
@@ -1927,9 +1921,7 @@
 		"name": "Garden",
 		"maintenance": 3,
 		"happiness": 1,
-		"specialistSlots": {
-			"Artist": 1
-		},
+		"culture":1,
 		"uniques": [
 			"'Cultural Building'",
 			"[+25]% Great Person generation [in this city]",
@@ -2556,7 +2548,7 @@
 		},
 		"specialistSlots": {
 			"Scientist": 2,
-			"Artist": 2,
+			"Artist": 1,
 			"Engineer": 1
 		},
 		"uniques": [
@@ -2662,7 +2654,7 @@
 		"maintenance": 5,
 		"food": 2,
 		"percentStatBonus": {
-			"food": 25
+			"food": 15
 		},
 		"specialistSlots": {
 			"Engineer": 1

@@ -1,0 +1,231 @@
+[	
+	{
+		"name": "Power Grid",
+		"maintenance": 10,
+		"specialistSlots": {
+			"Factory Worker": 1,
+			"Engineer": 1
+		},
+		"uniques": [
+			"'Infrastructure'",
+			"Comment [Enable this city to consume and generate [Power], which enables Industry and ['Infrastructure'] buildings to increase overall gain based on electricity surplus]"
+		],
+		"requiredTech": "Electricity",
+		"hurryCostModifier": 25
+	},
+    {
+		"name": "Government Complex",
+		"maintenance": 10,
+		"happiness": 2,
+		"culture": 2,
+		"cityStrength": 5,
+		"specialistSlots": {
+			"Governor": 1
+		},
+		"uniques": [
+			"'Political Building'",
+			"[-20]% Unhappiness from [Population] [in this city] <in cities with a [Anarchist Ruling]>",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Telegram",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Food Industry",
+		"maintenance": 10,
+		"percentStatBonus": {
+			"Food": 10
+		},
+		"specialistSlots": {
+			"Factory Worker": 5,
+			"Engineer": 1
+		},
+		"uniques": [
+			"'Light Industry'",
+			"[+1 Food] from every [Factory Worker]"
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Mass Production",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Consumer Goods Industry",
+		"maintenance": 10,
+		"percentStatBonus": {
+			"gold":	5
+		},
+		"specialistSlots": {
+			"Factory Worker": 5,
+			"Engineer": 1
+		},
+		"uniques": [
+			"'Light Industry'",
+			"[+1 Gold] from every [Factory Worker]"
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Furniture Industry",
+		"maintenance": 10,
+		"percentStatBonus": {
+			"production": 5
+		},
+		"specialistSlots": {
+			"Factory Worker": 5,
+			"Engineer": 1
+		},
+		"uniques": [
+			"'Light Industry'",
+			"[+1 Gold] from every [Factory Worker]"
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Electronic Industry",
+		"maintenance": 20,
+		"percentStatBonus": {
+			"science": 10
+		},
+		"specialistSlots": {
+			"Engineer": 3
+		},
+		"uniques": [
+			"'High Tech Industry'",
+			"[+1 Science] from every [Engineer]"
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Vehicle Industry",
+		"maintenance": 20,
+		"percentStatBonus": {
+			"production": 10
+		},
+		"specialistSlots": {
+			"Factory Worker": 4,
+			"Engineer": 2
+		},
+		"uniques": [
+			"'Heavy Industry'",
+			"[+1 Production] from every [Engineer]"
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Shipmaking Industry",
+		"maintenance": 8,
+		"science": 1,
+		"percentStatBonus": {
+			"production": 10
+		},
+		"specialistSlots": {
+			"Factory Worker": 5,
+			"Engineer": 2
+		},
+		"uniques": [
+			"'Heavy Industry'",
+			
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Small Arms Industry",
+		"maintenance": 8,
+		"science": 1,
+		"percentStatBonus": {
+			"production": 10
+		},
+		"specialistSlots": {
+			"Factory Worker": 3,
+			"Engineer": 1
+		},
+		"uniques": [
+			"'Heavy Industry'",
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Military Vehicle Industry",
+		"maintenance": 8,
+		"science": 1,
+		"percentStatBonus": {
+			"production": 10
+		},
+		"specialistSlots": {
+			"Factory Worker": 4,
+			"Engineer": 2
+		},
+		"uniques": [
+			"'Heavy Industry'",
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Military Shipmaking Industry",
+		"maintenance": 8,
+		"science": 1,
+		"percentStatBonus": {
+			"production": 10
+		},
+		"specialistSlots": {
+			"Factory Worker": 4,
+			"Engineer": 2
+		},
+		"uniques": [
+			"'Heavy Industry'",
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Aviation Industry",
+		"maintenance": 8,
+		"science": 1,
+		"percentStatBonus": {
+			"production": 10
+		},
+		"specialistSlots": {
+			"Factory Worker": 4,
+			"Engineer": 2
+		},
+		"uniques": [
+			"'Heavy Industry'",
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Rocketry Industry",
+		"maintenance": 8,
+		"science": 1,
+		"percentStatBonus": {
+			"production": 10
+		},
+		"specialistSlots": {
+			"Factory Worker": 2,
+			"Engineer": 3
+		},
+		"uniques": [
+			"'High Tech Industry'",
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 10
+	}
+]
