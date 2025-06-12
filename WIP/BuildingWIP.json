@@ -3,20 +3,99 @@
 		"name": "Power Grid",
 		"maintenance": 10,
 		"specialistSlots": {
-			"Factory Worker": 1,
 			"Engineer": 1
 		},
 		"uniques": [
 			"'Infrastructure'",
-			"Comment [Enable this city to consume and generate [Power], which enables Industry and ['Infrastructure'] buildings to increase overall gain based on electricity surplus]"
+			"Comment [Enable this city's industries and citizens to consume [Power], which enables Industry and ['Infrastructure'] buildings to increase overall gain based on electricity surplus]",
+			"Comment [Every 5 population costs 1 [Power]]",
+			"Consumes [1] [Power] <in cities with between [0] and [5] [Population]> <hidden from users>",
+			"Consumes [2] [Power] <in cities with between [5] and [10] [Population]> <hidden from users>",
+			"Consumes [3] [Power] <in cities with between [10] and [15] [Population]> <hidden from users>",
+			"Consumes [4] [Power] <in cities with between [15] and [20] [Population]> <hidden from users>",
+			"Consumes [5] [Power] <in cities with between [20] and [25] [Population]> <hidden from users>",
+			"Consumes [6] [Power] <in cities with between [25] and [30] [Population]> <hidden from users>",
+			"Consumes [7] [Power] <in cities with between [30] and [35] [Population]> <hidden from users>",
+			"Consumes [8] [Power] <in cities with between [35] and [40] [Population]> <hidden from users>",
+			"Consumes [9] [Power] <in cities with between [40] and [45] [Population]> <hidden from users>",
+			"Consumes [10] [Power] <in cities with between [45] and [50] [Population]> <hidden from users>",
+			"Consumes [11] [Power] <in cities with between [50] and [55] [Population]> <hidden from users>",
+			"Consumes [12] [Power] <in cities with between [55] and [60] [Population]> <hidden from users>",
+			"Consumes [13] [Power] <in cities with between [60] and [65] [Population]> <hidden from users>",
+			"Consumes [14] [Power] <in cities with between [65] and [70] [Population]> <hidden from users>",
+			"Consumes [15] [Power] <in cities with between [70] and [75] [Population]> <hidden from users>",
+			"Consumes [16] [Power] <in cities with between [75] and [80] [Population]> <hidden from users>",
+			"Consumes [17] [Power] <in cities with between [80] and [85] [Population]> <hidden from users>",
+			"Consumes [18] [Power] <in cities with between [85] and [90] [Population]> <hidden from users>",
+			"Consumes [19] [Power] <in cities with between [90] and [95] [Population]> <hidden from users>",
+			"Consumes [20] [Power] <in cities with between [95] and [100] [Population]> <hidden from users>"
 		],
 		"requiredTech": "Electricity",
 		"hurryCostModifier": 25
 	},
+		{
+		"name": "Fossil Fuel Power Plant",
+		"maintenance": 10,
+		"uniques": [
+			"'Power Building'",
+			"[+2 Production] from [Coal] tiles [in this city]",
+			"[+1 Production] from [Oil] tiles [in this city]",
+			"[+1 Production] from [Natural Gas] tiles [in this city]",
+			"Provide [6] [Power]",
+			"Provide [4] [Power] <when above [1] [Fuel]> <in cities with [Oil Refinery]>",
+			"Provide [4] [Power] <when above [1] [Fuel]> <in cities with [Gas Storage and Transfer System]>",
+			"Consumes [1] [Coal]",
+			"Consumes [1] [Fuel] <when above [1] [Fuel]> <in cities with [Oil Refinery]>",
+			"Provide [4] [Power] <when above [1] [Fuel]> <in cities with [Gas Storage and Transfer System]>",
+			"Only available <when above [0] [Coal]>"
+		],
+		"requiredTech": "Steam Power",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Nuclear Power Plant",
+		"maintenance": 5,
+		"science": 3,
+		"uniques": [
+			"'Power Building'",
+			"Consumes [1] [Enriched Uranium] <before discovering [Nuclear Fusion]>",
+			"Consumes [0] [Enriched Uranium] <after discovering [Nuclear Fusion]>",
+			"Provide [8] [Power]"
+		],
+		"requiredTech": "Nuclear Fission",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Solar Plant",
+		"maintenance": 3,
+		"uniques": [
+			"'Power Building'",
+			"Provide [4] [Power]"
+		],
+		"requiredTech": "Ecology",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Carbon Capture",
+		"maintenance": 5,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Heavy Industry'",
+			"Provides [1] [Waste Material]",
+			"[+10]% [Science] [in this city] <in cities with a [Fossil Fuel Plant]>",
+			"[+10]% [Culture] [in this city] <in cities with a [Fossil Fuel Plant]>",
+			"[-5]% [Production] [in this city] <in cities with a [Fossil Fuel Plant]>",
+			"[-1 Production] from [Coal] tiles [in this city]",
+			"Provides [1] [Coal]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Renewable Energy"
+	},
     {
 		"name": "Government Complex",
 		"maintenance": 10,
-		"happiness": 2,
+		"happiness": 3,
 		"culture": 2,
 		"cityStrength": 5,
 		"specialistSlots": {
@@ -34,15 +113,19 @@
 		"name": "Food Industry",
 		"maintenance": 10,
 		"percentStatBonus": {
-			"Food": 10
+			"food": 10
 		},
 		"specialistSlots": {
-			"Factory Worker": 5,
+			"Labourer": 5,
 			"Engineer": 1
 		},
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Food] from every [Factory Worker]"
+			"Provide [2] [Consumption Supply]",
+			"Consumes [3] [Power] <in cities with a [Power Grid]>",
+			"[+15]% [Food] [in this city] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+1 Food] from every [Labourer] <in this city>"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Mass Production",
@@ -52,15 +135,20 @@
 		"name": "Consumer Goods Industry",
 		"maintenance": 10,
 		"percentStatBonus": {
-			"gold":	5
+			"gold":	5,
+			"happiness":5
 		},
 		"specialistSlots": {
-			"Factory Worker": 5,
+			"Labourer": 5,
 			"Engineer": 1
 		},
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Gold] from every [Factory Worker]"
+			"Provide [2] [Consumption Supply]",
+			"Consumes [3] [Power] <in cities with a [Power Grid]>",
+			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+10]% [Happiness] [in this city] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+1 Gold] from every [Labourer] <in this city>"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization",
@@ -73,12 +161,16 @@
 			"production": 5
 		},
 		"specialistSlots": {
-			"Factory Worker": 5,
+			"Labourer": 5,
 			"Engineer": 1
 		},
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Gold] from every [Factory Worker]"
+			"Provide [2] [Consumption Supply]",
+			"Consumes [3] [Power] <in cities with a [Power Grid]>",
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+5]% [Culture] [in this city] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+1 Production] from every [Labourer] <in this city>"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization",
@@ -95,7 +187,38 @@
 		},
 		"uniques": [
 			"'High Tech Industry'",
-			"[+1 Science] from every [Engineer]"
+			"Provide [1] [Consumption Supply]",
+			"Consumes [4] [Power] <in cities with a [Power Grid]>",
+			"[+5]% [Science] [in this city] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+1 Science] from every [Engineer] <in this city>"
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Machine Industry",
+		"maintenance": 10,
+		"percentStatBonus": {
+			"production":5,
+			"science":5
+		},
+		"specialistSlots": {
+			"Labourer": 5,
+			"Engineer": 2
+		},
+		"uniques": [
+			"'Heavy Industry'",
+			"Consumes [3] [Power] <in cities with a [Power Grid]>",
+			"'Heavy Industry'",
+			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
+			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities]",
+			"[+3]% Production when constructing ['Military Industry'] buildings [in all cities]",
+			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+3]% Production when constructing ['Military Industry'] buildings [in all cities] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+2 Production] from every [Engineer] <in this city>"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization",
@@ -103,129 +226,194 @@
 	},
 	{
 		"name": "Vehicle Industry",
-		"maintenance": 20,
-		"percentStatBonus": {
-			"production": 10
-		},
+		"maintenance": 10,
 		"specialistSlots": {
-			"Factory Worker": 4,
-			"Engineer": 2
-		},
-		"uniques": [
-			"'Heavy Industry'",
-			"[+1 Production] from every [Engineer]"
-		],
-		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "Industrialization",
-		"hurryCostModifier": 10
-	},
-	{
-		"name": "Shipmaking Industry",
-		"maintenance": 8,
-		"science": 1,
-		"percentStatBonus": {
-			"production": 10
-		},
-		"specialistSlots": {
-			"Factory Worker": 5,
-			"Engineer": 2
-		},
-		"uniques": [
-			"'Heavy Industry'",
-			
-		],
-		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "Industrialization",
-		"hurryCostModifier": 10
-	},
-	{
-		"name": "Small Arms Industry",
-		"maintenance": 8,
-		"science": 1,
-		"percentStatBonus": {
-			"production": 10
-		},
-		"specialistSlots": {
-			"Factory Worker": 3,
+			"Labourer": 4,
 			"Engineer": 1
 		},
 		"uniques": [
 			"'Heavy Industry'",
+			"Provide [1] [Consumption Supply]",
+			"Provide [1] [Vehicle Parts]",
+			"Provide [1] [Vehicle Parts] <when at war>",
+			"Consumes [4] [Power] <in cities with a [Power Grid]>",
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
+			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <when above [0] [Power]>",
+			"[+1 Production] from every [Engineer] <in this city>"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization",
-		"hurryCostModifier": 10
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Shipmaking Industry",
+		"maintenance": 10,
+		"science": 1,
+		"specialistSlots": {
+			"Labourer": 5,
+			"Engineer": 2
+		},
+		"uniques": [
+			"'Heavy Industry'",
+			"Provide [1] [Consumption Supply]",
+			"Provide [1] [Ship Parts]",
+			"Provide [1] [Ship Parts] <when at war>",
+			"Consumes [4] [Power] <in cities with a [Power Grid]>",
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+10]% [Gold] [in this city] <in cities with a [Power Grid]> <when above [0] [Power]>",
+			"[+5]% Production when constructing [{Civilian} {Water}] units [in all cities]",
+			"[+5]% Production when constructing [{Civilian} {Water}] units [in all cities] <when above [0] [Power]>",
+			"[+2 Gold] from every [Engineer] <in this city>"
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Small Arms Industry",
+		"maintenance": 10,
+		"science": 1,
+		"percentStatBonus": {
+			"production": 10
+		},
+		"specialistSlots": {
+			"Labourer": 3,
+			"Engineer": 1
+		},
+		"uniques": [
+			"'Military Industry'",
+			"Consumes [2] [Alloy]",
+			"Provide [5] [Weapon Parts]",
+			"Consumes [3] [Power] <in cities with a [Power Grid]>",
+			"Provide [3] [Weapon Parts] <in cities with a [Power Grid]> <when above [0] [Power]>"
+		],
+		"requiredBuilding": "Military Factory Complex",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Military Vehicle Industry",
-		"maintenance": 8,
+		"maintenance": 20,
 		"science": 1,
 		"percentStatBonus": {
 			"production": 10
 		},
 		"specialistSlots": {
-			"Factory Worker": 4,
-			"Engineer": 2
+			"Labourer": 4,
+			"Engineer": 1
 		},
 		"uniques": [
-			"'Heavy Industry'",
+			"'Military Industry'",
+			"Consumes [2] [Alloy]",
+			"Consumes [1] [Rubber]",
+			"Provide [4] [Vehicle Parts]",
+			"Consumes [3] [Power] <in cities with a [Power Grid]>",
+			"Provide [2] [Weapon Parts] <in cities with a [Power Grid]> <when above [0] [Power]>"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Industrialization",
-		"hurryCostModifier": 10
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Military Shipmaking Industry",
-		"maintenance": 8,
+		"maintenance": 20,
 		"science": 1,
 		"percentStatBonus": {
 			"production": 10
 		},
 		"specialistSlots": {
-			"Factory Worker": 4,
-			"Engineer": 2
+			"Labourer": 4,
+			"Engineer": 1
 		},
 		"uniques": [
-			"'Heavy Industry'",
+			"'Military Industry'",
+			"Consumes [3] [Alloy]",
+			"Provide [4] [Ship Parts]",
+			"Consumes [3] [Power] <in cities with a [Power Grid]>",
+			"Provide [2] [Ship Parts] <in cities with a [Power Grid]> <when above [0] [Power]>"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Industrialization",
-		"hurryCostModifier": 10
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Aviation Industry",
-		"maintenance": 8,
+		"maintenance": 20,
 		"science": 1,
 		"percentStatBonus": {
 			"production": 10
 		},
 		"specialistSlots": {
-			"Factory Worker": 4,
+			"Labourer": 3,
 			"Engineer": 2
 		},
 		"uniques": [
-			"'Heavy Industry'",
+			"'Military Industry'",
+			"Consumes [3] [Aluminium]",
+			"Consumes [1] [Rubber]",
+			"Provide [3] [Aircraft Parts]",
+			"Consumes [3] [Power] <in cities with a [Power Grid]>",
+			"Provide [2] [Aircraft Parts] <in cities with a [Power Grid]> <when above [0] [Power]>"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Industrialization",
-		"hurryCostModifier": 10
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Rocketry Industry",
-		"maintenance": 8,
+		"maintenance": 20,
 		"science": 1,
 		"percentStatBonus": {
 			"production": 10
 		},
 		"specialistSlots": {
-			"Factory Worker": 2,
-			"Engineer": 3
+			"Engineer": 1,
+			"Scientist":1
 		},
 		"uniques": [
 			"'High Tech Industry'",
+			"Consumes [1] [Alloy]",
+			"Consumes [1] [Aluminium]",
+			"Consumes [1] [Electronic Parts]",
+			"Consumes [1] [Power]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Industrialization",
-		"hurryCostModifier": 10
-	}
+		"hurryCostModifier": 25
+	},
+	///Inventions
+	{
+		"name": "Schrodingers Tradition",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Schrodingers Tradition",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"[+1 Happiness, +5 Science] [in all cities]",
+			"Moves to new capital when capital changes"
+		],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Schrodingers Tradition",
+		"isNationalWonder": true,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"[+1 Happiness, +5 Science] [in all cities]",
+			"Moves to new capital when capital changes"
+		],
+		"hurryCostModifier": 0
+	},
 ]
