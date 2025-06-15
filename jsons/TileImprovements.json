@@ -43,6 +43,20 @@
 		"shortcutKey": "P"
 	},
 	{
+		"name": "Rubber Plantation",
+		"production":1,
+		"gold": 2,
+		"techRequired": "Industrialization",
+		"terrainsCanBeBuiltOn":["Forest","Jungle"],
+		"uniques": [
+			"'Agricultural Improvement'",
+			"Provides [2] [Rubber]",
+			"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+18 Gold]"
+		],
+		"shortcutKey": "P"
+	},
+	{
 		"name": "Mechanised Farm",
 		"terrainsCanBeBuiltOn": [
 			"Plains",
@@ -319,6 +333,21 @@
 		"shortcutKey": "F"
 	},
 	{
+		"name": "Deep Sea Fishing Boats",
+		"terrainsCanBeBuiltOn": [
+			"Ocean"
+		],
+		"turnsToBuild": 7,
+		"requiredTech": "Cartography",
+		"uniques": [
+			"'Water Improvement'",
+			"Provides [2] [Deep Sea Fish(Stored)]",
+			"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "F"
+	},
+	{
 		"name": "Aquaculture",
 		"terrainsCanBeBuiltOn": [
 			"Coast"
@@ -335,21 +364,7 @@
 		],
 		"shortcutKey": "F"
 	},
-	{
-		"name": "Deep Sea Fishing Boats",
-		"terrainsCanBeBuiltOn": [
-			"Ocean"
-		],
-		"turnsToBuild": 7,
-		"techRequired": "Refrigeration",
-		"uniques": [
-			"'Water Improvement'",
-			"Provides [2] [Deep Sea Fish(Stored)]",
-			"Can only be built to improve a resource",
-			"Pillaging this improvement yields approximately [+10 Gold]"
-		],
-		"shortcutKey": "F"
-	},
+	
 	{
 		"name": "Camp",
 		"turnsToBuild": 4,
