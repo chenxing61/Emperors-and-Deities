@@ -165,8 +165,6 @@
                 "text": "Build Agreements",
                 "uniques": [
                     "Only available <if [Unified] is not constructed>",
-                    "Only available <if [Military Alliance] is not constructed> <if [Cultural Exchange] is not constructed> <if [Trade Alliance] is not constructed> <before the [Industrial era]>",
-                    "Only available <if [Collective Security] is not constructed> <if [Reseach Exchange] is not constructed> <if [Economic Community] is not constructed> <starting from the [Industrial era]>",
                     "Comment [Tho our civilization is divided, we are not weak.]",
                     "Triggers a [Building Alliance] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -176,7 +174,7 @@
                 "text": "Build Agreements",
                 "uniques": [
                     "Only available <if [Personal Union] is constructed>",
-                    "Only available <if [Collective Security] is not constructed> <if [Reseach Exchange] is not constructed> <if [Economic Community] is not constructed> <starting from the [Industrial era]>",
+                    "Only available <starting from the [Industrial era]>",
                     "Comment [Commonwealth needs futher cooperation.]",
                     "Triggers a [Building Alliance] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -261,6 +259,13 @@
                 ]
             },
             {
+                "text": "Check Current Status",
+                "uniques": [
+                    "Triggers a [Present Current Status] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
                 "text": "Actually...I was checking what I can do.",
                 "uniques": [
                     "Comment [Nothing happens.]",
@@ -269,7 +274,7 @@
             }
         ]
     },
-        {
+    {
         "name": "Shift in Politic",
         "text": "The structure of our civilization changes to adapt to the time. What path shall we partake?",
         "choices": [
@@ -579,6 +584,162 @@
                     "Remove ['Civilization Form'] [in all cities]",
                     "Remove [Unified] [in all cities]",
                     "Gain a free [Republics] [in capital]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Present Current Status",
+        "text": "Behold! The options below doesnt do anything, they just display what status your civilization is in.",
+        "choices": [
+            {
+                "text": "Harmony",
+                "uniques": [
+                    "Only available <if [Harmony] is constructed>"
+                ]
+            },
+            {
+                "text": "Peace",
+                "uniques": [
+                    "Only available <if [Peace] is constructed>"
+                ]
+            },
+            {
+                "text": "Struggling",
+                "uniques": [
+                    "Only available <if [Struggle] is constructed>"
+                ]
+            },
+            {
+                "text": "Strife",
+                "uniques": [
+                    "Only available <if [Strife] is constructed>"
+                ]
+            },
+            {
+                "text": "Total Anarchy",
+                "uniques": [
+                    "Only available <if [Anarchy] is constructed>"
+                ]
+            },
+            {
+                "text": "Tribes",
+                "uniques": [
+                    "Only available <if [Tribes] is constructed>"
+                ]
+            },
+            {
+                "text": "Tribal Union",
+                "uniques": [
+                    "Only available <if [Tribal Union] is constructed>"
+                ]
+            },
+            {
+                "text": "Nomadic Tribes",
+                "uniques": [
+                    "Only available <if [Nomadic Tribes] is constructed>"
+                ]
+            },
+            {
+                "text": "Early Empire",
+                "uniques": [
+                    "Only available <if [Early Empire] is constructed>"
+                ]
+            },
+            {
+                "text": "Feudal Empire",
+                "uniques": [
+                    "Only available <if [Feudal Empire] is constructed>"
+                ]
+            },
+            {
+                "text": "Centralized Empire",
+                "uniques": [
+                    "Only available <if [Centralized Empire] is constructed>"
+                ]
+            },
+            {
+                "text": "Sucessor States",
+                "uniques": [
+                    "Only available <if [Sucessor States] is constructed>"
+                ]
+            },
+            {
+                "text": "Kingdoms",
+                "uniques": [
+                    "Only available <if [Kingdoms] is constructed>"
+                ]
+            },
+            {
+                "text": "Empire of Electors",
+                "uniques": [
+                    "Only available <if [Empire of Electors] is constructed>"
+                ]
+            },
+            {
+                "text": "Celestial Empire",
+                "uniques": [
+                    "Only available <if [Celestial Empire] is constructed>"
+                ]
+            },
+            {
+                "text": "Theocratic Empire",
+                "uniques": [
+                    "Only available <if [Theocratic Empire] is constructed>"
+                ]
+            },
+            {
+                "text": "Colonial Empires",
+                "uniques": [
+                    "Only available <if [Colonial Empires] is constructed>"
+                ]
+            },
+            {
+                "text": "Autocratic Empire",
+                "uniques": [
+                    "Only available <if [Autocratic Empire] is constructed>"
+                ]
+            },
+            {
+                "text": "Republics",
+                "uniques": [
+                    "Only available <if [Republics] is constructed>"
+                ]
+            },
+            {
+                "text": "Federation",
+                "uniques": [
+                    "Only available <if [Federation] is constructed>"
+                ]
+            },
+            {
+                "text": "United States",
+                "uniques": [
+                    "Only available <if [United States] is constructed>"
+                ]
+            },
+            {
+                "text": "Personal Union",
+                "uniques": [
+                    "Only available <if [Personal Union] is constructed>"
+                ]
+            },
+            {
+                "text": "Fascist Autocracy",
+                "uniques": [
+                    "Only available <if [Fascist Autocracy] is constructed>"
+                ]
+            },
+            {
+                "text": "Socialist Republics",
+                "uniques": [
+                    "Only available <if [Socialist Republics] is constructed>"
+                ]
+            },
+            {
+                "text": "Anarchist Alliances",
+                "uniques": [
+                    "Only available <if [Anarchist Alliances] is constructed>"
                 ]
             }
         ]
@@ -969,7 +1130,7 @@
             {
                 "text": "Self-Management Economy",
                 "uniques": [
-                    "Only available <after adopting [Redistribution of Means of Production(Anarchist)]>",
+                    "Only available <after adopting [Redistribution of Means of Production(Anarchism)]>",
                     "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and free will shall reign surpreme.]",
                     "Gain a free [Self-management Focus] [in capital]"
                 ]
@@ -1053,7 +1214,7 @@
             {
                 "text": "Self-Management Economy",
                 "uniques": [
-                    "Only available <after adopting [Redistribution of Means of Production(Anarchist)]>",
+                    "Only available <after adopting [Redistribution of Means of Production(Anarchism)]>",
                     "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and free will shall reign surpreme.]",
                     "Remove ['Economic Policy'] [in all cities]",
                     "Gain a free [Self-management Focus] [in capital]",
