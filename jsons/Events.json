@@ -162,6 +162,14 @@
                 ]
             },
             {
+                "text": "Increase [Influence]",
+                "uniques": [
+                    "Only available <before adopting [Anarchism]>",
+                    "Triggers a [Popularity Crsis] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
                 "text": "Build Agreements",
                 "uniques": [
                     "Only available <if [Unified] is not constructed>",
@@ -752,6 +760,56 @@
                 "text": "Anarchist Alliances",
                 "uniques": [
                     "Only available <if [Anarchist Alliances] is constructed>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Popularity Crsis",
+        "text": "If the current system cant be trusted, the [Influence] of it will be stranded.",
+        "choices": [
+            {
+                "text": "We shall arrange a great hunt to show our military prowess!",
+                "uniques": [
+                    "Only available <before the [Medieval era]>",
+                    "Instantly provides [5] [Influence]",
+                    "Consumes [1] [Noble Army Maintainance] <for [2] turns>",
+                    "Consumes [1] [Standing Army Maintainance] <for [2] turns>",
+                    "[-5]% [Food] [in capital] <for [2] turns>",
+                    "[-10]% [Gold] [in capital] <for [2] turns>"
+                ]
+            },
+            {
+                "text": "We shall arrange a great feast to show our wealth!",
+                "uniques": [
+                    "Only available <starting from the [Medieval era]> <before the [Imperial era]>",
+                    "Instantly provides [5] [Influence]",
+                    "Consumes [3] [Noble Army Maintainance] <for [2] turns>",
+                    "Consumes [2] [Standing Army Maintainance] <for [2] turns>",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
+                    "[-10]% [Food] [in capital] <for [5] turns>",
+                    "[-15]% [Gold] [in capital] <for [5] turns>"
+                    
+                ]
+            },
+            {
+                "text": "We shall do a military march to demostrate our might!",
+                "uniques": [
+                    "Only available <starting from the [Imperial era]>",
+                    "Instantly provides [5] [Influence]",
+                    "Consumes [5] [Standing Army Maintainance] <for [2] turns>",
+                    "Instantly consumes [10] [Weapon Parts]",
+                    "Gain [-50] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
+                ]
+            },
+            {
+                "text": "Can we wait?",
+                "uniques": [
+                "Comment [We need more contemplation...]"
                 ]
             }
         ]
