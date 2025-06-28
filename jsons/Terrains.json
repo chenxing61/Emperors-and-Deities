@@ -825,6 +825,26 @@
 		"unbuildable": true,
 		"weight": 10
 	},
+	{
+		"name": "Mount Huashan",
+		"type": "NaturalWonder",
+		"faith": 3,
+		"culture":5,
+		"occursOn": [
+			"Grassland"
+		],
+		"uniques": [
+			"Must be adjacent to [0] [Coast] tiles",
+			"Must be adjacent to [0] [Tundra] tiles",
+			"Must be adjacent to [0] [Marsh] tiles",
+			"Must be adjacent to [3] to [6] [Grassland] tiles",
+			"Grants [+100 Culture] to the first civilization to discover it"
+		],
+		"turnsInto": "Mountain",
+		"impassable": true,
+		"unbuildable": true,
+		"weight": 10
+	}
 	/*
 	// BNW wonders
 	{
