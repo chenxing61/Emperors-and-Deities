@@ -5652,6 +5652,18 @@
 	},
 	/// Special buildings
 	{
+		"name": "Industrial Revolution",
+		"cost": 750,
+		"isWonder": true,
+		"uniques": [
+			"Only available <when [(Short Term Victory) Industrial] Victory is enabled> <if [Civilian Factory Complex] is constructed in at least [6] of [All] cities>",
+			"Triggers a global alert upon completion",
+			"Cannot be hurried",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Steam Power"
+	},
+	{
 		"name": "Religious Order",
 		"cost": 450,
 		"isNationalWonder": true,
@@ -5675,6 +5687,18 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Relativity Theory"
+	},
+	{
+		"name": "Nuclear Monopoly",
+		"cost": 1000,
+		"isWonder": true,
+		"uniques": [
+			"Only available <when [(Short Term Victory) Nuclear Monopoly] Victory is enabled> <if [Nuclear Option] is not constructed by anybody>",
+			"Triggers a global alert upon build start",
+			"Cannot be hurried",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Nuclear Fission"
 	},
 	{
 		"name": "Space Program",
