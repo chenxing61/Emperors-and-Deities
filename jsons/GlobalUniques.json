@@ -10,68 +10,52 @@
         "[-25]% growth [in all cities] <in cities with at least [60] [Population]>",
         "[-25]% growth [in all cities] <in cities with at least [70] [Population]>",
 
-        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [10] [Population]>",
-        "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [20] [Population]>",
+        "[+5]% Unhappiness from [Population] [in all cities] <in cities with at least [10] [Population]>",
+        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [20] [Population]>",
         "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [30] [Population]>",
-        "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [40] [Population]>",
-        "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [50] [Population]>",
-        "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [60] [Population]>",
-        "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [70] [Population]>",
-
+        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [40] [Population]>",
+        "[+25]% Unhappiness from [Population] [in all cities] <in cities with at least [50] [Population]>",
+        "[+30]% Unhappiness from [Population] [in all cities] <in cities with at least [60] [Population]>",
+        "[+35]% Unhappiness from [Population] [in all cities] <in cities with at least [70] [Population]>",
         
+        "[-25]% [Production] [in all cities] <when below [0] [Happiness]>",
         //Influence
+        
+        "Triggers a [Wealth Gap Widens] event <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [10]% chance> <upon turn start>",
+        "Triggers a [Rampent Corruption] event <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [10]% chance> <upon turn start>",
+        "Triggers a [Vagrancy Crisis] event <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [10]% chance> <upon turn start>",
 
-        "Provides [-1] [Influence] <when below [10] [Happiness]> <starting from the [Imperial era]>",
-        "Provides [-1] [Influence] <when below [4] [Happiness]>",
-        "Provides [-2] [Influence] <when below [-4] [Happiness]>",
-        "Provides [-2] [Influence] <when below [-9] [Happiness]>",
-        "Provides [-2] [Influence] <when below [-14] [Happiness]>",
-        "Provides [-3] [Influence] <when below [-19] [Happiness]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when between [10] and [20] [Happiness]> <with [5]% chance> <upon turn start> <after turn number [20]> <starting from the [Renaissance era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when between [0] and [10] [Happiness]> <with [10]% chance> <upon turn start> <after turn number [20]> <starting from the [Renaissance era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when below [0] [Happiness]> <with [25]% chance> <upon turn start> <after turn number [20]> <starting from the [Renaissance era]>",
 
-        "Provides [-1] [Influence] <when below [-100] [Gold]>",
-        "Provides [-2] [Influence] <when below [-200] [Gold]>",
-        "Provides [-2] [Influence] <when below [-300] [Gold]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when between [0] and [4] [Happiness]> <with [5]% chance> <upon turn start> <after turn number [20]> <before the [Renaissance era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when between [-3] and [0] [Happiness]> <with [10]% chance> <upon turn start> <after turn number [20]> <before the [Renaissance era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when below [-3] [Happiness]> <with [25]% chance> <upon turn start> <after turn number [20]> <before the [Renaissance era]>",
 
-        "Provides [1] [Influence] <when above [4] [Happiness]>",
-        "Provides [1] [Influence] <when above [9] [Happiness]>",
-        "Provides [1] [Influence] <when above [29] [Happiness]>",
-        "Provides [2] [Influence] <during a Golden Age>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is not constructed> <when between [3] and [10] [Happiness]> <with [5]% chance> <upon turn start> <after turn number [20]><starting from the [Renaissance era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is not constructed> <when between [0] and [3] [Happiness]> <with [10]% chance> <upon turn start> <after turn number [20]><starting from the [Renaissance era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is not constructed> <when below [0] [Happiness]> <with [25]% chance> <upon turn start> <after turn number [20]> <starting from the [Renaissance era]>",
 
-        "Triggers a [Wealth Gap Widens] event <when below [0] [Happiness]> <with [10]% chance> <upon turn start>",
-        "Triggers a [Rampent Corruption] event <when below [0] [Happiness]> <with [10]% chance> <upon turn start>",
-        "Triggers a [Vagrancy Crisis] event <when below [0] [Happiness]> <with [10]% chance> <upon turn start>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is not constructed> <when between [-5] and [0] [Happiness]> <with [5]% chance> <upon turn start> <after turn number [20]><before the [Renaissance era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is not constructed> <when between [-10] and [-5] [Happiness]> <with [10]% chance> <upon turn start> <after turn number [20]><before the [Renaissance era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is not constructed> <when below [-10] [Happiness]> <with [25]% chance> <upon turn start> <after turn number [20]><before the [Renaissance era]>",
 
-        "Triggers a [Chaos Ensue] event <if [Unified] is constructed> <when between [10] and [20] [Happiness]> <with [5]% chance> <upon turn start> <starting from the [Medieval era]>",
-        "Triggers a [Chaos Ensue] event <if [Unified] is constructed> <when between [0] and [10] [Happiness]> <with [10]% chance> <upon turn start> <starting from the [Medieval era]>",
-        "Triggers a [Chaos Ensue] event <if [Unified] is constructed> <when below [0] [Happiness]> <with [25]% chance> <upon turn start> <starting from the [Medieval era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when below [-20] [Happiness]> <with [50]% chance> <upon turn start> <after turn number [20]>",
 
-        "Triggers a [Chaos Ensue] event <if [Unified] is constructed> <when between [0] and [4] [Happiness]> <with [5]% chance> <upon turn start> <before the [Medieval era]>",
-        "Triggers a [Chaos Ensue] event <if [Unified] is constructed> <when between [-3] and [0] [Happiness]> <with [10]% chance> <upon turn start> <before the [Medieval era]>",
-        "Triggers a [Chaos Ensue] event <if [Unified] is constructed> <when below [-3] [Happiness]> <with [25]% chance> <upon turn start> <before the [Medieval era]>",
-
-        "Triggers a [Chaos Ensue] event <if [Unified] is not constructed> <when between [3] and [10] [Happiness]> <with [5]% chance> <upon turn start> <starting from the [Medieval era]>",
-        "Triggers a [Chaos Ensue] event <if [Unified] is not constructed> <when between [0] and [3] [Happiness]> <with [10]% chance> <upon turn start> <starting from the [Medieval era]>",
-        "Triggers a [Chaos Ensue] event <if [Unified] is not constructed> <when below [0] [Happiness]> <with [25]% chance> <upon turn start> <starting from the [Medieval era]>",
-
-        "Triggers a [Chaos Ensue] event <if [Unified] is not constructed> <when between [-5] and [0] [Happiness]> <with [5]% chance> <upon turn start> <before the [Medieval era]>",
-        "Triggers a [Chaos Ensue] event <if [Unified] is not constructed> <when between [-10] and [-5] [Happiness]> <with [10]% chance> <upon turn start> <before the [Medieval era]>",
-        "Triggers a [Chaos Ensue] event <if [Unified] is not constructed> <when below [-10] [Happiness]> <with [25]% chance> <upon turn start> <before the [Medieval era]>",
-
-        "Triggers a [Chaos Ensue] event <when below [-20] [Happiness]> <with [50]% chance> <upon turn start>",
-
-        "Triggers a [Chaos Ensue] event <when between [0] and [-5] [Influence]> <with [3]% chance> <upon turn start> <starting from the [Medieval era]>",
-        "Triggers a [Chaos Ensue] event <when between [-6] and [-10] [Influence]> <with [10]% chance> <upon turn start> <starting from the [Medieval era]>",
-        "Triggers a [Chaos Ensue] event <when between [-11] and [-15] [Influence]> <with [15]% chance> <upon turn start> <starting from the [Medieval era]>",
-        "Triggers a [Chaos Ensue] event <when between [-16] and [-20] [Influence]> <with [25]% chance> <upon turn start> <starting from the [Medieval era]>",
-        "Triggers a [Chaos Ensue] event <when between [-21] and [-25] [Influence]> <with [30]% chance> <upon turn start>",
-        "Triggers a [Chaos Ensue] event <when between [-31] and [-35] [Influence]> <with [35]% chance> <upon turn start>",
-        "Triggers a [Chaos Ensue] event <when below [-35] [Influence]> <with [50]% chance> <upon turn start>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when between [0] and [-5] [Influence]> <with [3]% chance> <upon turn start> <after turn number [20]> <starting from the [Medieval era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when between [-6] and [-10] [Influence]> <with [10]% chance> <upon turn start> <after turn number [20]> <starting from the [Medieval era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when between [-11] and [-15] [Influence]> <with [15]% chance> <upon turn start> <after turn number [20]> <starting from the [Medieval era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when between [-16] and [-20] [Influence]> <with [25]% chance> <upon turn start> <after turn number [20]> <starting from the [Medieval era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when between [-21] and [-25] [Influence]> <with [30]% chance> <after turn number [20]> <upon turn start>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when between [-31] and [-35] [Influence]> <with [35]% chance> <after turn number [20]> <upon turn start>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when below [-35] [Influence]> <with [50]% chance> <after turn number [20]> <upon turn start>",
         
         "Triggers a [Disolution of Union] event <if [Socialist Republics] is constructed> <when below [20] [Happiness]>",
         "Triggers a [Disolution of Union] event <if [Personal Union] is constructed> <when below [5] [Influence]>",
-        "Triggers a [Chaos Ensue] event <when below [-35] [Influence]> <with [50]% chance> <upon turn start>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations>  <when below [-35] [Influence]> <with [50]% chance> <upon turn start>",
 
-        "Triggers a [Shift in Politic] event <upon entering a new era> <starting from the [Classical era]>",
+        "Triggers a [Shift in Politic] event <for [non-[City-States]] Civilizations> <upon entering a new era> <starting from the [Classical era]>",
 
         "Gain a free [Unified] [in capital] <if ['United'] is constructed in all [Capital] cities> <upon turn start>",
         "Remove [Unified] [in capital] <if ['Divided'] is constructed in all [Capital] cities> <upon turn start>",
@@ -95,26 +79,6 @@
         "Provides [1] [Revolution Oppotunity] <starting from the [Modern era]>",
         "Remove [Levies Disbandment] [in capital] <when number of [[The Levied Army] Units] is less than [1]> <upon turn end>",
 
-        "Provides [2] [Consumption Demand] <in cities with between [0] and [5] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [4] [Consumption Demand] <in cities with between [5] and [10] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [6] [Consumption Demand] <in cities with between [10] and [15] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [8] [Consumption Demand] <in cities with between [15] and [20] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [10] [Consumption Demand] <in cities with between [20] and [25] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [12] [Consumption Demand] <in cities with between [25] and [30] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [14] [Consumption Demand] <in cities with between [30] and [35] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [16] [Consumption Demand] <in cities with between [35] and [40] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [18] [Consumption Demand] <in cities with between [40] and [45] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [20] [Consumption Demand] <in cities with between [45] and [50] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [22] [Consumption Demand] <in cities with between [50] and [55] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [24] [Consumption Demand] <in cities with between [55] and [60] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [26] [Consumption Demand] <in cities with between [60] and [65] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [28] [Consumption Demand] <in cities with between [65] and [70] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [30] [Consumption Demand] <in cities with between [70] and [75] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [32] [Consumption Demand] <in cities with between [75] and [80] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [34] [Consumption Demand] <in cities with between [80] and [85] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [36] [Consumption Demand] <in cities with between [85] and [90] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [38] [Consumption Demand] <in cities with between [90] and [95] [Population]> <starting from the [Industrial era]> <hidden from users>",
-        "Provides [40] [Consumption Demand] <in cities with between [95] and [100] [Population]> <starting from the [Industrial era]> <hidden from users>",
 
         "Gain a free [Power Shortage] [in all cities] <in cities with a [Power Grid]> <when below [0] [Power]> <upon turn start>",
         "Remove [Power Shortage] [in all cities] <in cities with a [Power Grid]> <when above [0] [Power]> <upon turn start>",
@@ -135,13 +99,7 @@
 
         "Triggers a [Stablising our side of the globe] event <if [Strife] is constructed> <when above [5] [Influence]> <for [AI player] Civilizations> <upon turn start>",
 
-        "Triggers a [Stablising our side of the globe] event <if [Struggle] is constructed> <when above [10] [Influence]> <for [AI player] Civilizations> <upon turn start>",
-
-        "Triggers a [Stablising our side of the globe] event <if [Anarchy] is constructed> <when above [0] [Influence]> <for [City-State] Civilizations> <upon turn start>",
-
-        "Triggers a [Stablising our side of the globe] event <if [Strife] is constructed> <when above [5] [Influence]> <for [City-State] Civilizations> <upon turn start>",
-
-        "Triggers a [Stablising our side of the globe] event <if [Struggle] is constructed> <when above [10] [Influence]> <for [City-State] Civilizations> <upon turn start>"
+        "Triggers a [Stablising our side of the globe] event <if [Struggle] is constructed> <when above [10] [Influence]> <for [AI player] Civilizations> <upon turn start>"
 
         // TODO: Implement the uniques below
         // "[+20]% [Culture] [in all cities] <during a golden age>",
