@@ -3,8 +3,8 @@
 	{
 		"name": "Revolution Oppotunity",
 		"resourceType": "Strategic",
-		"uniques":["Cannot be traded"],
-		"revealedBy": "Engineering"
+		"uniques":["Not shown on world screen","Cannot be traded"],
+		"revealedBy":"Scientific Theory"
 	},
 	{
 		"name": "Influence",
@@ -23,9 +23,17 @@
 		"revealedBy": "Writing"
 	},
 	{
+		"name": "Civilization Size",
+		"resourceType": "Strategic",
+		"uniques":[
+		"Comment [This resource increases by 1 for every 3 cities settled. It determines how much a negative event should cost.]",
+		"Cannot be traded"],
+		"revealedBy": "Writing"
+	},
+	{
 		"name": "Consumption Supply",
 		"resourceType": "Strategic",
-		"uniques":["Cannot be traded"],
+		"uniques":[],
 		"revealedBy":"Economics"
 	},
 	{
