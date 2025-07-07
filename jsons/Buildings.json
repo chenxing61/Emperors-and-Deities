@@ -434,108 +434,8 @@
 		"hurryCostModifier": -25
 	},
 	///Invention Tree
-	{
-		"name": "Innovation of Frozen Foods",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody>",
-			"[-50]% production cost <if [Innovation of Frozen Foods] is constructed by anybody>",
-			"[+5]% [Food] from every [Food Industry]",
-			"Comment [Increase [Food Industry]'s efficiency to process [Deep Sea Fish(Stored)] en masse.]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Food Industry",
-		"requiredTech": "Refrigeration",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Innovation of Instant Foods",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Instant Foods] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Instant Foods] is not constructed by anybody>",
-			"[-50]% production cost <if [Innovation of Instant Foods] is constructed by anybody>",
-			"[+5]% [Production] from every [Food Industry]",
-			"Comment [Enable [Food Industry] to produce extra [Consumption Supply]]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Food Industry",
-		"requiredTech": "Pharmaceuticals",
-		"hurryCostModifier": 0
-	},
 
 
-
-	{
-		"name": "Invention of Smart Appliances",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Smart Appliances] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Smart Appliances] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Smart Appliances] is constructed by anybody>",
-			"[+5]% [Science] from every [Furniture Industry]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Furniture Industry",
-		"requiredTech": "Computer",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Innovation of Processing Precision",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Processing Precision] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Processing Precision] is not constructed by anybody>",
-			"[-50]% production cost <if [Innovation of Processing Precision] is constructed by anybody>",
-			"Comment [Enable [Machine Industry] to increase [Manufactory] and [Academy] yield.]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Machine Industry",
-		"requiredTech": "Synthetic Materials",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Innovation of Civilian Navigation",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Civilian Navigation] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Civilian Navigation] is not constructed by anybody>",
-			"[-50]% production cost <if [Innovation of Civilian Navigation] is constructed by anybody>",
-			"[+1] Movement <for [{Civilian} {Water}] units>",
-			"[+1]% [Gold] from every ['Marine Infrastructure']",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Shipmaking Industry",
-		"requiredTech": "Radar",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Invention of Helicopter",
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Helicopter] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Helicopter] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Helicopter] is constructed by anybody>",
-			"[+5]% [Happiness] from every [Aviation Industry]",
-			"Comment [Enable ['Low Altitude Aircraft']s to be built.]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Aviation Industry",
-		"requiredTech": "Combined Arms",
-		"hurryCostModifier": 0
-	},
 	///Line 0
 	{
 		"name": "Obelisk",
@@ -629,7 +529,7 @@
 		"requiredTech": "Sailing",
 		"hurryCostModifier": 5
 	},
-		{
+	{
 		"name": "Barrack",
 		"maintenance": 1,
 		"cityStrength": 5,
@@ -1073,7 +973,7 @@
 		"requiredTech": "The Wheel",
 		"quote": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge"
 	},
-	/// Line 3
+	///Line 3
 	{
 		"name": "Basilica",
 		"uniqueTo": "Mediterranean",
@@ -1214,7 +1114,7 @@
 		"requiredTech": "Plows",
 		"hurryCostModifier": 10
 	},
-		{
+	{
 		"name": "The Great Library",
 		"isWonder": true,
 		"science": 2,
@@ -1246,7 +1146,7 @@
 		"requiredTech": "Writing",
 		"quote": "'Learning without thinking leads to confusion; Thinking without learning ends to vain.' - Confucius"
 	},
-		{
+	{
 		"name": "Hanging Gardens",
 		"greatPersonPoints": {
 			"Great Artist": 1
@@ -1279,8 +1179,8 @@
 		"requiredTech": "Trade Network",
 		"quote": "'...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...' - Indiana Jones"
 	},
-	///Line 3
-		{
+	///Line 4
+	{
 		"name": "Stone Works",
 		"maintenance": 1,
 		"production": 1,
@@ -1373,7 +1273,7 @@
 		"requiredTech": "Mining",
 		"quote": "'The land of abundance' - The idiom used to describe the province after Du Jiang Yan was built."
 	},
-		{
+	{
 		"name": "Mausoleum of Wealth",
 		"isWonder": true,
 		"culture": 1,
@@ -1417,8 +1317,7 @@
 		"requiredTech": "Masonry",
 		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
 	},
-
-	///Line 4
+	///Line 5
 	{
 		"name": "Bathhouse",
 		"maintenance": 3,
@@ -1672,7 +1571,7 @@
 		],
 		"requiredTech": "Drama and Poetry"
 	},
-	///Line 5
+	///Line 6
 	{
 		"name": "Cothon Harbour",
 		"uniqueTo": "North Africa",
@@ -1711,7 +1610,7 @@
 		"requiredTech": "Dry Dock",
 		"hurryCostModifier": 25
 	},
-		{
+	{
 		"name": "Civilian Blacksmith",
 		"maintenance": 3,
 		"uniques": [
@@ -1780,7 +1679,7 @@
 		"requiredBuilding": "Barrack",
 		"requiredTech": "Logistics"
 	},
-		{
+	{
 		"name": "Statues of Molten Weapons",
 		"isWonder": true,
 		"production": 2,
@@ -1794,7 +1693,7 @@
 		"quote": "'He forcefully collected the weapons from everywhere under the sky, concentrated them in Xian Yang, made 12 giant bronze statues.' - Jia Yi",
 		"requiredTech": "Forging"
 	},
-	/// Line 7
+	///Line 7
 	{
 		"name": "Lighthouse",
 		"maintenance": 1,
@@ -1879,7 +1778,7 @@
 		"requiredTech": "Construction",
 		"hurryCostModifier": 15
 	},
-		{
+	{
 		"name": "Windmill",
 		"maintenance": 1,
 		"percentStatBonus": {
@@ -1995,7 +1894,7 @@
 		],
 		"requiredTech": "Alchemy"
 	},
-		{
+	{
 		"name": "Irrigation System",
 		"maintenance": 3,
 		"uniques": [
@@ -2838,7 +2737,7 @@
 		"hurryCostModifier": 10
 	},
 	///Line 14
-		{
+	{
 		"name": "Observatory",
 		"maintenance": 5,
 		"percentStatBonus": {
@@ -2953,7 +2852,7 @@
 		"requiredTech": "Acoustics",
 		"hurryCostModifier": 25
 	},
-		{
+	{
 		"name": "Coastal Artillery",
 		"maintenance": 5,
 		"cityStrength": 10,
@@ -3241,7 +3140,7 @@
 		"quote": "'The Kremlin is constantly changing the rules of the game to suit its purposes. We are not playing chess, we're playing roulette.' - Garry Kasparov",
 		"requiredTech": "Metallurgy"
 	},
-		{
+	{
 		"name": "The Great Arc of Triumphant",
 		"isWonder": true,
 		"culture": 5,
@@ -3286,7 +3185,7 @@
 		],
 		"requiredTech": "Economics"
 	},
-		{
+	{
 		"name": "National Museum",
 		"isNationalWonder": true,
 		"culture": 8,
@@ -3418,22 +3317,6 @@
 		"requiredResource": "Natural Gas(Stored)",
 		"hurryCostModifier": 25
 	},
-		{
-		"name": "Invention of Bicycle",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Bicycle] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Bicycle] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Bicycle] is constructed by anybody>",
-			"Comment [Enable [Vehicle Industry] to make population gain extra [Culture] and [Production].]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Vehicle Industry",
-		"requiredTech": "Industrialization",
-		"hurryCostModifier": 0
-	},
 	{
 		"name": "Civilian Factory Complex",
 		"maintenance": 10,
@@ -3446,7 +3329,7 @@
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 25
 	},
-		{
+	{
 		"name": "Invention of Canned Food",
 		"cost": 500,
 		"uniques": [
@@ -3493,7 +3376,7 @@
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 10
 	},
-		{
+	{
 		"name": "Innovation of Modern Hardwares",
 		"cost": 500,
 		"uniques": [
@@ -3611,7 +3494,7 @@
 		"requiredTech": "Industrialization"
 	},
 	///Line 18
-		{
+	{
 		"name": "Vehicle Industry",
 		"cost":750,
 		"maintenance": 10,
@@ -3756,6 +3639,22 @@
 		"hurryCostModifier": 0
 	},
 	{
+		"name": "Invention of Bicycle",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Bicycle] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Bicycle] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Bicycle] is constructed by anybody>",
+			"Comment [Enable [Vehicle Industry] to make population gain extra [Culture] and [Production].]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Vehicle Industry",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Technical School",
 		"maintenance": 3,
 		"specialistSlots": {
@@ -3812,7 +3711,7 @@
 		"requiredTech": "Dynamite",
 		"hurryCostModifier": 50
 	},
-		{
+	{
 		"name": "Stone Castle of Swan",
 		"isWonder": true,
 		"happiness": 1,
@@ -3982,7 +3881,7 @@
 		"requiredTech": "Electricity",
 		"hurryCostModifier": 25
 	},
-		{
+	{
 		"name": "Innovation of Electrical Appliances",
 		"cost": 500,
 		"uniques": [
@@ -3998,7 +3897,7 @@
 		"requiredTech": "Electricity",
 		"hurryCostModifier": 0
 	},
-		{
+	{
 		"name": "Invention of Professional Equipments",
 		"cost": 500,
 		"uniques": [
@@ -4092,7 +3991,7 @@
 		"requiredTech": "Electricity",
 		"hurryCostModifier": 10
 	},
-		{
+	{
 		"name": "Physic Lab",
 		"cost":1000,
 		"maintenance": 5,
@@ -4142,7 +4041,7 @@
 		"hurryCostModifier": 10
 	},
 
-		{
+	{
 		"name": "Cement Work",
 		"cost":500,
 		"maintenance": 8,
@@ -4222,7 +4121,7 @@
 		"quote": "'If you win, you need not have to explain...If you lose, you should not be there to explain!' - Austrian Mustache Man",
 		"requiredTech": "Electricity"
 	},
-		{
+	{
 		"name": "National Defense Department",
 		"isNationalWonder": true,
 		"culture": 3,
@@ -4254,6 +4153,22 @@
 		"quote": "'A house is a machine for living in. ' - Le Corbusier"
 	},
 	///Line 20
+	{
+		"name": "Innovation of Processing Precision",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Processing Precision] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Processing Precision] is not constructed by anybody>",
+			"[-50]% production cost <if [Innovation of Processing Precision] is constructed by anybody>",
+			"Comment [Enable [Machine Industry] to increase [Manufactory] and [Academy] yield.]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Machine Industry",
+		"requiredTech": "Synthetic Materials",
+		"hurryCostModifier": 0
+	},
 	{
 		"name": "Greenhouse",
 		"maintenance": 5,
@@ -4297,7 +4212,7 @@
 		"requiredTech": "Synthetic Materials",
 		"hurryCostModifier": 25
 	},
-		{
+	{
 		"name": "Broadcast Tower",
 		"maintenance": 5,
 		"happiness": 1,
@@ -4322,7 +4237,7 @@
 		"requiredTech": "Radio",
 		"hurryCostModifier": 25
 	},
-		{
+	{
 		"name": "Telephone Circuit",
 		"maintenance": 3,
 		"uniques": [
@@ -4331,6 +4246,57 @@
 		],
 		"requiredTech": "Radio",
 		"hurryCostModifier": 10
+	},
+
+	{
+		"name": "Innovation of Instant Foods",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Instant Foods] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Instant Foods] is not constructed by anybody>",
+			"[-50]% production cost <if [Innovation of Instant Foods] is constructed by anybody>",
+			"[+5]% [Production] from every [Food Industry]",
+			"Comment [Enable [Food Industry] to produce extra [Consumption Supply]]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Food Industry",
+		"requiredTech": "Pharmaceuticals",
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Nutripaste Factory",
+		"maintenance": 8,
+		"food": 5,
+		"happiness": -1,
+		"uniques": [
+			"'Light Industry'",
+			"Unsellable",
+			"Free [Great Merchant] appears",
+			"Only available <in cities without a [Greenhouse]>",
+			"Comment [The taste is awful...]"
+		],
+		"requiredTech": "Pharmaceuticals",
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Bio Lab",
+		"maintenance": 10,
+		"happiness": 1,
+		"specialistSlots": {
+			"Scientist": 1
+		},
+		"percentStatBonus": {
+			"food": 10
+		},
+		"uniques": [
+			"'Research Building'",
+			"[Great Scientist] is earned [+5]% faster"
+		],
+		"requiredBuilding": "University",
+		"requiredTech": "Pharmaceuticals",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Aviation Industry",
@@ -4370,39 +4336,7 @@
 		"requiredTech": "Flight",
 		"hurryCostModifier": 25
 	},
-	{
-		"name": "Nutripaste Factory",
-		"maintenance": 8,
-		"food": 5,
-		"happiness": -1,
-		"uniques": [
-			"'Light Industry'",
-			"Unsellable",
-			"Free [Great Merchant] appears",
-			"Only available <in cities without a [Greenhouse]>",
-			"Comment [The taste is awful...]"
-		],
-		"requiredTech": "Pharmaceuticals",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Bio Lab",
-		"maintenance": 10,
-		"happiness": 1,
-		"specialistSlots": {
-			"Scientist": 1
-		},
-		"percentStatBonus": {
-			"food": 10
-		},
-		"uniques": [
-			"'Research Building'",
-			"[Great Scientist] is earned [+5]% faster"
-		],
-		"requiredBuilding": "University",
-		"requiredTech": "Pharmaceuticals",
-		"hurryCostModifier": 25
-	},
+	///Line 21
 	{
 		"name": "Electronic Industry",
 		"maintenance": 20,
@@ -4431,6 +4365,23 @@
 		"hurryCostModifier": 10
 	},
 	{
+		"name": "Innovation of Civilian Navigation",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Civilian Navigation] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Civilian Navigation] is not constructed by anybody>",
+			"[-50]% production cost <if [Innovation of Civilian Navigation] is constructed by anybody>",
+			"[+1] Movement <for [{Civilian} {Water}] units>",
+			"[+1]% [Gold] from every ['Marine Infrastructure']",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Shipmaking Industry",
+		"requiredTech": "Radar",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Radar Station",
 		"maintenance": 5,
 		"cityStrength": 10,
@@ -4444,18 +4395,66 @@
 		"requiredTech": "Radar",
 		"hurryCostModifier": 25
 	},
-	/// Line 18
+	///Line 22
 	{
-		"name": "Uranium Enrichment Facility",
-		"maintenance": 10,
+		"name": "Nuclear Power Plant",
+		"maintenance": 5,
+		"science": 3,
 		"uniques": [
-			"'Heavy Industry'",
-			"Consumes [3] [Uranium]",
-			"Provides [1] [Enriched Uranium]"
+			"'Power Building'",
+			"Consumes [1] [Enriched Uranium] <before discovering [Nuclear Fusion]>",
+			"Consumes [0] [Enriched Uranium] <after discovering [Nuclear Fusion]>",
+			"Provides [8] [Power]"
 		],
-		"requiredTech": "Uranium Enrichment",
+		"requiredTech": "Nuclear Fission",
 		"hurryCostModifier": 25
 	},
+	{
+		"name": "Bomb Shelter",
+		"maintenance": 3,
+		"cityHealth": 10,
+		"uniques": [
+			"'Static Defense'",
+			"Population loss from nuclear attacks [-50]% [in this city]",
+			"Damage to garrison from nuclear attacks [-75]% [in this city]"
+		],
+		"requiredTech": "Nuclear Fission",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Innovation of Frozen Foods",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody>",
+			"[-50]% production cost <if [Innovation of Frozen Foods] is constructed by anybody>",
+			"[+5]% [Food] from every [Food Industry]",
+			"Comment [Increase [Food Industry]'s efficiency to process [Deep Sea Fish(Stored)] en masse.]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Food Industry",
+		"requiredTech": "Refrigeration",
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Invention of Helicopter",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Helicopter] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Helicopter] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Helicopter] is constructed by anybody>",
+			"[+5]% [Happiness] from every [Aviation Industry]",
+			"Comment [Enable ['Low Altitude Aircraft']s to be built.]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Aviation Industry",
+		"requiredTech": "Combined Arms",
+		"hurryCostModifier": 0
+	},
+	///Line 23
 	{
 		"name": "Sewage Treatment Plant",
 		"maintenance": 5,
@@ -4467,6 +4466,17 @@
 		],
 		"requiredBuilding": "Sewer",
 		"requiredTech": "Plastics",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Uranium Enrichment Facility",
+		"maintenance": 10,
+		"uniques": [
+			"'Heavy Industry'",
+			"Consumes [3] [Uranium]",
+			"Provides [1] [Enriched Uranium]"
+		],
+		"requiredTech": "Uranium Enrichment",
 		"hurryCostModifier": 25
 	},
 	{
@@ -4495,6 +4505,22 @@
 		"requiredBuilding": "Broadcast Tower",
 		"requiredTech": "Telecommunications",
 		"hurryCostModifier": 25
+	},
+	{
+		"name": "Invention of Smart Appliances",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Smart Appliances] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Smart Appliances] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Smart Appliances] is constructed by anybody>",
+			"[+5]% [Science] from every [Furniture Industry]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Furniture Industry",
+		"requiredTech": "Computer",
+		"hurryCostModifier": 0
 	},
 	{
 		"name": "Rocketry Industry",
@@ -4541,17 +4567,18 @@
 		},
 		"uniques": [
 			"Only available <before adopting [Monotheism]>",
-			"[+2 Culture] per [4] social policies adopted",
+			"[+8 Culture] per [4] social policies adopted",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
-		"quote": "'Cattle die,kinsmen die,all men are mortal. Words of praise will never perish nor a noble name.'- The Havamal",
+		"quote": "'Cattle die, kinsmen die, all men are mortal. Words of praise will never perish nor a noble name.'- The Havamal",
 		"requiredTech": "Plastics"
 	},
 	{
 		"name": "Media Centre",
 		"isWonder": true,
 		"percentStatBonus": {
-			"culture": 33
+			"culture": 33,
+			"happiness": 15
 		},
 		"greatPersonPoints": {
 			"Great Artist": 3
@@ -4564,32 +4591,7 @@
 		"quote": "'Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules.' - Douglas Adams",
 		"requiredTech": "Telecommunications"
 	},
-	///Line 19
-	{
-		"name": "Nuclear Power Plant",
-		"maintenance": 5,
-		"science": 3,
-		"uniques": [
-			"'Power Building'",
-			"Consumes [1] [Enriched Uranium] <before discovering [Nuclear Fusion]>",
-			"Consumes [0] [Enriched Uranium] <after discovering [Nuclear Fusion]>",
-			"Provides [8] [Power]"
-		],
-		"requiredTech": "Nuclear Fission",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Bomb Shelter",
-		"maintenance": 3,
-		"cityHealth": 10,
-		"uniques": [
-			"'Static Defense'",
-			"Population loss from nuclear attacks [-50]% [in this city]",
-			"Damage to garrison from nuclear attacks [-75]% [in this city]"
-		],
-		"requiredTech": "Nuclear Fission",
-		"hurryCostModifier": 25
-	},
+	///Line 24
 	{
 		"name": "Solar Plant",
 		"maintenance": 2,
@@ -4675,24 +4677,8 @@
 		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying",
 		"requiredTech": "Ecology"
 	},
-	{
-		"name": "Satilelite System",
-		"isNationalWonder": true,
-		"percentStatBonus": {
-			"science": 33
-		},
-		"uniques": [
-			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"Reveals the entire map",
-			"[+25]% [Science] [in all cities]",
-			"[+25]% [Production] [in all cities]",
-			"[+5]% [Gold] from Trade Routes",
-			"[+1] Movement",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Satellites"
-	},
-	///Line 20
+
+	///Line 25
 	{
 		"name": "Partical Acclerator",
 		"maintenance": 5,
@@ -4702,7 +4688,7 @@
 		},
 		"uniques": [
 			"'Research Building'",
-			"[Great Scientist] is earned [+25]% faster"
+			"[Great Scientist] is earned [+5]% faster"
 		],
 		"requiredTech": "Particle Physics",
 		"hurryCostModifier": 50
@@ -4739,6 +4725,21 @@
 		"hurryCostModifier": 10
 	},
 	{
+		"name": "Satilelite System",
+		"isNationalWonder": true,
+		"uniques": [
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Reveals the entire map",
+			"[+25]% [Science] [in all cities]",
+			"[+25]% [Production] [in all cities]",
+			"[+5]% [Gold] from Trade Routes",
+			"[+1] Movement",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Satellites"
+	},
+	///Line 26
+	{
 		"name": "Drone Control Centre",
 		"maintenance": 5,
 		"specialistSlots": {
@@ -4756,6 +4757,21 @@
 		"requiredBuilding": "Drone Factory",
 		"requiredTech": "Remote Control",
 		"hurryCostModifier": 25
+	},
+	{
+		"name": "Polar Frontier",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Scientist": 5
+		},
+		"uniques": [
+			"[+3 Science] from [Snow] tiles [in this city]",
+			"[+3 Science] from [Ice] tiles [in this city]",
+			"Must have an owned [Snow] within [4] tiles",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Renewable Energy",
+		"quote": "'I seemed to vow to myself that some day I would go to the region of ice and snow and go on and on till I came to one of the poles of the earth, the end of the axis upon which this great round ball turns.' - Ernest Shackleton"
 	},
 	{
 		"name": "International Space Station",
@@ -4801,20 +4817,7 @@
 		"requiredTech": "Space Stations",
 		"quote": "'The wonder is, not that the field of stars is so vast, but that man has measured it.' - Anatole France"
 	},
-	///Line 21
-	{
-		"name": "Graphene Lab",
-		"maintenance": 10,
-		"science": 5,
-		"uniques": [
-			"'Research Building'",
-			"Provides [2] [Graphene]",
-			"Consumes [3] [Coal]"
-		],
-		"requiredBuilding": "University",
-		"requiredTech": "Graphene",
-		"hurryCostModifier": 25
-	},
+	///Line 27
 	{
 		"name": "E-commerce Firm Complex",
 		"percentStatBonus": {
@@ -4831,34 +4834,19 @@
 		"requiredTech": "E-commerce",
 		"hurryCostModifier": 10
 	},
+	///Line 28
 	{
-		"name": "Drone Factory",
-		"maintenance": 5,
-		"specialistSlots": {
-			"Engineer": 1
-		},
-		"uniques": [
-			"'High Tech Industry'",
-			"[+1 Production] from every specialist [in this city]",
-			"Consumes [1] [Microchips]"
-		],
-		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "3D Printers",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Public 3D Printer",
+		"name": "Graphene Lab",
 		"maintenance": 10,
-		"percentStatBonus": {
-			"production": 25
-		},
+		"science": 5,
 		"uniques": [
-			"'High Tech Industry'",
-			"[+1 Production] per [1] population [in this city]"
+			"'Research Building'",
+			"Provides [2] [Graphene]",
+			"Consumes [3] [Coal]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "3D Printers",
-		"hurryCostModifier": 10
+		"requiredBuilding": "University",
+		"requiredTech": "Graphene",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Pyramid Habitat",
@@ -4893,22 +4881,37 @@
 		"quote": "'Almost a quarter of our planet is a single mountain range and we didn't enter it until after Neil Armstrong and Buzz Aldrin went to the moon. So we went to the moon, played golf up there, before we went to the largest feature on our own planet.' - Robert Ballard",
 		"requiredTech": "Graphene"
 	},
+	///Line 29
 	{
-		"name": "Polar Frontier",
-		"isWonder": true,
-		"greatPersonPoints": {
-			"Great Scientist": 5
+		"name": "Drone Factory",
+		"maintenance": 5,
+		"specialistSlots": {
+			"Engineer": 1
 		},
 		"uniques": [
-			"[+3 Science] from [Snow] tiles [in this city]",
-			"[+3 Science] from [Ice] tiles [in this city]",
-			"Must have an owned [Snow] within [4] tiles",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+			"'High Tech Industry'",
+			"[+1 Production] from every specialist [in this city]",
+			"Consumes [1] [Microchips]"
 		],
-		"requiredTech": "Renewable Energy",
-		"quote": "'I seemed to vow to myself that some day I would go to the region of ice and snow and go on and on till I came to one of the poles of the earth, the end of the axis upon which this great round ball turns.' - Ernest Shackleton"
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "3D Printers",
+		"hurryCostModifier": 25
 	},
-	///Line 22
+	{
+		"name": "Public 3D Printer",
+		"maintenance": 10,
+		"percentStatBonus": {
+			"production": 25
+		},
+		"uniques": [
+			"'High Tech Industry'",
+			"[+1 Production] per [1] population [in this city]"
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "3D Printers",
+		"hurryCostModifier": 10
+	},
+	
 	///Special
 	{
 		"name": "Palace",
