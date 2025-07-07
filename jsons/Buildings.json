@@ -470,22 +470,7 @@
 	},
 
 
-	{
-		"name": "Innovation of Electrical Appliances",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Electrical Appliances] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Electrical Appliances] is not constructed by anybody>",
-			"[-50]% production cost <if [Innovation of Electrical Appliances] is constructed by anybody>",
-			"[+5]% [Happiness] from every [Furniture Industry]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Furniture Industry",
-		"requiredTech": "Electricity",
-		"hurryCostModifier": 0
-	},
+
 	{
 		"name": "Invention of Smart Appliances",
 		"cost": 500,
@@ -500,23 +485,6 @@
 		],
 		"requiredBuilding":"Furniture Industry",
 		"requiredTech": "Computer",
-		"hurryCostModifier": 0
-	},
-
-	{
-		"name": "Invention of Professional Equipments",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Professional Equipments] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Professional Equipments] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Professional Equipments] is constructed by anybody>",
-			"Comment [Enable [Machine Industry] to increase tile improvement yield.]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Machine Industry",
-		"requiredTech": "Electricity",
 		"hurryCostModifier": 0
 	},
 	{
@@ -535,8 +503,6 @@
 		"requiredTech": "Synthetic Materials",
 		"hurryCostModifier": 0
 	},
-
-
 	{
 		"name": "Innovation of Civilian Navigation",
 		"cost": 500,
@@ -4016,6 +3982,38 @@
 		"requiredTech": "Electricity",
 		"hurryCostModifier": 25
 	},
+		{
+		"name": "Innovation of Electrical Appliances",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Electrical Appliances] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Electrical Appliances] is not constructed by anybody>",
+			"[-50]% production cost <if [Innovation of Electrical Appliances] is constructed by anybody>",
+			"[+5]% [Happiness] from every [Furniture Industry]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Furniture Industry",
+		"requiredTech": "Electricity",
+		"hurryCostModifier": 0
+	},
+		{
+		"name": "Invention of Professional Equipments",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Professional Equipments] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Professional Equipments] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Professional Equipments] is constructed by anybody>",
+			"Comment [Enable [Machine Industry] to increase tile improvement yield.]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Machine Industry",
+		"requiredTech": "Electricity",
+		"hurryCostModifier": 0
+	},
 	{
 		"name": "Hydro Plant",
 		"maintenance": 3,
@@ -4143,16 +4141,7 @@
 		"requiredTech": "Telegram",
 		"hurryCostModifier": 10
 	},
-	{
-		"name": "Telephone Circuit",
-		"maintenance": 3,
-		"uniques": [
-			"'Infrastructure'",
-			"[-1]% maintenance cost for [all] buildings [in all cities]"
-		],
-		"requiredTech": "Radio",
-		"hurryCostModifier": 10
-	},
+
 		{
 		"name": "Cement Work",
 		"cost":500,
@@ -4332,6 +4321,16 @@
 		],
 		"requiredTech": "Radio",
 		"hurryCostModifier": 25
+	},
+		{
+		"name": "Telephone Circuit",
+		"maintenance": 3,
+		"uniques": [
+			"'Infrastructure'",
+			"[-1]% maintenance cost for [all] buildings [in all cities]"
+		],
+		"requiredTech": "Radio",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Aviation Industry",
