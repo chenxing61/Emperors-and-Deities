@@ -342,6 +342,7 @@
 		"movement": 2,
 		"strength": 16,
 		"uniques": [
+			"Can upgrade to [Legio] <if [SPQR] is constructed>",
 			"'Standing Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -354,6 +355,34 @@
 			"Intensive Doctrine"
 		],
 		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Armorments",
+		"upgradesTo": "Swordsman",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Legio",
+		"uniqueTo": "Mediterranean",
+		"unitType": "Close Combat",
+		"cost": 60,
+		"movement": 2,
+		"strength": 19,
+		"uniques": [
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Hardened",
+			"Intensive Doctrine",
+			"Javalin",
+			"Legio Ability"
+		],
+		"requiredTech": "Iron Working",
 		"obsoleteTech": "Armorments",
 		"upgradesTo": "Swordsman",
 		"requiredResource": "Standing Army Maintainance",

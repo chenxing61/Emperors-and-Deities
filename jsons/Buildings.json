@@ -1060,6 +1060,17 @@
 		"hurryCostModifier": 10
 	},
 	{
+		"name": "Via Romana",
+		"gold":1,
+		"production":1,
+		"uniques": [
+			"Only available <if [SPQR] is constructed>",
+			"[-50]% production cost <with a garrison>"
+		],
+		"requiredTech": "Trade Network",
+		"hurryCostModifier": 5
+	},
+	{
 		"name": "Livestock Market",
 		"gold": 1,
 		"production": 1,
@@ -4674,7 +4685,7 @@
 			"Must be on [River]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
-		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying",
+		"quote": "'Use the first tier quality. Guard the first tier Dam. And get the first tier record!' - Three Gorge Dam's Slogan",
 		"requiredTech": "Ecology"
 	},
 
@@ -6154,6 +6165,23 @@
 		]
 	},
 	{
+		"name": "Early City States",
+		"uniqueTo":"Central and West Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'Divided'",
+			"Provides [10] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Standing Army Maintainance]",
+			"Provides [1] [Noble Army Maintainance]",
+			"[-5]% Culture cost of adopting new Policies",
+			"[20]% Strength for cities",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
 		"name": "Tribal Union",
 		"uniques": [
 			"Unbuildable",
@@ -6165,6 +6193,24 @@
 			"Provides [1] [Standing Army Maintainance]",
 			"Provides [1] [Noble Army Maintainance]",
 			"[+15]% growth [in all cities]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Egyptian Dynasties",
+		"uniqueTo":"North Africa",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [20] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Standing Army Maintainance]",
+			"Provides [1] [Noble Army Maintainance]",
+			"[+10]% growth [in all cities]",
+			"[+10]% Production when constructing [Wonder] buildings",
+			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
 	},
@@ -6200,6 +6246,24 @@
 		]
 	},
 	{
+		"name": "Greek City States",
+		"uniqueTo":"Mediterranean",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'Divided'",
+			"Provides [15] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Standing Army Maintainance]",
+			"Provides [1] [Noble Army Maintainance]",
+			"[-10]% Culture cost of adopting new Policies",
+			"Free [Galley Fleet] appears",
+			"[10]% Strength for cities",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
 		"name": "Early Empire",
 		"uniques": [
 			"Unbuildable",
@@ -6212,6 +6276,45 @@
 			"Provides [2] [Noble Army Maintainance]",
 			"[+10]% growth [in all cities]",
 			"[+15]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Zhou Dynasty",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [15] [Influence Limit]",
+			"Provides [5] [Influence Limit] <starting from the [Classical era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <while the empire is happy>",
+			"Provides [2] [Standing Army Maintainance]",
+			"Provides [3] [Noble Army Maintainance]",
+			"[+10]% growth [in all cities]",
+			"[+1 Culture] [in all cities] <before adopting [Unity]>",
+			"[+3 Happiness] [in puppeted cities] <after adopting [Unity]>",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Persian Dynasties",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [15] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [2] [Standing Army Maintainance]",
+			"Provides [3] [Noble Army Maintainance]",
+			"[+10]% growth [in all cities]",
+			"New ['Noble Army'] units start with [25] XP [in all cities]",
+			"Comment [Gain access to serveal uniques like [Zhayedan] and [Azadan Cavalry]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
@@ -6247,6 +6350,28 @@
 			"Provides [2] [Noble Army Maintainance]",
 			"[+1 Production] from every [Governor]",
 			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "SPQR",
+		"uniqueTo":"Mediterranean",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [20] [Influence Limit]",
+			"Provides [5] [Influence Limit] <starting from the [Medieval era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [3] [Standing Army Maintainance]",
+			"Provides [2] [Standing Army Maintainance] <while the empire is happy>",
+			"Provides [3] [Noble Army Maintainance]",
+			"[+1 Production] from every [Governor]",
+			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
+			"Comment [Gain access to serveal uniques like [Legio] and [Via Romana]",
+			"Free [Legio] appears",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
@@ -6543,7 +6668,9 @@
 			"Unsellable",
 			"Instantly provides [5] [Influence]",
 			"Gain a free [Peace] [in capital] <for [1] turns>",
-			"Gain a free [Tribes] [in capital] <for [1] turns>",
+			"Gain a free [Tribes] [in capital] <for [{non-[Central and West Asia]} {non-[North Africa]}] Civilizations> <for [1] turns>",
+			"Gain a free [Early City States] [in capital] <for [Central and West Asia] Civilizations> <for [1] turns>",
+			"Gain a free [Egyptian Dynasties] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Moves to new capital when capital changes"
 		]
 	},
@@ -6556,10 +6683,10 @@
 			"Instantly provides [10] [Influence]",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [City States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
-			"Gain a free [City States] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Early Empire] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
 			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
 			"Gain a free [Tribes] [in capital] <for [1] turns> <for [Europa] Civilizations>",
-			"Gain a free [Early Empire] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Gain a free [Egyptian Dynasties] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Moves to new capital when capital changes"
 		]
 	},
