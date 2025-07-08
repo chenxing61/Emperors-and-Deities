@@ -18,16 +18,16 @@
         "[+30]% Unhappiness from [Population] [in all cities] <in cities with at least [60] [Population]>",
         "[+35]% Unhappiness from [Population] [in all cities] <in cities with at least [70] [Population]>",
         
-        "[-25]% [Production] [in all cities] <when below [0] [Happiness]>",
+        "[-25]% [Production] [in all cities] <when below [0] Happiness>",
         //Influence
         
-        "Triggers a [Wealth Gap Widens] event <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [10]% chance> <upon turn start>",
-        "Triggers a [Rampent Corruption] event <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [10]% chance> <upon turn start>",
-        "Triggers a [Vagrancy Crisis] event <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [10]% chance> <upon turn start>",
+        "Triggers a [Wealth Gap Widens] event <when below [0] Happiness> <for [non-[City-States]] Civilizations> <with [10]% chance> <upon turn start>",
+        "Triggers a [Rampent Corruption] event <when below [0] Happiness> <for [non-[City-States]] Civilizations> <with [10]% chance> <upon turn start>",
+        "Triggers a [Vagrancy Crisis] event <when below [0] Happiness> <for [non-[City-States]] Civilizations> <with [10]% chance> <upon turn start>",
 
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when between [10] and [20] [Happiness]> <with [5]% chance> <upon turn start> <after turn number [20]> <starting from the [Renaissance era]>",
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when between [0] and [10] [Happiness]> <with [10]% chance> <upon turn start> <after turn number [20]> <starting from the [Renaissance era]>",
-        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when below [0] [Happiness]> <with [25]% chance> <upon turn start> <after turn number [20]> <starting from the [Renaissance era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when below [0] Happiness> <with [25]% chance> <upon turn start> <after turn number [20]> <starting from the [Renaissance era]>",
 
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when between [0] and [4] [Happiness]> <with [5]% chance> <upon turn start> <after turn number [20]> <before the [Renaissance era]>",
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when between [-3] and [0] [Happiness]> <with [10]% chance> <upon turn start> <after turn number [20]> <before the [Renaissance era]>",
@@ -35,7 +35,7 @@
 
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is not constructed> <when between [3] and [10] [Happiness]> <with [5]% chance> <upon turn start> <after turn number [20]><starting from the [Renaissance era]>",
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is not constructed> <when between [0] and [3] [Happiness]> <with [10]% chance> <upon turn start> <after turn number [20]><starting from the [Renaissance era]>",
-        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is not constructed> <when below [0] [Happiness]> <with [25]% chance> <upon turn start> <after turn number [20]> <starting from the [Renaissance era]>",
+        "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is not constructed> <when below [0] Happiness> <with [25]% chance> <upon turn start> <after turn number [20]> <starting from the [Renaissance era]>",
 
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is not constructed> <when between [-5] and [0] [Happiness]> <with [5]% chance> <upon turn start> <after turn number [20]><before the [Renaissance era]>",
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is not constructed> <when between [-10] and [-5] [Happiness]> <with [10]% chance> <upon turn start> <after turn number [20]><before the [Renaissance era]>",
@@ -83,11 +83,11 @@
         "Gain a free [Power Shortage] [in all cities] <in cities with a [Power Grid]> <when below [0] [Power]> <upon turn start>",
         "Remove [Power Shortage] [in all cities] <in cities with a [Power Grid]> <when above [0] [Power]> <upon turn start>",
 
-        "Gain a free [Overproduction] [in all cities] <starting from the [Industrial era]><when number of [[Consumption Supply]-5] is more than [Consumption Demand]> <upon turn start>",
-        "Remove [Overproduction] [in all cities] <starting from the [Industrial era]> <when number of [Consumption Demand] is less than [[Consumption Supply]-5]> <upon turn start>",
+        "Gain a free [Overproduction] [in all cities] <starting from the [Industrial era]><when number of [[Consumption Supply]-3-[[Cities]*2]] is more than [Consumption Demand]> <upon turn start>",
+        "Remove [Overproduction] [in all cities] <starting from the [Industrial era]> <when number of [Consumption Demand] is less than [[Consumption Supply]-3-[[Cities]*2]]> <upon turn start>",
 
-        "Gain a free [Underproduction] [in all cities] <starting from the [Industrial era]> <when number of [Consumption Demand] is more than [[Consumption Supply]+5]> <upon turn start>",
-        "Remove [Underproduction] [in all cities] <starting from the [Industrial era]> <when number of [[Consumption Supply]+5] is less than [Consumption Demand]> <upon turn start>",
+        "Gain a free [Underproduction] [in all cities] <starting from the [Industrial era]> <when number of [Consumption Demand] is more than [[Consumption Supply]+3+[[Cities]*2]]> <upon turn start>",
+        "Remove [Underproduction] [in all cities] <starting from the [Industrial era]> <when number of [[Consumption Supply]+3+[[Cities]*2]] is less than [Consumption Demand]> <upon turn start>",
 
         //AI
 
