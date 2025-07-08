@@ -4,10 +4,10 @@
  The Mod is WIP so civs dont have their unique features currently and late game(info age) kinda sucks.
 
  Credit to 
- Buckeeter aka Wadaling for making most of the vector icons(another credit to flaticon.com) and tile sets.
- EmperorPenguin for some help with proofreading, bug fixing advices
- FastDoubloon115_ for some help with playtesting
- Yanggestar from qq group chat for creating many original grahpics for the mod
+## Buckeeter aka Wadaling for making most of the vector icons(another credit to flaticon.com) and tile sets.
+## EmperorPenguin for some help with proofreading, bug fixing advices
+## FastDoubloon115_ for some help with playtesting
+## Yanggestar from qq group chat for creating many original grahpics for the mod
 
  Special thanks to:
  Authors of Deciv and Deciv redux, Outlaw of waste, Alpha frontier, Leaders mission 1 and 2, CS reworked, Rek mod, The great unciv rework and the rest of the community. 
