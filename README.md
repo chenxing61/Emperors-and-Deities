@@ -5,8 +5,11 @@
 
  Credit to 
  **Buckeeter aka Wadaling for making most of the vector icons(another credit to flaticon.com) and tile sets.**
+
  **EmperorPenguin for some help with proofreading, bug fixing advices.**
+
  **FastDoubloon115_ for some help with playtesting.**
+
  **Yanggestar from qq group chat for creating many original grahpics for the mod.**
 
  Special thanks to:
