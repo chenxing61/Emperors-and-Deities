@@ -4,9 +4,10 @@
  The Mod is WIP so civs dont have their unique features currently and late game(info age) kinda sucks.
 
  Credit to 
- Buckeeter aka Wadaling for making full vector icons(another credit to flaticon.com) and tile sets.
- EmperorPenguin for help with proofreading, bug fixing advices
- FastDoubloon115_ for help with playtesting
+ Buckeeter aka Wadaling for making most of the vector icons(another credit to flaticon.com) and tile sets.
+ EmperorPenguin for some help with proofreading, bug fixing advices
+ FastDoubloon115_ for some help with playtesting
+ Yanggestar from qq group chat for creating many original grahpics for the mod
 
  Special thanks to:
  (I cant remember their name so I will list out their works)
