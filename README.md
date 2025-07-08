@@ -10,7 +10,6 @@
  Yanggestar from qq group chat for creating many original grahpics for the mod
 
  Special thanks to:
- (I cant remember their name so I will list out their works)
  Authors of Deciv and Deciv redux, Outlaw of waste, Alpha frontier, Leaders mission 1 and 2, CS reworked, Rek mod, The great unciv rework and the rest of the community. 
  ---
  Great mods and bad mods both pushed me to this point. Its all your fault!
