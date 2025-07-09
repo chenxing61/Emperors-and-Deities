@@ -6167,6 +6167,7 @@
 	{
 		"name": "Early City States",
 		"uniqueTo":"Central and West Asia",
+		"replaces":"Tribes",
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
@@ -6197,6 +6198,25 @@
 		]
 	},
 	{
+		"name": "Earliest Empire",
+		"uniqueTo":"Central and West Asia",
+		"replaces":"Tribal Union",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [10] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Standing Army Maintainance]",
+			"Provides [2] [Noble Army Maintainance]",
+			"[+10]% growth [in all cities]",
+			"[+15]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
 		"name": "Egyptian Dynasties",
 		"uniqueTo":"North Africa",
 		"uniques": [
@@ -6205,14 +6225,15 @@
 			"'Civilization Form'",
 			"'United'",
 			"Provides [10] [Influence Limit]",
-			"Provides [5] [Influence Limit] <starting from the [Ancient era]>",
-			"Provides [5] [Influence Limit] <starting from the [Classical era]>",
+			"Provides [8] [Influence Limit] <starting from the [Ancient era]>",
+			"Provides [7] [Influence Limit] <starting from the [Classical era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
 			"Provides [1] [Noble Army Maintainance]",
 			"[+10]% growth [in all cities]",
+			"[+10]% growth [in all cities] <starting from the [Ancient era]>",
 			"[+10]% Production when constructing [All] wonders [in all cities]",
-			"Triggers a global alert upon completion",
+			"[+10]% Production when constructing [All] wonders [in all cities] <starting from the [Classical era]>",
 			"Moves to new capital when capital changes"
 		]
 	},
@@ -6250,6 +6271,7 @@
 	{
 		"name": "Greek City States",
 		"uniqueTo":"Mediterranean",
+		"replaces":"City States",
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
@@ -6258,7 +6280,7 @@
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
-			"[10]% Strength for cities",
+			"[Gold] cost of purchasing items in cities [-10]%",
 			"Gain a free [Cultural Exchange] [in this city]",
 			"Free [Hoplite] appears",
 			"Moves to new capital when capital changes"
@@ -6281,6 +6303,27 @@
 			"Moves to new capital when capital changes"
 		]
 	},
+		{
+		"name": "Shang Dynasty",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [20] [Influence Limit]",
+			"Provides [10] [Influence Limit] <starting from the [Classical era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <while the empire is happy>",
+			"Provides [2] [Standing Army Maintainance]",
+			"Provides [3] [Noble Army Maintainance]",
+			"[+15]% growth [in all cities]",
+			"[+1 Production] from [Luxury resource] tiles [in all cities]",
+			"Comment [Unique option in increasing [Influence] event]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
 	{
 		"name": "Zhou Dynasty",
 		"uniqueTo":"East Asia",
@@ -6298,6 +6341,7 @@
 			"[+10]% growth [in all cities]",
 			"[+1 Culture] [in all cities] <before adopting [Unity]>",
 			"[+3 Happiness] [in puppeted cities] <after adopting [Unity]>",
+			"Comment [Unique option in increasing [Influence] event]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
@@ -6359,6 +6403,7 @@
 	{
 		"name": "SPQR",
 		"uniqueTo":"Mediterranean",
+		"replaces":"Centralized Empire",
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
@@ -6373,6 +6418,27 @@
 			"[+1 Production] from every [Governor]",
 			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
 			"Comment [Gain access to serveal uniques like [Legio] and [Via Romana]",
+			"Free [Legio] appears",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Carthage Obligarchy",
+		"uniqueTo":"North Africa",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [20] [Influence Limit]",
+			"Provides [5] [Influence Limit] <starting from the [Medieval era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [3] [Standing Army Maintainance]",
+			"Provides [2] [Standing Army Maintainance] <while the empire is happy>",
+			"Provides [3] [Noble Army Maintainance]",
+			"[+2 Production, +3 Gold, +2 Culture] from every [Governor]",
+			"Comment [Gain access to serveal uniques like [Quadrireme] and [Sacred Band]",
 			"Free [Legio] appears",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
@@ -6396,7 +6462,26 @@
 		]
 	},
 	{
+		"name": "Alexanderian Sucessor States",
+		"uniqueTo":"Mediterranean",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'Divided'",
+			"Provides [20] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [2] [Standing Army Maintainance]",
+			"Provides [3] [Noble Army Maintainance]",
+			"[-20]% Culture cost of adopting new Policies",
+			"Comment [Gain access to [Phalanx]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
 		"name": "Warring States",
+		"uniqueTo":"East Asia",
+		"replaces":"Sucessor States",
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
