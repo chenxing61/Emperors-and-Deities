@@ -12,7 +12,7 @@
                     "Instantly consumes [3] [Influence]",
                     "Gain [-75] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
                     "Gain [-150] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-150] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
+                    "Gain [-225] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
                     "[-10]% [Gold] [in all cities] <for [3] turns>",
                     "[-10]% [Production] [in all cities] <for [3] turns>"
                 ]
@@ -25,7 +25,7 @@
                     "Instantly consumes [5] [Influence]",
                     "Gain [-75] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
                     "Gain [-150] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-150] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
+                    "Gain [-225] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
                     "[-10]% [Gold] [in all cities] <for [5] turns>",
                     "[-10]% [Production] [in all cities] <for [5] turns>"
                 ]
@@ -86,7 +86,7 @@
                     "Instantly consumes [3] [Influence]",
                     "Gain [-50] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
+                    "Gain [-200] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
                 ]
             },
             {
@@ -106,7 +106,7 @@
                 "uniques": ["Only available <when above [0] [Influence]>",
                     "Gain [-50] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
+                    "Gain [-200] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
                 ]
             },
             {
@@ -126,7 +126,7 @@
                 "uniques": ["Only available <when above [0] [Influence]>",
                     "Gain [-50] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
+                    "Gain [-200] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
                 ]
             },
             {
@@ -202,7 +202,7 @@
                 "text": "State Reform",
                 "uniques": [
                     "Only available <if [Unified] is constructed> <when above [10] [Influence]>",
-                    "Instantly consumes [10] [Influence]",
+                    "Instantly consumes [10] [Influence] <when number of [[in all cities] Cities] is more than [4]>",
                     "Triggers a [Reformation of the unified state] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
                 ]
