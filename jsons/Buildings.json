@@ -1003,7 +1003,6 @@
 	{
 		"name": "European Longhouse",
 		"uniqueTo": "Europa",
-		"culture": -1,
 		"production": 2,
 		"cityStrength": 2,
 		"uniques": [
@@ -5779,6 +5778,120 @@
 	},
 	///'Outcome'
 	{
+		"name": "Confucianism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Consumes [1] [Numbers of Avaliable School of Thoughts]",
+			"[-1 Gold] from all ['Political Building'] buildings",
+			"[+5]% [Culture] from every ['Political Building']",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Daoism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Consumes [1] [Numbers of Avaliable School of Thoughts]",
+			"[-5]% [Gold] [in all cities]",
+			"[-5]% [Production] [in all cities]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"[+1 Faith] per [5] population [in all cities]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Mohism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Consumes [1] [Standing Army Maintainance]",
+			"Consumes [1] [Noble Army Maintainance]",
+			"Consumes [1] [Numbers of Avaliable School of Thoughts]",
+			"[-5]% Unhappiness from [Population] [in all cities]",
+			"[10]% Strength for cities",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Legalism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Consumes [1] [Numbers of Avaliable School of Thoughts]",
+			"[-1 Happiness] from all ['Political Building'] buildings",
+			"[+10]% [Production] from every ['Political Building']",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Diplomatism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Consumes [1] [Numbers of Avaliable School of Thoughts]",
+			"Science gained from research agreements [25]%",
+			"When declaring friendship, both parties gain a [15]% boost to great person generation",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Early Rationalism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Consumes [1] [Numbers of Avaliable School of Thoughts]",
+			"[+5]% Culture cost of adopting new Policies",
+			"[+10]% [Science] [in all cities]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Naturalist Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Consumes [1] [Numbers of Avaliable School of Thoughts]",
+			"[-17]% Faith cost of generating Great Prophet equivalents",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Agrarianism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Consumes [1] [Numbers of Avaliable School of Thoughts]",
+			"[-1 Gold] from all ['Political Building'] buildings",
+			"[-1 Gold] from all ['Educational Building'] buildings",
+			"[+1 Food, +1 Gold] from all ['Agricultural Building'] buildings",
+			"[+1 Food] from all ['Educational Building'] buildings",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Militant Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Consumes [1] [Numbers of Avaliable School of Thoughts]",
+			"Provides [1] [Standing Army Maintainance]",
+			"Provides [1] [Noble Army Maintainance]",
+			"[+15]% Production when constructing ['Military Building'] buildings [in all cities]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
 		"name": "Failed Bourgeoisie Revolution",
 		"isNationalWonder": true,
 		"uniques": [
@@ -6177,6 +6290,8 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
 			"Provides [1] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [The First States]",
 			"[-5]% Culture cost of adopting new Policies",
 			"[20]% Strength for cities",
 			"Moves to new capital when capital changes"
@@ -6210,8 +6325,11 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
 			"Provides [2] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Akkadian, Assurian and Hitties]",
 			"[+10]% growth [in all cities]",
-			"[+15]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
+			"[+33]% Production when constructing ['Military Building'] buildings [in all cities connected to capital]",
+			"[+1 Production] from [Strategic resource] tiles [in all cities]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
@@ -6230,10 +6348,14 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
 			"Provides [1] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Carved in Stone]",
 			"[+10]% growth [in all cities]",
 			"[+10]% growth [in all cities] <starting from the [Ancient era]>",
 			"[+10]% Production when constructing [All] wonders [in all cities]",
 			"[+10]% Production when constructing [All] wonders [in all cities] <starting from the [Classical era]>",
+			"[+1 Production, +1 Faith] from every [Governor] <starting from the [Classical era]>",
+			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
 	},
@@ -6280,7 +6402,9 @@
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
-			"[Gold] cost of purchasing items in cities [-10]%",
+			"Comment [Unique Name:]",
+			"Comment [Pioneer of Wisdoms]",
+			"[Gold] cost of purchasing items in cities [-15]%",
 			"Gain a free [Cultural Exchange] [in this city]",
 			"Free [Hoplite] appears",
 			"Moves to new capital when capital changes"
@@ -6311,15 +6435,16 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Provides [20] [Influence Limit]",
-			"Provides [10] [Influence Limit] <starting from the [Classical era]>",
+			"Provides [15] [Influence Limit]",
+			"Provides [5] [Influence Limit] <starting from the [Classical era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <while the empire is happy>",
 			"Provides [2] [Standing Army Maintainance]",
 			"Provides [3] [Noble Army Maintainance]",
-			"[+15]% growth [in all cities]",
-			"[+1 Production] from [Luxury resource] tiles [in all cities]",
-			"Comment [Unique option in increasing [Influence] event]",
+			"Comment [Unique Name:]",
+			"Comment [Blessing of the Divine Swallow]",
+			"[+20]% growth [in all cities]",
+			"[+1 Culture, +1 Production] from [Luxury resource] tiles [in all cities]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
@@ -6338,6 +6463,8 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <while the empire is happy>",
 			"Provides [2] [Standing Army Maintainance]",
 			"Provides [3] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Mandated Ruling]",
 			"[+10]% growth [in all cities]",
 			"[+1 Culture] [in all cities] <before adopting [Unity]>",
 			"[+3 Happiness] [in puppeted cities] <after adopting [Unity]>",
@@ -6348,6 +6475,7 @@
 	},
 	{
 		"name": "Persian Dynasties",
+		"uniqueTo":"Central and West Asia",
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
@@ -6358,9 +6486,11 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
 			"Provides [3] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Shāhanshāh]",
 			"[+10]% growth [in all cities]",
 			"New ['Noble Army'] units start with [25] XP [in all cities]",
-			"Comment [Gain access to serveal uniques like [Zhayedan] and [Azadan Cavalry]",
+			"Comment [Gain access to serveal uniques like [Zhayedan] and [Azadan Cavalry]]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
@@ -6403,7 +6533,6 @@
 	{
 		"name": "SPQR",
 		"uniqueTo":"Mediterranean",
-		"replaces":"Centralized Empire",
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
@@ -6415,9 +6544,11 @@
 			"Provides [3] [Standing Army Maintainance]",
 			"Provides [2] [Standing Army Maintainance] <while the empire is happy>",
 			"Provides [3] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Veni Vidi Vici]",
 			"[+1 Production] from every [Governor]",
 			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
-			"Comment [Gain access to serveal uniques like [Legio] and [Via Romana]",
+			"Comment [Gain access to serveal uniques like [Legio] and [Via Romana]]",
 			"Free [Legio] appears",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
@@ -6436,16 +6567,55 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
 			"Provides [2] [Standing Army Maintainance] <while the empire is happy>",
-			"Provides [3] [Noble Army Maintainance]",
-			"[+2 Production, +3 Gold, +2 Culture] from every [Governor]",
-			"Comment [Gain access to serveal uniques like [Quadrireme] and [Sacred Band]",
-			"Free [Legio] appears",
+			"Provides [5] [Mercenary Contract]",
+			"Comment [Unique Name:]",
+			"Comment [The Phoenician Last Stand]",
+			"[+1 Production, +2 Gold, +1 Culture] from every [Governor]",
+			"Comment [Gain access to serveal uniques like [Quadrireme] and [Sacred Band]]",
+			"New ['Mercenary Army'] units start with [10] XP [in all cities]",
+			"[+5]% [Production] [in all cities]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
 	},
 	{
-		"name": "Sucessor States",
+		"name": "Great Qin",
+		"uniqueTo":"East Asia",
+		"replaces":"Centralized Empire",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [15] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [4] [Standing Army Maintainance]",
+			"Provides [1] [Noble Army Maintainance]",
+			"[+15]% Production when constructing [All] wonders [in all cities connected to capital]",
+			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
+			"Comment [Unique Name:]",
+			"Comment [The First Emperor of China]",
+			"Comment [Gain access to [Qin Balista] and [Honor Bound Territory]]",
+			"Gain a free [Honor Bound Territory] [in annexed cities]",
+			"Comment [[Great Qin] will collapse in if theres not enough [Happiness] and [Influence].]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Honor Bound Territory",
+		"cost": 1,
+		"happiness":2,
+		"uniques": [
+			"Can only be built <in [Annexed] cities>",
+			"Only available <if [Great Qin] is constructed in all [Capital] cities>",
+			"Provides [1] [Noble Army Maintainance]",
+			"Instantly provides [10] [Influence]",
+			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name": "Successor States",
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
@@ -6455,14 +6625,14 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
 			"Provides [2] [Noble Army Maintainance]",
-			"[+5]% growth [in all cities]",
+			"[+7]% growth [in all cities]",
 			"[-7]% Culture cost of adopting new Policies",
 			"[10]% Strength for cities",
 			"Moves to new capital when capital changes"
 		]
 	},
 	{
-		"name": "Alexanderian Sucessor States",
+		"name": "Alexandrian Successor States",
 		"uniqueTo":"Mediterranean",
 		"uniques": [
 			"Unbuildable",
@@ -6473,15 +6643,19 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
 			"Provides [3] [Noble Army Maintainance]",
-			"[-20]% Culture cost of adopting new Policies",
-			"Comment [Gain access to [Phalanx]",
+			"Comment [Unique Name:]",
+			"Comment [Cauldron of Cultures]",
+			"[-25]% Culture cost of adopting new Policies",
+			"Comment [Gain access to [Phalanx]]",
+			"Comment [If nothing goes wrong, [Alexandrian Successor States] will develop [Fedualism] in Mediterranean upon entering Medieval era]",
+			"Adopt [Feudalism] <starting from the [Medieval era]>",
 			"Moves to new capital when capital changes"
 		]
 	},
 	{
 		"name": "Warring States",
 		"uniqueTo":"East Asia",
-		"replaces":"Sucessor States",
+		"replaces":"Successor States",
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
@@ -6491,12 +6665,71 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
 			"Provides [2] [Noble Army Maintainance]",
-			"[-7]% Culture cost of adopting new Policies",
-			"New ['Standing Army'] units start with [10] XP [in all cities]",
+			"Comment [Unique Name:]",
+			"Comment [The Hundred Schools of thoughts]",
+			"Comment [Enable you to choose 3 Schools of thoughts in the total of 9 schools of thoughts with lasting effects]",
+			"Provides [3] [Numbers of Avaliable School of Thoughts]",
 			"Moves to new capital when capital changes"
 		]
 	},
-	///Medival
+	{
+		"name": "Chu Dynasty",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [25] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Standing Army Maintainance]",
+			"Provides [3] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [The Dominator's Warth]",
+			"New [Military] units start with [15] XP [in all cities]",
+			"Comment [Gain access to [Cavalry of the Dominator]]",
+			"Comment [If nothing goes wrong, [Chu Dynasty] will develop [Fedualism] in East Asia upon entering Medieval era]",
+			"Adopt [Feudalism] <starting from the [Medieval era]>",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Han Dynasty",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [25] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [3] [Standing Army Maintainance]",
+			"Provides [2] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [The Fierce Han]",
+			"Comment [Gain access to [Yu Lin Cavarly] and [Du Hu Protectorate]]",
+			"Gain a free [Du Hu Protectorate] [in puppeted cities]",
+			"Comment [If nothing goes wrong, [Han Dynasty] will develop [Meritocracy] in East Asia upon entering Medieval era]",
+			"Adopt [Meritocracy] <starting from the [Medieval era]>",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Du Hu Protectorate",
+		"cost": 1,
+		"gold":5,
+		"uniques": [
+			"Unbuildable",
+			"Remove [Du Hu Protectorate] [in all non-occupied cities]",
+			"Only available <if [Han Dynasty] is constructed in all [Capital] cities>",
+			"Instantly provides [8] [Influence]",
+			"[+5]% [Gold] from Trade Routes",
+			"Destroyed when the city is captured"
+		]
+	},
+	///Medieval
 	{
 		"name": "Kingdoms",
 		"uniques": [
@@ -6785,9 +7018,9 @@
 			"Unsellable",
 			"Instantly provides [10] [Influence]",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
-			"Gain a free [City States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
-			"Gain a free [Early Empire] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
-			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Greek City States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Zhou Dynasty] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
 			"Gain a free [Tribes] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Egyptian Dynasties] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Moves to new capital when capital changes"
@@ -6801,11 +7034,11 @@
 			"Unsellable",
 			"Instantly provides [15] [Influence]",
 			"Gain a free [Peace] [in capital] <for [1] turns>",
-			"Gain a free [Sucessor States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
-			"Gain a free [Sucessor States] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
-			"Gain a free [Early Empire] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Alexandrian Successor States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Successor States] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Warring States] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
 			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [Europa] Civilizations>",
-			"Gain a free [Centralized Empire] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Gain a free [Successor States] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Moves to new capital when capital changes"
 		]
 	},
@@ -6818,8 +7051,8 @@
 			"Instantly provides [20] [Influence]",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Centralized Empire] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
-			"Gain a free [Feudal Empire] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
-			"Gain a free [Centralized Empire] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Persian Dynasties] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Han Dynasty] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Moves to new capital when capital changes"
@@ -6995,6 +7228,17 @@
 		"hurryCostModifier": -50
 	},
 	{
+		"name": "Army Maintainance Cost",
+		"cost":50,
+		"uniques": [
+			"Unavailable",
+			"Unsellable",
+			"Consumes [1] [Standing Army Maintainance]",
+			"Consumes [1] [Noble Army Maintainance]"
+		],
+		"hurryCostModifier": -50
+	},
+	{
 		"name": "Overproduction",
 		"cost":50,
 		"percentStatBonus":{
@@ -7032,12 +7276,26 @@
 		],
 		"hurryCostModifier": -50
 	},
+	{
+		"name":"Alexander Event Flag",
+		"cost":10,
+		"uniques":[
+			"Unavailable",
+			"Unsellable",
+			"Consumes [1] [Alexandrian Empire Period] <when above [0] [Alexandrian Empire Period]>",
+			"Triggers a [Alexander's death] event <when below [6] [Alexandrian Empire Period]> <with [50]% chance>",
+			"Triggers a [Alexander's death] event <when below [9] [Alexandrian Empire Period]> <with [50]% chance> <if [Alexandrian Successor States] is not constructed>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes"
+		]
+	}
 	///Scenario Tools
 	{
 		"name":"No Wonder",
 		"cost":10,
 		"uniques":[
 			"Unavailable",
+			"Unsellable",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes"
 		]
