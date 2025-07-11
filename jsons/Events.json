@@ -300,7 +300,7 @@
                 "text": "No significant changes",
                 "uniques": [
                     "Comment [We are still a bunch of countries prone to infighting and invasion, but what we do have is countless oppotunities.]",
-                    "Only available <if [Unified] is not constructed>",
+                    "Only available <if [Unified] is not constructed> <if [Great Qin] is not constructed>",
                     "Gain a free [City States] [in capital] <if [Tribes] is constructed> <starting from the [Classical era]> <before the [Medieval era]> <hidden from users>",
                     "Remove [Tribes] [in all cities] <if [Tribes] is constructed> <starting from the [Classical era]> <before the [Medieval era]> <hidden from users>",
                     "Gain a free [Kingdoms] [in capital] <if [Successor States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
@@ -309,6 +309,13 @@
                     "Remove [City States] [in all cities] <if [City States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
                     "Gain a free [Republics] [in capital] <if [Kingdoms] is constructed> <starting from the [Industrial era]> <hidden from users>",
                     "Remove [Kingdoms] [in all cities] <if [Kingdoms] is constructed> <starting from the [Industrial era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Qin has collapsed!",
+                "uniques": [
+                    "Only available <if [Great Qin] is constructed>",
+                    "Triggers a [Collapse of the Great Qin] event"
                 ]
             },
             {
