@@ -194,7 +194,6 @@
                 "text": "Adoption of Schools of Thought",
                 "uniques": [
                     "Only available <if [Warring States] is constructed> <when above [10] [Influence]> <when above [0] [Numbers of Avaliable School of Thoughts]>",
-                    "Instantly consumes [10] [Influence]",
                     "Triggers a [The way to rule] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
                 ]
@@ -270,7 +269,7 @@
             {
                 "text": "Changing Civilization Form",
                 "uniques": [
-                    "Only available <if [Harmony] is not constructed> <when number of [Influence] is more than [10]>",
+                    "Only available <when number of [Influence] is more than [10]>",
                     "Comment [We can force the shift in politic to stop our civilization from a undesireable route...]",
                     "Instantly consumes [10] [Influence] <when number of [[in all cities] Cities] is more than [4]>",
                     "Triggers a [Shift in Politic] event",
@@ -315,10 +314,64 @@
             {
                 "text": "We are able to unify ourselves!",
                 "uniques": [
-                    "Only available <if [Unified] is not constructed>  <when above [10] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <before the [Medieval era]>",
-                    "Only available <if [Unified] is not constructed>  <when above [15] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Medieval era]> <before the [Industrial era]>",
-                    "Only available <if [Unified] is not constructed>  <when above [25] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Industrial era]> <before the [Information era]>",
-                    "Only available <if [Unified] is not constructed>  <when above [25] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Information era]>",
+                    "Only available <if [Unified] is not constructed> <when above [10] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <before the [Medieval era]>",
+                    "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
+                    "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
+                    "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
+                    "Gain a free [Centralized Empire] [in capital] <during the [Classical era]> <if [Successor States] is constructed> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Medieval era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Renaissance era]> <hidden from users>",
+                    "Gain a free [United States] [in capital] <during the [Imperial era]> <after adopting [Revolution]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Industrial era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Modern era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Atomic era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Information era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Future era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "We are able to unify ourselves!",
+                "uniques": [
+                    "Only available <if [Unified] is not constructed> <when above [15] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Medieval era]> <before the [Industrial era]>",
+                    "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
+                    "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
+                    "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
+                    "Gain a free [Centralized Empire] [in capital] <during the [Classical era]> <if [Successor States] is constructed> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Medieval era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Renaissance era]> <hidden from users>",
+                    "Gain a free [United States] [in capital] <during the [Imperial era]> <after adopting [Revolution]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Industrial era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Modern era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Atomic era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Information era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Future era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "We are able to unify ourselves!",
+                "uniques": [
+                    "Only available <if [Unified] is not constructed> <when above [25] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Industrial era]> <before the [Information era]>",
+                    "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
+                    "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
+                    "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
+                    "Gain a free [Centralized Empire] [in capital] <during the [Classical era]> <if [Successor States] is constructed> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Medieval era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Renaissance era]> <hidden from users>",
+                    "Gain a free [United States] [in capital] <during the [Imperial era]> <after adopting [Revolution]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Industrial era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Modern era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Atomic era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Information era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Future era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "We are able to unify ourselves!",
+                "uniques": [
+                    "Only available <if [Unified] is not constructed> <when above [25] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Information era]>",
                     "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
                     "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
@@ -947,59 +1000,83 @@
         "text": "It seems like a lot of different new ideologies have appeared in our civilization... Maybe some of them are beneficial",
         "choices": [
             {
-                "text": "Confucianism",
-                "uniques": [
-                    "Gain a free [Confucianism Influence] [in capital]"
-                ]
-            },
-            {
-                "text": "Daoism",
-                "uniques": [
-                    "Gain a free [Daoism Influence] [in capital]"
-                ]
-            },
-            {
-                "text": "Mohism",
-                "uniques": [
-                    "Gain a free [Mohism Influence] [in capital]"
-                ]
-            },
-            {
-                "text": "Legalism",
-                "uniques": [
-                    "Gain a free [Legalism Influence] [in capital]"
-                ]
-            },
-            {
-                "text": "School of Diplomacy",
-                "uniques": [
-                    "Gain a free [Diplomatism Influence] [in capital]"
-                ]
-            },
-            {
-                "text": "School of Forms and Names",
-                "uniques": [
-                    "Gain a free [Early Rationalism Influence] [in capital]"
-                ]
-            },
-            {
-                "text": "School of Naturalists",
-                "uniques": [
-                    "Gain a free [Naturalist Influence] [in capital]"
-                ]
-            },
-            {
-                "text": "School of Agrarianism",
-                "uniques": [
-                    "Gain a free [Agrarianism Influence] [in capital]"
-                ]
-            },
-            {
-                "text": "School of Military Strategy",
-                "uniques": [
-                    "Gain a free [Militant Influence] [in capital]"
-                ]
-            }
+            "text": "Confucianism",
+            "uniques": [
+                "Only available <if [Confucianism Influence] is not constructed>",
+                "Gain a free [Confucianism Influence] [in capital]",
+                "Instantly consumes [10] [Influence]"
+            ]
+        },
+        {
+            "text": "Daoism",
+            "uniques": [
+                "Only available <if [Daoism Influence] is not constructed>",
+                "Gain a free [Daoism Influence] [in capital]",
+                "Instantly consumes [10] [Influence]"
+            ]
+        },
+        {
+            "text": "Mohism",
+            "uniques": [
+                "Only available <if [Mohism Influence] is not constructed>",
+                "Gain a free [Mohism Influence] [in capital]",
+                "Instantly consumes [10] [Influence]"
+            ]
+        },
+        {
+            "text": "Legalism",
+            "uniques": [
+                "Only available <if [Legalism Influence] is not constructed>",
+                "Gain a free [Legalism Influence] [in capital]",
+                "Instantly consumes [10] [Influence]"
+            ]
+        },
+        {
+            "text": "School of Diplomacy",
+            "uniques": [
+                "Only available <if [Diplomatism Influence] is not constructed>",
+                "Gain a free [Diplomatism Influence] [in capital]",
+                "Instantly consumes [10] [Influence]"
+            ]
+        },
+        {
+            "text": "School of Forms and Names",
+            "uniques": [
+                "Only available <if [Early Rationalism Influence] is not constructed>",
+                "Gain a free [Early Rationalism Influence] [in capital]",
+                "Instantly consumes [10] [Influence]"
+            ]
+        },
+        {
+            "text": "School of Naturalists",
+            "uniques": [
+                "Only available <if [Naturalist Influence] is not constructed>",
+                "Gain a free [Naturalist Influence] [in capital]",
+                "Instantly consumes [10] [Influence]"
+            ]
+        },
+        {
+            "text": "School of Agrarianism",
+            "uniques": [
+                "Only available <if [Agrarianism Influence] is not constructed>",
+                "Gain a free [Agrarianism Influence] [in capital]",
+                "Instantly consumes [10] [Influence]"
+            ]
+        },
+        {
+            "text": "School of Military Strategy",
+            "uniques": [
+                "Only available <if [Militant Influence] is not constructed>",
+                "Gain a free [Militant Influence] [in capital]",
+                "Instantly consumes [10] [Influence]"
+            ]
+        }
+        {
+            "text":"Can we wait?",
+            "uniques":[
+                "Comment [Nothing happens.]"
+            ]
+        }
         ]
     },
     {
