@@ -193,7 +193,9 @@
             {
                 "text": "Adoption of Schools of Thought",
                 "uniques": [
-                    "Only available <if [Warring States] is constructed> <when above [10] [Influence]> <when above [0] [Numbers of Avaliable School of Thoughts]>",
+                    "Only available <if [Warring States] is constructed>",
+                    "Only available <when above [0] [Avaliable School of Thoughts]>",
+                    "Only available <when above [10] [Influence]>",
                     "Triggers a [The way to rule] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
                 ]
@@ -1077,7 +1079,7 @@
                 "Gain a free [Militant Influence] [in capital]",
                 "Instantly consumes [10] [Influence]"
             ]
-        }
+        },
         {
             "text":"Can we wait?",
             "uniques":[
@@ -1112,6 +1114,28 @@
                 "Gain a free [Strife] [in capital]"
                 ]
             }
+        ]
+    },
+    ///Europa
+        {
+        "name": "The Tribes of Europe",
+        "text": "Europa has a variety of cultures scattered around. Certain culture's futher developments can improve our Civilisation's performance greatly.",
+        "choices": [
+        {
+            "text": "Celts",
+            "uniques": [
+                "Only available <if [Confucianism Influence] is not constructed>",
+                "Gain a free [Confucianism Influence] [in capital]",
+                "Instantly consumes [5] [Influence]",
+                "Gain [-100] [Gold] <(modified by game speed)>"
+            ]
+        },
+        {
+            "text":"Can we wait?",
+            "uniques":[
+                "Comment [Nothing happens.]"
+            ]
+        }
         ]
     },
     ///North Afican

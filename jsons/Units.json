@@ -450,38 +450,6 @@
 		"attackSound": "metalhit"
 	},
 	{
-		"name": "Zhayedan",
-		"unitType": "Close Combat",
-		"uniqueTo":"Central and West Asia",
-		"cost": 70,
-		"movement": 2,
-		"strength": 21,
-		"uniques": [
-			"Only available <if [Persian Dynasties] is constructed>",
-			"Limited to [3] per Civilization",
-			"Can upgrade to [Azadan Cavalry] <after discovering [Armorments]>",
-			"Can upgrade to [Noble Swordsman] <after discovering [Iron Working]>",
-			"'Noble Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"[+25]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Noble Army",
-			"Hardened",
-			"Stewardship",
-			"Field Medic",
-			"Recurve bow"
-		],
-		"requiredTech": "Bronze Working",
-		"obsoleteTech": "Armorments",
-		"requiredResource": "Noble Army Maintainance",
-		"attackSound": "metalhit"
-	},
-	{
 		"name": "Chariot",
 		"unitType": "Assault",
 		"cost": 65,
@@ -1023,7 +991,7 @@
 	{
 		"name": "Noble Swordsman",
 		"unitType": "Close Combat",
-		"cost": 50,
+		"cost": 100,
 		"movement": 2,
 		"strength": 26,
 		"uniques": [
@@ -1044,6 +1012,39 @@
 		"promotions": [
 			"The Noble Army",
 			"Chainmail Armour"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Flintlock",
+		"requiredResource": "Noble Army Maintainance",
+		"attackSound": "metalhit"
+	},
+		{
+		"name": "Zhayedan",
+		"unitType": "Close Combat",
+		"uniqueTo":"Central and West Asia",
+		"cost": 120,
+		"movement": 2,
+		"strength": 26,
+		"uniques": [
+			"Only available <if [Persian Dynasties] is constructed>",
+			"Limited to [3] per Civilization",
+			"Can upgrade to [Azadan Cavalry] <after discovering [Armorments]>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]><after adopting [Long Live the Revolution!]><removing the [The Noble Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]><removing the [The Noble Army] promotion/status>",
+			"'Noble Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Hardened",
+			"Stewardship",
+			"Field Medic",
+			"Recurve bow"
 		],
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Flintlock",
@@ -1286,11 +1287,13 @@
 	},
 	{
 		"name": "Cavalry of the Dominator",
+		"uniqueTo":"East Asia",
 		"unitType": "Assault",
 		"cost": 100,
 		"movement": 3,
 		"strength": 33,
 		"uniques": [
+			"Only available <if [Chu Dynasty] is constructed>",
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
 			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]>",
