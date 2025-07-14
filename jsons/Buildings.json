@@ -434,285 +434,8 @@
 		"hurryCostModifier": -25
 	},
 	///Invention Tree
-	{
-		"name": "Invention of Pasteurization",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Pasteurization] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Pasteurization] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Pasteurization] is constructed by anybody>",
-			"Comment [Enable [Food Industry] to produce dairy, making it benefit from cities with ['Herd']]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Food Industry",
-		"requiredTech": "Industrialization",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Invention of Canned Food",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Canned Food] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Canned Food] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Canned Food] is constructed by anybody>",
-			"[+10]% [Food] from every [Food Industry]",
-			"Comment [Enable [Food Industry] to process [Deep Sea Fish(Stored)] en masse.]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Food Industry",
-		"requiredTech": "Industrialization",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Invention of Soda",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Soda] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Soda] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Soda] is constructed by anybody>",
-			"[+5]% [Happiness] from every [Food Industry]",
-			"[+5]% [Gold] from every [Food Industry]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Food Industry",
-		"requiredTech": "Mass Production",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Innovation of Frozen Foods",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody>",
-			"[-50]% production cost <if [Innovation of Frozen Foods] is constructed by anybody>",
-			"[+5]% [Food] from every [Food Industry]",
-			"Comment [Increase [Food Industry]'s efficiency to process [Deep Sea Fish(Stored)] en masse.]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Food Industry",
-		"requiredTech": "Refrigeration",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Innovation of Instant Foods",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Instant Foods] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Instant Foods] is not constructed by anybody>",
-			"[-50]% production cost <if [Innovation of Instant Foods] is constructed by anybody>",
-			"[+5]% [Production] from every [Food Industry]",
-			"Comment [Enable [Food Industry] to produce extra [Consumption Supply]]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Food Industry",
-		"requiredTech": "Pharmaceuticals",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Innovation of Modern Hardwares",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Modern Hardwares] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Modern Hardwares] is not constructed by anybody>",
-			"[-50]% production cost <if [Innovation of Modern Hardwares] is constructed by anybody>",
-			"Comment [Enable [Consumer Goods Industry] to make population gain extra [Culture] and [Production].]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Consumer Goods Industry",
-		"requiredTech": "Industrialization",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Innovation of Chemical Processes",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Chemical Processes] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Chemical Processes] is not constructed by anybody>",
-			"[-50]% production cost <if [Innovation of Chemical Processes] is constructed by anybody>",
-			"[+5]% [Science] from every [Consumer Goods Industry]",
-			"[+5]% [Culture] from every [Consumer Goods Industry]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Consumer Goods Industry",
-		"requiredTech": "Dynamite",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Innovation of Electrical Appliances",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Electrical Appliances] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Electrical Appliances] is not constructed by anybody>",
-			"[-50]% production cost <if [Innovation of Electrical Appliances] is constructed by anybody>",
-			"[+5]% [Happiness] from every [Furniture Industry]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Furniture Industry",
-		"requiredTech": "Electricity",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Invention of Smart Appliances",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Smart Appliances] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Smart Appliances] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Smart Appliances] is constructed by anybody>",
-			"[+5]% [Science] from every [Furniture Industry]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Furniture Industry",
-		"requiredTech": "Computer",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Invention of Machine Tools",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Machine Tools] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Machine Tools] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Machine Tools] is constructed by anybody>",
-			"Comment [Enable [Machine Industry] to increase the building speed of other industries]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Machine Industry",
-		"requiredTech": "Industrialization",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Invention of Professional Equipments",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Professional Equipments] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Professional Equipments] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Professional Equipments] is constructed by anybody>",
-			"Comment [Enable [Machine Industry] to increase tile improvement yield.]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Machine Industry",
-		"requiredTech": "Electricity",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Innovation of Processing Precision",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Processing Precision] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Processing Precision] is not constructed by anybody>",
-			"[-50]% production cost <if [Innovation of Processing Precision] is constructed by anybody>",
-			"Comment [Enable [Machine Industry] to increase [Manufactory] and [Academy] yield.]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Machine Industry",
-		"requiredTech": "Synthetic Materials",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Invention of Stamping",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Stamping] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Stamping] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Stamping] is constructed by anybody>",
-			"Comment [[Firearms Industry] provides more [Weapon Parts].]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Machine Industry",
-		"requiredTech": "Replaceable Parts",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Invention of Bicycle",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Bicycle] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Bicycle] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Bicycle] is constructed by anybody>",
-			"Comment [Enable [Vehicle Industry] to make population gain extra [Culture] and [Production].]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Vehicle Industry",
-		"requiredTech": "Industrialization",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Invention of Professional Vehicles",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Professional Vehicles] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Professional Vehicles] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Professional Vehicles] is constructed by anybody>",
-			"Comment [Enable [Mechanised Worker]s to be built.]",
-			"[+20]% [Food] from every [Vehicle Industry]",
-			"Unsellable", 
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Vehicle Industry",
-		"requiredTech": "Industrialization",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Innovation of Civilian Navigation",
-		"cost": 500,
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Civilian Navigation] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Civilian Navigation] is not constructed by anybody>",
-			"[-50]% production cost <if [Innovation of Civilian Navigation] is constructed by anybody>",
-			"[+1] Movement <for [{Civilian} {Water}] units>",
-			"[+1]% [Gold] from every ['Marine Infrastructure']",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Shipmaking Industry",
-		"requiredTech": "Radar",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Invention of Helicopter",
-		"uniques": [
-			"Limited to [1] per Civilization",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Helicopter] is not constructed by anybody>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Helicopter] is not constructed by anybody>",
-			"[-50]% production cost <if [Invention of Helicopter] is constructed by anybody>",
-			"[+5]% [Happiness] from every [Aviation Industry]",
-			"Comment [Enable ['Low Altitude Aircraft']s to be built.]",
-			"Unsellable",
-			"Moves to new capital when capital changes"
-		],
-		"requiredBuilding":"Aviation Industry",
-		"requiredTech": "Combined Arms",
-		"hurryCostModifier": 0
-	},
+
+
 	///Line 0
 	{
 		"name": "Obelisk",
@@ -805,6 +528,20 @@
 		],
 		"requiredTech": "Sailing",
 		"hurryCostModifier": 5
+	},
+	{
+		"name": "Barrack",
+		"maintenance": 1,
+		"cityStrength": 5,
+		"uniques": [
+			"'Military Building'",
+			"All newly-trained [Military] units [in this city] receive the [Hardened] promotion",
+			"New [Military] units start with [10] XP [in this city]",
+			"Provides [1] [Standing Army Maintainance]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Copper Working",
+		"hurryCostModifier": 15
 	},
 	{
 		"name": "Granary",
@@ -902,20 +639,7 @@
 		"requiredTech": "Animal Husbandry",
 		"hurryCostModifier": 0
 	},
-	{
-		"name": "Barrack",
-		"maintenance": 1,
-		"cityStrength": 5,
-		"uniques": [
-			"'Military Building'",
-			"All newly-trained [Military] units [in this city] receive the [Hardened] promotion",
-			"New [Military] units start with [10] XP [in this city]",
-			"Provides [1] [Standing Army Maintainance]",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Copper Working",
-		"hurryCostModifier": 15
-	},
+
 	{
 		"name": "Hunter's Hut",
 		"cost": 20,
@@ -928,6 +652,26 @@
 		"hurryCostModifier": 0
 	},
 	///Line 2
+	{
+		"name": "Foundry",
+		"maintenance": 1,
+		"specialistSlots": {
+			"Engineer": 1
+		},
+		"uniques": [
+			"'Heavy Industry'",
+			"[+1 Production] from [Metal] tiles [in this city]",
+			"[+1 Production] from [Minerals] tiles [in this city]",
+			"[+10]% Production when constructing [All] units [in this city]",
+			"Provides [1] [Metal]"
+		],
+		"requiredNearbyImprovedResources": [
+			"Metal",
+			"Minerals"
+		],
+		"requiredTech": "Bronze Working",
+		"hurryCostModifier": 25
+	},
 	{
 		"name": "Watermill",
 		"food": 2,
@@ -951,24 +695,6 @@
 		],
 		"requiredTech": "The Wheel",
 		"hurryCostModifier": 10
-	},
-	{
-		"name": "Foundry",
-		"maintenance": 1,
-		"specialistSlots": {
-			"Engineer": 1
-		},
-		"uniques": [
-			"'Heavy Industry'",
-			"[+10]% Production when constructing [All] units [in this city]",
-			"Provides [1] [Metal]"
-		],
-		"requiredNearbyImprovedResources": [
-			"Metal",
-			"Minerals"
-		],
-		"requiredTech": "Bronze Working",
-		"hurryCostModifier": 25
 	},
 	{
 		"name": "Mint",
@@ -1175,6 +901,58 @@
 		"quote": "'Time crumbles things; everything grows old and is forgotten under the power of time' - Aristotle"
 	},
 	{
+		"name": "The Statue of Sea God",
+		"isWonder": true,
+		"culture": 2,
+		"happiness": 1,
+		"greatPersonPoints": {
+			"Great Artist": 1
+		},
+		"uniques": [
+			"'Worship Place'",
+			"[+1 Food] from [Coast] tiles [in this city]",
+			"[+25]% Production when constructing [Water] units [in all cities]",
+			"[+10]% Production when constructing ['Economic Building'] buildings [in all cities]",
+			"Only available <after adopting [Marine Tradition]>",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Bronze Working",
+		"quote": "'At once she prayed intensely to Poseidon:'Hear me, Sea-lord, you who embrace the earth - don't deny our wishes, bring our prayers to pass!' - The Odyssey, Book 3, lines 61-69."
+	},
+	{
+		"name": "The Statue of Thunder God",
+		"isWonder": true,
+		"happiness": 2,
+		"gold": 5,
+		"uniques": [
+			"'Worship Place'",
+			"[+10]% Strength <for [All] units> <vs cities> <when attacking>",
+			"Only available <before adopting [Monotheism]>",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Bronze Working",
+		"quote": "'He spoke, the son of Kronos, and nodded his head with the dark brows, and the immortally anointed hair of the great god swept from his divine head, and all Olympos was shaken' - The Iliad"
+	},
+	{
+		"name": "The Statue of Sun God",
+		"isWonder": true,
+		"cost": 185,
+		"culture": 3,
+		"happiness": 1,
+		"greatPersonPoints": {
+			"Great Merchant": 4
+		},
+		"uniques": [
+			"Only available <before adopting [Monotheism]>",
+			"Must be next to [Coast]",
+			"'Worship Place'",
+			"[+1 Gold] from [Water] tiles [in this city]",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Bronze Working",
+		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
+	},
+	{
 		"name": "Mausoleum of Afterlife",
 		"isWonder": true,
 		"happiness": 3,
@@ -1195,7 +973,7 @@
 		"requiredTech": "The Wheel",
 		"quote": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge"
 	},
-	/// Line 3
+	///Line 3
 	{
 		"name": "Basilica",
 		"uniqueTo": "Mediterranean",
@@ -1225,7 +1003,6 @@
 	{
 		"name": "European Longhouse",
 		"uniqueTo": "Europa",
-		"culture": -1,
 		"production": 2,
 		"cityStrength": 2,
 		"uniques": [
@@ -1280,6 +1057,17 @@
 		],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
+	},
+	{
+		"name": "Via Romana",
+		"gold":1,
+		"production":1,
+		"uniques": [
+			"Only available <if [SPQR] is constructed>",
+			"[-50]% production cost <with a garrison>"
+		],
+		"requiredTech": "Trade Network",
+		"hurryCostModifier": 5
 	},
 	{
 		"name": "Livestock Market",
@@ -1337,91 +1125,6 @@
 		"hurryCostModifier": 10
 	},
 	{
-		"name": "Desert Trade Network",
-		"isWonder": true,
-		"culture": 1,
-		"greatPersonPoints": {
-			"Great Merchant": 1
-		},
-		"uniques": [
-			"[+1 Food, +1 Production] from [Desert] tiles without [Flood plains] [in this city]",
-			"Gain a free [Trading Post] [in this city]",
-			"[+6 Culture] [in this city] <after discovering [Archaeology]>",
-			"Must be next to [Desert]",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Trade Network",
-		"quote": "'...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...' - Indiana Jones"
-	},
-	{
-		"name": "Hanging Gardens",
-		"greatPersonPoints": {
-			"Great Artist": 1
-		},
-		"food": 2,
-		"culture": 3,
-		"happiness": 1,
-		"isWonder": true,
-		"uniques": [
-			"Gain a free [Garden] [in this city]",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Plows",
-		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
-	},
-	{
-		"name": "The Statue of Sea God",
-		"isWonder": true,
-		"culture": 2,
-		"happiness": 1,
-		"greatPersonPoints": {
-			"Great Artist": 1
-		},
-		"uniques": [
-			"'Worship Place'",
-			"[+1 Food] from [Coast] tiles [in this city]",
-			"[+25]% Production when constructing [Water] units [in all cities]",
-			"[+10]% Production when constructing ['Economic Building'] buildings [in all cities]",
-			"Only available <after adopting [Marine Tradition]>",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Bronze Working",
-		"quote": "'At once she prayed intensely to Poseidon:'Hear me, Sea-lord, you who embrace the earth - don't deny our wishes, bring our prayers to pass!' - The Odyssey, Book 3, lines 61-69."
-	},
-	{
-		"name": "The Statue of Thunder God",
-		"isWonder": true,
-		"happiness": 2,
-		"gold": 5,
-		"uniques": [
-			"'Worship Place'",
-			"[+10]% Strength <for [All] units> <vs cities> <when attacking>",
-			"Only available <before adopting [Monotheism]>",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Bronze Working",
-		"quote": "'He spoke, the son of Kronos, and nodded his head with the dark brows, and the immortally anointed hair of the great god swept from his divine head, and all Olympos was shaken' - The Iliad"
-	},
-	{
-		"name": "The Statue of Sun God",
-		"isWonder": true,
-		"cost": 185,
-		"culture": 3,
-		"happiness": 1,
-		"greatPersonPoints": {
-			"Great Merchant": 4
-		},
-		"uniques": [
-			"Only available <before adopting [Monotheism]>",
-			"Must be next to [Coast]",
-			"'Worship Place'",
-			"[+1 Gold] from [Water] tiles [in this city]",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Bronze Working",
-		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
-	},
-	{
 		"name": "The Great Library",
 		"isWonder": true,
 		"science": 2,
@@ -1453,7 +1156,190 @@
 		"requiredTech": "Writing",
 		"quote": "'Learning without thinking leads to confusion; Thinking without learning ends to vain.' - Confucius"
 	},
-	///Line 3
+	{
+		"name": "Hanging Gardens",
+		"greatPersonPoints": {
+			"Great Artist": 1
+		},
+		"food": 2,
+		"culture": 3,
+		"happiness": 1,
+		"isWonder": true,
+		"uniques": [
+			"Gain a free [Garden] [in this city]",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Plows",
+		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
+	},
+	{
+		"name": "Desert Trade Network",
+		"isWonder": true,
+		"culture": 1,
+		"greatPersonPoints": {
+			"Great Merchant": 1
+		},
+		"uniques": [
+			"Must be next to [Desert]",
+			"[+1 Food, +1 Production] from [Desert] tiles without [Flood plains] [in this city]",
+			"Gain a free [Trading Post] [in this city]",
+			"[+6 Culture] [in this city] <after discovering [Archaeology]>",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Trade Network",
+		"quote": "'...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...' - Indiana Jones"
+	},
+	///Line 4
+	{
+		"name": "Stone Works",
+		"maintenance": 1,
+		"production": 1,
+		"culture":1,
+		"uniques": [
+			"'Heavy Industry'",
+			"[+1 Production] from ['Rock'] tiles [in this city]",
+			"[+1]% Production when constructing [All] buildings [in all cities]"
+		],
+		"requiredNearbyImprovedResources": [
+			"Marble",
+			"Stone"
+		],
+		"requiredTech": "Masonry",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Brick Works",
+		"maintenance": 1,
+		"production": 1,
+		"uniques": [
+			"'Heavy Industry'",
+			"[+1 Production] from [Clay] tiles [in this city]",
+			"[+1]% Production when constructing [All] buildings [in all cities]"
+		],
+		"requiredNearbyImprovedResources": [
+			"Clay"
+		],
+		"requiredTech": "Masonry",
+		"requiredBuilding": "Pottery Workshop",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Walls",
+		"maintenance": 1,
+		"happiness": 1,
+		"cityStrength": 5,
+		"cityHealth": 30,
+		"uniques": [
+			"'Static Defense'",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Masonry",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Furniture Workshop",
+		"maintenance": 2,
+		"culture":1,
+		"specialistSlots": {
+			"Engineer": 1
+		},
+		"uniques": [
+			"'Light Industry'",
+			"[+1 Gold] from ['Lumber Improvement'] tiles [in this city]",
+			"Must have an owned ['Lumber Improvement'] within [3] tiles"
+		],
+		"requiredTech": "Carpentry",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Stable",
+		"maintenance": 2,
+		"happiness": 1,
+		"uniques": [
+			"'Infrastructure'",
+			"[+10]% Production when constructing ['Mounted'] units [in this city]",
+			"[+1 Production] from [Horse] tiles [in this city]",
+			"[+1 Gold] from [Horse] tiles [in this city]",
+			"[+100]% Production when constructing [Military Stable] buildings [in all cities]"
+		],
+		"requiredNearbyImprovedResources": [
+			"Horse"
+		],
+		"requiredTech": "Horseback Riding",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "The Grand Ditch",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Engineer": 1
+		},
+		"uniques": [
+			"Gain a free [Irrigation System] [in this city]",
+			"[+10]% growth [in all cities]",
+			"[+2 Faith, +2 Culture] <starting from the [Medieval era]>",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Mining",
+		"quote": "'The land of abundance' - The idiom used to describe the province after Du Jiang Yan was built."
+	},
+	{
+		"name": "Mausoleum of Wealth",
+		"isWonder": true,
+		"culture": 1,
+		"happiness": 1,
+		"greatPersonPoints": {
+			"Great Merchant": 1
+		},
+		"uniques": [
+			"Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
+			"[+1 Gold] from ['Useful Mineral'] tiles [in this city]",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Masonry",
+		"quote": "'The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men's lives.' - Pericles"
+	},
+	{
+		"name": "The Great Catacomb",
+		"faith": 3,
+		"happiness": 1,
+		"isWonder": true,
+		"uniques": [
+			"'Worship Place'",
+			"Free [Great Prophet] appears",
+			"Only available <after adopting [Monotheism]>",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Masonry",
+		"quote": "'The Christian catacombs represent simplicity and earthiness, the cathedrals, transcendence and wonder.' - Russell Moore"
+	},
+	{
+		"name": "The Great Colosseum",
+		"isWonder": true,
+		"culture": 3,
+		"greatPersonPoints": {
+			"Great Strategist": 1
+		},
+		"uniques": [
+			"[+1 Gold, +1 Happiness] per [3] population [in capital]",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Masonry",
+		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
+	},
+	///Line 5
+	{
+		"name": "Bathhouse",
+		"maintenance": 3,
+		"culture": 1,
+		"happiness":1,
+		"uniques": [
+			"'Infrastructure'",
+			"[10]% Food is carried over after population increases [in this city]"
+		],
+		"requiredTech": "Iron Working",
+		"hurryCostModifier": 25
+	},
 	{
 		"name": "Town Square",
 		"maintenance": 1,
@@ -1502,55 +1388,6 @@
 		"hurryCostModifier": 10
 	},
 	{
-		"name": "Stone Works",
-		"maintenance": 1,
-		"production": 1,
-		"culture":1,
-		"uniques": [
-			"'Heavy Industry'",
-			"[+1 Production] from ['Rock'] tiles [in this city]",
-			"[+1]% Production when constructing [All] buildings [in all cities]"
-		],
-		"requiredNearbyImprovedResources": [
-			"Marble",
-			"Stone"
-		],
-		"requiredTech": "Masonry",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Brick Works",
-		"maintenance": 1,
-		"production": 1,
-		"uniques": [
-			"'Heavy Industry'",
-			"[+1 Production] from [Clay] tiles [in this city]",
-			"[+1]% Production when constructing [All] buildings [in all cities]"
-		],
-		"requiredNearbyImprovedResources": [
-			"Clay"
-		],
-		"requiredTech": "Masonry",
-		"requiredBuilding": "Pottery Workshop",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Furniture Workshop",
-		"maintenance": 2,
-		"culture":1,
-		"specialistSlots": {
-			"Engineer": 1
-		},
-		"uniques": [
-			"'Light Industry'",
-			"[+1 Gold] from ['Lumber Improvement'] tiles [in this city]",
-			"Must have an owned ['Lumber Improvement'] within [3] tiles"
-		],
-		"requiredTech": "Carpentry",
-		"hurryCostModifier": 10
-	},
-
-	{
 		"name": "Temple",
 		"faith": 2,
 		"culture": 1,
@@ -1563,45 +1400,17 @@
 		"hurryCostModifier": 0
 	},
 	{
-		"name": "Stable",
-		"maintenance": 2,
-		"happiness": 1,
-		"uniques": [
-			"'Infrastructure'",
-			"[+10]% Production when constructing ['Mounted'] units [in this city]",
-			"[+1 Production] from [Horse] tiles [in this city]",
-			"[+1 Gold] from [Horse] tiles [in this city]",
-			"[+100]% Production when constructing [Military Stable] buildings [in all cities]"
-		],
-		"requiredNearbyImprovedResources": [
-			"Horse"
-		],
-		"requiredTech": "Horseback Riding",
-		"hurryCostModifier": 10
-	},
-	{
-		"name": "Walls",
+		"name": "Military Stable",
 		"maintenance": 1,
-		"happiness": 1,
-		"cityStrength": 5,
-		"cityHealth": 30,
 		"uniques": [
-			"'Static Defense'",
+			"'Military Building'",
+			"Provides [1] [Horse]",
+			"Provides [1] [Standing Army Maintainance]",
+			"New ['Mounted'] units start with [10] XP [in this city]",
 			"Destroyed when the city is captured"
 		],
-		"requiredTech": "Masonry",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Bathhouse",
-		"maintenance": 3,
-		"culture": 1,
-		"happiness":1,
-		"uniques": [
-			"'Infrastructure'",
-			"[10]% Food is carried over after population increases [in this city]"
-		],
-		"requiredTech": "Iron Working",
+		"requiredBuilding": "Barrack",
+		"requiredTech": "Horse Collar",
 		"hurryCostModifier": 25
 	},
 	{
@@ -1654,64 +1463,18 @@
 		"quote": "'I've always wanted to go to Timbuktu. First of all I think it has the best name of anywhere in the world.' - David Tang"
 	},
 	{
-		"name": "Mausoleum of Wealth",
-		"isWonder": true,
-		"culture": 1,
-		"happiness": 1,
-		"greatPersonPoints": {
-			"Great Merchant": 1
-		},
-		"uniques": [
-			"Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
-			"[+1 Gold] from ['Useful Mineral'] tiles [in this city]",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Masonry",
-		"quote": "'The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men's lives.' - Pericles"
-	},
-	{
-		"name": "The Great Catacomb",
-		"faith": 3,
-		"happiness": 1,
-		"isWonder": true,
-		"uniques": [
-			"'Worship Place'",
-			"Free [Great Prophet] appears",
-			"Only available <after adopting [Monotheism]>",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Masonry",
-		"quote": "'The Christian catacombs represent simplicity and earthiness, the cathedrals, transcendence and wonder.' - Russell Moore"
-	},
-	{
-		"name": "The Great Colosseum",
+		"name": "Mausoleum of the Unifier",
 		"isWonder": true,
 		"culture": 3,
-		"greatPersonPoints": {
-			"Great Strategist": 1
-		},
 		"uniques": [
-			"[+1 Gold, +1 Happiness] per [3] population [in capital]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Comment [Every time your civ became unified, enter a golden age.]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
-		"requiredTech": "Masonry",
-		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
+		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu",
+		"requiredTech": "Horse Collar"
 	},
-	{
-		"name": "The Grand Ditch",
-		"isWonder": true,
-		"greatPersonPoints": {
-			"Great Engineer": 1
-		},
-		"uniques": [
-			"Gain a free [Irrigation System] [in this city]",
-			"[+10]% growth [in all cities]",
-			"[+2 Faith, +2 Culture] <starting from the [Medieval era]>",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Mining",
-		"quote": "'The land of abundance' - The idiom used to describe the province after Du Jiang Yan was built."
-	},
+
 	{
 		"name": "National Epic",
 		"maintenance": 3,
@@ -1818,7 +1581,7 @@
 		],
 		"requiredTech": "Drama and Poetry"
 	},
-	///Line 4
+	///Line 6
 	{
 		"name": "Cothon Harbour",
 		"uniqueTo": "North Africa",
@@ -1858,6 +1621,33 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Civilian Blacksmith",
+		"maintenance": 3,
+		"uniques": [
+			"'Light Industry'",
+			"[+1 Production] from ['Extraction Improvement'] tiles [in this city]",
+			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]",
+			"[+1 Production] from ['Lumber Improvement'] tiles [in this city]",
+			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
+		],
+		"requiredTech": "Forging",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Military Blacksmith",
+		"maintenance": 1,
+		"uniques": [
+			"'Military Building'",
+			"New [Military] units start with [10] XP [in this city]",
+			"[Military] units gain the [Classical Arms] promotion",
+			"Comment [Enables you to build new Siege Units unlocked by Engineering]",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding": "Barrack",
+		"requiredTech": "Forging",
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Paper Maker",
 		"maintenance": 1,
 		"uniques": [
@@ -1867,34 +1657,6 @@
 		],
 		"requiredTech": "Paper Making",
 		"hurryCostModifier": 10
-	},
-	{
-		"name": "Circus",
-		"cost": 40,
-		"happiness": 2,
-		"gold":1,
-		"uniques": [
-			"'Entertainment Building'"
-		],
-		"requiredBuilding": "Town Square",
-		"requiredTech": "Stirrup",
-		"hurryCostModifier": 10
-	},
-	{
-		"name": "Armory",
-		"hurryCostModifier": 25,
-		"maintenance": 2,
-		"percentStatBonus": {
-			"production": -5
-		},
-		"uniques": [
-			"'Military Building'",
-			"Comment [Increases [Call to Arms]'s amount of free close combat unit given.]",
-			"Provides [1] [Standing Army Maintainance]",
-			"New [Military] units start with [15] XP [in this city]"
-		],
-		"requiredBuilding": "Military Blacksmith",
-		"requiredTech": "Logistics"
 	},
 	{
 		"name": "Intergration",
@@ -1911,7 +1673,37 @@
 		"hurryCostModifier": 50,
 		"requiredTech": "Paper Making"
 	},
-	/// Line 5
+	{
+		"name": "Armory",
+		"hurryCostModifier": 25,
+		"maintenance": 2,
+		"percentStatBonus": {
+			"production": -5
+		},
+		"uniques": [
+			"'Military Building'",
+			"Comment [Increases [Call to Arms]'s amount of free close combat unit given.]",
+			"Provides [1] [Standing Army Maintainance]",
+			"New [Military] units start with [15] XP [in this city]"
+		],
+		"requiredBuilding": "Barrack",
+		"requiredTech": "Logistics"
+	},
+	{
+		"name": "Statues of Molten Weapons",
+		"isWonder": true,
+		"production": 2,
+		"culture": 1,
+		"happiness": 1,
+		"uniques": [
+			"[-25]% construction time for [All] improvements <when not at war>",
+			"[1] free [Worker] units appear",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"quote": "'He forcefully collected the weapons from everywhere under the sky, concentrated them in Xian Yang, made 12 giant bronze statues.' - Jia Yi",
+		"requiredTech": "Forging"
+	},
+	///Line 7
 	{
 		"name": "Lighthouse",
 		"maintenance": 1,
@@ -1997,21 +1789,6 @@
 		"hurryCostModifier": 15
 	},
 	{
-		"name": "Armour Workshop",
-		"maintenance": 1,
-		"uniques": [
-			"'Military Building'",
-			"[Military] units gain the [Medieval Arms] promotion",
-			"[Military] units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>",
-			"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <before the [Industrial era]>",
-			"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <starting from the [Industrial era]><after discovering [Electricity]>",
-			"Destroyed when the city is captured"
-		],
-		"requiredBuilding": "Military Blacksmith",
-		"requiredTech": "Armorments",
-		"hurryCostModifier": 25
-	},
-	{
 		"name": "Windmill",
 		"maintenance": 1,
 		"percentStatBonus": {
@@ -2028,17 +1805,18 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Military Stable",
+		"name": "Armour Workshop",
 		"maintenance": 1,
 		"uniques": [
 			"'Military Building'",
-			"Provides [1] [Horse]",
-			"Provides [1] [Standing Army Maintainance]",
-			"New ['Mounted'] units start with [10] XP [in this city]",
+			"[Military] units gain the [Medieval Arms] promotion",
+			"[Military] units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>",
+			"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <before the [Industrial era]>",
+			"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <starting from the [Industrial era]><after discovering [Electricity]>",
 			"Destroyed when the city is captured"
 		],
-		"requiredBuilding": "Barrack",
-		"requiredTech": "Horse Collar",
+		"requiredBuilding": "Military Blacksmith",
+		"requiredTech": "Armorments",
 		"hurryCostModifier": 25
 	},
 	{
@@ -2058,32 +1836,7 @@
 		"requiredTech": "Optics",
 		"quote": "'They that go down to the sea in ships, that do business in great waters; these see the works of the Lord, and his wonders in the deep.' - The Bible, Psalms 107:23-24"
 	},
-	{
-		"name": "Mausoleum of the Unifier",
-		"isWonder": true,
-		"culture": 3,
-		"uniques": [
-			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"Comment [Every time your civ became unified, enter a golden age.]",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu",
-		"requiredTech": "Horse Collar"
-	},
-	{
-		"name": "Statues of Molten Weapons",
-		"isWonder": true,
-		"production": 2,
-		"culture": 1,
-		"happiness": 1,
-		"uniques": [
-			"[-25]% construction time for [All] improvements <when not at war>",
-			"[1] free [Worker] units appear",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"quote": "'He forcefully collected the weapons from everywhere under the sky, concentrated them in Xian Yang, made 12 giant bronze statues.' - Jia Yi",
-		"requiredTech": "Forging"
-	},
+
 	{
 		"name": "The Temple of Prophet",
 		"isWonder": true,
@@ -2100,46 +1853,7 @@
 		"requiredTech": "Philosophy",
 		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
 	},
-	/// Line 6
-	{
-		"name": "Civilian Blacksmith",
-		"maintenance": 3,
-		"uniques": [
-			"'Light Industry'",
-			"[+1 Production] from ['Extraction Improvement'] tiles [in this city]",
-			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]",
-			"[+1 Production] from ['Lumber Improvement'] tiles [in this city]",
-			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
-		],
-		"requiredTech": "Forging",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Military Blacksmith",
-		"maintenance": 1,
-		"uniques": [
-			"'Military Building'",
-			"New [Military] units start with [10] XP [in this city]",
-			"[Military] units gain the [Classical Arms] promotion",
-			"Comment [Enables you to build new Siege Units unlocked by Engineering]",
-			"Destroyed when the city is captured"
-		],
-		"requiredBuilding": "Barrack",
-		"requiredTech": "Forging",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Irrigation System",
-		"maintenance": 3,
-		"uniques": [
-			"'Infrastructure'",
-			"[+1 Food] from [Fresh water] tiles [in this city]",
-			"Only available <in cities without a [Early Irrigation System]>",
-			"Only available <in cities without a [Agricultural Water Storage]>"
-		],
-		"requiredTech": "Irrigation",
-		"hurryCostModifier": 25
-	},
+	///Line 8
 	{
 		"name": "Tea House",
 		"maintenance": 2,
@@ -2174,23 +1888,6 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Hanging Temple",
-		"isWonder": true,
-		"faith": 2,
-		"happiness": 2,
-		"greatPersonPoints": {
-			"Great Engineer": 2
-		},
-		"uniques": [
-			"'Worship Place'",
-			"Only available <before adopting [Monotheism]>",
-			"When spreading religion to a city, gain [5] times the amount of followers of other religions as [Culture]",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Wood Block Printing",
-		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
-	},
-	{
 		"name": "Alchemy Lab",
 		"cost": 125,
 		"maintenance": 3,
@@ -2208,6 +1905,18 @@
 		"requiredTech": "Alchemy"
 	},
 	{
+		"name": "Irrigation System",
+		"maintenance": 3,
+		"uniques": [
+			"'Infrastructure'",
+			"[+1 Food] from [Fresh water] tiles [in this city]",
+			"Only available <in cities without a [Early Irrigation System]>",
+			"Only available <in cities without a [Agricultural Water Storage]>"
+		],
+		"requiredTech": "Irrigation",
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Garden",
 		"maintenance": 2,
 		"happiness": 1,
@@ -2221,18 +1930,36 @@
 		"requiredTech": "Irrigation",
 		"hurryCostModifier": 25
 	},
-	///Line 7
 	{
-		"name": "Agricultural Water Storage",
-		"maintenance": 2,
-		"food": 3,
+		"name": "Circus",
+		"cost": 40,
+		"happiness": 2,
+		"gold":1,
 		"uniques": [
-			"'Infrastructure'",
-			"Only available <in cities without a [Irrigation System]>"
+			"'Entertainment Building'"
 		],
-		"requiredTech": "Engineering",
-		"hurryCostModifier": 25
+		"requiredBuilding": "Town Square",
+		"requiredTech": "Stirrup",
+		"hurryCostModifier": 10
 	},
+	{
+		"name": "Hanging Temple",
+		"isWonder": true,
+		"faith": 2,
+		"happiness": 2,
+		"greatPersonPoints": {
+			"Great Engineer": 2
+		},
+		"uniques": [
+			"'Worship Place'",
+			"Only available <before adopting [Monotheism]>",
+			"When spreading religion to a city, gain [5] times the amount of followers of other religions as [Culture]",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Wood Block Printing",
+		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
+	},
+	///Line 9
 	{
 		"name": "Trading Port",
 		"maintenance": 1,
@@ -2253,6 +1980,7 @@
 		"requiredTech": "Compass",
 		"hurryCostModifier": 10
 	},
+
 	{
 		"name": "Theatre",
 		"maintenance":3,
@@ -2265,65 +1993,9 @@
 			"'Cultural Building'",
 			"Destroyed when the city is captured"
 		],
-		"requiredBuilding": "Circus",
+		"requiredBuilding": "Town Square",
 		"requiredTech": "Theology",
 		"hurryCostModifier": 15
-	},
-	{
-		"name": "Aqueduct",
-		"maintenance": 2,
-		"uniques": [
-			"'Infrastructure'",
-			"[-10]% Unhappiness from [Population] [in this city]",
-			"[25]% Food is carried over after population increases [in this city]"
-		],
-		"requiredBuilding": "Civilian Blacksmith",
-		"requiredTech": "Engineering",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Weapon Parts Workshop",
-		"maintenance": 1,
-		"uniques": [
-			"'Military Building'",
-			"Provides [2] [Weapon Parts] <before discovering [Physics]>",
-			"Consumes [3] [Metal] <before discovering [Physics]>",
-			"Provides [2] [Weapon Parts] <after discovering [Physics]>",
-			"Consumes [2] [Metal] <after discovering [Physics]><before discovering [Replaceable Parts]>",
-			"Consumes [1] [Alloy] <after discovering [Replaceable Parts]>",
-			"[+50]% Production when constructing [Military Factory Complex] buildings [in this city]",
-			"Destroyed when the city is captured"
-		],
-		"requiredBuilding": "Military Blacksmith",
-		"requiredTech": "Engineering",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "City Citadel",
-		"maintenance": 2,
-		"cityStrength": 15,
-		"cityHealth": 20,
-		"uniques": [
-			"'Static Defense'",
-			"Destroyed when the city is captured"
-		],
-		"requiredBuilding": "Watch Tower",
-		"requiredTech": "Engineering",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Elite Barrack",
-		"isNationalWonder": true,
-		"maintenance": 3,
-		"culture": 1,
-		"cityStrength": 5,
-		"uniques": [
-			"'Military Building'",
-			"Provides [3] [Standing Army Maintainance]",
-			"All newly-trained [Military] units [in this city] receive the [Elite Training] promotion"
-		],
-		"requiredBuilding": "Barrack",
-		"requiredTech": "Tactics"
 	},
 	{
 		"name": "Altar",
@@ -2404,6 +2076,73 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Theology"
+	},
+	{
+		"name": "Agricultural Water Storage",
+		"maintenance": 2,
+		"food": 3,
+		"uniques": [
+			"'Infrastructure'",
+			"Only available <in cities without a [Irrigation System]>"
+		],
+		"requiredTech": "Engineering",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Aqueduct",
+		"maintenance": 2,
+		"uniques": [
+			"'Infrastructure'",
+			"[-10]% Unhappiness from [Population] [in this city]",
+			"[25]% Food is carried over after population increases [in this city]"
+		],
+		"requiredBuilding": "Civilian Blacksmith",
+		"requiredTech": "Engineering",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Weapon Parts Workshop",
+		"maintenance": 1,
+		"uniques": [
+			"'Military Building'",
+			"Provides [2] [Weapon Parts] <before discovering [Physics]>",
+			"Consumes [3] [Metal] <before discovering [Physics]>",
+			"Provides [2] [Weapon Parts] <after discovering [Physics]>",
+			"Consumes [2] [Metal] <after discovering [Physics]><before discovering [Replaceable Parts]>",
+			"Consumes [1] [Alloy] <after discovering [Replaceable Parts]>",
+			"[+50]% Production when constructing [Military Factory Complex] buildings [in this city]",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding": "Military Blacksmith",
+		"requiredTech": "Engineering",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "City Citadel",
+		"maintenance": 2,
+		"cityStrength": 15,
+		"cityHealth": 20,
+		"uniques": [
+			"'Static Defense'",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding": "Watch Tower",
+		"requiredTech": "Engineering",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Elite Barrack",
+		"isNationalWonder": true,
+		"maintenance": 3,
+		"culture": 1,
+		"cityStrength": 5,
+		"uniques": [
+			"'Military Building'",
+			"Provides [3] [Standing Army Maintainance]",
+			"All newly-trained [Military] units [in this city] receive the [Elite Training] promotion"
+		],
+		"requiredBuilding": "Barrack",
+		"requiredTech": "Tactics"
 	},
 	{
 		"name": "Holy See",
@@ -2606,6 +2345,19 @@
 		"requiredTech": "Engineering"
 	},
 	{
+		"name": "Stronghold of Tripled Walls",
+		"isWonder":true,
+		"faith":5,
+		"cityHealth":50,
+		"cityStrength":15,
+		"uniques": [
+			"[+5 Food] [in this city] <when at war> <when below [10] [Food]>",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Engineering",
+		"quote": "'On the orders of Theodosius, Constantine rebuilt these walls in less than two months' - Mevlana Gate, Inscription left by Prefect Constantine."
+	},
+	{
 		"name": "Red Castle",
 		"isWonder": true,
 		"culture": 1,
@@ -2620,20 +2372,7 @@
 		"requiredTech": "Tactics",
 		"quote": "'Justice is an unassailable fortress, built on the brow of a mountain which cannot be overthrown by the violence of torrents, nor demolished by the force of armies.' - Joseph Addison"
 	},
-	{
-		"name": "Stronghold of Tripled Walls",
-		"isWonder":true,
-		"faith":5,
-		"cityHealth":50,
-		"cityStrength":15,
-		"uniques": [
-			"[+5 Food] [in this city] <when at war> <when below [10] [Food]>",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Engineering",
-		"quote": "'On the orders of Theodosius, Constantine rebuilt these walls in less than two months' - Mevlana Gate, Inscription left by Prefect Constantine."
-	},
-	///Line 8
+	///Line 10
 	{
 		"name": "City Hall",
 		"maintenance": 2,
@@ -2651,6 +2390,19 @@
 		"requiredBuilding": "Town Hall",
 		"requiredTech": "Civil Service",
 		"hurryCostModifier": 40
+	},
+	{
+		"name": "Firearms Workshop",
+		"maintenance": 2,
+		"uniques": [
+			"'Military Building'",
+			"New ['Firearms'] units start with [10] XP [in this city]",
+			"[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding": "Military Blacksmith",
+		"requiredTech": "Gunpowder Making",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Department of Administration",
@@ -2685,6 +2437,21 @@
 		"uniques":["Only available <if [No Wonder] is not constructed> <hidden from users>"],
 		"quote": "'The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come.' - The Books of Chilam Balam",
 		"requiredTech": "Civil Service"
+	},
+	{
+		"name": "Castle of Great Egret",
+		"isWonder": true,
+		"culture": 3,
+		"greatPersonPoints": {
+			"Great Engineer": 2
+		},
+		"uniques": [
+			"[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
+			"Gain a free [City Citadel] [in this city]",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Gunpowder Making",
+		"quote": "'Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.' - Yamamoto Tsunetomo"
 	},
 	{
 		"name": "Cathedral of Mercy",
@@ -2725,18 +2492,44 @@
 		"hurryCostModifier": 600
 		//one for each year lol
 	},
-	///Line 9
+	///Line 11
 	{
-		"name": "Firearms Workshop",
-		"maintenance": 2,
+		"name": "University",
+		"maintenance": 5,
+		"percentStatBonus": {
+			"science": 25,
+			"culture": 10
+		},
+		"specialistSlots": {
+			"Scientist": 2,
+			"Artist": 1,
+			"Engineer": 1
+		},
 		"uniques": [
+			"'Educational Building'",
+			"[Great Artist] is earned [+1]% faster",
+			"[Great Engineer] is earned [+1]% faster",
+			"[Great Scientist] is earned [+1]% faster"
+		],
+		"requiredBuilding": "Library",
+		"requiredTech": "Education",
+		"hurryCostModifier": 33
+	},
+	{
+		"name": "Military Academy",
+		"maintenance": 3,
+		"greatPersonPoints": {
+			"Great Strategist": 2
+		},
+		"uniques": [
+            "'Educational Building'",
 			"'Military Building'",
-			"New ['Firearms'] units start with [10] XP [in this city]",
-			"[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>",
+			"New [Military] units start with [20] XP [in this city]",
+			"All newly-trained [Military] units [in this city] receive the [Tactic Research] promotion",
 			"Destroyed when the city is captured"
 		],
-		"requiredBuilding": "Military Blacksmith",
-		"requiredTech": "Gunpowder Making",
+		"requiredBuilding": "Library",
+		"requiredTech": "Education",
 		"hurryCostModifier": 25
 	},
 	{
@@ -2773,21 +2566,7 @@
 		"requiredTech": "Guilds",
 		"hurryCostModifier": 25
 	},
-	{
-		"name": "Castle of Great Egret",
-		"isWonder": true,
-		"culture": 3,
-		"greatPersonPoints": {
-			"Great Engineer": 2
-		},
-		"uniques": [
-			"[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
-			"Gain a free [City Citadel] [in this city]",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Gunpowder Making",
-		"quote": "'Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.' - Yamamoto Tsunetomo"
-	},
+	
 	{
 		"name": "Captial of Mountain Range",
 		"isWonder": true,
@@ -2804,7 +2583,7 @@
 		"requiredTech": "Guilds",
 		"quote": "'Few romances can ever surpass that of the granite citadel on top of the beetling precipices of Machu Picchu, the crown of Inca Land.' - Hiram Bingham"
 	},
-	///Line 10
+	///Line 12
 	{
 		"name": "Smeltry",
 		"maintenance": 2,
@@ -2848,77 +2627,19 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "University",
-		"maintenance": 5,
+		"name": "Bank",
 		"percentStatBonus": {
-			"science": 25,
-			"culture": 10
+			"gold": 25
 		},
-		"specialistSlots": {
-			"Scientist": 2,
-			"Artist": 1,
-			"Engineer": 1
-		},
-		"uniques": [
-			"'Educational Building'",
-			"[Great Artist] is earned [+1]% faster",
-			"[Great Engineer] is earned [+1]% faster",
-			"[Great Scientist] is earned [+1]% faster"
-		],
-		"requiredBuilding": "Library",
-		"requiredTech": "Education",
-		"hurryCostModifier": 33
-	},
-	{
-		"name": "Military Academy",
-		"maintenance": 3,
-		"greatPersonPoints": {
-			"Great Strategist": 2
-		},
-		"uniques": [
-            "'Educational Building'",
-			"'Military Building'",
-			"New [Military] units start with [20] XP [in this city]",
-			"All newly-trained [Military] units [in this city] receive the [Tactic Research] promotion",
-			"Destroyed when the city is captured"
-		],
-		"requiredBuilding": "Library",
-		"requiredTech": "Education",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Newspaper Agency",
-		"maintenance": 3,
 		"specialistSlots": {
 			"Merchant": 1
 		},
-		"percentStatBonus": {
-			"culture": 5,
-			"gold": 5
-		},
 		"uniques": [
-			"'Cultural Building'",
-			"Destroyed when the city is captured"
+			"'Economic Building'",
+			"[+1 Gold] from every [Merchant] <in this city>",
+			"[Great Merchant] is earned [+1]% faster"
 		],
-		"requiredBuilding": "Town Square",
-		"requiredTech": "Printing Press",
-		"hurryCostModifier": 10
-	},
-	{
-		"name": "Printing House",
-		"maintenance": 3,
-		"percentStatBonus": {
-			"culture": 5,
-			"science": 10,
-			"faith": 10
-		},
-		"uniques": [
-			"'Cultural Building'",
-			"Only available <after adopting [Humanism]>",
-			"Destroyed when the city is captured"
-		],
-		"requiredBuilding": "Town Square",
-		"requiredTech": "Printing Press",
+		"requiredTech": "Banking",
 		"hurryCostModifier": 10
 	},
 	{
@@ -2957,7 +2678,22 @@
 		"quote": "'Don't clap too hard - it's a very old building.' - John Osbourne",
 		"requiredTech": "Printing Press"
 	},
-	///Line 11
+	///Line 13
+	{
+		"name": "Bastion",
+		"maintenance": 3,
+		"cityStrength": 20,
+		"cityHealth": 30,
+		"greatPersonPoints": {
+			"Great Strategist": 1
+		},
+		"uniques": [
+			"'Static Defense'",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Monocular",
+		"hurryCostModifier": 25
+	},
 	{
 		"name": "Agricultural Machinery Workshop",
 		"maintenance": 5,
@@ -2976,6 +2712,42 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Newspaper Agency",
+		"maintenance": 3,
+		"specialistSlots": {
+			"Merchant": 1
+		},
+		"percentStatBonus": {
+			"culture": 5,
+			"gold": 5
+		},
+		"uniques": [
+			"'Cultural Building'",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding": "Town Square",
+		"requiredTech": "Printing Press",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Printing House",
+		"maintenance": 3,
+		"percentStatBonus": {
+			"culture": 5,
+			"science": 10,
+			"faith": 10
+		},
+		"uniques": [
+			"'Cultural Building'",
+			"Only available <after adopting [Humanism]>",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding": "Town Square",
+		"requiredTech": "Printing Press",
+		"hurryCostModifier": 10
+	},
+	///Line 14
+	{
 		"name": "Observatory",
 		"maintenance": 5,
 		"percentStatBonus": {
@@ -2990,22 +2762,7 @@
 		"requiredTech": "Heliocentrism",
 		"hurryCostModifier": 25
 	},
-	{
-		"name": "Bank",
-		"percentStatBonus": {
-			"gold": 25
-		},
-		"specialistSlots": {
-			"Merchant": 1
-		},
-		"uniques": [
-			"'Economic Building'",
-			"[+1 Gold] from every [Merchant] <in this city>",
-			"[Great Merchant] is earned [+1]% faster"
-		],
-		"requiredTech": "Banking",
-		"hurryCostModifier": 10
-	},
+
 	{
 		"name": "National Academy of Science",
 		"isNationalWonder": true,
@@ -3021,37 +2778,6 @@
 			"Cost increases by [50] per owned city <if [Unified] is not constructed>"
 		],
 		"requiredTech": "Heliocentrism"
-	},
-	{
-		"name": "Coastal Artillery",
-		"maintenance": 5,
-		"cityStrength": 10,
-		"cityHealth": 5,
-		"greatPersonPoints": {
-			"Great Strategist": 1
-		},
-		"uniques": [
-			"'Static Defense'",
-			"Must be next to [Coast]"
-		],
-		"requiredTech": "Carriage",
-		"hurryCostModifier": 10
-	},
-	///Line 12
-	{
-		"name": "Bastion",
-		"maintenance": 3,
-		"cityStrength": 20,
-		"cityHealth": 30,
-		"greatPersonPoints": {
-			"Great Strategist": 1
-		},
-		"uniques": [
-			"'Static Defense'",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Monocular",
-		"hurryCostModifier": 25
 	},
 	{
 		"name": "Religious School",
@@ -3137,6 +2863,21 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Coastal Artillery",
+		"maintenance": 5,
+		"cityStrength": 10,
+		"cityHealth": 5,
+		"greatPersonPoints": {
+			"Great Strategist": 1
+		},
+		"uniques": [
+			"'Static Defense'",
+			"Must be next to [Coast]"
+		],
+		"requiredTech": "Carriage",
+		"hurryCostModifier": 10
+	},
+	{
 		"name": "Chapel of Great Art",
 		"isWonder": true,
 		"culture": 3,
@@ -3168,7 +2909,7 @@
 		"requiredTech": "Acoustics",
 		"quote": "'Most of us can, as we choose, make of this world either a palace or a prison' - John Lubbock"
 	},
-	///Line 13
+	///Line 15
 	{
 		"name": "Cargo Port",
 		"maintenance": 5,
@@ -3207,6 +2948,82 @@
 		"requiredTech": "Navigation",
 		"hurryCostModifier": 25
 	},
+	{
+		"name": "Chemistry Lab",
+		"maintenance": 3,
+		"percentStatBonus":{
+			"science":10
+		},
+		"specialistSlots": {
+			"Scientist": 1
+		},
+		"uniques": [
+			"'Research Building'",
+			"Provides [1] [Industrial Chemicals]"
+		],
+		"requiredBuilding": "University",
+		"requiredTech": "Chemistry"
+	},
+	{
+		"name": "Sewer",
+		"maintenance": 5,
+		"food":2,
+		"happiness":1,
+		"uniques": [
+			"'Infrastructure'",
+			"[25]% Food is carried over after population increases [in this city]"
+		],
+		"requiredBuilding": "City Hall",
+		"requiredTech": "Architecture",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Police Station",
+		"maintenance": 3,
+		"happiness":3,
+		"uniques": [
+			"'Political Building'",
+			"[-10]% Unhappiness from [Specialists] [in this city]",
+			"[-25]% enemy spy effectiveness [in this city]"
+		],
+		"requiredBuilding": "City Hall",
+		"requiredTech": "Architecture",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Porcelain Tower",
+		"isWonder": true,
+		"culture": 4,
+		"happiness": 1,
+		"greatPersonPoints": {
+			"Great Scientist": 3
+		},
+		"uniques": [
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+			"Gifts of Gold to City-States generate [25]% more Influence",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"quote": "'Things always seem fairer when we look back at them, and it is out of that inaccessible tower of the past that Longing leans and beckons.' - James Russell Lowell",
+		"requiredTech": "Architecture"
+	},
+	{
+		"name": "Magificent Tomb of Lost Love",
+		"isWonder": true,
+		"culture": 3,
+		"happiness": 2,
+		"greatPersonPoints": {
+			"Great Artist": 3
+		},
+		"uniques": [
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+			"Empire enters golden age",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"quote": "'The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time.' - Rabindranath Tagore",
+		"requiredTech": "Architecture"
+	},
+
+	///Line 16
 	{
 		"name": "Alloy Mill",
 		"maintenance": 3,
@@ -3253,45 +3070,42 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Chemistry Lab",
+		"name": "Fertilizer Plant",
 		"maintenance": 3,
-		"percentStatBonus":{
-			"science":10
-		},
-		"specialistSlots": {
-			"Scientist": 1
-		},
 		"uniques": [
-			"'Research Building'",
-			"Provides [1] [Industrial Chemicals]"
+			"'Agricultural Building'",
+			"Consumes [1] [Industrial Chemicals]",
+			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]"
 		],
-		"requiredBuilding": "University",
-		"requiredTech": "Chemistry"
-	},
-	{
-		"name": "Sewer",
-		"maintenance": 5,
-		"food":2,
-		"happiness":1,
-		"uniques": [
-			"'Infrastructure'",
-			"[25]% Food is carried over after population increases [in this city]"
-		],
-		"requiredBuilding": "City Hall",
-		"requiredTech": "Architecture",
+		"requiredTech": "Fertilizer",
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Police Station",
-		"maintenance": 3,
-		"happiness":3,
+		"name": "Museum",
+		"maintenance": 5,
+		"culture": 10,
+		"happiness": 1,
 		"uniques": [
-			"'Political Building'",
-			"[-10]% Unhappiness from [Specialists] [in this city]",
-			"[-25]% enemy spy effectiveness [in this city]"
+			"'Cultural Building'",
+			"'Educational Building'",
+			"Consumes [5] [Artifact]",
+			"Destroyed when the city is captured"
 		],
-		"requiredBuilding": "City Hall",
-		"requiredTech": "Architecture",
+		"requiredTech": "Archaeology",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Art Gallery",
+		"maintenance": 5,
+		"culture": 3,
+		"specialistSlots": {
+			"Artist": 1
+		},
+		"uniques": [
+			"'Cultural Building'",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Archaeology",
 		"hurryCostModifier": 25
 	},
 	{
@@ -3335,38 +3149,6 @@
 		],
 		"quote": "'The Kremlin is constantly changing the rules of the game to suit its purposes. We are not playing chess, we're playing roulette.' - Garry Kasparov",
 		"requiredTech": "Metallurgy"
-	},
-	{
-		"name": "Porcelain Tower",
-		"isWonder": true,
-		"culture": 4,
-		"happiness": 1,
-		"greatPersonPoints": {
-			"Great Scientist": 3
-		},
-		"uniques": [
-			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
-			"Gifts of Gold to City-States generate [25]% more Influence",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"quote": "'Things always seem fairer when we look back at them, and it is out of that inaccessible tower of the past that Longing leans and beckons.' - James Russell Lowell",
-		"requiredTech": "Architecture"
-	},
-	{
-		"name": "Magificent Tomb of Lost Love",
-		"isWonder": true,
-		"culture": 3,
-		"happiness": 2,
-		"greatPersonPoints": {
-			"Great Artist": 3
-		},
-		"uniques": [
-			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
-			"Empire enters golden age",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"quote": "'The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time.' - Rabindranath Tagore",
-		"requiredTech": "Architecture"
 	},
 	{
 		"name": "The Great Arc of Triumphant",
@@ -3413,7 +3195,34 @@
 		],
 		"requiredTech": "Economics"
 	},
-	///Line 14
+	{
+		"name": "National Museum",
+		"isNationalWonder": true,
+		"culture": 8,
+		"percentStatBonus": {
+			"culture": 50
+		},
+		"uniques": [
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Only available <if [Museum] is constructed in all [non-[Puppeted]] cities>",
+			"Cost increases by [33] per owned city <if [Unified] is constructed>",
+			"Cost increases by [50] per owned city <if [Unified] is not constructed>"
+		],
+		"requiredTech": "Archaeology"
+	},
+	{
+		"name": "The Global Museum",
+		"culture": 3,
+		"happiness": 3,
+		"isWonder": true,
+		"uniques": [
+			"[2] free [Great Artist] units appear",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"quote": "'Every genuine work of art has as much reason for being as the earth and the sun' - Ralph Waldo Emerson",
+		"requiredTech": "Archaeology"
+	},
+	///Line 17
 	{
 		"name": "Naval Dockyard",
 		"maintenance": 20,
@@ -3454,44 +3263,20 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Fertilizer Plant",
-		"maintenance": 3,
+		"name": "Invention of Pasteurization",
+		"cost": 500,
 		"uniques": [
-			"'Agricultural Building'",
-			"Consumes [1] [Industrial Chemicals]",
-			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]"
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Pasteurization] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Pasteurization] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Pasteurization] is constructed by anybody>",
+			"Comment [Enable [Food Industry] to produce dairy, making it benefit from cities with ['Herd']]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "Fertilizer",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Museum",
-		"maintenance": 5,
-		"culture": 10,
-		"happiness": 1,
-		"uniques": [
-			"'Cultural Building'",
-			"'Educational Building'",
-			"Consumes [5] [Artifact]",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Archaeology",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Art Gallery",
-		"maintenance": 5,
-		"culture": 3,
-		"specialistSlots": {
-			"Artist": 1
-		},
-		"uniques": [
-			"'Cultural Building'",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Archaeology",
-		"hurryCostModifier": 25
+		"requiredBuilding":"Food Industry",
+		"requiredTech": "Biology",
+		"hurryCostModifier": 0
 	},
 	{
 		"name": "Fossil Fuel Power Plant",
@@ -3555,6 +3340,23 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Invention of Canned Food",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Canned Food] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Canned Food] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Canned Food] is constructed by anybody>",
+			"[+10]% [Food] from every [Food Industry]",
+			"Comment [Enable [Food Industry] to process [Deep Sea Fish(Stored)] en masse.]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Food Industry",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Food Industry",
 		"cost":500,
 		"maintenance": 10,
@@ -3585,6 +3387,22 @@
 		"hurryCostModifier": 10
 	},
 	{
+		"name": "Innovation of Modern Hardwares",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Modern Hardwares] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Modern Hardwares] is not constructed by anybody>",
+			"[-50]% production cost <if [Innovation of Modern Hardwares] is constructed by anybody>",
+			"Comment [Enable [Consumer Goods Industry] to make population gain extra [Culture] and [Production].]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Consumer Goods Industry",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Consumer Goods Industry",
 		"cost":500,
 		"maintenance": 10,
@@ -3604,6 +3422,22 @@
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 10
+	},
+	{
+		"name": "Invention of Machine Tools",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Machine Tools] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Machine Tools] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Machine Tools] is constructed by anybody>",
+			"Comment [Enable [Machine Industry] to increase the building speed of other industries]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Machine Industry",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 0
 	},
 	{
 		"name": "Machine Industry",
@@ -3669,56 +3503,67 @@
 		"quote": "'To achieve great things, two things are needed: a plan, and not quite enough time.' - Leonard Bernstein",
 		"requiredTech": "Industrialization"
 	},
+	///Line 18
 	{
-		"name": "National Museum",
-		"isNationalWonder": true,
-		"culture": 8,
-		"percentStatBonus": {
-			"culture": 50
+		"name": "Vehicle Industry",
+		"cost":750,
+		"maintenance": 10,
+		"specialistSlots": {
+			"Labourer": 4,
+			"Engineer": 1
 		},
 		"uniques": [
-			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"Only available <if [Museum] is constructed in all [non-[Puppeted]] cities>",
-			"Cost increases by [33] per owned city <if [Unified] is constructed>",
-			"Cost increases by [50] per owned city <if [Unified] is not constructed>"
+			"'Heavy Industry'",
+			"Provides [1] [Consumption Supply]",
+			"Provides [1] [Vehicle Parts]",
+			"Provides [1] [Vehicle Parts] <when at war>",
+			"Consumes [4] [Power] <in cities with a [Power Grid]>",
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
+			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]>",
+			"[+1 Culture, +2 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed>",
+			"[+1 Production] from every [Engineer] <in this city>"
 		],
-		"requiredTech": "Archaeology"
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Railroads",
+		"hurryCostModifier": 25
 	},
 	{
-		"name": "The Global Museum",
-		"culture": 3,
-		"happiness": 3,
-		"isWonder": true,
-		"uniques": [
-			"[2] free [Great Artist] units appear",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"quote": "'Every genuine work of art has as much reason for being as the earth and the sun' - Ralph Waldo Emerson",
-		"requiredTech": "Archaeology"
-	},
-	///Line 15
-	{
-		"name": "Highway Network",
+		"name": "Train Station",
 		"maintenance": 5,
 		"happiness": 2,
 		"percentStatBonus": {
-			"food": 5,
-			"production": 5,
-			"gold": 5
+			"food": 10,
+			"production": 20,
+			"gold": 10
 		},
 		"uniques": [
+			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
 			"'Infrastructure'",
-			"Must have an owned [Road] within [1] tiles",
 			"[+1]% [Gold] from Trade Routes",
 			"[+2]% growth [in all cities]",
-			"[-5]% maintenance cost for [all] buildings [in this city]",
-			"[+1 Production] from ['Infrastructure Improvement'] tiles [in this city]"
+			"[-5]% maintenance cost for [all] buildings [in this city]"
 		],
-		"requiredBuilding": "Road Network",
-		"requiredTech": "Replaceable Parts",
+		"requiredTech": "Railroads",
 		"hurryCostModifier": 10
 	},
-
+	{
+		"name": "Invention of Stamping",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Stamping] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Stamping] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Stamping] is constructed by anybody>",
+			"Comment [[Firearms Industry] provides more [Weapon Parts].]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Machine Industry",
+		"requiredTech": "Replaceable Parts",
+		"hurryCostModifier": 0
+	},
 	{
 		"name": "Furniture Industry",
 		"cost":500,
@@ -3754,7 +3599,7 @@
 			"'Military Building'",
 			"Consumes [3] [Alloy]",
 			"Provides [5] [Weapon Parts]",
-			"Consumes [3] [Power] <in cities with a [Power Grid]>",
+			"Consumes [2] [Power] <in cities with a [Power Grid]>",
 			"Provides [5] [Weapon Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"Provides [3] [Weapon Parts] <if [Invention of Stamping] is constructed>"
 		],
@@ -3787,6 +3632,39 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Invention of Soda",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Soda] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Soda] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Soda] is constructed by anybody>",
+			"[+5]% [Happiness] from every [Food Industry]",
+			"[+5]% [Gold] from every [Food Industry]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Food Industry",
+		"requiredTech": "Mass Production",
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Invention of Bicycle",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Bicycle] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Bicycle] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Bicycle] is constructed by anybody>",
+			"Comment [Enable [Vehicle Industry] to make population gain extra [Culture] and [Production].]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Vehicle Industry",
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Technical School",
 		"maintenance": 3,
 		"specialistSlots": {
@@ -3814,118 +3692,21 @@
 		"hurryCostModifier": 10
 	},
 	{
-		"name": "Physic Lab",
-		"cost":1000,
-		"maintenance": 5,
-		"specialistSlots": {
-			"Scientist": 1
-		},
-		"percentStatBonus": {
-			"science": 25
-		},
+		"name": "Innovation of Chemical Processes",
+		"cost": 500,
 		"uniques": [
-			"'Research Building'",
-			"[Great Scientist] is earned [+1]% faster",
-			"[+1 Science] [in this city] <after discovering [Relativity Theory]>",
-			"[+1 Science] [in this city] <after discovering [Quantum Theory]>"
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Chemical Processes] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Chemical Processes] is not constructed by anybody>",
+			"[-50]% production cost <if [Innovation of Chemical Processes] is constructed by anybody>",
+			"[+5]% [Science] from every [Consumer Goods Industry]",
+			"[+5]% [Culture] from every [Consumer Goods Industry]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
 		],
-		"requiredBuilding": "University",
-		"requiredTech": "Telegram"
-	},
-	 {
-		"name": "Government Complex",
-		"maintenance": 10,
-		"happiness": 3,
-		"culture": 2,
-		"cityStrength": 5,
-		"specialistSlots": {
-			"Governor": 1
-		},
-		"uniques": [
-			"'Political Building'",
-			"[-20]% Unhappiness from [Population] [in this city] <in cities with a [Anarchist Ruling]>",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Telegram",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Stock Exchange",
-		"specialistSlots": {
-			"Merchant": 1
-		},
-		"uniques": [
-			"'Economic Building'",
-			"[+1 Gold] from every specialist [in this city]"
-		],
-		"requiredBuilding": "Bank",
-		"requiredTech": "Telegram",
-		"hurryCostModifier": 10
-	},
-	{
-		"name": "Cement Work",
-		"cost":500,
-		"maintenance": 8,
-		"cityHealth": 5,
-		"specialistSlots": {
-			"Engineer": 1
-		},
-		"uniques": [
-			"'Heavy Industry'",
-			"[+1 Production] from ['Rock'] tiles [in this city]",
-			"[+2]% Production when constructing [All] buildings [in all cities]"
-		],
-		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "Concrete",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Military Base",
-		"maintenance": 3,
-		"cityStrength": 10,
-		"uniques": [
-			"'Military Building'",
-			"Provides [2] [Standing Army Maintainance]",
-			"New [Military] units start with [15] XP [in this city]",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Concrete",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Bunker",
-		"maintenance": 3,
-		"cityStrength": 5,
-		"cityHealth": 50,
-		"greatPersonPoints": {
-			"Great Strategist": 1
-		},
-		"uniques": [
-			"'Static Defense'",
-			"Population loss from nuclear attacks [-15]% [in this city]",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Concrete",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Train Station",
-		"maintenance": 5,
-		"happiness": 2,
-		"percentStatBonus": {
-			"food": 10,
-			"production": 20,
-			"gold": 10
-		},
-		"uniques": [
-			"'Infrastructure'",
-			"[+1]% [Gold] from Trade Routes",
-			"[+2]% growth [in all cities]",
-			"[-5]% maintenance cost for [all] buildings [in this city]",
-			"Only available <in cities connected to the capital>"
-		],
-		"requiredTech": "Railroads",
-		"hurryCostModifier": 10
+		"requiredBuilding":"Consumer Goods Industry",
+		"requiredTech": "Dynamite",
+		"hurryCostModifier": 0
 	},
 	{
 		"name": "Arms Testing Ground",
@@ -3939,6 +3720,35 @@
 		],
 		"requiredTech": "Dynamite",
 		"hurryCostModifier": 50
+	},
+	{
+		"name": "Stone Castle of Swan",
+		"isWonder": true,
+		"happiness": 1,
+		"culture": 2,
+		"gold": 3,
+		"uniques": [
+			"[+1 Happiness, +2 Culture, +3 Gold] from all [City Citadel] buildings",
+			"Must have an owned [Mountain] within [2] tiles",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Railroads",
+		"quote": "'...the location is one of the most beautiful to be found, holy and unapproachable, a worthy temple for the divine friend who has brought salvation and true blessing to the world.' - King Ludwig II of Bavaria"
+	},
+	{
+		"name": "Tower of Curving Alloy",
+		"isWonder": true,
+		"culture": 5,
+		"happiness": 3,
+		"greatPersonPoints": {
+			"Great Artist": 5
+		},
+		"uniques": [
+			"[+1 Happiness] per [3] social policies adopted",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"quote": "'We live only to discover beauty, all else is a form of waiting' - Kahlil Gibran",
+		"requiredTech": "Railroads"
 	},
 	{
 		"name": "Statue of Liberty",
@@ -3971,52 +3781,24 @@
 		"requiredTech": "Replaceable Parts",
 		"quote": "'You don't choose your family. They are God's gift to you, as you are to them. The bond that links your true family is not one of blood, but of respect and joy in each other's life.' - Dwyane 'the Rock' Johnson"
 	},
+	///Line 19
 	{
-		"name": "Radiant City",
-		"isWonder": true,
-		"happiness": 1,
-		"greatPersonPoints": {
-			"Great Engineer": 5
-		},
+		"name": "Invention of Professional Vehicles",
+		"cost": 500,
 		"uniques": [
-			"[+25]% Production when constructing [All] buildings [in all cities]",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Professional Vehicles] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Professional Vehicles] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Professional Vehicles] is constructed by anybody>",
+			"Comment [Enable [Mechanised Worker]s to be built.]",
+			"[+20]% [Food] from every [Vehicle Industry]",
+			"Unsellable", 
+			"Moves to new capital when capital changes"
 		],
-		"requiredTech": "Concrete",
-		"quote": "'A house is a machine for living in. ' - Le Corbusier"
+		"requiredBuilding":"Vehicle Industry",
+		"requiredTech": "Combustion",
+		"hurryCostModifier": 0
 	},
-	{
-		"name": "Stone Castle of Swan",
-		"isWonder": true,
-		"happiness": 1,
-		"culture": 2,
-		"gold": 3,
-		"uniques": [
-			"[+1 Happiness, +2 Culture, +3 Gold] from all [City Citadel] buildings",
-			"Must have an owned [Mountain] within [2] tiles",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Railroads",
-		"quote": "'...the location is one of the most beautiful to be found, holy and unapproachable, a worthy temple for the divine friend who has brought salvation and true blessing to the world.' - King Ludwig II of Bavaria"
-	},
-	{
-		"name": "National Defense Department",
-		"isNationalWonder": true,
-		"culture": 3,
-		"greatPersonPoints": {
-			"Great Strategist": 5
-		},
-		"uniques": [
-			"'Military Building'",
-			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"Provides [3] [Standing Army Maintainance]",
-			"[-33]% Gold cost of upgrading <for [Military] units>",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"quote": "'In preparing for battle I have always found that plans are useless, but planning is indispensable.' - Dwight D. Eisenhower",
-		"requiredTech": "Telegram"
-	},
-	///Line 16
 	{
 		"name": "Oil Refinery",
 		"maintenance": 8,
@@ -4033,29 +3815,25 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Vehicle Industry",
-		"cost":750,
-		"maintenance": 10,
-		"specialistSlots": {
-			"Labourer": 4,
-			"Engineer": 1
+		"name": "Highway Network",
+		"maintenance": 5,
+		"happiness": 2,
+		"percentStatBonus": {
+			"food": 5,
+			"production": 5,
+			"gold": 5
 		},
 		"uniques": [
-			"'Heavy Industry'",
-			"Provides [1] [Consumption Supply]",
-			"Provides [1] [Vehicle Parts]",
-			"Provides [1] [Vehicle Parts] <when at war>",
-			"Consumes [4] [Power] <in cities with a [Power Grid]>",
-			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
-			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]>",
-			"[+1 Culture, +2 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed>",
-			"[+1 Production] from every [Engineer] <in this city>"
+			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
+			"'Infrastructure'",
+			"[+1]% [Gold] from Trade Routes",
+			"[+2]% growth [in all cities]",
+			"[-5]% maintenance cost for [all] buildings [in this city]",
+			"[+1 Production] from ['Infrastructure Improvement'] tiles [in this city]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "Railroads",
-		"hurryCostModifier": 25
+		"requiredBuilding": "Road Network",
+		"requiredTech": "Combustion",
+		"hurryCostModifier": 10
 	},
 	{
 		"name": "Military Vehicle Industry",
@@ -4112,6 +3890,38 @@
 		],
 		"requiredTech": "Electricity",
 		"hurryCostModifier": 25
+	},
+	{
+		"name": "Innovation of Electrical Appliances",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Electrical Appliances] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Electrical Appliances] is not constructed by anybody>",
+			"[-50]% production cost <if [Innovation of Electrical Appliances] is constructed by anybody>",
+			"[+5]% [Happiness] from every [Furniture Industry]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Furniture Industry",
+		"requiredTech": "Electricity",
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Invention of Professional Equipments",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Professional Equipments] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Professional Equipments] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Professional Equipments] is constructed by anybody>",
+			"Comment [Enable [Machine Industry] to increase tile improvement yield.]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Machine Industry",
+		"requiredTech": "Electricity",
+		"hurryCostModifier": 0
 	},
 	{
 		"name": "Hydro Plant",
@@ -4192,77 +4002,102 @@
 		"hurryCostModifier": 10
 	},
 	{
-		"name": "Telephone Circuit",
-		"maintenance": 3,
-		"uniques": [
-			"'Infrastructure'",
-			"[-1]% maintenance cost for [all] buildings [in all cities]"
-		],
-		"requiredTech": "Radio",
-		"hurryCostModifier": 10
-	},
-	{
-		"name": "Broadcast Tower",
+		"name": "Physic Lab",
+		"cost":1000,
 		"maintenance": 5,
-		"happiness": 1,
+		"specialistSlots": {
+			"Scientist": 1
+		},
 		"percentStatBonus": {
-			"culture": 33,
-			"gold": 10
+			"science": 25
 		},
 		"uniques": [
-			"'Infrastructure'"
+			"'Research Building'",
+			"[Great Scientist] is earned [+1]% faster",
+			"[+1 Science] [in this city] <after discovering [Relativity Theory]>",
+			"[+1 Science] [in this city] <after discovering [Quantum Theory]>"
 		],
-		"requiredTech": "Radio",
-		"hurryCostModifier": 10
+		"requiredBuilding": "University",
+		"requiredTech": "Telegram"
 	},
-	{
-		"name": "Stadium",
-		"maintenance": 3,
-		"happiness": 2,
+	 {
+		"name": "Government Complex",
+		"maintenance": 10,
+		"happiness": 3,
+		"culture": 2,
+		"cityStrength": 5,
+		"specialistSlots": {
+			"Governor": 1
+		},
 		"uniques": [
-			"'Entertainment Building'",
-			"[-5]% Unhappiness from [Population] [in this city]"
+			"'Political Building'",
+			"[-20]% Unhappiness from [Population] [in this city] <in cities with a [Anarchist Ruling]>",
+			"Destroyed when the city is captured"
 		],
-		"requiredTech": "Radio",
+		"requiredTech": "Telegram",
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Aviation Industry",
-		"maintenance": 20,
-		"science": 1,
+		"name": "Stock Exchange",
 		"specialistSlots": {
-			"Labourer": 3,
-			"Engineer": 2
+			"Merchant": 1
 		},
+		"uniques": [
+			"'Economic Building'",
+			"[+1 Gold] from every specialist [in this city]"
+		],
+		"requiredBuilding": "Bank",
+		"requiredTech": "Telegram",
+		"hurryCostModifier": 10
+	},
+
+	{
+		"name": "Cement Work",
+		"cost":500,
+		"maintenance": 8,
+		"cityHealth": 5,
+		"specialistSlots": {
+			"Engineer": 1
+		},
+		"uniques": [
+			"'Heavy Industry'",
+			"[+1 Production] from ['Rock'] tiles [in this city]",
+			"[+2]% Production when constructing [All] buildings [in all cities]"
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Concrete",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Military Base",
+		"maintenance": 3,
+		"cityStrength": 10,
 		"uniques": [
 			"'Military Building'",
-			"Consumes [3] [Aluminum]",
-			"Consumes [1] [Rubber]",
-			"Provides [3] [Aircraft Parts]",
-			"Consumes [3] [Power] <in cities with a [Power Grid]>",
-			"Provides [2] [Aircraft Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>"
+			"Provides [2] [Standing Army Maintainance]",
+			"New [Military] units start with [15] XP [in this city]",
+			"Destroyed when the city is captured"
 		],
-		"requiredBuilding": "Military Factory Complex",
-		"requiredTech": "Flight",
+		"requiredTech": "Concrete",
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Airport",
+		"name": "Bunker",
 		"maintenance": 3,
-		"happiness": 1,
-		"percentStatBonus": {
-			"gold": 10,
-			"culture": 5,
-			"science": 5
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"greatPersonPoints": {
+			"Great Strategist": 1
 		},
 		"uniques": [
-			"'Infrastructure'",
-			"[+3]% growth [in all cities]",
-			"[-5]% maintenance cost for [all] buildings [in this city]"
+			"'Static Defense'",
+			"Population loss from nuclear attacks [-15]% [in this city]",
+			"Destroyed when the city is captured"
 		],
-		"requiredTech": "Flight",
+		"requiredTech": "Concrete",
 		"hurryCostModifier": 25
 	},
+
 	{
 		"name": "Tower of Constructivism",
 		"isWonder": true,
@@ -4297,21 +4132,53 @@
 		"requiredTech": "Electricity"
 	},
 	{
-		"name": "Tower of Curving Alloy",
-		"isWonder": true,
-		"culture": 5,
-		"happiness": 3,
+		"name": "National Defense Department",
+		"isNationalWonder": true,
+		"culture": 3,
 		"greatPersonPoints": {
-			"Great Artist": 5
+			"Great Strategist": 5
 		},
 		"uniques": [
-			"[+1 Happiness] per [3] social policies adopted",
+			"'Military Building'",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [3] [Standing Army Maintainance]",
+			"[-33]% Gold cost of upgrading <for [Military] units>",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
-		"quote": "'We live only to discover beauty, all else is a form of waiting' - Kahlil Gibran",
-		"requiredTech": "Radio"
+		"quote": "'In preparing for battle I have always found that plans are useless, but planning is indispensable.' - Dwight D. Eisenhower",
+		"requiredTech": "Telegram"
 	},
-	///Line 17
+	{
+		"name": "Radiant City",
+		"isWonder": true,
+		"happiness": 1,
+		"greatPersonPoints": {
+			"Great Engineer": 5
+		},
+		"uniques": [
+			"[+25]% Production when constructing [All] buildings [in all cities]",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Concrete",
+		"quote": "'A house is a machine for living in. ' - Le Corbusier"
+	},
+	///Line 20
+	{
+		"name": "Innovation of Processing Precision",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Processing Precision] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Processing Precision] is not constructed by anybody>",
+			"[-50]% production cost <if [Innovation of Processing Precision] is constructed by anybody>",
+			"Comment [Enable [Machine Industry] to increase [Manufactory] and [Academy] yield.]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Machine Industry",
+		"requiredTech": "Synthetic Materials",
+		"hurryCostModifier": 0
+	},
 	{
 		"name": "Greenhouse",
 		"maintenance": 5,
@@ -4356,6 +4223,59 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Broadcast Tower",
+		"maintenance": 5,
+		"happiness": 1,
+		"percentStatBonus": {
+			"culture": 33,
+			"gold": 10
+		},
+		"uniques": [
+			"'Infrastructure'"
+		],
+		"requiredTech": "Radio",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Stadium",
+		"maintenance": 3,
+		"happiness": 2,
+		"uniques": [
+			"'Entertainment Building'",
+			"[-5]% Unhappiness from [Population] [in this city]"
+		],
+		"requiredTech": "Radio",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Telephone Circuit",
+		"maintenance": 3,
+		"uniques": [
+			"'Infrastructure'",
+			"[-1]% maintenance cost for [all] buildings [in all cities]"
+		],
+		"requiredTech": "Radio",
+		"hurryCostModifier": 10
+	},
+
+	{
+		"name": "Innovation of Instant Foods",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Instant Foods] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Instant Foods] is not constructed by anybody>",
+			"[-50]% production cost <if [Innovation of Instant Foods] is constructed by anybody>",
+			"[+5]% [Production] from every [Food Industry]",
+			"Comment [Enable [Food Industry] to produce extra [Consumption Supply]]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Food Industry",
+		"requiredTech": "Pharmaceuticals",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Nutripaste Factory",
 		"maintenance": 8,
 		"food": 5,
@@ -4389,6 +4309,45 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Aviation Industry",
+		"maintenance": 20,
+		"science": 1,
+		"specialistSlots": {
+			"Labourer": 3,
+			"Engineer": 2
+		},
+		"uniques": [
+			"'Military Building'",
+			"Consumes [3] [Aluminum]",
+			"Consumes [1] [Rubber]",
+			"Provides [3] [Aircraft Parts]",
+			"Consumes [3] [Power] <in cities with a [Power Grid]>",
+			"Provides [2] [Aircraft Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>"
+		],
+		"requiredBuilding": "Military Factory Complex",
+		"requiredTech": "Flight",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Airport",
+		"maintenance": 3,
+		"happiness": 1,
+		"percentStatBonus": {
+			"gold": 10,
+			"culture": 5,
+			"science": 5
+		},
+		"uniques": [
+			"Only available <if [Aviation Industry] is constructed>",
+			"'Infrastructure'",
+			"[+3]% growth [in all cities]",
+			"[-5]% maintenance cost for [all] buildings [in this city]"
+		],
+		"requiredTech": "Flight",
+		"hurryCostModifier": 25
+	},
+	///Line 21
+	{
 		"name": "Electronic Industry",
 		"maintenance": 20,
 		"percentStatBonus": {
@@ -4416,6 +4375,23 @@
 		"hurryCostModifier": 10
 	},
 	{
+		"name": "Innovation of Civilian Navigation",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Civilian Navigation] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Civilian Navigation] is not constructed by anybody>",
+			"[-50]% production cost <if [Innovation of Civilian Navigation] is constructed by anybody>",
+			"[+1] Movement <for [{Civilian} {Water}] units>",
+			"[+1]% [Gold] from every ['Marine Infrastructure']",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Shipmaking Industry",
+		"requiredTech": "Radar",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Radar Station",
 		"maintenance": 5,
 		"cityStrength": 10,
@@ -4429,18 +4405,66 @@
 		"requiredTech": "Radar",
 		"hurryCostModifier": 25
 	},
-	/// Line 18
+	///Line 22
 	{
-		"name": "Uranium Enrichment Facility",
-		"maintenance": 10,
+		"name": "Nuclear Power Plant",
+		"maintenance": 5,
+		"science": 3,
 		"uniques": [
-			"'Heavy Industry'",
-			"Consumes [3] [Uranium]",
-			"Provides [1] [Enriched Uranium]"
+			"'Power Building'",
+			"Consumes [1] [Enriched Uranium] <before discovering [Nuclear Fusion]>",
+			"Consumes [0] [Enriched Uranium] <after discovering [Nuclear Fusion]>",
+			"Provides [8] [Power]"
 		],
-		"requiredTech": "Uranium Enrichment",
+		"requiredTech": "Nuclear Fission",
 		"hurryCostModifier": 25
 	},
+	{
+		"name": "Bomb Shelter",
+		"maintenance": 3,
+		"cityHealth": 10,
+		"uniques": [
+			"'Static Defense'",
+			"Population loss from nuclear attacks [-50]% [in this city]",
+			"Damage to garrison from nuclear attacks [-75]% [in this city]"
+		],
+		"requiredTech": "Nuclear Fission",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Innovation of Frozen Foods",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody>",
+			"[-50]% production cost <if [Innovation of Frozen Foods] is constructed by anybody>",
+			"[+5]% [Food] from every [Food Industry]",
+			"Comment [Increase [Food Industry]'s efficiency to process [Deep Sea Fish(Stored)] en masse.]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Food Industry",
+		"requiredTech": "Refrigeration",
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Invention of Helicopter",
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Helicopter] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Helicopter] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Helicopter] is constructed by anybody>",
+			"[+5]% [Happiness] from every [Aviation Industry]",
+			"Comment [Enable ['Low Altitude Aircraft']s to be built.]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Aviation Industry",
+		"requiredTech": "Combined Arms",
+		"hurryCostModifier": 0
+	},
+	///Line 23
 	{
 		"name": "Sewage Treatment Plant",
 		"maintenance": 5,
@@ -4452,6 +4476,17 @@
 		],
 		"requiredBuilding": "Sewer",
 		"requiredTech": "Plastics",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Uranium Enrichment Facility",
+		"maintenance": 10,
+		"uniques": [
+			"'Heavy Industry'",
+			"Consumes [3] [Uranium]",
+			"Provides [1] [Enriched Uranium]"
+		],
+		"requiredTech": "Uranium Enrichment",
 		"hurryCostModifier": 25
 	},
 	{
@@ -4480,6 +4515,22 @@
 		"requiredBuilding": "Broadcast Tower",
 		"requiredTech": "Telecommunications",
 		"hurryCostModifier": 25
+	},
+	{
+		"name": "Invention of Smart Appliances",
+		"cost": 500,
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Smart Appliances] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Smart Appliances] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Smart Appliances] is constructed by anybody>",
+			"[+5]% [Science] from every [Furniture Industry]",
+			"Unsellable",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding":"Furniture Industry",
+		"requiredTech": "Computer",
+		"hurryCostModifier": 0
 	},
 	{
 		"name": "Rocketry Industry",
@@ -4526,17 +4577,18 @@
 		},
 		"uniques": [
 			"Only available <before adopting [Monotheism]>",
-			"[+2 Culture] per [4] social policies adopted",
+			"[+8 Culture] per [4] social policies adopted",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
-		"quote": "'Cattle die,kinsmen die,all men are mortal. Words of praise will never perish nor a noble name.'- The Havamal",
+		"quote": "'Cattle die, kinsmen die, all men are mortal. Words of praise will never perish nor a noble name.'- The Havamal",
 		"requiredTech": "Plastics"
 	},
 	{
 		"name": "Media Centre",
 		"isWonder": true,
 		"percentStatBonus": {
-			"culture": 33
+			"culture": 33,
+			"happiness": 15
 		},
 		"greatPersonPoints": {
 			"Great Artist": 3
@@ -4549,32 +4601,7 @@
 		"quote": "'Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules.' - Douglas Adams",
 		"requiredTech": "Telecommunications"
 	},
-	///Line 19
-	{
-		"name": "Nuclear Power Plant",
-		"maintenance": 5,
-		"science": 3,
-		"uniques": [
-			"'Power Building'",
-			"Consumes [1] [Enriched Uranium] <before discovering [Nuclear Fusion]>",
-			"Consumes [0] [Enriched Uranium] <after discovering [Nuclear Fusion]>",
-			"Provides [8] [Power]"
-		],
-		"requiredTech": "Nuclear Fission",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Bomb Shelter",
-		"maintenance": 3,
-		"cityHealth": 10,
-		"uniques": [
-			"'Static Defense'",
-			"Population loss from nuclear attacks [-50]% [in this city]",
-			"Damage to garrison from nuclear attacks [-75]% [in this city]"
-		],
-		"requiredTech": "Nuclear Fission",
-		"hurryCostModifier": 25
-	},
+	///Line 24
 	{
 		"name": "Solar Plant",
 		"maintenance": 2,
@@ -4657,27 +4684,11 @@
 			"Must be on [River]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
-		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying",
+		"quote": "'Use the first tier quality. Guard the first tier Dam. And get the first tier record!' - Three Gorge Dam's Slogan",
 		"requiredTech": "Ecology"
 	},
-	{
-		"name": "Satilelite System",
-		"isNationalWonder": true,
-		"percentStatBonus": {
-			"science": 33
-		},
-		"uniques": [
-			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"Reveals the entire map",
-			"[+25]% [Science] [in all cities]",
-			"[+25]% [Production] [in all cities]",
-			"[+5]% [Gold] from Trade Routes",
-			"[+1] Movement",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Satellites"
-	},
-	///Line 20
+
+	///Line 25
 	{
 		"name": "Partical Acclerator",
 		"maintenance": 5,
@@ -4687,7 +4698,7 @@
 		},
 		"uniques": [
 			"'Research Building'",
-			"[Great Scientist] is earned [+25]% faster"
+			"[Great Scientist] is earned [+5]% faster"
 		],
 		"requiredTech": "Particle Physics",
 		"hurryCostModifier": 50
@@ -4724,6 +4735,21 @@
 		"hurryCostModifier": 10
 	},
 	{
+		"name": "Satilelite System",
+		"isNationalWonder": true,
+		"uniques": [
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Reveals the entire map",
+			"[+25]% [Science] [in all cities]",
+			"[+25]% [Production] [in all cities]",
+			"[+5]% [Gold] from Trade Routes",
+			"[+1] Movement",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Satellites"
+	},
+	///Line 26
+	{
 		"name": "Drone Control Centre",
 		"maintenance": 5,
 		"specialistSlots": {
@@ -4741,6 +4767,21 @@
 		"requiredBuilding": "Drone Factory",
 		"requiredTech": "Remote Control",
 		"hurryCostModifier": 25
+	},
+	{
+		"name": "Polar Frontier",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Scientist": 5
+		},
+		"uniques": [
+			"[+3 Science] from [Snow] tiles [in this city]",
+			"[+3 Science] from [Ice] tiles [in this city]",
+			"Must have an owned [Snow] within [4] tiles",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Renewable Energy",
+		"quote": "'I seemed to vow to myself that some day I would go to the region of ice and snow and go on and on till I came to one of the poles of the earth, the end of the axis upon which this great round ball turns.' - Ernest Shackleton"
 	},
 	{
 		"name": "International Space Station",
@@ -4786,20 +4827,7 @@
 		"requiredTech": "Space Stations",
 		"quote": "'The wonder is, not that the field of stars is so vast, but that man has measured it.' - Anatole France"
 	},
-	///Line 21
-	{
-		"name": "Graphene Lab",
-		"maintenance": 10,
-		"science": 5,
-		"uniques": [
-			"'Research Building'",
-			"Provides [2] [Graphene]",
-			"Consumes [3] [Coal]"
-		],
-		"requiredBuilding": "University",
-		"requiredTech": "Graphene",
-		"hurryCostModifier": 25
-	},
+	///Line 27
 	{
 		"name": "E-commerce Firm Complex",
 		"percentStatBonus": {
@@ -4816,34 +4844,19 @@
 		"requiredTech": "E-commerce",
 		"hurryCostModifier": 10
 	},
+	///Line 28
 	{
-		"name": "Drone Factory",
-		"maintenance": 5,
-		"specialistSlots": {
-			"Engineer": 1
-		},
-		"uniques": [
-			"'High Tech Industry'",
-			"[+1 Production] from every specialist [in this city]",
-			"Consumes [1] [Microchips]"
-		],
-		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "3D Printers",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Public 3D Printer",
+		"name": "Graphene Lab",
 		"maintenance": 10,
-		"percentStatBonus": {
-			"production": 25
-		},
+		"science": 5,
 		"uniques": [
-			"'High Tech Industry'",
-			"[+1 Production] per [1] population [in this city]"
+			"'Research Building'",
+			"Provides [2] [Graphene]",
+			"Consumes [3] [Coal]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
-		"requiredTech": "3D Printers",
-		"hurryCostModifier": 10
+		"requiredBuilding": "University",
+		"requiredTech": "Graphene",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Pyramid Habitat",
@@ -4878,22 +4891,37 @@
 		"quote": "'Almost a quarter of our planet is a single mountain range and we didn't enter it until after Neil Armstrong and Buzz Aldrin went to the moon. So we went to the moon, played golf up there, before we went to the largest feature on our own planet.' - Robert Ballard",
 		"requiredTech": "Graphene"
 	},
+	///Line 29
 	{
-		"name": "Polar Frontier",
-		"isWonder": true,
-		"greatPersonPoints": {
-			"Great Scientist": 5
+		"name": "Drone Factory",
+		"maintenance": 5,
+		"specialistSlots": {
+			"Engineer": 1
 		},
 		"uniques": [
-			"[+3 Science] from [Snow] tiles [in this city]",
-			"[+3 Science] from [Ice] tiles [in this city]",
-			"Must have an owned [Snow] within [4] tiles",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+			"'High Tech Industry'",
+			"[+1 Production] from every specialist [in this city]",
+			"Consumes [1] [Microchips]"
 		],
-		"requiredTech": "Renewable Energy",
-		"quote": "'I seemed to vow to myself that some day I would go to the region of ice and snow and go on and on till I came to one of the poles of the earth, the end of the axis upon which this great round ball turns.' - Ernest Shackleton"
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "3D Printers",
+		"hurryCostModifier": 25
 	},
-	///Line 22
+	{
+		"name": "Public 3D Printer",
+		"maintenance": 10,
+		"percentStatBonus": {
+			"production": 25
+		},
+		"uniques": [
+			"'High Tech Industry'",
+			"[+1 Production] per [1] population [in this city]"
+		],
+		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "3D Printers",
+		"hurryCostModifier": 10
+	},
+	
 	///Special
 	{
 		"name": "Palace",
@@ -5749,6 +5777,7 @@
 		"quote": "'More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that is why we have the United Nations.' - Kofi Annan"
 	},
 	///'Outcome'
+
 	{
 		"name": "Failed Bourgeoisie Revolution",
 		"isNationalWonder": true,
@@ -5973,8 +6002,8 @@
 			"Unsellable",
 			"'Civilization State'",
 			"[-20]% [Gold] from Trade Routes",
-			"[-15]% [Culture] [in all cities]",
-			"[-15]% [Science] [in all cities]",
+			"[-10]% [Culture] [in all cities]",
+			"[-10]% [Science] [in all cities]",
 			"[-5]% [Food] [in all cities]",
 			"[-10]% Strength <for [All] units>",
 			"Moves to new capital when capital changes"
@@ -5987,8 +6016,8 @@
 			"Unsellable",
 			"'Civilization State'",
 			"[-33]% [Gold] from Trade Routes",
-			"[-25]% [Culture] [in all cities]",
-			"[-25]% [Science] [in all cities]",
+			"[-20]% [Culture] [in all cities]",
+			"[-20]% [Science] [in all cities]",
 			"[-10]% [Food] [in all cities]",
 			"[-18]% Strength <for [All] units>",
 			"Rebel units may spawn",
@@ -6136,6 +6165,26 @@
 		]
 	},
 	{
+		"name": "Early City States",
+		"uniqueTo":"Central and West Asia",
+		"replaces":"Tribes",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'Divided'",
+			"Provides [10] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Standing Army Maintainance]",
+			"Provides [1] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [The First States]",
+			"[-5]% Culture cost of adopting new Policies",
+			"[20]% Strength for cities",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
 		"name": "Tribal Union",
 		"uniques": [
 			"Unbuildable",
@@ -6147,6 +6196,113 @@
 			"Provides [1] [Standing Army Maintainance]",
 			"Provides [1] [Noble Army Maintainance]",
 			"[+15]% growth [in all cities]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Gaulish Influence",
+		"uniqueTo":"Europa",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [Vercingetorix's Vengence]",
+			"Adopt [Military Nobilities] <starting from the [Classical era]>",
+			"[Gaulish Karros] units gain the [War Axe] promotion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Albions Influence",
+		"uniqueTo":"Europa",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [Boudica's Victory]",
+			"[+1 Faith] from every [Artist] <in [Capital] cities>",
+			"[Warband] units gain the [War Paint] promotion",
+			"[Gaulish Karros] units gain the [War Paint] promotion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Gothic Influence",
+		"uniqueTo":"Europa",
+		"happiness":1,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [Gothic Migration]",
+			"Free [Settler] appears",
+			"[1] free [Warband] units appear",
+			"[+1 Culture] from all [Wonder] buildings",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Saxonian Influence",
+		"uniqueTo":"Europa",
+		"percentStatBonus":{"science":10},
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [The Ancestor of Empires]",
+			"Gain an extra spy",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Earliest Empire",
+		"uniqueTo":"Central and West Asia",
+		"replaces":"Tribal Union",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [10] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Standing Army Maintainance]",
+			"Provides [2] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Akkadian, Assurian and Hitties]",
+			"[+10]% growth [in all cities]",
+			"[+33]% Production when constructing ['Military Building'] buildings [in all cities connected to capital]",
+			"[+1 Production] from [Strategic resource] tiles [in all cities]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Egyptian Dynasties",
+		"uniqueTo":"North Africa",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [10] [Influence Limit]",
+			"Provides [8] [Influence Limit] <starting from the [Ancient era]>",
+			"Provides [7] [Influence Limit] <starting from the [Classical era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Standing Army Maintainance]",
+			"Provides [1] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Carved in Stone]",
+			"[+10]% growth [in all cities]",
+			"[+10]% growth [in all cities] <starting from the [Ancient era]>",
+			"[+10]% Production when constructing [All] wonders [in all cities]",
+			"[+10]% Production when constructing [All] wonders [in all cities] <starting from the [Classical era]>",
+			"[+1 Production, +1 Faith] from every [Governor] <starting from the [Classical era]>",
+			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
 	},
@@ -6182,6 +6338,26 @@
 		]
 	},
 	{
+		"name": "Greek City States",
+		"uniqueTo":"Mediterranean",
+		"replaces":"City States",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'Divided'",
+			"Provides [10] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [3] [Standing Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Pioneer of Wisdoms]",
+			"[Gold] cost of purchasing items in cities [-15]%",
+			"Gain a free [Cultural Exchange] [in this city]",
+			"Free [Hoplite] appears",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
 		"name": "Early Empire",
 		"uniques": [
 			"Unbuildable",
@@ -6194,6 +6370,74 @@
 			"Provides [2] [Noble Army Maintainance]",
 			"[+10]% growth [in all cities]",
 			"[+15]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+		{
+		"name": "Shang Dynasty",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [15] [Influence Limit]",
+			"Provides [5] [Influence Limit] <starting from the [Classical era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <while the empire is happy>",
+			"Provides [2] [Standing Army Maintainance]",
+			"Provides [3] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Blessing of the Divine Swallow]",
+			"[+20]% growth [in all cities]",
+			"[+1 Culture, +1 Production] from [Luxury resource] tiles [in all cities]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Zhou Dynasty",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [15] [Influence Limit]",
+			"Provides [5] [Influence Limit] <starting from the [Classical era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <while the empire is happy>",
+			"Provides [2] [Standing Army Maintainance]",
+			"Provides [3] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Mandated Ruling]",
+			"[+10]% growth [in all cities]",
+			"[+1 Culture] [in all cities] <before adopting [Unity]>",
+			"[+3 Happiness] [in puppeted cities] <after adopting [Unity]>",
+			"Comment [Unique option in increasing [Influence] event]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Persian Dynasties",
+		"uniqueTo":"Central and West Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [15] [Influence Limit]",
+			"Provides [8] [Influence Limit] <starting from the [Classical era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [2] [Standing Army Maintainance]",
+			"Provides [3] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Shāhanshāh]",
+			"[+10]% growth [in all cities]",
+			"New ['Noble Army'] units start with [25] XP [in all cities]",
+			"Comment [Gain access to serveal uniques like [Zhayedan] and [Azadan Cavalry]]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
@@ -6234,7 +6478,93 @@
 		]
 	},
 	{
-		"name": "Sucessor States",
+		"name": "SPQR",
+		"uniqueTo":"Mediterranean",
+		"replaces":"Centralized Empire",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [20] [Influence Limit]",
+			"Provides [5] [Influence Limit] <starting from the [Medieval era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [3] [Standing Army Maintainance]",
+			"Provides [2] [Standing Army Maintainance] <while the empire is happy>",
+			"Provides [3] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Veni Vidi Vici]",
+			"[+1 Production] from every [Governor]",
+			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
+			"Comment [Gain access to serveal uniques like [Legio] and [Via Romana]]",
+			"Free [Legio] appears",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Carthage Obligarchy",
+		"uniqueTo":"North Africa",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [20] [Influence Limit]",
+			"Provides [5] [Influence Limit] <starting from the [Medieval era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [3] [Standing Army Maintainance]",
+			"Provides [2] [Standing Army Maintainance] <while the empire is happy>",
+			"Provides [5] [Mercenary Contract]",
+			"Comment [Unique Name:]",
+			"Comment [The Phoenician Last Stand]",
+			"[+1 Production, +2 Gold, +1 Culture] from every [Governor]",
+			"Comment [Gain access to serveal uniques like [Quadrireme] and [Sacred Band]]",
+			"New ['Mercenary Army'] units start with [10] XP [in all cities]",
+			"[+5]% [Production] [in all cities]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Great Qin",
+		"uniqueTo":"East Asia",
+		"replaces":"Centralized Empire",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [15] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [4] [Standing Army Maintainance]",
+			"Provides [1] [Noble Army Maintainance]",
+			"[+15]% Production when constructing [All] wonders [in all cities connected to capital]",
+			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
+			"Comment [Unique Name:]",
+			"Comment [The First Emperor of China]",
+			"Comment [Gain access to [Qin Balista] and [Honor Bound Territory]]",
+			"Gain a free [Honor Bound Territory] [in annexed cities]",
+			"Comment [[Great Qin] will collapse in if theres not enough [Happiness] and [Influence].]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Honor Bound Territory",
+		"uniqueTo":"East Asia",
+		"cost": 1,
+		"happiness":2,
+		"uniques": [
+			"Can only be built <in [Annexed] cities>",
+			"Only available <if [Great Qin] is constructed in all [Capital] cities>",
+			"Provides [1] [Noble Army Maintainance]",
+			"Instantly provides [10] [Influence]",
+			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name": "Successor States",
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
@@ -6244,13 +6574,225 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
 			"Provides [2] [Noble Army Maintainance]",
-			"[+5]% growth [in all cities]",
+			"[+7]% growth [in all cities]",
 			"[-7]% Culture cost of adopting new Policies",
 			"[10]% Strength for cities",
 			"Moves to new capital when capital changes"
 		]
 	},
-	///Medival
+	{
+		"name": "Alexandrian Successor States",
+		"uniqueTo":"Mediterranean",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'Divided'",
+			"Provides [20] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [2] [Standing Army Maintainance]",
+			"Provides [3] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [Cauldron of Cultures]",
+			"[-25]% Culture cost of adopting new Policies",
+			"Comment [Gain access to [Phalanx]]",
+			"Comment [If nothing goes wrong, [Alexandrian Successor States] will develop [Fedualism] in Mediterranean upon entering Medieval era]",
+			"Adopt [Feudalism] <starting from the [Medieval era]>",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Warring States",
+		"uniqueTo":"East Asia",
+		"replaces":"Successor States",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'Divided'",
+			"Provides [20] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [2] [Standing Army Maintainance]",
+			"Provides [2] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [The Hundred Schools of thoughts]",
+			"Comment [Enable you to choose 3 Schools of thoughts in the total of 9 schools of thoughts with lasting effects]",
+			"Instantly provides [3] [Avaliable School of Thoughts]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Confucianism Influence",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"[-1 Gold] from all ['Political Building'] buildings",
+			"[+5]% [Culture] from every ['Political Building']",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Daoism Influence",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"[-5]% [Gold] [in all cities]",
+			"[-5]% [Production] [in all cities]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"[+1 Faith] per [5] population [in all cities]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Mohism Influence",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Consumes [1] [Standing Army Maintainance]",
+			"Consumes [1] [Noble Army Maintainance]",
+			"[-5]% Unhappiness from [Population] [in all cities]",
+			"[10]% Strength for cities",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Legalism Influence",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"[-2 Culture, +1 Happiness] from all ['Political Building'] buildings",
+			"[+10]% [Production] from every ['Political Building']",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Diplomatism Influence",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Science gained from research agreements [25]%",
+			"When declaring friendship, both parties gain a [15]% boost to great person generation",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Early Rationalism Influence",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"[+5]% Culture cost of adopting new Policies",
+			"[+10]% [Science] [in all cities]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Naturalist Influence",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"[-17]% Faith cost of generating Great Prophet equivalents",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Agrarianism Influence",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"[-1 Gold] from all ['Political Building'] buildings",
+			"[-1 Gold] from all ['Educational Building'] buildings",
+			"[+1 Food, +1 Gold] from all ['Agricultural Building'] buildings",
+			"[+1 Food] from all ['Educational Building'] buildings",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Militant Influence",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Provides [1] [Standing Army Maintainance]",
+			"Provides [1] [Noble Army Maintainance]",
+			"[+15]% Production when constructing ['Military Building'] buildings [in all cities]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Chu Dynasty",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [25] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Standing Army Maintainance]",
+			"Provides [3] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [The Dominator's Warth]",
+			"New [Military] units start with [15] XP [in all cities]",
+			"Comment [Gain access to [Cavalry of the Dominator]]",
+			"Comment [If nothing goes wrong, [Chu Dynasty] will develop [Fedualism] in East Asia upon entering Medieval era]",
+			"Adopt [Feudalism] <starting from the [Medieval era]>",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Han Dynasty",
+		"uniqueTo":"East Asia",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Provides [25] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [3] [Standing Army Maintainance]",
+			"Provides [2] [Noble Army Maintainance]",
+			"Comment [Unique Name:]",
+			"Comment [The Fierce Han]",
+			"Comment [Gain access to [Yu Lin Cavarly] and [Du Hu Protectorate]]",
+			"Gain a free [Du Hu Protectorate] [in puppeted cities]",
+			"Comment [If nothing goes wrong, [Han Dynasty] will develop [Meritocracy] in East Asia upon entering Medieval era]",
+			"Adopt [Meritocracy] <starting from the [Medieval era]>",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Du Hu Protectorate",
+		"cost": 1,
+		"gold":5,
+		"uniques": [
+			"Unbuildable",
+			"Remove [Du Hu Protectorate] [in all non-occupied cities]",
+			"Only available <if [Han Dynasty] is constructed in all [Capital] cities>",
+			"Instantly provides [8] [Influence]",
+			"[+5]% [Gold] from Trade Routes",
+			"Destroyed when the city is captured"
+		]
+	},
+	///Medieval
 	{
 		"name": "Kingdoms",
 		"uniques": [
@@ -6525,7 +7067,9 @@
 			"Unsellable",
 			"Instantly provides [5] [Influence]",
 			"Gain a free [Peace] [in capital] <for [1] turns>",
-			"Gain a free [Tribes] [in capital] <for [1] turns>",
+			"Gain a free [Tribes] [in capital] <for [{non-[Central and West Asia]} {non-[North Africa]}] Civilizations> <for [1] turns>",
+			"Gain a free [Early City States] [in capital] <for [Central and West Asia] Civilizations> <for [1] turns>",
+			"Gain a free [Egyptian Dynasties] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Moves to new capital when capital changes"
 		]
 	},
@@ -6537,11 +7081,11 @@
 			"Unsellable",
 			"Instantly provides [10] [Influence]",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
-			"Gain a free [City States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
-			"Gain a free [City States] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
-			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Greek City States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Zhou Dynasty] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
 			"Gain a free [Tribes] [in capital] <for [1] turns> <for [Europa] Civilizations>",
-			"Gain a free [Early Empire] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Gain a free [Egyptian Dynasties] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Moves to new capital when capital changes"
 		]
 	},
@@ -6553,11 +7097,11 @@
 			"Unsellable",
 			"Instantly provides [15] [Influence]",
 			"Gain a free [Peace] [in capital] <for [1] turns>",
-			"Gain a free [Sucessor States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
-			"Gain a free [Sucessor States] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
-			"Gain a free [Early Empire] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Alexandrian Successor States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Successor States] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Warring States] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
 			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [Europa] Civilizations>",
-			"Gain a free [Centralized Empire] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
+			"Gain a free [Successor States] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Moves to new capital when capital changes"
 		]
 	},
@@ -6570,8 +7114,8 @@
 			"Instantly provides [20] [Influence]",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Centralized Empire] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
-			"Gain a free [Feudal Empire] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
-			"Gain a free [Centralized Empire] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
+			"Gain a free [Persian Dynasties] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Han Dynasty] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Moves to new capital when capital changes"
@@ -6747,6 +7291,17 @@
 		"hurryCostModifier": -50
 	},
 	{
+		"name": "Army Maintainance Cost",
+		"cost":50,
+		"uniques": [
+			"Unavailable",
+			"Unsellable",
+			"Consumes [1] [Standing Army Maintainance]",
+			"Consumes [1] [Noble Army Maintainance]"
+		],
+		"hurryCostModifier": -50
+	},
+	{
 		"name": "Overproduction",
 		"cost":50,
 		"percentStatBonus":{
@@ -6784,12 +7339,26 @@
 		],
 		"hurryCostModifier": -50
 	},
+	{
+		"name":"Alexander Event Flag",
+		"cost":10,
+		"uniques":[
+			"Unavailable",
+			"Unsellable",
+			"Consumes [1] [Alexandrian Empire Period] <when above [0] [Alexandrian Empire Period]>",
+			"Triggers a [Alexander's death] event <when below [6] [Alexandrian Empire Period]> <with [50]% chance>",
+			"Triggers a [Alexander's death] event <when below [9] [Alexandrian Empire Period]> <with [50]% chance> <if [Alexandrian Successor States] is not constructed>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes"
+		]
+	}
 	///Scenario Tools
 	{
 		"name":"No Wonder",
 		"cost":10,
 		"uniques":[
 			"Unavailable",
+			"Unsellable",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes"
 		]

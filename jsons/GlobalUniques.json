@@ -50,7 +50,8 @@
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when between [-21] and [-25] [Influence]> <with [30]% chance> <after turn number [20]> <upon turn start>",
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when between [-31] and [-35] [Influence]> <with [35]% chance> <after turn number [20]> <upon turn start>",
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when below [-35] [Influence]> <with [50]% chance> <after turn number [20]> <upon turn start>",
-        
+
+        "Triggers a [Collapse of the Great Qin] event <if [Great Qin] is constructed> <when below [0] [Happiness]> <when below [0] [Influence]>",
         "Triggers a [Disolution of Union] event <if [Socialist Republics] is constructed> <when below [20] [Happiness]>",
         "Triggers a [Disolution of Union] event <if [Personal Union] is constructed> <when below [5] [Influence]>",
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations>  <when below [-35] [Influence]> <with [50]% chance> <upon turn start>",
@@ -83,11 +84,11 @@
         "Gain a free [Power Shortage] [in all cities] <in cities with a [Power Grid]> <when below [0] [Power]> <upon turn start>",
         "Remove [Power Shortage] [in all cities] <in cities with a [Power Grid]> <when above [0] [Power]> <upon turn start>",
 
-        "Gain a free [Overproduction] [in all cities] <starting from the [Industrial era]><when number of [[Consumption Supply]-5] is more than [Consumption Demand]> <upon turn start>",
-        "Remove [Overproduction] [in all cities] <starting from the [Industrial era]> <when number of [Consumption Demand] is less than [[Consumption Supply]-5]> <upon turn start>",
+        "Gain a free [Overproduction] [in all cities] <starting from the [Industrial era]> <when number of [[Consumption Supply]-3-[[Cities]*2]] is more than [Consumption Demand]> <upon turn start>",
+        "Remove [Overproduction] [in all cities] <starting from the [Industrial era]> <when number of [Consumption Demand] is less than [[Consumption Supply]-3-[[Cities]*2]]> <upon turn start>",
 
-        "Gain a free [Underproduction] [in all cities] <starting from the [Industrial era]> <when number of [Consumption Demand] is more than [[Consumption Supply]+5]> <upon turn start>",
-        "Remove [Underproduction] [in all cities] <starting from the [Industrial era]> <when number of [[Consumption Supply]+5] is less than [Consumption Demand]> <upon turn start>",
+        "Gain a free [Underproduction] [in all cities] <starting from the [Industrial era]> <when number of [Consumption Supply] is less than [[Consumption Demand]+3+[[Cities]*2]]> <upon turn start>",
+        "Remove [Underproduction] [in all cities] <starting from the [Industrial era]> <when number of [Consumption Supply] is more than [[Consumption Demand]+3+[[Cities]*2]]> <upon turn start>",
 
         //AI
 

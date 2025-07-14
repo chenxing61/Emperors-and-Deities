@@ -3,42 +3,68 @@
 	{
 		"name": "Revolution Oppotunity",
 		"resourceType": "Strategic",
-		"uniques":["Cannot be traded"],
-		"revealedBy": "Engineering"
+		"uniques": [
+			"Not shown on world screen",
+			"Cannot be traded"
+		],
+		"revealedBy": "Scientific Theory"
 	},
 	{
 		"name": "Influence",
 		"resourceType": "Strategic",
-		"uniques":["Stockpiled",
-		"Comment [You require this resource to change government form,If [Happiness] is at 5, 10, 30 or above, you gain a maximum of 3 [Influence] per turn from [Happiness] and a extra 2 [Influence] from being in a golden age.\nIf [Happiness] is below 5, -5, -10, -15, -20 or below, you can lose a maximum of 10 [Influence] per turn.\nIf [Gold] is below -100,-200,-300 or below, you can lose a maximum of 5 [Influence] from bankruptcy per turn.\nWhen you are at negative [Influence], you have a chance of triggering stability lose event, which chance gradually increases while your Influence goes even futher into the negative. The lowest stability you can get is [Anarchy].\nWhen below -10 [Influence] you cannot increase stability.]",
-		"Cannot be traded"],
+		"uniques": [
+			"Stockpiled",
+			"Comment [You require this resource to change government form,If [Happiness] is at 5, 10, 30 or above, you gain a maximum of 3 [Influence] per turn from [Happiness] and a extra 2 [Influence] from being in a golden age.\nIf [Happiness] is below 5, -5, -10, -15, -20 or below, you can lose a maximum of 10 [Influence] per turn.\nIf [Gold] is below -100,-200,-300 or below, you can lose a maximum of 5 [Influence] from bankruptcy per turn.\nWhen you are at negative [Influence], you have a chance of triggering stability lose event, which chance gradually increases while your Influence goes even futher into the negative. The lowest stability you can get is [Anarchy].\nWhen below -10 [Influence] you cannot increase stability.]",
+			"Cannot be traded"
+		],
 		"revealedBy": "Writing"
 	},
 	{
 		"name": "Influence Limit",
 		"resourceType": "Strategic",
-		"uniques":[
-		"Comment [You need this [Influence Limit] to keep your [Influence]. [Influence] will not go above [Influence Limit].]",
-		"Cannot be traded"],
+		"uniques": [
+			"Comment [You need this [Influence Limit] to keep your [Influence]. [Influence] will not go above [Influence Limit].]",
+			"Cannot be traded"
+		],
 		"revealedBy": "Writing"
+	},
+	{
+		"name": "Avaliable School of Thoughts",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen",
+			"Cannot be traded",
+			"Stockpiled"
+		]
+	},
+	{
+		"name": "Alexandrian Empire Period",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen",
+			"Stockpiled",
+			"Cannot be traded"
+		]
 	},
 	{
 		"name": "Consumption Supply",
 		"resourceType": "Strategic",
-		"uniques":["Cannot be traded"],
-		"revealedBy":"Economics"
+		"uniques": [],
+		"revealedBy": "Economics"
 	},
 	{
 		"name": "Consumption Demand",
 		"resourceType": "Strategic",
-		"uniques":[],
-		"revealedBy":"Economics"
+		"uniques": [],
+		"revealedBy": "Economics"
 	},
 	{
 		"name": "Power",
 		"resourceType": "Strategic",
-		"uniques":["City-level resource"],
-		"revealedBy":"Electricity"
+		"uniques": [
+			"City-level resource"
+		],
+		"revealedBy": "Electricity"
 	},
 	// Bonus resources
 	{
@@ -278,7 +304,7 @@
 	{
 		"name": "Coastal Fish",
 		"resourceType": "Bonus",
-		"revealedBy":"Sailing",
+		"revealedBy": "Sailing",
 		"terrainsCanBeFoundOn": [
 			"Coast",
 			"Lakes",
@@ -290,7 +316,7 @@
 			"Aquaculture"
 		],
 		"uniques": [
-			"Generated on every [7] tiles <in [{Featureless} {Coast}] tiles>",
+			"Generated on every [5] tiles <in [{Featureless} {Coast}] tiles>",
 			"Generated on every [7] tiles <in [Lakes] tiles>",
 			"Generated on every [3] tiles <in [Atoll] tiles>"
 		]
@@ -449,7 +475,8 @@
 			"Permaculture"
 		],
 		"uniques": [
-			"'Crops'","'Chemicals'",
+			"'Crops'",
+			"'Chemicals'",
 			"Guaranteed with Strategic Balance resource option",
 			"Minor deposits generated with weight [33] <in [{Jungle} {Hill}] tiles>",
 			"Minor deposits generated with weight [33] <in [Forest] tiles>"
@@ -861,7 +888,7 @@
 	{
 		"name": "Crab",
 		"resourceType": "Luxury",
-		"revealedBy":"Sailing",
+		"revealedBy": "Sailing",
 		"terrainsCanBeFoundOn": [
 			"Coast"
 		],
@@ -890,7 +917,7 @@
 	{
 		"name": "Pearl",
 		"resourceType": "Luxury",
-		"revealedBy":"Sailing",
+		"revealedBy": "Sailing",
 		"terrainsCanBeFoundOn": [
 			"Coast"
 		],
@@ -917,7 +944,7 @@
 	{
 		"name": "Coral",
 		"resourceType": "Luxury",
-		"revealedBy":"Sailing",
+		"revealedBy": "Sailing",
 		"terrainsCanBeFoundOn": [
 			"Coast",
 			"Ocean"
@@ -1470,13 +1497,17 @@
 	{
 		"name": "Great Wall Logistic",
 		"resourceType": "Strategic",
-		"uniques":["Cannot be traded"],
+		"uniques": [
+			"Cannot be traded"
+		],
 		"revealedBy": "Engineering"
 	},
 	{
 		"name": "Piety",
 		"resourceType": "Strategic",
-		"uniques":["Cannot be traded"],
+		"uniques": [
+			"Cannot be traded"
+		],
 		"revealedBy": "Theology"
 	},
 	///Civilian Products
@@ -1492,8 +1523,10 @@
 	{
 		"name": "Artifact",
 		"resourceType": "Strategic",
-		"uniques":["City-level resource"],
-		"revealedBy":"Archaeology"
+		"uniques": [
+			"City-level resource"
+		],
+		"revealedBy": "Archaeology"
 	},
 	{
 		"name": "Waste Material",

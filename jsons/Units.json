@@ -7,6 +7,7 @@
 		"movement": 2,
 		"uniques": [
 			"Can build [Land] improvements on tiles",
+			"Can build [Lakes] improvements on tiles",
 			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Automation is a primary action"
@@ -26,6 +27,7 @@
 			"Costs [5] [Vehicle Parts]",
 			"[-50]% construction time for [All] improvements",
 			"Can build [Land] improvements on tiles",
+			"Can build [Lakes] improvements on tiles",
 			"Automation is a primary action"
 		],
 		"requiredTech": "Combustion",
@@ -258,23 +260,25 @@
 		"name": "Warband",
 		"unitType": "Close Combat",
 		"uniqueTo": "Europa",
-		"replaces": "Brute Warrior",
 		"cost": 45,
 		"movement": 2,
 		"strength": 9,
 		"uniques": [
-			"Limited to [3] per Civilization",
+			"Limited to [5] per Civilization",
 			"Can transform to [Early Swordsman] <removing the [The Levied Army] promotion/status> <after discovering [Bronze Working]> <costs [+1 Gold] stats>",
+			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <after discovering [Mathematics]> <costs [+1 Gold] stats>",
+			"Can transform to [Early Rider] <removing the [The Levied Army] promotion/status> <after discovering [Horseback Riding]> <costs [+1 Gold] stats>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"[+50]% Strength <starting from the [Classical era]>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
 			"The Levied Army",
-			"Stewardship"
+			"Hardened"
 		],
 		"requiredTech": "Copper Working",
 		"obsoleteTech": "Iron Working",
@@ -342,6 +346,8 @@
 		"movement": 2,
 		"strength": 16,
 		"uniques": [
+			"Can upgrade to [Legio] <if [SPQR] is constructed>",
+			"Can upgrade to [Phalanx] <if [Alexandrian Successor States] is constructed>",
 			"'Standing Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -354,6 +360,94 @@
 			"Intensive Doctrine"
 		],
 		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Armorments",
+		"upgradesTo": "Swordsman",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Legio",
+		"uniqueTo": "Mediterranean",
+		"unitType": "Close Combat",
+		"cost": 60,
+		"movement": 2,
+		"strength": 19,
+		"uniques": [
+			"Only available <if [SPQR] is constructed>",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Hardened",
+			"Intensive Doctrine",
+			"Javalin",
+			"Legio Ability"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Armorments",
+		"upgradesTo": "Swordsman",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Phalanx",
+		"uniqueTo": "Mediterranean",
+		"unitType": "Close Combat",
+		"cost": 60,
+		"movement": 2,
+		"strength": 20,
+		"uniques": [
+			"Only available <if [Alexandrian Successor States] is constructed>",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+33]% Strength <when fighting in [Open terrain] tiles> <when attacking>",
+			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Hardened",
+			"Intensive Doctrine",
+			"Formation"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Armorments",
+		"upgradesTo": "Swordsman",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Sacred Band",
+		"uniqueTo": "North Africa",
+		"unitType": "Close Combat",
+		"cost": 80,
+		"movement": 2,
+		"strength": 19,
+		"uniques": [
+			"Only available <if [Carthage Obligarchy] is constructed>",
+			"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Hardened",
+			"Intensive Doctrine"
+		],
+		"requiredTech": "Iron Working",
 		"obsoleteTech": "Armorments",
 		"upgradesTo": "Swordsman",
 		"requiredResource": "Standing Army Maintainance",
@@ -615,11 +709,10 @@
 		"movement": 3,
 		"strength": 14,
 		"uniques": [
-			"Only available <if [Military Stable] is constructed>",
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
 			"'Mounted'",
-			"'Dense Formation'",
+			"'Skirmishers'",
 			"'Edged Weapons'",
 			"No defensive terrain bonus",
 			"[+1] Sight",
@@ -630,6 +723,7 @@
 		"promotions": [
 			"The Standing Army"
 		],
+		"requiredBuilding":"Military Stable",
 		"requiredResource": "Standing Army Maintainance",
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Stirrup",
@@ -643,7 +737,6 @@
 		"movement": 2,
 		"strength": 20,
 		"uniques": [
-			"Only available <if [Military Stable] is constructed>",
 			"Consumes [1] [Ivory]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -661,6 +754,7 @@
 		"promotions": [
 			"The Standing Army"
 		],
+		"requiredBuilding":"Military Stable",
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintainance",
@@ -675,7 +769,6 @@
 		"strength": 12,
 		"rangedStrength": 15,
 		"uniques": [
-			"Only available <if [Military Stable] is constructed>",
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -693,6 +786,7 @@
 			"The Standing Army",
 			"Skirmisher Training"
 		],
+		"requiredBuilding":"Military Stable",
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintainance",
@@ -815,6 +909,37 @@
 		"attackSound": "throw"
 	},
 	{
+		"name": "Qin Balista",
+		"unitType": "Siege",
+		"cost": 75,
+		"movement": 2,
+		"strength": 10,
+		"rangedStrength": 18,
+		"range": 2,
+		"uniques": [
+			"Only available <if [Great Qin] is constructed>",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+50]% Strength <vs cities> <when attacking>",
+			"[+75]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Engineering",
+		"upgradesTo": "Heavy Balista",
+		"requiredResource": "Standing Army Maintainance",
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
 		"name": "Spearman",
 		"unitType": "Close Combat",
 		"cost": 50,
@@ -870,7 +995,7 @@
 	{
 		"name": "Noble Swordsman",
 		"unitType": "Close Combat",
-		"cost": 50,
+		"cost": 100,
 		"movement": 2,
 		"strength": 26,
 		"uniques": [
@@ -891,6 +1016,39 @@
 		"promotions": [
 			"The Noble Army",
 			"Chainmail Armour"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Flintlock",
+		"requiredResource": "Noble Army Maintainance",
+		"attackSound": "metalhit"
+	},
+		{
+		"name": "Zhayedan",
+		"unitType": "Close Combat",
+		"uniqueTo":"Central and West Asia",
+		"cost": 120,
+		"movement": 2,
+		"strength": 26,
+		"uniques": [
+			"Only available <if [Persian Dynasties] is constructed>",
+			"Limited to [3] per Civilization",
+			"Can upgrade to [Azadan Cavalry] <after discovering [Armorments]>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]><after adopting [Long Live the Revolution!]><removing the [The Noble Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]><removing the [The Noble Army] promotion/status>",
+			"'Noble Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Hardened",
+			"Stewardship",
+			"Field Medic",
+			"Recurve bow"
 		],
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Flintlock",
@@ -1008,6 +1166,35 @@
 	},
 	///Line 7
 	{
+		"name": "Hetairoi Cavalry",
+		"unitType": "Assault",
+		"movement": 3,
+		"strength": 26,
+		"uniques": [
+			"Unbuildable",
+			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Strip Armour",
+			"Centralised Command",
+			"Assault Doctrine",
+			"Hetairoi Glory"
+		],
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "horse"
+	},
+	{
 		"name": "Cataphract",
 		"unitType": "Assault",
 		"cost": 95,
@@ -1016,9 +1203,8 @@
 		"uniques": [
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
-			"Only available <if [Military Stable] is constructed>",
 			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]>",
-			"Can upgrade to [Knight] <after adopting [Feudalism]>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
 			"'Standing Army'",
 			"'Mounted'",
 			"'Dense Formation'",
@@ -1033,6 +1219,104 @@
 			"The Standing Army",
 			"Strip Armour"
 		],
+		"requiredBuilding":"Military Stable",
+		"requiredTech": "Armorments",
+		"obsoleteTech": "Tactics",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Azadan Cavalry",
+		"uniqueTo":"Central and West Asia",
+		"unitType": "Assault",
+		"cost": 110,
+		"movement": 3,
+		"strength": 30,
+		"uniques": [
+			"Only available <if [Persian Dynasties] is constructed>",
+			"Consumes [1] [Horse]",
+			"Consumes [1] [Metal]",
+			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <removing the [The Noble Army] promotion/status>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
+			"Can transform to [Azadan Cavalry Archer] <requires [1] movement>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Strip Armour"
+		],
+		"requiredBuilding":"Military Stable",
+		"requiredTech": "Armorments",
+		"obsoleteTech": "Tactics",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Azadan Cavalry Archer",
+		"uniqueTo":"Central and West Asia",
+		"unitType": "Rider",
+		"movement": 3,
+		"strength": 22,
+		"range":2,
+		"rangedStrength":28,
+		"uniques": [
+			"Unbuildable",
+			"Consumes [1] [Horse]",
+			"Consumes [1] [Metal]",
+			"Can transform to [Azadan Cavalry] <requires [1] movement>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Strip Armour"
+		],
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Cavalry of the Dominator",
+		"uniqueTo":"East Asia",
+		"unitType": "Assault",
+		"cost": 100,
+		"movement": 3,
+		"strength": 33,
+		"uniques": [
+			"Only available <if [Chu Dynasty] is constructed>",
+			"Consumes [1] [Horse]",
+			"Consumes [1] [Metal]",
+			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Strip Armour",
+			"Centralised Command"
+		],
+		"requiredBuilding":"Military Stable",
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Tactics",
 		"requiredResource": "Standing Army Maintainance",
@@ -1068,6 +1352,32 @@
 		"attackSound": "metalhit"
 	},
 	///Line 8
+		{
+		"name": "Quinquereme Fleet",
+		"unitType": "Close Combat Ship",
+		"uniqueTo":"North Africa",
+		"cost": 85,
+		"movement": 3,
+		"strength": 20,
+		"uniques": [
+			"Only available <if [Carthage Obligarchy] is constructed>",
+			"Can transform to [Heavy Galley Fleet] <after discovering [Shipbuilding]>",
+			"'Standing Army'",
+			"'Galley'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Sailing Doctrine"
+		],
+		"requiredTech": "Dry Dock",
+		"obsoleteTech": "Monocular",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "throw"
+	},
 	{
 		"name": "Lou Chuan Fleet",
 		"uniqueTo": "East Asia",
@@ -1142,13 +1452,14 @@
 		"attackSound": "throw"
 	},
 	{
-		"name": "Light Cavalry",
-		"cost": 63,
+		"name": "Yu Lin Cavalry",
+		"uniqueTo":"East Asia",
+		"cost": 55,
 		"unitType": "Rider",
 		"movement": 3,
-		"strength": 21,
+		"strength": 19,
 		"uniques": [
-			"Only available <if [Military Stable] is constructed>",
+			"Only available <if [Han Dynasty] is constructed>",
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -1156,7 +1467,37 @@
 			"'Edged Weapons'",
 			"No defensive terrain bonus",
 			"[+1] Sight",
-			"[+25]% Strength <after discovering [Armorments]>",
+			"[+25]% Strength <after discovering [Tactics]>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Hardened",
+			"Skirmisher Training",
+			"Resourceful Army"
+		],
+		"requiredBuilding":"Military Stable",
+		"requiredTech": "Logistics",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintainance",
+		"upgradesTo": "Hussar",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Light Cavalry",
+		"cost": 63,
+		"unitType": "Rider",
+		"movement": 3,
+		"strength": 21,
+		"uniques": [
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+1] Sight",
 			"[+25]% Strength <after discovering [Tactics]>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
@@ -1164,6 +1505,7 @@
 		"promotions": [
 			"The Standing Army"
 		],
+		"requiredBuilding":"Military Stable",
 		"requiredTech": "Stirrup",
 		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintainance",
@@ -1185,7 +1527,6 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"No defensive terrain bonus",
-			"[+25]% Strength <after discovering [Armorments]>",
 			"[+25]% Strength <after discovering [Tactics]>",
 			"Can move immediately once bought",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
@@ -1351,7 +1692,6 @@
 		"movement": 3,
 		"strength": 35,
 		"uniques": [
-			"Only available <if [Military Stable] is constructed>",
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
 			"'Standing Army'",
@@ -1366,6 +1706,7 @@
 			"The Standing Army",
 			"Chainmail Armour"
 		],
+		"requiredBuilding":"Military Stable",
 		"requiredTech": "Tactics",
 		"obsoleteTech": "Hand Cannon",
 		"requiredResource": "Standing Army Maintainance",
@@ -1379,7 +1720,6 @@
 		"movement": 3,
 		"strength": 37,
 		"uniques": [
-			"Only available <if [Military Stable] is constructed>",
 			"Only available <after adopting [Knighthood]>",
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
@@ -1395,6 +1735,7 @@
 			"Chivalry",
 			"Chainmail Armour"
 		],
+		"requiredBuilding":"Military Stable",
 		"requiredTech": "Tactics",
 		"obsoleteTech": "Hand Cannon",
 		"requiredResource": "Noble Army Maintainance",
@@ -1656,7 +1997,6 @@
 		"movement": 3,
 		"strength": 42,
 		"uniques": [
-			"Only available <if [Military Stable] is constructed>",
 			"Only available <before adopting [Knighthood]>",
 			"Costs [6] [Weapon Parts]",
 			"Consumes [1] [Horse]",
@@ -1671,6 +2011,7 @@
 			"The Standing Army",
 			"Plate Armour"
 		],
+		"requiredBuilding":"Military Stable",
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
 		"upgradesTo": "Cuirassier",
@@ -1711,7 +2052,6 @@
 		"strength": 46,
 		"uniques": [
 			"Only available <after adopting [Knighthood]>",
-			"Only available <if [Military Stable] is constructed>",
 			"Consumes [1] [Horse]",
 			"'Edged Weapons'",
 			"'Dense Formation'",
@@ -1725,6 +2065,7 @@
 			"Chivalry",
 			"Plate Armour"
 		],
+		"requiredBuilding":"Military Stable",
 		"upgradesTo": "Royal Cuirassier",
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
@@ -2035,7 +2376,6 @@
 		"movement": 3,
 		"strength": 55,
 		"uniques": [
-			"Only available <if [Military Stable] is constructed>",
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -2048,6 +2388,7 @@
 		"promotions": [
 			"The Standing Army"
 		],
+		"requiredBuilding":"Military Stable",
 		"requiredTech": "Carriage",
 		"obsoleteTech": "Rifling",
 		"requiredResource": "Standing Army Maintainance",
@@ -2142,7 +2483,6 @@
 		"movement": 3,
 		"strength": 58,
 		"uniques": [
-			"Only available <if [Military Stable] is constructed>",
 			"Only available <before adopting [Knighthood]>",
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
@@ -2156,6 +2496,7 @@
 			"Partial Plate Armour",
 			"Intensive Doctrine"
 		],
+		"requiredBuilding":"Military Stable",
 		"upgradesTo": "Modern Cavalry",
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Rifling",
@@ -2171,7 +2512,6 @@
 		"uniques": [
 			"Can transform to [Modern Cavalry] <after discovering [Rifling]><removing the [The Noble Army] promotion/status>",
 			"Only available <after adopting [Knighthood]>",
-			"Only available <if [Military Stable] is constructed>",
 			"Consumes [1] [Horse]",
 			"'Noble Army'",
 			"'Mounted'",
@@ -2185,6 +2525,7 @@
 			"Partial Plate Armour",
 			"Intensive Doctrine"
 		],
+		"requiredBuilding":"Military Stable",
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Rifling",
 		"requiredResource": "Noble Army Maintainance",
@@ -2203,13 +2544,13 @@
 			"'Firearms'",
 			"'Dense Formation'",
 			"'Infantry'",
-			"Only available <if [Military Stable] is constructed>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
 			"The Standing Army",
 			"Shock Doctrine"
 		],
+		"requiredBuilding":"Military Stable",
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Heavy Infantry",
@@ -2320,7 +2661,6 @@
 		"strength": 65,
 		"cost": 160,
 		"uniques": [
-			"Only available <if [Military Stable] is constructed>",
 			"Can upgrade to [Motorised Infantry] <after discovering [Combustion]>",
 			"Can upgrade to [Armoured Car] <after discovering [Combustion]>",
 			"Costs [18] [Weapon Parts]",
@@ -2335,6 +2675,7 @@
 		"promotions": [
 			"The Standing Army"
 		],
+		"requiredBuilding":"Military Stable",
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Combustion",
 		"requiredResource": "Standing Army Maintainance",
@@ -2859,8 +3200,8 @@
 		"name": "Mechanised Infantry",
 		"unitType": "Close Combat",
 		"cost": 240,
-		"movement": 2,
-		"strength": 70,
+		"movement": 3,
+		"strength": 77,
 		"uniques": [
 			"Costs [15] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
@@ -2884,8 +3225,8 @@
 		"name": "Mechanised Elite Guard",
 		"unitType": "Close Combat",
 		"cost": 240,
-		"movement": 2,
-		"strength": 73,
+		"movement": 3,
+		"strength": 80,
 		"uniques": [
 			"Costs [15] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
@@ -2909,7 +3250,7 @@
 		"name": "Self-propelled Artillery",
 		"unitType": "Siege",
 		"cost": 280,
-		"movement": 2,
+		"movement": 3,
 		"strength": 55,
 		"rangedStrength": 65,
 		"range": 3,
@@ -3117,7 +3458,7 @@
 		"rangedStrength": 65,
 		"range": 6,
 		"uniques": [
-			"Costs [10] [Weapon Parts]",
+			"Costs [5] [Weapon Parts]",
 			"[-100]% maintenance costs",
 			"Never appears as a Barbarian unit"
 		],
@@ -3689,7 +4030,7 @@
 		"cost": 360,
 		"movement": 2,
 		"strength": 75,
-		"rangedStrength": 83,
+		"rangedStrength": 84,
 		"range": 2,
 		"uniques": [
 			"Invisible to non-adjacent units",
@@ -3716,7 +4057,7 @@
 		"unitType": "Close Combat",
 		"cost": 360,
 		"movement": 2,
-		"strength": 85,
+		"strength": 88,
 		"requiredTech": "Haptics",
 		"requiredResource": "Standing Army Maintainance",
 		"uniques": [
@@ -3869,7 +4210,7 @@
 		"uniques": [
 			"'Barbaric Army'",
 			"'Mounted'",
-			"'Dense Formation'",
+			"'Skirmishers'",
 			"'Edged Weapons'",
 			"Cannot embark",
 			"[+50]% Strength <starting from the [Classical era]>",
