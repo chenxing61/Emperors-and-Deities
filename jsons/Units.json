@@ -7,6 +7,7 @@
 		"movement": 2,
 		"uniques": [
 			"Can build [Land] improvements on tiles",
+			"Can build [Lakes] improvements on tiles",
 			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Automation is a primary action"
@@ -26,6 +27,7 @@
 			"Costs [5] [Vehicle Parts]",
 			"[-50]% construction time for [All] improvements",
 			"Can build [Land] improvements on tiles",
+			"Can build [Lakes] improvements on tiles",
 			"Automation is a primary action"
 		],
 		"requiredTech": "Combustion",
@@ -258,23 +260,25 @@
 		"name": "Warband",
 		"unitType": "Close Combat",
 		"uniqueTo": "Europa",
-		"replaces": "Brute Warrior",
 		"cost": 45,
 		"movement": 2,
 		"strength": 9,
 		"uniques": [
-			"Limited to [3] per Civilization",
+			"Limited to [5] per Civilization",
 			"Can transform to [Early Swordsman] <removing the [The Levied Army] promotion/status> <after discovering [Bronze Working]> <costs [+1 Gold] stats>",
+			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <after discovering [Mathematics]> <costs [+1 Gold] stats>",
+			"Can transform to [Early Rider] <removing the [The Levied Army] promotion/status> <after discovering [Horseback Riding]> <costs [+1 Gold] stats>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"[+50]% Strength <starting from the [Classical era]>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
 			"The Levied Army",
-			"Stewardship"
+			"Hardened"
 		],
 		"requiredTech": "Copper Working",
 		"obsoleteTech": "Iron Working",
@@ -708,7 +712,7 @@
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
 			"'Mounted'",
-			"'Dense Formation'",
+			"'Skirmishers'",
 			"'Edged Weapons'",
 			"No defensive terrain bonus",
 			"[+1] Sight",
@@ -4206,7 +4210,7 @@
 		"uniques": [
 			"'Barbaric Army'",
 			"'Mounted'",
-			"'Dense Formation'",
+			"'Skirmishers'",
 			"'Edged Weapons'",
 			"Cannot embark",
 			"[+50]% Strength <starting from the [Classical era]>",

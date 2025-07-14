@@ -18,7 +18,7 @@
 		],
 		"civilopediaText": [
 			{
-				"text": "Human society tend to rely on agriculture more than anything, especially after they invented taxes. If you see this improvement in lake? They probably started to throw dirt into the lake and make it the new farmland."
+				"text": "Human society tend to rely on agriculture more than anything, especially after they invented taxes. If you see this improvement in Lakes? They probably started to throw dirt into the Lakes and make it the new farmland."
 			}
 		],
 		"shortcutKey": "F"
@@ -126,6 +126,26 @@
 			"Pillaging this improvement yields approximately [+18 Gold]"
 		],
 		"techRequired": "Construction",
+		"shortcutKey": "F"
+	},
+	{
+		"name": "Polder",
+		"terrainsCanBeBuiltOn": [
+			"Coast",
+			"Lakes"
+		],
+		"food": 1,
+		"gold": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Irrigation",
+		"uniques": [
+			"Unavailable <with [3] to [5] neighboring [Coast] tiles>",
+			"Unavailable <with [3] to [5] neighboring [Lakes] tiles>",
+			"'Agricultural Improvement'",
+			"[+1 Food] <after discovering [Crop Rotation]>",
+			"Cannot be built on [Land] tiles",
+			"Pillaging this improvement yields approximately [+18 Gold]"
+		],
 		"shortcutKey": "F"
 	},
 	{
@@ -324,7 +344,8 @@
 	{
 		"name": "Coast Fishing Boats",
 		"terrainsCanBeBuiltOn": [
-			"Coast"
+			"Coast",
+			"Lakes"
 		],
 		"food": 1,
 		"turnsToBuild": 4,

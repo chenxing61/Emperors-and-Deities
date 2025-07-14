@@ -5777,111 +5777,7 @@
 		"quote": "'More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that is why we have the United Nations.' - Kofi Annan"
 	},
 	///'Outcome'
-	{
-		"name": "Confucianism Influence",
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"'Outcome'",
-			"[-1 Gold] from all ['Political Building'] buildings",
-			"[+5]% [Culture] from every ['Political Building']",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Daoism Influence",
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"'Outcome'",
-			"[-5]% [Gold] [in all cities]",
-			"[-5]% [Production] [in all cities]",
-			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"[+1 Faith] per [5] population [in all cities]",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Mohism Influence",
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"'Outcome'",
-			"Consumes [1] [Standing Army Maintainance]",
-			"Consumes [1] [Noble Army Maintainance]",
-			"[-5]% Unhappiness from [Population] [in all cities]",
-			"[10]% Strength for cities",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Legalism Influence",
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"'Outcome'",
-			"[-2 Culture, +1 Happiness] from all ['Political Building'] buildings",
-			"[+10]% [Production] from every ['Political Building']",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Diplomatism Influence",
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"'Outcome'",
-			"Science gained from research agreements [25]%",
-			"When declaring friendship, both parties gain a [15]% boost to great person generation",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Early Rationalism Influence",
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"'Outcome'",
-			"[+5]% Culture cost of adopting new Policies",
-			"[+10]% [Science] [in all cities]",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Naturalist Influence",
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"'Outcome'",
-			"[-17]% Faith cost of generating Great Prophet equivalents",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Agrarianism Influence",
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"'Outcome'",
-			"[-1 Gold] from all ['Political Building'] buildings",
-			"[-1 Gold] from all ['Educational Building'] buildings",
-			"[+1 Food, +1 Gold] from all ['Agricultural Building'] buildings",
-			"[+1 Food] from all ['Educational Building'] buildings",
-			"Moves to new capital when capital changes"
-		]
-	},
-	{
-		"name": "Militant Influence",
-		"uniques": [
-			"Unbuildable",
-			"Unsellable",
-			"'Outcome'",
-			"Provides [1] [Standing Army Maintainance]",
-			"Provides [1] [Noble Army Maintainance]",
-			"[+15]% Production when constructing ['Military Building'] buildings [in all cities]",
-			"Moves to new capital when capital changes"
-		]
-	},
+
 	{
 		"name": "Failed Bourgeoisie Revolution",
 		"isNationalWonder": true,
@@ -6304,6 +6200,62 @@
 		]
 	},
 	{
+		"name": "Gaulish Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [Vercingetorix's Vengence]",
+			"Adopt [Military Nobilities] <starting from the [Classical era]>",
+			"[Gaulish Karros] units gain the [War Axe] promotion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Albions Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [Boudica's Victory]",
+			"[+1 Faith] from every [Artist] <in [Capital] cities>",
+			"[Warband] units gain the [War Paint] promotion",
+			"[Gaulish Karros] units gain the [War Paint] promotion",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Gothic Influence",
+		"happiness":1,
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [Gothic Migration]",
+			"Free [Settler] appears",
+			"[1] free [Warband] units appear",
+			"[+1 Culture] from all [Wonder] buildings",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Saxonian Influence",
+		"percentStatBonus":{"science":10},
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [The Ancestor of Empires]",
+			"Gain an extra spy",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
 		"name": "Earliest Empire",
 		"uniqueTo":"Central and West Asia",
 		"replaces":"Tribal Union",
@@ -6661,6 +6613,111 @@
 			"Comment [The Hundred Schools of thoughts]",
 			"Comment [Enable you to choose 3 Schools of thoughts in the total of 9 schools of thoughts with lasting effects]",
 			"Instantly provides [3] [Avaliable School of Thoughts]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Confucianism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"[-1 Gold] from all ['Political Building'] buildings",
+			"[+5]% [Culture] from every ['Political Building']",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Daoism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"[-5]% [Gold] [in all cities]",
+			"[-5]% [Production] [in all cities]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"[+1 Faith] per [5] population [in all cities]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Mohism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Consumes [1] [Standing Army Maintainance]",
+			"Consumes [1] [Noble Army Maintainance]",
+			"[-5]% Unhappiness from [Population] [in all cities]",
+			"[10]% Strength for cities",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Legalism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"[-2 Culture, +1 Happiness] from all ['Political Building'] buildings",
+			"[+10]% [Production] from every ['Political Building']",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Diplomatism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Science gained from research agreements [25]%",
+			"When declaring friendship, both parties gain a [15]% boost to great person generation",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Early Rationalism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"[+5]% Culture cost of adopting new Policies",
+			"[+10]% [Science] [in all cities]",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Naturalist Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"[-17]% Faith cost of generating Great Prophet equivalents",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Agrarianism Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"[-1 Gold] from all ['Political Building'] buildings",
+			"[-1 Gold] from all ['Educational Building'] buildings",
+			"[+1 Food, +1 Gold] from all ['Agricultural Building'] buildings",
+			"[+1 Food] from all ['Educational Building'] buildings",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
+		"name": "Militant Influence",
+		"uniques": [
+			"Unbuildable",
+			"Unsellable",
+			"'Outcome'",
+			"Provides [1] [Standing Army Maintainance]",
+			"Provides [1] [Noble Army Maintainance]",
+			"[+15]% Production when constructing ['Military Building'] buildings [in all cities]",
 			"Moves to new capital when capital changes"
 		]
 	},

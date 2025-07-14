@@ -172,6 +172,18 @@
                 ]
             },
             {
+                "text": "Spread our [Influence]",
+                "uniques": [
+                    "Only available <before adopting [Anarchism]> <when above [5] [Influence]>",
+                    "Instantly consumes [5] [Influence] <before the [Medieval era]>",
+                    "Instantly consumes [10] [Influence] <starting from the [Medieval era]> <before the [Industrial era]>",
+                    "Instantly consumes [15] [Influence] <starting from the [Industrial era]> <before the [Information era]>",
+                    "Resting point for Influence with City-States is increased by [25] <for [10] turns>",
+                    "City-State Influence recovers at twice the normal rate <for [10] turns>",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
                 "text": "Build Agreements",
                 "uniques": [
                     "Only available <if [Unified] is not constructed>",
@@ -187,6 +199,15 @@
                     "Only available <starting from the [Industrial era]>",
                     "Comment [Commonwealth needs futher cooperation.]",
                     "Triggers a [Building Alliance] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Adoption of European Cultures",
+                "uniques": [
+                    "Only available <for [Europa] Civilizations> <before the [Medieval era]>",
+                    "Only available <when above [5] [Influence]>",
+                    "Triggers a [The Tribes of Europe] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
                 ]
             },
@@ -729,9 +750,21 @@
                 ]
             },
             {
+                "text": "Early City States",
+                "uniques": [
+                    "Only available <if [Early City States] is constructed>"
+                ]
+            },
+            {
                 "text": "Tribal Union",
                 "uniques": [
                     "Only available <if [Tribal Union] is constructed>"
+                ]
+            },
+            {
+                "text": "Earliest Empire",
+                "uniques": [
+                    "Only available <if [Earliest Empire] is constructed>"
                 ]
             },
             {
@@ -741,9 +774,69 @@
                 ]
             },
             {
+                "text": "Egyptian Dynasties",
+                "uniques": [
+                    "Only available <if [Egyptian Dynasties] is constructed>"
+                ]
+            },
+            {
+                "text": "City States",
+                "uniques": [
+                    "Only available <if [City States] is constructed>"
+                ]
+            },
+            {
+                "text": "Greek City States",
+                "uniques": [
+                    "Only available <if [Greek City States] is constructed>"
+                ]
+            },
+            {
                 "text": "Early Empire",
                 "uniques": [
                     "Only available <if [Early Empire] is constructed>"
+                ]
+            },
+            {
+                "text": "Shang Dynasty",
+                "uniques": [
+                    "Only available <if [Shang Dynasty] is constructed>"
+                ]
+            },
+            {
+                "text": "Zhou Dynasty",
+                "uniques": [
+                    "Only available <if [Zhou Dynasty] is constructed>"
+                ]
+            },
+            {
+                "text": "Persian Dynasties",
+                "uniques": [
+                    "Only available <if [Persian Dynasties] is constructed>"
+                ]
+            },
+            {
+                "text": "SPQR",
+                "uniques": [
+                    "Only available <if [SPQR] is constructed>"
+                ]
+            },
+            {
+                "text": "Carthage Obligarchy",
+                "uniques": [
+                    "Only available <if [Carthage Obligarchy] is constructed>"
+                ]
+            },
+            {
+                "text": "Great Qin",
+                "uniques": [
+                    "Only available <if [Great Qin] is constructed>"
+                ]
+            },
+            {
+                "text": "Carthage Obligarchy",
+                "uniques": [
+                    "Only available <if [Carthage Obligarchy] is constructed>"
                 ]
             },
             {
@@ -762,6 +855,30 @@
                 "text": "Successor States",
                 "uniques": [
                     "Only available <if [Successor States] is constructed>"
+                ]
+            },
+            {
+                "text": "Alexandrian Successor States",
+                "uniques": [
+                    "Only available <if [Carthage Obligarchy] is constructed>"
+                ]
+            },
+            {
+                "text": "Warring States",
+                "uniques": [
+                    "Only available <if [Carthage Obligarchy] is constructed>"
+                ]
+            },
+            {
+                "text": "Chu Dynasty",
+                "uniques": [
+                    "Only available <if [Chu Dynasty] is constructed>"
+                ]
+            },
+            {
+                "text": "Han Dynasty",
+                "uniques": [
+                    "Only available <if [Han Dynasty] is constructed>"
                 ]
             },
             {
@@ -1131,12 +1248,39 @@
         "text": "Europa has a variety of cultures scattered around. Certain culture's futher developments can improve our Civilisation's performance greatly.",
         "choices": [
         {
-            "text": "Celts",
+            "text": "Gauls",
             "uniques": [
-                "Only available <if [Confucianism Influence] is not constructed>",
-                "Gain a free [Confucianism Influence] [in capital]",
+                "Only available <if [Gaulish Influence] is not constructed>",
+                "Gain a free [Gaulish Influence] [in capital]",
                 "Instantly consumes [5] [Influence]",
-                "Gain [-100] [Gold] <(modified by game speed)>"
+                "Gain [-200] [Gold] <(modified by game speed)>"
+            ]
+        },
+        {
+            "text": "Albions",
+            "uniques": [
+                "Only available <if [Albions Influence] is not constructed>",
+                "Gain a free [Albions Influence] [in capital]",
+                "Instantly consumes [5] [Influence]",
+                "Gain [-200] [Gold] <(modified by game speed)>"
+            ]
+        },
+        {
+            "text": "Goths",
+            "uniques": [
+                "Only available <if [Gothic Influence] is not constructed>",
+                "Gain a free [Gothic Influence] [in capital]",
+                "Instantly consumes [5] [Influence]",
+                "Gain [-200] [Gold] <(modified by game speed)>"
+            ]
+        },
+        {
+            "text": "Saxons",
+            "uniques": [
+                "Only available <if [Saxonian Influence] is not constructed>",
+                "Gain a free [Saxonian Influence] [in capital]",
+                "Instantly consumes [5] [Influence]",
+                "Gain [-200] [Gold] <(modified by game speed)>"
             ]
         },
         {
