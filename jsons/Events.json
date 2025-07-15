@@ -10,8 +10,8 @@
                     "Only available <if [Harmony] is constructed> <when above [0] [Influence]>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [3] [Influence]",
-                    "Gain [-75] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
-                    "Gain [-150] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-225] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
                     "[-10]% [Production] [in all cities] <for [3] turns>"
                 ]
@@ -22,8 +22,8 @@
                     "Only available <if [Peace] is constructed> <when above [0] [Influence]>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [5] [Influence]",
-                    "Gain [-75] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
-                    "Gain [-150] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-225] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
                     "[-10]% [Production] [in all cities] <for [5] turns>"
                 ]
@@ -92,7 +92,7 @@
                 "uniques": [
                     "Gain a free [Slum] [in capital]",
                     "Gain a free [Slum] [in all cities] <when number of [[in all cities] Cities] is more than [6]>",
-                    "[-10]% Strength <for [5] turns>"
+                    "[-10]% Growth <for [5] turns>"
                 ]
             }
         ]
@@ -149,6 +149,30 @@
                 ]
             }
         ]
+        
+    },
+        {
+        "name": "Spreading Chaos",
+        "text": "Tho the disorder can be better controlled in a small government, but it still needs a",
+        "choices": [
+            {
+                "text": "We need to take precaution!",
+                "uniques": [
+                    "Only available <when above [0] [Influence]>",
+                    "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Instantly consumes [5] [Influence]"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Gain a free [Slum] [in all cities] <if [Slum] is constructed>",
+                    "Gain a free [Unjust Ruling] [in all cities] <if [Unjust Ruling] is constructed>",
+                    "Gain a free [Peasant Rebellion] [in all cities] <if [Peasant Rebellion] is constructed>"
+                ]
+            }
+        ]
+        
     },
     ///Civilization Events
     {
