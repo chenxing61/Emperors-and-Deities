@@ -13,7 +13,6 @@
                     "Gain [-75] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
                     "Gain [-150] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-225] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
-                    "[-10]% [Gold] [in all cities] <for [3] turns>",
                     "[-10]% [Production] [in all cities] <for [3] turns>"
                 ]
             },
@@ -26,7 +25,6 @@
                     "Gain [-75] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
                     "Gain [-150] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-225] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
-                    "[-10]% [Gold] [in all cities] <for [5] turns>",
                     "[-10]% [Production] [in all cities] <for [5] turns>"
                 ]
             },
@@ -84,15 +82,17 @@
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
                     "Instantly consumes [3] [Influence]",
-                    "Gain [-50] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-200] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
+                    "Gain [-300] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
-                    "Gain a free [Slum] [in capital]"
+                    "Gain a free [Slum] [in capital]",
+                    "Gain a free [Slum] [in all cities] <when number of [[in all cities] Cities] is more than [6]>",
+                    "[-10]% Strength <for [5] turns>"
                 ]
             }
         ]
@@ -105,7 +105,7 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Gain [-50] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-200] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
                 ]
@@ -113,7 +113,9 @@
             {
                 "text": "The situation gets worse",
                 "uniques": [
-                    "Gain a free [Unjust Ruling] [in capital]"
+                    "Gain a free [Unjust Ruling] [in capital]",
+                    "Gain a free [Unjust Ruling] [in all cities] <when number of [[in all cities] Cities] is more than [6]>",
+                    "[-10]% Strength <for [5] turns>"
                 ]
             }
         ]
@@ -126,14 +128,23 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Gain [-50] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-200] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
+                    "Gain [-300] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
+                    "Comment [The Population shifts between cities...]",
+                    "[+1] population in a random city <when number of [[in all cities] Cities] is less than [4]> <hidden from users>",
+                    "[-1] population in a random city <when number of [[in all cities] Cities] is less than [4]> <hidden from users>",
+                    "[+3] population in a random city <when number of [[in all cities] Cities] is more than [4]> <hidden from users>",
+                    "[-3] population in a random city <when number of [[in all cities] Cities] is more than [4]> <hidden from users>",
+                    "[+5] population in a random city <when number of [[in all cities] Cities] is more than [8]> <hidden from users>",
+                    "[-5] population in a random city <when number of [[in all cities] Cities] is more than [8]> <hidden from users>",
+                    "[+5] population in a random city <when number of [[in all cities] Cities] is more than [8]> <hidden from users>",
+                    "[-5] population in a random city <when number of [[in all cities] Cities] is more than [8]> <hidden from users>",
                     "Gain a free [Peasant Rebellion] [in capital]"
                 ]
             }
@@ -1015,7 +1026,9 @@
                 "text": "Remove the [Army Maintainance Cost]",
                 "uniques": [
                     "Only available <if [Army Maintainance Cost] is constructed>",
-                    "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Gain [-10] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
                     "Remove [Army Maintainance Cost] [in all cities]"
                 ]
             },
