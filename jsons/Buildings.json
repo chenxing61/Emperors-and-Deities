@@ -5788,7 +5788,6 @@
 			"Unbuildable",
 			"Unsellable",
 			"'Outcome'",
-			"Consumes [2] [Revolution Oppotunity]",
 			"Provides [2] [Noble Army Maintainance]",
 			"Provides [2] [Horse]",
 			"[+33]% Strength <for ['Noble Army'] units>",
@@ -5803,7 +5802,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [1] [Standing Army Maintainance]",
 			"[-25]% [Culture] [in all cities] <for [15] turns>",
@@ -5820,7 +5818,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [2] [Standing Army Maintainance]",
 			"[Revolutionaries] units gain the [Hardened] promotion",
@@ -5841,7 +5838,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [3] [Standing Army Maintainance]",
 			"[Revolutionaries] units gain the [Hardened] promotion",
@@ -5862,7 +5858,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [3] [Mercenary Contract]",
 			"[+15]% Strength <for ['Mercenary Army'] units>",
@@ -5878,7 +5873,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [1] [Standing Army Maintainance]",
 			"[+8]% [Happiness] [in all cities]",
@@ -5893,7 +5887,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [3] [Standing Army Maintainance]",
 			"[Red Army Troop] units gain the [Hardened] promotion",
@@ -5915,7 +5908,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [5] [Standing Army Maintainance]",
 			"[Red Army Troop] units gain the [Hardened] promotion",
@@ -5938,7 +5930,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [3] [Mercenary Contract]",
 			"[+15]% Strength <for ['Mercenary Army'] units>",
@@ -5953,7 +5944,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
@@ -5966,7 +5956,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"[+8]% [Happiness] [in all cities]",
 			"Triggers a global alert upon completion",
@@ -7310,18 +7299,17 @@
 	{
 		"name": "Overproduction",
 		"cost":50,
-		"percentStatBonus":{
-			"food":5,
-			"happiness":10,
-			"gold":-20
-		},
 		"uniques": [
 			"Unavailable",
 			"Unsellable",
 			"Destroyed when the city is captured",
-			"[-50]% Production when constructing ['Light Industry'] buildings [in this city]",
-			"[-50]% Production when constructing ['Heavy Industry'] buildings [in this city]",
-			"[-25]% Production when constructing ['Infrastructure'] buildings [in this city]",
+			"[+5]% [Food] [in all cities]",
+			"[+5]% [Happiness] [in all cities]",
+			"[+20]% [Gold] [in all cities]",
+			"[-20]% [Gold] [in all cities]",
+			"[-50]% Production when constructing ['Light Industry'] buildings [in all cities]",
+			"[-50]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
+			"[-25]% Production when constructing ['Infrastructure'] buildings [in all cities]",
 			"[Gold] cost of purchasing items in cities [-15]%"
 		],
 		"hurryCostModifier": -50
@@ -7329,18 +7317,16 @@
 	{
 		"name": "Underproduction",
 		"cost":50,
-		"percentStatBonus":{
-			"food":-10,
-			"happiness":-5,
-			"gold":20
-			},
 		"uniques": [
 			"Unavailable",
 			"Unsellable",
 			"Destroyed when the city is captured",
-			"[+50]% Production when constructing ['Light Industry'] buildings [in this city]",
-			"[+25]% Production when constructing ['Heavy Industry'] buildings [in this city]",
-			"[+25]% Production when constructing ['Infrastructure'] buildings [in this city]",
+			"[-10]% [Food] [in all cities]",
+			"[-10]% [Happiness] [in all cities]",
+			"[+20]% [Gold] [in all cities]",
+			"[+50]% Production when constructing ['Light Industry'] buildings [in all cities]",
+			"[+25]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
+			"[+25]% Production when constructing ['Infrastructure'] buildings [in all cities]",
 			"[Gold] cost of purchasing items in cities [+10]%"
 		],
 		"hurryCostModifier": -50
