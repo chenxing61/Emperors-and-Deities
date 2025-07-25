@@ -3289,12 +3289,12 @@
 			"[+2 Production] from [Coal] tiles [in this city]",
 			"[+1 Production] from [Oil] tiles [in this city]",
 			"[+1 Production] from [Natural Gas] tiles [in this city]",
-			"Provides [6] [Power]",
-			"Provides [4] [Power] <when above [1] [Fuel]> <in cities with a [Oil Refinery]>",
-			"Provides [4] [Power] <when above [1] [Fuel]> <in cities with a [Gas Storage and Transfer System]>",
+			"Provides [6] [Power] <in this city>",
+			"Provides [4] [Power] <in this city> <when above [1] [Fuel]> <in cities with a [Oil Refinery]>",
+			"Provides [4] [Power] <in this city> <when above [1] [Fuel]> <in cities with a [Gas Storage and Transfer System]>",
 			"Consumes [1] [Coal]",
 			"Consumes [1] [Fuel] <when above [1] [Fuel]> <in cities with a [Oil Refinery]>",
-			"Provides [4] [Power] <when above [1] [Fuel]> <in cities with a [Gas Storage and Transfer System]>",
+			"Provides [4] [Power] <in this city> <when above [1] [Fuel]> <in cities with a [Gas Storage and Transfer System]>",
 			"Only available <when above [0] [Coal]>"
 		],
 		"requiredTech": "Steam Power",
@@ -3947,7 +3947,7 @@
 		},
 		"uniques": [
 			"'Power Building'",
-			"Provides [5] [Power]",
+			"Provides [5] [Power] <in this city>",
 			"Must be on [River]"
 		],
 		"requiredTech": "Electricity",
@@ -4433,7 +4433,7 @@
 			"'Power Building'",
 			"Consumes [1] [Enriched Uranium] <before discovering [Nuclear Fusion]>",
 			"Consumes [0] [Enriched Uranium] <after discovering [Nuclear Fusion]>",
-			"Provides [8] [Power]"
+			"Provides [8] [Power] <in this city>"
 		],
 		"requiredTech": "Nuclear Fission",
 		"hurryCostModifier": 25
