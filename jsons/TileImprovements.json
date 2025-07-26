@@ -47,11 +47,12 @@
 		"production":1,
 		"gold": 2,
 		"techRequired": "Industrialization",
-		"terrainsCanBeBuiltOn":["Forest","Jungle"],
+		"terrainsCanBeBuiltOn":["Forest",
+								"Jungle"],
 		"uniques": [
+			"Can only be built on [Grassland] tiles",
 			"'Agricultural Improvement'",
 			"Provides [2] [Rubber]",
-			"Can only be built to improve a resource",
 			"Pillaging this improvement yields approximately [+18 Gold]"
 		],
 		"shortcutKey": "P"
@@ -180,6 +181,7 @@
 		"turnsToBuild": 10,
 		"techRequired": "Ecology",
 		"uniques": [
+			"Does not need removal of [Forest]",
 			"'Lumber Improvement'",
 			"[+1 Production] from [Fresh water] tiles",
 			"Pillaging this improvement yields approximately [+20 Gold]"
@@ -483,6 +485,7 @@
 		"production": 1,
 		"turnsToBuild": 8,
 		"uniques": [
+			"Does not need removal of [Forest]",
 			"'Policy Improvement'",
 			"'Agricultural Improvement'",
 			"Only available <after adopting [Colonialism]>",
