@@ -2955,6 +2955,7 @@
 		],
 		"requiredTech": "Replaceable Parts",
 		"obsoleteTech": "Mobile Tactics",
+		"upgradesTo":"Mechanised Protection Squadron",
 		"requiredResource":"Protection Squadron Volunteer",
 		"attackSound": "shot"
 	},
@@ -3245,6 +3246,33 @@
 		"requiredTech": "Mobile Tactics",
 		"obsoleteTech": "Haptics",
 		"requiredResource": "Noble Army Maintainance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mechanised Protection Squadron",
+		"unitType": "Close Combat",
+		"cost": 240,
+		"movement": 3,
+		"strength": 78,
+		"uniques": [
+			"Only available <after adopting [Militarised Nation]>",
+			"Costs [15] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"Costs [24] [Weapon Parts]",
+			"'Standing Army'",
+			"'Mechanised'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Protection Squadron Ability"
+		],
+		"requiredBuilding": "Military Factory Complex",
+		"requiredTech": "Mobile Tactics",
+		"obsoleteTech": "Haptics",
+		"requiredResource": "Protection Squadron Volunteer",
 		"attackSound": "shot"
 	},
 	{
