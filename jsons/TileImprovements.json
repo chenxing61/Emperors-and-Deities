@@ -47,11 +47,14 @@
 		"production":1,
 		"gold": 2,
 		"techRequired": "Industrialization",
-		"terrainsCanBeBuiltOn":["Forest","Jungle"],
+		"terrainsCanBeBuiltOn":["Forest",
+								"Jungle"],
 		"uniques": [
+			"Can only be built on [Grassland] tiles",
+			"Does not need removal of [Forest]",
+			"Does not need removal of [Jungle]",
 			"'Agricultural Improvement'",
 			"Provides [2] [Rubber]",
-			"Can only be built to improve a resource",
 			"Pillaging this improvement yields approximately [+18 Gold]"
 		],
 		"shortcutKey": "P"
@@ -139,8 +142,9 @@
 		"turnsToBuild": 7,
 		"techRequired": "Irrigation",
 		"uniques": [
-			"Unavailable <with [3] to [5] neighboring [Coast] tiles>",
-			"Unavailable <with [3] to [5] neighboring [Lakes] tiles>",
+			"Unavailable <with [3] to [5] neighboring [{non-[Polder]} {Coast}] tiles>",
+			"Unavailable <with [3] to [5] neighboring [Ocean] tiles>",
+			"Unavailable <with [3] to [5] neighboring [{non-[Polder]} {Lakes}] tiles>",
 			"'Agricultural Improvement'",
 			"[+1 Food] <after discovering [Crop Rotation]>",
 			"Cannot be built on [Land] tiles",
@@ -179,6 +183,7 @@
 		"turnsToBuild": 10,
 		"techRequired": "Ecology",
 		"uniques": [
+			"Does not need removal of [Forest]",
 			"'Lumber Improvement'",
 			"[+1 Production] from [Fresh water] tiles",
 			"Pillaging this improvement yields approximately [+20 Gold]"
@@ -337,6 +342,9 @@
 		"techRequired": "Electricity",
 		"uniques": [
 			"'Infrastructure Improvement'",
+			"Provides [1] [Power]",
+			"Provides [1] [Power] <in [River] tiles> <in tiles not adjacent to [Water] tiles>",
+			"Provides [1] [Power] <in tiles adjacent to [Water] tiles>",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
 		"shortcutKey": "P"
@@ -482,6 +490,7 @@
 		"production": 1,
 		"turnsToBuild": 8,
 		"uniques": [
+			"Does not need removal of [Forest]",
 			"'Policy Improvement'",
 			"'Agricultural Improvement'",
 			"Only available <after adopting [Colonialism]>",
@@ -645,17 +654,9 @@
 		],
 		"shortcutKey": "R",
 		"civilopediaText": [
-			{
-				"text": "Reduces movement cost to ½ if the other tile also has a Road or Railroad"
-			},
-			{
-				"text": "Reduces movement cost to �?? with Machinery",
-				"link": "Technology/Machinery"
-			},
-			{
-				"text": "Requires Engineering to bridge rivers",
-				"link": "Technology/Engineering"
-			}
+			{"text":"Reduces movement cost to ½ if the other tile also has a Road or Railroad"},
+            {"text":"Reduces movement cost to ⅓ with Machinery", "link":"Technology/Machinery"},
+            {"text":"Requires Engineering to bridge rivers", "link":"Technology/Engineering"}
 		]
 	},
 	{
@@ -672,12 +673,8 @@
 		],
 		"shortcutKey": "R",
 		"civilopediaText": [
-			{
-				"text": "Reduces movement cost to �?? if the other tile also has a Railroad"
-			},
-			{
-				"text": "Provides a +25% [Production] bonus to cities connected to the capital by Railroads"
-			}
+            {"text":"Reduces movement cost to ⅒ if the other tile also has a Railroad"},
+            {"text":"Provides a +25% [Production] bonus to cities connected to the capital by Railroads"}
 		]
 	},
 	{

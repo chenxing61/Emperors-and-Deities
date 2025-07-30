@@ -97,6 +97,7 @@
 			"Unbuildable",
 			"Remove [Unjust Ruling] [in this city]",
 			"Instantly provides [3] [Influence]",
+			"Gain [50] [Culture]",
 			"Remove [Clear Corruption] [in this city] <hidden from users>",
 			"Destroyed when the city is captured"
 		],
@@ -689,7 +690,7 @@
 		"uniques": [
 			"'Agricultural Building'",
 			"[+1 Food] from [Fresh water] tiles [in this city]",
-			"Must be on [River]",
+			"[+1 Food] from [River] tiles [in this city]",
 			"Only available <in cities without a [Irrigation System]>",
 			"Only available <in cities without a [Agricultural Water Storage]>"
 		],
@@ -1064,7 +1065,7 @@
 		"production":1,
 		"uniques": [
 			"Only available <if [SPQR] is constructed>",
-			"[-50]% production cost <with a garrison>"
+			"Gain a free [Road Network] [in this city]"
 		],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 5
@@ -1127,14 +1128,13 @@
 	{
 		"name": "The Great Library",
 		"isWonder": true,
-		"science": 2,
+		"science": 3,
 		"culture": 1,
 		"happiness": 1,
-		"greatPersonPoints": {
-			"Great Scientist": 2
-		},
+		"specialistSlots":{"Scientist":1},
 		"uniques": [
 			"Gain a free [Library] [in this city]",
+			"[+50]% Production when constructing [Library] buildings [in all cities]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"requiredTech": "Writing",
@@ -1143,7 +1143,7 @@
 	{
 		"name": "The First University",
 		"isWonder": true,
-		"science": 1,
+		"science": 2,
 		"culture": 2,
 		"happiness": 1,
 		"greatPersonPoints": {
@@ -1158,15 +1158,16 @@
 	},
 	{
 		"name": "Hanging Gardens",
-		"greatPersonPoints": {
-			"Great Artist": 1
-		},
+		"isWonder": true,
 		"food": 2,
 		"culture": 3,
 		"happiness": 1,
-		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Artist": 1
+		},
 		"uniques": [
 			"Gain a free [Garden] [in this city]",
+			"[+33]% Production when constructing [Garden] buildings [in all cities]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"requiredTech": "Plows",
@@ -1332,7 +1333,7 @@
 		"name": "Bathhouse",
 		"maintenance": 3,
 		"culture": 1,
-		"happiness":1,
+		"happiness":2,
 		"uniques": [
 			"'Infrastructure'",
 			"[10]% Food is carried over after population increases [in this city]"
@@ -1910,6 +1911,7 @@
 		"uniques": [
 			"'Infrastructure'",
 			"[+1 Food] from [Fresh water] tiles [in this city]",
+			"[+1 Food] from [River] tiles [in this city]",
 			"Only available <in cities without a [Early Irrigation System]>",
 			"Only available <in cities without a [Agricultural Water Storage]>"
 		],
@@ -3266,6 +3268,7 @@
 		"name": "Invention of Pasteurization",
 		"cost": 500,
 		"uniques": [
+			"'Invention'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Pasteurization] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Pasteurization] is not constructed by anybody>",
@@ -3286,12 +3289,12 @@
 			"[+2 Production] from [Coal] tiles [in this city]",
 			"[+1 Production] from [Oil] tiles [in this city]",
 			"[+1 Production] from [Natural Gas] tiles [in this city]",
-			"Provides [6] [Power]",
-			"Provides [4] [Power] <when above [1] [Fuel]> <in cities with a [Oil Refinery]>",
-			"Provides [4] [Power] <when above [1] [Fuel]> <in cities with a [Gas Storage and Transfer System]>",
+			"Provides [6] [Power] <in this city>",
+			"Provides [4] [Power] <in this city> <when above [1] [Fuel]> <in cities with a [Oil Refinery]>",
+			"Provides [4] [Power] <in this city> <when above [1] [Fuel]> <in cities with a [Gas Storage and Transfer System]>",
 			"Consumes [1] [Coal]",
 			"Consumes [1] [Fuel] <when above [1] [Fuel]> <in cities with a [Oil Refinery]>",
-			"Provides [4] [Power] <when above [1] [Fuel]> <in cities with a [Gas Storage and Transfer System]>",
+			"Provides [4] [Power] <in this city> <when above [1] [Fuel]> <in cities with a [Gas Storage and Transfer System]>",
 			"Only available <when above [0] [Coal]>"
 		],
 		"requiredTech": "Steam Power",
@@ -3343,6 +3346,7 @@
 		"name": "Invention of Canned Food",
 		"cost": 500,
 		"uniques": [
+			"'Invention'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Canned Food] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Canned Food] is not constructed by anybody>",
@@ -3390,6 +3394,7 @@
 		"name": "Innovation of Modern Hardwares",
 		"cost": 500,
 		"uniques": [
+			"'Innovation'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Modern Hardwares] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Modern Hardwares] is not constructed by anybody>",
@@ -3427,6 +3432,7 @@
 		"name": "Invention of Machine Tools",
 		"cost": 500,
 		"uniques": [
+			"'Invention'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Machine Tools] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Machine Tools] is not constructed by anybody>",
@@ -3552,6 +3558,7 @@
 		"name": "Invention of Stamping",
 		"cost": 500,
 		"uniques": [
+			"'Invention'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Stamping] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Stamping] is not constructed by anybody>",
@@ -3635,6 +3642,7 @@
 		"name": "Invention of Soda",
 		"cost": 500,
 		"uniques": [
+			"'Invention'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Soda] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Soda] is not constructed by anybody>",
@@ -3652,6 +3660,7 @@
 		"name": "Invention of Bicycle",
 		"cost": 500,
 		"uniques": [
+			"'Invention'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Bicycle] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Bicycle] is not constructed by anybody>",
@@ -3695,6 +3704,7 @@
 		"name": "Innovation of Chemical Processes",
 		"cost": 500,
 		"uniques": [
+			"'Innovation'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Chemical Processes] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Chemical Processes] is not constructed by anybody>",
@@ -3786,6 +3796,7 @@
 		"name": "Invention of Professional Vehicles",
 		"cost": 500,
 		"uniques": [
+			"'Invention'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Professional Vehicles] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Professional Vehicles] is not constructed by anybody>",
@@ -3895,6 +3906,7 @@
 		"name": "Innovation of Electrical Appliances",
 		"cost": 500,
 		"uniques": [
+			"'Innovation'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Electrical Appliances] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Electrical Appliances] is not constructed by anybody>",
@@ -3911,6 +3923,7 @@
 		"name": "Invention of Professional Equipments",
 		"cost": 500,
 		"uniques": [
+			"'Invention'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Professional Equipments] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Professional Equipments] is not constructed by anybody>",
@@ -3934,7 +3947,7 @@
 		},
 		"uniques": [
 			"'Power Building'",
-			"Provides [5] [Power]",
+			"Provides [5] [Power] <in this city>",
 			"Must be on [River]"
 		],
 		"requiredTech": "Electricity",
@@ -4167,6 +4180,7 @@
 		"name": "Innovation of Processing Precision",
 		"cost": 500,
 		"uniques": [
+			"'Innovation'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Processing Precision] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Processing Precision] is not constructed by anybody>",
@@ -4262,6 +4276,7 @@
 		"name": "Innovation of Instant Foods",
 		"cost": 500,
 		"uniques": [
+			"'Innovation'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Instant Foods] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Instant Foods] is not constructed by anybody>",
@@ -4276,17 +4291,20 @@
 		"hurryCostModifier": 0
 	},
 	{
-		"name": "Nutripaste Factory",
-		"maintenance": 8,
-		"food": 5,
-		"happiness": -1,
+		"name": "Invention of Organ Transplant Method",
+		"cost": 500,
 		"uniques": [
-			"'Light Industry'",
+			"'Invention'",
+			"Limited to [1] per Civilization",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Organ Transplant Method] is not constructed by anybody>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Organ Transplant Method] is not constructed by anybody>",
+			"[-50]% production cost <if [Invention of Organ Transplant Method] is constructed by anybody>",
+			"[+5]% [Happiness] from every [Hospital]",
+			"[+5]% [Science] from every [Hospital]",
 			"Unsellable",
-			"Free [Great Merchant] appears",
-			"Only available <in cities without a [Greenhouse]>",
-			"Comment [The taste is awful...]"
+			"Moves to new capital when capital changes"
 		],
+		"requiredBuilding":"Bio Lab",
 		"requiredTech": "Pharmaceuticals",
 		"hurryCostModifier": 0
 	},
@@ -4378,6 +4396,7 @@
 		"name": "Innovation of Civilian Navigation",
 		"cost": 500,
 		"uniques": [
+			"'Innovation'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Civilian Navigation] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Civilian Navigation] is not constructed by anybody>",
@@ -4414,7 +4433,7 @@
 			"'Power Building'",
 			"Consumes [1] [Enriched Uranium] <before discovering [Nuclear Fusion]>",
 			"Consumes [0] [Enriched Uranium] <after discovering [Nuclear Fusion]>",
-			"Provides [8] [Power]"
+			"Provides [8] [Power] <in this city>"
 		],
 		"requiredTech": "Nuclear Fission",
 		"hurryCostModifier": 25
@@ -4435,6 +4454,7 @@
 		"name": "Innovation of Frozen Foods",
 		"cost": 500,
 		"uniques": [
+			"'Innovation'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody>",
@@ -4451,6 +4471,7 @@
 	{
 		"name": "Invention of Helicopter",
 		"uniques": [
+			"'Invention'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Helicopter] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Helicopter] is not constructed by anybody>",
@@ -4472,6 +4493,7 @@
 		"uniques": [
 			"'Infrastructure'",
 			"[+1 Culture] from [Fresh water] tiles [in this city]",
+			"[+1 Culture] from [River] tiles [in this city]",
 			"[20]% Food is carried over after population increases [in this city]"
 		],
 		"requiredBuilding": "Sewer",
@@ -4520,6 +4542,7 @@
 		"name": "Invention of Smart Appliances",
 		"cost": 500,
 		"uniques": [
+			"'Invention'",
 			"Limited to [1] per Civilization",
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Smart Appliances] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Smart Appliances] is not constructed by anybody>",
@@ -4611,8 +4634,7 @@
 		},
 		"uniques": [
 			"'Power Building'",
-			"[+1 Production] from [Desert] tiles [in this city]",
-			"[+2 Production] [in all cities] <in cities with a [Power Grid]>"
+			"Provides [6] [Power] <in this city>"
 		],
 		"requiredTech": "Ecology",
 		"hurryCostModifier": 25
@@ -4767,6 +4789,21 @@
 		"requiredBuilding": "Drone Factory",
 		"requiredTech": "Remote Control",
 		"hurryCostModifier": 25
+	},
+		{
+		"name": "Nutripaste Factory",
+		"maintenance": 8,
+		"food": 5,
+		"happiness": -1,
+		"uniques": [
+			"'Light Industry'",
+			"Unsellable",
+			"Free [Great Merchant] appears",
+			"Only available <in cities without a [Greenhouse]>",
+			"Comment [The taste is awful...]"
+		],
+		"requiredTech": "Renewable Energy",
+		"hurryCostModifier": 0
 	},
 	{
 		"name": "Polar Frontier",
@@ -4938,17 +4975,17 @@
 			"[+25]% Production when constructing [All] buildings [in this city]",
 			"[+25]% Production when constructing [{Civilian} {Civil Ship}] units [in this city]",
 			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
-			"Gain a free [Neolithic Era Start] [in this city] <for [1] turns> <if starting in the [Neolithic era]> <hidden from users>",
-			"Gain a free [Ancient Era Start] [in this city] <for [1] turns> <if starting in the [Ancient era]> <hidden from users>",
-			"Gain a free [Classical Era Start] [in this city] <for [1] turns> <if starting in the [Classical era]> <hidden from users>",
-			"Gain a free [Medieval Era Start] [in this city] <for [1] turns> <if starting in the [Medieval era]> <hidden from users>",
-			"Gain a free [Renaissance Era Start] [in this city] <for [1] turns> <if starting in the [Renaissance era]> <hidden from users>",
-			"Gain a free [Imperial Era Start] [in this city] <for [1] turns> <if starting in the [Imperial era]> <hidden from users>",
-			"Gain a free [Industrial Era Start] [in this city] <for [1] turns> <if starting in the [Industrial era]> <hidden from users>",
-			"Gain a free [Modern Era Start] [in this city] <for [1] turns> <if starting in the [Modern era]> <hidden from users>",
-			"Gain a free [Atomic Era Start] [in this city] <for [1] turns> <if starting in the [Atomic era]> <hidden from users>",
-			"Gain a free [Information Era Start] [in this city] <for [1] turns> <if starting in the [Information era]> <hidden from users>",
-			"Gain a free [Future Era Start] [in this city] <for [1] turns> <if starting in the [Future era]> <hidden from users>",
+			"Gain a free [Neolithic Era Start] [in capital] <for [1] turns> <if starting in the [Neolithic era]> <hidden from users>",
+			"Gain a free [Ancient Era Start] [in capital] <for [1] turns> <if starting in the [Ancient era]> <hidden from users>",
+			"Gain a free [Classical Era Start] [in capital] <for [1] turns> <if starting in the [Classical era]> <hidden from users>",
+			"Gain a free [Medieval Era Start] [in capital] <for [1] turns> <if starting in the [Medieval era]> <hidden from users>",
+			"Gain a free [Renaissance Era Start] [in capital] <for [1] turns> <if starting in the [Renaissance era]> <hidden from users>",
+			"Gain a free [Imperial Era Start] [in capital] <for [1] turns> <if starting in the [Imperial era]> <hidden from users>",
+			"Gain a free [Industrial Era Start] [in capital] <for [1] turns> <if starting in the [Industrial era]> <hidden from users>",
+			"Gain a free [Modern Era Start] [in capital] <for [1] turns> <if starting in the [Modern era]> <hidden from users>",
+			"Gain a free [Atomic Era Start] [in capital] <for [1] turns> <if starting in the [Atomic era]> <hidden from users>",
+			"Gain a free [Information Era Start] [in capital] <for [1] turns> <if starting in the [Information era]> <hidden from users>",
+			"Gain a free [Future Era Start] [in capital] <for [1] turns> <if starting in the [Future era]> <hidden from users>",
 
 			"Consumes [1] [Influence] <when below [10] [Happiness]> <starting from the [Imperial era]>",
         	"Consumes [1] [Influence] <when below [4] [Happiness]>",
@@ -4993,7 +5030,7 @@
 			"'Worship Place'",
 			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
 			"Creates a [Manual Farm] improvement on a specific tile",
-			"Only available <after adopting [Polytheism]>",
+			"Only available <after adopting [Polytheism]> <in [non-[Puppeted]] cities>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
 		],
@@ -5547,9 +5584,11 @@
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"[Gold] cost of purchasing items in cities [-10]%",
-			"Provides [3] [Alloy]",
-			"Provides [3] [Coal]",
+			"[Gold] cost of purchasing items in cities [-5]%",
+			"[+50]% [Consumption Supply] resource production",
+			"[25]% [Horse] resource production",
+			"[25]% [Alloy] resource production",
+			"[33]% [Coal] resource production",
 			"Moves to new capital when capital changes"
 		],
 		"requiredTech": "Economics"
@@ -5563,6 +5602,7 @@
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
 			"[+15]% [Gold] [in all cities]",
+			"[+25]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes"
 		],
 		"requiredTech": "Economics"
@@ -5578,6 +5618,7 @@
 			"[+1]% [Production] from every ['Economic Building']",
 			"[-33]% [Gold] [in all cities]",
 			"[Gold] cost of purchasing items in cities [-25]%",
+			"[+10]% [Consumption Supply] resource production",
 			"Moves to new capital when capital changes"
 		],
 		"requiredTech": "Telegram"
@@ -5590,10 +5631,11 @@
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"[+1]% [Gold] from every ['Political Building']",
+			"[+1]% [Gold] from every ['Cultural Building']",
 			"[-15]% maintenance cost for [all] buildings [in all cities]",
 			"[+33]% [Gold] [in all cities]",
 			"[Gold] cost of purchasing items in cities [+33]%",
+			"[+25]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes"
 		],
 		"requiredTech": "Telegram"
@@ -5609,6 +5651,7 @@
 			"[+2 Gold] from all ['Light Industry'] buildings",
 			"[-1 Gold, +1 Happiness, +1 Culture] from all ['Economic Building'] buildings",
 			"[+3 Production] from all ['Military Building'] buildings",
+			"[+10]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes"
 		],
 		"requiredTech": "Telegram"
@@ -5624,6 +5667,7 @@
 			"Comment [[Call to Arms] no longer provides lasting downsides other than [Happiness] drain.]",
 			"[+100]% Production when constructing ['Military Building'] buildings [in all cities]",
 			"[+100]% Production when constructing ['Static Defense'] buildings [in all cities]",
+			"[-10]% [Consumption Supply] resource production",
 			"Moves to new capital when capital changes"
 		],
 		"requiredTech": "Telegram"
@@ -5644,6 +5688,7 @@
 			"[+200]% Production when constructing ['Modernization'] buildings [in all cities connected to capital]",
 			"[+1]% [Science] from every ['Heavy Industry']",
 			"[+1]% [Culture] from every ['Infrastructure']",
+			"[-10]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes"
 		],
 		"requiredTech": "Telegram"
@@ -5660,6 +5705,7 @@
 			"[+1 Culture, +1 Production] from ['Water Improvement'] tiles [in all cities]",
 			"[+1 Culture, +1 Science] from ['Lumber Improvement'] tiles [in all cities]",
 			"[+1 Culture, +1 Food] from ['Extraction Improvement'] tiles [in all cities]",
+			"[+10]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes"
 		],
 		"requiredTech": "Telegram"
@@ -5785,7 +5831,6 @@
 			"Unbuildable",
 			"Unsellable",
 			"'Outcome'",
-			"Consumes [2] [Revolution Oppotunity]",
 			"Provides [2] [Noble Army Maintainance]",
 			"Provides [2] [Horse]",
 			"[+33]% Strength <for ['Noble Army'] units>",
@@ -5800,7 +5845,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [1] [Standing Army Maintainance]",
 			"[-25]% [Culture] [in all cities] <for [15] turns>",
@@ -5817,7 +5861,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [2] [Standing Army Maintainance]",
 			"[Revolutionaries] units gain the [Hardened] promotion",
@@ -5838,7 +5881,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [3] [Standing Army Maintainance]",
 			"[Revolutionaries] units gain the [Hardened] promotion",
@@ -5859,7 +5901,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [3] [Mercenary Contract]",
 			"[+15]% Strength <for ['Mercenary Army'] units>",
@@ -5875,7 +5916,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [1] [Standing Army Maintainance]",
 			"[+8]% [Happiness] [in all cities]",
@@ -5890,7 +5930,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [3] [Standing Army Maintainance]",
 			"[Red Army Troop] units gain the [Hardened] promotion",
@@ -5912,7 +5951,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [5] [Standing Army Maintainance]",
 			"[Red Army Troop] units gain the [Hardened] promotion",
@@ -5935,7 +5973,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [3] [Mercenary Contract]",
 			"[+15]% Strength <for ['Mercenary Army'] units>",
@@ -5950,7 +5987,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
@@ -5963,7 +5999,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"[+8]% [Happiness] [in all cities]",
 			"Triggers a global alert upon completion",
@@ -6785,7 +6820,7 @@
 		"gold":5,
 		"uniques": [
 			"Unbuildable",
-			"Remove [Du Hu Protectorate] [in all non-occupied cities]",
+			"Remove [Du Hu Protectorate] [in all non-occupied cities] <if [Han Dynasty] is not constructed>",
 			"Only available <if [Han Dynasty] is constructed in all [Capital] cities>",
 			"Instantly provides [8] [Influence]",
 			"[+5]% [Gold] from Trade Routes",
@@ -6976,7 +7011,7 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
 			"[Gold] cost of purchasing [Civilian] units [-17]%",
-			"May buy [Great Engineer] units with [Gold] [in all cities]",
+			"May buy [Great Engineer] units for [1000] [Gold] [in all cities] at an increasing price ([500])",
 			"Comment [Unique Unit: [State Millitia Musketeer] and [State Millitia Rifleman], which are garrison units..]",
 			"Comment [Cannot Enter [Harmony] State.]",
 			"Triggers a global alert upon completion",
@@ -6997,7 +7032,7 @@
 			"[+2 Culture, +1 Happiness] from every [Governor]",
 			"[+100]% Production when constructing ['Consolidation'] buildings [in all cities]",
 			"Comment [Unique Ability: Commonwealth, You can still build ['Agreement'] via events.]",
-			"Comment [If you ever have your [Influence] go down into 5 or below, You will lose this['Civilization Form']. You will lose this['Civilization Form'].]",
+			"Comment [If you ever have your [Influence] go down into 5 or below, You will lose this['Civilization Form'].]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
@@ -7097,8 +7132,8 @@
 			"Unsellable",
 			"Instantly provides [15] [Influence]",
 			"Gain a free [Peace] [in capital] <for [1] turns>",
-			"Gain a free [Alexandrian Successor States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
-			"Gain a free [Successor States] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
+			"Gain a free [Greek City States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [Persian Dynasties] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
 			"Gain a free [Warring States] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
 			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Successor States] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
@@ -7113,7 +7148,7 @@
 			"Unsellable",
 			"Instantly provides [20] [Influence]",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
-			"Gain a free [Centralized Empire] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
+			"Gain a free [SPQR] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Persian Dynasties] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
 			"Gain a free [Han Dynasty] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [Europa] Civilizations>",
@@ -7252,7 +7287,8 @@
 		},
 		"uniques": [
 			"Unavailable",
-			"Unsellable"
+			"Unsellable",
+			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [[in all cities] Cities] is less than [4]> <with [10]% chance>"
 		],
 		"hurryCostModifier": -50
 	},
@@ -7267,7 +7303,8 @@
 		},
 		"uniques": [
 			"Unavailable",
-			"Unsellable"
+			"Unsellable",
+			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [[in all cities] Cities] is less than [4]> <with [10]% chance>"
 		],
 		"hurryCostModifier": -50
 	},
@@ -7277,7 +7314,8 @@
 		"uniques": [
 			"Unavailable",
 			"Unsellable",
-			"Rebel units may spawn"
+			"Rebel units may spawn",
+			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [[in all cities] Cities] is less than [4]> <with [10]% chance>"
 		],
 		"hurryCostModifier": -50
 	},
@@ -7304,18 +7342,17 @@
 	{
 		"name": "Overproduction",
 		"cost":50,
-		"percentStatBonus":{
-			"food":5,
-			"happiness":10,
-			"gold":-20
-		},
 		"uniques": [
 			"Unavailable",
 			"Unsellable",
 			"Destroyed when the city is captured",
-			"[-50]% Production when constructing ['Light Industry'] buildings [in this city]",
-			"[-50]% Production when constructing ['Heavy Industry'] buildings [in this city]",
-			"[-25]% Production when constructing ['Infrastructure'] buildings [in this city]",
+			"[+5]% [Food] [in all cities]",
+			"[+5]% [Happiness] [in all cities]",
+			"[-20]% [Gold] [in all cities]",
+			"[-50]% Production when constructing ['Light Industry'] buildings [in all cities]",
+			"[-50]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
+			"[-25]% Production when constructing ['Infrastructure'] buildings [in all cities]",
+			"[-25]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
 			"[Gold] cost of purchasing items in cities [-15]%"
 		],
 		"hurryCostModifier": -50
@@ -7323,19 +7360,18 @@
 	{
 		"name": "Underproduction",
 		"cost":50,
-		"percentStatBonus":{
-			"food":-10,
-			"happiness":-5,
-			"gold":20
-			},
 		"uniques": [
 			"Unavailable",
 			"Unsellable",
 			"Destroyed when the city is captured",
-			"[+50]% Production when constructing ['Light Industry'] buildings [in this city]",
-			"[+25]% Production when constructing ['Heavy Industry'] buildings [in this city]",
-			"[+25]% Production when constructing ['Infrastructure'] buildings [in this city]",
-			"[Gold] cost of purchasing items in cities [+10]%"
+			"[-10]% [Food] [in all cities]",
+			"[-15]% [Happiness] [in all cities]",
+			"[+20]% [Gold] [in all cities]",
+			"[+50]% Production when constructing ['Light Industry'] buildings [in all cities]",
+			"[+25]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
+			"[+25]% Production when constructing ['Infrastructure'] buildings [in all cities]",
+			"[+25]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
+			"[Gold] cost of purchasing items in cities [+25]%"
 		],
 		"hurryCostModifier": -50
 	},

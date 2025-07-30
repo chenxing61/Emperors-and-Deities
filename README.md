@@ -24,5 +24,7 @@
  Traditional & Simpified Chinese Translation done by CX61 himself.
 
  Russian Translation done by Nori_Bori from discord with help of Genemi AI.
-
+ 
+ To support cx61 and his helpers:
+ https://buymeacoffee.com/chenxing61
 
