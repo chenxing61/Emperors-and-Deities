@@ -68,6 +68,7 @@
                 "text": "Rock Bottom",
                 "uniques": [
                     "Only available <if [Anarchy] is constructed>",
+                    "Instantly provides [5] [Influence]",
                     "Comment [Yep, theres nothing worse. Go ahead and try to return to a somewhat normal form.]"
                 ]
             }
@@ -182,7 +183,7 @@
             {
                 "text": "Total mobilization in every cities!",
                 "uniques": [
-                    "Only available <if [Unified] is constructed>",
+                    "Only available <when at war> <if [Unified] is constructed>",
                     "Comment [We need more soldiers at the frontline.]",
                     "Gain a free [Call to Arms] [in all non-occupied cities]",
                     "Remove [Enact Policies] [in all cities] <hidden from users>",
@@ -192,7 +193,7 @@
             {
                 "text": "Disband the Levies.",
                 "uniques": [
-                    "Only available <when not at war>",
+                    "Only available <if [Call to Arms] is constructed> <when not at war>",
                     "Comment [Since there are currently no conflict, we may disband our levied armies.]",
                     "Remove [Call to Arms] [in all cities]",
                     "Gain a free [Levies Disbandment] [in capital]",
@@ -254,7 +255,7 @@
                 "uniques": [
                     "Only available <if [Warring States] is constructed>",
                     "Only available <when above [0] [Avaliable School of Thoughts]>",
-                    "Only available <when above [10] [Influence]>",
+                    "Only available <when above [9] [Influence]>",
                     "Triggers a [The way to rule] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
                 ]
@@ -273,7 +274,7 @@
             {
                 "text": "State Reform",
                 "uniques": [
-                    "Only available <if [Unified] is constructed> <when above [10] [Influence]>",
+                    "Only available <if [Unified] is constructed> <when above [9] [Influence]>",
                     "Instantly consumes [10] [Influence] <when number of [[in all cities] Cities] is more than [4]>",
                     "Triggers a [Reformation of the unified state] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -283,7 +284,7 @@
                 "text": "Increasing Stability.",
                 "uniques": [
                     "Only available <if [Peace] is constructed> <if [United States] is not constructed>",
-                    "Only available <when number of [Influence] is more than [5]>",
+                    "Only available <when above [4] [Influence]>",
                     "Comment [We must make our empire even more stable]",
                     "Triggers a [Stablising our side of the globe] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -293,7 +294,7 @@
                 "text": "Increasing Stability.",
                 "uniques": [
                     "Only available <if [Struggle] is constructed>",
-                    "Only available <when number of [Influence] is more than [5]>",
+                    "Only available <when above [4] [Influence]>",
                     "Comment [We must take action against the coming chaos.]",
                     "Triggers a [Stablising our side of the globe] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -303,7 +304,7 @@
                 "text": "Increasing Stability.",
                 "uniques": [
                     "Only available <if [Strife] is constructed>",
-                    "Only available <when number of [Influence] is more than [5]>",
+                    "Only available <when above [4] [Influence]>",
                     "Comment [We must take action against the coming chaos.]",
                     "Triggers a [Stablising our side of the globe] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -313,7 +314,7 @@
                 "text": "Increasing Stability.",
                 "uniques": [
                     "Only available <if [Anarchy] is constructed> <before adopting [Anarchism]>",
-                    "Only available <when number of [Influence] is more than [5]>",
+                    "Only available <when above [4] [Influence]>",
                     "Comment [We must take action against the coming chaos.]",
                     "Triggers a [Stablising our side of the globe] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -331,7 +332,7 @@
             {
                 "text": "Changing Civilization Form",
                 "uniques": [
-                    "Only available <when number of [Influence] is more than [10]>",
+                    "Only available <when above [9] [Influence]>",
                     "Comment [We can force the shift in politic to stop our civilization from a undesireable route...]",
                     "Instantly consumes [10] [Influence] <when number of [[in all cities] Cities] is more than [4]>",
                     "Triggers a [Shift in Politic] event",
@@ -383,7 +384,7 @@
             {
                 "text": "We are able to unify ourselves!",
                 "uniques": [
-                    "Only available <if [Unified] is not constructed> <when above [10] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <before the [Medieval era]>",
+                    "Only available <if [Unified] is not constructed> <when above [9] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <before the [Medieval era]>",
                     "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
                     "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
@@ -479,7 +480,7 @@
             {
                 "text": "Our empire lasts onto another era!",
                 "uniques": [
-                    "Only available <when above [10] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <before the [Medieval era]>",
+                    "Only available <when above [9] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <before the [Medieval era]>",
                     "Only available <when above [15] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Medieval era]> <before the [Industrial era]>",
                     "Only available <when above [25] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Industrial era]> <before the [Information era]>",
                     "Only available <when above [25] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Information era]>",
@@ -501,7 +502,7 @@
                     "Only available <starting from the [Classical era]> <before the [Medieval era]> <if [Tribal Union] is constructed> <if [Early Empire] is not constructed>",
                     "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
                     "Remove ['United'] [in all cities] <hidden from users>",
-                    "Gain a free [Early Empire] [in capital] <after adopting [Unity]>"
+                    "Gain a free [Early Empire] [in capital]"
                 ]
             },
             {
@@ -510,7 +511,7 @@
                     "Only available <starting from the [Classical era]> <before the [Medieval era]> <if [Early Empire] is constructed> <if [Centralized Empire] is not constructed>",
                     "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
                     "Remove ['United'] [in all cities] <hidden from users>",
-                    "Gain a free [Centralized Empire] [in capital] <after adopting [Unity]>"
+                    "Gain a free [Centralized Empire] [in capital]"
                 ]
             },
             {
@@ -519,7 +520,7 @@
                     "Only available <starting from the [Classical era]> <before the [Medieval era]> <if [Early Empire] is constructed> <if [Feudal Empire] is not constructed>",
                     "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
                     "Remove ['United'] [in all cities] <hidden from users>",
-                    "Gain a free [Feudal Empire] [in capital] <after adopting [Unity]>"
+                    "Gain a free [Feudal Empire] [in capital]"
                 ]
             },
             {
@@ -563,7 +564,7 @@
                 "text": "Can we wait?",
                 "uniques": [
                     "Comment [We need more contemplation...]",
-                    "Instantly provides [10] [Influence] <when number of [[in all cities] Cities] is more than [4]>"
+                    "Instantly provides [10] [Influence] <when number of [[in all cities] Cities] is more than [4]> <hidden from users>"
                 ]
             }
         ]
@@ -662,8 +663,8 @@
                 "text": "[Military Alliance] is the most practical",
                 "uniques": [
                     "Only available <before the [Industrial era]> <if [Collective Security] is not constructed> <if [Military Alliance] is not constructed>",
-                    "Only available <when above [10] [Influence]>",
-                    "Only available <when above [8] [Influence]> <for [Europa] Civilizations>",
+                    "Only available <when above [9] [Influence]>",
+                    "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
                     "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
                     "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
@@ -676,8 +677,8 @@
                 "text": "[Cultural Exchange] is the most elegant",
                 "uniques": [
                     "Only available <before the [Industrial era]> <if [Reseach Exchange] is not constructed> <if [Cultural Exchange] is not constructed>",
-                    "Only available <when above [10] [Influence]>",
-                    "Only available <when above [8] [Influence]> <for [Europa] Civilizations>",
+                    "Only available <when above [9] [Influence]>",
+                    "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
                     "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
                     "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
@@ -690,8 +691,8 @@
                 "text": "[Trade Alliance] is the most attractive",
                 "uniques": [
                     "Only available <before the [Industrial era]> <if [Economic Community] is not constructed> <if [Trade Alliance] is not constructed>",
-                    "Only available <when above [10] [Influence]>",
-                    "Only available <when above [8] [Influence]> <for [Europa] Civilizations>",
+                    "Only available <when above [9] [Influence]>",
+                    "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
                     "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
                     "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
@@ -704,7 +705,7 @@
                 "text": "[Collective Security] secures our footing",
                 "uniques": [
                     "Only available <starting from the [Industrial era]> <if [Collective Security] is not constructed>",
-                    "Only available <when above [20] [Influence]>",
+                    "Only available <when above [19] [Influence]>",
                     "Instantly consumes [15] [Influence]",
                     "Gain [-250] [Gold] <(modified by game speed)>",
                     "Gain a free [Collective Security] [in capital]",
@@ -716,7 +717,7 @@
                 "text": "[Reseach Exchange] secures our progess",
                 "uniques": [
                     "Only available <starting from the [Industrial era]> <if [Reseach Exchange] is not constructed>",
-                    "Only available <when above [20] [Influence]>",
+                    "Only available <when above [19] [Influence]>",
                     "Instantly consumes [15] [Influence]",
                     "Gain [-250] [Gold] <(modified by game speed)>",
                     "Gain a free [Reseach Exchange] [in capital]",
@@ -728,7 +729,7 @@
                 "text": "[Economic Community] secures our interest",
                 "uniques": [
                     "Only available <starting from the [Industrial era]> <if [Economic Community] is not constructed>",
-                    "Only available <when above [20] [Influence]>",
+                    "Only available <when above [19] [Influence]>",
                     "Instantly consumes [15] [Influence]",
                     "Gain [-250] [Gold] <(modified by game speed)>",
                     "Gain a free [Economic Community] [in capital]",
@@ -739,6 +740,7 @@
             {
                 "text": "Can we wait?",
                 "uniques": [
+                    "Comment [To get a ['Agreement'], you should get at least 10 [Influence], or 20 starting from the [Atomic era]]",
                     "Comment [We need more contemplation...]"
                 ]
             }
@@ -1075,7 +1077,7 @@
             {
                 "text": "I see",
                 "uniques": [
-                 
+                    "Triggers a [Enact Policies] event <hidden from users>"
                 ]
             }
         ]
@@ -1087,7 +1089,7 @@
             {
                 "text": "We shall arrange a great hunt to show our military prowess!",
                 "uniques": [
-                    "Only available <before the [Medieval era]> <if [Army Maintainance Cost] is not constructed>",
+                    "Only available <before the [Medieval era]> <if [Army Maintainance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
                     "Instantly provides [5] [Influence]",
                     "Gain a free [Army Maintainance Cost] [in capital]",
                     "[-5]% [Food] [in capital] <for [2] turns>",
@@ -1098,7 +1100,7 @@
             {
                 "text": "We shall arrange a Customary Meeting.",
                 "uniques": [
-                    "Only available <if [Zhou Dynasty] is constructed> <if [Army Maintainance Cost] is not constructed>",
+                    "Only available <if [Zhou Dynasty] is constructed> <if [Army Maintainance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
                     "Instantly provides [8] [Influence]",
                     "Gain a free [Army Maintainance Cost] [in capital]",
                     "[+10]% [Culture] [in all cities] <for [5] turns>",
@@ -1110,7 +1112,7 @@
             {
                 "text": "We shall arrange a great feast to show our wealth!",
                 "uniques": [
-                    "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Army Maintainance Cost] is not constructed>",
+                    "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Army Maintainance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
                     "Instantly provides [5] [Influence]",
                     "Gain a free [Army Maintainance Cost] [in capital]",
                     "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
@@ -1124,7 +1126,7 @@
             {
                 "text": "We shall do a military march to demostrate our might!",
                 "uniques": [
-                    "Only available <starting from the [Imperial era]> <if [Army Maintainance Cost] is not constructed>",
+                    "Only available <starting from the [Imperial era]> <if [Army Maintainance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
                     "Instantly provides [5] [Influence]",
                     "Instantly consumes [10] [Weapon Parts]",
                     "Gain a free [Army Maintainance Cost] [in capital]",
@@ -1137,7 +1139,7 @@
             {
                 "text": "Remove the [Army Maintainance Cost]",
                 "uniques": [
-                    "Only available <if [Army Maintainance Cost] is constructed>",
+                    "Only available <if [Army Maintainance Cost] is constructed> <when above [30] [Gold]>",
                     "Gain [-10] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
                     "Gain [-25] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-25] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
@@ -1254,7 +1256,7 @@
             {
             "text": "Confucianism",
             "uniques": [
-                "Only available <if [Confucianism Influence] is not constructed>",
+                "Only available <if [Confucianism Influence] is not constructed> <when above [9] [Influence]>",
                 "Gain a free [Confucianism Influence] [in capital]",
                 "Instantly consumes [1] [Avaliable School of Thoughts]",
                 "Instantly consumes [10] [Influence]",
@@ -1264,7 +1266,7 @@
         {
             "text": "Daoism",
             "uniques": [
-                "Only available <if [Daoism Influence] is not constructed>",
+                "Only available <if [Daoism Influence] is not constructed> <when above [9] [Influence]>",
                 "Gain a free [Daoism Influence] [in capital]",
                 "Instantly consumes [1] [Avaliable School of Thoughts]",
                 "Instantly consumes [10] [Influence]",
@@ -1274,7 +1276,7 @@
         {
             "text": "Mohism",
             "uniques": [
-                "Only available <if [Mohism Influence] is not constructed>",
+                "Only available <if [Mohism Influence] is not constructed> <when above [9] [Influence]>",
                 "Gain a free [Mohism Influence] [in capital]",
                 "Instantly consumes [1] [Avaliable School of Thoughts]",
                 "Instantly consumes [10] [Influence]",
@@ -1284,7 +1286,7 @@
         {
             "text": "Legalism",
             "uniques": [
-                "Only available <if [Legalism Influence] is not constructed>",
+                "Only available <if [Legalism Influence] is not constructed> <when above [9] [Influence]>",
                 "Gain a free [Legalism Influence] [in capital]",
                 "Instantly consumes [1] [Avaliable School of Thoughts]",
                 "Instantly consumes [10] [Influence]",
@@ -1294,7 +1296,7 @@
         {
             "text": "School of Diplomacy",
             "uniques": [
-                "Only available <if [Diplomatism Influence] is not constructed>",
+                "Only available <if [Diplomatism Influence] is not constructed> <when above [9] [Influence]>",
                 "Gain a free [Diplomatism Influence] [in capital]",
                 "Instantly consumes [1] [Avaliable School of Thoughts]",
                 "Instantly consumes [10] [Influence]",
@@ -1304,7 +1306,7 @@
         {
             "text": "School of Forms and Names",
             "uniques": [
-                "Only available <if [Early Rationalism Influence] is not constructed>",
+                "Only available <if [Early Rationalism Influence] is not constructed> <when above [9] [Influence]>",
                 "Gain a free [Early Rationalism Influence] [in capital]",
                 "Instantly consumes [1] [Avaliable School of Thoughts]",
                 "Instantly consumes [10] [Influence]",
@@ -1314,7 +1316,7 @@
         {
             "text": "School of Naturalists",
             "uniques": [
-                "Only available <if [Naturalist Influence] is not constructed>",
+                "Only available <if [Naturalist Influence] is not constructed> <when above [9] [Influence]>",
                 "Gain a free [Naturalist Influence] [in capital]",
                 "Instantly consumes [1] [Avaliable School of Thoughts]",
                 "Instantly consumes [10] [Influence]",
@@ -1324,7 +1326,7 @@
         {
             "text": "School of Agrarianism",
             "uniques": [
-                "Only available <if [Agrarianism Influence] is not constructed>",
+                "Only available <if [Agrarianism Influence] is not constructed> <when above [9] [Influence]>",
                 "Gain a free [Agrarianism Influence] [in capital]",
                 "Instantly consumes [1] [Avaliable School of Thoughts]",
                 "Instantly consumes [10] [Influence]",
@@ -1334,7 +1336,7 @@
         {
             "text": "School of Military Strategy",
             "uniques": [
-                "Only available <if [Militant Influence] is not constructed>",
+                "Only available <if [Militant Influence] is not constructed> <when above [9] [Influence]>",
                 "Gain a free [Militant Influence] [in capital]",
                 "Instantly consumes [1] [Avaliable School of Thoughts]",
                 "Instantly consumes [10] [Influence]",
@@ -1344,6 +1346,7 @@
         {
             "text":"Can we wait?",
             "uniques":[
+                "Comment [You need at least 10 [Influence] to adopt a school of thought.]",
                 "Comment [Nothing happens.]"
             ]
         }
@@ -1385,7 +1388,7 @@
         {
             "text": "Gauls",
             "uniques": [
-                "Only available <if [Gaulish Influence] is not constructed>",
+                "Only available <if [Gaulish Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
                 "Gain a free [Gaulish Influence] [in capital]",
                 "Instantly consumes [5] [Influence]",
                 "Gain [-200] [Gold] <(modified by game speed)>",
@@ -1395,7 +1398,7 @@
         {
             "text": "Albions",
             "uniques": [
-                "Only available <if [Albions Influence] is not constructed>",
+                "Only available <if [Albions Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
                 "Gain a free [Albions Influence] [in capital]",
                 "Instantly consumes [5] [Influence]",
                 "Gain [-200] [Gold] <(modified by game speed)>",
@@ -1405,7 +1408,7 @@
         {
             "text": "Goths",
             "uniques": [
-                "Only available <if [Gothic Influence] is not constructed>",
+                "Only available <if [Gothic Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
                 "Gain a free [Gothic Influence] [in capital]",
                 "Instantly consumes [5] [Influence]",
                 "Gain [-200] [Gold] <(modified by game speed)>",
@@ -1415,7 +1418,7 @@
         {
             "text": "Saxons",
             "uniques": [
-                "Only available <if [Saxonian Influence] is not constructed>",
+                "Only available <if [Saxonian Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
                 "Gain a free [Saxonian Influence] [in capital]",
                 "Instantly consumes [5] [Influence]",
                 "Gain [-200] [Gold] <(modified by game speed)>",
@@ -1425,6 +1428,7 @@
         {
             "text":"Can we wait?",
             "uniques":[
+                "Comment [You need at least 5 [Influence] and 200 [Gold] to adopt a culture.]",
                 "Comment [Nothing happens.]"
             ]
         }
