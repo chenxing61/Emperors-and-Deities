@@ -34,6 +34,7 @@
 		"resourceType": "Strategic",
 		"uniques": [
 			"Not shown on world screen",
+			"Will not be displayed in Civilopedia",
 			"Cannot be traded",
 			"Stockpiled"
 		]
@@ -43,6 +44,17 @@
 		"resourceType": "Strategic",
 		"uniques": [
 			"Not shown on world screen",
+			"Will not be displayed in Civilopedia",
+			"Stockpiled",
+			"Cannot be traded"
+		]
+	},
+	{
+		"name": "Enact Policy Tutorial Triggered Flag",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen",
+			"Will not be displayed in Civilopedia",
 			"Stockpiled",
 			"Cannot be traded"
 		]
@@ -50,14 +62,21 @@
 	{
 		"name": "Consumption Supply",
 		"resourceType": "Strategic",
-		"uniques": [],
-		"revealedBy": "Economics"
+		"uniques": ["Comment [[Consumption Supply] is mainly gained by building ['Light Industry'] buildings. Some buildings and policies that encourage nationalisation also increases the output of this resource.]"],
+		"revealedBy": "Economics",
+		"civilopediaText": [
+		{"text": "See also: Emperors and Deities - The Industrial Age", "link": "Tutorials/Emperors and Deities - The Industrial Age"}
+		]
 	},
 	{
 		"name": "Consumption Demand",
 		"resourceType": "Strategic",
-		"uniques": ["Cannot be traded"],
-		"revealedBy": "Economics"
+		"uniques": ["Comment [Every 5 population provides 2 [Consumption Demand]. Some buildings and policies that encourages free markets also increases the output of this resource.]","Cannot be traded"],
+		"revealedBy": "Economics",
+		"civilopediaText": [
+		{"text": "See also: Emperors and Deities - The Industrial Age", "link": "Tutorials/Emperors and Deities - The Industrial Age"}
+		]
+		
 	},
 	{
 		"name": "Power",
@@ -65,7 +84,10 @@
 		"uniques": [
 			"City-level resource"
 		],
-		"revealedBy": "Electricity"
+		"revealedBy": "Electricity",
+		"civilopediaText": [
+		{"text": "See also: Emperors and Deities - The Industrial Age", "link": "Tutorials/Emperors and Deities - The Industrial Age"}
+		]
 	},
 	// Bonus resources
 	{
