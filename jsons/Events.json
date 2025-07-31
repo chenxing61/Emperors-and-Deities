@@ -183,7 +183,7 @@
             {
                 "text": "Total mobilization in every cities!",
                 "uniques": [
-                    "Only available <if [Unified] is constructed>",
+                    "Only available <when at war> <if [Unified] is constructed>",
                     "Comment [We need more soldiers at the frontline.]",
                     "Gain a free [Call to Arms] [in all non-occupied cities]",
                     "Remove [Enact Policies] [in all cities] <hidden from users>",
@@ -193,7 +193,7 @@
             {
                 "text": "Disband the Levies.",
                 "uniques": [
-                    "Only available <when not at war>",
+                    "Only available <if [Call to Arms] is constructed> <when not at war>",
                     "Comment [Since there are currently no conflict, we may disband our levied armies.]",
                     "Remove [Call to Arms] [in all cities]",
                     "Gain a free [Levies Disbandment] [in capital]",
