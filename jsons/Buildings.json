@@ -1804,6 +1804,17 @@
 		"requiredTech": "Construction",
 		"hurryCostModifier": 25
 	},
+		{
+		"name": "Aqueduct",
+		"maintenance": 2,
+		"uniques": [
+			"'Infrastructure'",
+			"[-10]% Unhappiness from [Population] [in this city]",
+			"[25]% Food is carried over after population increases [in this city]"
+		],
+		"requiredTech": "Construction",
+		"hurryCostModifier": 25
+	},
 	{
 		"name": "Armour Workshop",
 		"maintenance": 1,
@@ -2086,18 +2097,6 @@
 			"'Infrastructure'",
 			"Only available <in cities without a [Irrigation System]>"
 		],
-		"requiredTech": "Engineering",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Aqueduct",
-		"maintenance": 2,
-		"uniques": [
-			"'Infrastructure'",
-			"[-10]% Unhappiness from [Population] [in this city]",
-			"[25]% Food is carried over after population increases [in this city]"
-		],
-		"requiredBuilding": "Civilian Blacksmith",
 		"requiredTech": "Engineering",
 		"hurryCostModifier": 25
 	},

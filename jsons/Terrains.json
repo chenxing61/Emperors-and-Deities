@@ -48,6 +48,7 @@
             		"Occurs at temperature between [0.8] and [1] and humidity between [0.7] and [0.8]",
             		"[+1] to Fertility for Map Generation",
             		"Becomes [Plains] when adjacent to [Coast] <with [40]% chance>",
+					"Becomes [Black Soil] when adjacent to [Black Soil] <with [2] to [5] neighboring [Tundra] tiles>",
 			"A Region is formed with at least [40]% [Grassland] tiles, with priority [7]",
 			"Considered [Desirable] when determining start locations",
 			"Considered [Food] when determining start locations <in [Jungle] Regions>",
@@ -94,12 +95,13 @@
 			69
 		],
 		"uniques": [
-            		"Occurs at temperature between [-0.7] and [-0.3] and humidity between [0] and [1]",
+            "Occurs at temperature between [-0.7] and [-0.3] and humidity between [0] and [1]",
 			"[+2] to Fertility for Map Generation",
 			"A Region is formed with at least [40]% [Tundra] tiles and [Snow] tiles, with priority [1]",
 			"Considered [Food] when determining start locations <in [Tundra] Regions>",
 			"Considered [Desirable] when determining start locations <in [Tundra] Regions>",
 			"Becomes [Grassland] when adjacent to [River]",
+			"Becomes [Black Soil] when adjacent to [Vegetation] <with [1] to [3] neighboring [Tundra] tiles>",
 			"Every [16] tiles with this terrain will receive a major deposit of a strategic resource."
 		]
 	},
@@ -401,6 +403,20 @@
 		],
 		"uniques": [
 			"Always Fertility [5] for Map Generation",
+			"Considered [Food] when determining start locations",
+			"Considered [Desirable] when determining start locations"
+		]
+	},
+	{
+		"name": "Black Soil",
+		"type": "TerrainFeature",
+		"food": 2,
+		"movementCost": 1,
+		"occursOn": [
+			"Grassland",
+			"Tundra"
+		],
+		"uniques": [
 			"Considered [Food] when determining start locations",
 			"Considered [Desirable] when determining start locations"
 		]

@@ -3,7 +3,8 @@
 		"name": "Manual Farm",
 		"terrainsCanBeBuiltOn": [
 			"Plains",
-			"Flood plains"
+			"Flood plains",
+			"Black Soil"
 		],
 		"food": 1,
 		"turnsToBuild": 7,
@@ -12,6 +13,7 @@
 			"'Agricultural Improvement'",
 			"Can also be built on tiles adjacent to fresh water",
 			"[+1 Food] <after discovering [Crop Rotation]>",
+			"[+1 Gold] <in [Black Soil] tiles>",
 			"Cannot be built on [Hill] tiles",
 			"Cannot be built on [Coast] tiles",
 			"Pillaging this improvement yields approximately [+18 Gold]"
@@ -65,7 +67,8 @@
 			"Plains",
 			"Grassland",
 			"Desert",
-			"Flood plains"
+			"Flood plains",
+			"Black Soil"
 		],
 		"food": 4,
 		"turnsToBuild": 7,
@@ -76,6 +79,7 @@
 			"[-2 Food] from [Desert] tiles",
 			"[+2 Food] for each adjacent [Power Plant]",
 			"[+2 Food] <after discovering [Designer Genetic]>",
+			"[+2 Gold] <in [Black Soil] tiles>",
 			"Tile provides yield without assigned population",
 			"Cannot be built on [Hill] tiles",
 			"Cannot be built on [Coast] tiles",
@@ -96,7 +100,8 @@
 			"Desert",
 			"Flood plains",
 			"Hill",
-			"Tundra"
+			"Tundra",
+			"Black Soil"
 		],
 		"food": 3,
 		"culture": 2,
@@ -106,6 +111,7 @@
 		"uniques": [
 			"'Agricultural Improvement'",
 			"[+2 Food] from [Fresh water] tiles",
+			"[+2 Gold] <in [Black Soil] tiles>",
 			"Can also be built on tiles adjacent to fresh water",
 			"Cannot be built on [Hill] tiles",
 			"Cannot be built on [Coast] tiles",
@@ -135,7 +141,8 @@
 		"name": "Polder",
 		"terrainsCanBeBuiltOn": [
 			"Coast",
-			"Lakes"
+			"Lakes",
+			"Marsh"
 		],
 		"food": 1,
 		"gold": 1,
@@ -850,12 +857,11 @@
 		"terrainsCanBeBuiltOn": [
 			"Land"
 		],
-		"gold": 4,
 		"uniques": [
 			"Great Improvement",
-			"[+2 Gold] for each adjacent [Bonus resource]",
-			"[+2 Gold] for each adjacent [Luxury resource]",
-			"[+2 Gold] <after discovering [Economics]>",
+			"[+4 Gold] for each adjacent [Bonus resource]",
+			"[+4 Gold] for each adjacent [Luxury resource]",
+			"[+3 Production] <after discovering [Economics]>",
 			"Removes removable features when built",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		]
@@ -929,7 +935,8 @@
 		],
 		"uniques": [
 			"Ensures a minimum tile yield of [+2 Food, +1 Production]",
-			"[+2 Food] from [Fresh water] tiles",
+			"[+1 Food] from [River] tiles",
+			"[+1 Food] from [Fresh water] tiles",
 			"Provides [2] [Consumption Demand] <in cities with between [0] and [5] [Population]> <starting from the [Industrial era]> <hidden from users>",
 			"Provides [4] [Consumption Demand] <in cities with between [5] and [10] [Population]> <starting from the [Industrial era]> <hidden from users>",
 			"Provides [6] [Consumption Demand] <in cities with between [10] and [15] [Population]> <starting from the [Industrial era]> <hidden from users>",
