@@ -130,20 +130,17 @@
         "name": "Unity",
         "era": "Neolithic era",
         "uniques": [
-            "Only available <before the [Medieval era]> <after turn number [1]>",
+            "Only available <before the [Medieval era]>",
             "Comment [Enables you to build Garrison Units, a variant of Levy close combat units that has bonus promotions and have expertise in defense, they can also be trained like the standing army.]",
-            "Remove ['Divided'] [in all cities] <for [2] turns>",
-            "Gain a free [Tribal Union] [in capital] <for [2] turns> <before the [Classical era]>"
+            "[+2 Happiness] [in all cities] <when number of [Cities] is less than [5]>"
         ],
         "policies": [
             {
                 "name": "Chiefdom Confederation",
                 "uniques": [
-                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-                    "[+50]% Production when constructing [Town Hall] buildings [in all cities]",
-                    "[+50]% Production when constructing [Basilica] buildings [in all cities]",
-                    "[+50]% Production when constructing [Satrap's Manor] buildings [in all cities]",
-                    "[+50]% Production when constructing [European Longhouse] buildings [in all cities]"
+                    "Each city founded increases culture cost of policies [33]% less than normal",
+                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>"
+                    
                 ],
                 "row": 1,
                 "column": 3
@@ -151,7 +148,7 @@
             {
                 "name": "Early Colonization",
                 "uniques": [
-                    "Each city founded increases culture cost of policies [33]% less than normal",
+                    "[+1 Production] per [5] population [in all cities]",
                     "Free [Worker] appears"
                 ],
                 "requires": [
@@ -163,7 +160,7 @@
             {
                 "name": "Peace Under Force",
                 "uniques": [
-                    "[+1 Production] per [5] population [in all cities]",
+                    "[+25]% Production when constructing [National Wonder] buildings [in all cities connected to capital]",
                     "[+50]% Production when constructing [Ancient era] wonders [in all cities connected to capital]"
                 ],
                 "requires": [
@@ -175,7 +172,11 @@
             {
                 "name": "Codification",
                 "uniques": [
-                    "[+25]% Production when constructing [National Wonder] buildings [in all cities connected to capital]",
+                    "[+50]% Production when constructing [Town Hall] buildings [in all cities]",
+                    "[+50]% Production when constructing [Basilica] buildings [in all cities]",
+                    "[+50]% Production when constructing [Satrap's Manor] buildings [in all cities]",
+                    "[+50]% Production when constructing [European Longhouse] buildings [in all cities]",
+                    
                     "[+50]% Production when constructing [Courthouse] buildings [in all cities]",
                     "[+50]% Production when constructing [Sanhedrin] buildings [in all cities]"
                 ],
@@ -265,10 +266,9 @@
         "name": "Scholarship",
         "era": "Classical era",
         "uniques": [
-            "Instantly provides [5] [Influence]",
-            "[+1 Culture] per [3] population [in all cities] <in cities with at least [3] [Artist]>",
-            "[+1 Science] per [6] population [in all cities] <in cities with at least [3] [Scientist]>",
-            "[+1 Happiness] per [3] population [in all cities] <in cities with at least [3] [Governor]>",
+            "[+2 Culture] per [3] population [in all cities] <in cities with at least [3] [Artist]>",
+            "[+1 Science] per [3] population [in all cities] <in cities with at least [3] [Scientist]>",
+            "[+1 Happiness] per [3] population [in all cities] <in cities with at least [2] [Governor]>",
             "Comment [Enables you to build [Forum], a 'Political/Cultural Building' that provides great person generation and specialist slots]"
         ],
         "policies": [
@@ -339,7 +339,7 @@
             "[+50]% Production when constructing [{Classical era} {'Infrastructure'}] buildings [in all cities] <hidden from users>",
             "[+50]% Production when constructing [{Medieval era} {'Marine Infrastructure'}] buildings [in all cities] <hidden from users>",
             "[+50]% Production when constructing [{Classical era} {'Marine Infrastructure'}] buildings [in all cities] <hidden from users>",
-            "Comment [Enables you to build [Primitive Property Sector], an 'Economic Building' that exchanges building speed with [Gold] production] <hidden from users>"
+            "Comment [Enables you to build [Primitive Property Sector], an 'Economic Building' that exchanges building speed with [Gold] production]"
         ],
         "policies": [
             {
@@ -403,7 +403,8 @@
         "uniques": [
             "Only available <before adopting [Feudalism]>",
             "Only available <before adopting [Theocracy]>",
-            "[+5]% [Production] [in all cities]"
+            "[+5]% [Production] [in all cities]",
+            "Comment [Unlocks [Celestial Empire] as a ['Civilization Form'] that can be reformed into by a ['Unified'] ['Civilization Form'] During the Medieval era]"
         ],
         "policies": [
             {
@@ -465,11 +466,12 @@
         "name": "Feudalism",
         "era": "Medieval era",
         "uniques": [
-            "Instantly provides [5] [Influence]",
+            "Only available <before adopting [Meritocracy]>",
+            "Only available <before adopting [Theocracy]>",
             "[+1 Gold] from every ['Agricultural Improvement']",
             "Comment [Enables you to build [Jousting Place], an 'entertainment building' that lessens unhappiness from population and dont need maintainance]",
-            "Only available <before adopting [Meritocracy]>",
-            "Only available <before adopting [Theocracy]>"
+            "Comment [Unlocks [Celestial Empire] as a ['Civilization Form'] that can be reformed into by a ['Unified'] ['Civilization Form'] During the Medieval era]"
+            
         ],
         "policies": [
             {
