@@ -353,11 +353,11 @@
                 "column": 1
             },
             {
-                "name": "Trade Alliance",
+                "name": "Economic Ties",
                 "uniques": [
                     "Gifts of Gold to City-States generate [25]% more Influence",
                     "[+50]% resources gifted by City-States",
-                    "[-25]% maintenance on road & railroads"
+                    "Comment [Decreases [Trade Alliance] and [Economic Commuity]'s cost.]"
                 ],
                 "row": 1,
                 "column": 3
@@ -381,7 +381,7 @@
                 ],
                 "requires": [
                     "Patronage",
-                    "Trade Alliance",
+                    "Economic Ties",
                     "Convoy and Mecenaries"
                 ],
                 "row": 3,
@@ -422,7 +422,7 @@
                 "uniques": [
                     "[+1 Happiness] [in all cities connected to capital]",
                     "[-10]% maintenance cost for [all] buildings [in all cities connected to capital]",
-                    "[-25]% maintenance on road & railroads <after adopting [Trade Alliance]>"
+                    "[-25]% maintenance on road & railroads <after adopting [Economic Ties]>"
                 ],
                 "row": 1,
                 "column": 5
@@ -470,7 +470,7 @@
             "Only available <before adopting [Theocracy]>",
             "[+1 Gold] from every ['Agricultural Improvement']",
             "Comment [Enables you to build [Jousting Place], an 'entertainment building' that lessens unhappiness from population and dont need maintainance]",
-            "Comment [Unlocks [Celestial Empire] as a ['Civilization Form'] that can be reformed into by a ['Unified'] ['Civilization Form'] During the Medieval era]"
+            "Comment [Unlocks [Empire of Electors] as a ['Civilization Form'] that can be reformed into by a ['Unified'] ['Civilization Form'] During the Medieval era]"
             
         ],
         "policies": [
@@ -534,6 +534,7 @@
             "Gain a free [Enhancer] belief <after adopting [Monotheism]>",
             "Gain a free [Follower] belief <after adopting [Polytheism]>",
             "Comment [Enables you to have beliefs exclusive to [Theoracy]]",
+            "Comment [Unlocks [Theocratic Empire] as a ['Civilization Form'] that can be reformed into by a ['Unified'] ['Civilization Form'] During the Medieval era]",
             "Only available <before adopting [Meritocracy]>",
             "Only available <before adopting [Feudalism]>"
         ],
@@ -765,7 +766,7 @@
                 "column": 3
             },
             {
-                "name": "Paliments",
+                "name": "Parliaments",
                 "uniques": [
                     "[+5]% [Production] [in all cities]",
                     "Each city founded increases culture cost of policies [17]% less than normal"
@@ -999,6 +1000,7 @@
             "Only available <before adopting [Conservatism]>",
             "Only available <before adopting [Anarchism]>",
             "Only available <with [Revolution Oppotunity]>",
+            "Only available <if [Anti-Fascism Legacy] is not constructed> <hidden from users>",
             "Triggers a [Fascist Revolution!] event",
             "Comment [Enables you to build [Hall of the Nation],an unique wonder that increases strength of attacks]"
         ],

@@ -455,7 +455,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Cultural Building'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"[-1]% Culture cost of natural border growth [in all cities]",
 			"[+1 Gold] <after discovering [Theology]>",
 			"Destroyed when the city is captured"
@@ -1040,7 +1040,7 @@
 			"'Educational Building'",
 			"[+1 Science] per [5] population [in this city]",
 			"[+1 Happiness] <after discovering [Drama and Poetry]>",
-			"Provides [1] [Artifact] <after discovering [Archaeology]>"
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>"
 		],
 		"requiredTech": "Writing",
 		"hurryCostModifier": 25
@@ -2509,9 +2509,25 @@
 			"'Educational Building'",
 			"[Great Artist] is earned [+1]% faster",
 			"[Great Engineer] is earned [+1]% faster",
-			"[Great Scientist] is earned [+1]% faster"
+			"[Great Scientist] is earned [+1]% faster",
+			"Gain a free [Famous Academy] [in this city] <with [Academic Research]>"
 		],
 		"requiredBuilding": "Library",
+		"requiredTech": "Education",
+		"hurryCostModifier": 33
+	},
+	{
+		"name": "Famous Academy",
+		"specialistSlots": {
+			"Scientist": 1
+		},
+		"uniques": [
+			"Unavailable",
+			"Unsellable",
+			"[+33]% Production when constructing ['Invention'] buildings [in this city]",
+			"[+33]% Production when constructing ['Innovation'] buildings [in this city]",
+			"'Research Building'"
+		],
 		"requiredTech": "Education",
 		"hurryCostModifier": 33
 	},
@@ -4972,7 +4988,7 @@
 			"'Political Building'",
 			"[+25]% Production when constructing [All] buildings [in this city]",
 			"[+25]% Production when constructing [{Civilian} {Civil Ship}] units [in this city]",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Gain a free [Neolithic Era Start] [in capital] <for [1] turns> <if starting in the [Neolithic era]> <hidden from users>",
 			"Gain a free [Ancient Era Start] [in capital] <for [1] turns> <if starting in the [Ancient era]> <hidden from users>",
 			"Gain a free [Classical Era Start] [in capital] <for [1] turns> <if starting in the [Classical era]> <hidden from users>",
@@ -5013,7 +5029,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5029,7 +5045,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Creates a [Manual Farm] improvement on a specific tile",
 			"Only available <after adopting [Polytheism]> <in [non-[Puppeted]] cities>",
 			"Only available <when religion is enabled>",
@@ -5046,7 +5062,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"[+15]% Production when constructing [Faith] wonders [in this city]",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
@@ -5065,7 +5081,7 @@
 		"cityStrength": 2,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5082,7 +5098,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Practice Ground'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5101,7 +5117,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5114,7 +5130,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Practice Ground'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Unbuildable",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5126,7 +5142,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Economic Building'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Unbuildable",
 			"Only available <when religion is enabled>",
 			"Must have an owned [Snow] within [3] tiles",
@@ -5142,7 +5158,7 @@
 		"faith": 2,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5158,7 +5174,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5173,7 +5189,7 @@
 		"faith": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5189,7 +5205,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5218,7 +5234,7 @@
 		"faith": 2,
 		"uniques": [
 			"Gain a free [Courthouse] [in this city]",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5232,7 +5248,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Entertainment Building'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Only available <after adopting [Militant]>",
 			"[-10]% Unhappiness from [Population] [in this city]",
 			"Destroyed when the city is captured"
@@ -5254,7 +5270,7 @@
 		"uniques": [
 			"'Political Building'",
 			"'Cultural Building'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"[+25]% Great Person generation [in this city]",
 			"Only available <after adopting [Scholarship]>",
 			"Destroyed when the city is captured"
@@ -5269,7 +5285,7 @@
 		},
 		"uniques": [
 			"'Economic Building'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"Only available <after adopting [Plutocracy]>",
 			"[-10]% Production when constructing [All] buildings [in this city]",
 			"[+1 Gold] per [5] population [in this city]",
@@ -5283,7 +5299,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Entertainment Building'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"[-5]% Unhappiness from [Population] [in this city]",
 			"Only available <after adopting [Feudalism]>"
 		],
@@ -5302,7 +5318,7 @@
 		"uniques": [
 			"'Political Building'",
 			"'Educational Building'",
-			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
 			"[+3]% Production towards any buildings that already exist in the Capital",
 			"New [Military] units start with [5] XP [in this city]",
 			"New [Military] units start with [5] XP [in this city] <after adopting [Military Tradition]>",
@@ -6193,6 +6209,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
+			"Remove [{non-[Tribes]} {'Civilization Form'}] [in all cities]",
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -6209,6 +6226,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
+			"Remove [{non-[Early City States]} {'Civilization Form'}] [in all cities]",
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -6227,6 +6245,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Tribal Union]} {'Civilization Form'}] [in all cities]",
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -6304,6 +6323,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Earliest Empire]} {'Civilization Form'}] [in all cities]",
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -6325,6 +6345,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Egyptian Dynasties]} {'Civilization Form'}] [in all cities]",
 			"Provides [10] [Influence Limit]",
 			"Provides [8] [Influence Limit] <starting from the [Ancient era]>",
 			"Provides [7] [Influence Limit] <starting from the [Classical era]>",
@@ -6349,6 +6370,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
+			"Remove [{non-[Nomadic Tribes]} {'Civilization Form'}] [in all cities]",
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -6364,6 +6386,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
+			"Remove [{non-[City States]} {'Civilization Form'}] [in all cities]",
 			"Provides [15] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -6382,6 +6405,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
+			"Remove [{non-[Greek City States]} {'Civilization Form'}] [in all cities]",
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -6400,6 +6424,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Early Empire]} {'Civilization Form'}] [in all cities]",
 			"Provides [15] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -6418,6 +6443,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Shang Dynasty]} {'Civilization Form'}] [in all cities]",
 			"Provides [15] [Influence Limit]",
 			"Provides [5] [Influence Limit] <starting from the [Classical era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -6440,6 +6466,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Zhou Dynasty]} {'Civilization Form'}] [in all cities]",
 			"Provides [15] [Influence Limit]",
 			"Provides [5] [Influence Limit] <starting from the [Classical era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -6464,6 +6491,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Persian Dynasties]} {'Civilization Form'}] [in all cities]",
 			"Provides [15] [Influence Limit]",
 			"Provides [8] [Influence Limit] <starting from the [Classical era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -6486,6 +6514,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Feudal Empire]} {'Civilization Form'}] [in all cities]",
 			"Provides [20] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -6503,6 +6532,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Centralized Empire]} {'Civilization Form'}] [in all cities]",
 			"Provides [20] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -6522,6 +6552,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[SPQR]} {'Civilization Form'}] [in all cities]",
 			"Provides [20] [Influence Limit]",
 			"Provides [5] [Influence Limit] <starting from the [Medieval era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -6546,6 +6577,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Carthage Obligarchy]} {'Civilization Form'}] [in all cities]",
 			"Provides [20] [Influence Limit]",
 			"Provides [5] [Influence Limit] <starting from the [Medieval era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -6571,6 +6603,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Great Qin]} {'Civilization Form'}] [in all cities]",
 			"Provides [15] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
@@ -6606,6 +6639,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
+			"Remove [{non-[Successor States]} {'Civilization Form'}] [in all cities]",
 			"Provides [20] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -6624,6 +6658,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
+			"Remove [{non-[Alexandrian Successor States]} {'Civilization Form'}] [in all cities]",
 			"Provides [20] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -6646,6 +6681,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
+			"Remove [{non-[Warring States]} {'Civilization Form'}] [in all cities]",
 			"Provides [20] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -6779,6 +6815,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Chu Dynasty]} {'Civilization Form'}] [in all cities]",
 			"Provides [25] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -6801,6 +6838,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Han Dynasty]} {'Civilization Form'}] [in all cities]",
 			"Provides [25] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -6836,6 +6874,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
+			"Remove [{non-[Kingdoms]} {'Civilization Form'}] [in all cities]",
 			"Provides [25] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -6853,6 +6892,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Empire of Electors]} {'Civilization Form'}] [in all cities]",
 			"Provides [25] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -6901,6 +6941,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Celestial Empire]} {'Civilization Form'}] [in all cities]",
 			"Provides [25] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -6920,6 +6961,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Theocratic Empire]} {'Civilization Form'}] [in all cities]",
 			"Provides [25] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -6940,6 +6982,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Colonial Empires]} {'Civilization Form'}] [in all cities]",
 			"Provides [30] [Influence Limit]",
 			"Provides [2] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -6957,6 +7000,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Autocratic Empire]} {'Civilization Form'}] [in all cities]",
 			"Provides [30] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -6976,6 +7020,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
+			"Remove [{non-[Republics]} {'Civilization Form'}] [in all cities]",
 			"Provides [35] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
@@ -6992,6 +7037,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Federation]} {'Civilization Form'}] [in all cities]",
 			"Provides [35] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [5] [Standing Army Maintainance]",
@@ -7008,6 +7054,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[United States]} {'Civilization Form'}] [in all cities]",
 			"Provides [35] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
@@ -7026,6 +7073,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Personal Union]} {'Civilization Form'}] [in all cities]",
 			"Provides [35] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -7046,6 +7094,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Fascist Autocracy]} {'Civilization Form'}] [in all cities]",
 			"Provides [40] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
@@ -7066,6 +7115,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"Remove [{non-[Socialist Republics]} {'Civilization Form'}] [in all cities]",
 			"Provides [40] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
@@ -7085,6 +7135,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
+			"Remove [{non-[Anarchist Alliances]} {'Civilization Form'}] [in all cities]",
 			"Provides [40] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",

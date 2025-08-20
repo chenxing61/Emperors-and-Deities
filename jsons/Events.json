@@ -272,15 +272,6 @@
                 ]
             },
             {
-                "text": "State Reform",
-                "uniques": [
-                    "Only available <if [Unified] is constructed> <when above [9] [Influence]>",
-                    "Instantly consumes [10] [Influence] <when number of [[in all cities] Cities] is more than [4]>",
-                    "Triggers a [Reformation of the unified state] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
-                ]
-            },
-            {
                 "text": "Increasing Stability.",
                 "uniques": [
                     "Only available <if [Peace] is constructed> <if [United States] is not constructed>",
@@ -332,10 +323,21 @@
             {
                 "text": "Changing Civilization Form",
                 "uniques": [
-                    "Only available <when above [9] [Influence]>",
+                    "Only available <when number of [Influence] is more than [Influence Limit]>",
                     "Comment [We can force the shift in politic to stop our civilization from a undesireable route...]",
-                    "Instantly consumes [10] [Influence] <when number of [[in all cities] Cities] is more than [4]>",
+                    "Instantly consumes [10] [Influence] <when number of [[in all cities] Cities] is less than [4]>",
+                    "Instantly consumes [15] [Influence] <when number of [[in all cities] Cities] is more than [4]>",
                     "Triggers a [Shift in Politic] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "State Reform",
+                "uniques": [
+                    "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Instantly consumes [10] [Influence] <when number of [[in all cities] Cities] is less than [4]>",
+                    "Instantly consumes [15] [Influence] <when number of [[in all cities] Cities] is more than [4]>",
+                    "Triggers a [Reformation of the unified state] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
                 ]
             },
@@ -345,6 +347,17 @@
                     "Triggers a [Present Current Status] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
                 ]
+            },
+            {
+                "text": "Did you know that this mod has tutorial pages in civilopedia's tutorial section?",
+                "uniques": [
+                    "Comment [You may want to check them out.]",
+                    "Triggers a [Enact Policies] event <hidden from users>",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ],
+                "civilopediaText": [
+			    {"text": "See also: Emperors and Deities - Mod Manual", "link": "Tutorials/Emperors and Deities - Mod Manual"}
+		]
             },
             {
                 "text": "Actually...I was checking what I can do.",
@@ -481,12 +494,11 @@
                 "text": "Our empire lasts onto another era!",
                 "uniques": [
                     "Only available <when above [9] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <before the [Medieval era]>",
-                    "Only available <when above [15] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Medieval era]> <before the [Industrial era]>",
-                    "Only available <when above [25] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Industrial era]> <before the [Information era]>",
-                    "Only available <when above [25] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Information era]>",
+                    "Only available <when above [14] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Medieval era]> <before the [Industrial era]>",
+                    "Only available <when above [24] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Industrial era]> <before the [Information era]>",
+                    "Only available <when above [34] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Information era]>",
                     "Comment [Our empire survives... Maybe we can reform it continuesly unto forever.]",
                     "Only available <if [Unified] is constructed>",
-                    "Instantly consumes [15] [Influence]",
                     "Triggers a [Reformation of the unified state] event"
                 ]
             }
@@ -515,7 +527,7 @@
                 ]
             },
             {
-                "text": "Focus on Dispersing Power Structure.",
+                "text": "Disperse The Power Structure.",
                 "uniques": [
                     "Only available <starting from the [Classical era]> <before the [Medieval era]> <if [Early Empire] is constructed> <if [Feudal Empire] is not constructed>",
                     "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
@@ -564,7 +576,8 @@
                 "text": "Can we wait?",
                 "uniques": [
                     "Comment [We need more contemplation...]",
-                    "Instantly provides [10] [Influence] <when number of [[in all cities] Cities] is more than [4]> <hidden from users>"
+                    "Instantly provides [10] [Influence] <when number of [[in all cities] Cities] is less than [4]>",
+                    "Instantly provides [15] [Influence] <when number of [[in all cities] Cities] is more than [4]>"
                 ]
             }
         ]
@@ -682,7 +695,7 @@
                     "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
                     "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
-                    "Gain [-125] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
                     "Gain a free [Cultural Exchange] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
                 ]
@@ -696,7 +709,9 @@
                     "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
                     "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
-                    "Gain [-125] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Gain [50] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations> <after adopting [Economic Ties]>",
+                    "Gain [38] [Gold] <(modified by game speed)> <for [Europa] Civilizations> <after adopting [Economic Ties]>",
                     "Gain a free [Trade Alliance] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
                 ]
@@ -707,7 +722,7 @@
                     "Only available <starting from the [Industrial era]> <if [Collective Security] is not constructed>",
                     "Only available <when above [19] [Influence]>",
                     "Instantly consumes [15] [Influence]",
-                    "Gain [-250] [Gold] <(modified by game speed)>",
+                    "Gain [-300] [Gold] <(modified by game speed)>",
                     "Gain a free [Collective Security] [in capital]",
                     "Remove [Military Alliance] [in all cities]",
                     "Triggers a [Building Alliance] event <hidden from users>"
@@ -719,7 +734,7 @@
                     "Only available <starting from the [Industrial era]> <if [Reseach Exchange] is not constructed>",
                     "Only available <when above [19] [Influence]>",
                     "Instantly consumes [15] [Influence]",
-                    "Gain [-250] [Gold] <(modified by game speed)>",
+                    "Gain [-300] [Gold] <(modified by game speed)>",
                     "Gain a free [Reseach Exchange] [in capital]",
                     "Remove [Cultural Exchange] [in all cities]",
                     "Triggers a [Building Alliance] event <hidden from users>"
@@ -731,7 +746,8 @@
                     "Only available <starting from the [Industrial era]> <if [Economic Community] is not constructed>",
                     "Only available <when above [19] [Influence]>",
                     "Instantly consumes [15] [Influence]",
-                    "Gain [-250] [Gold] <(modified by game speed)>",
+                    "Gain [-300] [Gold] <(modified by game speed)> <before adopting [Economic Ties]>",
+                    "Gain [-180] [Gold] <(modified by game speed)> <after adopting [Economic Ties]>",
                     "Gain a free [Economic Community] [in capital]",
                     "Remove [Trade Alliance] [in all cities]",
                     "Triggers a [Building Alliance] event <hidden from users>"
@@ -1951,7 +1967,7 @@
                 "text": "Problems and solutions never seen before!",
                 "uniques": [
                     "Comment [Open up the [Enact Policies] tab and have a look!]",
-                    "Comment [You can open this in your captial at any moment to solve debuffs and manage a lot of stuff.]",
+                    "Comment [You can open this in your capital at any moment to solve debuffs and manage a lot of stuff.]",
                     "Triggers a [Enact Policies] event <hidden from users>",
                     "Instantly provides [1] [Enact Policy Tutorial Triggered Flag] <hidden from users>"
                 ]
@@ -1959,7 +1975,7 @@
             {
                 "text": "I already knew it",
                 "uniques": [
-                    "Comment [You can open this in your captial at any moment to solve debuffs and manage a lot of stuff.]",
+                    "Comment [You can open this in your capital at any moment to solve debuffs and manage a lot of stuff.]",
                     "Comment [Good luck.]",
                     "Instantly provides [1] [Enact Policy Tutorial Triggered Flag] <hidden from users>"
                 ]
