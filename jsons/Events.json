@@ -376,15 +376,18 @@
                 "text": "No significant changes",
                 "uniques": [
                     "Comment [We are still a bunch of countries prone to infighting and invasion, but what we do have is countless oppotunities.]",
-                    "Only available <if [Unified] is not constructed> <if [Great Qin] is not constructed>",
-                    "Gain a free [City States] [in capital] <if [Tribes] is constructed> <starting from the [Classical era]> <before the [Medieval era]> <hidden from users>",
-                    "Remove [Tribes] [in all cities] <if [Tribes] is constructed> <starting from the [Classical era]> <before the [Medieval era]> <hidden from users>",
-                    "Gain a free [Kingdoms] [in capital] <if [Successor States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
-                    "Remove [Successor States] [in all cities] <if [Successor States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
-                    "Gain a free [Kingdoms] [in capital] <if [City States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
-                    "Remove [City States] [in all cities] <if [City States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
-                    "Gain a free [Republics] [in capital] <if [Kingdoms] is constructed> <starting from the [Industrial era]> <hidden from users>",
-                    "Remove [Kingdoms] [in all cities] <if [Kingdoms] is constructed> <starting from the [Industrial era]> <hidden from users>"
+                    "Only available <if [Unified] is not constructed>",
+                    "Gain a free [Tribes] [in capital] <during the [Neolithic era]> <hidden from users>",
+                    "Gain a free [Tribes] [in capital] <during the [Classical era]> <hidden from users>",
+                    "Gain a free [City States] [in capital] <during the [Classical era]> <hidden from users>",
+                    "Gain a free [Kingdoms] [in capital] <during the [Medieval era]> <hidden from users>",
+                    "Gain a free [Kingdoms] [in capital] <during the [Renaissance era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <during the [Imperial era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <during the [Industrial era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <during the [Modern era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <during the [Atomic era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <during the [Information era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <during the [Future era]> <hidden from users>"
                 ]
             },
             {
@@ -513,7 +516,6 @@
                 "uniques": [
                     "Only available <starting from the [Classical era]> <before the [Medieval era]> <if [Tribal Union] is constructed> <if [Early Empire] is not constructed>",
                     "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
-                    "Remove ['United'] [in all cities] <hidden from users>",
                     "Gain a free [Early Empire] [in capital]"
                 ]
             },
@@ -522,7 +524,6 @@
                 "uniques": [
                     "Only available <starting from the [Classical era]> <before the [Medieval era]> <if [Early Empire] is constructed> <if [Centralized Empire] is not constructed>",
                     "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
-                    "Remove ['United'] [in all cities] <hidden from users>",
                     "Gain a free [Centralized Empire] [in capital]"
                 ]
             },
@@ -531,7 +532,6 @@
                 "uniques": [
                     "Only available <starting from the [Classical era]> <before the [Medieval era]> <if [Early Empire] is constructed> <if [Feudal Empire] is not constructed>",
                     "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
-                    "Remove ['United'] [in all cities] <hidden from users>",
                     "Gain a free [Feudal Empire] [in capital]"
                 ]
             },
@@ -540,7 +540,6 @@
                 "uniques": [
                     "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Empire of Electors] is not constructed> <if [Celestial Empire] is not constructed> <if [Theocratic Empire] is not constructed>",
                     "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
-                    "Remove ['United'] [in all cities] <hidden from users>",
                     "Gain a free [Empire of Electors] [in capital] <after adopting [Feudalism]> <during the [Medieval era]>",
                     "Gain a free [Celestial Empire] [in capital] <after adopting [Meritocracy]> <during the [Medieval era]>",
                     "Gain a free [Theocratic Empire] [in capital] <after adopting [Theocracy]> <during the [Medieval era]>"
@@ -551,7 +550,6 @@
                 "uniques": [
                     "Only available <starting from the [Renaissance era]> <before the [Industrial era]> <if [Colonial Empires] is not constructed>",
                     "Comment [Although our empire has stood tall, it would be more efficient if we take the new route...]",
-                    "Remove ['United'] [in all cities] <hidden from users>",
                     "Gain a free [Autocratic Empire] [in capital]"
                 ]
             },
@@ -560,7 +558,6 @@
                 "uniques": [
                     "Only available <starting from the [Renaissance era]> <before the [Industrial era]> <if [Autocratic Empire] is not constructed>",
                     "Comment [Although our empire has stood tall, it would be more efficient if we take the new route...]",
-                    "Remove ['United'] [in all cities] <hidden from users>",
                     "Gain a free [Colonial Empires] [in capital]"
                 ]
             },
@@ -568,7 +565,6 @@
                 "text": "We will continue our empire's glory.",
                 "uniques": [
                     "Only available <starting from the [Industrial era]> <before adopting [Socialism]> <before adopting [Anarchism]> <before adopting [Fascism]>",
-                    "Remove ['United'] [in all cities] <hidden from users>",
                     "Gain a free [Personal Union] [in capital]"
                 ]
             },

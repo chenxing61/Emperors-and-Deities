@@ -94,7 +94,8 @@
 		"resourceType": "Strategic",
 		"uniques": [
 			"Cannot be traded"
-		]
+		],
+		"revealedBy": "Wood Block Printing"
 	},
 	{
 		"name": "Academic Research",
@@ -103,14 +104,16 @@
 			"Not shown on world screen",
 			"Will not be displayed in Civilopedia",
 			"City-level resource"
-		]
+		],
+		"revealedBy": "Wood Block Printing"
 	},
 	{
 		"name": "War Machine Blueprint",
 		"resourceType": "Strategic",
 		"uniques": [
 			"Cannot be traded"
-		]
+		],
+		"revealedBy": "The Wheel"
 	},
 	// Bonus resources
 	{
@@ -1444,7 +1447,6 @@
 		},
 		"uniques": [
 			"'Rock'",
-			"[+15]% Production when constructing [All] wonders [in all cities]",
 			"Special placement during map generation",
 			"Doesn't generate naturally <in [{Grassland} {Fresh Water}] tiles>"
 		]
@@ -1508,11 +1510,11 @@
 		},
 		"uniques": [
 			"'Chemicals'",
-			"Generated with weight [15] <in [Tundra] Regions>",
+			"Generated with weight [10] <in [Tundra] Regions>",
 			"Generated with weight [5] <in [Forest] Regions>",
-			"Generated with weight [15] <in [Desert] Regions>",
-			"Generated with weight [10] <in [Hill] Regions>",
-			"Generated with weight [25] <in [Plains] Regions>",
+			"Generated with weight [25] <in [Desert] Regions>",
+			"Generated with weight [25] <in [Hill] Regions>",
+			"Generated with weight [10] <in [Plains] Regions>",
 			"Generated with weight [15] <in [Hybrid] Regions>",
 			"Generated near City States with weight [10]",
 			"Doesn't generate naturally <in [{Forest} {Hill}] tiles>"
@@ -1572,6 +1574,9 @@
 		"uniques": [
 			"City-level resource",
 			"Stockpiled"
+		],
+		"civilopediaText": [
+		{"text": "You gain this by building ['Cultural Buildings'] and buildings unique to your civ and religion before industrial age."}
 		],
 		"revealedBy": "Archaeology"
 	},
