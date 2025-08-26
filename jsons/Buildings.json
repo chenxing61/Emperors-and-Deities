@@ -627,7 +627,8 @@
 			"[+1 Production] from [{'Agricultural Improvement'} {'Textile'}] tiles [in this city]",
 			"[+1 Gold] from [{Camp} {Furs}] tiles [in this city]",
 			"[+1 Gold] from [{'Agricultural Improvement'} {Silk}] tiles [in this city]",
-			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
+			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>",
+			"Provides [1] [Consumption Supply] <starting from the [Industrial era]> <if [Cotton Trade] is constructed>"
 		],
 		"requiredNearbyImprovedResources": [
 			"Bovine",
@@ -729,7 +730,7 @@
 			"[+1 Gold] from [{Camp} {Ivory}] tiles [in this city]",
 			"[+1 Gold] from [{'Water Improvement'} {Coral}] tiles [in this city]",
 			"Consumes [1] [Glass] <with [Glass]>",
-			"[+1 Gold] <with [Glass]>"
+			"[+1 Gold, +1 Science] <with [Glass]>"
 		],
 		"requiredNearbyImprovedResources": [
 			"Gold Ore",
@@ -1897,6 +1898,533 @@
 		"requiredBuilding": "Town Square",
 		"requiredTech": "Wood Block Printing",
 		"hurryCostModifier": 25
+	},
+	///Monopoly
+	{
+		"name": "Furs Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":25},
+		"specialistSlots": {
+			"Merchant": 3
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Furs]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Furs]",
+			"[+1 Gold] from [Forest] tiles [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Furs"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Ivory Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15, "faith":15},
+		"specialistSlots": {
+			"Merchant": 3
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Ivory]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Ivory]",
+			"[+5]% [Faith] from every [Jewellery Workshop]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Ivory"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Silk Road",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15, "culture":10},
+		"specialistSlots": {
+			"Merchant": 1,
+			"Artist": 2
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Silk]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Silk]",
+			"Allied City-States provide [Gold] equal to [33]% of what they produce for themselves",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Silk"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Whaling Industry Chain",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15, "food":5, "production":10},
+		"specialistSlots": {
+			"Merchant": 3
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Whale]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Whale]",
+			"[+10]% [Production] from every [Fishing Port]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Whale"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Seafood Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15, "food":10},
+		"specialistSlots": {
+			"Merchant": 3
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Crab]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Crab]",
+			"[+15]% growth [in all coastal cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Crab"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Pearl Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":25},
+		"specialistSlots": {
+			"Merchant": 2,
+			"Artist":1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Pearl]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Pearl]",
+			"[+15]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Pearl"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Coral Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":25},
+		"specialistSlots": {
+			"Merchant": 2,
+			"Artist":1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Coral]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Coral]",
+			"[+10]% [Gold] from every [Trading Port]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Coral"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Cotton Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":25},
+		"specialistSlots": {
+			"Merchant": 2,
+			"Artist":1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Cotton]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Cotton]",
+			"[+5]% [Production] from every [Textile Workshop]",
+			"Comment [[Textile Workshop] now provides more [Consumption Supply] after Industrial Age.]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Cotton"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Dyes Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15,"culture":10},
+		"specialistSlots": {
+			"Merchant": 2,
+			"Artist": 2
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Dyes]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Dyes]",
+			"[+10]% [Culture] from every [Textile Workshop]",
+			"[Faith] cost of purchasing [Faith] buildings [-5]%",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Dyes"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Incense Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15,"Faith":15},
+		"specialistSlots": {
+			"Merchant": 2,
+			"Artist": 1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Incense]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Incense]",
+			"[+1]% [Gold] from every ['Worship Place']",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Incense"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Spices Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":20,"food":10},
+		"specialistSlots": {
+			"Merchant": 3
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Spices]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Spices]",
+			"[+10]% [Culture] from Trade Routes",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Spices"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Wine Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":20,"culture":10},
+		"specialistSlots": {
+			"Merchant": 3
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Grape]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Grape]",
+			"[+10]% [Culture] from every [Brewery]",
+			"[+5]% [Gold] from every [Brewery]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Grape"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Sugar Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":20,"food":5,"culture":5},
+		"specialistSlots": {
+			"Merchant": 3
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Sugar]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Sugar]",
+			"[+5]% [Gold] from every [Crops Market]",
+			"[+5]% [Gold] from every [Town Square]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Sugar"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Citrus Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":20,"food":10},
+		"specialistSlots": {
+			"Merchant": 3
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Citrus]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Citrus]",
+			"[+10]% growth [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Citrus"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Cocoa Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":25},
+		"specialistSlots": {
+			"Merchant": 3
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Cocoa]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Cocoa]",
+			"[+5]% [Culture] from every [Mint]",
+			"[+10]% [Culture] from every [Food Industry]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Cocoa"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Tea Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15,"culture":15},
+		"specialistSlots": {
+			"Merchant": 2,
+			"Artist":1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Tea Leave]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Tea Leave]",
+			"Free Great Person",
+			"[+50]% Production when constructing [Tea House] buildings [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Tea Leave"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Coffee Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15,"culture":15},
+		"specialistSlots": {
+			"Merchant": 2,
+			"Artist":1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Coffee]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Coffee]",
+			"[+10]% Great Person generation [in all cities]",
+			"[+50]% Production when constructing [Cafe] buildings [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Coffee"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Truffles Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15,"culture":15},
+		"specialistSlots": {
+			"Merchant": 2,
+			"Artist":1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Truffles]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Truffles]",
+			"[+5]% [Gold] from every [Hunter's Hut]",
+			"[+5]% [Culture] from every [Hunter's Hut]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Truffles"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Honey Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15,"culture":15},
+		"specialistSlots": {
+			"Merchant": 2,
+			"Artist":1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Honey]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Honey]",
+			"[+10]% [Food] from Trade Routes",
+			"[+5]% [Gold] from every [Town Square]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Honey"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Gems Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":20,"culture":10},
+		"specialistSlots": {
+			"Merchant": 2,
+			"Artist":1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Gems]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Gems]",
+			"[+5]% [Gold] from every [Jewellery Workshop]",
+			"[+5]% [Science] from every [Jewellery Workshop]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Gems"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Massive Gold Export",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"culture":15},
+		"specialistSlots": {
+			"Governor": 1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Gold Ore]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Gold Ore]",
+			"[Gold] cost of purchasing items in cities [-10]%",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Gold Ore"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Massive Silver Export",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"culture":15},
+		"specialistSlots": {
+			"Governor": 1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Silver Ore]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Silver Ore]",
+			"[+10]% [Gold] from every [Mint]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Silver Ore"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Marble Trade",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15,"production":10},
+		"specialistSlots": {
+			"Merchant":1,
+			"Artist":1,
+			"Engineer":1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Marble]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Marble]",
+			"[+10]% Production when constructing [All] wonders [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Marble"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Rich Copper Ore",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15,"production":10},
+		"specialistSlots": {
+			"Merchant":1,
+			"Artist":1,
+			"Engineer":1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Marble]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Rich Copper Ore]",
+			"[+5]% [Production] [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Rich Copper Ore"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Halite",
+		"cost":150,
+		"isWonder":true,
+		"percentStatBonus":{"gold":15,"food":10},
+		"specialistSlots": {
+			"Merchant":2
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [2] [Marble]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Halite]",
+			"[+5]% [Food] [in all cities]",
+			"[+5]% Production when constructing [Military] units [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Halite"],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Alchemy Lab",
@@ -5934,7 +6462,7 @@
 			"Unbuildable",
 			"Unsellable",
 			"'Outcome'",
-			"Provides [1] [Standing Army Maintainance]",
+			"Provides [3] [Standing Army Maintainance]",
 			"[+8]% [Happiness] [in all cities]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
