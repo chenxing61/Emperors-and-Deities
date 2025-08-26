@@ -440,10 +440,12 @@
 	{
 		"name": "Obelisk",
 		"uniqueTo": "North Africa",
-		"cost": 25,
+		"cost": 30,
 		"happiness": 1,
 		"uniques": [
 			"Gain a free [Monument] [in this city]",
+			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"[+1 Gold] <after discovering [Theology]>",
 			"Only available <after adopting [Unity]>"
 		],
 		"requiredTech": "Agriculture",
@@ -560,7 +562,7 @@
 		"name": "Wei Ji",
 		"uniqueTo": "East Asia",
 		"replaces": "Granary",
-		"maintenance": 1,
+		"maintenance": 2,
 		"food": 1,
 		"production": 1,
 		"cityHealth": 5,
@@ -675,6 +677,7 @@
 	},
 	{
 		"name": "Watermill",
+		"maintenance":1,
 		"food": 2,
 		"production": 1,
 		"uniques": [
@@ -687,6 +690,7 @@
 	{
 		"name": "Early Irrigation System",
 		"uniqueTo": "North Africa",
+		"maintenance":1,
 		"uniques": [
 			"'Agricultural Building'",
 			"[+1 Food] from [Fresh water] tiles [in this city]",
@@ -766,10 +770,11 @@
 			"Great Strategist": 1
 		},
 		"uniques": [
+			"Only available <after adopting [Ancestor Worship]>",
 			"'Worship Place'",
 			"[+1 Culture, +1 Food] [in all cities]",
 			"[+25]% Production when constructing [Settler] units [in all cities]",
-			"Only available <after adopting [Ancestor Worship]>",
+			"[+25]% Production when constructing [Pioneer] units [in all cities]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"requiredTech": "Calendar",
@@ -778,7 +783,6 @@
 	{
 		"name": "Complex of Totems",
 		"isWonder": true,
-		"faith": 1,
 		"culture": 1,
 		"happiness": 2,
 		"greatPersonPoints": {
@@ -786,7 +790,7 @@
 		},
 		"uniques": [
 			"'Organise Place'",
-			"[+1 Faith] per [3] population [in all cities] <in cities with a [Shrine]>",
+			"[+1 Faith] per [3] population [in all cities] <in cities with a ['Worship Place']>",
 			"Only available <after adopting [Animism]>",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -800,7 +804,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Worship Place'",
-			"[+20]% [Faith] [in all cities]",
+			"[+10]% [Faith] [in all cities]",
 			"Gain a free [Follower] belief <upon founding a Religion>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
@@ -813,7 +817,6 @@
 		"isWonder": true,
 		"culture": 1,
 		"happiness": 1,
-		"gold": 2,
 		"greatPersonPoints": {
 			"Great Strategist": 1
 		},
@@ -1910,7 +1913,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Furs]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Furs]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Furs]",
 			"[+1 Gold] from [Forest] tiles [in all cities]",
@@ -1930,7 +1933,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Ivory]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Ivory]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Ivory]",
 			"[+5]% [Faith] from every [Jewellery Workshop]",
@@ -1951,7 +1954,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Silk]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Silk]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Silk]",
 			"Allied City-States provide [Gold] equal to [33]% of what they produce for themselves",
@@ -1971,7 +1974,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Whale]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Whale]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Whale]",
 			"[+10]% [Production] from every [Fishing Port]",
@@ -1991,7 +1994,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Crab]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Crab]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Crab]",
 			"[+15]% growth [in all coastal cities]",
@@ -2012,7 +2015,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Pearl]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Pearl]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Pearl]",
 			"[+15]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
@@ -2033,7 +2036,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Coral]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Coral]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Coral]",
 			"[+10]% [Gold] from every [Trading Port]",
@@ -2054,7 +2057,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Cotton]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Cotton]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Cotton]",
 			"[+5]% [Production] from every [Textile Workshop]",
@@ -2076,7 +2079,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Dyes]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Dyes]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Dyes]",
 			"[+10]% [Culture] from every [Textile Workshop]",
@@ -2098,7 +2101,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Incense]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Incense]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Incense]",
 			"[+1]% [Gold] from every ['Worship Place']",
@@ -2118,7 +2121,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Spices]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Spices]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Spices]",
 			"[+10]% [Culture] from Trade Routes",
@@ -2138,7 +2141,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Grape]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Grape]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Grape]",
 			"[+10]% [Culture] from every [Brewery]",
@@ -2159,7 +2162,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Sugar]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Sugar]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Sugar]",
 			"[+5]% [Gold] from every [Crops Market]",
@@ -2180,7 +2183,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Citrus]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Citrus]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Citrus]",
 			"[+10]% growth [in all cities]",
@@ -2200,7 +2203,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Cocoa]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Cocoa]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Cocoa]",
 			"[+5]% [Culture] from every [Mint]",
@@ -2222,7 +2225,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Tea Leave]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Tea Leave]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Tea Leave]",
 			"Free Great Person",
@@ -2244,7 +2247,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Coffee]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Coffee]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Coffee]",
 			"[+10]% Great Person generation [in all cities]",
@@ -2266,7 +2269,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Truffles]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Truffles]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Truffles]",
 			"[+5]% [Gold] from every [Hunter's Hut]",
@@ -2288,7 +2291,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Honey]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Honey]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Honey]",
 			"[+10]% [Food] from Trade Routes",
@@ -2310,7 +2313,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Gems]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Gems]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Gems]",
 			"[+5]% [Gold] from every [Jewellery Workshop]",
@@ -2331,7 +2334,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Gold Ore]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Gold Ore]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Gold Ore]",
 			"[Gold] cost of purchasing items in cities [-10]%",
@@ -2351,7 +2354,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Silver Ore]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Silver Ore]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Silver Ore]",
 			"[+10]% [Gold] from every [Mint]",
@@ -2373,7 +2376,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Marble]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Marble]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Marble]",
 			"[+10]% Production when constructing [All] wonders [in all cities]",
@@ -2395,7 +2398,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Marble]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Marble]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Rich Copper Ore]",
 			"[+5]% [Production] [in all cities]",
@@ -2406,7 +2409,7 @@
 		"requiredTech": "Wood Block Printing"
 	},
 	{
-		"name": "Halite",
+		"name": "Halite Trade",
 		"cost":150,
 		"isWonder":true,
 		"percentStatBonus":{"gold":15,"food":10},
@@ -2415,7 +2418,7 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [2] [Marble]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Marble]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Halite]",
 			"[+5]% [Food] [in all cities]",
@@ -7228,7 +7231,7 @@
 			"Unbuildable",
 			"Unsellable",
 			"'Outcome'",
-			"[-1 Gold] from all ['Political Building'] buildings",
+			"[-2 Gold] from all ['Political Building'] buildings",
 			"[+5]% [Culture] from every ['Political Building']",
 			"Moves to new capital when capital changes"
 		]
@@ -7268,8 +7271,8 @@
 			"Unbuildable",
 			"Unsellable",
 			"'Outcome'",
-			"[-2 Culture, +1 Happiness] from all ['Political Building'] buildings",
-			"[+10]% [Production] from every ['Political Building']",
+			"[-1 Culture] from all ['Political Building'] buildings",
+			"[+2]% [Production] from every ['Political Building']",
 			"Moves to new capital when capital changes"
 		]
 	},
@@ -7868,6 +7871,7 @@
 		"uniques": [
 			"Unavailable",
 			"Unsellable",
+			"[-5]% Production when constructing [All] buildings [in all cities]",
 			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [[in all cities] Cities] is less than [4]> <with [10]% chance>"
 		],
 		"hurryCostModifier": -50
@@ -7884,6 +7888,7 @@
 		"uniques": [
 			"Unavailable",
 			"Unsellable",
+			"[Gold] cost of purchasing [All] buildings [+5]%",
 			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [[in all cities] Cities] is less than [4]> <with [10]% chance>"
 		],
 		"hurryCostModifier": -50
