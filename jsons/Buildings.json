@@ -444,7 +444,7 @@
 		"happiness": 1,
 		"uniques": [
 			"Gain a free [Monument] [in this city]",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"[+1 Gold] <after discovering [Theology]>",
 			"Only available <after adopting [Unity]>"
 		],
@@ -457,7 +457,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Cultural Building'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"[-1]% Culture cost of natural border growth [in all cities]",
 			"[+1 Gold] <after discovering [Theology]>",
 			"Destroyed when the city is captured"
@@ -597,7 +597,8 @@
 			"Provides [1] [Alcohol] <with [Fruit]>",
 			"Provides [1] [Alcohol] <with [Grape]>",
 			"Provides [1] [Alcohol] <with [Sugar]> <after discovering [Chemistry]>",
-			"Provides [1] [Alcohol] <with [Tuber]> <after discovering [Chemistry]>"
+			"Provides [1] [Alcohol] <with [Tuber]> <after discovering [Chemistry]>",
+			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -1019,7 +1020,7 @@
 	},
 	{
 		"name": "Town Hall",
-		"maintenance": 3,
+		"maintenance": 5,
 		"happiness": 1,
 		"culture": 2,
 		"cityStrength": 2,
@@ -1751,7 +1752,7 @@
 	},
 	{
 		"name": "Courthouse",
-		"maintenance": 1,
+		"maintenance": 3,
 		"happiness": 1,
 		"uniques": [
 			"'Political Building'",
@@ -2094,7 +2095,7 @@
 		"name": "Incense Trade",
 		"cost":150,
 		"isWonder":true,
-		"percentStatBonus":{"gold":15,"Faith":15},
+		"percentStatBonus":{"gold":15,"faith":15},
 		"specialistSlots": {
 			"Merchant": 2,
 			"Artist": 1
@@ -2906,7 +2907,7 @@
 	///Line 10
 	{
 		"name": "City Hall",
-		"maintenance": 2,
+		"maintenance": 5,
 		"happiness": 1,
 		"culture": 1,
 		"cityStrength": 2,
@@ -2915,6 +2916,7 @@
 		},
 		"uniques": [
 			"'Political Building'",
+			"[-5]% unhappiness from the number of cities",
 			"[-5]% Unhappiness from [Specialists] [in this city]",
 			"Destroyed when the city is captured"
 		],
@@ -3526,11 +3528,10 @@
 	},
 	{
 		"name": "Police Station",
-		"maintenance": 3,
-		"happiness":3,
+		"maintenance": 5,
 		"uniques": [
 			"'Political Building'",
-			"[-10]% Unhappiness from [Specialists] [in this city]",
+			"[-15]% Unhappiness from [Specialists] [in this city]",
 			"[-25]% enemy spy effectiveness [in this city]"
 		],
 		"requiredBuilding": "City Hall",
@@ -3635,7 +3636,7 @@
 		"uniques": [
 			"'Cultural Building'",
 			"'Educational Building'",
-			"Consumes [5] [Artifact]",
+			"Instantly consumes [5] [Artifact]",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Archaeology",
@@ -3645,8 +3646,8 @@
 		"name": "Art Gallery",
 		"maintenance": 5,
 		"culture": 3,
-		"specialistSlots": {
-			"Artist": 1
+		"percentStatBonus":{
+			"culture":10
 		},
 		"uniques": [
 			"'Cultural Building'",
@@ -3915,8 +3916,8 @@
 		},
 		"uniques": [
 			"'Light Industry'",
-			"Provides [3] [Consumption Supply]",
-			"Provides [1] [Consumption Supply] <if [Innovation of Instant Foods] is constructed>",
+			"Provides [4] [Consumption Supply]",
+			"Provides [2] [Consumption Supply] <if [Innovation of Instant Foods] is constructed>",
 			"Consumes [3] [Power] <in cities with a [Power Grid]>",
 			"[+15]% [Food] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
@@ -3962,7 +3963,7 @@
 		},
 		"uniques": [
 			"'Light Industry'",
-			"Provides [3] [Consumption Supply]",
+			"Provides [5] [Consumption Supply]",
 			"Consumes [3] [Power] <in cities with a [Power Grid]>",
 			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+10]% [Happiness] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
@@ -4001,7 +4002,7 @@
 		"uniques": [
 			"Consumes [1] [Alloy]",
 			"'Heavy Industry'",
-			"Provides [2] [Consumption Supply]",
+			"Provides [1] [Consumption Supply]",
 			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed>",
 			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed>",
 			"[+3]% Production when constructing ['Military Building'] buildings [in all cities] <if [Invention of Machine Tools] is constructed>",
@@ -4048,7 +4049,7 @@
 			"Great Merchant": 2
 		},
 		"uniques": [
-			"[Gold] cost of purchasing items in cities [-15]%",
+			"[Gold] cost of purchasing items in cities [-10]%",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"quote": "'To achieve great things, two things are needed: a plan, and not quite enough time.' - Leonard Bernstein",
@@ -4518,7 +4519,7 @@
 			"Artist": 1
 		},
 		"uniques": [
-			"Only available <before adopting [Redistribution of Means of Production(Socialism)]> <before adopting [Redistribution of Means of Production(Anarchism)]>",
+			"Only available <before adopting [Socialism]> <before adopting [Anarchism]>",
 			"'Economic Building'",
 			"Provides [3] [Consumption Demand]",
 			"[+1 Gold] per [5] population [in this city]"
@@ -4551,7 +4552,7 @@
 			"Artist":2
 		},
 		"uniques": [
-			"Only available <before adopting [Redistribution of Means of Production(Anarchism)]>",
+			"Only available <after adopting [Redistribution of Means of Production(Anarchism)]>",
 			"'Economic Building'",
 			"Provides [1] [Consumption Demand]"
 		],
@@ -5519,7 +5520,7 @@
 			"'Political Building'",
 			"[+25]% Production when constructing [All] buildings [in this city]",
 			"[+25]% Production when constructing [{Civilian} {Civil Ship}] units [in this city]",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Gain a free [Neolithic Era Start] [in capital] <for [1] turns> <if starting in the [Neolithic era]> <hidden from users>",
 			"Gain a free [Ancient Era Start] [in capital] <for [1] turns> <if starting in the [Ancient era]> <hidden from users>",
 			"Gain a free [Classical Era Start] [in capital] <for [1] turns> <if starting in the [Classical era]> <hidden from users>",
@@ -5560,7 +5561,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5576,7 +5577,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Creates a [Manual Farm] improvement on a specific tile",
 			"Only available <after adopting [Polytheism]> <in [non-[Puppeted]] cities>",
 			"Only available <when religion is enabled>",
@@ -5593,7 +5594,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"[+15]% Production when constructing [Faith] wonders [in this city]",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
@@ -5612,7 +5613,7 @@
 		"cityStrength": 2,
 		"uniques": [
 			"'Worship Place'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5629,7 +5630,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Practice Ground'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5648,7 +5649,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Polytheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5661,7 +5662,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Practice Ground'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Unbuildable",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5673,7 +5674,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Economic Building'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Unbuildable",
 			"Only available <when religion is enabled>",
 			"Must have an owned [Snow] within [3] tiles",
@@ -5689,7 +5690,7 @@
 		"faith": 2,
 		"uniques": [
 			"'Worship Place'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5705,7 +5706,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5720,7 +5721,7 @@
 		"faith": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5736,7 +5737,7 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5765,7 +5766,7 @@
 		"faith": 2,
 		"uniques": [
 			"Gain a free [Courthouse] [in this city]",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -5774,12 +5775,12 @@
 	},
 	{
 		"name": "Arena",
-		"maintenance": 2,
+		"maintenance": 3,
 		"happiness": 2,
 		"culture": 1,
 		"uniques": [
 			"'Entertainment Building'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Militant]>",
 			"[-10]% Unhappiness from [Population] [in this city]",
 			"Destroyed when the city is captured"
@@ -5789,7 +5790,7 @@
 	},
 	{
 		"name": "Forum",
-		"maintenance": 1,
+		"maintenance": 3,
 		"culture": 1,
 		"specialistSlots": {
 			"Scientist": 1,
@@ -5801,7 +5802,7 @@
 		"uniques": [
 			"'Political Building'",
 			"'Cultural Building'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"[+25]% Great Person generation [in this city]",
 			"Only available <after adopting [Scholarship]>",
 			"Destroyed when the city is captured"
@@ -5816,7 +5817,7 @@
 		},
 		"uniques": [
 			"'Economic Building'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Plutocracy]>",
 			"[-10]% Production when constructing [All] buildings [in this city]",
 			"[+1 Gold] per [5] population [in this city]",
@@ -5830,7 +5831,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Entertainment Building'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"[-5]% Unhappiness from [Population] [in this city]",
 			"Only available <after adopting [Feudalism]>"
 		],
@@ -5849,7 +5850,7 @@
 		"uniques": [
 			"'Political Building'",
 			"'Educational Building'",
-			"Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"[+3]% Production towards any buildings that already exist in the Capital",
 			"New [Military] units start with [5] XP [in this city]",
 			"New [Military] units start with [5] XP [in this city] <after adopting [Military Tradition]>",
@@ -6133,7 +6134,7 @@
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
 			"[Gold] cost of purchasing items in cities [-5]%",
-			"[+50]% [Consumption Supply] resource production",
+			"[+33]% [Consumption Supply] resource production",
 			"[25]% [Horse] resource production",
 			"[25]% [Alloy] resource production",
 			"[33]% [Coal] resource production",
@@ -6230,10 +6231,10 @@
 			"Triggers a global alert upon completion",
 			"[Gold] cost of purchasing ['Expansion'] buildings [-50]%",
 			"[Gold] cost of purchasing ['Consolidation'] buildings [-50]%",
-			"[Gold] cost of purchasing ['Modernization'] buildings [-50]%",
+			"[Gold] cost of purchasing ['Modernization'] buildings [-25]%",
 			"[+100]% Production when constructing ['Expansion'] buildings [in all cities connected to capital]",
-			"[+150]% Production when constructing ['Consolidation'] buildings [in all cities connected to capital]",
-			"[+200]% Production when constructing ['Modernization'] buildings [in all cities connected to capital]",
+			"[+125]% Production when constructing ['Consolidation'] buildings [in all cities connected to capital]",
+			"[+150]% Production when constructing ['Modernization'] buildings [in all cities connected to capital]",
 			"[+1]% [Science] from every ['Heavy Industry']",
 			"[+1]% [Culture] from every ['Infrastructure']",
 			"[-10]% [Consumption Demand] resource production",
@@ -6249,10 +6250,10 @@
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"[+1 Culture, +1 Production] from ['Agricultural Improvement'] tiles [in all cities]",
-			"[+1 Culture, +1 Production] from ['Water Improvement'] tiles [in all cities]",
-			"[+1 Culture, +1 Science] from ['Lumber Improvement'] tiles [in all cities]",
-			"[+1 Culture, +1 Food] from ['Extraction Improvement'] tiles [in all cities]",
+			"[+1 Production] from ['Agricultural Improvement'] tiles [in all cities]",
+			"[+1 Production] from ['Water Improvement'] tiles [in all cities]",
+			"[+1 Science] from ['Lumber Improvement'] tiles [in all cities]",
+			"[+1 Culture] from ['Extraction Improvement'] tiles [in all cities]",
 			"[+10]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes"
 		],
@@ -7008,7 +7009,7 @@
 			"Comment [Mandated Ruling]",
 			"[+10]% growth [in all cities]",
 			"[+1 Culture] [in all cities] <before adopting [Unity]>",
-			"[+3 Happiness] [in puppeted cities] <after adopting [Unity]>",
+			"[+2 Happiness] [in puppeted cities] <after adopting [Unity]>",
 			"Comment [Unique option in increasing [Influence] event]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
@@ -7950,7 +7951,7 @@
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[-10]% [Food] [in all cities]",
-			"[-15]% [Happiness] [in all cities]",
+			"[-25]% [Happiness] [in all cities]",
 			"[+20]% [Gold] [in all cities]",
 			"[+50]% Production when constructing ['Light Industry'] buildings [in all cities]",
 			"[+25]% Production when constructing ['Heavy Industry'] buildings [in all cities]",

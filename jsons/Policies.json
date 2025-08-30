@@ -132,7 +132,8 @@
         "uniques": [
             "Only available <before the [Medieval era]>",
             "Comment [Enables you to build Garrison Units, a variant of Levy close combat units that has bonus promotions and have expertise in defense, they can also be trained like the standing army.]",
-            "[+2 Happiness] [in all cities] <when number of [Cities] is less than [5]>"
+            "[+2 Happiness] [in all cities] <when number of [Cities] is less than [5]>",
+            "[+1 Happiness] [in all cities] <when number of [Cities] is more than [5]> <when number of [Cities] is less than [10]>"
         ],
         "policies": [
             {
@@ -140,7 +141,6 @@
                 "uniques": [
                     "Each city founded increases culture cost of policies [33]% less than normal",
                     "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>"
-                    
                 ],
                 "row": 1,
                 "column": 3
@@ -176,7 +176,6 @@
                     "[+50]% Production when constructing [Basilica] buildings [in all cities]",
                     "[+50]% Production when constructing [Satrap's Manor] buildings [in all cities]",
                     "[+50]% Production when constructing [European Longhouse] buildings [in all cities]",
-                    
                     "[+50]% Production when constructing [Courthouse] buildings [in all cities]",
                     "[+50]% Production when constructing [Sanhedrin] buildings [in all cities]"
                 ],
@@ -334,11 +333,11 @@
         "name": "Plutocracy",
         "era": "Classical era",
         "uniques": [
-            "Comment [[+50]% [Production] when constructing ['Infrastructure']s and ['Marine Infrastructure']s of Classical era and Medieval era in all cities]",
-            "[+50]% Production when constructing [{Medieval era} {'Infrastructure'}] buildings [in all cities] <hidden from users>",
-            "[+50]% Production when constructing [{Classical era} {'Infrastructure'}] buildings [in all cities] <hidden from users>",
-            "[+50]% Production when constructing [{Medieval era} {'Marine Infrastructure'}] buildings [in all cities] <hidden from users>",
-            "[+50]% Production when constructing [{Classical era} {'Marine Infrastructure'}] buildings [in all cities] <hidden from users>",
+            "Comment [[+33]% [Production] when constructing ['Infrastructure']s and ['Marine Infrastructure']s of Classical era and Medieval era in all cities]",
+            "[+33]% Production when constructing [{Medieval era} {'Infrastructure'}] buildings [in all cities] <hidden from users>",
+            "[+33]% Production when constructing [{Classical era} {'Infrastructure'}] buildings [in all cities] <hidden from users>",
+            "[+33]% Production when constructing [{Medieval era} {'Marine Infrastructure'}] buildings [in all cities] <hidden from users>",
+            "[+33]% Production when constructing [{Classical era} {'Marine Infrastructure'}] buildings [in all cities] <hidden from users>",
             "Comment [Enables you to build [Primitive Property Sector], an ['Economic Building'] that exchanges building speed with [Gold] production]"
         ],
         "policies": [
