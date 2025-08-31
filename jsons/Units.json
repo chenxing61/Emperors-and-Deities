@@ -89,7 +89,6 @@
 			"Excess Food converted to Production when under construction",
 			"[+2] Movement <before turn number [2]>",
 			"[+2] Sight <before turn number [2]>",
-			"[+1] Movement <after discovering [Horse Collar]>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Requires at least [3] population"
 		],
@@ -910,6 +909,7 @@
 	},
 	{
 		"name": "Qin Balista",
+		"uniqueTo":"East Asia",
 		"unitType": "Siege",
 		"cost": 75,
 		"movement": 2,
@@ -1167,6 +1167,7 @@
 	///Line 7
 	{
 		"name": "Hetairoi Cavalry",
+		"uniqueTo":"Mediterranean",
 		"unitType": "Assault",
 		"movement": 3,
 		"strength": 26,
@@ -1468,13 +1469,13 @@
 			"No defensive terrain bonus",
 			"[+1] Sight",
 			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[+10]% Strength <vs [Rider] units> <when attacking>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
 			"The Standing Army",
 			"Hardened",
-			"Skirmisher Training",
 			"Resourceful Army"
 		],
 		"requiredBuilding":"Military Stable",
