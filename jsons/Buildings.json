@@ -4041,8 +4041,8 @@
 			"[+15]% Yield from every [Mechanised Farm] <in this city> <if [Invention of Professional Equipments] is constructed>",
 			"[+15]% Yield from every [Mechanised Mine] <in this city> <if [Invention of Professional Equipments] is constructed>",
 
-			"[+50]% Yield from every [Manufactory] <in this city> <if [Innovation of Processing Precision] is constructed>",
-			"[+25]% Yield from every [Academy] <in this city> <if [Innovation of Processing Precision] is constructed>",
+			"[+33]% Yield from every [Manufactory] <in this city> <if [Innovation of Processing Precision] is constructed>",
+			"[+33]% Yield from every [Academy] <in this city> <if [Innovation of Processing Precision] is constructed>",
 			
 			"[+2 Production] from every [Engineer] <in this city>"
 		],
@@ -4092,6 +4092,7 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
+			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed>",
 			"Provides [1] [Consumption Supply]",
 			"Provides [1] [Vehicle Parts]",
 			"Provides [1] [Vehicle Parts] <when at war>",
@@ -4100,7 +4101,7 @@
 			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]>",
-			"[+1 Culture, +2 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed>",
+			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed>",
 			"[+1 Production] from every [Engineer] <in this city>"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
@@ -4237,7 +4238,7 @@
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Bicycle] is not constructed by anybody>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Bicycle] is not constructed by anybody>",
 			"[-50]% production cost <if [Invention of Bicycle] is constructed by anybody>",
-			"Comment [Enable [Vehicle Industry] to make population gain extra [Culture] and [Production].]",
+			"Comment [Enable [Vehicle Industry] to make population gain extra and [Production], and provide extra [Consumption Supply].]",
 			"Unsellable",
 			"Moves to new capital when capital changes"
 		],
@@ -4469,7 +4470,9 @@
 			"Consumes [17] [Power] <in cities with between [80] and [85] [Population]> <hidden from users>",
 			"Consumes [18] [Power] <in cities with between [85] and [90] [Population]> <hidden from users>",
 			"Consumes [19] [Power] <in cities with between [90] and [95] [Population]> <hidden from users>",
-			"Consumes [20] [Power] <in cities with between [95] and [100] [Population]> <hidden from users>"
+			"Consumes [20] [Power] <in cities with between [95] and [100] [Population]> <hidden from users>",
+			"Gain a free [Power Shortage] [in this city] <when below [0] [Power]>",
+        	"Remove [Power Shortage] [in this city] <when above [0] [Power]>"
 		],
 		"requiredTech": "Electricity",
 		"hurryCostModifier": 25
@@ -4990,7 +4993,6 @@
 		"uniques": [
 			"'Static Defense'",
 			"Instantly consumes [2] [Electronic Parts]",
-			"[+5]% [Production] [in this city] <after discovering [LiDAR]>",
 			"Population loss from nuclear attacks [-15]% [in this city]"
 		],
 		"requiredTech": "Radar",
@@ -6860,13 +6862,13 @@
 	{
 		"name": "Saxonian Influence",
 		"uniqueTo":"Europa",
-		"percentStatBonus":{"science":10},
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
 			"'Outcome'",
 			"Comment [Unique Name:]",
 			"Comment [The Ancestor of Empires]",
+			"Science gained from research agreements [+25]%",
 			"Gain an extra spy",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Moves to new capital when capital changes"
@@ -7209,14 +7211,14 @@
 		]
 	},
 	{
-		"name": "Alexandrian Successor States",
+		"name": "Diadochi States",
 		"uniqueTo":"Mediterranean",
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Remove [{non-[Alexandrian Successor States]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Diadochi States]} {'Civilization Form'}] [in all cities]",
 			"Provides [20] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -7225,7 +7227,7 @@
 			"Comment [Cauldron of Cultures]",
 			"[-25]% Culture cost of adopting new Policies",
 			"Comment [Gain access to [Phalanx]]",
-			"Comment [If nothing goes wrong, [Alexandrian Successor States] will develop [Fedualism] in Mediterranean upon entering Medieval era]",
+			"Comment [If nothing goes wrong, [Diadochi States] will develop [Fedualism] in Mediterranean upon entering Medieval era]",
 			"Adopt [Feudalism] <starting from the [Medieval era]>",
 			"Moves to new capital when capital changes"
 		]
@@ -7994,8 +7996,8 @@
 			"Unavailable",
 			"Unsellable",
 			"Consumes [1] [Alexandrian Empire Period] <when above [0] [Alexandrian Empire Period]>",
-			"Triggers a [Alexander's death] event <when below [6] [Alexandrian Empire Period]> <with [50]% chance>",
-			"Triggers a [Alexander's death] event <when below [9] [Alexandrian Empire Period]> <with [50]% chance> <if [Alexandrian Successor States] is not constructed>",
+			"Triggers a [Alexander's death] event <when below [6] [Alexandrian Empire Period]> <with [10]% chance>",
+			"Triggers a [Alexander's death] event <when below [9] [Alexandrian Empire Period]> <with [50]% chance> <if [Diadochi States] is not constructed>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes"
 		]
