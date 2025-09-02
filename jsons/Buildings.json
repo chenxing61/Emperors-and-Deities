@@ -3645,7 +3645,7 @@
 	},
 	{
 		"name": "Fertilizer Plant",
-		"maintenance": 3,
+		"maintenance": 5,
 		"uniques": [
 			"'Agricultural Building'",
 			"Consumes [1] [Industrial Chemicals]",
@@ -3672,9 +3672,7 @@
 		"name": "Art Gallery",
 		"maintenance": 5,
 		"culture": 3,
-		"percentStatBonus":{
-			"culture":10
-		},
+		"specialistSlots":{"Artist":2},
 		"uniques": [
 			"'Cultural Building'",
 			"Destroyed when the city is captured"
@@ -3741,9 +3739,10 @@
 	},
 	{
 		"name": "National Bank",
+		"cost": 750,
 		"isNationalWonder": true,
 		"greatPersonPoints": {
-			"Great Merchant": 2
+			"Great Merchant": 3
 		},
 		"uniques": [
 			"'Economic Building'",
@@ -3757,9 +3756,9 @@
 	},
 	{
 		"name": "National Reserve",
-		"cost": 1000,
+		"cost": 1500,
 		"greatPersonPoints": {
-			"Great Merchant": 3
+			"Great Merchant": 2
 		},
 		"uniques": [
 			"Unbuildable",
@@ -3771,6 +3770,7 @@
 	},
 	{
 		"name": "National Museum",
+		"cost": 750,
 		"isNationalWonder": true,
 		"culture": 8,
 		"percentStatBonus": {
@@ -3778,7 +3778,7 @@
 		},
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"Only available <if [Museum] is constructed in all [non-[Puppeted]] cities>",
+			"Only available <if [Museum] is constructed in at least [6] of [non-[Puppeted]] cities>",
 			"Cost increases by [33] per owned city <if [Unified] is constructed>",
 			"Cost increases by [50] per owned city <if [Unified] is not constructed>"
 		],
@@ -3787,9 +3787,11 @@
 	{
 		"name": "The Global Museum",
 		"culture": 3,
+		"science": 3,
 		"happiness": 3,
 		"isWonder": true,
 		"uniques": [
+			"Instantly consumes [20] [Artifact]",
 			"[2] free [Great Artist] units appear",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -4442,7 +4444,7 @@
 	},
 	{
 		"name": "Power Grid",
-		"cost":250,
+		"cost":375,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 1
@@ -4513,6 +4515,7 @@
 	},
 	{
 		"name": "Hydro Plant",
+		"cost":2000,
 		"maintenance": 3,
 		"percentStatBonus": {
 			"production": 10
