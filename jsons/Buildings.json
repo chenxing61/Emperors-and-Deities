@@ -4515,8 +4515,8 @@
 	},
 	{
 		"name": "Hydro Plant",
-		"cost":2000,
-		"maintenance": 3,
+		"cost":600,
+		"maintenance": 5,
 		"percentStatBonus": {
 			"production": 10
 		},
@@ -4553,7 +4553,7 @@
 		"uniques": [
 			"Only available <before adopting [Socialism]> <before adopting [Anarchism]>",
 			"'Economic Building'",
-			"Provides [3] [Consumption Demand]",
+			"Provides [4] [Consumption Demand]",
 			"[+1 Gold] per [5] population [in this city]"
 		],
 		"requiredBuilding": "Bank",
@@ -4570,7 +4570,7 @@
 		"uniques": [
 			"Only available <after adopting [Redistribution of Means of Production(Socialism)]>",
 			"'Economic Building'",
-			"Provides [1] [Consumption Demand]"
+			"Provides [2] [Consumption Demand]"
 		],
 		"requiredBuilding": "Bank",
 		"requiredTech": "Electricity",
@@ -4586,7 +4586,7 @@
 		"uniques": [
 			"Only available <after adopting [Redistribution of Means of Production(Anarchism)]>",
 			"'Economic Building'",
-			"Provides [1] [Consumption Demand]"
+			"Provides [1] [Consumption Supply]"
 		],
 		"requiredBuilding": "Bank",
 		"requiredTech": "Electricity",
@@ -4622,6 +4622,7 @@
 		},
 		"uniques": [
 			"'Political Building'",
+			"[+15]% Production when constructing ['Infrastructure'] buildings [in this city]",
 			"[-20]% Unhappiness from [Population] [in this city] <in cities with a [Anarchist Ruling]>",
 			"Destroyed when the city is captured"
 		],
@@ -5844,13 +5845,14 @@
 	{
 		"name": "Primitive Property Sector",
 		"percentStatBonus": {
-			"gold": 15
+			"gold": 10
 		},
+		"specialistSlots":{"Merchant":1},
 		"uniques": [
 			"'Economic Building'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Plutocracy]>",
-			"[-10]% Production when constructing [All] buildings [in this city]",
+			"[-20]% Production when constructing [All] buildings [in this city]",
 			"[+1 Gold] per [5] population [in this city]",
 			"Destroyed when the city is captured"
 		],
