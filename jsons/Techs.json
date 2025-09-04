@@ -115,7 +115,8 @@
 				"name": "The Wheel",
 				"row": 5,
 				"prerequisites": [
-					"Copper Working"
+					"Copper Working",
+					"Animal Husbandry"
 				],
 				"quote": "'Wisdom and virtue are like the two wheels of a cart.' - Japanese proverb"
 			},
@@ -138,7 +139,7 @@
 		"era": "Ancient era",
 		"techCost": 55,
 		"buildingCost": 40,
-		"wonderCost": 200,
+		"wonderCost": 225,
 		"techs": [
 			{
 				"name": "Astronomy",
@@ -233,7 +234,7 @@
 		"columnNumber": 5,
 		"era": "Classical era",
 		"techCost": 95,
-		"buildingCost": 80,
+		"buildingCost": 100,
 		"wonderCost": 250,
 		"techs": [
 			{
@@ -267,6 +268,9 @@
 			{
 				"name": "Horse Collar",
 				"row": 8,
+				"uniques":[
+					"[+1] Movement <for [Settler] units>"
+				],
 				"prerequisites": [
 					"Carpentry",
 					"Horseback Riding"
@@ -279,7 +283,7 @@
 		"columnNumber": 6,
 		"era": "Classical era",
 		"techCost": 125,
-		"buildingCost": 85,
+		"buildingCost": 100,
 		"wonderCost": 275,
 		"techs": [
 			{
@@ -373,7 +377,7 @@
 	{
 		"columnNumber": 8,
 		"era": "Medieval era",
-		"techCost": 265,
+		"techCost": 285,
 		"buildingCost": 120,
 		"wonderCost": 300,
 		"techs": [
@@ -494,6 +498,7 @@
 			{
 				"name": "Gunpowder Making",
 				"row": 4,
+				"uniques":["[+10]% [Science] from every [Alchemy Lab]"],
 				"prerequisites": [
 					"Engineering"
 				],
@@ -515,7 +520,7 @@
 					"Theology",
 					"Tactics"
 				],
-				"uniques": ["Comment [Allied City States gift[Influence]]"
+				"uniques": ["Comment [Allied City States gift [Influence]]"
 				],
 				"quote": "'A diplomat is a man who always remembers a woman's birthday but never remembers her age.'- Robert Frost"
 			}
@@ -664,7 +669,7 @@
 	{
 		"columnNumber": 14,
 		"era": "Imperial era",
-		"techCost": 730,
+		"techCost": 750,
 		"buildingCost": 200,
 		"wonderCost": 500,
 		"techs": [
@@ -703,7 +708,7 @@
 					"Machinery"
 				],
 				"quote": "'Their rising all at once was as the sound of thunder heard remote' - Milton"
-			}
+			},
 			{
 				"name": "Flintlock",
 				"row": 9,
@@ -717,7 +722,7 @@
 	{
 		"columnNumber": 15,
 		"era": "Imperial era",
-		"techCost": 1050,
+		"techCost": 1250,
 		"buildingCost": 250,
 		"wonderCost": 625,
 		"techs": [
@@ -769,7 +774,7 @@
 	{
 		"columnNumber": 16,
 		"era": "Imperial era",
-		"techCost": 1050,
+		"techCost": 1450,
 		"buildingCost": 275,
 		"wonderCost": 625,
 		"techs": [
@@ -798,7 +803,8 @@
 					"Architecture"
 				],
 				"uniques": [
-					"May buy [National Reserve] buildings for [1000] [Gold] [in capital]"
+					"May buy [National Reserve] buildings for [1500] [Gold] [in capital]",
+					"Triggers a [Economic Theories] event"
 				],
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
@@ -825,12 +831,13 @@
 	{
 		"columnNumber": 17,
 		"era": "Industrial era",
-		"techCost": 1400,
+		"techCost": 2000,
 		"buildingCost": 300,
 		"wonderCost": 1000,
 		"techs": [
 			{
 				"name": "Ship Armour",
+				"cost": 1700,
 				"row": 2,
 				"prerequisites": [
 					"Navigation",
@@ -867,13 +874,14 @@
 				],
 				"uniques": [
 					"Comment [Boosts [Alloy Mill]'s efficiency]",
-					"Gain a free [Civilian Factory Complex] [in all cities] <in cities with at least [20] [Population]> <if [Guild Complex] is constructed> <for [3] turns> <when [(Short Term Victory) Industrial] Victory is disabled>",
+					"Gain a free [Civilian Factory Complex] [in all cities] <in cities with at least [20] [Population]> <if [Guild Complex] is constructed> <for [3] turns> <when [(Short Victory) Industrial] Victory is disabled>",
 					"Gain a free [Military Factory Complex] [in all cities] <in cities with at least [15] [Population]> <if [Weapon Parts Workshop] is constructed> <if [Arsenal] is constructed> <for [3] turns>"
 				],
 				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
 			},
 			{
 				"name": "Rifling",
+				"cost": 1700,
 				"row": 9,
 				"prerequisites": [
 					"Military Science"
@@ -885,22 +893,13 @@
 	{
 		"columnNumber": 18,
 		"era": "Industrial era",
-		"techCost": 1600,
+		"techCost": 2300,
 		"buildingCost": 400,
 		"wonderCost": 1200,
 		"techs": [
 			{
-				"name": "Advanced Shipbuilding",
-				"row": 2,
-				"prerequisites": [
-					"Industrialization",
-					"Ship Armour"
-				],
-				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
-			},
-			{
 				"name": "Railroads",
-				"row": 5,
+				"row": 4,
 				"prerequisites": [
 					"Industrialization",
 					"Steam Power"
@@ -928,6 +927,7 @@
 			},
 			{
 				"name": "Dynamite",
+				"cost": 1900,
 				"row": 9,
 				"prerequisites": [
 					"Steam Power",
@@ -940,10 +940,19 @@
 	{
 		"columnNumber": 19,
 		"era": "Industrial era",
-		"techCost": 1600,
+		"techCost": 2500,
 		"buildingCost": 400,
 		"wonderCost": 1200,
 		"techs": [
+			{
+				"name": "Advanced Shipbuilding",
+				"row": 2,
+				"prerequisites": [
+					"Replaceable Parts",
+					"Ship Armour"
+				],
+				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
+			},
 			{
 				"name": "Concrete",
 				"row": 8,
@@ -1028,7 +1037,7 @@
 					"Combustion"
 				],
 				"quote": "'All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved.' - Sun Tzu"
-			}
+			},
 			{
 				"name": "Flight",
 				"row": 8,
@@ -1265,6 +1274,10 @@
 			{
 				"name": "LiDAR",
 				"row": 7,
+				"uniques":[
+					"Comment [Can see invisible [non-[Future era]] units <for units with [AEW]>]",
+					"[+5]% [Production] from every [Radar Station]"
+				],
 				"prerequisites": [
 					"Stealth"
 				],
@@ -1645,7 +1658,7 @@
 				"quote": "'Space is big. Really big. You just won't believe how vastly, hugely, mindbogglingly big it is. I mean, you may think it's a long way down the road to the chemist's, but that's just peanuts to space.' - Douglas Adams (Hitch hikers Guide to the Galaxy)"
 			}
 		]
-	}
+	},
 	{
 		"columnNumber": 34,
 		"era": "Future era",

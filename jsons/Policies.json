@@ -135,24 +135,24 @@
             "[+2 Happiness] [in all cities] <when number of [Cities] is less than [5]>"
         ],
         "policies": [
-            {
-                "name": "Chiefdom Confederation",
-                "uniques": [
-                    "Each city founded increases culture cost of policies [33]% less than normal",
-                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>"
-                    
-                ],
-                "row": 1,
-                "column": 3
-            },
+            
             {
                 "name": "Early Colonization",
                 "uniques": [
                     "[+1 Production] per [5] population [in all cities]",
                     "Free [Worker] appears"
                 ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Chiefdom Confederation",
+                "uniques": [
+                    "Each city founded increases culture cost of policies [33]% less than normal",
+                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>"
+                ],
                 "requires": [
-                    "Chiefdom Confederation"
+                    "Early Colonization"
                 ],
                 "row": 2,
                 "column": 1
@@ -164,7 +164,7 @@
                     "[+50]% Production when constructing [Ancient era] wonders [in all cities connected to capital]"
                 ],
                 "requires": [
-                    "Chiefdom Confederation"
+                    "Early Colonization"
                 ],
                 "row": 2,
                 "column": 5
@@ -172,16 +172,16 @@
             {
                 "name": "Codification",
                 "uniques": [
+                    "[+1 Happiness] from every [Town Hall]",
                     "[+50]% Production when constructing [Town Hall] buildings [in all cities]",
                     "[+50]% Production when constructing [Basilica] buildings [in all cities]",
                     "[+50]% Production when constructing [Satrap's Manor] buildings [in all cities]",
                     "[+50]% Production when constructing [European Longhouse] buildings [in all cities]",
-                    
                     "[+50]% Production when constructing [Courthouse] buildings [in all cities]",
                     "[+50]% Production when constructing [Sanhedrin] buildings [in all cities]"
                 ],
                 "requires": [
-                    "Early Colonization",
+                    "Chiefdom Confederation",
                     "Peace Under Force"
                 ],
                 "row": 3,
@@ -275,7 +275,8 @@
             {
                 "name": "Inherit the Wisdom",
                 "uniques": [
-                    "[+33]% Production when constructing ['Cultural Building'] buildings [in all cities]",
+                    "[+33]% Production when constructing [{Classical era} {'Cultural Building'}] buildings [in all cities]",
+                    "[+33]% Production when constructing [{Medieval era} {'Cultural Building'}] buildings [in all cities]",
                     "[+1 Faith] from every ['Cultural Building'] <after adopting [Early Theology]>",
                     "[+1 Culture] from every ['Political Building'] <after adopting [Codification]>"
                 ],
@@ -286,7 +287,7 @@
                 "name": "Metaphysics",
                 "uniques": [
                     "[+1 Culture] from every specialist [in capital]",
-                    "[+50]% Yield from every [Great Improvement]"
+                    "[+33]% Yield from every [Great Improvement]"
                 ],
                 "requires": [
                     "Inherit the Wisdom"
@@ -334,12 +335,12 @@
         "name": "Plutocracy",
         "era": "Classical era",
         "uniques": [
-            "Comment [[+50]% [Production] when constructing ['Infrastructure']s and ['Marine Infrastructure']s of Classical era and Medieval era in all cities]",
-            "[+50]% Production when constructing [{Medieval era} {'Infrastructure'}] buildings [in all cities] <hidden from users>",
-            "[+50]% Production when constructing [{Classical era} {'Infrastructure'}] buildings [in all cities] <hidden from users>",
-            "[+50]% Production when constructing [{Medieval era} {'Marine Infrastructure'}] buildings [in all cities] <hidden from users>",
-            "[+50]% Production when constructing [{Classical era} {'Marine Infrastructure'}] buildings [in all cities] <hidden from users>",
-            "Comment [Enables you to build [Primitive Property Sector], an 'Economic Building' that exchanges building speed with [Gold] production]"
+            "Comment [[+33]% [Production] when constructing ['Infrastructure']s and ['Marine Infrastructure']s of Classical era and Medieval era in all cities]",
+            "[+33]% Production when constructing [{Medieval era} {'Infrastructure'}] buildings [in all cities] <hidden from users>",
+            "[+33]% Production when constructing [{Classical era} {'Infrastructure'}] buildings [in all cities] <hidden from users>",
+            "[+33]% Production when constructing [{Medieval era} {'Marine Infrastructure'}] buildings [in all cities] <hidden from users>",
+            "[+33]% Production when constructing [{Classical era} {'Marine Infrastructure'}] buildings [in all cities] <hidden from users>",
+            "Comment [Enables you to build [Primitive Property Sector], an ['Economic Building'] that exchanges building speed with [Gold] production]"
         ],
         "policies": [
             {
@@ -353,11 +354,11 @@
                 "column": 1
             },
             {
-                "name": "Trade Alliance",
+                "name": "Economic Ties",
                 "uniques": [
                     "Gifts of Gold to City-States generate [25]% more Influence",
                     "[+50]% resources gifted by City-States",
-                    "[-25]% maintenance on road & railroads"
+                    "Comment [Decreases [Trade Alliance] and [Economic Commuity]'s cost.]"
                 ],
                 "row": 1,
                 "column": 3
@@ -376,12 +377,12 @@
                 "name": "Monopoly",
                 "uniques": [
                     "[+2] Happiness from each type of luxury resource",
-                    "[+25]% Production when constructing ['Economic Building'] buildings [in all cities]",
+                    "Instantly provides [1] [Iconic Brand]",
                     "[+1]% [Gold] from every ['Political Building'] <after adopting [Peace Under Force]>"
                 ],
                 "requires": [
                     "Patronage",
-                    "Trade Alliance",
+                    "Economic Ties",
                     "Convoy and Mecenaries"
                 ],
                 "row": 3,
@@ -391,7 +392,7 @@
                 "name": "Plutocracy Complete",
                 "uniques": [
                     "Instantly provides [5] [Influence]",
-                    "Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
+                    "Gain [150] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
                     "[+50]% Gold from Great Merchant trade missions"
                 ]
             }
@@ -404,7 +405,7 @@
             "Only available <before adopting [Feudalism]>",
             "Only available <before adopting [Theocracy]>",
             "[+5]% [Production] [in all cities]",
-            "Comment [Unlocks [Celestial Empire] as a ['Civilization Form'] that can be reformed into by a ['Unified'] ['Civilization Form'] During the Medieval era]"
+            "Comment [Unlocks [Celestial Empire] as a ['Civilization Form'] that can be reformed into by a ['United'] ['Civilization Form'] During the Medieval era]"
         ],
         "policies": [
             {
@@ -412,7 +413,7 @@
                 "uniques": [
                     "Comment [Enables you to build [Examination Hall]s,a 'Political/Educational' Building that produces [Happiness],[Culture] and provides building speed of capital buildings and unit XP]",
                     "[+10]% [Culture] from every [Examination Hall] <after adopting [Scholarship]>",
-                    "Comment [Examination Hall increases extra Unit starting XP after adopting Military Tradition from Militant Policy.]"
+                    "Comment [[Examination Hall] increases extra Unit starting XP after adopting [Military Tradition] from [Militant] Policy.]"
                 ],
                 "row": 1,
                 "column": 1
@@ -422,7 +423,7 @@
                 "uniques": [
                     "[+1 Happiness] [in all cities connected to capital]",
                     "[-10]% maintenance cost for [all] buildings [in all cities connected to capital]",
-                    "[-25]% maintenance on road & railroads <after adopting [Trade Alliance]>"
+                    "[-25]% maintenance on road & railroads <after adopting [Economic Ties]>"
                 ],
                 "row": 1,
                 "column": 5
@@ -444,7 +445,7 @@
                 "name": "Provincial Government",
                 "uniques": [
                     "[+5]% [Production] [in all cities] <while the empire is happy>",
-                    "[+50]% Production when constructing [City Hall] buildings [in all cities]"
+                    "[+100]% Production when constructing [City Hall] buildings [in all cities]"
                 ],
                 "requires": [
                     "Imperial Examinations",
@@ -470,7 +471,7 @@
             "Only available <before adopting [Theocracy]>",
             "[+1 Gold] from every ['Agricultural Improvement']",
             "Comment [Enables you to build [Jousting Place], an 'entertainment building' that lessens unhappiness from population and dont need maintainance]",
-            "Comment [Unlocks [Celestial Empire] as a ['Civilization Form'] that can be reformed into by a ['Unified'] ['Civilization Form'] During the Medieval era]"
+            "Comment [Unlocks [Empire of Electors] as a ['Civilization Form'] that can be reformed into by a ['United'] ['Civilization Form'] During the Medieval era]"
             
         ],
         "policies": [
@@ -534,6 +535,7 @@
             "Gain a free [Enhancer] belief <after adopting [Monotheism]>",
             "Gain a free [Follower] belief <after adopting [Polytheism]>",
             "Comment [Enables you to have beliefs exclusive to [Theoracy]]",
+            "Comment [Unlocks [Theocratic Empire] as a ['Civilization Form'] that can be reformed into by a ['United'] ['Civilization Form'] During the Medieval era]",
             "Only available <before adopting [Meritocracy]>",
             "Only available <before adopting [Feudalism]>"
         ],
@@ -561,7 +563,7 @@
                 "uniques": [
                     "[Faith] cost of purchasing [Missionary] units [-25]%",
                     "[Faith] cost of purchasing [Inquisitor] units [-25]% <after adopting [Monotheism]>",
-                    "[+3 Culture] from every ['Practice Ground'] <after adopting [Polytheism]>"
+                    "[+3]% [Culture] from every ['Practice Ground'] <after adopting [Polytheism]>"
                 ],
                 "requires": [
                     "Theology Conferences",
@@ -573,7 +575,7 @@
             {
                 "name": "Proxy of the god",
                 "uniques": [
-                    "[+2 Gold] from every ['Worship Place']",
+                    "[+6]% [Gold] from every ['Worship Place']",
                     "[+2 Culture] from every ['Organise Place']"
                 ],
                 "requires": [
@@ -597,7 +599,7 @@
         "name": "Humanism",
         "era": "Renaissance era",
         "uniques": [
-            "Comment [Enables you to build [Printing House],a 'Cultural Building' that gives various bonuses,]",
+            "Comment [Enables you to build [Printing House], a ['Cultural Building'] that gives various bonuses]",
             "[+1 Happiness, +1 Production] per [5] population [in all cities] <in cities with at least [15] [Population]>"
         ],
         "policies": [
@@ -765,7 +767,7 @@
                 "column": 3
             },
             {
-                "name": "Paliments",
+                "name": "Parliaments",
                 "uniques": [
                     "[+5]% [Production] [in all cities]",
                     "Each city founded increases culture cost of policies [17]% less than normal"
@@ -999,6 +1001,7 @@
             "Only available <before adopting [Conservatism]>",
             "Only available <before adopting [Anarchism]>",
             "Only available <with [Revolution Oppotunity]>",
+            "Only available <if [Anti-Fascism Legacy] is not constructed> <hidden from users>",
             "Triggers a [Fascist Revolution!] event",
             "Comment [Enables you to build [Hall of the Nation],an unique wonder that increases strength of attacks]"
         ],

@@ -89,7 +89,6 @@
 			"Excess Food converted to Production when under construction",
 			"[+2] Movement <before turn number [2]>",
 			"[+2] Sight <before turn number [2]>",
-			"[+1] Movement <after discovering [Horse Collar]>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Requires at least [3] population"
 		],
@@ -347,7 +346,7 @@
 		"strength": 16,
 		"uniques": [
 			"Can upgrade to [Legio] <if [SPQR] is constructed>",
-			"Can upgrade to [Phalanx] <if [Alexandrian Successor States] is constructed>",
+			"Can upgrade to [Phalanx] <if [Diadochi States] is constructed>",
 			"'Standing Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -403,7 +402,7 @@
 		"movement": 2,
 		"strength": 20,
 		"uniques": [
-			"Only available <if [Alexandrian Successor States] is constructed>",
+			"Only available <if [Diadochi States] is constructed>",
 			"'Standing Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -910,6 +909,7 @@
 	},
 	{
 		"name": "Qin Balista",
+		"uniqueTo":"East Asia",
 		"unitType": "Siege",
 		"cost": 75,
 		"movement": 2,
@@ -1167,6 +1167,7 @@
 	///Line 7
 	{
 		"name": "Hetairoi Cavalry",
+		"uniqueTo":"Mediterranean",
 		"unitType": "Assault",
 		"movement": 3,
 		"strength": 26,
@@ -1178,6 +1179,7 @@
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"'Legendary Unit'",
 			"Can move after attacking",
 			"No defensive terrain bonus",
 			"[-25]% Strength <vs cities> <when attacking>",
@@ -1468,13 +1470,13 @@
 			"No defensive terrain bonus",
 			"[+1] Sight",
 			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[+10]% Strength <vs [Rider] units> <when attacking>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
 			"The Standing Army",
 			"Hardened",
-			"Skirmisher Training",
 			"Resourceful Army"
 		],
 		"requiredBuilding":"Military Stable",
@@ -4472,7 +4474,7 @@
 		"cost":1000,
 		"unitType": "Civilian",
 		"uniques": [
-			"Empire enters a [8]-turn Golden Age <by consuming this unit>",
+			"Instantly provides [40] [Influence] <by consuming this unit>",
 			"Can instantly construct a [Landmark] improvement <by consuming this unit>",
 			"Great Person - [Culture]",
 			"Is part of Great Person group [Culture]",
@@ -4516,6 +4518,7 @@
 		"uniques": [
 			"Can speed up construction of a building",
 			"Can instantly construct a [Manufactory] improvement <by consuming this unit>",
+			///"Instantly provides [1] [War Machine Blueprint] <by consuming this unit>",
 			"Great Person - [Production]",
 			"Is part of Great Person group [Production]",
 			"Unbuildable",

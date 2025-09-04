@@ -243,6 +243,8 @@
 			"'Extraction Improvement'",
 			"Tile provides yield without assigned population",
 			"[+2 Production] for each adjacent [Power Plant]",
+			"Provides [1] [Metal] <in [Metal] tiles>",
+			"Provides [2] [Coal] <in [Coal] tiles>",
 			"Pillaging this improvement yields approximately [+40 Gold]"
 		],
 		"shortcutKey": "M"
@@ -324,9 +326,9 @@
 		"uniques": [
 			"'Infrastructure Improvement'",
 			"[+1 Production] for each adjacent [Strategic resource]",
-			"[+1 Production] for each adjacent [Strategic resource] <after discovering [Military Science]>",
 			"[+1 Production] for each adjacent [Strategic resource] <after discovering [Replaceable Parts]>",
-			"[+1 Production] for each adjacent [Manufactory]",
+			"[+1 Production] for each adjacent [Strategic resource] <after discovering [Ballistics]>",
+			"[+2 Production] for each adjacent [Manufactory]",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
 		"shortcutKey": "S"
@@ -378,13 +380,13 @@
 			"Ocean"
 		],
 		"turnsToBuild": 7,
-		"requiredTech": "Cartography",
 		"uniques": [
 			"'Water Improvement'",
 			"Provides [2] [Deep Sea Fish(Stored)]",
 			"Can only be built to improve a resource",
 			"Pillaging this improvement yields approximately [+10 Gold]"
 		],
+		"techRequired": "Cartography",
 		"shortcutKey": "F"
 	},
 	{
@@ -469,13 +471,13 @@
 			"Plains",
 			"Flood plains"
 		],
-		"food": 1,
 		"culture": 1,
 		"happiness": 1,
 		"turnsToBuild": 8,
 		"uniques": [
 			"'Policy Improvement'",
 			"Only available <after adopting [Manorialism]>",
+			"Cannot be built on [Land] tiles <with [1] to [6] neighboring [Manor] tiles>",
 			"Gives a defensive bonus of [25]%",
 			"Provides [1] [Noble Army Maintainance]",
 			"Pillaging this improvement yields approximately [+36 Gold]"
@@ -610,8 +612,9 @@
 			"'Policy Improvement'",
 			"[+2 Production] for each adjacent [Storage Base]",
 			"Can be built outside your borders",
-			"Gives a defensive bonus of [50]%",
-			"Costs [2] [Gold] per turn"
+			"Gives a defensive bonus of [33]% <before discovering [Architecture]>",
+			"Gives a defensive bonus of [50]% <after discovering [Architecture]>",
+			"Costs [3] [Gold] per turn"
 		],
 		"terrainsCanBeBuiltOn": [
 			"Plains",
@@ -628,10 +631,11 @@
 	},
 	{
 		"name": "Trench",
-		"turnsToBuild": 3,
+		"turnsToBuild": 1,
 		"uniques": [
 			"Can be built outside your borders",
-			"Gives a defensive bonus of [25]%"
+			"Gives a defensive bonus of [15]% <before discovering [Military Science]>",
+			"Gives a defensive bonus of [25]% <after discovering [Military Science]>"
 		],
 		"terrainsCanBeBuiltOn": [
 			"Plains",
@@ -643,7 +647,7 @@
 			"Forest",
 			"Jungle"
 		],
-		"techRequired": "Military Science",
+		"techRequired": "Mathematics",
 		"shortcutKey": "O"
 	},
 	// Transportation
@@ -802,6 +806,7 @@
 		"science": 5,
 		"uniques": [
 			"Great Improvement",
+			"Provides [1] [Academic Research]",
 			"[+2 Science] <after discovering [Philosophy]>",
 			"[+2 Science] <after discovering [Physics]>",
 			"[+2 Science] <after discovering [Scientific Theory]>",
