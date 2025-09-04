@@ -18,6 +18,7 @@
 			"Unbuildable <for [AI player] Civilizations>",
 			"Only available <in [Capital] cities>",
 			"Comment [Act upon internal affairs as if you are ruling a country. For examples, you can disband levies to mitigate the downside and increase stability of the civilization.]",
+			"Play [policy]",
 			"Triggers a [Enact Policies] event"
 		]
 	},
@@ -38,6 +39,7 @@
 			"Unbuildable <for [AI player] Civilizations>",
 			"Unbuildable <in [Puppeted] cities>",
 			"Only available <in cities with at least [5] [Population]>",
+			"Play [policy]",
 			"[-1 Happiness] [in this city] <before adopting [Militia Army]>",
 			"[-1 Happiness] [in this city] <before adopting [Military Tradition]>",
 			"[-15]% [Gold] [in this city] <if [Militristic Economy] is not constructed>",
@@ -3971,7 +3973,7 @@
 	},
 	{
 		"name": "Food Industry",
-		"cost":500,
+		"cost":600,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 5,
@@ -4018,7 +4020,7 @@
 	},
 	{
 		"name": "Consumer Goods Industry",
-		"cost":500,
+		"cost": 600,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 5,
@@ -4121,7 +4123,7 @@
 	///Line 18
 	{
 		"name": "Vehicle Industry",
-		"cost":750,
+		"cost":850,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 4,
@@ -4226,7 +4228,7 @@
 	},
 	{
 		"name": "Shipmaking Industry",
-		"cost":750,
+		"cost":850,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 5,
@@ -4458,7 +4460,7 @@
 	},
 	{
 		"name": "Military Vehicle Industry",
-		"cost":750,
+		"cost":1000,
 		"maintenance": 20,
 		"science": 1,
 		"specialistSlots": {
@@ -4680,7 +4682,7 @@
 
 	{
 		"name": "Cement Work",
-		"cost":500,
+		"cost":750,
 		"maintenance": 8,
 		"cityHealth": 5,
 		"specialistSlots": {
@@ -4942,6 +4944,7 @@
 	},
 	{
 		"name": "Aviation Industry",
+		"cost":1100,
 		"maintenance": 20,
 		"science": 1,
 		"specialistSlots": {
@@ -4981,6 +4984,7 @@
 	///Line 21
 	{
 		"name": "Electronic Industry",
+		"cost":1350,
 		"maintenance": 20,
 		"percentStatBonus": {
 			"science": 10
@@ -5040,8 +5044,9 @@
 	///Line 22
 	{
 		"name": "Nuclear Power Plant",
+		"cost":1150,
 		"maintenance": 5,
-		"science": 3,
+		"percentStatBonus":{"science":5},
 		"uniques": [
 			"'Power Building'",
 			"Consumes [1] [Enriched Uranium] <before discovering [Nuclear Fusion]>",
@@ -5054,6 +5059,7 @@
 	{
 		"name": "Bomb Shelter",
 		"maintenance": 3,
+		"happiness":1,
 		"cityHealth": 10,
 		"uniques": [
 			"'Static Defense'",
@@ -5115,6 +5121,7 @@
 	},
 	{
 		"name": "Uranium Enrichment Facility",
+		"cost":1200,
 		"maintenance": 10,
 		"uniques": [
 			"'Heavy Industry'",
@@ -5170,6 +5177,7 @@
 	},
 	{
 		"name": "Rocketry Industry",
+		"cost":1500,
 		"maintenance": 20,
 		"science": 1,
 		"specialistSlots": {
@@ -5326,6 +5334,7 @@
 	///Line 25
 	{
 		"name": "Partical Acclerator",
+		"cost":2000,
 		"maintenance": 5,
 		"science": 8,
 		"percentStatBonus": {
@@ -5353,17 +5362,20 @@
 	},
 	{
 		"name": "Video Game Industry",
-		"happiness": 2,
+		"cost":1200,
 		"percentStatBonus": {
-			"gold": 10
+			"gold": 10,
+			"culture": 25
 		},
 		"specialistSlots": {
 			"Artist": 1,
-			"Merchant": 1
+			"Merchant": 1,
+			"Labourer":2
 		},
 		"uniques": [
 			"'Entertainment Building'",
 			"'High Tech Industry'",
+			"Provides [1] [Consumption Supply]",
 			"Consumes [1] [Electronic Parts]"
 		],
 		"requiredTech": "Internet",
@@ -5375,8 +5387,8 @@
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Reveals the entire map",
-			"[+25]% [Science] [in all cities]",
-			"[+25]% [Production] [in all cities]",
+			"[+15]% [Science] [in all cities]",
+			"[+15]% [Production] [in all cities]",
 			"[+5]% [Gold] from Trade Routes",
 			"[+1] Movement",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
@@ -7722,8 +7734,8 @@
 			"[+1]% [Production] from every ['Political Building']",
 			"[-33]% construction time for [All] improvements <when not at war>",
 			"[+25]% Production when constructing [All] wonders [in all cities connected to capital] <when not at war>",
-			"Comment [Unique Ability: Socialist Education. Can enfact a new policy. To increase the [Science] and [Culture] gain at cost of[Gold].]",
-			"Comment [If you ever have your [Happiness] go down into below 20, you will lose this['Civilization Form'].]",
+			"Comment [Unique Ability: Socialist Education. Can enfact a new policy. To increase the [Science] and [Culture] gain at cost of [Gold].]",
+			"Comment [If you ever have your [Happiness] go down into below 20, you will lose this ['Civilization Form'].]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
 		]
