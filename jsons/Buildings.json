@@ -538,7 +538,8 @@
 		"uniques": [
 			"'Military Building'",
 			"All newly-trained [Military] units [in this city] receive the [Hardened] promotion",
-			"New [Military] units start with [10] XP [in this city]",
+			"New [{'Standing Army'} {Land}] units start with [10] XP [in this city]",
+			"New [{'Noble Army'} {Land}] units start with [10] XP [in this city]",
 			"Provides [1] [Standing Army Maintainance]",
 			"Destroyed when the city is captured"
 		],
@@ -1057,6 +1058,7 @@
 		"uniques": [
 			"'Infrastructure'",
 			"[+1]% [Gold] from Trade Routes",
+			"[+1]% [Gold] from Trade Routes <if [Captial of Mountain Range] is constructed> <hidden from users>",
 			"[+1]% growth [in all cities]",
 			"[-5]% maintenance cost for [all] buildings [in this city]"
 		],
@@ -1829,7 +1831,7 @@
 			"[Military] units gain the [Medieval Arms] promotion",
 			"[Military] units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>",
 			"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <before the [Industrial era]>",
-			"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <starting from the [Industrial era]><after discovering [Electricity]>",
+			"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <starting from the [Industrial era]> <after discovering [Electricity]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Military Blacksmith",
@@ -2972,21 +2974,7 @@
 		"quote": "'The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come.' - The Books of Chilam Balam",
 		"requiredTech": "Civil Service"
 	},
-	{
-		"name": "Castle of Great Egret",
-		"isWonder": true,
-		"culture": 3,
-		"greatPersonPoints": {
-			"Great Engineer": 2
-		},
-		"uniques": [
-			"[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
-			"Gain a free [City Citadel] [in this city]",
-			"Only available <if [No Wonder] is not constructed> <hidden from users>"
-		],
-		"requiredTech": "Gunpowder Making",
-		"quote": "'Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.' - Yamamoto Tsunetomo"
-	},
+	
 	{
 		"name": "Cathedral of Mercy",
 		"faith": 4,
@@ -3082,17 +3070,49 @@
 		"name": "Military Academy",
 		"maintenance": 3,
 		"greatPersonPoints": {
-			"Great Strategist": 2
+			"Great Strategist": 1
 		},
 		"uniques": [
             "'Educational Building'",
 			"'Military Building'",
-			"New [Military] units start with [20] XP [in this city]",
+			"New [Military] units start with [15] XP [in this city]",
 			"All newly-trained [Military] units [in this city] receive the [Tactic Research] promotion",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Library",
 		"requiredTech": "Education",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Invention of Porcelain",
+		"cost": 300,
+		"uniques": [
+			"'Invention'",
+			"Limited to [1] per Civilization",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Gain [100] [Science] <(modified by game speed)> <if [Invention of Porcelain] is not constructed by anybody>",
+			"Gain [300] [Gold] <(modified by game speed)> <if [Invention of Porcelain] is not constructed by anybody>",
+			"[-33]% production cost <if [Invention of Porcelain] is constructed by anybody>",
+			"Comment [Unlocks [Porcelain Workshop], a ['Light Industy'] building that improves [Clay] tile further, provides a large amount of [Gold], some specialist slots and a increase in ['Economic Building'] construction speed.]",
+			"Moves to new capital when capital changes"
+		],
+		"requiredBuilding": "Alchemy Lab",
+		"requiredTech": "Coal Working",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Porcelain Workshop",
+		"gold":5,
+		"specialistSlots":{"Artist":1,"Merchant":1},
+		"uniques": [
+			"Only available <if [Invention of Porcelain] is constructed>",
+			"'Light Industry'",
+			"[+25]% Production when constructing ['Economic Building'] buildings [in this city]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources":["Clay"],
+		"requiredBuilding": "Pottery Workshop",
+		"requiredTech": "Coal Working",
 		"hurryCostModifier": 25
 	},
 	{
@@ -3133,13 +3153,12 @@
 	{
 		"name": "Captial of Mountain Range",
 		"isWonder": true,
-		"gold": 3,
 		"greatPersonPoints": {
-			"Great Merchant": 1
+			"Great Artist": 3
 		},
-		"culture": 1,
 		"uniques": [
-			"[+25]% [Gold] from Trade Routes",
+			"Gain a free [Road Network] [in all cities]",
+			"Comment [Double the [Gold] from trade route percentage boost of [Road Network]]",
 			"Must have an owned [Mountain] within [2] tiles",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -3216,6 +3235,21 @@
 		],
 		"quote": "'The love of desires, of women and sons and hoarded treasures of gold and silver and well-bred horses and cattle and tilth, is made to seem fair to men; this is the provision of the life of this world; and Allah is He with Whom is the good goal (of life)' - Surah Al Imran (The Family of Imran) 3:14",
 		"requiredTech": "Banking"
+	},
+	{
+		"name": "Castle of Great Egret",
+		"isWonder": true,
+		"culture": 5,
+		"greatPersonPoints": {
+			"Great Engineer": 2
+		},
+		"uniques": [
+			"[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
+			"Gain a free [Bastion] [in this city]",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Hand Cannon",
+		"quote": "'Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.' - Yamamoto Tsunetomo"
 	},
 	{
 		"name": "Greatest Temple",
@@ -4267,7 +4301,7 @@
 		"name": "Rubber Transplant",
 		"maintenance": 3,
 		"uniques": [
-			"Must have an owned [Jungle] within [4] tiles",
+			"Must have an owned [{non-[improved]} {Jungle}] within [4] tiles",
 			"Only available <when above [0] [Rubber]>",
 			"Creates a [Rubber Plantation] improvement on a specific tile",
 			"Destroyed when the city is captured"
@@ -4804,7 +4838,7 @@
 	},
 	{
 		"name": "Chemical Plant",
-		"maintenance": 3,
+		"maintenance": 5,
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from ['Chemicals'] tiles [in this city]",
@@ -7967,7 +8001,7 @@
 			"Destroyed when the city is captured",
 			"[+5]% [Food] [in all cities]",
 			"[+5]% [Happiness] [in all cities]",
-			"[-20]% [Gold] [in all cities]",
+			"[-33]% [Gold] [in all cities]",
 			"[-50]% Production when constructing ['Light Industry'] buildings [in all cities]",
 			"[-50]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
 			"[-25]% Production when constructing ['Infrastructure'] buildings [in all cities]",

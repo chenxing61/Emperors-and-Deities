@@ -498,6 +498,7 @@
 			{
 				"name": "Gunpowder Making",
 				"row": 4,
+				"uniques":["[+10]% [Science] from every [Alchemy Lab]"],
 				"prerequisites": [
 					"Engineering"
 				],
@@ -519,7 +520,7 @@
 					"Theology",
 					"Tactics"
 				],
-				"uniques": ["Comment [Allied City States gift[Influence]]"
+				"uniques": ["Comment [Allied City States gift [Influence]]"
 				],
 				"quote": "'A diplomat is a man who always remembers a woman's birthday but never remembers her age.'- Robert Frost"
 			}
@@ -897,17 +898,8 @@
 		"wonderCost": 1200,
 		"techs": [
 			{
-				"name": "Advanced Shipbuilding",
-				"row": 2,
-				"prerequisites": [
-					"Industrialization",
-					"Ship Armour"
-				],
-				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
-			},
-			{
 				"name": "Railroads",
-				"row": 5,
+				"row": 4,
 				"prerequisites": [
 					"Industrialization",
 					"Steam Power"
@@ -952,6 +944,15 @@
 		"buildingCost": 400,
 		"wonderCost": 1200,
 		"techs": [
+			{
+				"name": "Advanced Shipbuilding",
+				"row": 2,
+				"prerequisites": [
+					"Replaceable Parts",
+					"Ship Armour"
+				],
+				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
+			},
 			{
 				"name": "Concrete",
 				"row": 8,
