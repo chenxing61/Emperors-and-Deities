@@ -4569,18 +4569,6 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Export Firm",
-		"percentStatBonus": {
-			"gold": 10
-		},
-		"uniques": [
-			"'Economic Building'",
-			"[+1 Gold] from [Luxury resource] tiles [in this city]"
-		],
-		"requiredTech": "Electricity",
-		"hurryCostModifier": 10
-	},
-	{
 		"name": "Commercial Area",
 		"specialistSlots": {
 			"Labourer":2,
@@ -5245,6 +5233,20 @@
 		"requiredTech": "Telecommunications"
 	},
 	///Line 24
+	
+	{
+		"name": "Export Firm",
+		"percentStatBonus": {
+			"gold": 10
+		},
+		"uniques": [
+			"'Economic Building'",
+			"[+1 Gold] from [Luxury resource] tiles [in this city]",
+			"[+1]% [Gold] from Trade Routes"
+		],
+		"requiredTech": "Globalization",
+		"hurryCostModifier": 10
+	},
 	{
 		"name": "Solar Plant",
 		"maintenance": 2,
@@ -6643,7 +6645,6 @@
 			"Unsellable",
 			"'Civilization State'",
 			"[+10]% growth [in all cities]",
-			"[+10]% [Gold] from Trade Routes",
 			"[+10]% [Culture] [in all cities]",
 			"Influence of all other civilizations with all city-states degrades [-25]% faster",
 			"Moves to new capital when capital changes"
@@ -8041,12 +8042,24 @@
 		"hurryCostModifier": -50
 	},
 	{
+		"name":"Spread Influence",
+		"cost":10,
+		"uniques":[
+			"Unavailable",
+			"Unsellable",
+			"Costs [1] [Spreaded Influence] <upon turn start> <when above [0] [Spreaded Influence]>",
+			"Resting point for Influence with City-States is increased by [25]",
+            "City-State Influence recovers at twice the normal rate",
+			"Moves to new capital when capital changes"
+		]
+	},
+	{
 		"name":"Alexander Event Flag",
 		"cost":10,
 		"uniques":[
 			"Unavailable",
 			"Unsellable",
-			"Consumes [1] [Alexandrian Empire Period] <when above [0] [Alexandrian Empire Period]>",
+			"Costs [1] [Alexandrian Empire Period] <upon turn start> <when above [0] [Alexandrian Empire Period]>",
 			"Triggers a [Alexander's death] event <when below [6] [Alexandrian Empire Period]> <with [10]% chance>",
 			"Triggers a [Alexander's death] event <when below [9] [Alexandrian Empire Period]> <with [50]% chance> <if [Diadochi States] is not constructed>",
 			"Will not be displayed in Civilopedia",
