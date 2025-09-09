@@ -238,6 +238,7 @@
 		"strength": 8,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -585,6 +586,7 @@
 		"upgradesTo": "Explorer",
 		"requiredTech": "Astronomy",
 		"obsoleteTech": "Monocular",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "metalhit"
 	},
@@ -670,7 +672,7 @@
 		],
 		"requiredTech": "Mining",
 		"obsoleteTech": "Tactics",
-		"upgradesTo": "Levy Archer",
+		"upgradesTo": "Mercenary Archer",
 		"attackSound": "arrow"
 	},
 	{
@@ -683,7 +685,6 @@
 		"range": 1,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -699,6 +700,8 @@
 		"requiredTech": "Mining",
 		"obsoleteTech": "Logistics",
 		"upgradesTo": "Mercenary Archer",
+		"requiredBuilding":"Mercenary Office",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "arrow"
 	},
 	{
@@ -1115,6 +1118,7 @@
 		"strength": 15,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -1146,7 +1150,6 @@
 		"range": 1,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Mercenary Army'",
@@ -1161,6 +1164,7 @@
 		"requiredTech": "Logistics",
 		"obsoleteTech": "Engineering",
 		"upgradesTo": "Mercenary Crossbowman",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "arrow"
 	},
@@ -1332,7 +1336,6 @@
 		"strength": 20,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -1350,6 +1353,7 @@
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Flintlock",
 		"upgradesTo": "Mercenary Musketeer",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "metalhit"
 	},
@@ -1450,6 +1454,7 @@
 		],
 		"requiredTech": "Shipbuilding",
 		"obsoleteTech": "Monocular",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "throw"
 	},
@@ -1522,7 +1527,6 @@
 		"strength": 18,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"Unbuildable",
 			"'Mercenary Army'",
 			"'Mounted'",
@@ -1540,6 +1544,7 @@
 		"requiredTech": "Stirrup",
 		"obsoleteTech": "Carriage",
 		"upgradesTo": "Hussar",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "horse"
 	},
@@ -1609,7 +1614,6 @@
 		"range": 1,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -1624,6 +1628,7 @@
 		"requiredTech": "Engineering",
 		"obsoleteTech": "Hand Cannon",
 		"upgradesTo": "Mercenary Hand Cannoneer",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "crossbow"
 	},
@@ -1818,20 +1823,19 @@
 		"strength": 31,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
-			"Never appears as a Barbarian unit",
-			"Only available <before adopting [Knighthood]>"
+			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
 			"Mercenary Habit"
 		],
 		"requiredTech": "Diplomacy",
 		"obsoleteTech": "Hand Cannon",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"upgradesTo": "Mercenary Pistoleer",
 		"attackSound": "horse"
@@ -1923,7 +1927,6 @@
 		"range": 1,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -1938,6 +1941,7 @@
 		"upgradesTo": "Mercenary Skirmisher",
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "shot"
 	},
@@ -1974,6 +1978,7 @@
 			"Only available <after adopting [Unity]>",
 			"Can transform to [Musketeer] <after discovering [Flintlock]> <when above [0] [Standing Army Maintainance]> <removing the [The Garrison Army] promotion/status>",
 			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintainance]> <removing the [The Garrison Army] promotion/status>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -2029,7 +2034,6 @@
 		"uniques": [
 			"Can transform to [Cuirassier] <after discovering [Rifling]> <when above [0] [Standing Army Maintainance]> <removing the [Mercenary Habit] promotion/status>",
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Mounted'",
 			"'Dense Formation'",
@@ -2044,6 +2048,7 @@
 		],
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "horse"
 	},
@@ -2142,7 +2147,6 @@
 		"strength": 30,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"Can transform to [Recon Unit] <removing the [Mercenary Habit] promotion/status> <when above [0] [Standing Army Maintainance]> <after discovering [Replaceable Parts]>",
 			"'Mercenary Army'",
 			"'Infantry'",
@@ -2292,6 +2296,7 @@
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Security Company",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "shot"
 	},
@@ -2303,6 +2308,7 @@
 		"cost": 140,
 		"uniques": [
 			"Only available <if [United States] is constructed>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -2460,7 +2466,6 @@
 		"range": 1,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -2475,6 +2480,7 @@
 		"requiredTech": "Cartridge",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Security Company",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "shot"
 	},
@@ -2644,6 +2650,7 @@
 		"uniques": [
 			"Can transform to [Heavy Infantry] <after discovering [Replaceable Parts]> <when above [0] [Standing Army Maintainance]> <removing the [The Garrison Army] promotion/status>",
 			"Only available <if [United States] is constructed>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -2969,7 +2976,6 @@
 		"strength": 65,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -2982,6 +2988,7 @@
 			"Mercenary Habit"
 		],
 		"requiredTech": "Replaceable Parts",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "metalhit"
 	},
@@ -4504,6 +4511,7 @@
 		"uniques": [
 			"Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
 			"Can instantly construct a [Customs house] improvement <by consuming this unit>",
+			"Comment [After consuming the [Great Merchant] in various ways, you can get a [Iconic Brand] for free.]",
 			"Great Person - [Gold]",
 			"Is part of Great Person group [Gold]",
 			"Unbuildable",
@@ -4518,7 +4526,7 @@
 		"uniques": [
 			"Can speed up construction of a building",
 			"Can instantly construct a [Manufactory] improvement <by consuming this unit>",
-			///"Instantly provides [1] [War Machine Blueprint] <by consuming this unit>",
+			"Instantly provides [1] [War Machine Blueprint] <by consuming this unit>",
 			"Great Person - [Production]",
 			"Is part of Great Person group [Production]",
 			"Unbuildable",

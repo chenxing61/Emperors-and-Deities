@@ -13,18 +13,18 @@
 
         "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [10] [Population]>",  
         "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [15] [Population]>",  
-        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [20] [Population]>",  
-        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [25] [Population]>",  
-        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [30] [Population]>",  
-        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [35] [Population]>",  
-        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [40] [Population]>",  
-        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [45] [Population]>",  
-        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [50] [Population]>",  
-        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [55] [Population]>",  
-        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [60] [Population]>",  
-        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [65] [Population]>",  
-        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [70] [Population]>", 
-        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [75] [Population]>",
+        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [20] [Population]>",  
+        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [25] [Population]>",  
+        "[+30]% Unhappiness from [Population] [in all cities] <in cities with at least [30] [Population]>",  
+        "[+30]% Unhappiness from [Population] [in all cities] <in cities with at least [35] [Population]>",  
+        "[+40]% Unhappiness from [Population] [in all cities] <in cities with at least [40] [Population]>",  
+        "[+40]% Unhappiness from [Population] [in all cities] <in cities with at least [45] [Population]>",  
+        "[+50]% Unhappiness from [Population] [in all cities] <in cities with at least [50] [Population]>",  
+        "[+50]% Unhappiness from [Population] [in all cities] <in cities with at least [55] [Population]>",  
+        "[+60]% Unhappiness from [Population] [in all cities] <in cities with at least [60] [Population]>",  
+        "[+60]% Unhappiness from [Population] [in all cities] <in cities with at least [65] [Population]>",  
+        "[+70]% Unhappiness from [Population] [in all cities] <in cities with at least [70] [Population]>", 
+        "[+70]% Unhappiness from [Population] [in all cities] <in cities with at least [75] [Population]>",
 
         "[+25]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [5]>",
         "[+15]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [7]>",
@@ -39,6 +39,8 @@
         "[+25]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [37]>",
         "[+15]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [40]>",
         "[-15]% [Production] [in all cities] <when below [0] [Happiness]>",
+
+        "[+33]% Faith cost of generating Great Prophet equivalents",
         //Influence
         
         "Triggers a [Wealth Gap Widens] event <after turn number [40]>  <when below [-5] [Happiness]> <for [non-[City-States]] Civilizations> <with [15]% chance> <upon turn start>",
@@ -76,7 +78,7 @@
         "Remove [Unified] [in capital] <if ['Divided'] is constructed in all [Capital] cities> <upon turn start>",
         "[-1] Sight <for [Embarked] units>",
         //Prevents AI from spamming units
-        "Cannot build ['Mercenary Army'] units <when not at war> <starting from the [Classical era]> <for [AI player] Civilizations>",
+        "Cannot build [{non-[Nubian Archer]} {'Mercenary Army'}] units <before adopting [Plutocracy]> <for [AI player] Civilizations>",
         "Cannot build ['Firearms'] units <when below [-10] [Weapon Parts]>",
         "Cannot build ['Motorised'] units <when below [-10] [Vehicle Parts]>",
         "Cannot build ['Mechanised'] units <when below [-10] [Vehicle Parts]>",
@@ -87,7 +89,7 @@
         "Cannot build ['Mechanised'] units <when below [-10] [Fuel]>",
         "Cannot build ['Engine Ship'] units <when below [-10] [Fuel]>",
         "Cannot build [Air] units <when below [-10] [Fuel]>",
-        "[+33]% Faith cost of generating Great Prophet equivalents",
+        
         //Various Mechanics
         "Notified of new Barbarian encampments",
         "Instantly provides [1] [Revolution Oppotunity] <upon entering the [Imperial era]>",

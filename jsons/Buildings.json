@@ -710,13 +710,10 @@
 		"uniques": [
 			"'Economic Building'",
 			"'Political Building'",
-			"[+1 Gold] from [Gold Ore] tiles [in this city]",
-			"[+1 Gold] from [Silver Ore] tiles [in this city]",
-			"[+1 Gold] from [Rich Copper Ore] tiles [in this city]",
 			"[+1 Gold] from [{'Extraction Improvement'} {Gold Ore}] tiles [in this city]",
 			"[+1 Gold] from [{'Extraction Improvement'} {Silver Ore}] tiles [in this city]",
 			"[+1 Gold] from [{'Extraction Improvement'} {Rich Copper Ore}] tiles [in this city]",
-			"[+2 Gold] from [Cocoa] tiles [in this city]",
+			"[+1 Gold] from [{'Agricultural Improvement'} {Cocoa}] tiles [in this city]",
 			"[+1 Gold] per [4] population [in this city]"
 		],
 		"requiredNearbyImprovedResources": [
@@ -1205,6 +1202,7 @@
 		"maintenance": 1,
 		"production": 1,
 		"culture":1,
+		"specialistSlots":{"Labourer":1},
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from ['Rock'] tiles [in this city]",
@@ -1354,6 +1352,10 @@
 		"name": "Town Square",
 		"maintenance": 1,
 		"culture": 1,
+		"happiness": 1,
+		"specialistSlots":{
+			"Merchant":1,
+			"Labourer":2},
 		"uniques": [
 			"'Cultural Building'",
 			"[+1 Gold] from all ['Economic Building'] buildings <in this city>",
@@ -1367,8 +1369,11 @@
 		"name": "Agora",
 		"uniqueTo": "Mediterranean",
 		"replaces": "Town Square",
-		"culture": 1,
+		"culture": 2,
 		"happiness": 1,
+		"specialistSlots":{
+			"Merchant":1,
+			"Labourer":2},
 		"uniques": [
 			"'Cultural Building'",
 			"[+1 Gold] from all ['Economic Building'] buildings <in this city>",
@@ -1386,6 +1391,9 @@
 		"maintenance": 2,
 		"culture": 1,
 		"happiness": 1,
+		"specialistSlots":{
+			"Merchant":1,
+			"Labourer":2},
 		"uniques": [
 			"'Cultural Building'",
 			"'Economic Building'",
@@ -1415,7 +1423,6 @@
 		"uniques": [
 			"'Military Building'",
 			"Provides [1] [Horse]",
-			"Provides [1] [Standing Army Maintainance]",
 			"New ['Mounted'] units start with [10] XP [in this city]",
 			"Destroyed when the city is captured"
 		],
@@ -1458,7 +1465,6 @@
 	{
 		"name": "City of Mystery",
 		"isWonder": true,
-		"culture": 1,
 		"greatPersonPoints": {
 			"Great Engineer": 1
 		},
@@ -1478,7 +1484,7 @@
 		"culture": 3,
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"Comment [Every time your civ became unified, enter a golden age.]",
+			"Comment [Every time your civilization become unified, enter a golden age.]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu",
@@ -1549,7 +1555,7 @@
 		},
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"[+25]% [Science] [in this city]",
+			"[+33]% [Science] [in this city]",
 			"[+25]% Great Person generation [in this city]",
 			"Cost increases by [20] per owned city"
 		],
@@ -1605,7 +1611,7 @@
 			"Free [Heavy Galley Fleet] appears <after discovering [Shipbuilding]> <before discovering [Monocular]>",
 			"Free [Cannon Galley Fleet] appears <after discovering [Monocular]> <before discovering [Advanced Shipbuilding]>",
 			"Free [Torpedo Boat Flotilla] appears <after discovering [Advanced Shipbuilding]>",
-			"[+50]% Production when constructing [Water] units [in this city]",
+			"[+25]% Production when constructing [Water] units [in this city]",
 			"Destroyed when the city is captured",
 			"Must be next to [Coast]"
 		],
@@ -1622,7 +1628,7 @@
 		"uniques": [
 			"'Military Building'",
 			"'Marine Infrastructure'",
-			"[+50]% Production when constructing [Water] units [in this city]",
+			"[+25]% Production when constructing [Water] units [in this city]",
 			"Destroyed when the city is captured",
 			"Must be next to [Coast]"
 		],
@@ -1649,7 +1655,7 @@
 		"uniques": [
 			"'Military Building'",
 			"New [Military] units start with [10] XP [in this city]",
-			"[Military] units gain the [Classical Arms] promotion",
+			"[{Land} {Military}] units gain the [Classical Arms] promotion",
 			"Comment [Enables you to build new Siege Units unlocked by Engineering]",
 			"Destroyed when the city is captured"
 		],
@@ -2377,8 +2383,7 @@
 		"percentStatBonus":{"gold":15,"production":10},
 		"specialistSlots": {
 			"Merchant":1,
-			"Artist":1,
-			"Engineer":1
+			"Artist":1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -3638,7 +3643,7 @@
 	{
 		"name": "Alloy Mill",
 		"maintenance": 3,
-		"production": 2,
+		"specialistSlots":{"Engineer":1,"Labourer":1},
 		"uniques": [
 			"'Heavy Industry'",
 			"[+10]% Production when constructing [All] buildings [in this city]",
@@ -3667,6 +3672,7 @@
 		"name": "Aluminium Mill",
 		"maintenance": 3,
 		"science": 2,
+		"specialistSlots":{"Engineer":1,"Labourer":1},
 		"uniques": [
 			"'Heavy Industry'",
 			"Consumes [2] [Power] <in cities with a [Power Grid]>",
@@ -3929,6 +3935,7 @@
 		"name": "Gas Storage and Transfer System",
 		"maintenance": 5,
 		"science": 1,
+		"specialistSlots":{"Engineer":1},
 		"uniques": [
 			"'Heavy Industry'",
 			"Provides [3] [Fuel]",
@@ -4426,6 +4433,7 @@
 		"name": "Oil Refinery",
 		"maintenance": 8,
 		"science": 1,
+		"specialistSlots":{"Engineer":1,"Labourer":2},
 		"uniques": [
 			"'Heavy Industry'",
 			"Provides [5] [Fuel]",
@@ -4673,11 +4681,10 @@
 		"cost":750,
 		"maintenance": 8,
 		"cityHealth": 5,
-		"specialistSlots": {
-			"Engineer": 1
-		},
+		"specialistSlots":{"Engineer":1,"Labourer":3},
 		"uniques": [
 			"'Heavy Industry'",
+			"Provides [1] [Consumption Supply]",
 			"[+1 Production] from ['Rock'] tiles [in this city]",
 			"[+2]% Production when constructing [All] buildings [in all cities]"
 		],
@@ -4814,8 +4821,9 @@
 		"name": "Synthetic Oil Plant",
 		"maintenance": 8,
 		"percentStatBonus": {
-			"production": 25
+			"production": 10
 		},
+		"specialistSlots":{"Engineer":1,"Labourer":2},
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from [Coal] tiles [in this city]",
@@ -4829,6 +4837,7 @@
 	{
 		"name": "Chemical Plant",
 		"maintenance": 5,
+		"specialistSlots":{"Engineer":1,"Labourer":2},
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from ['Chemicals'] tiles [in this city]",
@@ -5110,6 +5119,7 @@
 		"name": "Uranium Enrichment Facility",
 		"cost":1200,
 		"maintenance": 10,
+		"specialistSlots":{"Scientist":1},
 		"uniques": [
 			"'Heavy Industry'",
 			"Consumes [3] [Uranium]",
@@ -5264,6 +5274,7 @@
 	{
 		"name": "Recycling Center",
 		"maintenance": 5,
+		"specialistSlots":{"Labourer":3},
 		"uniques": [
 			"'Heavy Industry'",
 			"Provides [1] [Waste Material] <in cities with at least [10] [Population]>",
@@ -5276,6 +5287,7 @@
 	{
 		"name": "Recycling Industry",
 		"maintenance": 5,
+		"specialistSlots":{"Engineer":1,"Labourer":3},
 		"uniques": [
 			"'Heavy Industry'",
 			"Consumes [3] [Waste Material]",
@@ -5753,13 +5765,13 @@
 		"name": "Igloo",
 		"culture": 1,
 		"uniques": [
-			"'Economic Building'",
-			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Unbuildable",
-			"Only available <when religion is enabled>",
-			"Must have an owned [Snow] within [3] tiles",
+			"'Economic Building'",
 			"Gain a free [Hunter's Hut] [in this city]",
 			"[+1 Culture, +1 Food] from [Camp] tiles [in this city]",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
+			"Only available <when religion is enabled>",
+			"Must have an owned [Snow] within [3] tiles",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Calendar"
@@ -5831,8 +5843,8 @@
 		"uniques": [
 			"Limited to [5] per Civilization",
 			"[+1 Faith] per [5] population [in this city] <in cities with between [9] and [15] [Population]>",
-			"[+1 Faith] per [8] population [in this city] <in cities with between [15] and [24] [Population]>",
-			"[+2 Faith] per [5] population [in this city] <in cities with at least [24] [Population]>",
+			"[+1 Faith] per [4] population [in this city] <in cities with between [15] and [24] [Population]>",
+			"[+1 Faith] per [3] population [in this city] <in cities with at least [24] [Population]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -6191,6 +6203,7 @@
 		"name": "Carbon Capture",
 		"maintenance": 3,
 		"production": 1,
+		"specialistSlots":{"Engineer":1,"Labourer":1},
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
