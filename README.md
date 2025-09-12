@@ -25,6 +25,8 @@
 
  Some Russian Translation done by Nori_Bori from discord with help of Genemi AI.
  
+ Discord
+ https://discord.gg/nr3yKXca
  To support cx61 and his helpers:
  https://buymeacoffee.com/chenxing61
 
