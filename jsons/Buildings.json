@@ -3604,8 +3604,21 @@
 		"maintenance": 5,
 		"uniques": [
 			"'Political Building'",
-			"[-15]% Unhappiness from [Specialists] [in this city]",
+			"[-20]% Unhappiness from [Specialists] [in this city]",
 			"[-25]% enemy spy effectiveness [in this city]"
+		],
+		"requiredBuilding": "City Hall",
+		"requiredTech": "Architecture",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Fire Station",
+		"maintenance": 5,
+		"happiness":2,
+		"uniques": [
+			"'Infrastructure'",
+			"[-10]% Unhappiness from [Population] [in this city]",
+			"[+10]% growth [in this city]"
 		],
 		"requiredBuilding": "City Hall",
 		"requiredTech": "Architecture",
@@ -4665,6 +4678,7 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Telegram",
+		"requiredBuilding":"City Hall",
 		"hurryCostModifier": 25
 	},
 	{
@@ -4873,7 +4887,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Entertainment Building'",
-			"[-5]% Unhappiness from [Population] [in this city]"
+			"[-10]% Unhappiness from [Population] [in this city]"
 		],
 		"requiredTech": "Radio",
 		"hurryCostModifier": 25
