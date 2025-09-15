@@ -215,12 +215,11 @@
             {
                 "text": "Spread our [Influence] to city states",
                 "uniques": [
-                    "Only available <before adopting [Anarchism]> <when above [5] [Influence]>",
+                    "Only available <before adopting [Anarchism]> <if [Spread Influence] is not constructed> <when above [5] [Influence]>",
                     "Play [paper] sound",
                     "Instantly consumes [5] [Influence] <before the [Medieval era]>",
                     "Instantly consumes [10] [Influence] <starting from the [Medieval era]> <before the [Industrial era]>",
                     "Instantly consumes [15] [Influence] <starting from the [Industrial era]> <before the [Information era]>",
-                    "Instantly provides [8] [Spreaded Influence]",
                     "Gain a free [Spread Influence] [in capital]",
                     "Remove [Enact Policies] [in all cities] <hidden from users>",
                     "Triggers a [Enact Policies] event <hidden from users>"
@@ -695,12 +694,20 @@
                 "text": "[Military Alliance] is the most practical",
                 "uniques": [
                     "Only available <before the [Industrial era]> <if [Collective Security] is not constructed> <if [Military Alliance] is not constructed>",
-                    "Only available <when above [9] [Influence]>",
+                    "Only available <when above [9] [Influence]> <for [non-[Europa]] Civilizations>",
+                    "Instantly consumes [8] [Influence]",
+                    "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Gain a free [Military Alliance] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Military Alliance] is the most practical",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Collective Security] is not constructed> <if [Military Alliance] is not constructed>",
                     "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
-                    "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
-                    "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
-                    "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
-                    "Gain [-125] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Instantly consumes [5] [Influence]",
+                    "Gain [-63] [Gold] <(modified by game speed)>",
                     "Gain a free [Military Alliance] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
                 ]
@@ -709,11 +716,19 @@
                 "text": "[Cultural Exchange] is the most elegant",
                 "uniques": [
                     "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed>",
-                    "Only available <when above [9] [Influence]>",
+                    "Only available <when above [9] [Influence]> <for [non-[Europa]] Civilizations>",
+                    "Instantly consumes [8] [Influence]",
+                    "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Gain a free [Cultural Exchange] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Cultural Exchange] is the most elegant",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed>",
                     "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
-                    "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
-                    "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
                     "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
                     "Gain a free [Cultural Exchange] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
@@ -723,13 +738,21 @@
                 "text": "[Trade Alliance] is the most attractive",
                 "uniques": [
                     "Only available <before the [Industrial era]> <if [Economic Community] is not constructed> <if [Trade Alliance] is not constructed>",
-                    "Only available <when above [9] [Influence]>",
+                    "Only available <when above [9] [Influence]> <for [non-[Europa]] Civilizations>",
+                    "Instantly consumes [8] [Influence]",
+                    "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Gain [50] [Gold] <(modified by game speed)><after adopting [Economic Ties]>",
+                    "Gain a free [Trade Alliance] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Trade Alliance] is the most attractive",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Economic Community] is not constructed> <if [Trade Alliance] is not constructed>",
                     "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
-                    "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
-                    "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
                     "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
-                    "Gain [50] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations> <after adopting [Economic Ties]>",
                     "Gain [38] [Gold] <(modified by game speed)> <for [Europa] Civilizations> <after adopting [Economic Ties]>",
                     "Gain a free [Trade Alliance] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
