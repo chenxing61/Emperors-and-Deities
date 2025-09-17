@@ -215,12 +215,21 @@
             {
                 "text": "Spread our [Influence] to city states",
                 "uniques": [
-                    "Only available <before adopting [Anarchism]> <if [Spread Influence] is not constructed> <when above [5] [Influence]>",
+                    "Only available <before adopting [Anarchism]> <if [Spread Influence] is not constructed> <when above [0] [Influence]>",
                     "Play [paper] sound",
-                    "Instantly consumes [5] [Influence] <before the [Medieval era]>",
-                    "Instantly consumes [10] [Influence] <starting from the [Medieval era]> <before the [Industrial era]>",
-                    "Instantly consumes [15] [Influence] <starting from the [Industrial era]> <before the [Information era]>",
+                    "Comment [Costs 1 [Influence] per turn, maintain your diplomatic efforts in city states.]",
+                    "Comment [Costs 1 extra [Influence] per turn starting from Imperial era.]",
                     "Gain a free [Spread Influence] [in capital]",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>",
+                    "Triggers a [Enact Policies] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Stop Spreading our [Influence] to city states",
+                "uniques": [
+                    "Only available <if [Spread Influence] is constructed>",
+                    "Play [paper] sound",
+                    "Remove [Spread Influence] [in all cities]",
                     "Remove [Enact Policies] [in all cities] <hidden from users>",
                     "Triggers a [Enact Policies] event <hidden from users>"
                 ]
@@ -1165,7 +1174,7 @@
                 "text": "We shall arrange a great feast to show our wealth!",
                 "uniques": [
                     "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Army Maintainance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
-                    "Instantly provides [5] [Influence]",
+                    "Instantly provides [10] [Influence]",
                     "Gain a free [Army Maintainance Cost] [in capital]",
                     "Gain [-25] [Gold] <when number of [Cities] is less than [4]> <(modified by game speed)>",
                     "Gain [-50] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
@@ -1179,7 +1188,7 @@
                 "text": "We shall do a military march to demostrate our might!",
                 "uniques": [
                     "Only available <starting from the [Imperial era]> <if [Army Maintainance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
-                    "Instantly provides [5] [Influence]",
+                    "Instantly provides [15] [Influence]",
                     "Instantly consumes [10] [Weapon Parts]",
                     "Gain a free [Army Maintainance Cost] [in capital]",
                     "Gain [-50] [Gold] <when number of [Cities] is less than [4]> <(modified by game speed)>",
@@ -1193,8 +1202,8 @@
                 "uniques": [
                     "Only available <if [Army Maintainance Cost] is constructed> <when above [30] [Gold]>",
                     "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]>",
-                    "Gain [-25] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-25] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
                     "Remove [Army Maintainance Cost] [in all cities]",
                     "Triggers a [Popularity Crisis] event <hidden from users>"
                 ]
