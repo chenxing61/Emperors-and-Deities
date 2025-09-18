@@ -16,7 +16,10 @@
         "maxRiverLength": 512,
         "religionLimitBase": 10,
         "religionLimitMultiplier": 1,
-        "baseTurnsUntilRevolt": 3
+        "baseTurnsUntilRevolt": 3,
+        "cityStrengthPerPop":1,
+        "cityStrengthFromGarrison":0.5,
+        "naturalWonderCountAddedConstant": 0.2
     },
     "uniques": [
         "Cannot be used as permanent audiovisual mod",
@@ -24,6 +27,8 @@
         "Suppress warning [Cannon is supposed to automatically upgrade at tech Scientific Theory, and therefore Machinery for its upgrade Siege Bombard may not yet be researched!]",
         "Suppress warning [Great Strategist can place improvement Citadel which has no stats, preventing unit automation!]",
         "Suppress warning [Great Merchant can place improvement Customs house which has no stats, preventing unit automation!]",
-        "Suppress warning [Your images are being generated into multiple atlas files - this can cause lag for players. Please consult https://yairm210.github.io/Unciv/Modders/Images-and-Audio/#rendering-performance on how to improve rendering performance.]"
-    ]
+        "Suppress warning [Your images are being generated into multiple atlas files - this can cause lag for players. Please consult https://yairm210.github.io/Unciv/Modders/Images-and-Audio/#rendering-performance on how to improve rendering performance.]",
+        
+    ],
+    "tileset":"HexaRealm"
 }
