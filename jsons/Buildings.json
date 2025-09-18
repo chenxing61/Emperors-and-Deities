@@ -504,9 +504,10 @@
 	{
 		"name": "Fishing Port",
 		"food": 2,
+		"gold": 1,
 		"uniques": [
 			"'Marine Infrastructure'",
-			"[+1 Food] from [Coast] tiles [in this city]",
+			"Creates a [Coast Fishing Boats] improvement on a specific tile",
 			"Consumes [1] [Deep Sea Fish(Stored)] <when above [1] [Deep Sea Fish(Stored)]>",
 			"[+5 Food, +3 Gold] <when above [1] [Deep Sea Fish(Stored)]>",
 			"Comment [When will we be able to get those big fish?]",
@@ -519,12 +520,12 @@
 		"name": "Emporion",
 		"uniqueTo": "Mediterranean",
 		"replaces": "Fishing Port",
-		"food": 1,
-		"gold": 1,
+		"food": 2,
+		"gold": 2,
 		"uniques": [
 			"'Marine Infrastructure'",
 			"Connects trade routes over water",
-			"[+1 Food] from [Coast] tiles [in this city]",
+			"Creates a [Coast Fishing Boats] improvement on a specific tile",
 			"Consumes [1] [Deep Sea Fish(Stored)] <when above [1] [Deep Sea Fish(Stored)]>",
 			"[+5 Food, +3 Gold] <when above [1] [Deep Sea Fish(Stored)]>",
 			"Comment [When will we be able to get those big fish?]",
@@ -535,7 +536,7 @@
 	},
 	{
 		"name": "Barrack",
-		"maintenance": 1,
+		"maintenance": 2,
 		"cityStrength": 5,
 		"uniques": [
 			"'Military Building'",
@@ -684,7 +685,7 @@
 		"name": "Watermill",
 		"maintenance":1,
 		"food": 2,
-		"production": 1,
+		"production": 2,
 		"uniques": [
 			"'Agricultural Building'",
 			"Must be on [River]"
@@ -855,6 +856,7 @@
 	{
 		"name": "Shrine of Rain God",
 		"isWonder": true,
+		"faith":1,
 		"culture": 1,
 		"happiness": 1,
 		"greatPersonPoints": {
