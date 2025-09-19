@@ -37,8 +37,7 @@
 		"uniques": [
 			"Unsellable",
 			"Unbuildable <for [AI player] Civilizations>",
-			"Unbuildable <in [Puppeted] cities>",
-			"Only available <in cities with at least [5] [Population]>",
+			"Only available <in [Non-occupied] cities> <in cities with at least [5] [Population]>",
 			"Play [policy] sound",
 			"[-1 Happiness] [in this city] <before adopting [Militia Army]>",
 			"[-1 Happiness] [in this city] <before adopting [Military Tradition]>",
@@ -75,6 +74,63 @@
 			"Free [Modern Conscript] appears <after discovering [Mobile Tactics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Destroyed when the city is captured"
 		]
+	},
+	{
+		"name": "Complete Intergration",
+		"cost": 175,
+		"uniques": [
+			"Only available <before adopting [Anarchism]>",
+			"Can only be built <in [Annexed] cities>",
+			"Gain a free [Intergration] [in this city]",
+			"Gain a free [Administrative Intergration] [in this city]",
+			"Gain a free [Cultural Intergration] [in this city]",
+			"Destroyed when the city is captured"
+		],
+		"hurryCostModifier": 25,
+		"requiredTech": "Printing Press"
+	},
+	{
+		"name": "Intergration",
+		"cost": 50,
+		"uniques": [
+			"[-5]% [Food] [in this city] <in cities without a [Administrative Intergration]>",
+			"[-25]% [Production] [in this city] <in cities without a [Administrative Intergration]>",
+			"[-25]% [Gold] [in this city] <in cities without a [Administrative Intergration]>",
+			"[-25]% [Culture] [in this city] <in cities without a [Cultural Intergration]>",
+			"[-10]% [Science] [in this city] <in cities without a [Cultural Intergration]>",
+			"[-25]% [Faith] [in this city] <in cities without a [Cultural Intergration]>",
+			"[-5]% [Happiness] [in this city] <in cities without a [Administrative Intergration]> <in cities without a [Cultural Intergration]>",
+			"Only available <before adopting [Anarchism]>",
+			"Can only be built <in [Annexed] cities>",
+			"Removes extra unhappiness from annexed cities",
+			"Destroyed when the city is captured"
+		],
+		"hurryCostModifier": 25,
+		"requiredTech": "Paper Making"
+	},
+	{
+		"name": "Administrative Intergration",
+		"cost": 50,
+		"uniques": [
+			"Comment [Remove [Food],[Production] and [Gold] debuff from annexed cities]",
+			"Only available <before adopting [Anarchism]>",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding":"Intergration",
+		"hurryCostModifier": 25,
+		"requiredTech": "Paper Making"
+	},
+	{
+		"name": "Cultural Intergration",
+		"cost": 50,
+		"uniques": [
+			"Comment [Remove [Culture],[Science] and [Faith] debuff from annexed cities]",
+			"Only available <before adopting [Anarchism]>",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding":"Intergration",
+		"hurryCostModifier": 25,
+		"requiredTech": "Paper Making"
 	},
 	{
 		"name": "Remove Slums",
@@ -1676,7 +1732,9 @@
 		"name": "Civilian Blacksmith",
 		"maintenance": 3,
 		"uniques": [
-			"'Light Industry'",
+			"Comment [Belongs to ['Heavy Industry'] before the Industrial era, and starting from that era, it turns into a ['Light Industry'] building.]",
+			"'Heavy Industry' <before the [Industrial era]> <hidden from users>",
+			"'Light Industry' <starting from the [Industrial era]> <hidden from users>",
 			"[+1 Production] from ['Extraction Improvement'] tiles [in this city]",
 			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]",
 			"[+1 Production] from ['Lumber Improvement'] tiles [in this city]",
@@ -1710,21 +1768,6 @@
 		],
 		"requiredTech": "Paper Making",
 		"hurryCostModifier": 10
-	},
-	{
-		"name": "Intergration",
-		"percentStatBonus": {
-			"production":-10,
-			"gold": -10
-		},
-		"uniques": [
-			"Only available <before adopting [Anarchism]>",
-			"Can only be built <in [Annexed] cities>",
-			"Removes extra unhappiness from annexed cities",
-			"Destroyed when the city is captured"
-		],
-		"hurryCostModifier": 50,
-		"requiredTech": "Paper Making"
 	},
 	{
 		"name": "Armory",
@@ -2280,6 +2323,7 @@
 			"Consumes [2] [Tea Leave]",
 			"Free Great Person",
 			"[+50]% Production when constructing [Tea House] buildings [in all cities]",
+			"Provides [1] [Tea Leave]",
 			"Destroyed when the city is captured"
 		],
 		"requiredNearbyImprovedResources":["Tea Leave"],
@@ -2302,6 +2346,7 @@
 			"Consumes [2] [Coffee]",
 			"[+10]% Great Person generation [in all cities]",
 			"[+50]% Production when constructing [Cafe] buildings [in all cities]",
+			"Provides [1] [Coffee]",
 			"Destroyed when the city is captured"
 		],
 		"requiredNearbyImprovedResources":["Coffee"],
@@ -2489,7 +2534,6 @@
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"'Military Building'",
 			"'Research Building'",
 			"Gain a free [Chemistry Lab] [in this city] <after discovering [Chemistry]>"
 		],
@@ -2524,7 +2568,7 @@
 	},
 	{
 		"name": "Circus",
-		"cost": 40,
+		"cost": 50,
 		"happiness": 2,
 		"gold":1,
 		"uniques": [
@@ -2572,17 +2616,16 @@
 		"requiredTech": "Compass",
 		"hurryCostModifier": 10
 	},
-
 	{
 		"name": "Theatre",
 		"maintenance":3,
+		"happiness": 2,
 		"percentStatBonus":{
 			"culture":10,
 			"gold":5
 		},
-		"happiness": 2,
 		"uniques": [
-			"'Cultural Building'",
+			"'Entertainment Building'",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Town Square",
@@ -2627,7 +2670,6 @@
 	},
 	{
 		"name": "Monastery",
-		"cost": 0,
 		"culture": 1,
 		"faith": 2,
 		"uniques": [
@@ -2672,7 +2714,7 @@
 	{
 		"name": "Agricultural Water Storage",
 		"maintenance": 2,
-		"food": 3,
+		"food": 4,
 		"uniques": [
 			"'Infrastructure'",
 			"Only available <in cities without a [Irrigation System]>"
@@ -8097,7 +8139,7 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"Destroyed when the city is captured",
-			"[+5]% [Food] [in all cities]",
+			"[+10]% [Food] [in all cities]",
 			"[+5]% [Happiness] [in all cities]",
 			"[-33]% [Gold] [in all cities]",
 			"[-50]% Production when constructing ['Light Industry'] buildings [in all cities]",
@@ -8114,6 +8156,8 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"[+5]% [Food] [in all cities]",
+			"[+5]% [Happiness] [in all cities]",
 			"[+10]% [Gold] [in all cities]",
 			"Destroyed when the city is captured"
 		],
