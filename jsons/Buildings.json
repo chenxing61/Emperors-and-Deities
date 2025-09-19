@@ -616,8 +616,7 @@
 			"[+1 Production] per [5] population [in this city] <in cities with between [9] and [15] [Population]>",
 			"[+1 Production] per [8] population [in this city] <in cities with between [15] and [24] [Population]>",
 			"[+1 Production] per [10] population [in this city] <in cities with at least [24] [Population]>",
-			"[+1 Production] from [Clay] tiles [in this city]",
-			"[+1 Production] from [{'Extraction Improvement'} {Clay}] tiles [in this city]"
+			"[+1 Production] from [Clay] tiles [in this city]"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 0
@@ -632,8 +631,9 @@
 			"[+1 Culture] per [8] population [in this city] <in cities with between [15] and [24] [Population]>",
 			"[+1 Culture] per [10] population [in this city] <in cities with at least [24] [Population]>",
 			"[+1 Production] from [{'Agricultural Improvement'} {'Textile'}] tiles [in this city]",
-			"[+1 Gold] from [{Camp} {Furs}] tiles [in this city]",
-			"[+1 Gold] from [{'Agricultural Improvement'} {Silk}] tiles [in this city]",
+			"[+2 Gold] from [{Camp} {Furs}] tiles [in this city]",
+			"[+2 Gold] from [{'Agricultural Improvement'} {Silk}] tiles [in this city]",
+			"[+2 Gold] from [{'Agricultural Improvement'} {Dyes}] tiles [in this city]",
 			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>",
 			"Provides [1] [Consumption Supply] <starting from the [Industrial era]> <if [Cotton Trade] is constructed>"
 		],
@@ -642,7 +642,8 @@
 			"Caprinae",
 			"Furs",
 			"Cotton",
-			"Silk"
+			"Silk",
+			"Dyes"
 		],
 		"requiredTech": "Animal Husbandry",
 		"hurryCostModifier": 0
@@ -1083,25 +1084,64 @@
 		"name": "Livestock Market",
 		"gold": 1,
 		"production": 1,
+		"specialistSlots": {
+			"Merchant": 1
+		},
 		"uniques": [
 			"'Economic Building'",
-			"[+1 Gold] from [{'Agricultural Improvement'} {'Herd'}] tiles [in this city]",
-			"Must have an owned [Pasture] within [3] tiles"
+			"[+3]% [Gold] [in this city] <with [Bovine]>",
+			"[+3]% [Gold] [in this city] <with [Caprinae]>",
+			"[+4]% [Gold] [in this city] <with [Horse]>",
+			"[+50]% Production when constructing [Stable] buildings [in this city] <with [Horse]>",
+			"Must have an owned ['Herd'] within [3] tiles"
 		],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
 	},
 	{
 		"name": "Crops Market",
+		"food":1,
 		"gold": 1,
+		"specialistSlots": {
+			"Merchant": 1
+		},
 		"uniques": [
 			"'Economic Building'",
-			"[+1 Gold] from [Incense] tiles [in this city]",
-			"[+1 Gold] from [Spices] tiles [in this city]",
-			"[+1 Gold] from [Grape] tiles [in this city]",
-			"[+1 Gold] from [Sugar] tiles [in this city]",
-			"[+1 Gold] from [Cocoa] tiles [in this city]",
-			"[+1 Gold] from [{'Agricultural Improvement'} {'Crops'}] tiles [in this city]"
+			"[+3]% [Gold] [in this city] <with [Grain]>",
+			"[+3]% [Gold] [in this city] <with [Tuber]>",
+			"[+3]% [Gold] [in this city] <with [Fruit]>",
+			"[+3]% [Gold] [in this city] <with [Incense]>",
+			"[+3]% [Gold] [in this city] <with [Spices]>",
+			"[+3]% [Gold] [in this city] <with [Grape]>",
+			"[+3]% [Gold] [in this city] <with [Sugar]>",
+			"[+3]% [Gold] [in this city] <with [Truffles]>",
+			"[+3]% [Gold] [in this city] <with [Honey]>",
+			"[+3]% [Gold] [in this city] <with [Citrus]>",
+			"[+3]% [Gold] [in this city] <with [Tea Leave]>",
+			"[+3]% [Gold] [in this city] <with [Coffee]>",
+			"[+3]% [Gold] [in this city] <with [Rubber]>"
+		],
+		"requiredTech": "Trade Network",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Crops Market",
+		"food":1,
+		"gold": 1,
+		"specialistSlots": {
+			"Merchant": 1
+		},
+		"uniques": [
+			"'Economic Building'",
+			"[+3]% [Gold] [in this city] <with [Grain]>",
+			"[+3]% [Gold] [in this city] <with [Tuber]>",
+			"[+3]% [Gold] [in this city] <with [Fruit]>",
+			"[+3]% [Gold] [in this city] <with [Incense]>",
+			"[+3]% [Gold] [in this city] <with [Spices]>",
+			"[+3]% [Gold] [in this city] <with [Grape]>",
+			"[+3]% [Gold] [in this city] <with [Sugar]>",
+			"[+3]% [Gold] [in this city] <with [Spices]>",
+			"[+3]% [Gold] [in this city] <with [Rubber]>"
 		],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
@@ -1110,6 +1150,9 @@
 		"name": "Mercenary Office",
 		"cost": 50,
 		"maintenance": 1,
+		"specialistSlots": {
+			"Merchant": 1
+		},
 		"uniques": [
 			"'Military Building'",
 			"May buy ['Mercenary Army'] units with [Gold] [in this city]",
@@ -1172,7 +1215,7 @@
 		"culture": 3,
 		"happiness": 1,
 		"greatPersonPoints": {
-			"Great Artist": 1
+			"Great Artist": 2
 		},
 		"uniques": [
 			"Gain a free [Garden] [in this city]",
@@ -1187,13 +1230,12 @@
 		"isWonder": true,
 		"culture": 1,
 		"greatPersonPoints": {
-			"Great Merchant": 1
+			"Great Merchant": 3
 		},
 		"uniques": [
 			"Must be next to [Desert]",
 			"[+1 Food, +1 Production] from [Desert] tiles without [Flood plains] [in this city]",
 			"Gain a free [Trading Post] [in this city]",
-			"[+6 Culture] [in this city] <after discovering [Archaeology]>",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"requiredTech": "Trade Network",
@@ -1203,7 +1245,6 @@
 	{
 		"name": "Stone Works",
 		"maintenance": 1,
-		"production": 1,
 		"culture":1,
 		"specialistSlots":{"Labourer":1},
 		"uniques": [
@@ -1221,7 +1262,7 @@
 	{
 		"name": "Brick Works",
 		"maintenance": 1,
-		"production": 1,
+		"specialistSlots":{"Labourer":1},
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from [Clay] tiles [in this city]",
@@ -1303,7 +1344,7 @@
 			"Great Merchant": 1
 		},
 		"uniques": [
-			"Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
+			"Gain [150] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
 			"[+1 Gold] from ['Useful Mineral'] tiles [in this city]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -1358,7 +1399,8 @@
 		"happiness": 1,
 		"specialistSlots":{
 			"Merchant":1,
-			"Labourer":2},
+			"Labourer":2
+		},
 		"uniques": [
 			"'Cultural Building'",
 			"[+1 Gold] from all ['Economic Building'] buildings <in this city>",
@@ -1376,11 +1418,12 @@
 		"happiness": 1,
 		"specialistSlots":{
 			"Merchant":1,
-			"Labourer":2},
+			"Labourer":2
+		},
 		"uniques": [
 			"'Cultural Building'",
 			"[+1 Gold] from all ['Economic Building'] buildings <in this city>",
-			"[-10]% Culture cost of natural border growth [in this city]",
+			"[-15]% Culture cost of natural border growth [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Drama and Poetry",
@@ -1410,14 +1453,17 @@
 	},
 	{
 		"name": "Temple",
+		"maintenance":1,
 		"faith": 2,
 		"culture": 1,
-		"requiredTech": "Drama and Poetry",
 		"uniques": [
 			"'Worship Place'",
+			"[+8]% [Culture] [in this city] <in cities with a [Shrine]>",
+			"[+8]% [Faith] [in this city] <in cities with a [Chaple]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
 		],
+		"requiredTech": "Drama and Poetry",
 		"hurryCostModifier": 0
 	},
 	{
@@ -1428,6 +1474,7 @@
 			"Provides [1] [Horse]",
 			"New ['Mounted'] units start with [10] XP [in this city]",
 			"Free [Light Cavalry] appears <for [AI player] Civilizations> <before the [Imperial era]>",
+			"Free [Hussar] appears <for [AI player] Civilizations> <before the [Industrial era]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Barrack",
@@ -1445,7 +1492,7 @@
 		"requiredTech": "Mathematics",
 		"uniques": [
 			"'Practice Ground'",
-			"[2] free [Missionary] units appear",
+			"[3] free [Missionary] units appear",
 			"Only available <before adopting [Monotheism]>",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -1455,7 +1502,7 @@
 		"name": "White Horse Temple",
 		"isWonder": true,
 		"culture": 1,
-		"happiness": 1,
+		"happiness": 3,
 		"uniques": [
 			"'Organise Place'",
 			"Gain a free [Temple] [in this city]",
@@ -1470,13 +1517,12 @@
 		"name": "City of Mystery",
 		"isWonder": true,
 		"greatPersonPoints": {
-			"Great Engineer": 1
+			"Great Engineer": 2
 		},
 		"uniques": [
 			"Must be next to [Desert]",
 			"[+1 Science, +1 Culture] from [Desert] tiles without [Flood plains] [in this city]",
 			"Gain a free [University] [in this city]",
-			"[+6 Culture] [in this city] <after discovering [Archaeology]>",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"requiredTech": "Drama and Poetry",
@@ -1610,6 +1656,24 @@
 	},
 	///Line 6
 	{
+		"name": "Dry Dock",
+		"maintenance": 1,
+		"percentStatBonus": {
+			"production": -5
+		},
+		"uniques": [
+			"'Military Building'",
+			"'Marine Infrastructure'",
+			"[+25]% Production when constructing [Water] units [in this city]",
+			"Destroyed when the city is captured",
+			"Must be next to [Coast]"
+		],
+		"requiredBuilding": "Barrack",
+		"requiredTech": "Dry Dock",
+		"hurryCostModifier": 25
+	},
+	
+	{
 		"name": "Cothon Harbour",
 		"uniqueTo": "North Africa",
 		"replaces": "Dry Dock",
@@ -1622,23 +1686,6 @@
 			"Free [Heavy Galley Fleet] appears <after discovering [Shipbuilding]> <before discovering [Monocular]>",
 			"Free [Cannon Galley Fleet] appears <after discovering [Monocular]> <before discovering [Advanced Shipbuilding]>",
 			"Free [Torpedo Boat Flotilla] appears <after discovering [Advanced Shipbuilding]>",
-			"[+25]% Production when constructing [Water] units [in this city]",
-			"Destroyed when the city is captured",
-			"Must be next to [Coast]"
-		],
-		"requiredBuilding": "Barrack",
-		"requiredTech": "Dry Dock",
-		"hurryCostModifier": 25
-	},
-	{
-		"name": "Dry Dock",
-		"maintenance": 1,
-		"percentStatBonus": {
-			"production": -5
-		},
-		"uniques": [
-			"'Military Building'",
-			"'Marine Infrastructure'",
 			"[+25]% Production when constructing [Water] units [in this city]",
 			"Destroyed when the city is captured",
 			"Must be next to [Coast]"
@@ -8080,6 +8127,17 @@
 			"[-25]% Production when constructing ['Infrastructure'] buildings [in all cities]",
 			"[-25]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
 			"[Gold] cost of purchasing items in cities [-15]%"
+		],
+		"hurryCostModifier": -50
+	},
+	{
+		"name": "Balanced Production",
+		"cost":50,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"[+10]% [Gold] [in all cities]",
+			"Destroyed when the city is captured"
 		],
 		"hurryCostModifier": -50
 	},
