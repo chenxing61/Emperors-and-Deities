@@ -600,7 +600,7 @@
 			"New [{'Standing Army'} {Land}] units start with [10] XP [in this city]",
 			"New [{'Noble Army'} {Land}] units start with [10] XP [in this city]",
 			"Provides [1] [Standing Army Maintainance]",
-			"Free [Early Swordsman] appears <for [AI player] Civilizations> <when number of [Cities] is less than [2]> <before the [Classical era]>",
+			"Free [Early Swordsman] appears <for [AI player] Civilizations> <when number of [Cities] is less than [2]> <before the [Classical era]> <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Copper Working",
@@ -1493,7 +1493,7 @@
 		"uniques": [
 			"'Worship Place'",
 			"[+8]% [Culture] [in this city] <in cities with a [Shrine]>",
-			"[+8]% [Faith] [in this city] <in cities with a [Chaple]>",
+			"[+8]% [Faith] [in this city] <in cities with a [Chapel]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
 		],
@@ -1507,8 +1507,8 @@
 			"'Military Building'",
 			"Provides [1] [Horse]",
 			"New ['Mounted'] units start with [10] XP [in this city]",
-			"Free [Light Cavalry] appears <for [AI player] Civilizations> <before the [Imperial era]>",
-			"Free [Hussar] appears <for [AI player] Civilizations> <before the [Industrial era]>",
+			"Free [Light Cavalry] appears <for [AI player] Civilizations> <before the [Imperial era]> <hidden from users>",
+			"Free [Hussar] appears <for [AI player] Civilizations> <before the [Industrial era]> <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Barrack",
@@ -1750,7 +1750,7 @@
 			"'Military Building'",
 			"New [Military] units start with [10] XP [in this city]",
 			"[{Land} {Military}] units gain the [Classical Arms] promotion",
-			"Free [Swordsman] appears <for [AI player] Civilizations> <before the [Imperial era]>",
+			"Free [Swordsman] appears <for [AI player] Civilizations> <before the [Imperial era]> <hidden from users>",
 			"Comment [Enables you to build new Siege Units unlocked by Engineering]",
 			"Destroyed when the city is captured"
 		],
@@ -1780,7 +1780,7 @@
 			"'Military Building'",
 			"Comment [Increases [Call to Arms]'s amount of free close combat unit given.]",
 			"Provides [1] [Standing Army Maintainance]",
-			"Free [Swordsman] appears <for [AI player] Civilizations> <before the [Imperial era]>",
+			"Free [Swordsman] appears <for [AI player] Civilizations> <before the [Imperial era]> <hidden from users>",
 			"New [Military] units start with [15] XP [in this city]"
 		],
 		"requiredBuilding": "Barrack",
@@ -2732,7 +2732,7 @@
 			"Provides [2] [Weapon Parts] <after discovering [Physics]>",
 			"Consumes [2] [Metal] <after discovering [Physics]><before discovering [Replaceable Parts]>",
 			"Consumes [1] [Alloy] <after discovering [Replaceable Parts]>",
-			"Free [Crossbowman] appears <for [AI player] Civilizations> <before the [Imperial era]>",
+			"Free [Crossbowman] appears <for [AI player] Civilizations> <before the [Imperial era]> <hidden from users>",
 			"[+50]% Production when constructing [Military Factory Complex] buildings [in this city]",
 			"Destroyed when the city is captured"
 		],
@@ -3020,6 +3020,7 @@
 		"maintenance": 2,
 		"uniques": [
 			"'Military Building'",
+			"Comment [Enables you to build ['Gunpowder'] Units]",
 			"New ['Firearms'] units start with [10] XP [in this city]",
 			"[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>",
 			"Destroyed when the city is captured"
@@ -3053,7 +3054,7 @@
 		"isWonder": true,
 		"food": 2,
 		"production": 2,
-		"happiness": 1,
+		"happiness": 2,
 		"percentStatBonus": {
 			"culture": 15,
 			"gold": 15
@@ -3164,7 +3165,7 @@
 		"uniques": [
             "'Educational Building'",
 			"'Military Building'",
-			"New [Military] units start with [15] XP [in this city]",
+			"New [Military] units start with [10] XP [in this city]",
 			"All newly-trained [Military] units [in this city] receive the [Tactic Research] promotion",
 			"Destroyed when the city is captured"
 		],
@@ -3182,7 +3183,7 @@
 			"Gain [100] [Science] <(modified by game speed)> <if [Invention of Porcelain] is not constructed by anybody> <hidden from users>",
 			"Gain [300] [Gold] <(modified by game speed)> <if [Invention of Porcelain] is not constructed by anybody> <hidden from users>",
 			"[-33]% production cost <if [Invention of Porcelain] is constructed by anybody> <hidden from users>",
-			"Comment [Unlocks [Porcelain Workshop], a ['Light Industy'] building that improves [Clay] tile further, provides a large amount of [Gold], some specialist slots and a increase in ['Economic Building'] construction speed.]",
+			"Comment [Unlocks [Porcelain Workshop], a ['Light Industry'] building that improves [Clay] tile further, provides a large amount of [Gold], some specialist slots and a increase in ['Economic Building'] construction speed.]",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
 		"requiredBuilding": "Alchemy Lab",
@@ -3224,6 +3225,7 @@
 		"name": "Guild Complex",
 		"maintenance": 2,
 		"specialistSlots": {
+			"Labourer":2,
 			"Engineer": 1,
 			"Scientist": 1,
 			"Merchant": 1,
@@ -3291,7 +3293,7 @@
 			"'Military Building'",
 			"Provides [1] [Standing Army Maintainance]",
 			"Provides [1] [Weapon Parts] <every [2] turns>",
-			"New [Military] units start with [20] XP [in this city]"
+			"New [Military] units start with [10] XP [in this city]"
 		],
 		"requiredBuilding": "Armory",
 		"requiredTech": "Steels",
@@ -3368,7 +3370,7 @@
 			"Great Artist": 3
 		},
 		"uniques": [
-			"[+15]% Great Person generation [in all cities]",
+			"[+10]% Great Person generation [in all cities]",
 			"Free Great Person",
 			"Must be on [River]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
@@ -3638,7 +3640,7 @@
 			"'Marine Infrastructure'",
 			"Comment [One more Free Levy Water Unit appears when [Call to Arms] is ordered]",
 			"Provides [2] [Standing Army Maintainance]",
-			"New [{Military} {Water}] units start with [15] XP [in this city]",
+			"New [{Military} {Water}] units start with [10] XP [in this city]",
 			"Must be next to [Coast]",
 			"Destroyed when the city is captured"
 		],
@@ -3786,7 +3788,8 @@
 		"uniques": [
 			"'Agricultural Building'",
 			"Consumes [1] [Industrial Chemicals]",
-			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]"
+			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]",
+			"[+1 Gold] from ['Crops'] tiles [in this city]"
 		],
 		"requiredTech": "Fertilizer",
 		"hurryCostModifier": 25
@@ -4855,13 +4858,14 @@
 		"isNationalWonder": true,
 		"culture": 3,
 		"greatPersonPoints": {
-			"Great Strategist": 5
+			"Great Strategist": 3
 		},
 		"uniques": [
 			"'Military Building'",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
-			"[-33]% Gold cost of upgrading <for [Military] units>",
+			"[The Levied Army] units gain the [Stewardship] promotion",
+			"[The Levied Army] units gain the [Hardened] promotion",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"quote": "'In preparing for battle I have always found that plans are useless, but planning is indispensable.' - Dwight D. Eisenhower",
