@@ -10,7 +10,7 @@
                     "Only available <if [Harmony] is constructed> <when above [0] [Influence]>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [3] [Influence]",
-                    "Gain [-25] [Gold] <when number of [Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-225] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
                     "[-10]% [Production] [in all cities] <for [3] turns>"
@@ -22,7 +22,7 @@
                     "Only available <if [Peace] is constructed> <when above [0] [Influence]>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [5] [Influence]",
-                    "Gain [-25] [Gold] <when number of [Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-225] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
                     "[-10]% [Production] [in all cities] <for [5] turns>"
@@ -83,7 +83,7 @@
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
                     "Instantly consumes [3] [Influence]",
-                    "Gain [-25] [Gold] <when number of [Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-300] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>"
                 ]
@@ -138,10 +138,10 @@
                 "text": "The situation gets worse",
                 "uniques": [
                     "Comment [The Population shifts between cities...]",
-                    "[+1] population in a random city <when number of [Cities] is less than [4]> <hidden from users>",
-                    "[-1] population in a random city <when number of [Cities] is less than [4]> <hidden from users>",
-                    "[+3] population in a random city <when number of [Cities] is more than [4]> <hidden from users>",
-                    "[-3] population in a random city <when number of [Cities] is more than [4]> <hidden from users>",
+                    "[+1] population in a random city <when number of [Cities] is between [0] and [5]> <hidden from users>",
+                    "[-1] population in a random city <when number of [Cities] is between [0] and [5]> <hidden from users>",
+                    "[+3] population in a random city <when number of [Cities] is between [0] and [5]> <hidden from users>",
+                    "[-3] population in a random city <when number of [Cities] is between [0] and [5]> <hidden from users>",
                     "[+5] population in a random city <when number of [Cities] is more than [8]> <hidden from users>",
                     "[-5] population in a random city <when number of [Cities] is more than [8]> <hidden from users>",
                     "[+5] population in a random city <when number of [Cities] is more than [8]> <hidden from users>",
@@ -348,7 +348,7 @@
                     "Only available <when number of [Influence] is more than [Influence Limit]>",
                     "Play [policy] sound",
                     "Comment [We can force the shift in politic to stop our civilization from a undesireable route...]",
-                    "Instantly consumes [10] [Influence] <when number of [Cities] is less than [4]>",
+                    "Instantly consumes [10] [Influence] <when number of [Cities] is between [0] and [5]>",
                     "Instantly consumes [15] [Influence] <when number of [Cities] is more than [4]>",
                     "Triggers a [Shift in Politic] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -359,7 +359,7 @@
                 "uniques": [
                     "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
                     "Play [policy] sound",
-                    "Instantly consumes [10] [Influence] <when number of [Cities] is less than [4]>",
+                    "Instantly consumes [10] [Influence] <when number of [Cities] is between [0] and [5]>",
                     "Instantly consumes [15] [Influence] <when number of [Cities] is more than [4]>",
                     "Triggers a [Reformation of the unified state] event",
                     "Remove [Enact Policies] [in all cities] <hidden from users>"
@@ -602,7 +602,7 @@
                 "uniques": [
                     "Comment [We need more contemplation...]",
                     "Play [whoosh] sound",
-                    "Instantly provides [10] [Influence] <when number of [Cities] is less than [4]>",
+                    "Instantly provides [10] [Influence] <when number of [Cities] is between [0] and [5]>",
                     "Instantly provides [15] [Influence] <when number of [Cities] is more than [4]>"
                 ]
             }
@@ -1176,7 +1176,7 @@
                     "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Army Maintainance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
                     "Instantly provides [10] [Influence]",
                     "Gain a free [Army Maintainance Cost] [in capital]",
-                    "Gain [-25] [Gold] <when number of [Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
                     "Gain [-50] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-50] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
                     "[-10]% [Food] [in capital] <for [5] turns>",
@@ -1191,7 +1191,7 @@
                     "Instantly provides [15] [Influence]",
                     "Instantly consumes [10] [Weapon Parts]",
                     "Gain a free [Army Maintainance Cost] [in capital]",
-                    "Gain [-50] [Gold] <when number of [Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
                     "Triggers a [Popularity Crisis] event <hidden from users>"
