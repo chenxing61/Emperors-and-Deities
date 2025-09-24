@@ -133,6 +133,14 @@
 		"requiredTech": "Paper Making"
 	},
 	{
+		"name":"Five Year Plan",
+		"cost":100000,
+		"uniques":[
+			"Unavailable <if [Planned Economy] is not constructed> <hidden from users>",
+			"Comment [You store the production by constructing this building and use the production to buy buildings.]"
+		]
+	},
+	{
 		"name": "Remove Slums",
 		"cost": 80,
 		"uniques": [
@@ -372,16 +380,16 @@
 	},
 	{
 		"name": "Cultural Expansion",
-		"cost": 480,
+		"cost": 560,
 		"uniques": [
 			"Unsellable",
 			"'Expansion'",
 			"Comment [Only when all buildings in this package have not been built, this package is available.]",
 			"Only available <in cities without a [Opera House]>",
-			"Only available <in cities without a [Museum]>",
 			"Only available <in cities without a [Art Gallery]>",
+			"Only available <in cities without a [Holiday Resort]>",
 			"Gain a free [Opera House] [in this city]", //200
-			"Gain a free [Museum] [in this city]", //160
+			"Gain a free [Holiday Resort] [in this city]", //200
 			"Gain a free [Art Gallery] [in this city]" //160
 		],
 		"requiredTech": "Railroads",
@@ -808,7 +816,7 @@
 		"hurryCostModifier": 10
 	},
 	{
-		"name": "Tarvern",
+		"name": "Tavern",
 		"maintenance": 1,
 		"happiness": 2,
 		"uniques": [
@@ -3802,6 +3810,7 @@
 		"uniques": [
 			"'Cultural Building'",
 			"'Educational Building'",
+			"Only available <when above [4] [Artifact]>",
 			"Instantly consumes [5] [Artifact]",
 			"Destroyed when the city is captured"
 		],
@@ -4016,14 +4025,16 @@
 	},
 	{
 		"name": "Holiday Resort",
+		"cost":200,
 		"maintenance": 5,
 		"happiness": 2,
 		"percentStatBonus": {
-			"gold": 10
+			"gold": 5,
+			"happiness": 5
 		},
 		"uniques": [
 			"'Entertainment Building'",
-			"[+1 Culture] from all [Neolithic era] buildings"
+			"[+1 Culture] from all [Neolithic era] buildings <in this city>"
 		],
 		"requiredTech": "Steam Power",
 		"hurryCostModifier": 10
@@ -5463,7 +5474,7 @@
 
 	///Line 25
 	{
-		"name": "Partical Acclerator",
+		"name": "Particle Accelerator",
 		"cost":2000,
 		"maintenance": 5,
 		"science": 8,
@@ -5512,7 +5523,7 @@
 		"hurryCostModifier": 10
 	},
 	{
-		"name": "Satilelite System",
+		"name": "Satellite System",
 		"isNationalWonder": true,
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -6202,7 +6213,7 @@
 			"[Elite Guard] units gain the [Hardened] promotion",
 			"[Elite Guard] units gain the [Stewardship] promotion",
 			"[Elite Guard] units gain the [Shock Doctrine] promotion",
-			"[Elite Guard] units gain the [Devistating Charge] promotion",
+			"[Elite Guard] units gain the [Devastating Charge] promotion",
 			"[Elite Guard] units gain the [Chivalry] promotion",
 			"[+1 Food, +1 Gold, +2 Culture] from every [Manor]",
 			"Triggers a global alert upon completion",
@@ -6440,14 +6451,15 @@
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"[Gold] cost of purchasing ['Expansion'] buildings [-50]%",
-			"[Gold] cost of purchasing ['Consolidation'] buildings [-50]%",
+			"[Gold] cost of purchasing ['Expansion'] buildings [-33]%",
+			"[Gold] cost of purchasing ['Consolidation'] buildings [-33]%",
 			"[Gold] cost of purchasing ['Modernization'] buildings [-25]%",
 			"[+100]% Production when constructing ['Expansion'] buildings [in all cities connected to capital]",
 			"[+125]% Production when constructing ['Consolidation'] buildings [in all cities connected to capital]",
 			"[+150]% Production when constructing ['Modernization'] buildings [in all cities connected to capital]",
-			"[+1]% [Science] from every ['Heavy Industry']",
-			"[+1]% [Culture] from every ['Infrastructure']",
+			"Comment [Unlocks [Five Year Plan] Ability. You can store production using the [Five Year Plan] and use those production to construct ['Heavy Industry'] and ['Military Building'] instantly.]",
+			"May buy ['Heavy Industry'] buildings with [Production] [in all cities]",
+			"May buy ['Military Building'] buildings with [Production] [in all cities]",
 			"[-10]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
@@ -6480,6 +6492,8 @@
 			"Triggers a global alert upon completion",
 			"[+1 Science, +1 Culture, +3 Gold, +5 Production] per [10] population [in all cities]",
 			"[+33]% Production when constructing [Commune] buildings [in all cities]",
+			"[-50]% [Consumption Demand] resource production",
+			"[-50]% [Consumption Supply] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
 		"requiredTech": "Telegram"
@@ -7876,7 +7890,7 @@
 			"Provides [4] [Standing Army Maintainance]",
 			"Provides [3] [Protection Squadron Volunteer]",
 			"New [{'Standing Army'} {Land}] units start with [10] XP [in all cities]",
-			"[+50]% Production when constructing [non-[Civilian]] units [in all cities]",
+			"[+50]% Production when constructing [{non-[Civilian]} {Land}] units [in all cities]",
 			"[+3 Happiness] [in annexed cities]",
 			"Comment [Unique Building: [Recuitment Center]. Replaces [Mobilization Department] and acts as its upgrade. Increases the limit for [Protection Squardron]s.]",
 			"Comment [Cannot pursue any victory condition other than Domination... Unless?]",
@@ -8233,6 +8247,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
+	
 	{
 		"name":"Alexander Event Flag",
 		"cost":10,
