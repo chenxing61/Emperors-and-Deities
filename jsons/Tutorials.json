@@ -77,14 +77,19 @@
     "name": "ED - Mod Manual",
     "civilopediaText": [
       {"text":"Emperors and Deities is an overhaul mod for Sid meier's Civilization 5/Unciv."},
-      { "separator": true },
       {"text":"The mod's main goal is to reshape civ 5 into a more complex and nuanced game. With many new mechanics incorporated into the mod.\nMajor Differences:"},
+      { "separator": true },
       {"text":"1. Keep in mind that Luxury Resources no longer provide any [Happiness] by default, they provide a large amount of [Gold] and development potential, however, 'We Love King Day' and city state quests still require Luxury Resources. As for how you gain [Happiness], you can build a lot of buildings and create a religion with suitable beliefs."},
+      { "separator": true },
       {"text":"2. Army are now separated into four major categories:\n 'Levy Army','Standing Army','Noble Army' and 'Mercenary Army'. Each with different characteristics."},
-      {"text":"'Levy Army' units are free and can be summoned using [Call to Arms] function in any city with five or more population at cost of [Happiness]  and short term negative effects, [Call to Arms] status can be reverted by disbanding your levies in peaceful times using [Enact Policies] at the capital so that they can be summoned again."},
-      {"text":"'Standing Army','Noble Army' and 'Mercenary Army' behave like normal units except 'Mercenary Army' can only be bought and requires a [Mercenary Office] to be built. 'Standing Army' and its elite variant 'Noble Army' is what you would rely upon most of the time, however, they do require resources like [Iron] and [Weapon Parts] to be built."},
+      {"text":"In another words, you cannot build an powerful army without building ['Military Building']s like [Barrack]s to increase the limit of units."},
+      {"text":"For the more indepth explaination","link":"Tutorial/ED - Reworked Army Mechanic"},
+      { "separator": true },
       {"text":"3. Tag system is used widely in this mod, a tag is a word surrounded using '', many mechanics revolve around this system, they are also in the civilopedia of any object, feel free to check. You don't need to remember this well to use it effectively as most tags are intuitive."},
+      {"text":"For the more indepth explaination","link":"Tutorial/ED - Tags"},
+      { "separator": true },
       {"text":"4. [Influence] is a new currency that affects the political status of your civilization, it is limited by [Influence Limit]. You get it by keeping the [Happiness] positive, choosing the right policies and through [Enact Policies] decisions. If your [Influence] is negative, you will be getting a negative event that lowers stability which provides huge amount of debuff. You can check the civilopedia page of [Influence] for more information."},
+
       {"text":"5. ['Invention'] and ['Innovation']s are new buildings that repersents minor technological progression and acts like mini national wonders, they enable you to build certain units and buildings, or give boosts to functionality to existing buildings, they are built faster when other civilization has already built them. But if you build it first, you are granted a [Gold] and [Science] boost, which scales with the era of the ['Invention'] or ['Innovation']s, it is also important to state that there are no difference in gameplay between ['Invention'] and ['Innovation']s."},
       {"text":"6. Great Persons has been changed, like [Great General] has been seperated into [Great Commander] and [Great Strategist], [Great Merchant]s and [Great Engineer]s has new unique mechanics like creating [Iconic Brand] and [War Machine Blueprint]s. Some [Great Improvement]s like [Custom House], [Holy site]s and [Landmark]s have bonuses in specific tiles."},
 
@@ -101,6 +106,7 @@
       {"text":"The major difference between the Civ5/unciv and this mod is that your starting unit, the [Hunter Gatherer] is not only a ranged unit, and a worker that can build [Camp]s, [Manual Farm]s and [Manual Plantation]s. But it cannot upgrade to other units. They repersents humanity's earliest endavor at building civilizations."},
       {"text":"As for the [Settler]s, there are no large differences, but notice that settling near [River]s gives 2 extra [Food] and extra 1 [Food] near [Lakes], these dont stack but they provide a strong starting bonus for your cities."},
       {"text":"[Settler]s also gain +1 [Movement] after researching [Horse Collar] technology, neat upgrades like this exists a lot of place in this mod, so you should take proper looks into each option you've been given."},
+      { "separator": true },
       {"text":"When looking for a place to settle, luxury resources does give you a lot of [Gold] and other stats, but is no longer a source for [Happiness]. Maintaining a balance between [Production] giving resources like [Minerals] and [Clay], [Food] terrains like [Black Soil] and [Lakes], [Food] resources like [Grain] and [Caprinae] makes your new cities much more useful. It is also important that you can do [Canal Construction] to connect your inland cities to sea. And the [Mountain] requiring buildings like [Observatory] no longer requires settling beside [Mountain]s, a 2 tile distance is also good enough."},
       {"text":"Back to the menu","link": "Tutorials/ED - Tutorial Menu"}
     ]
@@ -130,28 +136,42 @@
   {
     "name": "ED - Government Forms",
     "civilopediaText": [
-      {"text":"WIP"},
+      {"text":"(This mechanic does exist in BNW, but the author of this mod never copied that.)"},
+      { "separator": true },
+      {"text":"Government forms like [Tribes] and [Tribal Union] are the first examples of Government form you might have."},
+      {"text":"A government form provides army limits like [Standing Army Maintainance], [Influence Limit]s and unique bonuses, for [Tribes] its a discount for policy. For [Tribal Union] it is a growth bonus and a chance to evolve into [Early Empire] in ancient era by reforms."},
+      {"text":"There are two types of government forms, ['United'] and ['Divided'], ['United'] government forms have cheaper national wonders,access to all diplomatic actions and powerful uniques. Many historically significant empires belong to this category like [SPQR] and [Great Qin]."},
+      {"text":"On the other hand, it doesnt mean ['Divided'] government forms are definitely weaker. They fit into their own niche at having cheaper policy cost, having access to ['Agreement'] via [Enact Policies] and generally takes less efforts to maintain."},
+      {"text":"The most convenient way to change your government form is to let it naturally evolve as when each era begin, you are forced to have a shift in politic. In which you would have to actively decide what state you want to enter. ['United'] or ['Divided']."},
+      {"text":"You can also force a shift in politic by having your [Influence] going above the [Influence Limit]."},
+      {"text":"['United'] government forms are gated behind a requirement of having enough [Happiness] and [Influence]. You need to have your [Influence] reaching half of the [Influence Limit] and your empire being happy."},
+      {"text":"List of all possible government forms","link":"Tutorials/ED - Avaliable Civilzation Forms of different eras"},
       {"text":"Back to the menu","link": "Tutorials/ED - Tutorial Menu"}
     ]
   },
   {
     "name": "ED - Reworked Army Mechanic",
     "civilopediaText": [
-      {"text":"WIP"},
+      {"text":"Army are now separated into four major categories:\n 'Levy Army','Standing Army','Noble Army' and 'Mercenary Army'. Each with different characteristics."},
+      {"text":"'Levy Army' units are free and can be summoned using [Call to Arms] function in any city with five or more population at cost of [Happiness]  and short term negative effects, [Call to Arms] status can be reverted by disbanding your levies in peaceful times using [Enact Policies] at the capital so that they can be summoned again."},
+      {"text":"'Standing Army','Noble Army' and 'Mercenary Army' behave like normal units except 'Mercenary Army' can only be bought and requires a [Mercenary Office] to be built. 'Standing Army' and its elite variant 'Noble Army' is what you would rely upon most of the time, however, they do require resources like [Iron] and [Weapon Parts] to be built."},
+      {"text":"The main source of [Standing Army Maintainance] is government forms and ['Military Building']."},
+      {"text":"The main source of [Noble Army Maintainance] is government forms and policies."},
+      {"text":"The main source of [Mercenary Contract] is ['Economic Building']s."},
       {"text":"Back to the menu","link": "Tutorials/ED - Tutorial Menu"}
     ]
   },
   {
     "name": "ED - Tags",
     "civilopediaText": [
-      {"text":"WIP"},
+      {"text":"Tutorial page WIP"},
       {"text":"Back to the menu","link": "Tutorials/ED - Tutorial Menu"}
     ]
   },
   {
     "name": "ED - Before Industrial Age",
     "civilopediaText": [
-      {"text":"WIP"},
+      {"text":"Tutorial page WIP"},
       {"text":"Back to the menu","link": "Tutorials/ED - Tutorial Menu"}
     ]
   },
@@ -177,35 +197,35 @@
   {
     "name": "ED - Invention and Innovations",
     "civilopediaText": [
-      {"text":"WIP"},
+      {"text":"Tutorial page WIP"},
       {"text":"Back to the menu","link": "Tutorials/ED - Tutorial Menu"}
     ]
   },
   {
     "name": "ED - Religion Changes",
     "civilopediaText": [
-      {"text":"WIP"},
+      {"text":"Tutorial page WIP"},
       {"text":"Back to the menu","link": "Tutorials/ED - Tutorial Menu"}
     ]
   },
   {
     "name": "ED - Great People Changes",
     "civilopediaText": [
-      {"text":"WIP"},
+      {"text":"Tutorial page WIP"},
       {"text":"Back to the menu","link": "Tutorials/ED - Tutorial Menu"}
     ]
   },
   {
     "name": "ED - Expansions, Consolidation and Modernization",
     "civilopediaText": [
-      {"text":"WIP"},
+      {"text":"Tutorial page WIP"},
       {"text":"Back to the menu","link": "Tutorials/ED - Tutorial Menu"}
     ]
   },
   {
     "name": "ED - Credits",
     "civilopediaText": [
-      {"text":"WIP"},
+      {"text":"Tutorial page WIP"},
       {"text":"Back to the menu","link": "Tutorials/ED - Tutorial Menu"}
     ]
   },
@@ -214,31 +234,34 @@
     "name": "ED - Avaliable Civilzation Forms of different eras",
     "civilopediaText": [
       {"text":"There are two major 'Civilzation Form' Categories: 'United' and 'Divided'"},
-      {},
+      { "separator": true },
       {"text":"Neolithic era:","header":3},
       {"text":"United"},
       {"text":"Tribal Union", "link": "Buildings/Tribal Union"},
       {"text":"Egyptian Dynasties", "link": "Buildings/Egyptian Dynasties"},
+      {},
       {"text":"Divided"},
       {"text":"Tribes", "link": "Buildings/Tribes"},
       {"text":"Early City States", "link": "Buildings/Early City States"},
       {"text":"Nomadic Tribes", "link": "Buildings/Nomadic Tribes"},
-      {},
+      { "separator": true },
       {"text":"Ancient era:","header":3},
       {"text":"United"},
       {"text":"Early Empire", "link": "Buildings/Early Empire"},
       {"text":"Zhou Dynasty", "link": "Buildings/Zhou Dynasty"},
       {"text":"Shang Dynasty", "link": "Buildings/Shang Dynasty"},
+      {},
       {"text":"Divided"},
       {"text":"City States", "link": "Buildings/City States"},
       {"text":"Greek City States", "link": "Buildings/Greek City States"},
-      {},
+      { "separator": true },
       {"text":"Classical era:","header":3},
       {"text":"United"},
       {"text":"Feudal Empire", "link": "Buildings/Feudal Empire"},
       {"text":"Centralized Empire", "link": "Buildings/Centralized Empire"},
       {"text":"SPQR", "link": "Buildings/SPQR"},
       {"text":"Great Qin", "link": "Buildings/Great Qin"},
+      {},
       {"text":"Divided"},
       {"text":"City States", "link": "Buildings/City States"},
       {"text":"Successor States", "link": "Buildings/Successor States"},
@@ -246,32 +269,35 @@
       {"text":"Warring States", "link": "Buildings/Warring States"},
       {"text":"Chu Dynasty", "link": "Buildings/Chu Dynasty"},
       {"text":"Han Dynasty", "link": "Buildings/Han Dynasty"},
-      {},
+      { "separator": true },
       {"text":"Medieval era:","header":3},
       {"text":"United"},
       {"text":"Empire of Electors", "link": "Buildings/Empire of Electors"},
       {"text":"Celestial Empire", "link": "Buildings/Celestial Empire"},
       {"text":"Theocratic Empire", "link": "Buildings/Theocratic Empire"},
+      {},
       {"text":"Divided"},
       {"text":"Kingdoms", "link": "Buildings/Kingdoms"},
-      {},
+      { "separator": true },
       {"text":"Renaissance era:","header":3},
       {"text":"United"},
       {"text":"Colonial Empires", "link": "Buildings/Colonial Empires"},
       {"text":"Autocratic Empire", "link": "Buildings/Autocratic Empire"},
-      {},
+      { "separator": true },
       {"text":"Imperial era:","header":3},
       {"text":"United"},
       {"text":"Federation", "link": "Buildings/Federation"},
       {"text":"United States", "link": "Buildings/United States"},
       {"text":"Personal Union", "link": "Buildings/Personal Union"},
+      {},
       {"text":"Divided"},
       {"text":"Republics", "link": "Buildings/Republics"},
-      {},
+      { "separator": true },
       {"text":"Modern era:","header":3},
       {"text":"United"},
       {"text":"Fascist Autocracy", "link": "Buildings/Fascist Autocracy"},
       {"text":"Socialist Republics", "link": "Buildings/Socialist Republics"},
+      {},
       {"text":"Divided"},
       {"text":"Anarchist Alliances", "link": "Buildings/Anarchist Alliances"}
     ]
