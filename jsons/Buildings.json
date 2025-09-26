@@ -42,7 +42,7 @@
 		]
 	},
 	{
-		"name": "Hide/Show Strategic Resources",
+		"name": "Hide-Show Strategic Resources",
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
@@ -50,7 +50,7 @@
 			"Comment [If the top bar is too messy, you can cut down on numbers of resources displayed, but remember to check every once in a while.]",
 			"Play [policy] sound <hidden from users>",
 			"Triggers a [Hide Strategic Resources] event",
-			"Remove [Hide/Show Strategic Resources] [in this city] <hidden from users>"
+			"Remove [Hide-Show Strategic Resources] [in this city] <hidden from users>"
 		]
 	},
 	{
@@ -5940,6 +5940,11 @@
 			"Gain a free [Atomic Era Start] [in capital] <for [1] turns> <if starting in the [Atomic era]> <hidden from users>",
 			"Gain a free [Information Era Start] [in capital] <for [1] turns> <if starting in the [Information era]> <hidden from users>",
 			"Gain a free [Future Era Start] [in capital] <for [1] turns> <if starting in the [Future era]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [500] [Happiness]> <starting from the [Future era]>",
+			"Consumes [1] [Influence] <when below [200] [Happiness]> <starting from the [Information era]>",
+			"Consumes [1] [Influence] <when below [100] [Happiness]> <starting from the [Atomic era]>",
+			"Consumes [1] [Influence] <when below [50] [Happiness]> <starting from the [Modern era]>",
+			"Consumes [1] [Influence] <when below [30] [Happiness]> <starting from the [Industrial era]>",
 			"Consumes [1] [Influence] <when below [10] [Happiness]> <starting from the [Imperial era]>",
 			"Consumes [1] [Influence] <when below [4] [Happiness]>",
 			"Consumes [2] [Influence] <when below [-4] [Happiness]>",
@@ -5954,7 +5959,7 @@
 			"Provides [1] [Influence] <when above [29] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]>",
 			//Tutorial
-			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]>",
+			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]> <hidden from users>",
 			"Indicates the capital city"
 		]
 	},
