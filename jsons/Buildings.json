@@ -15,11 +15,22 @@
 		"name": "Enact Policies",
 		"cost": 0,
 		"uniques": [
-			"Unbuildable <for [AI player] Civilizations>",
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available <in [Capital] cities>",
 			"Comment [Act upon internal affairs as if you are ruling a country. For examples, you can disband levies to mitigate the downside and increase stability of the civilization.]",
-			"Play [policy] sound",
+			"Play [policy] sound <hidden from users>",
 			"Triggers a [Enact Policies] event"
+		]
+	},
+	{
+		"name": "Hide Strategic Resources",
+		"cost": 0,
+		"uniques": [
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Only available <in [Capital] cities>",
+			"Comment [If the top bar is too messy, you can cut down on numbers of resources displayed, but remember to check every once in a while.]",
+			"Play [policy] sound <hidden from users>",
+			"Triggers a [Hide Strategic Resources] event"
 		]
 	},
 	{
@@ -36,9 +47,9 @@
 		"cost": 0,
 		"uniques": [
 			"Unsellable",
-			"Unbuildable <for [AI player] Civilizations>",
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available <in [Non-occupied] cities> <in cities with at least [5] [Population]>",
-			"Play [policy] sound",
+			"Play [policy] sound <hidden from users>",
 			"[-1 Happiness] [in this city] <before adopting [Militia Army]>",
 			"[-1 Happiness] [in this city] <before adopting [Military Tradition]>",
 			"[-15]% [Gold] [in this city] <if [Militristic Economy] is not constructed>",
@@ -8257,6 +8268,46 @@
 			"Costs [1] [Alexandrian Empire Period] <upon turn start> <when above [0] [Alexandrian Empire Period]>",
 			"Triggers a [Alexander's death] event <when below [6] [Alexandrian Empire Period]> <with [10]% chance>",
 			"Triggers a [Alexander's death] event <when below [9] [Alexandrian Empire Period]> <with [50]% chance> <if [Diadochi States] is not constructed>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name":"Hide Essential",
+		"cost":10,
+		"uniques":[
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name":"Hide Resource",
+		"cost":10,
+		"uniques":[
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name":"Hide Parts",
+		"cost":10,
+		"uniques":[
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name":"Hide Miscellaneous",
+		"cost":10,
+		"uniques":[
+			"Unavailable <hidden from users>",
+			"Unsellable",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
