@@ -850,6 +850,37 @@
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "arrow"
 	},
+		{
+		"name": "Qin Crossbowman",
+		"uniqueTo":"East Asia",
+		"unitType": "Ranged Combat",
+		"cost": 70,
+		"movement": 2,
+		"strength": 14,
+		"rangedStrength": 18,
+		"range": 1,
+		"uniques": [
+			"Can transform to [Crossbowman] <after discovering [Engineering]> <costs [+75 Gold] stats>",
+			"Only available <if [Great Qin] is constructed>",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Stewardship",
+			"Hardened",
+			"Firepower Doctrine",
+			"Crossbow"
+		],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Engineering",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "arrow"
+	},
 	{
 		"name": "Catapult",
 		"unitType": "Siege",
@@ -898,38 +929,6 @@
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredTech": "Mathematics",
-		"obsoleteTech": "Engineering",
-		"upgradesTo": "Heavy Balista",
-		"requiredResource": "Standing Army Maintainance",
-		"hurryCostModifier": 20,
-		"attackSound": "throw"
-	},
-	{
-		"name": "Qin Balista",
-		"uniqueTo":"East Asia",
-		"unitType": "Siege",
-		"cost": 75,
-		"movement": 2,
-		"strength": 10,
-		"rangedStrength": 18,
-		"range": 2,
-		"uniques": [
-			"Only available <if [Great Qin] is constructed>",
-			"'Standing Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Siege Weapons'",
-			"[+50]% Strength <vs cities> <when attacking>",
-			"[+75]% Strength <vs ['Dense Formation'] units> <when attacking>",
-			"No defensive terrain bonus",
-			"Must set up to ranged attack",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
