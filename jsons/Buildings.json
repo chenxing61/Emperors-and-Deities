@@ -2,13 +2,31 @@
 	///{
 	///		"name": "buildingName",
 	///		"cost":,
+	///		"maintenance": 5,
 	///		"isWonder": tf,
-	///		"culture":,
-	///		"uniques": ["filter",
+	///     "isNationalWonder": tf,
+	///		"stat":,
+	///	    "cityStrength": Integer,
+	///		"cityHealth": Integer,
+	///		"percentStatBonus": {
+	///		"Stat": Integer
+	///	     },
+	///		"greatPersonPoints": {
+	///		"Name": Integer
+	///		},
+	///		"specialistSlots": {
+	///		"Name": Integer
+	///		},
+	///		"uniques": ["condition"
+	///				"filter",
 	///					"feature",
-	///					"condition"],
+	///					],
+	///		"requiredNearbyImprovedResources": [
+	///		"Name"
+	///		],
 	///		"requiredTech": "",
 	///		"quote": ""
+	///		"civilopediaText":[{"text":"whatever you want","link":"types/item",}]
 	///		"hurryCostModifier": 
 	///	},
 	{
@@ -19,6 +37,7 @@
 			"Only available <in [Capital] cities>",
 			"Comment [Act upon internal affairs as if you are ruling a country. For examples, you can disband levies to mitigate the downside and increase stability of the civilization.]",
 			"Play [policy] sound <hidden from users>",
+			"Remove [Enact Policies] [in this city] <hidden from users>",
 			"Triggers a [Enact Policies] event"
 		]
 	},
@@ -128,7 +147,7 @@
 			"Only available <before adopting [Anarchism]>",
 			"Destroyed when the city is captured"
 		],
-		"requiredBuilding":"Intergration",
+		"requiredBuilding": "Intergration",
 		"hurryCostModifier": 25,
 		"requiredTech": "Paper Making"
 	},
@@ -140,14 +159,14 @@
 			"Only available <before adopting [Anarchism]>",
 			"Destroyed when the city is captured"
 		],
-		"requiredBuilding":"Intergration",
+		"requiredBuilding": "Intergration",
 		"hurryCostModifier": 25,
 		"requiredTech": "Paper Making"
 	},
 	{
-		"name":"Five Year Plan",
-		"cost":100000,
-		"uniques":[
+		"name": "Five Year Plan",
+		"cost": 100000,
+		"uniques": [
 			"Unavailable <if [Planned Economy] is not constructed> <hidden from users>",
 			"Comment [You store the production by constructing this building and use the production to buy buildings.]"
 		]
@@ -163,7 +182,7 @@
 			"Remove [Remove Slums] [in this city] <hidden from users>",
 			"Destroyed when the city is captured"
 		],
-		"requiredBuilding":"Town Hall",
+		"requiredBuilding": "Town Hall",
 		"requiredTech": "Paper Making"
 	},
 	{
@@ -178,7 +197,7 @@
 			"Remove [Clear Corruption] [in this city] <hidden from users>",
 			"Destroyed when the city is captured"
 		],
-		"requiredBuilding":"Town Hall",
+		"requiredBuilding": "Town Hall",
 		"requiredTech": "Paper Making"
 	},
 	{
@@ -192,10 +211,10 @@
 			"Remove [Stop Rebellion] [in this city] <hidden from users>",
 			"Destroyed when the city is captured"
 		],
-		"requiredBuilding":"Town Hall",
+		"requiredBuilding": "Town Hall",
 		"requiredTech": "Paper Making"
 	},
-	///Expansion
+	//Expansion
 	{
 		"name": "Agricultural Expansion(River)",
 		"cost": 260,
@@ -511,10 +530,8 @@
 		"requiredBuilding": "University",
 		"hurryCostModifier": -25
 	},
-	///Invention Tree
-
-
-	///Line 0
+	//Invention Tree
+	//Line 0
 	{
 		"name": "Obelisk",
 		"uniqueTo": "North Africa",
@@ -576,7 +593,7 @@
 		"requiredTech": "Hunting and Fishing",
 		"hurryCostModifier": 0
 	},
-	///Line 1
+	//Line 1
 	{
 		"name": "Fishing Port",
 		"food": 2,
@@ -659,11 +676,14 @@
 	{
 		"name": "Bakery",
 		"happiness": 1,
-		"gold":2,
+		"gold": 2,
 		"uniques": [
 			"'Light Industry'"
 		],
-		"requiredNearbyImprovedResources":["Tuber","Grain"],
+		"requiredNearbyImprovedResources": [
+			"Tuber",
+			"Grain"
+		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
 	},
@@ -724,7 +744,6 @@
 		"requiredTech": "Animal Husbandry",
 		"hurryCostModifier": 0
 	},
-
 	{
 		"name": "Hunter's Hut",
 		"cost": 20,
@@ -737,7 +756,7 @@
 		"requiredTech": "Trapping",
 		"hurryCostModifier": 0
 	},
-	///Line 2
+	//Line 2
 	{
 		"name": "Foundry",
 		"maintenance": 1,
@@ -760,7 +779,7 @@
 	},
 	{
 		"name": "Watermill",
-		"maintenance":1,
+		"maintenance": 1,
 		"food": 2,
 		"production": 2,
 		"uniques": [
@@ -773,7 +792,7 @@
 	{
 		"name": "Early Irrigation System",
 		"uniqueTo": "North Africa",
-		"maintenance":1,
+		"maintenance": 1,
 		"uniques": [
 			"'Agricultural Building'",
 			"[+1 Food] from [Fresh water] tiles [in this city]",
@@ -807,7 +826,7 @@
 	{
 		"name": "Jewellery Workshop",
 		"maintenance": 1,
-		"culture":1,
+		"culture": 1,
 		"uniques": [
 			"'Light Industry'",
 			"[+1 Gold] from [{'Extraction Improvement'} {'Precious Mineral'}] tiles [in this city]",
@@ -933,7 +952,7 @@
 	{
 		"name": "Shrine of Rain God",
 		"isWonder": true,
-		"faith":1,
+		"faith": 1,
 		"culture": 1,
 		"happiness": 1,
 		"greatPersonPoints": {
@@ -1058,7 +1077,7 @@
 		"requiredTech": "The Wheel",
 		"quote": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge"
 	},
-	///Line 3
+	//Line 3
 	{
 		"name": "Basilica",
 		"uniqueTo": "Mediterranean",
@@ -1146,15 +1165,18 @@
 	},
 	{
 		"name": "Via Romana",
-		"uniqueTo":"Mediterranean",
-		"gold":1,
-		"production":1,
+		"uniqueTo": "Mediterranean",
+		"gold": 1,
+		"production": 1,
 		"uniques": [
 			"Only available <if [SPQR] is constructed>",
 			"Gain a free [Road Network] [in this city]"
 		],
 		"civilopediaText": [
-				 {"text":"Back to the menu","link": "Tutorials/ED - Tutorial Menu"}
+			{
+				"text": "Back to the menu",
+				"link": "Tutorials/ED - Tutorial Menu"
+			}
 		],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 5
@@ -1179,7 +1201,7 @@
 	},
 	{
 		"name": "Crops Market",
-		"food":1,
+		"food": 1,
 		"gold": 1,
 		"specialistSlots": {
 			"Merchant": 1
@@ -1240,7 +1262,9 @@
 		"science": 3,
 		"culture": 1,
 		"happiness": 1,
-		"specialistSlots":{"Scientist":1},
+		"specialistSlots": {
+			"Scientist": 1
+		},
 		"uniques": [
 			"Gain a free [Library] [in this city]",
 			"[+50]% Production when constructing [Library] buildings [in all cities]",
@@ -1298,12 +1322,14 @@
 		"requiredTech": "Trade Network",
 		"quote": "'...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...' - Indiana Jones"
 	},
-	///Line 4
+	//Line 4
 	{
 		"name": "Stone Works",
 		"maintenance": 1,
-		"culture":1,
-		"specialistSlots":{"Labourer":1},
+		"culture": 1,
+		"specialistSlots": {
+			"Labourer": 1
+		},
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from ['Rock'] tiles [in this city]",
@@ -1319,7 +1345,9 @@
 	{
 		"name": "Brick Works",
 		"maintenance": 1,
-		"specialistSlots":{"Labourer":1},
+		"specialistSlots": {
+			"Labourer": 1
+		},
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from [Clay] tiles [in this city]",
@@ -1348,7 +1376,7 @@
 	{
 		"name": "Furniture Workshop",
 		"maintenance": 2,
-		"culture":1,
+		"culture": 1,
 		"specialistSlots": {
 			"Engineer": 1
 		},
@@ -1436,12 +1464,12 @@
 		"requiredTech": "Masonry",
 		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
 	},
-	///Line 5
+	//Line 5
 	{
 		"name": "Bathhouse",
 		"maintenance": 3,
 		"culture": 1,
-		"happiness":2,
+		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
 			"[10]% Food is carried over after population increases [in this city]"
@@ -1454,9 +1482,9 @@
 		"maintenance": 1,
 		"culture": 1,
 		"happiness": 1,
-		"specialistSlots":{
-			"Merchant":1,
-			"Labourer":2
+		"specialistSlots": {
+			"Merchant": 1,
+			"Labourer": 2
 		},
 		"uniques": [
 			"'Cultural Building'",
@@ -1473,9 +1501,9 @@
 		"replaces": "Town Square",
 		"culture": 2,
 		"happiness": 1,
-		"specialistSlots":{
-			"Merchant":1,
-			"Labourer":2
+		"specialistSlots": {
+			"Merchant": 1,
+			"Labourer": 2
 		},
 		"uniques": [
 			"'Cultural Building'",
@@ -1494,9 +1522,10 @@
 		"maintenance": 2,
 		"culture": 1,
 		"happiness": 1,
-		"specialistSlots":{
-			"Merchant":1,
-			"Labourer":2},
+		"specialistSlots": {
+			"Merchant": 1,
+			"Labourer": 2
+		},
 		"uniques": [
 			"'Cultural Building'",
 			"'Economic Building'",
@@ -1510,7 +1539,7 @@
 	},
 	{
 		"name": "Temple",
-		"maintenance":1,
+		"maintenance": 1,
 		"faith": 2,
 		"culture": 1,
 		"uniques": [
@@ -1597,12 +1626,11 @@
 		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu",
 		"requiredTech": "Horse Collar"
 	},
-
 	{
 		"name": "National Epic",
 		"maintenance": 3,
 		"isNationalWonder": true,
-		"culture":5,
+		"culture": 5,
 		"specialistSlots": {
 			"Artist": 2
 		},
@@ -1620,7 +1648,7 @@
 		"replaces": "National Epic",
 		"maintenance": 3,
 		"isNationalWonder": true,
-		"culture":5,
+		"culture": 5,
 		"specialistSlots": {
 			"Artist": 2,
 			"Governor": 1
@@ -1640,7 +1668,7 @@
 		"replaces": "National Epic",
 		"maintenance": 3,
 		"isNationalWonder": true,
-		"culture":5,
+		"culture": 5,
 		"specialistSlots": {
 			"Artist": 2
 		},
@@ -1659,7 +1687,7 @@
 		"replaces": "National Epic",
 		"maintenance": 3,
 		"isNationalWonder": true,
-		"culture":5,
+		"culture": 5,
 		"specialistSlots": {
 			"Artist": 2,
 			"Scientist": 2
@@ -1678,7 +1706,7 @@
 		"replaces": "National Epic",
 		"maintenance": 3,
 		"isNationalWonder": true,
-		"culture":5,
+		"culture": 5,
 		"specialistSlots": {
 			"Artist": 3
 		},
@@ -1694,10 +1722,10 @@
 	{
 		"name": "The Valley of Emperors",
 		"uniqueTo": "North Africa",
-		"replaces":"National Epic",
+		"replaces": "National Epic",
 		"maintenance": 3,
 		"isNationalWonder": true,
-		"culture":5,
+		"culture": 5,
 		"faith": 3,
 		"specialistSlots": {
 			"Artist": 2,
@@ -1711,7 +1739,7 @@
 		],
 		"requiredTech": "Drama and Poetry"
 	},
-	///Line 6
+	//Line 6
 	{
 		"name": "Dry Dock",
 		"maintenance": 1,
@@ -1729,7 +1757,6 @@
 		"requiredTech": "Dry Dock",
 		"hurryCostModifier": 25
 	},
-	
 	{
 		"name": "Cothon Harbour",
 		"uniqueTo": "North Africa",
@@ -1823,7 +1850,7 @@
 		"quote": "'He forcefully collected the weapons from everywhere under the sky, concentrated them in Xian Yang, made 12 giant bronze statues.' - Jia Yi",
 		"requiredTech": "Forging"
 	},
-	///Line 7
+	//Line 7
 	{
 		"name": "Lighthouse",
 		"maintenance": 1,
@@ -1924,7 +1951,7 @@
 		"requiredTech": "Construction",
 		"hurryCostModifier": 25
 	},
-		{
+	{
 		"name": "Aqueduct",
 		"maintenance": 2,
 		"uniques": [
@@ -1967,7 +1994,6 @@
 		"requiredTech": "Optics",
 		"quote": "'They that go down to the sea in ships, that do business in great waters; these see the works of the Lord, and his wonders in the deep.' - The Bible, Psalms 107:23-24"
 	},
-
 	{
 		"name": "The Temple of Prophet",
 		"isWonder": true,
@@ -1984,7 +2010,7 @@
 		"requiredTech": "Philosophy",
 		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
 	},
-	///Line 8
+	//Line 8
 	{
 		"name": "Tea House",
 		"maintenance": 2,
@@ -2018,12 +2044,14 @@
 		"requiredTech": "Wood Block Printing",
 		"hurryCostModifier": 25
 	},
-	///Monopoly
+	//Monopoly
 	{
 		"name": "Furs Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":25},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 25
+		},
 		"specialistSlots": {
 			"Merchant": 3
 		},
@@ -2035,15 +2063,20 @@
 			"[+1 Gold] from [Forest] tiles [in all cities]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Furs"],
+		"requiredNearbyImprovedResources": [
+			"Furs"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Ivory Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15, "faith":15},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"faith": 15
+		},
 		"specialistSlots": {
 			"Merchant": 3
 		},
@@ -2055,15 +2088,20 @@
 			"[+5]% [Faith] from every [Jewellery Workshop]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Ivory"],
+		"requiredNearbyImprovedResources": [
+			"Ivory"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Silk Road",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15, "culture":10},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"culture": 10
+		},
 		"specialistSlots": {
 			"Merchant": 1,
 			"Artist": 2
@@ -2076,15 +2114,21 @@
 			"Allied City-States provide [Gold] equal to [33]% of what they produce for themselves",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Silk"],
+		"requiredNearbyImprovedResources": [
+			"Silk"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Whaling Industry Chain",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15, "food":5, "production":10},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"food": 5,
+			"production": 10
+		},
 		"specialistSlots": {
 			"Merchant": 3
 		},
@@ -2096,15 +2140,20 @@
 			"[+10]% [Production] from every [Fishing Port]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Whale"],
+		"requiredNearbyImprovedResources": [
+			"Whale"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Seafood Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15, "food":10},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"food": 10
+		},
 		"specialistSlots": {
 			"Merchant": 3
 		},
@@ -2116,18 +2165,22 @@
 			"[+15]% growth [in all coastal cities]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Crab"],
+		"requiredNearbyImprovedResources": [
+			"Crab"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Pearl Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":25},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 25
+		},
 		"specialistSlots": {
 			"Merchant": 2,
-			"Artist":1
+			"Artist": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2137,18 +2190,22 @@
 			"[+15]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Pearl"],
+		"requiredNearbyImprovedResources": [
+			"Pearl"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Coral Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":25},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 25
+		},
 		"specialistSlots": {
 			"Merchant": 2,
-			"Artist":1
+			"Artist": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2158,18 +2215,22 @@
 			"[+10]% [Gold] from every [Trading Port]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Coral"],
+		"requiredNearbyImprovedResources": [
+			"Coral"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Cotton Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":25},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 25
+		},
 		"specialistSlots": {
 			"Merchant": 2,
-			"Artist":1
+			"Artist": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2180,15 +2241,20 @@
 			"Comment [[Textile Workshop] now provides more [Consumption Supply] after Industrial Age.]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Cotton"],
+		"requiredNearbyImprovedResources": [
+			"Cotton"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Dyes Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15,"culture":10},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"culture": 10
+		},
 		"specialistSlots": {
 			"Merchant": 2,
 			"Artist": 2
@@ -2202,15 +2268,20 @@
 			"[Faith] cost of purchasing [Faith] buildings [-5]%",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Dyes"],
+		"requiredNearbyImprovedResources": [
+			"Dyes"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Incense Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15,"faith":15},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"faith": 15
+		},
 		"specialistSlots": {
 			"Merchant": 2,
 			"Artist": 1
@@ -2223,15 +2294,20 @@
 			"[+1]% [Gold] from every ['Worship Place']",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Incense"],
+		"requiredNearbyImprovedResources": [
+			"Incense"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Spices Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":20,"food":10},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 20,
+			"food": 10
+		},
 		"specialistSlots": {
 			"Merchant": 3
 		},
@@ -2243,15 +2319,20 @@
 			"[+10]% [Culture] from Trade Routes",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Spices"],
+		"requiredNearbyImprovedResources": [
+			"Spices"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Wine Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":20,"culture":10},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 20,
+			"culture": 10
+		},
 		"specialistSlots": {
 			"Merchant": 3
 		},
@@ -2264,15 +2345,21 @@
 			"[+5]% [Gold] from every [Brewery]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Grape"],
+		"requiredNearbyImprovedResources": [
+			"Grape"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Sugar Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":20,"food":5,"culture":5},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 20,
+			"food": 5,
+			"culture": 5
+		},
 		"specialistSlots": {
 			"Merchant": 3
 		},
@@ -2285,15 +2372,20 @@
 			"[+5]% [Gold] from every [Town Square]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Sugar"],
+		"requiredNearbyImprovedResources": [
+			"Sugar"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Citrus Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":20,"food":10},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 20,
+			"food": 10
+		},
 		"specialistSlots": {
 			"Merchant": 3
 		},
@@ -2305,15 +2397,19 @@
 			"[+10]% growth [in all cities]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Citrus"],
+		"requiredNearbyImprovedResources": [
+			"Citrus"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Cocoa Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":25},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 25
+		},
 		"specialistSlots": {
 			"Merchant": 3
 		},
@@ -2326,18 +2422,23 @@
 			"[+10]% [Culture] from every [Food Industry]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Cocoa"],
+		"requiredNearbyImprovedResources": [
+			"Cocoa"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Tea Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15,"culture":15},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"culture": 15
+		},
 		"specialistSlots": {
 			"Merchant": 2,
-			"Artist":1
+			"Artist": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2349,18 +2450,23 @@
 			"Provides [1] [Tea Leave]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Tea Leave"],
+		"requiredNearbyImprovedResources": [
+			"Tea Leave"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Coffee Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15,"culture":15},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"culture": 15
+		},
 		"specialistSlots": {
 			"Merchant": 2,
-			"Artist":1
+			"Artist": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2372,18 +2478,23 @@
 			"Provides [1] [Coffee]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Coffee"],
+		"requiredNearbyImprovedResources": [
+			"Coffee"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Truffles Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15,"culture":15},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"culture": 15
+		},
 		"specialistSlots": {
 			"Merchant": 2,
-			"Artist":1
+			"Artist": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2394,18 +2505,23 @@
 			"[+5]% [Culture] from every [Hunter's Hut]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Truffles"],
+		"requiredNearbyImprovedResources": [
+			"Truffles"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Honey Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15,"culture":15},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"culture": 15
+		},
 		"specialistSlots": {
 			"Merchant": 2,
-			"Artist":1
+			"Artist": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2416,18 +2532,23 @@
 			"[+5]% [Gold] from every [Town Square]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Honey"],
+		"requiredNearbyImprovedResources": [
+			"Honey"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Gems Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":20,"culture":10},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 20,
+			"culture": 10
+		},
 		"specialistSlots": {
 			"Merchant": 2,
-			"Artist":1
+			"Artist": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2438,15 +2559,19 @@
 			"[+5]% [Science] from every [Jewellery Workshop]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Gems"],
+		"requiredNearbyImprovedResources": [
+			"Gems"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Massive Gold Export",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"culture":15},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"culture": 15
+		},
 		"specialistSlots": {
 			"Governor": 1
 		},
@@ -2458,15 +2583,19 @@
 			"[Gold] cost of purchasing items in cities [-10]%",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Gold Ore"],
+		"requiredNearbyImprovedResources": [
+			"Gold Ore"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Massive Silver Export",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"culture":15},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"culture": 15
+		},
 		"specialistSlots": {
 			"Governor": 1
 		},
@@ -2478,18 +2607,23 @@
 			"[+10]% [Gold] from every [Mint]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Silver Ore"],
+		"requiredNearbyImprovedResources": [
+			"Silver Ore"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Marble Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15,"production":10},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"production": 10
+		},
 		"specialistSlots": {
-			"Merchant":1,
-			"Artist":1
+			"Merchant": 1,
+			"Artist": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2499,19 +2633,24 @@
 			"[+10]% Production when constructing [All] wonders [in all cities]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Marble"],
+		"requiredNearbyImprovedResources": [
+			"Marble"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Rich Copper Ore Export",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15,"production":10},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"production": 10
+		},
 		"specialistSlots": {
-			"Merchant":1,
-			"Artist":1,
-			"Engineer":1
+			"Merchant": 1,
+			"Artist": 1,
+			"Engineer": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2521,17 +2660,22 @@
 			"[+5]% [Production] [in all cities]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Rich Copper Ore"],
+		"requiredNearbyImprovedResources": [
+			"Rich Copper Ore"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
 	{
 		"name": "Halite Trade",
-		"cost":150,
-		"isWonder":true,
-		"percentStatBonus":{"gold":15,"food":10},
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"food": 10
+		},
 		"specialistSlots": {
-			"Merchant":2
+			"Merchant": 2
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2542,7 +2686,9 @@
 			"[+5]% Production when constructing [Military] units [in all cities]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Halite"],
+		"requiredNearbyImprovedResources": [
+			"Halite"
+		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
@@ -2579,7 +2725,7 @@
 		"name": "Garden",
 		"maintenance": 2,
 		"happiness": 1,
-		"culture":2,
+		"culture": 2,
 		"uniques": [
 			"'Cultural Building'",
 			"[+25]% Great Person generation [in this city]",
@@ -2593,7 +2739,7 @@
 		"name": "Circus",
 		"cost": 50,
 		"happiness": 2,
-		"gold":1,
+		"gold": 1,
 		"uniques": [
 			"'Entertainment Building'"
 		],
@@ -2618,7 +2764,7 @@
 		"requiredTech": "Wood Block Printing",
 		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
 	},
-	///Line 9
+	//Line 9
 	{
 		"name": "Trading Port",
 		"maintenance": 1,
@@ -2641,11 +2787,11 @@
 	},
 	{
 		"name": "Theatre",
-		"maintenance":3,
+		"maintenance": 3,
 		"happiness": 2,
-		"percentStatBonus":{
-			"culture":10,
-			"gold":5
+		"percentStatBonus": {
+			"culture": 10,
+			"gold": 5
 		},
 		"uniques": [
 			"'Entertainment Building'",
@@ -2992,10 +3138,10 @@
 	},
 	{
 		"name": "Stronghold of Tripled Walls",
-		"isWonder":true,
-		"faith":5,
-		"cityHealth":50,
-		"cityStrength":15,
+		"isWonder": true,
+		"faith": 5,
+		"cityHealth": 50,
+		"cityStrength": 15,
 		"uniques": [
 			"[+5 Food] [in this city] <when at war> <when below [10] [Food]>",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
@@ -3018,7 +3164,7 @@
 		"requiredTech": "Tactics",
 		"quote": "'Justice is an unassailable fortress, built on the brow of a mountain which cannot be overthrown by the violence of torrents, nor demolished by the force of armies.' - Joseph Addison"
 	},
-	///Line 10
+	//Line 10
 	{
 		"name": "City Hall",
 		"maintenance": 5,
@@ -3082,11 +3228,12 @@
 			"culture": 15,
 			"gold": 15
 		},
-		"uniques":["Only available <if [No Wonder] is not constructed> <hidden from users>"],
+		"uniques": [
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
 		"quote": "'The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come.' - The Books of Chilam Balam",
 		"requiredTech": "Civil Service"
 	},
-	
 	{
 		"name": "Cathedral of Mercy",
 		"faith": 4,
@@ -3129,10 +3276,12 @@
 	{
 		"name": "The Gate of Far Reach",
 		"isWonder": true,
-		"percentStatBonus":{"gold":10,
-							"culture":10,
-							"faith":10},
-		"happiness":1,
+		"percentStatBonus": {
+			"gold": 10,
+			"culture": 10,
+			"faith": 10
+		},
+		"happiness": 1,
 		"uniques": [
 			"Instantly provides [2] [Iconic Brand]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
@@ -3140,7 +3289,7 @@
 		"quote": "'In the east market she bought a steed, and in the west market a saddle; in the south market she bought a bridle, and in the north market she bought a whip.' - Mùlán Cí",
 		"requiredTech": "Diplomacy"
 	},
-	///Line 11
+	//Line 11
 	{
 		"name": "University",
 		"maintenance": 5,
@@ -3186,7 +3335,7 @@
 			"Great Strategist": 1
 		},
 		"uniques": [
-            "'Educational Building'",
+			"'Educational Building'",
 			"'Military Building'",
 			"New [Military] units start with [10] XP [in this city]",
 			"All newly-trained [Military] units [in this city] receive the [Tactic Research] promotion",
@@ -3215,15 +3364,20 @@
 	},
 	{
 		"name": "Porcelain Workshop",
-		"gold":5,
-		"specialistSlots":{"Artist":1,"Merchant":1},
+		"gold": 5,
+		"specialistSlots": {
+			"Artist": 1,
+			"Merchant": 1
+		},
 		"uniques": [
 			"Only available <if [Invention of Porcelain] is constructed>",
 			"'Light Industry'",
 			"[+25]% Production when constructing ['Economic Building'] buildings [in this city]",
 			"Destroyed when the city is captured"
 		],
-		"requiredNearbyImprovedResources":["Clay"],
+		"requiredNearbyImprovedResources": [
+			"Clay"
+		],
 		"requiredBuilding": "Pottery Workshop",
 		"requiredTech": "Coal Working",
 		"hurryCostModifier": 25
@@ -3248,7 +3402,7 @@
 		"name": "Guild Complex",
 		"maintenance": 2,
 		"specialistSlots": {
-			"Labourer":2,
+			"Labourer": 2,
 			"Engineer": 1,
 			"Scientist": 1,
 			"Merchant": 1,
@@ -3263,7 +3417,6 @@
 		"requiredTech": "Guilds",
 		"hurryCostModifier": 25
 	},
-	
 	{
 		"name": "Captial of Mountain Range",
 		"isWonder": true,
@@ -3279,7 +3432,7 @@
 		"requiredTech": "Guilds",
 		"quote": "'Few romances can ever surpass that of the granite citadel on top of the beetling precipices of Machu Picchu, the crown of Inca Land.' - Hiram Bingham"
 	},
-	///Line 12
+	//Line 12
 	{
 		"name": "Smeltry",
 		"maintenance": 2,
@@ -3291,7 +3444,7 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
-            "[+100]% Production when constructing [Alloy Mill] buildings [in this city]",
+			"[+100]% Production when constructing [Alloy Mill] buildings [in this city]",
 			"[+1 Production] from ['Useful Mineral'] tiles [in this city]",
 			"Provides [1] [Alloy] <in cities without a [Alloy Mill]>",
 			"Consumes [1] [Metal] <in cities without a [Alloy Mill]>"
@@ -3342,7 +3495,7 @@
 		"name": "The Big Market",
 		"isWonder": true,
 		"gold": 15,
-		"happiness":1,
+		"happiness": 1,
 		"uniques": [
 			"[+10]% [Faith] from every ['Monopoly Trade']",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
@@ -3385,7 +3538,7 @@
 	{
 		"name": "Tilting Bell Tower",
 		"isWonder": true,
-        "happiness":3,
+		"happiness": 3,
 		"percentStatBonus": {
 			"culture": 25
 		},
@@ -3401,7 +3554,7 @@
 		"quote": "'Don't clap too hard - it's a very old building.' - John Osbourne",
 		"requiredTech": "Printing Press"
 	},
-	///Line 13
+	//Line 13
 	{
 		"name": "Bastion",
 		"maintenance": 3,
@@ -3429,7 +3582,7 @@
 		},
 		"uniques": [
 			"'Agricultural Building'",
-            "[+1]% Production when constructing ['Agricultural Building'] buildings [in all cities]"
+			"[+1]% Production when constructing ['Agricultural Building'] buildings [in all cities]"
 		],
 		"requiredTech": "Machinery",
 		"hurryCostModifier": 25
@@ -3469,7 +3622,7 @@
 		"requiredTech": "Printing Press",
 		"hurryCostModifier": 10
 	},
-	///Line 14
+	//Line 14
 	{
 		"name": "Observatory",
 		"maintenance": 5,
@@ -3478,14 +3631,13 @@
 		},
 		"uniques": [
 			"'Research Building'",
-            "Only available <with [Glass]>",
+			"Only available <with [Glass]>",
 			"Must have an owned [Mountain] within [2] tiles"
 		],
-        "requiredBuilding": "University",
+		"requiredBuilding": "University",
 		"requiredTech": "Heliocentrism",
 		"hurryCostModifier": 25
 	},
-
 	{
 		"name": "National Academy of Science",
 		"isNationalWonder": true,
@@ -3507,7 +3659,7 @@
 		"maintenance": 5,
 		"percentStatBonus": {
 			"science": 25,
-            "culture": 10,
+			"culture": 10,
 			"faith": 10
 		},
 		"specialistSlots": {
@@ -3535,7 +3687,7 @@
 		},
 		"specialistSlots": {
 			"Scientist": 2,
-            "Artist": 1,
+			"Artist": 1,
 			"Merchant": 1
 		},
 		"uniques": [
@@ -3620,7 +3772,7 @@
 	},
 	{
 		"name": "Imperial Palace",
-        "isWonder": true,
+		"isWonder": true,
 		"culture": 5,
 		"specialistSlots": {
 			"Governor": 3
@@ -3632,13 +3784,13 @@
 		"requiredTech": "Acoustics",
 		"quote": "'Most of us can, as we choose, make of this world either a palace or a prison' - John Lubbock"
 	},
-	///Line 15
+	//Line 15
 	{
 		"name": "Cargo Port",
 		"maintenance": 5,
-        "percentStatBonus":{
-            "gold":10
-        },
+		"percentStatBonus": {
+			"gold": 10
+		},
 		"uniques": [
 			"'Marine Infrastructure'",
 			"[+1 Gold] from [Bonus resource] tiles [in this city]",
@@ -3674,8 +3826,8 @@
 	{
 		"name": "Chemistry Lab",
 		"maintenance": 3,
-		"percentStatBonus":{
-			"science":10
+		"percentStatBonus": {
+			"science": 10
 		},
 		"specialistSlots": {
 			"Scientist": 1
@@ -3690,8 +3842,8 @@
 	{
 		"name": "Sewer",
 		"maintenance": 5,
-		"food":2,
-		"happiness":1,
+		"food": 2,
+		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
 			"[25]% Food is carried over after population increases [in this city]"
@@ -3715,7 +3867,7 @@
 	{
 		"name": "Fire Station",
 		"maintenance": 5,
-		"happiness":2,
+		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
 			"[-10]% Unhappiness from [Population] [in this city]",
@@ -3757,12 +3909,14 @@
 		"quote": "'The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time.' - Rabindranath Tagore",
 		"requiredTech": "Architecture"
 	},
-
-	///Line 16
+	//Line 16
 	{
 		"name": "Alloy Mill",
 		"maintenance": 3,
-		"specialistSlots":{"Engineer":1,"Labourer":1},
+		"specialistSlots": {
+			"Engineer": 1,
+			"Labourer": 1
+		},
 		"uniques": [
 			"'Heavy Industry'",
 			"[+10]% Production when constructing [All] buildings [in this city]",
@@ -3791,7 +3945,10 @@
 		"name": "Aluminium Mill",
 		"maintenance": 3,
 		"science": 2,
-		"specialistSlots":{"Engineer":1,"Labourer":1},
+		"specialistSlots": {
+			"Engineer": 1,
+			"Labourer": 1
+		},
 		"uniques": [
 			"'Heavy Industry'",
 			"Consumes [2] [Power] <in cities with a [Power Grid]>",
@@ -3836,7 +3993,9 @@
 		"name": "Art Gallery",
 		"maintenance": 5,
 		"culture": 3,
-		"specialistSlots":{"Artist":2},
+		"specialistSlots": {
+			"Artist": 2
+		},
 		"uniques": [
 			"'Cultural Building'",
 			"Destroyed when the city is captured"
@@ -3962,7 +4121,7 @@
 		"quote": "'Every genuine work of art has as much reason for being as the earth and the sun' - Ralph Waldo Emerson",
 		"requiredTech": "Archaeology"
 	},
-	///Line 17
+	//Line 17
 	{
 		"name": "Naval Dockyard",
 		"maintenance": 20,
@@ -3988,8 +4147,8 @@
 	},
 	{
 		"name": "Hospital",
-		"maintenance":5,
-		"happiness":3,
+		"maintenance": 5,
+		"happiness": 3,
 		"uniques": [
 			"'Infrastructure'",
 			"[-10]% Unhappiness from [Population] [in this city]",
@@ -4015,7 +4174,7 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Food Industry",
+		"requiredBuilding": "Food Industry",
 		"requiredTech": "Biology",
 		"hurryCostModifier": 0
 	},
@@ -4040,7 +4199,7 @@
 	},
 	{
 		"name": "Holiday Resort",
-		"cost":200,
+		"cost": 200,
 		"maintenance": 5,
 		"happiness": 2,
 		"percentStatBonus": {
@@ -4058,7 +4217,9 @@
 		"name": "Gas Storage and Transfer System",
 		"maintenance": 5,
 		"science": 1,
-		"specialistSlots":{"Engineer":1},
+		"specialistSlots": {
+			"Engineer": 1
+		},
 		"uniques": [
 			"'Heavy Industry'",
 			"Provides [3] [Fuel]",
@@ -4097,13 +4258,13 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Food Industry",
+		"requiredBuilding": "Food Industry",
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 0
 	},
 	{
 		"name": "Food Industry",
-		"cost":600,
+		"cost": 600,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 5,
@@ -4117,11 +4278,9 @@
 			"[+15]% [Food] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+1 Food] from every [Labourer] <in this city>",
-
 			"[+1 Food] from [{'Agricultural Improvement'} {'Herd'}] tiles [in this city] <if [Invention of Pasteurization] is constructed>",
 			"[+1 Food, +1 Gold] from [Pasture] tiles [in this city] <if [Invention of Pasteurization] is constructed>",
 			"[+1 Food, +1 Gold] from [Mechanised Livestock Farm] tiles [in this city] <if [Invention of Pasteurization] is constructed>",
-
 			"Consumes [3] [Deep Sea Fish(Stored)] <when above [3] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Foods] is not constructed>",
 			"[+15 Food, +9 Gold] <when above [3] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Foods] is not constructed>",
 			"Consumes [5] [Deep Sea Fish(Stored)] <when above [5] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Foods] is constructed>",
@@ -4144,7 +4303,7 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Consumer Goods Industry",
+		"requiredBuilding": "Consumer Goods Industry",
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 0
 	},
@@ -4182,13 +4341,13 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Machine Industry",
+		"requiredBuilding": "Machine Industry",
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 0
 	},
 	{
 		"name": "Machine Industry",
-		"cost":1000,
+		"cost": 1000,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 5,
@@ -4205,14 +4364,11 @@
 			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed>",
 			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed>",
 			"[+3]% Production when constructing ['Military Building'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed>",
-			
 			"[+15]% Yield from every [Mechanised Lumber Mill] <in this city> <if [Invention of Professional Equipments] is constructed>",
 			"[+15]% Yield from every [Mechanised Farm] <in this city> <if [Invention of Professional Equipments] is constructed>",
 			"[+15]% Yield from every [Mechanised Mine] <in this city> <if [Invention of Professional Equipments] is constructed>",
-
 			"[+33]% Yield from every [Manufactory] <in this city> <if [Innovation of Processing Precision] is constructed>",
 			"[+33]% Yield from every [Academy] <in this city> <if [Innovation of Processing Precision] is constructed>",
-			
 			"[+2 Production] from every [Engineer] <in this city>"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
@@ -4250,10 +4406,10 @@
 		"quote": "'To achieve great things, two things are needed: a plan, and not quite enough time.' - Leonard Bernstein",
 		"requiredTech": "Industrialization"
 	},
-	///Line 18
+	//Line 18
 	{
 		"name": "Vehicle Industry",
-		"cost":850,
+		"cost": 850,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 4,
@@ -4309,13 +4465,13 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Machine Industry",
+		"requiredBuilding": "Machine Industry",
 		"requiredTech": "Replaceable Parts",
 		"hurryCostModifier": 0
 	},
 	{
 		"name": "Furniture Industry",
-		"cost":500,
+		"cost": 500,
 		"maintenance": 10,
 		"percentStatBonus": {
 			"production": 5
@@ -4338,7 +4494,7 @@
 	},
 	{
 		"name": "Firearms Industry",
-		"cost":500,
+		"cost": 500,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 3,
@@ -4358,7 +4514,7 @@
 	},
 	{
 		"name": "Shipmaking Industry",
-		"cost":850,
+		"cost": 850,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 5,
@@ -4394,7 +4550,7 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Food Industry",
+		"requiredBuilding": "Food Industry",
 		"requiredTech": "Mass Production",
 		"hurryCostModifier": 0
 	},
@@ -4411,7 +4567,7 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Vehicle Industry",
+		"requiredBuilding": "Vehicle Industry",
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 0
 	},
@@ -4456,7 +4612,7 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Consumer Goods Industry",
+		"requiredBuilding": "Consumer Goods Industry",
 		"requiredTech": "Dynamite",
 		"hurryCostModifier": 0
 	},
@@ -4533,7 +4689,7 @@
 		"requiredTech": "Replaceable Parts",
 		"quote": "'You don't choose your family. They are God's gift to you, as you are to them. The bond that links your true family is not one of blood, but of respect and joy in each other's life.' - Dwyane 'the Rock' Johnson"
 	},
-	///Line 19
+	//Line 19
 	{
 		"name": "Invention of Professional Vehicles",
 		"cost": 500,
@@ -4545,10 +4701,10 @@
 			"[-50]% production cost <if [Invention of Professional Vehicles] is constructed by anybody> <hidden from users>",
 			"Comment [Enable [Mechanised Worker]s to be built.]",
 			"[+20]% [Food] from every [Vehicle Industry]",
-			"Unsellable", 
+			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Vehicle Industry",
+		"requiredBuilding": "Vehicle Industry",
 		"requiredTech": "Combustion",
 		"hurryCostModifier": 0
 	},
@@ -4556,7 +4712,10 @@
 		"name": "Oil Refinery",
 		"maintenance": 8,
 		"science": 1,
-		"specialistSlots":{"Engineer":1,"Labourer":2},
+		"specialistSlots": {
+			"Engineer": 1,
+			"Labourer": 2
+		},
 		"uniques": [
 			"'Heavy Industry'",
 			"Provides [5] [Fuel]",
@@ -4591,7 +4750,7 @@
 	},
 	{
 		"name": "Military Vehicle Industry",
-		"cost":1000,
+		"cost": 1000,
 		"maintenance": 20,
 		"science": 1,
 		"specialistSlots": {
@@ -4612,7 +4771,7 @@
 	},
 	{
 		"name": "Power Grid",
-		"cost":375,
+		"cost": 375,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 1
@@ -4642,7 +4801,7 @@
 			"Consumes [19] [Power] <in cities with between [90] and [95] [Population]> <hidden from users>",
 			"Consumes [20] [Power] <in cities with between [95] and [100] [Population]> <hidden from users>",
 			"Gain a free [Power Shortage] [in this city] <when below [0] [Power]>",
-        	"Remove [Power Shortage] [in this city] <when above [0] [Power]>"
+			"Remove [Power Shortage] [in this city] <when above [0] [Power]>"
 		],
 		"requiredTech": "Electricity",
 		"hurryCostModifier": 25
@@ -4660,7 +4819,7 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Furniture Industry",
+		"requiredBuilding": "Furniture Industry",
 		"requiredTech": "Electricity",
 		"hurryCostModifier": 0
 	},
@@ -4677,13 +4836,13 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Machine Industry",
+		"requiredBuilding": "Machine Industry",
 		"requiredTech": "Electricity",
 		"hurryCostModifier": 0
 	},
 	{
 		"name": "Hydro Plant",
-		"cost":600,
+		"cost": 600,
 		"maintenance": 5,
 		"percentStatBonus": {
 			"production": 10
@@ -4702,7 +4861,7 @@
 	{
 		"name": "Commercial Area",
 		"specialistSlots": {
-			"Labourer":2,
+			"Labourer": 2,
 			"Merchant": 2,
 			"Artist": 1
 		},
@@ -4719,9 +4878,9 @@
 	{
 		"name": "Commercial Quarter",
 		"specialistSlots": {
-			"Labourer":1,
-			"Governor":1,
-			"Artist":1
+			"Labourer": 1,
+			"Governor": 1,
+			"Artist": 1
 		},
 		"uniques": [
 			"Only available <after adopting [Redistribution of Means of Production(Socialism)]>",
@@ -4734,10 +4893,10 @@
 	},
 	{
 		"name": "Free Store",
-		"happiness":3,
+		"happiness": 3,
 		"specialistSlots": {
-			"Labourer":3,
-			"Artist":2
+			"Labourer": 3,
+			"Artist": 2
 		},
 		"uniques": [
 			"Only available <after adopting [Redistribution of Means of Production(Anarchism)]>",
@@ -4750,7 +4909,7 @@
 	},
 	{
 		"name": "Physic Lab",
-		"cost":1000,
+		"cost": 1000,
 		"maintenance": 5,
 		"specialistSlots": {
 			"Scientist": 1
@@ -4767,7 +4926,7 @@
 		"requiredBuilding": "University",
 		"requiredTech": "Telegram"
 	},
-	 {
+	{
 		"name": "Government Complex",
 		"maintenance": 10,
 		"happiness": 3,
@@ -4783,7 +4942,7 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Telegram",
-		"requiredBuilding":"City Hall",
+		"requiredBuilding": "City Hall",
 		"hurryCostModifier": 25
 	},
 	{
@@ -4799,13 +4958,15 @@
 		"requiredTech": "Telegram",
 		"hurryCostModifier": 10
 	},
-
 	{
 		"name": "Cement Work",
-		"cost":750,
+		"cost": 750,
 		"maintenance": 8,
 		"cityHealth": 5,
-		"specialistSlots":{"Engineer":1,"Labourer":3},
+		"specialistSlots": {
+			"Engineer": 1,
+			"Labourer": 3
+		},
 		"uniques": [
 			"'Heavy Industry'",
 			"Provides [1] [Consumption Supply]",
@@ -4845,7 +5006,6 @@
 		"requiredTech": "Concrete",
 		"hurryCostModifier": 25
 	},
-
 	{
 		"name": "Tower of Constructivism",
 		"isWonder": true,
@@ -4910,7 +5070,7 @@
 		"requiredTech": "Concrete",
 		"quote": "'A house is a machine for living in. ' - Le Corbusier"
 	},
-	///Line 20
+	//Line 20
 	{
 		"name": "Innovation of Processing Precision",
 		"cost": 500,
@@ -4924,7 +5084,7 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Machine Industry",
+		"requiredBuilding": "Machine Industry",
 		"requiredTech": "Synthetic Materials",
 		"hurryCostModifier": 0
 	},
@@ -4948,7 +5108,10 @@
 		"percentStatBonus": {
 			"production": 10
 		},
-		"specialistSlots":{"Engineer":1,"Labourer":2},
+		"specialistSlots": {
+			"Engineer": 1,
+			"Labourer": 2
+		},
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from [Coal] tiles [in this city]",
@@ -4962,14 +5125,20 @@
 	{
 		"name": "Chemical Plant",
 		"maintenance": 5,
-		"specialistSlots":{"Engineer":1,"Labourer":2},
+		"specialistSlots": {
+			"Engineer": 1,
+			"Labourer": 2
+		},
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from ['Chemicals'] tiles [in this city]",
-            "Provides [1] [Industrial Chemicals] <with [Minerals]>",
-            "Provides [1] [Industrial Chemicals] <with [Stone]>"
+			"Provides [1] [Industrial Chemicals] <with [Minerals]>",
+			"Provides [1] [Industrial Chemicals] <with [Stone]>"
 		],
-        "requiredNearbyImprovedResources":["Minerals","Stone"],
+		"requiredNearbyImprovedResources": [
+			"Minerals",
+			"Stone"
+		],
 		"requiredTech": "Synthetic Materials",
 		"hurryCostModifier": 25
 	},
@@ -5008,7 +5177,6 @@
 		"requiredTech": "Radio",
 		"hurryCostModifier": 10
 	},
-
 	{
 		"name": "Innovation of Instant Foods",
 		"cost": 500,
@@ -5023,7 +5191,7 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Food Industry",
+		"requiredBuilding": "Food Industry",
 		"requiredTech": "Pharmaceuticals",
 		"hurryCostModifier": 0
 	},
@@ -5041,7 +5209,7 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Bio Lab",
+		"requiredBuilding": "Bio Lab",
 		"requiredTech": "Pharmaceuticals",
 		"hurryCostModifier": 0
 	},
@@ -5065,7 +5233,7 @@
 	},
 	{
 		"name": "Aviation Industry",
-		"cost":1100,
+		"cost": 1100,
 		"maintenance": 20,
 		"science": 1,
 		"specialistSlots": {
@@ -5102,10 +5270,10 @@
 		"requiredTech": "Flight",
 		"hurryCostModifier": 25
 	},
-	///Line 21
+	//Line 21
 	{
 		"name": "Electronic Industry",
-		"cost":1350,
+		"cost": 1350,
 		"maintenance": 20,
 		"percentStatBonus": {
 			"science": 10
@@ -5145,7 +5313,7 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Shipmaking Industry",
+		"requiredBuilding": "Shipmaking Industry",
 		"requiredTech": "Radar",
 		"hurryCostModifier": 0
 	},
@@ -5162,12 +5330,14 @@
 		"requiredTech": "Radar",
 		"hurryCostModifier": 25
 	},
-	///Line 22
+	//Line 22
 	{
 		"name": "Nuclear Power Plant",
-		"cost":1150,
+		"cost": 1150,
 		"maintenance": 5,
-		"percentStatBonus":{"science":5},
+		"percentStatBonus": {
+			"science": 5
+		},
 		"uniques": [
 			"'Power Building'",
 			"Consumes [1] [Enriched Uranium] <before discovering [Nuclear Fusion]>",
@@ -5180,7 +5350,7 @@
 	{
 		"name": "Bomb Shelter",
 		"maintenance": 3,
-		"happiness":1,
+		"happiness": 1,
 		"cityHealth": 10,
 		"uniques": [
 			"'Static Defense'",
@@ -5204,7 +5374,7 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Food Industry",
+		"requiredBuilding": "Food Industry",
 		"requiredTech": "Refrigeration",
 		"hurryCostModifier": 0
 	},
@@ -5221,11 +5391,11 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Aviation Industry",
+		"requiredBuilding": "Aviation Industry",
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 0
 	},
-	///Line 23
+	//Line 23
 	{
 		"name": "Sewage Treatment Plant",
 		"maintenance": 5,
@@ -5240,7 +5410,6 @@
 		"requiredTech": "Plastics",
 		"hurryCostModifier": 25
 	},
-	
 	{
 		"name": "Innovation of the Use of Plastic",
 		"cost": 1000,
@@ -5254,15 +5423,17 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Consumer Goods Industry",
+		"requiredBuilding": "Consumer Goods Industry",
 		"requiredTech": "Plastics",
 		"hurryCostModifier": 0
 	},
 	{
 		"name": "Uranium Enrichment Facility",
-		"cost":1200,
+		"cost": 1200,
 		"maintenance": 10,
-		"specialistSlots":{"Scientist":1},
+		"specialistSlots": {
+			"Scientist": 1
+		},
 		"uniques": [
 			"'Heavy Industry'",
 			"Consumes [3] [Uranium]",
@@ -5311,18 +5482,18 @@
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
-		"requiredBuilding":"Furniture Industry",
+		"requiredBuilding": "Furniture Industry",
 		"requiredTech": "Computer",
 		"hurryCostModifier": 0
 	},
 	{
 		"name": "Rocketry Industry",
-		"cost":1500,
+		"cost": 1500,
 		"maintenance": 20,
 		"science": 1,
 		"specialistSlots": {
 			"Engineer": 1,
-			"Scientist":1
+			"Scientist": 1
 		},
 		"uniques": [
 			"'Space Race Building'",
@@ -5385,8 +5556,7 @@
 		"quote": "'Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules.' - Douglas Adams",
 		"requiredTech": "Telecommunications"
 	},
-	///Line 24
-	
+	//Line 24
 	{
 		"name": "Export Firm",
 		"percentStatBonus": {
@@ -5417,7 +5587,9 @@
 	{
 		"name": "Recycling Center",
 		"maintenance": 5,
-		"specialistSlots":{"Labourer":3},
+		"specialistSlots": {
+			"Labourer": 3
+		},
 		"uniques": [
 			"'Heavy Industry'",
 			"Provides [1] [Waste Material] <in cities with at least [10] [Population]>",
@@ -5430,7 +5602,10 @@
 	{
 		"name": "Recycling Industry",
 		"maintenance": 5,
-		"specialistSlots":{"Engineer":1,"Labourer":3},
+		"specialistSlots": {
+			"Engineer": 1,
+			"Labourer": 3
+		},
 		"uniques": [
 			"'Heavy Industry'",
 			"Consumes [3] [Waste Material]",
@@ -5486,11 +5661,10 @@
 		"quote": "'Use the first tier quality. Guard the first tier Dam. And get the first tier record!' - Three Gorge Dam's Slogan",
 		"requiredTech": "Ecology"
 	},
-
-	///Line 25
+	//Line 25
 	{
 		"name": "Particle Accelerator",
-		"cost":2000,
+		"cost": 2000,
 		"maintenance": 5,
 		"science": 8,
 		"percentStatBonus": {
@@ -5518,7 +5692,7 @@
 	},
 	{
 		"name": "Video Game Industry",
-		"cost":1200,
+		"cost": 1200,
 		"percentStatBonus": {
 			"gold": 10,
 			"culture": 25
@@ -5526,7 +5700,7 @@
 		"specialistSlots": {
 			"Artist": 1,
 			"Merchant": 1,
-			"Labourer":2
+			"Labourer": 2
 		},
 		"uniques": [
 			"'Entertainment Building'",
@@ -5551,7 +5725,7 @@
 		],
 		"requiredTech": "Satellites"
 	},
-	///Line 26
+	//Line 26
 	{
 		"name": "Drone Control Centre",
 		"maintenance": 5,
@@ -5571,7 +5745,7 @@
 		"requiredTech": "Remote Control",
 		"hurryCostModifier": 25
 	},
-		{
+	{
 		"name": "Nutripaste Factory",
 		"maintenance": 8,
 		"food": 5,
@@ -5645,7 +5819,7 @@
 		"requiredTech": "Space Stations",
 		"quote": "'The wonder is, not that the field of stars is so vast, but that man has measured it.' - Anatole France"
 	},
-	///Line 27
+	//Line 27
 	{
 		"name": "E-commerce Firm Complex",
 		"percentStatBonus": {
@@ -5662,7 +5836,7 @@
 		"requiredTech": "E-commerce",
 		"hurryCostModifier": 10
 	},
-	///Line 28
+	//Line 28
 	{
 		"name": "Graphene Lab",
 		"maintenance": 10,
@@ -5709,7 +5883,7 @@
 		"quote": "'Almost a quarter of our planet is a single mountain range and we didn't enter it until after Neil Armstrong and Buzz Aldrin went to the moon. So we went to the moon, played golf up there, before we went to the largest feature on our own planet.' - Robert Ballard",
 		"requiredTech": "Graphene"
 	},
-	///Line 29
+	//Line 29
 	{
 		"name": "Drone Factory",
 		"maintenance": 5,
@@ -5739,8 +5913,7 @@
 		"requiredTech": "3D Printers",
 		"hurryCostModifier": 10
 	},
-	
-	///Special
+	//Special
 	{
 		"name": "Palace",
 		"isNationalWonder": true,
@@ -5767,25 +5940,21 @@
 			"Gain a free [Atomic Era Start] [in capital] <for [1] turns> <if starting in the [Atomic era]> <hidden from users>",
 			"Gain a free [Information Era Start] [in capital] <for [1] turns> <if starting in the [Information era]> <hidden from users>",
 			"Gain a free [Future Era Start] [in capital] <for [1] turns> <if starting in the [Future era]> <hidden from users>",
-			
 			"Consumes [1] [Influence] <when below [10] [Happiness]> <starting from the [Imperial era]>",
-        	"Consumes [1] [Influence] <when below [4] [Happiness]>",
-        	"Consumes [2] [Influence] <when below [-4] [Happiness]>",
-        	"Consumes [2] [Influence] <when below [-9] [Happiness]>",
-        	"Consumes [2] [Influence] <when below [-14] [Happiness]>",
-        	"Consumes [3] [Influence] <when below [-19] [Happiness]>",
-
-        	"Consumes [1] [Influence] <when below [-100] [Gold]>",
-        	"Consumes [2] [Influence] <when below [-200] [Gold]>",
-        	"Consumes [2] [Influence] <when below [-300] [Gold]>",
-
-       		"Provides [1] [Influence] <when above [4] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
-        	"Provides [1] [Influence] <when above [9] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
-        	"Provides [1] [Influence] <when above [29] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
-        	"Provides [2] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]>",
-
+			"Consumes [1] [Influence] <when below [4] [Happiness]>",
+			"Consumes [2] [Influence] <when below [-4] [Happiness]>",
+			"Consumes [2] [Influence] <when below [-9] [Happiness]>",
+			"Consumes [2] [Influence] <when below [-14] [Happiness]>",
+			"Consumes [3] [Influence] <when below [-19] [Happiness]>",
+			"Consumes [1] [Influence] <when below [-100] [Gold]>",
+			"Consumes [2] [Influence] <when below [-200] [Gold]>",
+			"Consumes [2] [Influence] <when below [-300] [Gold]>",
+			"Provides [1] [Influence] <when above [4] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Influence] <when above [9] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [1] [Influence] <when above [29] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [2] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]>",
 			//Tutorial
-        	"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]>",
+			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]>",
 			"Indicates the capital city"
 		]
 	},
@@ -6050,7 +6219,9 @@
 		"percentStatBonus": {
 			"gold": 10
 		},
-		"specialistSlots":{"Merchant":1},
+		"specialistSlots": {
+			"Merchant": 1
+		},
 		"uniques": [
 			"'Economic Building'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
@@ -6346,7 +6517,10 @@
 		"name": "Carbon Capture",
 		"maintenance": 3,
 		"production": 1,
-		"specialistSlots":{"Engineer":1,"Labourer":1},
+		"specialistSlots": {
+			"Engineer": 1,
+			"Labourer": 1
+		},
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6361,7 +6535,7 @@
 		],
 		"requiredTech": "Renewable Energy"
 	},
-	///'Economic Policy'
+	//'Economic Policy'
 	{
 		"name": "Mercantilism",
 		"isNationalWonder": true,
@@ -6513,7 +6687,7 @@
 		],
 		"requiredTech": "Telegram"
 	},
-	/// Special buildings
+	// Special buildings
 	{
 		"name": "Industrial Revolution",
 		"cost": 750,
@@ -6612,8 +6786,7 @@
 		],
 		"quote": "'More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that is why we have the United Nations.' - Kofi Annan"
 	},
-	///'Outcome'
-
+	//'Outcome'
 	{
 		"name": "Failed Bourgeoisie Revolution",
 		"isNationalWonder": true,
@@ -6796,8 +6969,8 @@
 		],
 		"hurryCostModifier": 0
 	},
-	///Government stuff
-	///State of affair
+	//Government stuff
+	//State of affair
 	{
 		"name": "Harmony",
 		"uniques": [
@@ -6876,7 +7049,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-	///Pre-Atomic Era Diplomacy
+	//Pre-Atomic Era Diplomacy
 	{
 		"name": "Unified",
 		"uniques": [
@@ -6932,7 +7105,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-	///Atomic Era
+	//Atomic Era
 	{
 		"name": "Research Exchange",
 		"uniques": [
@@ -6973,7 +7146,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-	///Neolithic
+	//Neolithic
 	{
 		"name": "Tribes",
 		"uniques": [
@@ -6982,7 +7155,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Remove [{non-[Tribes]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Tribes]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -6992,15 +7165,15 @@
 	},
 	{
 		"name": "Early City States",
-		"uniqueTo":"Central and West Asia",
-		"replaces":"Tribes",
+		"uniqueTo": "Central and West Asia",
+		"replaces": "Tribes",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Remove [{non-[Early City States]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Early City States]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -7020,7 +7193,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Tribal Union]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Tribal Union]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -7031,7 +7204,7 @@
 	},
 	{
 		"name": "Gaulish Influence",
-		"uniqueTo":"Europa",
+		"uniqueTo": "Europa",
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7045,7 +7218,7 @@
 	},
 	{
 		"name": "Albions Influence",
-		"uniqueTo":"Europa",
+		"uniqueTo": "Europa",
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7060,8 +7233,8 @@
 	},
 	{
 		"name": "Gothic Influence",
-		"uniqueTo":"Europa",
-		"happiness":1,
+		"uniqueTo": "Europa",
+		"happiness": 1,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7076,7 +7249,7 @@
 	},
 	{
 		"name": "Saxonian Influence",
-		"uniqueTo":"Europa",
+		"uniqueTo": "Europa",
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7091,15 +7264,15 @@
 	},
 	{
 		"name": "Earliest Empire",
-		"uniqueTo":"Central and West Asia",
-		"replaces":"Tribal Union",
+		"uniqueTo": "Central and West Asia",
+		"replaces": "Tribal Union",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Earliest Empire]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Earliest Empire]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -7115,14 +7288,14 @@
 	},
 	{
 		"name": "Egyptian Dynasties",
-		"uniqueTo":"North Africa",
+		"uniqueTo": "North Africa",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Egyptian Dynasties]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Egyptian Dynasties]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [10] [Influence Limit]",
 			"Provides [8] [Influence Limit] <starting from the [Ancient era]>",
 			"Provides [7] [Influence Limit] <starting from the [Classical era]>",
@@ -7148,7 +7321,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Remove [{non-[Nomadic Tribes]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Nomadic Tribes]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -7156,7 +7329,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-	///Ancient
+	//Ancient
 	{
 		"name": "City States",
 		"uniques": [
@@ -7165,7 +7338,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Remove [{non-[City States]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[City States]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [15] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -7177,15 +7350,15 @@
 	},
 	{
 		"name": "Greek City States",
-		"uniqueTo":"Mediterranean",
-		"replaces":"City States",
+		"uniqueTo": "Mediterranean",
+		"replaces": "City States",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Remove [{non-[Greek City States]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Greek City States]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [10] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -7205,7 +7378,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Early Empire]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Early Empire]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [15] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -7216,16 +7389,16 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-		{
+	{
 		"name": "Shang Dynasty",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Shang Dynasty]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Shang Dynasty]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [15] [Influence Limit]",
 			"Provides [5] [Influence Limit] <starting from the [Classical era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -7242,14 +7415,14 @@
 	},
 	{
 		"name": "Zhou Dynasty",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Zhou Dynasty]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Zhou Dynasty]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [15] [Influence Limit]",
 			"Provides [5] [Influence Limit] <starting from the [Classical era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -7268,14 +7441,14 @@
 	},
 	{
 		"name": "Persian Dynasties",
-		"uniqueTo":"Central and West Asia",
+		"uniqueTo": "Central and West Asia",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Persian Dynasties]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Persian Dynasties]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [15] [Influence Limit]",
 			"Provides [8] [Influence Limit] <starting from the [Classical era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -7290,7 +7463,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-	///Classical
+	//Classical
 	{
 		"name": "Feudal Empire",
 		"uniques": [
@@ -7299,7 +7472,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Feudal Empire]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Feudal Empire]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [20] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -7318,7 +7491,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Centralized Empire]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Centralized Empire]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [20] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -7331,15 +7504,15 @@
 	},
 	{
 		"name": "SPQR",
-		"uniqueTo":"Mediterranean",
-		"replaces":"Centralized Empire",
+		"uniqueTo": "Mediterranean",
+		"replaces": "Centralized Empire",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[SPQR]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[SPQR]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [20] [Influence Limit]",
 			"Provides [5] [Influence Limit] <starting from the [Medieval era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -7358,14 +7531,14 @@
 	},
 	{
 		"name": "Carthage Obligarchy",
-		"uniqueTo":"North Africa",
+		"uniqueTo": "North Africa",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Carthage Obligarchy]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Carthage Obligarchy]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [20] [Influence Limit]",
 			"Provides [5] [Influence Limit] <starting from the [Medieval era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -7384,15 +7557,15 @@
 	},
 	{
 		"name": "Great Qin",
-		"uniqueTo":"East Asia",
-		"replaces":"Centralized Empire",
+		"uniqueTo": "East Asia",
+		"replaces": "Centralized Empire",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Great Qin]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Great Qin]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [15] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
@@ -7410,9 +7583,9 @@
 	},
 	{
 		"name": "Honor Bound Territory",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"cost": 1,
-		"happiness":2,
+		"happiness": 2,
 		"uniques": [
 			"Can only be built <in [Annexed] cities>",
 			"Only available <if [Great Qin] is constructed in all [Capital] cities>",
@@ -7429,7 +7602,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Remove [{non-[Successor States]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Successor States]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [20] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -7442,14 +7615,14 @@
 	},
 	{
 		"name": "Diadochi States",
-		"uniqueTo":"Mediterranean",
+		"uniqueTo": "Mediterranean",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Remove [{non-[Diadochi States]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Diadochi States]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [20] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -7465,15 +7638,15 @@
 	},
 	{
 		"name": "Warring States",
-		"uniqueTo":"East Asia",
-		"replaces":"Successor States",
+		"uniqueTo": "East Asia",
+		"replaces": "Successor States",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Remove [{non-[Warring States]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Warring States]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [20] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintainance]",
@@ -7487,7 +7660,7 @@
 	},
 	{
 		"name": "Confucianism Influence",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7499,7 +7672,7 @@
 	},
 	{
 		"name": "Daoism Influence",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7513,7 +7686,7 @@
 	},
 	{
 		"name": "Mohism Influence",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7527,7 +7700,7 @@
 	},
 	{
 		"name": "Legalism Influence",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7539,7 +7712,7 @@
 	},
 	{
 		"name": "Diplomatism Influence",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7551,7 +7724,7 @@
 	},
 	{
 		"name": "Early Rationalism Influence",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7563,7 +7736,7 @@
 	},
 	{
 		"name": "Naturalist Influence",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7574,7 +7747,7 @@
 	},
 	{
 		"name": "Agrarianism Influence",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7588,7 +7761,7 @@
 	},
 	{
 		"name": "Militant Influence",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7601,14 +7774,14 @@
 	},
 	{
 		"name": "Chu Dynasty",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Chu Dynasty]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Chu Dynasty]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [25] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Standing Army Maintainance]",
@@ -7625,14 +7798,14 @@
 	},
 	{
 		"name": "Han Dynasty",
-		"uniqueTo":"East Asia",
+		"uniqueTo": "East Asia",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Han Dynasty]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Han Dynasty]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [25] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -7650,7 +7823,7 @@
 	{
 		"name": "Du Hu Protectorate",
 		"cost": 1,
-		"gold":5,
+		"gold": 5,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Remove [Du Hu Protectorate] [in all non-occupied cities] <if [Han Dynasty] is not constructed>",
@@ -7660,7 +7833,7 @@
 			"Destroyed when the city is captured"
 		]
 	},
-	///Medieval
+	//Medieval
 	{
 		"name": "Kingdoms",
 		"uniques": [
@@ -7669,7 +7842,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Remove [{non-[Kingdoms]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Kingdoms]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [25] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -7688,7 +7861,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Empire of Electors]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Empire of Electors]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [25] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -7703,23 +7876,25 @@
 	{
 		"name": "Free City",
 		"cost": 1,
-		"cityHealth":5,
-		"percentStatBonus":{"gold":10,
-							"science":5},
+		"cityHealth": 5,
+		"percentStatBonus": {
+			"gold": 10,
+			"science": 5
+		},
 		"uniques": [
-			"Instantly consumes [10] [Influence]",
 			"Only available <in cities without a [Prince Elector Territory]> <when above [0] [Influence]>",
-			"[+25]% Production when constructing ['Economic Building'] buildings [in this city]",
 			"Only available <if [Empire of Electors] is constructed in all [Capital] cities>",
+			"Instantly consumes [10] [Influence]",
+			"[+25]% Production when constructing ['Economic Building'] buildings [in this city]",
 			"Destroyed when the city is captured"
 		],
-		"requiredTech":"Diplomacy"
+		"requiredTech": "Diplomacy"
 	},
 	{
 		"name": "Prince Elector Territory",
 		"cost": 1,
-		"cityHealth":10,
-		"cityStrength":10,
+		"cityHealth": 10,
+		"cityStrength": 10,
 		"uniques": [
 			"Instantly consumes [10] [Influence]",
 			"Only available <in cities without a [Free City]> <when above [0] [Influence]>",
@@ -7738,7 +7913,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Celestial Empire]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Celestial Empire]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [25] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -7759,7 +7934,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Theocratic Empire]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Theocratic Empire]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [25] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -7772,7 +7947,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	}
-	///Renaissance
+	//Renaissance
 	{
 		"name": "Colonial Empires",
 		"uniques": [
@@ -7781,7 +7956,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Colonial Empires]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Colonial Empires]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [30] [Influence Limit]",
 			"Provides [2] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -7800,7 +7975,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Autocratic Empire]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Autocratic Empire]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [30] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -7812,7 +7987,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-	///Imperial
+	//Imperial
 	{
 		"name": "Republics",
 		"uniques": [
@@ -7821,7 +7996,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Remove [{non-[Republics]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Republics]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [35] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
@@ -7839,7 +8014,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Federation]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Federation]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [35] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [5] [Standing Army Maintainance]",
@@ -7857,7 +8032,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[United States]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[United States]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [35] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
@@ -7877,7 +8052,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Personal Union]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Personal Union]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [35] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintainance]",
@@ -7890,7 +8065,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-	///Modern
+	//Modern
 	{
 		"name": "Fascist Autocracy",
 		"uniques": [
@@ -7899,7 +8074,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Fascist Autocracy]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Fascist Autocracy]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [40] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
@@ -7921,7 +8096,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
-			"Remove [{non-[Socialist Republics]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Socialist Republics]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [40] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
@@ -7942,7 +8117,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
-			"Remove [{non-[Anarchist Alliances]} {'Civilization Form'}] [in all cities]",
+			"Remove [{non-[Anarchist Alliances]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [40] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
@@ -7952,7 +8127,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-	///Starting maintainance
+	//Starting maintainance
 	{
 		"name": "Neolithic Era Start",
 		"uniques": [
@@ -8136,7 +8311,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-	///Negatives
+	//Negatives
 	{
 		"name": "Slum",
 		"cost": 50,
@@ -8157,9 +8332,9 @@
 		"cost": 50,
 		"percentStatBonus": {
 			"production": -5,
-			"gold":	-10,
+			"gold": -10,
 			"culture": -10,
-			"faith":-5
+			"faith": -5
 		},
 		"uniques": [
 			"Unavailable <hidden from users>",
@@ -8182,7 +8357,7 @@
 	},
 	{
 		"name": "Power Shortage",
-		"cost":50,
+		"cost": 50,
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable"
@@ -8191,7 +8366,7 @@
 	},
 	{
 		"name": "Army Maintainance Cost",
-		"cost":50,
+		"cost": 50,
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
@@ -8202,7 +8377,7 @@
 	},
 	{
 		"name": "Overproduction",
-		"cost":50,
+		"cost": 50,
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
@@ -8220,7 +8395,7 @@
 	},
 	{
 		"name": "Balanced Production",
-		"cost":50,
+		"cost": 50,
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
@@ -8233,7 +8408,7 @@
 	},
 	{
 		"name": "Underproduction",
-		"cost":50,
+		"cost": 50,
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
@@ -8250,23 +8425,22 @@
 		"hurryCostModifier": -50
 	},
 	{
-		"name":"Spread Influence",
-		"cost":10,
-		"uniques":[
+		"name": "Spread Influence",
+		"cost": 10,
+		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"Consumes [1] [Influence]",
 			"Consumes [1] [Influence] <starting from the [Imperial era]>",
 			"Resting point for Influence with City-States is increased by [15]",
-            "City-State Influence recovers at twice the normal rate",
+			"City-State Influence recovers at twice the normal rate",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-	
 	{
-		"name":"Alexander Event Flag",
-		"cost":10,
-		"uniques":[
+		"name": "Alexander Event Flag",
+		"cost": 10,
+		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"Costs [1] [Alexandrian Empire Period] <upon turn start> <when above [0] [Alexandrian Empire Period]>",
@@ -8277,9 +8451,9 @@
 		]
 	},
 	{
-		"name":"Hide Essential",
-		"cost":10,
-		"uniques":[
+		"name": "Hide Essential",
+		"cost": 10,
+		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"Will not be displayed in Civilopedia",
@@ -8287,9 +8461,9 @@
 		]
 	},
 	{
-		"name":"Hide Resource",
-		"cost":10,
-		"uniques":[
+		"name": "Hide Resource",
+		"cost": 10,
+		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"Will not be displayed in Civilopedia",
@@ -8297,9 +8471,9 @@
 		]
 	},
 	{
-		"name":"Hide Parts",
-		"cost":10,
-		"uniques":[
+		"name": "Hide Parts",
+		"cost": 10,
+		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"Will not be displayed in Civilopedia",
@@ -8307,20 +8481,20 @@
 		]
 	},
 	{
-		"name":"Hide Miscellaneous",
-		"cost":10,
-		"uniques":[
+		"name": "Hide Miscellaneous",
+		"cost": 10,
+		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-	///Scenario Tools
+	//Scenario Tools
 	{
-		"name":"No Wonder",
-		"cost":10,
-		"uniques":[
+		"name": "No Wonder",
+		"cost": 10,
+		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"Will not be displayed in Civilopedia",
