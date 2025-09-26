@@ -406,7 +406,17 @@
                     "Comment [Including:]",
                     "Comment [[Influence], [Influence Limit], [Consumption Supply], [Consumption Demand],All the kinds of [Fuel]s, Victroy related resources and the Army Maintainances]",
                     "Gain a free [Hide Essential] [in capital] <hidden from users>",
-                    
+                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                ]
+            },
+                        {
+                "text": "Show the essentials.",
+                "uniques": [
+                    "Only available <if [Hide Essential] is constructed> <hidden from users>",
+                    "Play [promte] sound <hidden from users>",
+                    "Comment [Including:]",
+                    "Comment [[Influence], [Influence Limit], [Consumption Supply], [Consumption Demand],All the kinds of [Fuel]s, Victroy related resources and the Army Maintainances]",
+                    "Remove [Hide Essential] [in all cities] <hidden from users>",
                     "Triggers a [Hide Strategic Resources] event <hidden from users>"
                 ]
             },
@@ -422,15 +432,36 @@
                     "Triggers a [Hide Strategic Resources] event <hidden from users>"
                 ]
             },
+                        {
+                "text": "Show the raw resources.",
+                "uniques": [
+                    "Only available <if [Hide Resource] is constructed> <hidden from users>",
+                    "Play [promte] sound <hidden from users>",
+                    "Comment [Including:]",
+                    "Comment [[Horse], [Metal], [Alloy], [Oil] and so on. All the resource on the map or being the prerequisite of buildings and parts productions]",
+                    "Remove [Hide Resource] [in all cities] <hidden from users>",
+                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                ]
+            },
             {
                 "text": "Hide those parts.",
                 "uniques": [
                     "Only available <if [Hide Parts] is not constructed> <hidden from users>",
                     "Play [promte] sound <hidden from users>",
                     "Comment [Including:]",
-                    "Comment [[Weapon Part], [Vehicle Part], [Ship Part] and so on and so fourth.]",
+                    "Comment [[Weapon Parts], [Vehicle Parts], [Ship Parts] and so on and so fourth.]",
                     "Gain a free [Hide Parts] [in capital] <hidden from users>",
-                    
+                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                ]
+            },
+                        {
+                "text": "Show those parts.",
+                "uniques": [
+                    "Only available <if [Hide Parts] is constructed> <hidden from users>",
+                    "Play [promte] sound <hidden from users>",
+                    "Comment [Including:]",
+                    "Comment [[Weapon Parts], [Vehicle Parts], [Ship Parts] and so on and so fourth.]",
+                    "Remove [Hide Parts] [in all cities] <hidden from users>",
                     "Triggers a [Hide Strategic Resources] event <hidden from users>"
                 ]
             },
@@ -439,39 +470,9 @@
                 "uniques": [
                     "Only available <if [Hide Miscellaneous] is not constructed> <hidden from users>",
                     "Comment [Including:]",
-                    "Comment [[Famous Brand], [Artifact], [Waste Material] and so on and so fourth.]",
+                    "Comment [[Famous Brands], [Artifact], [Waste Material] and so on and so fourth.]",
                     "Play [promte] sound <hidden from users>",
                     "Gain a free [Hide Miscellaneous] [in capital] <hidden from users>",
-                    
-                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
-                ]
-            },
-            {
-                "text": "Show the essentials.",
-                "uniques": [
-                    "Only available <if [Hide Essential] is constructed> <hidden from users>",
-                    "Play [promte] sound <hidden from users>",
-                    "Remove [Hide Essential] [in all cities] <hidden from users>",
-                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
-                ]
-            },
-            {
-                "text": "Show the raw resources.",
-                "uniques": [
-                    "Only available <if [Hide Resource] is constructed> <hidden from users>",
-                    "Play [promte] sound <hidden from users>",
-                    "Remove [Hide Resource] [in all cities] <hidden from users>",
-                    
-                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
-                ]
-            },
-            {
-                "text": "Show those parts.",
-                "uniques": [
-                    "Only available <if [Hide Parts] is constructed> <hidden from users>",
-                    "Play [promte] sound <hidden from users>",
-                    "Remove [Hide Parts] [in all cities] <hidden from users>",
-                    
                     "Triggers a [Hide Strategic Resources] event <hidden from users>"
                 ]
             },
@@ -479,9 +480,10 @@
                 "text": "Show those random stuffs.",
                 "uniques": [
                     "Only available <if [Hide Miscellaneous] is constructed> <hidden from users>",
+                    "Comment [Including:]",
+                    "Comment [[Famous Brands], [Artifact], [Waste Material] and so on and so fourth.]",
                     "Play [promte] sound <hidden from users>",
                     "Remove [Hide Miscellaneous] [in all cities] <hidden from users>",
-                    
                     "Triggers a [Hide Strategic Resources] event <hidden from users>"
                 ]
             },
