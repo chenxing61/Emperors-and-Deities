@@ -145,6 +145,7 @@
 		"uniques": [
 			"Comment [Remove [Food],[Production] and [Gold] debuff from annexed cities]",
 			"Only available <before adopting [Anarchism]>",
+			"Can only be built <in [Annexed] cities>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Intergration",
@@ -157,6 +158,7 @@
 		"uniques": [
 			"Comment [Remove [Culture],[Science] and [Faith] debuff from annexed cities]",
 			"Only available <before adopting [Anarchism]>",
+			"Can only be built <in [Annexed] cities>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Intergration",
@@ -356,7 +358,7 @@
 	},
 	{
 		"name": "Civil Expansion",
-		"cost": 195,
+		"cost": 295,
 		"uniques": [
 			"Unsellable",
 			"'Expansion'",
@@ -365,10 +367,12 @@
 			"Only available <in cities without a [Town Hall]>",
 			"Only available <in cities without a [Library]>",
 			"Only available <in cities without a [Town Square]>",
+			"Only available <in cities without a [Bathhouse]>",
 			"Gain a free [Monument] [in this city]", //20
 			"Gain a free [Town Hall] [in this city]", //40
 			"Gain a free [Library] [in this city]", //40
-			"Gain a free [Town Square] [in this city]" //75
+			"Gain a free [Town Square] [in this city]", //75
+			"Gain a free [Bathhouse] [in this city]" //100
 		],
 		"requiredTech": "Education",
 		"hurryCostModifier": -25
@@ -445,16 +449,18 @@
 	},
 	{
 		"name": "Civil Modernization",
-		"cost": 810,
+		"cost": 1060,
 		"uniques": [
 			"Unsellable",
 			"'Modernization'",
 			"Comment [Only when all buildings in this package have not been built, this package is available.]",
 			"Only available <in cities without a [Newspaper Agency]>",
 			"Only available <in cities without a [Police Station]>",
+			"Only available <in cities without a [Fire Station]>",
 			"Only available <in cities without a [Government Complex]>",
 			"Gain a free [Newspaper Agency] [in this city]", //160
 			"Gain a free [Police Station] [in this city]", //250
+			"Gain a free [Fire Station] [in this city]", //250
 			"Gain a free [Commune] [in this city] <after adopting [Complete Autonomy]>",
 			"Gain a free [Government Complex] [in this city]" //400
 		],
@@ -478,7 +484,7 @@
 	},
 	{
 		"name": "Light Industry Modernization",
-		"cost": 1250,
+		"cost": 1500,
 		"uniques": [
 			"Unsellable",
 			"'Modernization'",
@@ -530,7 +536,6 @@
 		"requiredBuilding": "University",
 		"hurryCostModifier": -25
 	},
-	//Invention Tree
 	//Line 0
 	{
 		"name": "Obelisk",
@@ -7889,7 +7894,7 @@
 		},
 		"uniques": [
 			"Only available <in cities without a [Prince Elector Territory]> <when above [0] [Influence]>",
-			"Only available <if [Empire of Electors] is constructed in all [Capital] cities>",
+			"Can only be built <if [Empire of Electors] is constructed in all [Capital] cities>",
 			"Instantly consumes [10] [Influence]",
 			"[+25]% Production when constructing ['Economic Building'] buildings [in this city]",
 			"Destroyed when the city is captured"
@@ -7906,7 +7911,7 @@
 			"Only available <in cities without a [Free City]> <when above [0] [Influence]>",
 			"Provides [1] [Noble Army Maintenance]",
 			"[+2 Gold] from ['Policy Improvement'] tiles [in this city]",
-			"Only available <if [Empire of Electors] is constructed in all [Capital] cities>",
+			"Can only be built <if [Empire of Electors] is constructed in all [Capital] cities>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Tactics"
