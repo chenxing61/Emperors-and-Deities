@@ -11,10 +11,10 @@
         "[-25]% growth [in all cities] <in cities with at least [60] [Population]>",
         "[-25]% growth [in all cities] <in cities with at least [70] [Population]>",
 
-        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [10] [Population]>",  
-        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [15] [Population]>",  
-        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [20] [Population]>",  
-        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [25] [Population]>",  
+        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [10] [Population]>",  
+        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [15] [Population]>",  
+        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [20] [Population]>",  
+        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [25] [Population]>",  
         "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [30] [Population]>",  
         "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [35] [Population]>",  
         "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [40] [Population]>",  
@@ -26,23 +26,25 @@
         "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [70] [Population]>", 
         "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [75] [Population]>",
 
-        "[+25]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [5]>",
-        "[+15]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [7]>",
-        "[+25]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [10]>",
-        "[+15]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [15]>",
-        "[+25]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [17]>",
-        "[+15]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [20]>",
-        "[+25]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [25]>",
-        "[+15]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [27]>",
-        "[+25]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [30]>",
-        "[+15]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [35]>",
-        "[+25]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [37]>",
-        "[+15]% unhappiness from the number of cities <when number of [[in all cities] Cities] is more than [40]>",
+        "[+25]% unhappiness from the number of cities <when number of [Cities] is more than [5]>",
+        "[+15]% unhappiness from the number of cities <when number of [Cities] is more than [7]>",
+        "[+25]% unhappiness from the number of cities <when number of [Cities] is more than [10]>",
+        "[+15]% unhappiness from the number of cities <when number of [Cities] is more than [15]>",
+        "[+25]% unhappiness from the number of cities <when number of [Cities] is more than [17]>",
+        "[+15]% unhappiness from the number of cities <when number of [Cities] is more than [20]>",
+        "[+25]% unhappiness from the number of cities <when number of [Cities] is more than [25]>",
+        "[+15]% unhappiness from the number of cities <when number of [Cities] is more than [27]>",
+        "[+25]% unhappiness from the number of cities <when number of [Cities] is more than [30]>",
+        "[+15]% unhappiness from the number of cities <when number of [Cities] is more than [35]>",
+        "[+25]% unhappiness from the number of cities <when number of [Cities] is more than [37]>",
+        "[+15]% unhappiness from the number of cities <when number of [Cities] is more than [40]>",
         "[-15]% [Production] [in all cities] <when below [0] [Happiness]>",
+
+        "[+33]% Faith cost of generating Great Prophet equivalents",
         //Influence
         
         "Triggers a [Wealth Gap Widens] event <after turn number [40]>  <when below [-5] [Happiness]> <for [non-[City-States]] Civilizations> <with [15]% chance> <upon turn start>",
-        "Triggers a [Rampent Corruption] event <after turn number [40]>  <when below [-5] [Happiness]> <for [non-[City-States]] Civilizations> <with [15]% chance> <upon turn start>",
+        "Triggers a [Rampant Corruption] event <after turn number [40]>  <when below [-5] [Happiness]> <for [non-[City-States]] Civilizations> <with [15]% chance> <upon turn start>",
         "Triggers a [Vagrancy Crisis] event <after turn number [40]>  <when below [-5] [Happiness]> <for [non-[City-States]] Civilizations> <with [15]% chance> <upon turn start>",
 
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <if [Unified] is constructed> <when between [10] and [20] [Happiness]> <with [5]% chance> <upon turn start> <after turn number [30]> <starting from the [Renaissance era]>",
@@ -76,7 +78,7 @@
         "Remove [Unified] [in capital] <if ['Divided'] is constructed in all [Capital] cities> <upon turn start>",
         "[-1] Sight <for [Embarked] units>",
         //Prevents AI from spamming units
-        "Cannot build ['Mercenary Army'] units <when not at war> <starting from the [Classical era]> <for [AI player] Civilizations>",
+        "Cannot build [{non-[Nubian Archer]} {'Mercenary Army'}] units <before adopting [Plutocracy]> <for [AI player] Civilizations>",
         "Cannot build ['Firearms'] units <when below [-10] [Weapon Parts]>",
         "Cannot build ['Motorised'] units <when below [-10] [Vehicle Parts]>",
         "Cannot build ['Mechanised'] units <when below [-10] [Vehicle Parts]>",
@@ -87,19 +89,18 @@
         "Cannot build ['Mechanised'] units <when below [-10] [Fuel]>",
         "Cannot build ['Engine Ship'] units <when below [-10] [Fuel]>",
         "Cannot build [Air] units <when below [-10] [Fuel]>",
-        "[+33]% Faith cost of generating Great Prophet equivalents",
+        
         //Various Mechanics
         "Notified of new Barbarian encampments",
         "Instantly provides [1] [Revolution Oppotunity] <upon entering the [Imperial era]>",
         "Instantly provides [1] [Revolution Oppotunity] <upon entering the [Modern era]>",
         "Remove [Levies Disbandment] [in capital] <when number of [[The Levied Army] Units] is less than [1]> <upon turn end>",
-
         "Gain a free [Overproduction] [in capital] <starting from the [Industrial era]> <when number of [[Consumption Supply]-3-[[Cities]*2]] is more than [Consumption Demand]> <upon turn start>",
         "Remove [Overproduction] [in capital] <starting from the [Industrial era]> <when number of [Consumption Demand] is less than [[Consumption Supply]-3-[[Cities]*2]]> <upon turn start>",
-
+        "Gain a free [Balanced Production] [in capital] <starting from the [Industrial era]> <if [Overproduction] is not constructed> <if [Underproduction] is not constructed> <upon turn start>",
         "Gain a free [Underproduction] [in capital] <starting from the [Industrial era]> <when number of [[Consumption Supply]+3+[[Cities]*2]] is less than [Consumption Demand]> <upon turn start>",
         "Remove [Underproduction] [in capital] <starting from the [Industrial era]> <when number of [[Consumption Supply]+3+[[Cities]*2]] is more than [Consumption Demand]> <upon turn start>",
-
+        "Instantly provides [1] [Iconic Brand] <upon expending a [Great Merchant] unit>",
         //AI
 
         "Gain a free [Call to Arms] [in all cities] <when at war> <for [AI player] Civilizations>",
@@ -110,8 +111,8 @@
 
         "Triggers a [Stablising our side of the globe] event <if [Strife] is constructed> <when above [5] [Influence]> <for [AI player] Civilizations> <upon turn start>",
 
-        "Triggers a [Stablising our side of the globe] event <if [Struggle] is constructed> <when above [10] [Influence]> <for [AI player] Civilizations> <upon turn start>"
-
+        "Triggers a [Stablising our side of the globe] event <if [Struggle] is constructed> <when above [10] [Influence]> <for [AI player] Civilizations> <upon turn start>",
+        
         // TODO: Implement the uniques below
         // "[+20]% [Culture] [in all cities] <during a golden age>",
         // "[+20]% [Production] [in all cities] <during a golden age>",

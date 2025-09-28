@@ -15,6 +15,7 @@
 		"resourceType": "Strategic",
 		"uniques": [
 			"Stockpiled",
+			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
 			"Comment [You require this resource to change government form,If [Happiness] is at 5, 10, 30 or above, you gain a maximum of 3 [Influence] per turn from [Happiness] and a extra 2 [Influence] from being in a golden age.\nIf [Happiness] is below 5, -5, -10, -15, -20 or below, you can lose a maximum of 10 [Influence] per turn.\nIf [Gold] is below -100,-200,-300 or below, you can lose a maximum of 5 [Influence] from bankruptcy per turn.\nWhen you are at negative [Influence], you have a chance of triggering stability lose event, which chance gradually increases while your Influence goes even futher into the negative. The lowest stability you can get is [Anarchy].\nWhen below -10 [Influence] you cannot increase stability.]",
 			"Cannot be traded"
 		],
@@ -24,6 +25,7 @@
 		"name": "Influence Limit",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
 			"Comment [You need this [Influence Limit] to keep your [Influence]. [Influence] will not go above [Influence Limit].]",
 			"Cannot be traded"
 		],
@@ -62,19 +64,21 @@
 	{
 		"name": "Consumption Supply",
 		"resourceType": "Strategic",
-		"uniques": ["Comment [[Consumption Supply] is mainly gained by building ['Light Industry'] buildings. Some buildings and policies that encourage nationalisation also increases the output of this resource.]"],
+		"uniques": ["Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
+		"Comment [[Consumption Supply] is mainly gained by building ['Light Industry'] buildings. Some buildings and policies that encourage nationalisation also increases the output of this resource.]"],
 		"revealedBy": "Economics",
 		"civilopediaText": [
-		{"text": "See also: Emperors and Deities - The Industrial Age", "link": "Tutorials/Emperors and Deities - The Industrial Age"}
+		{"text": "See also: ED - The Industrial Ages", "link": "Tutorials/ED - The Industrial Ages"}
 		]
 	},
 	{
 		"name": "Consumption Demand",
 		"resourceType": "Strategic",
-		"uniques": ["Comment [Every 5 population provides 2 [Consumption Demand]. Some buildings and policies that encourages free markets also increases the output of this resource.]","Cannot be traded"],
+		"uniques": ["Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
+		"Comment [Every 5 population provides 2 [Consumption Demand]. Some buildings and policies that encourages free markets also increases the output of this resource.]","Cannot be traded"],
 		"revealedBy": "Economics",
 		"civilopediaText": [
-		{"text": "See also: Emperors and Deities - The Industrial Age", "link": "Tutorials/Emperors and Deities - The Industrial Age"}
+		{"text": "See also: ED - The Industrial Ages", "link": "Tutorials/ED - The Industrial Ages"}
 		]
 		
 	},
@@ -86,7 +90,7 @@
 		],
 		"revealedBy": "Electricity",
 		"civilopediaText": [
-		{"text": "See also: Emperors and Deities - The Industrial Age", "link": "Tutorials/Emperors and Deities - The Industrial Age"}
+		{"text": "See also: ED - The Industrial Ages", "link": "Tutorials/ED - The Industrial Ages"}
 		]
 	},
 	{
@@ -94,9 +98,13 @@
 		"resourceType": "Strategic",
 		"uniques": [
 			"Stockpiled",
+			"Not shown on world screen <if [Hide Miscellaneous] is constructed> <hidden from users>",
 			"Cannot be traded"
 		],
-		"revealedBy": "Wood Block Printing"
+		"revealedBy": "Wood Block Printing",
+		"civilopediaText": [
+		{"text": "See also: Great Merchant", "link": "Unit/Great Merchant"}
+		]
 	},
 	{
 		"name": "Academic Research",
@@ -113,6 +121,7 @@
 		"resourceType": "Strategic",
 		"uniques": [
 			"Stockpiled",
+			"Not shown on world screen <if [Hide Parts] is constructed> <hidden from users>",
 			"Cannot be traded"
 		],
 		"revealedBy": "Writing"
@@ -392,6 +401,7 @@
 		"resourceType": "Strategic",
 		"revealedBy": "Compass",
 		"uniques": [
+			"Not shown on world screen <if [Hide Miscellaneous] is constructed> <hidden from users>",
 			"Stockpiled"
 		]
 	},
@@ -423,6 +433,7 @@
 		"resourceType": "Strategic",
 		"revealedBy": "Geology",
 		"uniques": [
+			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Stockpiled"
 		]
 	},
@@ -446,6 +457,7 @@
 		},
 		"uniques": [
 			"'Herd'",
+			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Guaranteed with Strategic Balance resource option",
 			"Generated with weight [100] <in [{Featureless} {Grassland}] tiles>",
 			"Generated with weight [100] <in [{Featureless} {Plains}] tiles>",
@@ -486,6 +498,7 @@
 		],
 		"uniques": [
 			"'Useful Mineral'",
+			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Guaranteed with Strategic Balance resource option",
 			"Generated with weight [45] <in [{Featureless} {Tundra}] tiles>",
 			"Generated with weight [35] <in [{Featureless} {Desert}] tiles>",
@@ -528,6 +541,7 @@
 		"uniques": [
 			"'Crops'",
 			"'Chemicals'",
+			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Guaranteed with Strategic Balance resource option",
 			"Minor deposits generated with weight [33] <in [{Jungle} {Hill}] tiles>",
 			"Minor deposits generated with weight [33] <in [Forest] tiles>"
@@ -565,6 +579,7 @@
 		},
 		"uniques": [
 			"'Useful Mineral'",
+			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Generated with weight [35] <in [Hill] tiles>",
 			"Generated with weight [30] <in [Jungle] tiles> <in tiles without [Hill]>",
 			"Generated with weight [30] <in [Forest] tiles> <in tiles without [Hill]>",
@@ -611,6 +626,7 @@
 		},
 		"uniques": [
 			"'Chemicals'",
+			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Deposits in [Coast] tiles always provide [3] resources",
 			"Deposits in [Ocean] tiles always provide [6] resources",
 			"Guaranteed with Strategic Balance resource option",
@@ -659,6 +675,7 @@
 		},
 		"uniques": [
 			"'Useful Mineral'",
+			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Generated with weight [15] <in [{Featureless} {Tundra}] tiles>",
 			"Generated with weight [15] <in [{Featureless} {Snow}] tiles>",
 			"Generated with weight [39] <in [Hill] tiles>",
@@ -697,6 +714,7 @@
 		},
 		"uniques": [
 			"'Useful Mineral'",
+			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Generated with weight [35] <in [Marsh] tiles> <in tiles without [Hill]>",
 			"Generated with weight [70] <in [Jungle] tiles> <in tiles without [Hill]>",
 			"Generated with weight [70] <in [Forest] tiles> <in tiles without [Hill]>",
@@ -717,16 +735,18 @@
 	},
 	///The Unit limit
 	{
-		"name": "Standing Army Maintainance",
+		"name": "Standing Army Maintenance",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
 			"Cannot be traded"
 		]
 	},
 	{
-		"name": "Noble Army Maintainance",
+		"name": "Noble Army Maintenance",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
 			"Cannot be traded"
 		]
 	},
@@ -734,7 +754,7 @@
 		"name": "Mercenary Contract",
 		"resourceType": "Strategic",
 		"uniques": [
-			"Cannot be traded"
+			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>"
 		],
 		"revealedBy": "Currency"
 	},
@@ -742,6 +762,8 @@
 		"name": "Protection Squadron Volunteer",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <before adopting [Fascism]> <hidden from users>",
+			"Not shown on world screen <after adopting [Fascism]> <if [Hide Essential] is constructed> <hidden from users>",
 			"Cannot be traded"
 		],
 		"revealedBy": "Replaceable Parts"
@@ -751,6 +773,7 @@
 		"name": "Alloy",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Stockpiled"
 		],
 		"revealedBy": "Steels"
@@ -759,6 +782,7 @@
 		"name": "Industrial Chemicals",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Stockpiled"
 		],
 		"revealedBy": "Chemistry"
@@ -767,6 +791,7 @@
 		"name": "Fuel",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
 			"Stockpiled"
 		],
 		"revealedBy": "Combustion"
@@ -775,6 +800,7 @@
 		"name": "Graphene",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Parts] is constructed> <hidden from users>",
 			"Stockpiled"
 		],
 		"revealedBy": "Graphene"
@@ -783,6 +809,7 @@
 		"name": "Weapon Parts",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Parts] is constructed> <hidden from users>",
 			"Stockpiled"
 		],
 		"revealedBy": "Iron Working"
@@ -791,6 +818,7 @@
 		"name": "Vehicle Parts",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Parts] is constructed> <hidden from users>",
 			"Stockpiled"
 		],
 		"revealedBy": "Replaceable Parts"
@@ -799,6 +827,7 @@
 		"name": "Ship Parts",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Parts] is constructed> <hidden from users>",
 			"Stockpiled"
 		],
 		"revealedBy": "Shipbuilding"
@@ -807,6 +836,7 @@
 		"name": "Aircraft Parts",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Parts] is constructed> <hidden from users>",
 			"Stockpiled"
 		],
 		"revealedBy": "Flight"
@@ -815,6 +845,7 @@
 		"name": "Electronic Parts",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Parts] is constructed> <hidden from users>",
 			"Stockpiled"
 		],
 		"revealedBy": "Electronics"
@@ -823,6 +854,7 @@
 		"name": "Microchips",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Parts] is constructed> <hidden from users>",
 			"Stockpiled"
 		],
 		"revealedBy": "Computer"
@@ -831,6 +863,7 @@
 		"name": "Enriched Uranium",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
 			"Stockpiled"
 		],
 		"revealedBy": "Uranium Enrichment"
@@ -1561,6 +1594,7 @@
 		"name": "Great Wall Logistic",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Miscellaneous] is constructed> <hidden from users>",
 			"Cannot be traded"
 		],
 		"revealedBy": "Engineering"
@@ -1569,6 +1603,7 @@
 		"name": "Piety",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
 			"Cannot be traded"
 		],
 		"revealedBy": "Theology"
@@ -1587,6 +1622,7 @@
 		"name": "Artifact",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Hide Miscellaneous] is constructed> <hidden from users>",
 			"Stockpiled"
 		],
 		"civilopediaText": [
@@ -1597,6 +1633,10 @@
 	{
 		"name": "Waste Material",
 		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen <if [Hide Miscellaneous] is constructed> <hidden from users>",
+			"Stockpiled"
+		],
 		"revealedBy": "Ecology"
 	}
 ]

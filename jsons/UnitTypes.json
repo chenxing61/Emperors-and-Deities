@@ -11,44 +11,67 @@
     ///Majority
     {
         "name": "Close Combat",
-        "movementType": "Land"
+        "movementType": "Land",
+        "uniques": [
+            "[-25]% Strength <vs [Aircraft] units> <when defending>"
+        ]
     },
     {
         "name": "Ranged Combat",
-        "movementType": "Land"
+        "movementType": "Land",
+        "uniques": [
+            "[-25]% Strength <vs [Aircraft] units> <when defending>"
+        ]
     },
     {
         "name": "Close Combat Ship",
-        "movementType": "Water"
+        "movementType": "Water",
+        "uniques": [
+            "[-25]% Strength <vs [Aircraft] units> <when defending>"
+        ]
     },
     {
         "name": "Ranged Combat Ship",
-        "movementType": "Water"
+        "movementType": "Water",
+        "uniques": [
+            "[-25]% Strength <vs [Aircraft] units> <when defending>"
+        ]
     },
     ///Special
     {
         "name": "Siege",
-        "movementType": "Land"
+        "movementType": "Land",
+        "uniques": [
+            "[-25]% Strength <vs [Aircraft] units> <when defending>"
+        ]
     },
     {
         "name": "Scout",
-        "movementType": "Land"
+        "movementType": "Land",
+        "uniques": [
+            "[-25]% Strength <vs [Aircraft] units> <when defending>"
+        ]
     },
     {
         "name": "Assault",
-        "movementType": "Land"
+        "movementType": "Land",
+        "uniques": [
+            "[-25]% Strength <vs [Aircraft] units> <when defending>"
+        ]
     },
     {
         "name": "Rider",
         "movementType": "Land",
         "uniques": [
-            "Can move after attacking"
+            "Can move after attacking",
+            "[-25]% Strength <vs [Aircraft] units> <when defending>"
         ]
     },
     {
         "name": "Submarine",
         "movementType": "Water",
         "uniques": [
+            "[-25]% Strength <vs [Aircraft] units> <when defending>",
             "Can enter ice tiles",
             "Invisible to non-adjacent units",
             "Can see invisible [Submarine] units"
@@ -56,7 +79,10 @@
     },
     {
         "name": "Carrier",
-        "movementType": "Water"
+        "movementType": "Water",
+        "uniques": [
+            "[-25]% Strength <vs [Aircraft] units> <when defending>"
+        ]
     },
     {
         "name": "Helicopter",
@@ -72,7 +98,7 @@
         "movementType": "Air",
         "uniques": [
             "Aircraft",
-            "[+4] Sight",
+            "[+2] Sight",
             "Can see over obstacles",
             "Can perform Air Sweep"
         ]
@@ -81,7 +107,8 @@
         "name": "Bomber",
         "movementType": "Air",
         "uniques": [
-            "Aircraft"
+            "Aircraft",
+            "[+2] Sight"
         ]
     },
     {

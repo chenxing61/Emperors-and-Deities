@@ -148,10 +148,11 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"Can build [Camp] improvements on tiles",
-			"Can build [Manual Plantation] improvements on tiles",
-			"Can build [Manual Farm] improvements on tiles",
-			"[+1] population in a random city <by consuming this unit><after discovering [Bronze Working]>",
+			"[+25]% Strength <in [Land] tiles> <for [AI player] Civilizations>",
+			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
+			"Can build [Manual Plantation] improvements on tiles <for [Human player] Civilizations>",
+			"Can build [Manual Farm] improvements on tiles <for [Human player] Civilizations>",
+			"[+1] population in a random city <by consuming this unit> <after discovering [Bronze Working]>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
@@ -191,7 +192,7 @@
 		"cost": 40,
 		"movement": 3,
 		"strength": 9,
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"uniques": [
 			"'Standing Army'",
 			"'Galley'",
@@ -238,6 +239,7 @@
 		"strength": 8,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -264,9 +266,9 @@
 		"strength": 9,
 		"uniques": [
 			"Limited to [5] per Civilization",
-			"Can transform to [Early Swordsman] <removing the [The Levied Army] promotion/status> <after discovering [Bronze Working]> <when above [0] [Standing Army Maintainance]> <costs [+1 Gold] stats>",
-			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <after discovering [Mathematics]> <when above [0] [Standing Army Maintainance]> <costs [+1 Gold] stats>",
-			"Can transform to [Early Rider] <removing the [The Levied Army] promotion/status> <after discovering [Horseback Riding]> <when above [0] [Standing Army Maintainance]> <costs [+1 Gold] stats>",
+			"Can transform to [Early Swordsman] <removing the [The Levied Army] promotion/status> <after discovering [Bronze Working]> <when above [0] [Standing Army Maintenance]> <costs [+75 Gold] stats>",
+			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <after discovering [Mathematics]> <when above [0] [Standing Army Maintenance]> <costs [+75 Gold] stats>",
+			"Can transform to [Early Rider] <removing the [The Levied Army] promotion/status> <after discovering [Horseback Riding]> <when above [0] [Horse]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -306,7 +308,7 @@
 		"requiredTech": "Bronze Working",
 		"obsoleteTech": "Armorments",
 		"upgradesTo": "Swordsman",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
 	{
@@ -333,7 +335,7 @@
 		],
 		"requiredTech": "Bronze Working",
 		"obsoleteTech": "Armorments",
-		"requiredResource": "Noble Army Maintainance",
+		"requiredResource": "Noble Army Maintenance",
 		"attackSound": "metalhit"
 	},
 	{
@@ -361,7 +363,7 @@
 		"requiredTech": "Bronze Working",
 		"obsoleteTech": "Armorments",
 		"upgradesTo": "Swordsman",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
 	{
@@ -391,7 +393,7 @@
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Armorments",
 		"upgradesTo": "Swordsman",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
 	{
@@ -421,7 +423,7 @@
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Armorments",
 		"upgradesTo": "Swordsman",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
 	{
@@ -449,7 +451,7 @@
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Armorments",
 		"upgradesTo": "Swordsman",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
 	{
@@ -461,7 +463,7 @@
 		"upgradesTo": "Cataphract",
 		"requiredTech": "The Wheel",
 		"obsoleteTech": "Stirrup",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"uniques": [
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
@@ -488,7 +490,7 @@
 		"upgradesTo": "Cataphract",
 		"requiredTech": "The Wheel",
 		"obsoleteTech": "Stirrup",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"uniques": [
 			"'Standing Army'",
 			"'Mounted'",
@@ -519,7 +521,7 @@
 			"'Edged Weapons'",
 			"[-20]% Strength <when defending>",
 			"[-33]% Strength <vs cities> <when attacking>",
-			"Can transform to [Cataphract] <after discovering [Armorments]> <when above [0] [Standing Army Maintainance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Cataphract] <after discovering [Armorments]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
@@ -528,7 +530,7 @@
 		],
 		"requiredTech": "The Wheel",
 		"obsoleteTech": "Armorments",
-		"requiredResource": "Noble Army Maintainance",
+		"requiredResource": "Noble Army Maintenance",
 		"attackSound": "horse"
 	},
 	{
@@ -547,7 +549,7 @@
 			"'Edged Weapons'",
 			"[-20]% Strength <when defending>",
 			"[-20]% Strength <vs cities> <when attacking>",
-			"Can transform to [Cataphract] <after discovering [Armorments]> <when above [0] [Standing Army Maintainance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Cataphract] <after discovering [Armorments]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit"
 		],
@@ -557,7 +559,7 @@
 		],
 		"requiredTech": "The Wheel",
 		"obsoleteTech": "Armorments",
-		"requiredResource": "Noble Army Maintainance",
+		"requiredResource": "Noble Army Maintenance",
 		"attackSound": "horse"
 	},
 	///Line 3
@@ -585,6 +587,7 @@
 		"upgradesTo": "Explorer",
 		"requiredTech": "Astronomy",
 		"obsoleteTech": "Monocular",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "metalhit"
 	},
@@ -654,7 +657,7 @@
 		"rangedStrength": 14,
 		"range": 1,
 		"uniques": [
-			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <when above [0] [Standing Army Maintainance]> <after discovering [Mathematics]> <costs [+1 Gold] stats>",
+			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <when above [0] [Standing Army Maintenance]> <after discovering [Mathematics]> <costs [+1 Gold] stats>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -670,7 +673,7 @@
 		],
 		"requiredTech": "Mining",
 		"obsoleteTech": "Tactics",
-		"upgradesTo": "Levy Archer",
+		"upgradesTo": "Mercenary Archer",
 		"attackSound": "arrow"
 	},
 	{
@@ -683,7 +686,6 @@
 		"range": 1,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -699,6 +701,8 @@
 		"requiredTech": "Mining",
 		"obsoleteTech": "Logistics",
 		"upgradesTo": "Mercenary Archer",
+		"requiredBuilding":"Mercenary Office",
+		"requiredResource":"Mercenary Contract",
 		"attackSound": "arrow"
 	},
 	{
@@ -723,7 +727,7 @@
 			"The Standing Army"
 		],
 		"requiredBuilding":"Military Stable",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Stirrup",
 		"upgradesTo": "Light Cavalry",
@@ -756,7 +760,7 @@
 		"requiredBuilding":"Military Stable",
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Carriage",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"upgradesTo": "Hussar",
 		"attackSound": "metalhit"
 	},
@@ -788,7 +792,7 @@
 		"requiredBuilding":"Military Stable",
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Carriage",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"upgradesTo": "Hussar",
 		"attackSound": "arrow"
 	},
@@ -815,7 +819,7 @@
 		"requiredTech": "Mathematics",
 		"obsoleteTech": "Engineering",
 		"upgradesTo": "Crossbowman",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "arrow"
 	},
 	{
@@ -843,7 +847,38 @@
 		"requiredTech": "Mathematics",
 		"obsoleteTech": "Engineering",
 		"upgradesTo": "Crossbowman",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "arrow"
+	},
+		{
+		"name": "Qin Crossbowman",
+		"uniqueTo":"East Asia",
+		"unitType": "Ranged Combat",
+		"cost": 70,
+		"movement": 2,
+		"strength": 14,
+		"rangedStrength": 18,
+		"range": 1,
+		"uniques": [
+			"Can transform to [Crossbowman] <after discovering [Engineering]> <costs [+75 Gold] stats>",
+			"Only available <if [Great Qin] is constructed>",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Stewardship",
+			"Hardened",
+			"Firepower Doctrine",
+			"Crossbow"
+		],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Engineering",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "arrow"
 	},
 	{
@@ -872,7 +907,7 @@
 		"requiredTech": "Mathematics",
 		"obsoleteTech": "Physics",
 		"upgradesTo": "Trebuchet",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"hurryCostModifier": 20,
 		"attackSound": "throw"
 	},
@@ -903,39 +938,7 @@
 		"requiredTech": "Mathematics",
 		"obsoleteTech": "Engineering",
 		"upgradesTo": "Heavy Balista",
-		"requiredResource": "Standing Army Maintainance",
-		"hurryCostModifier": 20,
-		"attackSound": "throw"
-	},
-	{
-		"name": "Qin Balista",
-		"uniqueTo":"East Asia",
-		"unitType": "Siege",
-		"cost": 75,
-		"movement": 2,
-		"strength": 10,
-		"rangedStrength": 18,
-		"range": 2,
-		"uniques": [
-			"Only available <if [Great Qin] is constructed>",
-			"'Standing Army'",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Siege Weapons'",
-			"[+50]% Strength <vs cities> <when attacking>",
-			"[+75]% Strength <vs ['Dense Formation'] units> <when attacking>",
-			"No defensive terrain bonus",
-			"Must set up to ranged attack",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": [
-			"The Standing Army"
-		],
-		"requiredTech": "Mathematics",
-		"obsoleteTech": "Engineering",
-		"upgradesTo": "Heavy Balista",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"hurryCostModifier": 20,
 		"attackSound": "throw"
 	},
@@ -989,7 +992,7 @@
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Flintlock",
 		"upgradesTo": "Grenadier",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
 	{
@@ -1000,8 +1003,8 @@
 		"strength": 26,
 		"uniques": [
 			"Can upgrade to [Knight] <after discovering [Tactics]><after adopting [Feudalism]>",
-			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintainance]> <removing the [The Noble Army] promotion/status>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintainance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"Consumes [1] [Metal]",
 			"'Noble Army'",
 			"'Infantry'",
@@ -1019,7 +1022,7 @@
 		],
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Flintlock",
-		"requiredResource": "Noble Army Maintainance",
+		"requiredResource": "Noble Army Maintenance",
 		"attackSound": "metalhit"
 	},
 		{
@@ -1033,8 +1036,8 @@
 			"Only available <if [Persian Dynasties] is constructed>",
 			"Limited to [3] per Civilization",
 			"Can upgrade to [Azadan Cavalry] <after discovering [Armorments]>",
-			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintainance]> <removing the [The Noble Army] promotion/status>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintainance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"'Noble Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -1052,7 +1055,7 @@
 		],
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Flintlock",
-		"requiredResource": "Noble Army Maintainance",
+		"requiredResource": "Noble Army Maintenance",
 		"attackSound": "metalhit"
 	},
 	///Line 6
@@ -1077,7 +1080,7 @@
 		"requiredTech": "Dry Dock",
 		"obsoleteTech": "Cartography",
 		"upgradesTo": "Three-masted Ship",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "arrow"
 	},
 	{
@@ -1104,7 +1107,7 @@
 		"requiredTech": "Astronomy",
 		"obsoleteTech": "Cartography",
 		"upgradesTo": "Three-masted Ship",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "arrow"
 	},
 	{
@@ -1115,6 +1118,7 @@
 		"strength": 15,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -1146,7 +1150,6 @@
 		"range": 1,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Mercenary Army'",
@@ -1161,6 +1164,7 @@
 		"requiredTech": "Logistics",
 		"obsoleteTech": "Engineering",
 		"upgradesTo": "Mercenary Crossbowman",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "arrow"
 	},
@@ -1193,7 +1197,7 @@
 			"Assault Doctrine",
 			"Hetairoi Glory"
 		],
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "horse"
 	},
 	{
@@ -1224,7 +1228,7 @@
 		"requiredBuilding":"Military Stable",
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Tactics",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "horse"
 	},
 	{
@@ -1238,7 +1242,7 @@
 			"Only available <if [Persian Dynasties] is constructed>",
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
-			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintainance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
 			"Can transform to [Azadan Cavalry Archer] <requires [1] movement>",
 			"'Standing Army'",
@@ -1258,7 +1262,7 @@
 		"requiredBuilding":"Military Stable",
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Tactics",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "horse"
 	},
 	{
@@ -1288,7 +1292,7 @@
 			"The Noble Army",
 			"Strip Armour"
 		],
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "arrow"
 	},
 	{
@@ -1321,7 +1325,7 @@
 		"requiredBuilding":"Military Stable",
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Tactics",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "horse"
 	},
 	{
@@ -1332,7 +1336,6 @@
 		"strength": 20,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -1350,6 +1353,7 @@
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Flintlock",
 		"upgradesTo": "Mercenary Musketeer",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "metalhit"
 	},
@@ -1377,7 +1381,7 @@
 		],
 		"requiredTech": "Dry Dock",
 		"obsoleteTech": "Monocular",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "throw"
 	},
 	{
@@ -1403,7 +1407,7 @@
 		"requiredTech": "Shipbuilding",
 		"obsoleteTech": "Monocular",
 		"upgradesTo": "Cannon Galley Fleet",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "throw"
 	},
 	{
@@ -1426,7 +1430,7 @@
 		"requiredTech": "Shipbuilding",
 		"obsoleteTech": "Monocular",
 		"upgradesTo": "Cannon Galley Fleet",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "throw"
 	},
 	{
@@ -1436,7 +1440,7 @@
 		"movement": 3,
 		"strength": 18,
 		"uniques": [
-			"Can transform to [Three-masted Ship] <removing the [Mercenary Habit] promotion/status><removing the [Merchant] promotion/status> <after discovering [Cartography]> <when above [0] [Standing Army Maintainance]>",
+			"Can transform to [Three-masted Ship] <removing the [Mercenary Habit] promotion/status><removing the [Merchant] promotion/status> <after discovering [Cartography]> <when above [0] [Standing Army Maintenance]>",
 			"'Mercenary Army'",
 			"'Sailing Ship'",
 			"'Dense Formation'",
@@ -1450,6 +1454,7 @@
 		],
 		"requiredTech": "Shipbuilding",
 		"obsoleteTech": "Monocular",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "throw"
 	},
@@ -1482,7 +1487,7 @@
 		"requiredBuilding":"Military Stable",
 		"requiredTech": "Logistics",
 		"obsoleteTech": "Carriage",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"upgradesTo": "Hussar",
 		"attackSound": "horse"
 	},
@@ -1510,7 +1515,7 @@
 		"requiredBuilding":"Military Stable",
 		"requiredTech": "Stirrup",
 		"obsoleteTech": "Carriage",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"upgradesTo": "Hussar",
 		"attackSound": "horse"
 	},
@@ -1522,7 +1527,6 @@
 		"strength": 18,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"Unbuildable",
 			"'Mercenary Army'",
 			"'Mounted'",
@@ -1540,6 +1544,7 @@
 		"requiredTech": "Stirrup",
 		"obsoleteTech": "Carriage",
 		"upgradesTo": "Hussar",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "horse"
 	},
@@ -1569,7 +1574,7 @@
 		"requiredTech": "Alchemy",
 		"obsoleteTech": "Steels",
 		"upgradesTo": "Cannon",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "fire"
 	},
 	///Line 9
@@ -1596,7 +1601,7 @@
 		"requiredTech": "Engineering",
 		"obsoleteTech": "Hand Cannon",
 		"upgradesTo": "Hand Cannoneer",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "crossbow"
 	},
 	{
@@ -1609,7 +1614,6 @@
 		"range": 1,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -1624,6 +1628,7 @@
 		"requiredTech": "Engineering",
 		"obsoleteTech": "Hand Cannon",
 		"upgradesTo": "Mercenary Hand Cannoneer",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "crossbow"
 	},
@@ -1636,8 +1641,8 @@
 		"uniques": [
 			"Limited to [3] per Civilization",
 			"Only available <if [Celestial Empire] is constructed>",
-			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintainance]> <removing the [The Noble Army] promotion/status>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintainance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"Consumes [1] [Metal]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -1658,7 +1663,7 @@
 		],
 		"requiredTech": "Tactics",
 		"obsoleteTech": "Flintlock",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
 	{
@@ -1711,7 +1716,7 @@
 		"requiredBuilding":"Military Stable",
 		"requiredTech": "Tactics",
 		"obsoleteTech": "Hand Cannon",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"upgradesTo": "Pistoleer",
 		"attackSound": "horse"
 	},
@@ -1740,7 +1745,7 @@
 		"requiredBuilding":"Military Stable",
 		"requiredTech": "Tactics",
 		"obsoleteTech": "Hand Cannon",
-		"requiredResource": "Noble Army Maintainance",
+		"requiredResource": "Noble Army Maintenance",
 		"upgradesTo": "Royal Knight",
 		"attackSound": "horse"
 	},
@@ -1772,7 +1777,7 @@
 		],
 		"requiredTech": "Engineering",
 		"obsoleteTech": "Steels",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"upgradesTo": "Cannon",
 		"hurryCostModifier": 20,
 		"attackSound": "throw"
@@ -1805,7 +1810,7 @@
 		],
 		"requiredTech": "Physics",
 		"obsoleteTech": "Steels",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"upgradesTo": "Cannon",
 		"hurryCostModifier": 20,
 		"attackSound": "throw"
@@ -1818,20 +1823,19 @@
 		"strength": 31,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
-			"Never appears as a Barbarian unit",
-			"Only available <before adopting [Knighthood]>"
+			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
 			"Mercenary Habit"
 		],
 		"requiredTech": "Diplomacy",
 		"obsoleteTech": "Hand Cannon",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"upgradesTo": "Mercenary Pistoleer",
 		"attackSound": "horse"
@@ -1856,7 +1860,7 @@
 		"requiredTech": "Cartography",
 		"obsoleteTech": "Ship Armour",
 		"upgradesTo": "Ironclad Fleet",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "cannon"
 	},
 	{
@@ -1910,7 +1914,7 @@
 		],
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -1923,7 +1927,6 @@
 		"range": 1,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -1938,6 +1941,7 @@
 		"upgradesTo": "Mercenary Skirmisher",
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "shot"
 	},
@@ -1972,8 +1976,9 @@
 		"strength": 33,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
-			"Can transform to [Musketeer] <after discovering [Flintlock]> <when above [0] [Standing Army Maintainance]> <removing the [The Garrison Army] promotion/status>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintainance]> <removing the [The Garrison Army] promotion/status>",
+			"Can transform to [Musketeer] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Garrison Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Garrison Army] promotion/status>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -2017,7 +2022,7 @@
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
 		"upgradesTo": "Cuirassier",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "horse"
 	},
 	{
@@ -2027,23 +2032,22 @@
 		"movement": 3,
 		"strength": 36,
 		"uniques": [
-			"Can transform to [Cuirassier] <after discovering [Rifling]> <when above [0] [Standing Army Maintainance]> <removing the [Mercenary Habit] promotion/status>",
+			"Can transform to [Cuirassier] <after discovering [Rifling]> <when above [0] [Standing Army Maintenance]> <removing the [Mercenary Habit] promotion/status>",
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Firearms'",
 			"Can move immediately once bought",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
-			"Never appears as a Barbarian unit",
-			"Only available <before adopting [Knighthood]>"
+			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
 			"Mercenary Habit"
 		],
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "horse"
 	},
@@ -2072,7 +2076,7 @@
 		"upgradesTo": "Royal Cuirassier",
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
-		"requiredResource": "Noble Army Maintainance",
+		"requiredResource": "Noble Army Maintenance",
 		"attackSound": "horse"
 	},
 	{
@@ -2106,7 +2110,7 @@
 		],
 		"requiredTech": "Steels",
 		"obsoleteTech": "Carriage",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "artillery"
 	},
 	///Line 13
@@ -2131,7 +2135,7 @@
 		"requiredTech": "Monocular",
 		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo": "Torpedo Boat Flotilla",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "cannon"
 	},
 	{
@@ -2142,8 +2146,7 @@
 		"strength": 30,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
-			"Can transform to [Recon Unit] <removing the [Mercenary Habit] promotion/status> <when above [0] [Standing Army Maintainance]> <after discovering [Replaceable Parts]>",
+			"Can transform to [Recon Unit] <removing the [Mercenary Habit] promotion/status> <when above [0] [Standing Army Maintenance]> <after discovering [Replaceable Parts]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -2214,7 +2217,7 @@
 		"requiredTech": "Machinery",
 		"obsoleteTech": "Carriage",
 		"upgradesTo": "Field Gun",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "artillery"
 	},
 	///Line 14
@@ -2243,7 +2246,7 @@
 		"obsoleteTech": "Dynamite",
 		"upgradesTo": "Howitzer",
 		"requiredBuilding": "Firearms Workshop",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "cannon"
 	},
 	{
@@ -2292,6 +2295,7 @@
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Security Company",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "shot"
 	},
@@ -2303,6 +2307,7 @@
 		"cost": 140,
 		"uniques": [
 			"Only available <if [United States] is constructed>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -2342,7 +2347,7 @@
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Heavy Infantry",
 		"requiredBuilding": "Firearms Workshop",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -2368,7 +2373,7 @@
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Heavy Infantry",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"requiredBuilding": "Firearms Workshop",
 		"attackSound": "shot"
 	},
@@ -2394,7 +2399,7 @@
 		"requiredBuilding":"Military Stable",
 		"requiredTech": "Carriage",
 		"obsoleteTech": "Rifling",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "horse"
 	},
 	///Line 15
@@ -2421,7 +2426,7 @@
 		"requiredTech": "Navigation",
 		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo": "Battleship Fleet",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "cannon"
 	},
 	{
@@ -2446,7 +2451,7 @@
 		],
 		"requiredTech": "Cartridge",
 		"obsoleteTech": "Replaceable Parts",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"upgradesTo": "Sharpshooter",
 		"attackSound": "shot"
 	},
@@ -2460,7 +2465,6 @@
 		"range": 1,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -2475,6 +2479,7 @@
 		"requiredTech": "Cartridge",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Security Company",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "shot"
 	},
@@ -2503,7 +2508,7 @@
 		"upgradesTo": "Modern Cavalry",
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Rifling",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "horse"
 	},
 	{
@@ -2513,7 +2518,7 @@
 		"movement": 3,
 		"strength": 61,
 		"uniques": [
-			"Can transform to [Modern Cavalry] <after discovering [Rifling]> <when above [0] [Standing Army Maintainance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Modern Cavalry] <after discovering [Rifling]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"Only available <after adopting [Knighthood]>",
 			"Consumes [1] [Horse]",
 			"'Noble Army'",
@@ -2531,7 +2536,7 @@
 		"requiredBuilding":"Military Stable",
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Rifling",
-		"requiredResource": "Noble Army Maintainance",
+		"requiredResource": "Noble Army Maintenance",
 		"attackSound": "horse"
 	},
 	{
@@ -2557,7 +2562,7 @@
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Heavy Infantry",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	///Line 17
@@ -2583,7 +2588,7 @@
 		"requiredTech": "Ship Armour",
 		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo": "Battleship Fleet",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "cannon"
 	},
 	{
@@ -2596,7 +2601,7 @@
 		"range": 1,
 		"uniques": [
 			"Can upgrade to [Modern Guerrilla] <after adopting [Anarchism]> <after discovering [Mobile Tactics]>",
-			"Can transform to [Red Army Troop] <after adopting [Red Army]> <removing the [The Levied Army] promotion/status> <removing the [Skirmisher Training] promotion/status> <when above [0] [Standing Army Maintainance]>",
+			"Can transform to [Red Army Troop] <after adopting [Red Army]> <removing the [The Levied Army] promotion/status> <removing the [Skirmisher Training] promotion/status> <when above [0] [Standing Army Maintenance]>",
 			"Unbuildable",
 			"'Levy Army'",
 			"'Infantry'",
@@ -2642,8 +2647,9 @@
 		"strength": 62,
 		"cost": 140,
 		"uniques": [
-			"Can transform to [Heavy Infantry] <after discovering [Replaceable Parts]> <when above [0] [Standing Army Maintainance]> <removing the [The Garrison Army] promotion/status>",
+			"Can transform to [Heavy Infantry] <after discovering [Replaceable Parts]> <when above [0] [Standing Army Maintenance]> <removing the [The Garrison Army] promotion/status>",
 			"Only available <if [United States] is constructed>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -2681,7 +2687,7 @@
 		"requiredBuilding":"Military Stable",
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Combustion",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	///Line 18
@@ -2706,7 +2712,7 @@
 		],
 		"requiredTech": "Advanced Shipbuilding",
 		"obsoleteTech": "Combined Arms",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -2716,7 +2722,7 @@
 		"strength": 53,
 		"cost": 170,
 		"requiredTech": "Advanced Shipbuilding",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"uniques": [
 			"Costs [10] [Ship Parts]",
 			"'Firearms'",
@@ -2756,7 +2762,7 @@
 		"requiredBuilding": "Military Port",
 		"requiredTech": "Advanced Shipbuilding",
 		"upgradesTo": "Nuclear Submarines",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "torpedo"
 	},
 	{
@@ -2782,7 +2788,7 @@
 		],
 		"requiredBuilding": "Military Port",
 		"requiredTech": "Advanced Shipbuilding",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shipguns"
 	},
 	{
@@ -2809,7 +2815,7 @@
 		"requiredBuilding": "Military Port",
 		"requiredTech": "Advanced Shipbuilding",
 		"upgradesTo": "Nuclear Battleship Fleet",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shipguns"
 	},
 	{
@@ -2831,7 +2837,7 @@
 			"Scouting Unit"
 		],
 		"upgradesTo": "Mobile Recon Unit",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"requiredTech": "Replaceable Parts",
 		"attackSound": "shot"
 	},
@@ -2858,7 +2864,7 @@
 			"Skirmisher Training"
 		],
 		"requiredTech": "Replaceable Parts",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -2885,7 +2891,7 @@
 			"The Standing Army"
 		],
 		"requiredTech": "Replaceable Parts",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -2907,7 +2913,7 @@
 			"Machinegun"
 		],
 		"requiredTech": "Replaceable Parts",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -2931,7 +2937,7 @@
 		],
 		"requiredTech": "Replaceable Parts",
 		"obsoleteTech": "Mobile Tactics",
-		"requiredResource": "Noble Army Maintainance",
+		"requiredResource": "Noble Army Maintenance",
 		"upgradesTo": "Mechanised Elite Guard",
 		"attackSound": "shot"
 	},
@@ -2969,7 +2975,6 @@
 		"strength": 65,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -2982,6 +2987,7 @@
 			"Mercenary Habit"
 		],
 		"requiredTech": "Replaceable Parts",
+		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "metalhit"
 	},
@@ -3009,7 +3015,7 @@
 		"upgradesTo": "Spec Ops",
 		"requiredTech": "Dynamite",
 		"obsoleteTech": "Combined Arms",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -3040,7 +3046,7 @@
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Dynamite",
 		"upgradesTo": "Self-propelled Artillery",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "artillery"
 	},
 	///Line 17
@@ -3067,7 +3073,7 @@
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Combustion",
 		"upgradesTo": "Mechanised Infantry",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -3092,7 +3098,7 @@
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Combustion",
 		"upgradesTo": "Spy Drone",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "machinegun"
 	},
 	{
@@ -3120,7 +3126,7 @@
 		"requiredTech": "Combustion",
 		"obsoleteTech": "Combined Arms",
 		"upgradesTo": "Humvee",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "tankshot"
 	},
 	{
@@ -3148,7 +3154,7 @@
 		"requiredBuilding": "Military Factory Complex",
 		"upgradesTo": "Assult Mecha",
 		"requiredTech": "Combustion",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "tankshot"
 	},
 	///Line 18
@@ -3222,7 +3228,7 @@
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Mobile Tactics",
 		"obsoleteTech": "Haptics",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -3247,7 +3253,7 @@
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Mobile Tactics",
 		"obsoleteTech": "Haptics",
-		"requiredResource": "Noble Army Maintainance",
+		"requiredResource": "Noble Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -3304,7 +3310,7 @@
 		],
 		"requiredTech": "Mobile Tactics",
 		"upgradesTo": "Missile System",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "artillery"
 	},
 	{
@@ -3329,7 +3335,7 @@
 		"requiredBuilding": "Military Port",
 		"upgradesTo": "Nuclear Carrier Fleet",
 		"requiredTech": "Flight",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shipguns"
 	},
 	{
@@ -3363,7 +3369,7 @@
 		"requiredTech": "Flight",
 		"obsoleteTech": "Rocketry",
 		"upgradesTo": "Jet Fighter",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "machinegun"
 	},
 	{
@@ -3391,7 +3397,7 @@
 		"requiredTech": "Flight",
 		"upgradesTo": "Jet Bomber",
 		"obsoleteTech": "Rocketry",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "bombing"
 	},
 	{
@@ -3415,7 +3421,7 @@
 		"requiredTech": "Flight",
 		"obsoleteTech": "Lasers",
 		"upgradesTo": "Paratrooper",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	///Line 19
@@ -3445,7 +3451,7 @@
 		"requiredTech": "Ballistics",
 		"obsoleteTech": "Lasers",
 		"upgradesTo": "AA Missle System",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -3478,7 +3484,7 @@
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Ballistics",
 		"upgradesTo": "Missile System",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "missile"
 	},
 	{
@@ -3542,7 +3548,7 @@
 		],
 		"requiredBuilding": "Military Port",
 		"requiredTech": "Nuclear Fission",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "torpedo"
 	},
 	{
@@ -3569,7 +3575,7 @@
 			"The Standing Army"
 		],
 		"requiredTech": "Nuclear Fission",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shipguns"
 	},
 	{
@@ -3594,7 +3600,7 @@
 			"The Standing Army"
 		],
 		"requiredTech": "Nuclear Fission",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shipguns"
 	},
 
@@ -3626,7 +3632,7 @@
 		"requiredBuilding": "Military Base",
 		"requiredTech": "Combined Arms",
 		"upgradesTo": "Exoskeleton Spec Ops",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -3651,7 +3657,7 @@
 		],
 		"requiredBuilding": "Military Base",
 		"requiredTech": "Combined Arms",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -3677,7 +3683,7 @@
 		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Combined Arms",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "tankshot"
 	},
 	{
@@ -3708,7 +3714,7 @@
 		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Combined Arms",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "jetgun"
 	},
 	{
@@ -3751,7 +3757,7 @@
 		"interceptRange": 10,
 		"cost": 340,
 		"requiredTech": "Rocketry",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"uniques": [
 			"Consumes [1] [Fuel]",
 			"Costs [36] [Aircraft Parts]",
@@ -3780,7 +3786,7 @@
 		"cost": 340,
 		"requiredTech": "Rocketry",
 		"upgradesTo": "Stealth Bomber",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"uniques": [
 			"Consumes [1] [Fuel]",
 			"Costs [36] [Aircraft Parts]",
@@ -3820,7 +3826,7 @@
 		],
 		"requiredTech": "Rocketry",
 		"upgradesTo": "Nuclear Missile Crusier",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shipguns"
 	},
 	///Line 23
@@ -3843,7 +3849,7 @@
 			"Transport Plane"
 		],
 		"requiredTech": "Lasers",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -3872,7 +3878,7 @@
 			"The Standing Army"
 		],
 		"requiredTech": "Lasers",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shipguns"
 	},
 	{
@@ -3898,7 +3904,7 @@
 			"The Standing Army"
 		],
 		"requiredTech": "Stealth",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "bombing"
 	},
 	{
@@ -3969,7 +3975,7 @@
 		],
 		"requiredBuilding": "Rocketry Industry",
 		"requiredTech": "Advanced Ballistics",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "missile"
 	},
 	{
@@ -3981,7 +3987,7 @@
 		"rangedStrength": 72,
 		"range": 4,
 		"interceptRange": 4,
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"uniques": [
 			"Costs [20] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
@@ -4027,7 +4033,7 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"requiredTech": "Robotics",
 		"attackSound": "gdrAttack"
 	},
@@ -4038,7 +4044,7 @@
 		"cost": 200,
 		"movement": 5,
 		"strength": 50,
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"requiredTech": "Data Science",
 		"uniques": [
 			"Only available <if [Invention of Helicopter] is constructed>",
@@ -4085,7 +4091,7 @@
 			"Skirmisher Training"
 		],
 		"requiredTech": "Haptics",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
 	{
@@ -4095,7 +4101,7 @@
 		"movement": 2,
 		"strength": 88,
 		"requiredTech": "Haptics",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"uniques": [
 			"Costs [30] [Weapon Parts]",
 			"Costs [10] [Vehicle Parts]",
@@ -4137,7 +4143,7 @@
 			"Rocket Launcher"
 		],
 		"requiredTech": "Nuclear Fusion",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "gdrAttack"
 	},
 	///Line 30
@@ -4169,7 +4175,7 @@
 		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Railguns",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "missile"
 	},
 	{
@@ -4197,7 +4203,7 @@
 			"The Standing Army"
 		],
 		"requiredTech": "Railguns",
-		"requiredResource": "Standing Army Maintainance",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "gdrAttack"
 	},
 	///Barbarian related
@@ -4504,6 +4510,7 @@
 		"uniques": [
 			"Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
 			"Can instantly construct a [Customs house] improvement <by consuming this unit>",
+			"Comment [After consuming the [Great Merchant] in various ways, you can get a [Iconic Brand] for free.]",
 			"Great Person - [Gold]",
 			"Is part of Great Person group [Gold]",
 			"Unbuildable",
@@ -4518,7 +4525,7 @@
 		"uniques": [
 			"Can speed up construction of a building",
 			"Can instantly construct a [Manufactory] improvement <by consuming this unit>",
-			///"Instantly provides [1] [War Machine Blueprint] <by consuming this unit>",
+			"Instantly provides [1] [War Machine Blueprint] <by consuming this unit>",
 			"Great Person - [Production]",
 			"Is part of Great Person group [Production]",
 			"Unbuildable",

@@ -10,9 +10,9 @@
                     "Only available <if [Harmony] is constructed> <when above [0] [Influence]>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [3] [Influence]",
-                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-225] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-225] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
                     "[-10]% [Production] [in all cities] <for [3] turns>"
                 ]
             },
@@ -22,9 +22,9 @@
                     "Only available <if [Peace] is constructed> <when above [0] [Influence]>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [5] [Influence]",
-                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-225] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-225] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
                     "[-10]% [Production] [in all cities] <for [5] turns>"
                 ]
             },
@@ -83,39 +83,39 @@
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
                     "Instantly consumes [3] [Influence]",
-                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-300] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
+                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-300] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
                     "Gain a free [Slum] [in capital]",
-                    "Gain a free [Slum] [in all cities] <when number of [[in all cities] Cities] is more than [6]>",
+                    "Gain a free [Slum] [in all cities] <when number of [Cities] is more than [6]>",
                     "[-10]% growth [in all cities] <for [5] turns>"
                 ]
             }
         ]
     },
     {
-        "name": "Rampent Corruption",
+        "name": "Rampant Corruption",
         "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Happiness]! As unjust ruling causes outrage in your towns.",
         "choices": [
             {
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-200] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
+                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-200] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
                     "Gain a free [Unjust Ruling] [in capital]",
-                    "Gain a free [Unjust Ruling] [in all cities] <when number of [[in all cities] Cities] is more than [6]>",
+                    "Gain a free [Unjust Ruling] [in all cities] <when number of [Cities] is more than [6]>",
                     "[-10]% Strength <for [5] turns>"
                 ]
             }
@@ -129,30 +129,29 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-300] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
+                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-300] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
                     "Comment [The Population shifts between cities...]",
-                    "[+1] population in a random city <when number of [[in all cities] Cities] is less than [4]> <hidden from users>",
-                    "[-1] population in a random city <when number of [[in all cities] Cities] is less than [4]> <hidden from users>",
-                    "[+3] population in a random city <when number of [[in all cities] Cities] is more than [4]> <hidden from users>",
-                    "[-3] population in a random city <when number of [[in all cities] Cities] is more than [4]> <hidden from users>",
-                    "[+5] population in a random city <when number of [[in all cities] Cities] is more than [8]> <hidden from users>",
-                    "[-5] population in a random city <when number of [[in all cities] Cities] is more than [8]> <hidden from users>",
-                    "[+5] population in a random city <when number of [[in all cities] Cities] is more than [8]> <hidden from users>",
-                    "[-5] population in a random city <when number of [[in all cities] Cities] is more than [8]> <hidden from users>",
+                    "[+1] population in a random city <when number of [Cities] is between [0] and [5]> <hidden from users>",
+                    "[-1] population in a random city <when number of [Cities] is between [0] and [5]> <hidden from users>",
+                    "[+3] population in a random city <when number of [Cities] is between [0] and [5]> <hidden from users>",
+                    "[-3] population in a random city <when number of [Cities] is between [0] and [5]> <hidden from users>",
+                    "[+5] population in a random city <when number of [Cities] is more than [8]> <hidden from users>",
+                    "[-5] population in a random city <when number of [Cities] is more than [8]> <hidden from users>",
+                    "[+5] population in a random city <when number of [Cities] is more than [8]> <hidden from users>",
+                    "[-5] population in a random city <when number of [Cities] is more than [8]> <hidden from users>",
                     "Gain a free [Peasant Rebellion] [in capital]"
                 ]
             }
         ]
-        
     },
-        {
+    {
         "name": "Spreading Chaos",
         "text": "Tho the disorder can be better controlled in a small civilization, but it still needs a permanent solution.",
         "choices": [
@@ -173,7 +172,6 @@
                 ]
             }
         ]
-        
     },
     ///Civilization Events
     {
@@ -184,10 +182,9 @@
                 "text": "Total mobilization in every cities!",
                 "uniques": [
                     "Only available <when at war> <if [Unified] is constructed>",
-                    "Play [paper] sound",
+                    "Play [policy] sound <hidden from users>",
                     "Comment [We need more soldiers at the frontline.]",
                     "Gain a free [Call to Arms] [in all non-occupied cities]",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>",
                     "Triggers a [Enact Policies] event <hidden from users>"
                 ]
             },
@@ -195,11 +192,10 @@
                 "text": "Disband the Levies.",
                 "uniques": [
                     "Only available <if [Call to Arms] is constructed> <when not at war>",
-                    "Play [paper] sound",
+                    "Play [policy] sound <hidden from users>",
                     "Comment [Since there are currently no conflict, we may disband our levied armies.]",
                     "Remove [Call to Arms] [in all cities]",
                     "Gain a free [Levies Disbandment] [in capital]",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>",
                     "Triggers a [Enact Policies] event <hidden from users>"
                 ]
             },
@@ -207,22 +203,27 @@
                 "text": "Increase [Influence]",
                 "uniques": [
                     "Only available <before adopting [Anarchism]>",
-                    "Play [paper] sound",
-                    "Triggers a [Popularity Crisis] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Play [policy] sound <hidden from users>",
+                    "Triggers a [Popularity Crisis] event"
                 ]
             },
             {
-                "text": "Spread our [Influence]",
+                "text": "Spread our [Influence] to city states",
                 "uniques": [
-                    "Only available <before adopting [Anarchism]> <when above [5] [Influence]>",
-                    "Play [paper] sound",
-                    "Instantly consumes [5] [Influence] <before the [Medieval era]>",
-                    "Instantly consumes [10] [Influence] <starting from the [Medieval era]> <before the [Industrial era]>",
-                    "Instantly consumes [15] [Influence] <starting from the [Industrial era]> <before the [Information era]>",
-                    "Resting point for Influence with City-States is increased by [25] <for [10] turns>",
-                    "City-State Influence recovers at twice the normal rate <for [10] turns>",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>",
+                    "Only available <before adopting [Anarchism]> <if [Spread Influence] is not constructed> <when above [0] [Influence]>",
+                    "Play [policy] sound <hidden from users>",
+                    "Comment [Costs 1 [Influence] per turn, maintain your diplomatic efforts in city states.]",
+                    "Comment [Costs 1 extra [Influence] per turn starting from Imperial era.]",
+                    "Gain a free [Spread Influence] [in capital]",
+                    "Triggers a [Enact Policies] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Stop Spreading our [Influence] to city states",
+                "uniques": [
+                    "Only available <if [Spread Influence] is constructed>",
+                    "Play [policy] sound <hidden from users>",
+                    "Remove [Spread Influence] [in all cities]",
                     "Triggers a [Enact Policies] event <hidden from users>"
                 ]
             },
@@ -230,10 +231,9 @@
                 "text": "Build Agreements",
                 "uniques": [
                     "Only available <if [Unified] is not constructed>",
-                    "Play [paper] sound",
+                    "Play [policy] sound <hidden from users>",
                     "Comment [Tho our civilization is divided, we are not weak.]",
-                    "Triggers a [Building Alliance] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Triggers a [Building Alliance] event"
                 ]
             },
             {
@@ -241,10 +241,9 @@
                 "uniques": [
                     "Only available <if [Personal Union] is constructed>",
                     "Only available <starting from the [Industrial era]>",
-                    "Play [paper] sound",
+                    "Play [policy] sound <hidden from users>",
                     "Comment [Commonwealth needs futher cooperation.]",
-                    "Triggers a [Building Alliance] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Triggers a [Building Alliance] event"
                 ]
             },
             {
@@ -253,8 +252,7 @@
                     "Only available <for [Europa] Civilizations> <before the [Medieval era]>",
                     "Only available <when above [5] [Influence]>",
                     "Play [promote] sound",
-                    "Triggers a [The Tribes of Europe] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Triggers a [The Tribes of Europe] event"
                 ]
             },
             {
@@ -264,19 +262,17 @@
                     "Only available <when above [0] [Avaliable School of Thoughts]>",
                     "Only available <when above [9] [Influence]>",
                     "Play [promote] sound",
-                    "Triggers a [The way to rule] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Triggers a [The way to rule] event"
                 ]
             },
             {
                 "text": "Socialist Education",
                 "uniques": [
                     "Only available <if [Socialist Republics] is constructed>",
-                    "Play [paper] sound",
+                    "Play [policy] sound <hidden from users>",
                     "[-50]% [Gold] [in all cities] <for [1] turns>",
                     "[+33]% [Science] [in all cities] <for [3] turns>",
                     "[+33]% [Culture] [in all cities] <for [3] turns>",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>",
                     "Triggers a [Enact Policies] event <hidden from users>"
                 ]
             },
@@ -285,10 +281,9 @@
                 "uniques": [
                     "Only available <if [Peace] is constructed> <if [United States] is not constructed>",
                     "Only available <when above [4] [Influence]>",
-                    "Play [paper] sound",
+                    "Play [policy] sound <hidden from users>",
                     "Comment [We must make our empire even more stable]",
-                    "Triggers a [Stablising our side of the globe] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Triggers a [Stablising our side of the globe] event"
                 ]
             },
             {
@@ -296,10 +291,9 @@
                 "uniques": [
                     "Only available <if [Struggle] is constructed>",
                     "Only available <when above [4] [Influence]>",
-                    "Play [paper] sound",
+                    "Play [policy] sound <hidden from users>",
                     "Comment [We must take action against the coming chaos.]",
-                    "Triggers a [Stablising our side of the globe] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Triggers a [Stablising our side of the globe] event"
                 ]
             },
             {
@@ -307,10 +301,9 @@
                 "uniques": [
                     "Only available <if [Strife] is constructed>",
                     "Only available <when above [4] [Influence]>",
-                    "Play [paper] sound",
+                    "Play [policy] sound <hidden from users>",
                     "Comment [We must take action against the coming chaos.]",
-                    "Triggers a [Stablising our side of the globe] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Triggers a [Stablising our side of the globe] event"
                 ]
             },
             {
@@ -318,72 +311,164 @@
                 "uniques": [
                     "Only available <if [Anarchy] is constructed> <before adopting [Anarchism]>",
                     "Only available <when above [4] [Influence]>",
-                    "Play [paper] sound",
+                    "Play [policy] sound <hidden from users>",
                     "Comment [We must take action against the coming chaos.]",
-                    "Triggers a [Stablising our side of the globe] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Triggers a [Stablising our side of the globe] event"
                 ]
             },
             {
                 "text": "Changing Economic Policies",
                 "uniques": [
                     "Only available <if ['Economic Policy'] is constructed>",
-                    "Play [policy] sound",
+                    "Play [policy] sound <hidden from users>",
                     "Comment [If the current economic policies fail to meet the situation...]",
-                    "Triggers a [Changing economy policies] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Triggers a [Changing economy policies] event"
                 ]
             },
             {
                 "text": "Changing Civilization Form",
                 "uniques": [
                     "Only available <when number of [Influence] is more than [Influence Limit]>",
-                    "Play [policy] sound",
+                    "Play [policy] sound <hidden from users>",
                     "Comment [We can force the shift in politic to stop our civilization from a undesireable route...]",
-                    "Instantly consumes [10] [Influence] <when number of [[in all cities] Cities] is less than [4]>",
-                    "Instantly consumes [15] [Influence] <when number of [[in all cities] Cities] is more than [4]>",
-                    "Triggers a [Shift in Politic] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Instantly consumes [10] [Influence] <when number of [Cities] is between [0] and [5]>",
+                    "Instantly consumes [15] [Influence] <when number of [Cities] is more than [4]>",
+                    "Triggers a [Shift in Politic] event"
                 ]
             },
             {
                 "text": "State Reform",
                 "uniques": [
                     "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
-                    "Play [policy] sound",
-                    "Instantly consumes [10] [Influence] <when number of [[in all cities] Cities] is less than [4]>",
-                    "Instantly consumes [15] [Influence] <when number of [[in all cities] Cities] is more than [4]>",
-                    "Triggers a [Reformation of the unified state] event",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Play [policy] sound <hidden from users>",
+                    "Instantly consumes [10] [Influence] <when number of [Cities] is between [0] and [5]>",
+                    "Instantly consumes [15] [Influence] <when number of [Cities] is more than [4]>",
+                    "Triggers a [Reformation of the unified state] event"
                 ]
             },
             {
                 "text": "Check Current Status",
                 "uniques": [
                     "Triggers a [Present Current Status] event",
-                    "Play [paper] sound",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Play [setup] sound <hidden from users>"
                 ]
             },
             {
                 "text": "Did you know that this mod has tutorial pages in civilopedia's tutorial section?",
                 "uniques": [
                     "Comment [You may want to check them out.]",
-                    "Play [chimes] sound",
-                    "Triggers a [Enact Policies] event <hidden from users>",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Triggers a [Enact Policies] event <hidden from users>"
                 ],
                 "civilopediaText": [
-			    {"text": "See also: Emperors and Deities - Mod Manual", "link": "Tutorials/Emperors and Deities - Mod Manual"}
-		]
+                    {
+                        "text": "See also: ED - Tutorial Menu",
+                        "link": "Tutorials/ED - Tutorial Menu"
+                    }
+                ]
             },
             {
                 "text": "Actually...I was checking what I can do.",
                 "uniques": [
                     "Comment [Nothing happens.]",
-                    "Play [whoosh] sound",
-                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                    "Play [whoosh] sound <hidden from users>"
                 ]
+            }
+        ]
+    },
+    {
+        "name": "Hide Strategic Resources",
+        "text": "See that long list of Resource? You can cut it down a bit.",
+        "choices": [
+            {
+                "text": "Hide the essentials.",
+                "uniques": [
+                    "Only available <if [Hide Essential] is not constructed> <hidden from users>",
+                    "Play [promte] sound <hidden from users>",
+                    "Comment [Including:]",
+                    "Comment [[Influence], [Influence Limit], [Consumption Supply], [Consumption Demand],All the kinds of [Fuel]s, Victroy related resources and the Army Maintenances]",
+                    "Gain a free [Hide Essential] [in capital] <hidden from users>",
+                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Show the essentials.",
+                "uniques": [
+                    "Only available <if [Hide Essential] is constructed> <hidden from users>",
+                    "Play [promte] sound <hidden from users>",
+                    "Comment [Including:]",
+                    "Comment [[Influence], [Influence Limit], [Consumption Supply], [Consumption Demand],All the kinds of [Fuel]s, Victroy related resources and the Army Maintenances]",
+                    "Remove [Hide Essential] [in all cities] <hidden from users>",
+                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Hide the raw resources.",
+                "uniques": [
+                    "Only available <if [Hide Resource] is not constructed> <hidden from users>",
+                    "Play [promte] sound <hidden from users>",
+                    "Comment [Including:]",
+                    "Comment [[Horse], [Metal], [Alloy], [Oil] and so on. All the resource on the map or being the prerequisite of buildings and parts productions]",
+                    "Gain a free [Hide Resource] [in capital] <hidden from users>",
+                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Show the raw resources.",
+                "uniques": [
+                    "Only available <if [Hide Resource] is constructed> <hidden from users>",
+                    "Play [promte] sound <hidden from users>",
+                    "Comment [Including:]",
+                    "Comment [[Horse], [Metal], [Alloy], [Oil] and so on. All the resource on the map or being the prerequisite of buildings and parts productions]",
+                    "Remove [Hide Resource] [in all cities] <hidden from users>",
+                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Hide those parts.",
+                "uniques": [
+                    "Only available <if [Hide Parts] is not constructed> <hidden from users>",
+                    "Play [promte] sound <hidden from users>",
+                    "Comment [Including:]",
+                    "Comment [[Weapon Parts], [Vehicle Parts], [Ship Parts] and so on and so fourth.]",
+                    "Gain a free [Hide Parts] [in capital] <hidden from users>",
+                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Show those parts.",
+                "uniques": [
+                    "Only available <if [Hide Parts] is constructed> <hidden from users>",
+                    "Play [promte] sound <hidden from users>",
+                    "Comment [Including:]",
+                    "Comment [[Weapon Parts], [Vehicle Parts], [Ship Parts] and so on and so fourth.]",
+                    "Remove [Hide Parts] [in all cities] <hidden from users>",
+                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Hide those random stuffs.",
+                "uniques": [
+                    "Only available <if [Hide Miscellaneous] is not constructed> <hidden from users>",
+                    "Comment [Including:]",
+                    "Comment [[Iconic Brand], [Artifact], [Waste Material] and so on and so fourth.]",
+                    "Play [promte] sound <hidden from users>",
+                    "Gain a free [Hide Miscellaneous] [in capital] <hidden from users>",
+                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Show those random stuffs.",
+                "uniques": [
+                    "Only available <if [Hide Miscellaneous] is constructed> <hidden from users>",
+                    "Comment [Including:]",
+                    "Comment [[Iconic Brand], [Artifact], [Waste Material] and so on and so fourth.]",
+                    "Play [promte] sound <hidden from users>",
+                    "Remove [Hide Miscellaneous] [in all cities] <hidden from users>",
+                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Alright."
             }
         ]
     },
@@ -594,8 +679,8 @@
                 "uniques": [
                     "Comment [We need more contemplation...]",
                     "Play [whoosh] sound",
-                    "Instantly provides [10] [Influence] <when number of [[in all cities] Cities] is less than [4]>",
-                    "Instantly provides [15] [Influence] <when number of [[in all cities] Cities] is more than [4]>"
+                    "Instantly provides [10] [Influence] <when number of [Cities] is between [0] and [5]>",
+                    "Instantly provides [15] [Influence] <when number of [Cities] is more than [4]>"
                 ]
             }
         ]
@@ -695,12 +780,20 @@
                 "text": "[Military Alliance] is the most practical",
                 "uniques": [
                     "Only available <before the [Industrial era]> <if [Collective Security] is not constructed> <if [Military Alliance] is not constructed>",
-                    "Only available <when above [9] [Influence]>",
+                    "Only available <when above [9] [Influence]> <for [non-[Europa]] Civilizations>",
+                    "Instantly consumes [8] [Influence]",
+                    "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Gain a free [Military Alliance] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Military Alliance] is the most practical",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Collective Security] is not constructed> <if [Military Alliance] is not constructed>",
                     "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
-                    "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
-                    "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
-                    "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
-                    "Gain [-125] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Instantly consumes [5] [Influence]",
+                    "Gain [-63] [Gold] <(modified by game speed)>",
                     "Gain a free [Military Alliance] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
                 ]
@@ -709,11 +802,19 @@
                 "text": "[Cultural Exchange] is the most elegant",
                 "uniques": [
                     "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed>",
-                    "Only available <when above [9] [Influence]>",
+                    "Only available <when above [9] [Influence]> <for [non-[Europa]] Civilizations>",
+                    "Instantly consumes [8] [Influence]",
+                    "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Gain a free [Cultural Exchange] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Cultural Exchange] is the most elegant",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed>",
                     "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
-                    "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
-                    "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
                     "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
                     "Gain a free [Cultural Exchange] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
@@ -723,13 +824,21 @@
                 "text": "[Trade Alliance] is the most attractive",
                 "uniques": [
                     "Only available <before the [Industrial era]> <if [Economic Community] is not constructed> <if [Trade Alliance] is not constructed>",
-                    "Only available <when above [9] [Influence]>",
+                    "Only available <when above [9] [Influence]> <for [non-[Europa]] Civilizations>",
+                    "Instantly consumes [8] [Influence]",
+                    "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Gain [50] [Gold] <(modified by game speed)><after adopting [Economic Ties]>",
+                    "Gain a free [Trade Alliance] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Trade Alliance] is the most attractive",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Economic Community] is not constructed> <if [Trade Alliance] is not constructed>",
                     "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
-                    "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
-                    "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
                     "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
-                    "Gain [50] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations> <after adopting [Economic Ties]>",
                     "Gain [38] [Gold] <(modified by game speed)> <for [Europa] Civilizations> <after adopting [Economic Ties]>",
                     "Gain a free [Trade Alliance] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
@@ -789,9 +898,9 @@
             {
                 "text": "No!",
                 "uniques": [
-                    "Remove ['Civilization State'] [in all cities]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
                     "Gain a free [Struggle] [in capital]",
-                    "Remove ['Civilization Form'] [in all cities]",
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
                     "Remove [Unified] [in all cities]",
                     "Gain a free [Republics] [in capital]"
                 ]
@@ -840,7 +949,8 @@
             {
                 "text": "Tribes",
                 "uniques": [
-                    "Only available <if [Early City States] is not constructed>","Only available <if [Tribes] is constructed>",
+                    "Only available <if [Early City States] is not constructed>",
+                    "Only available <if [Tribes] is constructed>",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -854,7 +964,8 @@
             {
                 "text": "Tribal Union",
                 "uniques": [
-                    "Only available <if [Earliest Empire] is not constructed>","Only available <if [Tribal Union] is constructed>",
+                    "Only available <if [Earliest Empire] is not constructed>",
+                    "Only available <if [Tribal Union] is constructed>",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -882,7 +993,8 @@
             {
                 "text": "City States",
                 "uniques": [
-                    "Only available <if [Greek City States] is not constructed>","Only available <if [City States] is constructed>",
+                    "Only available <if [Greek City States] is not constructed>",
+                    "Only available <if [City States] is constructed>",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1081,7 +1193,7 @@
                     "Only available <if [Anarchist Alliances] is constructed>",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
-            }, 
+            },
             {
                 "text": "Overproduction",
                 "uniques": [
@@ -1118,9 +1230,9 @@
             {
                 "text": "We shall arrange a great hunt to show our military prowess!",
                 "uniques": [
-                    "Only available <before the [Medieval era]> <if [Army Maintainance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
+                    "Only available <before the [Medieval era]> <if [Army Maintenance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
                     "Instantly provides [5] [Influence]",
-                    "Gain a free [Army Maintainance Cost] [in capital]",
+                    "Gain a free [Army Maintenance Cost] [in capital]",
                     "[-5]% [Food] [in capital] <for [2] turns>",
                     "[-10]% [Gold] [in capital] <for [2] turns>",
                     "Triggers a [Popularity Crisis] event <hidden from users>"
@@ -1129,9 +1241,9 @@
             {
                 "text": "We shall arrange a Customary Meeting.",
                 "uniques": [
-                    "Only available <if [Zhou Dynasty] is constructed> <if [Army Maintainance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
+                    "Only available <if [Zhou Dynasty] is constructed> <if [Army Maintenance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
                     "Instantly provides [8] [Influence]",
-                    "Gain a free [Army Maintainance Cost] [in capital]",
+                    "Gain a free [Army Maintenance Cost] [in capital]",
                     "[+10]% [Culture] [in all cities] <for [5] turns>",
                     "[-10]% [Gold] [in capital] <for [2] turns>",
                     "[-10]% [Production] [in capital] <for [2] turns>",
@@ -1141,12 +1253,12 @@
             {
                 "text": "We shall arrange a great feast to show our wealth!",
                 "uniques": [
-                    "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Army Maintainance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
-                    "Instantly provides [5] [Influence]",
-                    "Gain a free [Army Maintainance Cost] [in capital]",
-                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
-                    "Gain [-50] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-50] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
+                    "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Army Maintenance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
+                    "Instantly provides [10] [Influence]",
+                    "Gain a free [Army Maintenance Cost] [in capital]",
+                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
                     "[-10]% [Food] [in capital] <for [5] turns>",
                     "[-15]% [Gold] [in capital] <for [5] turns>",
                     "Triggers a [Popularity Crisis] event <hidden from users>"
@@ -1155,24 +1267,24 @@
             {
                 "text": "We shall do a military march to demostrate our might!",
                 "uniques": [
-                    "Only available <starting from the [Imperial era]> <if [Army Maintainance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
-                    "Instantly provides [5] [Influence]",
+                    "Only available <starting from the [Imperial era]> <if [Army Maintenance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
+                    "Instantly provides [15] [Influence]",
                     "Instantly consumes [10] [Weapon Parts]",
-                    "Gain a free [Army Maintainance Cost] [in capital]",
-                    "Gain [-50] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
+                    "Gain a free [Army Maintenance Cost] [in capital]",
+                    "Gain [-50] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
                     "Triggers a [Popularity Crisis] event <hidden from users>"
                 ]
             },
             {
-                "text": "Remove the [Army Maintainance Cost]",
+                "text": "Remove the [Army Maintenance Cost]",
                 "uniques": [
-                    "Only available <if [Army Maintainance Cost] is constructed> <when above [30] [Gold]>",
-                    "Gain [-10] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
-                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
-                    "Remove [Army Maintainance Cost] [in all cities]",
+                    "Only available <if [Army Maintenance Cost] is constructed> <when above [30] [Gold]>",
+                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]>",
+                    "Gain [-50] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
+                    "Remove [Army Maintenance Cost] [in all cities]",
                     "Triggers a [Popularity Crisis] event <hidden from users>"
                 ]
             },
@@ -1180,6 +1292,7 @@
                 "text": "Can we wait?",
                 "uniques": [
                     "Comment [We need more contemplation...]",
+                    "Triggers a [Enact Policies] event <hidden from users>",
                     "Play [whoosh] sound"
                 ]
             }
@@ -1193,25 +1306,25 @@
             {
                 "text": "We shall support him at all cost!",
                 "uniques": [
-                "Gain a free [Alexander Event Flag] [in capital] <hidden from users>",
-                "Instantly consumes [10] [Influence]",
-                "Gain [-200] [Gold] <(modified by game speed)>",
-                "[-25]% [Gold] [in all cities] <for [10] turns>",
-                "[Gold] cost of purchasing ['Mercenary Army'] units [-33]% <for [10] turns>",
-                "[-33]% Production when constructing [All] buildings [in all cities] <for [10] turns>",
-                "Instantly provides [10] [Alexandrian Empire Period]",
-                "[2] free [Hetairoi Cavalry] units appear",
-                "[2] free [Phalanx] units appear",
-                "Free [Great Commander] appears",
-                "Remove ['Civilization Form'] [in all cities]",
-                "Gain a free [Feudal Empire] [in capital]",
-                "Comment [Gain access to [Diadochi States]]"
+                    "Gain a free [Alexander Event Flag] [in capital] <hidden from users>",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain [-200] [Gold] <(modified by game speed)>",
+                    "[-25]% [Gold] [in all cities] <for [10] turns>",
+                    "[Gold] cost of purchasing ['Mercenary Army'] units [-33]% <for [10] turns>",
+                    "[-33]% Production when constructing [All] buildings [in all cities] <for [10] turns>",
+                    "Instantly provides [10] [Alexandrian Empire Period]",
+                    "[2] free [Hetairoi Cavalry] units appear",
+                    "[2] free [Phalanx] units appear",
+                    "Free [Great Commander] appears",
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital]",
+                    "Comment [Gain access to [Diadochi States]]"
                 ]
             },
             {
                 "text": "Too much investment",
                 "uniques": [
-                "Comment [Nothing happens.]"
+                    "Comment [Nothing happens.]"
                 ]
             }
         ]
@@ -1223,8 +1336,9 @@
             {
                 "text": "The hellenic period begins...",
                 "uniques": [
-                "Remove ['Civilization Form'] [in all cities]",
-                "Gain a free [Diadochi States] [in capital]",
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
+                    "Remove [Alexander Event Flag] [in all cities] <hidden from users>",
+                    "Gain a free [Diadochi States] [in capital]"
                 ]
             }
         ]
@@ -1237,19 +1351,19 @@
             {
                 "text": "What a nice candidate...",
                 "uniques": [
-                "Remove ['Civilization Form'] [in all cities]",
-                "Gain a free [Persian Dynasties] [in capital]",
-                "Remove ['Civilization State'] [in all cities]",
-                "Gain a free [Struggle] [in capital]"
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
+                    "Gain a free [Persian Dynasties] [in capital]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
+                    "Gain a free [Struggle] [in capital]"
                 ]
             },
             {
                 "text": "Babylon's Gate remains shut.",
                 "uniques": [
-                "Gain [125] [Science] <(modified by game speed)>",
-                "Gain [125] [Culture] <(modified by game speed)>",
-                "Gain [50] [Faith] <(modified by game speed)>",
-                "Free [Archer] appears"
+                    "Gain [125] [Science] <(modified by game speed)>",
+                    "Gain [125] [Culture] <(modified by game speed)>",
+                    "Gain [50] [Faith] <(modified by game speed)>",
+                    "Free [Archer] appears"
                 ]
             }
         ]
@@ -1262,19 +1376,19 @@
             {
                 "text": "The Zhou State has won.",
                 "uniques": [
-                "Remove ['Civilization Form'] [in all cities]",
-                "Gain a free [Zhou Dynasty] [in capital]",
-                "Free [Gong Shi Colonizer] appears"
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
+                    "Gain a free [Zhou Dynasty] [in capital]",
+                    "Free [Gong Shi Colonizer] appears"
                 ]
             },
             {
                 "text": "Emperor Xin remain undefeated!",
                 "uniques": [
-                "Remove ['Civilization Form'] [in all cities]",
-                "Gain a free [Shang Dynasty] [in capital]",
-                "Remove ['Civilization State'] [in all cities]",
-                "Gain a free [Struggle] [in capital]",
-                "Gain [100] [Gold] <(modified by game speed)>"
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
+                    "Gain a free [Shang Dynasty] [in capital]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
+                    "Gain a free [Struggle] [in capital]",
+                    "Gain [100] [Gold] <(modified by game speed)>"
                 ]
             }
         ]
@@ -1284,102 +1398,102 @@
         "text": "It seems like a lot of different new ideologies have appeared in our civilization... Maybe some of them are beneficial",
         "choices": [
             {
-            "text": "Confucianism",
-            "uniques": [
-                "Only available <if [Confucianism Influence] is not constructed> <when above [9] [Influence]>",
-                "Gain a free [Confucianism Influence] [in capital]",
-                "Instantly consumes [1] [Avaliable School of Thoughts]",
-                "Instantly consumes [10] [Influence]",
-                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
-            ]
-        },
-        {
-            "text": "Daoism",
-            "uniques": [
-                "Only available <if [Daoism Influence] is not constructed> <when above [9] [Influence]>",
-                "Gain a free [Daoism Influence] [in capital]",
-                "Instantly consumes [1] [Avaliable School of Thoughts]",
-                "Instantly consumes [10] [Influence]",
-                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
-            ]
-        },
-        {
-            "text": "Mohism",
-            "uniques": [
-                "Only available <if [Mohism Influence] is not constructed> <when above [9] [Influence]>",
-                "Gain a free [Mohism Influence] [in capital]",
-                "Instantly consumes [1] [Avaliable School of Thoughts]",
-                "Instantly consumes [10] [Influence]",
-                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
-            ]
-        },
-        {
-            "text": "Legalism",
-            "uniques": [
-                "Only available <if [Legalism Influence] is not constructed> <when above [9] [Influence]>",
-                "Gain a free [Legalism Influence] [in capital]",
-                "Instantly consumes [1] [Avaliable School of Thoughts]",
-                "Instantly consumes [10] [Influence]",
-                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
-            ]
-        },
-        {
-            "text": "School of Diplomacy",
-            "uniques": [
-                "Only available <if [Diplomatism Influence] is not constructed> <when above [9] [Influence]>",
-                "Gain a free [Diplomatism Influence] [in capital]",
-                "Instantly consumes [1] [Avaliable School of Thoughts]",
-                "Instantly consumes [10] [Influence]",
-                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
-            ]
-        },
-        {
-            "text": "School of Forms and Names",
-            "uniques": [
-                "Only available <if [Early Rationalism Influence] is not constructed> <when above [9] [Influence]>",
-                "Gain a free [Early Rationalism Influence] [in capital]",
-                "Instantly consumes [1] [Avaliable School of Thoughts]",
-                "Instantly consumes [10] [Influence]",
-                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
-            ]
-        },
-        {
-            "text": "School of Naturalists",
-            "uniques": [
-                "Only available <if [Naturalist Influence] is not constructed> <when above [9] [Influence]>",
-                "Gain a free [Naturalist Influence] [in capital]",
-                "Instantly consumes [1] [Avaliable School of Thoughts]",
-                "Instantly consumes [10] [Influence]",
-                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
-            ]
-        },
-        {
-            "text": "School of Agrarianism",
-            "uniques": [
-                "Only available <if [Agrarianism Influence] is not constructed> <when above [9] [Influence]>",
-                "Gain a free [Agrarianism Influence] [in capital]",
-                "Instantly consumes [1] [Avaliable School of Thoughts]",
-                "Instantly consumes [10] [Influence]",
-                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
-            ]
-        },
-        {
-            "text": "School of Military Strategy",
-            "uniques": [
-                "Only available <if [Militant Influence] is not constructed> <when above [9] [Influence]>",
-                "Gain a free [Militant Influence] [in capital]",
-                "Instantly consumes [1] [Avaliable School of Thoughts]",
-                "Instantly consumes [10] [Influence]",
-                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
-            ]
-        },
-        {
-            "text":"Can we wait?",
-            "uniques":[
-                "Comment [You need at least 10 [Influence] to adopt a school of thought.]",
-                "Comment [Nothing happens.]"
-            ]
-        }
+                "text": "Confucianism",
+                "uniques": [
+                    "Only available <if [Confucianism Influence] is not constructed> <when above [9] [Influence]> <hidden from users>",
+                    "Gain a free [Confucianism Influence] [in capital]",
+                    "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                ]
+            },
+            {
+                "text": "Daoism",
+                "uniques": [
+                    "Only available <if [Daoism Influence] is not constructed> <when above [9] [Influence]> <hidden from users>",
+                    "Gain a free [Daoism Influence] [in capital]",
+                    "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                ]
+            },
+            {
+                "text": "Mohism",
+                "uniques": [
+                    "Only available <if [Mohism Influence] is not constructed> <when above [9] [Influence]> <hidden from users>",
+                    "Gain a free [Mohism Influence] [in capital]",
+                    "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                ]
+            },
+            {
+                "text": "Legalism",
+                "uniques": [
+                    "Only available <if [Legalism Influence] is not constructed> <when above [9] [Influence]> <hidden from users>",
+                    "Gain a free [Legalism Influence] [in capital]",
+                    "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                ]
+            },
+            {
+                "text": "School of Diplomacy",
+                "uniques": [
+                    "Only available <if [Diplomatism Influence] is not constructed> <when above [9] [Influence]> <hidden from users>",
+                    "Gain a free [Diplomatism Influence] [in capital]",
+                    "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                ]
+            },
+            {
+                "text": "School of Forms and Names",
+                "uniques": [
+                    "Only available <if [Early Rationalism Influence] is not constructed> <when above [9] [Influence]> <hidden from users>",
+                    "Gain a free [Early Rationalism Influence] [in capital]",
+                    "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                ]
+            },
+            {
+                "text": "School of Naturalists",
+                "uniques": [
+                    "Only available <if [Naturalist Influence] is not constructed> <when above [9] [Influence]> <hidden from users>",
+                    "Gain a free [Naturalist Influence] [in capital]",
+                    "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                ]
+            },
+            {
+                "text": "School of Agrarianism",
+                "uniques": [
+                    "Only available <if [Agrarianism Influence] is not constructed> <when above [9] [Influence]> <hidden from users>",
+                    "Gain a free [Agrarianism Influence] [in capital]",
+                    "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                ]
+            },
+            {
+                "text": "School of Military Strategy",
+                "uniques": [
+                    "Only available <if [Militant Influence] is not constructed> <when above [9] [Influence]> <hidden from users>",
+                    "Gain a free [Militant Influence] [in capital]",
+                    "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                ]
+            },
+            {
+                "text": "Can we wait?",
+                "uniques": [
+                    "Comment [You need at least 10 [Influence] to adopt a school of thought.]",
+                    "Comment [Nothing happens.]"
+                ]
+            }
         ]
     },
     {
@@ -1389,79 +1503,79 @@
             {
                 "text": "Liu Bang the snake slayer",
                 "uniques": [
-                "Remove [Honor Bound Territory] [in all cities]",
-                "Remove ['Civilization Form'] [in all cities]",
-                "Gain a free [Han Dynasty] [in capital]",
-                "Free [Great Strategist] appears",
-                "Remove ['Civilization State'] [in all cities]",
-                "Gain a free [Strife] [in capital]"
+                    "Remove [Honor Bound Territory] [in all cities]",
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
+                    "Gain a free [Han Dynasty] [in capital]",
+                    "Free [Great Strategist] appears",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
+                    "Gain a free [Strife] [in capital]"
                 ]
             },
             {
                 "text": "Xiang Yu the dominator",
                 "uniques": [
-                "Remove [Honor Bound Territory] [in all cities]",
-                "Remove ['Civilization Form'] [in all cities]",
-                "Gain a free [Chu Dynasty] [in capital]",
-                "Free [Great Commander] appears",
-                "Remove ['Civilization State'] [in all cities]",
-                "Gain a free [Strife] [in capital]"
+                    "Remove [Honor Bound Territory] [in all cities]",
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
+                    "Gain a free [Chu Dynasty] [in capital]",
+                    "Free [Great Commander] appears",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
+                    "Gain a free [Strife] [in capital]"
                 ]
             }
         ]
     },
     ///Europa
-        {
+    {
         "name": "The Tribes of Europe",
         "text": "Europa has a variety of cultures scattered around. Certain culture's futher developments can improve our Civilisation's performance greatly.",
         "choices": [
-        {
-            "text": "Gauls",
-            "uniques": [
-                "Only available <if [Gaulish Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
-                "Gain a free [Gaulish Influence] [in capital]",
-                "Instantly consumes [5] [Influence]",
-                "Gain [-200] [Gold] <(modified by game speed)>",
-                "Triggers a [The Tribes of Europe] event <hidden from users>"
-            ]
-        },
-        {
-            "text": "Albions",
-            "uniques": [
-                "Only available <if [Albions Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
-                "Gain a free [Albions Influence] [in capital]",
-                "Instantly consumes [5] [Influence]",
-                "Gain [-200] [Gold] <(modified by game speed)>",
-                "Triggers a [The Tribes of Europe] event <hidden from users>"
-            ]
-        },
-        {
-            "text": "Goths",
-            "uniques": [
-                "Only available <if [Gothic Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
-                "Gain a free [Gothic Influence] [in capital]",
-                "Instantly consumes [5] [Influence]",
-                "Gain [-200] [Gold] <(modified by game speed)>",
-                "Triggers a [The Tribes of Europe] event <hidden from users>"
-            ]
-        },
-        {
-            "text": "Saxons",
-            "uniques": [
-                "Only available <if [Saxonian Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
-                "Gain a free [Saxonian Influence] [in capital]",
-                "Instantly consumes [5] [Influence]",
-                "Gain [-200] [Gold] <(modified by game speed)>",
-                "Triggers a [The Tribes of Europe] event <hidden from users>"
-            ]
-        },
-        {
-            "text":"Can we wait?",
-            "uniques":[
-                "Comment [You need at least 5 [Influence] and 200 [Gold] to adopt a culture.]",
-                "Comment [Nothing happens.]"
-            ]
-        }
+            {
+                "text": "Gauls",
+                "uniques": [
+                    "Only available <if [Gaulish Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
+                    "Gain a free [Gaulish Influence] [in capital]",
+                    "Instantly consumes [5] [Influence]",
+                    "Gain [-200] [Gold] <(modified by game speed)>",
+                    "Triggers a [The Tribes of Europe] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Albions",
+                "uniques": [
+                    "Only available <if [Albions Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
+                    "Gain a free [Albions Influence] [in capital]",
+                    "Instantly consumes [5] [Influence]",
+                    "Gain [-200] [Gold] <(modified by game speed)>",
+                    "Triggers a [The Tribes of Europe] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Goths",
+                "uniques": [
+                    "Only available <if [Gothic Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
+                    "Gain a free [Gothic Influence] [in capital]",
+                    "Instantly consumes [5] [Influence]",
+                    "Gain [-200] [Gold] <(modified by game speed)>",
+                    "Triggers a [The Tribes of Europe] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Saxons",
+                "uniques": [
+                    "Only available <if [Saxonian Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
+                    "Gain a free [Saxonian Influence] [in capital]",
+                    "Instantly consumes [5] [Influence]",
+                    "Gain [-200] [Gold] <(modified by game speed)>",
+                    "Triggers a [The Tribes of Europe] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Can we wait?",
+                "uniques": [
+                    "Comment [You need at least 5 [Influence] and 200 [Gold] to adopt a culture.]",
+                    "Comment [Nothing happens.]"
+                ]
+            }
         ]
     },
     ///North Afican
@@ -1472,19 +1586,19 @@
             {
                 "text": "New culture, new blood...",
                 "uniques": [
-                "Remove ['Civilization Form'] [in all cities]",
-                "Gain a free [Carthage Obligarchy] [in capital]",
-                "Remove ['Civilization State'] [in all cities]",
-                "Gain a free [Struggle] [in capital]"
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
+                    "Gain a free [Carthage Obligarchy] [in capital]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
+                    "Gain a free [Struggle] [in capital]"
                 ]
             },
             {
                 "text": "Who dares to defy the pharoh?",
                 "uniques": [
-                "Gain [125] [Science] <(modified by game speed)>",
-                "Gain [125] [Culture] <(modified by game speed)>",
-                "Gain [50] [Faith] <(modified by game speed)>",
-                "Free [Noble Swordsman] appears"
+                    "Gain [125] [Science] <(modified by game speed)>",
+                    "Gain [125] [Culture] <(modified by game speed)>",
+                    "Gain [50] [Faith] <(modified by game speed)>",
+                    "Free [Noble Swordsman] appears"
                 ]
             }
         ]
@@ -1547,9 +1661,9 @@
                     "Gain a free [Failed Bourgeoisie Revolution] [in capital]",
                     "Free [Great Commander] appears",
                     "[2] free [Royal Cuirassier] units appear",
-                    "Remove ['Civilization State'] [in all cities]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
                     "Gain a free [Struggle] [in capital]",
-                    "Remove ['Civilization Form'] [in all cities]",
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
                     "Gain a free [Personal Union] [in capital]"
                 ]
             },
@@ -1561,7 +1675,7 @@
                     "Free Social Policy",
                     "Gain a free [Peaceful Bourgeoisie Revolution] [in capital]",
                     "Free [Revolutionaries] appears",
-                    "Remove ['Civilization Form'] [in all cities]",
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
                     "Gain a free [Personal Union] [in capital]"
                 ]
             },
@@ -1572,7 +1686,7 @@
                     "Instantly consumes [1] [Revolution Oppotunity]",
                     "Gain a free [Chaotic Bourgeoisie Revolution] [in capital]",
                     "[2] free [Revolutionaries] units appear",
-                    "Remove ['Civilization State'] [in all cities]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
                     "Gain a free [Struggle] [in capital]"
                 ]
             },
@@ -1583,9 +1697,9 @@
                     "Instantly consumes [1] [Revolution Oppotunity]",
                     "Gain a free [Violent Bourgeoisie Revolution] [in capital]",
                     "[3] free [Revolutionaries] units appear",
-                    "Remove ['Civilization State'] [in all cities]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
                     "Gain a free [Strife] [in capital]",
-                    "Remove ['Civilization Form'] [in all cities]",
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
                     "Gain a free [Republics] [in capital]"
                 ]
             }
@@ -1733,7 +1847,7 @@
                     "Gain [1000] [Culture] <(modified by game speed)>",
                     "Gain a free [Anti-Fascism Legacy] [in capital]",
                     "Remove [Fascism] and refund [100]% of its cost",
-                    "Remove ['Civilization State'] [in all cities]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
                     "Gain a free [Strife] [in capital]"
                 ]
             },
@@ -1743,9 +1857,9 @@
                     "Comment [The Facists and their paramilitary militias took over the most important cities and then gradually took over the entire civilization by storm.]",
                     "Instantly consumes [1] [Revolution Oppotunity]",
                     "[2] free [Protection Squadron] units appear",
-                    "Remove ['Civilization State'] [in all cities]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
                     "Gain a free [Struggle] [in capital]",
-                    "Remove ['Civilization Form'] [in all cities]",
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
                     "Gain a free [Fascist Autocracy] [in capital]"
                 ]
             }
@@ -1764,14 +1878,14 @@
                     "Remove [Socialism] and refund [100]% of its cost",
                     "Gain a free [Failed Socialist Revolution] [in capital]",
                     "[3] free [Security Company] units appear",
-                    "Remove ['Civilization State'] [in all cities]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
                     "Gain a free [Struggle] [in capital]"
                 ]
             },
             {
                 "text": "Socialist Democracy will save the day..",
                 "uniques": [
-                    "Comment [Is this even a revolution when at least half of the bourgeoisie are still up on their place? Who knows. The conflict is resolved peacefully but there are long term consequences toward policy and industry development, planned economy is not available in this route.]",
+                    "Comment [Is this even a revolution when at least half of the bourgeoisie are still up on their place? Who knows. The conflict is resolved peacefully but there are long term consequences toward policy and industry development, [Planned Economy] is not available in this route.]",
                     "Free Social Policy",
                     "Instantly consumes [1] [Revolution Oppotunity]",
                     "[1] free [Red Army Troop] units appear",
@@ -1785,9 +1899,9 @@
                     "[3] free [Red Army Troop] units appear",
                     "Instantly consumes [1] [Revolution Oppotunity]",
                     "Gain a free [Worker's Socialist Revolution] [in capital]",
-                    "Remove ['Civilization State'] [in all cities]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
                     "Gain a free [Struggle] [in capital]",
-                    "Remove ['Civilization Form'] [in all cities]",
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
                     "Gain a free [Socialist Republics] [in capital]"
                 ]
             },
@@ -1798,9 +1912,9 @@
                     "Instantly consumes [1] [Revolution Oppotunity]",
                     "[5] free [Red Army Troop] units appear",
                     "Gain a free [United Socialist Revolution] [in capital]",
-                    "Remove ['Civilization State'] [in all cities]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
                     "Gain a free [Strife] [in capital]",
-                    "Remove ['Civilization Form'] [in all cities]",
+                    "Remove ['Civilization Form'] [in all cities] <hidden from users>",
                     "Gain a free [Socialist Republics] [in capital]"
                 ]
             }
@@ -1819,7 +1933,7 @@
                     "Remove [Anarchism] and refund [100]% of its cost",
                     "Gain a free [Failed Anarchist Revolution] [in capital]",
                     "[3] free [Security Company] units appear",
-                    "Remove ['Civilization State'] [in all cities]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
                     "Gain a free [Struggle] [in capital]"
                 ]
             },
@@ -1832,7 +1946,7 @@
                     "Adopt [Abolishment of Government]",
                     "[8] free [Modern Guerrilla] units appear",
                     "Gain a free [The Last Revolution] [in capital]",
-                    "Remove ['Civilization State'] [in all cities]",
+                    "Remove ['Civilization State'] [in all cities] <hidden from users>",
                     "Gain a free [Anarchy] [in capital]",
                     "Gain a free [Anarchist Alliances] [in capital]"
                 ]
@@ -2020,5 +2134,5 @@
                 ]
             }
         ]
-    },
+    }
 ]
