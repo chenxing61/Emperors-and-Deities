@@ -3936,6 +3936,7 @@
 	//Line 16
 	{
 		"name": "Alloy Mill",
+		"cost":450,
 		"maintenance": 3,
 		"specialistSlots": {
 			"Engineer": 1,
@@ -3967,6 +3968,7 @@
 	},
 	{
 		"name": "Aluminium Mill",
+		"cost":500,
 		"maintenance": 3,
 		"science": 2,
 		"specialistSlots": {
@@ -3988,6 +3990,7 @@
 	},
 	{
 		"name": "Fertilizer Plant",
+		"cost":300,
 		"maintenance": 5,
 		"uniques": [
 			"'Agricultural Building'",
@@ -4171,6 +4174,7 @@
 	},
 	{
 		"name": "Hospital",
+		"cost":500,
 		"maintenance": 5,
 		"happiness": 3,
 		"uniques": [
@@ -4204,6 +4208,7 @@
 	},
 	{
 		"name": "Fossil Fuel Power Plant",
+		"cost":750,
 		"maintenance": 10,
 		"uniques": [
 			"'Power Building'",
@@ -4239,6 +4244,7 @@
 	},
 	{
 		"name": "Gas Storage and Transfer System",
+		"cost":500,
 		"maintenance": 5,
 		"science": 1,
 		"specialistSlots": {
@@ -4459,12 +4465,12 @@
 	},
 	{
 		"name": "Train Station",
-		"maintenance": 5,
+		"maintenance": 10,
 		"happiness": 2,
 		"percentStatBonus": {
-			"food": 10,
-			"production": 20,
-			"gold": 10
+			"food": 5,
+			"production": 10,
+			"gold": 5
 		},
 		"uniques": [
 			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
@@ -4735,6 +4741,7 @@
 	},
 	{
 		"name": "Oil Refinery",
+		"cost":750,
 		"maintenance": 8,
 		"science": 1,
 		"specialistSlots": {
@@ -4756,17 +4763,10 @@
 		"name": "Highway Network",
 		"maintenance": 5,
 		"happiness": 2,
-		"percentStatBonus": {
-			"food": 5,
-			"production": 5,
-			"gold": 5
-		},
 		"uniques": [
 			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
 			"'Infrastructure'",
 			"[+1]% [Gold] from Trade Routes",
-			"[+2]% growth [in all cities]",
-			"[-5]% maintenance cost for [all] buildings [in this city]",
 			"[+1 Production] from ['Infrastructure Improvement'] tiles [in this city]"
 		],
 		"requiredBuilding": "Road Network",
@@ -5480,6 +5480,22 @@
 		"hurryCostModifier": 10
 	},
 	{
+		"name": "Computer Lab",
+		"cost": 1500,
+		"maintenance": 20,
+		"specialistSlots": {
+			"Scientist": 1
+		},
+		"percentStatBonus":{"science":15},
+		"uniques": [
+			"'Research Building'",
+			"[Great Scientist] is earned [+1]% faster"
+		],
+		"requiredBuilding": "University",
+		"requiredTech": "Telecommunications",
+		"hurryCostModifier": 10
+	},
+	{
 		"name": "Studios",
 		"maintenance": 1,
 		"happiness": 1,
@@ -5564,6 +5580,20 @@
 		"requiredTech": "Plastics"
 	},
 	{
+		"name": "Worldwide Fast Food Chain",
+		"isWonder": true,
+		"specialistSlots":{"Merchant":3},
+		"uniques": [
+			"Instantly consumes [1] [Iconic Brand]",
+			"[+1 Gold] from ['Agricultural Improvement'] tiles [in all cities]",
+			"[+33]% Yield from every [Mechanised Livestock Farm]",
+			"[+5]% [Food] from Trade Routes",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"quote": "'My God, that gravy is horrible. They buy tap water for 15 to 20 cents a thousand gallons and then they mix it with flour and starch and end up with pure wallpaper paste. And I know wallpaper paste, by God, because I've seen my mother make it. ...' - Harland Sanders describing KFC",
+		"requiredTech": "Plastics"
+	},
+	{
 		"name": "Media Centre",
 		"isWonder": true,
 		"percentStatBonus": {
@@ -5574,6 +5604,7 @@
 			"Great Artist": 3
 		},
 		"uniques": [
+			"Instantly consumes [1] [Iconic Brand]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Allied City-States provide [Culture] equal to [25]% of what they produce for themselves",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
@@ -5589,7 +5620,7 @@
 		},
 		"uniques": [
 			"'Economic Building'",
-			"[+1 Gold] from [Luxury resource] tiles [in this city]",
+			"Provides [10] [Consumption Demand]",
 			"[+1]% [Gold] from Trade Routes"
 		],
 		"requiredTech": "Globalization",
@@ -5597,8 +5628,7 @@
 	},
 	{
 		"name": "Solar Plant",
-		"maintenance": 2,
-		"production": 4,
+		"maintenance": 10,
 		"percentStatBonus": {
 			"production": 15
 		},
@@ -5617,10 +5647,15 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
+			"Consumes [3] [Power]",
 			"Provides [1] [Waste Material] <in cities with at least [10] [Population]>",
 			"Provides [1] [Waste Material] <in cities with at least [20] [Population]>",
 			"Provides [1] [Waste Material] <in cities with at least [30] [Population]>",
-			"Provides [1] [Waste Material] <in cities with at least [40] [Population]>"
+			"Provides [1] [Waste Material] <in cities with at least [40] [Population]>",
+			"Provides [1] [Waste Material] <in cities with at least [50] [Population]>",
+			"Provides [1] [Waste Material] <in cities with at least [60] [Population]>",
+			"Provides [1] [Waste Material] <in cities with at least [70] [Population]>",
+			"Provides [1] [Waste Material] <in cities with at least [80] [Population]>"
 		],
 		"requiredTech": "Ecology"
 	},
@@ -5633,6 +5668,7 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
+			"Consumes [3] [Power]",
 			"Consumes [3] [Waste Material]",
 			"Provides [2] [Alloy]",
 			"Provides [1] [Aluminum]",
@@ -5645,6 +5681,9 @@
 		"maintenance": 5,
 		"uniques": [
 			"'High Tech Industry'",
+			"Only available <in cities without a [Power Shortage]>",
+			"Consumes [4] [Power]",
+			"Consumes [5] [Electronic Parts]",
 			"Provides [3] [Microchips]",
 			"Provides [2] [Microchips] <after discovering [Robotics]>"
 		],
@@ -5690,13 +5729,11 @@
 	{
 		"name": "Particle Accelerator",
 		"cost": 2000,
-		"maintenance": 5,
-		"science": 8,
-		"percentStatBonus": {
-			"science": 33
-		},
+		"maintenance": 50,
+		"specialistSlots":{"Scientist":3},
 		"uniques": [
 			"'Research Building'",
+			"[+33]% [Science] from every [Physic Lab] <in this city>",
 			"[Great Scientist] is earned [+1]% faster"
 		],
 		"requiredTech": "Particle Physics",
@@ -5708,7 +5745,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
-			"[+1 Culture] per [2] population [in this city]",
+			"[+1 Culture] per [3] population [in this city]",
 			"[-2]% maintenance cost for [all] buildings [in all cities]"
 		],
 		"requiredBuilding": "Broadcast Tower",
@@ -5745,31 +5782,12 @@
 			"[+15]% [Science] [in all cities]",
 			"[+15]% [Production] [in all cities]",
 			"[+5]% [Gold] from Trade Routes",
-			"[+1] Movement",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"requiredTech": "Satellites"
 	},
 	//Line 26
-	{
-		"name": "Drone Control Centre",
-		"maintenance": 5,
-		"specialistSlots": {
-			"Engineer": 1
-		},
-		"percentStatBonus": {
-			"food": 10,
-			"production": 10
-		},
-		"uniques": [
-			"'Infrastructure'",
-			"[-5]% maintenance cost for [all] buildings [in this city]",
-			"[+10]% Production when constructing [All] buildings [in this city]"
-		],
-		"requiredBuilding": "Drone Factory",
-		"requiredTech": "Remote Control",
-		"hurryCostModifier": 25
-	},
+
 	{
 		"name": "Nutripaste Factory",
 		"maintenance": 8,
@@ -5865,11 +5883,13 @@
 	{
 		"name": "Graphene Lab",
 		"maintenance": 10,
-		"science": 5,
+		"production":5,
+		"specialistSlots":{"Scientist":1},
 		"uniques": [
 			"'Research Building'",
-			"Provides [2] [Graphene]",
-			"Consumes [3] [Coal]"
+			"Consumes [5] [Power]",
+			"Consumes [3] [Coal]",
+			"Provides [2] [Graphene]"
 		],
 		"requiredBuilding": "University",
 		"requiredTech": "Graphene",
@@ -5886,7 +5906,7 @@
 			"gold": 20
 		},
 		"uniques": [
-			"[+50]% growth [in all coastal cities]",
+			"[+33]% growth [in all coastal cities]",
 			"Must be next to [Coast]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -5921,6 +5941,25 @@
 			"Consumes [1] [Microchips]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "3D Printers",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Drone Control Centre",
+		"maintenance": 5,
+		"specialistSlots": {
+			"Engineer": 1
+		},
+		"percentStatBonus": {
+			"food": 10,
+			"production": 10
+		},
+		"uniques": [
+			"'Infrastructure'",
+			"[-5]% maintenance cost for [all] buildings [in this city]",
+			"[+10]% Production when constructing [All] buildings [in this city]"
+		],
+		"requiredBuilding": "Drone Factory",
 		"requiredTech": "3D Printers",
 		"hurryCostModifier": 25
 	},

@@ -11,6 +11,7 @@
 		"techRequired": "Agriculture",
 		"uniques": [
 			"'Agricultural Improvement'",
+			"Unavailable <after discovering [Fertilizer]>",
 			"Can also be built on tiles adjacent to fresh water",
 			"[+1 Food] <after discovering [Crop Rotation]>",
 			"[+1 Gold] <in [Black Soil] tiles>",
@@ -170,6 +171,7 @@
 		"techRequired": "Carpentry",
 		"uniques": [
 			"'Lumber Improvement'",
+			"Unavailable <after discovering [Replaceable Parts]>",
 			"[+1 Production] from [Fresh water] tiles",
 			"Pillaging this improvement yields approximately [+10 Gold]"
 		],
@@ -226,6 +228,7 @@
 		"techRequired": "Mining",
 		"uniques": [
 			"'Extraction Improvement'",
+			"Unavailable <after discovering [Steam Power]>",
 			"[+1 Production] <after discovering [Geology]>",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
@@ -347,7 +350,7 @@
 		],
 		"production": 1,
 		"science": 1,
-		"turnsToBuild": 9,
+		"turnsToBuild": 4,
 		"techRequired": "Electricity",
 		"uniques": [
 			"'Infrastructure Improvement'",
@@ -400,6 +403,7 @@
 		"techRequired": "Biology",
 		"uniques": [
 			"'Water Improvement'",
+			"Unavailable <with [3] to [5] neighboring [Ocean] tiles>",
 			"[+1 Food] for each adjacent [Power Plant]",
 			"[+1 Food] <after discovering [Refrigeration]>",
 			"Pillaging this improvement yields approximately [+10 Gold]"
@@ -435,8 +439,9 @@
 		"techRequired": "Steam Power",
 		"uniques": [
 			"'Water Improvement'",
+			"Unavailable <with [1] to [6] neighboring [Claimed Ocean] tiles>",
 			"Can be built outside your borders",
-			"Gain control over [Ocean] tiles in a [1]-tile radius"
+			"Gain control over [Ocean] tiles in a [2]-tile radius"
 		],
 		"shortcutKey": "C"
 	},
@@ -496,14 +501,19 @@
 			"Jungle"
 		],
 		"gold": 4,
-		"production": 1,
-		"turnsToBuild": 8,
+		"production": 2,
+		"turnsToBuild": 6,
 		"uniques": [
 			"Does not need removal of [Forest]",
 			"'Policy Improvement'",
 			"'Agricultural Improvement'",
 			"Only available <after adopting [Colonialism]>",
 			"Pillaging this improvement yields approximately [+18 Gold]"
+		],
+		"civilopediaText": [
+			{
+				"text": "Slave Labour + Crops with Economic Value in Global Trade. What could possibly go wrong?"
+			}
 		],
 		"shortcutKey": "P"
 	},
@@ -524,7 +534,7 @@
 		"happiness": 2,
 		"science": 2,
 		"culture": 2,
-		"turnsToBuild": 14,
+		"turnsToBuild": 10,
 		"uniques": [
 			"'Policy Improvement'",
 			"Only available <after adopting [Sustainability]>",
@@ -552,7 +562,7 @@
 		],
 		"science": 6,
 		"happiness": 1,
-		"turnsToBuild": 16,
+		"turnsToBuild": 8,
 		"uniques": [
 			"'Policy Improvement'",
 			"Only available <after adopting [Science Cities]>",
@@ -605,31 +615,7 @@
 		"shortcutKey": "Q"
 	},
 	// Military improvement
-	{
-		"name": "Fort",
-		"turnsToBuild": 6,
-		"uniques": [
-			"'Policy Improvement'",
-			"[+2 Production] for each adjacent [Storage Base]",
-			"Can be built outside your borders",
-			"Gives a defensive bonus of [33]% <before discovering [Architecture]>",
-			"Gives a defensive bonus of [50]% <after discovering [Architecture]>",
-			"Costs [3] [Gold] per turn"
-		],
-		"terrainsCanBeBuiltOn": [
-			"Plains",
-			"Grassland",
-			"Desert",
-			"Hill",
-			"Tundra",
-			"Snow",
-			"Forest",
-			"Jungle"
-		],
-		"techRequired": "Engineering",
-		"shortcutKey": "O"
-	},
-	{
+		{
 		"name": "Trench",
 		"turnsToBuild": 1,
 		"uniques": [
@@ -648,6 +634,30 @@
 			"Jungle"
 		],
 		"techRequired": "Mathematics",
+		"shortcutKey": "O"
+	},
+	{
+		"name": "Fort",
+		"turnsToBuild": 6,
+		"uniques": [
+			"'Policy Improvement'",
+			"[+2 Production] for each adjacent [Storage Base]",
+			"Can be built outside your borders",
+			"Gives a defensive bonus of [33]% <before discovering [Architecture]>",
+			"Gives a defensive bonus of [50]% <after discovering [Architecture]>",
+			"Costs [5] [Gold] per turn"
+		],
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Grassland",
+			"Desert",
+			"Hill",
+			"Tundra",
+			"Snow",
+			"Forest",
+			"Jungle"
+		],
+		"techRequired": "Engineering",
 		"shortcutKey": "O"
 	},
 	// Transportation
@@ -702,7 +712,7 @@
 			"Turn this tile into a [Canal] tile",
 			"Cannot be built on [Hill] tiles",
 			"Can only be built on [Coastal] tiles",
-			"Cannot be built on [Land] tiles <with [3] to [6] neighboring [Canal] tiles>"
+			"Cannot be built on [Land] tiles <with [2] to [6] neighboring [Canal] tiles>"
 		],
 		"techRequired": "Engineering"
 	},
@@ -864,7 +874,7 @@
 		],
 		"gold": 2,
 		"uniques": [
-			"[+6 Gold] <for [AI player] Civilizations> <hidden from users>",
+			"[+5 Gold] <for [AI player] Civilizations> <hidden from users>",
 			"Great Improvement",
 			"[+1 Gold] for each adjacent ['Infrastructure Improvement']",
 			"[+2 Gold] for each adjacent [Bonus resource]",
@@ -901,8 +911,8 @@
 		],
 		"uniques": [
 			"Great Improvement",
-			"Gives a defensive bonus of [100]%",
-			"Adjacent enemy units ending their turn take [20] damage",
+			"Gives a defensive bonus of [66]%",
+			"Adjacent enemy units ending their turn take [10] damage",
 			"[+3 Production] for each adjacent [Storage Base]",
 			"Can be built just outside your borders",
 			"Gain control over [all] tiles in a [1]-tile radius",
