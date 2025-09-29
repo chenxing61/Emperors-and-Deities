@@ -4207,47 +4207,54 @@
 		"attackSound": "gdrAttack"
 	},
 	///Barbarian related
-	//{
-	//	"name": "Diplomats",
-	//	"unitType": "Close Combat",
-	//	"movement": 2,
-	//	"strength": 20,
-	//	"cost": 100,
-	//	"requiredTech":"Diplomacy",
-	//	"uniques": ["Unbuildable","Can be purchased with [Gold] [in all cities'","[+1000]% Strength <vs [Barbaric] units>","[-1000]% Strength <vs [Standing Army] units>","When defeating a [Barbarian] unit, earn [25] Gold and recruit it <with [75]% chance>","Can see invisible [Barbaric] units"],
-	//	"promotions":["Marine Training"],
-	//	"attackSound": "nonmetalhit"
-	//},
+	{
+		"name": "Negotiator",
+		"cost": 150,
+		"unitType": "Close Combat",
+		"movement": 3,
+		"strength": 20,
+		"uniques": [
+			"Unbuildable",
+			"Can be purchased with [Gold] [in all cities]",
+			"[+1000]% Strength <vs [Barbarians] units> <when attacking>",
+			"[-1000]% Strength <vs [non-[Barbarians]] units>",
+			"Self-destructs when attacking",
+			"May capture killed [Barbarians] units <with [50]% chance>",
+			"Can see invisible [Barbaric] units"
+		],
+		"requiredTech":"Diplomacy",
+		"hurryCostModifier":25,
+		"attackSound": "paper"
+	},
 	{
 		"name": "Aggressive Tribes",
 		"unitType": "Close Combat",
+		"uniqueTo": "Barbarians",
 		"movement": 2,
 		"strength": 5,
-		"uniqueTo": "Barbarians",
-		"obsoleteTech": "Industrialization",
 		"uniques": [
 			"'Barbaric Army'",
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"Cannot embark",
-			"[+50]% Strength <starting from the [Classical era]> <in [Land] tiles>",
-			"[+100]% Strength <starting from the [Medieval era]> <in [Land] tiles>",
-			"[+100]% Strength <starting from the [Renaissance era]> <in [Land] tiles>",
-			"[+100]% Strength <starting from the [Imperial era]> <in [Land] tiles>",
+			"[+120]% Strength <starting from the [Ancient era]>",
 			"Cannot enter ocean tiles"
 		],
 		"promotions": [
 			"Barbaric"
 		],
+		"obsoleteTech": "Writing",
+		"upgradesTo": "Brute Warrior",
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Barbaric Nomad",
 		"unitType": "Rider",
+		"uniqueTo": "Barbarians",
 		"movement": 3,
-		"strength": 5,
-		"rangedStrength": 7,
+		"strength": 6,
+		"rangedStrength": 8,
 		"range": 1,
 		"uniques": [
 			"'Barbaric Army'",
@@ -4255,25 +4262,23 @@
 			"'Skirmishers'",
 			"'Edged Weapons'",
 			"Cannot embark",
-			"[+50]% Strength <starting from the [Classical era]> <in [Land] tiles>",
-			"[+200]% Strength <starting from the [Medieval era]> <in [Land] tiles>",
-			"[+200]% Strength <starting from the [Renaissance era]> <in [Land] tiles>",
-			"[+300]% Strength <starting from the [Imperial era]> <in [Land] tiles>",
+			"[+120]% Strength <starting from the [Ancient era]>",
+			"[+75]% Strength <starting from the [Classical era]>",
 			"Can move after attacking"
 		],
 		"promotions": [
 			"Barbaric"
 		],
-		"uniqueTo": "Barbarians",
 		"requiredTech": "Animal Husbandry",
-		"obsoleteTech": "Industrialization",
-		"attackSound": "metalhit"
+		"obsoleteTech": "Stirrup",
+		"upgradesTo": "Early Rider",
+		"attackSound": "arrow"
 	},
 	{
 		"name": "Farmer Rebellion",
 		"unitType": "Close Combat",
 		"movement": 2,
-		"strength": 10,
+		"strength": 12,
 		"uniqueTo": "Barbarians",
 		"uniques": [
 			"'Barbaric Army'",
@@ -4281,23 +4286,24 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"Cannot embark",
-			"[+50]% Strength <starting from the [Medieval era]> <in [Land] tiles>",
-			"[+100]% Strength <starting from the [Renaissance era]> <in [Land] tiles>",
-			"[+100]% Strength <starting from the [Imperial era]> <in [Land] tiles>"
+			"[+75]% Strength <starting from the [Classical era]>",
+			"[+60]% Strength <starting from the [Medieval era]>",
+			"[+67]% Strength <starting from the [Renaissance era]>"
 		],
 		"promotions": [
 			"Barbaric"
 		],
-		"requiredTech": "Horse Collar",
-		"obsoleteTech": "Industrialization",
+		"requiredTech": "Writing",
+		"obsoleteTech": "Scientific Theory",
+		"upgradesTo": "Spearman",
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Bandits",
 		"unitType": "Ranged Combat",
 		"movement": 2,
-		"strength": 8,
-		"rangedStrength": 11,
+		"strength": 18,
+		"rangedStrength": 20,
 		"range": 1,
 		"uniqueTo": "Barbarians",
 		"uniques": [
@@ -4306,23 +4312,49 @@
 			"'Skirmishers'",
 			"'Edged Weapons'",
 			"Cannot embark",
-			"[+50]% Strength <starting from the [Medieval era]> <in [Land] tiles>",
-			"[+50]% Strength <starting from the [Renaissance era]> <in [Land] tiles>"
+			"[+60]% Strength <starting from the [Medieval era]>",
+			"[+67]% Strength <starting from the [Renaissance era]>"
 		],
 		"promotions": [
 			"Barbaric",
 			"Skirmisher Training"
 		],
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Industrialization",
+		"requiredTech": "Mining",
+		"obsoleteTech": "Gunpowder Making",
 		"upgradesTo": "Levy Archer",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Raider Horsercher",
+		"unitType": "Rider",
+		"movement": 3,
+		"strength": 22,
+		"rangedStrength": 25,
+		"range": 2,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"'Barbaric Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Cannot embark",
+			"[+67]% Strength <starting from the [Renaissance era]>",
+			"[+75]% Strength <starting from the [Imperial era]>"
+		],
+		"promotions": [
+			"Barbaric",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Stirrup",
+		"obsoleteTech": "Flintlock",
+		"upgradesTo": "Horse Archer",
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Rogue Aristrocrat",
 		"unitType": "Assault",
 		"movement": 3,
-		"strength": 12,
+		"strength": 26,
 		"uniqueTo": "Barbarians",
 		"uniques": [
 			"'Barbaric Army'",
@@ -4330,23 +4362,24 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"Cannot embark",
-			"[+50]% Strength <starting from the [Medieval era]> <in [Land] tiles>",
-			"[+100]% Strength <starting from the [Renaissance era]> <in [Land] tiles>",
-			"[+100]% Strength <starting from the [Imperial era]> <in [Land] tiles>"
+			"[+67]% Strength <starting from the [Renaissance era]>",
+			"[+75]% Strength <starting from the [Imperial era]>"
 		],
 		"promotions": [
-			"Barbaric"
+			"Barbaric",
+			"The Noble Army"
 		],
-		"requiredTech": "Horseback Riding",
-		"obsoleteTech": "Industrialization",
+		"requiredTech": "Armorments",
+		"obsoleteTech": "Flintlock",
+		"upgradesTo":"Heavy Cavalry",
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Outlaws",
 		"unitType": "Ranged Combat",
 		"movement": 3,
-		"strength": 40,
-		"rangedStrength": 50,
+		"strength": 29,
+		"rangedStrength": 32,
 		"uniqueTo": "Barbarians",
 		"uniques": [
 			"'Barbaric Army'",
@@ -4354,20 +4387,21 @@
 			"'Skirmishers'",
 			"'Firearms'",
 			"Cannot embark",
-			"[+25]% Strength <starting from the [Industrial era]> <in [Land] tiles>",
-			"[+25]% Strength <starting from the [Modern era]> <in [Land] tiles>"
+			"[+75]% Strength <starting from the [Imperial era]>"
 		],
 		"promotions": [
 			"Barbaric"
 		],
-		"requiredTech": "Flintlock",
+		"requiredTech": "Gunpowder Making",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Skirmisher",
 		"attackSound": "shot"
 	},
 	{
 		"name": "Militia Movement",
 		"unitType": "Close Combat",
 		"movement": 2,
-		"strength": 50,
+		"strength": 54,
 		"uniqueTo": "Barbarians",
 		"uniques": [
 			"'Extremeist Militias'",
@@ -4375,42 +4409,24 @@
 			"'Skirmishers'",
 			"'Firearms'",
 			"Cannot embark",
-			"[+50]% Strength <starting from the [Modern era]> <in [Land] tiles>"
+			"[+75]% Strength <starting from the [Atomic era]>",
+			"[+62]% Strength <starting from the [Infomation era]>"
 		],
 		"promotions": [
 			"Asymmetric Warfare",
 			"Pilliging"
 		],
-		"requiredTech": "Industrialization",
+		"requiredTech": "Rifling",
+		"upgradesTo": "Rifleman",
 		"attackSound": "shot"
 	},
-	{
-		"name": "Terroists",
-		"unitType": "Close Combat",
-		"movement": 2,
-		"strength": 53,
-		"uniqueTo": "Barbarians",
-		"uniques": [
-			"'Extremeist Militias'",
-			"'Infantry'",
-			"'Skirmishers'",
-			"'Firearms'",
-			"'Levy Army'",
-			"Cannot embark",
-			"[+50]% Strength <starting from the [Atomic era]> <in [Land] tiles>"
-		],
-		"promotions": [
-			"Asymmetric Warfare",
-			"Pilliging"
-		],
-		"requiredTech": "Dynamite",
-		"attackSound": "shot"
-	},
-	{
+		{
 		"name": "Warlord's Troops",
-		"unitType": "Close Combat",
+		"unitType": "Ranged Combat",
 		"movement": 2,
 		"strength": 50,
+		"rangedStrength":55,
+		"range":1,
 		"uniqueTo": "Barbarians",
 		"uniques": [
 			"Cannot enter ocean tiles",
@@ -4419,28 +4435,73 @@
 			"'Dense Formation'",
 			"'Firearms'",
 			"Cannot embark",
-			"[+25]% Strength <starting from the [Industrial era]> <in [Land] tiles>",
-			"[+25]% Strength <starting from the [Modern era]> <in [Land] tiles>"
+			"[+75]% Strength <starting from the [Atomic era]>",
+			"[+62]% Strength <starting from the [Infomation era]>"
 		],
 		"promotions": [
 			"Barbaric"
 		],
-		"requiredTech": "Flintlock",
+		"requiredTech": "Rifling",
+		"upgradesTo": "Sharpshooter",
 		"attackSound": "shot"
+	},
+	{
+		"name": "Terroists",
+		"unitType": "Close Combat",
+		"movement": 2,
+		"strength": 95,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"'Extremeist Militias'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'"
+		],
+		"promotions": [
+			"Asymmetric Warfare",
+			"Pilliging"
+		],
+		"requiredTech": "Combined Arms",
+		"upgradesTo": "Modern Conscript",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Sea People",
+		"unitType": "Close Combat",
+		"movement": 2,
+		"strength": 12,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"'Barbaric Army'",
+			"'Infantry'",
+			"'Galley'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Invisible to non-adjacent units",
+			"[+75]% Strength <starting from the [Classical era]>"
+		],
+		"promotions": [
+			"Barbaric",
+			"Sailor Origin"
+		],
+		"requiredTech": "Trade Network",
+		"obsoleteTech": "Shipbuilding",
+		"attackSound": "metalhit"
 	},
 	{
 		"name": "Pirate",
 		"unitType": "Close Combat Ship",
-		"movement": 2,
-		"strength": 10,
+		"movement": 3,
+		"strength": 12,
 		"uniqueTo": "Barbarians",
 		"uniques": [
 			"'Barbaric Army'",
 			"'Sailing Ship'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[+100]% Strength <starting from the [Medieval era]>",
-			"[+100]% Strength <starting from the [Renaissance era]>",
+			"[+60]% Strength <starting from the [Medieval era]>",
+			"[+67]% Strength <starting from the [Renaissance era]>",
 			"Can move after attacking",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Invisible to non-adjacent units"
@@ -4450,20 +4511,21 @@
 		],
 		"requiredTech": "Astronomy",
 		"obsoleteTech": "Monocular",
+		"upgradesTo":"Merchant Fleet",
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Pirate Fleets",
+		"uniqueTo": "Barbarians",
 		"unitType": "Close Combat Ship",
 		"movement": 2,
 		"strength": 40,
-		"uniqueTo": "Barbarians",
 		"uniques": [
 			"'Barbaric Army'",
 			"'Sailing Ship'",
 			"'Dense Formation'",
 			"'Firearms'",
-			"[+25]% Strength <starting from the [Imperial era]>",
+			"[+75]% Strength <starting from the [Imperial era]>",
 			"Can move after attacking",
 			"Invisible to non-adjacent units"
 		],
@@ -4472,7 +4534,30 @@
 			"Wheellock Pistol"
 		],
 		"requiredTech": "Monocular",
-		"attackSound": "metalhit"
+		"obsoleteTech": "Steam Power",
+		"upgradesTo":"Frigade Fleet",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Modern Pirates",
+		"uniqueTo": "Barbarians",
+		"unitType": "Ranged Combat Ship",
+		"movement": 2,
+		"strength": 75,
+		"uniques": [
+			"'Barbaric Army'",
+			"'Engine Ship'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Can move after attacking",
+			"Invisible to non-adjacent units"
+		],
+		"promotions": [
+			"Barbaric"
+		],
+		"requiredTech": "Mobile Tactics",
+		"upgradesTo":"Torpedo Boat Flotilla",
+		"attackSound": "shot"
 	},
 	/* Great people */
 	{
