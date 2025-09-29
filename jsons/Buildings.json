@@ -414,6 +414,25 @@
 		"hurryCostModifier": -25
 	},
 	{
+		"name": "Military Consolidation",
+		"cost": 835,
+		"uniques": [
+			"Unsellable",
+			"'Consolidation'",
+			"Comment [Only when all buildings in this package have not been built, this package is available.]",
+			"Only available <in cities without a [Firearms Workshop]>",
+			"Only available <in cities without a [Arsenal]>",
+			"Only available <in cities without a [Mobilization Department]>",
+			"Only available <in cities without a [Bastion]>",
+			"Gain a free [Firearms Workshop] [in this city]", //120
+			"Gain a free [Arsenal] [in this city]", //160
+			"Gain a free [Mobilization Department] [in this city]", //275
+			"Gain a free [Bastion] [in this city]"
+		], //200
+		"requiredTech": "Rifling",
+		"hurryCostModifier": -25
+	},
+	{
 		"name": "Cultural Expansion",
 		"cost": 560,
 		"uniques": [
@@ -6729,7 +6748,7 @@
 		"isNationalWonder": true,
 		"uniques": [
 			"Enables nuclear weapon",
-			"Provides [1] [Enriched Uranium]",
+			"Provides [2] [Enriched Uranium]",
 			"Triggers a global alert upon completion",
 			"Cannot be hurried",
 			"Destroyed when the city is captured"
