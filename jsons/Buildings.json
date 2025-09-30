@@ -1430,6 +1430,23 @@
 		"hurryCostModifier": 10
 	},
 	{
+		"name": "Elephant Camp",
+		"maintenance": 3,
+		"food":-5,
+		"gold":5,
+		"faith":5,
+		"uniques": [
+			"'Military Building'",
+			"Provides [1] [Elephant]",
+			"[+25]% Production when constructing [Firearms Workshop] buildings [in this city]"
+		],
+		"requiredNearbyImprovedResources": [
+			"Ivory"
+		],
+		"requiredTech": "Horseback Riding",
+		"hurryCostModifier": 10
+	},
+	{
 		"name": "The Grand Ditch",
 		"isWonder": true,
 		"greatPersonPoints": {
@@ -5541,7 +5558,7 @@
 			"Consumes [1] [Alloy]",
 			"Consumes [1] [Aluminum]",
 			"Consumes [1] [Electronic Parts]",
-			"Consumes [1] [Power]",
+			"Consumes [2] [Power]",
 			"Comment [Enables you to build Spacecrafts and Missiles in this City]"
 		],
 		"requiredBuilding": "Military Factory Complex",
@@ -5550,11 +5567,10 @@
 	},
 	{
 		"name": "Statue of the Savior",
-		"culture": 5,
-		"happiness": 2,
 		"isWonder": true,
+		"happiness": 5,
 		"greatPersonPoints": {
-			"Great Artist": 2
+			"Great Artist": 3
 		},
 		"uniques": [
 			"Only available <after adopting [Monotheism]>",
