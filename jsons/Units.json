@@ -897,7 +897,6 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[+33]% Strength <when fighting in [Open terrain] tiles> <when attacking>",
 			"[+17]% Strength <when fighting in [Open terrain] tiles> <when defending>",
 			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
@@ -907,7 +906,7 @@
 			"The Standing Army",
 			"Hardened",
 			"Intensive Doctrine",
-			"Formation"
+			"Pike"
 		],
 		"requiredTech": "Horse Collar",
 		"obsoleteTech": "Tactics",
@@ -1081,7 +1080,7 @@
 			"'Standing Army'",
 			"'Sailing Ship'",
 			"'Dense Formation'",
-			"'Siege Weapons'",
+			"'Edged Weapons'",
 			"[+25]% Strength <after discovering [Shipbuilding]>",
 			"[This Unit] takes [15] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
@@ -1107,7 +1106,7 @@
 			"'Standing Army'",
 			"'Sailing Ship'",
 			"'Dense Formation'",
-			"'Siege Weapons'",
+			"'Edged Weapons'",
 			"[+25]% Strength <after discovering [Dry Dock]>",
 			"[+25]% Strength <after discovering [Shipbuilding]>",
 			"[This Unit] takes [10] damage <upon ending a turn in a [Ocean] tile>",
@@ -1179,6 +1178,34 @@
 		"upgradesTo": "Mercenary Crossbowman",
 		"requiredBuilding":"Mercenary Office",
 		"requiredResource": "Mercenary Contract",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Giant Galley Warship",
+		"unitType": "Ranged Combat Ship",
+		"cost": 130,
+		"movement": 4,
+		"strength": 24,
+		"rangedStrength": 28,
+		"range":1,
+		"uniques": [
+			"Costs [1] [War Machine Blueprint]",
+			"'Standing Army'",
+			"'Galley'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+25]% Strength <after discovering [Shipbuilding]>",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Classical Arms"
+		],
+		"requiredTech": "Dry Dock",
+		"obsoleteTech": "Navigation",
+		"upgradesTo": "Frigade Fleet",
+		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "arrow"
 	},
 	///Line 7
@@ -3358,7 +3385,7 @@
 		"movement": 3,
 		"strength": 74,
 		"uniques": [
-			"Can transform to [Exoskeleton Infantry] <after discovering [Hapitcs]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Exoskeleton Infantry] <after discovering [Haptics]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"Costs [15] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
 			"Costs [24] [Weapon Parts]",
@@ -3661,7 +3688,7 @@
 			"'Nuclear Powered Ship'",
 			"'Dense Formation'",
 			"'Firearms'",
-			"Can only attack [Water] tiles <before discovering [Advanced Ballistic]>",
+			"Can only attack [Water] tiles <before discovering [Advanced Ballistics]>",
 			"[+25]% Strength <when attacking>",
 			"[+5] HP when healing",
 			"Never appears as a Barbarian unit <hidden from users>"
