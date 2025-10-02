@@ -83,7 +83,7 @@
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
                     "Instantly consumes [3] [Influence]",
-                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-300] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>"
                 ]
@@ -106,7 +106,7 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-200] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>"
                 ]
@@ -129,7 +129,7 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-300] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>"
                 ]
@@ -142,10 +142,10 @@
                     "[-1] population in a random city <when number of [Cities] is between [0] and [5]> <hidden from users>",
                     "[+3] population in a random city <when number of [Cities] is between [0] and [5]> <hidden from users>",
                     "[-3] population in a random city <when number of [Cities] is between [0] and [5]> <hidden from users>",
-                    "[+5] population in a random city <when number of [Cities] is more than [8]> <hidden from users>",
-                    "[-5] population in a random city <when number of [Cities] is more than [8]> <hidden from users>",
-                    "[+5] population in a random city <when number of [Cities] is more than [8]> <hidden from users>",
-                    "[-5] population in a random city <when number of [Cities] is more than [8]> <hidden from users>",
+                    "[+5] population in a random city <when number of [Cities] is more than [4]> <hidden from users>",
+                    "[-5] population in a random city <when number of [Cities] is more than [4]> <hidden from users>",
+                    "[+5] population in a random city <when number of [Cities] is more than [4]> <hidden from users>",
+                    "[-5] population in a random city <when number of [Cities] is more than [4]> <hidden from users>",
                     "Gain a free [Peasant Rebellion] [in capital]"
                 ]
             }
@@ -153,7 +153,7 @@
     },
     {
         "name": "Spreading Chaos",
-        "text": "Tho the disorder can be better controlled in a small civilization, but it still needs a permanent solution.",
+        "text": "Though the disorder can be better controlled in a small civilization, but it still needs a permanent solution.",
         "choices": [
             {
                 "text": "We need to take precaution!",
@@ -314,6 +314,36 @@
                     "Play [policy] sound <hidden from users>",
                     "Comment [We must take action against the coming chaos.]",
                     "Triggers a [Stablising our side of the globe] event"
+                ]
+            },
+            {
+                "text": "Crisis Solving",
+                "uniques": [
+                    "Only available <if [Slum] is constructed in at least [4] of [non-[Puppeted]] cities>",
+                    "Only available <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Play [policy] sound <hidden from users>",
+                    "Comment [A lot of our cities are in a horrible state. We should do what we can to save them.]",
+                    "Triggers a [Crisis Solver] event"
+                ]
+            },
+            {
+                "text": "Crisis Solving",
+                "uniques": [
+                    "Only available <if [Unjust Ruling] is constructed in at least [4] of [non-[Puppeted]] cities>",
+                    "Only available <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Play [policy] sound <hidden from users>",
+                    "Comment [A lot of our cities are in a horrible state. We should do what we can to save them.]",
+                    "Triggers a [Crisis Solver] event"
+                ]
+            },
+            {
+                "text": "Crisis Solving",
+                "uniques": [
+                    "Only available <if [Peasant Rebellion] is constructed in at least [4] of [non-[Puppeted]] cities>",
+                    "Only available <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Play [policy] sound <hidden from users>",
+                    "Comment [A lot of our cities are in a horrible state. We should do what we can to save them.]",
+                    "Triggers a [Crisis Solver] event"
                 ]
             },
             {
@@ -760,6 +790,126 @@
                     "Gain a free [Peace] [in capital] <hidden from users>",
                     "Remove [Struggle] [in capital] <hidden from users>",
                     "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Can we wait?",
+                "uniques": [
+                    "Only available <for [non-[AI player]] Civilizations>",
+                    "Comment [We need more contemplation...]",
+                    "Play [whoosh] sound"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Crisis Solver",
+        "text": "We must at least do something about the things happening in the cities.",
+        "choices": [
+            {
+                "text": "Kill the benefactors.",
+                "uniques": [
+                    "Only available <if [Unjust Ruling] is constructed>",
+                    "Comment [Use the loyal army to slay all who dares to oppose our just ruiling!]",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain [-150] [Gold] <(modified by game speed)>",
+                    "[-10]% Strength <for [5] turns>",
+                    "Remove [Unjust Ruling] [in all cities]"
+                ]
+            },
+            {
+                "text": "Subdue the benefactors.",
+                "uniques": [
+                    "Only available <if [Unjust Ruling] is constructed>",
+                    "Comment [Use our socio-economical ties to force them give up their schemes.]",
+                    "Instantly consumes [33] [Influence]",
+                    "Gain [-350] [Gold] <(modified by game speed)>",
+                    "Remove [Unjust Ruling] [in all cities]"
+                ]
+            }
+            ,
+            {
+                "text": "Use them to our benefits",
+                "uniques": [
+                    "Only available <if [Unjust Ruling] is constructed> <during a Golden Age>",
+                    "Comment [I wonder... what would they be trying to do when they have some track records right in our hands?]",
+                    "Instantly consumes [20] [Influence]",
+                    "Gain [200] [Gold] <(modified by game speed)>",
+                ]
+            },
+            {
+                "text": "Kill the rebels.",
+                "uniques": [
+                    "Only available <if [Peasant Rebellion] is constructed>",
+                    "Comment [Use the loyal army to slay all who dares to oppose our just ruiling!]",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain [-200] [Gold] <(modified by game speed)>",
+                    "[-10]% Strength <for [7] turns>",
+                    "Remove [Peasant Rebellion] [in all cities]"
+                ]
+            },
+            {
+                "text": "Subdue the rebels.",
+                "uniques": [
+                    "Only available <if [Peasant Rebellion] is constructed>",
+                    "Comment [Use our socio-economical ties to force them give up their schemes and join us.]",
+                    "Instantly consumes [20] [Influence]",
+                    "Gain [-400] [Gold] <(modified by game speed)>",
+                    "Free [Aggressive Tribes] appears <before the [Medieval era]>",
+                    "Free [Farmer Rebellion] appears <starting from the [Medieval era]> <before the [Imperial era]>",
+                    "Free [Outlaws] appears <starting from the [Imperial era]> <before the [Industrial era]>",
+                    "Free [Militia Movement] appears <starting from the [Industrial era]>",
+                    "Remove [Peasant Rebellion] [in all cities]"
+                ]
+            },
+            {
+                "text": "Use them to our benefits",
+                "uniques": [
+                    "Only available <if [Peasant Rebellion] is constructed> <during a Golden Age> <when at war>",
+                    "Instantly consumes [20] [Influence]",
+                    "Comment [Let them fight our enemies. Let them become 'heros'.]",
+                    "Gain a free [Army Maintenance Cost] [in capital]",
+                    "[2] free [Aggressive Tribes] units appear <before the [Medieval era]>",
+                    "[2] free [Farmer Rebellion] units appear <starting from the [Medieval era]> <before the [Imperial era]>",
+                    "[2] free [Outlaws] units appear <starting from the [Imperial era]> <before the [Industrial era]>",
+                    "[2] free [Militia Movement] units appear <starting from the [Industrial era]>",
+                    "Remove [Peasant Rebellion] [in all cities]"
+                ]
+            },
+            {
+                "text": "Remove the Slums immediately!",
+                "uniques": [
+                    "Only available <if [Slum] is constructed>",
+                    "Comment [Force the Slume dwelllers out of their residence... Might be a bad move.]",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain [-350] [Gold] <(modified by game speed)>",
+                    "[-20]% growth [in all cities] <for [5] turns>",
+                    "[-5]% [Happiness] [in all cities] <for [5] turns>",
+                    "Remove [Slum] [in all cities]"
+                ]
+            },
+            {
+                "text": "Compromise with the upper classes.",
+                "uniques": [
+                    "Only available <if [Slum] is constructed>",
+                    "Comment [By dealing with the wealth gap directly, we can provide more residential land in the cities, or at least provide better houses.]",
+                    "Instantly consumes [20] [Influence]",
+                    "Gain [-500] [Gold] <(modified by game speed)>",
+                    "Remove [Slum] [in all cities]"
+                ]
+            },
+            {
+                "text": "If they yearn for place to live, why not go out?",
+                "uniques": [
+                    "Only available <if [Slum] is constructed> <during a Golden Age>",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain [-100] [Gold] <(modified by game speed)>",
+                    "Free [Settler] appears <before discovering [Navigation]>",
+                    "Free [Pioneer] appears <after discovering [Navigation]>",
+                    "[+1] population in a random city",
+                    "[+1] population in a random city",
+                    "[+1] population in a random city",
+                    "Remove [Slum] [in all cities]"
                 ]
             },
             {
@@ -1234,7 +1384,7 @@
                     "Instantly provides [5] [Influence]",
                     "Gain a free [Army Maintenance Cost] [in capital]",
                     "[-5]% [Food] [in capital] <for [2] turns>",
-                    "[-10]% [Gold] [in capital] <for [2] turns>",
+                    "[-10]% [Gold] [in all cities] <for [2] turns>",
                     "Triggers a [Popularity Crisis] event <hidden from users>"
                 ]
             },
@@ -1245,7 +1395,7 @@
                     "Instantly provides [8] [Influence]",
                     "Gain a free [Army Maintenance Cost] [in capital]",
                     "[+10]% [Culture] [in all cities] <for [5] turns>",
-                    "[-10]% [Gold] [in capital] <for [2] turns>",
+                    "[-10]% [Gold] [in all cities] <for [2] turns>",
                     "[-10]% [Production] [in capital] <for [2] turns>",
                     "Triggers a [Popularity Crisis] event <hidden from users>"
                 ]
@@ -1260,7 +1410,7 @@
                     "Gain [-50] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-50] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
                     "[-10]% [Food] [in capital] <for [5] turns>",
-                    "[-15]% [Gold] [in capital] <for [5] turns>",
+                    "[-15]% [Gold] [in all cities] <for [5] turns>",
                     "Triggers a [Popularity Crisis] event <hidden from users>"
                 ]
             },
@@ -1273,7 +1423,7 @@
                     "Gain a free [Army Maintenance Cost] [in capital]",
                     "Gain [-50] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
+                    "Gain [-200] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
                     "Triggers a [Popularity Crisis] event <hidden from users>"
                 ]
             },
@@ -1281,9 +1431,9 @@
                 "text": "Remove the [Army Maintenance Cost]",
                 "uniques": [
                     "Only available <if [Army Maintenance Cost] is constructed> <when above [30] [Gold]>",
-                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]>",
-                    "Gain [-50] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-50] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
+                    "Gain [-33] [Gold] <when number of [Cities] is between [0] and [5]>",
+                    "Gain [-66] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-101] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
                     "Remove [Army Maintenance Cost] [in all cities]",
                     "Triggers a [Popularity Crisis] event <hidden from users>"
                 ]
@@ -1310,8 +1460,8 @@
                     "Instantly consumes [10] [Influence]",
                     "Gain [-200] [Gold] <(modified by game speed)>",
                     "[-25]% [Gold] [in all cities] <for [10] turns>",
-                    "[Gold] cost of purchasing ['Mercenary Army'] units [-33]% <for [10] turns>",
-                    "[-33]% Production when constructing [All] buildings [in all cities] <for [10] turns>",
+                    "[Gold] cost of purchasing ['Mercenary Army'] units [-75]% <for [5] turns>",
+                    "[-50]% Production when constructing [non-['Military Building']] buildings [in all cities] <for [10] turns>",
                     "Instantly provides [10] [Alexandrian Empire Period]",
                     "[2] free [Hetairoi Cavalry] units appear",
                     "[2] free [Phalanx] units appear",
@@ -1336,6 +1486,7 @@
             {
                 "text": "The hellenic period begins...",
                 "uniques": [
+                    "Triggers a [Chaos Ensue] event",
                     "Remove ['Civilization Form'] [in all cities] <hidden from users>",
                     "Remove [Alexander Event Flag] [in all cities] <hidden from users>",
                     "Gain a free [Diadochi States] [in capital]"

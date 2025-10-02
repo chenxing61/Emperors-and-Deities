@@ -34,8 +34,8 @@
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
-			"Only available <in [Capital] cities>",
 			"Comment [Act upon internal affairs as if you are ruling a country. For examples, you can disband levies to mitigate the downside and increase stability of the civilization.]",
+			"Only available <in [Capital] cities>",
 			"Play [policy] sound <hidden from users>",
 			"Remove [Enact Policies] [in this city] <hidden from users>",
 			"Triggers a [Enact Policies] event"
@@ -46,8 +46,8 @@
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
-			"Only available <in [Capital] cities>",
 			"Comment [If the top bar is too messy, you can cut down on numbers of resources displayed, but remember to check every once in a while.]",
+			"Only available <in [Capital] cities>",
 			"Play [policy] sound <hidden from users>",
 			"Triggers a [Hide Strategic Resources] event",
 			"Remove [Hide-Show Strategic Resources] [in this city] <hidden from users>"
@@ -108,7 +108,7 @@
 	},
 	{
 		"name": "Complete Intergration",
-		"cost": 175,
+		"cost": 200,
 		"uniques": [
 			"Only available <before adopting [Anarchism]>",
 			"Can only be built <in [Annexed] cities>",
@@ -141,7 +141,7 @@
 	},
 	{
 		"name": "Administrative Intergration",
-		"cost": 50,
+		"cost": 75,
 		"uniques": [
 			"Comment [Remove [Food],[Production] and [Gold] debuff from annexed cities]",
 			"Only available <before adopting [Anarchism]>",
@@ -167,8 +167,9 @@
 	},
 	{
 		"name": "Five Year Plan",
-		"cost": 100000,
+		"cost": 9999999,
 		"uniques": [
+			"Remove [Five Year Plan] [in this city] <hidden from users>",
 			"Unavailable <if [Planned Economy] is not constructed> <hidden from users>",
 			"Comment [You store the [Production] by constructing this building and use the [Production] to buy buildings.]"
 		]
@@ -2761,6 +2762,17 @@
 		"requiredTech": "Irrigation",
 		"hurryCostModifier": 25
 	},
+		{
+		"name": "Agricultural Water Storage",
+		"maintenance": 1,
+		"food": 3,
+		"uniques": [
+			"'Infrastructure'",
+			"Only available <in cities without a [Irrigation System]>"
+		],
+		"requiredTech": "Irrigation",
+		"hurryCostModifier": 25
+	},
 	{
 		"name": "Garden",
 		"maintenance": 2,
@@ -2919,17 +2931,6 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Theology"
-	},
-	{
-		"name": "Agricultural Water Storage",
-		"maintenance": 2,
-		"food": 4,
-		"uniques": [
-			"'Infrastructure'",
-			"Only available <in cities without a [Irrigation System]>"
-		],
-		"requiredTech": "Engineering",
-		"hurryCostModifier": 25
 	},
 	{
 		"name": "Weapon Parts Workshop",
@@ -4960,9 +4961,7 @@
 		},
 		"uniques": [
 			"'Research Building'",
-			"[Great Scientist] is earned [+1]% faster",
-			"[+1 Science] [in this city] <after discovering [Relativity Theory]>",
-			"[+1 Science] [in this city] <after discovering [Quantum Theory]>"
+			"[Great Scientist] is earned [+1]% faster"
 		],
 		"requiredBuilding": "University",
 		"requiredTech": "Telegram"
@@ -8435,6 +8434,7 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"Rebel units may spawn",
+			"[-3]% Strength <vs [Barbarian] units>",
 			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance>"
 		],
 		"hurryCostModifier": -50
