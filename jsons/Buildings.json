@@ -97,12 +97,12 @@
 			"Free [Guerrilla] appears <after discovering [Rifling]> <before adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Mobile Tactics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Mobile Tactics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Mobile Tactics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Mobile Tactics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Mobile Tactics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Mobile Tactics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Destroyed when the city is captured"
 		]
 	},
@@ -1433,8 +1433,11 @@
 	{
 		"name": "Elephant Camp",
 		"maintenance": 3,
-		"food":-3,
-		"percentStatBonus":{"gold":5,"faith":5},
+		"food": -3,
+		"percentStatBonus": {
+			"gold": 5,
+			"faith": 5
+		},
 		"uniques": [
 			"'Military Building'",
 			"Provides [2] [Elephant]",
@@ -2762,7 +2765,7 @@
 		"requiredTech": "Irrigation",
 		"hurryCostModifier": 25
 	},
-		{
+	{
 		"name": "Agricultural Water Storage",
 		"maintenance": 1,
 		"food": 3,
@@ -3953,7 +3956,7 @@
 	//Line 16
 	{
 		"name": "Alloy Mill",
-		"cost":450,
+		"cost": 450,
 		"maintenance": 3,
 		"specialistSlots": {
 			"Engineer": 1,
@@ -3985,7 +3988,7 @@
 	},
 	{
 		"name": "Aluminium Mill",
-		"cost":500,
+		"cost": 500,
 		"maintenance": 3,
 		"science": 2,
 		"specialistSlots": {
@@ -4007,7 +4010,7 @@
 	},
 	{
 		"name": "Fertilizer Plant",
-		"cost":300,
+		"cost": 300,
 		"maintenance": 5,
 		"uniques": [
 			"'Agricultural Building'",
@@ -4191,7 +4194,7 @@
 	},
 	{
 		"name": "Hospital",
-		"cost":500,
+		"cost": 500,
 		"maintenance": 5,
 		"happiness": 3,
 		"uniques": [
@@ -4225,7 +4228,7 @@
 	},
 	{
 		"name": "Fossil Fuel Power Plant",
-		"cost":750,
+		"cost": 750,
 		"maintenance": 10,
 		"uniques": [
 			"'Power Building'",
@@ -4261,7 +4264,7 @@
 	},
 	{
 		"name": "Gas Storage and Transfer System",
-		"cost":500,
+		"cost": 500,
 		"maintenance": 5,
 		"science": 1,
 		"specialistSlots": {
@@ -4467,7 +4470,7 @@
 			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed>",
 			"Provides [1] [Consumption Supply]",
 			"Provides [1] [Vehicle Parts]",
-			"Provides [1] [Vehicle Parts] <when at war>",
+			"Provides [1] [Vehicle Parts] <in cities with a [Call to Arms]>",
 			"Consumes [4] [Power] <in cities with a [Power Grid]>",
 			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
@@ -4572,7 +4575,7 @@
 			"'Heavy Industry'",
 			"Provides [2] [Consumption Supply]",
 			"Provides [1] [Ship Parts]",
-			"Provides [1] [Ship Parts] <when at war>",
+			"Provides [1] [Ship Parts] <in cities with a [Call to Arms]>",
 			"Consumes [4] [Power] <in cities with a [Power Grid]>",
 			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+10]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
@@ -4708,6 +4711,7 @@
 	},
 	{
 		"name": "Statue of Liberty",
+		"cost": 2400,
 		"isWonder": true,
 		"culture": 3,
 		"greatPersonPoints": {
@@ -4724,6 +4728,7 @@
 	},
 	{
 		"name": "Cathedral of the Holy Family",
+		"cost": 2400,
 		"isWonder": true,
 		"faith": 5,
 		"greatPersonPoints": {
@@ -4758,7 +4763,7 @@
 	},
 	{
 		"name": "Oil Refinery",
-		"cost":750,
+		"cost": 750,
 		"maintenance": 8,
 		"science": 1,
 		"specialistSlots": {
@@ -4808,6 +4813,37 @@
 			"Provides [4] [Vehicle Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>"
 		],
 		"requiredBuilding": "Military Factory Complex",
+		"requiredTech": "Combustion",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Luxury Car Industry",
+		"cost": 1250,
+		"maintenance": 20,
+		"specialistSlots": {
+			"Labourer": 5,
+			"Engineer": 2,
+			"Artist": 1
+		},
+		"uniques": [
+			"'Heavy Industry'",
+			"Only available <in cities without a [Vehicle Industry]>",
+			"Only available <when above [0] [Iconic Brand]> <if [Vehicle Industry] is constructed>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed>",
+			"Provides [1] [Consumption Supply]",
+			"Provides [1] [Luxury Car] <in cities without a [Call to Arms]>",
+			"Provides [2] [Vehicle Parts]",
+			"Provides [2] [Vehicle Parts] <in cities with a [Call to Arms]>",
+			"Consumes [4] [Power] <in cities with a [Power Grid]>",
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			"[+20]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
+			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]>",
+			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed>",
+			"[+1 Production, +1 Gold] from every [Engineer] <in this city>"
+		],
+		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Combustion",
 		"hurryCostModifier": 25
 	},
@@ -5048,15 +5084,17 @@
 	},
 	{
 		"name": "Tower of Constructivism",
+		"cost": 2400,
 		"isWonder": true,
-		"happiness": 3,
+		"happiness": 5,
 		"greatPersonPoints": {
 			"Great Artist": 3,
 			"Great Engineer": 3
 		},
 		"uniques": [
 			"Only available <after adopting [Socialism]>",
-			"[+33]% Production when constructing [Culture] buildings [in all cities]",
+			"Gain a free [Cultural Expansion] [in all cities]",
+			"[+1 Production] from every [Artist]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"quote": "'Art must not be concentrated in dead shrines called museums. It must be spread everywhere – on the streets, in the trams, factories, workshops, and in the workers' homes.' - El Lissitzky",
@@ -5064,6 +5102,7 @@
 	},
 	{
 		"name": "Hall of the Nation",
+		"cost": 2400,
 		"isWonder": true,
 		"greatPersonPoints": {
 			"Great Strategist": 5
@@ -5113,7 +5152,7 @@
 	//Line 20
 	{
 		"name": "Innovation of Processing Precision",
-		"cost": 500,
+		"cost": 750,
 		"uniques": [
 			"'Innovation'",
 			"Limited to [1] per Civilization <hidden from users>",
@@ -5183,6 +5222,24 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Invention of Nylon",
+		"cost": 750,
+		"uniques": [
+			"'Invention'",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Nylon] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Nylon] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Invention of Nylon] is constructed by anybody> <hidden from users>",
+			"[+8]% [Culture] from every [Consumer Goods Industry]",
+			"Instantly provides [1] [Iconic Brand]",
+			"Unsellable",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"requiredBuilding": "Consumer Goods Industry",
+		"requiredTech": "Synthetic Materials",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Broadcast Tower",
 		"maintenance": 5,
 		"happiness": 1,
@@ -5219,7 +5276,7 @@
 	},
 	{
 		"name": "Innovation of Instant Foods",
-		"cost": 500,
+		"cost": 750,
 		"uniques": [
 			"'Innovation'",
 			"Limited to [1] per Civilization <hidden from users>",
@@ -5237,15 +5294,15 @@
 	},
 	{
 		"name": "Invention of Organ Transplant Method",
-		"cost": 500,
+		"cost": 750,
 		"uniques": [
 			"'Invention'",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Organ Transplant Method] is not constructed by anybody> <hidden from users>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Organ Transplant Method] is not constructed by anybody> <hidden from users>",
 			"[-50]% production cost <if [Invention of Organ Transplant Method] is constructed by anybody> <hidden from users>",
-			"[+5]% [Happiness] from every [Hospital]",
-			"[+5]% [Science] from every [Hospital]",
+			"[+8]% [Happiness] from every [Hospital]",
+			"[+8]% [Science] from every [Hospital]",
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
@@ -5341,7 +5398,7 @@
 	},
 	{
 		"name": "Innovation of Civilian Navigation",
-		"cost": 500,
+		"cost": 750,
 		"uniques": [
 			"'Innovation'",
 			"Limited to [1] per Civilization <hidden from users>",
@@ -5358,6 +5415,26 @@
 		"hurryCostModifier": 0
 	},
 	{
+		"name": "Invention of Assault Rifle",
+		"cost": 750,
+		"uniques": [
+			"'Invention'",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Assault Rifle] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Assault Rifle] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Invention of Assault Rifle] is constructed by anybody> <hidden from users>",
+			"Instantly consumes [50] [Weapon Parts]",
+			"[+25]% Strength <for [{Industrial era} {Close Combat} {'Firearms'}] units>",
+			"[+10]% Strength <for [{Modern era} {Close Combat} {'Firearms'}] units>",
+			"[+10]% Strength <for [{Industrial era} {Ranged Combat} {'Firearms'}] units>",
+			"[+5]% Strength <for [{Industrial era} {Siege} {'Firearms'}] units> <when defending>",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"requiredBuilding": "Firearms Industry",
+		"requiredTech": "Ballistics",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Radar Station",
 		"maintenance": 5,
 		"cityStrength": 10,
@@ -5370,6 +5447,24 @@
 		"requiredTech": "Radar",
 		"hurryCostModifier": 25
 	},
+	{
+		"name": "Invention of Night Vision",
+		"cost": 750,
+		"uniques": [
+			"'Invention'",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Night Vision] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Night Vision] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Invention of Night Vision] is constructed by anybody> <hidden from users>",
+			"Instantly consumes [20] [Electronic Parts]",
+			"[+20]% Strength <for [Scout] units>",
+			"[+20]% Strength <when attacking> <for [Assault] units>",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"requiredBuilding": "Electronic Industry",
+		"requiredTech": "Radar",
+		"hurryCostModifier": 0
+	},
 	//Line 22
 	{
 		"name": "Nuclear Power Plant",
@@ -5381,8 +5476,19 @@
 		"uniques": [
 			"'Power Building'",
 			"Consumes [1] [Enriched Uranium] <before discovering [Nuclear Fusion]>",
-			"Consumes [0] [Enriched Uranium] <after discovering [Nuclear Fusion]>",
-			"Provides [8] [Power] <in this city>"
+			"Provides [10] [Power] <in this city>"
+		],
+		"requiredTech": "Nuclear Fission",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Nuclear Warhead Production Line",
+		"cost": 2500,
+		"maintenance": 100,
+		"uniques": [
+			"Only available <if [Nuclear Option] is constructed>",
+			"Consumes [4] [Enriched Uranium]",
+			"Provides [1] [Nuclear Warhead] <every [2] turns>"
 		],
 		"requiredTech": "Nuclear Fission",
 		"hurryCostModifier": 25
@@ -5501,7 +5607,9 @@
 		"specialistSlots": {
 			"Scientist": 1
 		},
-		"percentStatBonus":{"science":15},
+		"percentStatBonus": {
+			"science": 15
+		},
 		"uniques": [
 			"'Research Building'",
 			"[Great Scientist] is earned [+1]% faster"
@@ -5596,7 +5704,9 @@
 	{
 		"name": "Worldwide Fast Food Chain",
 		"isWonder": true,
-		"specialistSlots":{"Merchant":3},
+		"specialistSlots": {
+			"Merchant": 3
+		},
 		"uniques": [
 			"Instantly consumes [1] [Iconic Brand]",
 			"[+1 Gold] from ['Agricultural Improvement'] tiles [in all cities]",
@@ -5744,7 +5854,9 @@
 		"name": "Particle Accelerator",
 		"cost": 2000,
 		"maintenance": 50,
-		"specialistSlots":{"Scientist":3},
+		"specialistSlots": {
+			"Scientist": 3
+		},
 		"uniques": [
 			"'Research Building'",
 			"[+33]% [Science] from every [Physic Lab] <in this city>",
@@ -5801,7 +5913,6 @@
 		"requiredTech": "Satellites"
 	},
 	//Line 26
-
 	{
 		"name": "Nutripaste Factory",
 		"maintenance": 8,
@@ -5897,8 +6008,10 @@
 	{
 		"name": "Graphene Lab",
 		"maintenance": 10,
-		"production":5,
-		"specialistSlots":{"Scientist":1},
+		"production": 5,
+		"specialistSlots": {
+			"Scientist": 1
+		},
 		"uniques": [
 			"'Research Building'",
 			"Consumes [5] [Power]",
@@ -6622,6 +6735,7 @@
 	{
 		"name": "Mercantilism",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6639,6 +6753,7 @@
 	{
 		"name": "Free Trade",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6653,6 +6768,7 @@
 	{
 		"name": "Market Interventionism",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6663,12 +6779,12 @@
 			"[Gold] cost of purchasing items in cities [-25]%",
 			"[+10]% [Consumption Supply] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	{
 		"name": "Free Market Focus",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6680,12 +6796,12 @@
 			"[Gold] cost of purchasing items in cities [+33]%",
 			"[+25]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	{
 		"name": "Corporatism Focus",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6696,12 +6812,12 @@
 			"[+3 Production] from all ['Military Building'] buildings",
 			"[+10]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	{
 		"name": "Militristic Economy",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6712,12 +6828,12 @@
 			"[+100]% Production when constructing ['Static Defense'] buildings [in all cities]",
 			"[-10]% [Consumption Supply] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	{
 		"name": "Planned Economy",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6734,12 +6850,12 @@
 			"May buy ['Military Building'] buildings with [Production] [in all cities]",
 			"[-10]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	{
 		"name": "Cooperative Economy",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6751,12 +6867,12 @@
 			"[+1 Culture] from ['Extraction Improvement'] tiles [in all cities]",
 			"[+10]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	{
 		"name": "Self-management Focus",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6767,8 +6883,7 @@
 			"[-50]% [Consumption Demand] resource production",
 			"[-50]% [Consumption Supply] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	// Special buildings
 	{
@@ -7055,7 +7170,7 @@
 	//Culture stuff
 	{
 		"name": "High Culture Diversity",
-		"cost":0,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7067,7 +7182,7 @@
 	},
 	{
 		"name": "Medium Culture Diversity",
-		"cost":0,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7078,7 +7193,7 @@
 	},
 	{
 		"name": "Low Culture Diversity",
-		"cost":0,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -8563,7 +8678,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
-			"Costs [1] [Alexandrian Empire Period] <upon turn start> <when above [0] [Alexandrian Empire Period]>",
+			"Instantly consumes [1] [Alexandrian Empire Period] <upon turn start> <when above [0] [Alexandrian Empire Period]>",
 			"Triggers a [Alexander's death] event <when below [6] [Alexandrian Empire Period]> <with [10]% chance>",
 			"Triggers a [Alexander's death] event <when below [9] [Alexandrian Empire Period]> <with [50]% chance> <if [Diadochi States] is not constructed>",
 			"Will not be displayed in Civilopedia",

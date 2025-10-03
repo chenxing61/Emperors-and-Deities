@@ -30,7 +30,7 @@
 		"name": "Stewardship",
 		"uniques": [
 			"[+5]% XP gained from combat",
-			"[+1] Movement <upon ending a turn in a [Friendly Land] tile>"
+			"[+1] Movement <in [Friendly Land] tiles>"
 		],
 		"unitTypes": [
 			"Siege",
@@ -512,8 +512,7 @@
 		],
 		"uniques": [
 			"[+5]% Strength <when above [50] HP>",
-			"[+10]% Strength <vs ['Dense Formation'] units> <vs [Close Combat] units> <when attacking>",
-			"[+10]% Strength <vs ['Dense Formation'] units> <vs [Close Combat Ship] units> <when attacking>",
+			"[Target Unit] gains the [Surpressed] status for [2] turn(s)",
 			"[+15]% Strength <vs [Rider] units> <when attacking>"
 		],
 		"unitTypes": [
@@ -803,7 +802,7 @@
 			"High Speed Charge"
 		],
 		"uniques": [
-			"[+25]% Strength <vs ['Dense Formation'] units> <when attacking>"
+			"[Target Unit] gains the [Breached] status for [2] turn(s)"
 		],
 		"unitTypes": [
 			"Assault",
@@ -1807,10 +1806,7 @@
 		"uniques": [
 			"Only available <after discovering [Mass Production]>",
 			"Gain [-2] [Gold] <every [1] turns>",
-			"[+25]% Strength <when defending> <when fighting in [Open terrain] tiles> <vs [non-['Mechanised']] units>",
-			"[+15]% Strength <when defending> <when fighting in [Rough terrain] tiles> <vs [non-['Mechanised']] units>",
-			"[+15]% Strength <when attacking> <when fighting in [Open terrain] tiles> <vs [non-['Mechanised']] units>",
-			"[+7]% Strength <when attacking> <when fighting in [Rough terrain] tiles> <vs [non-['Mechanised']] units>"
+			"[Target Unit] gains the [Surpressed] status for [1] turn(s)"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -2113,7 +2109,7 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <vs ['Firearms'] units>"
+			"[+25]% Strength <vs ['Firearms'] units> <when defending>"
 		],
 		"unitTypes": [
 			"Assault"
@@ -2639,6 +2635,23 @@
 		"uniques": [
 			"[+1] XP gained from combat",
 			"Earn [17]% of the damage done to [Military] units as [Culture]"
+		]
+	},
+	// Statuses
+	// Positives
+	// Negatives
+	{
+		"name": "Breached",
+		"uniques": [
+			"[-15]% Strength <when defending>"
+		]
+	},
+	{
+		"name": "Surpressed",
+		"uniques": [
+			"[-1] Movement",
+			"[-1] Range",
+			"[-1] Sight"
 		]
 	}
 ]
