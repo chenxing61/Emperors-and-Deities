@@ -377,13 +377,6 @@
                 ]
             },
             {
-                "text": "Check Current Status",
-                "uniques": [
-                    "Triggers a [Present Current Status] event",
-                    "Play [setup] sound <hidden from users>"
-                ]
-            },
-            {
                 "text": "Did you know that this mod has tutorial pages in civilopedia's tutorial section?",
                 "uniques": [
                     "Comment [You may want to check them out.]",
@@ -573,7 +566,7 @@
             {
                 "text": "Our empire lasts onto another era!",
                 "uniques": [
-                    "Only available <when number of [Influence] is more than [[Influence Limit]/2]> <if [Struggle] is not constructed> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <while the empire is happy>",
+                    "Only available <when number of [Influence] is more than [[Influence Limit]*0.75]> <if [Struggle] is not constructed> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <while the empire is happy>",
                     "Comment [Our empire survives... Maybe we can reform it continuesly unto forever.]",
                     "Only available <if [Unified] is constructed>",
                     "Remove ['United'] [in all cities] <hidden from users>",
@@ -1318,7 +1311,6 @@
             {
                 "text": "I see",
                 "uniques": [
-                    "Triggers a [Enact Policies] event <hidden from users>"
                 ]
             }
         ]

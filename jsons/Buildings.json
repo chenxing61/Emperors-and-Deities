@@ -42,6 +42,18 @@
 		]
 	},
 	{
+		"name": "Show Status",
+		"cost": 0,
+		"uniques": [
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Comment [Act upon internal affairs as if you are ruling a country. For examples, you can disband levies to mitigate the downside and increase stability of the civilization.]",
+			"Only available <in [Capital] cities>",
+			"Play [setup] sound <hidden from users>",
+			"Remove [Show Status] [in this city] <hidden from users>",
+			"Triggers a [Present Current Status] event"
+		]
+	},
+	{
 		"name": "Hide-Show Strategic Resources",
 		"cost": 0,
 		"uniques": [
@@ -1153,6 +1165,9 @@
 		},
 		"uniques": [
 			"'Political Building'",
+			"Only available <before adopting [Unity]> <for [Europa] Civilizations> <hidden from users>",
+			"Only available <before adopting [Unity]> <for [Mediterranean] Civilizations> <hidden from users>",
+			"Only available <before adopting [Unity]> <for [Central and West Asia] Civilizations> <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Writing",
@@ -1180,6 +1195,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"Only available <if [SPQR] is not constructed> <for [Mediterranean] Civilizations> <hidden from users>",
 			"[+1]% [Gold] from Trade Routes",
 			"[+1]% [Gold] from Trade Routes <if [Captial of Mountain Range] is constructed> <hidden from users>",
 			"[+1]% growth [in all cities]",
@@ -7308,8 +7324,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Agreement'",
-			"Provides [10] [Influence Limit]",
-			"Consumes [1] [Influence]",
+			"Provides [5] [Influence Limit]",
 			"Enables Research agreements",
 			"[-10]% Culture cost of adopting new Policies",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -7321,6 +7336,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Agreement'",
+			"Provides [5] [Influence Limit]",
 			"Enables Defensive Pacts",
 			"Enables Open Borders agreements",
 			"[+25]% Production when constructing [Military] units [in all cities]",
@@ -7333,8 +7349,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Agreement'",
-			"Provides [10] [Influence Limit]",
-			"Consumes [1] [Influence]",
+			"Provides [5] [Influence Limit]",
 			"[+18]% Production when constructing ['Infrastructure'] buildings [in all cities]",
 			"[-25]% maintenance on road & railroads",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -7348,7 +7363,6 @@
 			"Unsellable",
 			"'Agreement'",
 			"Provides [10] [Influence Limit]",
-			"Consumes [1] [Influence]",
 			"Enables Research agreements",
 			"[-15]% Culture cost of adopting new Policies",
 			"Science gained from research agreements [+50]%",
@@ -7362,6 +7376,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Agreement'",
+			"Provides [10] [Influence Limit]",
 			"Enables Defensive Pacts",
 			"Enables Open Borders agreements",
 			"[+25]% Production when constructing [Military] units [in all cities]",
@@ -7375,7 +7390,6 @@
 			"Unsellable",
 			"'Agreement'",
 			"Provides [10] [Influence Limit]",
-			"Consumes [1] [Influence]",
 			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities]",
 			"[-50]% maintenance on road & railroads",
 			"Moves to new capital when capital changes <hidden from users>"
