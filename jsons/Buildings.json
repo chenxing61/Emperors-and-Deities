@@ -1533,9 +1533,10 @@
 		"name": "Bathhouse",
 		"maintenance": 3,
 		"culture": 1,
-		"happiness": 2,
+		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"[10]% Food is carried over after population increases [in this city]"
 		],
 		"requiredTech": "Iron Working",
@@ -2827,10 +2828,11 @@
 	{
 		"name": "Circus",
 		"cost": 50,
-		"happiness": 2,
+		"happiness": 1,
 		"gold": 1,
 		"uniques": [
-			"'Entertainment Building'"
+			"'Entertainment Building'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>"
 		],
 		"requiredBuilding": "Town Square",
 		"requiredTech": "Stirrup",
@@ -2877,13 +2879,14 @@
 	{
 		"name": "Theatre",
 		"maintenance": 3,
-		"happiness": 2,
+		"happiness": 1,
 		"percentStatBonus": {
 			"culture": 10,
 			"gold": 5
 		},
 		"uniques": [
 			"'Entertainment Building'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Town Square",
@@ -2894,7 +2897,7 @@
 		"name": "Altar",
 		"cost": 0,
 		"faith": 3,
-		"happiness": 2,
+		"happiness": 1,
 		"percentStatBonus": {
 			"faith": 5,
 			"gold": -5,
@@ -2902,6 +2905,7 @@
 		},
 		"uniques": [
 			"'Worship Place'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"Unbuildable <hidden from users>",
 			"Only available <when religion is enabled>"
 		],
@@ -3169,9 +3173,9 @@
 		"name": "Temple of Thousand Statues",
 		"isWonder": true,
 		"culture": 3,
-		"happiness": 3,
+		"happiness": 1,
 		"greatPersonPoints": {
-			"Great Artist": 1
+			"Great Artist": 2
 		},
 		"uniques": [
 			"Only available <before adopting [Monotheism]>",
@@ -3315,7 +3319,7 @@
 	{
 		"name": "Cathedral of Mercy",
 		"faith": 4,
-		"happiness": 12,
+		"happiness": 10,
 		"greatPersonPoints": {
 			"Great Merchant": 1
 		},
@@ -3947,7 +3951,7 @@
 	{
 		"name": "Fire Station",
 		"maintenance": 5,
-		"happiness": 2,
+		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
 			"[-10]% Unhappiness from [Population] [in this city]",
@@ -4232,7 +4236,7 @@
 		"name": "Hospital",
 		"cost": 500,
 		"maintenance": 5,
-		"happiness": 3,
+		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
 			"[-10]% Unhappiness from [Population] [in this city]",
@@ -4286,13 +4290,13 @@
 		"name": "Holiday Resort",
 		"cost": 200,
 		"maintenance": 5,
-		"happiness": 2,
+		"happiness": 1,
 		"percentStatBonus": {
-			"gold": 5,
-			"happiness": 5
+			"gold": 5
 		},
 		"uniques": [
 			"'Entertainment Building'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"[+1 Culture] from all [Neolithic era] buildings <in this city>"
 		],
 		"requiredTech": "Steam Power",
@@ -4523,7 +4527,7 @@
 	{
 		"name": "Train Station",
 		"maintenance": 10,
-		"happiness": 2,
+		"happiness": 1,
 		"percentStatBonus": {
 			"food": 5,
 			"production": 10,
@@ -4532,6 +4536,7 @@
 		"uniques": [
 			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
 			"'Infrastructure'",
+			"[+1 Happiness] <in cities with at least [20] [Population]>",
 			"[+1]% [Gold] from Trade Routes",
 			"[+2]% growth [in all cities]",
 			"[-5]% maintenance cost for [all] buildings [in this city]"
@@ -4735,7 +4740,6 @@
 		"name": "Tower of Curving Alloy",
 		"isWonder": true,
 		"culture": 5,
-		"happiness": 3,
 		"greatPersonPoints": {
 			"Great Artist": 5
 		},
@@ -4821,10 +4825,11 @@
 	{
 		"name": "Highway Network",
 		"maintenance": 5,
-		"happiness": 2,
+		"happiness": 1,
 		"uniques": [
 			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
 			"'Infrastructure'",
+			"[+1 Happiness] <in cities with at least [20] [Population]>",
 			"[+1]% [Gold] from Trade Routes",
 			"[+1 Production] from ['Infrastructure Improvement'] tiles [in this city]"
 		],
@@ -5042,7 +5047,7 @@
 	{
 		"name": "Government Complex",
 		"maintenance": 10,
-		"happiness": 3,
+		"happiness": 1,
 		"culture": 2,
 		"cityStrength": 5,
 		"specialistSlots": {
@@ -5050,6 +5055,7 @@
 		},
 		"uniques": [
 			"'Political Building'",
+			"[+1 Happiness] <in cities with at least [20] [Population]>",
 			"[+15]% Production when constructing ['Infrastructure'] buildings [in this city]",
 			"[-20]% Unhappiness from [Population] [in this city] <in cities with a [Anarchist Ruling]>",
 			"Destroyed when the city is captured"
@@ -5208,9 +5214,9 @@
 		"name": "Greenhouse",
 		"maintenance": 5,
 		"percentStatBonus": {
-			"food": 33
+			"food": 25
 		},
-		"happiness": 3,
+		"happiness": 1,
 		"uniques": [
 			"'Agricultural Building'",
 			"Only available <in cities without a [Nutripaste Factory]>"
@@ -5293,7 +5299,7 @@
 	{
 		"name": "Stadium",
 		"maintenance": 3,
-		"happiness": 2,
+		"happiness": 1,
 		"uniques": [
 			"'Entertainment Building'",
 			"[-10]% Unhappiness from [Population] [in this city]"
@@ -5613,7 +5619,7 @@
 	{
 		"name": "Uranium Enrichment Facility",
 		"cost": 1200,
-		"maintenance": 10,
+		"maintenance": 50,
 		"specialistSlots": {
 			"Scientist": 1
 		},
@@ -5627,7 +5633,7 @@
 	},
 	{
 		"name": "Cellular Network",
-		"maintenance": 5,
+		"maintenance": 15,
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
@@ -6413,12 +6419,13 @@
 	{
 		"name": "Arena",
 		"maintenance": 3,
-		"happiness": 2,
+		"happiness": 1,
 		"culture": 1,
 		"uniques": [
 			"'Entertainment Building'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Militant]>",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"[-10]% Unhappiness from [Population] [in this city]",
 			"Destroyed when the city is captured"
 		],
@@ -6468,9 +6475,10 @@
 	},
 	{
 		"name": "Jousting Place",
-		"happiness": 2,
+		"happiness": 1,
 		"uniques": [
 			"'Entertainment Building'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"[-5]% Unhappiness from [Population] [in this city]",
 			"Only available <after adopting [Feudalism]>"
@@ -6502,7 +6510,6 @@
 	},
 	{
 		"name": "Chartered Company",
-		"maintenance": 2,
 		"happiness": -2,
 		"percentStatBonus": {
 			"gold": 25,
@@ -7855,7 +7862,7 @@
 		"name": "Honor Bound Territory",
 		"uniqueTo": "East Asia",
 		"cost": 1,
-		"happiness": 2,
+		"happiness": 1,
 		"uniques": [
 			"Can only be built <in [Annexed] cities>",
 			"Only available <if [Great Qin] is constructed in all [Capital] cities>",
