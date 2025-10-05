@@ -354,7 +354,7 @@
 	},
 	{
 		"name": "Business Expansion",
-		"cost": 180,
+		"cost": 280,
 		"uniques": [
 			"Unsellable",
 			"'Expansion'",
@@ -364,7 +364,8 @@
 			"Only available <in cities without a [Trading Post]>",
 			"Gain a free [Hunter's Hut] [in this city]", //20
 			"Gain a free [Crops Market] [in this city]", //40
-			"Gain a free [Trading Post] [in this city]"
+			"Gain a free [Trading Post] [in this city]", //100
+			"Gain a free [Warehouse] [in this city]"
 		], //100
 		"requiredTech": "Diplomacy",
 		"hurryCostModifier": -25
@@ -1199,7 +1200,9 @@
 			"[+1]% [Gold] from Trade Routes",
 			"[+1]% [Gold] from Trade Routes <if [Captial of Mountain Range] is constructed> <hidden from users>",
 			"[+1]% growth [in all cities]",
-			"[-5]% maintenance cost for [all] buildings [in this city]"
+			"[-5]% maintenance cost for [all] buildings [in this city]",
+			"All newly-trained [Settler] units [in this city] receive the [Cart] promotion",
+			"All newly-trained [Pioneer] units [in this city] receive the [Cart] promotion"
 		],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
@@ -1811,6 +1814,7 @@
 			"'Military Building'",
 			"'Marine Infrastructure'",
 			"[+25]% Production when constructing [Water] units [in this city]",
+			"New [Civil Ship] units start with [10] XP [in this city]",
 			"Destroyed when the city is captured",
 			"Must be next to [Coast]"
 		],
@@ -1991,6 +1995,19 @@
 			"'Economic Building'",
 			"Provides [1] [Mercenary Contract]",
 			"[+1 Production, +1 Gold] from [Luxury resource] tiles [in this city]"
+		],
+		"requiredBuilding": "Road Network",
+		"requiredTech": "Construction",
+		"hurryCostModifier": 15
+	},
+	{
+		"name": "Warehouse",
+		"maintenance":2,
+		"specialistSlots":{"Labourer":3},
+		"uniques": [
+			"'Economic Building'",
+			"[+1]% Production when constructing ['Light Industry'] buildings [in all cities]",
+			"New [Civilian] units start with [10] XP [in this city]"
 		],
 		"requiredBuilding": "Road Network",
 		"requiredTech": "Construction",
@@ -3250,7 +3267,7 @@
 		"maintenance": 2,
 		"uniques": [
 			"'Military Building'",
-			"Comment [Enables you to build ['Gunpowder'] Units]",
+			"Comment [Enables you to build ['Firearms'] Units]",
 			"New ['Firearms'] units start with [10] XP [in this city]",
 			"[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>",
 			"Destroyed when the city is captured"
@@ -3472,7 +3489,9 @@
 		"uniques": [
 			"'Light Industry'",
 			"Provides [1] [Mercenary Contract]",
-			"[+1 Production] from all ['Light Industry'] buildings <in this city>"
+			"[+1 Production] from all ['Light Industry'] buildings <in this city>",
+			"All newly-trained [Settler] units [in this city] receive the [Wagon] promotion",
+			"All newly-trained [Pioneer] units [in this city] receive the [Wagon] promotion"
 		],
 		"requiredBuilding": "City Hall",
 		"requiredTech": "Guilds",
@@ -4494,7 +4513,8 @@
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]>",
 			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed>",
-			"[+1 Production] from every [Engineer] <in this city>"
+			"[+1 Production] from every [Engineer] <in this city>",
+			"All newly-trained [Pioneer] units [in this city] receive the [Automobile] promotion"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Railroads",
@@ -6485,8 +6505,8 @@
 		"maintenance": 2,
 		"happiness": -2,
 		"percentStatBonus": {
-			"gold": 33,
-			"production": 25
+			"gold": 25,
+			"production": 10
 		},
 		"specialistSlots": {
 			"Governor": 1
@@ -6494,6 +6514,7 @@
 		"uniques": [
 			"'Economic Building'",
 			"'Political Building'",
+			"Provides 1 extra copy of each improved luxury resource near this City",
 			"Can only be built <in [Annexed] cities>",
 			"Only available <after adopting [Imperialism]>",
 			"Destroyed when the city is captured"

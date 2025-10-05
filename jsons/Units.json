@@ -9,6 +9,7 @@
 			"Can build [Land] improvements on tiles",
 			"Can build [Lakes] improvements on tiles",
 			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
+			"[This Unit] gains [3] XP <upon building a [All] improvement>",
 			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Automation is a primary action"
 		],
@@ -20,16 +21,18 @@
 		"name": "Mechanised Worker",
 		"cost": 210,
 		"unitType": "Civilian",
-		"movement": 4,
+		"movement": 3,
 		"uniques": [
 			"Only available <if [Invention of Professional Vehicles] is constructed>",
 			"'Mechanised'",
 			"Costs [5] [Vehicle Parts]",
-			"[-50]% construction time for [All] improvements",
+			"[-25]% construction time for [All] improvements",
 			"Can build [Land] improvements on tiles",
 			"Can build [Lakes] improvements on tiles",
+			"[This Unit] gains [3] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
+		"promotions":["Automobile"],
 		"requiredTech": "Combustion",
 		"hurryCostModifier": 25
 	},
@@ -44,6 +47,7 @@
 			"Gain [1]-[3] [Food] <upon ending a turn in a [Coast] tile>",
 			"[+1] Movement <after discovering [Shipbuilding]>",
 			"Can build [Water] improvements on tiles",
+			"[This Unit] gains [3] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
 		"upgradesTo": "Modern Work Ship",
@@ -52,8 +56,8 @@
 	},
 	{
 		"name": "Expeditionary Work Ship",
-		"cost": 100,
 		"unitType": "Civil Ship",
+		"cost": 100,
 		"movement": 3,
 		"uniques": [
 			"'Sailing Ship'",
@@ -67,12 +71,13 @@
 	},
 	{
 		"name": "Modern Work Ship",
-		"cost": 175,
 		"unitType": "Civil Ship",
+		"cost": 175,
 		"movement": 4,
 		"uniques": [
-			"[-50]% construction time for [All] improvements",
+			"[-25]% construction time for [All] improvements",
 			"Can build [Water] improvements on tiles",
+			"[This Unit] gains [3] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
 		"requiredBuilding": "Port",
@@ -81,8 +86,8 @@
 	},
 	{
 		"name": "Settler",
-		"cost": 100,
 		"unitType": "Civilian",
+		"cost": 100,
 		"movement": 2,
 		"uniques": [
 			"Founds a new city <by consuming this unit>",
@@ -98,13 +103,12 @@
 	},
 	{
 		"name": "Pioneer",
-		"cost": 200,
 		"unitType": "Civilian",
+		"cost": 200,
 		"movement": 3,
 		"uniques": [
 			"Founds a new city <by consuming this unit>",
 			"Excess Food converted to Production when under construction",
-			"[+1] Movement <after discovering [Combustion]>",
 			"[+1] Sight",
 			"Requires at least [1] population"
 		],
@@ -114,8 +118,8 @@
 	///line 0
 	{
 		"name": "Wanderer",
-		"cost": 25,
 		"unitType": "Scout",
+		"cost": 25,
 		"movement": 2,
 		"strength": 5,
 		"uniques": [
@@ -1518,7 +1522,7 @@
 		"rangedStrength": 23,
 		"range": 2,
 		"uniques": [
-			"Can transform to [Three-masted Ship] <removing the [Mercenary Habit] promotion/status> <removing the [Merchant] promotion/status> <after discovering [Cartography]> <when above [0] [Standing Army Maintenance]>",
+			"Can transform to [Three-masted Ship] <removing the [Mercenary Habit] promotion/status> <removing the [Caravan Group] promotion/status> <after discovering [Cartography]> <when above [0] [Standing Army Maintenance]>",
 			"'Mercenary Army'",
 			"'Sailing Ship'",
 			"'Dense Formation'",
@@ -1528,7 +1532,7 @@
 		],
 		"promotions": [
 			"Mercenary Habit",
-			"Merchant"
+			"Caravan Group"
 		],
 		"requiredTech": "Shipbuilding",
 		"obsoleteTech": "Monocular",
@@ -4625,8 +4629,8 @@
 		"name": "Outlaws",
 		"unitType": "Ranged Combat",
 		"movement": 3,
-		"strength": 29,
-		"rangedStrength": 32,
+		"strength": 23,
+		"rangedStrength": 29,
 		"uniqueTo": "Barbarians",
 		"uniques": [
 			"'Barbaric Army'",
