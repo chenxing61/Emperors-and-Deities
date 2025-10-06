@@ -30,7 +30,7 @@
 		"name": "Stewardship",
 		"uniques": [
 			"[+5]% XP gained from combat",
-			"[+1] Movement <when fighting in [Friendly Land] tiles>"
+			"[+1] Movement <in [Friendly Land] tiles>"
 		],
 		"unitTypes": [
 			"Siege",
@@ -425,7 +425,7 @@
 		],
 		"uniques": [
 			"[+10]% Strength <when defending>",
-			"[+5]% Strength <vs ['Skirmishers']> <when defending>"
+			"[+5]% Strength <vs ['Skirmishers']>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -493,8 +493,8 @@
 			"Hardened"
 		],
 		"uniques": [
-			"[+5]% Strength <when attacking>",
-			"[+10]% Strength <when attacking> <vs ['Dense Formation'] units>"
+			"[+10]% Strength <when attacking>",
+			"[+5]% Strength <when attacking> <vs ['Dense Formation'] units> <when fighting in [Open terrain] tiles>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -512,9 +512,8 @@
 		],
 		"uniques": [
 			"[+5]% Strength <when above [50] HP>",
-			"[+10]% Strength <vs [Close Combat] units> <when attacking>",
-			"[+10]% Strength <vs [Close Combat Ship] units> <when attacking>",
-			"[+10]% Strength <vs [Rider] units> <when attacking>"
+			"[Target Unit] gains the [Surpressed] status for [2] turn(s)",
+			"[+15]% Strength <vs [Rider] units> <when attacking>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -531,7 +530,7 @@
 			"Barrage"
 		],
 		"uniques": [
-			"[1] additional attacks per turn <if it hasn't used other actions yet>"
+			"[1] additional attacks per turn"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -548,9 +547,9 @@
 			"Ammo Supply"
 		],
 		"uniques": [
-			"[+15]% Strength <when adjacent to a [Ranged Combat] unit>",
-			"[+15]% Strength <when adjacent to a [Ranged Combat Ship] unit>",
-			"[+15]% Strength <when adjacent to a [Siege] unit>"
+			"[+25]% Strength <when adjacent to a [Ranged Combat] unit>",
+			"[+25]% Strength <when adjacent to a [Ranged Combat Ship] unit>",
+			"[+10]% Strength <when adjacent to a [Siege] unit>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -631,7 +630,7 @@
 		],
 		"uniques": [
 			"[+5]% Strength",
-			"[+15]% Strength <when adjacent to a [Close Combat] unit>"
+			"[+10]% Strength <when adjacent to a [Close Combat] unit> <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -647,8 +646,8 @@
 			"Intensive Doctrine"
 		],
 		"uniques": [
-			"[+5]% Strength",
-			"[+10]% Strength <vs ['Dense Formation'] units>"
+			"[+10]% Strength <when adjacent to a [Close Combat] unit> <when defending>",
+			"[+10]% Strength <when adjacent to a [Close Combat] unit> <vs ['Dense Formation'] units>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -664,8 +663,10 @@
 			"Formation"
 		],
 		"uniques": [
-			"[+25]% Strength <vs ['Mounted'] units>",
-			"[+10]% Strength <vs [Ranged Combat] units><when defending>"
+			"[+15]% Strength <vs ['Mounted'] units>",
+			"[+15]% Strength <vs ['Mechanised'] units>",
+			"[+33]% Strength <vs [Ranged Combat] units> <when defending>",
+			"[+33]% Strength <vs [Ranged Combat Ship] units> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -681,10 +682,8 @@
 			"Swift Formation"
 		],
 		"uniques": [
-			"[+15]% Strength <vs ['Noble Army'] units>",
-			"[+10]% XP gained from combat",
-			"[This Unit] upgrades for free",
-			"[-25]% Gold cost of upgrading"
+			"[+25]% Strength <vs [Assault] units> <when attacking>",
+			"[+50]% Strength <vs [Assault] units> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -718,8 +717,9 @@
 			"Skirmishing Doctrine"
 		],
 		"uniques": [
-			"[-5]% Strength for enemy [Military] units in adjacent [All] tiles",
-			"[+50]% to Flank Attack bonuses"
+			"[-5]% Strength for enemy [Military] units in adjacent [Land] tiles",
+			"[-10]% Strength for enemy [Military] units in adjacent [Water] tiles",
+			"[+33]% to Flank Attack bonuses"
 		],
 		"unitTypes": [
 			"Scout",
@@ -731,7 +731,7 @@
 		"row": 2
 	},
 	{
-		"name": "Land Mobility",
+		"name": "Mobility First",
 		"prerequisites": [
 			"Flanking Tactic"
 		],
@@ -750,7 +750,7 @@
 	{
 		"name": "Pilliging",
 		"prerequisites": [
-			"Land Mobility"
+			"Mobility First"
 		],
 		"uniques": [
 			"No movement cost to pillage",
@@ -802,7 +802,7 @@
 			"High Speed Charge"
 		],
 		"uniques": [
-			"[+25]% Strength <vs ['Dense Formation'] units> <when attacking>"
+			"[Target Unit] gains the [Breached] status for [2] turn(s)"
 		],
 		"unitTypes": [
 			"Assault",
@@ -819,7 +819,7 @@
 		"uniques": [
 			"[1] additional attacks per turn",
 			"Unit will heal every turn, even if it performs an action",
-			"[-10] HP when healing"
+			"[-5] HP when healing"
 		],
 		"unitTypes": [
 			"Assault",
@@ -834,13 +834,13 @@
 			"Hardened"
 		],
 		"uniques": [
-			"[+1] Movement <when fighting in [Coast] tiles>"
+			"[+1] Movement <when fighting in [Coast] tiles>",
+			"Transfer Movement to [Civil Ship]"
 		],
 		"unitTypes": [
 			"Close Combat Ship",
 			"Ranged Combat Ship",
-			"Carrier",
-			"Submarine"
+			"Carrier"
 		],
 		"column": 14,
 		"row": 1
@@ -857,8 +857,7 @@
 		"unitTypes": [
 			"Close Combat Ship",
 			"Ranged Combat Ship",
-			"Carrier",
-			"Submarine"
+			"Carrier"
 		],
 		"column": 14,
 		"row": 2
@@ -875,8 +874,7 @@
 		"unitTypes": [
 			"Close Combat Ship",
 			"Ranged Combat Ship",
-			"Carrier",
-			"Submarine"
+			"Carrier"
 		],
 		"column": 14,
 		"row": 3
@@ -892,8 +890,7 @@
 		"unitTypes": [
 			"Close Combat Ship",
 			"Ranged Combat Ship",
-			"Carrier",
-			"Submarine"
+			"Carrier"
 		],
 		"column": 14,
 		"row": 4
@@ -1143,6 +1140,118 @@
 		"column": 18,
 		"row": 4
 	},
+	{
+		"name": "Development Doctrine",
+		"uniques": [
+			"Only available <when above [125] [Gold]> <(modified by game speed)>",
+			"Gain [-125] [Gold]",
+			"This Promotion is free",
+			"[-10]% construction time for [All] improvements"
+		],
+		"unitTypes": [
+			"Civilian",
+			"Civil Ship"
+		],
+		"column": 19,
+		"row": 0
+	},
+	{
+		"name": "Agriculture Proficiency",
+		"prerequisites": [
+			"Development Doctrine"
+		],
+		"uniques": [
+			"[-10]% construction time for ['Agricultural Improvement'] improvements",
+			"Gain [2] [Food] <upon ending a turn in a ['Agricultural Improvement'] tile>"
+		],
+		"unitTypes": [
+			"Civilian",
+			"Civil Ship"
+		],
+		"column": 19,
+		"row": 1
+	},
+	{
+		"name": "Strike the Earth",
+		"prerequisites": [
+			"Development Doctrine"
+		],
+		"uniques": [
+			"[-10]% construction time for ['Extraction Improvement'] improvements",
+			"Gain [2] [Production] <upon ending a turn in a ['Extraction Improvement'] tile>"
+		],
+		"unitTypes": [
+			"Civilian"
+		],
+		"column": 19,
+		"row": 2
+	},
+	{
+		"name": "Lumber Expert",
+		"prerequisites": [
+			"Development Doctrine"
+		],
+		"uniques": [
+			"[-10]% construction time for ['Lumber Improvement'] improvements",
+			"Gain [2] [Production] <upon ending a turn in a ['Lumber Improvement'] tile>",
+			"Gain [1] [Gold] <upon ending a turn in a ['Lumber Improvement'] tile>"
+		],
+		"unitTypes": [
+			"Civilian"
+		],
+		"column": 19,
+		"row": 3
+	},
+	{
+		"name": "Caravan Group",
+		"prerequisites": [
+			"Development Doctrine"
+		],
+		"uniques": [
+			"[-10]% construction time for ['Infrastructure Improvement'] improvements",
+			"[-10]% Strength <vs ['Standing Army'] units>",
+			"Gain [4] [Gold] <upon ending a turn in a [City center] tile>",
+			"Gain [4] [Gold] <upon ending a turn in a [Civilian Market] tile>"
+		],
+		"unitTypes": [
+			"Civilian",
+			"Civil Ship"
+		],
+		"column": 19,
+		"row": 4
+	},
+	{
+		"name": "Oversea Connections",
+		"prerequisites": [
+			"Development Doctrine"
+		],
+		"uniques": [
+			"[-10]% construction time for ['Water Improvement'] improvements",
+			"Gain [1] [Gold] <upon ending a turn in a ['Water Improvement'] tile>",
+			"Gain [1] [Food] <upon ending a turn in a ['Water Improvement'] tile>"
+		],
+		"unitTypes": [
+			"Civil Ship"
+		],
+		"column": 19,
+		"row": 5
+	},
+	{
+		"name": "Artisanal Dedication",
+		"prerequisites": [
+			"Development Doctrine"
+		],
+		"uniques": [
+			"[-10]% construction time for ['Policy Improvement'] improvements",
+			"Gain [3] [Culture] <upon ending a turn in a ['Policy Improvement'] tile>"
+		],
+		"unitTypes": [
+			"Civilian",
+			"Civil Ship"
+		],
+		"column": 19,
+		"row": 6
+	},
 	///Equipments
 	{
 		"name": "Primitive Arms",
@@ -1159,7 +1268,7 @@
 		"uniques": [
 			"This Promotion is free"
 		],
-		"column": 19,
+		"column": 23,
 		"row": 0
 	},
 	{
@@ -1168,7 +1277,7 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+33]% Strength <vs [{non-[Wounded]} {Close Combat} {'Edged Weapons'}] units> <when attacking> <before the [Renaissance era]>"
+			"[+40]% Strength <vs [{non-[Wounded]} {Close Combat} {'Edged Weapons'}] units> <when attacking> <before the [Renaissance era]>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1176,7 +1285,7 @@
 			"Scout",
 			"Rider"
 		],
-		"column": 19,
+		"column": 23,
 		"row": 1
 	},
 	{
@@ -1185,7 +1294,8 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+8]% Strength <when attacking> <vs ['Edged Weapons'] units>"
+			"[+15]% Strength <when attacking> <vs ['Edged Weapons'] units>",
+			"[+5]% Strength <when attacking> <vs [Assault] units>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1193,7 +1303,7 @@
 			"Rider",
 			"Assault"
 		],
-		"column": 19,
+		"column": 23,
 		"row": 2
 	},
 	{
@@ -1202,15 +1312,15 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+20]% Strength <vs ['Dense Formation'] units> <when attacking> <before the [Medieval era]>",
-			"[+10]% Strength <vs ['Dense Formation'] units> <when attacking> <starting from the [Medieval era]><before the [Renaissance era]>"
+			"[+25]% Strength <vs ['Dense Formation'] units> <when attacking> <before the [Medieval era]>",
+			"[+10]% Strength <vs ['Dense Formation'] units> <when attacking> <starting from the [Medieval era]> <before the [Imperial era]>"
 		],
 		"unitTypes": [
 			"Close Combat",
 			"Ranged Combat",
 			"Scout"
 		],
-		"column": 19,
+		"column": 23,
 		"row": 3
 	},
 	{
@@ -1219,6 +1329,7 @@
 			"Primitive Arms"
 		],
 		"uniques": [
+			"[+5]% Strength <when fighting in [Rough terrain] tiles>",
 			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Renaissance era]>"
 		],
 		"unitTypes": [
@@ -1228,8 +1339,25 @@
 			"Rider",
 			"Assault"
 		],
-		"column": 19,
+		"column": 23,
 		"row": 4
+	},
+	{
+		"name": "Extra Oarers",
+		"prerequisites": [
+			"Primitive Arms"
+		],
+		"uniques": [
+			"[+15]% Strength <vs ['Galley'] units> <when attacking>",
+			"[+18]% Strength <vs ['Galley'] units> <when attacking> <when fighting in [Lakes] tiles>",
+			"[+18]% Strength <vs ['Galley'] units> <when attacking> <when fighting in [Atoll] tiles>"
+		],
+		"unitTypes": [
+			"Close Combat Ship",
+			"Ranged Combat Ship"
+		],
+		"column": 23,
+		"row": 5
 	},
 	{
 		"name": "Classical Arms",
@@ -1244,9 +1372,10 @@
 			"Ranged Combat Ship"
 		],
 		"uniques": [
+			"This Promotion is free <if [Military Blacksmith] is constructed>",
 			"Only available <starting from the [Classical era]>"
 		],
-		"column": 20,
+		"column": 24,
 		"row": 0
 	},
 	{
@@ -1261,7 +1390,7 @@
 		"unitTypes": [
 			"Close Combat"
 		],
-		"column": 20,
+		"column": 24,
 		"row": 1
 	},
 	{
@@ -1277,7 +1406,7 @@
 			"Rider",
 			"Assault"
 		],
-		"column": 20,
+		"column": 24,
 		"row": 2
 	},
 	{
@@ -1292,7 +1421,7 @@
 			"Ranged Combat",
 			"Scout"
 		],
-		"column": 20,
+		"column": 24,
 		"row": 3
 	},
 	{
@@ -1307,8 +1436,19 @@
 			"Ranged Combat",
 			"Rider"
 		],
-		"column": 20,
+		"column": 24,
 		"row": 4
+	},
+	{
+		"name": "Vehicle Upgrades",
+		"unitTypes": [
+			"Civilian"
+		],
+		"uniques": [
+			"This Promotion is free"
+		],
+		"column": 25,
+		"row": 0
 	},
 	{
 		"name": "Strip Armour",
@@ -1325,7 +1465,7 @@
 			"Close Combat",
 			"Assault"
 		],
-		"column": 21,
+		"column": 25,
 		"row": 1
 	},
 	{
@@ -1341,7 +1481,7 @@
 			"Scout",
 			"Rider"
 		],
-		"column": 21,
+		"column": 25,
 		"row": 2
 	},
 	{
@@ -1358,8 +1498,24 @@
 			"Siege",
 			"Close Combat Ship"
 		],
-		"column": 21,
+		"column": 25,
 		"row": 3
+	},
+	{
+		"name": "Shield Wall",
+		"prerequisites": [
+			"Classical Arms"
+		],
+		"uniques": [
+			"[-5]% Strength <when fighting in [Rough terrain] tiles> <when attacking> <before the [Imperial era]>",
+			"[+20]% Strength <vs [{'Edged Weapons'} {'Mounted'}] units> <when defending> <before the [Imperial era]>",
+			"[+10]% Strength <vs ['Siege Weapons'] units> <when defending> <before the [Imperial era]>"
+		],
+		"unitTypes": [
+			"Close Combat"
+		],
+		"column": 25,
+		"row": 4
 	},
 	{
 		"name": "Sharpnel Rounds",
@@ -1367,14 +1523,14 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns>",
+			"Gain [-3] [Gold] <every [1] turns>",
 			"[+33]% Strength <vs ['Dense Formation'] units> <when attacking>"
 		],
 		"unitTypes": [
 			"Siege",
 			"Ranged Combat Ship"
 		],
-		"column": 22,
+		"column": 26,
 		"row": 1
 	},
 	{
@@ -1383,15 +1539,28 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns>",
+			"Gain [-3] [Gold] <every [1] turns>",
 			"[+33]% Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
 			"Siege",
 			"Ranged Combat Ship"
 		],
-		"column": 22,
+		"column": 26,
 		"row": 2
+	},
+	{
+		"name": "Cart",
+		"prerequisites":["Vehicle Upgrades"],
+		"uniques": [
+			"Only available <after discovering [Horse Collar]> <before discovering [Machinery]>",
+			"[+1] Movement <in [Open terrain] tiles>"
+		],
+		"unitTypes": [
+			"Civilian"
+		],
+		"column": 26,
+		"row": 3
 	},
 	{
 		"name": "Medieval Arms",
@@ -1406,9 +1575,10 @@
 			"Ranged Combat Ship"
 		],
 		"uniques": [
+			"This Promotion is free <if [Armour Workshop] is constructed>",
 			"Only available <starting from the [Medieval era]>"
 		],
-		"column": 23,
+		"column": 27,
 		"row": 0
 	},
 	{
@@ -1425,7 +1595,7 @@
 			"Rider",
 			"Assault"
 		],
-		"column": 23,
+		"column": 27,
 		"row": 1
 	},
 	{
@@ -1442,7 +1612,7 @@
 			"Rider",
 			"Assault"
 		],
-		"column": 23,
+		"column": 27,
 		"row": 2
 	},
 	{
@@ -1458,7 +1628,7 @@
 			"Ranged Combat",
 			"Scout"
 		],
-		"column": 24,
+		"column": 28,
 		"row": 1
 	},
 	{
@@ -1474,7 +1644,7 @@
 			"Ranged Combat"
 		],
 		"requiredTech": "Engineering",
-		"column": 24,
+		"column": 28,
 		"row": 2
 	},
 	{
@@ -1490,7 +1660,7 @@
 		"unitTypes": [
 			"Ranged Combat"
 		],
-		"column": 24,
+		"column": 28,
 		"row": 3
 	},
 	{
@@ -1509,7 +1679,7 @@
 			"Rider",
 			"Assault"
 		],
-		"column": 25,
+		"column": 29,
 		"row": 1
 	},
 	{
@@ -1528,7 +1698,7 @@
 			"Ranged Combat",
 			"Scout"
 		],
-		"column": 25,
+		"column": 29,
 		"row": 2
 	},
 	{
@@ -1542,7 +1712,7 @@
 		"unitTypes": [
 			"Ranged Combat"
 		],
-		"column": 25,
+		"column": 29,
 		"row": 3
 	},
 	{
@@ -1556,7 +1726,7 @@
 		"unitTypes": [
 			"Ranged Combat"
 		],
-		"column": 25,
+		"column": 29,
 		"row": 4
 	},
 	{
@@ -1571,8 +1741,41 @@
 		"unitTypes": [
 			"Siege"
 		],
-		"column": 25,
+		"column": 29,
 		"row": 5
+	},
+	{
+		"name": "Ballista Turret",
+		"prerequisites": [
+			"Medieval Arms"
+		],
+		"uniques": [
+			"[+25]% Strength <vs ['Dense Formation'] units> <when attacking> <before the [Imperial era]>",
+			"[+25]% Strength <vs cities> <when attacking> <before the [Imperial era]>"
+		],
+		"unitTypes": [
+			"Close Combat Ship",
+			"Ranged Combat Ship"
+		],
+		"column": 29,
+		"row": 6
+	},
+	{
+		"name": "Flamethrower Turret",
+		"prerequisites": [
+			"Medieval Arms"
+		],
+		"uniques": [
+			"Only available <after discovering [Alchemy]>",
+			"[+33]% Strength <vs ['Dense Formation'] units> <when attacking> <before the [Imperial era]>",
+			"[+33]% Strength <vs cities> <when attacking> <before the [Imperial era]>"
+		],
+		"unitTypes": [
+			"Close Combat Ship",
+			"Ranged Combat Ship"
+		],
+		"column": 29,
+		"row": 7
 	},
 	{
 		"name": "Renaissance Arms",
@@ -1587,9 +1790,10 @@
 			"Ranged Combat Ship"
 		],
 		"uniques": [
+			"This Promotion is free <if [Armour Workshop] is constructed> <after discovering [Coal Working]>",
 			"Only available <starting from the [Renaissance era]>"
 		],
-		"column": 26,
+		"column": 30,
 		"row": 0
 	},
 	{
@@ -1606,7 +1810,7 @@
 			"Close Combat",
 			"Assault"
 		],
-		"column": 26,
+		"column": 30,
 		"row": 1
 	},
 	{
@@ -1624,7 +1828,7 @@
 			"Rider",
 			"Scout"
 		],
-		"column": 26,
+		"column": 30,
 		"row": 2
 	},
 	{
@@ -1639,8 +1843,54 @@
 			"Rider",
 			"Assault"
 		],
-		"column": 26,
+		"column": 30,
 		"row": 3
+	},
+	{
+		"name": "Large Hull",
+		"prerequisites": [
+			"Renaissance Arms"
+		],
+		"uniques": [
+			"Gain [-5] [Gold] <every [1] turns>",
+			"[+20]% Strength <vs ['Firearms'] units> <when defending>"
+		],
+		"unitTypes": [
+			"Close Combat Ship",
+			"Ranged Combat Ship"
+		],
+		"column": 30,
+		"row": 4
+	},
+	{
+		"name": "Extra Cannon",
+		"prerequisites": [
+			"Renaissance Arms"
+		],
+		"uniques": [
+			"Gain [-5] [Gold] <every [1] turns>",
+			"[+15]% Strength <vs ['Firearms'] units> <when attacking>"
+		],
+		"unitTypes": [
+			"Close Combat Ship",
+			"Ranged Combat Ship"
+		],
+		"column": 30,
+		"row": 5
+	},
+	{
+		"name": "Wagon",
+		"prerequisites":["Vehicle Upgrades"],
+		"uniques": [
+			"Only available <after discovering [Machinery]> <before discovering [Combustion]>",
+			"[This Unit] loses the [Cart] promotion",
+			"[+1] Movement"
+		],
+		"unitTypes": [
+			"Civilian"
+		],
+		"column": 30,
+		"row": 6
 	},
 	{
 		"name": "Industrial Arms",
@@ -1655,9 +1905,10 @@
 			"Ranged Combat Ship"
 		],
 		"uniques": [
+			"This Promotion is free <if [Firearms Workshop] is constructed>",
 			"Only available <starting from the [Industrial era]>"
 		],
-		"column": 27,
+		"column": 31,
 		"row": 0
 	},
 	{
@@ -1679,7 +1930,7 @@
 			"Ranged Combat",
 			"Scout"
 		],
-		"column": 27,
+		"column": 31,
 		"row": 1
 	},
 	{
@@ -1698,7 +1949,7 @@
 			"Ranged Combat",
 			"Scout"
 		],
-		"column": 27,
+		"column": 31,
 		"row": 2
 	},
 	{
@@ -1709,17 +1960,14 @@
 		"uniques": [
 			"Only available <after discovering [Mass Production]>",
 			"Gain [-2] [Gold] <every [1] turns>",
-			"[+25]% Strength <when defending> <when fighting in [Open terrain] tiles> <vs [non-['Mechanised']] units>",
-			"[+15]% Strength <when defending> <when fighting in [Rough terrain] tiles> <vs [non-['Mechanised']] units>",
-			"[+15]% Strength <when attacking> <when fighting in [Open terrain] tiles> <vs [non-['Mechanised']] units>",
-			"[+7]% Strength <when attacking> <when fighting in [Rough terrain] tiles> <vs [non-['Mechanised']] units>"
+			"[Target Unit] gains the [Surpressed] status for [1] turn(s) <upon damaging a [Military] unit>"
 		],
 		"unitTypes": [
 			"Close Combat",
 			"Ranged Combat",
 			"Scout"
 		],
-		"column": 27,
+		"column": 31,
 		"row": 3
 	},
 	{
@@ -1738,7 +1986,7 @@
 			"Ranged Combat",
 			"Scout"
 		],
-		"column": 28,
+		"column": 32,
 		"row": 1
 	},
 	{
@@ -1757,7 +2005,7 @@
 			"Scout",
 			"Rider"
 		],
-		"column": 28,
+		"column": 32,
 		"row": 2
 	},
 	{
@@ -1784,7 +2032,7 @@
 			"[+10]% Strength <when defending> <when fighting in [Rough terrain] tiles>",
 			"Can build [Trench] improvements on tiles"
 		],
-		"column": 28,
+		"column": 32,
 		"row": 3
 	},
 	{
@@ -1805,11 +2053,47 @@
 			"Gain [-2] [Gold] <every [1] turns>",
 			"[+10]% Strength <when attacking>",
 			"[+1] Sight",
-			"[-5]% Strength for enemy [Land] units in adjacent [All] tiles",
-			"Can see invisible [Land] units <after discovering [Radar]>"
+			"[-5]% Strength for enemy [Land] units in adjacent [All] tiles"
 		],
-		"column": 28,
+		"column": 32,
 		"row": 4
+	},
+		{
+		"name": "Smoke Screen",
+		"prerequisites": [
+			"Industrial Arms"
+		],
+		"uniques": [
+			"Only available <after discovering [Dynamite]>",
+			"[+20]% Strength <when defending> <when fighting in [Open terrain] tiles>",
+			"[+10]% Strength <vs cities> <when defending>"
+		],
+		"unitTypes": [
+			"Close Combat",
+			"Ranged Combat",
+			"Scout",
+			"Rider",
+			"Assault"
+		],
+		"column": 32,
+		"row": 5
+	},
+	{
+		"name": "Carrier Refit",
+		"prerequisites": [
+			"Industrial Arms"
+		],
+		"uniques": [
+			"Only available <after discovering [Flight]>",
+			"Can transform to [Carrier Fleet] <once>",
+			"Can carry [-1] extra [Aircraft] units"
+		],
+		"unitTypes": [
+			"Close Combat Ship",
+			"Ranged Combat Ship"
+		],
+		"column": 32,
+		"row": 6
 	},
 	{
 		"name": "Modern Arms",
@@ -1821,12 +2105,16 @@
 			"Assault",
 			"Siege",
 			"Close Combat Ship",
-			"Ranged Combat Ship"
+			"Ranged Combat Ship",
+			"Carrier",
+			"Submarine",
+			"Helicopter"
 		],
 		"uniques": [
+			"This Promotion is free <if [Military Factory Complex] is constructed>",
 			"Only available <starting from the [Modern era]>"
 		],
-		"column": 29,
+		"column": 33,
 		"row": 0
 	},
 	{
@@ -1847,7 +2135,7 @@
 			"Close Combat",
 			"Ranged Combat"
 		],
-		"column": 29,
+		"column": 33,
 		"row": 1
 	},
 	{
@@ -1866,7 +2154,7 @@
 			"Scout",
 			"Rider"
 		],
-		"column": 29,
+		"column": 33,
 		"row": 2
 	},
 	{
@@ -1884,7 +2172,7 @@
 			"Scout",
 			"Rider"
 		],
-		"column": 29,
+		"column": 33,
 		"row": 3
 	},
 	{
@@ -1906,7 +2194,7 @@
 			"Close Combat",
 			"Ranged Combat"
 		],
-		"column": 29,
+		"column": 33,
 		"row": 4
 	},
 	{
@@ -1929,7 +2217,7 @@
 			"Close Combat",
 			"Ranged Combat"
 		],
-		"column": 29,
+		"column": 33,
 		"row": 5
 	},
 	{
@@ -1950,7 +2238,7 @@
 			"Scout",
 			"Rider"
 		],
-		"column": 29,
+		"column": 33,
 		"row": 6
 	},
 	{
@@ -1969,7 +2257,7 @@
 			"Scout",
 			"Rider"
 		],
-		"column": 29,
+		"column": 33,
 		"row": 7
 	},
 	{
@@ -1978,12 +2266,12 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <vs ['Firearms'] units>"
+			"[+25]% Strength <vs ['Firearms'] units> <when defending>"
 		],
 		"unitTypes": [
 			"Assault"
 		],
-		"column": 30,
+		"column": 34,
 		"row": 1
 	},
 	{
@@ -1997,7 +2285,7 @@
 		"unitTypes": [
 			"Assault"
 		],
-		"column": 30,
+		"column": 34,
 		"row": 2
 	},
 	{
@@ -2012,7 +2300,7 @@
 		"unitTypes": [
 			"Assault"
 		],
-		"column": 30,
+		"column": 34,
 		"row": 3
 	},
 	{
@@ -2027,7 +2315,7 @@
 		"unitTypes": [
 			"Assault"
 		],
-		"column": 30,
+		"column": 34,
 		"row": 4
 	},
 	{
@@ -2043,8 +2331,22 @@
 		"unitTypes": [
 			"Assault"
 		],
-		"column": 30,
+		"column": 34,
 		"row": 5
+	},
+	{
+		"name": "Autoloader",
+		"prerequisites": [
+			"Modern Arms"
+		],
+		"uniques": [
+			"[1] additional attacks per turn"
+		],
+		"unitTypes": [
+			"Assault"
+		],
+		"column": 34,
+		"row": 6
 	},
 	{
 		"name": "Extra Screening Ship",
@@ -2061,7 +2363,7 @@
 			"Ranged Combat Ship",
 			"Carrier"
 		],
-		"column": 31,
+		"column": 35,
 		"row": 1
 	},
 	{
@@ -2078,7 +2380,7 @@
 			"Ranged Combat Ship",
 			"Carrier"
 		],
-		"column": 31,
+		"column": 35,
 		"row": 2
 	},
 	{
@@ -2097,7 +2399,7 @@
 			"Ranged Combat Ship",
 			"Carrier"
 		],
-		"column": 31,
+		"column": 35,
 		"row": 3
 	},
 	{
@@ -2114,8 +2416,38 @@
 			"Ranged Combat Ship",
 			"Carrier"
 		],
-		"column": 31,
+		"column": 35,
 		"row": 4
+	},
+	{
+		"name": "Torpedo Focus",
+		"prerequisites": [
+			"Modern Arms"
+		],
+		"uniques": [
+			"[+25]% Strength <vs [non-[Submarine]] units> <when attacking> <before the [Imperial era]>"
+		],
+		"unitTypes": [
+			"Close Combat Ship",
+			"Submarine",
+			"Bomber"
+		],
+		"column": 35,
+		"row": 5
+	},
+	{
+		"name": "Automobile",
+		"prerequisites":["Vehicle Upgrades"],
+		"uniques": [
+			"Only available <after discovering [Combustion]>",
+			"[This Unit] loses the [Wagon] promotion",
+			"[+2] Movement"
+		],
+		"unitTypes": [
+			"Civilian"
+		],
+		"column": 35,
+		"row": 6
 	},
 	{
 		"name": "Atomic Arms",
@@ -2127,12 +2459,16 @@
 			"Assault",
 			"Siege",
 			"Close Combat Ship",
-			"Ranged Combat Ship"
+			"Ranged Combat Ship",
+			"Carrier",
+			"Submarine",
+			"Helicopter"
 		],
 		"uniques": [
+			"This Promotion is free <if [Arms Testing Ground] is constructed>",
 			"Only available <starting from the [Atomic era]>"
 		],
-		"column": 32,
+		"column": 36,
 		"row": 0
 	},
 	{
@@ -2142,13 +2478,15 @@
 		],
 		"uniques": [
 			"Gain [-1] [Gold] <every [1] turns>",
+			"Costs [12] [Weapon Parts]",
+			"Costs [2] [Electronic Parts]",
 			"[+33]% Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat",
 			"Scout"
 		],
-		"column": 32,
+		"column": 36,
 		"row": 1
 	},
 	{
@@ -2158,6 +2496,7 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Stealth]>",
+			"'Camoflaged'",
 			"[+15]% Strength <when defending>",
 			"[+18]% Strength <when defending> <when fighting in [Rough terrain] tiles>",
 			"Withdraws before melee combat <with [5]% chance>"
@@ -2169,7 +2508,7 @@
 			"Rider",
 			"Assault"
 		],
-		"column": 32,
+		"column": 36,
 		"row": 2
 	},
 	{
@@ -2186,7 +2525,7 @@
 			"Rider",
 			"Assault"
 		],
-		"column": 32,
+		"column": 36,
 		"row": 3
 	},
 	{
@@ -2204,7 +2543,7 @@
 			"Rider",
 			"Assault"
 		],
-		"column": 32,
+		"column": 36,
 		"row": 4
 	},
 	{
@@ -2214,43 +2553,18 @@
 		],
 		"uniques": [
 			"[+1] Sight",
-			"Can see invisible [non-[Future era]] units <after discovering [LiDAR]>"
+			"Can see invisible [{non-[Information era]} {non-[Future era]}] units <after discovering [LiDAR]>"
 		],
 		"unitTypes": [
 			"Close Combat Ship",
 			"Ranged Combat Ship",
 			"Carrier"
 		],
-		"column": 33,
+		"column": 37,
 		"row": 2
 	},
 	{
 		"name": "Information Arms",
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege",
-			"Close Combat Ship",
-			"Ranged Combat Ship"
-		],
-		"uniques": [
-			"Only available <starting from the [Information era]>"
-		],
-		"column": 34,
-		"row": 0
-	},
-	{
-		"name": "Drones",
-		"prerequisites": [
-			"Information Arms"
-		],
-		"uniques": [
-			"[+10]% Strength",
-			"[+1] Sight"
-		],
 		"unitTypes": [
 			"Close Combat",
 			"Ranged Combat",
@@ -2264,8 +2578,56 @@
 			"Submarine",
 			"Helicopter"
 		],
-		"column": 35,
+		"uniques": [
+			"This Promotion is free <if [Electronic Industry] is constructed>",
+			"Only available <starting from the [Information era]>"
+		],
+		"column": 38,
+		"row": 0
+	},
+	{
+		"name": "Spy Drones",
+		"prerequisites": [
+			"Information Arms"
+		],
+		"uniques": [
+			"[+25]% Strength <vs cities>",
+			"[+25]% Strength <when fighting in [City center] tiles>",
+			"[+25]% Strength <when defending> <when fighting in [Fort] tiles>",
+			"[+25]% Strength <when fighting in [Trench] tiles>",
+			"[+25]% Strength <when defending> <when fighting in [Citadel] tiles>",
+			"[+10]% Strength <when defending> <when fighting in [Rough terrain] tiles>"
+		],
+		"unitTypes": [
+			"Close Combat",
+			"Ranged Combat",
+			"Scout",
+			"Rider",
+			"Assault",
+			"Helicopter"
+		],
+		"column": 39,
 		"row": 1
+	},
+	{
+		"name": "Battle Drones",
+		"prerequisites": [
+			"Information Arms"
+		],
+		"uniques": [
+			"[+10]% Strength <vs ['Motorised'] units> <when defending>",
+			"[+10]% Strength <vs ['Mechanised'] units> <when defending>"
+		],
+		"unitTypes": [
+			"Close Combat",
+			"Ranged Combat",
+			"Scout",
+			"Rider",
+			"Assault",
+			"Helicopter"
+		],
+		"column": 39,
+		"row": 2
 	},
 	{
 		"name": "Hacking Equipment",
@@ -2288,8 +2650,57 @@
 			"Submarine",
 			"Helicopter"
 		],
-		"column": 35,
-		"row": 2
+		"column": 39,
+		"row": 3
+	},
+	{
+		"name": "GPS",
+		"prerequisites": [
+			"Information Arms"
+		],
+		"uniques": [
+			"[+1] Movement",
+			"Only available <if [Satellite System] is constructed>"
+		],
+		"unitTypes": [
+			"Close Combat",
+			"Ranged Combat",
+			"Scout",
+			"Rider",
+			"Assault",
+			"Siege",
+			"Close Combat Ship",
+			"Ranged Combat Ship",
+			"Carrier",
+			"Submarine",
+			"Helicopter"
+		],
+		"column": 39,
+		"row": 4
+	},
+	{
+		"name": "Sentry Gun",
+		"prerequisites": [
+			"Information Arms"
+		],
+		"uniques": [
+			"[+25]% Strength <when defending>"
+		],
+		"unitTypes": [
+			"Close Combat",
+			"Ranged Combat",
+			"Scout",
+			"Rider",
+			"Assault",
+			"Siege",
+			"Close Combat Ship",
+			"Ranged Combat Ship",
+			"Carrier",
+			"Submarine",
+			"Helicopter"
+		],
+		"column": 39,
+		"row": 5
 	},
 
 	///Uniques
@@ -2310,7 +2721,7 @@
 	{
 		"name": "Chivalry",
 		"uniques": [
-			"[+10]% Strength",
+			"[+7]% Strength",
 			"Earn [33]% of the damage done to [Military] units as [Culture]"
 		]
 	},
@@ -2323,7 +2734,7 @@
 	{
 		"name": "Protection Squadron Ability",
 		"uniques": [
-			"[+30]% Strength",
+			"[+10]% Strength",
 			"[+5] HP when healing"
 		]
 	},
@@ -2408,16 +2819,16 @@
 	{
 		"name": "The Standing Army",
 		"uniques": [
-			"[+25]% Strength <vs ['Levy Army'] units>",
-			"[+15]% Strength <vs ['Mercenary Army'] units>"
+			"[+10]% Strength <vs ['Levy Army'] units>",
+			"[+5]% Strength <vs ['Mercenary Army'] units>"
 		]
 	},
 	{
 		"name": "The Noble Army",
 		"uniques": [
-			"[+35]% Strength <vs ['Levy Army'] units>",
-			"[+15]% Strength <vs ['Standing Army'] units>",
-			"[+15]% Strength <vs ['Mercenary Army'] units>"
+			"[+25]% Strength <vs ['Levy Army'] units>",
+			"[+5]% Strength <vs ['Standing Army'] units>",
+			"[+10]% Strength <vs ['Mercenary Army'] units>"
 		]
 	},
 	{
@@ -2426,14 +2837,6 @@
 			"[+50]% XP gained from combat",
 			"Earn [-25]% of the damage done to [Military] units as [Gold]",
 			"Gain [-1] [Gold] <every [1] turns>"
-		]
-	},
-	{
-		"name": "Merchant",
-		"uniques": [
-			"[-10]% Strength <vs ['Standing Army'] units>",
-			"Gain [5] [Gold] <upon ending a turn in a [City center] tile>",
-			"Gain [5] [Gold] <upon ending a turn in a [Civilian Market] tile>"
 		]
 	},
 	{
@@ -2471,6 +2874,23 @@
 		"uniques": [
 			"[+1] XP gained from combat",
 			"Earn [17]% of the damage done to [Military] units as [Culture]"
+		]
+	},
+	// Statuses
+	// Positives
+	// Negatives
+	{
+		"name": "Breached",
+		"uniques": [
+			"[-15]% Strength <when defending>"
+		]
+	},
+	{
+		"name": "Surpressed",
+		"uniques": [
+			"[-1] Movement",
+			"[-1] Range",
+			"[-1] Sight"
 		]
 	}
 ]

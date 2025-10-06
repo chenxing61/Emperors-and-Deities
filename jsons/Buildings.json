@@ -34,11 +34,23 @@
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
-			"Only available <in [Capital] cities>",
 			"Comment [Act upon internal affairs as if you are ruling a country. For examples, you can disband levies to mitigate the downside and increase stability of the civilization.]",
+			"Only available <in [Capital] cities>",
 			"Play [policy] sound <hidden from users>",
 			"Remove [Enact Policies] [in this city] <hidden from users>",
 			"Triggers a [Enact Policies] event"
+		]
+	},
+	{
+		"name": "Show Status",
+		"cost": 0,
+		"uniques": [
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Comment [Act upon internal affairs as if you are ruling a country. For examples, you can disband levies to mitigate the downside and increase stability of the civilization.]",
+			"Only available <in [Capital] cities>",
+			"Play [setup] sound <hidden from users>",
+			"Remove [Show Status] [in this city] <hidden from users>",
+			"Triggers a [Present Current Status] event"
 		]
 	},
 	{
@@ -46,8 +58,8 @@
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
-			"Only available <in [Capital] cities>",
 			"Comment [If the top bar is too messy, you can cut down on numbers of resources displayed, but remember to check every once in a while.]",
+			"Only available <in [Capital] cities>",
 			"Play [policy] sound <hidden from users>",
 			"Triggers a [Hide Strategic Resources] event",
 			"Remove [Hide-Show Strategic Resources] [in this city] <hidden from users>"
@@ -97,18 +109,18 @@
 			"Free [Guerrilla] appears <after discovering [Rifling]> <before adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Mobile Tactics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Mobile Tactics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Mobile Tactics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Mobile Tactics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Mobile Tactics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Mobile Tactics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Destroyed when the city is captured"
 		]
 	},
 	{
 		"name": "Complete Intergration",
-		"cost": 175,
+		"cost": 200,
 		"uniques": [
 			"Only available <before adopting [Anarchism]>",
 			"Can only be built <in [Annexed] cities>",
@@ -141,7 +153,7 @@
 	},
 	{
 		"name": "Administrative Intergration",
-		"cost": 50,
+		"cost": 75,
 		"uniques": [
 			"Comment [Remove [Food],[Production] and [Gold] debuff from annexed cities]",
 			"Only available <before adopting [Anarchism]>",
@@ -167,8 +179,9 @@
 	},
 	{
 		"name": "Five Year Plan",
-		"cost": 100000,
+		"cost": 9999999,
 		"uniques": [
+			"Remove [Five Year Plan] [in this city] <hidden from users>",
 			"Unavailable <if [Planned Economy] is not constructed> <hidden from users>",
 			"Comment [You store the [Production] by constructing this building and use the [Production] to buy buildings.]"
 		]
@@ -341,7 +354,7 @@
 	},
 	{
 		"name": "Business Expansion",
-		"cost": 180,
+		"cost": 280,
 		"uniques": [
 			"Unsellable",
 			"'Expansion'",
@@ -351,7 +364,8 @@
 			"Only available <in cities without a [Trading Post]>",
 			"Gain a free [Hunter's Hut] [in this city]", //20
 			"Gain a free [Crops Market] [in this city]", //40
-			"Gain a free [Trading Post] [in this city]"
+			"Gain a free [Trading Post] [in this city]", //100
+			"Gain a free [Warehouse] [in this city]"
 		], //100
 		"requiredTech": "Diplomacy",
 		"hurryCostModifier": -25
@@ -411,6 +425,25 @@
 			"Gain a free [Military Academy] [in this city]" //160
 		],
 		"requiredTech": "Acoustics",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Military Consolidation",
+		"cost": 835,
+		"uniques": [
+			"Unsellable",
+			"'Consolidation'",
+			"Comment [Only when all buildings in this package have not been built, this package is available.]",
+			"Only available <in cities without a [Firearms Workshop]>",
+			"Only available <in cities without a [Arsenal]>",
+			"Only available <in cities without a [Mobilization Department]>",
+			"Only available <in cities without a [Bastion]>",
+			"Gain a free [Firearms Workshop] [in this city]", //120
+			"Gain a free [Arsenal] [in this city]", //160
+			"Gain a free [Mobilization Department] [in this city]", //275
+			"Gain a free [Bastion] [in this city]"
+		], //200
+		"requiredTech": "Rifling",
 		"hurryCostModifier": -25
 	},
 	{
@@ -1133,6 +1166,9 @@
 		},
 		"uniques": [
 			"'Political Building'",
+			"Only available <before adopting [Unity]> <for [Europa] Civilizations> <hidden from users>",
+			"Only available <before adopting [Unity]> <for [Mediterranean] Civilizations> <hidden from users>",
+			"Only available <before adopting [Unity]> <for [Central and West Asia] Civilizations> <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Writing",
@@ -1160,10 +1196,13 @@
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"Only available <if [SPQR] is not constructed> <for [Mediterranean] Civilizations> <hidden from users>",
 			"[+1]% [Gold] from Trade Routes",
 			"[+1]% [Gold] from Trade Routes <if [Captial of Mountain Range] is constructed> <hidden from users>",
 			"[+1]% growth [in all cities]",
-			"[-5]% maintenance cost for [all] buildings [in this city]"
+			"[-5]% maintenance cost for [all] buildings [in this city]",
+			"All newly-trained [Settler] units [in this city] receive the [Cart] promotion",
+			"All newly-trained [Pioneer] units [in this city] receive the [Cart] promotion"
 		],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
@@ -1411,6 +1450,25 @@
 		"hurryCostModifier": 10
 	},
 	{
+		"name": "Elephant Camp",
+		"maintenance": 3,
+		"food": -3,
+		"percentStatBonus": {
+			"gold": 5,
+			"faith": 5
+		},
+		"uniques": [
+			"'Military Building'",
+			"Provides [2] [Elephant]",
+			"[+25]% Production when constructing [Firearms Workshop] buildings [in this city]"
+		],
+		"requiredNearbyImprovedResources": [
+			"Ivory"
+		],
+		"requiredTech": "Horseback Riding",
+		"hurryCostModifier": 10
+	},
+	{
 		"name": "The Grand Ditch",
 		"isWonder": true,
 		"greatPersonPoints": {
@@ -1435,6 +1493,7 @@
 		},
 		"uniques": [
 			"Gain [150] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
+			"[+1 Gold] from ['Rock'] tiles [in this city]",
 			"[+1 Gold] from ['Useful Mineral'] tiles [in this city]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -1474,9 +1533,10 @@
 		"name": "Bathhouse",
 		"maintenance": 3,
 		"culture": 1,
-		"happiness": 2,
+		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"[10]% Food is carried over after population increases [in this city]"
 		],
 		"requiredTech": "Iron Working",
@@ -1565,7 +1625,7 @@
 			"Provides [1] [Horse]",
 			"New ['Mounted'] units start with [10] XP [in this city]",
 			"Free [Light Cavalry] appears <for [AI player] Civilizations> <before the [Imperial era]> <hidden from users>",
-			"Free [Hussar] appears <for [AI player] Civilizations> <before the [Industrial era]> <hidden from users>",
+			"Free [Hussar] appears <for [AI player] Civilizations> <starting from the [Imperial era]> <before the [Industrial era]> <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Barrack",
@@ -1755,6 +1815,7 @@
 			"'Military Building'",
 			"'Marine Infrastructure'",
 			"[+25]% Production when constructing [Water] units [in this city]",
+			"New [Civil Ship] units start with [10] XP [in this city]",
 			"Destroyed when the city is captured",
 			"Must be next to [Coast]"
 		],
@@ -1935,6 +1996,19 @@
 			"'Economic Building'",
 			"Provides [1] [Mercenary Contract]",
 			"[+1 Production, +1 Gold] from [Luxury resource] tiles [in this city]"
+		],
+		"requiredBuilding": "Road Network",
+		"requiredTech": "Construction",
+		"hurryCostModifier": 15
+	},
+	{
+		"name": "Warehouse",
+		"maintenance":2,
+		"specialistSlots":{"Labourer":3},
+		"uniques": [
+			"'Economic Building'",
+			"[+1]% Production when constructing ['Light Industry'] buildings [in all cities]",
+			"New [Civilian] units start with [10] XP [in this city]"
 		],
 		"requiredBuilding": "Road Network",
 		"requiredTech": "Construction",
@@ -2727,6 +2801,17 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Agricultural Water Storage",
+		"maintenance": 1,
+		"food": 3,
+		"uniques": [
+			"'Infrastructure'",
+			"Only available <in cities without a [Irrigation System]>"
+		],
+		"requiredTech": "Irrigation",
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Garden",
 		"maintenance": 2,
 		"happiness": 1,
@@ -2743,10 +2828,11 @@
 	{
 		"name": "Circus",
 		"cost": 50,
-		"happiness": 2,
+		"happiness": 1,
 		"gold": 1,
 		"uniques": [
-			"'Entertainment Building'"
+			"'Entertainment Building'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>"
 		],
 		"requiredBuilding": "Town Square",
 		"requiredTech": "Stirrup",
@@ -2793,13 +2879,14 @@
 	{
 		"name": "Theatre",
 		"maintenance": 3,
-		"happiness": 2,
+		"happiness": 1,
 		"percentStatBonus": {
 			"culture": 10,
 			"gold": 5
 		},
 		"uniques": [
 			"'Entertainment Building'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Town Square",
@@ -2810,7 +2897,7 @@
 		"name": "Altar",
 		"cost": 0,
 		"faith": 3,
-		"happiness": 2,
+		"happiness": 1,
 		"percentStatBonus": {
 			"faith": 5,
 			"gold": -5,
@@ -2818,6 +2905,7 @@
 		},
 		"uniques": [
 			"'Worship Place'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"Unbuildable <hidden from users>",
 			"Only available <when religion is enabled>"
 		],
@@ -2884,17 +2972,6 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Theology"
-	},
-	{
-		"name": "Agricultural Water Storage",
-		"maintenance": 2,
-		"food": 4,
-		"uniques": [
-			"'Infrastructure'",
-			"Only available <in cities without a [Irrigation System]>"
-		],
-		"requiredTech": "Engineering",
-		"hurryCostModifier": 25
 	},
 	{
 		"name": "Weapon Parts Workshop",
@@ -3096,9 +3173,9 @@
 		"name": "Temple of Thousand Statues",
 		"isWonder": true,
 		"culture": 3,
-		"happiness": 3,
+		"happiness": 1,
 		"greatPersonPoints": {
-			"Great Artist": 1
+			"Great Artist": 2
 		},
 		"uniques": [
 			"Only available <before adopting [Monotheism]>",
@@ -3194,7 +3271,7 @@
 		"maintenance": 2,
 		"uniques": [
 			"'Military Building'",
-			"Comment [Enables you to build ['Gunpowder'] Units]",
+			"Comment [Enables you to build ['Firearms'] Units]",
 			"New ['Firearms'] units start with [10] XP [in this city]",
 			"[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>",
 			"Destroyed when the city is captured"
@@ -3242,7 +3319,7 @@
 	{
 		"name": "Cathedral of Mercy",
 		"faith": 4,
-		"happiness": 12,
+		"happiness": 10,
 		"greatPersonPoints": {
 			"Great Merchant": 1
 		},
@@ -3416,7 +3493,9 @@
 		"uniques": [
 			"'Light Industry'",
 			"Provides [1] [Mercenary Contract]",
-			"[+1 Production] from all ['Light Industry'] buildings <in this city>"
+			"[+1 Production] from all ['Light Industry'] buildings <in this city>",
+			"All newly-trained [Settler] units [in this city] receive the [Wagon] promotion",
+			"All newly-trained [Pioneer] units [in this city] receive the [Wagon] promotion"
 		],
 		"requiredBuilding": "City Hall",
 		"requiredTech": "Guilds",
@@ -3872,7 +3951,7 @@
 	{
 		"name": "Fire Station",
 		"maintenance": 5,
-		"happiness": 2,
+		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
 			"[-10]% Unhappiness from [Population] [in this city]",
@@ -3917,6 +3996,7 @@
 	//Line 16
 	{
 		"name": "Alloy Mill",
+		"cost": 450,
 		"maintenance": 3,
 		"specialistSlots": {
 			"Engineer": 1,
@@ -3948,6 +4028,7 @@
 	},
 	{
 		"name": "Aluminium Mill",
+		"cost": 500,
 		"maintenance": 3,
 		"science": 2,
 		"specialistSlots": {
@@ -3969,6 +4050,7 @@
 	},
 	{
 		"name": "Fertilizer Plant",
+		"cost": 300,
 		"maintenance": 5,
 		"uniques": [
 			"'Agricultural Building'",
@@ -4152,8 +4234,9 @@
 	},
 	{
 		"name": "Hospital",
+		"cost": 500,
 		"maintenance": 5,
-		"happiness": 3,
+		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
 			"[-10]% Unhappiness from [Population] [in this city]",
@@ -4185,6 +4268,7 @@
 	},
 	{
 		"name": "Fossil Fuel Power Plant",
+		"cost": 750,
 		"maintenance": 10,
 		"uniques": [
 			"'Power Building'",
@@ -4206,13 +4290,13 @@
 		"name": "Holiday Resort",
 		"cost": 200,
 		"maintenance": 5,
-		"happiness": 2,
+		"happiness": 1,
 		"percentStatBonus": {
-			"gold": 5,
-			"happiness": 5
+			"gold": 5
 		},
 		"uniques": [
 			"'Entertainment Building'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"[+1 Culture] from all [Neolithic era] buildings <in this city>"
 		],
 		"requiredTech": "Steam Power",
@@ -4220,6 +4304,7 @@
 	},
 	{
 		"name": "Gas Storage and Transfer System",
+		"cost": 500,
 		"maintenance": 5,
 		"science": 1,
 		"specialistSlots": {
@@ -4425,14 +4510,15 @@
 			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed>",
 			"Provides [1] [Consumption Supply]",
 			"Provides [1] [Vehicle Parts]",
-			"Provides [1] [Vehicle Parts] <when at war>",
+			"Provides [1] [Vehicle Parts] <in cities with a [Call to Arms]>",
 			"Consumes [4] [Power] <in cities with a [Power Grid]>",
 			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]>",
 			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed>",
-			"[+1 Production] from every [Engineer] <in this city>"
+			"[+1 Production] from every [Engineer] <in this city>",
+			"All newly-trained [Pioneer] units [in this city] receive the [Automobile] promotion"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Railroads",
@@ -4440,16 +4526,17 @@
 	},
 	{
 		"name": "Train Station",
-		"maintenance": 5,
-		"happiness": 2,
+		"maintenance": 10,
+		"happiness": 1,
 		"percentStatBonus": {
-			"food": 10,
-			"production": 20,
-			"gold": 10
+			"food": 5,
+			"production": 10,
+			"gold": 5
 		},
 		"uniques": [
 			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
 			"'Infrastructure'",
+			"[+1 Happiness] <in cities with at least [20] [Population]>",
 			"[+1]% [Gold] from Trade Routes",
 			"[+2]% growth [in all cities]",
 			"[-5]% maintenance cost for [all] buildings [in this city]"
@@ -4530,7 +4617,7 @@
 			"'Heavy Industry'",
 			"Provides [2] [Consumption Supply]",
 			"Provides [1] [Ship Parts]",
-			"Provides [1] [Ship Parts] <when at war>",
+			"Provides [1] [Ship Parts] <in cities with a [Call to Arms]>",
 			"Consumes [4] [Power] <in cities with a [Power Grid]>",
 			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+10]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
@@ -4653,7 +4740,6 @@
 		"name": "Tower of Curving Alloy",
 		"isWonder": true,
 		"culture": 5,
-		"happiness": 3,
 		"greatPersonPoints": {
 			"Great Artist": 5
 		},
@@ -4666,6 +4752,7 @@
 	},
 	{
 		"name": "Statue of Liberty",
+		"cost": 2400,
 		"isWonder": true,
 		"culture": 3,
 		"greatPersonPoints": {
@@ -4682,6 +4769,7 @@
 	},
 	{
 		"name": "Cathedral of the Holy Family",
+		"cost": 2400,
 		"isWonder": true,
 		"faith": 5,
 		"greatPersonPoints": {
@@ -4716,6 +4804,7 @@
 	},
 	{
 		"name": "Oil Refinery",
+		"cost": 750,
 		"maintenance": 8,
 		"science": 1,
 		"specialistSlots": {
@@ -4736,18 +4825,12 @@
 	{
 		"name": "Highway Network",
 		"maintenance": 5,
-		"happiness": 2,
-		"percentStatBonus": {
-			"food": 5,
-			"production": 5,
-			"gold": 5
-		},
+		"happiness": 1,
 		"uniques": [
 			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
 			"'Infrastructure'",
+			"[+1 Happiness] <in cities with at least [20] [Population]>",
 			"[+1]% [Gold] from Trade Routes",
-			"[+2]% growth [in all cities]",
-			"[-5]% maintenance cost for [all] buildings [in this city]",
 			"[+1 Production] from ['Infrastructure Improvement'] tiles [in this city]"
 		],
 		"requiredBuilding": "Road Network",
@@ -4772,6 +4855,37 @@
 			"Provides [4] [Vehicle Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>"
 		],
 		"requiredBuilding": "Military Factory Complex",
+		"requiredTech": "Combustion",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Luxury Car Industry",
+		"cost": 1250,
+		"maintenance": 20,
+		"specialistSlots": {
+			"Labourer": 5,
+			"Engineer": 2,
+			"Artist": 1
+		},
+		"uniques": [
+			"'Heavy Industry'",
+			"Only available <in cities without a [Vehicle Industry]>",
+			"Only available <when above [0] [Iconic Brand]> <if [Vehicle Industry] is constructed>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed>",
+			"Provides [1] [Consumption Supply]",
+			"Provides [1] [Luxury Car] <in cities without a [Call to Arms]>",
+			"Provides [2] [Vehicle Parts]",
+			"Provides [2] [Vehicle Parts] <in cities with a [Call to Arms]>",
+			"Consumes [4] [Power] <in cities with a [Power Grid]>",
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			"[+20]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
+			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]>",
+			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed>",
+			"[+1 Production, +1 Gold] from every [Engineer] <in this city>"
+		],
+		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Combustion",
 		"hurryCostModifier": 25
 	},
@@ -4925,9 +5039,7 @@
 		},
 		"uniques": [
 			"'Research Building'",
-			"[Great Scientist] is earned [+1]% faster",
-			"[+1 Science] [in this city] <after discovering [Relativity Theory]>",
-			"[+1 Science] [in this city] <after discovering [Quantum Theory]>"
+			"[Great Scientist] is earned [+1]% faster"
 		],
 		"requiredBuilding": "University",
 		"requiredTech": "Telegram"
@@ -4935,7 +5047,7 @@
 	{
 		"name": "Government Complex",
 		"maintenance": 10,
-		"happiness": 3,
+		"happiness": 1,
 		"culture": 2,
 		"cityStrength": 5,
 		"specialistSlots": {
@@ -4943,6 +5055,7 @@
 		},
 		"uniques": [
 			"'Political Building'",
+			"[+1 Happiness] <in cities with at least [20] [Population]>",
 			"[+15]% Production when constructing ['Infrastructure'] buildings [in this city]",
 			"[-20]% Unhappiness from [Population] [in this city] <in cities with a [Anarchist Ruling]>",
 			"Destroyed when the city is captured"
@@ -5014,15 +5127,17 @@
 	},
 	{
 		"name": "Tower of Constructivism",
+		"cost": 2400,
 		"isWonder": true,
-		"happiness": 3,
+		"happiness": 5,
 		"greatPersonPoints": {
 			"Great Artist": 3,
 			"Great Engineer": 3
 		},
 		"uniques": [
 			"Only available <after adopting [Socialism]>",
-			"[+33]% Production when constructing [Culture] buildings [in all cities]",
+			"Gain a free [Cultural Expansion] [in all cities]",
+			"[+1 Production] from every [Artist]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"quote": "'Art must not be concentrated in dead shrines called museums. It must be spread everywhere – on the streets, in the trams, factories, workshops, and in the workers' homes.' - El Lissitzky",
@@ -5030,6 +5145,7 @@
 	},
 	{
 		"name": "Hall of the Nation",
+		"cost": 2400,
 		"isWonder": true,
 		"greatPersonPoints": {
 			"Great Strategist": 5
@@ -5079,7 +5195,7 @@
 	//Line 20
 	{
 		"name": "Innovation of Processing Precision",
-		"cost": 500,
+		"cost": 750,
 		"uniques": [
 			"'Innovation'",
 			"Limited to [1] per Civilization <hidden from users>",
@@ -5098,9 +5214,9 @@
 		"name": "Greenhouse",
 		"maintenance": 5,
 		"percentStatBonus": {
-			"food": 33
+			"food": 25
 		},
-		"happiness": 3,
+		"happiness": 1,
 		"uniques": [
 			"'Agricultural Building'",
 			"Only available <in cities without a [Nutripaste Factory]>"
@@ -5149,6 +5265,24 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Invention of Nylon",
+		"cost": 750,
+		"uniques": [
+			"'Invention'",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Nylon] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Nylon] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Invention of Nylon] is constructed by anybody> <hidden from users>",
+			"[+8]% [Culture] from every [Consumer Goods Industry]",
+			"Instantly provides [1] [Iconic Brand]",
+			"Unsellable",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"requiredBuilding": "Consumer Goods Industry",
+		"requiredTech": "Synthetic Materials",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Broadcast Tower",
 		"maintenance": 5,
 		"happiness": 1,
@@ -5165,7 +5299,7 @@
 	{
 		"name": "Stadium",
 		"maintenance": 3,
-		"happiness": 2,
+		"happiness": 1,
 		"uniques": [
 			"'Entertainment Building'",
 			"[-10]% Unhappiness from [Population] [in this city]"
@@ -5185,7 +5319,7 @@
 	},
 	{
 		"name": "Innovation of Instant Foods",
-		"cost": 500,
+		"cost": 750,
 		"uniques": [
 			"'Innovation'",
 			"Limited to [1] per Civilization <hidden from users>",
@@ -5203,15 +5337,15 @@
 	},
 	{
 		"name": "Invention of Organ Transplant Method",
-		"cost": 500,
+		"cost": 750,
 		"uniques": [
 			"'Invention'",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Organ Transplant Method] is not constructed by anybody> <hidden from users>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Organ Transplant Method] is not constructed by anybody> <hidden from users>",
 			"[-50]% production cost <if [Invention of Organ Transplant Method] is constructed by anybody> <hidden from users>",
-			"[+5]% [Happiness] from every [Hospital]",
-			"[+5]% [Science] from every [Hospital]",
+			"[+8]% [Happiness] from every [Hospital]",
+			"[+8]% [Science] from every [Hospital]",
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
@@ -5307,7 +5441,7 @@
 	},
 	{
 		"name": "Innovation of Civilian Navigation",
-		"cost": 500,
+		"cost": 750,
 		"uniques": [
 			"'Innovation'",
 			"Limited to [1] per Civilization <hidden from users>",
@@ -5324,6 +5458,26 @@
 		"hurryCostModifier": 0
 	},
 	{
+		"name": "Invention of Assault Rifle",
+		"cost": 750,
+		"uniques": [
+			"'Invention'",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Assault Rifle] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Assault Rifle] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Invention of Assault Rifle] is constructed by anybody> <hidden from users>",
+			"Instantly consumes [50] [Weapon Parts]",
+			"[+25]% Strength <for [{Industrial era} {Close Combat} {'Firearms'}] units>",
+			"[+10]% Strength <for [{Modern era} {Close Combat} {'Firearms'}] units>",
+			"[+10]% Strength <for [{Industrial era} {Ranged Combat} {'Firearms'}] units>",
+			"[+5]% Strength <for [{Industrial era} {Siege} {'Firearms'}] units> <when defending>",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"requiredBuilding": "Firearms Industry",
+		"requiredTech": "Ballistics",
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Radar Station",
 		"maintenance": 5,
 		"cityStrength": 10,
@@ -5336,6 +5490,24 @@
 		"requiredTech": "Radar",
 		"hurryCostModifier": 25
 	},
+	{
+		"name": "Invention of Night Vision",
+		"cost": 750,
+		"uniques": [
+			"'Invention'",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Night Vision] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Night Vision] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Invention of Night Vision] is constructed by anybody> <hidden from users>",
+			"Instantly consumes [20] [Electronic Parts]",
+			"[+20]% Strength <for [Scout] units>",
+			"[+20]% Strength <when attacking> <for [Assault] units>",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"requiredBuilding": "Electronic Industry",
+		"requiredTech": "Radar",
+		"hurryCostModifier": 0
+	},
 	//Line 22
 	{
 		"name": "Nuclear Power Plant",
@@ -5347,8 +5519,19 @@
 		"uniques": [
 			"'Power Building'",
 			"Consumes [1] [Enriched Uranium] <before discovering [Nuclear Fusion]>",
-			"Consumes [0] [Enriched Uranium] <after discovering [Nuclear Fusion]>",
-			"Provides [8] [Power] <in this city>"
+			"Provides [10] [Power] <in this city>"
+		],
+		"requiredTech": "Nuclear Fission",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Nuclear Warhead Production Line",
+		"cost": 2500,
+		"maintenance": 100,
+		"uniques": [
+			"Only available <if [Nuclear Option] is constructed>",
+			"Consumes [4] [Enriched Uranium]",
+			"Provides [1] [Nuclear Warhead] <every [2] turns>"
 		],
 		"requiredTech": "Nuclear Fission",
 		"hurryCostModifier": 25
@@ -5436,7 +5619,7 @@
 	{
 		"name": "Uranium Enrichment Facility",
 		"cost": 1200,
-		"maintenance": 10,
+		"maintenance": 50,
 		"specialistSlots": {
 			"Scientist": 1
 		},
@@ -5450,13 +5633,31 @@
 	},
 	{
 		"name": "Cellular Network",
-		"maintenance": 5,
+		"maintenance": 15,
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
 			"[-2]% maintenance cost for [all] buildings [in all cities]"
 		],
 		"requiredBuilding": "Telephone Circuit",
+		"requiredTech": "Telecommunications",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Computer Lab",
+		"cost": 1500,
+		"maintenance": 20,
+		"specialistSlots": {
+			"Scientist": 1
+		},
+		"percentStatBonus": {
+			"science": 15
+		},
+		"uniques": [
+			"'Research Building'",
+			"[Great Scientist] is earned [+1]% faster"
+		],
+		"requiredBuilding": "University",
 		"requiredTech": "Telecommunications",
 		"hurryCostModifier": 10
 	},
@@ -5506,7 +5707,7 @@
 			"Consumes [1] [Alloy]",
 			"Consumes [1] [Aluminum]",
 			"Consumes [1] [Electronic Parts]",
-			"Consumes [1] [Power]",
+			"Consumes [2] [Power]",
 			"Comment [Enables you to build Spacecrafts and Missiles in this City]"
 		],
 		"requiredBuilding": "Military Factory Complex",
@@ -5515,11 +5716,10 @@
 	},
 	{
 		"name": "Statue of the Savior",
-		"culture": 5,
-		"happiness": 2,
 		"isWonder": true,
+		"happiness": 5,
 		"greatPersonPoints": {
-			"Great Artist": 2
+			"Great Artist": 3
 		},
 		"uniques": [
 			"Only available <after adopting [Monotheism]>",
@@ -5545,6 +5745,22 @@
 		"requiredTech": "Plastics"
 	},
 	{
+		"name": "Worldwide Fast Food Chain",
+		"isWonder": true,
+		"specialistSlots": {
+			"Merchant": 3
+		},
+		"uniques": [
+			"Instantly consumes [1] [Iconic Brand]",
+			"[+1 Gold] from ['Agricultural Improvement'] tiles [in all cities]",
+			"[+33]% Yield from every [Mechanised Livestock Farm]",
+			"[+5]% [Food] from Trade Routes",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"quote": "'My God, that gravy is horrible. They buy tap water for 15 to 20 cents a thousand gallons and then they mix it with flour and starch and end up with pure wallpaper paste. And I know wallpaper paste, by God, because I've seen my mother make it. ...' - Harland Sanders describing KFC",
+		"requiredTech": "Plastics"
+	},
+	{
 		"name": "Media Centre",
 		"isWonder": true,
 		"percentStatBonus": {
@@ -5555,6 +5771,7 @@
 			"Great Artist": 3
 		},
 		"uniques": [
+			"Instantly consumes [1] [Iconic Brand]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Allied City-States provide [Culture] equal to [25]% of what they produce for themselves",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
@@ -5570,7 +5787,7 @@
 		},
 		"uniques": [
 			"'Economic Building'",
-			"[+1 Gold] from [Luxury resource] tiles [in this city]",
+			"Provides [10] [Consumption Demand]",
 			"[+1]% [Gold] from Trade Routes"
 		],
 		"requiredTech": "Globalization",
@@ -5578,8 +5795,7 @@
 	},
 	{
 		"name": "Solar Plant",
-		"maintenance": 2,
-		"production": 4,
+		"maintenance": 10,
 		"percentStatBonus": {
 			"production": 15
 		},
@@ -5598,10 +5814,15 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
+			"Consumes [3] [Power]",
 			"Provides [1] [Waste Material] <in cities with at least [10] [Population]>",
 			"Provides [1] [Waste Material] <in cities with at least [20] [Population]>",
 			"Provides [1] [Waste Material] <in cities with at least [30] [Population]>",
-			"Provides [1] [Waste Material] <in cities with at least [40] [Population]>"
+			"Provides [1] [Waste Material] <in cities with at least [40] [Population]>",
+			"Provides [1] [Waste Material] <in cities with at least [50] [Population]>",
+			"Provides [1] [Waste Material] <in cities with at least [60] [Population]>",
+			"Provides [1] [Waste Material] <in cities with at least [70] [Population]>",
+			"Provides [1] [Waste Material] <in cities with at least [80] [Population]>"
 		],
 		"requiredTech": "Ecology"
 	},
@@ -5614,6 +5835,7 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
+			"Consumes [3] [Power]",
 			"Consumes [3] [Waste Material]",
 			"Provides [2] [Alloy]",
 			"Provides [1] [Aluminum]",
@@ -5626,6 +5848,9 @@
 		"maintenance": 5,
 		"uniques": [
 			"'High Tech Industry'",
+			"Only available <in cities without a [Power Shortage]>",
+			"Consumes [4] [Power]",
+			"Consumes [5] [Electronic Parts]",
 			"Provides [3] [Microchips]",
 			"Provides [2] [Microchips] <after discovering [Robotics]>"
 		],
@@ -5671,13 +5896,13 @@
 	{
 		"name": "Particle Accelerator",
 		"cost": 2000,
-		"maintenance": 5,
-		"science": 8,
-		"percentStatBonus": {
-			"science": 33
+		"maintenance": 50,
+		"specialistSlots": {
+			"Scientist": 3
 		},
 		"uniques": [
 			"'Research Building'",
+			"[+33]% [Science] from every [Physic Lab] <in this city>",
 			"[Great Scientist] is earned [+1]% faster"
 		],
 		"requiredTech": "Particle Physics",
@@ -5689,7 +5914,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
-			"[+1 Culture] per [2] population [in this city]",
+			"[+1 Culture] per [3] population [in this city]",
 			"[-2]% maintenance cost for [all] buildings [in all cities]"
 		],
 		"requiredBuilding": "Broadcast Tower",
@@ -5726,31 +5951,11 @@
 			"[+15]% [Science] [in all cities]",
 			"[+15]% [Production] [in all cities]",
 			"[+5]% [Gold] from Trade Routes",
-			"[+1] Movement",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"requiredTech": "Satellites"
 	},
 	//Line 26
-	{
-		"name": "Drone Control Centre",
-		"maintenance": 5,
-		"specialistSlots": {
-			"Engineer": 1
-		},
-		"percentStatBonus": {
-			"food": 10,
-			"production": 10
-		},
-		"uniques": [
-			"'Infrastructure'",
-			"[-5]% maintenance cost for [all] buildings [in this city]",
-			"[+10]% Production when constructing [All] buildings [in this city]"
-		],
-		"requiredBuilding": "Drone Factory",
-		"requiredTech": "Remote Control",
-		"hurryCostModifier": 25
-	},
 	{
 		"name": "Nutripaste Factory",
 		"maintenance": 8,
@@ -5846,11 +6051,15 @@
 	{
 		"name": "Graphene Lab",
 		"maintenance": 10,
-		"science": 5,
+		"production": 5,
+		"specialistSlots": {
+			"Scientist": 1
+		},
 		"uniques": [
 			"'Research Building'",
-			"Provides [2] [Graphene]",
-			"Consumes [3] [Coal]"
+			"Consumes [5] [Power]",
+			"Consumes [3] [Coal]",
+			"Provides [2] [Graphene]"
 		],
 		"requiredBuilding": "University",
 		"requiredTech": "Graphene",
@@ -5867,7 +6076,7 @@
 			"gold": 20
 		},
 		"uniques": [
-			"[+50]% growth [in all coastal cities]",
+			"[+33]% growth [in all coastal cities]",
 			"Must be next to [Coast]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -5902,6 +6111,25 @@
 			"Consumes [1] [Microchips]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "3D Printers",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Drone Control Centre",
+		"maintenance": 5,
+		"specialistSlots": {
+			"Engineer": 1
+		},
+		"percentStatBonus": {
+			"food": 10,
+			"production": 10
+		},
+		"uniques": [
+			"'Infrastructure'",
+			"[-5]% maintenance cost for [all] buildings [in this city]",
+			"[+10]% Production when constructing [All] buildings [in this city]"
+		],
+		"requiredBuilding": "Drone Factory",
 		"requiredTech": "3D Printers",
 		"hurryCostModifier": 25
 	},
@@ -6191,12 +6419,13 @@
 	{
 		"name": "Arena",
 		"maintenance": 3,
-		"happiness": 2,
+		"happiness": 1,
 		"culture": 1,
 		"uniques": [
 			"'Entertainment Building'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Militant]>",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"[-10]% Unhappiness from [Population] [in this city]",
 			"Destroyed when the city is captured"
 		],
@@ -6246,9 +6475,10 @@
 	},
 	{
 		"name": "Jousting Place",
-		"happiness": 2,
+		"happiness": 1,
 		"uniques": [
 			"'Entertainment Building'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"[-5]% Unhappiness from [Population] [in this city]",
 			"Only available <after adopting [Feudalism]>"
@@ -6280,11 +6510,10 @@
 	},
 	{
 		"name": "Chartered Company",
-		"maintenance": 2,
 		"happiness": -2,
 		"percentStatBonus": {
-			"gold": 33,
-			"production": 25
+			"gold": 25,
+			"production": 10
 		},
 		"specialistSlots": {
 			"Governor": 1
@@ -6292,6 +6521,7 @@
 		"uniques": [
 			"'Economic Building'",
 			"'Political Building'",
+			"Provides 1 extra copy of each improved luxury resource near this City",
 			"Can only be built <in [Annexed] cities>",
 			"Only available <after adopting [Imperialism]>",
 			"Destroyed when the city is captured"
@@ -6550,6 +6780,7 @@
 	{
 		"name": "Mercantilism",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6567,6 +6798,7 @@
 	{
 		"name": "Free Trade",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6581,6 +6813,7 @@
 	{
 		"name": "Market Interventionism",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6589,31 +6822,31 @@
 			"[+1]% [Production] from every ['Economic Building']",
 			"[-33]% [Gold] [in all cities]",
 			"[Gold] cost of purchasing items in cities [-25]%",
+			"[-25]% maintenance cost for [all] buildings [in all cities]",
 			"[+10]% [Consumption Supply] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	{
 		"name": "Free Market Focus",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
 			"[+1]% [Gold] from every ['Cultural Building']",
-			"[-15]% maintenance cost for [all] buildings [in all cities]",
 			"[+33]% [Gold] [in all cities]",
-			"[Gold] cost of purchasing items in cities [+33]%",
+			"[Gold] cost of purchasing items in cities [+25]%",
 			"[+25]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	{
 		"name": "Corporatism Focus",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6624,12 +6857,12 @@
 			"[+3 Production] from all ['Military Building'] buildings",
 			"[+10]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	{
 		"name": "Militristic Economy",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6640,12 +6873,12 @@
 			"[+100]% Production when constructing ['Static Defense'] buildings [in all cities]",
 			"[-10]% [Consumption Supply] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	{
 		"name": "Planned Economy",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6662,12 +6895,12 @@
 			"May buy ['Military Building'] buildings with [Production] [in all cities]",
 			"[-10]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	{
 		"name": "Cooperative Economy",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6679,12 +6912,12 @@
 			"[+1 Culture] from ['Extraction Improvement'] tiles [in all cities]",
 			"[+10]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	{
 		"name": "Self-management Focus",
 		"isNationalWonder": true,
+		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -6695,8 +6928,7 @@
 			"[-50]% [Consumption Demand] resource production",
 			"[-50]% [Consumption Supply] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredTech": "Telegram"
+		]
 	},
 	// Special buildings
 	{
@@ -6729,7 +6961,7 @@
 		"isNationalWonder": true,
 		"uniques": [
 			"Enables nuclear weapon",
-			"Provides [1] [Enriched Uranium]",
+			"Provides [2] [Enriched Uranium]",
 			"Triggers a global alert upon completion",
 			"Cannot be hurried",
 			"Destroyed when the city is captured"
@@ -6980,6 +7212,42 @@
 		],
 		"hurryCostModifier": 0
 	},
+	//Culture stuff
+	{
+		"name": "High Culture Diversity",
+		"cost": 0,
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"[+5]% [Culture] [in all cities]",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Medium Culture Diversity",
+		"cost": 0,
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Low Culture Diversity",
+		"cost": 0,
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"[-5]% [Culture] [in all cities]",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"hurryCostModifier": 0
+	},
 	//Government stuff
 	//State of affair
 	{
@@ -7084,8 +7352,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Agreement'",
-			"Provides [10] [Influence Limit]",
-			"Consumes [1] [Influence]",
+			"Provides [5] [Influence Limit]",
 			"Enables Research agreements",
 			"[-10]% Culture cost of adopting new Policies",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -7097,6 +7364,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Agreement'",
+			"Provides [5] [Influence Limit]",
 			"Enables Defensive Pacts",
 			"Enables Open Borders agreements",
 			"[+25]% Production when constructing [Military] units [in all cities]",
@@ -7109,8 +7377,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Agreement'",
-			"Provides [10] [Influence Limit]",
-			"Consumes [1] [Influence]",
+			"Provides [5] [Influence Limit]",
 			"[+18]% Production when constructing ['Infrastructure'] buildings [in all cities]",
 			"[-25]% maintenance on road & railroads",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -7124,7 +7391,6 @@
 			"Unsellable",
 			"'Agreement'",
 			"Provides [10] [Influence Limit]",
-			"Consumes [1] [Influence]",
 			"Enables Research agreements",
 			"[-15]% Culture cost of adopting new Policies",
 			"Science gained from research agreements [+50]%",
@@ -7138,6 +7404,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Agreement'",
+			"Provides [10] [Influence Limit]",
 			"Enables Defensive Pacts",
 			"Enables Open Borders agreements",
 			"[+25]% Production when constructing [Military] units [in all cities]",
@@ -7151,7 +7418,6 @@
 			"Unsellable",
 			"'Agreement'",
 			"Provides [10] [Influence Limit]",
-			"Consumes [1] [Influence]",
 			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities]",
 			"[-50]% maintenance on road & railroads",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -7596,7 +7862,7 @@
 		"name": "Honor Bound Territory",
 		"uniqueTo": "East Asia",
 		"cost": 1,
-		"happiness": 2,
+		"happiness": 1,
 		"uniques": [
 			"Can only be built <in [Annexed] cities>",
 			"Only available <if [Great Qin] is constructed in all [Capital] cities>",
@@ -8362,6 +8628,7 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"Rebel units may spawn",
+			"[-3]% Strength <vs [Barbarian] units>",
 			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance>"
 		],
 		"hurryCostModifier": -50
@@ -8454,7 +8721,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
-			"Costs [1] [Alexandrian Empire Period] <upon turn start> <when above [0] [Alexandrian Empire Period]>",
+			"Instantly consumes [1] [Alexandrian Empire Period] <upon turn start> <when above [0] [Alexandrian Empire Period]>",
 			"Triggers a [Alexander's death] event <when below [6] [Alexandrian Empire Period]> <with [10]% chance>",
 			"Triggers a [Alexander's death] event <when below [9] [Alexandrian Empire Period]> <with [50]% chance> <if [Diadochi States] is not constructed>",
 			"Will not be displayed in Civilopedia",
