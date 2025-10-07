@@ -806,7 +806,8 @@
 			"'Heavy Industry'",
 			"[+1 Production] from [Metal] tiles [in this city]",
 			"[+1 Production] from [Minerals] tiles [in this city]",
-			"[+10]% Production when constructing [All] units [in this city]",
+			"[+10]% Production when constructing [Ancient era] units [in this city]",
+			"[+10]% Production when constructing [Classical era] units [in this city]",
 			"Provides [1] [Metal]",
 			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
@@ -838,7 +839,8 @@
 			"[+1 Food] from [Fresh water] tiles [in this city]",
 			"[+1 Food] from [River] tiles [in this city]",
 			"Only available <in cities without a [Irrigation System]>",
-			"Only available <in cities without a [Agricultural Water Storage]>"
+			"Only available <in cities without a [Agricultural Water Storage]>",
+			"Only available <in cities without a [Agricultural Expansion(non-River)]>"
 		],
 		"requiredTech": "The Wheel",
 		"hurryCostModifier": 10
@@ -1202,7 +1204,6 @@
 			"'Infrastructure'",
 			"[+1]% [Gold] from Trade Routes",
 			"[+1]% [Gold] from Trade Routes <if [Captial of Mountain Range] is constructed> <hidden from users>",
-			"[+1]% growth [in all cities]",
 			"[-5]% maintenance cost for [all] buildings [in this city]",
 			"All newly-trained [Settler] units [in this city] receive the [Cart] promotion",
 			"All newly-trained [Pioneer] units [in this city] receive the [Cart] promotion"
@@ -1255,9 +1256,9 @@
 		},
 		"uniques": [
 			"'Economic Building'",
-			"[+3]% [Gold] [in this city] <with [Grain]>",
-			"[+3]% [Gold] [in this city] <with [Tuber]>",
-			"[+3]% [Gold] [in this city] <with [Fruit]>",
+			"[+1]% [Gold] [in this city] <with [Grain]>",
+			"[+1]% [Gold] [in this city] <with [Tuber]>",
+			"[+1]% [Gold] [in this city] <with [Fruit]>",
 			"[+3]% [Gold] [in this city] <with [Incense]>",
 			"[+3]% [Gold] [in this city] <with [Spices]>",
 			"[+3]% [Gold] [in this city] <with [Grape]>",
@@ -1457,7 +1458,7 @@
 		"maintenance": 3,
 		"food": -3,
 		"percentStatBonus": {
-			"gold": 5,
+			"gold": 3,
 			"faith": 5
 		},
 		"uniques": [
@@ -2801,7 +2802,8 @@
 			"[+1 Food] from [Fresh water] tiles [in this city]",
 			"[+1 Food] from [River] tiles [in this city]",
 			"Only available <in cities without a [Early Irrigation System]>",
-			"Only available <in cities without a [Agricultural Water Storage]>"
+			"Only available <in cities without a [Agricultural Water Storage]>",
+			"Only available <in cities without a [Agricultural Expansion(non-River)]>"
 		],
 		"requiredTech": "Irrigation",
 		"hurryCostModifier": 25
@@ -2812,7 +2814,8 @@
 		"food": 3,
 		"uniques": [
 			"'Infrastructure'",
-			"Only available <in cities without a [Irrigation System]>"
+			"Only available <in cities without a [Irrigation System]>",
+			"Only available <in cities without a [Agricultural Expansion(River)]>"
 		],
 		"requiredTech": "Irrigation",
 		"hurryCostModifier": 25
