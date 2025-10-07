@@ -750,7 +750,8 @@
 			"[+1 Production] per [5] population [in this city] <in cities with between [9] and [15] [Population]>",
 			"[+1 Production] per [8] population [in this city] <in cities with between [15] and [24] [Population]>",
 			"[+1 Production] per [10] population [in this city] <in cities with at least [24] [Population]>",
-			"[+1 Production] from [Clay] tiles [in this city]"
+			"[+1 Production] from [Clay] tiles [in this city]",
+			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 0
@@ -806,7 +807,8 @@
 			"[+1 Production] from [Metal] tiles [in this city]",
 			"[+1 Production] from [Minerals] tiles [in this city]",
 			"[+10]% Production when constructing [All] units [in this city]",
-			"Provides [1] [Metal]"
+			"Provides [1] [Metal]",
+			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredNearbyImprovedResources": [
 			"Metal",
@@ -850,7 +852,8 @@
 			"[+1 Gold] from [{'Extraction Improvement'} {Silver Ore}] tiles [in this city]",
 			"[+1 Gold] from [{'Extraction Improvement'} {Rich Copper Ore}] tiles [in this city]",
 			"[+1 Gold] from [{'Agricultural Improvement'} {Cocoa}] tiles [in this city]",
-			"[+1 Gold] per [4] population [in this city]"
+			"[+1 Gold] per [4] population [in this city]",
+			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredNearbyImprovedResources": [
 			"Gold Ore",
@@ -1124,6 +1127,7 @@
 		},
 		"uniques": [
 			"Gain a free [Town Hall] [in this city]",
+			"[+33]% weight to this choice for AI decisions <hidden from users>",
 			"Only available <after adopting [Unity]>",
 			"Destroyed when the city is captured"
 		],
@@ -1136,6 +1140,7 @@
 		"gold": 3,
 		"uniques": [
 			"Gain a free [Town Hall] [in this city]",
+			"[+33]% weight to this choice for AI decisions <hidden from users>",
 			"Only available <after adopting [Unity]>",
 			"Destroyed when the city is captured"
 		],
@@ -1149,6 +1154,7 @@
 		"cityStrength": 2,
 		"uniques": [
 			"Gain a free [Town Hall] [in this city]",
+			"[+33]% weight to this choice for AI decisions <hidden from users>",
 			"Only available <after adopting [Unity]>",
 			"Destroyed when the city is captured"
 		],
@@ -1166,9 +1172,7 @@
 		},
 		"uniques": [
 			"'Political Building'",
-			"Only available <before adopting [Unity]> <for [Europa] Civilizations> <hidden from users>",
-			"Only available <before adopting [Unity]> <for [Mediterranean] Civilizations> <hidden from users>",
-			"Only available <before adopting [Unity]> <for [Central and West Asia] Civilizations> <hidden from users>",
+			"[+20]% weight to this choice for AI decisions <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Writing",
@@ -1851,6 +1855,7 @@
 			"Comment [Belongs to ['Heavy Industry'] before the Industrial era, and starting from that era, it turns into a ['Light Industry'] building.]",
 			"'Heavy Industry' <before the [Industrial era]> <hidden from users>",
 			"'Light Industry' <starting from the [Industrial era]> <hidden from users>",
+			"[+33]% weight to this choice for AI decisions <hidden from users>",
 			"[+1 Production] from ['Extraction Improvement'] tiles [in this city]",
 			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]",
 			"[+1 Production] from ['Lumber Improvement'] tiles [in this city]",
@@ -1964,6 +1969,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Political Building'",
+			"[+33]% weight to this choice for AI decisions <hidden from users>",
 			"[-10]% Unhappiness from [Population] [in this city]"
 		],
 		"requiredBuilding": "Town Hall",
@@ -2036,7 +2042,8 @@
 		"uniques": [
 			"'Infrastructure'",
 			"[-10]% Unhappiness from [Population] [in this city]",
-			"[25]% Food is carried over after population increases [in this city]"
+			"[25]% Food is carried over after population increases [in this city]",
+			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredTech": "Construction",
 		"hurryCostModifier": 25
