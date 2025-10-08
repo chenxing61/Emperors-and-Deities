@@ -2,7 +2,7 @@
 	{
 		"name": "Construct Residential District",
 		"uniques": [
-			"Only available <when above [1] [District Demand]]",
+			"Only available <when above [1] [District Demand]>",
 			"Creates a [Residential District] improvement on a specific tile",
 			"Remove [Construct Residential District] [in this city] <hidden from users>"
 		],
@@ -10,9 +10,29 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Supermarket",
+		"maintenance": 10,
+		"happiness": 1,
+		"percentStatBonus": {
+			"food": 5,
+			"production": 10,
+			"gold": 5
+		},
+		"uniques": [
+			"Must be next to [Residential District]",
+			"'Economic Building'",
+			"[+1 Happiness] <in cities with at least [20] [Population]>",
+			"[+1]% [Gold] from Trade Routes",
+			"[+2]% growth [in all cities]",
+			"[-5]% maintenance cost for [all] buildings [in this city]"
+		],
+		"requiredTech": "Railroads",
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Construct Commercial District",
 		"uniques": [
-			"Only available <when above [1] [District Demand]]",
+			"Only available <when above [1] [District Demand]>",
 			"Creates a [Commercial District] improvement on a specific tile",
 			"Remove [Construct Commercial District] [in this city] <hidden from users>"
 		],
@@ -22,7 +42,7 @@
 	{
 		"name": "Construct Industrial District",
 		"uniques": [
-			"Only available <when above [1] [District Demand]]",
+			"Only available <when above [1] [District Demand]>",
 			"Creates a [Industrial District] improvement on a specific tile",
 			"Remove [Construct Industrial District] [in this city] <hidden from users>"
 		],
