@@ -122,9 +122,9 @@
 		"name": "Complete Intergration",
 		"cost": 200,
 		"uniques": [
-			"[+50]% production cost <in cities with more than [10] [Population]>",
-			"[+50]% production cost <in cities with more than [20] [Population]>",
-			"[+50]% production cost <in cities with more than [30] [Population]>",
+			"[+50]% production cost <in cities with at least [10] [Population]>",
+			"[+50]% production cost <in cities with at least [20] [Population]>",
+			"[+50]% production cost <in cities with at least [30] [Population]>",
 			"Only available <before adopting [Anarchism]>",
 			"Can only be built <in [Annexed] cities>",
 			"Gain a free [Intergration] [in this city]",
@@ -158,9 +158,9 @@
 		"name": "Administrative Intergration",
 		"cost": 100,
 		"uniques": [
-			"[+50]% production cost <in cities with more than [10] [Population]>",
-			"[+100]% production cost <in cities with more than [20] [Population]>",
-			"[+200]% production cost <in cities with more than [30] [Population]>",
+			"[+50]% production cost <in cities with at least [10] [Population]>",
+			"[+100]% production cost <in cities with at least [20] [Population]>",
+			"[+200]% production cost <in cities with at least [30] [Population]>",
 			"Comment [Remove [Food],[Production] and [Gold] debuff from annexed cities]",
 			"Only available <before adopting [Anarchism]>",
 			"Can only be built <in [Annexed] cities>",
@@ -174,9 +174,9 @@
 		"name": "Cultural Intergration",
 		"cost": 100,
 		"uniques": [
-			"[+50]% production cost <in cities with more than [10] [Population]>",
-			"[+100]% production cost <in cities with more than [20] [Population]>",
-			"[+200]% production cost <in cities with more than [30] [Population]>",
+			"[+50]% production cost <in cities with at least [10] [Population]>",
+			"[+100]% production cost <in cities with at least [20] [Population]>",
+			"[+200]% production cost <in cities with at least [30] [Population]>",
 			"Comment [Remove [Culture],[Science] and [Faith] debuff from annexed cities]",
 			"Only available <before adopting [Anarchism]>",
 			"Can only be built <in [Annexed] cities>",
@@ -1212,7 +1212,7 @@
 		"uniques": [
 			"'Infrastructure'",
 			"[+1]% [Gold] from Trade Routes",
-			"[+1]% [Gold] from Trade Routes <if [Captial of Mountain Range] is constructed> <hidden from users>",
+			"[+1]% [Gold] from Trade Routes <if [Capital of Mountain Range] is constructed> <hidden from users>",
 			"[-5]% maintenance cost for [all] buildings [in this city]",
 			"All newly-trained [Settler] units [in this city] receive the [Cart] promotion",
 			"All newly-trained [Pioneer] units [in this city] receive the [Cart] promotion"
@@ -3520,7 +3520,7 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Captial of Mountain Range",
+		"name": "Capital of Mountain Range",
 		"isWonder": true,
 		"greatPersonPoints": {
 			"Great Artist": 3
@@ -8666,6 +8666,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"Consumes [1] [Standing Army Maintenance]",
 			"Consumes [1] [Noble Army Maintenance]"
 		],
@@ -8677,6 +8678,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"Destroyed when the city is captured",
 			"[+10]% [Food] [in all cities]",
 			"[+5]% [Happiness] [in all cities]",
@@ -8695,6 +8697,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"[+5]% [Food] [in all cities]",
 			"[+5]% [Happiness] [in all cities]",
 			"[+10]% [Gold] [in all cities]",
@@ -8708,7 +8711,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
-			"Destroyed when the city is captured",
+			"'Flag'",
 			"[-10]% [Food] [in all cities]",
 			"[-25]% [Happiness] [in all cities]",
 			"[+20]% [Gold] [in all cities]",
@@ -8716,7 +8719,8 @@
 			"[+25]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
 			"[+25]% Production when constructing ['Infrastructure'] buildings [in all cities]",
 			"[+25]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
-			"[Gold] cost of purchasing items in cities [+25]%"
+			"[Gold] cost of purchasing items in cities [+25]%",
+			"Destroyed when the city is captured"
 		],
 		"hurryCostModifier": -50
 	},
@@ -8726,6 +8730,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"Consumes [1] [Influence]",
 			"Consumes [1] [Influence] <starting from the [Imperial era]>",
 			"Resting point for Influence with City-States is increased by [15]",
@@ -8739,6 +8744,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"Instantly consumes [1] [Alexandrian Empire Period] <upon turn start> <when above [0] [Alexandrian Empire Period]>",
 			"Triggers a [Alexander's death] event <when below [6] [Alexandrian Empire Period]> <with [10]% chance>",
 			"Triggers a [Alexander's death] event <when below [9] [Alexandrian Empire Period]> <with [50]% chance> <if [Diadochi States] is not constructed>",
@@ -8752,6 +8758,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -8762,6 +8769,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -8772,6 +8780,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -8782,6 +8791,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
