@@ -172,4 +172,64 @@
 		"requiredTech": "Flight",
 		"hurryCostModifier": 25
 	},
+	{
+		"name": "Overproduction",
+		"cost": 50,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[+10]% [Food] [in all cities]",
+			"[+5]% [Happiness] [in all cities]",
+			"[-33]% [Gold] [in all cities]",
+			"[-50]% Production when constructing ['Light Industry'] buildings [in all cities]",
+			"[-50]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
+			"[-25]% Production when constructing ['Infrastructure'] buildings [in all cities]",
+			"[-25]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
+			"[Gold] cost of purchasing items in cities [-15]%",
+			"[33]% of [Gold] from every ['Heavy Industry'] in the city added to [Pollution] <hidden from users>",
+			"[33]% of [Production] from every ['Heavy Industry'] in the city added to [Pollution] <hidden from users>",
+			"[33]% of [Gold] from every ['Light Industry'] in the city added to [Pollution] <hidden from users>",
+			"[33]% of [Production] from every ['Light Industry'] in the city added to [Pollution] <hidden from users>",
+		],
+		"hurryCostModifier": -50
+	},
+	{
+		"name": "Balanced Production",
+		"cost": 50,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"[+5]% [Food] [in all cities]",
+			"[+5]% [Happiness] [in all cities]",
+			"[+10]% [Gold] [in all cities]",
+			"[25]% of [Gold] from every ['Heavy Industry'] in the city added to [Pollution] <hidden from users>",
+			"[25]% of [Production] from every ['Heavy Industry'] in the city added to [Pollution] <hidden from users>",
+			"[25]% of [Gold] from every ['Light Industry'] in the city added to [Pollution] <hidden from users>",
+			"[25]% of [Production] from every ['Light Industry'] in the city added to [Pollution] <hidden from users>"
+		],
+		"hurryCostModifier": -50
+	},
+	{
+		"name": "Underproduction",
+		"cost": 50,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[-10]% [Food] [in all cities]",
+			"[-25]% [Happiness] [in all cities]",
+			"[+20]% [Gold] [in all cities]",
+			"[+50]% Production when constructing ['Light Industry'] buildings [in all cities]",
+			"[+25]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
+			"[+25]% Production when constructing ['Infrastructure'] buildings [in all cities]",
+			"[+25]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
+			"[Gold] cost of purchasing items in cities [+25]%",
+			"[25]% of [Gold] from every ['Heavy Industry'] in the city added to [Pollution] <hidden from users>",
+			"[25]% of [Production] from every ['Heavy Industry'] in the city added to [Pollution] <hidden from users>",
+			"[25]% of [Gold] from every ['Light Industry'] in the city added to [Pollution] <hidden from users>",
+			"[25]% of [Production] from every ['Light Industry'] in the city added to [Pollution] <hidden from users>"
+		],
+		"hurryCostModifier": -50
+	}
 ]
