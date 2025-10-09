@@ -72,7 +72,13 @@
         "Remove ['Flag'] [in puppeted cities] <upon turn start> <hidden from users>",
         "Remove ['Flag'] [in annexed cities] <upon turn start> <hidden from users>",
         "Remove ['Flag'] [in annexed cities] <upon turn start> <hidden from users>",
-        //Prevents AI from spamming units
+        //Prevents AI from self-destruction
+        "[-75]% growth [in all cities] <when between [-10] and [-1] [Happiness]> <for [AI player] Civilizations>",
+        "Nullifies Growth [in all cities] <when below [-10] [Happiness]> <for [AI player] Civilizations>",
+        "[-50]% [Production] [in all cities] <when below [-10] [Happiness]> <for [AI player] Civilizations>",
+        "[-33]% Strength <for [All] units> <when below [-10] [Happiness]> <for [AI player] Civilizations>",
+        "Cannot build [Settler] units <when below [-10] [Happiness]> <for [AI player] Civilizations>",
+        "Rebel units may spawn <when below [-20] [Happiness]> <for [AI player] Civilizations>",
         "Cannot build [{non-[Nubian Archer]} {'Mercenary Army'}] units <before adopting [Plutocracy]> <for [AI player] Civilizations>",
         "Cannot build ['Firearms'] units <when below [-10] [Weapon Parts]>",
         "Cannot build ['Motorised'] units <when below [-10] [Vehicle Parts]>",
