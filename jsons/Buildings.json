@@ -132,6 +132,7 @@
 			"Gain a free [Intergration] [in this city]",
 			"Gain a free [Administrative Intergration] [in this city]",
 			"Gain a free [Cultural Intergration] [in this city]",
+			"[+300]% weight to this choice for AI decisions <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"hurryCostModifier": 25,
@@ -256,8 +257,9 @@
 			"Must be on [River]",
 			"Gain a free [Watermill] [in this city]", //40
 			"Gain a free [Windmill] [in this city]", //100
-			"Gain a free [Irrigation System] [in this city]"
-		], //120
+			"Gain a free [Irrigation System] [in this city]",//120
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
+		], 
 		"requiredTech": "Crop Rotation",
 		"hurryCostModifier": -25
 	},
@@ -275,8 +277,9 @@
 			"Must not be on [River]",
 			"Gain a free [Well] [in this city]", //20
 			"Gain a free [Windmill] [in this city]", //40
-			"Gain a free [Agricultural Water Storage] [in this city]"
-		], //120
+			"Gain a free [Agricultural Water Storage] [in this city]",//120
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
+		], 
 		"requiredTech": "Crop Rotation",
 		"hurryCostModifier": -25
 	},
@@ -296,8 +299,9 @@
 			"Gain a free [Brewery] [in this city]", //40
 			"Gain a free [Pottery Workshop] [in this city]", //40
 			"Gain a free [Civilian Blacksmith] [in this city]", //40
-			"Gain a free [Paper Maker] [in this city]"
-		], //80
+			"Gain a free [Paper Maker] [in this city]",//80
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
+		], 
 		"requiredTech": "Apprenticeship",
 		"hurryCostModifier": -25
 	},
@@ -317,8 +321,9 @@
 			"Gain a free [Healer's Hut] [in this city]", //20
 			"Gain a free [Clinic] [in this city]", //100
 			"Gain a free [Granary] [in this city]", //40
-			"Gain a free [Road Network] [in this city]"
-		], //40
+			"Gain a free [Road Network] [in this city]",//40
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
+		], 
 		"requiredTech": "Apprenticeship",
 		"hurryCostModifier": -25
 	},
@@ -337,7 +342,8 @@
 			"Gain a free [Lighthouse] [in this city]", //100
 			"Gain a free [Dry Dock] [in this city]", //85
 			"Gain a free [Trading Port] [in this city]", //120
-			"Must be next to [Coast]"
+			"Must be next to [Coast]",
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredTech": "Apprenticeship",
 		"hurryCostModifier": -25
@@ -358,8 +364,9 @@
 			"Gain a free [Walls] [in this city]", //40
 			"Gain a free [Military Blacksmith] [in this city]", //85
 			"Gain a free [Military Stable] [in this city]", //120
-			"Gain a free [Armour Workshop] [in this city]"
-		], //100
+			"Gain a free [Armour Workshop] [in this city]",//100
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
+		], 
 		"requiredTech": "Gunpowder Making",
 		"hurryCostModifier": -25
 	},
@@ -373,11 +380,13 @@
 			"Only available <in cities without a [Hunter's Hut]>",
 			"Only available <in cities without a [Crops Market]>",
 			"Only available <in cities without a [Trading Post]>",
+			"Only available <in cities without a [Warehouse]>",
 			"Gain a free [Hunter's Hut] [in this city]", //20
 			"Gain a free [Crops Market] [in this city]", //40
 			"Gain a free [Trading Post] [in this city]", //100
-			"Gain a free [Warehouse] [in this city]"
-		], //100
+			"Gain a free [Warehouse] [in this city]", //100
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
+		], 
 		"requiredTech": "Diplomacy",
 		"hurryCostModifier": -25
 	},
@@ -397,7 +406,8 @@
 			"Gain a free [Town Hall] [in this city]", //40
 			"Gain a free [Library] [in this city]", //40
 			"Gain a free [Town Square] [in this city]", //75
-			"Gain a free [Bathhouse] [in this city]" //100
+			"Gain a free [Bathhouse] [in this city]", //100
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredTech": "Education",
 		"hurryCostModifier": -25
@@ -416,8 +426,9 @@
 			"Gain a free [Courthouse] [in this city]", //100
 			"Gain a free [Garden] [in this city]", //120
 			"Gain a free [City Hall] [in this city]", //120
-			"Gain a free [Guild Complex] [in this city]"
-		], //160
+			"Gain a free [Guild Complex] [in this city]",//160
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
+		], 
 		"requiredTech": "Acoustics",
 		"hurryCostModifier": -25
 	},
@@ -433,7 +444,8 @@
 			"Only available <in cities without a [Military Academy]>",
 			"Gain a free [Medical School] [in this city]", //160
 			"Gain a free [University] [in this city]", //160
-			"Gain a free [Military Academy] [in this city]" //160
+			"Gain a free [Military Academy] [in this city]", //160
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredTech": "Acoustics",
 		"hurryCostModifier": -25
@@ -452,8 +464,9 @@
 			"Gain a free [Firearms Workshop] [in this city]", //120
 			"Gain a free [Arsenal] [in this city]", //160
 			"Gain a free [Mobilization Department] [in this city]", //275
-			"Gain a free [Bastion] [in this city]"
-		], //200
+			"Gain a free [Bastion] [in this city]",//200
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
+		], 
 		"requiredTech": "Rifling",
 		"hurryCostModifier": -25
 	},
@@ -469,7 +482,8 @@
 			"Only available <in cities without a [Holiday Resort]>",
 			"Gain a free [Opera House] [in this city]", //200
 			"Gain a free [Holiday Resort] [in this city]", //200
-			"Gain a free [Art Gallery] [in this city]" //160
+			"Gain a free [Art Gallery] [in this city]",//160
+			"[+300]% weight to this choice for AI decisions <hidden from users>" 
 		],
 		"requiredTech": "Railroads",
 		"hurryCostModifier": -25
@@ -486,7 +500,8 @@
 			"Only available <in cities without a [Highway Network]>",
 			"Gain a free [Sewer] [in this city]", //250
 			"Gain a free [Hospital] [in this city]", //300
-			"Gain a free [Highway Network] [in this city]" //400
+			"Gain a free [Highway Network] [in this city]", //400
+			"[+300]% weight to this choice for AI decisions <hidden from users>" 
 		],
 		"requiredTech": "Radio",
 		"hurryCostModifier": -25
@@ -506,7 +521,8 @@
 			"Gain a free [Police Station] [in this city]", //250
 			"Gain a free [Fire Station] [in this city]", //250
 			"Gain a free [Commune] [in this city] <after adopting [Complete Autonomy]>",
-			"Gain a free [Government Complex] [in this city]" //400
+			"Gain a free [Government Complex] [in this city]", //400
+			"[+300]% weight to this choice for AI decisions <hidden from users>" 
 		],
 		"requiredTech": "Telegram",
 		"hurryCostModifier": -25
@@ -521,7 +537,8 @@
 			"Only available <in cities without a [Civilian Factory Complex]>",
 			"Only available <in cities without a [Military Factory Complex]>",
 			"Gain a free [Civilian Factory Complex] [in this city]", //300
-			"Gain a free [Military Factory Complex] [in this city]" //300
+			"Gain a free [Military Factory Complex] [in this city]", //300
+			"[+300]% weight to this choice for AI decisions <hidden from users>" 
 		],
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": -25
@@ -538,7 +555,8 @@
 			"Only available <in cities without a [Consumer Goods Industry]>",
 			"Gain a free [Food Industry] [in this city]", //500
 			"Gain a free [Consumer Goods Industry] [in this city]", //500
-			"Gain a free [Furniture Industry] [in this city]" //500
+			"Gain a free [Furniture Industry] [in this city]", //500
+			"[+300]% weight to this choice for AI decisions <hidden from users>" 
 		],
 		"requiredTech": "Concrete",
 		"requiredBuilding": "Civilian Factory Complex",
@@ -556,7 +574,8 @@
 			"Only available <in cities without a [Vehicle Industry]>",
 			"Gain a free [Machine Industry] [in this city]", //750
 			"Gain a free [Cement Work] [in this city]", //500
-			"Gain a free [Vehicle Industry] [in this city]" //750
+			"Gain a free [Vehicle Industry] [in this city]", //750
+			"[+300]% weight to this choice for AI decisions <hidden from users>" 
 		],
 		"requiredTech": "Concrete",
 		"requiredBuilding": "Civilian Factory Complex",
@@ -574,7 +593,8 @@
 			"Only available <in cities without a [Bio Lab]>",
 			"Gain a free [Physic Lab] [in this city]", //1000
 			"Gain a free [Chemistry Lab] [in this city]", //1000
-			"Gain a free [Bio Lab] [in this city]" //1000
+			"Gain a free [Bio Lab] [in this city]", //1000
+			"[+300]% weight to this choice for AI decisions <hidden from users>" 
 		],
 		"requiredTech": "Pharmaceuticals",
 		"requiredBuilding": "University",

@@ -1523,6 +1523,7 @@
 		"range": 2,
 		"uniques": [
 			"Can transform to [Three-masted Ship] <removing the [Mercenary Habit] promotion/status> <removing the [Caravan Group] promotion/status> <after discovering [Cartography]> <when above [0] [Standing Army Maintenance]>",
+			"Can upgrade to [Three-masted Ship] <for [AI player] Civilizations>",
 			"'Mercenary Army'",
 			"'Sailing Ship'",
 			"'Dense Formation'",
@@ -2103,6 +2104,7 @@
 		"uniques": [
 			"Only available <after adopting [Unity]>",
 			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Garrison Army] promotion/status>",
+			"Can upgrade to [Grenadier] <for [AI player] Civilizations>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
@@ -2279,7 +2281,6 @@
 		"strength": 29,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can transform to [Recon Unit] <removing the [Mercenary Habit] promotion/status> <when above [0] [Standing Army Maintenance]> <after discovering [Replaceable Parts]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -2298,6 +2299,7 @@
 		"obsoleteTech": "Replaceable Parts",
 		"requiredBuilding": "Firearms Workshop",
 		"requiredResource": "Mercenary Contract",
+		"upgradesTo":"Recon Unit",
 		"attackSound": "metalhit"
 	},
 	{
@@ -4138,7 +4140,7 @@
 		"rangedStrength": 85,
 		"range": 16,
 		"uniques": [
-			"Consumes [1] [Aircraft Parts]",
+			"Costs [50] [Aircraft Parts]",
 			"Consumes [1] [Electronic Parts]",
 			"Consumes [1] [Fuel]",
 			"Damage taken from interception reduced by [90]%",

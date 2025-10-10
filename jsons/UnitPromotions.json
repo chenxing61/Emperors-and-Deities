@@ -2835,13 +2835,16 @@
 	{
 		"name": "The Levied Army",
 		"uniques": [
-			"[This Unit] is destroyed <if [Levies Disbandment] is constructed> <upon turn end>"
+			"[This Unit] is destroyed <if [Levies Disbandment] is constructed> <upon turn end>",
+			"[This Unit] is destroyed <when not at war> <upon turn end> <for [AI player] Civilizations>"
 		]
 	},
 	{
 		"name": "The Garrison Army",
 		"uniques": [
 			"Gain [-3] [Gold] <every [1] turns>",
+			"[+33]% construction time for [Fort] improvements",
+			"[+33]% construction time for [Trench] improvements",
 			"Can build [Fort] improvements on tiles <after discovering [Logistics]>",
 			"Can build [Trench] improvements on tiles <after discovering [Physics]>"
 		]
@@ -2849,6 +2852,10 @@
 	{
 		"name": "The Standing Army",
 		"uniques": [
+			"[This Unit] loses the [The Levied Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Garrison Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Noble Army] promotion <hidden from users>",
+			"[This Unit] loses the [Mercenary Habit] promotion <hidden from users>",
 			"[+10]% Strength <vs ['Levy Army'] units>",
 			"[+5]% Strength <vs ['Mercenary Army'] units>"
 		]
@@ -2856,6 +2863,10 @@
 	{
 		"name": "The Noble Army",
 		"uniques": [
+			"[This Unit] loses the [The Levied Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Garrison Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Standing Army] promotion <hidden from users>",
+			"[This Unit] loses the [Mercenary Habit] promotion <hidden from users>",
 			"[+25]% Strength <vs ['Levy Army'] units>",
 			"[+5]% Strength <vs ['Standing Army'] units>",
 			"[+10]% Strength <vs ['Mercenary Army'] units>"
@@ -2864,6 +2875,10 @@
 	{
 		"name": "Mercenary Habit",
 		"uniques": [
+			"[This Unit] loses the [The Levied Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Garrison Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Standing Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Noble Army] promotion <hidden from users>",
 			"[+50]% XP gained from combat",
 			"Earn [-25]% of the damage done to [Military] units as [Gold]",
 			"Gain [-3] [Gold] <every [1] turns>"
