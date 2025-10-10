@@ -112,9 +112,11 @@
 			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Recuitment Center]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Modern Conscript] appears <after discovering [Ballistics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Recuitment Center]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Destroyed when the city is captured"
 		]
 	},
@@ -4114,7 +4116,7 @@
 		"uniques": [
 			"'Military Building'",
 			"Comment [Increases [Call to Arms]'s amount of free unit.]",
-			"[+25]% Production when constructing [Military] units [in this city]",
+			"All newly-trained [Military] units [in this city] receive the [Reserve Force] promotion",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "City Hall",
@@ -4130,7 +4132,7 @@
 			"Gain a free [Mobilization Department] [in this city]",
 			"Comment [Increases [Call to Arms]'s amount of free unit.]",
 			"Provides [1] [Protection Squadron Volunteer]",
-			"[+33]% Production when constructing [Military] units [in this city]",
+			"All newly-trained [Military] units [in this city] receive the [Reserve Force] promotion",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Military Science",
