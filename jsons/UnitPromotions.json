@@ -1,10 +1,12 @@
 [
-	///Generally Apply
+	///Generally Apply\
 	{
-		"name": "Heal Instantly",
+		"name": "Use Reserve Force",
 		"uniques": [
-			"[This Unit] heals [50] HP",
-			"Doing so will consume this opportunity to choose a Promotion"
+			"Only available <for units with [Reserve Force]> <for units without [Reserve Force Cooldown]>",
+			"This Promotion is free",
+			"[This Unit] heals [33] HP <for [2] movement>",
+			"[This Unit] gains the [Reserve Force Cooldown] status for [3] turn(s)"
 		],
 		"unitTypes": [
 			"Siege",
@@ -191,6 +193,34 @@
 		],
 		"column": 3,
 		"row": 1
+	},
+	{
+		"name": "Reserve Force",
+		"uniques": [
+			"Only available <after discovering [Logistics]>",
+			"Gain [-3] [Gold] <every [1] turns>"
+		],
+		"unitTypes": [
+			"Siege",
+			"Scout",
+			"Assault",
+			"Rider",
+			"Close Combat",
+			"Ranged Combat",
+			"Close Combat Ship",
+			"Ranged Combat Ship",
+			"Submarine",
+			"Carrier",
+			"Fighter",
+			"Bomber",
+			"Helicopter",
+			"Atomic Bomber"
+		],
+		"prerequisites": [
+			"Stewardship"
+		],
+		"column": 3,
+		"row": 3
 	},
 	{
 		"name": "Extra Supply",
@@ -441,7 +471,7 @@
 		],
 		"uniques": [
 			"[+25]% Strength <vs [Ranged Combat] units> <when defending>",
-			"[+10]% Strength <vs [Siege] units> <when defending>",
+			"[+33]% Strength <vs [Siege] units> <when defending>",
 			"[+10]% Strength <vs ['Mounted'] units> <when defending>",
 			"[+10]% Strength <vs ['Motorised'] units> <when defending>",
 			"[+10]% Strength <vs ['Mechanised'] units> <when defending>",
@@ -512,7 +542,7 @@
 		],
 		"uniques": [
 			"[+5]% Strength <when above [50] HP>",
-			"[Target Unit] gains the [Surpressed] status for [2] turn(s)",
+			"[Target Unit] gains the [Surpressed] status for [2] turn(s) <upon damaging a [Military] unit>",
 			"[+15]% Strength <vs [Rider] units> <when attacking>"
 		],
 		"unitTypes": [
@@ -802,7 +832,7 @@
 			"High Speed Charge"
 		],
 		"uniques": [
-			"[Target Unit] gains the [Breached] status for [2] turn(s)"
+			"[Target Unit] gains the [Breached] status for [2] turn(s) <upon damaging a [Military] unit>"
 		],
 		"unitTypes": [
 			"Assault",
@@ -2734,8 +2764,8 @@
 	{
 		"name": "Protection Squadron Ability",
 		"uniques": [
-			"[+10]% Strength",
-			"[+5] HP when healing"
+			"[+15]% Strength",
+			"[+8] HP when healing"
 		]
 	},
 	{
@@ -2805,13 +2835,16 @@
 	{
 		"name": "The Levied Army",
 		"uniques": [
-			"[This Unit] is destroyed <if [Levies Disbandment] is constructed> <upon turn end>"
+			"[This Unit] is destroyed <if [Levies Disbandment] is constructed> <upon turn end>",
+			"[This Unit] is destroyed <when not at war> <upon turn end> <for [AI player] Civilizations>"
 		]
 	},
 	{
 		"name": "The Garrison Army",
 		"uniques": [
 			"Gain [-3] [Gold] <every [1] turns>",
+			"[+33]% construction time for [Fort] improvements",
+			"[+33]% construction time for [Trench] improvements",
 			"Can build [Fort] improvements on tiles <after discovering [Logistics]>",
 			"Can build [Trench] improvements on tiles <after discovering [Physics]>"
 		]
@@ -2819,6 +2852,10 @@
 	{
 		"name": "The Standing Army",
 		"uniques": [
+			"[This Unit] loses the [The Levied Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Garrison Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Noble Army] promotion <hidden from users>",
+			"[This Unit] loses the [Mercenary Habit] promotion <hidden from users>",
 			"[+10]% Strength <vs ['Levy Army'] units>",
 			"[+5]% Strength <vs ['Mercenary Army'] units>"
 		]
@@ -2826,6 +2863,10 @@
 	{
 		"name": "The Noble Army",
 		"uniques": [
+			"[This Unit] loses the [The Levied Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Garrison Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Standing Army] promotion <hidden from users>",
+			"[This Unit] loses the [Mercenary Habit] promotion <hidden from users>",
 			"[+25]% Strength <vs ['Levy Army'] units>",
 			"[+5]% Strength <vs ['Standing Army'] units>",
 			"[+10]% Strength <vs ['Mercenary Army'] units>"
@@ -2834,9 +2875,13 @@
 	{
 		"name": "Mercenary Habit",
 		"uniques": [
+			"[This Unit] loses the [The Levied Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Garrison Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Standing Army] promotion <hidden from users>",
+			"[This Unit] loses the [The Noble Army] promotion <hidden from users>",
 			"[+50]% XP gained from combat",
 			"Earn [-25]% of the damage done to [Military] units as [Gold]",
-			"Gain [-1] [Gold] <every [1] turns>"
+			"Gain [-3] [Gold] <every [1] turns>"
 		]
 	},
 	{
@@ -2878,6 +2923,10 @@
 	},
 	// Statuses
 	// Positives
+
+	{
+		"name": "Reserve Force Cooldown"
+	},
 	// Negatives
 	{
 		"name": "Breached",

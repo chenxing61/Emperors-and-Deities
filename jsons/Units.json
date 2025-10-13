@@ -9,13 +9,12 @@
 			"Can build [Land] improvements on tiles",
 			"Can build [Lakes] improvements on tiles",
 			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
-			"[This Unit] gains [3] XP <upon building a [All] improvement>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] gains [2] XP <upon building a [All] improvement>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Automation is a primary action"
 		],
 		"upgradesTo": "Mechanised Worker",
-		"requiredTech": "Fire Making",
-		"hurryCostModifier": 25
+		"requiredTech": "Fire Making"	
 	},
 	{
 		"name": "Mechanised Worker",
@@ -33,8 +32,7 @@
 			"Automation is a primary action"
 		],
 		"promotions":["Automobile"],
-		"requiredTech": "Combustion",
-		"hurryCostModifier": 25
+		"requiredTech": "Combustion"	
 	},
 	{
 		"name": "Galley Work Ship",
@@ -47,12 +45,11 @@
 			"Gain [1]-[3] [Food] <upon ending a turn in a [Coast] tile>",
 			"[+1] Movement <after discovering [Shipbuilding]>",
 			"Can build [Water] improvements on tiles",
-			"[This Unit] gains [3] XP <upon building a [All] improvement>",
+			"[This Unit] gains [2] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
 		"upgradesTo": "Modern Work Ship",
-		"requiredTech": "Fire Making",
-		"hurryCostModifier": 10
+		"requiredTech": "Fire Making"	
 	},
 	{
 		"name": "Expeditionary Work Ship",
@@ -66,8 +63,7 @@
 		],
 		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo": "Modern Work Ship",
-		"requiredTech": "Cartography",
-		"hurryCostModifier": 10
+		"requiredTech": "Cartography"	
 	},
 	{
 		"name": "Modern Work Ship",
@@ -81,8 +77,7 @@
 			"Automation is a primary action"
 		],
 		"requiredBuilding": "Port",
-		"requiredTech": "Advanced Shipbuilding",
-		"hurryCostModifier": 10
+		"requiredTech": "Advanced Shipbuilding"	
 	},
 	{
 		"name": "Settler",
@@ -94,12 +89,11 @@
 			"Excess Food converted to Production when under construction",
 			"[+2] Movement <before turn number [2]>",
 			"[+1] Sight <before turn number [2]>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Requires at least [3] population"
 		],
 		"requiredTech": "Fire Making",
-		"obsoleteTech": "Navigation",
-		"hurryCostModifier": 25
+		"obsoleteTech": "Navigation"	
 	},
 	{
 		"name": "Pioneer",
@@ -112,8 +106,7 @@
 			"[+1] Sight",
 			"Requires at least [1] population"
 		],
-		"requiredTech": "Navigation",
-		"hurryCostModifier": 10
+		"requiredTech": "Navigation"	
 	},
 	///line 0
 	{
@@ -129,7 +122,7 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -156,7 +149,7 @@
 			"Can build [Manual Plantation] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Manual Farm] improvements on tiles <for [Human player] Civilizations>",
 			"[+1] population in a random city <by consuming this unit> <after discovering [Bronze Working]>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"requiredTech": "Hunting and Fishing",
@@ -177,7 +170,7 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -223,7 +216,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -248,7 +241,7 @@
 			"'Edged Weapons'",
 			"[+25]% Strength <in [Friendly Land] tiles> <when defending>",
 			"[-33]% Strength <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -276,7 +269,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"[+50]% Strength <starting from the [Classical era]> <in [Land] tiles>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -302,7 +295,7 @@
 			"'Edged Weapons'",
 			"[+15]% Strength <when fighting in [Rough terrain] tiles>",
 			"[+25]% Strength <after discovering [Iron Working]>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -328,7 +321,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"Founds a new puppet city <by consuming this unit>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -355,7 +348,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"[+25]% Strength <after discovering [Iron Working]>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -383,7 +376,7 @@
 			"[+25]% Strength <after discovering [Iron Working]>",
 			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
 			"[-33]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -410,7 +403,7 @@
 			"[+25]% Strength <after discovering [Iron Working]>",
 			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
 			"[-33]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -429,7 +422,6 @@
 		"movement": 3,
 		"strength": 16,
 		"uniques": [
-			"Can transform to [Cataphract] <after discovering [Armorments]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"Consumes [1] [Horse]",
 			"'Noble Army'",
 			"'Mounted'",
@@ -438,7 +430,7 @@
 			"[+25]% Strength <after discovering [Iron Working]>",
 			"[-20]% Strength <when fighting in [Rough terrain] tiles>",
 			"[-20]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -446,6 +438,7 @@
 		],
 		"requiredTech": "The Wheel",
 		"obsoleteTech": "Armorments",
+		"upgradesTo":"Noble Cataphract",
 		"requiredResource": "Noble Army Maintenance",
 		"attackSound": "horse"
 	},
@@ -458,7 +451,6 @@
 		"movement": 3,
 		"strength": 17,
 		"uniques": [
-			"Can transform to [Cataphract] <after discovering [Armorments]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"Consumes [1] [Horse]",
 			"'Noble Army'",
 			"'Mounted'",
@@ -467,7 +459,7 @@
 			"[+25]% Strength <after discovering [Iron Working]>",
 			"[-20]% Strength <when fighting in [Rough terrain] tiles>",
 			"[-20]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -476,6 +468,7 @@
 		],
 		"requiredTech": "The Wheel",
 		"obsoleteTech": "Armorments",
+		"upgradesTo":"Noble Cataphract",
 		"requiredResource": "Noble Army Maintenance",
 		"attackSound": "horse"
 	},
@@ -495,7 +488,7 @@
 			"Can move immediately once bought",
 			"[+50]% Strength <vs ['Barbaric Army'] units> <when attacking>",
 			"[+25]% Strength <vs ['Barbaric Army'] units> <when defending>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -526,7 +519,7 @@
 			"'Edged Weapons'",
 			"May enter foreign tiles without open borders",
 			"[-100]% Strength <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -551,7 +544,7 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -580,7 +573,7 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -608,7 +601,7 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -639,7 +632,7 @@
 			"[+1] Sight",
 			"[-25]% Strength <when fighting in [Rough terrain] tiles>",
 			"[-50]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -669,7 +662,7 @@
 			"[-25]% Strength <vs cities> <when attacking>",
 			"[-33]% Strength <vs ['Siege Weapons'] units>",
 			"[-33]% Strength <vs ['Firearms'] units>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -701,7 +694,7 @@
 			"[+1] Range <after discovering [Stirrup]> <in [Land] tiles>",
 			"[+25]% Strength <after discovering [Armorments]> <in [Land] tiles>",
 			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -729,7 +722,7 @@
 			"'Infantry'",
 			"'Edged Weapons'",
 			"'Dense Formation'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -752,12 +745,12 @@
 		"rangedStrength": 20,
 		"range": 1,
 		"uniques": [
-			"Can transform to [Crossbowman] <after discovering [Engineering]> <costs [+50 Gold] stats>",
+			"Can transform to [Qin Crossbowman] <if [Great Qin] is constructed>",
 			"'Standing Army'",
 			"'Infantry'",
 			"'Edged Weapons'",
 			"'Dense Formation'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -786,7 +779,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -818,7 +811,7 @@
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -849,7 +842,7 @@
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -876,7 +869,7 @@
 			"'Edged Weapons'",
 			"[+33]% Strength <after discovering [Armorments]> <in [Land] tiles>",
 			"[+33]% Strength <after discovering [Tactics]> <in [Land] tiles>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -902,7 +895,7 @@
 			"'Edged Weapons'",
 			"[+17]% Strength <when fighting in [Open terrain] tiles> <when defending>",
 			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -932,7 +925,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"[+25]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -962,7 +955,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -992,7 +985,7 @@
 			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
 			"[+20]% Strength <after discovering [Tactics]> <in [Land] tiles>",
 			"[+33]% Strength <after discovering [Steels]> <in [Land] tiles>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1023,7 +1016,7 @@
 			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
 			"[+20]% Strength <after discovering [Tactics]> <in [Land] tiles>",
 			"[+33]% Strength <after discovering [Steels]> <in [Land] tiles>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1057,7 +1050,7 @@
 			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
 			"[+20]% Strength <after discovering [Tactics]> <in [Land] tiles>",
 			"[+33]% Strength <after discovering [Steels]> <in [Land] tiles>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1142,7 +1135,7 @@
 			"[+33]% Strength <after discovering [Tactics]> <in [Land] tiles>",
 			"[+25]% Strength <in [Friendly Land] tiles> <when defending>",
 			"[-33]% Strength <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1170,7 +1163,7 @@
 			"'Mercenary Army'",
 			"'Edged Weapons'",
 			"Can move immediately once bought",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1235,7 +1228,7 @@
 			"Can move after attacking",
 			"No defensive terrain bonus",
 			"[-25]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1270,7 +1263,7 @@
 			"Can move after attacking",
 			"No defensive terrain bonus",
 			"[-25]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1299,7 +1292,7 @@
 			"'Edged Weapons'",
 			"Can move after attacking",
 			"No defensive terrain bonus",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1331,7 +1324,7 @@
 			"Can move after attacking",
 			"No defensive terrain bonus",
 			"[-25]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1361,7 +1354,7 @@
 			"Can move after attacking",
 			"No defensive terrain bonus",
 			"[-25]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1392,7 +1385,7 @@
 			"Can move after attacking",
 			"No defensive terrain bonus",
 			"[-15]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1424,7 +1417,7 @@
 			"[+20]% Strength <after discovering [Tactics]> <in [Land] tiles>",
 			"[+33]% Strength <after discovering [Steels]> <in [Land] tiles>",
 			"Can move immediately once bought",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1523,6 +1516,7 @@
 		"range": 2,
 		"uniques": [
 			"Can transform to [Three-masted Ship] <removing the [Mercenary Habit] promotion/status> <removing the [Caravan Group] promotion/status> <after discovering [Cartography]> <when above [0] [Standing Army Maintenance]>",
+			"Can upgrade to [Three-masted Ship] <for [AI player] Civilizations>",
 			"'Mercenary Army'",
 			"'Sailing Ship'",
 			"'Dense Formation'",
@@ -1558,7 +1552,7 @@
 			"[+1] Sight",
 			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
 			"[+10]% Strength <vs [Rider] units> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1590,7 +1584,7 @@
 			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
 			"[-25]% Strength <when fighting in [Rough terrain] tiles>",
 			"[-50]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1621,7 +1615,7 @@
 			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
 			"[-25]% Strength <when fighting in [Rough terrain] tiles>",
 			"[-50]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1652,7 +1646,7 @@
 			"[+75]% Strength <vs cities> <when attacking>",
 			"[-33]% Strength <vs ['Siege Weapons'] units>",
 			"[-33]% Strength <vs [Ranged Combat] units> <when defending>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1680,7 +1674,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1708,7 +1702,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"Can move immediately once bought",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1741,7 +1735,7 @@
 			"'Edged Weapons'",
 			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
 			"[+33]% Strength <after discovering [Steels]> <in [Land] tiles>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1771,7 +1765,7 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1798,7 +1792,7 @@
 			"'Edged Weapons'",
 			"No defensive terrain bonus",
 			"[-25]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>",
 			"Only available <before adopting [Knighthood]>"
 		],
@@ -1829,7 +1823,7 @@
 			"'Edged Weapons'",
 			"No defensive terrain bonus",
 			"[-25]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1860,7 +1854,7 @@
 			"[-15]% Strength <vs cities> <when attacking>",
 			"[-33]% Strength <vs ['Siege Weapons'] units>",
 			"[-33]% Strength <vs ['Firearms'] units>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1893,7 +1887,7 @@
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1926,7 +1920,7 @@
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -1951,7 +1945,7 @@
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -2002,7 +1996,7 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -2030,7 +2024,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Firearms'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -2057,7 +2051,7 @@
 			"'Skirmishers'",
 			"'Firearms'",
 			"Can move immediately once bought",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -2082,7 +2076,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -2103,6 +2097,7 @@
 		"uniques": [
 			"Only available <after adopting [Unity]>",
 			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Garrison Army] promotion/status>",
+			"Can upgrade to [Grenadier] <for [AI player] Civilizations>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
@@ -2110,7 +2105,7 @@
 			"'Edged Weapons'",
 			"[+25]% Strength <in [Friendly Land] tiles> <when defending>",
 			"[-33]% Strength <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -2140,7 +2135,7 @@
 			"'Firearms'",
 			"No defensive terrain bonus",
 			"[-25]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -2170,7 +2165,7 @@
 			"Can move immediately once bought",
 			"No defensive terrain bonus",
 			"[-25]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -2197,7 +2192,7 @@
 			"'Mounted'",
 			"No defensive terrain bonus",
 			"[-10]% Strength <vs cities> <when attacking>",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -2232,7 +2227,7 @@
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -2279,7 +2274,6 @@
 		"strength": 29,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
-			"Can transform to [Recon Unit] <removing the [Mercenary Habit] promotion/status> <when above [0] [Standing Army Maintenance]> <after discovering [Replaceable Parts]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -2298,6 +2292,7 @@
 		"obsoleteTech": "Replaceable Parts",
 		"requiredBuilding": "Firearms Workshop",
 		"requiredResource": "Mercenary Contract",
+		"upgradesTo":"Recon Unit",
 		"attackSound": "metalhit"
 	},
 	{
@@ -2343,7 +2338,7 @@
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -4138,7 +4133,7 @@
 		"rangedStrength": 85,
 		"range": 16,
 		"uniques": [
-			"Consumes [1] [Aircraft Parts]",
+			"Costs [50] [Aircraft Parts]",
 			"Consumes [1] [Electronic Parts]",
 			"Consumes [1] [Fuel]",
 			"Damage taken from interception reduced by [90]%",
@@ -4474,7 +4469,6 @@
 			"Can see invisible [Barbaric] units"
 		],
 		"requiredTech": "Diplomacy",
-		"hurryCostModifier": 10,
 		"attackSound": "paper"
 	},
 	{
@@ -4728,7 +4722,7 @@
 			"'Galley'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Invisible to non-adjacent units",
 			"[+15]% Strength <starting from the [Classical era]>"
 		],
@@ -4754,7 +4748,7 @@
 			"[+10]% Strength <starting from the [Medieval era]>",
 			"[+17]% Strength <starting from the [Renaissance era]>",
 			"Can move after attacking",
-			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Invisible to non-adjacent units"
 		],
 		"promotions": [

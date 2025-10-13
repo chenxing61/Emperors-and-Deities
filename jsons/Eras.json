@@ -38,7 +38,7 @@
     },
     {
         "name": "Classical era",
-        "researchAgreementCost": 150,
+        "researchAgreementCost": 200,
         "startingSettlerCount": 1,
         "startingWorkerCount": 1,
         "startingMilitaryUnitCount": 2,
@@ -84,7 +84,7 @@
     },
     {
         "name": "Renaissance era",
-        "researchAgreementCost": 250,
+        "researchAgreementCost": 400,
         "startingSettlerCount": 2,
         "startingWorkerCount": 1,
         "startingMilitaryUnitCount": 3,
@@ -111,7 +111,7 @@
     },
     {
         "name": "Imperial era",
-        "researchAgreementCost": 250,
+        "researchAgreementCost": 500,
         "startingSettlerCount": 2,
         "startingWorkerCount": 1,
         "startingMilitaryUnitCount": 4,
@@ -143,7 +143,7 @@
     },
     {
         "name": "Industrial era",
-        "researchAgreementCost": 300,
+        "researchAgreementCost": 600,
         "startingSettlerCount": 3,
         "startingWorkerCount": 2,
         "startingMilitaryUnitCount": 5,
@@ -159,6 +159,7 @@
             "Infrastructure Expansion",
             "Business Expansion",
             "Civil Consolidation",
+            "Military Consolidation",
             "Education Expansion"
         ],
         "startingObsoleteWonders": [],
@@ -174,13 +175,12 @@
         "uniques": [
             "May not generate great prophet equivalents naturally",
             "May buy [Great Prophet] units for [300] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
-            "Starting in this era disables religion",
             "Every major Civilization gains a spy once a civilization enters this era"
         ]
     },
     {
         "name": "Modern era",
-        "researchAgreementCost": 350,
+        "researchAgreementCost": 700,
         "startingSettlerCount": 3,
         "startingWorkerCount": 2,
         "startingMilitaryUnitCount": 5,
@@ -196,6 +196,7 @@
             "Infrastructure Expansion",
             "Business Expansion",
             "Civil Consolidation",
+            "Military Consolidation",
             "Education Expansion",
             "Cultural Expansion",
             "Civil Modernization",
@@ -214,13 +215,12 @@
         "uniques": [
             "May not generate great prophet equivalents naturally",
             "May buy [Great Prophet] units for [300] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
-            "Starting in this era disables religion",
             "Every major Civilization gains a spy once a civilization enters this era"
         ]
     },
     {
         "name": "Atomic era",
-        "researchAgreementCost": 400,
+        "researchAgreementCost": 1000,
         "startingSettlerCount": 3,
         "startingWorkerCount": 2,
         "startingMilitaryUnitCount": 5,
@@ -236,6 +236,7 @@
             "Infrastructure Expansion",
             "Business Expansion",
             "Civil Consolidation",
+            "Military Consolidation",
             "Education Expansion",
             "Cultural Expansion",
             "Civil Modernization",
@@ -255,13 +256,12 @@
         "uniques": [
             "May not generate great prophet equivalents naturally",
             "May buy [Great Prophet] units for [300] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
-            "Starting in this era disables religion",
             "Every major Civilization gains a spy once a civilization enters this era"
         ]
     },
     {
         "name": "Information era",
-        "researchAgreementCost": 400,
+        "researchAgreementCost": 1500,
         "startingSettlerCount": 3,
         "startingWorkerCount": 3,
         "startingMilitaryUnitCount": 5,
@@ -277,6 +277,7 @@
             "Infrastructure Expansion",
             "Business Expansion",
             "Civil Consolidation",
+            "Military Consolidation",
             "Education Expansion",
             "Cultural Expansion",
             "Civil Modernization",
@@ -296,7 +297,6 @@
         "uniques": [
             "May not generate great prophet equivalents naturally",
             "May buy [Great Prophet] units for [300] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
-            "Starting in this era disables religion",
             "Every major Civilization gains a spy once a civilization enters this era"
         ]
     },
@@ -304,7 +304,7 @@
         // But as it is _really_ usefull to have for testing, I'd like to keep it.
         // The stats are just copy-pasted from the information era.
         "name": "Future era",
-        "researchAgreementCost": 400,
+        "researchAgreementCost": 3000,
         "startingSettlerCount": 3,
         "startingWorkerCount": 3,
         "startingMilitaryUnitCount": 5,
@@ -320,6 +320,7 @@
             "Infrastructure Expansion",
             "Business Expansion",
             "Civil Consolidation",
+            "Military Consolidation",
             "Education Expansion",
             "Cultural Expansion",
             "Civil Modernization",
@@ -339,7 +340,6 @@
         "uniques": [
             "May not generate great prophet equivalents naturally",
             "May buy [Great Prophet] units for [300] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
-            "Starting in this era disables religion",
             "Every major Civilization gains a spy once a civilization enters this era"
         ]
     }
