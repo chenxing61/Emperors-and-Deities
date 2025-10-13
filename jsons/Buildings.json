@@ -697,7 +697,6 @@
 			"New [{'Standing Army'} {Land}] units start with [10] XP [in this city]",
 			"New [{'Noble Army'} {Land}] units start with [10] XP [in this city]",
 			"Provides [1] [Standing Army Maintenance]",
-			"Free [Early Swordsman] appears <for [AI player] Civilizations> <when number of [Cities] is less than [2]> <before the [Classical era]> <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Copper Working"	
@@ -1383,7 +1382,7 @@
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from ['Rock'] tiles [in this city]",
-			"[+1]% Production when constructing [All] buildings [in all cities]"
+			"[+1]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities]"
 		],
 		"requiredNearbyImprovedResources": [
 			"Marble",
@@ -1400,7 +1399,7 @@
 		"uniques": [
 			"'Heavy Industry'",
 			"[+1 Production] from [Clay] tiles [in this city]",
-			"[+1]% Production when constructing [All] buildings [in all cities]"
+			"[+1]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities]"
 		],
 		"requiredNearbyImprovedResources": [
 			"Clay"
@@ -1619,8 +1618,6 @@
 			"'Military Building'",
 			"Provides [1] [Horse]",
 			"New ['Mounted'] units start with [10] XP [in this city]",
-			"Free [Light Cavalry] appears <for [AI player] Civilizations> <before the [Imperial era]> <hidden from users>",
-			"Free [Hussar] appears <for [AI player] Civilizations> <starting from the [Imperial era]> <before the [Industrial era]> <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Barrack",
@@ -1858,7 +1855,6 @@
 			"'Military Building'",
 			"New [Military] units start with [10] XP [in this city]",
 			"[{Land} {Military}] units gain the [Classical Arms] promotion",
-			"Free [Swordsman] appears <for [AI player] Civilizations> <before the [Imperial era]> <hidden from users>",
 			"Comment [Enables you to build new Siege Units unlocked by Engineering]",
 			"Destroyed when the city is captured"
 		],
@@ -1885,7 +1881,6 @@
 			"'Military Building'",
 			"Comment [Increases [Call to Arms]'s amount of free close combat unit given.]",
 			"Provides [1] [Standing Army Maintenance]",
-			"Free [Swordsman] appears <for [AI player] Civilizations> <before the [Imperial era]> <hidden from users>",
 			"New [Military] units start with [15] XP [in this city]"
 		],
 		"requiredBuilding": "Barrack",
@@ -2957,7 +2952,6 @@
 			"Provides [2] [Weapon Parts] <after discovering [Physics]>",
 			"Consumes [2] [Metal] <after discovering [Physics]><before discovering [Replaceable Parts]>",
 			"Consumes [1] [Alloy] <after discovering [Replaceable Parts]>",
-			"Free [Crossbowman] appears <for [AI player] Civilizations> <before the [Imperial era]> <hidden from users>",
 			"[+50]% Production when constructing [Military Factory Complex] buildings [in this city]",
 			"Destroyed when the city is captured"
 		],
