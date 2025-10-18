@@ -388,7 +388,7 @@
 	},
 	{
 		"name": "Civil Expansion",
-		"cost": 295,
+		"cost": 315,
 		"uniques": [
 			"Unsellable",
 			"'Expansion'",
@@ -400,7 +400,7 @@
 			"Only available <in cities without a [Bathhouse]>",
 			"Gain a free [Monument] [in this city]", //20
 			"Gain a free [Town Hall] [in this city]", //40
-			"Gain a free [Library] [in this city]", //40
+			"Gain a free [Library] [in this city]", //60
 			"Gain a free [Town Square] [in this city]", //75
 			"Gain a free [Bathhouse] [in this city]", //100
 			"[+300]% weight to this choice for AI decisions <hidden from users>"
@@ -423,6 +423,32 @@
 			"Gain a free [Garden] [in this city]", //120
 			"Gain a free [City Hall] [in this city]", //120
 			"Gain a free [Guild Complex] [in this city]",//160
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
+		], 
+		"requiredTech": "Acoustics",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Poilcy Consolidation",
+		"cost": 200,
+		"uniques": [
+			"Unsellable",
+			"'Consolidation'",
+			"Comment [Only when all buildings in this package have not been built, this package is available.]",
+			"Only available <in cities without a [Shrine]>",
+			"Only available <in cities without a [Chapel]>",
+			"Only available <in cities without a [Forum]>",
+			"Only available <in cities without a [Arena]>",
+			"Only available <in cities without a [Primitive Property Sector]>",
+			"Only available <in cities without a [Jousting Place]>",
+			"Only available <in cities without a [Examination Hall]>",
+			"Gain a free [Shrine] [in this city] <after adopting [Polytheism]>", 
+			"Gain a free [Chapel] [in this city] <after adopting [Monotheism]>", 
+			"Gain a free [Forum] [in this city] <after adopting [Scholarship]>", 
+			"Gain a free [Arena] [in this city] <after adopting [Militant]>", 
+			"Gain a free [Primitive Property Sector] [in this city] <after adopting [Plutocracy]>", 
+			"Gain a free [Jousting Place] [in this city] <after adopting [Feudalism]>", 
+			"Gain a free [Examination Hall] [in this city] <after adopting [Meritocracy]>", 
 			"[+300]% weight to this choice for AI decisions <hidden from users>"
 		], 
 		"requiredTech": "Acoustics",
@@ -1189,6 +1215,7 @@
 	},
 	{
 		"name": "Library",
+		"cost":60,
 		"maintenance": 2,
 		"specialistSlots": {
 			"Scientist": 1,
@@ -1533,7 +1560,7 @@
 		"culture": 1,
 		"happiness": 1,
 		"uniques": [
-			"'Infrastructure'",
+			"'Cultural Building'",
 			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"[10]% Food is carried over after population increases [in this city]"
 		],
@@ -3641,22 +3668,6 @@
 		"requiredBuilding": "Town Square",
 		"requiredTech": "Printing Press"	
 	},
-	{
-		"name": "Printing House",
-		"maintenance": 3,
-		"percentStatBonus": {
-			"culture": 5,
-			"science": 10,
-			"faith": 10
-		},
-		"uniques": [
-			"'Cultural Building'",
-			"Only available <after adopting [Humanism]>",
-			"Destroyed when the city is captured"
-		],
-		"requiredBuilding": "Town Square",
-		"requiredTech": "Printing Press"	
-	},
 	//Line 14
 	{
 		"name": "Observatory",
@@ -5492,7 +5503,8 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"Consumes [3] [Uranium]",
+			"Consumes [3] [Power]",
+			"Consumes [2] [Uranium]",
 			"Provides [1] [Enriched Uranium]"
 		],
 		"requiredTech": "Uranium Enrichment"	
@@ -6071,7 +6083,7 @@
 		"uniques": [
 			"'Worship Place'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Creates a [Manual Farm] improvement on a specific tile",
+			"Creates a [Manual Farm] improvement on a specific tile <before discovering [Fertilizer]>",
 			"Only available <after adopting [Polytheism]> <in [non-[Puppeted]] cities>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -6352,6 +6364,22 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Civil Service"	
+	},
+	{
+		"name": "Printing House",
+		"cost":300,
+		"percentStatBonus": {
+			"culture": 5,
+			"science": 10,
+			"faith": 10
+		},
+		"uniques": [
+			"'Cultural Building'",
+			"Only available <after adopting [Humanism]>",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding": "Town Square",
+		"requiredTech": "Printing Press"	
 	},
 	{
 		"name": "Chartered Company",

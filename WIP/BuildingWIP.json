@@ -1,11 +1,74 @@
 [	
 	{
+		"name": "Resettlement",
+		"cost":0,
+		"uniques": [
+			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
+			"Costs [1] [Settler]"
+		],
+		"requiredTech": "Plastics"
+	},
+	{
+		"name": "Population Migration",
+		"cost":0,
+		"uniques": [
+			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
+			
+			"Instantly provides [1] [Food Export Route]"
+		],
+		"requiredTech": "Plastics",
+		"requiredBuilding":"Warehouse"
+	},
+	{
+		"name": "Import [Food]",
+		"cost":0,
+		"maintenance":3,
+		"food":10,
+		"uniques": [
+			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
+			"Consumes [1] [Food Export Route]"
+		],
+		"requiredTech": "Plastics"
+	},
+	{
+		"name": "Export [Food]",
+		"cost":0,
+		"food":-10,
+		"uniques": [
+			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
+			"Provide [1] [Food Export Route]"
+		],
+		"requiredTech": "Plastics",
+		"requiredBuilding":"Warehouse"
+	},
+		{
+		"name": "Import [Production]",
+		"cost":0,
+		"maintenance":3,
+		"production":10,
+		"uniques": [
+			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
+			"Consumes [1] [Production Export Route]"
+		],
+		"requiredTech": "Plastics"
+	},
+	{
+		"name": "Export [Production]",
+		"cost":0,
+		"production":-10,
+		"uniques": [
+			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
+			"Provide [1] [Production Export Route]"
+		],
+		"requiredTech": "Plastics",
+		"requiredBuilding":"Warehouse"
+	},
+	{
 		"name": "The Great Exchange",
 		"isNationalWonder":true,
 		"uniques": [
 		],
-		"requiredTech": "Plastics",
-		"hurryCostModifier": 25
+		"requiredTech": "Plastics"
 	},
 	{
 		"name": "Construct Residential District",
@@ -14,8 +77,7 @@
 			"Creates a [Residential District] improvement on a specific tile",
 			"Remove [Construct Residential District] [in this city] <hidden from users>"
 		],
-		"requiredTech": "Plastics",
-		"hurryCostModifier": 25
+		"requiredTech": "Plastics"
 	},
 	{
 		"name": "Supermarket",
@@ -34,8 +96,7 @@
 			"[+2]% growth [in all cities]",
 			"[-5]% maintenance cost for [all] buildings [in this city]"
 		],
-		"requiredTech": "Railroads",
-		"hurryCostModifier": 25
+		"requiredTech": "Railroads"
 	},
 	{
 		"name": "Construct Commercial District",
@@ -44,8 +105,7 @@
 			"Creates a [Commercial District] improvement on a specific tile",
 			"Remove [Construct Commercial District] [in this city] <hidden from users>"
 		],
-		"requiredTech": "Plastics",
-		"hurryCostModifier": 25
+		"requiredTech": "Plastics"
 	},
 	{
 		"name": "Construct Industrial District",
@@ -54,8 +114,7 @@
 			"Creates a [Industrial District] improvement on a specific tile",
 			"Remove [Construct Industrial District] [in this city] <hidden from users>"
 		],
-		"requiredTech": "Plastics",
-		"hurryCostModifier": 25
+		"requiredTech": "Plastics"
 	},
 	{
 		"name": "Train Station",
@@ -75,8 +134,7 @@
 			"[+2]% growth [in all cities]",
 			"[-5]% maintenance cost for [all] buildings [in this city]"
 		],
-		"requiredTech": "Railroads",
-		"hurryCostModifier": 10
+		"requiredTech": "Railroads"
 	},
 	{
 		"name": "Large Airport",
@@ -97,8 +155,7 @@
 			"[+1 Production] per [3] population [in this city]",
 			"[-5]% maintenance cost for [all] buildings [in this city]"
 		],
-		"requiredTech": "Flight",
-		"hurryCostModifier": 25
+		"requiredTech": "Flight"
 	},
 	{
 		"name": "Small Airport",
@@ -114,8 +171,7 @@
 			"Can carry [2] extra [Air] units",
 			"[-5]% maintenance cost for [all] buildings [in this city]"
 		],
-		"requiredTech": "Flight",
-		"hurryCostModifier": 25
+		"requiredTech": "Flight"
 	},
 	{
 		"name": "Mass Transit",
@@ -134,8 +190,7 @@
 			"[+2]% growth [in all cities]",
 			"[-5]% maintenance cost for [all] buildings [in this city]"
 		],
-		"requiredTech": "Railroads",
-		"hurryCostModifier": 10
+		"requiredTech": "Railroads"
 	},
 	{
 		"name": "Invention of Metro",
@@ -165,8 +220,7 @@
 			"'Infrastructure'",
 			"[-5]% maintenance cost for [all] buildings [in this city]"
 		],
-		"requiredTech": "Flight",
-		"hurryCostModifier": 25
+		"requiredTech": "Flight"
 	},
 	{
 		"name": "AI Calculation Center",
@@ -179,8 +233,7 @@
 			"'Infrastructure'",
 			"[-5]% maintenance cost for [all] buildings [in this city]"
 		],
-		"requiredTech": "Flight",
-		"hurryCostModifier": 25
+		"requiredTech": "Flight"
 	},
 	{
 		"name": "Overproduction",
