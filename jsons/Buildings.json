@@ -1208,6 +1208,9 @@
 		},
 		"uniques": [
 			"'Political Building'",
+			"Unavailable <for [Mediterranean] Civilizations> <after adopting [Unity]> <hidden from users>",
+			"Unavailable <for [Central and West Asia] Civilizations> <after adopting [Unity]> <hidden from users>",
+			"Unavailable <for [Europa] Civilizations> <after adopting [Unity]> <hidden from users>",
 			"[+20]% weight to this choice for AI decisions <hidden from users>",
 			"Destroyed when the city is captured"
 		],
@@ -1235,6 +1238,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"Unavailable <for [Mediterranean] Civilizations> <if [SPQR] is constructed> <hidden from users>",
 			"[+1]% [Gold] from Trade Routes",
 			"[+1]% [Gold] from Trade Routes <if [Capital of Mountain Range] is constructed> <hidden from users>",
 			"[-5]% maintenance cost for [all] buildings [in this city]",
@@ -1965,12 +1969,27 @@
 		"requiredBuilding": "Healer's Hut",
 		"requiredTech": "Philosophy"	
 	},
+		{
+		"name": "Sanhedrin",
+		"uniqueTo": "Central and West Asia",
+		"cost": 60,
+		"faith": 2,
+		"uniques": [
+			"Gain a free [Courthouse] [in this city]",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
+			"Only available <after adopting [Monotheism]>",
+			"Only available <when religion is enabled>",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Calendar"
+	},
 	{
 		"name": "Courthouse",
 		"maintenance": 3,
 		"happiness": 1,
 		"uniques": [
 			"'Political Building'",
+			"Unavailable <for [Central and West Asia] Civilizations> <after adopting [Monotheism]> <hidden from users>",
 			"[+33]% weight to this choice for AI decisions <hidden from users>",
 			"[-10]% Unhappiness from [Population] [in this city]"
 		],
@@ -6264,20 +6283,7 @@
 		],
 		"requiredTech": "Calendar"
 	},
-	{
-		"name": "Sanhedrin",
-		"uniqueTo": "Central and West Asia",
-		"cost": 60,
-		"faith": 2,
-		"uniques": [
-			"Gain a free [Courthouse] [in this city]",
-			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Only available <after adopting [Monotheism]>",
-			"Only available <when religion is enabled>",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Calendar"
-	},
+
 	{
 		"name": "Arena",
 		"maintenance": 3,
@@ -7299,6 +7305,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Neolithic era Form'",
 			"'Civilization Form'",
 			"'Divided'",
 			"Remove [{non-[Early City States]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7398,6 +7405,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Neolithic era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Earliest Empire]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7409,7 +7417,7 @@
 			"Comment [Akkadian, Assurian and Hitties]",
 			"[+10]% growth [in all cities]",
 			"[+33]% Production when constructing ['Military Building'] buildings [in all cities connected to capital]",
-			"[+1 Production] from [Strategic resource] tiles [in all cities]",
+			"[+2 Production] from [Strategic resource] tiles [in all cities]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7421,6 +7429,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Neolithic era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Egyptian Dynasties]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7435,7 +7444,7 @@
 			"[+10]% growth [in all cities]",
 			"[+10]% growth [in all cities] <starting from the [Ancient era]>",
 			"[+10]% Production when constructing [All] wonders [in all cities]",
-			"[+10]% Production when constructing [All] wonders [in all cities] <starting from the [Classical era]>",
+			"[+5]% Production when constructing [All] wonders [in all cities] <starting from the [Classical era]>",
 			"[+1 Production, +1 Faith] from every [Governor] <starting from the [Classical era]>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -7484,6 +7493,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Ancient era Form'",
 			"'Civilization Form'",
 			"'Divided'",
 			"Remove [{non-[Greek City States]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7524,6 +7534,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Ancient era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Shang Dynasty]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7548,6 +7559,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Ancient era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Zhou Dynasty]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7563,30 +7575,6 @@
 			"[+1 Culture] [in all cities] <before adopting [Unity]>",
 			"[+2 Happiness] [in puppeted cities] <after adopting [Unity]>",
 			"Comment [Unique option in increasing [Influence] event]",
-			"Triggers a global alert upon completion",
-			"Moves to new capital when capital changes <hidden from users>"
-		]
-	},
-	{
-		"name": "Persian Dynasties",
-		"uniqueTo": "Central and West Asia",
-		"uniques": [
-			"Limited to [1] per Civilization <hidden from users>",
-			"Unbuildable <hidden from users>",
-			"Unsellable",
-			"'Civilization Form'",
-			"'United'",
-			"Remove [{non-[Persian Dynasties]} {'Civilization Form'}] [in all cities] <hidden from users>",
-			"Provides [15] [Influence Limit]",
-			"Provides [8] [Influence Limit] <starting from the [Classical era]>",
-			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"Provides [2] [Standing Army Maintenance]",
-			"Provides [3] [Noble Army Maintenance]",
-			"Comment [Unique Name:]",
-			"Comment [Shāhanshāh]",
-			"[+10]% growth [in all cities]",
-			"New ['Noble Army'] units start with [25] XP [in all cities]",
-			"Comment [Gain access to serveal uniques like [Zhayedan] and [Azadan Cavalry]]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7638,6 +7626,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[SPQR]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7658,12 +7647,38 @@
 		]
 	},
 	{
+		"name": "Persian Dynasties",
+		"uniqueTo": "Central and West Asia",
+		"uniques": [
+			"Limited to [1] per Civilization <hidden from users>",
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Classical era Form'",
+			"'Civilization Form'",
+			"'United'",
+			"Remove [{non-[Persian Dynasties]} {'Civilization Form'}] [in all cities] <hidden from users>",
+			"Provides [15] [Influence Limit]",
+			"Provides [8] [Influence Limit] <starting from the [Classical era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [2] [Standing Army Maintenance]",
+			"Provides [3] [Noble Army Maintenance]",
+			"Comment [Unique Name:]",
+			"Comment [Shāhanshāh]",
+			"[+10]% growth [in all cities]",
+			"New ['Noble Army'] units start with [25] XP [in all cities]",
+			"Comment [Gain access to serveal uniques like [Zhayedan] and [Azadan Cavalry]]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
 		"name": "Carthage Obligarchy",
 		"uniqueTo": "North Africa",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Carthage Obligarchy]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7691,6 +7706,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Great Qin]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7748,6 +7764,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'Divided'",
 			"Remove [{non-[Diadochi States]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7772,6 +7789,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'Divided'",
 			"Remove [{non-[Warring States]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7782,7 +7800,7 @@
 			"Comment [Unique Name:]",
 			"Comment [The Hundred Schools of thoughts]",
 			"Comment [Enable you to choose 3 Schools of thoughts in the total of 9 schools of thoughts with lasting effects]",
-			"Instantly provides [3] [Avaliable School of Thoughts]",
+			"Instantly provides [3] [Avaliable School of Thoughts] <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
@@ -7793,8 +7811,8 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Outcome'",
-			"[-2 Gold] from all ['Political Building'] buildings",
-			"[+5]% [Culture] from every ['Political Building']",
+			"[-1 Gold] from all ['Political Building'] buildings",
+			"[+3]% [Culture] from every ['Political Building']",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
@@ -7805,8 +7823,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Outcome'",
-			"[-5]% [Gold] [in all cities]",
-			"[-5]% [Production] [in all cities]",
+			"[-10]% [Gold] [in all cities]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"[+1 Faith] per [5] population [in all cities]",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -7833,8 +7850,8 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Outcome'",
-			"[-1 Culture] from all ['Political Building'] buildings",
-			"[+2]% [Production] from every ['Political Building']",
+			"[-2 Culture] from all ['Political Building'] buildings",
+			"[+3]% [Production] from every ['Political Building']",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
@@ -7907,6 +7924,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Chu Dynasty]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7931,6 +7949,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Han Dynasty]} {'Civilization Form'}] [in all cities] <hidden from users>",
