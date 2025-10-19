@@ -579,6 +579,7 @@
             {
                 "text": "With some reforms, our empire can adapt to new age without problems.",
                 "uniques": [
+                    "Only available <if [Unified] is not constructed>",
                     "Comment [Give up your unique civilization form and return to the generic line of unified civilization form.]",
                     "Comment [Also, you might've ran out of unique government forms because there arent enough of them in the first place.]",
                     "Gain a free [Early Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
@@ -599,7 +600,7 @@
                 "uniques": [
                     "Instantly consumes [5] [Influence]",
                     "Comment [Keep your current special civilization form]",
-                    "Only available <if ['Neolithic era Form'] is constructed>"
+                    "Only available <if ['Neolithic era Form'] is constructed> <if [Unified] is not constructed>"
                 ]
             },
             {
@@ -607,7 +608,7 @@
                 "uniques": [
                     "Instantly consumes [10] [Influence]",
                     "Comment [Keep your current special civilization form]",
-                    "Only available <if ['Ancient era Form'] is constructed>"
+                    "Only available <if ['Ancient era Form'] is constructed> <if [Unified] is not constructed>"
                 ]
             },
             {
@@ -615,7 +616,7 @@
                 "uniques": [
                     "Instantly consumes [15] [Influence]",
                     "Comment [Keep your current special civilization form]",
-                    "Only available <if ['Classical era Form'] is constructed>"
+                    "Only available <if ['Classical era Form'] is constructed> <if [Unified] is not constructed>"
                 ]
             },
             {

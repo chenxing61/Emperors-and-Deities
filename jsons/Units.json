@@ -717,6 +717,36 @@
 		"upgradesTo": "Hussar",
 		"attackSound": "arrow"
 	},
+	{
+		"name": "Camel Rider",
+		"unitType": "Rider",
+		"cost": 75,
+		"movement": 3,
+		"strength": 15,
+		"uniques": [
+			"Only available <with [Camel]>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+33]% Strength <vs ['Mounted'] units>",
+			"[+25]% Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Skirmisher Training"
+		],
+		"requiredBuilding": "Military Stable",
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "arrow"
+	},
 	///Line 5
 	{
 		"name": "Archer",

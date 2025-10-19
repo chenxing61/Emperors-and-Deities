@@ -1276,7 +1276,9 @@
 			"'Economic Building'",
 			"[+3]% [Gold] [in this city] <with [Bovine]>",
 			"[+3]% [Gold] [in this city] <with [Caprinae]>",
-			"[+4]% [Gold] [in this city] <with [Horse]>",
+			"[+3]% [Gold] [in this city] <with [Camel]>",
+			"[+3]% [Culture] [in this city] <with [Wild Animals]>",
+			"[+3]% [Gold] [in this city] <with [Horse]>",
 			"[+50]% Production when constructing [Stable] buildings [in this city] <with [Horse]>",
 			"Must have an owned ['Herd'] within [3] tiles"
 		],
@@ -1440,6 +1442,7 @@
 	},
 	{
 		"name": "Walls",
+		"cost":50,
 		"maintenance": 1,
 		"happiness": 1,
 		"cityStrength": 5,
@@ -1485,7 +1488,7 @@
 		"food": -3,
 		"percentStatBonus": {
 			"gold": 3,
-			"faith": 5
+			"faith": 10
 		},
 		"uniques": [
 			"'Military Building'",
@@ -1500,6 +1503,7 @@
 	{
 		"name": "The Grand Ditch",
 		"isWonder": true,
+		"happiness": 1,
 		"greatPersonPoints": {
 			"Great Engineer": 1
 		},
@@ -2030,6 +2034,7 @@
 		"specialistSlots":{"Labourer":3},
 		"uniques": [
 			"'Economic Building'",
+			"[+1 Gold] from every [Labourer] <in this city>",
 			"[+1]% Production when constructing ['Light Industry'] buildings [in all cities]",
 			"New [Civilian] units start with [10] XP [in this city]"
 		],
@@ -6683,8 +6688,8 @@
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"[+1]% [Production] from every ['Economic Building']",
-			"[-33]% [Gold] [in all cities]",
+			"[+3]% [Production] from every ['Economic Building']",
+			"[-20]% [Gold] [in all cities]",
 			"[Gold] cost of purchasing items in cities [-25]%",
 			"[-25]% maintenance cost for [all] buildings [in all cities]",
 			"[+10]% [Consumption Supply] resource production",
@@ -6700,9 +6705,9 @@
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"[+1]% [Gold] from every ['Cultural Building']",
-			"[+33]% [Gold] [in all cities]",
-			"[Gold] cost of purchasing items in cities [+25]%",
+			"[+3]% [Gold] from every ['Cultural Building']",
+			"[+20]% [Gold] [in all cities]",
+			"[Gold] cost of purchasing items in cities [+15]%",
 			"[+25]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -8646,6 +8651,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
