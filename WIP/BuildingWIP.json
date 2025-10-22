@@ -107,6 +107,53 @@
 		"requiredTech": "Plastics"
 	},
 	{
+		"name": "Cargo Port",
+		"maintenance": 5,
+		"percentStatBonus": {
+			"gold": 10
+		},
+		"uniques": [
+			"'Marine Infrastructure'",
+			"[+1 Gold] from [Bonus resource] tiles [in this city]",
+			"[+1]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
+			"Must be next to [Coast]"
+		],
+		"requiredBuilding": "Trading Port",
+		"requiredTech": "Navigation"	
+	},
+		{
+		"name": "Commercial Area",
+		"specialistSlots": {
+			"Labourer": 2,
+			"Merchant": 2,
+			"Artist": 1
+		},
+		"uniques": [
+			"Only available <before adopting [Socialism]> <before adopting [Anarchism]>",
+			"'Economic Building'",
+			"Provides [4] [Consumption Demand]",
+			"[+1 Gold] per [5] population [in this city]"
+		],
+		"requiredBuilding": "Bank",
+		"requiredTech": "Electricity"	
+	},
+	{
+		"name": "Invention of Intermodal container",
+		"cost": 500,
+		"uniques": [
+			"'Invention'",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Stamping] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Stamping] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Invention of Stamping] is constructed by anybody> <hidden from users>",
+			"Comment [[Firearms Industry] provides more [Weapon Parts].]",
+			"Unsellable",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"requiredBuilding": "Machine Industry",
+		"requiredTech": "Replaceable Parts"	
+	},
+	{
 		"name": "Construct Industrial District",
 		"uniques": [
 			"Only available <when above [1] [District Demand]>",
@@ -114,6 +161,37 @@
 			"Remove [Construct Industrial District] [in this city] <hidden from users>"
 		],
 		"requiredTech": "Plastics"
+	},
+	{
+		"name": "Innovation of Industrial Safety Measures",
+		"cost": 500,
+		"uniques": [
+			"'Invention'",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Stamping] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Stamping] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Invention of Stamping] is constructed by anybody> <hidden from users>",
+			"Comment [[Firearms Industry] provides more [Weapon Parts].]",
+			"Unsellable",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"requiredBuilding": "Machine Industry",
+		"requiredTech": "Replaceable Parts"	
+	},
+	{
+		"name": "Highway Network",
+		"maintenance": 5,
+		"happiness": 1,
+		"uniques": [
+			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
+			"'Infrastructure'",
+			"'Highway Access'",
+			"[+1 Happiness] <in cities with at least [20] [Population]>",
+			"[+1]% [Gold] from Trade Routes",
+			"[+1 Production] from ['Infrastructure Improvement'] tiles [in this city]"
+		],
+		"requiredBuilding": "Road Network",
+		"requiredTech": "Combustion"	
 	},
 	{
 		"name": "Train Station",
@@ -299,8 +377,21 @@
 		],
 		"requiredTech": "Flight"
 	},
+		{
+		"name": "Data Center",
+		"maintenance": 3,
+		"happiness": 1,
+		"percentStatBonus": {
+			"gold": 5
+		},
+		"uniques": [
+			"'Infrastructure'",
+			"[-5]% maintenance cost for [all] buildings [in this city]"
+		],
+		"requiredTech": "Flight"
+	},
 	{
-		"name": "AI Calculation Center",
+		"name": "AI Calculation Office",
 		"maintenance": 3,
 		"happiness": 1,
 		"percentStatBonus": {
