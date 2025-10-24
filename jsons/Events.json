@@ -600,7 +600,7 @@
                 "uniques": [
                     "Instantly consumes [5] [Influence]",
                     "Comment [Keep your current special civilization form]",
-                    "Only available <if ['Neolithic era Form'] is constructed> <if [Unified] is not constructed>"
+                    "Only available <if ['Neolithic era Form'] is constructed> <if [Unified] is not constructed> <during the [Classical era]>"
                 ]
             },
             {
@@ -608,7 +608,7 @@
                 "uniques": [
                     "Instantly consumes [10] [Influence]",
                     "Comment [Keep your current special civilization form]",
-                    "Only available <if ['Ancient era Form'] is constructed> <if [Unified] is not constructed>"
+                    "Only available <if ['Ancient era Form'] is constructed> <if [Unified] is not constructed> <during the [Classical era]>"
                 ]
             },
             {
@@ -616,7 +616,15 @@
                 "uniques": [
                     "Instantly consumes [15] [Influence]",
                     "Comment [Keep your current special civilization form]",
-                    "Only available <if ['Classical era Form'] is constructed> <if [Unified] is not constructed>"
+                    "Only available <if ['Classical era Form'] is constructed> <if [Unified] is not constructed> <during the [Medieval era]>"
+                ]
+            },
+            {
+                "text": "Our way of life must be protected.",
+                "uniques": [
+                    "Instantly consumes [20] [Influence]",
+                    "Comment [Keep your current special civilization form]",
+                    "Only available <if ['Ideology Form'] is constructed> <if [Unified] is not constructed> <starting from the [Modern era]>"
                 ]
             },
             {
@@ -663,7 +671,7 @@
             {
                 "text": "We shall dominate the Ocean!",
                 "uniques": [
-                    "Only available <starting from the [Renaissance era]> <before the [Industrial era]> <if [Autocratic Empire] is not constructed>",
+                    "Only available <starting from the [Renaissance era]> <before the [Industrial era]> <if [Autocratic Empire] is not constructed> <if [Colonial Empires] is not constructed>",
                     "Comment [Although our empire has stood tall, it would be more efficient if we take the new route...]",
                     "Gain a free [Colonial Empires] [in capital]"
                 ]
@@ -671,15 +679,15 @@
             {
                 "text": "We will continue our empire's glory.",
                 "uniques": [
-                    "Only available <starting from the [Industrial era]> <before adopting [Socialism]> <before adopting [Anarchism]> <before adopting [Fascism]>",
+                    "Only available <starting from the [Industrial era]> <before adopting [Socialism]> <before adopting [Anarchism]> <before adopting [Fascism]> <if [Federation] is not constructed>",
                     "Gain a free [Personal Union] [in capital]"
                 ]
             },
             {
-                "text": "Can we wait?",
+                "text": "No avaliable options",
                 "uniques": [
-                    "Comment [We need more contemplation...]",
-                    "Unavailable <if [Unified] is not constructed>",
+                    "Comment [Yet.]",
+                    "Only available <if [Unified] is constructed>",
                     "Play [whoosh] sound",
                     "Instantly provides [10] [Influence] <when number of [Cities] is between [0] and [5]>",
                     "Instantly provides [15] [Influence] <when number of [Cities] is more than [4]>"
