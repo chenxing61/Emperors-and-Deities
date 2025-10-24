@@ -603,14 +603,14 @@
         "era": "Renaissance era",
         "uniques": [
             "Comment [Enables you to build [Printing House], a ['Cultural Building'] that gives various bonuses]",
-            "[+1 Happiness, +1 Production] per [5] population [in all cities] <in cities with at least [15] [Population]>"
+            "[+1 Happiness] per [6] population [in all cities] <in cities with at least [20] [Population]>"
         ],
         "policies": [
             {
                 "name": "Rise of Citizens",
                 "uniques": [
                     "[+25]% Production when constructing ['Expansion'] buildings [in all cities]",
-                    "[Gold] cost of purchasing ['Expansion'] buildings [-10]%"
+                    "[Gold] cost of purchasing ['Expansion'] buildings [-15]%"
                 ],
                 "row": 1,
                 "column": 3
@@ -618,7 +618,7 @@
             {
                 "name": "Education Focus",
                 "uniques": [
-                    "[+1 Science] per [5] population [in all cities] <in cities with at least [15] [Population]>",
+                    "[+1 Science] per [6] population [in all cities] <in cities with at least [20] [Population]>",
                     "[-1 Gold, +1 Culture] from every ['Educational Building']",
                     "[+1 Culture, +1 Happiness] from every ['Worship Place'] <after adopting [Theocracy]>"
                 ],
@@ -647,7 +647,8 @@
                 "uniques": [
                     "[+1 Happiness, +2 Culture] [in all cities] <after adopting [Polytheism]>",
                     "[+3 Faith] from every ['Worship Place'] <after adopting [Monotheism]>",
-                    "[+1 Faith, +1 Culture] <in cities with at least [5] [Population]>"
+                    "[+1 Faith, +1 Culture] <in cities with at least [5] [Population]>",
+                    "Gain a free [Follower] belief"
                 ],
                 "requires": [
                     "Education Focus",
