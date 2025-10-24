@@ -999,7 +999,7 @@
         "name": "Fascism",
         "era": "Modern era",
         "uniques": [
-            "Cities are razed [2] times as fast",
+            "Cities are razed [3] times as fast",
             "Only available <before adopting [Socialism]>",
             "Only available <before adopting [Liberalism]>",
             "Only available <before adopting [Conservatism]>",
@@ -1007,6 +1007,7 @@
             "Only available <with [Revolution Oppotunity]>",
             "Only available <if [Anti-Fascism Legacy] is not constructed> <hidden from users>",
             "Triggers a [Fascist Revolution!] event",
+            "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
             "Comment [Enables you to build [Hall of the Nation],an unique wonder that increases strength of attacks]"
         ],
         "policies": [
@@ -1015,6 +1016,7 @@
                 "uniques": [
                     "[-3 Culture] [in all cities]",
                     "[+28 Culture] [in cities being razed]",
+                    "[+15]% [Standing Army Maintainance] resource production",
                     "[+25]% Strength <when attacking> <for [Military] units> <when fighting units from a Civilization with more Cities than you>"
                 ],
                 "row": 1,
@@ -1034,6 +1036,8 @@
                 "name": "Militarised Nation",
                 "uniques": [
                     "Triggers a [New economy policies] event",
+                    "[+50]% Production when constructing ['Military Building'] buildings [in all cities]",
+			        "[+50]% Production when constructing ['Static Defense'] buildings [in all cities]",
                     "Comment [Enables you to build [Protection Squadron], A limited unit that is an alternative from [Heavy Infantry], having higher strength and regeneration. They are limited by both [Standing Army Maintenance] and number of [Recuitment Center] built.]"
                 ],
                 "row": 1,
@@ -1056,8 +1060,8 @@
                 "name": "Foriegn Puppets",
                 "uniques": [
                     "[-25]% City-State Influence degradation",
-                    "Military Units gifted from City-States start with [20] XP",
-                    "[+25]% Production when constructing [Intergration] buildings [in annexed cities]"
+                    "Military Units gifted from City-States start with [30] XP",
+                    "[+25]% Production when constructing [Complete Intergration] buildings [in annexed cities]"
                 ],
                 "requires": [
                     "Militarised Nation"
@@ -1083,8 +1087,7 @@
                 "name": "Fascism Complete",
                 "uniques": [
                     "Instantly provides [10] [Influence]",
-                    "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-                    "[+33]% growth [in all cities]"
+                    "[+23]% growth [in all cities]"
                 ]
             }
         ]
@@ -1242,7 +1245,7 @@
                 "name": "Complete Autonomy",
                 "uniques": [
                     "Comment [[Commune] provides 4[Happiness]]",
-                    "[+100]% Yield from every [Great Improvement]"
+                    "[+50]% Yield from every [Great Improvement]"
                 ],
                 "row": 1,
                 "column": 5
@@ -1262,6 +1265,7 @@
             {
                 "name": "Direct Democracy",
                 "uniques": [
+                    "[+15]% Strength <for ['Levy Army'] units>",
                     "[+33]% Strength for cities"
                 ],
                 "requires": [
@@ -1274,7 +1278,7 @@
                 "name": "Anarchism Complete",
                 "uniques": [
                     "Instantly provides [10] [Influence]",
-                    "[+15]% Strength <for ['Levy Army'] units>",
+                    "[+1 Happiness] from every [Labourer]",
                     "[-33]% Food consumption by specialists [in all cities]"
                 ]
             }
