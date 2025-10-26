@@ -4231,24 +4231,7 @@
 		"requiredBuilding": "Food Industry",
 		"requiredTech": "Biology"	
 	},
-	{
-		"name": "Fossil Fuel Power Plant",
-		"cost": 750,
-		"maintenance": 10,
-		"uniques": [
-			"'Power Building'",
-			"[+2 Production] from [Coal] tiles [in this city]",
-			"[+1 Production] from [Oil] tiles [in this city]",
-			"[+1 Production] from [Natural Gas] tiles [in this city]",
-			"Provides [8] [Power] <in this city>",
-			"Provides [6] [Power] <in this city> <when above [1] [Fuel]> <in cities with a [Oil Refinery]>",
-			"Provides [6] [Power] <in this city> <when above [1] [Fuel]> <in cities with a [Gas Storage and Transfer System]>",
-			"Consumes [1] [Coal]",
-			"Consumes [1] [Fuel] <when above [1] [Fuel]> <in cities with a [Oil Refinery]>",
-			"Only available <when above [0] [Coal]>"
-		],
-		"requiredTech": "Steam Power"	
-	},
+
 	{
 		"name": "Holiday Resort",
 		"cost": 200,
@@ -4861,7 +4844,47 @@
 			"Consumes [19] [Power] <in cities with between [180] and [190] [Population]> <hidden from users>",
 			"Consumes [20] [Power] <in cities with between [190] and [200] [Population]> <hidden from users>",
 			"Gain a free [Power Shortage] [in this city] <when below [0] [Power]>",
-			"Remove [Power Shortage] [in this city] <when above [0] [Power]>"
+			"Remove [Power Shortage] [in this city] <when above [0] [Power]>",
+			"Provides [3] [Power] <if [Innovation of Grid Energy Storage] is constructed>"
+		],
+		"requiredTech": "Electricity"	
+	},
+	{
+		"name": "Oil Power Plant",
+		"cost": 450,
+		"maintenance": 10,
+		"uniques": [
+			"'Power Building'",
+			"[+2 Production] from [Oil] tiles [in this city]",
+			"Provides [5] [Power] <in this city>",
+			"Consumes [3] [Fuel]",
+			"Only available <when above [0] [Fuel]>"
+		],
+		"requiredTech": "Electricity"	
+	},
+	{
+		"name": "Coal Power Plant",
+		"cost": 450,
+		"maintenance": 10,
+		"uniques": [
+			"'Power Building'",
+			"[+2 Production] from [Coal] tiles [in this city]",
+			"Provides [7] [Power] <in this city>",
+			"Consumes [2] [Coal]",
+			"Only available <when above [0] [Coal]>"
+		],
+		"requiredTech": "Electricity"	
+	},
+	{
+		"name": "Gas Fired Power Plant",
+		"cost": 450,
+		"maintenance": 10,
+		"uniques": [
+			"'Power Building'",
+			"[+2 Production] from [Natural Gas] tiles [in this city]",
+			"Provides [6] [Power] <in this city>",
+			"Consumes [1] [Natural Gas(Stored)]",
+			"Only available <when above [0] [Natural Gas(Stored)]>"
 		],
 		"requiredTech": "Electricity"	
 	},
@@ -5347,10 +5370,26 @@
 			"Consumes [3] [Power] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+5]% [Science] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+1 Science] from every [Engineer] <in this city>",
+			"[+1 Science] from every [Engineer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[Military] units gain the [Information Arms] promotion <starting from the [Information era]>"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Electronics"	
+	},
+	{
+		"name": "Innovation of Grid Energy Storage",
+		"cost": 500,
+		"uniques": [
+			"'Innovation'",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Grid Energy Storage] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Grid Energy Storage] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Innovation of Grid Energy Storage] is constructed by anybody> <hidden from users>",
+			"Comment [[Power Grid] now stores excess energy which provides [3] [Power].]",
+			"Unsellable",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"requiredBuilding": "Chemistry Lab",
 		"requiredTech": "Electronics"	
 	},
 	{
@@ -8217,7 +8256,7 @@
 			"[+2 Culture, +1 Happiness] from every [Governor]",
 			"[+100]% Production when constructing ['Consolidation'] buildings [in all cities]",
 			"Comment [Unique Ability: Commonwealth, You can still build ['Agreement'] via events.]",
-			"Comment [If you ever have your [Influence] go down into 5 or below, You will lose this['Civilization Form'].]",
+			"Comment [If you ever have your [Influence] go down into 10 or below, You will lose this['Civilization Form'].]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
