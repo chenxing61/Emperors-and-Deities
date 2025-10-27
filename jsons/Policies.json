@@ -358,7 +358,7 @@
                 "name": "Economic Ties",
                 "uniques": [
                     "Gifts of Gold to City-States generate [25]% more Influence",
-                    "[+50]% resources gifted by City-States",
+                    "[-25]% maintenance cost for ['Infrastructure'] buildings [in all cities connected to the capital]",
                     "[+100]% Production when constructing [Administrative Intergration] buildings [in annexed cities]",
                     "Comment [Decreases [Trade Alliance] and [Economic Community]'s cost.]"
                 ],
@@ -394,7 +394,7 @@
                 "name": "Plutocracy Complete",
                 "uniques": [
                     "Instantly provides [5] [Influence]",
-                    "Gain [150] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
+                    "[+50]% resources gifted by City-States",
                     "[+50]% Gold from Great Merchant trade missions"
                 ]
             }
@@ -424,7 +424,7 @@
                 "name": "Supervisory System",
                 "uniques": [
                     "[+1 Happiness] [in all cities connected to capital]",
-                    "[-10]% maintenance cost for [all] buildings [in all cities connected to capital]",
+                    "[-25]% maintenance cost for ['Political Building'] buildings [in all cities connected to capital]",
                     "[-25]% maintenance on road & railroads <after adopting [Economic Ties]>"
                 ],
                 "row": 1,
@@ -845,7 +845,8 @@
             {
                 "name": "Cater to Profiteers",
                 "uniques": [
-                    "[+2]% [Gold] from every ['Economic Building']"
+                    "[+2]% [Gold] from every ['Economic Building']",
+                    "Gain [150] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
                 ],
                 "requires": [
                     "Privatised Property"
@@ -1331,7 +1332,7 @@
                 "name": "Decarbonization",
                 "uniques": [
                     "Gain a free [Carbon Capture] [in all cities]",
-                    "Comment [Upgrade all existing and future [Fossil Fuel Power Plant] with [Carbon Capture],a style that provides more [Science] and [Culture] at cost of [Production], also produces 1 [Waste Material]]"
+                    "Comment [Upgrade all existing and future [Coal Power Plant] with [Carbon Capture],a style that provides more [Science] and [Culture] at cost of [Production], also produces 1 [Waste Material].]"
                 ],
                 "requires": [
                     "Protected Areas",
