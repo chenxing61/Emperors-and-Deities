@@ -4093,8 +4093,8 @@
 		"cityStrength": 5,
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"[-10]% Culture cost of natural border growth [in all cities]",
-			"[-25]% Gold cost of acquiring tiles [in all cities]",
+			"[-25]% Culture cost of natural border growth [in all cities]",
+			"[-33]% Gold cost of acquiring tiles [in all cities]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"quote": "'The Kremlin is constantly changing the rules of the game to suit its purposes. We are not playing chess, we're playing roulette.' - Garry Kasparov",
@@ -4296,29 +4296,55 @@
 	},
 	{
 		"name": "Food Industry",
-		"cost": 600,
+		"cost": 650,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 5,
-			"Engineer": 1
+			"Scientist":1
 		},
 		"uniques": [
 			"'Light Industry'",
+			"Provides [2] [Industry Size]",
 			"Provides [4] [Consumption Supply]",
-			"Provides [2] [Consumption Supply] <if [Innovation of Instant Foods] is constructed> <hidden from users>",
-			"Consumes [2] [Power] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+15]% [Food] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+1 Food] from every [Labourer] <in this city>",
+			//Powered
+			"[+10]% [Food] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+1 Food] from every [Labourer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Pasteurization
 			"[+1 Food] from [{'Agricultural Improvement'} {'Herd'}] tiles [in this city] <if [Invention of Pasteurization] is constructed> <hidden from users>",
-			"[+1 Food, +1 Gold] from [Pasture] tiles [in this city] <if [Invention of Pasteurization] is constructed> <hidden from users>",
-			"[+1 Food, +1 Gold] from [Mechanised Livestock Farm] tiles [in this city] <if [Invention of Pasteurization] is constructed> <hidden from users>",
-			"Consumes [3] [Deep Sea Fish(Stored)] <when above [3] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Foods] is not constructed> <hidden from users>",
-			"[+15 Food, +9 Gold] <when above [3] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Foods] is not constructed> <hidden from users>",
-			"Consumes [5] [Deep Sea Fish(Stored)] <when above [5] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Foods] is constructed> <hidden from users>",
-			"[+15 Food, +9 Gold] <when above [5] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Foods] is constructed> <hidden from users>",
+			"[+1 Gold] from [Pasture] tiles [in this city] <if [Invention of Pasteurization] is constructed> <hidden from users>",
+			"[+1 Gold] from [Mechanised Livestock Farm] tiles [in this city] <if [Invention of Pasteurization] is constructed> <hidden from users>",
+			//Instant Ramen
+			"Provides [2] [Consumption Supply] <if [Innovation of Instant Foods] is constructed> <hidden from users>",
+			//Canned tunas
+			"Consumes [3] [Deep Sea Fish(Stored)] <when above [3] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Food] is not constructed> <hidden from users>",
+			"[+15 Food, +9 Gold] <when above [3] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Food] is not constructed> <hidden from users>",
+			"Consumes [5] [Deep Sea Fish(Stored)] <when above [5] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Food] is constructed> <hidden from users>",
+			"[+15 Food, +9 Gold] <when above [5] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Food] is constructed> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [[+3]% [Happiness] <in this city>]",
+			"Comment [[+5]% [Gold] <in this city>]",
+			"Comment [after getting [Invention of Soda].]",
+			"Comment [-]",
+			"Comment [Increased [Consumption Supply] from [4] to [6]]",
+			"Comment [after getting [Innovation of Instant Foods].]",
+			"Comment [-]",
+			"Comment [[+10]% [Food] <in this city>]",
 			"Comment [Turn [Deep Sea Fish(Stored)] into [5] [Food] and [3] [Gold] each.]",
-			"Comment [Increased conversion batch from [3] to [5] when [Innovation of Frozen Foods] is discovered.]"
+			"Comment [after getting [Invention of Canned Food].]",
+			"Comment [-]",
+			"Comment [Increased conversion batch from [3] to [5] [Deep Sea Fish(Stored)] after getting [Innovation of Frozen Food].]",
+			"Comment [-]",
+			"Comment [[+1 Food] from [{'Agricultural Improvement'} {'Herd'}] tiles [in this city]]",
+			"Comment [[+1 Gold] from [Pasture], [Mechanised Livestock Farm] tiles [in this city]]",
+			"Comment [after getting [Invention of Pasteurization].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+1 Food] from every [Labourer]]",
+			"Comment [[+10]% [Food] [in this city]]",
+			"Comment [[+5]% [Gold] [in this city]]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization"	
@@ -4349,12 +4375,31 @@
 		},
 		"uniques": [
 			"'Light Industry'",
+			"Provides [2] [Industry Size]",
 			"Provides [5] [Consumption Supply]",
-			"Consumes [2] [Power] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+10]% [Happiness] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+1 Gold] from every [Labourer] <in this city>",
-			"[+1 Culture, +2 Production] per [5] population [in this city] <if [Innovation of Modern Hardwares] is constructed>"
+			//Blowtorch lol
+			"[+1 Culture, +2 Production] per [8] population [in this city] <if [Innovation of Modern Hardwares] is constructed>",
+			//Powered
+			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+10]% [Happiness] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+1 Gold] from every [Labourer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [[+1 Culture, +2 Production] per [8] population [in this city]]",
+			"Comment [after getting [Innovation of Modern Hardwares].]",
+			"Comment [-]",
+			"Comment [[+5]% [Science] <in this city>]",
+			"Comment [[+5]% [Production] <in this city>]",
+			"Comment [after getting [Innovation of Chemical Processes].]",
+			"Comment [-]",
+			"Comment [[+10]% [Culture] <in this city>]",
+			"Comment [after getting [Invention of Nylon].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+1 Gold] from every [Labourer]]",
+			"Comment [[+5]% [Gold] [in this city]]",
+			"Comment [[+10]% [Happiness] [in this city]]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization"	
@@ -4384,22 +4429,43 @@
 			"Engineer": 2
 		},
 		"uniques": [
-			"Consumes [1] [Alloy]",
 			"'Heavy Industry'",
+			"Consumes [1] [Alloy]",
 			"Provides [1] [Consumption Supply]",
-			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed>",
-			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed>",
-			"[+3]% Production when constructing ['Military Building'] buildings [in all cities] <if [Invention of Machine Tools] is constructed>",
-			"Consumes [3] [Power] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed>",
-			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed>",
-			"[+3]% Production when constructing ['Military Building'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed>",
+			"Provides [3] [Industry Size]",
+			//Machine tool goes brrrr
+			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed> <hidden from users>",
+			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed> <hidden from users>",
+			"[+3]% Production when constructing ['Military Building'] buildings [in all cities] <if [Invention of Machine Tools] is constructed> <hidden from users>",
+			//Powered + Machine Tool
+			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed> <hidden from users>",
+			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed> <hidden from users>",
+			"[+3]% Production when constructing ['Military Building'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed> <hidden from users>",
+			"[+2 Production] from every [Engineer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			//Professionals Has Standards
 			"[+15]% Yield from every [Mechanised Lumber Mill] <in this city> <if [Invention of Professional Equipments] is constructed>",
 			"[+15]% Yield from every [Mechanised Farm] <in this city> <if [Invention of Professional Equipments] is constructed>",
 			"[+15]% Yield from every [Mechanised Mine] <in this city> <if [Invention of Professional Equipments] is constructed>",
+			//Double Standards
 			"[+33]% Yield from every [Manufactory] <in this city> <if [Innovation of Processing Precision] is constructed>",
 			"[+33]% Yield from every [Academy] <in this city> <if [Innovation of Processing Precision] is constructed>",
-			"[+2 Production] from every [Engineer] <in this city>"
+			//Actual Output
+			"Comment [-]",
+			"Comment [[+2]% Production when constructing ['Heavy Industry'] buildings <in all cities>]",
+			"Comment [[+5]% Production when constructing ['Light Industry'] buildings <in all cities>]",
+			"Comment [[+3]% Production when constructing ['Military Building'] buildings <in all cities>]",
+			"Comment [after getting [Invention of Machine Tools].]",
+			"Comment [-]",
+			"Comment [[+15]% Yield from every [Mechanised Lumber Mill], [Mechanised Farm], [Mechanised Mine] <in this city>]",
+			"Comment [after getting [Invention of Professional Equipments].]",
+			"Comment [-]",
+			"Comment [[+33]% Yield from every [Manufactory], [Academy] <in this city>]",
+			"Comment [after getting [Innovation of Processing Precision].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+2 Production] from every [Engineer] <in this city>]",
+			"Comment [Effect from [Invention of Machine Tools] doubles]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization"	
@@ -4570,7 +4636,7 @@
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Soda] is not constructed by anybody> <hidden from users>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Soda] is not constructed by anybody> <hidden from users>",
 			"[-50]% production cost <if [Invention of Soda] is constructed by anybody> <hidden from users>",
-			"[+5]% [Happiness] from every [Food Industry]",
+			"[+3]% [Happiness] from every [Food Industry]",
 			"[+5]% [Gold] from every [Food Industry]",
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -4630,7 +4696,7 @@
 			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Chemical Processes] is not constructed by anybody> <hidden from users>",
 			"[-50]% production cost <if [Innovation of Chemical Processes] is constructed by anybody> <hidden from users>",
 			"[+5]% [Science] from every [Consumer Goods Industry]",
-			"[+5]% [Culture] from every [Consumer Goods Industry]",
+			"[+5]% [Production] from every [Consumer Goods Industry]",
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
@@ -5220,7 +5286,7 @@
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Nylon] is not constructed by anybody> <hidden from users>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Nylon] is not constructed by anybody> <hidden from users>",
 			"[-50]% production cost <if [Invention of Nylon] is constructed by anybody> <hidden from users>",
-			"[+8]% [Culture] from every [Consumer Goods Industry]",
+			"[+10]% [Culture] from every [Consumer Goods Industry]",
 			"Instantly provides [1] [Iconic Brand]",
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -5497,14 +5563,14 @@
 		"requiredTech": "Nuclear Fission"	
 	},
 	{
-		"name": "Innovation of Frozen Foods",
+		"name": "Innovation of Frozen Food",
 		"cost": 500,
 		"uniques": [
 			"'Innovation'",
 			"Limited to [1] per Civilization <hidden from users>",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody> <hidden from users>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody> <hidden from users>",
-			"[-50]% production cost <if [Innovation of Frozen Foods] is constructed by anybody> <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Frozen Food] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Frozen Food] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Innovation of Frozen Food] is constructed by anybody> <hidden from users>",
 			"[+5]% [Food] from every [Food Industry]",
 			"Comment [Increase [Food Industry]'s efficiency to process [Deep Sea Fish(Stored)] en masse.]",
 			"Unsellable",
