@@ -50,6 +50,8 @@
             		"Becomes [Plains] when adjacent to [Coast] <with [40]% chance>",
 					"Becomes [Black Soil] when adjacent to [Black Soil] <with [2] to [5] neighboring [Tundra] tiles>",
 			"A Region is formed with at least [40]% [Grassland] tiles, with priority [7]",
+			"Becomes [Marsh] when adjacent to [Coast] <with [40]% chance>",
+			"Becomes [Marsh] when adjacent to [River] <with [25]% chance>",
 			"Considered [Desirable] when determining start locations",
 			"Considered [Food] when determining start locations <in [Jungle] Regions>",
 			"Considered [Food] when determining start locations <in [Forest] Regions>",
@@ -72,6 +74,7 @@
 		"uniques": [
 		    	"Occurs at temperature between [0] and [0.7] and humidity between [0.5] and [1]",
 		    	"Occurs at temperature between [0.7] and [1] and humidity between [0.8] and [1]",
+				"Becomes [Marsh] when adjacent to [River] <with [25]% chance>",
 			"[+4] to Fertility for Map Generation",
 			"A Region is formed with at least [30]% [Plains] tiles, with priority [6]",
 			"A Region can not contain more [Grassland] tiles than [Plains] tiles",
@@ -307,10 +310,12 @@
 		"unbuildable": true,
 		"defenceBonus": -0.15,
 		"occursOn": [
-			"Grassland"
+			"Grassland",
+			"Plains",
+			"Flood plains",
+			"Black Soil"
 		],
 		"uniques": [
-			"Rough terrain",
 			"[-2] to Fertility for Map Generation",
 			"Every [9] tiles with this terrain will receive a major deposit of a strategic resource."
 		],
@@ -403,6 +408,7 @@
 		],
 		"uniques": [
 			"Always Fertility [5] for Map Generation",
+			"Becomes [Marsh] when adjacent to [Coast] <with [25]% chance>",
 			"Considered [Food] when determining start locations",
 			"Considered [Desirable] when determining start locations"
 		]
@@ -684,10 +690,11 @@
 		"food": 3,
 		"gold": 6,
 		"occursOn": [
-			"Grassland"
+			"Grassland",
+			"Mountain"
 		],
 		"uniques": [
-			"Must be adjacent to [1] to [5] [Coast] tiles",
+			"Must be adjacent to [3] to [5] [Coast] tiles",
 			"Must be adjacent to [1] [Mountain] tiles",
 			"Neighboring tiles will convert to [Coast] <in tiles without [Mountain]>"
 		],

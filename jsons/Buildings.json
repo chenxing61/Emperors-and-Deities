@@ -388,7 +388,7 @@
 	},
 	{
 		"name": "Civil Expansion",
-		"cost": 295,
+		"cost": 315,
 		"uniques": [
 			"Unsellable",
 			"'Expansion'",
@@ -400,7 +400,7 @@
 			"Only available <in cities without a [Bathhouse]>",
 			"Gain a free [Monument] [in this city]", //20
 			"Gain a free [Town Hall] [in this city]", //40
-			"Gain a free [Library] [in this city]", //40
+			"Gain a free [Library] [in this city]", //60
 			"Gain a free [Town Square] [in this city]", //75
 			"Gain a free [Bathhouse] [in this city]", //100
 			"[+300]% weight to this choice for AI decisions <hidden from users>"
@@ -423,6 +423,32 @@
 			"Gain a free [Garden] [in this city]", //120
 			"Gain a free [City Hall] [in this city]", //120
 			"Gain a free [Guild Complex] [in this city]",//160
+			"[+300]% weight to this choice for AI decisions <hidden from users>"
+		], 
+		"requiredTech": "Acoustics",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Poilcy Consolidation",
+		"cost": 200,
+		"uniques": [
+			"Unsellable",
+			"'Consolidation'",
+			"Comment [Only when all buildings in this package have not been built, this package is available.]",
+			"Only available <in cities without a [Shrine]>",
+			"Only available <in cities without a [Chapel]>",
+			"Only available <in cities without a [Forum]>",
+			"Only available <in cities without a [Arena]>",
+			"Only available <in cities without a [Primitive Property Sector]>",
+			"Only available <in cities without a [Jousting Place]>",
+			"Only available <in cities without a [Examination Hall]>",
+			"Gain a free [Shrine] [in this city] <after adopting [Polytheism]>", 
+			"Gain a free [Chapel] [in this city] <after adopting [Monotheism]>", 
+			"Gain a free [Forum] [in this city] <after adopting [Scholarship]>", 
+			"Gain a free [Arena] [in this city] <after adopting [Militant]>", 
+			"Gain a free [Primitive Property Sector] [in this city] <after adopting [Plutocracy]>", 
+			"Gain a free [Jousting Place] [in this city] <after adopting [Feudalism]>", 
+			"Gain a free [Examination Hall] [in this city] <after adopting [Meritocracy]>", 
 			"[+300]% weight to this choice for AI decisions <hidden from users>"
 		], 
 		"requiredTech": "Acoustics",
@@ -1182,6 +1208,9 @@
 		},
 		"uniques": [
 			"'Political Building'",
+			"Unavailable <for [Mediterranean] Civilizations> <after adopting [Unity]> <hidden from users>",
+			"Unavailable <for [Central and West Asia] Civilizations> <after adopting [Unity]> <hidden from users>",
+			"Unavailable <for [Europa] Civilizations> <after adopting [Unity]> <hidden from users>",
 			"[+20]% weight to this choice for AI decisions <hidden from users>",
 			"Destroyed when the city is captured"
 		],
@@ -1189,6 +1218,7 @@
 	},
 	{
 		"name": "Library",
+		"cost":60,
 		"maintenance": 2,
 		"specialistSlots": {
 			"Scientist": 1,
@@ -1208,6 +1238,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
+			"Unavailable <for [Mediterranean] Civilizations> <if [SPQR] is constructed> <hidden from users>",
 			"[+1]% [Gold] from Trade Routes",
 			"[+1]% [Gold] from Trade Routes <if [Capital of Mountain Range] is constructed> <hidden from users>",
 			"[-5]% maintenance cost for [all] buildings [in this city]",
@@ -1245,7 +1276,9 @@
 			"'Economic Building'",
 			"[+3]% [Gold] [in this city] <with [Bovine]>",
 			"[+3]% [Gold] [in this city] <with [Caprinae]>",
-			"[+4]% [Gold] [in this city] <with [Horse]>",
+			"[+3]% [Gold] [in this city] <with [Camel]>",
+			"[+3]% [Culture] [in this city] <with [Wild Animals]>",
+			"[+3]% [Gold] [in this city] <with [Horse]>",
 			"[+50]% Production when constructing [Stable] buildings [in this city] <with [Horse]>",
 			"Must have an owned ['Herd'] within [3] tiles"
 		],
@@ -1409,6 +1442,7 @@
 	},
 	{
 		"name": "Walls",
+		"cost":50,
 		"maintenance": 1,
 		"happiness": 1,
 		"cityStrength": 5,
@@ -1454,7 +1488,7 @@
 		"food": -3,
 		"percentStatBonus": {
 			"gold": 3,
-			"faith": 5
+			"faith": 10
 		},
 		"uniques": [
 			"'Military Building'",
@@ -1469,6 +1503,7 @@
 	{
 		"name": "The Grand Ditch",
 		"isWonder": true,
+		"happiness": 1,
 		"greatPersonPoints": {
 			"Great Engineer": 1
 		},
@@ -1533,7 +1568,7 @@
 		"culture": 1,
 		"happiness": 1,
 		"uniques": [
-			"'Infrastructure'",
+			"'Cultural Building'",
 			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"[10]% Food is carried over after population increases [in this city]"
 		],
@@ -1938,12 +1973,27 @@
 		"requiredBuilding": "Healer's Hut",
 		"requiredTech": "Philosophy"	
 	},
+		{
+		"name": "Sanhedrin",
+		"uniqueTo": "Central and West Asia",
+		"cost": 60,
+		"faith": 2,
+		"uniques": [
+			"Gain a free [Courthouse] [in this city]",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
+			"Only available <after adopting [Monotheism]>",
+			"Only available <when religion is enabled>",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Calendar"
+	},
 	{
 		"name": "Courthouse",
 		"maintenance": 3,
 		"happiness": 1,
 		"uniques": [
 			"'Political Building'",
+			"Unavailable <for [Central and West Asia] Civilizations> <after adopting [Monotheism]> <hidden from users>",
 			"[+33]% weight to this choice for AI decisions <hidden from users>",
 			"[-10]% Unhappiness from [Population] [in this city]"
 		],
@@ -1984,6 +2034,7 @@
 		"specialistSlots":{"Labourer":3},
 		"uniques": [
 			"'Economic Building'",
+			"[+1 Gold] from every [Labourer] <in this city>",
 			"[+1]% Production when constructing ['Light Industry'] buildings [in all cities]",
 			"New [Civilian] units start with [10] XP [in this city]"
 		],
@@ -3641,22 +3692,6 @@
 		"requiredBuilding": "Town Square",
 		"requiredTech": "Printing Press"	
 	},
-	{
-		"name": "Printing House",
-		"maintenance": 3,
-		"percentStatBonus": {
-			"culture": 5,
-			"science": 10,
-			"faith": 10
-		},
-		"uniques": [
-			"'Cultural Building'",
-			"Only available <after adopting [Humanism]>",
-			"Destroyed when the city is captured"
-		],
-		"requiredBuilding": "Town Square",
-		"requiredTech": "Printing Press"	
-	},
 	//Line 14
 	{
 		"name": "Observatory",
@@ -3937,49 +3972,72 @@
 	{
 		"name": "Alloy Mill",
 		"cost": 450,
-		"maintenance": 3,
+		"maintenance": 8,
 		"specialistSlots": {
 			"Engineer": 1,
 			"Labourer": 1
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"[+10]% Production when constructing [All] buildings [in this city]",
-			"[+5]% Production when constructing [All] buildings [in this city] <after discovering [Industrialization]> <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"Consumes [3] [Metal] <before discovering [Industrialization]>",
-			"Consumes [2] [Coal] <before discovering [Industrialization]>",
-			"Consumes [4] [Metal] <after discovering [Industrialization]> <in cities without a [Power Grid]>",
-			"Consumes [3] [Coal] <after discovering [Industrialization]> <in cities without a [Power Grid]>",
-			"Consumes [4] [Metal] <after discovering [Industrialization]> <in cities with a [Power Grid]> <in cities with a [Power Shortage]>",
-			"Consumes [3] [Coal] <after discovering [Industrialization]> <in cities with a [Power Grid]> <in cities with a [Power Shortage]>",
-			"Consumes [3] [Metal] <after discovering [Industrialization]> <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"Consumes [1] [Coal] <after discovering [Industrialization]> <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"Consumes [2] [Power] <after discovering [Industrialization]> <in cities with a [Power Grid]>",
-			"Provides [4] [Alloy]",
-			"Provides [3] [Alloy] <after discovering [Industrialization]>",
-			"Provides [2] [Alloy] <after discovering [Industrialization]> <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			"Provides [3] [Industry Size]",
+			"[+5]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in this city]",
+			"[+1 Production] from [Metal] tiles [in this city]",
+			"[+1 Production] from [Coal] tiles [in this city]",
+			//Unga bunga
+			"Consumes [3] [Metal] <before discovering [Industrialization]> <hidden from users>",
+			"Consumes [2] [Coal] <before discovering [Industrialization]> <hidden from users>",
+			"Provides [4] [Alloy] <hidden from users>",
+			//Pling Pling
+			"Consumes [4] [Metal] <after discovering [Industrialization]> <in cities without a [Power Grid]> <hidden from users>",
+			"Consumes [3] [Coal] <after discovering [Industrialization]> <in cities without a [Power Grid]> <hidden from users>",
+			"Provides [3] [Alloy] <after discovering [Industrialization]> <hidden from users>",
+			"Consumes [4] [Metal] <after discovering [Industrialization]> <in cities with a [Power Grid]> <in cities with a [Power Shortage]> <hidden from users>",
+			"Consumes [3] [Coal] <after discovering [Industrialization]> <in cities with a [Power Grid]> <in cities with a [Power Shortage]> <hidden from users>",
+			//Powered
+			"Consumes [3] [Metal] <after discovering [Industrialization]> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"Consumes [1] [Coal] <after discovering [Industrialization]> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"Provides [2] [Alloy] <after discovering [Industrialization]> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+5]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in this city] <after discovering [Industrialization]> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Turn [3] [Metal], [2] [Coal] into [4] [Alloy]]",
+			"Comment [<before discovering [Industrialization]>]",
+			"Comment [-]",
+			"Comment [Turn [4] [Metal], [3] [Coal] into [7] [Alloy]]",
+			"Comment [after getting [Industrialization].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [Turn [3] [Metal], [1] [Coal] into [9] [Alloy]]",
+			"Comment [Building speed effect Doubles.]",
+			"Comment [-]",
 			"Only available <when above [0] [Metal]>",
-			"Only available <when above [0] [Coal]>",
-			"[+2 Production] from [Metal] tiles [in this city]",
-			"[+2 Production] from [Coal] tiles [in this city]"
+			"Only available <when above [0] [Coal]>"
 		],
 		"requiredTech": "Metallurgy"	
 	},
 	{
 		"name": "Aluminium Mill",
 		"cost": 500,
-		"maintenance": 3,
-		"science": 2,
+		"maintenance": 5,
+		"science": 1,
 		"specialistSlots": {
 			"Engineer": 1,
 			"Labourer": 1
 		},
 		"uniques": [
+			"Provides [2] [Industry Size]",
 			"'Heavy Industry'",
-			"Consumes [2] [Power] <in cities with a [Power Grid]>",
 			"Provides [2] [Aluminum]",
-			"Provides [3] [Aluminum] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+2 Production] from [Aluminum] tiles [in this city]"
+			"[+1 Production] from [Aluminum] tiles [in this city]",
+			//Powered
+			"Provides [2] [Aluminum] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [Provides [2] [Aluminum]]",
+			"Comment [-]"
 		],
 		"requiredNearbyImprovedResources": [
 			"Aluminum"
@@ -4054,12 +4112,12 @@
 	{
 		"name": "Fort Palace",
 		"isWonder": true,
-		"happiness": 1,
+		"happiness": 3,
 		"cityStrength": 5,
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"[-10]% Culture cost of natural border growth [in all cities]",
-			"[-25]% Gold cost of acquiring tiles [in all cities]",
+			"[-25]% Culture cost of natural border growth [in all cities]",
+			"[-33]% Gold cost of acquiring tiles [in all cities]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"quote": "'The Kremlin is constantly changing the rules of the game to suit its purposes. We are not playing chess, we're playing roulette.' - Garry Kasparov",
@@ -4146,9 +4204,6 @@
 		"name": "Naval Dockyard",
 		"maintenance": 20,
 		"science": 1,
-		"percentStatBonus": {
-			"production": 10
-		},
 		"specialistSlots": {
 			"Labourer": 4,
 			"Engineer": 1
@@ -4157,8 +4212,14 @@
 			"'Military Building'",
 			"Consumes [3] [Alloy]",
 			"Provides [4] [Ship Parts]",
-			"Consumes [3] [Power] <in cities with a [Power Grid]>",
-			"Provides [2] [Ship Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			//Powered
+			"Provides [2] [Ship Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [Provides [3] [Ship Parts]]",
+			"Comment [-]",
 			"Must be next to [Coast]"
 		],
 		"requiredBuilding": "Military Factory Complex",
@@ -4167,15 +4228,27 @@
 	{
 		"name": "Hospital",
 		"cost": 500,
-		"maintenance": 5,
+		"maintenance": 10,
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
 			"[-10]% Unhappiness from [Population] [in this city]",
-			"[-5]% Unhappiness from [Population] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+25]% growth [in this city]",
-			"[+8]% growth [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[All] Units adjacent to this city heal [10] HP per turn when healing"
+			"[All] Units adjacent to this city heal [10] HP per turn when healing",
+			//Powered
+			"[-5]% Unhappiness from [Population] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+8]% growth [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [[+8]% [Happiness]]",
+			"Comment [[+8]% [Science]]",
+			"Comment [after getting [Invention of Organ Transplant Method].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[-5]% Unhappiness from [Population] [in this city]]",
+			"Comment [[+8]% growth [in this city]]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "Clinic",
 		"requiredTech": "Biology"	
@@ -4196,24 +4269,7 @@
 		"requiredBuilding": "Food Industry",
 		"requiredTech": "Biology"	
 	},
-	{
-		"name": "Fossil Fuel Power Plant",
-		"cost": 750,
-		"maintenance": 10,
-		"uniques": [
-			"'Power Building'",
-			"[+2 Production] from [Coal] tiles [in this city]",
-			"[+1 Production] from [Oil] tiles [in this city]",
-			"[+1 Production] from [Natural Gas] tiles [in this city]",
-			"Provides [8] [Power] <in this city>",
-			"Provides [6] [Power] <in this city> <when above [1] [Fuel]> <in cities with a [Oil Refinery]>",
-			"Provides [6] [Power] <in this city> <when above [1] [Fuel]> <in cities with a [Gas Storage and Transfer System]>",
-			"Consumes [1] [Coal]",
-			"Consumes [1] [Fuel] <when above [1] [Fuel]> <in cities with a [Oil Refinery]>",
-			"Only available <when above [0] [Coal]>"
-		],
-		"requiredTech": "Steam Power"	
-	},
+
 	{
 		"name": "Holiday Resort",
 		"cost": 200,
@@ -4278,27 +4334,56 @@
 	},
 	{
 		"name": "Food Industry",
-		"cost": 600,
+		"cost": 650,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 5,
-			"Engineer": 1
+			"Scientist":1
 		},
 		"uniques": [
 			"'Light Industry'",
+			"Provides [2] [Industry Size]",
 			"Provides [4] [Consumption Supply]",
-			"Provides [2] [Consumption Supply] <if [Innovation of Instant Foods] is constructed>",
-			"Consumes [3] [Power] <in cities with a [Power Grid]>",
-			"[+15]% [Food] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+1 Food] from every [Labourer] <in this city>",
-			"[+1 Food] from [{'Agricultural Improvement'} {'Herd'}] tiles [in this city] <if [Invention of Pasteurization] is constructed>",
-			"[+1 Food, +1 Gold] from [Pasture] tiles [in this city] <if [Invention of Pasteurization] is constructed>",
-			"[+1 Food, +1 Gold] from [Mechanised Livestock Farm] tiles [in this city] <if [Invention of Pasteurization] is constructed>",
-			"Consumes [3] [Deep Sea Fish(Stored)] <when above [3] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Foods] is not constructed>",
-			"[+15 Food, +9 Gold] <when above [3] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Foods] is not constructed>",
-			"Consumes [5] [Deep Sea Fish(Stored)] <when above [5] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Foods] is constructed>",
-			"[+15 Food, +9 Gold] <when above [5] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Foods] is constructed>"
+			//Powered
+			"[+10]% [Food] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+1 Food] from every [Labourer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Pasteurization
+			"[+1 Food] from [{'Agricultural Improvement'} {'Herd'}] tiles [in this city] <if [Invention of Pasteurization] is constructed> <hidden from users>",
+			"[+1 Gold] from [Pasture] tiles [in this city] <if [Invention of Pasteurization] is constructed> <hidden from users>",
+			"[+1 Gold] from [Mechanised Livestock Farm] tiles [in this city] <if [Invention of Pasteurization] is constructed> <hidden from users>",
+			//Instant Ramen
+			"Provides [2] [Consumption Supply] <if [Innovation of Instant Foods] is constructed> <hidden from users>",
+			//Canned tunas
+			"Consumes [3] [Deep Sea Fish(Stored)] <when above [3] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Food] is not constructed> <hidden from users>",
+			"[+15 Food, +9 Gold] <when above [3] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Food] is not constructed> <hidden from users>",
+			"Consumes [5] [Deep Sea Fish(Stored)] <when above [5] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Food] is constructed> <hidden from users>",
+			"[+15 Food, +9 Gold] <when above [5] [Deep Sea Fish(Stored)]> <if [Invention of Canned Food] is constructed> <if [Innovation of Frozen Food] is constructed> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [[+3]% [Happiness] <in this city>]",
+			"Comment [[+5]% [Gold] <in this city>]",
+			"Comment [after getting [Invention of Soda].]",
+			"Comment [-]",
+			"Comment [Increased [Consumption Supply] from [4] to [6]]",
+			"Comment [after getting [Innovation of Instant Foods].]",
+			"Comment [-]",
+			"Comment [[+10]% [Food] <in this city>]",
+			"Comment [Turn [Deep Sea Fish(Stored)] into [5] [Food] and [3] [Gold] each.]",
+			"Comment [after getting [Invention of Canned Food].]",
+			"Comment [-]",
+			"Comment [Increased conversion batch from [3] to [5] [Deep Sea Fish(Stored)] after getting [Innovation of Frozen Food].]",
+			"Comment [-]",
+			"Comment [[+1 Food] from [{'Agricultural Improvement'} {'Herd'}] tiles [in this city]]",
+			"Comment [[+1 Gold] from [Pasture], [Mechanised Livestock Farm] tiles [in this city]]",
+			"Comment [after getting [Invention of Pasteurization].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+1 Food] from every [Labourer]]",
+			"Comment [[+10]% [Food] [in this city]]",
+			"Comment [[+5]% [Gold] [in this city]]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization"	
@@ -4329,12 +4414,32 @@
 		},
 		"uniques": [
 			"'Light Industry'",
+			"Provides [2] [Industry Size]",
 			"Provides [5] [Consumption Supply]",
-			"Consumes [3] [Power] <in cities with a [Power Grid]>",
-			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+10]% [Happiness] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+1 Gold] from every [Labourer] <in this city>",
-			"[+1 Culture, +2 Production] per [5] population [in this city] <if [Innovation of Modern Hardwares] is constructed>"
+			//Blowtorch lol
+			"[+1 Culture, +2 Production] per [8] population [in this city] <if [Innovation of Modern Hardwares] is constructed>",
+			//Powered
+			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+10]% [Happiness] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+1 Gold] from every [Labourer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [[+1 Culture, +2 Production] per [8] population [in this city]]",
+			"Comment [after getting [Innovation of Modern Hardwares].]",
+			"Comment [-]",
+			"Comment [[+5]% [Science] <in this city>]",
+			"Comment [[+5]% [Production] <in this city>]",
+			"Comment [after getting [Innovation of Chemical Processes].]",
+			"Comment [-]",
+			"Comment [[+10]% [Culture] <in this city>]",
+			"Comment [after getting [Invention of Nylon].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+1 Gold] from every [Labourer]]",
+			"Comment [[+5]% [Gold] [in this city]]",
+			"Comment [[+10]% [Happiness] [in this city]]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization"	
@@ -4364,22 +4469,44 @@
 			"Engineer": 2
 		},
 		"uniques": [
-			"Consumes [1] [Alloy]",
 			"'Heavy Industry'",
+			"Consumes [1] [Alloy]",
 			"Provides [1] [Consumption Supply]",
-			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed>",
-			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed>",
-			"[+3]% Production when constructing ['Military Building'] buildings [in all cities] <if [Invention of Machine Tools] is constructed>",
-			"Consumes [3] [Power] <in cities with a [Power Grid]>",
-			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed>",
-			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed>",
-			"[+3]% Production when constructing ['Military Building'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed>",
+			"Provides [3] [Industry Size]",
+			//Machine tool goes brrrr
+			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed> <hidden from users>",
+			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed> <hidden from users>",
+			"[+3]% Production when constructing ['Military Building'] buildings [in all cities] <if [Invention of Machine Tools] is constructed> <hidden from users>",
+			//Powered + Machine Tool
+			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed> <hidden from users>",
+			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed> <hidden from users>",
+			"[+3]% Production when constructing ['Military Building'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed> <hidden from users>",
+			"[+2 Production] from every [Engineer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			//Professionals Has Standards
 			"[+15]% Yield from every [Mechanised Lumber Mill] <in this city> <if [Invention of Professional Equipments] is constructed>",
 			"[+15]% Yield from every [Mechanised Farm] <in this city> <if [Invention of Professional Equipments] is constructed>",
 			"[+15]% Yield from every [Mechanised Mine] <in this city> <if [Invention of Professional Equipments] is constructed>",
+			//Double Standards
 			"[+33]% Yield from every [Manufactory] <in this city> <if [Innovation of Processing Precision] is constructed>",
 			"[+33]% Yield from every [Academy] <in this city> <if [Innovation of Processing Precision] is constructed>",
-			"[+2 Production] from every [Engineer] <in this city>"
+			//Actual Output
+			"Comment [-]",
+			"Comment [[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities]]",
+			"Comment [[+5]% Production when constructing ['Light Industry'] buildings [in all cities]]",
+			"Comment [[+3]% Production when constructing ['Military Building'] buildings [in all cities]]",
+			"Comment [after getting [Invention of Machine Tools].]",
+			"Comment [-]",
+			"Comment [[+15]% Yield from every [Mechanised Lumber Mill], [Mechanised Farm], [Mechanised Mine] <in this city>]",
+			"Comment [after getting [Invention of Professional Equipments].]",
+			"Comment [-]",
+			"Comment [[+33]% Yield from every [Manufactory], [Academy] <in this city>]",
+			"Comment [after getting [Innovation of Processing Precision].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+2 Production] from every [Engineer] <in this city>]",
+			"Comment [Effect from [Invention of Machine Tools] doubles]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization"	
@@ -4425,18 +4552,40 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed>",
-			"Provides [1] [Consumption Supply]",
-			"Provides [1] [Vehicle Parts]",
-			"Provides [1] [Vehicle Parts] <in cities with a [Call to Arms]>",
-			"Consumes [4] [Power] <in cities with a [Power Grid]>",
-			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			"Provides [3] [Industry Size]",
+			"Provides [2] [Consumption Supply]",
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
-			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]>",
-			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed>",
-			"[+1 Production] from every [Engineer] <in this city>",
-			"All newly-trained [Pioneer] units [in this city] receive the [Automobile] promotion"
+			"All newly-trained [Pioneer] units [in this city] receive the [Automobile] promotion",
+			"Provides [1] [Vehicle Parts]",
+			//Tractor Tank
+			"Provides [1] [Vehicle Parts] <in cities with a [Call to Arms]> <hidden from users>",
+			//Bicycle
+			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed> <hidden from users>",
+			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed> <hidden from users>",
+			//Powered
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]> <hidden from users>",
+			"[+1 Production] from every [Engineer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Provides [1] [Vehicle Parts]]",
+			"Comment [When [Call to Arms] is happening]",
+			"Comment [-]",
+			"Comment [[+1 Production] per [5] population <in this city>]",
+			"Comment [Increased [Consumption Supply] from [2] to [4]]",
+			"Comment [after getting [Invention of Bicycle].]",
+			"Comment [-]",
+			"Comment [[+20]% [Food] [in this city]]",
+			"Comment [after getting [Invention of Professional Vehicles].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+1 Production] from every [Engineer] <in this city>]",
+			"Comment [[+5]% [Production] [in this city]]",
+			"Comment [[+5]% [Gold] [in this city]]",
+			"Comment [Speed Up of Civilian Unit Construction Doubles.]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Railroads"	
@@ -4474,7 +4623,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		],
 		"requiredBuilding": "Machine Industry",
-		"requiredTech": "Replaceable Parts"	
+		"requiredTech": "Mass Production"	
 	},
 	{
 		"name": "Furniture Industry",
@@ -4489,18 +4638,33 @@
 		},
 		"uniques": [
 			"'Light Industry'",
+			"Provides [2] [Industry Size]",
 			"Provides [2] [Consumption Supply]",
-			"Consumes [3] [Power] <in cities with a [Power Grid]>",
+			//Powered
 			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+5]% [Culture] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+1 Production] from every [Labourer] <in this city>"
+			"[+1 Production] from every [Labourer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [[+5]% [Happiness] <in this city>]",
+			"Comment [after getting [Innovation of Electrical Appliances].]",
+			"Comment [-]",
+			"Comment [[+5]% [Science] <in this city>]",
+			"Comment [after getting [Invention of Smart Appliances].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+1 Production] from every [Labourer]]",
+			"Comment [[+5]% [Production] [in this city]]",
+			"Comment [[+5]% [Culture] [in this city]]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Replaceable Parts"	
 	},
 	{
 		"name": "Firearms Industry",
-		"cost": 500,
+		"cost": 750,
 		"maintenance": 10,
 		"specialistSlots": {
 			"Labourer": 3,
@@ -4508,11 +4672,24 @@
 		},
 		"uniques": [
 			"'Military Building'",
+			"Provides [3] [Industry Size]",
 			"Consumes [3] [Alloy]",
 			"Provides [5] [Weapon Parts]",
-			"Consumes [2] [Power] <in cities with a [Power Grid]>",
-			"Provides [5] [Weapon Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"Provides [3] [Weapon Parts] <if [Invention of Stamping] is constructed>"
+			//MG42
+			"Provides [3] [Weapon Parts] <if [Invention of Stamping] is constructed> <hidden from users>",
+			//Powered
+			"Consumes [1] [Alloy] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"Provides [5] [Weapon Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Provides [3] [Weapon Parts]]",
+			"Comment [after getting [Invention of Stamping].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [Consumes [1] [Alloy]]",
+			"Comment [Provides [5] [Weapon Parts]]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Replaceable Parts"	
@@ -4528,15 +4705,29 @@
 		"uniques": [
 			"Must be next to [Coast]",
 			"'Heavy Industry'",
+			"Provides [2] [Industry Size]",
 			"Provides [2] [Consumption Supply]",
 			"Provides [1] [Ship Parts]",
-			"Provides [1] [Ship Parts] <in cities with a [Call to Arms]>",
-			"Consumes [4] [Power] <in cities with a [Power Grid]>",
-			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+10]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+2]% Production when constructing [{Civilian} {Water}] units [in all cities]",
-			"[+2]% Production when constructing [{Civilian} {Water}] units [in all cities] <in cities without a [Power Shortage]>",
-			"[+2 Gold] from every [Engineer] <in this city>"
+			"[+2]% Production when constructing [Civil Ship] units [in all cities]",
+			//Shiver me Timbers
+			"Provides [1] [Ship Parts] <in cities with a [Call to Arms]> <hidden from users>",
+			//Powered
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+10]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+2]% Production when constructing [Civil Ship] units [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+2 Gold] from every [Engineer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Provides [1] [Ship Parts]]",
+			"Comment [When [Call to Arms] is happening]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+2 Gold] from every [Engineer] <in this city>]",
+			"Comment [[+5]% [Production] [in this city]]",
+			"Comment [[+10]% [Gold] [in this city]]",
+			"Comment [Speed Up of Civil Ship Unit Construction Doubles.]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Replaceable Parts"	
@@ -4550,7 +4741,7 @@
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Soda] is not constructed by anybody> <hidden from users>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Soda] is not constructed by anybody> <hidden from users>",
 			"[-50]% production cost <if [Invention of Soda] is constructed by anybody> <hidden from users>",
-			"[+5]% [Happiness] from every [Food Industry]",
+			"[+3]% [Happiness] from every [Food Industry]",
 			"[+5]% [Gold] from every [Food Industry]",
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -4610,7 +4801,7 @@
 			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Chemical Processes] is not constructed by anybody> <hidden from users>",
 			"[-50]% production cost <if [Innovation of Chemical Processes] is constructed by anybody> <hidden from users>",
 			"[+5]% [Science] from every [Consumer Goods Industry]",
-			"[+5]% [Culture] from every [Consumer Goods Industry]",
+			"[+5]% [Production] from every [Consumer Goods Industry]",
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
 		],
@@ -4720,10 +4911,23 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
+			"Provides [4] [Industry Size]",
 			"Provides [5] [Fuel]",
 			"Provides [1] [Industrial Chemicals]",
-			"[+2 Production] from [Oil] tiles [in this city]",
-			"Consumes [1] [Oil]",
+			"[+1 Production] from [Oil] tiles [in this city]",
+			"Consumes [2] [Oil]",
+			///Powered
+			"Consumes [1] [Oil] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"Provides [3] [Fuel] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"Provides [1] [Industrial Chemicals] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [Consumes [1] [Oil]]",
+			"Comment [Provides [3] [Fuel]]",
+			"Comment [Provides [1] [Industrial Chemicals]]",
+			"Comment [-]",
 			"Only available <when above [0] [Oil]>"
 		],
 		"requiredTech": "Combustion"	
@@ -4753,11 +4957,20 @@
 		},
 		"uniques": [
 			"'Military Building'",
+			"Provides [3] [Industry Size]",
 			"Consumes [2] [Alloy]",
 			"Consumes [1] [Rubber]",
 			"Provides [4] [Vehicle Parts]",
-			"Consumes [3] [Power] <in cities with a [Power Grid]>",
-			"Provides [4] [Vehicle Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>"
+			//Powered
+			"Consumes [1] [Alloy] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"Provides [4] [Vehicle Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [Consumes [1] [Alloy]]",
+			"Comment [Provides [4] [Vehicle Parts]]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Combustion"	
@@ -4776,18 +4989,37 @@
 			"Only available <in cities without a [Vehicle Industry]>",
 			"Only available <when above [0] [Iconic Brand]> <if [Vehicle Industry] is constructed>",
 			"Instantly consumes [1] [Iconic Brand]",
-			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed>",
-			"Provides [1] [Consumption Supply]",
-			"Provides [1] [Luxury Car] <in cities without a [Call to Arms]>",
+			"Provides [2] [Consumption Supply]",
 			"Provides [2] [Vehicle Parts]",
-			"Provides [2] [Vehicle Parts] <in cities with a [Call to Arms]>",
-			"Consumes [4] [Power] <in cities with a [Power Grid]>",
-			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+20]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
+			//WWII Volkswagon
+			"Provides [2] [Vehicle Parts] <in cities with a [Call to Arms]> <hidden from users>",
+			"Provides [1] [Luxury Car] <in cities without a [Call to Arms]>",
+			//Bicycle
+			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed> <hidden from users>",
+			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed> <hidden from users>",
+			//Powered
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+20]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]>",
-			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed>",
-			"[+1 Production, +1 Gold] from every [Engineer] <in this city>"
+			"[+1 Production, +1 Gold] from every [Engineer] <in this city> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Cease to provide [Luxury Car]]",
+			"Comment [Provides [2] [Vehicle Parts]]",
+			"Comment [When [Call to Arms] is happening]",
+			"Comment [-]",
+			"Comment [[+1 Production] per [5] population <in this city>]",
+			"Comment [Increased [Consumption Supply] from [2] to [4]]",
+			"Comment [after getting [Invention of Bicycle].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+1 Production, +1 Gold] from every [Engineer] <in this city>]",
+			"Comment [[+5]% [Production] [in this city]]",
+			"Comment [[+5]% [Gold] [in this city]]",
+			"Comment [Speed Up of Civilian Unit Construction Doubles.]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Combustion"	
@@ -4824,7 +5056,51 @@
 			"Consumes [19] [Power] <in cities with between [180] and [190] [Population]> <hidden from users>",
 			"Consumes [20] [Power] <in cities with between [190] and [200] [Population]> <hidden from users>",
 			"Gain a free [Power Shortage] [in this city] <when below [0] [Power]>",
-			"Remove [Power Shortage] [in this city] <when above [0] [Power]>"
+			"Remove [Power Shortage] [in this city] <when above [0] [Power]>",
+			"Gain a free [Low Industry Electricity Cost] [in this city] <when above [0] [Industry Size]> <when below [7] [Industry Size]>",
+			"Gain a free [Medium Industry Electricity Cost] [in this city] <when above [7] [Industry Size]> <when below [15] [Industry Size]>",
+			"Gain a free [High Industry Electricity Cost] [in this city] <when above [15] [Industry Size]>",
+			"Remove [Power Shortage] [in this city] <when above [0] [Power]>",
+			"Provides [3] [Power] <if [Innovation of Grid Energy Storage] is constructed>"
+		],
+		"requiredTech": "Electricity"	
+	},
+	{
+		"name": "Oil Power Plant",
+		"cost": 450,
+		"maintenance": 10,
+		"uniques": [
+			"'Power Building'",
+			"[+2 Production] from [Oil] tiles [in this city]",
+			"Provides [5] [Power] <in this city>",
+			"Consumes [3] [Fuel]",
+			"Only available <when above [0] [Fuel]>"
+		],
+		"requiredTech": "Electricity"	
+	},
+	{
+		"name": "Coal Power Plant",
+		"cost": 450,
+		"maintenance": 10,
+		"uniques": [
+			"'Power Building'",
+			"[+2 Production] from [Coal] tiles [in this city]",
+			"Provides [7] [Power] <in this city>",
+			"Consumes [2] [Coal]",
+			"Only available <when above [0] [Coal]>"
+		],
+		"requiredTech": "Electricity"	
+	},
+	{
+		"name": "Gas Fired Power Plant",
+		"cost": 450,
+		"maintenance": 10,
+		"uniques": [
+			"'Power Building'",
+			"[+2 Production] from [Natural Gas] tiles [in this city]",
+			"Provides [6] [Power] <in this city>",
+			"Consumes [1] [Natural Gas(Stored)]",
+			"Only available <when above [0] [Natural Gas(Stored)]>"
 		],
 		"requiredTech": "Electricity"	
 	},
@@ -4942,8 +5218,8 @@
 	},
 	{
 		"name": "Government Complex",
-		"maintenance": 10,
-		"happiness": 1,
+		"maintenance": 20,
+		"happiness": 2,
 		"culture": 2,
 		"cityStrength": 5,
 		"specialistSlots": {
@@ -4991,7 +5267,7 @@
 	},
 	{
 		"name": "Military Base",
-		"maintenance": 3,
+		"maintenance": 15,
 		"cityStrength": 10,
 		"uniques": [
 			"'Military Building'",
@@ -5003,7 +5279,7 @@
 	},
 	{
 		"name": "Bunker",
-		"maintenance": 3,
+		"maintenance": 10,
 		"cityStrength": 5,
 		"cityHealth": 50,
 		"greatPersonPoints": {
@@ -5077,7 +5353,7 @@
 			"Great Engineer": 5
 		},
 		"uniques": [
-			"[+15]% Production when constructing [All] buildings [in all cities]",
+			"[+10]% Production when constructing [All] buildings [in all cities]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"requiredTech": "Concrete",
@@ -5160,7 +5436,7 @@
 			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Nylon] is not constructed by anybody> <hidden from users>",
 			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Nylon] is not constructed by anybody> <hidden from users>",
 			"[-50]% production cost <if [Invention of Nylon] is constructed by anybody> <hidden from users>",
-			"[+8]% [Culture] from every [Consumer Goods Industry]",
+			"[+10]% [Culture] from every [Consumer Goods Industry]",
 			"Instantly provides [1] [Iconic Brand]",
 			"Unsellable",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -5265,8 +5541,14 @@
 			"Consumes [3] [Aluminum]",
 			"Consumes [1] [Rubber]",
 			"Provides [3] [Aircraft Parts]",
-			"Consumes [3] [Power] <in cities with a [Power Grid]>",
-			"Provides [2] [Aircraft Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>"
+			//Powered
+			"Provides [2] [Aircraft Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [Provides [2] [Aircraft Parts]]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Flight"	
@@ -5301,19 +5583,45 @@
 		},
 		"uniques": [
 			"'High Tech Industry'",
+			"Provides [3] [Industry Size]",
 			"Provides [1] [Consumption Supply]",
 			"Provides [1] [Electronic Parts]",
 			"Provides [1] [Electronic Parts] <after discovering [Quantum Theory]>",
-			"Provides [1] [Electronic Parts] <after discovering [Robotics]>",
-			"Consumes [1] [Industrial Chemicals]",
-			"Consumes [1] [Alloy]",
-			"Consumes [4] [Power] <in cities with a [Power Grid]>",
-			"[+5]% [Science] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+1 Science] from every [Engineer] <in this city>",
-			"[Military] units gain the [Information Arms] promotion <starting from the [Information era]>"
+			"Consumes [2] [Industrial Chemicals]",
+			"Consumes [2] [Alloy]",
+			"[Military] units gain the [Information Arms] promotion <starting from the [Information era]>",
+			//Powered
+			"[+5]% [Science] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"Provides [1] [Electronic Parts] <after discovering [Robotics]> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+1 Science] from every [Engineer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+5]% [Science] <in this city>]",
+			"Comment [[+5]% [Production] <in this city>]",
+			"Comment [Provides [1] [Electronic Parts] <after discovering [Robotics]>]",
+			"Comment [[+1 Science] from every [Engineer] <in this city>]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
+		"requiredTech": "Electronics"	
+	},
+	{
+		"name": "Innovation of Grid Energy Storage",
+		"cost": 500,
+		"uniques": [
+			"'Innovation'",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Grid Energy Storage] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Grid Energy Storage] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Innovation of Grid Energy Storage] is constructed by anybody> <hidden from users>",
+			"Comment [[Power Grid] now stores excess energy which provides[3][Power].]",
+			"Unsellable",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"requiredBuilding": "Chemistry Lab",
 		"requiredTech": "Electronics"	
 	},
 	{
@@ -5360,7 +5668,9 @@
 		"uniques": [
 			"'Static Defense'",
 			"Instantly consumes [2] [Electronic Parts]",
-			"Population loss from nuclear attacks [-15]% [in this city]"
+			"Population loss from nuclear attacks [-15]% [in this city]",
+			"Comment [[+5]% [Production]]",
+			"Comment [after getting [LiDAR].]"
 		],
 		"requiredTech": "Radar"	
 	},
@@ -5410,9 +5720,9 @@
 	},
 	{
 		"name": "Bomb Shelter",
-		"maintenance": 3,
+		"maintenance": 10,
 		"happiness": 1,
-		"cityHealth": 10,
+		"cityHealth": 20,
 		"uniques": [
 			"'Static Defense'",
 			"Population loss from nuclear attacks [-50]% [in this city]",
@@ -5421,14 +5731,14 @@
 		"requiredTech": "Nuclear Fission"	
 	},
 	{
-		"name": "Innovation of Frozen Foods",
+		"name": "Innovation of Frozen Food",
 		"cost": 500,
 		"uniques": [
 			"'Innovation'",
 			"Limited to [1] per Civilization <hidden from users>",
-			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody> <hidden from users>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Frozen Foods] is not constructed by anybody> <hidden from users>",
-			"[-50]% production cost <if [Innovation of Frozen Foods] is constructed by anybody> <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Innovation of Frozen Food] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Innovation of Frozen Food] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Innovation of Frozen Food] is constructed by anybody> <hidden from users>",
 			"[+5]% [Food] from every [Food Industry]",
 			"Comment [Increase [Food Industry]'s efficiency to process [Deep Sea Fish(Stored)] en masse.]",
 			"Unsellable",
@@ -5492,7 +5802,8 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"Consumes [3] [Uranium]",
+			"Consumes [3] [Power]",
+			"Consumes [2] [Uranium]",
 			"Provides [1] [Enriched Uranium]"
 		],
 		"requiredTech": "Uranium Enrichment"	
@@ -6071,7 +6382,7 @@
 		"uniques": [
 			"'Worship Place'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Creates a [Manual Farm] improvement on a specific tile",
+			"Creates a [Manual Farm] improvement on a specific tile <before discovering [Fertilizer]>",
 			"Only available <after adopting [Polytheism]> <in [non-[Puppeted]] cities>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -6252,20 +6563,7 @@
 		],
 		"requiredTech": "Calendar"
 	},
-	{
-		"name": "Sanhedrin",
-		"uniqueTo": "Central and West Asia",
-		"cost": 60,
-		"faith": 2,
-		"uniques": [
-			"Gain a free [Courthouse] [in this city]",
-			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Only available <after adopting [Monotheism]>",
-			"Only available <when religion is enabled>",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Calendar"
-	},
+
 	{
 		"name": "Arena",
 		"maintenance": 3,
@@ -6352,6 +6650,22 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Civil Service"	
+	},
+	{
+		"name": "Printing House",
+		"cost":300,
+		"percentStatBonus": {
+			"culture": 5,
+			"science": 10,
+			"faith": 10
+		},
+		"uniques": [
+			"'Cultural Building'",
+			"Only available <after adopting [Humanism]>",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding": "Town Square",
+		"requiredTech": "Printing Press"	
 	},
 	{
 		"name": "Chartered Company",
@@ -6597,11 +6911,11 @@
 			"Unsellable",
 			"'Heavy Industry'",
 			"Provides [1] [Waste Material]",
-			"[+10]% [Science] [in this city] <in cities with a [Fossil Fuel Power Plant]>",
-			"[+10]% [Culture] [in this city] <in cities with a [Fossil Fuel Power Plant]>",
-			"[-10]% [Production] [in this city] <in cities with a [Fossil Fuel Power Plant]>",
+			"[+10]% [Science] [in this city] <in cities with a [Coal Power Plant]>",
+			"[+10]% [Culture] [in this city] <in cities with a [Coal Power Plant]>",
+			"[-10]% [Production] [in this city] <in cities with a [Coal Power Plant]>",
 			"[-1 Production] from [Coal] tiles [in this city]",
-			"Provides [1] [Coal]",
+			"Provides [2] [Coal]",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Renewable Energy"
@@ -6649,8 +6963,8 @@
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"[+1]% [Production] from every ['Economic Building']",
-			"[-33]% [Gold] [in all cities]",
+			"[+3]% [Production] from every ['Economic Building']",
+			"[-20]% [Gold] [in all cities]",
 			"[Gold] cost of purchasing items in cities [-25]%",
 			"[-25]% maintenance cost for [all] buildings [in all cities]",
 			"[+10]% [Consumption Supply] resource production",
@@ -6666,9 +6980,9 @@
 			"Unsellable",
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
-			"[+1]% [Gold] from every ['Cultural Building']",
-			"[+33]% [Gold] [in all cities]",
-			"[Gold] cost of purchasing items in cities [+25]%",
+			"[+3]% [Gold] from every ['Cultural Building']",
+			"[+20]% [Gold] [in all cities]",
+			"[Gold] cost of purchasing items in cities [+15]%",
 			"[+25]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -6699,8 +7013,11 @@
 			"'Economic Policy'",
 			"Triggers a global alert upon completion",
 			"Comment [[Call to Arms] no longer provides lasting downsides other than [Happiness] drain.]",
-			"[+100]% Production when constructing ['Military Building'] buildings [in all cities]",
-			"[+100]% Production when constructing ['Static Defense'] buildings [in all cities]",
+			"[+5]% [Production] from every [{Industrial era} {'Military Building'}]",
+			"[+20]% [Weapon Parts] resource production",
+			"[+10]% [Vehicle Parts] resource production",
+			"[+10]% [Aircraft Parts] resource production",
+			"[+10]% [Ship Parts] resource production",
 			"[-10]% [Consumption Supply] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -6721,8 +7038,6 @@
 			"[+125]% Production when constructing ['Consolidation'] buildings [in all cities connected to capital]",
 			"[+150]% Production when constructing ['Modernization'] buildings [in all cities connected to capital]",
 			"Comment [Unlocks [Five Year Plan] Ability. You can store [Production] using the [Five Year Plan] and use those [Production] to construct ['Heavy Industry'] and ['Military Building'] instantly.]",
-			"May buy ['Heavy Industry'] buildings with [Production] [in all cities]",
-			"May buy ['Military Building'] buildings with [Production] [in all cities]",
 			"[-10]% [Consumption Demand] resource production",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7271,6 +7586,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Neolithic era Form'",
 			"'Civilization Form'",
 			"'Divided'",
 			"Remove [{non-[Early City States]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7370,6 +7686,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Neolithic era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Earliest Empire]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7381,7 +7698,7 @@
 			"Comment [Akkadian, Assurian and Hitties]",
 			"[+10]% growth [in all cities]",
 			"[+33]% Production when constructing ['Military Building'] buildings [in all cities connected to capital]",
-			"[+1 Production] from [Strategic resource] tiles [in all cities]",
+			"[+2 Production] from [Strategic resource] tiles [in all cities]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7393,6 +7710,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Neolithic era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Egyptian Dynasties]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7407,7 +7725,7 @@
 			"[+10]% growth [in all cities]",
 			"[+10]% growth [in all cities] <starting from the [Ancient era]>",
 			"[+10]% Production when constructing [All] wonders [in all cities]",
-			"[+10]% Production when constructing [All] wonders [in all cities] <starting from the [Classical era]>",
+			"[+5]% Production when constructing [All] wonders [in all cities] <starting from the [Classical era]>",
 			"[+1 Production, +1 Faith] from every [Governor] <starting from the [Classical era]>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -7456,6 +7774,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Ancient era Form'",
 			"'Civilization Form'",
 			"'Divided'",
 			"Remove [{non-[Greek City States]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7496,6 +7815,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Ancient era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Shang Dynasty]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7520,6 +7840,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Ancient era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Zhou Dynasty]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7535,30 +7856,6 @@
 			"[+1 Culture] [in all cities] <before adopting [Unity]>",
 			"[+2 Happiness] [in puppeted cities] <after adopting [Unity]>",
 			"Comment [Unique option in increasing [Influence] event]",
-			"Triggers a global alert upon completion",
-			"Moves to new capital when capital changes <hidden from users>"
-		]
-	},
-	{
-		"name": "Persian Dynasties",
-		"uniqueTo": "Central and West Asia",
-		"uniques": [
-			"Limited to [1] per Civilization <hidden from users>",
-			"Unbuildable <hidden from users>",
-			"Unsellable",
-			"'Civilization Form'",
-			"'United'",
-			"Remove [{non-[Persian Dynasties]} {'Civilization Form'}] [in all cities] <hidden from users>",
-			"Provides [15] [Influence Limit]",
-			"Provides [8] [Influence Limit] <starting from the [Classical era]>",
-			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"Provides [2] [Standing Army Maintenance]",
-			"Provides [3] [Noble Army Maintenance]",
-			"Comment [Unique Name:]",
-			"Comment [Shāhanshāh]",
-			"[+10]% growth [in all cities]",
-			"New ['Noble Army'] units start with [25] XP [in all cities]",
-			"Comment [Gain access to serveal uniques like [Zhayedan] and [Azadan Cavalry]]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7610,6 +7907,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[SPQR]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7623,8 +7921,33 @@
 			"Comment [Veni Vidi Vici]",
 			"[+1 Production] from every [Governor]",
 			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
-			"Comment [Gain access to serveal uniques like [Legio] and [Via Romana]]",
+			"Comment [Gain access to serveal uniques like[Legio]and[Via Romana].]",
 			"Free [Legio] appears",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Persian Dynasties",
+		"uniqueTo": "Central and West Asia",
+		"uniques": [
+			"Limited to [1] per Civilization <hidden from users>",
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Classical era Form'",
+			"'Civilization Form'",
+			"'United'",
+			"Remove [{non-[Persian Dynasties]} {'Civilization Form'}] [in all cities] <hidden from users>",
+			"Provides [15] [Influence Limit]",
+			"Provides [8] [Influence Limit] <starting from the [Classical era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [2] [Standing Army Maintenance]",
+			"Provides [3] [Noble Army Maintenance]",
+			"Comment [Unique Name:]",
+			"Comment [Shāhanshāh]",
+			"[+10]% growth [in all cities]",
+			"New ['Noble Army'] units start with [25] XP [in all cities]",
+			"Comment [Gain access to serveal uniques like[Zhayedan] and[Azadan Cavalry].]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7636,6 +7959,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Carthage Obligarchy]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7648,7 +7972,7 @@
 			"Comment [Unique Name:]",
 			"Comment [The Phoenician Last Stand]",
 			"[+1 Production, +2 Gold, +1 Culture] from every [Governor]",
-			"Comment [Gain access to serveal uniques like [Quadrireme] and [Sacred Band]]",
+			"Comment [Gain access to serveal uniques like[Quinquereme Fleet]and[Sacred Band].]",
 			"New ['Mercenary Army'] units start with [10] XP [in all cities]",
 			"[+5]% [Production] [in all cities]",
 			"Triggers a global alert upon completion",
@@ -7663,18 +7987,19 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Great Qin]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [15] [Influence Limit]",
-			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Consumes [1] [Influence]",
 			"Provides [4] [Standing Army Maintenance]",
 			"Provides [1] [Noble Army Maintenance]",
 			"[+15]% Production when constructing [All] wonders [in all cities connected to capital]",
 			"[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]",
 			"Comment [Unique Name:]",
 			"Comment [The First Emperor of China]",
-			"Comment [Gain access to [Qin Crossbowman] and [Honor Bound Territory]]",
+			"Comment [Gain access to[Qin Crossbowman]and[Honor Bound Territory].]",
 			"Gain a free [Honor Bound Territory] [in annexed cities]",
 			"Comment [[Great Qin] will collapse in if theres not enough [Happiness] and [Influence].]",
 			"Triggers a global alert upon completion",
@@ -7720,6 +8045,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'Divided'",
 			"Remove [{non-[Diadochi States]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7730,7 +8056,7 @@
 			"Comment [Unique Name:]",
 			"Comment [Cauldron of Cultures]",
 			"[-25]% Culture cost of adopting new Policies",
-			"Comment [Gain access to [Phalanx]]",
+			"Comment [Gain access to[Phalanx].]",
 			"Comment [If nothing goes wrong, [Diadochi States] will develop [Fedualism] in Mediterranean upon entering Medieval era]",
 			"Adopt [Feudalism] <starting from the [Medieval era]>",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -7744,6 +8070,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'Divided'",
 			"Remove [{non-[Warring States]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7753,8 +8080,8 @@
 			"Provides [2] [Noble Army Maintenance]",
 			"Comment [Unique Name:]",
 			"Comment [The Hundred Schools of thoughts]",
-			"Comment [Enable you to choose 3 Schools of thoughts in the total of 9 schools of thoughts with lasting effects]",
-			"Instantly provides [3] [Avaliable School of Thoughts]",
+			"Comment [Enable you to choose 3 Schools of thoughts in the total of 9 schools of thoughts with permanent effects]",
+			"Instantly provides [3] [Avaliable School of Thoughts] <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
@@ -7765,8 +8092,8 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Outcome'",
-			"[-2 Gold] from all ['Political Building'] buildings",
-			"[+5]% [Culture] from every ['Political Building']",
+			"[-1 Gold] from all ['Political Building'] buildings",
+			"[+3]% [Culture] from every ['Political Building']",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
@@ -7777,8 +8104,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Outcome'",
-			"[-5]% [Gold] [in all cities]",
-			"[-5]% [Production] [in all cities]",
+			"[-10]% [Gold] [in all cities]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"[+1 Faith] per [5] population [in all cities]",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -7805,8 +8131,8 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Outcome'",
-			"[-1 Culture] from all ['Political Building'] buildings",
-			"[+2]% [Production] from every ['Political Building']",
+			"[-2 Culture] from all ['Political Building'] buildings",
+			"[+3]% [Production] from every ['Political Building']",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
@@ -7879,6 +8205,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Chu Dynasty]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7889,7 +8216,7 @@
 			"Comment [Unique Name:]",
 			"Comment [The Dominator's Warth]",
 			"New [Military] units start with [15] XP [in all cities]",
-			"Comment [Gain access to [Cavalry of the Dominator]]",
+			"Comment [Gain access to[Cavalry of the Dominator].]",
 			"Comment [If nothing goes wrong, [Chu Dynasty] will develop [Fedualism] in East Asia upon entering Medieval era]",
 			"Adopt [Feudalism] <starting from the [Medieval era]>",
 			"Triggers a global alert upon completion",
@@ -7903,6 +8230,7 @@
 			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Classical era Form'",
 			"'Civilization Form'",
 			"'United'",
 			"Remove [{non-[Han Dynasty]} {'Civilization Form'}] [in all cities] <hidden from users>",
@@ -7912,7 +8240,7 @@
 			"Provides [2] [Noble Army Maintenance]",
 			"Comment [Unique Name:]",
 			"Comment [The Fierce Han]",
-			"Comment [Gain access to [Yu Lin Cavalry] and [Du Hu Protectorate]]",
+			"Comment [Gain access to[Yu Lin Cavalry]and[Du Hu Protectorate].]",
 			"Gain a free [Du Hu Protectorate] [in puppeted cities]",
 			"Comment [If nothing goes wrong, [Han Dynasty] will develop [Meritocracy] in East Asia upon entering Medieval era]",
 			"Adopt [Meritocracy] <starting from the [Medieval era]>",
@@ -8132,13 +8460,14 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"'Ideology Form'",
 			"Remove [{non-[United States]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [35] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintenance]",
 			"[Gold] cost of purchasing [Civilian] units [-17]%",
 			"May buy [Great Engineer] units for [1000] [Gold] [in all cities] at an increasing price ([500])",
-			"Comment [Unique Unit: [State Millitia Musketeer] and [State Millitia Rifleman], which are garrison units..]",
+			"Comment [Unique Unit: [State Militia Musketeer] and [State Militia Rifleman], which are garrison units..]",
 			"Comment [Cannot Enter [Harmony] State.]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -8152,6 +8481,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"'Ideology Form'",
 			"Remove [{non-[Personal Union]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [35] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -8160,7 +8490,7 @@
 			"[+2 Culture, +1 Happiness] from every [Governor]",
 			"[+100]% Production when constructing ['Consolidation'] buildings [in all cities]",
 			"Comment [Unique Ability: Commonwealth, You can still build ['Agreement'] via events.]",
-			"Comment [If you ever have your [Influence] go down into 5 or below, You will lose this['Civilization Form'].]",
+			"Comment [If you ever have your [Influence] go down into 10 or below, You will lose this['Civilization Form'].]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -8174,6 +8504,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"'Ideology Form'",
 			"Remove [{non-[Fascist Autocracy]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [40] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -8181,7 +8512,6 @@
 			"Provides [3] [Protection Squadron Volunteer]",
 			"New [{'Standing Army'} {Land}] units start with [10] XP [in all cities]",
 			"[+50]% Production when constructing [{non-[Civilian]} {Land}] units [in all cities]",
-			"[+3 Happiness] [in annexed cities]",
 			"Comment [Unique Building: [Recuitment Center]. Replaces [Mobilization Department] and acts as its upgrade. Increases the limit for [Protection Squardron]s.]",
 			"Comment [Cannot pursue any victory condition other than Domination... Unless?]",
 			"Triggers a global alert upon completion",
@@ -8196,6 +8526,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'United'",
+			"'Ideology Form'",
 			"Remove [{non-[Socialist Republics]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [40] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -8217,6 +8548,7 @@
 			"Unsellable",
 			"'Civilization Form'",
 			"'Divided'",
+			"'Ideology Form'",
 			"Remove [{non-[Anarchist Alliances]} {'Civilization Form'}] [in all cities] <hidden from users>",
 			"Provides [40] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -8462,6 +8794,36 @@
 		]
 	},
 	{
+		"name": "Low Industry Electricity Cost",
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Remove [Medium Industry Electricity Cost] [in this city]",
+			"Remove [High Industry Electricity Cost] [in this city]",
+			"Consumes [6] [Power]",
+			"Unsellable"
+		]
+	},
+	{
+		"name": "Medium Industry Electricity Cost",
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Remove [Low Industry Electricity Cost] [in this city]",
+			"Remove [High Industry Electricity Cost] [in this city]",
+			"Consumes [12] [Power]",
+			"Unsellable"
+		]
+	},
+	{
+		"name": "High Industry Electricity Cost",
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Remove [Medium Industry Electricity Cost] [in this city]",
+			"Remove [Low Industry Electricity Cost] [in this city]",
+			"Consumes [20] [Power]",
+			"Unsellable"
+		]
+	},
+	{
 		"name": "Army Maintenance Cost",
 		"cost": 50,
 		"uniques": [
@@ -8599,6 +8961,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]

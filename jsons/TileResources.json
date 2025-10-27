@@ -83,6 +83,18 @@
 		
 	},
 	{
+		"name": "Industry Size",
+		"resourceType": "Strategic",
+		"uniques": [
+			"City-level resource",
+			"Comment [Every Industry Building increases the [Industry Size] in your cities. This is for calculating [Power] Consumption.]"
+		],
+		"revealedBy": "Industrialization",
+		"civilopediaText": [
+		{"text": "See also: ED - The Industrial Ages", "link": "Tutorials/ED - The Industrial Ages"}
+		]
+	},
+	{
 		"name": "Power",
 		"resourceType": "Strategic",
 		"uniques": [
@@ -167,6 +179,25 @@
 			"'Textile'",
 			"Generated on every [13] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
 			"Generated on every [8] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]> <in tiles without [Fresh Water]> <in [Hill] Regions>"
+		]
+	},
+	{
+		"name": "Camel",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Oasis"
+		],
+		"gold": 1,
+		"improvedBy": [
+			"Pasture",
+			"Oasis Dwelling"
+		],
+		"improvementStats": {
+			"food": 1
+		},
+		"uniques": [
+			"'Herd'",
+			"Generated on every [7] tiles <in [Oasis] tiles>"
 		]
 	},
 	{
@@ -1630,6 +1661,7 @@
 		"name": "Piety",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Comment [Leads to the building of [Religious Order] and religious victory.]",
 			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
 			"Cannot be traded"
 		],
@@ -1657,7 +1689,7 @@
 			"Stockpiled"
 		],
 		"civilopediaText": [
-		{"text": "You gain this by building ['Cultural Buildings'] and buildings unique to your civ and religion before industrial age."}
+		{"text": "You gain this by building ['Cultural Building']s and buildings unique to your civ and religion before industrial era."}
 		],
 		"revealedBy": "Archaeology"
 	},
