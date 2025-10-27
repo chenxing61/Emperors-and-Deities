@@ -4218,8 +4218,7 @@
 			"Comment [-]",
 			"Comment [Powered Effect]",
 			"Comment [-]",
-			"Comment [Consumes [3] [Alloy]]",
-			"Comment [Provides [6] [Ship Parts]]",
+			"Comment [Provides [3] [Ship Parts]]",
 			"Comment [-]",
 			"Must be next to [Coast]"
 		],
@@ -4676,10 +4675,11 @@
 			"Provides [3] [Industry Size]",
 			"Consumes [3] [Alloy]",
 			"Provides [5] [Weapon Parts]",
+			//MG42
+			"Provides [3] [Weapon Parts] <if [Invention of Stamping] is constructed> <hidden from users>",
 			//Powered
 			"Consumes [1] [Alloy] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
 			"Provides [5] [Weapon Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
-			"Provides [3] [Weapon Parts] <if [Invention of Stamping] is constructed> <hidden from users>",
 			//Actual Output
 			"Comment [-]",
 			"Comment [Provides [3] [Weapon Parts]]",
@@ -4687,8 +4687,8 @@
 			"Comment [-]",
 			"Comment [Powered Effect]",
 			"Comment [-]",
-			"Comment [Consumes [4] [Alloy]]",
-			"Comment [Provides [10] [Weapon Parts]]",
+			"Comment [Consumes [1] [Alloy]]",
+			"Comment [Provides [5] [Weapon Parts]]",
 			"Comment [-]"
 		],
 		"requiredBuilding": "Military Factory Complex",
@@ -4924,9 +4924,9 @@
 			"Comment [-]",
 			"Comment [Powered Effect]",
 			"Comment [-]",
-			"Comment [Consumes [3] [Oil]]",
-			"Comment [Provides [8] [Fuel]]",
-			"Comment [Provides [2] [Industrial Chemicals]]",
+			"Comment [Consumes [1] [Oil]]",
+			"Comment [Provides [3] [Fuel]]",
+			"Comment [Provides [1] [Industrial Chemicals]]",
 			"Comment [-]",
 			"Only available <when above [0] [Oil]>"
 		],
@@ -4968,9 +4968,8 @@
 			"Comment [-]",
 			"Comment [Powered Effect]",
 			"Comment [-]",
-			"Comment [Consumes [3] [Alloy]]",
-			"Comment [Consumes [1] [Rubber]]",
-			"Comment [Provides [8] [Vehicle Parts]]",
+			"Comment [Consumes [1] [Alloy]]",
+			"Comment [Provides [4] [Vehicle Parts]]",
 			"Comment [-]"
 		],
 		"requiredBuilding": "Military Factory Complex",
@@ -5007,7 +5006,7 @@
 			//Actual Output
 			"Comment [-]",
 			"Comment [Cease to provide [Luxury Car]]",
-			"Comment [Provides [4] [Vehicle Parts]]",
+			"Comment [Provides [2] [Vehicle Parts]]",
 			"Comment [When [Call to Arms] is happening]",
 			"Comment [-]",
 			"Comment [[+1 Production] per [5] population <in this city>]",
@@ -5548,7 +5547,7 @@
 			"Comment [-]",
 			"Comment [Powered Effect]",
 			"Comment [-]",
-			"Comment [Provides [5] [Aircraft Parts]]",
+			"Comment [Provides [2] [Aircraft Parts]]",
 			"Comment [-]"
 		],
 		"requiredBuilding": "Military Factory Complex",
@@ -8468,7 +8467,7 @@
 			"Provides [4] [Standing Army Maintenance]",
 			"[Gold] cost of purchasing [Civilian] units [-17]%",
 			"May buy [Great Engineer] units for [1000] [Gold] [in all cities] at an increasing price ([500])",
-			"Comment [Unique Unit: [State Millitia Musketeer] and [State Millitia Rifleman], which are garrison units..]",
+			"Comment [Unique Unit: [State Militia Musketeer] and [State Militia Rifleman], which are garrison units..]",
 			"Comment [Cannot Enter [Harmony] State.]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
