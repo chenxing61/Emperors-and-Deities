@@ -2795,6 +2795,35 @@
 		"promotions": [
 			"The Standing Army"
 		],
+		"requiredBuilding": "Military Port",
+		"requiredTech": "Ship Armour",
+		"obsoleteTech": "Advanced Shipbuilding",
+		"upgradesTo": "Destroyer Fleet",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Dreadnaught Fleet",
+		"unitType": "Ranged Combat Ship",
+		"cost": 350,
+		"movement": 4,
+		"strength": 52,
+		"rangedStrength": 58,
+		"uniques": [
+			"Consumes [1] [Coal]",
+			"Costs [10] [Alloy]",
+			"Costs [25] [Ship Parts]",
+			"'Standing Army'",
+			"'Engine Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can see invisible [{Barbarian} {Water}] units",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredBuilding": "Military Port",
 		"requiredTech": "Ship Armour",
 		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo": "Battleship Fleet",
@@ -3019,7 +3048,7 @@
 			"'Engine Ship'",
 			"'Dense Formation'",
 			"'Firearms'",
-			"[+30]% Strength <vs [Close Combat Ship] units>",
+			"[+30]% Strength <vs [Close Combat Ship] units>","Can see invisible [{Barbarian} {Water}] units",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [

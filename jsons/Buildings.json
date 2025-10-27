@@ -4451,9 +4451,9 @@
 			"[+33]% Yield from every [Academy] <in this city> <if [Innovation of Processing Precision] is constructed>",
 			//Actual Output
 			"Comment [-]",
-			"Comment [[+2]% Production when constructing ['Heavy Industry'] buildings <in all cities>]",
-			"Comment [[+5]% Production when constructing ['Light Industry'] buildings <in all cities>]",
-			"Comment [[+3]% Production when constructing ['Military Building'] buildings <in all cities>]",
+			"Comment [[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities]]",
+			"Comment [[+5]% Production when constructing ['Light Industry'] buildings [in all cities]]",
+			"Comment [[+3]% Production when constructing ['Military Building'] buildings [in all cities]]",
 			"Comment [after getting [Invention of Machine Tools].]",
 			"Comment [-]",
 			"Comment [[+15]% Yield from every [Mechanised Lumber Mill], [Mechanised Farm], [Mechanised Mine] <in this city>]",
@@ -4511,18 +4511,39 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed>",
-			"Provides [1] [Consumption Supply]",
-			"Provides [1] [Vehicle Parts]",
-			"Provides [1] [Vehicle Parts] <in cities with a [Call to Arms]>",
-			"Consumes [3] [Power] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			"Provides [3] [Industry Size]",
+			"Provides [2] [Consumption Supply]",
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
-			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]>",
-			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed>",
-			"[+1 Production] from every [Engineer] <in this city>",
-			"All newly-trained [Pioneer] units [in this city] receive the [Automobile] promotion"
+			"All newly-trained [Pioneer] units [in this city] receive the [Automobile] promotion",
+			"Provides [1] [Vehicle Parts]",
+			//Tractor Tank
+			"Provides [1] [Vehicle Parts] <in cities with a [Call to Arms]> <hidden from users>",
+			//Bicycle
+			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed> <hidden from users>",
+			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed> <hidden from users>",
+			//Powered
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]> <hidden from users>",
+			"[+1 Production] from every [Engineer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Provides [1] [Vehicle Parts]]",
+			"Comment [When [Call to Arms] is happening]",
+			"Comment [-]",
+			"Comment [[+1 Production] per [5] population <in this city>]",
+			"Comment [Increased [Consumption Supply] from [2] to [4]]",
+			"Comment [after getting [Invention of Bicycle].]",
+			"Comment [-]",
+			"Comment [[+20]% [Food] [in this city]]",
+			"Comment [after getting [Invention of Professional Vehicles].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+1 Production] from every [Engineer] <in this city>]",
+			"Comment [[+5]% [Production] [in this city]]",
+			"Comment [[+5]% [Gold] [in this city]]",
+			"Comment [Speed Up of Civilian Unit Construction Doubles.]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Railroads"	
@@ -4560,7 +4581,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		],
 		"requiredBuilding": "Machine Industry",
-		"requiredTech": "Replaceable Parts"	
+		"requiredTech": "Mass Production"	
 	},
 	{
 		"name": "Furniture Industry",
@@ -4575,11 +4596,25 @@
 		},
 		"uniques": [
 			"'Light Industry'",
+			"Provides [2] [Industry Size]",
 			"Provides [2] [Consumption Supply]",
-			"Consumes [2] [Power] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			//Powered
 			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+5]% [Culture] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+1 Production] from every [Labourer] <in this city>"
+			"[+1 Production] from every [Labourer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [[+5]% [Happiness] <in this city>]",
+			"Comment [after getting [Innovation of Electrical Appliances].]",
+			"Comment [-]",
+			"Comment [[+5]% [Science] <in this city>]",
+			"Comment [after getting [Invention of Smart Appliances].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+1 Production] from every [Labourer]]",
+			"Comment [[+5]% [Production] [in this city]]",
+			"Comment [[+5]% [Culture] [in this city]]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Replaceable Parts"	
@@ -4594,11 +4629,22 @@
 		},
 		"uniques": [
 			"'Military Building'",
+			"Provides [3] [Industry Size]",
 			"Consumes [3] [Alloy]",
 			"Provides [5] [Weapon Parts]",
-			"Consumes [2] [Power] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"Provides [5] [Weapon Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"Provides [3] [Weapon Parts] <if [Invention of Stamping] is constructed>"
+			//Powered
+			"Consumes [1] [Alloy] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"Provides [5] [Weapon Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"Provides [3] [Weapon Parts] <if [Invention of Stamping] is constructed> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Provides [3] [Weapon Parts]]",
+			"Comment [after getting [Invention of Stamping].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [Consumes [1] [Alloy]]",
+			"Comment [Provides [5] [Weapon Parts]]"
 		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Replaceable Parts"	
@@ -4614,15 +4660,28 @@
 		"uniques": [
 			"Must be next to [Coast]",
 			"'Heavy Industry'",
+			"Provides [2] [Industry Size]",
 			"Provides [2] [Consumption Supply]",
 			"Provides [1] [Ship Parts]",
-			"Provides [1] [Ship Parts] <in cities with a [Call to Arms]>",
-			"Consumes [4] [Power] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+10]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+2]% Production when constructing [{Civilian} {Water}] units [in all cities]",
-			"[+2]% Production when constructing [{Civilian} {Water}] units [in all cities] <in cities without a [Power Shortage]>",
-			"[+2 Gold] from every [Engineer] <in this city>"
+			"[+2]% Production when constructing [Civil Ship] units [in all cities]",
+			//Shiver me Timbers
+			"Provides [1] [Ship Parts] <in cities with a [Call to Arms]> <hidden from users>",
+			//Powered
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+10]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+2]% Production when constructing [Civil Ship] units [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+2 Gold] from every [Engineer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Provides [1] [Ship Parts]]",
+			"Comment [When [Call to Arms] is happening]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+2 Gold] from every [Engineer] <in this city>]",
+			"Comment [[+5]% [Production] [in this city]]",
+			"Comment [[+10]% [Gold] [in this city]]",
+			"Comment [Speed Up of Civil Ship Unit Construction Doubles.]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Replaceable Parts"	
@@ -4839,11 +4898,19 @@
 		},
 		"uniques": [
 			"'Military Building'",
+			"Provides [3] [Industry Size]",
 			"Consumes [2] [Alloy]",
 			"Consumes [1] [Rubber]",
-			"Provides [3] [Vehicle Parts]",
-			"Consumes [3] [Power] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"Provides [3] [Vehicle Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>"
+			"Provides [4] [Vehicle Parts]",
+			//Powered
+			"Consumes [1] [Alloy] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"Provides [4] [Vehicle Parts] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [Consumes [1] [Alloy]]",
+			"Comment [Provides [4] [Vehicle Parts]]"
 		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Combustion"	
@@ -4862,18 +4929,36 @@
 			"Only available <in cities without a [Vehicle Industry]>",
 			"Only available <when above [0] [Iconic Brand]> <if [Vehicle Industry] is constructed>",
 			"Instantly consumes [1] [Iconic Brand]",
-			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed>",
-			"Provides [1] [Consumption Supply]",
-			"Provides [1] [Luxury Car] <in cities without a [Call to Arms]>",
+			"Provides [2] [Consumption Supply]",
 			"Provides [2] [Vehicle Parts]",
-			"Provides [2] [Vehicle Parts] <in cities with a [Call to Arms]>",
-			"Consumes [3] [Power] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
-			"[+20]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
+			//WWII Volkswagon
+			"Provides [2] [Vehicle Parts] <in cities with a [Call to Arms]> <hidden from users>",
+			"Provides [1] [Luxury Car] <in cities without a [Call to Arms]>",
+			//Bicycle
+			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed> <hidden from users>",
+			"Provides [2] [Consumption Supply] <if [Invention of Bicycle] is constructed> <hidden from users>",
+			//Powered
+			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[+20]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]>",
-			"[+1 Production] per [5] population [in this city] <if [Invention of Bicycle] is constructed>",
-			"[+1 Production, +1 Gold] from every [Engineer] <in this city>"
+			"[+1 Production, +1 Gold] from every [Engineer] <in this city> <hidden from users>",
+			//Actual Output
+			"Comment [-]",
+			"Comment [Cease to provide [Luxury Car]]",
+			"Comment [Provides [2] [Vehicle Parts]]",
+			"Comment [When [Call to Arms] is happening]",
+			"Comment [-]",
+			"Comment [[+1 Production] per [5] population <in this city>]",
+			"Comment [Increased [Consumption Supply] from [2] to [4]]",
+			"Comment [after getting [Invention of Bicycle].]",
+			"Comment [-]",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[+1 Production, +1 Gold] from every [Engineer] <in this city>]",
+			"Comment [[+5]% [Production] [in this city]]",
+			"Comment [[+5]% [Gold] [in this city]]",
+			"Comment [Speed Up of Civilian Unit Construction Doubles.]"
 		],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Combustion"	
