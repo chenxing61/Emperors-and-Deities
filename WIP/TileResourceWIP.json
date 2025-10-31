@@ -1,19 +1,35 @@
 [
 {
+		"name": "Migrating Population",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen <if [Hide Miscellaneous] is constructed>"
+		],
+		"revealedBy":"Horse Collar"
+},
+{
 		"name": "Food Export Route",
 		"resourceType": "Strategic",
 		"uniques": [
-			"Not shown on world screen"
+			"Not shown on world screen <if [Hide Miscellaneous] is constructed>"
 		],
-        "revealedBy":"Ecology"
+		"revealedBy":"Plows"
 },
 {
 		"name": "Production Export Route",
 		"resourceType": "Strategic",
 		"uniques": [
-			"Not shown on world screen"
+			"Not shown on world screen <if [Hide Miscellaneous] is constructed>"
 		],
-        "revealedBy":"Ecology"
+		"revealedBy":"Mining"
+},
+{
+		"name": "District Demand",
+		"resourceType": "Strategic",
+		"uniques": [
+			"City-level resource"
+		],
+		"revealedBy":"Navigation"
 },
 {
 		"name": "Pollution",
@@ -21,6 +37,6 @@
 		"uniques": [
 			"Not shown on world screen <when below [50] [Pollution]>"
 		],
-        "revealedBy":"Ecology"
+        "revealedBy":"Biology"
 }
 ]
