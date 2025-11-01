@@ -4,19 +4,23 @@
 		"cost":0,
 		"uniques": [
 			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
-			"Instantly consumes [1] [Migrating Population]"
+			"[+1] population [in this city]",
+			"Instantly consumes [1] [Migrating Population]",
+			"Remove [Resettlement] [in this city] <hidden from users>"
 		],
-		"requiredTech": "Logistics"
+		"requiredTech": "Horse Collar"
 	},
 	{
 		"name": "Population Migration",
-		"cost":0,
+		"cost":25,
 		"uniques": [
+			"Unbuildable",
 			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
-			"Instantly provides [1] [Migrating Population]"
+			"[-1] population [in this city]",
+			"Instantly provides [1] [Migrating Population]",
+			"Remove [Population Migration] [in this city] <hidden from users>"
 		],
-		"requiredTech": "Logistics",
-		"requiredBuilding":"Warehouse"
+		"requiredTech": "Horse Collar"
 	},
 	{
 		"name": "Import [Food]",
