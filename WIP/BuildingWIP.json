@@ -69,6 +69,31 @@
 		"requiredTech": "Mining"
 	},
 	{
+		"name": "City Hall",
+		"maintenance": 5,
+		"happiness": 1,
+		"culture": 1,
+		"cityStrength": 2,
+		"specialistSlots": {
+			"Governor": 1
+		},
+		"uniques": [
+			"'Political Building'",
+			"[-5]% unhappiness from the number of cities",
+			"[-5]% Unhappiness from [Specialists] [in this city]",
+			"Comment [Every [12] population provides [1] [District Demand] after discovering [Navigation]. Up to [5] [District Demand].]",
+			"Provide [1] [District Demand] <in cities with at least [12] [Population]> <hidden from users>",
+			"Provide [1] [District Demand] <in cities with at least [24] [Population]> <hidden from users>",
+			"Provide [1] [District Demand] <in cities with at least [36] [Population]> <hidden from users>",
+			"Provide [1] [District Demand] <in cities with at least [48] [Population]> <hidden from users>",
+			"Provide [1] [District Demand] <in cities with at least [60] [Population]> <hidden from users>",
+			"Destroyed when the city is captured"
+		],
+		"requiredBuilding": "Town Hall",
+		"requiredTech": "Civil Service",
+		"hurryCostModifier": 40
+	},
+	{
 		"name": "The Great Exchange",
 		"isNationalWonder":true,
 		"uniques": [
@@ -78,13 +103,13 @@
 		"requiredTech": "Cartography"
 	},
 	{
-		"name": "Construct Harbour",
+		"name": "Construct Harbour District",
 		"uniques": [
 			"Only available <when above [1] [District Demand]>",
-			"Creates a [Residential District] improvement on a specific tile",
-			"Remove [Construct Residential District] [in this city] <hidden from users>"
+			"Creates a [Harbour District] improvement on a specific tile",
+			"Remove [Construct Harbour District] [in this city] <hidden from users>"
 		],
-		"requiredTech": "Plastics"
+		"requiredTech": "Navigation"	
 	},
 	{
 		"name": "Cargo Port",
@@ -96,9 +121,10 @@
 			"'Marine Infrastructure'",
 			"[+1 Gold] from [Bonus resource] tiles [in this city]",
 			"[+1]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
-			"Must be next to [Coast]"
+			"Must be next to [Coast]",
+			"Must have an owned ['Herd'] within [3] tiles"
 		],
-		"requiredBuilding": "Trading Port",
+		
 		"requiredTech": "Navigation"	
 	},
 	{
