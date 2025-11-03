@@ -1,74 +1,5 @@
 [	
 	{
-		"name": "Resettlement",
-		"cost":0,
-		"uniques": [
-			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
-			"[+1] population [in this city]",
-			"Instantly consumes [1] [Migrating Population]",
-			"Remove [Resettlement] [in this city] <hidden from users>"
-		],
-		"requiredTech": "Horse Collar"
-	},
-	{
-		"name": "Population Migration",
-		"cost":25,
-		"uniques": [
-			"Unbuildable",
-			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
-			"[-1] population [in this city]",
-			"Instantly provides [1] [Migrating Population]",
-			"Remove [Population Migration] [in this city] <hidden from users>"
-		],
-		"requiredTech": "Horse Collar"
-	},
-	{
-		"name": "Import [Food]",
-		"cost":0,
-		"maintenance":3,
-		"food":10,
-		"uniques": [
-			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
-			"Consumes [1] [Food Export Route]"
-		],
-		"requiredTech": "Plows"
-	},
-	{
-		"name": "Export [Food]",
-		"cost":0,
-		"maintenance":3,
-		"food":-10,
-		"uniques": [
-			"[+3] [Gold] [in this city] <in cities with a [Warehouse]>",
-			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
-			"Provide [1] [Food Export Route]"
-		],
-		"requiredTech": "Plows"
-	},
-		{
-		"name": "Import [Production]",
-		"cost":0,
-		"production":10,
-		"uniques": [
-			
-			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
-			"Consumes [1] [Production Export Route]"
-		],
-		"requiredTech": "Mining"
-	},
-	{
-		"name": "Export [Production]",
-		"cost":0,
-		"maintenance":3,
-		"production":-10,
-		"uniques": [
-			"[+3] [Gold] [in this city] <in cities with a [Warehouse]>",
-			"Only available <for [non-[AI player] Civilizations]> <in cities connected to the capital>",
-			"Provide [1] [Production Export Route]"
-		],
-		"requiredTech": "Mining"
-	},
-	{
 		"name": "City Hall",
 		"maintenance": 5,
 		"happiness": 1,
@@ -92,15 +23,6 @@
 		"requiredBuilding": "Town Hall",
 		"requiredTech": "Civil Service",
 		"hurryCostModifier": 40
-	},
-	{
-		"name": "The Great Exchange",
-		"isNationalWonder":true,
-		"uniques": [
-			"Only available <on foreign continents>",
-			"Triggers a [Great Exchange] event"
-		],
-		"requiredTech": "Cartography"
 	},
 	{
 		"name": "Construct Harbour District",

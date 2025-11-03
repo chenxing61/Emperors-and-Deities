@@ -121,6 +121,105 @@
 		]
 	},
 	{
+		"name": "Resettlement",
+		"cost":0,	
+		"uniques": [
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Only available <in cities connected to the capital> <when above [0] [Migrating Population]>",
+			"[+1] population [in this city]",
+			"Instantly consumes [1] [Migrating Population]",
+			"Remove [Resettlement] [in this city] <hidden from users>"
+		],
+		"requiredTech": "Horse Collar"
+	},
+	{
+		"name": "Migration",
+		"cost":25,
+		"uniques": [
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Only available <in cities connected to the capital> <in cities with at least [5] [Population]>",
+			"[-1] population [in this city]",
+			"Instantly provides [1] [Migrating Population]",
+			"Remove [Migration] [in this city] <hidden from users>"
+		],
+		"requiredTech": "Horse Collar"
+	},
+	{
+		"name": "Large Resettlement",
+		"cost":0,	
+		"uniques": [
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Only available <in cities connected to the capital> <when above [4] [Migrating Population]>",
+			"[+5] population [in this city]",
+			"Instantly consumes [5] [Migrating Population]",
+			"Remove [Large Resettlement] [in this city] <hidden from users>"
+		],
+		"requiredTech": "Stirrup"
+	},
+	{
+		"name": "Large Migration",
+		"cost":25,
+		"uniques": [
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Only available  <in cities connected to the capital> <in cities with at least [10] [Population]>",
+			"[-5] population [in this city]",
+			"Instantly provides [5] [Migrating Population]",
+			"Remove [Large Migration] [in this city] <hidden from users>"
+		],
+		"requiredTech": "Stirrup"
+	},
+	{
+		"name": "Import [Food]",
+		"cost":0,
+		"maintenance":3,
+		"food":10,
+		"uniques": [
+			"'Trade Action'",
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Only available <in cities connected to the capital> <when above [0] [Food Export Route]>",
+			"Consumes [1] [Food Export Route]"
+		],
+		"requiredTech": "Plows"
+	},
+	{
+		"name": "Export [Food]",
+		"cost":0,
+		"maintenance":3,
+		"food":-10,
+		"uniques": [
+			"'Trade Action'",
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Only available <in cities connected to the capital> <when above [10] [Food]>",
+			"Provides [1] [Food Export Route]"
+		],
+		"requiredTech": "Plows"
+	},
+		{
+		"name": "Import [Production]",
+		"cost":0,
+		"production":10,
+		"uniques": [
+			"'Trade Action'",
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Only available <in cities connected to the capital> <when above [0] [Production Export Route]>",
+			"Consumes [1] [Production Export Route]"
+		],
+		"requiredTech": "Mining"
+	},
+	{
+		"name": "Export [Production]",
+		"cost":0,
+		"maintenance":3,
+		"production":-10,
+		"uniques": [
+			"'Trade Action'",
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Only available <in cities connected to the capital> <when above [10] [Production]>",
+			"Provides [1] [Production Export Route]"
+		],
+		"requiredTech": "Mining"
+	},
+	{
 		"name": "Complete Intergration",
 		"cost": 200,
 		"uniques": [
@@ -2037,7 +2136,8 @@
 			"'Economic Building'",
 			"[+1 Gold] from every [Labourer] <in this city>",
 			"[+1]% Production when constructing ['Light Industry'] buildings [in all cities]",
-			"New [Civilian] units start with [10] XP [in this city]"
+			"New [Civilian] units start with [10] XP [in this city]",
+			"[-100]% maintenance cost for ['Trade Action'] buildings [in this city]"
 		],
 		"requiredBuilding": "Road Network",
 		"requiredTech": "Construction"	
@@ -3528,6 +3628,62 @@
 	},
 	//Line 12
 	{
+		"name": "The Great Exchange",
+		"cost":200,
+		"isNationalWonder":true,
+		"uniques": [
+			"Only available <on foreign continents>",
+			"Triggers a [Great Exchange] event"
+		],
+		"requiredTech": "Cartography"
+	},
+	{
+		"name": "Great Exchange: Food Security",
+		"cost":0,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Outcome'",
+			"[5]% Food is carried over after population increases [in all cities]",
+			"[-5]% unhappiness from the number of cities"
+		]
+	},
+	{
+		"name": "Great Exchange: Plantation and Trades",
+		"cost":0,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Outcome'",
+			"[+2 Gold] from [Manual Plantation] tiles [in all cities]",
+			"[+2 Gold] from [Colony Plantation] tiles [in all cities]",
+			"Instantly provides [1] [Iconic Brand]"
+		]
+	},
+	{
+		"name": "Great Exchange: Furcoat and Pets",
+		"cost":0,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Outcome'",
+			"[+6]% [Gold] from every [Livestock Market]",
+			"[+1 Production] from every [Camp]",
+			"[+3 Gold] from every [Camp] <in [Jungle] tiles>"
+		]
+	},
+	{
+		"name": "Great Exchange: Preservation",
+		"cost":0,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Outcome'",
+			"Free Social Policy",
+			"[+1 Science] from all [Neolithic era] buildings"
+		]
+	},
+	{
 		"name": "Smeltry",
 		"maintenance": 2,
 		"specialistSlots": {
@@ -3589,6 +3745,7 @@
 		"gold": 15,
 		"happiness": 1,
 		"uniques": [
+			"[+5]% [Faith] from every ['Trade Action']",
 			"[+10]% [Faith] from every ['Monopoly Trade']",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
