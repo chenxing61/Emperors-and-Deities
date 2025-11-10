@@ -140,11 +140,13 @@
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available <in cities connected to the capital> <in cities with at least [5] [Population]> <when number of [Migrating Population] is between [0] and [Migration Limit]>",
 			"[-1] population [in this city]",
+			"Instantly consumes [2] [Influence]",
 			"Instantly provides [1] [Migrating Population]",
 			"Remove [Migration] [in this city] <hidden from users>",
 			"Comment [Each [Migrating Population] costs 2 [Happiness] to maintain if you dont resettle them immediately in a single turn.]"
 		],
-		"requiredTech": "Horse Collar"
+		"requiredTech": "Horse Collar",
+		"hurryCostModifier": -75
 	},
 	{
 		"name": "Large Resettlement",
@@ -161,16 +163,18 @@
 	},
 	{
 		"name": "Large Migration",
-		"cost": 25,
+		"cost": 50,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available  <in cities connected to the capital> <in cities with at least [10] [Population]> <when number of [Migrating Population] is between [0] and [Migration Limit]>",
 			"[-5] population [in this city]",
+			"Instantly consumes [10] [Influence]",
 			"Instantly provides [5] [Migrating Population]",
 			"Remove [Large Migration] [in this city] <hidden from users>",
 			"Comment [Each [Migrating Population] costs 2 [Happiness] to maintain if you dont resettle them immediately in a single turn.]"
 		],
-		"requiredTech": "Stirrup"
+		"requiredTech": "Stirrup",
+		"hurryCostModifier": -75
 	},
 	{
 		"name": "Cancel Trade",
