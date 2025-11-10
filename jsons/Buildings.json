@@ -173,16 +173,18 @@
 		"requiredTech": "Stirrup"
 	},
 	{
-		"name": "Cancel Import",
+		"name": "Cancel Trade",
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
-			"Unavailable <if [Import [Food]] is not constructed]> <if [Import [Production]] is not constructed]> <hidden from users>",
-			"Comment [Cancel all the importing action of this city.]",
+			"Unavailable <in cities without a ['Trade Action']> <hidden from users>",
+			"Comment [Cancel all the exporting/importing action of this city.]",
 			"Play [coin] sound <hidden from users>",
 			"Remove [Cancel Import] [in this city] <hidden from users>",
 			"Remove [Import [Food]] [in this city] <hidden from users>",
-			"Remove [Import [Production]] [in this city] <hidden from users>"
+			"Remove [Import [Production]] [in this city] <hidden from users>",
+			"Remove [Export [Food]] [in this city] <hidden from users>",
+			"Remove [Export [Production]] [in this city] <hidden from users>"
 		]
 	},
 	{
@@ -193,6 +195,7 @@
 		"uniques": [
 			"'Trade Action'",
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Unavailable <in cities with a [Export [Food]]> <hidden from users>",
 			"Only available <in cities connected to the capital> <when above [0] [Food Export Route]>",
 			"Remove [Import [Food]] [in this city] <hidden from users> <when below [0] [Food Export Route]>",
 			"Consumes [1] [Food Export Route]",
@@ -208,6 +211,7 @@
 		"uniques": [
 			"'Trade Action'",
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Unavailable <in cities with a [Import [Food]]> <hidden from users>",
 			"Only available <in cities connected to the capital> <when above [20] [Food]>",
 			"Remove [Export [Food]] [in this city] <hidden from users> <if [Strife] is constructed>",
 			"Remove [Export [Food]] [in this city] <hidden from users> <if [Anarchy] is constructed>",
@@ -223,6 +227,7 @@
 		"uniques": [
 			"'Trade Action'",
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Unavailable <in cities with a [Export [Production]]> <hidden from users>",
 			"Only available <in cities connected to the capital> <when above [0] [Production Export Route]>",
 			"Remove [Import [Production]] [in this city] <hidden from users> <when below [0] [Production Export Route]>",
 			"Consumes [1] [Production Export Route]",
@@ -238,6 +243,7 @@
 		"uniques": [
 			"'Trade Action'",
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Unavailable <in cities with a [Import [Production]]> <hidden from users>",
 			"Only available <in cities connected to the capital> <when above [20] [Production]>",
 			"Remove [Export [Production]] [in this city] <hidden from users> <if [Strife] is constructed>",
 			"Remove [Export [Production]] [in this city] <hidden from users> <if [Anarchy] is constructed>",
