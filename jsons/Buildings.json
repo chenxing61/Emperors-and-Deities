@@ -128,7 +128,8 @@
 			"Only available <in cities connected to the capital> <when above [0] [Migrating Population]>",
 			"[+1] population [in this city]",
 			"Instantly consumes [1] [Migrating Population]",
-			"Remove [Resettlement] [in this city] <hidden from users>"
+			"Remove [Resettlement] [in this city] <hidden from users>",
+			"Comment [Each [Migrating Population] costs 2 [Happiness] to maintain if you dont resettle them immediately in a single turn.]"
 		],
 		"requiredTech": "Horse Collar"
 	},
@@ -137,10 +138,11 @@
 		"cost":25,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
-			"Only available <in cities connected to the capital> <in cities with at least [5] [Population]> <when below [10] [Migrating Population]>",
+			"Only available <in cities connected to the capital> <in cities with at least [5] [Population]> <when number of [Migrating Population] is between [0] and [Migration Limit]>",
 			"[-1] population [in this city]",
 			"Instantly provides [1] [Migrating Population]",
-			"Remove [Migration] [in this city] <hidden from users>"
+			"Remove [Migration] [in this city] <hidden from users>",
+			"Comment [Each [Migrating Population] costs 2 [Happiness] to maintain if you dont resettle them immediately in a single turn.]"
 		],
 		"requiredTech": "Horse Collar"
 	},
@@ -152,7 +154,8 @@
 			"Only available <in cities connected to the capital> <when above [4] [Migrating Population]>",
 			"[+5] population [in this city]",
 			"Instantly consumes [5] [Migrating Population]",
-			"Remove [Large Resettlement] [in this city] <hidden from users>"
+			"Remove [Large Resettlement] [in this city] <hidden from users>",
+			"Comment [Each [Migrating Population] costs 2 [Happiness] to maintain if you dont resettle them immediately in a single turn.]"
 		],
 		"requiredTech": "Stirrup"
 	},
@@ -161,12 +164,25 @@
 		"cost":25,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
-			"Only available  <in cities connected to the capital> <in cities with at least [10] [Population]> <when below [10] [Migrating Population]>",
+			"Only available  <in cities connected to the capital> <in cities with at least [10] [Population]> <when number of [Migrating Population] is between [0] and [Migration Limit]>",
 			"[-5] population [in this city]",
 			"Instantly provides [5] [Migrating Population]",
-			"Remove [Large Migration] [in this city] <hidden from users>"
+			"Remove [Large Migration] [in this city] <hidden from users>",
+			"Comment [Each [Migrating Population] costs 2 [Happiness] to maintain if you dont resettle them immediately in a single turn.]"
 		],
 		"requiredTech": "Stirrup"
+	},
+	{
+		"name": "Cancel Import",
+		"cost": 0,
+		"uniques": [
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Comment [Cancel all the importing action of this city.]",
+			"Play [coin] sound <hidden from users>",
+			"Remove [Cancel Import] [in this city] <hidden from users>",
+			"Remove [Import [Food]] [in this city] <hidden from users>",
+			"Remove [Import [Production]] [in this city] <hidden from users>"
+		]
 	},
 	{
 		"name": "Import [Food]",
@@ -179,7 +195,7 @@
 			"Only available <in cities connected to the capital> <when above [0] [Food Export Route]>",
 			"Remove [Import [Food]] [in this city] <hidden from users> <when below [0] [Food Export Route]>",
 			"Consumes [1] [Food Export Route]",
-			"Comment [Automatically removes itself when the export route is below 0]"
+			"Comment [Automatically removes itself when the export route is below 0.]"
 		],
 		"requiredTech": "Plows"
 	},
@@ -192,7 +208,10 @@
 			"'Trade Action'",
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available <in cities connected to the capital> <when above [20] [Food]>",
-			"Provides [1] [Food Export Route]"
+			"Remove [Export [Food]] [in this city] <hidden from users> <if [Strife] is constructed>",
+			"Remove [Export [Food]] [in this city] <hidden from users> <if [Anarchy] is constructed>",
+			"Provides [1] [Food Export Route]",
+			"Comment [Automatically removes itself when the civilization is in high instability such as [Strife] or [Anarchy].]"
 		],
 		"requiredTech": "Plows"
 	},
@@ -219,7 +238,10 @@
 			"'Trade Action'",
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available <in cities connected to the capital> <when above [20] [Production]>",
-			"Provides [1] [Production Export Route]"
+			"Remove [Export [Production]] [in this city] <hidden from users> <if [Strife] is constructed>",
+			"Remove [Export [Production]] [in this city] <hidden from users> <if [Anarchy] is constructed>",
+			"Provides [1] [Production Export Route]",
+			"Comment [Automatically removes itself when the civilization is in high instability such as [Strife] or [Anarchy].]"
 		],
 		"requiredTech": "Mining"
 	},
@@ -6518,6 +6540,7 @@
 			"Provides [1] [Influence] <when above [9] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Influence] <when above [29] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [10] [Migration Limit]",
 			//Tutorial
 			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]> <hidden from users>",
 			"Indicates the capital city"
