@@ -9,7 +9,8 @@
  **Yanggestar from qq group chat for creating many original grahpics for the mod.**
 
  **Caballeroarepa for providing the code for canal building**
- 
+
+ **RapidPup for providing a large part of late game tech tree**
  Special thanks to:
  
  **EmperorPenguin for some help with proofreading, bug fixing advices.**
