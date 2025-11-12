@@ -1463,7 +1463,7 @@
                     "[2] free [Phalanx] units appear",
                     "Free [Great Commander] appears",
                     "Gain a free [Feudal Empire] [in capital]",
-                    "Comment [Gain access to[Diadochi States].]"
+                    "Comment [Gain access to [Diadochi States] civilization form.]"
                 ]
             },
             {
@@ -1733,6 +1733,53 @@
                     "Gain [125] [Culture] <(modified by game speed)>",
                     "Gain [50] [Faith] <(modified by game speed)>",
                     "Free [Noble Swordsman] appears"
+                ]
+            }
+        ]
+    },
+    ///South Asian
+    {
+        "name": "Aryan Migration",
+        "text": "A group of nomadic outsider has migrated and conquered their way into our land... With new ideals and army traditions.",
+        "choices": [
+            {
+                "text": "So begins the Indo-Aryan's leadership in South Asia.",
+                "uniques": [
+                    "Gain a free [Vedic Kingdoms] [in capital]",
+                    "Free [Aryan War Cart] appears"
+                ]
+            },
+            {
+                "text": "The Harappans had successfully repelled the invasion.",
+                "uniques": [
+                    "Gain a free [Harappan City States] [in capital]",
+                    "Gain a free [Struggle] [in capital]",
+                    "Gain [33] [Science] <(modified by game speed)>",
+                    "Gain [50] [Culture] <(modified by game speed)>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Buddha's birth",
+        "text": "A wealthy prince named Siddhartha Gautama has became a great philosopher of sort and started a religious movement following his own ideal...",
+        "choices": [
+            {
+                "text": "Maybe... We all need a bit of forgiveness in our life.",
+                "uniques": [
+                    "Only available <when above [24] [Influence]>",
+                    "Instantly consumes [25] [Influence]",
+                    "Gain a free [Buddhaism Influence] [in capital]",
+                    "[1] free [Great Prophet] units appear",
+                    "Comment [Stops [Maurya Empire] from automatically adopting [Meritocracy].]"
+                ]
+            },
+            {
+                "text": "Heretical Teaching.",
+                "uniques": [
+                    "[-1] population in a random city",
+                    "[+10]% [Happiness] [in all cities] <for [10] turns>",
+                    "Gain [50] [Culture] <(modified by game speed)>"
                 ]
             }
         ]

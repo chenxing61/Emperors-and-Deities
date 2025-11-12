@@ -767,7 +767,19 @@
 		"uniques": [
 			"Gain a free [Monument] [in this city]",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"[+1 Gold] <after discovering [Theology]>",
+			"Only available <after adopting [Unity]>"
+		],
+		"requiredTech": "Agriculture"
+	},
+	{
+		"name": "Ashoka Pillar",
+		"uniqueTo": "South Asia",
+		"cost": 30,
+		"culture": 2,
+		"uniques": [
+			"Gain a free [Monument] [in this city]",
+			"[-1]% Culture cost of natural border growth [in all cities]",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Unity]>"
 		],
 		"requiredTech": "Agriculture"
@@ -778,6 +790,8 @@
 		"culture": 1,
 		"uniques": [
 			"'Cultural Building'",
+			"Unavailable <for [North Africa] Civilizations> <after adopting [Unity]> <hidden from users>",
+			"Unavailable <for [South Asia] Civilizations> <after adopting [Unity]> <hidden from users>",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"[-1]% Culture cost of natural border growth [in all cities]",
 			"[+1 Gold] <after discovering [Theology]>",
@@ -803,6 +817,16 @@
 			"'Agricultural Building'",
 			"[+5]% growth [in this city]",
 			"Must not be on [River]"
+		],
+		"requiredTech": "Agriculture"
+	},
+	{
+		"name": "Stepwell",
+		"uniqueTo": "South Asia",
+		"replaces": "Well",
+		"food": 2,
+		"uniques": [
+			"'Agricultural Building'"
 		],
 		"requiredTech": "Agriculture"
 	},
@@ -1788,6 +1812,7 @@
 		"uniques": [
 			"'Military Building'",
 			"Provides [1] [Horse]",
+			"Provides [1] [Elephant] <for [South Asia] Civilizations>",
 			"New ['Mounted'] units start with [10] XP [in this city]",
 			"Destroyed when the city is captured"
 		],
@@ -1966,6 +1991,27 @@
 		],
 		"requiredTech": "Drama and Poetry"
 	},
+	{
+		"name": "The Vedas",
+		"uniqueTo": "South Asia",
+		"replaces": "National Epic",
+		"maintenance": 3,
+		"isNationalWonder": true,
+		"culture": 5,
+		"specialistSlots": {
+			"Artist": 3
+		},
+		"uniques": [
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"[+25]% Great Person generation [in this city]",
+			"[+2 Production] from every [Landmark]",
+			"[+2 Happiness] from every [Landmark]",
+			"[+2 Production] from every [Holy site]",
+			"[+2 Science] from every [Holy site]",
+			"Cost increases by [20] per owned city"
+		],
+		"requiredTech": "Drama and Poetry"
+	},
 	//Line 6
 	{
 		"name": "Dry Dock",
@@ -2016,6 +2062,19 @@
 			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]",
 			"[+1 Production] from ['Lumber Improvement'] tiles [in this city]",
 			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
+		],
+		"requiredTech": "Forging"
+	},
+	{
+		"name": "Early Aqueduct",
+		"cost": 120,
+		"uniqueTo":"South Asia",
+		"replaces":"Aqueduct",
+		"maintenance": 2,
+		"uniques": [
+			"'Infrastructure'",
+			"[-10]% Unhappiness from [Population] [in this city]",
+			"[25]% Food is carried over after population increases [in this city]"
 		],
 		"requiredTech": "Forging"
 	},
@@ -6661,6 +6720,24 @@
 		"requiredTech": "Calendar"
 	},
 	{
+		"name": "Mandir",
+		"uniqueTo": "South Asia",
+		"replaces": "Shrine",
+		"cost": 20,
+		"faith": 1,
+		"culture": 1,
+		"uniques": [
+			"'Worship Place'",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
+			"[+20]% Production when constructing ['Educational Building'] buildings [in this city] <before the [Medieval era]>",
+			"[+20]% Production when constructing ['Infrastructure'] buildings [in this city] <before the [Medieval era]>",
+			"Only available <after adopting [Polytheism]>",
+			"Only available <when religion is enabled>",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Calendar"
+	},
+	{
 		"name": "Shaman's Hut",
 		"culture": 1,
 		"happiness": 1,
@@ -8036,8 +8113,8 @@
 			"Provides [5] [Influence Limit] <starting from the [Classical era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <while the empire is happy>",
-			"Provides [2] [Standing Army Maintenance]",
-			"Provides [3] [Noble Army Maintenance]",
+			"Provides [1] [Standing Army Maintenance]",
+			"Provides [2] [Noble Army Maintenance]",
 			"Comment [Unique Name:]",
 			"Comment [Blessing of the Divine Swallow]",
 			"[+20]% growth [in all cities]",
@@ -8061,14 +8138,63 @@
 			"Provides [5] [Influence Limit] <starting from the [Classical era]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <while the empire is happy>",
-			"Provides [2] [Standing Army Maintenance]",
-			"Provides [3] [Noble Army Maintenance]",
+			"Provides [1] [Standing Army Maintenance]",
+			"Provides [2] [Noble Army Maintenance]",
 			"Comment [Unique Name:]",
 			"Comment [Mandated Ruling]",
 			"[+10]% growth [in all cities]",
 			"[+1 Culture] [in all cities] <before adopting [Unity]>",
 			"[+2 Happiness] [in puppeted cities] <after adopting [Unity]>",
 			"Comment [Unique option in increasing [Influence] event]",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Harappan City States",
+		"uniqueTo": "South Asia",
+		"uniques": [
+			"Limited to [1] per Civilization <hidden from users>",
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Ancient era Form'",
+			"'Civilization Form'",
+			"'Divided'",
+			"Remove [{non-[Harappan City States]} {'Civilization Form'}] [in all cities] <hidden from users>",
+			"Provides [15] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [2] [Standing Army Maintenance]",
+			"Provides [2] [Noble Army Maintenance]",
+			"Comment [Unique Name:]",
+			"Comment [Gifted City Planner]",
+			"[+1 Culture, +1 Science] [in all cities]",
+			"[-5]% Culture cost of adopting new Policies",
+			"[33]% Strength for cities",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Vedic Kingdoms",
+		"uniqueTo": "South Asia",
+		"uniques": [
+			"Limited to [1] per Civilization <hidden from users>",
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Ancient era Form'",
+			"'Civilization Form'",
+			"'Divided'",
+			"Remove [{non-[Vedic Kingdoms]} {'Civilization Form'}] [in all cities] <hidden from users>",
+			"Provides [15] [Influence Limit]",
+			"Provides [5] [Influence Limit] <starting from the [Classical era]>",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [2] [Standing Army Maintenance]",
+			"Provides [2] [Noble Army Maintenance]",
+			"Comment [Unique Name:]",
+			"Comment [Hindu's Birth]",
+			"[+15]% growth [in all cities]",
+			"[+1 Faith] [in all cities]",
+			"Comment [Gain access to [Aryan War Cart] unit.]",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -8269,7 +8395,7 @@
 			"Comment [Unique Name:]",
 			"Comment [Cauldron of Cultures]",
 			"[-25]% Culture cost of adopting new Policies",
-			"Comment [Gain access to[Phalanx].]",
+			"Comment [Gain access to [Phalanx] unit.]",
 			"Comment [If nothing goes wrong, [Diadochi States] will develop [Fedualism] in Mediterranean upon entering Medieval era]",
 			"Adopt [Feudalism] <starting from the [Medieval era]>",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -8429,7 +8555,7 @@
 			"Comment [Unique Name:]",
 			"Comment [The Dominator's Warth]",
 			"New [Military] units start with [15] XP [in all cities]",
-			"Comment [Gain access to[Cavalry of the Dominator].]",
+			"Comment [Gain access to [Cavalry of the Dominator] unit.]",
 			"Comment [If nothing goes wrong, [Chu Dynasty] will develop [Fedualism] in East Asia upon entering Medieval era]",
 			"Adopt [Feudalism] <starting from the [Medieval era]>",
 			"Triggers a global alert upon completion",
@@ -8472,6 +8598,49 @@
 			"Instantly provides [8] [Influence]",
 			"[+5]% [Gold] from Trade Routes",
 			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name": "Maurya Empire",
+		"uniqueTo": "South Asia",
+		"replaces": "Centralized Empire",
+		"uniques": [
+			"Limited to [1] per Civilization <hidden from users>",
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Classical era Form'",
+			"'Civilization Form'",
+			"'United'",
+			"Remove [{non-[Maurya Empire]} {'Civilization Form'}] [in all cities] <hidden from users>",
+			"Provides [15] [Influence Limit]",
+			"Consumes [1] [Influence]",
+			"Provides [2] [Standing Army Maintenance]",
+			"Provides [2] [Noble Army Maintenance]",
+			"Comment [Unique Name:]",
+			"Comment [Arthashastra]",
+			"Gain an extra spy",
+			"[+1 Production] from all ['Political Building'] buildings",
+			"[+1 Science] from all ['Political Building'] buildings",
+			"[+1 Culture] from all ['Political Building'] buildings",
+			"[+1 Faith] from all ['Political Building'] buildings",
+			"Comment [If nothing goes wrong, [Maurya Empire] will develop [Meritocracy] in South Asia upon entering Medieval era]",
+			"Adopt [Meritocracy] <starting from the [Medieval era]> <if [Buddhaism Influence] is not constructed>",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Buddhaism Influence",
+		"uniqueTo": "South Asia",
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Outcome'",
+			"[-1 Faith] [in all cities]",
+			"[-25]% Unhappiness from [Specialists] [in all cities] <before the [Industrial era]>",
+			"[-10]% Unhappiness from [Specialists] [in all cities] <starting from the [Industrial era]>",
+			"[-15]% Food consumption by specialists [in all cities]",
+			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
 	//Medieval
