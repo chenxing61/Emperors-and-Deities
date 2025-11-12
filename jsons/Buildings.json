@@ -1615,6 +1615,19 @@
 		"requiredTech": "Masonry"
 	},
 	{
+		"name": "Early Aqueduct",
+		"cost": 90,
+		"uniqueTo":"South Asia",
+		"replaces":"Aqueduct",
+		"maintenance": 2,
+		"uniques": [
+			"'Infrastructure'",
+			"[-10]% Unhappiness from [Population] [in this city]",
+			"[25]% Food is carried over after population increases [in this city]"
+		],
+		"requiredTech": "Masonry"
+	},
+	{
 		"name": "Furniture Workshop",
 		"maintenance": 2,
 		"culture": 1,
@@ -2065,19 +2078,7 @@
 		],
 		"requiredTech": "Forging"
 	},
-	{
-		"name": "Early Aqueduct",
-		"cost": 120,
-		"uniqueTo":"South Asia",
-		"replaces":"Aqueduct",
-		"maintenance": 2,
-		"uniques": [
-			"'Infrastructure'",
-			"[-10]% Unhappiness from [Population] [in this city]",
-			"[25]% Food is carried over after population increases [in this city]"
-		],
-		"requiredTech": "Forging"
-	},
+
 	{
 		"name": "Military Blacksmith",
 		"maintenance": 1,
