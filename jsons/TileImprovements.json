@@ -150,12 +150,12 @@
 		"turnsToBuild": 10,
 		"techRequired": "Irrigation",
 		"uniques": [
-			"Unavailable <with [3] to [5] neighboring [{non-[Polder]} {Coast}] tiles>",
-			"Unavailable <with [3] to [5] neighboring [Ocean] tiles>",
-			"Unavailable <with [3] to [5] neighboring [{non-[Polder]} {Lakes}] tiles>",
+			"Unavailable <in [Coast] tiles> <with [3] to [6] neighboring [{non-[Polder]} {Coast}] tiles>",
+			"Unavailable <in [Coast] tiles> <with [2] to [6] neighboring [Ocean] tiles>",
+			"Unavailable <in [Lakes] tiles> <with [3] to [6] neighboring [{non-[Polder]} {Lakes}] tiles>",
 			"'Agricultural Improvement'",
 			"[+1 Food] <after discovering [Crop Rotation]>",
-			"Cannot be built on [Land] tiles",
+			"Cannot be built on [{non-[Marsh]} {Land}] tiles",
 			"Pillaging this improvement yields approximately [+18 Gold]"
 		],
 		"shortcutKey": "F"
@@ -193,6 +193,7 @@
 		"techRequired": "Ecology",
 		"uniques": [
 			"Does not need removal of [Forest]",
+			"Does not need removal of [Jungle]",
 			"'Lumber Improvement'",
 			"[+1 Production] from [Fresh water] tiles",
 			"Pillaging this improvement yields approximately [+20 Gold]"
@@ -711,6 +712,7 @@
 		],
 		"turnsToBuild": 14,
 		"uniques": [
+			"'Infrastructure Improvement'",
 			"Turn this tile into a [Coast] tile",
 			"Turn this tile into a [Canal] tile",
 			"Cannot be built on [Hill] tiles",
@@ -727,6 +729,7 @@
 		"turnsToBuild": 4,
 		"techRequired": "Bronze Working",
 		"uniques": [
+			"'Lumber Improvement'",
 			"Can be built outside your borders",
 			"Excluded from map editor"
 		],
@@ -742,6 +745,7 @@
 		"turnsToBuild": 7,
 		"techRequired": "Bronze Working",
 		"uniques": [
+			"'Lumber Improvement'",
 			"Can be built outside your borders",
 			"Excluded from map editor"
 		],
@@ -810,6 +814,7 @@
 			}
 		]
 	},
+	// Districts
 	// Great Person improvements
 	{
 		"name": "Academy",
@@ -838,6 +843,7 @@
 			"Land"
 		],
 		"culture": 4,
+		"happiness": 2,
 		"uniques": [
 			"Great Improvement",
 			"[+1 Culture] <after discovering [Philosophy]>",

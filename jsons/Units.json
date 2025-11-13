@@ -239,7 +239,7 @@
 		"unitType": "Close Combat",
 		"cost": 50,
 		"movement": 2,
-		"strength": 8,
+		"strength": 10,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
@@ -422,6 +422,37 @@
 		"obsoleteTech": "Stirrup",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Aryan War Cart",
+		"uniqueTo": "South Asia",
+		"unitType": "Assault",
+		"cost": 70,
+		"movement": 3,
+		"strength": 16,
+		"uniques": [
+			"Only available <if [Vedic Kingdoms] is constructed>",
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <after discovering [Iron Working]>",
+			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Stewardship",
+			"Hardened"
+		],
+		"upgradesTo": "Cataphract",
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Stirrup",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "horse"
 	},
 	{
 		"name": "Noble Chariot",
@@ -681,6 +712,38 @@
 		"obsoleteTech": "Tactics",
 		"requiredResource": "Standing Army Maintenance",
 		"upgradesTo": "Armored Elephant Rider",
+		"attackSound": "elephant"
+	},
+	{
+		"name": "War Elephant",
+		"uniqueTo":"South Asia",
+		"replaces":"Elephant Rider",
+		"unitType": "Rider",
+		"cost": 70,
+		"movement": 2,
+		"strength": 21,
+		"uniques": [
+			"Consumes [1] [Elephant]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Blunt Weapons'",
+			"No defensive terrain bonus",
+			"[+25]% Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+10]% Strength <vs cities> <when attacking>",
+			"[-25]% Strength <vs ['Siege Weapons'] units>",
+			"[-33]% Strength <vs ['Firearms'] units>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredBuilding": "Military Stable",
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Tactics",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Armored War Elephant",
 		"attackSound": "elephant"
 	},
 	{
@@ -1131,7 +1194,7 @@
 		"unitType": "Close Combat",
 		"cost": 50,
 		"movement": 2,
-		"strength": 16,
+		"strength": 18,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
@@ -1936,6 +1999,37 @@
 		"attackSound": "elephant"
 	},
 	{
+		"name": "Armored War Elephant",
+		"replaces":"Armored Elephant Rider",
+		"uniqueTo":"South Asia",
+		"unitType": "Rider",
+		"cost": 110,
+		"movement": 2,
+		"strength": 32,
+		"uniques": [
+			"Consumes [1] [Elephant]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Blunt Weapons'",
+			"No defensive terrain bonus",
+			"[+20]% Strength <vs cities> <when attacking>",
+			"[-20]% Strength <vs ['Siege Weapons'] units>",
+			"[-20]% Strength <vs ['Firearms'] units>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredBuilding": "Military Stable",
+		"requiredTech": "Tactics",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "elephant"
+	},
+	{
 		"name": "Heavy Ballista",
 		"unitType": "Siege",
 		"cost": 100,
@@ -2161,7 +2255,7 @@
 		"unitType": "Close Combat",
 		"cost": 120,
 		"movement": 2,
-		"strength": 28,
+		"strength": 30,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
 			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]>",
@@ -2504,7 +2598,7 @@
 		"unitType": "Close Combat",
 		"cost": 180,
 		"movement": 2,
-		"strength": 37,
+		"strength": 39,
 		"uniques": [
 			"Only available <if [United States] is constructed>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
@@ -2884,7 +2978,7 @@
 		"unitType": "Close Combat",
 		"cost": 260,
 		"movement": 2,
-		"strength": 56,
+		"strength": 58,
 		"uniques": [
 			"Can transform to [Heavy Infantry] <after discovering [Replaceable Parts]> <when above [0] [Standing Army Maintenance]> <removing the [The Garrison Army] promotion/status>",
 			"Only available <if [United States] is constructed>",
@@ -2984,7 +3078,7 @@
 		"movement": 3,
 		"strength": 45,
 		"rangedStrength": 50,
-		"range:": 2,
+		"range": 2,
 		"uniques": [
 			"Consumes [1] [Fuel]",
 			"Costs [24] [Ship Parts]",
@@ -3525,7 +3619,7 @@
 		"cost": 250,
 		"movement": 3,
 		"strength": 68,
-		"rangedStrength": 68,
+		"rangedStrength": 70,
 		"range": 1,
 		"uniques": [
 			"Only available <after adopting [Militia Army]>",
@@ -3869,7 +3963,7 @@
 		"movement": 6,
 		"strength": 52,
 		"rangedStrength": 62,
-		"range:": 2,
+		"range": 2,
 		"uniques": [
 			"Costs [27] [Ship Parts]",
 			"Consumes [1] [Enriched Uranium]",

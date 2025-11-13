@@ -266,17 +266,6 @@
                 ]
             },
             {
-                "text": "Socialist Education",
-                "uniques": [
-                    "Only available <if [Socialist Republics] is constructed>",
-                    "Play [policy] sound <hidden from users>",
-                    "[-50]% [Gold] [in all cities] <for [1] turns>",
-                    "[+33]% [Science] [in all cities] <for [3] turns>",
-                    "[+33]% [Culture] [in all cities] <for [3] turns>",
-                    "Triggers a [Enact Policies] event <hidden from users>"
-                ]
-            },
-            {
                 "text": "Increasing Stability.",
                 "uniques": [
                     "Only available <if [Peace] is constructed> <if [United States] is not constructed>",
@@ -358,9 +347,11 @@
             {
                 "text": "Changing Civilization Form",
                 "uniques": [
-                    "Only available <when number of [Influence] is more than [Influence Limit]>",
+                    "Only available <when number of [Influence] is more than [Influence Limit]> <when number of [Forced Shift In Politic Chance] is more than [0]> <hidden from users>",
                     "Play [policy] sound <hidden from users>",
+                    "Comment [If your [Influence] is somehow above normal limit. You can trigger this.]",
                     "Comment [We can force the shift in politic to stop our civilization from a undesireable route...]",
+                    "Instantly consumes [5] [Influence]",
                     "Instantly consumes [5] [Influence] <when number of [Cities] is between [0] and [5]>",
                     "Instantly consumes [10] [Influence] <when number of [Cities] is more than [4]>",
                     "Triggers a [Shift in Politic] event"
@@ -702,7 +693,7 @@
             {
                 "text": "Building a harmonious civilization is essential",
                 "uniques": [
-                    "Only available <if [Peace] is constructed> <when above [-10] [Influence]>",
+                    "Only available <if [Peace] is constructed> <when above [-10] [Influence]> <after founding a religion>",
                     "Comment [We can make it so that it takes more to unstablise our civilization]",
                     "Instantly consumes [15] [Influence]",
                     "Gain [-250] [Gold] <(modified by game speed)>",
@@ -1423,6 +1414,37 @@
             }
         ]
     },
+        {
+        "name": "Great Exchange",
+        "text": "Our settlement in the new land starts to adopt local plants and herds. If we import these stuff back into our continent. We could gain a lot more profits.",
+        "choices": [
+            {
+                "text": "We should focus on the new staple crops.",
+                "uniques": [
+                    "Gain a free [Great Exchange - Food Security] [in capital]"
+                ]
+            },
+            {
+                "text": "We should focus on the new economic crops.",
+                "uniques": [
+                    "Gain a free [Great Exchange - Plantation and Trades] [in capital]"
+                ]
+            },
+            {
+                "text": "These exotic new animals are quite beautiful.",
+                "uniques": [
+                    "Gain a free [Great Exchange - Furcoat and Pets] [in capital]"
+                ]
+            },
+            {
+                "text": "We should respect the locals and exchange more [culture]",
+                "uniques": [
+                    "Only available <after adopting [Humanism]>",
+                    "Gain a free [Great Exchange - Preservation] [in capital]"
+                ]
+            }
+        ]
+    },
     ///Mediterranean
     {
         "name": "Alexander the Conqueror",
@@ -1441,7 +1463,7 @@
                     "[2] free [Phalanx] units appear",
                     "Free [Great Commander] appears",
                     "Gain a free [Feudal Empire] [in capital]",
-                    "Comment [Gain access to[Diadochi States].]"
+                    "Comment [Gain access to [Diadochi States] civilization form.]"
                 ]
             },
             {
@@ -1711,6 +1733,53 @@
                     "Gain [125] [Culture] <(modified by game speed)>",
                     "Gain [50] [Faith] <(modified by game speed)>",
                     "Free [Noble Swordsman] appears"
+                ]
+            }
+        ]
+    },
+    ///South Asian
+    {
+        "name": "Aryan Migration",
+        "text": "A group of nomadic outsider has migrated and conquered their way into our land... With new ideals and army traditions.",
+        "choices": [
+            {
+                "text": "So begins the Indo-Aryan's leadership in South Asia.",
+                "uniques": [
+                    "Gain a free [Vedic Kingdoms] [in capital]",
+                    "Free [Aryan War Cart] appears"
+                ]
+            },
+            {
+                "text": "The Harappans had successfully repelled the invasion.",
+                "uniques": [
+                    "Gain a free [Harappan City States] [in capital]",
+                    "Gain a free [Struggle] [in capital]",
+                    "Gain [33] [Science] <(modified by game speed)>",
+                    "Gain [50] [Culture] <(modified by game speed)>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Buddha's birth",
+        "text": "A wealthy prince named Siddhartha Gautama has became a great philosopher of sort and started a religious movement following his own ideal...",
+        "choices": [
+            {
+                "text": "Maybe... We all need a bit of forgiveness in our life.",
+                "uniques": [
+                    "Only available <when above [24] [Influence]>",
+                    "Instantly consumes [25] [Influence]",
+                    "Gain a free [Buddhaism Influence] [in capital]",
+                    "[1] free [Great Prophet] units appear",
+                    "Comment [Stops [Maurya Empire] from automatically adopting [Meritocracy].]"
+                ]
+            },
+            {
+                "text": "Heretical Teaching.",
+                "uniques": [
+                    "[-1] population in a random city",
+                    "[+10]% [Happiness] [in all cities] <for [10] turns>",
+                    "Gain [50] [Culture] <(modified by game speed)>"
                 ]
             }
         ]
