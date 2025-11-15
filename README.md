@@ -1,4 +1,4 @@
-# Emperor and Deities
+# Emperor and Deities (帝王和神明)
  Major Overhaul of literary everything, if you are not satisfied with how civ 5 portrays human civilizations, you ought to try this mod!
 
  The Mod is WIP so civs dont have their unique features currently and late game(info age) kinda sucks.
@@ -9,7 +9,8 @@
  **Yanggestar from qq group chat for creating many original grahpics for the mod.**
 
  **Caballeroarepa for providing the code for canal building**
- 
+
+ **RapidPup for providing a large part of late game tech tree**
  Special thanks to:
  
  **EmperorPenguin for some help with proofreading, bug fixing advices.**
