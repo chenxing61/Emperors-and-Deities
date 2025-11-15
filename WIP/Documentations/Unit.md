@@ -42,7 +42,7 @@ Example: Heavy Cavalry, Knight, Tank
 
 Anti-City Siege and All purpose Siege are quite similar. Nearly identical apart from their specialisation. One have a strong anti-city focus, the other can be used to sink ships and bang on the enemy lines, however, skirmishers like scout, light cavalries, auxiliaries and later Ranged Infantry are not on that list.
 
-Example: Trebuchet, Ballista, Self-propelled artillery, Rocket Artillery
+Example: Trebuchet, Ballista, Self Propelled Artillery, Rocket Artillery
 For Naval Combat:
 
 Because nearly all of the naval units are standing armies, the unit type is much simplier here: Its galley，sailling ship and modern navy.
