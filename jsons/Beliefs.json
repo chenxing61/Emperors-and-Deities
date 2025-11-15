@@ -6,6 +6,7 @@
         "uniques": [
             "Comment [Unlocks [Ancestral Temple], a wonder which gives 1 [Culture] and [Food] to all cities and increase their [Settler] production.]",
             "[+2 Faith] from every [Monument]",
+            "[+1 Faith] from every [Monument] <starting from the [Classical era]>",
             "May buy [Monument] buildings for [30] [Faith] [in cities following this religion]"
         ]
     },
@@ -34,7 +35,7 @@
             "May buy [Igloo] buildings for [40] [Faith] [in cities following this religion]",
             "[+1 Faith] from every [Tundra] <before the [Medieval era]>",
             "[+1 Faith] from every [Snow]",
-            "[+2 Faith] from every [Snow] <before the [Medieval era]>",
+            "[+1 Faith] from every [Snow] <before the [Medieval era]>",
             "[+2 Faith] from every [Ice]",
             "[+3 Faith] from every [Ice] <before the [Medieval era]>"
         ]
@@ -101,10 +102,11 @@
         "type": "Pantheon",
         "uniques": [
             "Comment [Unlocks [Temple of the Hunting God], a wonder which gives [Hunter's Hut] an extra food production and increases production speed of all [Ranged Combat] units, especially ['Skirmishers'].]",
-            "[+1 Culture] from every [Camp]",
-            "[+1 Production] from every [Camp] <before the [Medieval era]>",
-            "[+1 Faith] from every ['Hunt']",
-            "[+2 Faith] from every ['Hunt'] <before the [Medieval era]>"
+            "[+1 Gold] from every [Camp] <in [{Featureless} {Grassland}] tiles>",
+            "[+1 Culture] from every [Camp] <in [Forest] tiles>",
+            "[+1 Culture] from every [Camp] <in [Jungle] tiles>",
+            "[+1 Production] from every [Camp] <in [Tundra] tiles>",
+            "[+1 Faith] from every ['Hunt']"
         ]
     },
     {
@@ -298,7 +300,7 @@
         "type": "Enhancer",
         "uniques": [
             "May buy [{Military} {Land} {'Noble Army'} {non-['Mercenary Army']} {non-['Legendary Unit']}] units with [Faith] for [2] times their normal Production cost <before the [Imperial era]> <in cities with at least [8] [Followers of this Religion]>",
-            "Provides [3] [Noble Army Maintenance] <in [Holy] cities>",
+            "Provides [3] [Noble Army Maintenance]",
             "[Faith] cost of purchasing [Missionary] units [-25]%"
         ]
     },
