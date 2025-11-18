@@ -491,7 +491,7 @@
 			"Reinforced Position"
 		],
 		"uniques": [
-			"[+25]% Strength <vs ['Dense Formation'] units> <when fighting in [Rough terrain] tiles>"
+			"[Target Unit] gains the [Ambushed] status for [1] turn(s) <when fighting in [Rough terrain] tiles> <upon damaging a [Military] unit>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -697,7 +697,8 @@
 			"[+15]% Strength <vs ['Mounted'] units>",
 			"[+15]% Strength <vs ['Mechanised'] units>",
 			"[+33]% Strength <vs [Ranged Combat] units> <when defending>",
-			"[+33]% Strength <vs [Ranged Combat Ship] units> <when defending>"
+			"[+33]% Strength <vs [Ranged Combat Ship] units> <when defending>",
+			"[+33]% Strength <vs [Siege] units> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -818,7 +819,8 @@
 		],
 		"uniques": [
 			"[+33]% Strength <vs [Ranged Combat Ship] units> <when attacking>",
-			"[+25]% Strength <vs [Ranged Combat] units> <when attacking>"
+			"[+25]% Strength <vs [Ranged Combat] units> <when attacking>",
+			"[+50]% Strength <vs [Siege] units> <when attacking>"
 		],
 		"unitTypes": [
 			"Assault",
@@ -2940,9 +2942,14 @@
 		]
 	},
 	{
+		"name": "Ambushed",
+		"uniques": [
+			"[-33]% Strength <when defending>"
+		]
+	},
+	{
 		"name": "Surpressed",
 		"uniques": [
-			"[-1] Movement",
 			"[-1] Range",
 			"[-1] Sight"
 		]
