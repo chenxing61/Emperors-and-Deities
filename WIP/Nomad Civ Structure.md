@@ -8,7 +8,6 @@ Starting out{
     2.Have Primitive nomad instead of Hunter-Gatherer. Which only build camps and pastures.
 
 }
-
 Special Units{
 
     Civil
@@ -32,25 +31,25 @@ Special Units{
     5.Nomad Cavalry:
     First Real Standing Army of the Nomads, a stronger early light cavalry.
 
-    5.Elite Cavalry Archer:
+    6.Elite Cavalry Archer:
     Stronger Cavalry Archer.
 
-    6.Khan:
+    7.Khan:
     Great General Replacement.Can be bought using influence. Have even more movements.
 
-    7.(Unique)Iron Pangoda:
+    8.(Unique)Iron Pangoda:
     Stronger Heavy Cav.
 
-    8.(Unique)Keshik:
+    9.(Unique)Keshik:
     Stronger Elite Cavalry Archer.
 
-    9.HuiHui Trebuchet:
+    10.HuiHui Trebuchet:
     Mobile Trebuchet that can be packed to gain extra movements or unpacked.
 
-    10.(Unique)Cossacks:
+    11.(Unique)Cossacks:
     Gunpowder era cavalry archer.
 
-    11.Nomad Dragoons:
+    12.Nomad Dragoons:
     Granadier with more movements.
 }
 Special Building/Improvement/Mechanics:{
@@ -71,5 +70,4 @@ Special Building/Improvement/Mechanics:{
 
     8.Horse Related Buildings Have extra effects on army.
 
-    9.
 }
