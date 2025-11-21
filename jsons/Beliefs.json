@@ -143,7 +143,7 @@
         "name": "Virtues and Discipline",
         "type": "Follower",
         "uniques": [
-            "[+1]% [Culture] from every follower, up to [33]%",
+            "[+1]% [Culture] from every follower, up to [25]%",
             "[+3 Production] from [Landmark] tiles [in all cities]"
         ]
     },
@@ -151,15 +151,42 @@
         "name": "Sacred Mathematics",
         "type": "Follower",
         "uniques": [
-            "[+1]% [Science] from every follower, up to [10]%",
+            "[+1]% [Science] from every follower, up to [15]%",
             "[+3 Faith] from [Academy] tiles [in all cities]"
+        ]
+    },
+    {
+        "name": "Work Ethic",
+        "type": "Follower",
+        "uniques": [
+            "May buy ['Light Industry'] buildings with [Faith] [in all cities]",
+            "[+3 Faith] from [Manufactory] tiles [in all cities]"
+        ]
+    },
+    {
+        "name": "Stoicism",
+        "type": "Follower",
+        "uniques": [
+            "New [Close Combat] units start with [5] XP [in all cities]",
+            "[+1 Faith] from every ['Military Building']"
+        ]
+    },
+    {
+        "name": "Caste System",
+        "type": "Follower",
+        "uniques": [
+            "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <before the [Industrial era]>",
+            "[-10]% Unhappiness from [Population] [in all cities] <before the [Renaissance era]>",
+            "[-5]% Unhappiness from [Population] [in all cities] <before the [Imperial era]>",
+            "Triggers a [Casted Away] event <before adopting [Revolution]> <upon entering the [Modern era]>",
+            "Triggers a [Casted Away] event <upon adopting [Revolution]>"
         ]
     },
     {
         "name": "Saints Worship",
         "type": "Follower",
         "uniques": [
-            "[+50]% Production when constructing ['Worship Place'] buildings [in all cities]",
+            "[+50]% Production when constructing ['Worship Place'] buildings [in cities following this religion]",
             "[+1 Faith] from all ['Worship Place'] buildings"
         ]
     },
@@ -168,7 +195,7 @@
         "type": "Follower",
         "uniques": [
             "[-2 Science, +2 Happiness, +2 Faith] from all ['Worship Place'] buildings",
-            "[+5 Faith] from [Landmark] tiles [in all cities]"
+            "[+5 Faith] from [Landmark] tiles [in cities following this religion]"
         ]
     },
     {
@@ -176,7 +203,7 @@
         "type": "Follower",
         "uniques": [
             "[+1 Faith] from all ['Entertainment Building'] buildings",
-            "[+3 Happiness] from [Landmark] tiles [in all cities]"
+            "[+3 Happiness] from [Landmark] tiles [in cities following this religion]"
         ]
     },
     {
