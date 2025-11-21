@@ -1445,6 +1445,35 @@
             }
         ]
     },
+    {
+        "name": "Casted Away",
+        "text": "The [Caste System] is getting harder to maintain by the days. It restricts the upward mobility in our civilization way too much.",
+        "choices": [
+            {
+                "text": "We shall abandon the destinied inequality.",
+                "uniques": [
+                    "Instantly consumes [20] [Influence]",
+                    "Gain a free [Caste System - Casted Away] [in capital]"
+                ]
+            },
+            {
+                "text": "We shall reinerpret it into a more idealistic system.",
+                "uniques": [
+                    "Only available <when above [30] [Influence]>",
+                    "Instantly consumes [30] [Influence]",
+                    "Gain a free [Caste System - Reformed] [in capital]"
+                ]
+            },
+            {
+                "text": "What would the lower caste do anyway? They dont deserve anything.",
+                "uniques": [
+                    "Only available <before adopting [Revolution]>",
+                    "Gain a free [Caste System - Exploitation] [in capital]",
+                    "Gain a free [Strife] [in capital]"
+                ]
+            }
+        ]
+    },
     ///Mediterranean
     {
         "name": "Alexander the Conqueror",
