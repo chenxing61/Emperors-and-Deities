@@ -1,3 +1,33 @@
+	{
+		"name": "buildingName",
+		"cost":,
+		"maintenance": 5,
+		"isWonder": tf,
+	    "isNationalWonder": tf,
+		"stat":,
+		"cityStrength": Integer,
+		"cityHealth": Integer,
+		"percentStatBonus": {
+		"Stat": Integer
+		 },
+		"greatPersonPoints": {
+		"Name": Integer
+		},
+		"specialistSlots": {
+		"Name": Integer
+		},
+		"uniques": ["condition"
+					"filter",
+					"feature",
+					],
+		"requiredNearbyImprovedResources": [
+		"Name"
+		],
+		"requiredTech": "",
+		"quote": ""
+		"civilopediaText":[{"text":"whatever you want","link":"types/item",}]
+		"hurryCostModifier": 
+	},
 [	
 	{
 		"name": "City Hall",
@@ -32,6 +62,36 @@
 			"Remove [Construct Harbour District] [in this city] <hidden from users>"
 		],
 		"requiredTech": "Navigation"	
+	},
+	{
+		"name": "buildingName",
+		"cost":,
+		"maintenance": 5,
+		"isWonder": tf,
+	    "isNationalWonder": tf,
+		"stat":,
+		"cityStrength": Integer,
+		"cityHealth": Integer,
+		"percentStatBonus": {
+		"Stat": Integer
+		 },
+		"greatPersonPoints": {
+		"Name": Integer
+		},
+		"specialistSlots": {
+		"Name": Integer
+		},
+		"uniques": ["condition"
+					"filter",
+					"feature",
+					],
+		"requiredNearbyImprovedResources": [
+		"Name"
+		],
+		"requiredTech": "",
+		"quote": ""
+		"civilopediaText":[{"text":"whatever you want","link":"types/item",}]
+		"hurryCostModifier": 
 	},
 	{
 		"name": "Cargo Port",
@@ -419,4 +479,5 @@
 			"Destroyed when the city is captured"
 		]
 	}
+
 ]

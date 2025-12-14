@@ -23,7 +23,7 @@ Special Units{
     3.Peons:
     Unit that is captured through war and can build farms,mines and quarry. But they work like civ 6.
 
-    War (All the generic mercenary are also there. Water unit requires alliance with city states, or special projects.)
+    Army (All the generic mercenary are also there. Water unit requires alliance with city states, or special projects.)
 
     4.Nomad Warriors:
     Replaces Most of the Levy Units, Extra movement on open terrains.
@@ -36,6 +36,7 @@ Special Units{
 
     7.Khan:
     Great General Replacement.Can be bought using influence. Have even more movements.
+    However, its combat bonus is lessened.
 
     8.(Unique)Iron Pangoda:
     Stronger Heavy Cav.
