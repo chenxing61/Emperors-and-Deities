@@ -1430,9 +1430,6 @@
 		"name": "Livestock Market",
 		"gold": 1,
 		"production": 1,
-		"specialistSlots": {
-			"Merchant": 1
-		},
 		"uniques": [
 			"'Economic Building'",
 			"[+3]% [Gold] [in this city] <with [Bovine]>",
@@ -1449,9 +1446,6 @@
 		"name": "Crops Market",
 		"food": 1,
 		"gold": 1,
-		"specialistSlots": {
-			"Merchant": 1
-		},
 		"uniques": [
 			"'Economic Building'",
 			"[+1]% [Gold] [in this city] <with [Grain]>",
@@ -1473,10 +1467,6 @@
 	{
 		"name": "Mercenary Office",
 		"cost": 50,
-		"maintenance": 1,
-		"specialistSlots": {
-			"Merchant": 1
-		},
 		"uniques": [
 			"'Military Building'",
 			"May buy ['Mercenary Army'] units with [Gold] [in this city]",
@@ -1755,7 +1745,7 @@
 		"happiness": 1,
 		"specialistSlots": {
 			"Merchant": 1,
-			"Labourer": 2
+			"Labourer": 1
 		},
 		"uniques": [
 			"'Cultural Building'",
@@ -1773,7 +1763,7 @@
 		"happiness": 1,
 		"specialistSlots": {
 			"Merchant": 1,
-			"Labourer": 2
+			"Labourer": 1
 		},
 		"uniques": [
 			"'Cultural Building'",
@@ -1793,7 +1783,7 @@
 		"happiness": 1,
 		"specialistSlots": {
 			"Merchant": 1,
-			"Labourer": 2
+			"Labourer": 1
 		},
 		"uniques": [
 			"'Cultural Building'",
@@ -1955,7 +1945,7 @@
 		"culture": 5,
 		"specialistSlots": {
 			"Artist": 2,
-			"Scientist": 2
+			"Scientist": 1
 		},
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -1973,7 +1963,7 @@
 		"isNationalWonder": true,
 		"culture": 5,
 		"specialistSlots": {
-			"Artist": 3
+			"Artist": 2
 		},
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -2012,7 +2002,7 @@
 		"isNationalWonder": true,
 		"culture": 5,
 		"specialistSlots": {
-			"Artist": 3
+			"Artist": 2
 		},
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
@@ -2134,13 +2124,12 @@
 	//Line 7
 	{
 		"name": "Lighthouse",
-		"maintenance": 1,
+		"maintenance": 2,
 		"production": 1,
 		"happiness": 1,
 		"uniques": [
 			"'Marine Infrastructure'",
-			"[+5]% growth [in this city]",
-			"[+1 Food] from ['Water Improvement'] tiles [in this city]",
+			"Connects trade routes over water",
 			"Must be next to [Coast]"
 		],
 		"requiredBuilding": "Fishing Port",
@@ -2229,7 +2218,7 @@
 		"name": "Warehouse",
 		"maintenance": 2,
 		"specialistSlots": {
-			"Labourer": 3
+			"Labourer": 1
 		},
 		"uniques": [
 			"'Economic Building'",
@@ -2290,8 +2279,8 @@
 		},
 		"uniques": [
 			"Must be next to [Coast]",
-			"[+1] Movement <for [{Military} {Water}] units>",
 			"[+1] Sight <for [{Military} {Water}] units>",
+			"[+50]% Production when constructing [Lighthouse] buildings [in all cities]",
 			"Gain a free [Lighthouse] [in this city]",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -2643,6 +2632,7 @@
 			"Only available <when above [0] [Iconic Brand]> <when above [1] [Grape]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Grape]",
+			"Provides [1] [Grape]",
 			"[+10]% [Culture] from every [Brewery]",
 			"[+5]% [Gold] from every [Brewery]",
 			"Destroyed when the city is captured"
@@ -3079,21 +3069,32 @@
 	//Line 9
 	{
 		"name": "Trading Port",
-		"maintenance": 1,
-		"percentStatBonus": {
-			"gold": 10
-		},
+		"maintenance": 1,	
 		"specialistSlots": {
-			"Merchant": 1
+			"Merchant": 1,
+			"Labourer": 1
 		},
 		"uniques": [
 			"'Marine Infrastructure'",
+			"[+1]% [Gold] from Trade Routes",
 			"[+2 Happiness, +1 Gold] from [Citrus] tiles [in this city]",
-			"[+1 Gold] from [Water resource] tiles [in this city]",
-			"Connects trade routes over water",
+			"[+5]% [Gold] [in this city] <in cities with a [Trading Post]>",
+			"[+5]% [Gold] [in this city] <in cities with a [Warehouse]>",
 			"Must be next to [Coast]"
 		],
 		"requiredBuilding": "Lighthouse",
+		"requiredTech": "Compass"
+	},
+	{
+		"name": "Salt Evaporation Pond",
+		"cost":80,
+		"production":1,
+		"uniques": [
+			"'Marine Infrastructure'",
+			"[+1 Gold] from [Coastal] tiles [in this city]",
+			"Must be next to [Coast]"
+		],
+		"requiredBuilding": "Fishing Port",
 		"requiredTech": "Compass"
 	},
 	{
@@ -3408,7 +3409,7 @@
 		"cost": 250,
 		"isWonder": true,
 		"greatPersonPoints": {
-			"Great Strategist": 3
+			"Great Strategist": 1
 		},
 		"uniques": [
 			"Comment [Enable you to build 4 [Great Wall Pass]es in your cities. Which stops enemy mounted units effectively.]",
@@ -3834,7 +3835,7 @@
 			"'Economic Building'",
 			"[+1 Gold] from every [Merchant] <in this city>",
 			"[Great Merchant] is earned [+1]% faster",
-			"Doubles Gold given to enemy if city is captured"
+			"[+100]% Gold given to enemy if city is captured"
 		],
 		"requiredTech": "Banking"
 	},
