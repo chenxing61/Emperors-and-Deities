@@ -215,7 +215,7 @@
 		"cost": 40,
 		"movement": 3,
 		"strength": 6,
-		"rangedStrength":9,
+		"rangedStrength":8,
 		"range":1,
 		"uniques": [
 			"'Standing Army'",
@@ -229,9 +229,9 @@
 			"The Standing Army"
 		],
 		"requiredResource": "Standing Army Maintenance",
-		"upgradesTo": "Heavy Galley Fleet",
+		"upgradesTo": "Light Galley Fleet",
 		"requiredTech": "Sailing",
-		"obsoleteTech": "Shipbuilding",
+		"obsoleteTech": "Mathematics",
 		"attackSound": "arrow"
 	},
 	{
@@ -538,7 +538,7 @@
 		"unitType": "Close Combat Ship",
 		"cost": 75,
 		"movement": 3,
-		"strength": 14,
+		"strength": 15,
 		"uniques": [
 			"'Standing Army'",
 			"'Galley'",
@@ -844,6 +844,31 @@
 		"attackSound": "arrow"
 	},
 	///Line 5
+	{
+		"name": "Light Galley Fleet",
+		"unitType": "Ranged Combat Ship",
+		"cost": 75,
+		"movement": 3,
+		"strength": 12,
+		"range":1,
+		"rangedStrength":15,
+		"uniques": [
+			"'Standing Army'",
+			"'Galley'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Heavy Galley Fleet",
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Shipbuilding",
+		"attackSound": "arrow"
+	},
 	{
 		"name": "Archer",
 		"unitType": "Ranged Combat",
