@@ -22,7 +22,7 @@
 	},
 	{
 		"name": "Mechanised Worker",
-		"cost": 210,
+		"cost": 280,
 		"unitType": "Civilian",
 		"movement": 3,
 		"uniques": [
@@ -62,7 +62,7 @@
 	{
 		"name": "Expeditionary Work Ship",
 		"unitType": "Civil Ship",
-		"cost": 100,
+		"cost": 125,
 		"movement": 3,
 		"uniques": [
 			"'Sailing Ship'",
@@ -76,7 +76,7 @@
 	{
 		"name": "Modern Work Ship",
 		"unitType": "Civil Ship",
-		"cost": 175,
+		"cost": 220,
 		"movement": 4,
 		"uniques": [
 			"[-25]% construction time for [All] improvements",
@@ -106,7 +106,7 @@
 	{
 		"name": "Pioneer",
 		"unitType": "Civilian",
-		"cost": 200,
+		"cost": 250,
 		"movement": 3,
 		"uniques": [
 			"Founds a new city <by consuming this unit>",
@@ -152,16 +152,35 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[+25]% Strength <in [Land] tiles> <for [AI player] Civilizations>",
 			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Manual Plantation] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Manual Farm] improvements on tiles <for [Human player] Civilizations>",
-			"[+1] population in a random city <by consuming this unit> <after discovering [Bronze Working]>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"requiredTech": "Hunting and Fishing",
 		"obsoleteTech": "Bronze Working",
+		"upgradesTo":"Worker",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Primal Herder",
+		"unitType": "Close Combat",
+		"movement": 3,
+		"strength": 9,
+		"uniques": [
+			"Unbuildable",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
+			"Can build [Pasture] improvements on tiles <for [Human player] Civilizations>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"requiredTech": "Hunting and Fishing",
+		"obsoleteTech": "Horseback Riding",
+		"upgradesTo":"Nomad",
 		"attackSound": "arrow"
 	},
 	{
@@ -191,15 +210,17 @@
 	},
 	///line 1
 	{
-		"name": "Galley Fleet",
-		"unitType": "Close Combat Ship",
-		"cost": 60,
+		"name": "Canoes",
+		"unitType": "Ranged Combat Ship",
+		"cost": 40,
 		"movement": 3,
-		"strength": 9,
+		"strength": 6,
+		"rangedStrength":8,
+		"range":1,
 		"uniques": [
 			"'Standing Army'",
 			"'Galley'",
-			"'Dense Formation'",
+			"'Skirmishers'",
 			"'Edged Weapons'",
 			"Cannot enter ocean tiles",
 			"Never appears as a Barbarian unit <hidden from users>"
@@ -208,9 +229,9 @@
 			"The Standing Army"
 		],
 		"requiredResource": "Standing Army Maintenance",
-		"upgradesTo": "Heavy Galley Fleet",
+		"upgradesTo": "Light Galley Fleet",
 		"requiredTech": "Sailing",
-		"obsoleteTech": "Shipbuilding",
+		"obsoleteTech": "Mathematics",
 		"attackSound": "arrow"
 	},
 	{
@@ -266,12 +287,12 @@
 		"uniqueTo": "Europa",
 		"cost": 45,
 		"movement": 2,
-		"strength": 9,
+		"strength": 10,
 		"uniques": [
 			"Limited to [5] per Civilization",
-			"Can transform to [Early Swordsman] <removing the [The Levied Army] promotion/status> <after discovering [Bronze Working]> <when above [0] [Standing Army Maintenance]> <costs [+75 Gold] stats>",
-			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <after discovering [Mathematics]> <when above [0] [Standing Army Maintenance]> <costs [+75 Gold] stats>",
-			"Can transform to [Early Rider] <removing the [The Levied Army] promotion/status> <after discovering [Horseback Riding]> <when above [0] [Horse]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
+			"Can transform to [Early Swordsman] <removing the [The Levied Army] promotion/status> <after discovering [Bronze Working]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
+			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <after discovering [Mathematics]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
+			"Can transform to [Early Rider] <removing the [The Levied Army] promotion/status> <after discovering [Horseback Riding]> <when above [0] [Horse]> <when above [0] [Standing Army Maintenance]> <costs [+125 Gold] stats>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -513,6 +534,29 @@
 	},
 	///Line 3
 	{
+		"name": "Galley Fleet",
+		"unitType": "Close Combat Ship",
+		"cost": 75,
+		"movement": 3,
+		"strength": 15,
+		"uniques": [
+			"'Standing Army'",
+			"'Galley'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Heavy Galley Fleet",
+		"requiredTech": "Astronomy",
+		"obsoleteTech": "Shipbuilding",
+		"attackSound": "arrow"
+	},
+	{
 		"name": "Adventurer",
 		"unitType": "Scout",
 		"cost": 60,
@@ -569,6 +613,26 @@
 		"attackSound": "metalhit"
 	},
 	///Line 4
+	{
+		"name": "Nomad",
+		"unitType": "Close Combat",
+		"movement": 3,
+		"strength": 9,
+		"uniques": [
+			"Unbuildable",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
+			"Can build [Pasture] improvements on tiles <for [Human player] Civilizations>",
+			"Can build [Road] improvements on tiles <for [Human player] Civilizations>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Stirrup",
+		"attackSound": "arrow"
+	},
 	{
 		"name": "Javalineer",
 		"unitType": "Ranged Combat",
@@ -687,7 +751,7 @@
 	{
 		"name": "Elephant Rider",
 		"unitType": "Rider",
-		"cost": 70,
+		"cost": 100,
 		"movement": 2,
 		"strength": 20,
 		"uniques": [
@@ -719,7 +783,7 @@
 		"uniqueTo":"South Asia",
 		"replaces":"Elephant Rider",
 		"unitType": "Rider",
-		"cost": 70,
+		"cost": 100,
 		"movement": 2,
 		"strength": 21,
 		"uniques": [
@@ -749,7 +813,7 @@
 	{
 		"name": "Horse Archer",
 		"unitType": "Rider",
-		"cost": 75,
+		"cost": 90,
 		"movement": 3,
 		"strength": 12,
 		"rangedStrength": 17,
@@ -781,9 +845,34 @@
 	},
 	///Line 5
 	{
+		"name": "Light Galley Fleet",
+		"unitType": "Ranged Combat Ship",
+		"cost": 75,
+		"movement": 3,
+		"strength": 12,
+		"range":1,
+		"rangedStrength":15,
+		"uniques": [
+			"'Standing Army'",
+			"'Galley'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Heavy Galley Fleet",
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Shipbuilding",
+		"attackSound": "arrow"
+	},
+	{
 		"name": "Archer",
 		"unitType": "Ranged Combat",
-		"cost": 70,
+		"cost": 85,
 		"movement": 2,
 		"strength": 16,
 		"rangedStrength": 20,
@@ -810,7 +899,7 @@
 		"uniqueTo": "East Asia",
 		"replaces": "Archer",
 		"unitType": "Ranged Combat",
-		"cost": 70,
+		"cost": 85,
 		"movement": 2,
 		"strength": 16,
 		"rangedStrength": 20,
@@ -838,7 +927,7 @@
 		"name": "Qin Crossbowman",
 		"uniqueTo": "East Asia",
 		"unitType": "Ranged Combat",
-		"cost": 70,
+		"cost": 85,
 		"movement": 2,
 		"strength": 16,
 		"rangedStrength": 20,
@@ -868,7 +957,7 @@
 	{
 		"name": "Catapult",
 		"unitType": "Siege",
-		"cost": 80,
+		"cost": 110,
 		"movement": 2,
 		"strength": 15,
 		"rangedStrength": 18,
@@ -898,7 +987,7 @@
 	{
 		"name": "Ballista",
 		"unitType": "Siege",
-		"cost": 80,
+		"cost": 110,
 		"movement": 2,
 		"strength": 15,
 		"rangedStrength": 18,
@@ -1043,7 +1132,7 @@
 	{
 		"name": "Swordsman",
 		"unitType": "Close Combat",
-		"cost": 75,
+		"cost": 80,
 		"movement": 2,
 		"strength": 18,
 		"uniques": [
@@ -1071,7 +1160,7 @@
 	{
 		"name": "Noble Swordsman",
 		"unitType": "Close Combat",
-		"cost": 85,
+		"cost": 100,
 		"movement": 2,
 		"strength": 19,
 		"uniques": [
@@ -1103,7 +1192,7 @@
 		"name": "Zhayedan",
 		"unitType": "Close Combat",
 		"uniqueTo": "Central and West Asia",
-		"cost": 85,
+		"cost": 120,
 		"movement": 2,
 		"strength": 19,
 		"uniques": [
@@ -1140,9 +1229,9 @@
 	{
 		"name": "Sailing Ships",
 		"unitType": "Close Combat Ship",
-		"cost": 65,
+		"cost": 90,
 		"movement": 4,
-		"strength": 15,
+		"strength": 16,
 		"uniques": [
 			"'Standing Army'",
 			"'Sailing Ship'",
@@ -1166,9 +1255,9 @@
 		"uniqueTo": "Europa",
 		"replaces": "Sailing Ships",
 		"unitType": "Close Combat Ship",
-		"cost": 65,
+		"cost": 75,
 		"movement": 4,
-		"strength": 12,
+		"strength": 16,
 		"uniques": [
 			"'Standing Army'",
 			"'Sailing Ship'",
@@ -1250,7 +1339,7 @@
 	{
 		"name": "Camel Rider",
 		"unitType": "Rider",
-		"cost": 75,
+		"cost": 90,
 		"movement": 3,
 		"strength": 17,
 		"uniques": [
@@ -1317,7 +1406,7 @@
 		"rangedStrength": 28,
 		"range": 1,
 		"uniques": [
-			"Only available <when above [0] [War Machine Blueprint]>",
+			"Unbuildable <when below [0] [War Machine Blueprint]>",
 			"Costs [1] [War Machine Blueprint]",
 			"'Standing Army'",
 			"'Galley'",
@@ -1343,7 +1432,7 @@
 		"name": "Azadan Cavalry",
 		"uniqueTo": "Central and West Asia",
 		"unitType": "Assault",
-		"cost": 110,
+		"cost": 130,
 		"movement": 3,
 		"strength": 24,
 		"uniques": [
@@ -1409,7 +1498,7 @@
 		"name": "Cavalry of the Dominator",
 		"uniqueTo": "East Asia",
 		"unitType": "Assault",
-		"cost": 100,
+		"cost": 120,
 		"movement": 3,
 		"strength": 26,
 		"uniques": [
@@ -1441,7 +1530,7 @@
 	{
 		"name": "Cataphract",
 		"unitType": "Assault",
-		"cost": 95,
+		"cost": 110,
 		"movement": 3,
 		"strength": 24,
 		"uniques": [
@@ -1471,7 +1560,7 @@
 	{
 		"name": "Noble Cataphract",
 		"unitType": "Assault",
-		"cost": 110,
+		"cost": 140,
 		"movement": 3,
 		"strength": 24,
 		"uniques": [
@@ -1536,7 +1625,7 @@
 	{
 		"name": "Mercenary Swordsman",
 		"unitType": "Close Combat",
-		"cost": 75,
+		"cost": 100,
 		"movement": 2,
 		"strength": 18,
 		"uniques": [
@@ -1567,7 +1656,7 @@
 		"name": "Quinquereme Fleet",
 		"unitType": "Close Combat Ship",
 		"uniqueTo": "North Africa",
-		"cost": 85,
+		"cost": 100,
 		"movement": 3,
 		"strength": 20,
 		"uniques": [
@@ -1618,7 +1707,7 @@
 	{
 		"name": "Heavy Galley Fleet",
 		"unitType": "Close Combat Ship",
-		"cost": 100,
+		"cost": 120,
 		"movement": 3,
 		"strength": 24,
 		"uniques": [
@@ -1668,7 +1757,7 @@
 	{
 		"name": "Yu Lin Cavalry",
 		"uniqueTo": "East Asia",
-		"cost": 55,
+		"cost": 90,
 		"unitType": "Rider",
 		"movement": 3,
 		"strength": 19,
@@ -1700,7 +1789,7 @@
 	},
 	{
 		"name": "Light Cavalry",
-		"cost": 85,
+		"cost": 90,
 		"unitType": "Rider",
 		"movement": 3,
 		"strength": 21,
@@ -1731,7 +1820,7 @@
 	{
 		"name": "Mercenary Rider",
 		"unitType": "Rider",
-		"cost": 85,
+		"cost": 90,
 		"movement": 3,
 		"strength": 18,
 		"uniques": [
@@ -1794,7 +1883,7 @@
 	{
 		"name": "Crossbowman",
 		"unitType": "Ranged Combat",
-		"cost": 70,
+		"cost": 100,
 		"movement": 2,
 		"strength": 20,
 		"rangedStrength": 25,
@@ -1821,7 +1910,7 @@
 	{
 		"name": "Mercenary Crossbowman",
 		"unitType": "Ranged Combat",
-		"cost": 110,
+		"cost": 150,
 		"movement": 2,
 		"strength": 20,
 		"rangedStrength": 25,
@@ -1850,7 +1939,7 @@
 	{
 		"name": "Palace Guard",
 		"unitType": "Close Combat",
-		"cost": 100,
+		"cost": 150,
 		"movement": 2,
 		"strength": 22,
 		"uniques": [
@@ -1911,7 +2000,7 @@
 	{
 		"name": "Heavy Cavalry",
 		"unitType": "Assault",
-		"cost": 130,
+		"cost": 200,
 		"movement": 3,
 		"strength": 28,
 		"uniques": [
@@ -1941,7 +2030,7 @@
 	{
 		"name": "Knight",
 		"unitType": "Assault",
-		"cost": 150,
+		"cost": 175,
 		"movement": 3,
 		"strength": 30,
 		"uniques": [
@@ -1972,7 +2061,7 @@
 	{
 		"name": "Armored Elephant Rider",
 		"unitType": "Rider",
-		"cost": 110,
+		"cost": 200,
 		"movement": 2,
 		"strength": 31,
 		"uniques": [
@@ -2003,7 +2092,7 @@
 		"replaces":"Armored Elephant Rider",
 		"uniqueTo":"South Asia",
 		"unitType": "Rider",
-		"cost": 110,
+		"cost": 200,
 		"movement": 2,
 		"strength": 32,
 		"uniques": [
@@ -2032,7 +2121,7 @@
 	{
 		"name": "Heavy Ballista",
 		"unitType": "Siege",
-		"cost": 100,
+		"cost": 200,
 		"movement": 2,
 		"strength": 23,
 		"rangedStrength": 27,
@@ -2066,7 +2155,7 @@
 	{
 		"name": "Trebuchet",
 		"unitType": "Siege",
-		"cost": 100,
+		"cost": 200,
 		"movement": 2,
 		"strength": 23,
 		"rangedStrength": 28,
@@ -2124,7 +2213,7 @@
 	{
 		"name": "Three-masted Ship",
 		"unitType": "Close Combat Ship",
-		"cost": 120,
+		"cost": 175,
 		"movement": 4,
 		"strength": 30,
 		"uniques": [
@@ -2173,7 +2262,7 @@
 	{
 		"name": "Hand Cannoneer",
 		"unitType": "Ranged Combat",
-		"cost": 100,
+		"cost": 200,
 		"movement": 2,
 		"strength": 30,
 		"rangedStrength": 38,
@@ -2201,7 +2290,7 @@
 	{
 		"name": "Mercenary Hand Cannoneer",
 		"unitType": "Ranged Combat",
-		"cost": 160,
+		"cost": 250,
 		"movement": 2,
 		"strength": 30,
 		"rangedStrength": 38,
@@ -2253,7 +2342,7 @@
 	{
 		"name": "Garrison Pike and Shot",
 		"unitType": "Close Combat",
-		"cost": 120,
+		"cost": 150,
 		"movement": 2,
 		"strength": 30,
 		"uniques": [
@@ -2283,7 +2372,7 @@
 	{
 		"name": "Pistoleer",
 		"unitType": "Assault",
-		"cost": 150,
+		"cost": 210,
 		"movement": 3,
 		"strength": 36,
 		"uniques": [
@@ -2314,7 +2403,7 @@
 	{
 		"name": "Mercenary Pistoleer",
 		"unitType": "Assault",
-		"cost": 240,
+		"cost": 250,
 		"movement": 3,
 		"strength": 32,
 		"uniques": [
@@ -2342,7 +2431,7 @@
 	{
 		"name": "Royal Knight",
 		"unitType": "Assault",
-		"cost": 150,
+		"cost": 300,
 		"movement": 3,
 		"strength": 36,
 		"uniques": [
@@ -2372,7 +2461,7 @@
 	{
 		"name": "Cannon",
 		"unitType": "Siege",
-		"cost": 150,
+		"cost": 250,
 		"movement": 2,
 		"strength": 32,
 		"rangedStrength": 38,
@@ -2406,7 +2495,7 @@
 	{
 		"name": "Cannon Galley Fleet",
 		"unitType": "Close Combat Ship",
-		"cost": 160,
+		"cost": 300,
 		"movement": 4,
 		"strength": 35,
 		"uniques": [
@@ -2431,7 +2520,7 @@
 	{
 		"name": "Explorer",
 		"unitType": "Scout",
-		"cost": 140,
+		"cost": 200,
 		"movement": 4,
 		"strength": 29,
 		"uniques": [
@@ -2484,7 +2573,7 @@
 	{
 		"name": "Siege Bombard",
 		"unitType": "Siege",
-		"cost": 200,
+		"cost": 320,
 		"movement": 2,
 		"strength": 32,
 		"rangedStrength": 38,
@@ -2517,7 +2606,7 @@
 	{
 		"name": "Field Gun",
 		"unitType": "Siege",
-		"cost": 210,
+		"cost": 400,
 		"movement": 2,
 		"strength": 40,
 		"rangedStrength": 46,
@@ -2569,7 +2658,7 @@
 	{
 		"name": "Mercenary Musketeer",
 		"unitType": "Close Combat",
-		"cost": 185,
+		"cost": 230,
 		"movement": 2,
 		"strength": 40,
 		"uniques": [
@@ -2620,7 +2709,7 @@
 	{
 		"name": "Grenadier",
 		"unitType": "Close Combat",
-		"cost": 180,
+		"cost": 300,
 		"movement": 2,
 		"strength": 43,
 		"uniques": [
@@ -2647,7 +2736,7 @@
 	{
 		"name": "Revolutionaries",
 		"unitType": "Close Combat",
-		"cost": 160,
+		"cost": 300,
 		"movement": 2,
 		"strength": 43,
 		"uniques": [
@@ -2674,7 +2763,7 @@
 	{
 		"name": "Hussar",
 		"unitType": "Rider",
-		"cost": 180,
+		"cost": 250,
 		"movement": 3,
 		"strength": 42,
 		"uniques": [
@@ -2704,7 +2793,7 @@
 	{
 		"name": "Frigate Fleet",
 		"unitType": "Ranged Combat Ship",
-		"cost": 220,
+		"cost": 360,
 		"movement": 3,
 		"strength": 38,
 		"rangedStrength": 46,
@@ -2730,7 +2819,7 @@
 	{
 		"name": "Skirmisher",
 		"unitType": "Ranged Combat",
-		"cost": 175,
+		"cost": 250,
 		"movement": 2,
 		"strength": 39,
 		"rangedStrength": 43,
@@ -2757,7 +2846,7 @@
 	{
 		"name": "Mercenary Skirmisher",
 		"unitType": "Ranged Combat",
-		"cost": 230,
+		"cost": 250,
 		"movement": 2,
 		"strength": 39,
 		"rangedStrength": 43,
@@ -2786,12 +2875,12 @@
 	{
 		"name": "Cuirassier",
 		"unitType": "Assault",
-		"cost": 230,
+		"cost": 350,
 		"movement": 3,
 		"strength": 50,
 		"uniques": [
 			"Only available <before adopting [Knighthood]>",
-			"Consumes [1] [Horse]",
+			"Consumes [2] [Horse]",
 			"'Standing Army'",
 			"'Mounted'",
 			"'Dense Formation'",
@@ -2815,13 +2904,13 @@
 	{
 		"name": "Royal Cuirassier",
 		"unitType": "Assault",
-		"cost": 270,
+		"cost": 325,
 		"movement": 3,
 		"strength": 54,
 		"uniques": [
 			"Can transform to [Modern Cavalry] <after discovering [Rifling]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"Only available <after adopting [Knighthood]>",
-			"Consumes [1] [Horse]",
+			"Consumes [2] [Horse]",
 			"'Noble Army'",
 			"'Mounted'",
 			"'Dense Formation'",
@@ -2845,7 +2934,7 @@
 	{
 		"name": "Dragoons",
 		"unitType": "Close Combat",
-		"cost": 220,
+		"cost": 300,
 		"movement": 3,
 		"strength": 43,
 		"uniques": [
@@ -2872,7 +2961,7 @@
 	{
 		"name": "Ironclad Fleet",
 		"unitType": "Close Combat Ship",
-		"cost": 300,
+		"cost": 400,
 		"movement": 4,
 		"strength": 50,
 		"uniques": [
@@ -2899,7 +2988,7 @@
 	{
 		"name": "Dreadnaught Fleet",
 		"unitType": "Ranged Combat Ship",
-		"cost": 350,
+		"cost": 450,
 		"movement": 4,
 		"strength": 52,
 		"rangedStrength": 58,
@@ -2927,7 +3016,7 @@
 	{
 		"name": "Guerrilla",
 		"unitType": "Ranged Combat",
-		"cost": 260,
+		"cost": 320,
 		"movement": 3,
 		"strength": 50,
 		"rangedStrength": 54,
@@ -2953,7 +3042,7 @@
 	{
 		"name": "Rifleman",
 		"unitType": "Close Combat",
-		"cost": 260,
+		"cost": 320,
 		"movement": 2,
 		"strength": 56,
 		"uniques": [
@@ -2976,7 +3065,7 @@
 	{
 		"name": "State Militia Rifleman",
 		"unitType": "Close Combat",
-		"cost": 260,
+		"cost": 320,
 		"movement": 2,
 		"strength": 58,
 		"uniques": [
@@ -3000,7 +3089,7 @@
 	{
 		"name": "Modern Cavalry",
 		"unitType": "Rider",
-		"cost": 250,
+		"cost": 350,
 		"movement": 3,
 		"strength": 55,
 		"uniques": [
@@ -3029,7 +3118,7 @@
 	{
 		"name": "Early Marine",
 		"unitType": "Close Combat",
-		"cost": 270,
+		"cost": 400,
 		"movement": 2,
 		"strength": 60,
 		"uniques": [
@@ -3052,7 +3141,7 @@
 	{
 		"name": "Torpedo Boat Flotilla",
 		"unitType": "Close Combat Ship",
-		"cost": 250,
+		"cost": 300,
 		"movement": 4,
 		"strength": 50,
 		"uniques": [
@@ -3074,7 +3163,7 @@
 	{
 		"name": "Submarines",
 		"unitType": "Submarine",
-		"cost": 250,
+		"cost": 400,
 		"movement": 3,
 		"strength": 45,
 		"rangedStrength": 50,
@@ -3103,7 +3192,7 @@
 	{
 		"name": "Destroyer Fleet",
 		"unitType": "Close Combat Ship",
-		"cost": 300,
+		"cost": 500,
 		"movement": 3,
 		"strength": 55,
 		"uniques": [
@@ -3130,7 +3219,7 @@
 	{
 		"name": "Battleship Fleet",
 		"unitType": "Ranged Combat Ship",
-		"cost": 400,
+		"cost": 600,
 		"movement": 3,
 		"strength": 58,
 		"rangedStrength": 65,
@@ -3157,7 +3246,7 @@
 	{
 		"name": "Recon Unit",
 		"unitType": "Scout",
-		"cost": 220,
+		"cost": 350,
 		"movement": 3,
 		"strength": 50,
 		"uniques": [
@@ -3182,7 +3271,7 @@
 	{
 		"name": "Sharpshooter",
 		"unitType": "Ranged Combat",
-		"cost": 260,
+		"cost": 370,
 		"movement": 2,
 		"strength": 56,
 		"rangedStrength": 64,
@@ -3209,7 +3298,7 @@
 	{
 		"name": "Red Army Troop",
 		"unitType": "Ranged Combat",
-		"cost": 260,
+		"cost": 370,
 		"movement": 3,
 		"strength": 60,
 		"rangedStrength": 65,
@@ -3237,7 +3326,7 @@
 	{
 		"name": "Heavy Infantry",
 		"unitType": "Close Combat",
-		"cost": 300,
+		"cost": 400,
 		"movement": 2,
 		"strength": 68,
 		"uniques": [
@@ -3259,7 +3348,7 @@
 	{
 		"name": "Elite Guard",
 		"unitType": "Close Combat",
-		"cost": 325,
+		"cost": 500,
 		"movement": 2,
 		"strength": 70,
 		"uniques": [
@@ -3283,7 +3372,7 @@
 	{
 		"name": "Protection Squadron",
 		"unitType": "Close Combat",
-		"cost": 275,
+		"cost": 390,
 		"movement": 2,
 		"strength": 68,
 		"uniques": [
@@ -3308,7 +3397,7 @@
 	{
 		"name": "Security Company",
 		"unitType": "Close Combat",
-		"cost": 350,
+		"cost": 400,
 		"movement": 2,
 		"strength": 65,
 		"uniques": [
@@ -3386,7 +3475,7 @@
 	{
 		"name": "Mountaineer",
 		"unitType": "Ranged Combat",
-		"cost": 345,
+		"cost": 450,
 		"movement": 2,
 		"strength": 58,
 		"rangedStrength": 66,
@@ -3413,7 +3502,7 @@
 	{
 		"name": "Howitzer",
 		"unitType": "Siege",
-		"cost": 375,
+		"cost": 550,
 		"movement": 2,
 		"strength": 60,
 		"rangedStrength": 70,
@@ -3442,13 +3531,13 @@
 	{
 		"name": "Zeppelin",
 		"unitType": "Helicopter",
-		"cost": 500,
+		"cost": 750,
 		"movement": 3,
 		"strength": 60,
 		"rangedStrength": 70,
 		"range": 2,
 		"uniques": [
-			"Only available <when above [0] [War Machine Blueprint]>",
+			"Unbuildable <when below [0] [War Machine Blueprint]>",
 			"Costs [1] [War Machine Blueprint]",
 			"Costs [50] [Weapon Parts]",
 			"'Standing Army'",
@@ -3474,13 +3563,13 @@
 	{
 		"name": "Ultra Heavy Cannon",
 		"unitType": "Siege",
-		"cost": 600,
+		"cost": 790,
 		"movement": 1,
 		"strength": 50,
 		"rangedStrength": 80,
 		"range": 4,
 		"uniques": [
-			"Only available <when above [0] [War Machine Blueprint]>",
+			"Unbuildable <when below [0] [War Machine Blueprint]>",
 			"Costs [1] [War Machine Blueprint]",
 			"Costs [50] [Weapon Parts]",
 			"'Standing Army'",
@@ -3507,7 +3596,7 @@
 	{
 		"name": "Motorised Infantry",
 		"unitType": "Rider",
-		"cost": 325,
+		"cost": 450,
 		"movement": 3,
 		"strength": 68,
 		"uniques": [
@@ -3533,7 +3622,7 @@
 	{
 		"name": "Mobile Recon Unit",
 		"unitType": "Scout",
-		"cost": 270,
+		"cost": 350,
 		"movement": 4,
 		"strength": 63,
 		"uniques": [
@@ -3559,7 +3648,7 @@
 	{
 		"name": "Armoured Car",
 		"unitType": "Rider",
-		"cost": 250,
+		"cost": 300,
 		"movement": 4,
 		"strength": 64,
 		"uniques": [
@@ -3587,7 +3676,7 @@
 	{
 		"name": "Tank",
 		"unitType": "Assault",
-		"cost": 400,
+		"cost": 600,
 		"movement": 3,
 		"strength": 75,
 		"uniques": [
@@ -3616,7 +3705,7 @@
 	{
 		"name": "Modern Guerrilla",
 		"unitType": "Ranged Combat",
-		"cost": 250,
+		"cost": 400,
 		"movement": 3,
 		"strength": 68,
 		"rangedStrength": 70,
@@ -3643,7 +3732,7 @@
 	{
 		"name": "Mechanised Infantry",
 		"unitType": "Close Combat",
-		"cost": 325,
+		"cost": 750,
 		"movement": 3,
 		"strength": 72,
 		"uniques": [
@@ -3670,7 +3759,7 @@
 	{
 		"name": "Mechanised Elite Guard",
 		"unitType": "Close Combat",
-		"cost": 325,
+		"cost": 800,
 		"movement": 3,
 		"strength": 74,
 		"uniques": [
@@ -3697,7 +3786,7 @@
 	{
 		"name": "Mechanised Protection Squadron",
 		"unitType": "Close Combat",
-		"cost": 300,
+		"cost": 650,
 		"movement": 3,
 		"strength": 74,
 		"uniques": [
@@ -3726,7 +3815,7 @@
 	{
 		"name": "Self Propelled Artillery",
 		"unitType": "Siege",
-		"cost": 410,
+		"cost": 700,
 		"movement": 3,
 		"strength": 65,
 		"rangedStrength": 75,
@@ -3756,7 +3845,7 @@
 	{
 		"name": "Carrier Fleet",
 		"unitType": "Carrier",
-		"cost": 375,
+		"cost": 850,
 		"movement": 4,
 		"strength": 50,
 		"uniques": [
@@ -3781,7 +3870,7 @@
 	{
 		"name": "Propeller Fighter",
 		"unitType": "Fighter",
-		"cost": 325,
+		"cost": 550,
 		"movement": 1,
 		"strength": 60,
 		"rangedStrength": 65,
@@ -3814,7 +3903,7 @@
 	{
 		"name": "Propeller Bomber",
 		"unitType": "Bomber",
-		"cost": 360,
+		"cost": 580,
 		"movement": 1,
 		"strength": 62,
 		"rangedStrength": 69,
@@ -3842,7 +3931,7 @@
 	{
 		"name": "Early Paratrooper",
 		"unitType": "Close Combat",
-		"cost": 400,
+		"cost": 600,
 		"movement": 2,
 		"strength": 65,
 		"uniques": [
@@ -3890,7 +3979,7 @@
 	{
 		"name": "Rocket Artillery",
 		"unitType": "Siege",
-		"cost": 375,
+		"cost": 640,
 		"movement": 3,
 		"strength": 60,
 		"rangedStrength": 68,
@@ -3921,7 +4010,7 @@
 	{
 		"name": "Early Missile",
 		"unitType": "Missile",
-		"cost": 200,
+		"cost": 300,
 		"movement": 1,
 		"strength": 20,
 		"rangedStrength": 75,
@@ -3930,6 +4019,7 @@
 			"Costs [5] [Aircraft Parts]",
 			"Costs [5] [Weapon Parts]",
 			"[-100]% maintenance costs",
+			"[+100]% Strength <vs cities> <when attacking>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"requiredBuilding": "Rocketry Industry",
@@ -3940,7 +4030,7 @@
 	{
 		"name": "Atomic Bomb",
 		"unitType": "Atomic Bomber",
-		"cost": 550,
+		"cost": 1000,
 		"movement": 1,
 		"strength": 150,
 		"rangedStrength": 150,
@@ -3959,7 +4049,7 @@
 	{
 		"name": "Nuclear Submarines",
 		"unitType": "Submarine",
-		"cost": 350,
+		"cost": 800,
 		"movement": 6,
 		"strength": 52,
 		"rangedStrength": 62,
@@ -3973,6 +4063,7 @@
 			"'Dense Formation'",
 			"'Firearms'",
 			"Can only attack [Water] tiles <before discovering [Advanced Ballistics]>",
+			"Can carry [3] [Missile] units <after discovering [Advanced Ballistics]>",
 			"[+25]% Strength <when attacking>",
 			"[+5] HP when healing",
 			"Never appears as a Barbarian unit <hidden from users>"
@@ -3988,7 +4079,7 @@
 	{
 		"name": "Nuclear Battleship Fleet",
 		"unitType": "Ranged Combat Ship",
-		"cost": 500,
+		"cost": 1000,
 		"movement": 5,
 		"strength": 68,
 		"rangedStrength": 75,
@@ -4015,7 +4106,7 @@
 	{
 		"name": "Nuclear Carrier Fleet",
 		"unitType": "Carrier",
-		"cost": 450,
+		"cost": 1250,
 		"movement": 5,
 		"strength": 70,
 		"uniques": [
@@ -4040,7 +4131,7 @@
 	{
 		"name": "Spec Ops",
 		"unitType": "Ranged Combat",
-		"cost": 410,
+		"cost": 600,
 		"movement": 2,
 		"strength": 75,
 		"rangedStrength": 70,
@@ -4071,7 +4162,7 @@
 	{
 		"name": "Mechanised Marine",
 		"unitType": "Close Combat",
-		"cost": 375,
+		"cost": 750,
 		"movement": 3,
 		"strength": 75,
 		"uniques": [
@@ -4096,7 +4187,7 @@
 	{
 		"name": "Humvee",
 		"unitType": "Rider",
-		"cost": 350,
+		"cost": 600,
 		"movement": 4,
 		"strength": 70,
 		"uniques": [
@@ -4123,7 +4214,7 @@
 	{
 		"name": "Attack Helicopter",
 		"unitType": "Helicopter",
-		"cost": 325,
+		"cost": 850,
 		"movement": 5,
 		"strength": 65,
 		"rangedStrength": 72,
@@ -4154,10 +4245,10 @@
 	{
 		"name": "Marine Attack Helicopter",
 		"unitType": "Helicopter",
-		"cost": 350,
+		"cost": 900,
 		"movement": 5,
 		"strength": 65,
-		"rangedStrength": 75,
+		"rangedStrength": 70,
 		"range": 2,
 		"uniques": [
 			"Only available <if [Invention of Helicopter] is constructed>",
@@ -4168,7 +4259,7 @@
 			"'Skirmishers'",
 			"'Firearms'",
 			"Can see invisible [Water] units",
-			"[+25]% Strength <vs [Submarine] units> <when attacking>",
+			"[+33]% Strength <vs [Submarine] units> <when attacking>",
 			"[+25]% Strength <vs [Close Combat Ship] units> <when attacking>",
 			"No defensive terrain bonus",
 			"Never appears as a Barbarian unit <hidden from users>"
@@ -4184,7 +4275,7 @@
 	{
 		"name": "Jet Fighter",
 		"unitType": "Fighter",
-		"cost": 420,
+		"cost": 800,
 		"movement": 2,
 		"strength": 68,
 		"rangedStrength": 72,
@@ -4214,7 +4305,7 @@
 	{
 		"name": "Jet Bomber",
 		"unitType": "Bomber",
-		"cost": 500,
+		"cost": 800,
 		"movement": 2,
 		"strength": 70,
 		"rangedStrength": 85,
@@ -4240,7 +4331,7 @@
 	{
 		"name": "Missile Crusier",
 		"unitType": "Ranged Combat Ship",
-		"cost": 450,
+		"cost": 1200,
 		"movement": 3,
 		"strength": 68,
 		"rangedStrength": 78,
@@ -4268,7 +4359,7 @@
 	{
 		"name": "Paratrooper",
 		"unitType": "Close Combat",
-		"cost": 500,
+		"cost": 800,
 		"movement": 2,
 		"strength": 75,
 		"uniques": [
@@ -4290,7 +4381,7 @@
 	{
 		"name": "Nuclear Missile Crusier",
 		"unitType": "Ranged Combat Ship",
-		"cost": 550,
+		"cost": 1500,
 		"movement": 5,
 		"strength": 70,
 		"rangedStrength": 80,
@@ -4318,7 +4409,7 @@
 	{
 		"name": "Stealth Bomber",
 		"unitType": "Bomber",
-		"cost": 750,
+		"cost": 1750,
 		"movement": 2,
 		"strength": 50,
 		"rangedStrength": 85,
@@ -4344,7 +4435,7 @@
 	{
 		"name": "ICBM",
 		"unitType": "Missile",
-		"cost": 330,
+		"cost": 800,
 		"movement": 1,
 		"strength": 60,
 		"rangedStrength": 100,
@@ -4382,7 +4473,7 @@
 	{
 		"name": "Missile System",
 		"unitType": "Siege",
-		"cost": 600,
+		"cost": 1200,
 		"movement": 3,
 		"strength": 68,
 		"rangedStrength": 85,
@@ -4414,7 +4505,7 @@
 	{
 		"name": "AA Missile System",
 		"unitType": "Ranged Combat",
-		"cost": 450,
+		"cost": 900,
 		"movement": 3,
 		"strength": 70,
 		"rangedStrength": 90,
@@ -4445,7 +4536,7 @@
 	{
 		"name": "The Prototype",
 		"unitType": "Assault",
-		"cost": 750,
+		"cost": 1600,
 		"movement": 4,
 		"strength": 100,
 		"uniques": [
@@ -4474,7 +4565,7 @@
 	{
 		"name": "Spy Drone",
 		"unitType": "Scout",
-		"cost": 200,
+		"cost": 800,
 		"movement": 5,
 		"strength": 50,
 		"requiredResource": "Standing Army Maintenance",
@@ -4501,7 +4592,7 @@
 	{
 		"name": "Exoskeleton Spec Ops",
 		"unitType": "Ranged Combat",
-		"cost": 360,
+		"cost": 1200,
 		"movement": 2,
 		"strength": 80,
 		"rangedStrength": 90,
@@ -4532,7 +4623,7 @@
 	{
 		"name": "Exoskeleton Infantry",
 		"unitType": "Close Combat",
-		"cost": 360,
+		"cost": 1200,
 		"movement": 2,
 		"strength": 88,
 		"uniques": [
@@ -4557,7 +4648,7 @@
 	{
 		"name": "Assault Mecha",
 		"unitType": "Assault",
-		"cost": 700,
+		"cost": 1950,
 		"movement": 4,
 		"strength": 120,
 		"uniques": [
@@ -4587,7 +4678,7 @@
 	{
 		"name": "Railgun",
 		"unitType": "Siege",
-		"cost": 700,
+		"cost": 2250,
 		"movement": 2,
 		"strength": 70,
 		"rangedStrength": 100,
@@ -4618,7 +4709,7 @@
 	{
 		"name": "Railgun Gunboat",
 		"unitType": "Ranged Combat Ship",
-		"cost": 650,
+		"cost": 2050,
 		"movement": 4,
 		"strength": 70,
 		"rangedStrength": 90,

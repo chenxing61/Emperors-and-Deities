@@ -2,7 +2,6 @@
     "name": "Global uniques",
     "uniques": [
         ///Nerf 4 general gameplay
-        "Comment [[-25]% growth for every 10 [Population]]",
         "[-25]% growth [in all cities] <in cities with at least [10] [Population]> <hidden from users>",
         "[-25]% growth [in all cities] <in cities with at least [20] [Population]> <hidden from users>",
         "[-25]% growth [in all cities] <in cities with at least [30] [Population]> <hidden from users>",
@@ -11,7 +10,6 @@
         "[-25]% growth [in all cities] <in cities with at least [60] [Population]> <hidden from users>",
         "[-25]% growth [in all cities] <in cities with at least [70] [Population]> <hidden from users>",
 
-        "Comment [[+20]% Unhappiness from Population for every [5] [Population] after [10]]",
         "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [10] [Population]> <hidden from users>",
         "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [15] [Population]> <hidden from users>",
         "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [20] [Population]> <hidden from users>",
@@ -27,7 +25,6 @@
         "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [70] [Population]> <hidden from users>",
         "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [75] [Population]> <hidden from users>",
 
-        "Comment [[+25]% unhappiness from the number of cities when city count reaches 5's multiple. [+15]% unhappiness from the number of cities when city count reaches 5's multiple + 2]",
         "[+25]% unhappiness from the number of cities <when number of [Cities] is more than [5]> <hidden from users>",
         "[+15]% unhappiness from the number of cities <when number of [Cities] is more than [7]> <hidden from users>",
         "[+25]% unhappiness from the number of cities <when number of [Cities] is more than [10]> <hidden from users>",
@@ -41,7 +38,6 @@
         "[+25]% unhappiness from the number of cities <when number of [Cities] is more than [37]> <hidden from users>",
         "[+15]% unhappiness from the number of cities <when number of [Cities] is more than [40]> <hidden from users>",
 
-        "Comment [[-15]% [Production] when unhappy]",
         "[-15]% [Production] [in all cities] <when below [0] [Happiness]> <hidden from users>",
        
         ///Unhappy events
@@ -91,8 +87,7 @@
         "[-75]% growth [in all cities] <when between [-10] and [-1] [Happiness]> <for [AI player] Civilizations> <hidden from users>",
         "Nullifies Growth [in all cities] <when below [-10] [Happiness]> <for [AI player] Civilizations> <hidden from users>",
         "Cannot build [Settler] units <when below [-10] [Happiness]> <for [AI player] Civilizations> <hidden from users>",
-
-        "Comment [Cannot build units that requires stockpiled resource like [Weapon Parts] if their required resource dropped to below [-10]]",
+        
         "Cannot build ['Firearms'] units <when below [-10] [Weapon Parts]> <hidden from users>",
         "Cannot build ['Motorised'] units <when below [-10] [Vehicle Parts]> <hidden from users>",
         "Cannot build ['Mechanised'] units <when below [-10] [Vehicle Parts]> <hidden from users>",
@@ -203,8 +198,15 @@
         "[-2 Happiness] <when above [27] [Migrating Population]> <hidden from users>",
         "[-2 Happiness] <when above [28] [Migrating Population]> <hidden from users>",
         "[-2 Happiness] <when above [29] [Migrating Population]> <hidden from users>",
-        "[-2 Happiness] <when above [30] [Migrating Population]> <hidden from users>"
+        "[-2 Happiness] <when above [30] [Migrating Population]> <hidden from users>",
 
+        "[-100]% [Weapon Parts] resource production <when number of [Weapon Parts] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
+        "[-100]% [Vehicle Parts] resource production <when number of [Vehicle Parts] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
+        "[-100]% [Ship Parts] resource production <when number of [Ship Parts] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
+        "[-100]% [Aircraft Parts] resource production <when number of [Aircraft Parts] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
+        "[-100]% [Electronic Parts] resource production <when number of [Electronic Parts] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
+        "[-100]% [Microchips] resource production <when number of [Microchips] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
+        "[-100]% [Enriched Uranium] resource production <when number of [Enriched Uranium] is more than [[Cities]+[[Nuclear Power Plant] Buildings]]> <hidden from users>",
         // TODO: Implement the uniques below
         // "[+20]% [Culture] [in all cities] <during a golden age>",
         // "[+20]% [Production] [in all cities] <during a golden age>",
