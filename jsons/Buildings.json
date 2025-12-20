@@ -7678,7 +7678,10 @@
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"[+5]% [Culture] [in all cities]",
+			"'Culture Diversity State'",
+			"Remove [{non-[High Culture Diversity]} {'Culture Diversity State'}] [in all cities] <hidden from users>",
+			"[+3]% [Science] [in all cities]",
+			"[+3]% [Culture] [in all cities]",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7689,6 +7692,9 @@
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Culture Diversity State'",
+			"Remove [{non-[Medium Culture Diversity]} {'Culture Diversity State'}] [in all cities] <hidden from users>",
+			"[+3]% [Happiness] [in all cities]",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7699,7 +7705,22 @@
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"[-5]% [Culture] [in all cities]",
+			"'Culture Diversity State'",
+			"Remove [{non-[Low Culture Diversity]} {'Culture Diversity State'}] [in all cities] <hidden from users>",
+			"[+8]% [Happiness] [in all cities]",
+			"[-3]% [Culture] [in all cities]",
+			"[-3]% [Science] [in all cities]",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Nomadic Culture",
+		"cost": 0,
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"[-100]% growth [in all cities] <in cities with at least [10] [Population]> <hidden from users>",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -8984,9 +9005,10 @@
 			"Unsellable",
 			"Instantly provides [5] [Influence]",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
-			"Gain a free [Tribes] [in capital] <for [{non-[Central and West Asia]} {non-[North Africa]}] Civilizations> <for [1] turns>",
+			"Gain a free [Tribes] [in capital] <for [{non-[Central and West Asia]} {non-[North Africa]} {non-[Euroasian Nomads]}] Civilizations> <for [1] turns>",
 			"Gain a free [Early City States] [in capital] <for [Central and West Asia] Civilizations> <for [1] turns>",
 			"Gain a free [Egyptian Dynasties] [in capital] <for [North Africa] Civilizations> <for [1] turns>",
+			"Gain a free [Nomadic Tribes] [in capital] <for [Euroasian Nomads] Civilizations> <for [1] turns>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
