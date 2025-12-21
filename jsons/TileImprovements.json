@@ -272,6 +272,28 @@
 		"shortcutKey": "P"
 	},
 	{
+		"name": "Herding Tents",
+		"uniqueTo": "Euroasian Nomads",
+		"replaces": "Pasture",
+		"terrainsCanBeBuiltOn": [
+			"Hill",
+			"Oasis",
+			"Grassland"
+		],
+		"food": 1,
+		"turnsToBuild": 4,
+		"techRequired": "Animal Husbandry",
+		"uniques": [
+			"'Agricultural Improvement'",
+			"Provides [1] [Cattle Horde] <in [Bovine] tiles>",
+			"Provides [1] [Sheep Horde] <in [Caprinae] tiles>",
+			"[+1 Food] <after discovering [Refrigeration]>",
+			"[+3 Culture] <after discovering [Ecology]>",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "P"
+	},
+	{
 		"name": "Mechanised Livestock Farm",
 		"terrainsCanBeBuiltOn": [
 			"Hill",
