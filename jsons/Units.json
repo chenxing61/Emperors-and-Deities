@@ -88,6 +88,23 @@
 		"requiredTech": "Advanced Shipbuilding"	
 	},
 	{
+		"name": "Peon",
+		"cost": 100,
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": [
+			"Can instantly construct a [Manual Farm] improvement <[2] times> <after which this unit is consumed>",
+			"Can instantly construct a [Manual Plantation] improvement <[2] times> <after which this unit is consumed>",
+			"Can instantly construct a [Manual Lumber Mill] improvement <[2] times> <after which this unit is consumed>",
+			"Can instantly construct a [Manual Mine] improvement <[2] times> <after which this unit is consumed>",
+			"Can instantly construct a [Quarry] improvement <[2] times> <after which this unit is consumed>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Instantly consumes [100] [Slaves]",
+			"Automation is a primary action"
+		],
+		"requiredTech": "Fire Making"	
+	},
+	{
 		"name": "Settler",
 		"unitType": "Civilian",
 		"cost": 100,
@@ -105,18 +122,17 @@
 	},
 	{
 		"name": "Nomadic Settler",
-		"uniqueTo": "Euroasian Nomads",
 		"unitType": "Civilian",
 		"cost": 50,
 		"movement": 2,
 		"uniques": [
+			"Unbuildable <for [non-[Euroasian Nomads]] Civilizations>",
 			"[-1] population [in this city]",
 			"Founds a new city <by consuming this unit>",
 			"Excess Food converted to Production when under construction",
 			"[+2] Movement <before turn number [2]>",
 			"[+1] Sight <before turn number [2]>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
-			"Requires at least [3] population"
 		],
 		"requiredTech": "Fire Making",
 		"obsoleteTech": "Navigation"	

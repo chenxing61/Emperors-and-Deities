@@ -1695,6 +1695,14 @@
 		],
 		"revealedBy": "Theology"
 	},
+	{
+		"name": "Settlement Process",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Stockpiled",
+			"Cannot be traded"
+		]
+	}
 	///Civilian Products
 	{
 		"name": "Alcohol",
@@ -1763,5 +1771,16 @@
 				"Not shown on world screen <if [Hide Miscellaneous] is constructed>"
 		],
 		"revealedBy":"Mining"
+	},
+	{
+		"name": "Slaves",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Stockpiled",
+			"Comment [Upon reaching 100 [Slaves], 100 [Slaves] are transformed into a [Peon] Unit.]",
+			"Cannot be traded"
+		],
+		"civilopediaText": [
+		{"text": "See also: Peon", "link": "Unit/Peon"}]
 	}
 ]
