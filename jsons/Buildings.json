@@ -82,21 +82,26 @@
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available <in [Non-occupied] cities> <in cities with at least [5] [Population]>",
 			"Play [policy] sound <hidden from users>",
+			//Debuff
 			"[-1 Happiness] [in this city] <before adopting [Militia Army]>",
 			"[-1 Happiness] [in this city] <before adopting [Military Tradition]>",
 			"[-8]% [Gold] [in this city] <if [Militristic Economy] is not constructed>",
 			"[-8]% [Food] [in this city] <if [Militristic Economy] is not constructed>",
 			"[-8]% [Production] [in this city] <if [Militristic Economy] is not constructed>",
+			//Tooltips
 			"Comment [Spawns free 'Levy Army' units to help with warfare.]",
 			"Comment [The number and type of unit spawned depends on the 'Military Building' in the city and your technological, cultural advancement.]",
+			//Neolitic-Ancient
 			"Free [Primal Warrior] appears <before discovering [Mining]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Brute Warrior] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [non-[Europa]] Civilizations> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Warband] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [Europa] Civilizations> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Javalineer] appears <after discovering [Mining]> <before discovering [Tactics]> <for [non-[North Africa]] Civilizations> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Nubian Archer] appears <after discovering [Mining]> <before discovering [Tactics]> <for [North Africa] Civilizations> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			//Classic-Medieval
 			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Levy Archer] appears <after discovering [Tactics]> <before discovering [Hand Cannon]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			//Renaissance-Imperial
 			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Levy Crossbowman] appears <after discovering [Hand Cannon]> <before discovering [Rifling]> <hidden from users> <if [Levies Disbandment] is not constructed>",
@@ -107,12 +112,14 @@
 			"Free [Gun Boat] appears <after discovering [Machinery]> <in cities with a [Armory]> <in [Coastal] cities> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Guerrilla] appears <after discovering [Rifling]> <before adopting [Militia Army]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Guerrilla] appears <after discovering [Rifling]> <before adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			//Industrial-Modern
 			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Recuitment Center]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			//Atomic-Info
 			"Free [Modern Conscript] appears <after discovering [Ballistics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
 			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
@@ -263,7 +270,7 @@
 			"'Trade Action'",
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Unavailable <in cities with a [Import [Production]]> <hidden from users>",
-			"Only available <in cities connected to the capital> <when above [20] [Production]>",
+			"Only available <in cities connected to the capital> <when above [25] [Production]>",
 			"Remove [Export [Production]] [in this city] <hidden from users> <if [Strife] is constructed>",
 			"Remove [Export [Production]] [in this city] <hidden from users> <if [Anarchy] is constructed>",
 			"Provides [1] [Production Export Route]",
@@ -934,6 +941,19 @@
 		"hurryCostModifier": 5
 	},
 	{
+		"name": "Animal Pen",
+		"uniqueTo": "Euroasian Nomad",
+		"replaces": "Granary",
+		"food": 2,
+		"uniques": [
+			"[+1 Food] from [Caprinae] tiles [in this city]",
+			"[+1 Food] from [Bovine] tiles [in this city]",
+			"[+1 Food] from [Wild Animals] tiles [in this city]"
+		],
+		"requiredTech": "Pottery",
+		"hurryCostModifier": 5
+	},
+	{
 		"name": "Bakery",
 		"happiness": 1,
 		"gold": 2,
@@ -943,6 +963,20 @@
 		"requiredNearbyImprovedResources": [
 			"Tuber",
 			"Grain"
+		],
+		"requiredTech": "Pottery",
+		"hurryCostModifier": 5
+	},
+	{
+		"name": "Smokery",
+		"uniqueTo": "Euroasian Nomad",
+		"replaces": "Bakery",
+		"happiness": 1,
+		"gold": 2,
+		"food": 2,
+		"uniques": [
+			"Consumes [1] [Sheep Horde]",
+			"Consumes [1] [Cattle Horde]"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -1198,6 +1232,7 @@
 		"uniques": [
 			"'Organise Place'",
 			"[+1 Food] from [Pasture] tiles [in this city]",
+			"[+1 Food] from [Herding Tents] tiles [in this city]",
 			"[+1 Food] from [Mechanised Livestock Farm] tiles [in this city]",
 			"[+15]% Production when constructing ['Mounted'] units [in all cities]",
 			"Only available <after adopting [God of the Open Sky]>",
@@ -2031,6 +2066,25 @@
 		],
 		"requiredTech": "Drama and Poetry"
 	},
+	{
+		"name": "Master Ovoo",
+		"uniqueTo": "Euroasian Nomad",
+		"replaces": "National Epic",
+		"maintenance": 3,
+		"isNationalWonder": true,
+		"faith": 5,
+		"specialistSlots": {
+			"Artist": 2
+		},
+		"uniques": [
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"[+15]% Great Person generation [in this city]",
+			"[-25]% Culture cost of natural border growth [in all cities]",
+			"Gain a free [Monument] [in all cities]",
+			"Cost increases by [10] per owned city"
+		],
+		"requiredTech": "Drama and Poetry"
+	},
 	//Line 6
 	{
 		"name": "Dry Dock",
@@ -2210,6 +2264,7 @@
 		"cityHealth": 15,
 		"uniques": [
 			"'Static Defense'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Walls",
@@ -3232,6 +3287,7 @@
 		"cityHealth": 20,
 		"uniques": [
 			"'Static Defense'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Watch Tower",
@@ -3931,6 +3987,7 @@
 		},
 		"uniques": [
 			"'Static Defense'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Monocular"
@@ -4088,6 +4145,7 @@
 		},
 		"uniques": [
 			"'Static Defense'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Must be next to [Coast]"
 		],
 		"requiredTech": "Carriage"
@@ -7859,6 +7917,7 @@
 			"Enables Research agreements",
 			"Enables Open Borders agreements",
 			"Enables Defensive Pacts",
+			"Instantly provides [1] [State Reform Chance] <hidden from users>",
 			"Empire enters golden age <if [Mausoleum of the Unifier] is constructed>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -8122,10 +8181,25 @@
 			"'Civilization Form'",
 			"'Divided'",
 			"Remove [{non-[Nomadic Tribes]} {'Civilization Form'}] [in all cities] <hidden from users>",
-			"Provides [10] [Influence Limit]",
+			"Provides [15] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintenance]",
-			"[-10]% Culture cost of adopting new Policies",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Unified Nomads",
+		"uniques": [
+			"Limited to [1] per Civilization <hidden from users>",
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Remove [{non-[Unified Nomads]} {'Civilization Form'}] [in all cities] <hidden from users>",
+			"Provides [30] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [3] [Standing Army Maintenance]",
+			"Provides [2] [Noble Army Maintenance]",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
@@ -8164,7 +8238,7 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintenance]",
 			"Comment [Unique Name:]",
-			"Comment [Pioneer of Wisdoms]",
+			"Comment [Pioneers of Wisdoms]",
 			"[Gold] cost of purchasing items in cities [-15]%",
 			"Gain a free [Cultural Exchange] [in this city]",
 			"Free [Hoplite] appears",

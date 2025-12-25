@@ -360,8 +360,9 @@
             {
                 "text": "State Reform",
                 "uniques": [
-                    "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <when number of [State Reform Chance] is more than [0]>",
                     "Play [policy] sound <hidden from users>",
+                    "Instantly consumes [1] [State Reform Chance] <hidden from users>",
                     "Instantly consumes [10] [Influence] <when number of [Cities] is between [0] and [5]>",
                     "Instantly consumes [15] [Influence] <when number of [Cities] is more than [4]>",
                     "Triggers a [Reformation of the unified state] event"
@@ -494,7 +495,7 @@
                 "text": "No significant changes",
                 "uniques": [
                     "Comment [We are still a bunch of countries prone to infighting and invasion, but what we do have is countless oppotunities.]",
-                    "Only available <if [Unified] is not constructed>",
+                    "Only available <if [Unified] is not constructed> <if [Nomadic Tribes] is not constructed>",
                     "Gain a free [Tribes] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [Tribes] [in capital] <during the [Ancient era]> <hidden from users>",
                     "Gain a free [City States] [in capital] <during the [Classical era]> <hidden from users>",
@@ -502,6 +503,13 @@
                     "Gain a free [Kingdoms] [in capital] <during the [Renaissance era]> <hidden from users>",
                     "Gain a free [Republics] [in capital] <during the [Imperial era]> <hidden from users>",
                     "Gain a free [Republics] [in capital] <during the [Industrial era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "No significant changes",
+                "uniques": [
+                    "Comment [We are still a bunch of countries prone to infighting and invasion, but what we do have is countless oppotunities.]",
+                    "Only available <if [Nomadic Tribes] is constructed>"
                 ]
             },
             {
@@ -514,7 +522,7 @@
             {
                 "text": "We are able to unify ourselves!",
                 "uniques": [
-                    "Only available <if [Unified] is not constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <if [Strife] is not constructed> <if [Anarchy] is not constructed>",
+                    "Only available <if [Unified] is not constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <if [Nomadic Tribes] is not constructed>",
                     "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
                     "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
@@ -532,11 +540,18 @@
                 ]
             },
             {
+                "text": "We are able to unify ourselves!",
+                "uniques": [
+                    "Only available <if [Unified] is not constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <if [Nomadic Tribes] is constructed>",
+                    "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
+                    "Gain a free [Unified Nomads] [in capital] <hidden from users>"
+                ]
+            },
+            {
                 "text": "The empire of the past crumbles...",
                 "uniques": [
                     "Comment [Our unification cannot last onto another stage of the world. Maybe its ultimately for the better, as it was stale.]",
-                    "Only available <if [Unified] is constructed>",
-                    "Remove [Unified] [in all cities]",
+                    "Only available <if [Unified] is constructed> <if [Unified Nomads] is not constructed>",
                     "Remove ['United'] [in all cities] <hidden from users>",
                     "Gain a free [City States] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [City States] [in capital] <during the [Ancient era]> <hidden from users>",
@@ -549,6 +564,15 @@
                     "Gain a free [Republics] [in capital] <during the [Atomic era]> <hidden from users>",
                     "Gain a free [Republics] [in capital] <during the [Information era]> <hidden from users>",
                     "Gain a free [Republics] [in capital] <during the [Future era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "The empire of the past crumbles...",
+                "uniques": [
+                    "Comment [Our unification cannot last onto another stage of the world. Maybe its ultimately for the better, as it was stale.]",
+                    "Only available <if [Unified] is constructed> <if [Unified Nomads] is constructed>",
+                    "Remove ['United'] [in all cities] <hidden from users>",
+                    "Gain a free [Nomadic Tribes] [in capital] <hidden from users>"
                 ]
             },
             {

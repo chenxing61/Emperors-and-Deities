@@ -91,13 +91,13 @@
 		"name": "Peon",
 		"cost": 100,
 		"unitType": "Civilian",
-		"movement": 2,
+		"movement": 1,
 		"uniques": [
-			"Can instantly construct a [Manual Farm] improvement <[2] times> <after which this unit is consumed>",
-			"Can instantly construct a [Manual Plantation] improvement <[2] times> <after which this unit is consumed>",
-			"Can instantly construct a [Manual Lumber Mill] improvement <[2] times> <after which this unit is consumed>",
-			"Can instantly construct a [Manual Mine] improvement <[2] times> <after which this unit is consumed>",
-			"Can instantly construct a [Quarry] improvement <[2] times> <after which this unit is consumed>",
+			"Can instantly construct a [Manual Farm] improvement <after which this unit is consumed>",
+			"Can instantly construct a [Manual Plantation] improvement <after which this unit is consumed>",
+			"Can instantly construct a [Manual Lumber Mill] improvement <after which this unit is consumed>",
+			"Can instantly construct a [Manual Mine] improvement <after which this unit is consumed>",
+			"Can instantly construct a [Quarry] improvement <after which this unit is consumed>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Instantly consumes [100] [Slaves] <when above [100] [Slaves]>",
 			"Automation is a primary action"
@@ -213,6 +213,7 @@
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
+		"promotions":["Nomadic Lifestyle"],
 		"requiredTech": "Hunting and Fishing",
 		"obsoleteTech": "Horseback Riding",
 		"upgradesTo":"Nomad Horde",
@@ -651,22 +652,32 @@
 	{
 		"name": "Nomad Horde",
 		"uniqueTo": "Euroasian Nomads",
-		"unitType": "Close Combat",
+		"unitType": "Ranged Combat",
+		"cost": 75,
 		"movement": 3,
-		"strength": 13,
+		"strength": 12,
+		"rangedStrength": 15,
+		"range":1,
 		"uniques": [
 			"[-1] population [in this city]",
 			"'Mounted'",
-			"'Dense Formation'",
+			"'Skirmishers'",
 			"'Edged Weapons'",
 			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Pasture] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Road] improvements on tiles <for [Human player] Civilizations>",
+			"[+2] Strength <starting from the [Classical era]>",
+			"[+3] Strength <starting from the [Medieval era]>",
+			"[+4] Strength <starting from the [Renaissance era]>",
+			"[+5] Strength <starting from the [Imperial era]>",
+			"Instantly provides [1] [Migrating Population] <by consuming this unit>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
+		"promotions":["Nomadic Lifestyle"],
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Stirrup",
+		"requiredResource":"Horse",
 		"attackSound": "arrow"
 	},
 	{
@@ -879,6 +890,42 @@
 		"upgradesTo": "Hussar",
 		"attackSound": "arrow"
 	},
+	{
+		"name": "Elite Horse Archer",
+		"uniqueTo":"Euroasian Nomads",
+		"replaces":"Horse Archer",
+		"unitType": "Rider",
+		"cost": 90,
+		"movement": 3,
+		"strength": 13,
+		"rangedStrength": 19,
+		"range": 1,
+		"uniques": [
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+1] Sight",
+			"[+1] Range <after discovering [Stirrup]> <in [Land] tiles>",
+			"[+3] Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+4] Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Skirmisher Training",
+			"Nomadic Lifestyle"
+		],
+		"requiredBuilding": "Military Stable",
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "arrow"
+	},
 	///Line 5
 	{
 		"name": "Light Galley Fleet",
@@ -1056,6 +1103,33 @@
 		"unitType": "Close Combat",
 		"cost": 50,
 		"movement": 2,
+		"strength": 16,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+33]% Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+33]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Nomad Warriors",
+		"uniqueTo":"Euroasian Nomads",
+		"replaces":"Spearman",
+		"unitType": "Close Combat",
+		"cost": 70,
+		"movement": 3,
 		"strength": 16,
 		"uniques": [
 			"Unbuildable",
@@ -5220,6 +5294,25 @@
 			"Uncapturable"
 		],
 		"movement": 2
+	},
+	{
+		"name": "Great Khan",
+		"uniqueTo":"Euroasian Nomads",
+		"replaces":"Great Commander",
+		"cost": 1000,
+		"unitType": "Civilian",
+		"uniques": [
+			"[+12]% Strength bonus for [Military] units within [3] tiles <before discovering [Tactics]>",
+			"[+17]% Strength bonus for [Military] units within [4] tiles <after discovering [Tactics]><before discovering [Radio]>",
+			"[+22]% Strength bonus for [Military] units within [5] tiles <after discovering [Radio]>",
+			"Can be earned through combat",
+			"Empire enters a [10]-turn Golden Age <by consuming this unit>",
+			"Great Person - [War]",
+			"Is part of Great Person group [Military]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 3
 	},
 	{
 		"name": "Great Strategist",
