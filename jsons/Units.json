@@ -6,6 +6,7 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"uniques": [
+			"Unbuildable <if [Nomadic Culture] is constructed>",
 			"Can build [Land] improvements on tiles",
 			"Can build [Lakes] improvements on tiles",
 			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
@@ -93,6 +94,7 @@
 		"unitType": "Civilian",
 		"movement": 1,
 		"uniques": [
+			"Unbuildable",
 			"Can instantly construct a [Manual Farm] improvement <after which this unit is consumed>",
 			"Can instantly construct a [Manual Plantation] improvement <after which this unit is consumed>",
 			"Can instantly construct a [Manual Lumber Mill] improvement <after which this unit is consumed>",
@@ -110,6 +112,7 @@
 		"cost": 100,
 		"movement": 2,
 		"uniques": [
+			"Unbuildable <if [Nomadic Culture] is constructed>",
 			"Founds a new city <by consuming this unit>",
 			"Excess Food converted to Production when under construction",
 			"[+2] Movement <before turn number [2]>",
@@ -126,7 +129,7 @@
 		"cost": 50,
 		"movement": 2,
 		"uniques": [
-			"Unbuildable <for [non-[Euroasian Nomads]] Civilizations>",
+			"Only available <if [Nomadic Culture] is constructed>",
 			"[-1] population [in this city]",
 			"Founds a new city <by consuming this unit>",
 			"Excess Food converted to Production when under construction",
@@ -205,6 +208,7 @@
 		"movement": 3,
 		"strength": 9,
 		"uniques": [
+			"Unbuildable",
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
