@@ -6658,7 +6658,7 @@
 			"[+25]% Production when constructing [All] buildings [in this city]",
 			"[+25]% Production when constructing [Civilian] units [in this city]",
 			"[+25]% Production when constructing [Civil Ship] units [in this city]",
-
+			///Initialization
 			"Gain a free [Nomadic Culture] [in capital] <for [1] turns> <for [Euroasian Nomads] Civilizations> <when number of [Cities] is less than [2]> <hidden from users>",
 			"Gain a free [Neolithic Era Start] [in capital] <for [1] turns> <if starting in the [Neolithic era]> <when number of [Cities] is less than [2]> <hidden from users>",
 			"Gain a free [Ancient Era Start] [in capital] <for [1] turns> <if starting in the [Ancient era]> <when number of [Cities] is less than [2]> <hidden from users>",
@@ -6671,6 +6671,7 @@
 			"Gain a free [Atomic Era Start] [in capital] <for [1] turns> <if starting in the [Atomic era]> <when number of [Cities] is less than [2]> <hidden from users>",
 			"Gain a free [Information Era Start] [in capital] <for [1] turns> <if starting in the [Information era]> <when number of [Cities] is less than [2]> <hidden from users>",
 			"Gain a free [Future Era Start] [in capital] <for [1] turns> <if starting in the [Future era]> <when number of [Cities] is less than [2]> <hidden from users>",
+			///Influence Calculation
 			"Consumes [1] [Influence] <when below [500] [Happiness]> <starting from the [Future era]>",
 			"Consumes [1] [Influence] <when below [200] [Happiness]> <starting from the [Information era]>",
 			"Consumes [1] [Influence] <when below [100] [Happiness]> <starting from the [Atomic era]>",
@@ -6689,10 +6690,12 @@
 			"Provides [1] [Influence] <when above [9] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Influence] <when above [29] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]>",
+			///Stuff
 			"Provides [10] [Migration Limit]",
+			"Indicates the capital city",
 			//Tutorial
-			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]> <hidden from users>",
-			"Indicates the capital city"
+			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]> <hidden from users>"
+			
 		]
 	},
 	{
