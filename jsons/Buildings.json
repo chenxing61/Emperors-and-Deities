@@ -7800,7 +7800,7 @@
 			"Unsellable",
 			"[-100]% growth [in all cities] <in cities with at least [10] [Population]> <hidden from users>",
 			"[-100]% Production when constructing ['Agricultural Building'] buildings [in all cities]",
-
+			
 			"[-25]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [High Culture Diversity] is constructed>",
 			"[-50]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Medium Culture Diversity] is constructed>",
 			"[-75]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Low Culture Diversity] is constructed>",
@@ -7819,7 +7819,9 @@
 			"[-25]% unhappiness from the number of cities <if [Low Culture Diversity] is constructed>",
 			"[-50]% unhappiness from the number of cities <if [Medium Culture Diversity] is constructed>",
 			"[-75]% unhappiness from the number of cities <if [High Culture Diversity] is constructed>",
+			"Remove [Nomadic Culture] [in all cities] <when above [99] [Settlement Process]>",
 			"Limited to [1] per Civilization <hidden from users>",
+			"Destroyed when the city is captured",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
@@ -8120,6 +8122,20 @@
 			"Science gained from research agreements [+25]%",
 			"Gain an extra spy",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Slavic Influence",
+		"uniqueTo": "Europa",
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [Conquerors of the Wild]",
+			"[-33]% Gold cost of acquiring tiles [in all cities]",
+			"[+1 Culture] from every ['Lumber Improvement']",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
