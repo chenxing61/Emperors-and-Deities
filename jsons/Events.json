@@ -369,6 +369,14 @@
                 ]
             },
             {
+                "text": "Tribe Assembly",
+                "uniques": [
+                    "Only available <if [Nomadic Culture] is constructed>",
+                    "Play [horse] sound <hidden from users>",
+                    "Triggers a [Tribe Assembly] event"
+                ]
+            },
+            {
                 "text": "Did you know that this mod has tutorial pages in civilopedia's tutorial section?",
                 "uniques": [
                     "Comment [You may want to check them out.]",
@@ -1126,6 +1134,13 @@
                 ]
             },
             {
+                "text": "Unified Nomads",
+                "uniques": [
+                    "Only available <if [Unified Nomads] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
                 "text": "Egyptian Dynasties",
                 "uniques": [
                     "Only available <if [Egyptian Dynasties] is constructed>",
@@ -1494,6 +1509,28 @@
                     "Only available <before adopting [Revolution]>",
                     "Gain a free [Caste System - Exploitation] [in capital]",
                     "Gain a free [Strife] [in capital]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Tribe Assembly",
+        "text": "We call upon our hordes. To combat nature and enemies.",
+        "choices": [
+            {
+                "text": "Recuit Wild Tribes into our culture",
+                "uniques": [
+                    "Only available <if [Nomadic Tribes] is not constructed> <when above [9] [Influence]>",
+                    "Instantly consumes [10] [Influence]",
+                    "Free [Primal Herder] appears"
+                ]
+            },
+            {
+                "text": "Organize a hunt for glory and additional rations",
+                "uniques": [
+                    "Only available <if [Nomadic Tribes] is not constructed> <when above [9] [Influence]>",
+                    "Instantly consumes [10] [Influence]",
+                    "[+50]% Yield from every [Camp] <for [5] turns>"
                 ]
             }
         ]
