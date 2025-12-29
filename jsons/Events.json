@@ -173,6 +173,53 @@
             }
         ]
     },
+    {
+        "name": "The Barbarian's Surrender",
+        "text": "We successfully brought our fury to the Barbarian's Motherland. New problem arises.",
+        "choices": [
+            {
+                "text": "Plunder them dry and banish them!",
+                "uniques": [
+                    "Gain [75] [Gold] <(modified by game speed)>",
+                    "Gain [50] [Gold] <(modified by game speed)> <starting from the [Medieval era]>"
+                ]
+            },
+            {
+                "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
+                "uniques": [
+                    "Instantly provides [1] [Migrating Population]",
+                    "Gain a free [Medium Culture Diversity] [in capital] <if [Low Culture Diversity] is constructed> <hidden from users>",
+                    "Gain a free [High Culture Diversity] [in capital] <if [Medium Culture Diversity] is constructed> <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level]",
+                    "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
+                    "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
+                ]
+            },
+            {
+                "text": "Intergrate them into our glorious empire!",
+                "uniques": [
+                    "Only available <if [Unified] is constructed>",
+                    "Gain [-100] [Gold] <(modified by game speed)> ",
+                    "Instantly consumes [8] [Influence] <before adopting [Pantheon Incorporation]>",
+                    "Instantly provides [3] [Migrating Population]"
+                ]
+            },
+            {
+                "text": "Enslavement would teach them how to behave",
+                "uniques": [
+                    "Only available <after adopting [Military Tradition]>",
+                    "Instantly gain [34] [Slaves]"
+                ]
+            },
+            {
+                "text": "These men need a shepherd leading them to the lord",
+                "uniques": [
+                    "Only available <after adopting [Idol Abolishment]>",
+                    "Gain [25] [Faith] <(modified by game speed)>","Instantly provides [1] [Migrating Population]"
+                ]
+            }
+        ]
+    },
     ///Civilization Events
     {
         "name": "Enact Policies",
@@ -374,6 +421,21 @@
                     "Only available <if [Nomadic Culture] is constructed>",
                     "Play [horse] sound <hidden from users>",
                     "Triggers a [Tribe Assembly] event"
+                ]
+            },
+            {
+                "text": "Purge Minorities",
+                "uniques": [
+                    "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Instantly consumes [20] [Influence]",
+                    "[-1] population in a random city",
+                    "[-1] population in a random city",
+                    "[-1] population in a random city",
+                    "Gain [200] [Gold] <(modified by game speed)>",
+                    "Gain a free [Low Culture Diversity] [in capital] <if [Medium Culture Diversity] is constructed> <hidden from users>",
+                    "Gain a free [Medium Culture Diversity] [in capital] <if [High Culture Diversity] is constructed> <hidden from users>",
+                    "Comment [Decrease the Culture Diversity by a level]",
+                    "Play [metalhit] sound <hidden from users>",
                 ]
             },
             {
@@ -968,6 +1030,8 @@
                     "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
                     "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Gain a free [Medium Culture Diversity] [in capital] <if [Low Culture Diversity] is constructed> <hidden from users>",
+                    "Gain a free [High Culture Diversity] [in capital] <if [Medium Culture Diversity] is constructed> <hidden from users>",
                     "Gain a free [Cultural Exchange] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
                 ]
@@ -1515,22 +1579,58 @@
     },
     {
         "name": "Tribe Assembly",
-        "text": "We call upon our hordes. To combat nature and enemies.",
+        "text": "We call upon our hordes. To combat the nature and our enemies.",
         "choices": [
             {
                 "text": "Recuit Wild Tribes into our culture",
                 "uniques": [
-                    "Only available <if [Nomadic Tribes] is not constructed> <when above [9] [Influence]>",
+                    "Only available <if [Nomadic Tribes] is constructed> <when above [9] [Influence]>",
                     "Instantly consumes [10] [Influence]",
                     "Free [Primal Herder] appears"
                 ]
             },
             {
-                "text": "Organize a hunt for glory and additional rations",
+                "text": "Organize a hunt for glory, and additional rations",
                 "uniques": [
-                    "Only available <if [Nomadic Tribes] is not constructed> <when above [9] [Influence]>",
+                    "Only available <if [Nomadic Tribes] is constructed> <when above [9] [Influence]>",
                     "Instantly consumes [10] [Influence]",
                     "[+50]% Yield from every [Camp] <for [5] turns>"
+                ]
+            },
+            {
+                "text": "We should exchange our knowledges amongst our tribes",
+                "uniques": [
+                    "Only available <if [Nomadic Tribes] is constructed> <when above [9] [Influence]>",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain [25] [Science] <(modified by game speed)>",
+                    "Instantly gain [5] [Settlement Process]"
+                ]
+            },
+            {
+                "text": "Elect a new Khan!",
+                "uniques": [
+                    "Only available <if [Unified Nomads] is constructed> <when above [14] [Influence]>",
+                    "Instantly consumes [15] [Influence]",
+                    "Free [Great Khan] appears",
+                    "[-3] Strength <for [3] turns>"
+                ]
+            },
+            {
+                "text": "Make use of our unified power",
+                "uniques": [
+                    "Only available <if [Unified Nomads] is constructed> <when above [19] [Influence]>",
+                    "Instantly consumes [20] [Influence]",
+                    "[+33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities]<for [10] turns> <hidden from users>",
+                    "Comment [[+33%] Production when constructing all buildings <for [10] turns>]"
+                ]
+            },
+            {
+                "text": "Study the advanced culture of the other civilizations",
+                "uniques": [
+                    "Only available <if [Unified Nomads] is constructed> <when above [19] [Influence]>",
+                    "Instantly consumes [20] [Influence]",
+                    "Gain [50] [Science]",
+                    "Instantly gain [10] [Settlement Process]"
                 ]
             }
         ]

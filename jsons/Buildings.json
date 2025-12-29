@@ -826,6 +826,7 @@
 		"food": 2,
 		"uniques": [
 			"'Agricultural Building'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Must not be on [River]"
 		],
 		"requiredTech": "Agriculture"
@@ -1078,6 +1079,7 @@
 		"production": 2,
 		"uniques": [
 			"'Agricultural Building'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Must be on [River]"
 		],
 		"requiredTech": "The Wheel"
@@ -2312,6 +2314,7 @@
 		},
 		"uniques": [
 			"'Agricultural Building'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Must not be on [Hill]"
 		],
 		"requiredTech": "Construction"
@@ -4004,6 +4007,7 @@
 		},
 		"uniques": [
 			"'Agricultural Building'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"[+1]% Production when constructing ['Agricultural Building'] buildings [in all cities]"
 		],
 		"requiredTech": "Machinery"
@@ -7798,8 +7802,8 @@
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"[-33]% [Science] [in all cities]",
 			"[-100]% growth [in all cities] <in cities with at least [10] [Population]> <hidden from users>",
-			"[-100]% Production when constructing ['Agricultural Building'] buildings [in all cities]",
 			
 			"[-25]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [High Culture Diversity] is constructed>",
 			"[-50]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Medium Culture Diversity] is constructed>",
@@ -7819,7 +7823,7 @@
 			"[-25]% unhappiness from the number of cities <if [Low Culture Diversity] is constructed>",
 			"[-50]% unhappiness from the number of cities <if [Medium Culture Diversity] is constructed>",
 			"[-75]% unhappiness from the number of cities <if [High Culture Diversity] is constructed>",
-			"Remove [Nomadic Culture] [in all cities] <when above [99] [Settlement Process]>",
+			"Remove [Nomadic Culture] [in all cities] <when number of [Settlement Process] is more than [([Cities]*10)+30]>",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Destroyed when the city is captured",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -8205,7 +8209,7 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintenance]",
 			"Comment [Unique Ability: The Horde's Resilience]",
-			"Comment [You can consume [Influence] to gain [Primal Herder]s, give bonuses to [Camp] or gain strategic resources.]",
+			"Comment [You can consume [Influence] to gain [Primal Herder]s, buy [Science] or give bonuses to [Camp].]",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},

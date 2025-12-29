@@ -95,11 +95,13 @@
 		"movement": 1,
 		"uniques": [
 			"Unbuildable",
-			"Can instantly construct a [Manual Farm] improvement <after which this unit is consumed>",
-			"Can instantly construct a [Manual Plantation] improvement <after which this unit is consumed>",
-			"Can instantly construct a [Manual Lumber Mill] improvement <after which this unit is consumed>",
-			"Can instantly construct a [Manual Mine] improvement <after which this unit is consumed>",
-			"Can instantly construct a [Quarry] improvement <after which this unit is consumed>",
+			"[+1] Movement <after adopting [Military Tradition]>",
+			"Can speed up construction of a building <after discovering [Civil Service]>",
+			"Can instantly construct a [Manual Farm] improvement <once> <after which this unit is consumed>",
+			"Can instantly construct a [Manual Plantation] improvement <once> <after which this unit is consumed>",
+			"Can instantly construct a [Manual Lumber Mill] improvement <once> <after which this unit is consumed>",
+			"Can instantly construct a [Manual Mine] improvement <once> <after which this unit is consumed>",
+			"Can instantly construct a [Quarry] improvement <once> <after which this unit is consumed>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Instantly consumes [100] [Slaves] <when above [100] [Slaves]>",
 			"Automation is a primary action"
@@ -135,7 +137,7 @@
 			"Excess Food converted to Production when under construction",
 			"[+2] Movement <before turn number [2]>",
 			"[+1] Sight <before turn number [2]>",
-			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>"
 		],
 		"requiredTech": "Fire Making",
 		"obsoleteTech": "Navigation"	
@@ -676,6 +678,12 @@
 			"[+5] Strength <starting from the [Imperial era]>",
 			"Instantly provides [1] [Migrating Population] <by consuming this unit>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[+25]% construction time for [Road] improvements <in [Open terrain] tiles>",
+			"[+25]% construction time for [Railroad] improvements <in [Open terrain] tiles>",
+			"[+75]% construction time for [Road] improvements <in [Rough terrain] tiles>",
+			"[+75]% construction time for [Railroad] improvements <in [Rough terrain] tiles>",
+			"[+75]% construction time for [Road] improvements <in [Mountain] tiles>",
+			"[+75]% construction time for [Railroad] improvements <in [Mountain] tiles>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions":["Nomadic Lifestyle"],

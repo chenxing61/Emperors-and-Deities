@@ -1005,6 +1005,33 @@
 	},
 	///Italian
 	{
+		"name": "Etruria",
+		"adjective": [
+			"Etruscans"
+		],
+		"cityStateType": "Labour Centre",
+		"startBias": [
+			"Plain"
+		],
+		"uniques": ["Will not be chosen for new games <starting from the [Classical era]>"],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "And so the flower of Florence falls to barbaric hands...",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			62,
+			197,
+			252
+		],
+		"cities": [
+			"Etruria"
+		]
+	},
+	{
 		"name": "Florence",
 		"adjective": [
 			"Florentine"
@@ -1013,6 +1040,7 @@
 		"startBias": [
 			"Plain"
 		],
+		"uniques": ["Will not be chosen for new games <before the [Medieval era]>"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
 		"defeated": "And so the flower of Florence falls to barbaric hands...",
@@ -1039,6 +1067,7 @@
 		"startBias": [
 			"Plain"
 		],
+		"uniques": ["Will not be chosen for new games <before the [Medieval era]>"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
 		"defeated": "You fiend! History shall remember this!",
@@ -1062,6 +1091,7 @@
 			"Venetian"
 		],
 		"cityStateType": "Middleman of the continent",
+		"uniques": ["Will not be chosen for new games <before the [Medieval era]>"],
 		"startBias": [
 			"Coast"
 		],
@@ -1088,6 +1118,7 @@
 			"Genoese"
 		],
 		"cityStateType": "Mercenary State",
+		"uniques": ["Will not be chosen for new games <before the [Medieval era]>"],
 		"startBias": [
 			"Coast"
 		],
@@ -1106,6 +1137,32 @@
 		],
 		"cities": [
 			"Genoa"
+		]
+	},
+	{
+		"name": "Euskaldunak",
+		"adjective": [
+			"Basque"
+		],
+		"cityStateType": "Food Exporter",
+		"startBias": [
+			"Coast"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "How barbaric. Those who live by the sword shall perish by the sword.",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			45,
+			255,
+			86
+		],
+		"cities": [
+			"Euskadi"
 		]
 	},
 	///South East Asia
@@ -1215,6 +1272,7 @@
 		"adjective": [
 			"Pulau Ujongian"
 		],
+		"uniques": ["Will not be chosen for new games <before the [Imperial era]>"],
 		"cityStateType": "Middleman of the continent",
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
@@ -1243,6 +1301,7 @@
 		"startBias": [
 			"Coast"
 		],
+		"uniques": ["Will not be chosen for new games <starting from the [Classical era]>"],
 		"declaringWar": "I will enjoy hearing your last breath as you witness the destruction of your realm!",
 		"attacked": "Why do we fight? Because Inanna demands it. Now, witness the power of the Sumerians!",
 		"defeated": "What treachery has struck us? No, what evil?",
@@ -1266,6 +1325,7 @@
 			"Tyrian"
 		],
 		"cityStateType": "Resource Hoarder",
+		"uniques": ["Will not be chosen for new games <starting from the [Classical era]>"],
 		"startBias": [
 			"Coast"
 		],
@@ -1291,6 +1351,7 @@
 		"adjective": [
 			"Sidon"
 		],
+		"uniques": ["Will not be chosen for new games <starting from the [Classical era]>"],
 		"cityStateType": "Middleman of the continent",
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
@@ -1344,6 +1405,7 @@
 		"startBias": [
 			"Hill"
 		],
+		"uniques": ["Will not be chosen for new games <starting from the [Modern era]>"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
 		"defeated": "Perhaps now we will find peace in death...",
@@ -1428,6 +1490,31 @@
 		],
 		"cities": [
 			"Yerevan"
+		]
+	},
+	{
+		"name": "Lou Lan",
+		"adjective": [
+			"Lou Lan"
+		],
+		"startBias": ["Desert"],
+		"uniques": ["Will not be chosen for new games <starting from the [Renaissance era]>"],
+		"cityStateType": "Middleman of the continent",
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "How could we fall to the likes of you?!",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			152,
+			0,
+			241
+		],
+		"cities": [
+			"Lou Lan"
 		]
 	},
 	///Nords
@@ -1612,8 +1699,9 @@
 	{
 		"name": "Dithmarschen",
 		"adjective": [
-			"Farmer Republican"
+			"Farmer Republic's"
 		],
+		"uniques": ["Will not be chosen for new games <before the [Renaissance era]>"],
 		"cityStateType": "Labour Centre",
 		"startBias": [
 			"Marsh"
@@ -1662,37 +1750,15 @@
 		]
 	},
 	{
-		"name": "Switzerland",
-		"adjective": [
-			"Swiss"
-		],
-		"cityStateType": "Mercenary State",
-		"startBias": [
-			"Hill"
-		],
-		"declaringWar": "You leave us no choice. War it must be.",
-		"attacked": "Very well, this shall not be forgotten.",
-		"defeated": "They will write songs of this.... pray that they shall be in your favor.",
-		"outerColor": [
-			0,
-			0,
-			0
-		],
-		"innerColor": [
-			194,
-			97,
-			255
-		],
-		"cities": [
-			"Turicum"
-		]
-	},
-	{
 		"name": "Lubeck",
 		"adjective": [
 			"Lubeckian"
 		],
 		"cityStateType": "Wonder Engineer",
+		"startBias": [
+			"Plain"
+		],
+		"uniques": ["Will not be chosen for new games <before the [Medieval era]>"],
 		"declaringWar": "Let's have a nice little War, shall we?",
 		"attacked": "If you need your nose bloodied, we'll happily serve.",
 		"defeated": "The serbian guerilla will never stop haunting you!",
@@ -1784,6 +1850,7 @@
 		"adjective": [
 			"Slovakian"
 		],
+		"startBias": ["Hill"],
 		"cityStateType": "Distinctively Cultured",
 		"declaringWar": "I didn't want to do this. We declare war.",
 		"attacked": "I will fear no evil. For god is with me!",
@@ -1811,6 +1878,7 @@
 		"startBias": [
 			"Coast"
 		],
+		"uniques": ["Will not be chosen for new games <starting from the [Classical era]>"],
 		"declaringWar": "I will enjoy hearing your last breath as you witness the destruction of your realm!",
 		"attacked": "Our heros will elimiate your evil regime!",
 		"defeated": "Deception is the only way you have a chance at defeating us! You coward!",
