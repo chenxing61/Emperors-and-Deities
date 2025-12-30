@@ -190,7 +190,7 @@
                     "Instantly provides [1] [Migrating Population]",
                     "Gain a free [Medium Culture Diversity] [in capital] <if [Low Culture Diversity] is constructed> <hidden from users>",
                     "Gain a free [High Culture Diversity] [in capital] <if [Medium Culture Diversity] is constructed> <hidden from users>",
-                    "Comment [Increase the Culture Diversity by a level]",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
                     "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
                     "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
                 ]
@@ -215,7 +215,8 @@
                 "text": "These men need a shepherd leading them to the lord",
                 "uniques": [
                     "Only available <after adopting [Idol Abolishment]>",
-                    "Gain [25] [Faith] <(modified by game speed)>","Instantly provides [1] [Migrating Population]"
+                    "Gain [25] [Faith] <(modified by game speed)>",
+                    "Instantly provides [1] [Migrating Population]"
                 ]
             }
         ]
@@ -434,8 +435,8 @@
                     "Gain [200] [Gold] <(modified by game speed)>",
                     "Gain a free [Low Culture Diversity] [in capital] <if [Medium Culture Diversity] is constructed> <hidden from users>",
                     "Gain a free [Medium Culture Diversity] [in capital] <if [High Culture Diversity] is constructed> <hidden from users>",
-                    "Comment [Decrease the Culture Diversity by a level]",
-                    "Play [metalhit] sound <hidden from users>",
+                    "Comment [Decrease the Culture Diversity by a level if it hasnt reached lowest level yet.]",
+                    "Play [metalhit] sound <hidden from users>"
                 ]
             },
             {
@@ -1019,6 +1020,9 @@
                     "Only available <when above [9] [Influence]> <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [8] [Influence]",
                     "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Gain a free [Medium Culture Diversity] [in capital] <if [Low Culture Diversity] is constructed> <hidden from users>",
+                    "Gain a free [High Culture Diversity] [in capital] <if [Medium Culture Diversity] is constructed> <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
                     "Gain a free [Cultural Exchange] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
                 ]
@@ -1032,6 +1036,7 @@
                     "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
                     "Gain a free [Medium Culture Diversity] [in capital] <if [Low Culture Diversity] is constructed> <hidden from users>",
                     "Gain a free [High Culture Diversity] [in capital] <if [Medium Culture Diversity] is constructed> <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
                     "Gain a free [Cultural Exchange] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
                 ]
