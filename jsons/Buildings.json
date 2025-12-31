@@ -7823,7 +7823,8 @@
 			"[-25]% unhappiness from the number of cities <if [Low Culture Diversity] is constructed>",
 			"[-50]% unhappiness from the number of cities <if [Medium Culture Diversity] is constructed>",
 			"[-75]% unhappiness from the number of cities <if [High Culture Diversity] is constructed>",
-			"Remove [Nomadic Culture] [in all cities] <when number of [Settlement Process] is more than [([Cities]*10)+30]>",
+			
+			"Triggers a [Settle Down] event <when number of [Settlement Process] is more than [([Cities]*10)+[30]]>",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Destroyed when the city is captured",
 			"Moves to new capital when capital changes <hidden from users>"

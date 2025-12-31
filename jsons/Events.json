@@ -1654,6 +1654,38 @@
             }
         ]
     },
+    {
+        "name": "Settle Down",
+        "text": "As Enough [Settlement Process] has been gained. We may now futher develop our lands.",
+        "choices": [
+            {
+                "text": "Now we have stability in hand.",
+                "uniques": [
+                    "Only available <before the [Medieval era]>",
+                    "Remove [Nomadic Culture] [in all cities]",
+                    "Gain a free [Early Empire] [in capital]"
+                ]
+            },
+            
+            {
+                "text": "Now we have stability in hand.",
+                "uniques": [
+                    "Only available <starting from the [Medieval era]> <before the [Imperial era]>",
+                    "Remove [Nomadic Culture] [in all cities]",
+                    "Gain a free [Feudal Empire] [in capital]"
+                ]
+            },
+            
+            {
+                "text": "Now we have stability in hand.",
+                "uniques": [
+                    "Only available <starting from the [Imperial era]>",
+                    "Remove [Nomadic Culture] [in all cities]",
+                    "Gain a free [Autocratic Empire] [in capital]"
+                ]
+            }
+        ]
+    },
     ///Mediterranean
     {
         "name": "Alexander the Conqueror",
