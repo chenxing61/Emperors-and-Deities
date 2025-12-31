@@ -227,6 +227,14 @@
         "text": "Decisions reguarding the civilization's internal affair.",
         "choices": [
             {
+                "text": "Introduction",
+                "uniques": [
+                    "Comment [In this desicion tab, you unlock different actions according to how many influence you have and how many unique action your civilization state has provided you with.]",
+                    "Comment [In each era, you recieve a [Forced Shift In Politic Chance], when you have more [Influence] than your limit, you can trigger a Shift In Politic in this tab early to provide you with either a chance to unify or a chance to collapse.]",
+                    "Comment [Most option will appear when you are unified or have more [Influence] than half of your limit. At the same time, some options only appear when your civilization are divided or have severe debuffs. This tab will help you solve them.]"
+                ]
+            },
+            {
                 "text": "Total mobilization in every cities!",
                 "uniques": [
                     "Only available <when at war> <if [Unified] is constructed>",
@@ -579,7 +587,7 @@
             {
                 "text": "No significant changes",
                 "uniques": [
-                    "Comment [We are still a bunch of countries prone to infighting and invasion, but what we do have is countless oppotunities.]",
+                    "Comment [We are still a bunch of tribes prone to infighting and invasion, but what we do have is countless oppotunities.]",
                     "Only available <if [Nomadic Tribes] is constructed>"
                 ]
             },
@@ -613,7 +621,7 @@
             {
                 "text": "We are able to unify ourselves!",
                 "uniques": [
-                    "Only available <if [Unified] is not constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <if [Nomadic Tribes] is constructed>",
+                    "Only available <if [Unified] is not constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <if [Nomadic Tribes] is constructed> <starting from the [Classical era]>",
                     "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
                     "Gain a free [Unified Nomads] [in capital] <hidden from users>"
                 ]
@@ -767,6 +775,13 @@
                 "uniques": [
                     "Only available <starting from the [Industrial era]> <before adopting [Socialism]> <before adopting [Anarchism]> <before adopting [Fascism]> <if [Federation] is not constructed>",
                     "Gain a free [Personal Union] [in capital]"
+                ]
+            },
+            {
+                "text": "Maybe... having a consistent ruling family and succession law would be better.",
+                "uniques": [
+                    "Only available <if [Unified Nomads] is constructed>",
+                    "Instantly provides [10] [Settlement Process]"
                 ]
             },
             {
@@ -1605,10 +1620,9 @@
             {
                 "text": "We should exchange our knowledges amongst our tribes",
                 "uniques": [
-                    "Only available <if [Nomadic Tribes] is constructed> <when above [9] [Influence]>",
-                    "Instantly consumes [10] [Influence]",
-                    "Gain [25] [Science] <(modified by game speed)>",
-                    "Instantly gain [5] [Settlement Process]"
+                    "Only available <if [Nomadic Tribes] is constructed> <when above [4] [Influence]>",
+                    "Instantly consumes [5] [Influence]",
+                    "Gain [3] [Science] <(modified by game speed)> <for [5] turns>"
                 ]
             },
             {
@@ -1634,8 +1648,8 @@
                 "uniques": [
                     "Only available <if [Unified Nomads] is constructed> <when above [19] [Influence]>",
                     "Instantly consumes [20] [Influence]",
-                    "Gain [50] [Science]",
-                    "Instantly gain [10] [Settlement Process]"
+                    "Gain [6] [Science] <(modified by game speed)> <for [5] turns>",
+                    "Instantly provides [10] [Settlement Process]"
                 ]
             }
         ]
