@@ -133,7 +133,7 @@
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available <in [non-[Capital]] cities> <in cities connected to the capital>",
-			"[-100]% production cost <for [Euroasian Nomads] Civilizations>",
+			"[-100]% production cost <if [Nomadic Culture] is constructed>",
 			"Remove [Palace] [in all cities]",
 			"Gain a free [Palace] [in this city]"
 		],
@@ -145,6 +145,7 @@
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Unbuildable <in cities with at least [10] [population]> <if [Nomadic Culture] is constructed>",
 			"Only available <in cities connected to the capital> <when above [0] [Migrating Population]>",
 			"[+1] population [in this city]",
 			"Instantly consumes [1] [Migrating Population]",
@@ -159,7 +160,7 @@
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available <in cities connected to the capital> <in cities with at least [5] [Population]> <when number of [Migrating Population] is between [0] and [Migration Limit]>",
-			"[-100]% production cost <for [Euroasian Nomads] Civilizations>",
+			"[-100]% production cost <if [Nomadic Culture] is constructed>",
 			"[-1] population [in this city]",
 			"Instantly consumes [2] [Influence]",
 			"Instantly provides [1] [Migrating Population]",
@@ -174,6 +175,7 @@
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Unbuildable <in cities with at least [10] [population]> <if [Nomadic Culture] is constructed>",
 			"Only available <in cities connected to the capital> <when above [4] [Migrating Population]>",
 			"[+5] population [in this city]",
 			"Instantly consumes [5] [Migrating Population]",
@@ -188,7 +190,7 @@
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available <in cities connected to the capital> <in cities with at least [10] [Population]> <when number of [Migrating Population] is between [0] and [Migration Limit]>",
-			"[-100]% production cost <for [Euroasian Nomads] Civilizations>",
+			"[-100]% production cost <if [Nomadic Culture] is constructed>",
 			"[-5] population [in this city]",
 			"Instantly consumes [10] [Influence]",
 			"Instantly provides [5] [Migrating Population]",
@@ -993,6 +995,7 @@
 			"Provides [1] [Alcohol] <with [Grape]>",
 			"Provides [1] [Alcohol] <with [Sugar]> <after discovering [Chemistry]>",
 			"Provides [1] [Alcohol] <with [Tuber]> <after discovering [Chemistry]>",
+			"Provides [1] [Alcohol] <with [Horse]> <for [Euroasian Nomads] Civilizations>",
 			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
 		],
 		"requiredTech": "Pottery",
@@ -7803,28 +7806,25 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"[-33]% [Science] [in all cities]",
-			"[-100]% growth [in all cities] <in cities with at least [10] [Population]> <hidden from users>",
+			"[-100]% growth [in all cities] <in cities with at least [10] [Population]>",
 			
-			"[-25]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [High Culture Diversity] is constructed>",
-			"[-50]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Medium Culture Diversity] is constructed>",
-			"[-75]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Low Culture Diversity] is constructed>",
-
-			"[-25]% Production when constructing [Water] units [in all cities] <if [Low Culture Diversity] is constructed>",
-			"[-10]% Production when constructing [Water] units [in all cities] <if [Medium Culture Diversity] is constructed>",
-
-			"[-25]% Production when constructing [Siege] units [in all cities] <if [Low Culture Diversity] is constructed>",
-			"[+25]% Production when constructing [Siege] units [in all cities] <if [High Culture Diversity] is constructed>",
+			"[-15]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [High Culture Diversity] is constructed>",
+			"[-33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Medium Culture Diversity] is constructed>",
+			"[-66]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Low Culture Diversity] is constructed>",
 
 			"Upon capturing a city, receive [1] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is constructed>",
 			"Upon capturing a city, receive [2] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is not constructed>",
 			"Earn [25]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is not constructed>",
 			"Earn [50]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is constructed>",
 
-			"[-25]% unhappiness from the number of cities <if [Low Culture Diversity] is constructed>",
+			"[-33]% unhappiness from the number of cities <if [Low Culture Diversity] is constructed>",
 			"[-50]% unhappiness from the number of cities <if [Medium Culture Diversity] is constructed>",
-			"[-75]% unhappiness from the number of cities <if [High Culture Diversity] is constructed>",
+			"[-66]% unhappiness from the number of cities <if [High Culture Diversity] is constructed>",
 			
-			"Triggers a [Settle Down] event <when number of [Settlement Process] is more than [([Cities]*10)+[30]]>",
+			"[-100]% maintenance cost for [Export [Food]] buildings [in all cities]",
+			"[-100]% maintenance cost for [Export [Production]] buildings [in all cities]",
+			"[+33]% [Horse] resource production",
+			"Triggers a [Settle Down] event <when number of [Settlement Process] is more than [([Cities]*5)+[20]]> <upon turn start>",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Destroyed when the city is captured",
 			"Moves to new capital when capital changes <hidden from users>"
