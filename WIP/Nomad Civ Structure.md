@@ -71,5 +71,11 @@ Special Building/Improvement/Mechanics:{
 
     8.Horse Related Buildings Have extra effects on army.
 
-    9.Sythians Wagons, Gold working, tombs
+    9.Scythians Wagons, Gold working, tombs
+
+    10. Faith when killing in territory, steles, sky father based beliefs. Take advantage of mobile capital.
+}
+Planned Civs:{
+    Scythians: 
+    Xiong Nu:
 }
