@@ -71,4 +71,5 @@ Special Building/Improvement/Mechanics:{
 
     8.Horse Related Buildings Have extra effects on army.
 
+    9.Sythians Wagons, Gold working, tombs
 }
