@@ -80,50 +80,53 @@
 		"uniques": [
 			"Unsellable",
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Unbuildable <if [Levies Disbandment] is constructed> <hidden from users>",
 			"Only available <in [Non-occupied] cities> <in cities with at least [5] [Population]>",
 			"Play [policy] sound <hidden from users>",
 			//Debuff
-			"[-1 Happiness] [in this city] <before adopting [Militia Army]>",
-			"[-1 Happiness] [in this city] <before adopting [Military Tradition]>",
-			"[-8]% [Gold] [in this city] <if [Militristic Economy] is not constructed>",
-			"[-8]% [Food] [in this city] <if [Militristic Economy] is not constructed>",
-			"[-8]% [Production] [in this city] <if [Militristic Economy] is not constructed>",
+			"[-1 Happiness] [in this city] <before adopting [Militia Army]> <for [Human player] Civilizations>",
+			"[-1 Happiness] [in this city] <before adopting [Military Tradition]> <for [Human player] Civilizations>",
+			"[-8]% [Gold] [in this city] <if [Militristic Economy] is not constructed> <for [Human player] Civilizations>",
+			"[-8]% [Food] [in this city] <if [Militristic Economy] is not constructed> <for [Human player] Civilizations>",
+			"[-8]% [Production] [in this city] <if [Militristic Economy] is not constructed> <for [Human player] Civilizations>",
 			//Tooltips
-			"Comment [Spawns free 'Levy Army' units to help with warfare.]",
+			"Comment [Spawns free [The Levied Army] units to help with warfare.]",
 			"Comment [The number and type of unit spawned depends on the 'Military Building' in the city and your technological, cultural advancement.]",
 			//Neolitic-Ancient
-			"Free [Primal Warrior] appears <before discovering [Mining]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Brute Warrior] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [non-[Europa]] Civilizations> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Warband] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [Europa] Civilizations> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Javalineer] appears <after discovering [Mining]> <before discovering [Tactics]> <for [non-[North Africa]] Civilizations> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Nubian Archer] appears <after discovering [Mining]> <before discovering [Tactics]> <for [North Africa] Civilizations> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Primal Warrior] appears <before discovering [Mining]> <hidden from users> ",
+			"Free [Brute Warrior] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [non-[Europa]] Civilizations> <hidden from users> ",
+			"Free [Warband] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [Europa] Civilizations> <hidden from users> ",
+			"Free [Javalineer] appears <after discovering [Mining]> <before discovering [Tactics]> <for [non-[North Africa]] Civilizations> <hidden from users> ",
+			"Free [Nubian Archer] appears <after discovering [Mining]> <before discovering [Tactics]> <for [North Africa] Civilizations> <hidden from users> ",
 			//Classic-Medieval
-			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Levy Archer] appears <after discovering [Tactics]> <before discovering [Hand Cannon]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <hidden from users>  <if [Nomadic Culture] is not constructed>",
+			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <in cities with a [Armory]> <hidden from users>  <if [Nomadic Culture] is not constructed>",
+			"Free [Nomad Warriors] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <hidden from users>  <if [Nomadic Culture] is constructed>",
+			"Free [Nomad Warriors] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <in cities with a [Armory]> <hidden from users>  <if [Nomadic Culture] is constructed>",
+			"Free [Levy Archer] appears <after discovering [Tactics]> <before discovering [Hand Cannon]> <hidden from users> ",
 			//Renaissance-Imperial
-			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Levy Crossbowman] appears <after discovering [Hand Cannon]> <before discovering [Rifling]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <in cities with a [Armory]>  <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Gun Boat] appears <after discovering [Machinery]> <in [Coastal] cities> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Gun Boat] appears <after discovering [Machinery]> <in cities with a [Armory]> <in [Coastal] cities> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Guerrilla] appears <after discovering [Rifling]> <before adopting [Militia Army]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Guerrilla] appears <after discovering [Rifling]> <before adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <hidden from users> ",
+			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <in cities with a [Armory]> <hidden from users> ",
+			"Free [Levy Crossbowman] appears <after discovering [Hand Cannon]> <before discovering [Rifling]> <hidden from users> ",
+			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <hidden from users> ",
+			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <in cities with a [Armory]>  <hidden from users> ",
+			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <in cities with a [Mobilization Department]> <hidden from users> ",
+			"Free [Gun Boat] appears <after discovering [Machinery]> <in [Coastal] cities> <hidden from users> ",
+			"Free [Gun Boat] appears <after discovering [Machinery]> <in cities with a [Armory]> <in [Coastal] cities> <hidden from users> ",
+			"Free [Guerrilla] appears <after discovering [Rifling]> <before adopting [Militia Army]> <hidden from users> ",
+			"Free [Guerrilla] appears <after discovering [Rifling]> <before adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> ",
 			//Industrial-Modern
-			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Recuitment Center]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <hidden from users> ",
+			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> ",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <hidden from users> ",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> ",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> ",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Recuitment Center]> <hidden from users> ",
 			//Atomic-Info
-			"Free [Modern Conscript] appears <after discovering [Ballistics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Recuitment Center]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <hidden from users> ",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> ",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> ",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Recuitment Center]> <hidden from users> ",
 			"Destroyed when the city is captured"
 		]
 	},
@@ -919,6 +922,7 @@
 		"food": 1,
 		"uniques": [
 			"'Agricultural Building'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"[+1 Food] from [Fruit] tiles [in this city]",
 			"[+1 Food] from [Grain] tiles [in this city]",
 			"[+1 Food] from [Tuber] tiles [in this city]"
@@ -945,10 +949,9 @@
 	},
 	{
 		"name": "Animal Pen",
-		"uniqueTo": "Euroasian Nomads",
-		"replaces": "Granary",
 		"food": 2,
 		"uniques": [
+			"Only available <if [Nomadic Culture] is constructed>",
 			"[+1 Food] from [Caprinae] tiles [in this city]",
 			"[+1 Food] from [Bovine] tiles [in this city]",
 			"[+1 Food] from [Wild Animals] tiles [in this city]"
@@ -961,7 +964,8 @@
 		"happiness": 1,
 		"gold": 2,
 		"uniques": [
-			"'Light Industry'"
+			"'Light Industry'",
+			"Unavailable <if [Nomadic Culture] is constructed>"
 		],
 		"requiredNearbyImprovedResources": [
 			"Tuber",
@@ -972,12 +976,12 @@
 	},
 	{
 		"name": "Smokery",
-		"uniqueTo": "Euroasian Nomads",
-		"replaces": "Bakery",
 		"happiness": 2,
 		"gold": 3,
 		"food": 3,
 		"uniques": [
+			"'Light Industry'",
+			"Only available <if [Nomadic Culture] is constructed>",
 			"Consumes [1] [Sheep Horde]",
 			"Consumes [1] [Cattle Horde]"
 		],
@@ -6826,6 +6830,23 @@
 		"requiredTech": "Calendar"
 	},
 	{
+		"name": "Stone Totem",
+		"uniqueTo": "Euroasian Nomads",
+		"replaces": "Shrine",
+		"cost": 20,
+		"faith": 1,
+		"culture": 1,
+		"uniques": [
+			"'Worship Place'",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
+			"Each city founded increases culture cost of policies [-3]% less than normal",
+			"Only available <after adopting [Polytheism]>",
+			"Only available <when religion is enabled>",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Calendar"
+	},
+	{
 		"name": "Shaman's Hut",
 		"culture": 1,
 		"happiness": 1,
@@ -6903,10 +6924,10 @@
 		"replaces": "Chapel",
 		"cost": 20,
 		"faith": 2,
-		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
+			"[+33]% Production when constructing ['Culture Building'] buildings [in this city] <before the [Medieval era]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -7806,6 +7827,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"[-33]% [Science] [in all cities]",
+			
 			"[-100]% growth [in all cities] <in cities with at least [10] [Population]>",
 			
 			"[-15]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [High Culture Diversity] is constructed>",
@@ -7820,7 +7842,6 @@
 			"[-33]% unhappiness from the number of cities <if [Low Culture Diversity] is constructed>",
 			"[-50]% unhappiness from the number of cities <if [Medium Culture Diversity] is constructed>",
 			"[-66]% unhappiness from the number of cities <if [High Culture Diversity] is constructed>",
-			
 			"[-100]% maintenance cost for [Export [Food]] buildings [in all cities]",
 			"[-100]% maintenance cost for [Export [Production]] buildings [in all cities]",
 			"[+33]% [Horse] resource production",
@@ -8209,6 +8230,7 @@
 			"Provides [15] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintenance]",
+			"[-33]% Strength for cities",
 			"Comment [Unique Ability: The Horde's Resilience]",
 			"Comment [You can consume [Influence] to gain [Primal Herder]s, buy [Science] or give bonuses to [Camp].]",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -8227,6 +8249,7 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintenance]",
 			"Provides [2] [Noble Army Maintenance]",
+			"[-33]% Strength for cities",
 			"Comment [Unique Ability: The Horde's Unity]",
 			"Comment [You can consume [Influence] to gain [Khan]s, give bonuses to offset the building speed debuff or gain [Settlement Process].]",
 			"Moves to new capital when capital changes <hidden from users>"
