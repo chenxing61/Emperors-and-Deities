@@ -449,7 +449,7 @@
 		"uniques": [
 			"Generated on every [5] tiles <in [{Featureless} {Coast}] tiles>",
 			"Generated on every [7] tiles <in [Lakes] tiles>",
-			"Generated on every [3] tiles <in [Atoll] tiles>"
+			"Generated on every [8] tiles <in [Atoll] tiles>"
 		]
 	},
 	{
@@ -497,6 +497,25 @@
 			"Generated on every [25] tiles <in [{Featureless} {Ocean}] tiles>",
 			"Generated on every [25] tiles <in [{Featureless} {Desert}] tiles>",
 			"Generated on every [25] tiles <in [{Featureless} {Tundra}] tiles>"
+		]
+	},
+	{
+		"name": "Guano",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Atoll"
+		],
+		"production": 2,
+		"gold":2,
+		"science":1,
+		"revealedBy": "Chemistry",
+		"improvedBy": [
+			"Coast Fishing Boats",
+			"Deep Sea Fishing Boats"
+		],
+		"uniques": [
+			"'Chemicals'",
+			"Generated on every [8] tiles <in [Atoll] tiles>"
 		]
 	},
 	{
