@@ -411,7 +411,7 @@
             {
                 "text": "Changing Civilization Form",
                 "uniques": [
-                    "Only available <when number of [Influence] is more than [Influence Limit]> <when number of [Forced Shift In Politic Chance] is more than [0]> <hidden from users>",
+                    "Only available <when number of [Influence] is more than [Influence Limit]> <when number of [Forced Shift In Politic Chance] is more than [0]> <if [Nomadic Culture] is not constructed> <hidden from users>",
                     "Play [policy] sound <hidden from users>",
                     "Comment [If your [Influence] is somehow above normal limit. You can trigger this.]",
                     "Comment [We can force the shift in politic to stop our civilization from a undesireable route...]",
@@ -585,13 +585,6 @@
                 ]
             },
             {
-                "text": "No significant changes",
-                "uniques": [
-                    "Comment [We are still a bunch of tribes prone to infighting and invasion, but what we do have is countless oppotunities.]",
-                    "Only available <if [Nomadic Tribes] is constructed>"
-                ]
-            },
-            {
                 "text": "Qin has collapsed!",
                 "uniques": [
                     "Only available <if [Great Qin] is constructed>",
@@ -619,14 +612,6 @@
                 ]
             },
             {
-                "text": "We are able to unify ourselves!",
-                "uniques": [
-                    "Only available <if [Unified] is not constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <if [Nomadic Tribes] is constructed> <starting from the [Classical era]>",
-                    "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
-                    "Gain a free [Unified Nomads] [in capital] <hidden from users>"
-                ]
-            },
-            {
                 "text": "The empire of the past crumbles...",
                 "uniques": [
                     "Comment [Our unification cannot last onto another stage of the world. Maybe its ultimately for the better, as it was stale.]",
@@ -643,15 +628,6 @@
                     "Gain a free [Republics] [in capital] <during the [Atomic era]> <hidden from users>",
                     "Gain a free [Republics] [in capital] <during the [Information era]> <hidden from users>",
                     "Gain a free [Republics] [in capital] <during the [Future era]> <hidden from users>"
-                ]
-            },
-            {
-                "text": "The empire of the past crumbles...",
-                "uniques": [
-                    "Comment [Our unification cannot last onto another stage of the world. Maybe its ultimately for the better, as it was stale.]",
-                    "Only available <if [Unified] is constructed> <if [Unified Nomads] is constructed>",
-                    "Remove ['United'] [in all cities] <hidden from users>",
-                    "Gain a free [Nomadic Tribes] [in capital] <hidden from users>"
                 ]
             },
             {
@@ -716,7 +692,7 @@
             {
                 "text": "Our way of life must be protected.",
                 "uniques": [
-                    "Instantly consumes [20] [Influence]",
+                    "Instantly consumes [30] [Influence]",
                     "Comment [Keep your current special civilization form]",
                     "Only available <if ['Ideology Form'] is constructed> <if [Unified] is not constructed> <starting from the [Modern era]>"
                 ]
@@ -2035,6 +2011,47 @@
                     "[-1] population in a random city",
                     "[+10]% [Happiness] [in all cities] <for [10] turns>",
                     "Gain [50] [Culture] <(modified by game speed)>"
+                ]
+            }
+        ]
+    },
+    ///Euroasian Nomads
+    {
+        "name": "Emergence of Nations",
+        "text": "As a new era arrives, a new culture emerges from the steppes.",
+        "choices": [
+            {
+                "text": "The Scythians Emerges",
+                "uniques": [
+                    "Only available <during the [Classical era]> <when number of [Influence] is more than [[Influence Limit]*0.75]>",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain a free [Scythian Influence] [in capital]",
+                    "Gain a free [Unified Nomads] [in capital]"
+                ]
+            },
+            {
+                "text": "The Huns Emerges",
+                "uniques": [
+                    "Only available <during the [Medieval era]> <when number of [Influence] is more than [[Influence Limit]*0.75]>",
+                    "Instantly consumes [20] [Influence]",
+                    "Gain a free [Huns Influence] [in capital]",
+                    "Gain a free [Unified Nomads] [in capital]"
+                ]
+            },
+            {
+                "text": "The Xiong Nu Emerges",
+                "uniques": [
+                    "Only available <during the [Medieval era]> <when number of [Influence] is more than [[Influence Limit]*0.75]>",
+                    "Instantly consumes [20] [Influence]",
+                    "Gain a free [Xiong Nu Influence] [in capital]",
+                    "Gain a free [Unified Nomads] [in capital]"
+                ]
+            },
+            {
+                "text": "Not yet...",
+                "uniques": [
+                    "Gain [100] [Gold] <(modified by game speed)>",
+                    "Gain a free [Nomadic Tribes] [in capital]"
                 ]
             }
         ]
