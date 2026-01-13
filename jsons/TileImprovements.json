@@ -272,6 +272,31 @@
 		"shortcutKey": "P"
 	},
 	{
+		"name": "Herding Tents",
+		"uniqueTo": "Euroasian Nomads",
+		"replaces": "Pasture",
+		"terrainsCanBeBuiltOn": [
+			"Hill",
+			"Oasis",
+			"Grassland",
+			"Tundra",
+			"Plains"
+		],
+		"turnsToBuild": 4,
+		"techRequired": "Animal Husbandry",
+		"uniques": [
+			"'Agricultural Improvement'",
+			"Tile provides yield without assigned population",
+			"Provides [1] [Cattle Horde] <in [Bovine] tiles>",
+			"Provides [1] [Sheep Horde] <in [Caprinae] tiles>",
+			"[+1 Food] <after discovering [Horseback Riding]>",
+			"[+1 Food] <after discovering [Refrigeration]>",
+			"[+3 Culture] <after discovering [Ecology]>",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "P"
+	},
+	{
 		"name": "Mechanised Livestock Farm",
 		"terrainsCanBeBuiltOn": [
 			"Hill",
@@ -376,6 +401,7 @@
 		"uniques": [
 			"'Water Improvement'",
 			"[+1 Food] <after discovering [Refrigeration]>",
+			"Provides [1] [Industrial Chemicals] <in [Guano] tiles>",
 			"Pillaging this improvement yields approximately [+10 Gold]"
 		],
 		"shortcutKey": "F"
@@ -389,6 +415,7 @@
 		"uniques": [
 			"'Water Improvement'",
 			"Provides [2] [Deep Sea Fish(Stored)]",
+			"Provides [1] [Industrial Chemicals] <in [Guano] tiles>",
 			"Can only be built to improve a resource",
 			"Pillaging this improvement yields approximately [+10 Gold]"
 		],

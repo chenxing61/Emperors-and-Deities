@@ -80,58 +80,82 @@
 		"uniques": [
 			"Unsellable",
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Unbuildable <if [Levies Disbandment] is constructed> <hidden from users>",
 			"Only available <in [Non-occupied] cities> <in cities with at least [5] [Population]>",
 			"Play [policy] sound <hidden from users>",
-			"[-1 Happiness] [in this city] <before adopting [Militia Army]>",
-			"[-1 Happiness] [in this city] <before adopting [Military Tradition]>",
-			"[-8]% [Gold] [in this city] <if [Militristic Economy] is not constructed>",
-			"[-8]% [Food] [in this city] <if [Militristic Economy] is not constructed>",
-			"[-8]% [Production] [in this city] <if [Militristic Economy] is not constructed>",
-			"Comment [Spawns free 'Levy Army' units to help with warfare.]",
+			//Debuff
+			"[-1 Happiness] [in this city] <before adopting [Militia Army]> <for [Human player] Civilizations>",
+			"[-1 Happiness] [in this city] <before adopting [Military Tradition]> <for [Human player] Civilizations>",
+			"[-8]% [Gold] [in this city] <if [Militristic Economy] is not constructed> <for [Human player] Civilizations>",
+			"[-8]% [Food] [in this city] <if [Militristic Economy] is not constructed> <for [Human player] Civilizations>",
+			"[-8]% [Production] [in this city] <if [Militristic Economy] is not constructed> <for [Human player] Civilizations>",
+			//Tooltips
+			"Comment [Spawns free [The Levied Army] units to help with warfare.]",
 			"Comment [The number and type of unit spawned depends on the 'Military Building' in the city and your technological, cultural advancement.]",
-			"Free [Primal Warrior] appears <before discovering [Mining]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Brute Warrior] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [non-[Europa]] Civilizations> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Warband] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [Europa] Civilizations> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Javalineer] appears <after discovering [Mining]> <before discovering [Tactics]> <for [non-[North Africa]] Civilizations> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Nubian Archer] appears <after discovering [Mining]> <before discovering [Tactics]> <for [North Africa] Civilizations> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Levy Archer] appears <after discovering [Tactics]> <before discovering [Hand Cannon]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Levy Crossbowman] appears <after discovering [Hand Cannon]> <before discovering [Rifling]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <in cities with a [Armory]>  <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Gun Boat] appears <after discovering [Machinery]> <in [Coastal] cities> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Gun Boat] appears <after discovering [Machinery]> <in cities with a [Armory]> <in [Coastal] cities> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Guerrilla] appears <after discovering [Rifling]> <before adopting [Militia Army]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Guerrilla] appears <after discovering [Rifling]> <before adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Recuitment Center]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Ballistics]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> <if [Levies Disbandment] is not constructed>",
-			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Recuitment Center]> <hidden from users> <if [Levies Disbandment] is not constructed>",
+			//Neolitic-Ancient
+			"Free [Primal Warrior] appears <before discovering [Mining]> <hidden from users> ",
+			"Free [Brute Warrior] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [non-[Europa]] Civilizations> <hidden from users> ",
+			"Free [Warband] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [Europa] Civilizations> <hidden from users> ",
+			"Free [Javalineer] appears <after discovering [Mining]> <before discovering [Tactics]> <for [non-[North Africa]] Civilizations> <hidden from users> ",
+			"Free [Nubian Archer] appears <after discovering [Mining]> <before discovering [Tactics]> <for [North Africa] Civilizations> <hidden from users> ",
+			//Classic-Medieval
+			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <hidden from users>  <if [Nomadic Culture] is not constructed>",
+			"Free [Spearman] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <in cities with a [Armory]> <hidden from users>  <if [Nomadic Culture] is not constructed>",
+			"Free [Nomad Warriors] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <hidden from users>  <if [Nomadic Culture] is constructed>",
+			"Free [Nomad Warriors] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <in cities with a [Armory]> <hidden from users>  <if [Nomadic Culture] is constructed>",
+			"Free [Levy Archer] appears <after discovering [Tactics]> <before discovering [Hand Cannon]> <hidden from users> ",
+			//Renaissance-Imperial
+			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <hidden from users> ",
+			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <in cities with a [Armory]> <hidden from users> ",
+			"Free [Levy Crossbowman] appears <after discovering [Hand Cannon]> <before discovering [Rifling]> <hidden from users> ",
+			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <hidden from users> ",
+			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <in cities with a [Armory]>  <hidden from users> ",
+			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <in cities with a [Mobilization Department]> <hidden from users> ",
+			"Free [Gun Boat] appears <after discovering [Machinery]> <in [Coastal] cities> <hidden from users> ",
+			"Free [Gun Boat] appears <after discovering [Machinery]> <in cities with a [Armory]> <in [Coastal] cities> <hidden from users> ",
+			"Free [Guerrilla] appears <after discovering [Rifling]> <before adopting [Militia Army]> <hidden from users> ",
+			"Free [Guerrilla] appears <after discovering [Rifling]> <before adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> ",
+			//Industrial-Modern
+			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <hidden from users> ",
+			"Free [Modern Guerrilla] appears <after discovering [Rifling]> <after adopting [Militia Army]> <in cities with a [Mobilization Department]> <hidden from users> ",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <hidden from users> ",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> ",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> ",
+			"Free [Rifleman] appears <after discovering [Rifling]> <before discovering [Ballistics]> <in cities with a [Recuitment Center]> <hidden from users> ",
+			//Atomic-Info
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <hidden from users> ",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Armory]> <hidden from users> ",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Mobilization Department]> <hidden from users> ",
+			"Free [Modern Conscript] appears <after discovering [Ballistics]> <in cities with a [Recuitment Center]> <hidden from users> ",
 			"Destroyed when the city is captured"
 		]
+	},
+	{
+		"name": "Migrate Capital",
+		"cost": 50,
+		"uniques": [
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Only available <in [non-[Capital]] cities> <in cities connected to the capital>",
+			"[-100]% production cost <if [Nomadic Culture] is constructed>",
+			"Remove [Palace] [in all cities]",
+			"Gain a free [Palace] [in this city]"
+		],
+		"requiredTech": "Horse Collar",
+		"hurryCostModifier": 100
 	},
 	{
 		"name": "Resettlement",
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Unbuildable <in cities with at least [10] [Population]> <if [Nomadic Culture] is constructed>",
 			"Only available <in cities connected to the capital> <when above [0] [Migrating Population]>",
 			"[+1] population [in this city]",
 			"Instantly consumes [1] [Migrating Population]",
 			"Remove [Resettlement] [in this city] <hidden from users>",
 			"Comment [Each [Migrating Population] costs 2 [Happiness] to maintain if you dont resettle them immediately in a single turn.]"
 		],
-		"requiredTech": "Horse Collar"
+		"requiredTech": "Fire Making"
 	},
 	{
 		"name": "Migration",
@@ -139,6 +163,7 @@
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available <in cities connected to the capital> <in cities with at least [5] [Population]> <when number of [Migrating Population] is between [0] and [Migration Limit]>",
+			"[-100]% production cost <if [Nomadic Culture] is constructed>",
 			"[-1] population [in this city]",
 			"Instantly consumes [2] [Influence]",
 			"Instantly provides [1] [Migrating Population]",
@@ -153,6 +178,7 @@
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Unbuildable <in cities with at least [10] [Population]> <if [Nomadic Culture] is constructed>",
 			"Only available <in cities connected to the capital> <when above [4] [Migrating Population]>",
 			"[+5] population [in this city]",
 			"Instantly consumes [5] [Migrating Population]",
@@ -166,7 +192,8 @@
 		"cost": 50,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
-			"Only available  <in cities connected to the capital> <in cities with at least [10] [Population]> <when number of [Migrating Population] is between [0] and [Migration Limit]>",
+			"Only available <in cities connected to the capital> <in cities with at least [10] [Population]> <when number of [Migrating Population] is between [0] and [Migration Limit]>",
+			"[-100]% production cost <if [Nomadic Culture] is constructed>",
 			"[-5] population [in this city]",
 			"Instantly consumes [10] [Influence]",
 			"Instantly provides [5] [Migrating Population]",
@@ -248,7 +275,7 @@
 			"'Trade Action'",
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Unavailable <in cities with a [Import [Production]]> <hidden from users>",
-			"Only available <in cities connected to the capital> <when above [20] [Production]>",
+			"Only available <in cities connected to the capital> <when above [25] [Production]>",
 			"Remove [Export [Production]] [in this city] <hidden from users> <if [Strife] is constructed>",
 			"Remove [Export [Production]] [in this city] <hidden from users> <if [Anarchy] is constructed>",
 			"Provides [1] [Production Export Route]",
@@ -775,7 +802,7 @@
 		"name": "Ashoka Pillar",
 		"uniqueTo": "South Asia",
 		"cost": 30,
-		"culture": 2,
+		"culture": 1,
 		"uniques": [
 			"Gain a free [Monument] [in this city]",
 			"[-1]% Culture cost of natural border growth [in all cities]",
@@ -804,6 +831,7 @@
 		"food": 2,
 		"uniques": [
 			"'Agricultural Building'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Must not be on [River]"
 		],
 		"requiredTech": "Agriculture"
@@ -824,9 +852,10 @@
 		"name": "Stepwell",
 		"uniqueTo": "South Asia",
 		"replaces": "Well",
-		"food": 2,
+		"food": 1,
 		"uniques": [
-			"'Agricultural Building'"
+			"'Agricultural Building'",
+			"[+1 Faith] <starting from the [Medieval era]>"
 		],
 		"requiredTech": "Agriculture"
 	},
@@ -893,6 +922,7 @@
 		"food": 1,
 		"uniques": [
 			"'Agricultural Building'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"[+1 Food] from [Fruit] tiles [in this city]",
 			"[+1 Food] from [Grain] tiles [in this city]",
 			"[+1 Food] from [Tuber] tiles [in this city]"
@@ -918,15 +948,42 @@
 		"hurryCostModifier": 5
 	},
 	{
+		"name": "Animal Pen",
+		"food": 2,
+		"uniques": [
+			"Only available <if [Nomadic Culture] is constructed>",
+			"[+1 Food] from [Caprinae] tiles [in this city]",
+			"[+1 Food] from [Bovine] tiles [in this city]",
+			"[+1 Food] from [Wild Animals] tiles [in this city]"
+		],
+		"requiredTech": "Pottery",
+		"hurryCostModifier": 5
+	},
+	{
 		"name": "Bakery",
 		"happiness": 1,
 		"gold": 2,
 		"uniques": [
-			"'Light Industry'"
+			"'Light Industry'",
+			"Unavailable <if [Nomadic Culture] is constructed>"
 		],
 		"requiredNearbyImprovedResources": [
 			"Tuber",
 			"Grain"
+		],
+		"requiredTech": "Pottery",
+		"hurryCostModifier": 5
+	},
+	{
+		"name": "Smokery",
+		"happiness": 2,
+		"gold": 3,
+		"food": 3,
+		"uniques": [
+			"'Light Industry'",
+			"Only available <if [Nomadic Culture] is constructed>",
+			"Consumes [1] [Sheep Horde]",
+			"Consumes [1] [Cattle Horde]"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -942,6 +999,7 @@
 			"Provides [1] [Alcohol] <with [Grape]>",
 			"Provides [1] [Alcohol] <with [Sugar]> <after discovering [Chemistry]>",
 			"Provides [1] [Alcohol] <with [Tuber]> <after discovering [Chemistry]>",
+			"Provides [1] [Alcohol] <with [Horse]> <for [Euroasian Nomads] Civilizations>",
 			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
 		],
 		"requiredTech": "Pottery",
@@ -1028,6 +1086,7 @@
 		"production": 2,
 		"uniques": [
 			"'Agricultural Building'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Must be on [River]"
 		],
 		"requiredTech": "The Wheel"
@@ -1182,6 +1241,7 @@
 		"uniques": [
 			"'Organise Place'",
 			"[+1 Food] from [Pasture] tiles [in this city]",
+			"[+1 Food] from [Herding Tents] tiles [in this city]",
 			"[+1 Food] from [Mechanised Livestock Farm] tiles [in this city]",
 			"[+15]% Production when constructing ['Mounted'] units [in all cities]",
 			"Only available <after adopting [God of the Open Sky]>",
@@ -2015,6 +2075,25 @@
 		],
 		"requiredTech": "Drama and Poetry"
 	},
+	{
+		"name": "Master Ovoo",
+		"uniqueTo": "Euroasian Nomads",
+		"replaces": "National Epic",
+		"maintenance": 3,
+		"isNationalWonder": true,
+		"faith": 5,
+		"specialistSlots": {
+			"Artist": 2
+		},
+		"uniques": [
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"[+15]% Great Person generation [in this city]",
+			"[-25]% Culture cost of natural border growth [in all cities]",
+			"Gain a free [Monument] [in all cities]",
+			"Cost increases by [10] per owned city"
+		],
+		"requiredTech": "Drama and Poetry"
+	},
 	//Line 6
 	{
 		"name": "Dry Dock",
@@ -2124,8 +2203,7 @@
 	//Line 7
 	{
 		"name": "Lighthouse",
-		"maintenance": 2,
-		"production": 1,
+		"maintenance": 3,
 		"happiness": 1,
 		"uniques": [
 			"'Marine Infrastructure'",
@@ -2194,6 +2272,7 @@
 		"cityHealth": 15,
 		"uniques": [
 			"'Static Defense'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Walls",
@@ -2241,6 +2320,7 @@
 		},
 		"uniques": [
 			"'Agricultural Building'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Must not be on [Hill]"
 		],
 		"requiredTech": "Construction"
@@ -3216,6 +3296,7 @@
 		"cityHealth": 20,
 		"uniques": [
 			"'Static Defense'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Watch Tower",
@@ -3915,6 +3996,7 @@
 		},
 		"uniques": [
 			"'Static Defense'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Monocular"
@@ -3931,6 +4013,7 @@
 		},
 		"uniques": [
 			"'Agricultural Building'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"[+1]% Production when constructing ['Agricultural Building'] buildings [in all cities]"
 		],
 		"requiredTech": "Machinery"
@@ -4072,6 +4155,7 @@
 		},
 		"uniques": [
 			"'Static Defense'",
+			"Unavailable <if [Nomadic Culture] is constructed>",
 			"Must be next to [Coast]"
 		],
 		"requiredTech": "Carriage"
@@ -6584,18 +6668,20 @@
 			"[+25]% Production when constructing [All] buildings [in this city]",
 			"[+25]% Production when constructing [Civilian] units [in this city]",
 			"[+25]% Production when constructing [Civil Ship] units [in this city]",
-			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Gain a free [Neolithic Era Start] [in capital] <for [1] turns> <if starting in the [Neolithic era]> <hidden from users>",
-			"Gain a free [Ancient Era Start] [in capital] <for [1] turns> <if starting in the [Ancient era]> <hidden from users>",
-			"Gain a free [Classical Era Start] [in capital] <for [1] turns> <if starting in the [Classical era]> <hidden from users>",
-			"Gain a free [Medieval Era Start] [in capital] <for [1] turns> <if starting in the [Medieval era]> <hidden from users>",
-			"Gain a free [Renaissance Era Start] [in capital] <for [1] turns> <if starting in the [Renaissance era]> <hidden from users>",
-			"Gain a free [Imperial Era Start] [in capital] <for [1] turns> <if starting in the [Imperial era]> <hidden from users>",
-			"Gain a free [Industrial Era Start] [in capital] <for [1] turns> <if starting in the [Industrial era]> <hidden from users>",
-			"Gain a free [Modern Era Start] [in capital] <for [1] turns> <if starting in the [Modern era]> <hidden from users>",
-			"Gain a free [Atomic Era Start] [in capital] <for [1] turns> <if starting in the [Atomic era]> <hidden from users>",
-			"Gain a free [Information Era Start] [in capital] <for [1] turns> <if starting in the [Information era]> <hidden from users>",
-			"Gain a free [Future Era Start] [in capital] <for [1] turns> <if starting in the [Future era]> <hidden from users>",
+			///Initialization
+			"Gain a free [Nomadic Culture] [in capital] <for [1] turns> <for [Euroasian Nomads] Civilizations> <when number of [Cities] is less than [2]> <hidden from users>",
+			"Gain a free [Neolithic Era Start] [in capital] <for [1] turns> <if starting in the [Neolithic era]> <when number of [Cities] is less than [2]> <hidden from users>",
+			"Gain a free [Ancient Era Start] [in capital] <for [1] turns> <if starting in the [Ancient era]> <when number of [Cities] is less than [2]> <hidden from users>",
+			"Gain a free [Classical Era Start] [in capital] <for [1] turns> <if starting in the [Classical era]> <when number of [Cities] is less than [2]> <hidden from users>",
+			"Gain a free [Medieval Era Start] [in capital] <for [1] turns> <if starting in the [Medieval era]> <when number of [Cities] is less than [2]> <hidden from users>",
+			"Gain a free [Renaissance Era Start] [in capital] <for [1] turns> <if starting in the [Renaissance era]> <when number of [Cities] is less than [2]> <hidden from users>",
+			"Gain a free [Imperial Era Start] [in capital] <for [1] turns> <if starting in the [Imperial era]> <when number of [Cities] is less than [2]> <hidden from users>",
+			"Gain a free [Industrial Era Start] [in capital] <for [1] turns> <if starting in the [Industrial era]> <when number of [Cities] is less than [2]> <hidden from users>",
+			"Gain a free [Modern Era Start] [in capital] <for [1] turns> <if starting in the [Modern era]> <when number of [Cities] is less than [2]> <hidden from users>",
+			"Gain a free [Atomic Era Start] [in capital] <for [1] turns> <if starting in the [Atomic era]> <when number of [Cities] is less than [2]> <hidden from users>",
+			"Gain a free [Information Era Start] [in capital] <for [1] turns> <if starting in the [Information era]> <when number of [Cities] is less than [2]> <hidden from users>",
+			"Gain a free [Future Era Start] [in capital] <for [1] turns> <if starting in the [Future era]> <when number of [Cities] is less than [2]> <hidden from users>",
+			///Influence Calculation
 			"Consumes [1] [Influence] <when below [500] [Happiness]> <starting from the [Future era]>",
 			"Consumes [1] [Influence] <when below [200] [Happiness]> <starting from the [Information era]>",
 			"Consumes [1] [Influence] <when below [100] [Happiness]> <starting from the [Atomic era]>",
@@ -6614,10 +6700,12 @@
 			"Provides [1] [Influence] <when above [9] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [1] [Influence] <when above [29] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]>",
+			///Stuff
 			"Provides [10] [Migration Limit]",
+			"Indicates the capital city",
 			//Tutorial
-			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]> <hidden from users>",
-			"Indicates the capital city"
+			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]> <hidden from users>"
+			
 		]
 	},
 	{
@@ -6741,6 +6829,23 @@
 		"requiredTech": "Calendar"
 	},
 	{
+		"name": "Stone Totem",
+		"uniqueTo": "Euroasian Nomads",
+		"replaces": "Shrine",
+		"cost": 20,
+		"faith": 1,
+		"culture": 1,
+		"uniques": [
+			"'Worship Place'",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
+			"Each city founded increases culture cost of policies [-3]% less than normal",
+			"Only available <after adopting [Polytheism]>",
+			"Only available <when religion is enabled>",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Calendar"
+	},
+	{
 		"name": "Shaman's Hut",
 		"culture": 1,
 		"happiness": 1,
@@ -6818,10 +6923,10 @@
 		"replaces": "Chapel",
 		"cost": 20,
 		"faith": 2,
-		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
+			"[+33]% Production when constructing ['Cultural Building'] buildings [in this city] <before the [Medieval era]>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <when religion is enabled>",
 			"Destroyed when the city is captured"
@@ -7523,7 +7628,6 @@
 			"'Outcome'",
 			"Provides [1] [Standing Army Maintenance]",
 			"[-25]% [Culture] [in all cities] <for [15] turns>",
-			"[-10]% [Gold] [in all cities] <for [15] turns>",
 			"[-10]% Strength <for ['Noble Army'] units>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -7678,7 +7782,10 @@
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"[+5]% [Culture] [in all cities]",
+			"'Culture Diversity State'",
+			"Remove [{non-[High Culture Diversity]} {'Culture Diversity State'}] [in all cities] <hidden from users>",
+			"[+3]% [Science] [in all cities]",
+			"[+3]% [Culture] [in all cities]",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7689,6 +7796,9 @@
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
+			"'Culture Diversity State'",
+			"Remove [{non-[Medium Culture Diversity]} {'Culture Diversity State'}] [in all cities] <hidden from users>",
+			"[+3]% [Happiness] [in all cities]",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7699,8 +7809,43 @@
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"[-5]% [Culture] [in all cities]",
+			"'Culture Diversity State'",
+			"Remove [{non-[Low Culture Diversity]} {'Culture Diversity State'}] [in all cities] <hidden from users>",
+			"[+8]% [Happiness] [in all cities]",
+			"[-3]% [Culture] [in all cities]",
+			"[-3]% [Science] [in all cities]",
 			"Limited to [1] per Civilization <hidden from users>",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Nomadic Culture",
+		"cost": 0,
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"[-33]% [Science] [in all cities]",
+			
+			"[-100]% growth [in all cities] <in cities with at least [10] [Population]>",
+			
+			"[-15]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [High Culture Diversity] is constructed>",
+			"[-33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Medium Culture Diversity] is constructed>",
+			"[-66]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Low Culture Diversity] is constructed>",
+
+			"Upon capturing a city, receive [1] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is constructed>",
+			"Upon capturing a city, receive [2] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is not constructed>",
+			"Earn [25]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is not constructed>",
+			"Earn [50]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is constructed>",
+
+			"[-50]% unhappiness from the number of cities <if [Low Culture Diversity] is constructed>",
+			"[-67]% unhappiness from the number of cities <if [Medium Culture Diversity] is constructed>",
+			"[-100]% unhappiness from the number of cities <if [High Culture Diversity] is constructed>",
+			"[-100]% maintenance cost for [Export [Food]] buildings [in all cities]",
+			"[-100]% maintenance cost for [Export [Production]] buildings [in all cities]",
+			"[+33]% [Horse] resource production",
+			"Triggers a [Settle Down] event <when number of [Settlement Process] is more than [([Cities]*5)+[20]]> <upon turn start>",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Destroyed when the city is captured",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
@@ -7802,6 +7947,7 @@
 			"Enables Research agreements",
 			"Enables Open Borders agreements",
 			"Enables Defensive Pacts",
+			"Instantly provides [1] [State Reform Chance] <hidden from users>",
 			"Empire enters golden age <if [Mausoleum of the Unifier] is constructed>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -8004,6 +8150,20 @@
 		]
 	},
 	{
+		"name": "Slavic Influence",
+		"uniqueTo": "Europa",
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [Conquerors of the Wild]",
+			"[-33]% Gold cost of acquiring tiles [in all cities]",
+			"[+1 Culture] from every ['Lumber Improvement']",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
 		"name": "Earliest Empire",
 		"uniqueTo": "Central and West Asia",
 		"replaces": "Tribal Union",
@@ -8065,10 +8225,80 @@
 			"'Civilization Form'",
 			"'Divided'",
 			"Remove [{non-[Nomadic Tribes]} {'Civilization Form'}] [in all cities] <hidden from users>",
-			"Provides [10] [Influence Limit]",
+			"Provides [15] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [2] [Standing Army Maintenance]",
-			"[-10]% Culture cost of adopting new Policies",
+			"[-33]% Strength for cities",
+			"Comment [Unique Ability: The Horde's Resilience]",
+			"Comment [You can consume [Influence] to gain [Primal Herder]s, buy [Science] or give bonuses to [Camp].]",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Scythian Influence",
+		"uniqueTo": "Euroasian Nomads",
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [The Legend of Tomyris]",
+			"Free [Nomad Horde] appears",
+			"[Nomadic Settler] units gain the [Cart] promotion",
+			"[+3] Strength <vs [Close Combat] units>",
+			"Remove [Scythian Influence] [in this city] <upon entering a new era>",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Huns Influence",
+		"uniqueTo": "Euroasian Nomads",
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [Scourge of God]",
+			"Free [Great Khan] appears",
+			"[+33]% Yield from pillaging tiles",
+			"[+33]% Health from pillaging tiles",
+			"[+33]% Strength <vs cities>",
+			"Remove [Huns Influence] [in this city] <upon entering a new era>",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Xiong Nu Influence",
+		"uniqueTo": "Euroasian Nomads",
+		"uniques": [
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Outcome'",
+			"Comment [Unique Name:]",
+			"Comment [The Siege of Bai Deng]",
+			"Provides [1] [Settlement Process] <if [Nomadic Culture] is constructed>",
+			"[+2 Science] from all ['Political Building'] buildings",
+			"[+3] Strength <vs [Ranged Combat] units>",
+			"Remove [Xiong Nu Influence] [in this city] <upon entering a new era>",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Unified Nomads",
+		"uniques": [
+			"Limited to [1] per Civilization <hidden from users>",
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Remove [{non-[Unified Nomads]} {'Civilization Form'}] [in all cities] <hidden from users>",
+			"Provides [30] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [3] [Standing Army Maintenance]",
+			"Provides [2] [Noble Army Maintenance]",
+			"[-33]% Strength for cities",
+			"Comment [Unique Ability: The Horde's Unity]",
+			"Comment [You can consume [Influence] to gain [Khan]s, give bonuses to offset the building speed debuff or gain [Settlement Process].]",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
@@ -8107,7 +8337,7 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintenance]",
 			"Comment [Unique Name:]",
-			"Comment [Pioneer of Wisdoms]",
+			"Comment [Pioneers of Wisdoms]",
 			"[Gold] cost of purchasing items in cities [-15]%",
 			"Gain a free [Cultural Exchange] [in this city]",
 			"Free [Hoplite] appears",
@@ -8592,7 +8822,7 @@
 			"New [Military] units start with [15] XP [in all cities]",
 			"Comment [Gain access to [Cavalry of the Dominator] unit.]",
 			"Comment [If nothing goes wrong, [Chu Dynasty] will develop [Fedualism] in East Asia upon entering Medieval era]",
-			"Adopt [Feudalism] <starting from the [Medieval era]>",
+			"Adopt [Feudalism] <upon entering the [Medieval era]>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -8617,7 +8847,7 @@
 			"Comment [Gain access to[Yu Lin Cavalry]and[Du Hu Protectorate].]",
 			"Gain a free [Du Hu Protectorate] [in puppeted cities]",
 			"Comment [If nothing goes wrong, [Han Dynasty] will develop [Meritocracy] in East Asia upon entering Medieval era]",
-			"Adopt [Meritocracy] <starting from the [Medieval era]>",
+			"Adopt [Meritocracy] <upon entering the [Medieval era]>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -8659,7 +8889,7 @@
 			"[+1 Culture] from all ['Political Building'] buildings",
 			"[+1 Faith] from all ['Political Building'] buildings",
 			"Comment [If nothing goes wrong, [Maurya Empire] will develop [Meritocracy] in South Asia upon entering Medieval era]",
-			"Adopt [Meritocracy] <starting from the [Medieval era]> <if [Buddhaism Influence] is not constructed>",
+			"Adopt [Meritocracy] <upon entering the [Medieval era]> <if [Buddhaism Influence] is not constructed>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -8983,11 +9213,13 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Instantly provides [5] [Influence]",
+			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
-			"Gain a free [Tribes] [in capital] <for [{non-[Central and West Asia]} {non-[North Africa]}] Civilizations> <for [1] turns>",
+			"Gain a free [Tribes] [in capital] <for [{non-[Central and West Asia]} {non-[North Africa]} {non-[Euroasian Nomads]}] Civilizations> <for [1] turns>",
 			"Gain a free [Early City States] [in capital] <for [Central and West Asia] Civilizations> <for [1] turns>",
 			"Gain a free [Egyptian Dynasties] [in capital] <for [North Africa] Civilizations> <for [1] turns>",
-			"Moves to new capital when capital changes <hidden from users>"
+			"Gain a free [Nomadic Tribes] [in capital] <for [Euroasian Nomads] Civilizations> <for [1] turns>",
+			"Destroyed when the city is captured"
 		]
 	},
 	{
@@ -8997,6 +9229,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Instantly provides [10] [Influence]",
+			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Greek City States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9004,7 +9237,8 @@
 			"Gain a free [Tribes] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Egyptian Dynasties] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Gain a free [City States] [in capital] <for [1] turns> <for [South Asia] Civilizations>",
-			"Moves to new capital when capital changes <hidden from users>"
+			"Gain a free [Nomadic Tribes] [in capital] <for [Euroasian Nomads] Civilizations> <for [1] turns>",
+			"Destroyed when the city is captured"
 		]
 	},
 	{
@@ -9014,6 +9248,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Instantly provides [15] [Influence]",
+			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Greek City States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Persian Dynasties] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9021,7 +9256,8 @@
 			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Successor States] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Gain a free [Maurya Empire] [in capital] <for [1] turns> <for [South Asia] Civilizations>",
-			"Moves to new capital when capital changes <hidden from users>"
+			"Gain a free [Nomadic Tribes] [in capital] <for [Euroasian Nomads] Civilizations> <for [1] turns>",
+			"Destroyed when the city is captured"
 		]
 	},
 	{
@@ -9031,6 +9267,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Instantly provides [20] [Influence]",
+			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [SPQR] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Persian Dynasties] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9038,7 +9275,8 @@
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [South Asia] Civilizations>",
-			"Moves to new capital when capital changes <hidden from users>"
+			"Gain a free [Nomadic Tribes] [in capital] <for [Euroasian Nomads] Civilizations> <for [1] turns>",
+			"Destroyed when the city is captured"
 		]
 	},
 	{
@@ -9048,6 +9286,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Instantly provides [25] [Influence]",
+			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Theocratic Empire] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9055,7 +9294,8 @@
 			"Gain a free [Empire of Electors] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [South Asia] Civilizations>",
-			"Moves to new capital when capital changes <hidden from users>"
+			"Gain a free [Nomadic Tribes] [in capital] <for [Euroasian Nomads] Civilizations> <for [1] turns>",
+			"Destroyed when the city is captured"
 		]
 	},
 	{
@@ -9065,6 +9305,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Instantly provides [30] [Influence]",
+			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Colonial Empires] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Theocratic Empire] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9072,7 +9313,8 @@
 			"Gain a free [Colonial Empires] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Colonial Empires] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [South Asia] Civilizations>",
-			"Moves to new capital when capital changes <hidden from users>"
+			"Gain a free [Kingdoms] [in capital] <for [Euroasian Nomads] Civilizations> <for [1] turns>",
+			"Destroyed when the city is captured"
 		]
 	},
 	{
@@ -9082,6 +9324,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Instantly provides [35] [Influence]",
+			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9089,9 +9332,10 @@
 			"Gain a free [Personal Union] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [South Asia] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [Euroasian Nomads] Civilizations> <for [1] turns>",
 			"Provides [1] [Fuel]",
 			"Provides [1] [Standing Army Maintenance]",
-			"Moves to new capital when capital changes <hidden from users>"
+			"Destroyed when the city is captured"
 		]
 	},
 	{
@@ -9101,6 +9345,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Instantly provides [40] [Influence]",
+			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9108,9 +9353,10 @@
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [South Asia] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [Euroasian Nomads] Civilizations> <for [1] turns>",
 			"Provides [2] [Fuel]",
 			"Provides [1] [Standing Army Maintenance]",
-			"Moves to new capital when capital changes <hidden from users>"
+			"Destroyed when the city is captured"
 		]
 	},
 	{
@@ -9120,6 +9366,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Instantly provides [40] [Influence]",
+			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9127,9 +9374,10 @@
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [South Asia] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [Euroasian Nomads] Civilizations> <for [1] turns>",
 			"Provides [2] [Fuel]",
 			"Provides [1] [Standing Army Maintenance]",
-			"Moves to new capital when capital changes <hidden from users>"
+			"Destroyed when the city is captured"
 		]
 	},
 	{
@@ -9139,6 +9387,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Instantly provides [40] [Influence]",
+			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9146,9 +9395,10 @@
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [North Africa] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [South Asia] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [Euroasian Nomads] Civilizations> <for [1] turns>",
 			"Provides [2] [Fuel]",
 			"Provides [1] [Standing Army Maintenance]",
-			"Moves to new capital when capital changes <hidden from users>"
+			"Destroyed when the city is captured"
 		]
 	},
 	{
@@ -9158,15 +9408,17 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Instantly provides [40] [Influence]",
+			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
 			"Gain a free [Socialist Republics] [in capital] <for [1] turns> <for [East Asia] Civilizations>",
 			"Gain a free [Federation] [in capital] <for [1] turns> <for [Europa] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [South Asia] Civilizations>",
+			"Gain a free [Republics] [in capital] <for [Euroasian Nomads] Civilizations> <for [1] turns>",
 			"Provides [5] [Fuel]",
 			"Provides [1] [Standing Army Maintenance]",
-			"Moves to new capital when capital changes <hidden from users>"
+			"Destroyed when the city is captured"
 		]
 	},
 	//Negatives

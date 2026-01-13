@@ -69,7 +69,8 @@
         "Triggers a [Disolution of Union] event <if [Socialist Republics] is constructed> <when below [20] [Happiness]> <hidden from users>",
         "Triggers a [Disolution of Union] event <if [Personal Union] is constructed> <when below [10] [Influence]> <hidden from users>",
 
-        "Triggers a [Shift in Politic] event <for [non-[City-States]] Civilizations> <upon entering a new era> <starting from the [Classical era]> <hidden from users>",
+        "Triggers a [Shift in Politic] event <if [Nomadic Culture] is not constructed> <for [non-[City-States]] Civilizations> <upon entering a new era> <starting from the [Classical era]> <hidden from users>",
+        "Triggers a [Emergence of Nations] event <if [Nomadic Culture] is constructed> <upon entering a new era> <hidden from users>",
         "Gain a free [Unified] [in capital] <if ['United'] is constructed in all [Capital] cities> <hidden from users>",
         "Gain a free [Unified] [in capital] <if ['United'] is constructed in all [Capital] cities> <upon turn start> <hidden from users>",
         "Remove [Unified] [in capital] <if ['Divided'] is constructed in all [Capital] cities> <hidden from users>",
@@ -103,6 +104,7 @@
         "Cannot build [Atomic Bomber] units <when number of [[Atomic Bomber] Units] is more than [0.05*([[Fighter] Units] + [[Bomber] Units])]> <for [AI player] Civilizations> <after turn number [50]> <hidden from users>",
         "Cannot build [Missile] units <when number of [[Missile] Units] is more than [0.25*([[Fighter] Units] + [[Bomber] Units])]> <for [AI player] Civilizations> <after turn number [50]> <hidden from users>",
         "Cannot build ['Mercenary Army'] units <when number of [['Mercenary Army'] Units] is more than [(0.5*[['Standing Army'] Units])]> <for [AI player] Civilizations> <after turn number [50]> <hidden from users>",
+        "Cannot build [{Military} {Land}] units <when number of [[[Land] Units]*0.75] is more than [[Water] Units]> <for [AI player] Civilizations> <after turn number [50]> <hidden from users> <in [Coastal] cities>",
         ///HurryCostModifier
         "[Gold] cost of purchasing [{All} {non-['Economic Building']}] buildings [+25]%",
         "[Gold] cost of purchasing ['Economic Building'] buildings [+15]%",
@@ -207,6 +209,11 @@
         "[-100]% [Electronic Parts] resource production <when number of [Electronic Parts] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
         "[-100]% [Microchips] resource production <when number of [Microchips] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
         "[-100]% [Enriched Uranium] resource production <when number of [Enriched Uranium] is more than [[Cities]+[[Nuclear Power Plant] Buildings]]> <hidden from users>",
+        "[+33]% [Influence] resource production <on [Quick] game speed> <hidden from users>",
+        "[-33]% [Influence] resource production <on [Epic] game speed> <hidden from users>",
+        "[-67]% [Influence] resource production <on [Marathon] game speed> <hidden from users>",
+        "Free [Peon] appears <when above [100] [Slaves]> <upon turn start>"
+        
         // TODO: Implement the uniques below
         // "[+20]% [Culture] [in all cities] <during a golden age>",
         // "[+20]% [Production] [in all cities] <during a golden age>",

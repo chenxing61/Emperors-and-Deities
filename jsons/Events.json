@@ -173,15 +173,92 @@
             }
         ]
     },
+    {
+        "name": "The Barbarian's Surrender",
+        "text": "We successfully brought our fury to the Barbarian's Motherland. New problem arises.",
+        "choices": [
+            {
+                "text": "Plunder them dry and banish them!",
+                "uniques": [
+                    "Gain [25] [Gold] <(modified by game speed)>",
+                    "Gain [25] [Gold] <(modified by game speed)> <starting from the [Medieval era]>"
+                ]
+            },
+            {
+                "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
+                "uniques": [
+                    "Only available <if [Low Culture Diversity] is constructed>",
+                    "Instantly provides [1] [Migrating Population]",
+                    "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
+                    "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
+                ]
+            },
+            {
+                "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
+                "uniques": [
+                    "Only available <if [Medium Culture Diversity] is constructed>",
+                    "Instantly provides [1] [Migrating Population]",
+                    "Gain a free [High Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
+                    "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
+                ]
+            },
+            {
+                "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
+                "uniques": [
+                    "Only available <if [High Culture Diversity] is constructed>",
+                    "Instantly provides [1] [Migrating Population]",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
+                    "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
+                ]
+            },
+            {
+                "text": "Intergrate them into our glorious empire!",
+                "uniques": [
+                    "Only available <if [Unified] is constructed>",
+                    "Gain [-25] [Gold] <(modified by game speed)> ",
+                    "Instantly consumes [3] [Influence] <before adopting [Pantheon Incorporation]>",
+                    "Instantly provides [1] [Migrating Population]"
+                ]
+            },
+            {
+                "text": "Enslavement would teach them how to behave",
+                "uniques": [
+                    "Only available <after adopting [Military Tradition]>",
+                    "Instantly gain [34] [Slaves]"
+                ]
+            },
+            {
+                "text": "These men need a shepherd leading them to the lord",
+                "uniques": [
+                    "Only available <after adopting [Idol Abolishment]>",
+                    "Gain [25] [Faith] <(modified by game speed)>",
+                    "Instantly provides [1] [Migrating Population]"
+                ]
+            }
+        ]
+    },
     ///Civilization Events
     {
         "name": "Enact Policies",
         "text": "Decisions reguarding the civilization's internal affair.",
         "choices": [
             {
+                "text": "Introduction",
+                "uniques": [
+                    "Comment [In this decision tab, different actions are unlocked based on to how many [Influence] you have and how many unique action your civilization state has provided you with.]",
+                    "Comment [In each era, you recieve a [Forced Shift In Politic Chance], and when you have more [Influence] than your limit in this era, you can trigger a Shift In Politic in this tab early to provide you with either a chance to unify or a chance to collapse, this grants you freedom on choices of ['Civilization State'].]",
+                    "Comment [Most option will appear when you are unified or have more [Influence] than half of your limit. At the same time, some options only appear when your civilization are divided or have severe debuffs. This tab will help you solve them.]"
+                ]
+            },
+            {
                 "text": "Total mobilization in every cities!",
                 "uniques": [
-                    "Only available <when at war> <if [Unified] is constructed>",
+                    "Only available <when at war> <if [Unified] is constructed> <if [Levies Disbandment] is constructed>",
                     "Play [policy] sound <hidden from users>",
                     "Comment [We need more soldiers at the frontline.]",
                     "Gain a free [Call to Arms] [in all non-occupied cities]",
@@ -266,6 +343,14 @@
                 ]
             },
             {
+                "text": "Tribe Assembly",
+                "uniques": [
+                    "Only available <if [Nomadic Culture] is constructed>",
+                    "Play [horse] sound <hidden from users>",
+                    "Triggers a [Tribe Assembly] event"
+                ]
+            },
+            {
                 "text": "Increasing Stability.",
                 "uniques": [
                     "Only available <if [Peace] is constructed> <if [United States] is not constructed>",
@@ -347,7 +432,7 @@
             {
                 "text": "Changing Civilization Form",
                 "uniques": [
-                    "Only available <when number of [Influence] is more than [Influence Limit]> <when number of [Forced Shift In Politic Chance] is more than [0]> <hidden from users>",
+                    "Only available <when number of [Influence] is more than [Influence Limit]> <when number of [Forced Shift In Politic Chance] is more than [0]> <if [Nomadic Culture] is not constructed> <hidden from users>",
                     "Play [policy] sound <hidden from users>",
                     "Comment [If your [Influence] is somehow above normal limit. You can trigger this.]",
                     "Comment [We can force the shift in politic to stop our civilization from a undesireable route...]",
@@ -360,11 +445,38 @@
             {
                 "text": "State Reform",
                 "uniques": [
-                    "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <when number of [State Reform Chance] is more than [0]>",
                     "Play [policy] sound <hidden from users>",
+                    "Instantly consumes [1] [State Reform Chance] <hidden from users>",
                     "Instantly consumes [10] [Influence] <when number of [Cities] is between [0] and [5]>",
                     "Instantly consumes [15] [Influence] <when number of [Cities] is more than [4]>",
                     "Triggers a [Reformation of the unified state] event"
+                ]
+            },
+            {
+                "text": "Purge Minorities",
+                "uniques": [
+                    "Only available <if [Unified] is constructed> <if [Medium Culture Diversity] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Instantly consumes [20] [Influence]",
+                    "[-1] population in a random city",
+                    "[-1] population in a random city",
+                    "Gain [200] [Gold] <(modified by game speed)>",
+                    "Gain a free [Low Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Decrease the Culture Diversity by a level if it hasnt reached lowest level yet.]",
+                    "Play [metalhit] sound <hidden from users>"
+                ]
+            },
+            {
+                "text": "Purge Minorities",
+                "uniques": [
+                    "Only available <if [Unified] is constructed> <if [High Culture Diversity] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Instantly consumes [20] [Influence]",
+                    "[-1] population in a random city",
+                    "[-1] population in a random city",
+                    "Gain [200] [Gold] <(modified by game speed)>",
+                    "Gain a free [Medium Culture Diversity] [in capital]  <hidden from users>",
+                    "Comment [Decrease the H by a level if it hasnt reached lowest level yet.]",
+                    "Play [metalhit] sound <hidden from users>"
                 ]
             },
             {
@@ -494,7 +606,7 @@
                 "text": "No significant changes",
                 "uniques": [
                     "Comment [We are still a bunch of countries prone to infighting and invasion, but what we do have is countless oppotunities.]",
-                    "Only available <if [Unified] is not constructed>",
+                    "Only available <if [Unified] is not constructed> <if [Nomadic Tribes] is not constructed>",
                     "Gain a free [Tribes] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [Tribes] [in capital] <during the [Ancient era]> <hidden from users>",
                     "Gain a free [City States] [in capital] <during the [Classical era]> <hidden from users>",
@@ -514,7 +626,7 @@
             {
                 "text": "We are able to unify ourselves!",
                 "uniques": [
-                    "Only available <if [Unified] is not constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <if [Strife] is not constructed> <if [Anarchy] is not constructed>",
+                    "Only available <if [Unified] is not constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <if [Nomadic Tribes] is not constructed>",
                     "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
                     "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
@@ -535,8 +647,7 @@
                 "text": "The empire of the past crumbles...",
                 "uniques": [
                     "Comment [Our unification cannot last onto another stage of the world. Maybe its ultimately for the better, as it was stale.]",
-                    "Only available <if [Unified] is constructed>",
-                    "Remove [Unified] [in all cities]",
+                    "Only available <if [Unified] is constructed> <if [Unified Nomads] is not constructed>",
                     "Remove ['United'] [in all cities] <hidden from users>",
                     "Gain a free [City States] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [City States] [in capital] <during the [Ancient era]> <hidden from users>",
@@ -613,7 +724,7 @@
             {
                 "text": "Our way of life must be protected.",
                 "uniques": [
-                    "Instantly consumes [20] [Influence]",
+                    "Instantly consumes [30] [Influence]",
                     "Comment [Keep your current special civilization form]",
                     "Only available <if ['Ideology Form'] is constructed> <if [Unified] is not constructed> <starting from the [Modern era]>"
                 ]
@@ -672,6 +783,13 @@
                 "uniques": [
                     "Only available <starting from the [Industrial era]> <before adopting [Socialism]> <before adopting [Anarchism]> <before adopting [Fascism]> <if [Federation] is not constructed>",
                     "Gain a free [Personal Union] [in capital]"
+                ]
+            },
+            {
+                "text": "Maybe... having a consistent ruling family and succession law would be better.",
+                "uniques": [
+                    "Only available <if [Unified Nomads] is constructed>",
+                    "Instantly provides [10] [Settlement Process]"
                 ]
             },
             {
@@ -925,6 +1043,9 @@
                     "Only available <when above [9] [Influence]> <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [8] [Influence]",
                     "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Gain a free [Medium Culture Diversity] [in capital] <if [Low Culture Diversity] is constructed> <hidden from users>",
+                    "Gain a free [High Culture Diversity] [in capital] <if [Medium Culture Diversity] is constructed> <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
                     "Gain a free [Cultural Exchange] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
                 ]
@@ -932,10 +1053,37 @@
             {
                 "text": "[Cultural Exchange] is the most elegant",
                 "uniques": [
-                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed>",
+                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed> <if [Low Culture Diversity] is constructed>",
                     "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
                     "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Gain a free [Cultural Exchange] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Cultural Exchange] is the most elegant",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed> <if [Medium Culture Diversity] is constructed>",
+                    "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
+                    "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
+                    "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Gain a free [High Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Gain a free [Cultural Exchange] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Cultural Exchange] is the most elegant",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed> <if [High Culture Diversity] is constructed>",
+                    "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
+                    "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
+                    "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
                     "Gain a free [Cultural Exchange] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
                 ]
@@ -1098,6 +1246,13 @@
                 "text": "Nomadic Tribes",
                 "uniques": [
                     "Only available <if [Nomadic Tribes] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Unified Nomads",
+                "uniques": [
+                    "Only available <if [Unified Nomads] is constructed>",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1474,6 +1629,100 @@
             }
         ]
     },
+    {
+        "name": "Tribe Assembly",
+        "text": "We call upon our hordes. To combat the nature and our enemies.",
+        "choices": [
+            {
+                "text": "Recuit Wild Tribes into our culture",
+                "uniques": [
+                    "Only available <if [Nomadic Tribes] is constructed> <when above [9] [Influence]>",
+                    "Instantly consumes [10] [Influence]",
+                    "Free [Primal Herder] appears"
+                ]
+            },
+            {
+                "text": "Organize a hunt for glory, and additional rations",
+                "uniques": [
+                    "Only available <if [Nomadic Tribes] is constructed> <when above [9] [Influence]>",
+                    "Instantly consumes [10] [Influence]",
+                    "[+100]% Yield from every [Camp] <for [2] turns>"
+                ]
+            },
+            {
+                "text": "We should exchange our knowledges amongst our tribes",
+                "uniques": [
+                    "Only available <if [Nomadic Tribes] is constructed> <when above [4] [Influence]>",
+                    "Instantly consumes [5] [Influence]",
+                    "[+1 Science] [in all cities] <for [5] turns>"
+                ]
+            },
+            {
+                "text": "Elect a new Khan!",
+                "uniques": [
+                    "Only available <if [Unified Nomads] is constructed> <when above [14] [Influence]>",
+                    "Instantly consumes [15] [Influence]",
+                    "Free [Great Khan] appears",
+                    "[-3] Strength <for [3] turns>"
+                ]
+            },
+            {
+                "text": "Make use of our unified power",
+                "uniques": [
+                    "Only available <if [Unified Nomads] is constructed> <when above [19] [Influence]>",
+                    "Instantly consumes [20] [Influence]",
+                    "[+50]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities]<for [10] turns> <hidden from users>",
+                    "Comment [[+50%] Production when constructing all buildings <for [10] turns>]"
+                ]
+            },
+            {
+                "text": "Study the advanced culture of the other civilizations",
+                "uniques": [
+                    "Only available <if [Unified Nomads] is constructed> <when above [24] [Influence]>",
+                    "Instantly consumes [25] [Influence]",
+                    "Free Technology",
+                    "Instantly provides [10] [Settlement Process]"
+                ]
+            },
+            {
+                "text": "Can we wait?",
+                "uniques": [
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Settle Down",
+        "text": "As Enough [Settlement Process] has been gained. We may now futher develop our lands.",
+        "choices": [
+            {
+                "text": "Now we have stability in hand.",
+                "uniques": [
+                    "Only available <before the [Medieval era]>",
+                    "Remove [Nomadic Culture] [in all cities]",
+                    "Gain a free [Early Empire] [in capital]"
+                ]
+            },
+            
+            {
+                "text": "Now we have stability in hand.",
+                "uniques": [
+                    "Only available <starting from the [Medieval era]> <before the [Imperial era]>",
+                    "Remove [Nomadic Culture] [in all cities]",
+                    "Gain a free [Feudal Empire] [in capital]"
+                ]
+            },
+            
+            {
+                "text": "Now we have stability in hand.",
+                "uniques": [
+                    "Only available <starting from the [Imperial era]>",
+                    "Remove [Nomadic Culture] [in all cities]",
+                    "Gain a free [Autocratic Empire] [in capital]"
+                ]
+            }
+        ]
+    },
     ///Mediterranean
     {
         "name": "Alexander the Conqueror",
@@ -1670,7 +1919,7 @@
         "text": "Qin collapsed, two new leader emerged and is battling it out. Which one of them have won?",
         "choices": [
             {
-                "text": "Liu Bang the snake slayer",
+                "text": "Liu Bang the slayer of white snake",
                 "uniques": [
                     "Remove [Honor Bound Territory] [in all cities]",
                     "Gain a free [Han Dynasty] [in capital]",
@@ -1717,7 +1966,7 @@
             {
                 "text": "Goths",
                 "uniques": [
-                    "Only available <if [Gothic Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
+                    "Only available <if [High Culture Diversity] is constructed> <if [Gothic Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
                     "Gain a free [Gothic Influence] [in capital]",
                     "Instantly consumes [5] [Influence]",
                     "Gain [-200] [Gold] <(modified by game speed)>",
@@ -1729,6 +1978,16 @@
                 "uniques": [
                     "Only available <if [Saxonian Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
                     "Gain a free [Saxonian Influence] [in capital]",
+                    "Instantly consumes [5] [Influence]",
+                    "Gain [-200] [Gold] <(modified by game speed)>",
+                    "Triggers a [The Tribes of Europe] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Slavs",
+                "uniques": [
+                    "Only available <if [High Culture Diversity] is constructed> <if [Slavic Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
+                    "Gain a free [Slavic Influence] [in capital]",
                     "Instantly consumes [5] [Influence]",
                     "Gain [-200] [Gold] <(modified by game speed)>",
                     "Triggers a [The Tribes of Europe] event <hidden from users>"
@@ -1808,6 +2067,56 @@
                     "[-1] population in a random city",
                     "[+10]% [Happiness] [in all cities] <for [10] turns>",
                     "Gain [50] [Culture] <(modified by game speed)>"
+                ]
+            }
+        ]
+    },
+    ///Euroasian Nomads
+    {
+        "name": "Emergence of Nations",
+        "text": "As a new era arrives, a new culture emerges from the steppes.",
+        "choices": [
+            {
+                "text": "The Scythians Emerges",
+                "uniques": [
+                    "Only available <during the [Classical era]> <when number of [Influence] is more than [[Influence Limit]*0.75]>",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain a free [Scythian Influence] [in capital]",
+                    "Gain a free [Unified Nomads] [in capital]"
+                ]
+            },
+            {
+                "text": "The Huns Emerges",
+                "uniques": [
+                    "Only available <during the [Medieval era]> <when number of [Influence] is more than [[Influence Limit]*0.75]>",
+                    "Instantly consumes [20] [Influence]",
+                    "Gain a free [Huns Influence] [in capital]",
+                    "Gain a free [Unified Nomads] [in capital]"
+                ]
+            },
+            {
+                "text": "The Xiong Nu Emerges",
+                "uniques": [
+                    "Only available <during the [Medieval era]> <when number of [Influence] is more than [[Influence Limit]*0.75]> <if [Low Culture Diversity] is not constructed>",
+                    "Instantly consumes [20] [Influence]",
+                    "Gain a free [Xiong Nu Influence] [in capital]",
+                    "Gain a free [Unified Nomads] [in capital]"
+                ]
+            },
+            {
+                "text": "We are able to unify ourselves!",
+                "uniques": [
+                    "Only available <starting from the [Renaissance era]> <when number of [Influence] is more than [[Influence Limit]*0.75]>",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain [100] [Gold] <(modified by game speed)>",
+                    "Gain a free [Unified Nomads] [in capital]"
+                ]
+            },
+            {
+                "text": "Not yet...",
+                "uniques": [
+                    "Gain [100] [Gold] <(modified by game speed)>",
+                    "Gain a free [Nomadic Tribes] [in capital]"
                 ]
             }
         ]

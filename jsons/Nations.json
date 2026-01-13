@@ -210,7 +210,7 @@
 			"Comment [Unlocks [Satrap's Manor], [Town Hall] enhancement that doesnt require maintenance]",
 			"Comment [Unique Government Forms in [Ancient era]:]",
 			"Comment [Persian Dynasties]",
-			"Triggers a [Rise of the Persians] event <upon discovering [Horse Collar] technology>",
+			"Triggers a [Rise of the Persians] event <upon discovering [Horse Collar] technology> <if [Low Culture Diversity] is not constructed>",
 			"Comment [An unique government form, Unlocks powerful [The Noble Army] Units like [Zhayedan] and [Azadan Cavalry].]",
 			"Comment [-----]",
 			"Comment [Classical era Uniques:]",
@@ -357,7 +357,7 @@
 			"Comment [Unlocks [Tai Yi Shrine], [Chapel] replacement that produces[Happiness]]",
 			"Comment [Unity Uniques:]",
 			"Comment [Unlocks [Gong Shi Colonizer], [Settler] alternative that has combat capability and doesnt stop growth.]",
-			"Triggers a [So called Mandate...] event <upon entering the [Ancient era]>",
+			"Triggers a [So called Mandate...] event <upon discovering [Writing] technology>",
 			"Comment [Unique Government Forms in [Ancient era]:]",
 			"Comment [Shang Dynasty]",
 			"Comment [An unique government form that increases production from luxury tiles, mutually exclusive from[Zhou Dynasty]]",
@@ -470,7 +470,6 @@
 			"Hanzo",
 			"Taro",
 			"Shota",
-			"Hanako",
 			"Hanako",
 			"Yui"
 		]
@@ -669,7 +668,7 @@
 			"Comment [Unique Government Forms in [Classical era]:]",
 			"Comment [Carthage Obligarchy]",
 			"Comment [An unique government form that provides elite military units paired with mercenary bonuses.]",
-			"Triggers a [Rise of the Punics] event <upon discovering [Dry Dock] technology>",
+			"Triggers a [Rise of the Punics] event <upon discovering [Dry Dock] technology> <if [Low Culture Diversity] is not constructed>",
 
 			"Adopt [Polytheism] <if starting in the [Ancient era]> <hidden from users>",
 
@@ -757,134 +756,307 @@
 		]
 	},
 	{
-	"name": "South Asia",
-	"leaderName": "People of India, Nusantara and Mainland SE Asia",
-	"adjective": [
-		"South Asian"
-	],
-	"startBias": [
-		"Avoid [Tundra]",
-		"River",
-		"Jungle"
-	],
-	"personality":"Ashoka",
-	"startIntroPart1": "South and Southeast Asian Civilization is a vast bundle of nations, from the philosophical banks of the Ganges to the maritime spice kingdoms of the Java Sea. A region where grand temples touched the sky and trade routes connected the world, it gave birth to profound spiritual thought, breathtaking architecture, and intricate cultures.",
-	"startIntroPart2": "Will you follow the path of Ashoka, benevolent toward all, or be like Raden Wijaya, creating an empire over glorious victory?",
-	"declaringWar": "Our interest conflicted, and you should step away.",
-	"attacked": "If you were wiser, you would've chosen a way of peace.",
-	"defeated": "You can destroy our body, but you cannot control our sprit.",
-	"introduction": "Greetings, stranger from other worldly land.",
-	"neutralHello": "Maybe we share the same ideal afterall...",
-	"hateHello": "Beware of your action.",
-	"tradeRequest": "For the greater good of humanity, We should exchange our goods.",
-	"outerColor": [
-		112, 
-		40, 
-		183
-	],
-	"innerColor": [
-		76, 
-		183, 
-		112
-	],
-	"favoredReligion": "Hinduism",
-	"uniqueName": "From the Balochistan Mountain Range to the Doberai Peninsula",
-	"uniques": [
-		"Comment [Neolithic era Uniques:]",
-		"Comment [Diverse Civilzation:]",
-		"Free Social Policy <if starting in the [Neolithic era]>",
-		"Comment [Unlocks [Stepwell], [Well] replacement that can be built everywhere.]",
-		"Comment [-----]",
-		"Comment [Ancient era Uniques:]",
-		"Comment [Unlocks [Early Aqueduct], [Aqueduct] replacement that is unlocked earlier.]",
-		"Comment [Unlocks [War Elephant], [Elephant Rider] replacement that has bonus damage against cities, also Upgrades to [Armored War Elephant].]",
-		"Comment [Polytheism Uniques:]",
-		"Comment [Unlocks [Mandir], expensive [Shrine] replacement that increases building speed of ['Educational Building'] and ['Infrastructure'] before [Medieval era].]",
-		"Comment [Monotheism Uniques:]",
-		"Comment [Gain a free [Pantheon] belief <after adopting [Monotheism Complete]>]",
-		"Comment [Unity Uniques:]",
-		"Comment [Unlocks [Ashoka Pillar], A [Monument] replacement that produces even more [Culture] and doubles the border expand rate.]",
-		"Triggers a [Aryan Migration] event <upon discovering [Writing] technology>",
-		"Comment [Unique Government Forms in [Ancient era]:]",
-		"Comment [Harappan City States]",
-		"Comment [An unique government form that increases [Culture] and [Science] in each city, mutually exclusive from [Vedic Kingdoms]]",
-		"Comment [Vedic Kingdoms]",
-		"Comment [An unique government form that gives [Aryan War Cart] as a unique and provide [Faith] in every cities, mutually exclusive from [Harappan City States]]",
-		"Comment [-----]",
-		"Comment [Classical era Uniques:]",
-		"Comment [[Military Stable] Produces [1] [Elephant].]",
-		"Comment [Unlocks [The Vedas], [National Epic] replacement that diversifies the yields from [Landmark]s and [Holy site]s.]",
-		"Triggers a [Buddha's birth] event <upon discovering [Philosophy] technology>",
-		"Comment [Unique Government Forms in [Classical era]:]",
-		"Comment [Maurya Empire]",
-		"Comment [An unique government form that provides an extra spy, powerful bonuses for ['Political Building']s and can automatically adopt [Meritocracy].]",
+		"name": "South Asia",
+		"leaderName": "People of India, Nusantara and Mainland SE Asia",
+		"adjective": [
+			"South Asian"
+		],
+		"startBias": [
+			"Avoid [Tundra]",
+			"River",
+			"Jungle"
+		],
+		"personality":"Ashoka",
+		"startIntroPart1": "South and Southeast Asian Civilization is a vast bundle of nations, from the philosophical banks of the Ganges to the maritime spice kingdoms of the Java Sea. A region where grand temples touched the sky and trade routes connected the world, it gave birth to profound spiritual thought, breathtaking architecture, and intricate cultures.",
+		"startIntroPart2": "Will you follow the path of Ashoka, benevolent toward all, or be like Raden Wijaya, creating an empire over glorious victory?",
+		"declaringWar": "Our interest conflicted, and you should step away.",
+		"attacked": "If you were wiser, you would've chosen a way of peace.",
+		"defeated": "You can destroy our body, but you cannot control our sprit.",
+		"introduction": "Greetings, stranger from other worldly land.",
+		"neutralHello": "Maybe we share the same ideal afterall...",
+		"hateHello": "Beware of your action.",
+		"tradeRequest": "For the greater good of humanity, We should exchange our goods.",
+		"outerColor": [
+			112, 
+			40, 
+			183
+		],
+		"innerColor": [
+			76, 
+			183, 
+			112
+		],
+		"favoredReligion": "Hinduism",
+		"uniqueName": "From the Balochistan Mountain Range to the Doberai Peninsula",
+		"uniques": [
+			"Comment [Neolithic era Uniques:]",
+			"Comment [Diverse Civilzation:]",
+			"Free Social Policy <if starting in the [Neolithic era]>",
+			"Comment [Unlocks [Stepwell], [Well] replacement that can be built everywhere.]",
+			"Comment [-----]",
+			"Comment [Ancient era Uniques:]",
+			"Comment [Unlocks [Early Aqueduct], [Aqueduct] replacement that is unlocked earlier.]",
+			"Comment [Unlocks [War Elephant], [Elephant Rider] replacement that has bonus damage against cities, also Upgrades to [Armored War Elephant].]",
+			"Comment [Polytheism Uniques:]",
+			"Comment [Unlocks [Mandir], expensive [Shrine] replacement that increases building speed of ['Educational Building'] and ['Infrastructure'] before [Medieval era].]",
+			"Comment [Monotheism Uniques:]",
+			"Comment [Gain a free [Pantheon] belief <after adopting [Monotheism Complete]>]",
+			"Comment [Unity Uniques:]",
+			"Comment [Unlocks [Ashoka Pillar], A [Monument] replacement that produces even more [Culture] and doubles the border expand rate.]",
+			"Triggers a [Aryan Migration] event <upon discovering [Writing] technology>",
+			"Comment [Unique Government Forms in [Ancient era]:]",
+			"Comment [Harappan City States]",
+			"Comment [An unique government form that increases [Culture] and [Science] in each city, mutually exclusive from [Vedic Kingdoms]]",
+			"Comment [Vedic Kingdoms]",
+			"Comment [An unique government form that gives [Aryan War Cart] as a unique and provide [Faith] in every cities, mutually exclusive from [Harappan City States]]",
+			"Comment [-----]",
+			"Comment [Classical era Uniques:]",
+			"Comment [[Military Stable] Produces [1] [Elephant].]",
+			"Comment [Unlocks [The Vedas], [National Epic] replacement that diversifies the yields from [Landmark]s and [Holy site]s.]",
+			"Triggers a [Buddha's birth] event <upon discovering [Philosophy] technology>",
+			"Comment [Unique Government Forms in [Classical era]:]",
+			"Comment [Maurya Empire]",
+			"Comment [An unique government form that provides an extra spy, powerful bonuses for ['Political Building']s and can automatically adopt [Meritocracy].]",
 
-		"Adopt [Polytheism] <if starting in the [Ancient era]> <hidden from users>",
+			"Adopt [Polytheism] <if starting in the [Ancient era]> <hidden from users>",
 
-		"Adopt [Polytheism] <if starting in the [Classical era]> <hidden from users>",
+			"Adopt [Polytheism] <if starting in the [Classical era]> <hidden from users>",
 
-		"Adopt [Monotheism] <if starting in the [Medieval era]> <hidden from users>",
-		"Adopt [Scholarship] <if starting in the [Medieval era]> <hidden from users>",
+			"Adopt [Monotheism] <if starting in the [Medieval era]> <hidden from users>",
+			"Adopt [Scholarship] <if starting in the [Medieval era]> <hidden from users>",
 
-		"Adopt [Monotheism] <if starting in the [Renaissance era]> <hidden from users>",
-		"Adopt [Scholarship] <if starting in the [Renaissance era]> <hidden from users>",
-		"Adopt [Plutocracy] <if starting in the [Renaissance era]> <hidden from users>",
+			"Adopt [Monotheism] <if starting in the [Renaissance era]> <hidden from users>",
+			"Adopt [Scholarship] <if starting in the [Renaissance era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Renaissance era]> <hidden from users>",
 
-		"Adopt [Monotheism] <if starting in the [Imperial era]> <hidden from users>",
-		"Adopt [Scholarship] <if starting in the [Imperial era]> <hidden from users>",
-		"Adopt [Plutocracy] <if starting in the [Imperial era]> <hidden from users>",
+			"Adopt [Monotheism] <if starting in the [Imperial era]> <hidden from users>",
+			"Adopt [Scholarship] <if starting in the [Imperial era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Imperial era]> <hidden from users>",
 
-		"Adopt [Monotheism] <if starting in the [Industrial era]> <hidden from users>",
-		"Adopt [Scholarship] <if starting in the [Industrial era]> <hidden from users>",
-		"Adopt [Plutocracy] <if starting in the [Industrial era]> <hidden from users>",
-		"Adopt [Humanism] <if starting in the [Industrial era]> <hidden from users>",
+			"Adopt [Monotheism] <if starting in the [Industrial era]> <hidden from users>",
+			"Adopt [Scholarship] <if starting in the [Industrial era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Industrial era]> <hidden from users>",
+			"Adopt [Humanism] <if starting in the [Industrial era]> <hidden from users>",
 
-		"Adopt [Monotheism] <if starting in the [Modern era]> <hidden from users>",
-		"Adopt [Scholarship] <if starting in the [Modern era]> <hidden from users>",
-		"Adopt [Plutocracy] <if starting in the [Modern era]> <hidden from users>",
-		"Adopt [Humanism] <if starting in the [Modern era]> <hidden from users>",
+			"Adopt [Monotheism] <if starting in the [Modern era]> <hidden from users>",
+			"Adopt [Scholarship] <if starting in the [Modern era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Modern era]> <hidden from users>",
+			"Adopt [Humanism] <if starting in the [Modern era]> <hidden from users>",
 
-		"Adopt [Monotheism] <if starting in the [Atomic era]> <hidden from users>",
-		"Adopt [Scholarship] <if starting in the [Atomic era]> <hidden from users>",
-		"Adopt [Plutocracy] <if starting in the [Atomic era]> <hidden from users>",
-		"Adopt [Humanism] <if starting in the [Atomic era]> <hidden from users>",
-		"Adopt [Conservatism] <if starting in the [Atomic era]> <hidden from users>",
+			"Adopt [Monotheism] <if starting in the [Atomic era]> <hidden from users>",
+			"Adopt [Scholarship] <if starting in the [Atomic era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Atomic era]> <hidden from users>",
+			"Adopt [Humanism] <if starting in the [Atomic era]> <hidden from users>",
+			"Adopt [Conservatism] <if starting in the [Atomic era]> <hidden from users>",
 
-		"Adopt [Monotheism] <if starting in the [Information era]> <hidden from users>",
-		"Adopt [Scholarship] <if starting in the [Information era]> <hidden from users>",
-		"Adopt [Plutocracy] <if starting in the [Information era]> <hidden from users>",
-		"Adopt [Humanism] <if starting in the [Information era]> <hidden from users>",
-		"Adopt [Conservatism] <if starting in the [Information era]> <hidden from users>",
+			"Adopt [Monotheism] <if starting in the [Information era]> <hidden from users>",
+			"Adopt [Scholarship] <if starting in the [Information era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Information era]> <hidden from users>",
+			"Adopt [Humanism] <if starting in the [Information era]> <hidden from users>",
+			"Adopt [Conservatism] <if starting in the [Information era]> <hidden from users>",
 
-		"Adopt [Monotheism] <if starting in the [Future era]> <hidden from users>",
-		"Adopt [Scholarship] <if starting in the [Future era]> <hidden from users>",
-		"Adopt [Plutocracy] <if starting in the [Future era]> <hidden from users>",
-		"Adopt [Humanism] <if starting in the [Future era]> <hidden from users>",
-		"Adopt [Conservatism] <if starting in the [Future era]> <hidden from users>"
-	],
-	"cities": [
-		"Harappa",
-		"Kukkutārma",
-		"Varanasi",
-		"Rajagriha",
-		"Pataliputra",
-		"Vijayanagara",
-		"Angkor",
-		"Ayutthaya",
-		"Bagan",
-		"Majapahit",
-		"Delhi",
-		"Agra",
-		"Calcutta",
-		"Bombay",
-		"Madras",
-		"Dhaka"
-	],
-	"spyNames": [
-		"Ashok", "Shanx", "Hormis", "Sanjeev", "Ananda", "Rani", "Parvati", "Mukta", "Karishma", "Jyotsna","Aran", "Chanarong", "Kiet", "Niran",
-	]
-},
+			"Adopt [Monotheism] <if starting in the [Future era]> <hidden from users>",
+			"Adopt [Scholarship] <if starting in the [Future era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Future era]> <hidden from users>",
+			"Adopt [Humanism] <if starting in the [Future era]> <hidden from users>",
+			"Adopt [Conservatism] <if starting in the [Future era]> <hidden from users>"
+		],
+		"cities": [
+			"Harappa",
+			"Kukkutārma",
+			"Varanasi",
+			"Rajagriha",
+			"Pataliputra",
+			"Vijayanagara",
+			"Angkor",
+			"Ayutthaya",
+			"Bagan",
+			"Majapahit",
+			"Delhi",
+			"Agra",
+			"Calcutta",
+			"Bombay",
+			"Madras",
+			"Dhaka"
+		],
+		"spyNames": [
+			"Ashok", "Shanx", "Hormis", "Sanjeev", "Ananda", "Rani", "Parvati", "Mukta", "Karishma", "Jyotsna","Aran", "Chanarong", "Kiet", "Niran",
+		]
+	},
+	{
+		"name": "Euroasian Nomads",
+		"leaderName": "People of the great steppe",
+		"adjective": [
+			"Nomad's"
+		],
+		"startBias": [
+			"Avoid [Coast]",
+			"Grassland",
+			"Hill"
+		],
+		"personality":"Gengis Khan",
+		"startIntroPart1": "Euroasian Nomads Civilization is a large bundle of nations, from the Tungus of the Harsh Siberia to the turks of the Central Asia. The Nomad was the destroyers of empires and the builders of new ones, while being the cauldron of trades and cultures.",
+		"startIntroPart2": "Will you follow the path of Gengis Khan, crush your enemies and hearing the lamentation of their women, or be like Osman I, creating an multicultural empire?",
+		"declaringWar": "You are not worthy of your land.",
+		"attacked": "Then we shall meet on the battlefield.",
+		"defeated": "You can destroy our body, but you... Have proven yourself of being worthy at doing so.",
+		"introduction": "Greetings, settler.",
+		"neutralHello": "Maybe we share the same ideal afterall...",
+		"hateHello": "Beware of your action.",
+		"tradeRequest": "If you want your goods to go far far away. Then respect us.",
+		"outerColor": [
+			86, 
+			86, 
+			86
+		],
+		"innerColor": [
+			255, 
+			255, 
+			255
+		],
+		"favoredReligion": "Tengrism",
+		"uniqueName": "From Ukraine to Kamchatka",
+		"uniques": [
+			"Comment [Neolithic era Uniques:]",
+			"Comment [Nomad Civilzation:]",
+			"Starts with [Animal Husbandry]",
+			"Starts with [Trapping]",
+			"Comment [-----]",
+			"Comment [Nomadic Life Style brings high expansion potential, but is much limited in terms of settlement growth and defence.]",
+			"Comment [While having [Nomadic Culture]:]",
+			"Comment [Unlocks [Nomadic Settler], [Settler] alternative that is much cheaper but costs population.]",
+			"Comment [Start with [Primal Herder] instead of [Hunter Gatherer], [Primal Herder] can be summoned using [Influence] using [Nomadic Tribes] ability.]",
+			"Comment [Start with ability to generate [Slaves] during fighting, 100 [Slaves] generates a [Peon] Unit. Which is an alternative to [Worker]s.]",
+			"Comment [Unhappiness from number of cities decreased vastly.]",
+			"Comment [Nearly free migrations and internal transports.]",
+			"Comment [Start without [Agriculture]]",
+			"Comment [[+33]% [Horse] resource production]",
+			"Comment [[-33]% [Science] [in all cities]]",
+			"Comment [Cities cannot go above 10 population normally.]",
+			"Comment [Cannot Build [Worker]s, ['Agricultural Building']s and ['Static Defense'] aside from basic [Walls].]",
+			"Comment [Building Speed is vastly slower.]",
+			"Comment [[High Culture Diversity],[Medium Culture Diversity] and [Low Culture Diversity] affects the above buff and debuffs even further, remember to check the civilpedia for further informations.]",
+			"Comment [Upon entering a new era, a new culture emerges from the steppe. You would need to reach full [Influence] to let them unite the steppes to gain their bonuses.]",
+			"Comment [-----]",
+			"Comment [Unlocks [Herding Tents], [Pasture] replacement that works on tile without population. But doesnt provide any stats starting out.]",
+			"Comment [Unique Government Forms in [Neolithic era]:]",
+			"Comment [Nomadic Tribes]",
+			"Comment [An unique government form that allows multiple uniques action that directly uses influences to creat units and give bonuses.]",
+			"Comment [-----]",
+			"Comment [Polytheism Uniques:]",
+			"Comment [Unlocks [Stone Totem], [Shrine] replacement that decreases policy cost spike from city numbers.]",
+			"Comment [Monotheism Uniques:]",
+			"[+20]% [Faith] from Trade Routes <after adopting [Testaments]>",
+			"Comment [Unity Uniques:]",
+			"[+33]% Strength decreasing with distance from the capital <after adopting [Chiefdom Confederation]>",
+			"Comment [-----]",
+			"Comment [Classical era Uniques:]",
+			"Comment [Unlocks [Elite Horse Archer], [Horse Archer] replacement that starts out with more strength and [Nomadic Lifestyle].]",
+			"Comment [Unlocks [Great Khan], [Great Commander] replacement that has increased buff range at cost of less strength buff, can trigger golden age.]",
+			"Comment [Unique Government Forms in [Classical era]:]",
+			"Comment [Unified Nomads]",
+			"Comment [An transformation of [Nomadic Tribes] that allows you to spend influence to gain [Great Khan]s and gain building speed back for a few turns.]",
+			"Comment [Allow you to gain [Settlement Process] and settle down. Leaving Nomadic Life Style behind and inherit its legacy.]",
+			"Comment [Upon reaching (20 + 5 x No. of Cities) amount of [Settlement Process]. You can transform your civilization into a sedimentary civilization, which plays like any other civilization. You can intentionally expand more to lengthen this process.]",
+			"Adopt [Polytheism] <if starting in the [Ancient era]> <hidden from users>",
+
+			"Adopt [Polytheism] <if starting in the [Classical era]> <hidden from users>",
+
+			"Adopt [Polytheism] <if starting in the [Medieval era]> <hidden from users>",
+			"Adopt [Militant] <if starting in the [Medieval era]> <hidden from users>",
+
+			"Adopt [Polytheism] <if starting in the [Renaissance era]> <hidden from users>",
+			"Adopt [Militant] <if starting in the [Renaissance era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Renaissance era]> <hidden from users>",
+
+			"Adopt [Monotheism] <if starting in the [Imperial era]> <hidden from users>",
+			"Adopt [Militant] <if starting in the [Imperial era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Imperial era]> <hidden from users>",
+
+			"Adopt [Monotheism] <if starting in the [Industrial era]> <hidden from users>",
+			"Adopt [Militant] <if starting in the [Industrial era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Industrial era]> <hidden from users>",
+			"Adopt [Imperialism] <if starting in the [Industrial era]> <hidden from users>",
+
+			"Adopt [Monotheism] <if starting in the [Modern era]> <hidden from users>",
+			"Adopt [Scholarship] <if starting in the [Modern era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Modern era]> <hidden from users>",
+			"Adopt [Imperialism] <if starting in the [Modern era]> <hidden from users>",
+
+			"Adopt [Monotheism] <if starting in the [Atomic era]> <hidden from users>",
+			"Adopt [Scholarship] <if starting in the [Atomic era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Atomic era]> <hidden from users>",
+			"Adopt [Revolution] <if starting in the [Atomic era]> <hidden from users>",
+			"Adopt [Socialism] <if starting in the [Atomic era]> <hidden from users>",
+
+			"Adopt [Monotheism] <if starting in the [Information era]> <hidden from users>",
+			"Adopt [Scholarship] <if starting in the [Information era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Information era]> <hidden from users>",
+			"Adopt [Revolution] <if starting in the [Information era]> <hidden from users>",
+			"Adopt [Socialism] <if starting in the [Information era]> <hidden from users>",
+
+			"Adopt [Monotheism] <if starting in the [Future era]> <hidden from users>",
+			"Adopt [Scholarship] <if starting in the [Future era]> <hidden from users>",
+			"Adopt [Plutocracy] <if starting in the [Future era]> <hidden from users>",
+			"Adopt [Revolution] <if starting in the [Future era]> <hidden from users>",
+			"Adopt [Socialism] <if starting in the [Future era]> <hidden from users>"
+		],
+		"civilopediaText": [
+                    {
+                        "text": "Nomadic Culture",
+                        "link": "Buildings/Nomadic Culture"
+                    }
+        ],
+		///Credit to 六亿神州尽舜尧1958 on Bilibili
+		"cities": [
+			"Massagetae",
+			"Scythian Neapolis",
+			"Samarkand",
+			"Bukhara",
+			"Yotgan",
+			"Khujand",
+			"Talas",
+			"Chach",
+			"Tatar",
+			"Bactra",
+			"Khodoe-aral",
+			"Khanbaliq",
+			"Karakorum",
+			"Ongud",
+			"Naimans"
+		],
+		"spyNames": [
+			"Asashōryū", "Tömöriin", "Zevegiin", "Jigjidiin", "Enkhbat", "Mönkhbayar", "Gündegmaa", "Ssima", "Batachikhan", "Chulunny"
+		]
+	},
 	///Italian
+	{
+		"name": "Etruria",
+		"adjective": [
+			"Etruscans"
+		],
+		"cityStateType": "Labour Centre",
+		"startBias": [
+			"Plain"
+		],
+		"uniques": ["Will not be chosen for new games <starting from the [Classical era]>"],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "And so the flower of Florence falls to barbaric hands...",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			62,
+			197,
+			252
+		],
+		"cities": [
+			"Etruria"
+		]
+	},
 	{
 		"name": "Florence",
 		"adjective": [
@@ -894,6 +1066,7 @@
 		"startBias": [
 			"Plain"
 		],
+		"uniques": ["Will not be chosen for new games <before the [Medieval era]>"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
 		"defeated": "And so the flower of Florence falls to barbaric hands...",
@@ -920,6 +1093,7 @@
 		"startBias": [
 			"Plain"
 		],
+		"uniques": ["Will not be chosen for new games <before the [Medieval era]>"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
 		"defeated": "You fiend! History shall remember this!",
@@ -943,6 +1117,7 @@
 			"Venetian"
 		],
 		"cityStateType": "Middleman of the continent",
+		"uniques": ["Will not be chosen for new games <before the [Medieval era]>"],
 		"startBias": [
 			"Coast"
 		],
@@ -969,6 +1144,7 @@
 			"Genoese"
 		],
 		"cityStateType": "Mercenary State",
+		"uniques": ["Will not be chosen for new games <before the [Medieval era]>"],
 		"startBias": [
 			"Coast"
 		],
@@ -987,6 +1163,32 @@
 		],
 		"cities": [
 			"Genoa"
+		]
+	},
+	{
+		"name": "Euskaldunak",
+		"adjective": [
+			"Basque"
+		],
+		"cityStateType": "Food Exporter",
+		"startBias": [
+			"Coast"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "How barbaric. Those who live by the sword shall perish by the sword.",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			45,
+			255,
+			86
+		],
+		"cities": [
+			"Euskadi"
 		]
 	},
 	///South East Asia
@@ -1096,6 +1298,7 @@
 		"adjective": [
 			"Pulau Ujongian"
 		],
+		"uniques": ["Will not be chosen for new games <before the [Imperial era]>"],
 		"cityStateType": "Middleman of the continent",
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
@@ -1124,6 +1327,7 @@
 		"startBias": [
 			"Coast"
 		],
+		"uniques": ["Will not be chosen for new games <starting from the [Classical era]>"],
 		"declaringWar": "I will enjoy hearing your last breath as you witness the destruction of your realm!",
 		"attacked": "Why do we fight? Because Inanna demands it. Now, witness the power of the Sumerians!",
 		"defeated": "What treachery has struck us? No, what evil?",
@@ -1147,6 +1351,7 @@
 			"Tyrian"
 		],
 		"cityStateType": "Resource Hoarder",
+		"uniques": ["Will not be chosen for new games <starting from the [Classical era]>"],
 		"startBias": [
 			"Coast"
 		],
@@ -1172,6 +1377,7 @@
 		"adjective": [
 			"Sidon"
 		],
+		"uniques": ["Will not be chosen for new games <starting from the [Classical era]>"],
 		"cityStateType": "Middleman of the continent",
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
@@ -1225,6 +1431,7 @@
 		"startBias": [
 			"Hill"
 		],
+		"uniques": ["Will not be chosen for new games <starting from the [Modern era]>"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
 		"defeated": "Perhaps now we will find peace in death...",
@@ -1309,6 +1516,31 @@
 		],
 		"cities": [
 			"Yerevan"
+		]
+	},
+	{
+		"name": "Lou Lan",
+		"adjective": [
+			"Lou Lan"
+		],
+		"startBias": ["Desert"],
+		"uniques": ["Will not be chosen for new games <starting from the [Renaissance era]>"],
+		"cityStateType": "Middleman of the continent",
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "How could we fall to the likes of you?!",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			152,
+			0,
+			241
+		],
+		"cities": [
+			"Lou Lan"
 		]
 	},
 	///Nords
@@ -1493,8 +1725,9 @@
 	{
 		"name": "Dithmarschen",
 		"adjective": [
-			"Farmer Republican"
+			"Farmer Republic's"
 		],
+		"uniques": ["Will not be chosen for new games <before the [Renaissance era]>"],
 		"cityStateType": "Labour Centre",
 		"startBias": [
 			"Marsh"
@@ -1543,37 +1776,15 @@
 		]
 	},
 	{
-		"name": "Switzerland",
-		"adjective": [
-			"Swiss"
-		],
-		"cityStateType": "Mercenary State",
-		"startBias": [
-			"Hill"
-		],
-		"declaringWar": "You leave us no choice. War it must be.",
-		"attacked": "Very well, this shall not be forgotten.",
-		"defeated": "They will write songs of this.... pray that they shall be in your favor.",
-		"outerColor": [
-			0,
-			0,
-			0
-		],
-		"innerColor": [
-			194,
-			97,
-			255
-		],
-		"cities": [
-			"Turicum"
-		]
-	},
-	{
 		"name": "Lubeck",
 		"adjective": [
 			"Lubeckian"
 		],
 		"cityStateType": "Wonder Engineer",
+		"startBias": [
+			"Plain"
+		],
+		"uniques": ["Will not be chosen for new games <before the [Medieval era]>"],
 		"declaringWar": "Let's have a nice little War, shall we?",
 		"attacked": "If you need your nose bloodied, we'll happily serve.",
 		"defeated": "The serbian guerilla will never stop haunting you!",
@@ -1665,6 +1876,7 @@
 		"adjective": [
 			"Slovakian"
 		],
+		"startBias": ["Hill"],
 		"cityStateType": "Distinctively Cultured",
 		"declaringWar": "I didn't want to do this. We declare war.",
 		"attacked": "I will fear no evil. For god is with me!",
@@ -1692,6 +1904,7 @@
 		"startBias": [
 			"Coast"
 		],
+		"uniques": ["Will not be chosen for new games <starting from the [Classical era]>"],
 		"declaringWar": "I will enjoy hearing your last breath as you witness the destruction of your realm!",
 		"attacked": "Our heros will elimiate your evil regime!",
 		"defeated": "Deception is the only way you have a chance at defeating us! You coward!",

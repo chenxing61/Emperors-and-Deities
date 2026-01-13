@@ -3,7 +3,8 @@
         "name": "discover cultural artifacts",
         "notification": "We have discovered cultural artifacts in the ruins! (+[cultureAmount] Culture)",
         "uniques": [
-            "Gain [30] [Culture] <(modified by game speed)>"
+            "Gain [30] [Culture] <(modified by game speed)>",
+            "Only available <before turn number [40]>"
         ],
         "color": "#cf8ff7"
     },
@@ -11,7 +12,8 @@
         "name": "squatters willing to work for you",
         "notification": "A [Worker] has joined us!",
         "uniques": [
-            "Free [Worker] found in the ruins"
+            "Free [Worker] found in the ruins",
+            "Only available <before turn number [40]>"
         ],
         "excludedDifficulties": [
             "Playing Fair",
@@ -25,7 +27,8 @@
         "name": "squatters wishing to settle under your rule",
         "notification": "A [Settler] has joined us!",
         "uniques": [
-            "Free [Settler] found in the ruins"
+            "Free [Settler] found in the ruins",
+            "Only available <before turn number [40]>"
         ],
         "excludedDifficulties": [
             "Casual",
@@ -41,14 +44,15 @@
         "notification": "An ancient tribe trained us in their ways of combat!",
         "uniques": [
             "[This Unit] gains [20] XP",
-            "Only available <after turn number [10]>"
+            "Only available <before turn number [40]>"
         ]
     },
     {
         "name": "survivors (adds population to a city)",
         "notification": "We have found survivors in the ruins! Population added to [cityName].",
         "uniques": [
-            "[+1] population in a random city"
+            "[+1] population in a random city",
+            "Only available <before turn number [40]>"
         ], // This can't be easily added to cityFilter, as it is non-deterministic
         "color": "#81c784"
     },
@@ -56,7 +60,8 @@
         "name": "a stash of gold",
         "notification": "", // trigger notification only
         "uniques": [
-            "Gain [50]-[150] [Gold] <(modified by game speed)>"
+            "Gain [50]-[150] [Gold] <(modified by game speed)>",
+            "Only available <before turn number [40]>"
         ],
         "color": "#ffeb7f"
     },
@@ -64,7 +69,8 @@
         "name": "discover a lost technology",
         "notification": "We have discovered the lost technology of [techName] in the ruins!",
         "uniques": [
-            "[1] free random researchable Tech(s) from the [Ancient era]"
+            "[1] free random researchable Tech(s) from the [Ancient era]",
+            "Only available <before turn number [40]> <before the [Classical era]>"
         ],
         "color": "#7f7fff"
     },
@@ -72,7 +78,8 @@
         "name": "advanced weaponry for your explorer",
         "notification": "Our unit finds advanced weaponry hidden in the ruins!",
         "uniques": [
-            "[This Unit] upgrades for free including special upgrades <before turn number [10]>"
+            "[This Unit] upgrades for free including special upgrades",
+            "Only available <before turn number [40]>"
         ]
     },
     {
@@ -80,14 +87,16 @@
         "notification": "You find evidence of Barbarian activity. Nearby Barbarian camps are revealed! And some golds.",
         "uniques": [
             "Gain [25]-[75] [Gold] <(modified by game speed)>",
-            "Reveal up to [All] [Barbarian encampment] within a [30] tile radius"
+            "Reveal up to [All] [Barbarian encampment] within a [20] tile radius",
+            "Only available <before turn number [40]>"
         ]
     },
     {
         "name": "find a crudely-drawn map",
         "notification": "We have found a crudely-drawn map in the ruins!",
         "uniques": [
-            "From a randomly chosen tile [3] tiles away from the ruins, reveal tiles up to [5] tiles away with [80]% chance"
+            "From a randomly chosen tile [3] tiles away from the ruins, reveal tiles up to [5] tiles away with [80]% chance",
+            "Only available <before turn number [40]>"
         ]
     },
     {
@@ -97,7 +106,7 @@
             "Only available <when religion is enabled>",
             "Gain enough Faith for a Pantheon",
             "Only available <before founding a Pantheon>",
-            "Only available <after turn number [10]>"
+            "Only available <after turn number [10]> <before turn number [40]>"
         ],
         "color": "#CDDDF4"
     },
@@ -109,8 +118,45 @@
             "Gain enough Faith for [33]% of a Great Prophet",
             "Unavailable <after generating a Great Prophet>",
             "Only available <after founding a Pantheon>",
-            "Only available <after turn number [10]>"
+            "Only available <after turn number [10]> <before turn number [40]>"
         ],
         "color": "#CDDDF4"
+    },
+    {
+        "name": "Conquered the local tribes",
+        "notification": "The locals finally succumbed to our demand.",
+        "uniques": [
+            "Only available <when religion is enabled>",
+            "Triggers a [The Barbarian's Surrender] event",
+            "Only available <after turn number [25]>"
+        ]
+    },
+    {
+        "name": "Conquered another local tribes",
+        "notification": "The locals finally succumbed to our demand.",
+        "uniques": [
+            "Only available <when religion is enabled>",
+            "Triggers a [The Barbarian's Surrender] event",
+            "Only available <after turn number [25]>"
+        ]
+    },
+    {
+        "name": "Conquered this local tribes",
+        "notification": "The locals finally succumbed to our demand.",
+        "uniques": [
+            "Only available <when religion is enabled>",
+            "Triggers a [The Barbarian's Surrender] event",
+            "Only available <after turn number [25]>"
+        ]
+    },
+    {
+        "name": "Conquered that local tribes",
+        "notification": "The locals finally succumbed to our demand.",
+        "uniques": [
+            "Only available <when religion is enabled>",
+            "Triggers a [The Barbarian's Surrender] event",
+            "Only available <after turn number [25]>"
+        ]
     }
+    
 ]

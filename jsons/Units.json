@@ -6,6 +6,7 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"uniques": [
+			"Unbuildable <if [Nomadic Culture] is constructed>",
 			"Can build [Land] improvements on tiles",
 			"Can build [Lakes] improvements on tiles",
 			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
@@ -88,17 +89,69 @@
 		"requiredTech": "Advanced Shipbuilding"	
 	},
 	{
+		"name": "Peon",
+		"cost": 70,
+		"unitType": "Civilian",
+		"movement": 1,
+		"uniques": [
+			"Unbuildable",
+			"[+1] Movement <after adopting [Military Tradition]>",
+			"Can speed up construction of a building <after discovering [Civil Service]> <for [Human player] Civilizations>",
+			"Can instantly construct a [Manual Farm] improvement <once> <after which this unit is consumed> <for [Human player] Civilizations>",
+			"Can instantly construct a [Manual Plantation] improvement <once> <after which this unit is consumed> <for [Human player] Civilizations>",
+			"Can instantly construct a [Manual Lumber Mill] improvement <once> <after which this unit is consumed> <after discovering [Carpentry]> <for [Human player] Civilizations>",
+			"Can instantly construct a [Manual Mine] improvement <once> <after which this unit is consumed> <after discovering [Mining]> <for [Human player] Civilizations>",
+			"Can instantly construct a [Quarry] improvement <once> <after which this unit is consumed> <after discovering [Masonry]> <for [Human player] Civilizations>",
+			"Can instantly construct a [Remove Forest] improvement <once> <after which this unit is consumed> <after discovering [Bronze Working]> <for [Human player] Civilizations>",
+			"Can instantly construct a [Remove Jungle] improvement <once> <after which this unit is consumed> <after discovering [Bronze Working]> <for [Human player] Civilizations>",
+			"Can instantly construct a [Remove Marsh] improvement <once> <after which this unit is consumed> <after discovering [Masonry]> <for [Human player] Civilizations>",
+			"Can build [Manual Farm] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Manual Plantation] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Pasture] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Camp] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Manual Lumber Mill] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Manual Mine] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Quarry] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Remove Forest] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Remove Jungle] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Remove Marsh] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"[This Unit] takes [100] damage <upon building a [All] improvement> <for [AI player] Civilizations> <hidden from users>",
+			"[-99]% construction time for [All] improvements <for [AI player] Civilizations> <hidden from users>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Instantly consumes [100] [Slaves] <when above [100] [Slaves]>"
+		],
+		"requiredTech": "Fire Making"	
+	},
+	{
 		"name": "Settler",
 		"unitType": "Civilian",
 		"cost": 100,
 		"movement": 2,
 		"uniques": [
+			"Unbuildable <if [Nomadic Culture] is constructed>",
 			"Founds a new city <by consuming this unit>",
 			"Excess Food converted to Production when under construction",
 			"[+2] Movement <before turn number [2]>",
 			"[+1] Sight <before turn number [2]>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Requires at least [3] population"
+		],
+		"requiredTech": "Fire Making",
+		"obsoleteTech": "Navigation"	
+	},
+	{
+		"name": "Nomadic Settler",
+		"unitType": "Civilian",
+		"cost": 75,
+		"movement": 2,
+		"uniques": [
+			"Only available <if [Nomadic Culture] is constructed>",
+			"[-1] population [in this city]",
+			"Founds a new city <by consuming this unit>",
+			"Excess Food converted to Production when under construction",
+			"[+2] Movement <before turn number [2]>",
+			"[+1] Sight <before turn number [2]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>"
 		],
 		"requiredTech": "Fire Making",
 		"obsoleteTech": "Navigation"	
@@ -152,6 +205,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
+			"Can upgrade to [Worker] <after discovering [Bronze Working]>",
 			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Manual Plantation] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Manual Farm] improvements on tiles <for [Human player] Civilizations>",
@@ -184,9 +238,32 @@
 		"attackSound": "arrow"
 	},
 	{
+		"name": "Primal Herder",
+		"uniqueTo": "Euroasian Nomads",
+		"replaces": "Hunter Gatherer",
+		"unitType": "Close Combat",
+		"movement": 3,
+		"strength": 9,
+		"uniques": [
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
+			"Can build [Pasture] improvements on tiles <for [Human player] Civilizations>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions":["Nomadic Lifestyle"],
+		"requiredTech": "Hunting and Fishing",
+		"obsoleteTech": "Horseback Riding",
+		"upgradesTo":"Nomad Horde",
+		"attackSound": "arrow"
+	},
+	{
 		"name": "Primal Warrior",
 		"unitType": "Ranged Combat",
-		"cost": 40,
+		"cost": 0,
 		"movement": 2,
 		"strength": 5,
 		"rangedStrength": 8,
@@ -237,6 +314,7 @@
 	{
 		"name": "Brute Warrior",
 		"unitType": "Close Combat",
+		"cost": 0,
 		"movement": 2,
 		"strength": 8,
 		"uniques": [
@@ -614,29 +692,43 @@
 	},
 	///Line 4
 	{
-		"name": "Nomad",
-		"unitType": "Close Combat",
+		"name": "Nomad Horde",
+		"uniqueTo": "Euroasian Nomads",
+		"unitType": "Ranged Combat",
+		"cost": 75,
 		"movement": 3,
-		"strength": 9,
+		"strength": 12,
+		"rangedStrength": 15,
+		"range":1,
 		"uniques": [
-			"Unbuildable",
+			"[-1] population [in this city]",
 			"'Mounted'",
-			"'Dense Formation'",
+			"'Skirmishers'",
 			"'Edged Weapons'",
 			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Pasture] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Road] improvements on tiles <for [Human player] Civilizations>",
+			"[+2] Strength <starting from the [Classical era]>",
+			"[+3] Strength <starting from the [Medieval era]>",
+			"[+4] Strength <starting from the [Renaissance era]>",
+			"[+5] Strength <starting from the [Imperial era]>",
+			"Instantly provides [1] [Migrating Population] <by consuming this unit>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"[+25]% construction time for [Road] improvements <in [Open terrain] tiles>",
+			"[+75]% construction time for [Road] improvements <in [Rough terrain] tiles>",
+			"[+75]% construction time for [Road] improvements <in [Mountain] tiles>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
+		"promotions":["Nomadic Lifestyle"],
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Stirrup",
+		"requiredResource":"Horse",
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Javalineer",
 		"unitType": "Ranged Combat",
-		"cost": 50,
+		"cost": 0,
 		"movement": 2,
 		"strength": 12,
 		"rangedStrength": 15,
@@ -843,6 +935,42 @@
 		"upgradesTo": "Hussar",
 		"attackSound": "arrow"
 	},
+	{
+		"name": "Elite Horse Archer",
+		"uniqueTo":"Euroasian Nomads",
+		"replaces":"Horse Archer",
+		"unitType": "Rider",
+		"cost": 90,
+		"movement": 3,
+		"strength": 13,
+		"rangedStrength": 19,
+		"range": 1,
+		"uniques": [
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+1] Sight",
+			"[+1] Range <after discovering [Stirrup]> <in [Land] tiles>",
+			"[+3] Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+4] Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Skirmisher Training",
+			"Nomadic Lifestyle"
+		],
+		"requiredBuilding": "Military Stable",
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "arrow"
+	},
 	///Line 5
 	{
 		"name": "Light Galley Fleet",
@@ -1018,8 +1146,33 @@
 	{
 		"name": "Spearman",
 		"unitType": "Close Combat",
-		"cost": 50,
+		"cost": 0,
 		"movement": 2,
+		"strength": 16,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+33]% Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+33]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Nomad Warriors",
+		"unitType": "Close Combat",
+		"cost": 0,
+		"movement": 3,
 		"strength": 16,
 		"uniques": [
 			"Unbuildable",
@@ -1974,7 +2127,7 @@
 	{
 		"name": "Levy Archer",
 		"unitType": "Ranged Combat",
-		"cost": 60,
+		"cost": 0,
 		"movement": 2,
 		"strength": 16,
 		"rangedStrength": 20,
@@ -2236,7 +2389,7 @@
 	{
 		"name": "Levy Crossbowman",
 		"unitType": "Ranged Combat",
-		"cost": 75,
+		"cost": 0,
 		"movement": 2,
 		"strength": 24,
 		"rangedStrength": 28,
@@ -2318,7 +2471,7 @@
 	{
 		"name": "Pike and Shot",
 		"unitType": "Close Combat",
-		"cost": 100,
+		"cost": 0,
 		"movement": 2,
 		"strength": 28,
 		"uniques": [
@@ -2549,7 +2702,7 @@
 	{
 		"name": "Gun Boat",
 		"unitType": "Ranged Combat Ship",
-		"cost": 80,
+		"cost": 0,
 		"movement": 3,
 		"strength": 28,
 		"rangedStrength": 35,
@@ -2635,7 +2788,7 @@
 	{
 		"name": "Musketeer",
 		"unitType": "Close Combat",
-		"cost": 140,
+		"cost": 0,
 		"movement": 2,
 		"strength": 37,
 		"uniques": [
@@ -3016,7 +3169,7 @@
 	{
 		"name": "Guerrilla",
 		"unitType": "Ranged Combat",
-		"cost": 320,
+		"cost": 0,
 		"movement": 3,
 		"strength": 50,
 		"rangedStrength": 54,
@@ -3042,7 +3195,7 @@
 	{
 		"name": "Rifleman",
 		"unitType": "Close Combat",
-		"cost": 320,
+		"cost": 0,
 		"movement": 2,
 		"strength": 56,
 		"uniques": [
@@ -5184,6 +5337,25 @@
 			"Uncapturable"
 		],
 		"movement": 2
+	},
+	{
+		"name": "Great Khan",
+		"uniqueTo":"Euroasian Nomads",
+		"replaces":"Great Commander",
+		"cost": 1000,
+		"unitType": "Civilian",
+		"uniques": [
+			"[+12]% Strength bonus for [Military] units within [3] tiles <before discovering [Tactics]>",
+			"[+17]% Strength bonus for [Military] units within [4] tiles <after discovering [Tactics]><before discovering [Radio]>",
+			"[+22]% Strength bonus for [Military] units within [5] tiles <after discovering [Radio]>",
+			"Can be earned through combat",
+			"Empire enters a [10]-turn Golden Age <by consuming this unit>",
+			"Great Person - [War]",
+			"Is part of Great Person group [Military]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 3
 	},
 	{
 		"name": "Great Strategist",

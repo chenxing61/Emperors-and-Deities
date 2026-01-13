@@ -42,6 +42,16 @@
 		]
 	},
 	{
+		"name": "State Reform Chance",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen",
+			"Will not be displayed in Civilopedia",
+			"Cannot be traded",
+			"Stockpiled"
+		]
+	},
+	{
 		"name": "Avaliable School of Thoughts",
 		"resourceType": "Strategic",
 		"uniques": [
@@ -158,7 +168,8 @@
 		"food": 1,
 		"improvedBy": [
 			"Pasture",
-			"Mechanised Livestock Farm"
+			"Mechanised Livestock Farm",
+			"Herding Tents"
 		],
 		"improvementStats": {
 			"production": 1
@@ -166,8 +177,8 @@
 		"uniques": [
 			"'Herd'",
 			"'Textile'",
-			"Generated on every [18] tiles <in [{Featureless} {Grassland}] tiles>",
-			"Generated on every [22] tiles <in [{Featureless} {Grassland}] tiles> <in [Hill] Regions>"
+			"Generated on every [14] tiles <in [{Featureless} {Grassland}] tiles>",
+			"Generated on every [18] tiles <in [{Featureless} {Grassland}] tiles> <in [Hill] Regions>"
 		]
 	},
 	{
@@ -179,7 +190,8 @@
 		"food": 1,
 		"improvedBy": [
 			"Pasture",
-			"Mechanised Livestock Farm"
+			"Mechanised Livestock Farm",
+			"Herding Tents"
 		],
 		"improvementStats": {
 			"food": 1
@@ -192,6 +204,22 @@
 		]
 	},
 	{
+		"name": "Cattle Horde",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen <if [Nomadic Culture] is not constructed> <hidden from users>",
+			"Cannot be traded"
+		]
+	},
+	{
+		"name": "Sheep Horde",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen <if [Nomadic Culture] is not constructed> <hidden from users>",
+			"Cannot be traded"
+		]
+	},
+	{
 		"name": "Camel",
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": [
@@ -200,7 +228,8 @@
 		"gold": 1,
 		"improvedBy": [
 			"Pasture",
-			"Oasis Dwelling"
+			"Oasis Dwelling",
+			"Herding Tents"
 		],
 		"improvementStats": {
 			"food": 1
@@ -420,7 +449,7 @@
 		"uniques": [
 			"Generated on every [5] tiles <in [{Featureless} {Coast}] tiles>",
 			"Generated on every [7] tiles <in [Lakes] tiles>",
-			"Generated on every [3] tiles <in [Atoll] tiles>"
+			"Generated on every [8] tiles <in [Atoll] tiles>"
 		]
 	},
 	{
@@ -471,6 +500,25 @@
 		]
 	},
 	{
+		"name": "Guano",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Atoll"
+		],
+		"production": 2,
+		"gold":2,
+		"science":1,
+		"revealedBy": "Chemistry",
+		"improvedBy": [
+			"Coast Fishing Boats",
+			"Deep Sea Fishing Boats"
+		],
+		"uniques": [
+			"'Chemicals'",
+			"Generated on every [8] tiles <in [Atoll] tiles>"
+		]
+	},
+	{
 		"name": "Natural Gas(Stored)",
 		"resourceType": "Strategic",
 		"revealedBy": "Geology",
@@ -492,7 +540,8 @@
 		"production": 1,
 		"improvedBy": [
 			"Pasture",
-			"Mechanised Livestock Farm"
+			"Mechanised Livestock Farm",
+			"Herding Tents"
 		],
 		"improvementStats": {
 			"production": 1
@@ -1677,6 +1726,16 @@
 		],
 		"revealedBy": "Theology"
 	},
+	{
+		"name": "Settlement Process",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen <if [Nomadic Culture] is not constructed> <hidden from users>",
+			"Comment [When this resource reaches (20 + 5 x No. of Cities) , you lose the [Nomadic Culture] and can now continue the game as a normal civilization with bonuses from your nomadic history.]",
+			"Stockpiled",
+			"Cannot be traded"
+		]
+	}
 	///Civilian Products
 	{
 		"name": "Alcohol",
@@ -1745,5 +1804,16 @@
 				"Not shown on world screen <if [Hide Miscellaneous] is constructed>"
 		],
 		"revealedBy":"Mining"
+	},
+	{
+		"name": "Slaves",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Stockpiled",
+			"Comment [Upon reaching 100 [Slaves], 100 [Slaves] are transformed into a [Peon] Unit.]",
+			"Cannot be traded"
+		],
+		"civilopediaText": [
+		{"text": "See also: Peon", "link": "Unit/Peon"}]
 	}
 ]
