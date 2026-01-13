@@ -187,9 +187,30 @@
             {
                 "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
                 "uniques": [
+                    "Only available <if [Low Culture Diversity] is constructed>",
                     "Instantly provides [1] [Migrating Population]",
-                    "Gain a free [Medium Culture Diversity] [in capital] <if [Low Culture Diversity] is constructed> <hidden from users>",
-                    "Gain a free [High Culture Diversity] [in capital] <if [Medium Culture Diversity] is constructed> <hidden from users>",
+                    "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
+                    "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
+                ]
+            },
+            {
+                "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
+                "uniques": [
+                    "Only available <if [Medium Culture Diversity] is constructed>",
+                    "Instantly provides [1] [Migrating Population]",
+                    "Gain a free [High Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
+                    "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
+                ]
+            },
+            {
+                "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
+                "uniques": [
+                    "Only available <if [High Culture Diversity] is constructed>",
+                    "Instantly provides [1] [Migrating Population]",
                     "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
                     "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
                     "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
@@ -435,15 +456,26 @@
             {
                 "text": "Purge Minorities",
                 "uniques": [
-                    "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Only available <if [Unified] is constructed> <if [Medium Culture Diversity] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
                     "Instantly consumes [20] [Influence]",
                     "[-1] population in a random city",
                     "[-1] population in a random city",
+                    "Gain [200] [Gold] <(modified by game speed)>",
+                    "Gain a free [Low Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Decrease the Culture Diversity by a level if it hasnt reached lowest level yet.]",
+                    "Play [metalhit] sound <hidden from users>"
+                ]
+            },
+            {
+                "text": "Purge Minorities",
+                "uniques": [
+                    "Only available <if [Unified] is constructed> <if [High Culture Diversity] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Instantly consumes [20] [Influence]",
+                    "[-1] population in a random city",
                     "[-1] population in a random city",
                     "Gain [200] [Gold] <(modified by game speed)>",
-                    "Gain a free [Low Culture Diversity] [in capital] <if [Medium Culture Diversity] is constructed> <hidden from users>",
-                    "Gain a free [Medium Culture Diversity] [in capital] <if [High Culture Diversity] is constructed> <hidden from users>",
-                    "Comment [Decrease the Culture Diversity by a level if it hasnt reached lowest level yet.]",
+                    "Gain a free [Medium Culture Diversity] [in capital]  <hidden from users>",
+                    "Comment [Decrease the H by a level if it hasnt reached lowest level yet.]",
                     "Play [metalhit] sound <hidden from users>"
                 ]
             },
@@ -1021,12 +1053,36 @@
             {
                 "text": "[Cultural Exchange] is the most elegant",
                 "uniques": [
-                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed>",
+                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed> <if [Low Culture Diversity] is constructed>",
                     "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
                     "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
-                    "Gain a free [Medium Culture Diversity] [in capital] <if [Low Culture Diversity] is constructed> <hidden from users>",
-                    "Gain a free [High Culture Diversity] [in capital] <if [Medium Culture Diversity] is constructed> <hidden from users>",
+                    "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Gain a free [Cultural Exchange] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Cultural Exchange] is the most elegant",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed> <if [Medium Culture Diversity] is constructed>",
+                    "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
+                    "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
+                    "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Gain a free [High Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Gain a free [Cultural Exchange] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Cultural Exchange] is the most elegant",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed> <if [High Culture Diversity] is constructed>",
+                    "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
+                    "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
+                    "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
                     "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
                     "Gain a free [Cultural Exchange] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
