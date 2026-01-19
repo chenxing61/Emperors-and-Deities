@@ -1,25 +1,29 @@
 # Emperor and Deities (帝王和神明)
  Major Overhaul of literary everything, if you are not satisfied with how civ 5 portrays human civilizations, you ought to try this mod!
 
- The Mod is WIP so civs dont have their unique features currently and late game(info age) kinda sucks.
+ The Mod is WIP so civs dont have their full unique features and late game(info age) kinda lacks content, it is recommended that you enable short victories like nuclear monopoly and industrial.
 
  Credit to 
- **Buckeeter aka Wadaling for making most of the vector icons(another credit to flaticon.com) and tile sets.**
+
+**CX61 aka me for the vast majority of code and ideas.**
+ 
+ **Buckeeter aka Wadaling for making most of the vector icons(another credit to flaticon.com/game-icon.net) and the entire hexarealm tile sets.**
 
  **Yanggestar from qq group chat for creating many original grahpics for the mod.**
 
  **Caballeroarepa for providing the code for canal building**
 
  **RapidPup for providing a large part of late game tech tree**
- Special thanks to:
+ 
+ *Special thanks to:*
  
  **EmperorPenguin for some help with proofreading, bug fixing advices.**
 
  **FastDoubloon115_ for some help with playtesting.**
  
- Authors of Deciv and Deciv redux, Outlaw of waste, Alpha frontier, Leaders mission 1 and 2, CS reworked, Rek mod, The great unciv rework and the rest of the community. 
+ Authors of Deciv 2 and Deciv redux, Outlaws of the Waste, Alpha Frontier, Leaders mission 1 and 2, CS Reworked, Rek Mod, The Great Unciv Rework and the rest of the community. 
  ---
- Great mods and bad mods both pushed me to this point. Its all your fault!
+ Great mods and bad mods both pushed CX61 to this point. Its all your fault!
 
  Feedback goes to official unciv discord's Emperors and Deities thread, or just open a issue here!
 
