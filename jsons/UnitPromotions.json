@@ -198,8 +198,8 @@
 		"name": "Reserve Force",
 		"uniques": [
 			"Only available <after discovering [Logistics]>",
-			"[This Unit] heals [33] HP <upon gaining the [Use Reserve Force] promotion>",
-			"Gain [-3] [Gold] <every [1] turns>"
+			"[This Unit] heals [50] HP <upon gaining the [Use Reserve Force] promotion>",
+			"Consumes [1] [Standing Army Maintainance]"
 		],
 		"unitTypes": [
 			"Siege",
@@ -1327,12 +1327,10 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <when attacking> <vs ['Edged Weapons'] units>",
-			"[+5]% Strength <when attacking> <vs [Assault] units>"
+			"[+2] Strength <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat",
-			"Scout",
 			"Rider",
 			"Assault"
 		],
@@ -1345,11 +1343,10 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <vs ['Dense Formation'] units> <when attacking> <before the [Medieval era]>",
-			"[+10]% Strength <vs ['Dense Formation'] units> <when attacking> <starting from the [Medieval era]> <before the [Imperial era]>"
+			"[+2] Strength <when attacking> <before the [Medieval era]>",
+			"[+1] Strength <vs ['Dense Formation'] units> <when attacking> <starting from the [Medieval era]> <before the [Imperial era]>"
 		],
 		"unitTypes": [
-			"Close Combat",
 			"Ranged Combat",
 			"Scout"
 		],
@@ -1362,8 +1359,8 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+5]% Strength <when fighting in [Rough terrain] tiles>",
-			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Renaissance era]>"
+			"[+1] Strength <when fighting in [Rough terrain] tiles>",
+			"[+20]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Renaissance era]>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1386,8 +1383,7 @@
 			"[+18]% Strength <vs ['Galley'] units> <when attacking> <when fighting in [Atoll] tiles>"
 		],
 		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship"
+			"Close Combat Ship"
 		],
 		"column": 23,
 		"row": 5
@@ -1674,13 +1670,13 @@
 			"Medieval Arms"
 		],
 		"uniques": [
+			"Only available <after discovering [Engineering]>",
 			"[+15]% Strength <before the [Imperial era]>",
 			"[+18]% Strength <vs [Assault] units> <before the [Imperial era]>"
 		],
 		"unitTypes": [
 			"Ranged Combat"
 		],
-		"requiredTech": "Engineering",
 		"column": 28,
 		"row": 2
 	},
