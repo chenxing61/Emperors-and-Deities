@@ -134,11 +134,12 @@
 		"name": "Migrate Capital",
 		"cost": 50,
 		"uniques": [
+			"Limited to [1] per Civilization <hidden from users>",
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available <in [non-[Capital]] cities> <in cities connected to the capital>",
 			"[-100]% production cost <if [Nomadic Culture] is constructed>",
 			"Remove [Palace] [in all cities]",
-			"Gain a free [Palace] [in this city]"
+			"Gain a free [Palace] [in this city] <for [1] turns>"
 		],
 		"requiredTech": "Horse Collar",
 		"hurryCostModifier": 100
@@ -1204,7 +1205,8 @@
 		"uniques": [
 			"'Worship Place'",
 			"[+10]% [Faith] [in all cities]",
-			"Gain a free [Follower] belief <upon founding a Religion>",
+			"Gain a free [Follower] belief <upon founding a Religion> <before founding a religion>",
+			"Gain a free [Follower] belief <after founding a religion>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -1377,6 +1379,17 @@
 		],
 		"requiredTech": "The Wheel",
 		"quote": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge"
+	},
+	{
+		"name": "Sinai Deep Tunnels",
+		"cost":10,
+		"isWonder": true,
+		"uniques": [
+			"Only available <within [3] tiles of a [Mount Sinai]>",
+			"Provides [1] [Rich Copper Ore]",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Mining"
 	},
 	//Line 3
 	{
@@ -1583,6 +1596,17 @@
 		"quote": "'Learning without thinking leads to confusion; Thinking without learning ends to vain.' - Confucius"
 	},
 	{
+		"name": "Great Barrier Reef Expedition",
+		"cost":0,
+		"isWonder": true,
+		"uniques": [
+			"Only available <within [3] tiles of a [Great Barrier Reef]>",
+			"Provides [1] [Coral]",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Astronomy"
+	},
+	{
 		"name": "Hanging Gardens",
 		"isWonder": true,
 		"food": 2,
@@ -1739,6 +1763,16 @@
 		],
 		"requiredTech": "Mining",
 		"quote": "'The land of abundance' - The idiom used to describe the province after Du Jiang Yan was built."
+	},
+	{
+		"name": "Cerro de Potosi Silver Mine",
+		"isWonder": true,
+		"uniques": [
+			"Only available <within [3] tiles of a [Cerro de Potosi]>",
+			"Provides [1] [Silver Ore]",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Mining"
 	},
 	{
 		"name": "Mausoleum of Wealth",
@@ -8904,7 +8938,7 @@
 			"[-1 Faith] [in all cities]",
 			"[-25]% Unhappiness from [Specialists] [in all cities] <before the [Industrial era]>",
 			"[-10]% Unhappiness from [Specialists] [in all cities] <starting from the [Industrial era]>",
-			"[-15]% Food consumption by specialists [in all cities]",
+			"[-15]% Food consumption by [Specialists] [in all cities]",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},

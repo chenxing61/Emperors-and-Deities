@@ -85,7 +85,6 @@
 			"[This Unit] gains [3] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
-		"requiredBuilding": "Port",
 		"requiredTech": "Advanced Shipbuilding"	
 	},
 	{
@@ -642,6 +641,7 @@
 		"strength": 12,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -658,7 +658,6 @@
 		],
 		"requiredTech": "Astronomy",
 		"obsoleteTech": "Monocular",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"upgradesTo": "Explorer",
 		"attackSound": "metalhit"
@@ -792,6 +791,7 @@
 		"range": 1,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -807,7 +807,6 @@
 		"requiredTech": "Mining",
 		"obsoleteTech": "Logistics",
 		"upgradesTo": "Mercenary Archer",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "arrow"
 	},
@@ -818,6 +817,7 @@
 		"movement": 3,
 		"strength": 16,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -833,7 +833,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredResource": "Standing Army Maintenance",
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Stirrup",
@@ -847,6 +846,7 @@
 		"movement": 2,
 		"strength": 20,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Elephant]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -863,7 +863,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Tactics",
 		"requiredResource": "Standing Army Maintenance",
@@ -879,6 +878,7 @@
 		"movement": 2,
 		"strength": 21,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Elephant]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -895,7 +895,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Tactics",
 		"requiredResource": "Standing Army Maintenance",
@@ -911,6 +910,7 @@
 		"rangedStrength": 17,
 		"range": 1,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -928,7 +928,6 @@
 			"The Standing Army",
 			"Skirmisher Training"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintenance",
@@ -946,6 +945,7 @@
 		"rangedStrength": 19,
 		"range": 1,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -964,7 +964,6 @@
 			"Skirmisher Training",
 			"Nomadic Lifestyle"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintenance",
@@ -1470,6 +1469,7 @@
 		"rangedStrength": 20,
 		"range": 1,
 		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -1485,7 +1485,6 @@
 		"requiredTech": "Logistics",
 		"obsoleteTech": "Engineering",
 		"upgradesTo": "Mercenary Crossbowman",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "arrow"
 	},
@@ -1496,6 +1495,7 @@
 		"movement": 3,
 		"strength": 17,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <with [Camel]>",
 			"'Standing Army'",
 			"'Mounted'",
@@ -1512,7 +1512,6 @@
 			"The Standing Army",
 			"Skirmisher Training"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Logistics",
 		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintenance",
@@ -1526,6 +1525,7 @@
 		"movement": 3,
 		"strength": 17,
 		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"Only available <with [Camel]>",
 			"Unbuildable <for [Human player] Civilizations>",
 			"'Mercenary Army'",
@@ -1545,7 +1545,6 @@
 		],
 		"requiredTech": "Logistics",
 		"obsoleteTech": "Carriage",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"upgradesTo": "Hussar",
 		"attackSound": "arrow"
@@ -1589,6 +1588,7 @@
 		"movement": 3,
 		"strength": 24,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <if [Persian Dynasties] is constructed>",
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
@@ -1609,7 +1609,6 @@
 			"The Noble Army",
 			"Strip Armour"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Tactics",
 		"requiredResource": "Standing Army Maintenance",
@@ -1655,6 +1654,7 @@
 		"movement": 3,
 		"strength": 26,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <if [Chu Dynasty] is constructed>",
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
@@ -1674,7 +1674,6 @@
 			"Strip Armour",
 			"Centralised Command"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Tactics",
 		"requiredResource": "Standing Army Maintenance",
@@ -1687,6 +1686,7 @@
 		"movement": 3,
 		"strength": 24,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
 			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]>",
@@ -1704,7 +1704,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Tactics",
 		"requiredResource": "Standing Army Maintenance",
@@ -1717,6 +1716,7 @@
 		"movement": 3,
 		"strength": 24,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
 			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
@@ -1735,7 +1735,6 @@
 			"The Noble Army",
 			"Strip Armour"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Tactics",
 		"requiredResource": "Noble Army Maintenance",
@@ -1769,7 +1768,6 @@
 			"Assault Doctrine",
 			"Hetairoi Glory"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Tactics",
 		"requiredResource": "Noble Army Maintenance",
@@ -1782,6 +1780,7 @@
 		"movement": 2,
 		"strength": 18,
 		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
 			"'Mercenary Army'",
 			"'Infantry'",
@@ -1800,7 +1799,6 @@
 		"requiredTech": "Armorments",
 		"obsoleteTech": "Flintlock",
 		"upgradesTo": "Mercenary Musketeer",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "metalhit"
 	},
@@ -1889,6 +1887,7 @@
 		"rangedStrength": 23,
 		"range": 2,
 		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"'Mercenary Army'",
 			"'Sailing Ship'",
 			"'Dense Formation'",
@@ -1902,7 +1901,6 @@
 		],
 		"requiredTech": "Shipbuilding",
 		"obsoleteTech": "Monocular",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"upgradesTo":"Three-masted Ship",
 		"attackSound": "throw"
@@ -1915,6 +1913,7 @@
 		"movement": 3,
 		"strength": 19,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <if [Han Dynasty] is constructed>",
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
@@ -1924,7 +1923,7 @@
 			"No defensive terrain bonus",
 			"[+1] Sight",
 			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
-			"[+10]% Strength <vs [Rider] units> <when attacking>",
+			"[+25]% Strength <vs [Rider] units> <when attacking>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
@@ -1933,7 +1932,6 @@
 			"Hardened",
 			"Resourceful Army"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Logistics",
 		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintenance",
@@ -1947,6 +1945,7 @@
 		"movement": 3,
 		"strength": 21,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -1963,7 +1962,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Stirrup",
 		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintenance",
@@ -1977,6 +1975,7 @@
 		"movement": 3,
 		"strength": 18,
 		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
 			"Unbuildable",
 			"'Mercenary Army'",
@@ -1997,7 +1996,6 @@
 		"requiredTech": "Stirrup",
 		"obsoleteTech": "Carriage",
 		"upgradesTo": "Hussar",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "horse"
 	},
@@ -2010,7 +2008,7 @@
 		"rangedStrength": 30,
 		"range": 1,
 		"uniques": [
-			"Only available <if [Alchemy Lab] is constructed>",
+			"Unavailable <in cities without a [Alchemy Lab]>",
 			"'Standing Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -2025,7 +2023,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Alchemy Lab",
 		"requiredTech": "Alchemy",
 		"obsoleteTech": "Steels",
 		"upgradesTo": "Cannon",
@@ -2069,6 +2066,7 @@
 		"rangedStrength": 25,
 		"range": 1,
 		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
 			"'Mercenary Army'",
 			"'Infantry'",
@@ -2085,7 +2083,6 @@
 		"requiredTech": "Engineering",
 		"obsoleteTech": "Hand Cannon",
 		"upgradesTo": "Mercenary Hand Cannoneer",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "crossbow"
 	},
@@ -2157,6 +2154,7 @@
 		"movement": 3,
 		"strength": 28,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
 			"'Standing Army'",
@@ -2173,7 +2171,6 @@
 			"The Standing Army",
 			"Chainmail Armour"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Tactics",
 		"obsoleteTech": "Hand Cannon",
 		"requiredResource": "Standing Army Maintenance",
@@ -2187,6 +2184,7 @@
 		"movement": 3,
 		"strength": 30,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <after adopting [Knighthood]>",
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
@@ -2204,7 +2202,6 @@
 			"Chivalry",
 			"Chainmail Armour"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Tactics",
 		"obsoleteTech": "Hand Cannon",
 		"requiredResource": "Noble Army Maintenance",
@@ -2218,6 +2215,7 @@
 		"movement": 2,
 		"strength": 31,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Elephant]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -2233,7 +2231,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Tactics",
 		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintenance",
@@ -2249,6 +2246,7 @@
 		"movement": 2,
 		"strength": 32,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Elephant]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -2264,7 +2262,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Tactics",
 		"obsoleteTech": "Carriage",
 		"requiredResource": "Standing Army Maintenance",
@@ -2280,7 +2277,7 @@
 		"rangedStrength": 27,
 		"range": 2,
 		"uniques": [
-			"Only available <if [Military Blacksmith] is constructed>",
+			"Unavailable <in cities without a [Military Blacksmith]>",
 			"Costs [12] [Weapon Parts]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -2314,7 +2311,7 @@
 		"rangedStrength": 28,
 		"range": 2,
 		"uniques": [
-			"Only available <if [Military Blacksmith] is constructed>",
+			"Unavailable <in cities without a [Military Blacksmith]>",
 			"Costs [12] [Weapon Parts]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -2344,6 +2341,7 @@
 		"movement": 3,
 		"strength": 27,
 		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
 			"'Mercenary Army'",
 			"'Mounted'",
@@ -2357,7 +2355,6 @@
 		],
 		"requiredTech": "Diplomacy",
 		"obsoleteTech": "Hand Cannon",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"upgradesTo": "Mercenary Pistoleer",
 		"attackSound": "horse"
@@ -2421,6 +2418,7 @@
 		"rangedStrength": 38,
 		"range": 1,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Can upgrade to [Skirmisher] <after discovering [Military Science]>",
 			"Can upgrade to [Field Gun] <after discovering [Carriage]>",
 			"Costs [9] [Weapon Parts]",
@@ -2436,7 +2434,6 @@
 		],
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
-		"requiredBuilding": "Firearms Workshop",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
@@ -2449,6 +2446,7 @@
 		"rangedStrength": 38,
 		"range": 1,
 		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
 			"'Mercenary Army'",
 			"'Infantry'",
@@ -2464,7 +2462,6 @@
 		"upgradesTo": "Mercenary Skirmisher",
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "shot"
 	},
@@ -2529,7 +2526,6 @@
 		"movement": 3,
 		"strength": 36,
 		"uniques": [
-			"Only available <in cities with a [Firearms Workshop]>",
 			"Only available <before adopting [Knighthood]>",
 			"Costs [6] [Weapon Parts]",
 			"Consumes [1] [Horse]",
@@ -2546,7 +2542,6 @@
 			"The Standing Army",
 			"Partial Plate Armour"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
 		"upgradesTo": "Cuirassier",
@@ -2560,6 +2555,7 @@
 		"movement": 3,
 		"strength": 32,
 		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"Can transform to [Cuirassier] <after discovering [Rifling]> <when above [0] [Standing Army Maintenance]> <removing the [Mercenary Habit] promotion/status>",
 			"Unbuildable <for [Human player] Civilizations>",
 			"'Mercenary Army'",
@@ -2577,7 +2573,6 @@
 		],
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "horse"
 	},
@@ -2588,6 +2583,7 @@
 		"movement": 3,
 		"strength": 36,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <after adopting [Knighthood]>",
 			"Consumes [1] [Horse]",
 			"'Edged Weapons'",
@@ -2604,7 +2600,6 @@
 			"Chivalry",
 			"Plate Armour"
 		],
-		"requiredBuilding": "Military Stable",
 		"upgradesTo": "Royal Cuirassier",
 		"requiredTech": "Hand Cannon",
 		"obsoleteTech": "Military Science",
@@ -2620,6 +2615,7 @@
 		"rangedStrength": 38,
 		"range": 2,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Can upgrade to [Siege Bombard] <after discovering [Machinery]>",
 			"Costs [15] [Weapon Parts]",
 			"'Standing Army'",
@@ -2640,7 +2636,6 @@
 		"requiredTech": "Steels",
 		"obsoleteTech": "Carriage",
 		"upgradesTo": "Field Gun",
-		"requiredBuilding": "Firearms Workshop",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "cannon"
 	},
@@ -2652,6 +2647,7 @@
 		"movement": 4,
 		"strength": 35,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Costs [15] [Weapon Parts]",
 			"'Standing Army'",
 			"'Galley'",
@@ -2666,7 +2662,6 @@
 		"requiredTech": "Monocular",
 		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo": "Torpedo Boat Flotilla",
-		"requiredBuilding": "Firearms Workshop",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "cannon"
 	},
@@ -2677,6 +2672,7 @@
 		"movement": 4,
 		"strength": 29,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Unbuildable <for [Human player] Civilizations>",
 			"'Mercenary Army'",
 			"'Infantry'",
@@ -2694,7 +2690,6 @@
 		],
 		"requiredTech": "Monocular",
 		"obsoleteTech": "Replaceable Parts",
-		"requiredBuilding": "Firearms Workshop",
 		"requiredResource": "Mercenary Contract",
 		"upgradesTo":"Recon Unit",
 		"attackSound": "metalhit"
@@ -2732,6 +2727,7 @@
 		"rangedStrength": 38,
 		"range": 2,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Consumes [1] [Metal]",
 			"Costs [21] [Weapon Parts]",
 			"'Standing Army'",
@@ -2751,7 +2747,6 @@
 		"requiredTech": "Machinery",
 		"obsoleteTech": "Carriage",
 		"upgradesTo": "Field Gun",
-		"requiredBuilding": "Firearms Workshop",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "artillery"
 	},
@@ -2765,6 +2760,7 @@
 		"rangedStrength": 46,
 		"range": 2,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Costs [21] [Weapon Parts]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -2781,7 +2777,6 @@
 		"requiredTech": "Carriage",
 		"obsoleteTech": "Dynamite",
 		"upgradesTo": "Howitzer",
-		"requiredBuilding": "Firearms Workshop",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "cannon"
 	},
@@ -2805,7 +2800,6 @@
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "Rifleman",
-		"requiredBuilding": "Firearms Workshop",
 		"attackSound": "shot"
 	},
 	{
@@ -2815,6 +2809,7 @@
 		"movement": 2,
 		"strength": 40,
 		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
 			"Can only be built <in cities with a [Mercenary Office]>",
 			"'Mercenary Army'",
@@ -2831,7 +2826,6 @@
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Security Company",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "shot"
 	},
@@ -2842,6 +2836,7 @@
 		"movement": 2,
 		"strength": 39,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Only available <if [United States] is constructed>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
@@ -2856,7 +2851,6 @@
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "State Militia Rifleman",
-		"requiredBuilding": "Firearms Workshop",
 		"attackSound": "shot"
 	},
 	{
@@ -2866,6 +2860,7 @@
 		"movement": 2,
 		"strength": 43,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Only available <before adopting [Long Live the Revolution!]>",
 			"Costs [12] [Weapon Parts]",
 			"'Standing Army'",
@@ -2882,7 +2877,6 @@
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Heavy Infantry",
-		"requiredBuilding": "Firearms Workshop",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
@@ -2893,6 +2887,7 @@
 		"movement": 2,
 		"strength": 43,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Only available <after adopting [Long Live the Revolution!]>",
 			"Costs [12] [Weapon Parts]",
 			"'Standing Army'",
@@ -2910,7 +2905,6 @@
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Heavy Infantry",
 		"requiredResource": "Standing Army Maintenance",
-		"requiredBuilding": "Firearms Workshop",
 		"attackSound": "shot"
 	},
 	{
@@ -2920,6 +2914,7 @@
 		"movement": 3,
 		"strength": 42,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
 			"'Mounted'",
@@ -2935,7 +2930,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Carriage",
 		"obsoleteTech": "Rifling",
 		"requiredResource": "Standing Army Maintenance",
@@ -2951,6 +2945,7 @@
 		"strength": 38,
 		"rangedStrength": 46,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Costs [21] [Weapon Parts]",
 			"'Standing Army'",
 			"'Sailing Ship'",
@@ -2965,7 +2960,6 @@
 		"requiredTech": "Navigation",
 		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo": "Battleship Fleet",
-		"requiredBuilding": "Firearms Workshop",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "cannon"
 	},
@@ -2978,6 +2972,7 @@
 		"rangedStrength": 43,
 		"range": 1,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Costs [15] [Weapon Parts]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -2991,7 +2986,6 @@
 		],
 		"requiredTech": "Cartridge",
 		"obsoleteTech": "Replaceable Parts",
-		"requiredBuilding": "Firearms Workshop",
 		"requiredResource": "Standing Army Maintenance",
 		"upgradesTo": "Sharpshooter",
 		"attackSound": "shot"
@@ -3005,6 +2999,7 @@
 		"rangedStrength": 43,
 		"range": 1,
 		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
 			"'Mercenary Army'",
 			"'Infantry'",
@@ -3020,7 +3015,6 @@
 		"requiredTech": "Cartridge",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Security Company",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "shot"
 	},
@@ -3032,6 +3026,7 @@
 		"movement": 3,
 		"strength": 50,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <before adopting [Knighthood]>",
 			"Consumes [2] [Horse]",
 			"'Standing Army'",
@@ -3047,7 +3042,6 @@
 			"Partial Plate Armour",
 			"Intensive Doctrine"
 		],
-		"requiredBuilding": "Military Stable",
 		"upgradesTo": "Modern Cavalry",
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Rifling",
@@ -3061,6 +3055,7 @@
 		"movement": 3,
 		"strength": 54,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Can transform to [Modern Cavalry] <after discovering [Rifling]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"Only available <after adopting [Knighthood]>",
 			"Consumes [2] [Horse]",
@@ -3078,7 +3073,6 @@
 			"Partial Plate Armour",
 			"Intensive Doctrine"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Rifling",
 		"requiredResource": "Noble Army Maintenance",
@@ -3091,6 +3085,7 @@
 		"movement": 3,
 		"strength": 43,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Costs [15] [Weapon Parts]",
 			"Consumes [2] [Horse]",
 			"'Standing Army'",
@@ -3106,7 +3101,6 @@
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Heavy Infantry",
-		"requiredBuilding": "Firearms Workshop",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
 	},
@@ -3118,6 +3112,7 @@
 		"movement": 4,
 		"strength": 50,
 		"uniques": [
+			"Unavailable <in cities without a [Military Port]>",
 			"Consumes [1] [Coal]",
 			"Costs [8] [Alloy]",
 			"Costs [15] [Ship Parts]",
@@ -3131,7 +3126,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Port",
 		"requiredTech": "Ship Armour",
 		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo": "Destroyer Fleet",
@@ -3146,6 +3140,7 @@
 		"strength": 52,
 		"rangedStrength": 58,
 		"uniques": [
+			"Unavailable <in cities without a [Military Port]>",
 			"Consumes [1] [Coal]",
 			"Costs [10] [Alloy]",
 			"Costs [25] [Ship Parts]",
@@ -3159,7 +3154,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Port",
 		"requiredTech": "Ship Armour",
 		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo": "Battleship Fleet",
@@ -3222,6 +3216,7 @@
 		"movement": 2,
 		"strength": 58,
 		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Can transform to [Heavy Infantry] <after discovering [Replaceable Parts]> <when above [0] [Standing Army Maintenance]> <removing the [The Garrison Army] promotion/status>",
 			"Only available <if [United States] is constructed>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
@@ -3236,7 +3231,6 @@
 		],
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Ballistics",
-		"requiredBuilding": "Firearms Workshop",
 		"attackSound": "shot"
 	},
 	{
@@ -3246,6 +3240,7 @@
 		"movement": 3,
 		"strength": 55,
 		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
 			"Can upgrade to [Motorised Infantry] <after discovering [Combustion]>",
 			"Can upgrade to [Armoured Car] <after discovering [Combustion]>",
 			"Costs [18] [Weapon Parts]",
@@ -3261,7 +3256,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Stable",
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Combustion",
 		"requiredResource": "Standing Army Maintenance",
@@ -3322,6 +3316,7 @@
 		"rangedStrength": 50,
 		"range": 2,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
 			"Consumes [1] [Fuel]",
 			"Costs [24] [Ship Parts]",
 			"'Standing Army'",
@@ -3336,7 +3331,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Port",
 		"requiredTech": "Advanced Shipbuilding",
 		"upgradesTo": "Nuclear Submarines",
 		"requiredResource": "Standing Army Maintenance",
@@ -3349,6 +3343,7 @@
 		"movement": 3,
 		"strength": 55,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
 			"Consumes [1] [Fuel]",
 			"Costs [24] [Ship Parts]",
 			"'Standing Army'",
@@ -3364,7 +3359,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Port",
 		"requiredTech": "Advanced Shipbuilding",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shipguns"
@@ -3377,6 +3371,7 @@
 		"strength": 58,
 		"rangedStrength": 65,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
 			"Can upgrade to [Missile Crusier] <after discovering [Rocketry]>",
 			"Consumes [1] [Fuel]",
 			"Costs [36] [Ship Parts]",
@@ -3390,7 +3385,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Port",
 		"requiredTech": "Advanced Shipbuilding",
 		"upgradesTo": "Nuclear Battleship Fleet",
 		"requiredResource": "Standing Army Maintenance",
@@ -3554,6 +3548,7 @@
 		"movement": 2,
 		"strength": 65,
 		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
 			"'Mercenary Army'",
 			"'Infantry'",
@@ -3567,7 +3562,6 @@
 			"Mercenary Habit"
 		],
 		"requiredTech": "Replaceable Parts",
-		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "metalhit"
 	},
@@ -3580,6 +3574,7 @@
 		"rangedStrength": 50,
 		"range": 6,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [30] [Weapon Parts]",
 			"'Standing Army'",
 			"'Propeller Aircraft'",
@@ -3590,7 +3585,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Replaceable Parts",
 		"obsoleteTech": "Flight",
 		"upgradesTo": "Propeller Fighter",
@@ -3607,6 +3601,7 @@
 		"range": 1,
 		"interceptRange": 2,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [21] [Weapon Parts]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -3619,7 +3614,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Mass Production",
 		"upgradesTo": "AA Missile System",
 		"requiredResource": "Standing Army Maintenance",
@@ -3661,6 +3655,7 @@
 		"rangedStrength": 70,
 		"range": 3,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Can upgrade to [Rocket Artillery] <after discovering [Ballistics]>",
 			"Costs [36] [Weapon Parts]",
 			"'Standing Army'",
@@ -3675,7 +3670,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Dynamite",
 		"upgradesTo": "Self Propelled Artillery",
 		"requiredResource": "Standing Army Maintenance",
@@ -3690,6 +3684,7 @@
 		"rangedStrength": 70,
 		"range": 2,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Unbuildable <when below [0] [War Machine Blueprint]>",
 			"Costs [1] [War Machine Blueprint]",
 			"Costs [50] [Weapon Parts]",
@@ -3706,7 +3701,6 @@
 			"The Standing Army",
 			"Industrial Arms"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Dynamite",
 		"obsoleteTech": "Flight",
 		"upgradesTo": "Propeller Bomber",
@@ -3722,6 +3716,7 @@
 		"rangedStrength": 80,
 		"range": 4,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Unbuildable <when below [0] [War Machine Blueprint]>",
 			"Costs [1] [War Machine Blueprint]",
 			"Costs [50] [Weapon Parts]",
@@ -3738,7 +3733,6 @@
 			"The Standing Army",
 			"Industrial Arms"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Dynamite",
 		"obsoleteTech": "Mobile Tactics",
 		"upgradesTo": "Self Propelled Artillery",
@@ -3753,6 +3747,7 @@
 		"movement": 3,
 		"strength": 68,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [10] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
 			"Costs [20] [Weapon Parts]",
@@ -3766,7 +3761,6 @@
 			"The Standing Army",
 			"Machinegun"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Combustion",
 		"upgradesTo": "Mechanised Infantry",
 		"requiredResource": "Standing Army Maintenance",
@@ -3779,6 +3773,7 @@
 		"movement": 4,
 		"strength": 63,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [10] [Vehicle Parts]",
 			"'Standing Army'",
 			"'Motorised'",
@@ -3792,7 +3787,6 @@
 			"Scouting Unit",
 			"Skirmishing Doctrine"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Combustion",
 		"upgradesTo": "Spy Drone",
 		"requiredResource": "Standing Army Maintenance",
@@ -3805,6 +3799,7 @@
 		"movement": 4,
 		"strength": 64,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [24] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
 			"'Standing Army'",
@@ -3819,7 +3814,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Combustion",
 		"obsoleteTech": "Combined Arms",
 		"upgradesTo": "Humvee",
@@ -3833,6 +3827,7 @@
 		"movement": 3,
 		"strength": 75,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [30] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
 			"'Standing Army'",
@@ -3848,7 +3843,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"upgradesTo": "Assault Mecha",
 		"requiredTech": "Combustion",
 		"requiredResource": "Standing Army Maintenance",
@@ -3889,6 +3883,7 @@
 		"movement": 3,
 		"strength": 72,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [15] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
 			"Costs [20] [Weapon Parts]",
@@ -3902,7 +3897,6 @@
 			"The Standing Army",
 			"Machinegun"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Mobile Tactics",
 		"obsoleteTech": "Haptics",
 		"requiredResource": "Standing Army Maintenance",
@@ -3916,6 +3910,7 @@
 		"movement": 3,
 		"strength": 74,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Can transform to [Exoskeleton Infantry] <after discovering [Haptics]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"Costs [15] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
@@ -3930,7 +3925,6 @@
 			"The Noble Army",
 			"Machinegun"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Mobile Tactics",
 		"obsoleteTech": "Haptics",
 		"requiredResource": "Noble Army Maintenance",
@@ -3943,6 +3937,7 @@
 		"movement": 3,
 		"strength": 74,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Only available <after adopting [Militarised Nation]>",
 			"Costs [15] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
@@ -3958,7 +3953,6 @@
 			"Protection Squadron Ability",
 			"Machinegun"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Mobile Tactics",
 		"obsoleteTech": "Haptics",
 		"requiredResource": "Protection Squadron Volunteer",
@@ -3974,6 +3968,7 @@
 		"rangedStrength": 75,
 		"range": 3,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [24] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
 			"Costs [24] [Weapon Parts]",
@@ -4002,6 +3997,7 @@
 		"movement": 4,
 		"strength": 50,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
 			"Consumes [1] [Fuel]",
 			"Costs [30] [Ship Parts]",
 			"'Standing Army'",
@@ -4014,7 +4010,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Port",
 		"requiredTech": "Flight",
 		"requiredResource": "Standing Army Maintenance",
 		"upgradesTo": "Nuclear Carrier Fleet",
@@ -4030,6 +4025,7 @@
 		"range": 5,
 		"interceptRange": 5,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Consumes [1] [Fuel]",
 			"Costs [21] [Aircraft Parts]",
 			"'Standing Army'",
@@ -4046,7 +4042,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Flight",
 		"obsoleteTech": "Rocketry",
 		"upgradesTo": "Jet Fighter",
@@ -4062,6 +4057,7 @@
 		"rangedStrength": 69,
 		"range": 6,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Consumes [1] [Fuel]",
 			"Costs [21] [Aircraft Parts]",
 			"'Standing Army'",
@@ -4074,7 +4070,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Flight",
 		"upgradesTo": "Jet Bomber",
 		"obsoleteTech": "Rocketry",
@@ -4088,6 +4083,7 @@
 		"movement": 2,
 		"strength": 65,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [24] [Weapon Parts]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -4138,6 +4134,7 @@
 		"rangedStrength": 68,
 		"range": 2,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Only available <if [Military Factory Complex] is constructed>",
 			"Costs [30] [Weapon Parts]",
 			"Consumes [1] [Fuel]",
@@ -4154,7 +4151,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Ballistics",
 		"upgradesTo": "Missile System",
 		"requiredResource": "Standing Army Maintenance",
@@ -4169,13 +4165,13 @@
 		"rangedStrength": 75,
 		"range": 6,
 		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
 			"Costs [5] [Aircraft Parts]",
 			"Costs [5] [Weapon Parts]",
 			"[-100]% maintenance costs",
 			"[+100]% Strength <vs cities> <when attacking>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
-		"requiredBuilding": "Rocketry Industry",
 		"requiredTech": "Ballistics",
 		"attackSound": "missile"
 	},
@@ -4189,6 +4185,7 @@
 		"rangedStrength": 150,
 		"range": 10,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Only available <if [Nuclear Option] is constructed>",
 			"Costs [2] [Enriched Uranium]",
 			"Nuclear weapon of Strength [1]",
@@ -4208,6 +4205,7 @@
 		"rangedStrength": 62,
 		"range": 2,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
 			"Costs [27] [Ship Parts]",
 			"Consumes [1] [Enriched Uranium]",
 			"[+100]% maintenance costs",
@@ -4224,7 +4222,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Port",
 		"requiredTech": "Nuclear Fission",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "torpedo"
@@ -4237,6 +4234,7 @@
 		"strength": 68,
 		"rangedStrength": 75,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
 			"Costs [42] [Ship Parts]",
 			"Consumes [1] [Enriched Uranium]",
 			"[+100]% maintenance costs",
@@ -4263,6 +4261,7 @@
 		"movement": 5,
 		"strength": 70,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
 			"Costs [42] [Ship Parts]",
 			"Consumes [1] [Enriched Uranium]",
 			"[+100]% maintenance costs",
@@ -4290,6 +4289,7 @@
 		"rangedStrength": 70,
 		"range": 2,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [27] [Weapon Parts]",
 			"Costs [3] [Electronic Parts]",
 			"'Standing Army'",
@@ -4306,7 +4306,6 @@
 			"Mountaineer Training",
 			"Marine Training"
 		],
-		"requiredBuilding": "Military Base",
 		"requiredTech": "Combined Arms",
 		"upgradesTo": "Exoskeleton Spec Ops",
 		"requiredResource": "Standing Army Maintenance",
@@ -4319,6 +4318,7 @@
 		"movement": 3,
 		"strength": 75,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [20] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
 			"Costs [16] [Weapon Parts]",
@@ -4332,7 +4332,6 @@
 			"The Standing Army",
 			"Marine Training"
 		],
-		"requiredBuilding": "Military Base",
 		"requiredTech": "Combined Arms",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "shot"
@@ -4344,6 +4343,7 @@
 		"movement": 4,
 		"strength": 70,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [20] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
 			"'Standing Army'",
@@ -4359,7 +4359,6 @@
 			"The Standing Army",
 			"Rocket Launcher"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Combined Arms",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "tankshot"
@@ -4373,6 +4372,7 @@
 		"rangedStrength": 72,
 		"range": 2,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Only available <if [Invention of Helicopter] is constructed>",
 			"Costs [24] [Aircraft Parts]",
 			"Consumes [1] [Fuel]",
@@ -4390,7 +4390,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Combined Arms",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "jetgun"
@@ -4404,6 +4403,7 @@
 		"rangedStrength": 70,
 		"range": 2,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
 			"Only available <if [Invention of Helicopter] is constructed>",
 			"Costs [27] [Aircraft Parts]",
 			"Consumes [1] [Fuel]",
@@ -4435,6 +4435,7 @@
 		"range": 10,
 		"interceptRange": 10,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Consumes [1] [Fuel]",
 			"Costs [36] [Aircraft Parts]",
 			"Costs [3] [Electronic Parts]",
@@ -4464,6 +4465,7 @@
 		"rangedStrength": 85,
 		"range": 10,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Consumes [1] [Fuel]",
 			"Costs [36] [Aircraft Parts]",
 			"Costs [6] [Electronic Parts]",
@@ -4491,6 +4493,7 @@
 		"range": 5,
 		"interceptRange": 4,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
 			"Consumes [1] [Fuel]",
 			"Costs [36] [Ship Parts]",
 			"Costs [12] [Electronic Parts]",
@@ -4516,6 +4519,7 @@
 		"movement": 2,
 		"strength": 75,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [27] [Weapon Parts]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -4541,6 +4545,7 @@
 		"range": 5,
 		"interceptRange": 4,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
 			"Costs [36] [Ship Parts]",
 			"Costs [12] [Electronic Parts]",
 			"Consumes [1] [Enriched Uranium]",
@@ -4568,6 +4573,7 @@
 		"rangedStrength": 85,
 		"range": 16,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [50] [Aircraft Parts]",
 			"Consumes [1] [Electronic Parts]",
 			"Consumes [1] [Fuel]",
@@ -4594,13 +4600,13 @@
 		"rangedStrength": 100,
 		"range": 32,
 		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
 			"Can transform to [Nuclear Warhead ICBM] <costs [1] [Nuclear Warhead]> <costs [+1500 Gold] stats>",
 			"Consumes [1] [Electronic Parts]",
 			"Blast radius [2]",
 			"[-75]% maintenance costs",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
-		"requiredBuilding": "Rocketry Industry",
 		"requiredTech": "Advanced Ballistics",
 		"attackSound": "missile"
 	},
@@ -4613,13 +4619,13 @@
 		"rangedStrength": 300,
 		"range": 32,
 		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
 			"Only available <if [Nuclear Option] is constructed>",
 			"Costs [1] [Nuclear Warhead]",
 			"Nuclear weapon of Strength [2]",
 			"Blast radius [4]",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
-		"requiredBuilding": "Rocketry Industry",
 		"requiredTech": "Advanced Ballistics",
 		"attackSound": "nuke"
 	},
@@ -4633,6 +4639,7 @@
 		"range": 4,
 		"interceptRange": 3,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]> <in cities without a [Rocketry Industry]>",
 			"Costs [20] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
 			"Costs [10] [Electronic Parts]",
@@ -4650,7 +4657,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Rocketry Industry",
 		"requiredTech": "Advanced Ballistics",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "missile"
@@ -4666,6 +4672,7 @@
 		"interceptRange": 4,
 		"requiredResource": "Standing Army Maintenance",
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]> <in cities without a [Rocketry Industry]>",
 			"Costs [20] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
 			"Costs [10] [Electronic Parts]",
@@ -4681,7 +4688,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Rocketry Industry",
 		"requiredTech": "Lasers",
 		"attackSound": "missile"
 	},
@@ -4693,6 +4699,7 @@
 		"movement": 4,
 		"strength": 100,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Only available <if [GDR Project] is constructed>",
 			"Costs [40] [Vehicle Parts]",
 			"Costs [3] [Electronic Parts]",
@@ -4724,6 +4731,7 @@
 		"requiredResource": "Standing Army Maintenance",
 		"requiredTech": "Data Science",
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Only available <if [Invention of Helicopter] is constructed>",
 			"Costs [1] [Microchips]",
 			"'Standing Army'",
@@ -4751,6 +4759,7 @@
 		"rangedStrength": 90,
 		"range": 2,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Invisible to non-adjacent units",
 			"Costs [30] [Weapon Parts]",
 			"Costs [10] [Vehicle Parts]",
@@ -4780,6 +4789,7 @@
 		"movement": 2,
 		"strength": 88,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [30] [Weapon Parts]",
 			"Costs [10] [Vehicle Parts]",
 			"Costs [5] [Microchips]",
@@ -4805,6 +4815,7 @@
 		"movement": 4,
 		"strength": 120,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Only available <if [GDR Project] is constructed>",
 			"Costs [30] [Vehicle Parts]",
 			"Costs [20] [Graphene]",
@@ -4837,6 +4848,7 @@
 		"rangedStrength": 100,
 		"range": 5,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [20] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
 			"Costs [10] [Graphene]",
@@ -4854,7 +4866,6 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Railguns",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "missile"
@@ -4868,6 +4879,7 @@
 		"rangedStrength": 90,
 		"range": 5,
 		"uniques": [
+			"Unbuildable <in cities without a [Military Factory Complex]>",
 			"Costs [20] [Ship Parts]",
 			"Consumes [1] [Fuel]",
 			"Costs [10] [Graphene]",
@@ -5412,17 +5424,17 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"cost": 3000,
-		"requiredTech": "Railguns",
-		"requiredResource": "Aluminum",
-		"requiredBuilding": "Rocketry Industry",
 		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
 			"Spaceship part",
 			"Cannot be purchased",
 			"Only available <if [Space Program] is constructed>",
 			"Uncapturable",
 			"Can be added to [The Spaceship] in the Capital",
 			"Limited to [3] per Civilization"
-		]
+		],
+		"requiredResource": "Aluminum",
+		"requiredTech": "Railguns"
 		// costs 1500 in BNW
 	},
 	{
@@ -5430,17 +5442,18 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"cost": 3000,
-		"requiredTech": "Space Elevator",
-		"requiredResource": "Graphene",
-		"requiredBuilding": "Rocketry Industry",
 		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
 			"Spaceship part",
 			"Cannot be purchased",
 			"Only available <if [Space Program] is constructed>",
 			"Uncapturable",
 			"Can be added to [The Spaceship] in the Capital",
 			"Limited to [1] per Civilization"
-		]
+		],
+		"requiredResource": "Graphene",
+		"requiredTech": "Space Elevator"
+		
 		// costs 1500 in BNW
 	},
 	{
@@ -5448,17 +5461,18 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"cost": 3000,
-		"requiredTech": "Nuclear Fusion",
-		"requiredResource": "Enriched Uranium",
-		"requiredBuilding": "Rocketry Industry",
 		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
 			"Spaceship part",
 			"Cannot be purchased",
 			"Only available <if [Space Program] is constructed>",
 			"Uncapturable",
 			"Can be added to [The Spaceship] in the Capital",
 			"Limited to [1] per Civilization"
-		]
+		],
+		"requiredResource": "Enriched Uranium",
+		"requiredTech": "Nuclear Fusion"
+		
 		// costs 1500 in BNW
 	},
 	{
@@ -5466,17 +5480,17 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"cost": 3000,
-		"requiredTech": "Nanotechnology",
-		"requiredResource": "Microchips",
-		"requiredBuilding": "Rocketry Industry",
 		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
 			"Spaceship part",
 			"Cannot be purchased",
 			"Only available <if [Space Program] is constructed>",
 			"Uncapturable",
 			"Can be added to [The Spaceship] in the Capital",
 			"Limited to [1] per Civilization"
-		]
+		],
+		"requiredResource": "Microchips",
+		"requiredTech": "Nanotechnology"
 		// costs 1500 in BNW
 	}
 ]
