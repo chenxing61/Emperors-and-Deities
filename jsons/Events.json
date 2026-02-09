@@ -228,7 +228,7 @@
             {
                 "text": "Enslavement would teach them how to behave",
                 "uniques": [
-                    "Only available <after adopting [Military Tradition]>",
+                    "Only available <after adopting [Military Tradition]> <if [Abolition] is not constructed>",
                     "Instantly gain [34] [Slaves]"
                 ]
             },
@@ -1625,6 +1625,26 @@
                     "Only available <before adopting [Revolution]>",
                     "Gain a free [Caste System - Exploitation] [in capital]",
                     "Gain a free [Strife] [in capital]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Abolitionism Strikes",
+        "text": "As the productivity increases. The absurdity of seeing other people as objects soon came to be realised. People are supporting the abolition.",
+        "choices": [
+            {
+                "text": "Slavery is evil",
+                "uniques": [
+                    "Gain [-300] [Gold]",
+                    "Gain a free [Abolition] [in capital]",
+                    "Set [Slaves] to [0]"
+                ]
+            },
+            {
+                "text": "But we are the superior race!",
+                "uniques": [
+                    "[2] [Outlaws]s rebel <in [Capital] cities> <before adopting [Fascism]>"
                 ]
             }
         ]

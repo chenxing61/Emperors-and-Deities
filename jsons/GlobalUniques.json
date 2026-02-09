@@ -39,7 +39,7 @@
         "[+15]% unhappiness from the number of cities <when number of [Cities] is more than [40]> <hidden from users>",
 
         "[-15]% [Production] [in all cities] <when below [0] [Happiness]> <hidden from users>",
-       
+        "Triggers a [Abolitionism Strikes] event <when above [1] [Slaves]> <starting from the [Imperial era]> <with [33]% chance> <upon turn start> <hidden from users>",
         ///Unhappy events
         "Triggers a [Wealth Gap Widens] event <after turn number [40]>  <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [10]% chance> <upon turn start> <hidden from users>",
         "Triggers a [Rampant Corruption] event <after turn number [40]>  <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [10]% chance> <upon turn start> <hidden from users>",
@@ -210,10 +210,8 @@
         "[-100]% [Electronic Parts] resource production <when number of [Electronic Parts] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
         "[-100]% [Microchips] resource production <when number of [Microchips] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
         "[-100]% [Enriched Uranium] resource production <when number of [Enriched Uranium] is more than [[Cities]+[[Nuclear Power Plant] Buildings]]> <hidden from users>",
-        "[+33]% [Influence] resource production <on [Quick] game speed> <hidden from users>",
-        "[-33]% [Influence] resource production <on [Epic] game speed> <hidden from users>",
-        "[-67]% [Influence] resource production <on [Marathon] game speed> <hidden from users>",
-        "Free [Peon] appears <when above [100] [Slaves]> <upon turn start>"
+        "[-33]% [Influence] resource production <on [Marathon] game speed> <hidden from users>",
+        "Free [Peon] appears <when above [100] [Slaves]> <if [Abolition] is not constructed> <upon turn start>"
         
         // TODO: Implement the uniques below
         // "[+20]% [Culture] [in all cities] <during a golden age>",

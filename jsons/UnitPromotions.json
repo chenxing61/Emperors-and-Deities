@@ -1310,7 +1310,7 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+40]% Strength <vs [{non-[Wounded]} {Close Combat} {'Edged Weapons'}] units> <when attacking> <before the [Renaissance era]>"
+			"[+3] Strength <vs [{non-[Wounded]} {Close Combat} {'Edged Weapons'}] units> <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1327,7 +1327,7 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+2] Strength <when attacking>"
+			"[+1] Strength <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1343,8 +1343,7 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+2] Strength <when attacking> <before the [Medieval era]>",
-			"[+1] Strength <vs ['Dense Formation'] units> <when attacking> <starting from the [Medieval era]> <before the [Imperial era]>"
+			"[+1] Strength <when attacking>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -1360,7 +1359,7 @@
 		],
 		"uniques": [
 			"[+1] Strength <when fighting in [Rough terrain] tiles>",
-			"[+20]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Renaissance era]>"
+			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1378,9 +1377,9 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <vs ['Galley'] units> <when attacking>",
-			"[+18]% Strength <vs ['Galley'] units> <when attacking> <when fighting in [Lakes] tiles>",
-			"[+18]% Strength <vs ['Galley'] units> <when attacking> <when fighting in [Atoll] tiles>"
+			"[+1] Strength <vs ['Galley'] units> <when attacking>",
+			"[+2] Strength <vs ['Galley'] units> <when attacking> <when fighting in [Lakes] tiles>",
+			"[+2] Strength <vs ['Galley'] units> <when attacking> <when fighting in [Atoll] tiles>"
 		],
 		"unitTypes": [
 			"Close Combat Ship"
@@ -1413,8 +1412,8 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[+18]% Strength <when fighting in [Open terrain] tiles> <before the [Imperial era]>",
-			"[+15]% Strength <when fighting in [Open terrain] tiles> <when defending> <vs [{'Mounted'} {'Edged Weapons'} {Rider}] units> <before the [Imperial era]>"
+			"[+1] Strength <when fighting in [Open terrain] tiles>",
+			"[+2] Strength <when fighting in [Open terrain] tiles> <when defending> <vs [{'Mounted'} {'Edged Weapons'}] units>"
 		],
 		"unitTypes": [
 			"Close Combat"
@@ -1428,7 +1427,7 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <when attacking> <before the [Imperial era]>"
+			"[+2] Strength <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1444,7 +1443,7 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <when attacking> <before the [Imperial era]>"
+			"[+2] Strength <when attacking>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -1459,7 +1458,8 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[+20]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"
+			"[+2] Strength <when fighting in [Rough terrain] tiles>",
+			"[+2] Strength <when fighting in [Rough terrain] tiles> <when defending> <vs [Close Combat] units>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -1477,8 +1477,9 @@
 			"Only available <when above [75] [Gold]> <(modified by game speed)>",
 			"Gain [-75] [Gold] <(modified by game speed)>",
 			"This Promotion is free",
-			"[0] Movement point cost to embark <in [Friendly Land] tiles>",
-			"[0] Movement point cost to disembark <in [Friendly Land] tiles>"
+			"Double movement in [Coast]",
+			"[1] Movement point cost to embark <in [Friendly Land] tiles>",
+			"[1] Movement point cost to disembark <in [Friendly Land] tiles>"
 		],
 		"column": 25,
 		"row": 0
@@ -1489,10 +1490,11 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns> <before the [Imperial era]>",
-			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Medieval era]>",
-			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Imperial era]>",
-			"[+5]% Strength <vs ['Siege Weapons'] units> <when defending> <before the [Imperial era]>"
+			"Gain [-1] [Gold] <every [1] turns>",
+			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+5]% Strength <vs ['Siege Weapons'] units> <when defending>",
+			"[+5]% Strength <vs cities>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1507,7 +1509,8 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Imperial era]>"
+			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+5]% Strength <vs cities> <when defending>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -1523,8 +1526,10 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[+20]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Imperial era]>",
-			"[-5]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"
+			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+5]% Strength <vs ['Firearm'] units> <when defending>",
+			"[+10]% Strength <vs cities> <when defending>",
+			"[-5]% Strength <when fighting in [Rough terrain] tiles>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1540,9 +1545,8 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[-5]% Strength <when fighting in [Rough terrain] tiles> <when attacking> <before the [Imperial era]>",
-			"[+20]% Strength <vs [{'Edged Weapons'} {'Mounted'}] units> <when defending> <before the [Imperial era]>",
-			"[+10]% Strength <vs ['Siege Weapons'] units> <when defending> <before the [Imperial era]>"
+			"[+16]% Strength <when defending>",
+			"[+17]% Strength <vs ['Mounted'] units> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat"
@@ -1556,7 +1560,6 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"Gain [-3] [Gold] <every [1] turns>",
 			"[+33]% Strength <vs ['Dense Formation'] units> <when attacking>"
 		],
 		"unitTypes": [
@@ -1572,7 +1575,6 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"Gain [-3] [Gold] <every [1] turns>",
 			"[+33]% Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
@@ -1620,8 +1622,8 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <when attacking> <before the [Imperial era]>",
-			"[+10]% Strength <vs ['Mounted'] units> <before the [Imperial era]>"
+			"[+3] Strength <vs [Assault] units>",
+			"[+10]% Strength <vs [Assault] units>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1637,8 +1639,8 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <before the [Renaissance era]>",
-			"[+18]% Strength <vs [Assault] units> <before the [Imperial era]>"
+			"[+3] Strength <when attacking>",
+			"[+25]% Strength <vs [Siege] units>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1654,8 +1656,8 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <when attacking> <before the [Renaissance era]>",
-			"[+18]% Strength <when fighting in [Open terrain] tiles> <before the [Imperial era]>"
+			"[+3] Strength <when attacking>",
+			"[+10]% Strength <when fighting in [Open terrain] tiles>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -1671,8 +1673,8 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Engineering]>",
-			"[+15]% Strength <before the [Imperial era]>",
-			"[+18]% Strength <vs [Assault] units> <before the [Imperial era]>"
+			"[+2] Strength <when attacking>",
+			"[+25]% Strength <when fighting in [City center] tiles>"
 		],
 		"unitTypes": [
 			"Ranged Combat"
@@ -1687,8 +1689,9 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Physics]>",
-			"[+17]% Strength <when attacking> <before the [Imperial era]>",
-			"[+33]% Strength <vs cities> <when attacking> <before the [Imperial era]>"
+			"[+2] Strength <when attacking>",
+			"[+25]% Strength <when attacking> <vs [Assault] units>",
+			"[+25]% Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
 			"Ranged Combat"
@@ -1702,10 +1705,9 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns> <before the [Imperial era]>",
-			"[+25]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Renaissance era]>",
-			"[+5]% Strength <vs ['Siege Weapons'] units> <when defending> <before the [Renaissance era]>",
-			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending> <starting from the [Renaissance era]>"
+			"[+25]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+10]% Strength <vs ['Siege Weapons'] units> <when defending>",
+			"[+10]% Strength <vs cities> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1721,8 +1723,7 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+17]% Strength <vs ['Edged Weapons'] units> <before the [Renaissance era]>",
-			"[+10]% Strength <vs ['Edged Weapons'] units> <starting from the [Renaissance era]>"
+			"[+25]% Strength <when defending> <vs ['Edged Weapons'] units>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1740,7 +1741,7 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+33]% Strength <vs cities> <when attacking> <before the [Imperial era]>"
+			"[+33]% Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
 			"Ranged Combat"
@@ -1754,7 +1755,7 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <vs [Assault] units> <before the [Imperial era]>"
+			"[+25]% Strength <vs [Assault] units>"
 		],
 		"unitTypes": [
 			"Ranged Combat"
@@ -1768,8 +1769,9 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"Only available <after discovering [Gunpowder Making]>",
-			"[+33]% Strength <when attacking> <before the [Imperial era]>"
+			"Only available <after discovering [Gunpowder Making]> <before the [Renaissance era]>",
+			"[+15]% Strength <when attacking>",
+			"[This Unit] upgrades for free"
 		],
 		"unitTypes": [
 			"Siege"
@@ -1783,8 +1785,8 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <vs ['Dense Formation'] units> <when attacking> <before the [Imperial era]>",
-			"[+25]% Strength <vs cities> <when attacking> <before the [Imperial era]>"
+			"[+4] Strength <when attacking>",
+			"[+10]% Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat Ship",
@@ -1800,12 +1802,12 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Alchemy]>",
-			"[+33]% Strength <vs ['Dense Formation'] units> <when attacking> <before the [Imperial era]>",
-			"[+33]% Strength <vs cities> <when attacking> <before the [Imperial era]>"
+			"[+5] Strength <vs ['Dense Formation'] units> <when attacking>",
+			"[+33]% Strength <vs cities> <when attacking>",
+			"[-15]% Strength <when defending>"
 		],
 		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship"
+			"Close Combat Ship"
 		],
 		"column": 29,
 		"row": 7
@@ -1835,8 +1837,7 @@
 			"Renaissance Arms"
 		],
 		"uniques": [
-			"Gain [-3] [Gold] <every [1] turns>",
-			"[+50]% Strength <vs ['Edged Weapons'] units>",
+			"[+33]% Strength <vs ['Edged Weapons'] units>",
 			"[+10]% Strength <vs ['Firearms'] units>"
 		],
 		"unitTypes": [
@@ -1852,7 +1853,6 @@
 			"Renaissance Arms"
 		],
 		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
 			"[+25]% Strength <vs ['Edged Weapons'] units>",
 			"[+5]% Strength <vs ['Firearms'] units>"
 		],
@@ -1870,7 +1870,7 @@
 			"Renaissance Arms"
 		],
 		"uniques": [
-			"[+33]% Strength <vs ['Infantry'] units> <before the [Industrial era]>"
+			"[+4] Strength <vs ['Infantry'] units> <when attacking>"
 		],
 		"unitTypes": [
 			"Rider",
@@ -1885,7 +1885,7 @@
 			"Renaissance Arms"
 		],
 		"uniques": [
-			"Gain [-5] [Gold] <every [1] turns>",
+			"[+1] XP gained from combat",
 			"[+20]% Strength <vs ['Firearms'] units> <when defending>"
 		],
 		"unitTypes": [
@@ -1901,7 +1901,6 @@
 			"Renaissance Arms"
 		],
 		"uniques": [
-			"Gain [-5] [Gold] <every [1] turns>",
 			"[+15]% Strength <vs ['Firearms'] units> <when attacking>"
 		],
 		"unitTypes": [

@@ -7867,10 +7867,10 @@
 			"[-33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Medium Culture Diversity] is constructed>",
 			"[-66]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Low Culture Diversity] is constructed>",
 
-			"Upon capturing a city, receive [1] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is constructed>",
-			"Upon capturing a city, receive [2] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is not constructed>",
-			"Earn [25]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is not constructed>",
-			"Earn [50]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is constructed>",
+			"Upon capturing a city, receive [1] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is constructed> <if [Abolition] is not constructed>",
+			"Upon capturing a city, receive [2] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is not constructed> <if [Abolition] is not constructed>",
+			"Earn [25]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is not constructed> <if [Abolition] is not constructed>",
+			"Earn [50]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is constructed> <if [Abolition] is not constructed>",
 
 			"[-50]% unhappiness from the number of cities <if [Low Culture Diversity] is constructed>",
 			"[-67]% unhappiness from the number of cities <if [Medium Culture Diversity] is constructed>",
@@ -9620,6 +9620,16 @@
 			"Instantly consumes [1] [Alexandrian Empire Period] <upon turn start> <when above [0] [Alexandrian Empire Period]>",
 			"Triggers a [Alexander's death] event <when below [6] [Alexandrian Empire Period]> <with [50]% chance> <if [Diadochi States] is not constructed>",
 			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Abolition",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
