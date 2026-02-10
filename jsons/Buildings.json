@@ -1062,13 +1062,12 @@
 	{
 		"name": "Foundry",
 		"maintenance": 1,
+		"production": 1,
 		"specialistSlots": {
 			"Engineer": 1
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"[+1 Production] from [Metal] tiles [in this city]",
-			"[+1 Production] from [Minerals] tiles [in this city]",
 			"[+10]% Production when constructing [Ancient era] units [in this city]",
 			"[+10]% Production when constructing [Classical era] units [in this city]",
 			"Provides [1] [Metal]",
@@ -1711,7 +1710,7 @@
 		"uniques": [
 			"'Light Industry'",
 			"[+2 Gold] from ['Lumber Improvement'] tiles [in this city]",
-			"Must have an owned ['Lumber Improvement'] within [3] tiles"
+			"Must have an owned ['Lumber Improvement'] within [2] tiles"
 		],
 		"requiredTech": "Carpentry"
 	},
@@ -2174,11 +2173,11 @@
 			"Comment [Belongs to ['Heavy Industry'] before the Industrial era, and starting from that era, it turns into a ['Light Industry'] building.]",
 			"'Heavy Industry' <before the [Industrial era]> <hidden from users>",
 			"'Light Industry' <starting from the [Industrial era]> <hidden from users>",
-			"[+33]% weight to this choice for AI decisions <hidden from users>",
 			"[+1 Production] from ['Extraction Improvement'] tiles [in this city]",
 			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]",
 			"[+1 Production] from ['Lumber Improvement'] tiles [in this city]",
-			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
+			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>",
+			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredTech": "Forging"
 	},
@@ -2423,13 +2422,14 @@
 		"name": "Tea House",
 		"maintenance": 2,
 		"happiness": 2,
+		"gold": 1,
+		"culture": 1,
 		"specialistSlots": {
 			"Artist": 1
 		},
 		"uniques": [
 			"'Cultural Building'",
 			"Provides [1] [Tea Leave]",
-			"[+2 Culture] from [Tea Leave] tiles [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredResource": "Tea Leave",
@@ -2440,10 +2440,11 @@
 		"name": "Cafe",
 		"maintenance": 2,
 		"happiness": 2,
+		"gold": 1,
+		"culture": 1,
 		"uniques": [
 			"'Cultural Building'",
 			"Provides [1] [Coffee]",
-			"[+1 Culture, +1 Gold] from [Coffee] tiles [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredResource": "Coffee",
@@ -3192,7 +3193,7 @@
 		"uniques": [
 			"'Marine Infrastructure'",
 			"[+1]% [Gold] from Trade Routes",
-			"[+2 Happiness, +1 Gold] from [Citrus] tiles [in this city]",
+			"[+1 Happiness] <with [Citrus]>",
 			"[+5]% [Gold] [in this city] <in cities with a [Trading Post]>",
 			"[+5]% [Gold] [in this city] <in cities with a [Warehouse]>",
 			"Must be next to [Coast]"
@@ -3203,10 +3204,10 @@
 	{
 		"name": "Salt Evaporation Pond",
 		"cost":80,
-		"production":1,
+		"gold": 3,
+		"production":2,
 		"uniques": [
 			"'Marine Infrastructure'",
-			"[+1 Gold] from [Coastal] tiles [in this city]",
 			"Must be next to [Coast]"
 		],
 		"requiredBuilding": "Fishing Port",
@@ -3903,6 +3904,7 @@
 	{
 		"name": "Smeltry",
 		"maintenance": 2,
+		"production": 2,
 		"specialistSlots": {
 			"Engineer": 1
 		},
@@ -3912,7 +3914,6 @@
 		"uniques": [
 			"'Heavy Industry'",
 			"[+100]% Production when constructing [Alloy Mill] buildings [in this city]",
-			"[+1 Production] from ['Useful Mineral'] tiles [in this city]",
 			"Provides [1] [Alloy] <in cities without a [Alloy Mill]>",
 			"Consumes [1] [Metal] <in cities without a [Alloy Mill]>"
 		],
@@ -4232,11 +4233,10 @@
 		"name": "Cargo Port",
 		"maintenance": 5,
 		"percentStatBonus": {
-			"gold": 10
+			"gold": 20
 		},
 		"uniques": [
 			"'Marine Infrastructure'",
-			"[+1 Gold] from [Bonus resource] tiles [in this city]",
 			"[+1]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
 			"Must be next to [Coast]"
 		],
@@ -4667,6 +4667,7 @@
 		"name": "Gas Storage and Transfer System",
 		"cost": 500,
 		"maintenance": 5,
+		"production": 2,
 		"science": 1,
 		"specialistSlots": {
 			"Engineer": 1
@@ -4675,7 +4676,6 @@
 			"'Heavy Industry'",
 			"Provides [3] [Fuel]",
 			"Provides [1] [Industrial Chemicals]",
-			"[+3 Production] from [Natural Gas] tiles [in this city]",
 			"Consumes [2] [Natural Gas(Stored)]",
 			"Only available <when above [0] [Natural Gas(Stored)]>"
 		],
@@ -5162,7 +5162,7 @@
 		"name": "Rubber Transplant",
 		"maintenance": 3,
 		"uniques": [
-			"Must have an owned [{non-[improved]} {Jungle}] within [4] tiles",
+			"Must have an owned [{non-[improved]} {Jungle}] within [3] tiles",
 			"Only available <when above [0] [Rubber]>",
 			"Creates a [Rubber Plantation] improvement on a specific tile",
 			"Destroyed when the city is captured"
@@ -5282,6 +5282,7 @@
 		"name": "Oil Refinery",
 		"cost": 750,
 		"maintenance": 8,
+		"production": 2,
 		"science": 1,
 		"specialistSlots": {
 			"Engineer": 1,
@@ -5292,7 +5293,6 @@
 			"Provides [4] [Industry Size]",
 			"Provides [5] [Fuel]",
 			"Provides [1] [Industrial Chemicals]",
-			"[+1 Production] from [Oil] tiles [in this city]",
 			"Consumes [2] [Oil]",
 			///Powered
 			"Consumes [1] [Oil] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
@@ -5449,7 +5449,6 @@
 		"maintenance": 10,
 		"uniques": [
 			"'Power Building'",
-			"[+2 Production] from [Oil] tiles [in this city]",
 			"Provides [5] [Power] <in this city>",
 			"Consumes [3] [Fuel]",
 			"Only available <when above [0] [Fuel]>"
@@ -5462,7 +5461,6 @@
 		"maintenance": 10,
 		"uniques": [
 			"'Power Building'",
-			"[+2 Production] from [Coal] tiles [in this city]",
 			"Provides [7] [Power] <in this city>",
 			"Consumes [2] [Coal]",
 			"Only available <when above [0] [Coal]>"
@@ -5779,7 +5777,6 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"[+1 Production] from [Coal] tiles [in this city]",
 			"Provides [2] [Fuel]",
 			"Provides [1] [Rubber]",
 			"Consumes [1] [Coal]"
@@ -7333,7 +7330,6 @@
 			"[+10]% [Science] [in this city] <in cities with a [Coal Power Plant]>",
 			"[+10]% [Culture] [in this city] <in cities with a [Coal Power Plant]>",
 			"[-10]% [Production] [in this city] <in cities with a [Coal Power Plant]>",
-			"[-1 Production] from [Coal] tiles [in this city]",
 			"Provides [2] [Coal]",
 			"Destroyed when the city is captured"
 		],
