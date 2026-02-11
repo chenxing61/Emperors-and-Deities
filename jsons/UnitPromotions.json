@@ -1700,6 +1700,24 @@
 		"row": 3
 	},
 	{
+		"name": "Fire Lance",
+		"prerequisites": [
+			"Medieval Arms"
+		],
+		"uniques": [
+			"Only available <after discovering [Gunpowder Making]>",
+			"[+5] Strength <when attacking>",
+			"[+15]% Strength <when attacking>"
+		],
+		"unitTypes": [
+			"Close Combat",
+			"Rider",
+			"Assault"
+		],
+		"column": 28,
+		"row": 4
+	},
+	{
 		"name": "Chainmail Armour",
 		"prerequisites": [
 			"Medieval Arms"
@@ -1838,7 +1856,8 @@
 		],
 		"uniques": [
 			"[+33]% Strength <vs ['Edged Weapons'] units>",
-			"[+10]% Strength <vs ['Firearms'] units>"
+			"[+10]% Strength <vs ['Firearms'] units>",
+			"[+5] Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1880,6 +1899,38 @@
 		"row": 3
 	},
 	{
+		"name": "Primitive Rocket",
+		"prerequisites": [
+			"Renaissance Arms"
+		],
+		"uniques": [
+			"[+5] Strength <vs ['Dense Formation'] units> <when attacking>",
+			"[+25]% Strength <vs cities>"
+		],
+		"unitTypes": [
+			"Ranged Combat",
+			"Siege",
+			"Ranged Combat Ship"
+		],
+		"column": 30,
+		"row": 4
+	},
+	{
+		"name": "Volley Gun",
+		"prerequisites": [
+			"Renaissance Arms"
+		],
+		"uniques": [
+			"[+5] Strength <vs ['Dense Formation'] units> <when attacking>"
+		],
+		"unitTypes": [
+			"Close Combat",
+			"Close Combat Ship"
+		],
+		"column": 30,
+		"row": 5
+	},
+	{
 		"name": "Large Hull",
 		"prerequisites": [
 			"Renaissance Arms"
@@ -1893,7 +1944,7 @@
 			"Ranged Combat Ship"
 		],
 		"column": 30,
-		"row": 4
+		"row": 6
 	},
 	{
 		"name": "Extra Cannon",
@@ -1908,7 +1959,7 @@
 			"Ranged Combat Ship"
 		],
 		"column": 30,
-		"row": 5
+		"row": 7
 	},
 	{
 		"name": "Wagon",
@@ -1922,7 +1973,7 @@
 			"Civilian"
 		],
 		"column": 30,
-		"row": 6
+		"row": 8
 	},
 	{
 		"name": "Industrial Arms",
@@ -2937,7 +2988,6 @@
 	},
 	// Statuses
 	// Positives
-
 	{
 		"name": "Reserve Force Cooldown"
 	},
