@@ -1490,7 +1490,6 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns>",
 			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending>",
 			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending>",
 			"[+5]% Strength <vs ['Siege Weapons'] units> <when defending>",
@@ -1855,8 +1854,8 @@
 			"Renaissance Arms"
 		],
 		"uniques": [
-			"[+33]% Strength <vs ['Edged Weapons'] units>",
-			"[+10]% Strength <vs ['Firearms'] units>",
+			"[+33]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+10]% Strength <vs ['Firearms'] units> <when defending>",
 			"[+5] Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
@@ -1872,8 +1871,8 @@
 			"Renaissance Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <vs ['Edged Weapons'] units>",
-			"[+5]% Strength <vs ['Firearms'] units>"
+			"[+25]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+5]% Strength <vs ['Firearms'] units> <when defending>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -1930,6 +1929,32 @@
 		"column": 30,
 		"row": 5
 	},
+		{
+		"name": "Sapper Corps",
+		"prerequisites": [
+			"Renaissance Arms"
+		],
+		"unitTypes": [
+			"Close Combat",
+			"Ranged Combat",
+			"Scout",
+			"Rider",
+			"Assault",
+			"Siege"
+		],
+		"uniques": [
+			"[+25]% Strength <vs cities>",
+			"[+25]% Strength <when fighting in [City center] tiles>",
+			"[+5] Strength <when fighting in [Trench] tiles>",
+
+			"[+25]% Strength <when defending>",
+			"[+10]% Strength <when defending> <when fighting in [Rough terrain] tiles>",
+
+			"Can build [Trench] improvements on tiles"
+		],
+		"column": 30,
+		"row": 6
+	},
 	{
 		"name": "Large Hull",
 		"prerequisites": [
@@ -1944,7 +1969,7 @@
 			"Ranged Combat Ship"
 		],
 		"column": 30,
-		"row": 6
+		"row": 7
 	},
 	{
 		"name": "Extra Cannon",
@@ -1959,7 +1984,7 @@
 			"Ranged Combat Ship"
 		],
 		"column": 30,
-		"row": 7
+		"row": 8
 	},
 	{
 		"name": "Wagon",
@@ -1973,7 +1998,7 @@
 			"Civilian"
 		],
 		"column": 30,
-		"row": 8
+		"row": 9
 	},
 	{
 		"name": "Industrial Arms",
@@ -2001,12 +2026,12 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Dynamite]>",
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+25]% Strength <vs ['Infantry'] units> <when attacking> <when fighting in [Rough terrain] tiles>",
+			"Instantly consumes [10] [Weapon Parts]",
+			"[+5] Strength <vs ['Infantry'] units> <when fighting in [Rough terrain] tiles>",
 			"[+25]% Strength <vs ['Infantry'] units> <when fighting in [Trench] tiles>",
 			"[+15]% Strength <vs ['Infantry'] units> <when fighting in [Fort] tiles>",
 			"[+10]% Strength <vs ['Infantry'] units> <when fighting in [Citadel] tiles>",
-			"[+25]% Strength <when attacking> <vs cities>"
+			"[+10]% Strength <when attacking> <vs cities>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -2023,9 +2048,9 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Combustion]>",
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+15]% Strength <vs [{'Mechanised'} {Assault}] units>",
-			"[+18]% Strength <vs [{'Mechanised'} {Assault}] units> <when defending>"
+			"Instantly consumes [10] [Weapon Parts]",
+			"[+5] Strength <vs [{'Mechanised'} {Assault}] units>",
+			"[+25]% Strength <vs [{'Mechanised'} {Assault}] units> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -2042,7 +2067,8 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Mass Production]>",
-			"Gain [-2] [Gold] <every [1] turns>",
+			"Instantly consumes [10] [Weapon Parts]",
+			"[+5] Strength <vs ['Infantry'] units> <when fighting in [Open terrain] tiles>",
 			"[Target Unit] gains the [Surpressed] status for [1] turn(s) <upon damaging a [Military] unit>"
 		],
 		"unitTypes": [
@@ -2060,8 +2086,8 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Dynamite]>",
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+15]% Strength <when defending>",
+			"Instantly consumes [10] [Weapon Parts]",
+			"[+5] Strength <when defending>",
 			"[-5]% Strength for enemy [Land] units in adjacent [All] tiles"
 		],
 		"unitTypes": [
@@ -2079,8 +2105,9 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Dynamite]>",
-			"[+20]% Strength <when attacking> <vs ['Infantry'] units>",
-			"[+10]% Strength <when attacking> <vs [non-['Infantry']] units>"
+			"Instantly consumes [5] [Weapon Parts]",
+			"[+4] Strength <vs ['Infantry'] units>",
+			"[+2] Strength <vs [non-['Infantry']] units>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -2091,33 +2118,7 @@
 		"column": 32,
 		"row": 2
 	},
-	{
-		"name": "Sapper Corps",
-		"prerequisites": [
-			"Industrial Arms"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege"
-		],
-		"uniques": [
-			"Only available <after discovering [Dynamite]>",
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+25]% Strength <vs cities>",
-			"[+25]% Strength <when fighting in [City center] tiles>",
-			"[+25]% Strength <when defending> <when fighting in [Fort] tiles>",
-			"[+25]% Strength <when fighting in [Trench] tiles>",
-			"[+25]% Strength <when defending> <when fighting in [Citadel] tiles>",
-			"[+10]% Strength <when defending> <when fighting in [Rough terrain] tiles>",
-			"Can build [Trench] improvements on tiles"
-		],
-		"column": 32,
-		"row": 3
-	},
+
 	{
 		"name": "Scouting Corps",
 		"prerequisites": [
@@ -2132,14 +2133,12 @@
 			"Siege"
 		],
 		"uniques": [
-			"Only available <after discovering [Replaceable Parts]>",
-			"Gain [-2] [Gold] <every [1] turns>",
 			"[+10]% Strength <when attacking>",
 			"[+1] Sight",
 			"[-5]% Strength for enemy [Land] units in adjacent [All] tiles"
 		],
 		"column": 32,
-		"row": 4
+		"row": 3
 	},
 		{
 		"name": "Smoke Screen",
@@ -2148,8 +2147,8 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Dynamite]>",
-			"[+20]% Strength <when defending> <when fighting in [Open terrain] tiles>",
-			"[+10]% Strength <vs cities> <when defending>"
+			"[+5] Strength <vs ['Firearms'] units> <when defending>",
+			"[+20]% Strength <vs cities> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -2159,7 +2158,7 @@
 			"Assault"
 		],
 		"column": 32,
-		"row": 5
+		"row": 4
 	},
 	{
 		"name": "Carrier Refit",
@@ -2207,11 +2206,10 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Rocketry]>",
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+5]% Strength",
-			"[+20]% Strength <vs [{'Mechanised'} {Assault}] units>",
-			"[+20]% Strength <vs [{'Motorised'} {Rider}] units>",
-			"[+20]% Strength <vs [{'Mechanised'} {Rider}] units>",
+			"Instantly consumes [20] [Weapon Parts]",
+			"[+7] Strength",
+			"[+20]% Strength <vs ['Mechanised'] units>",
+			"[+20]% Strength <vs ['Motorised'] units>",
 			"[+20]% Strength <vs ['Low Altitude Aircraft'] units> <after discovering [Lasers]>"
 		],
 		"unitTypes": [
@@ -2227,9 +2225,10 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+15]% Strength <when attacking>",
-			"[+18]% Strength <when attacking> <vs cities>"
+			"Instantly consumes [20] [Weapon Parts]",
+			"[+7] Strength",
+			"[+10]% Strength <when attacking>",
+			"[+10]% Strength <when attacking> <vs cities>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -2247,9 +2246,10 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Advanced Ballistics]>",
-			"[+25]% Strength <vs [{'Mechanised'} {Assault}] units>",
-			"[+25]% Strength <vs [{'Motorised'} {Rider}] units>",
-			"[+25]% Strength <vs [{'Mechanised'} {Rider}] units>"
+			"Instantly consumes [20] [Weapon Parts]",
+			"[+5] Strength",
+			"[+30]% Strength <vs ['Mechanised'] units>",
+			"[+30]% Strength <vs ['Motorised'] units>"
 		],
 		"unitTypes": [
 			"Scout",
@@ -2265,6 +2265,7 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Combustion]>",
+			"Instantly consumes [10] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
 			"[+1] Movement",
 			"[+10] HP when healing"
@@ -2290,15 +2291,15 @@
 			"Costs [12] [Aircraft Parts]",
 			"Consumes [1] [Fuel]",
 			"May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>",
-			"[+25] HP when healing <in [Foreign Land] tiles>"
+			"[+10] HP when healing"
 		],
 		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
 			"Close Combat",
-			"Ranged Combat"
+			"Ranged Combat",
+			"Scout",
+			"Rider",
+			"Assault",
+			"Siege"
 		],
 		"column": 33,
 		"row": 5
@@ -2309,8 +2310,8 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[25]% chance to intercept air attacks",
+			"Instantly consumes [20] [Weapon Parts]",
+			"[50]% chance to intercept air attacks",
 			"[+15]% Strength <vs ['Propeller Aircraft'] units>",
 			"[+15]% Strength <vs ['Jet Engine Aircraft'] units> <after discovering [Advanced Ballistics]>",
 			"[+15]% Strength <vs ['Low Altitude Aircraft'] units>"
