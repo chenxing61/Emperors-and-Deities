@@ -33,6 +33,8 @@
 
  Some Russian Translation done by Nori_Bori from discord with help of Genemi AI.
  
+ To give feedback and participate in discussions:
+ https://discord.gg/XHNtmxfPay
  To support cx61 and his helpers:
  https://buymeacoffee.com/chenxing61
 
