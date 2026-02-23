@@ -174,7 +174,7 @@
 		"unitType": "Scout",
 		"cost": 25,
 		"movement": 2,
-		"strength": 5,
+		"strength": 10,
 		"uniques": [
 			"Can upgrade to [Adventurer] <after discovering [Astronomy]>",
 			"Can upgrade to [Envoy] <after discovering [Astronomy]> <for [non-[City-State]] Civilizations>",
@@ -196,8 +196,8 @@
 		"name": "Hunter Gatherer",
 		"unitType": "Ranged Combat",
 		"movement": 2,
-		"strength": 5,
-		"rangedStrength": 8,
+		"strength": 8,
+		"rangedStrength": 11,
 		"range": 1,
 		"uniques": [
 			"Unbuildable",
@@ -221,7 +221,7 @@
 		"replaces": "Hunter Gatherer",
 		"unitType": "Close Combat",
 		"movement": 3,
-		"strength": 9,
+		"strength": 10,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
 			"'Infantry'",
@@ -243,8 +243,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 0,
 		"movement": 2,
-		"strength": 5,
-		"rangedStrength": 8,
+		"strength": 8,
+		"rangedStrength": 11,
 		"range": 1,
 		"uniques": [
 			"Unbuildable",
@@ -269,8 +269,8 @@
 		"unitType": "Ranged Combat Ship",
 		"cost": 40,
 		"movement": 3,
-		"strength": 6,
-		"rangedStrength":8,
+		"strength": 7,
+		"rangedStrength":10,
 		"range":1,
 		"uniques": [
 			"'Standing Army'",
@@ -294,7 +294,7 @@
 		"unitType": "Close Combat",
 		"cost": 0,
 		"movement": 2,
-		"strength": 8,
+		"strength": 12,
 		"uniques": [
 			"Unbuildable",
 			"'Levy Army'",
@@ -316,7 +316,7 @@
 		"unitType": "Close Combat",
 		"cost": 50,
 		"movement": 2,
-		"strength": 10,
+		"strength": 12,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
@@ -343,12 +343,13 @@
 		"uniqueTo": "Europa",
 		"cost": 45,
 		"movement": 2,
-		"strength": 10,
+		"strength": 12,
 		"uniques": [
 			"Limited to [5] per Civilization",
 			"Can transform to [Early Swordsman] <removing the [The Levied Army] promotion/status> <after discovering [Bronze Working]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
 			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <after discovering [Mathematics]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
 			"Can transform to [Early Rider] <removing the [The Levied Army] promotion/status> <after discovering [Horseback Riding]> <when above [0] [Horse]> <when above [0] [Standing Army Maintenance]> <costs [+125 Gold] stats>",
+			"Can transform to [Comitatus] <removing the [The Levied Army] promotion/status> <after discovering [Mining]> <after adopting [Unity]> <when above [0] [Noble Army Maintenance]> <costs [+100 Gold] stats>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -372,7 +373,7 @@
 		"unitType": "Close Combat",
 		"cost": 55,
 		"movement": 2,
-		"strength": 14,
+		"strength": 16,
 		"uniques": [
 			"'Standing Army'",
 			"'Infantry'",
@@ -398,7 +399,7 @@
 		"unitType": "Close Combat",
 		"cost": 75,
 		"movement": 2,
-		"strength": 12,
+		"strength": 16,
 		"uniques": [
 			"Only available <after adopting [Early Colonization]>",
 			"'Noble Army'",
@@ -451,14 +452,14 @@
 		"unitType": "Assault",
 		"cost": 65,
 		"movement": 3,
-		"strength": 16,
+		"strength": 18,
 		"uniques": [
 			"Consumes [1] [Horse]",
 			"'Standing Army'",
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[+25]% Strength <after discovering [Iron Working]>",
+			"[+6] Strength <after discovering [Carpentry]>",
 			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
 			"[-33]% Strength <vs cities> <when attacking>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
@@ -479,13 +480,13 @@
 		"unitType": "Assault",
 		"cost": 60,
 		"movement": 3,
-		"strength": 14,
+		"strength": 16,
 		"uniques": [
 			"'Standing Army'",
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[+25]% Strength <after discovering [Iron Working]>",
+			"[+6] Strength <after discovering [Carpentry]>",
 			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
 			"[-33]% Strength <vs cities> <when attacking>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
@@ -506,7 +507,7 @@
 		"unitType": "Assault",
 		"cost": 70,
 		"movement": 3,
-		"strength": 16,
+		"strength": 18,
 		"uniques": [
 			"Only available <if [Vedic Kingdoms] is constructed>",
 			"Consumes [1] [Horse]",
@@ -514,7 +515,7 @@
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[+25]% Strength <after discovering [Iron Working]>",
+			"[+6] Strength <after discovering [Carpentry]>",
 			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
 			"[-33]% Strength <vs cities> <when attacking>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
@@ -534,16 +535,16 @@
 	{
 		"name": "Noble Chariot",
 		"unitType": "Assault",
-		"cost": 70,
+		"cost": 60,
 		"movement": 3,
-		"strength": 16,
+		"strength": 20,
 		"uniques": [
 			"Consumes [1] [Horse]",
 			"'Noble Army'",
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[+25]% Strength <after discovering [Iron Working]>",
+			"[+6] Strength <after discovering [Carpentry]>",
 			"[-20]% Strength <when fighting in [Rough terrain] tiles>",
 			"[-20]% Strength <vs cities> <when attacking>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
@@ -563,16 +564,16 @@
 		"uniqueTo": "Europa",
 		"replaces": "Noble Chariot",
 		"unitType": "Assault",
-		"cost": 70,
+		"cost": 60,
 		"movement": 3,
-		"strength": 17,
+		"strength": 20,
 		"uniques": [
 			"Consumes [1] [Horse]",
 			"'Noble Army'",
 			"'Mounted'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[+25]% Strength <after discovering [Iron Working]>",
+			"[+6] Strength <after discovering [Carpentry]>",
 			"[-20]% Strength <when fighting in [Rough terrain] tiles>",
 			"[-20]% Strength <vs cities> <when attacking>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
@@ -592,9 +593,9 @@
 	{
 		"name": "Galley Fleet",
 		"unitType": "Close Combat Ship",
-		"cost": 75,
+		"cost": 65,
 		"movement": 3,
-		"strength": 15,
+		"strength": 20,
 		"uniques": [
 			"'Standing Army'",
 			"'Galley'",
@@ -617,7 +618,7 @@
 		"unitType": "Scout",
 		"cost": 60,
 		"movement": 3,
-		"strength": 12,
+		"strength": 14,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
 			"Unavailable <in cities without a [Mercenary Office]>",
@@ -644,9 +645,9 @@
 	{
 		"name": "Envoy",
 		"unitType": "Scout",
-		"cost": 55,
+		"cost": 100,
 		"movement": 3,
-		"strength": 10,
+		"strength": 15,
 		"uniques": [
 			"Limited to [2] per Civilization",
 			"Unbuildable <for [City-State] Civilizations>",
@@ -675,8 +676,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 75,
 		"movement": 3,
-		"strength": 12,
-		"rangedStrength": 15,
+		"strength": 14,
+		"rangedStrength": 18,
 		"range":1,
 		"uniques": [
 			"[-1] population [in this city]",
@@ -708,8 +709,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 0,
 		"movement": 2,
-		"strength": 12,
-		"rangedStrength": 15,
+		"strength": 15,
+		"rangedStrength": 19,
 		"range": 1,
 		"uniques": [
 			"Unbuildable",
@@ -735,10 +736,10 @@
 		"uniqueTo": "North Africa",
 		"unitType": "Ranged Combat",
 		"replaces": "Mercenary Javalineer",
-		"cost": 50,
-		"movement": 2,
-		"strength": 12,
-		"rangedStrength": 15,
+		"cost": 80,
+		"movement": 3,
+		"strength": 15,
+		"rangedStrength": 19,
 		"range": 1,
 		"uniques": [
 			"Can transform to [Archer] <when above [0] [Standing Army Maintenance]> <after discovering [Mathematics]> <costs [+100 Gold] stats>",
@@ -752,8 +753,7 @@
 		"promotions": [
 			"Mercenary Habit",
 			"Skirmisher Training",
-			"Accuracy Doctrine",
-			"Short Bow"
+			"Accuracy Doctrine"
 		],
 		"requiredTech": "Mining",
 		"obsoleteTech": "Tactics",
@@ -765,8 +765,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 60,
 		"movement": 2,
-		"strength": 12,
-		"rangedStrength": 15,
+		"strength": 15,
+		"rangedStrength": 19,
 		"range": 1,
 		"uniques": [
 			"Unbuildable <for [Human player] Civilizations>",
@@ -794,7 +794,7 @@
 		"unitType": "Rider",
 		"cost": 65,
 		"movement": 3,
-		"strength": 16,
+		"strength": 18,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
@@ -823,7 +823,7 @@
 		"unitType": "Rider",
 		"cost": 100,
 		"movement": 2,
-		"strength": 20,
+		"strength": 24,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Elephant]",
@@ -855,7 +855,7 @@
 		"unitType": "Rider",
 		"cost": 100,
 		"movement": 2,
-		"strength": 21,
+		"strength": 24,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Elephant]",
@@ -885,7 +885,7 @@
 		"unitType": "Rider",
 		"cost": 90,
 		"movement": 3,
-		"strength": 11,
+		"strength": 13,
 		"rangedStrength": 17,
 		"range": 1,
 		"uniques": [
@@ -920,8 +920,8 @@
 		"unitType": "Rider",
 		"cost": 90,
 		"movement": 3,
-		"strength": 12,
-		"rangedStrength": 19,
+		"strength": 14,
+		"rangedStrength": 20,
 		"range": 1,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
@@ -955,9 +955,9 @@
 		"unitType": "Ranged Combat Ship",
 		"cost": 75,
 		"movement": 3,
-		"strength": 12,
+		"strength": 14,
 		"range":1,
-		"rangedStrength":15,
+		"rangedStrength":19,
 		"uniques": [
 			"'Standing Army'",
 			"'Galley'",
@@ -980,8 +980,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 85,
 		"movement": 2,
-		"strength": 16,
-		"rangedStrength": 20,
+		"strength": 20,
+		"rangedStrength": 25,
 		"range": 1,
 		"uniques": [
 			"'Standing Army'",
@@ -1007,8 +1007,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 85,
 		"movement": 2,
-		"strength": 16,
-		"rangedStrength": 20,
+		"strength": 20,
+		"rangedStrength": 25,
 		"range": 1,
 		"uniques": [
 			"Can transform to [Qin Crossbowman] <if [Great Qin] is constructed>",
@@ -1035,8 +1035,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 85,
 		"movement": 2,
-		"strength": 16,
-		"rangedStrength": 20,
+		"strength": 20,
+		"rangedStrength": 25,
 		"range": 1,
 		"uniques": [
 			"Can transform to [Crossbowman] <after discovering [Engineering]> <costs [+50 Gold] stats>",
@@ -1065,8 +1065,8 @@
 		"unitType": "Siege",
 		"cost": 110,
 		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 18,
+		"strength": 18,
+		"rangedStrength": 24,
 		"range": 2,
 		"uniques": [
 			"'Standing Army'",
@@ -1095,8 +1095,8 @@
 		"unitType": "Siege",
 		"cost": 110,
 		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 18,
+		"strength": 18,
+		"rangedStrength": 24,
 		"range": 2,
 		"uniques": [
 			"'Standing Army'",
@@ -1126,7 +1126,7 @@
 		"unitType": "Close Combat",
 		"cost": 0,
 		"movement": 2,
-		"strength": 16,
+		"strength": 21,
 		"uniques": [
 			"Unbuildable",
 			"'Levy Army'",
@@ -1151,7 +1151,7 @@
 		"unitType": "Close Combat",
 		"cost": 0,
 		"movement": 3,
-		"strength": 16,
+		"strength": 21,
 		"uniques": [
 			"Unbuildable",
 			"'Levy Army'",
@@ -1177,7 +1177,7 @@
 		"unitType": "Close Combat",
 		"cost": 75,
 		"movement": 2,
-		"strength": 20,
+		"strength": 26,
 		"uniques": [
 			"Only available <if [Diadochi States] is constructed>",
 			"'Standing Army'",
@@ -1185,7 +1185,6 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"[+17]% Strength <when fighting in [Open terrain] tiles> <when defending>",
-			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
@@ -1207,7 +1206,7 @@
 		"unitType": "Close Combat",
 		"cost": 80,
 		"movement": 2,
-		"strength": 19,
+		"strength": 25,
 		"uniques": [
 			"Only available <if [SPQR] is constructed>",
 			"Consumes [1] [Metal]",
@@ -1227,8 +1226,8 @@
 			"Legio Ability"
 		],
 		"requiredTech": "Iron Working",
-		"obsoleteTech": "Tactics",
-		"upgradesTo": "Swordsman",
+		"obsoleteTech": "Flintlock",
+		"upgradesTo": "Grenadier",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
@@ -1238,7 +1237,7 @@
 		"unitType": "Close Combat",
 		"cost": 80,
 		"movement": 2,
-		"strength": 20,
+		"strength": 26,
 		"uniques": [
 			"Only available <if [Carthage Obligarchy] is constructed>",
 			"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
@@ -1255,8 +1254,8 @@
 			"Intensive Doctrine"
 		],
 		"requiredTech": "Iron Working",
-		"obsoleteTech": "Armorments",
-		"upgradesTo": "Swordsman",
+		"obsoleteTech": "Flintlock",
+		"upgradesTo": "Grenadier",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
@@ -1265,7 +1264,7 @@
 		"unitType": "Close Combat",
 		"cost": 80,
 		"movement": 2,
-		"strength": 18,
+		"strength": 25,
 		"uniques": [
 			"Can upgrade to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]>",
 			"Consumes [1] [Metal]",
@@ -1289,12 +1288,47 @@
 		"attackSound": "metalhit"
 	},
 	{
+		"name": "Comitatus",
+		"uniqueTo": "Europa",
+		"unitType": "Close Combat",
+		"cost": 100,
+		"movement": 2,
+		"strength": 25,
+		"uniques": [
+			"Only available <after adopting [Unity]>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
+			"Can upgrade to [Grenadier] <for [AI player] Civilizations> <hidden from users>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"'Noble Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+20]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[+33]% Strength <after discovering [Steels]> <in [Land] tiles>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Hardened",
+			"Shock Doctrine",
+			"Shield Wall"
+		],
+		"requiredTech": "Mining",
+		"obsoleteTech": "Flintlock",
+		"requiredResource": "Noble Army Maintenance",
+		"attackSound": "metalhit"
+	},
+	{
 		"name": "Noble Swordsman",
 		"unitType": "Close Combat",
 		"cost": 100,
 		"movement": 2,
-		"strength": 19,
+		"strength": 25,
 		"uniques": [
+			"Unavailable <for [Europa] Civilizations> <after adopting [Unity]> <hidden from users>",
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
 			"Can upgrade to [Grenadier] <for [AI player] Civilizations> <hidden from users>",
 			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
@@ -2446,6 +2480,32 @@
 	},
 	{
 		"name": "Pike and Shot",
+		"unitType": "Close Combat",
+		"cost": 200,
+		"movement": 2,
+		"strength": 34,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Costs [5] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Pike"
+		],
+		"requiredTech": "Hand Cannon",
+		"obsoleteTech": "Flintlock",
+		"upgradesTo": "Grenadier",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Pikemen",
 		"unitType": "Close Combat",
 		"cost": 0,
 		"movement": 2,

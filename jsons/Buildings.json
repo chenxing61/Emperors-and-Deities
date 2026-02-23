@@ -1199,13 +1199,14 @@
 	{
 		"name": "First Temple of the One True God",
 		"isWonder": true,
-		"faith": 3,
+		"faith": 5,
 		"happiness": 1,
+		"greatPersonPoints": {
+			"Great Prophet": 1
+		},
 		"uniques": [
-			"'Worship Place'",
+			"'Core of Religion'",
 			"[+10]% [Faith] [in all cities]",
-			"Gain a free [Follower] belief <upon founding a Religion> <before founding a religion>",
-			"Gain a free [Follower] belief <after founding a religion>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -1420,12 +1421,19 @@
 	{
 		"name": "European Longhouse",
 		"uniqueTo": "Europa",
+		"maintenance": 5,
+		"happiness": 1,
+		"culture": 2,
 		"production": 2,
-		"cityStrength": 2,
+		"cityStrength": 4,
+		"specialistSlots": {
+			"Governor": 1
+		},
 		"uniques": [
-			"Gain a free [Town Hall] [in this city]",
-			"[+33]% weight to this choice for AI decisions <hidden from users>",
-			"Only available <after adopting [Unity]>",
+			"'Political Building'",
+			"Unavailable <for [Mediterranean] Civilizations> <after adopting [Unity]> <hidden from users>",
+			"Unavailable <for [Central and West Asia] Civilizations> <after adopting [Unity]> <hidden from users>",
+			"[+20]% weight to this choice for AI decisions <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Writing"
