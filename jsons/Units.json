@@ -1184,7 +1184,6 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"[+17]% Strength <when fighting in [Open terrain] tiles> <when defending>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
@@ -1195,8 +1194,8 @@
 			"Pike"
 		],
 		"requiredTech": "Horse Collar",
-		"obsoleteTech": "Tactics",
-		"upgradesTo": "Swordsman",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
@@ -1226,8 +1225,8 @@
 			"Legio Ability"
 		],
 		"requiredTech": "Iron Working",
-		"obsoleteTech": "Flintlock",
-		"upgradesTo": "Grenadier",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
@@ -1254,8 +1253,8 @@
 			"Intensive Doctrine"
 		],
 		"requiredTech": "Iron Working",
-		"obsoleteTech": "Flintlock",
-		"upgradesTo": "Grenadier",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
@@ -1266,7 +1265,6 @@
 		"movement": 2,
 		"strength": 25,
 		"uniques": [
-			"Can upgrade to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]>",
 			"Consumes [1] [Metal]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -1282,8 +1280,8 @@
 			"The Standing Army"
 		],
 		"requiredTech": "Iron Working",
-		"obsoleteTech": "Flintlock",
-		"upgradesTo": "Grenadier",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "metalhit"
 	},
@@ -1297,9 +1295,8 @@
 		"uniques": [
 			"Only available <after adopting [Unity]>",
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
-			"Can upgrade to [Grenadier] <for [AI player] Civilizations> <hidden from users>",
-			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can upgrade to [Pike and Shot] <for [AI player] Civilizations> <after discovering [Hand Cannon]> <hidden from users>",
+			"Can transform to [Pike and Shot] <after discovering [Hand Cannon]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"'Noble Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -1330,9 +1327,8 @@
 		"uniques": [
 			"Unavailable <for [Europa] Civilizations> <after adopting [Unity]> <hidden from users>",
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
-			"Can upgrade to [Grenadier] <for [AI player] Civilizations> <hidden from users>",
-			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can upgrade to [Pike and Shot] <for [AI player] Civilizations> <after discovering [Hand Cannon]> <hidden from users>",
+			"Can transform to [Pike and Shot] <after discovering [Hand Cannon]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"Consumes [1] [Metal]",
 			"'Noble Army'",
 			"'Infantry'",
@@ -1359,14 +1355,13 @@
 		"uniqueTo": "Central and West Asia",
 		"cost": 120,
 		"movement": 2,
-		"strength": 19,
+		"strength": 25,
 		"uniques": [
 			"Only available <if [Persian Dynasties] is constructed>",
 			"Limited to [2] per Civilization",
 			"Can transform to [Azadan Cavalry] <removing the [Fast Regrouping] promotion/status> <after discovering [Armorments]> <when above [0] [Horse]>",
-			"Can upgrade to [Grenadier] <for [AI player] Civilizations> <hidden from users>",
-			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]>",
+			"Can upgrade to [Pike and Shot] <for [AI player] Civilizations> <after discovering [Hand Cannon]> <hidden from users>",
+			"Can transform to [Pike and Shot] <after discovering [Hand Cannon]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"'Noble Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -1396,7 +1391,7 @@
 		"unitType": "Close Combat Ship",
 		"cost": 90,
 		"movement": 4,
-		"strength": 16,
+		"strength": 21,
 		"uniques": [
 			"'Standing Army'",
 			"'Sailing Ship'",
@@ -1422,7 +1417,7 @@
 		"unitType": "Close Combat Ship",
 		"cost": 75,
 		"movement": 4,
-		"strength": 16,
+		"strength": 21,
 		"uniques": [
 			"'Standing Army'",
 			"'Sailing Ship'",
@@ -1448,7 +1443,7 @@
 		"unitType": "Close Combat",
 		"cost": 50,
 		"movement": 2,
-		"strength": 18,
+		"strength": 21,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
@@ -1478,8 +1473,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 70,
 		"movement": 2,
-		"strength": 16,
-		"rangedStrength": 20,
+		"strength": 20,
+		"rangedStrength": 25,
 		"range": 1,
 		"uniques": [
 			"Unavailable <in cities without a [Mercenary Office]>",
@@ -1506,7 +1501,7 @@
 		"unitType": "Rider",
 		"cost": 90,
 		"movement": 3,
-		"strength": 17,
+		"strength": 24,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <with [Camel]>",
@@ -1536,7 +1531,7 @@
 		"unitType": "Rider",
 		"cost": 90,
 		"movement": 3,
-		"strength": 17,
+		"strength": 24,
 		"uniques": [
 			"Unavailable <in cities without a [Mercenary Office]>",
 			"Only available <with [Camel]>",
@@ -1567,8 +1562,8 @@
 		"unitType": "Ranged Combat Ship",
 		"cost": 130,
 		"movement": 4,
-		"strength": 24,
-		"rangedStrength": 28,
+		"strength": 27,
+		"rangedStrength": 30,
 		"range": 1,
 		"uniques": [
 			"Unbuildable <when below [0] [War Machine Blueprint]>",
@@ -1599,7 +1594,7 @@
 		"unitType": "Assault",
 		"cost": 130,
 		"movement": 3,
-		"strength": 24,
+		"strength": 32,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <if [Persian Dynasties] is constructed>",
@@ -1632,8 +1627,8 @@
 		"uniqueTo": "Central and West Asia",
 		"unitType": "Rider",
 		"movement": 3,
-		"strength": 20,
-		"rangedStrength": 25,
+		"strength": 27,
+		"rangedStrength": 30,
 		"range": 2,
 		"uniques": [
 			"Unbuildable",
@@ -1665,7 +1660,7 @@
 		"unitType": "Assault",
 		"cost": 120,
 		"movement": 3,
-		"strength": 26,
+		"strength": 32,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <if [Chu Dynasty] is constructed>",
@@ -1697,7 +1692,7 @@
 		"unitType": "Assault",
 		"cost": 110,
 		"movement": 3,
-		"strength": 24,
+		"strength": 32,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
@@ -1727,7 +1722,7 @@
 		"unitType": "Assault",
 		"cost": 140,
 		"movement": 3,
-		"strength": 24,
+		"strength": 32,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
@@ -1758,7 +1753,7 @@
 		"uniqueTo": "Mediterranean",
 		"unitType": "Assault",
 		"movement": 3,
-		"strength": 24,
+		"strength": 32,
 		"uniques": [
 			"Unbuildable",
 			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
@@ -1791,7 +1786,7 @@
 		"unitType": "Close Combat",
 		"cost": 100,
 		"movement": 2,
-		"strength": 18,
+		"strength": 25,
 		"uniques": [
 			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
@@ -1822,7 +1817,7 @@
 		"uniqueTo": "North Africa",
 		"cost": 100,
 		"movement": 3,
-		"strength": 20,
+		"strength": 30,
 		"uniques": [
 			"Only available <if [Carthage Obligarchy] is constructed>",
 			"Can transform to [Heavy Galley Fleet] <after discovering [Shipbuilding]>",
@@ -1849,7 +1844,7 @@
 		"unitType": "Close Combat Ship",
 		"cost": 110,
 		"movement": 3,
-		"strength": 26,
+		"strength": 32,
 		"uniques": [
 			"'Standing Army'",
 			"'Galley'",
@@ -1873,7 +1868,7 @@
 		"unitType": "Close Combat Ship",
 		"cost": 120,
 		"movement": 3,
-		"strength": 24,
+		"strength": 32,
 		"uniques": [
 			"'Standing Army'",
 			"'Galley'",
@@ -1924,7 +1919,7 @@
 		"cost": 90,
 		"unitType": "Rider",
 		"movement": 3,
-		"strength": 19,
+		"strength": 28,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <if [Han Dynasty] is constructed>",
@@ -1956,7 +1951,7 @@
 		"cost": 90,
 		"unitType": "Rider",
 		"movement": 3,
-		"strength": 21,
+		"strength": 28,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
@@ -1986,7 +1981,7 @@
 		"unitType": "Rider",
 		"cost": 90,
 		"movement": 3,
-		"strength": 18,
+		"strength": 28,
 		"uniques": [
 			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
@@ -2017,8 +2012,8 @@
 		"unitType": "Siege",
 		"cost": 150,
 		"movement": 2,
-		"strength": 25,
-		"rangedStrength": 30,
+		"strength": 32,
+		"rangedStrength": 32,
 		"range": 1,
 		"uniques": [
 			"Unavailable <in cities without a [Alchemy Lab]>",
@@ -2048,8 +2043,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 100,
 		"movement": 2,
-		"strength": 20,
-		"rangedStrength": 25,
+		"strength": 30,
+		"rangedStrength": 36,
 		"range": 1,
 		"uniques": [
 			"Costs [6] [Weapon Parts]",
@@ -2075,8 +2070,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 150,
 		"movement": 2,
-		"strength": 20,
-		"rangedStrength": 25,
+		"strength": 30,
+		"rangedStrength": 36,
 		"range": 1,
 		"uniques": [
 			"Unavailable <in cities without a [Mercenary Office]>",
@@ -2104,13 +2099,12 @@
 		"unitType": "Close Combat",
 		"cost": 150,
 		"movement": 2,
-		"strength": 22,
+		"strength": 30,
 		"uniques": [
 			"Limited to [3] per Civilization",
 			"Only available <if [Celestial Empire] is constructed>",
-			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]>",
-			"Can upgrade to [Grenadier] <for [AI player] Civilizations> <hidden from users>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]>",
+			"Can upgrade to [Pike and Shot] <for [AI player] Civilizations> <after discovering [Hand Cannon]> <hidden from users>",
+			"Can transform to [Pike and Shot] <after discovering [Hand Cannon]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
 			"Consumes [1] [Metal]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -2139,8 +2133,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 0,
 		"movement": 2,
-		"strength": 16,
-		"rangedStrength": 20,
+		"strength": 20,
+		"rangedStrength": 25,
 		"range": 1,
 		"uniques": [
 			"Unbuildable",
@@ -2165,7 +2159,7 @@
 		"unitType": "Assault",
 		"cost": 200,
 		"movement": 3,
-		"strength": 28,
+		"strength": 40,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
@@ -2195,7 +2189,7 @@
 		"unitType": "Assault",
 		"cost": 175,
 		"movement": 3,
-		"strength": 30,
+		"strength": 40,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <after adopting [Knighthood]>",
@@ -2226,7 +2220,7 @@
 		"unitType": "Rider",
 		"cost": 200,
 		"movement": 2,
-		"strength": 31,
+		"strength": 40,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Elephant]",
@@ -2257,7 +2251,7 @@
 		"unitType": "Rider",
 		"cost": 200,
 		"movement": 2,
-		"strength": 32,
+		"strength": 42,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Elephant]",
@@ -2286,8 +2280,8 @@
 		"unitType": "Siege",
 		"cost": 200,
 		"movement": 2,
-		"strength": 23,
-		"rangedStrength": 27,
+		"strength": 28,
+		"rangedStrength": 36,
 		"range": 2,
 		"uniques": [
 			"Unavailable <in cities without a [Military Blacksmith]>",
@@ -2320,8 +2314,8 @@
 		"unitType": "Siege",
 		"cost": 200,
 		"movement": 2,
-		"strength": 23,
-		"rangedStrength": 28,
+		"strength": 28,
+		"rangedStrength": 36,
 		"range": 2,
 		"uniques": [
 			"Unavailable <in cities without a [Military Blacksmith]>",
@@ -2352,7 +2346,7 @@
 		"unitType": "Assault",
 		"cost": 200,
 		"movement": 3,
-		"strength": 27,
+		"strength": 40,
 		"uniques": [
 			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
@@ -2378,7 +2372,7 @@
 		"unitType": "Close Combat Ship",
 		"cost": 175,
 		"movement": 4,
-		"strength": 30,
+		"strength": 38,
 		"uniques": [
 			"'Standing Army'",
 			"'Sailing Ship'",
@@ -2401,8 +2395,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 0,
 		"movement": 2,
-		"strength": 24,
-		"rangedStrength": 28,
+		"strength": 30,
+		"rangedStrength": 36,
 		"range": 1,
 		"uniques": [
 			"Unbuildable",
@@ -2427,8 +2421,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 200,
 		"movement": 2,
-		"strength": 30,
-		"rangedStrength": 38,
+		"strength": 36,
+		"rangedStrength": 40,
 		"range": 1,
 		"uniques": [
 			"Unavailable <in cities without a [Firearms Workshop]>",
@@ -2455,8 +2449,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 250,
 		"movement": 2,
-		"strength": 30,
-		"rangedStrength": 38,
+		"strength": 36,
+		"rangedStrength": 40,
 		"range": 1,
 		"uniques": [
 			"Unavailable <in cities without a [Mercenary Office]>",
@@ -2483,8 +2477,9 @@
 		"unitType": "Close Combat",
 		"cost": 200,
 		"movement": 2,
-		"strength": 34,
+		"strength": 40,
 		"uniques": [
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]>",
 			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Costs [5] [Weapon Parts]",
 			"'Standing Army'",
@@ -2509,7 +2504,7 @@
 		"unitType": "Close Combat",
 		"cost": 0,
 		"movement": 2,
-		"strength": 28,
+		"strength": 36,
 		"uniques": [
 			"Unbuildable",
 			"'Levy Army'",
@@ -2533,7 +2528,7 @@
 		"unitType": "Close Combat",
 		"cost": 150,
 		"movement": 2,
-		"strength": 30,
+		"strength": 40,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
 			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]>",
@@ -2563,7 +2558,7 @@
 		"unitType": "Assault",
 		"cost": 210,
 		"movement": 3,
-		"strength": 36,
+		"strength": 48,
 		"uniques": [
 			"Only available <before adopting [Knighthood]>",
 			"Costs [6] [Weapon Parts]",
@@ -2591,7 +2586,7 @@
 		"unitType": "Assault",
 		"cost": 250,
 		"movement": 3,
-		"strength": 32,
+		"strength": 48,
 		"uniques": [
 			"Unavailable <in cities without a [Mercenary Office]>",
 			"Can transform to [Cuirassier] <after discovering [Rifling]> <when above [0] [Standing Army Maintenance]> <removing the [Mercenary Habit] promotion/status>",
@@ -2619,7 +2614,7 @@
 		"unitType": "Assault",
 		"cost": 300,
 		"movement": 3,
-		"strength": 36,
+		"strength": 48,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <after adopting [Knighthood]>",
@@ -2649,12 +2644,12 @@
 		"unitType": "Siege",
 		"cost": 250,
 		"movement": 2,
-		"strength": 32,
-		"rangedStrength": 38,
+		"strength": 40,
+		"rangedStrength": 50,
 		"range": 2,
 		"uniques": [
 			"Unavailable <in cities without a [Firearms Workshop]>",
-			"Can upgrade to [Siege Bombard] <after discovering [Machinery]>",
+			"Can transform to [Siege Bombard] <after discovering [Machinery]> <costs [+200] [Gold]> <costs [9] [Weapon Parts]>",
 			"Costs [15] [Weapon Parts]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -2683,7 +2678,7 @@
 		"unitType": "Close Combat Ship",
 		"cost": 300,
 		"movement": 4,
-		"strength": 35,
+		"strength": 45,
 		"uniques": [
 			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Costs [15] [Weapon Parts]",
@@ -2708,7 +2703,7 @@
 		"unitType": "Scout",
 		"cost": 200,
 		"movement": 4,
-		"strength": 29,
+		"strength": 36,
 		"uniques": [
 			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Unbuildable <for [Human player] Civilizations>",
@@ -2716,8 +2711,7 @@
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Firearms'",
-			"[+17]% Strength <vs [Barbarian] units> <when attacking>",
-			"[+33]% Strength <vs [Barbarian] units> <when defending>",
+			"[+33]% Strength <vs [Barbarian] units>",
 			"Can move immediately once bought",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
@@ -2737,8 +2731,8 @@
 		"unitType": "Ranged Combat Ship",
 		"cost": 0,
 		"movement": 3,
-		"strength": 28,
-		"rangedStrength": 35,
+		"strength": 38,
+		"rangedStrength": 43,
 		"uniques": [
 			"Unbuildable",
 			"'Levy Army'",
@@ -2761,18 +2755,18 @@
 		"unitType": "Siege",
 		"cost": 320,
 		"movement": 2,
-		"strength": 32,
-		"rangedStrength": 38,
+		"strength": 35,
+		"rangedStrength": 50,
 		"range": 2,
 		"uniques": [
-			"Unavailable <in cities without a [Firearms Workshop]>",
-			"Consumes [1] [Metal]",
-			"Costs [21] [Weapon Parts]",
+			"Unbuildable",
+			"Can transform to [Field Gun]",
 			"'Standing Army'",
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Siege Weapons'",
-			"[+200]% Strength <vs cities> <when attacking>",
+			"[+133]% Strength <vs cities> <when attacking>",
+			"[+75]% Strength <vs ['Dense Formation'] units> <when attacking>",
 			"No defensive terrain bonus",
 			"Must set up to ranged attack",
 			"[-1] Sight",
@@ -2784,7 +2778,6 @@
 		],
 		"requiredTech": "Machinery",
 		"obsoleteTech": "Carriage",
-		"upgradesTo": "Field Gun",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "artillery"
 	},
@@ -2794,8 +2787,8 @@
 		"unitType": "Siege",
 		"cost": 400,
 		"movement": 2,
-		"strength": 40,
-		"rangedStrength": 46,
+		"strength": 48,
+		"rangedStrength": 60,
 		"range": 2,
 		"uniques": [
 			"Unavailable <in cities without a [Firearms Workshop]>",
@@ -2823,7 +2816,7 @@
 		"unitType": "Close Combat",
 		"cost": 0,
 		"movement": 2,
-		"strength": 37,
+		"strength": 48,
 		"uniques": [
 			"Unbuildable",
 			"'Levy Army'",
@@ -2843,9 +2836,9 @@
 	{
 		"name": "Mercenary Musketeer",
 		"unitType": "Close Combat",
-		"cost": 230,
+		"cost": 280,
 		"movement": 2,
-		"strength": 40,
+		"strength": 48,
 		"uniques": [
 			"Unavailable <in cities without a [Mercenary Office]>",
 			"Unbuildable <for [Human player] Civilizations>",
@@ -2870,9 +2863,9 @@
 	{
 		"name": "State Militia Musketeer",
 		"unitType": "Close Combat",
-		"cost": 180,
+		"cost": 280,
 		"movement": 2,
-		"strength": 39,
+		"strength": 48,
 		"uniques": [
 			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Only available <if [United States] is constructed>",
@@ -2894,9 +2887,9 @@
 	{
 		"name": "Grenadier",
 		"unitType": "Close Combat",
-		"cost": 300,
+		"cost": 350,
 		"movement": 2,
-		"strength": 43,
+		"strength": 55,
 		"uniques": [
 			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Only available <before adopting [Long Live the Revolution!]>",
@@ -2923,7 +2916,7 @@
 		"unitType": "Close Combat",
 		"cost": 300,
 		"movement": 2,
-		"strength": 43,
+		"strength": 55,
 		"uniques": [
 			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Only available <after adopting [Long Live the Revolution!]>",
@@ -2948,9 +2941,9 @@
 	{
 		"name": "Hussar",
 		"unitType": "Rider",
-		"cost": 250,
+		"cost": 300,
 		"movement": 3,
-		"strength": 42,
+		"strength": 55,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Consumes [1] [Horse]",
@@ -2980,8 +2973,8 @@
 		"unitType": "Ranged Combat Ship",
 		"cost": 360,
 		"movement": 3,
-		"strength": 38,
-		"rangedStrength": 46,
+		"strength": 45,
+		"rangedStrength": 60,
 		"uniques": [
 			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Costs [21] [Weapon Parts]",
@@ -3006,8 +2999,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 250,
 		"movement": 2,
-		"strength": 39,
-		"rangedStrength": 43,
+		"strength": 45,
+		"rangedStrength": 54,
 		"range": 1,
 		"uniques": [
 			"Unavailable <in cities without a [Firearms Workshop]>",
@@ -3033,8 +3026,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 250,
 		"movement": 2,
-		"strength": 39,
-		"rangedStrength": 43,
+		"strength": 45,
+		"rangedStrength": 54,
 		"range": 1,
 		"uniques": [
 			"Unavailable <in cities without a [Mercenary Office]>",
@@ -3062,7 +3055,7 @@
 		"unitType": "Assault",
 		"cost": 350,
 		"movement": 3,
-		"strength": 50,
+		"strength": 58,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Only available <before adopting [Knighthood]>",
@@ -3091,7 +3084,7 @@
 		"unitType": "Assault",
 		"cost": 325,
 		"movement": 3,
-		"strength": 54,
+		"strength": 58,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Can transform to [Modern Cavalry] <after discovering [Rifling]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
@@ -3121,7 +3114,7 @@
 		"unitType": "Close Combat",
 		"cost": 300,
 		"movement": 3,
-		"strength": 43,
+		"strength": 56,
 		"uniques": [
 			"Unavailable <in cities without a [Firearms Workshop]>",
 			"Costs [15] [Weapon Parts]",
@@ -3148,7 +3141,7 @@
 		"unitType": "Close Combat Ship",
 		"cost": 400,
 		"movement": 4,
-		"strength": 50,
+		"strength": 65,
 		"uniques": [
 			"Unavailable <in cities without a [Military Port]>",
 			"Consumes [1] [Coal]",
@@ -3175,8 +3168,8 @@
 		"unitType": "Ranged Combat Ship",
 		"cost": 450,
 		"movement": 4,
-		"strength": 52,
-		"rangedStrength": 58,
+		"strength": 62,
+		"rangedStrength": 68,
 		"uniques": [
 			"Unavailable <in cities without a [Military Port]>",
 			"Consumes [1] [Coal]",
@@ -3204,7 +3197,7 @@
 		"cost": 0,
 		"movement": 3,
 		"strength": 50,
-		"rangedStrength": 54,
+		"rangedStrength": 56,
 		"range": 1,
 		"uniques": [
 			"Can upgrade to [Modern Guerrilla] <after adopting [Anarchism]> <after discovering [Mobile Tactics]>",
@@ -3276,7 +3269,7 @@
 		"unitType": "Rider",
 		"cost": 350,
 		"movement": 3,
-		"strength": 55,
+		"strength": 65,
 		"uniques": [
 			"Unavailable <in cities without a [Military Stable]>",
 			"Can upgrade to [Motorised Infantry] <after discovering [Combustion]>",
@@ -3305,7 +3298,7 @@
 		"unitType": "Close Combat",
 		"cost": 400,
 		"movement": 2,
-		"strength": 60,
+		"strength": 65,
 		"uniques": [
 			"Costs [21] [Weapon Parts]",
 			"'Standing Army'",
@@ -3328,13 +3321,14 @@
 		"unitType": "Close Combat Ship",
 		"cost": 300,
 		"movement": 4,
-		"strength": 50,
+		"strength": 60,
 		"uniques": [
 			"Costs [10] [Ship Parts]",
 			"'Standing Army'",
 			"'Engine Ship'",
 			"'Dense Formation'",
 			"'Firearms'",
+			"Can only attack [Water] tiles",
 			"Cannot enter ocean tiles",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
@@ -3350,8 +3344,8 @@
 		"unitType": "Submarine",
 		"cost": 400,
 		"movement": 3,
-		"strength": 45,
-		"rangedStrength": 50,
+		"strength": 50,
+		"rangedStrength": 80,
 		"range": 2,
 		"uniques": [
 			"Unbuildable <in cities without a [Military Port]>",
@@ -3362,7 +3356,6 @@
 			"'Skirmishers'",
 			"'Firearms'",
 			"Can only attack [Water] tiles",
-			"[+50]% Strength <when attacking>",
 			"Invisible to non-adjacent units",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
@@ -3379,7 +3372,7 @@
 		"unitType": "Close Combat Ship",
 		"cost": 500,
 		"movement": 3,
-		"strength": 55,
+		"strength": 70,
 		"uniques": [
 			"Unbuildable <in cities without a [Military Port]>",
 			"Consumes [1] [Fuel]",
@@ -3406,8 +3399,8 @@
 		"unitType": "Ranged Combat Ship",
 		"cost": 600,
 		"movement": 3,
-		"strength": 58,
-		"rangedStrength": 65,
+		"strength": 70,
+		"rangedStrength": 80,
 		"uniques": [
 			"Unbuildable <in cities without a [Military Port]>",
 			"Can upgrade to [Missile Crusier] <after discovering [Rocketry]>",
@@ -3433,7 +3426,7 @@
 		"unitType": "Scout",
 		"cost": 350,
 		"movement": 3,
-		"strength": 50,
+		"strength": 60,
 		"uniques": [
 			"Can upgrade to [Mountaineer] <after discovering [Dynamite]>",
 			"'Standing Army'",
@@ -3458,8 +3451,8 @@
 		"unitType": "Ranged Combat",
 		"cost": 370,
 		"movement": 2,
-		"strength": 56,
-		"rangedStrength": 64,
+		"strength": 60,
+		"rangedStrength": 70,
 		"range": 2,
 		"uniques": [
 			"Can upgrade to [Mountaineer] <after discovering [Dynamite]>",
