@@ -32,7 +32,7 @@
 		"name": "Stewardship",
 		"uniques": [
 			"[+5]% XP gained from combat",
-			"[+1] Movement <in [Friendly Land] tiles>"
+			"[This Unit] gains the [Well Supplied] status for [1] turn(s) <upon entering a [City center] tile>"
 		],
 		"unitTypes": [
 			"Siege",
@@ -57,7 +57,7 @@
 		"name": "Centralised Command",
 		"uniques": [
 			"Great General provides double combat bonus",
-			"[+10]% XP gained from combat",
+			"[+20]% XP gained from combat",
 			"[+33]% Damage when intercepting"
 		],
 		"unitTypes": [
@@ -144,8 +144,7 @@
 		"name": "Use of Terrain",
 		"uniques": [
 			"[+1] Movement",
-			"No defensive terrain penalty",
-			"[+15]% Strength <when attacking> <when fighting in [Rough terrain] tiles>"
+			"No defensive terrain penalty"
 		],
 		"unitTypes": [
 			"Siege",
@@ -169,7 +168,6 @@
 		"name": "Long Range Logistic",
 		"uniques": [
 			"Only available <after discovering [Logistics]>",
-			"Gain [-3] [Gold] <every [1] turns>",
 			"[+10] HP when healing <in [Foreign Land] tiles>"
 		],
 		"unitTypes": [
@@ -198,7 +196,7 @@
 		"name": "Reserve Force",
 		"uniques": [
 			"Only available <after discovering [Logistics]>",
-			"[This Unit] heals [50] HP <upon gaining the [Use Reserve Force] promotion>",
+			"[This Unit] heals [66] HP <upon gaining the [Use Reserve Force] promotion>",
 			"Consumes [1] [Standing Army Maintenance]"
 		],
 		"unitTypes": [
@@ -227,8 +225,7 @@
 		"name": "Extra Supply",
 		"uniques": [
 			"Only available <after discovering [Logistics]>",
-			"Gain [-3] [Gold] <every [1] turns>",
-			"[+15] HP when healing <in [Friendly Land] tiles>"
+			"[This Unit] gains the [Well Supplied] status for [1] turn(s) <upon entering a [Friendly land] tile>"
 		],
 		"unitTypes": [
 			"Siege",
@@ -276,14 +273,14 @@
 	{
 		"name": "Field Medic",
 		"uniques": [
-			"[+3] HP when healing",
-			"[+2] HP when healing <after discovering [Apprenticeship]>",
+			"[+5] HP when healing",
+			"[+1] HP when healing <after discovering [Apprenticeship]>",
 			"[+2] HP when healing <after discovering [Biology]>",
 			"[+3] HP when healing <after discovering [Pharmaceuticals]>",
-			"All adjacent units heal [+2] HP when healing",
+			"All adjacent units heal [+5] HP when healing",
 			"All adjacent units heal [+1] HP when healing <after discovering [Apprenticeship]>",
-			"All adjacent units heal [+1] HP when healing <after discovering [Biology]>",
-			"All adjacent units heal [+1] HP when healing <after discovering [Pharmaceuticals]>"
+			"All adjacent units heal [+2] HP when healing <after discovering [Biology]>",
+			"All adjacent units heal [+3] HP when healing <after discovering [Pharmaceuticals]>"
 		],
 		"unitTypes": [
 			"Scout",
@@ -301,14 +298,14 @@
 	{
 		"name": "Technicians",
 		"uniques": [
-			"[+3] HP when healing",
-			"[+2] HP when healing <after discovering [Physics]>",
+			"[+5] HP when healing",
+			"[+1] HP when healing <after discovering [Physics]>",
 			"[+2] HP when healing <after discovering [Machinery]>",
 			"[+3] HP when healing <after discovering [Mass Production]>",
-			"All adjacent units heal [+2] HP when healing",
+			"All adjacent units heal [+5] HP when healing",
 			"All adjacent units heal [+1] HP when healing <after discovering [Physics]>",
-			"All adjacent units heal [+1] HP when healing <after discovering [Machinery]>",
-			"All adjacent units heal [+1] HP when healing <after discovering [Mass Production]>"
+			"All adjacent units heal [+2] HP when healing <after discovering [Machinery]>",
+			"All adjacent units heal [+3] HP when healing <after discovering [Mass Production]>"
 		],
 		"unitTypes": [
 			"Siege",
@@ -409,7 +406,7 @@
 			"Shock Doctrine"
 		],
 		"uniques": [
-			"[1] additional attacks per turn"
+			"[2] additional attacks per turn"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -424,7 +421,7 @@
 			"Rapid Engagement"
 		],
 		"uniques": [
-			"[+15]% Strength <when attacking> <vs [Wounded] units>"
+			"[Target Unit] gains the [Breached] status for [2] turn(s) <upon damaging a [Military] unit>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -439,8 +436,7 @@
 			"Devastating Charge"
 		],
 		"uniques": [
-			"Unit will heal every turn, even if it performs an action",
-			"[-5] HP when healing"
+			"Unit will heal every turn, even if it performs an action"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -491,7 +487,10 @@
 			"Reinforced Position"
 		],
 		"uniques": [
-			"[Target Unit] gains the [Ambushed] status for [1] turn(s) <when fighting in [Rough terrain] tiles> <upon damaging a [Military] unit>"
+			"[Target Unit] gains the [Ambushed] status for [1] turn(s) <when fighting in [Rough terrain] tiles> <upon damaging a [{non-[Scout Crops]} {Military}] unit>",
+			"[Target Unit] gains the [Ambushed] status for [1] turn(s) <when fighting in [Rough terrain] tiles> <upon damaging a [Military] unit> <with [25]% chance>",
+			"[Target Unit] gains the [Ambushed] status for [1] turn(s) <when fighting in ['Infrastructure Improvement'] tiles> <upon damaging a [{non-[Scout Crops]} {Military}] unit>",
+			"[Target Unit] gains the [Ambushed] status for [1] turn(s) <when fighting in ['Infrastructure Improvement'] tiles> <upon damaging a [Military] unit> <with [25]% chance>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -542,9 +541,9 @@
 			"Firepower Doctrine"
 		],
 		"uniques": [
-			"[+5]% Strength <when above [50] HP>",
-			"[Target Unit] gains the [Surpressed] status for [2] turn(s) <upon damaging a [Military] unit>",
-			"[+15]% Strength <vs [Rider] units> <when attacking>"
+			"[+10]% Strength <when above [50] HP>",
+			"[Target Unit] gains the [Surpressed] status for [1] turn(s) <upon damaging a [{Ranged Combat} {Military}] unit>",
+			"[Target Unit] gains the [Surpressed] status for [1] turn(s) <upon damaging a [{Siege} {Military}] unit>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -578,8 +577,9 @@
 			"Ammo Supply"
 		],
 		"uniques": [
-			"[+25]% Strength <when adjacent to a [Ranged Combat] unit>",
-			"[+25]% Strength <when adjacent to a [Ranged Combat Ship] unit>",
+			"[1] additional attacks per turn",
+			"[+15]% Strength <when adjacent to a [Ranged Combat] unit>",
+			"[+15]% Strength <when adjacent to a [Ranged Combat Ship] unit>",
 			"[+10]% Strength <when adjacent to a [Siege] unit>"
 		],
 		"unitTypes": [
@@ -598,7 +598,10 @@
 		],
 		"uniques": [
 			"[+1] XP gained from combat",
-			"[+10]% Strength <vs ['Skirmishers'] units> <when attacking>"
+			"[Target Unit] gains the [Delayed] status for [1] turn(s) <upon damaging a [{Close Combat} {Military}] unit>",
+			"[Target Unit] gains the [Delayed] status for [1] turn(s) <upon damaging a [{Assault} {Military}] unit>",
+			"[Target Unit] gains the [Delayed] status for [1] turn(s) <upon damaging a [{Close Combat Ship} {Military}] unit>"
+
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -629,7 +632,8 @@
 			"Sharpshooting"
 		],
 		"uniques": [
-			"[+1] Movement"
+			"[+1] Movement",
+			"Comment [Immune to strength debuff from[Sabotaged]]"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -768,7 +772,8 @@
 			"Flanking Tactic"
 		],
 		"uniques": [
-			"[+1] Movement"
+			"[+1] Movement",
+			"Comment [Immune to Movement debuff from [Sabotaged]]"
 		],
 		"unitTypes": [
 			"Scout",
@@ -786,7 +791,7 @@
 		],
 		"uniques": [
 			"No movement cost to pillage",
-			"[+15]% Strength <when fighting in [Foreign Land] tiles>"
+			"[Target Unit] gains the [Sabotaged] status for [2] turn(s) <upon damaging a [{non-[Aircraft]} {non-['Low Altitude Aircraft']} {Military}] unit>"
 		],
 		"unitTypes": [
 			"Scout",
@@ -818,9 +823,9 @@
 			"Assault Doctrine"
 		],
 		"uniques": [
-			"[+33]% Strength <vs [Ranged Combat Ship] units> <when attacking>",
 			"[+25]% Strength <vs [Ranged Combat] units> <when attacking>",
-			"[+50]% Strength <vs [Siege] units> <when attacking>"
+			"[+33]% Strength <vs [Siege] units> <when attacking>",
+			"[+25]% Strength <vs [Ranged Combat Ship] units> <when attacking>"
 		],
 		"unitTypes": [
 			"Assault",
@@ -835,7 +840,8 @@
 			"High Speed Charge"
 		],
 		"uniques": [
-			"[Target Unit] gains the [Breached] status for [2] turn(s) <upon damaging a [Military] unit>"
+			"[Target Unit] gains the [Breached] status for [1] turn(s) <upon damaging a [Military] unit>",
+			"[Target Unit] gains the [Breached] status for [1] turn(s) <upon damaging a [Military] unit> <with [25]% chance>"
 		],
 		"unitTypes": [
 			"Assault",
@@ -2087,8 +2093,7 @@
 		"uniques": [
 			"Only available <after discovering [Dynamite]>",
 			"Instantly consumes [10] [Weapon Parts]",
-			"[+5] Strength <when defending>",
-			"[-5]% Strength for enemy [Land] units in adjacent [All] tiles"
+			"[Target Unit] gains the [Delayed] status for [1] turn(s) <upon damaging a [Military] unit>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -2267,8 +2272,7 @@
 			"Only available <after discovering [Combustion]>",
 			"Instantly consumes [10] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
-			"[+1] Movement",
-			"[+10] HP when healing"
+			"Unit will heal every turn, even if it performs an action <for unit without [Sabotaged]>"
 		],
 		"unitTypes": [
 			"Siege",
@@ -2878,7 +2882,8 @@
 			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
 			"[-20]% Strength <vs ['Mounted'] units> <when defending>",
 			"[-20]% Strength <vs ['Mechanised'] units> <when defending>",
-			"Ignores Zone of Control"
+			"Ignores Zone of Control",
+			"[Target Unit] gains the [Sabotaged] status for [1] turn(s) <upon damaging a [{non-[Aircraft]} {non-['Low Altitude Aircraft']} {Military}] unit> <with [25]% chance>"
 		]
 	},
 	{
@@ -2994,34 +2999,41 @@
 		]
 	},
 	// Statuses
-	// Positives
 	{
 		"name": "Reserve Force Cooldown"
+	},
+	// Positives
+	{
+		"name": "Well Supplied",
+		"uniques": [
+			"[+1] Movement",
+			"[+10] HP when healing"
+		]
 	},
 	// Negatives
 	{
 		"name": "Breached",
 		"uniques": [
-			"[-15]% Strength <when defending>"
+			"[-25]% Strength <when defending>"
 		]
 	},
 	{
-		"name": "Halted",
+		"name": "Delayed",
 		"uniques": [
-			"[-15]% Strength <when attacking>"
+			"[-25]% Strength <when attacking>"
 		]
 	},
 	{
 		"name": "Ambushed",
 		"uniques": [
-			"[-33]% Strength"
+			"[-25]% Strength"
 		]
 	},
 	{
 		"name": "Sabotaged",
 		"uniques": [
-			"[-10]% Strength",
-			"[-1] Movement"
+			"[-10]% Strength <for units without [Ammo Conservation]>",
+			"[-1] Movement <for units without [Mobility First]>"
 		]
 	},
 	{
