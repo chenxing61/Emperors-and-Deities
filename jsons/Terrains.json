@@ -46,12 +46,12 @@
 		],
 		"uniques": [
 			"Occurs at temperature between [-0.3] and [0] and humidity between [0] and [1]",
-         		"Occurs at temperature between [0] and [0.8] and humidity between [0] and [0.5]",
-            		"Occurs at temperature between [0.7] and [0.8] and humidity between [0.5] and [0.8]",
-            		"Occurs at temperature between [0.8] and [1] and humidity between [0.7] and [0.8]",
-            		"[+1] to Fertility for Map Generation",
-            		"Becomes [Plains] when adjacent to [Coast] <with [40]% chance>",
-					"Becomes [Black Soil] when adjacent to [Black Soil] <with [2] to [5] neighboring [Tundra] tiles>",
+         	"Occurs at temperature between [0] and [0.8] and humidity between [0] and [0.5]",
+            "Occurs at temperature between [0.7] and [0.8] and humidity between [0.5] and [0.8]",
+            "Occurs at temperature between [0.8] and [1] and humidity between [0.7] and [0.8]",
+            "[+1] to Fertility for Map Generation",
+            "Becomes [Plains] when adjacent to [Coast] <with [40]% chance>",
+			"Becomes [Black Soil] when adjacent to [Black Soil] <with [2] to [5] neighboring [Tundra] tiles>",
 			"A Region is formed with at least [40]% [Grassland] tiles, with priority [7]",
 			"Becomes [Marsh] when adjacent to [Coast] <with [40]% chance>",
 			"Becomes [Marsh] when adjacent to [River] <with [25]% chance>",
@@ -75,18 +75,14 @@
 			51
 		],
 		"uniques": [
-		    	"Occurs at temperature between [0] and [0.7] and humidity between [0.5] and [1]",
-		    	"Occurs at temperature between [0.7] and [1] and humidity between [0.8] and [1]",
-				"Becomes [Marsh] when adjacent to [River] <with [25]% chance>",
+		    "Occurs at temperature between [0] and [0.7] and humidity between [0.5] and [1]",
+		    "Occurs at temperature between [0.7] and [1] and humidity between [0.8] and [1]",
+			"Becomes [Marsh] when adjacent to [River] <with [25]% chance>",
 			"[+4] to Fertility for Map Generation",
 			"A Region is formed with at least [30]% [Plains] tiles, with priority [6]",
 			"A Region can not contain more [Grassland] tiles than [Plains] tiles",
 			"Considered [Desirable] when determining start locations",
-			"Considered [Food] when determining start locations <in [Tundra] Regions>",
-			"Considered [Food] when determining start locations <in [Desert] Regions>",
-			"Considered [Food] when determining start locations <in [Hill] Regions>",
-			"Considered [Food] when determining start locations <in [Plains] Regions>",
-			"Considered [Food] when determining start locations <in [Hybrid] Regions>",
+			"Considered [Food] when determining start locations",
 			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
 		]
 	},
@@ -336,8 +332,7 @@
 		"unbuildable": true,
 		"uniques": [
 			"Nullifies all other stats this tile provides",
-			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [20] damage <for units without [NBC Suit]>"
+			"Doesn't generate naturally"
 		],
 		// For map editor only - the generator won't place it without code or enabling uniques
 		// If the map generator is ever updated to always take these into account, it should also take the "Doesn't generate naturally" unique into account

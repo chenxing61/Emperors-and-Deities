@@ -957,7 +957,7 @@
 			"[+1 Food] from [Bovine] tiles [in this city]",
 			"[+1 Food] from [Wild Animals] tiles [in this city]"
 		],
-		"requiredTech": "Pottery",
+		"requiredTech": "Animal Husbandry",
 		"hurryCostModifier": 5
 	},
 	{
@@ -986,7 +986,7 @@
 			"Consumes [1] [Sheep Horde]",
 			"Consumes [1] [Cattle Horde]"
 		],
-		"requiredTech": "Pottery",
+		"requiredTech": "Animal Husbandry",
 		"hurryCostModifier": 5
 	},
 	{
@@ -1062,13 +1062,12 @@
 	{
 		"name": "Foundry",
 		"maintenance": 1,
+		"production": 1,
 		"specialistSlots": {
 			"Engineer": 1
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"[+1 Production] from [Metal] tiles [in this city]",
-			"[+1 Production] from [Minerals] tiles [in this city]",
 			"[+10]% Production when constructing [Ancient era] units [in this city]",
 			"[+10]% Production when constructing [Classical era] units [in this city]",
 			"Provides [1] [Metal]",
@@ -1200,13 +1199,14 @@
 	{
 		"name": "First Temple of the One True God",
 		"isWonder": true,
-		"faith": 3,
+		"faith": 5,
 		"happiness": 1,
+		"greatPersonPoints": {
+			"Great Prophet": 1
+		},
 		"uniques": [
-			"'Worship Place'",
+			"'Core of Religion'",
 			"[+10]% [Faith] [in all cities]",
-			"Gain a free [Follower] belief <upon founding a Religion> <before founding a religion>",
-			"Gain a free [Follower] belief <after founding a religion>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -1421,12 +1421,19 @@
 	{
 		"name": "European Longhouse",
 		"uniqueTo": "Europa",
+		"maintenance": 5,
+		"happiness": 1,
+		"culture": 2,
 		"production": 2,
-		"cityStrength": 2,
+		"cityStrength": 4,
+		"specialistSlots": {
+			"Governor": 1
+		},
 		"uniques": [
-			"Gain a free [Town Hall] [in this city]",
-			"[+33]% weight to this choice for AI decisions <hidden from users>",
-			"Only available <after adopting [Unity]>",
+			"'Political Building'",
+			"Unavailable <for [Mediterranean] Civilizations> <after adopting [Unity]> <hidden from users>",
+			"Unavailable <for [Central and West Asia] Civilizations> <after adopting [Unity]> <hidden from users>",
+			"[+20]% weight to this choice for AI decisions <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Writing"
@@ -1711,7 +1718,7 @@
 		"uniques": [
 			"'Light Industry'",
 			"[+2 Gold] from ['Lumber Improvement'] tiles [in this city]",
-			"Must have an owned ['Lumber Improvement'] within [3] tiles"
+			"Must have an owned ['Lumber Improvement'] within [2] tiles"
 		],
 		"requiredTech": "Carpentry"
 	},
@@ -2174,11 +2181,11 @@
 			"Comment [Belongs to ['Heavy Industry'] before the Industrial era, and starting from that era, it turns into a ['Light Industry'] building.]",
 			"'Heavy Industry' <before the [Industrial era]> <hidden from users>",
 			"'Light Industry' <starting from the [Industrial era]> <hidden from users>",
-			"[+33]% weight to this choice for AI decisions <hidden from users>",
 			"[+1 Production] from ['Extraction Improvement'] tiles [in this city]",
 			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]",
 			"[+1 Production] from ['Lumber Improvement'] tiles [in this city]",
-			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
+			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>",
+			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredTech": "Forging"
 	},
@@ -2423,13 +2430,14 @@
 		"name": "Tea House",
 		"maintenance": 2,
 		"happiness": 2,
+		"gold": 1,
+		"culture": 1,
 		"specialistSlots": {
 			"Artist": 1
 		},
 		"uniques": [
 			"'Cultural Building'",
 			"Provides [1] [Tea Leave]",
-			"[+2 Culture] from [Tea Leave] tiles [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredResource": "Tea Leave",
@@ -2440,10 +2448,11 @@
 		"name": "Cafe",
 		"maintenance": 2,
 		"happiness": 2,
+		"gold": 1,
+		"culture": 1,
 		"uniques": [
 			"'Cultural Building'",
 			"Provides [1] [Coffee]",
-			"[+1 Culture, +1 Gold] from [Coffee] tiles [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredResource": "Coffee",
@@ -3192,7 +3201,7 @@
 		"uniques": [
 			"'Marine Infrastructure'",
 			"[+1]% [Gold] from Trade Routes",
-			"[+2 Happiness, +1 Gold] from [Citrus] tiles [in this city]",
+			"[+1 Happiness] <with [Citrus]>",
 			"[+5]% [Gold] [in this city] <in cities with a [Trading Post]>",
 			"[+5]% [Gold] [in this city] <in cities with a [Warehouse]>",
 			"Must be next to [Coast]"
@@ -3203,10 +3212,10 @@
 	{
 		"name": "Salt Evaporation Pond",
 		"cost":80,
-		"production":1,
+		"gold": 3,
+		"production":2,
 		"uniques": [
 			"'Marine Infrastructure'",
-			"[+1 Gold] from [Coastal] tiles [in this city]",
 			"Must be next to [Coast]"
 		],
 		"requiredBuilding": "Fishing Port",
@@ -3903,6 +3912,7 @@
 	{
 		"name": "Smeltry",
 		"maintenance": 2,
+		"production": 2,
 		"specialistSlots": {
 			"Engineer": 1
 		},
@@ -3912,7 +3922,6 @@
 		"uniques": [
 			"'Heavy Industry'",
 			"[+100]% Production when constructing [Alloy Mill] buildings [in this city]",
-			"[+1 Production] from ['Useful Mineral'] tiles [in this city]",
 			"Provides [1] [Alloy] <in cities without a [Alloy Mill]>",
 			"Consumes [1] [Metal] <in cities without a [Alloy Mill]>"
 		],
@@ -4232,11 +4241,10 @@
 		"name": "Cargo Port",
 		"maintenance": 5,
 		"percentStatBonus": {
-			"gold": 10
+			"gold": 20
 		},
 		"uniques": [
 			"'Marine Infrastructure'",
-			"[+1 Gold] from [Bonus resource] tiles [in this city]",
 			"[+1]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
 			"Must be next to [Coast]"
 		],
@@ -4667,6 +4675,7 @@
 		"name": "Gas Storage and Transfer System",
 		"cost": 500,
 		"maintenance": 5,
+		"production": 2,
 		"science": 1,
 		"specialistSlots": {
 			"Engineer": 1
@@ -4675,7 +4684,6 @@
 			"'Heavy Industry'",
 			"Provides [3] [Fuel]",
 			"Provides [1] [Industrial Chemicals]",
-			"[+3 Production] from [Natural Gas] tiles [in this city]",
 			"Consumes [2] [Natural Gas(Stored)]",
 			"Only available <when above [0] [Natural Gas(Stored)]>"
 		],
@@ -5162,7 +5170,7 @@
 		"name": "Rubber Transplant",
 		"maintenance": 3,
 		"uniques": [
-			"Must have an owned [{non-[improved]} {Jungle}] within [4] tiles",
+			"Must have an owned [{non-[improved]} {Jungle}] within [3] tiles",
 			"Only available <when above [0] [Rubber]>",
 			"Creates a [Rubber Plantation] improvement on a specific tile",
 			"Destroyed when the city is captured"
@@ -5282,6 +5290,7 @@
 		"name": "Oil Refinery",
 		"cost": 750,
 		"maintenance": 8,
+		"production": 2,
 		"science": 1,
 		"specialistSlots": {
 			"Engineer": 1,
@@ -5292,7 +5301,6 @@
 			"Provides [4] [Industry Size]",
 			"Provides [5] [Fuel]",
 			"Provides [1] [Industrial Chemicals]",
-			"[+1 Production] from [Oil] tiles [in this city]",
 			"Consumes [2] [Oil]",
 			///Powered
 			"Consumes [1] [Oil] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
@@ -5449,7 +5457,6 @@
 		"maintenance": 10,
 		"uniques": [
 			"'Power Building'",
-			"[+2 Production] from [Oil] tiles [in this city]",
 			"Provides [5] [Power] <in this city>",
 			"Consumes [3] [Fuel]",
 			"Only available <when above [0] [Fuel]>"
@@ -5462,7 +5469,6 @@
 		"maintenance": 10,
 		"uniques": [
 			"'Power Building'",
-			"[+2 Production] from [Coal] tiles [in this city]",
 			"Provides [7] [Power] <in this city>",
 			"Consumes [2] [Coal]",
 			"Only available <when above [0] [Coal]>"
@@ -5779,7 +5785,6 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"[+1 Production] from [Coal] tiles [in this city]",
 			"Provides [2] [Fuel]",
 			"Provides [1] [Rubber]",
 			"Consumes [1] [Coal]"
@@ -7333,7 +7338,6 @@
 			"[+10]% [Science] [in this city] <in cities with a [Coal Power Plant]>",
 			"[+10]% [Culture] [in this city] <in cities with a [Coal Power Plant]>",
 			"[-10]% [Production] [in this city] <in cities with a [Coal Power Plant]>",
-			"[-1 Production] from [Coal] tiles [in this city]",
 			"Provides [2] [Coal]",
 			"Destroyed when the city is captured"
 		],
@@ -7867,10 +7871,10 @@
 			"[-33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Medium Culture Diversity] is constructed>",
 			"[-66]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Low Culture Diversity] is constructed>",
 
-			"Upon capturing a city, receive [1] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is constructed>",
-			"Upon capturing a city, receive [2] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is not constructed>",
-			"Earn [25]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is not constructed>",
-			"Earn [50]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is constructed>",
+			"Upon capturing a city, receive [1] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is constructed> <if [Abolition] is not constructed>",
+			"Upon capturing a city, receive [2] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is not constructed> <if [Abolition] is not constructed>",
+			"Earn [25]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is not constructed> <if [Abolition] is not constructed>",
+			"Earn [50]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is constructed> <if [Abolition] is not constructed>",
 
 			"[-50]% unhappiness from the number of cities <if [Low Culture Diversity] is constructed>",
 			"[-67]% unhappiness from the number of cities <if [Medium Culture Diversity] is constructed>",
@@ -9620,6 +9624,16 @@
 			"Instantly consumes [1] [Alexandrian Empire Period] <upon turn start> <when above [0] [Alexandrian Empire Period]>",
 			"Triggers a [Alexander's death] event <when below [6] [Alexandrian Empire Period]> <with [50]% chance> <if [Diadochi States] is not constructed>",
 			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Abolition",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},

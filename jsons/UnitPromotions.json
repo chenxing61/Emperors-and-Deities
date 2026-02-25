@@ -32,7 +32,7 @@
 		"name": "Stewardship",
 		"uniques": [
 			"[+5]% XP gained from combat",
-			"[+1] Movement <in [Friendly Land] tiles>"
+			"[This Unit] gains the [Well Supplied] status for [1] turn(s) <upon entering a [City center] tile>"
 		],
 		"unitTypes": [
 			"Siege",
@@ -57,7 +57,7 @@
 		"name": "Centralised Command",
 		"uniques": [
 			"Great General provides double combat bonus",
-			"[+10]% XP gained from combat",
+			"[+20]% XP gained from combat",
 			"[+33]% Damage when intercepting"
 		],
 		"unitTypes": [
@@ -144,8 +144,7 @@
 		"name": "Use of Terrain",
 		"uniques": [
 			"[+1] Movement",
-			"No defensive terrain penalty",
-			"[+15]% Strength <when attacking> <when fighting in [Rough terrain] tiles>"
+			"No defensive terrain penalty"
 		],
 		"unitTypes": [
 			"Siege",
@@ -169,7 +168,6 @@
 		"name": "Long Range Logistic",
 		"uniques": [
 			"Only available <after discovering [Logistics]>",
-			"Gain [-3] [Gold] <every [1] turns>",
 			"[+10] HP when healing <in [Foreign Land] tiles>"
 		],
 		"unitTypes": [
@@ -198,8 +196,8 @@
 		"name": "Reserve Force",
 		"uniques": [
 			"Only available <after discovering [Logistics]>",
-			"[This Unit] heals [33] HP <upon gaining the [Use Reserve Force] promotion>",
-			"Gain [-3] [Gold] <every [1] turns>"
+			"[This Unit] heals [66] HP <upon gaining the [Use Reserve Force] promotion>",
+			"Consumes [1] [Standing Army Maintenance]"
 		],
 		"unitTypes": [
 			"Siege",
@@ -227,8 +225,7 @@
 		"name": "Extra Supply",
 		"uniques": [
 			"Only available <after discovering [Logistics]>",
-			"Gain [-3] [Gold] <every [1] turns>",
-			"[+15] HP when healing <in [Friendly Land] tiles>"
+			"[This Unit] gains the [Well Supplied] status for [1] turn(s) <upon entering a [Friendly Land] tile>"
 		],
 		"unitTypes": [
 			"Siege",
@@ -276,14 +273,14 @@
 	{
 		"name": "Field Medic",
 		"uniques": [
-			"[+3] HP when healing",
-			"[+2] HP when healing <after discovering [Apprenticeship]>",
+			"[+5] HP when healing",
+			"[+1] HP when healing <after discovering [Apprenticeship]>",
 			"[+2] HP when healing <after discovering [Biology]>",
 			"[+3] HP when healing <after discovering [Pharmaceuticals]>",
-			"All adjacent units heal [+2] HP when healing",
+			"All adjacent units heal [+5] HP when healing",
 			"All adjacent units heal [+1] HP when healing <after discovering [Apprenticeship]>",
-			"All adjacent units heal [+1] HP when healing <after discovering [Biology]>",
-			"All adjacent units heal [+1] HP when healing <after discovering [Pharmaceuticals]>"
+			"All adjacent units heal [+2] HP when healing <after discovering [Biology]>",
+			"All adjacent units heal [+3] HP when healing <after discovering [Pharmaceuticals]>"
 		],
 		"unitTypes": [
 			"Scout",
@@ -301,14 +298,14 @@
 	{
 		"name": "Technicians",
 		"uniques": [
-			"[+3] HP when healing",
-			"[+2] HP when healing <after discovering [Physics]>",
+			"[+5] HP when healing",
+			"[+1] HP when healing <after discovering [Physics]>",
 			"[+2] HP when healing <after discovering [Machinery]>",
 			"[+3] HP when healing <after discovering [Mass Production]>",
-			"All adjacent units heal [+2] HP when healing",
+			"All adjacent units heal [+5] HP when healing",
 			"All adjacent units heal [+1] HP when healing <after discovering [Physics]>",
-			"All adjacent units heal [+1] HP when healing <after discovering [Machinery]>",
-			"All adjacent units heal [+1] HP when healing <after discovering [Mass Production]>"
+			"All adjacent units heal [+2] HP when healing <after discovering [Machinery]>",
+			"All adjacent units heal [+3] HP when healing <after discovering [Mass Production]>"
 		],
 		"unitTypes": [
 			"Siege",
@@ -409,7 +406,7 @@
 			"Shock Doctrine"
 		],
 		"uniques": [
-			"[1] additional attacks per turn"
+			"[2] additional attacks per turn"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -424,7 +421,7 @@
 			"Rapid Engagement"
 		],
 		"uniques": [
-			"[+15]% Strength <when attacking> <vs [Wounded] units>"
+			"[Target Unit] gains the [Breached] status for [2] turn(s) <upon damaging a [Military] unit>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -439,8 +436,7 @@
 			"Devastating Charge"
 		],
 		"uniques": [
-			"Unit will heal every turn, even if it performs an action",
-			"[-5] HP when healing"
+			"Unit will heal every turn, even if it performs an action"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -491,7 +487,10 @@
 			"Reinforced Position"
 		],
 		"uniques": [
-			"[Target Unit] gains the [Ambushed] status for [1] turn(s) <when fighting in [Rough terrain] tiles> <upon damaging a [Military] unit>"
+			"[Target Unit] gains the [Ambushed] status for [1] turn(s) <when fighting in [Rough terrain] tiles> <upon damaging a [{non-[Scouting Corps]} {Military}] unit>",
+			"[Target Unit] gains the [Ambushed] status for [1] turn(s) <when fighting in [Rough terrain] tiles> <upon damaging a [Military] unit> <with [25]% chance>",
+			"[Target Unit] gains the [Ambushed] status for [1] turn(s) <when fighting in ['Infrastructure Improvement'] tiles> <upon damaging a [{non-[Scouting Corps]} {Military}] unit>",
+			"[Target Unit] gains the [Ambushed] status for [1] turn(s) <when fighting in ['Infrastructure Improvement'] tiles> <upon damaging a [Military] unit> <with [25]% chance>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -542,9 +541,9 @@
 			"Firepower Doctrine"
 		],
 		"uniques": [
-			"[+5]% Strength <when above [50] HP>",
-			"[Target Unit] gains the [Surpressed] status for [2] turn(s) <upon damaging a [Military] unit>",
-			"[+15]% Strength <vs [Rider] units> <when attacking>"
+			"[+10]% Strength <when above [50] HP>",
+			"[Target Unit] gains the [Surpressed] status for [1] turn(s) <upon damaging a [{Ranged Combat} {Military}] unit>",
+			"[Target Unit] gains the [Surpressed] status for [1] turn(s) <upon damaging a [{Siege} {Military}] unit>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -578,8 +577,9 @@
 			"Ammo Supply"
 		],
 		"uniques": [
-			"[+25]% Strength <when adjacent to a [Ranged Combat] unit>",
-			"[+25]% Strength <when adjacent to a [Ranged Combat Ship] unit>",
+			"[1] additional attacks per turn",
+			"[+15]% Strength <when adjacent to a [Ranged Combat] unit>",
+			"[+15]% Strength <when adjacent to a [Ranged Combat Ship] unit>",
 			"[+10]% Strength <when adjacent to a [Siege] unit>"
 		],
 		"unitTypes": [
@@ -598,7 +598,10 @@
 		],
 		"uniques": [
 			"[+1] XP gained from combat",
-			"[+10]% Strength <vs ['Skirmishers'] units> <when attacking>"
+			"[Target Unit] gains the [Delayed] status for [1] turn(s) <upon damaging a [{Close Combat} {Military}] unit>",
+			"[Target Unit] gains the [Delayed] status for [1] turn(s) <upon damaging a [{Assault} {Military}] unit>",
+			"[Target Unit] gains the [Delayed] status for [1] turn(s) <upon damaging a [{Close Combat Ship} {Military}] unit>"
+
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -629,7 +632,8 @@
 			"Sharpshooting"
 		],
 		"uniques": [
-			"[+1] Movement"
+			"[+1] Movement",
+			"Comment [Immune to strength debuff from [Sabotaged]]"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -768,7 +772,8 @@
 			"Flanking Tactic"
 		],
 		"uniques": [
-			"[+1] Movement"
+			"[+1] Movement",
+			"Comment [Immune to Movement debuff from [Sabotaged]]"
 		],
 		"unitTypes": [
 			"Scout",
@@ -786,7 +791,7 @@
 		],
 		"uniques": [
 			"No movement cost to pillage",
-			"[+15]% Strength <when fighting in [Foreign Land] tiles>"
+			"[Target Unit] gains the [Sabotaged] status for [2] turn(s) <upon damaging a [{non-[Aircraft]} {non-['Low Altitude Aircraft']} {Military}] unit>"
 		],
 		"unitTypes": [
 			"Scout",
@@ -818,9 +823,9 @@
 			"Assault Doctrine"
 		],
 		"uniques": [
-			"[+33]% Strength <vs [Ranged Combat Ship] units> <when attacking>",
 			"[+25]% Strength <vs [Ranged Combat] units> <when attacking>",
-			"[+50]% Strength <vs [Siege] units> <when attacking>"
+			"[+33]% Strength <vs [Siege] units> <when attacking>",
+			"[+25]% Strength <vs [Ranged Combat Ship] units> <when attacking>"
 		],
 		"unitTypes": [
 			"Assault",
@@ -835,7 +840,8 @@
 			"High Speed Charge"
 		],
 		"uniques": [
-			"[Target Unit] gains the [Breached] status for [2] turn(s) <upon damaging a [Military] unit>"
+			"[Target Unit] gains the [Breached] status for [1] turn(s) <upon damaging a [Military] unit>",
+			"[Target Unit] gains the [Breached] status for [1] turn(s) <upon damaging a [Military] unit> <with [25]% chance>"
 		],
 		"unitTypes": [
 			"Assault",
@@ -1310,7 +1316,7 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+40]% Strength <vs [{non-[Wounded]} {Close Combat} {'Edged Weapons'}] units> <when attacking> <before the [Renaissance era]>"
+			"[+3] Strength <vs [{non-[Wounded]} {Close Combat} {'Edged Weapons'}] units> <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1327,12 +1333,10 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <when attacking> <vs ['Edged Weapons'] units>",
-			"[+5]% Strength <when attacking> <vs [Assault] units>"
+			"[+1] Strength <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat",
-			"Scout",
 			"Rider",
 			"Assault"
 		],
@@ -1345,11 +1349,9 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <vs ['Dense Formation'] units> <when attacking> <before the [Medieval era]>",
-			"[+10]% Strength <vs ['Dense Formation'] units> <when attacking> <starting from the [Medieval era]> <before the [Imperial era]>"
+			"[+1] Strength <when attacking>"
 		],
 		"unitTypes": [
-			"Close Combat",
 			"Ranged Combat",
 			"Scout"
 		],
@@ -1362,8 +1364,8 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+5]% Strength <when fighting in [Rough terrain] tiles>",
-			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Renaissance era]>"
+			"[+1] Strength <when fighting in [Rough terrain] tiles>",
+			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1381,13 +1383,12 @@
 			"Primitive Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <vs ['Galley'] units> <when attacking>",
-			"[+18]% Strength <vs ['Galley'] units> <when attacking> <when fighting in [Lakes] tiles>",
-			"[+18]% Strength <vs ['Galley'] units> <when attacking> <when fighting in [Atoll] tiles>"
+			"[+1] Strength <vs ['Galley'] units> <when attacking>",
+			"[+2] Strength <vs ['Galley'] units> <when attacking> <when fighting in [Lakes] tiles>",
+			"[+2] Strength <vs ['Galley'] units> <when attacking> <when fighting in [Atoll] tiles>"
 		],
 		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship"
+			"Close Combat Ship"
 		],
 		"column": 23,
 		"row": 5
@@ -1417,8 +1418,8 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[+18]% Strength <when fighting in [Open terrain] tiles> <before the [Imperial era]>",
-			"[+15]% Strength <when fighting in [Open terrain] tiles> <when defending> <vs [{'Mounted'} {'Edged Weapons'} {Rider}] units> <before the [Imperial era]>"
+			"[+1] Strength <when fighting in [Open terrain] tiles>",
+			"[+2] Strength <when fighting in [Open terrain] tiles> <when defending> <vs [{'Mounted'} {'Edged Weapons'}] units>"
 		],
 		"unitTypes": [
 			"Close Combat"
@@ -1432,7 +1433,7 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <when attacking> <before the [Imperial era]>"
+			"[+2] Strength <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1448,7 +1449,7 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <when attacking> <before the [Imperial era]>"
+			"[+2] Strength <when attacking>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -1463,7 +1464,8 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[+20]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"
+			"[+2] Strength <when fighting in [Rough terrain] tiles>",
+			"[+2] Strength <when fighting in [Rough terrain] tiles> <when defending> <vs [Close Combat] units>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -1481,8 +1483,9 @@
 			"Only available <when above [75] [Gold]> <(modified by game speed)>",
 			"Gain [-75] [Gold] <(modified by game speed)>",
 			"This Promotion is free",
-			"[0] Movement point cost to embark <in [Friendly Land] tiles>",
-			"[0] Movement point cost to disembark <in [Friendly Land] tiles>"
+			"Double movement in [Coast]",
+			"[1] Movement point cost to embark <in [Friendly Land] tiles>",
+			"[1] Movement point cost to disembark <in [Friendly Land] tiles>"
 		],
 		"column": 25,
 		"row": 0
@@ -1493,10 +1496,10 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns> <before the [Imperial era]>",
-			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Medieval era]>",
-			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Imperial era]>",
-			"[+5]% Strength <vs ['Siege Weapons'] units> <when defending> <before the [Imperial era]>"
+			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+5]% Strength <vs ['Siege Weapons'] units> <when defending>",
+			"[+5]% Strength <vs cities>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1511,7 +1514,8 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Imperial era]>"
+			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+5]% Strength <vs cities> <when defending>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -1527,8 +1531,10 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[+20]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Imperial era]>",
-			"[-5]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"
+			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+5]% Strength <vs ['Firearms'] units> <when defending>",
+			"[+10]% Strength <vs cities> <when defending>",
+			"[-5]% Strength <when fighting in [Rough terrain] tiles>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1544,9 +1550,8 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"[-5]% Strength <when fighting in [Rough terrain] tiles> <when attacking> <before the [Imperial era]>",
-			"[+20]% Strength <vs [{'Edged Weapons'} {'Mounted'}] units> <when defending> <before the [Imperial era]>",
-			"[+10]% Strength <vs ['Siege Weapons'] units> <when defending> <before the [Imperial era]>"
+			"[+16]% Strength <when defending>",
+			"[+17]% Strength <vs [Ranged Combat] units> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat"
@@ -1560,7 +1565,6 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"Gain [-3] [Gold] <every [1] turns>",
 			"[+33]% Strength <vs ['Dense Formation'] units> <when attacking>"
 		],
 		"unitTypes": [
@@ -1576,7 +1580,6 @@
 			"Classical Arms"
 		],
 		"uniques": [
-			"Gain [-3] [Gold] <every [1] turns>",
 			"[+33]% Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
@@ -1624,8 +1627,8 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <when attacking> <before the [Imperial era]>",
-			"[+10]% Strength <vs ['Mounted'] units> <before the [Imperial era]>"
+			"[+2] Strength <vs [Assault] units>",
+			"[+10]% Strength <vs [Assault] units>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1641,8 +1644,8 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <before the [Renaissance era]>",
-			"[+18]% Strength <vs [Assault] units> <before the [Imperial era]>"
+			"[+2] Strength <when attacking>",
+			"[+25]% Strength <vs [Siege] units>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1658,8 +1661,8 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <when attacking> <before the [Renaissance era]>",
-			"[+18]% Strength <when fighting in [Open terrain] tiles> <before the [Imperial era]>"
+			"[+2] Strength <when attacking>",
+			"[+10]% Strength <when fighting in [Open terrain] tiles>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -1674,13 +1677,13 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+15]% Strength <before the [Imperial era]>",
-			"[+18]% Strength <vs [Assault] units> <before the [Imperial era]>"
+			"Only available <after discovering [Engineering]>",
+			"[+2] Strength <when attacking>",
+			"[+25]% Strength <when fighting in [City center] tiles>"
 		],
 		"unitTypes": [
 			"Ranged Combat"
 		],
-		"requiredTech": "Engineering",
 		"column": 28,
 		"row": 2
 	},
@@ -1691,8 +1694,9 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Physics]>",
-			"[+17]% Strength <when attacking> <before the [Imperial era]>",
-			"[+33]% Strength <vs cities> <when attacking> <before the [Imperial era]>"
+			"[+2] Strength <when attacking>",
+			"[+25]% Strength <when attacking> <vs [Assault] units>",
+			"[+25]% Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
 			"Ranged Combat"
@@ -1701,15 +1705,32 @@
 		"row": 3
 	},
 	{
+		"name": "Fire Lance",
+		"prerequisites": [
+			"Medieval Arms"
+		],
+		"uniques": [
+			"Only available <after discovering [Gunpowder Making]>",
+			"[+3] Strength <when attacking>",
+			"[+15]% Strength <when attacking>"
+		],
+		"unitTypes": [
+			"Close Combat",
+			"Rider",
+			"Assault"
+		],
+		"column": 28,
+		"row": 4
+	},
+	{
 		"name": "Chainmail Armour",
 		"prerequisites": [
 			"Medieval Arms"
 		],
 		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns> <before the [Imperial era]>",
-			"[+25]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Renaissance era]>",
-			"[+5]% Strength <vs ['Siege Weapons'] units> <when defending> <before the [Renaissance era]>",
-			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending> <starting from the [Renaissance era]>"
+			"[+25]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+10]% Strength <vs ['Siege Weapons'] units> <when defending>",
+			"[+10]% Strength <vs cities> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1725,8 +1746,7 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+17]% Strength <vs ['Edged Weapons'] units> <before the [Renaissance era]>",
-			"[+10]% Strength <vs ['Edged Weapons'] units> <starting from the [Renaissance era]>"
+			"[+25]% Strength <when defending> <vs ['Edged Weapons'] units>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1744,7 +1764,7 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+33]% Strength <vs cities> <when attacking> <before the [Imperial era]>"
+			"[+33]% Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
 			"Ranged Combat"
@@ -1758,7 +1778,7 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <vs [Assault] units> <before the [Imperial era]>"
+			"[+25]% Strength <vs [Assault] units>"
 		],
 		"unitTypes": [
 			"Ranged Combat"
@@ -1772,8 +1792,9 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"Only available <after discovering [Gunpowder Making]>",
-			"[+33]% Strength <when attacking> <before the [Imperial era]>"
+			"Only available <after discovering [Gunpowder Making]> <before the [Renaissance era]>",
+			"[+15]% Strength <when attacking>",
+			"[This Unit] upgrades for free"
 		],
 		"unitTypes": [
 			"Siege"
@@ -1787,8 +1808,8 @@
 			"Medieval Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <vs ['Dense Formation'] units> <when attacking> <before the [Imperial era]>",
-			"[+25]% Strength <vs cities> <when attacking> <before the [Imperial era]>"
+			"[+4] Strength <when attacking>",
+			"[+10]% Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat Ship",
@@ -1804,12 +1825,12 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Alchemy]>",
-			"[+33]% Strength <vs ['Dense Formation'] units> <when attacking> <before the [Imperial era]>",
-			"[+33]% Strength <vs cities> <when attacking> <before the [Imperial era]>"
+			"[+5] Strength <vs ['Dense Formation'] units> <when attacking>",
+			"[+33]% Strength <vs cities> <when attacking>",
+			"[-15]% Strength <when defending>"
 		],
 		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship"
+			"Close Combat Ship"
 		],
 		"column": 29,
 		"row": 7
@@ -1839,9 +1860,9 @@
 			"Renaissance Arms"
 		],
 		"uniques": [
-			"Gain [-3] [Gold] <every [1] turns>",
-			"[+50]% Strength <vs ['Edged Weapons'] units>",
-			"[+10]% Strength <vs ['Firearms'] units>"
+			"[+33]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+10]% Strength <vs ['Firearms'] units> <when defending>",
+			"[+5] Strength <vs cities> <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1856,9 +1877,8 @@
 			"Renaissance Arms"
 		],
 		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+25]% Strength <vs ['Edged Weapons'] units>",
-			"[+5]% Strength <vs ['Firearms'] units>"
+			"[+25]% Strength <vs ['Edged Weapons'] units> <when defending>",
+			"[+5]% Strength <vs ['Firearms'] units> <when defending>"
 		],
 		"unitTypes": [
 			"Ranged Combat",
@@ -1874,7 +1894,7 @@
 			"Renaissance Arms"
 		],
 		"uniques": [
-			"[+33]% Strength <vs ['Infantry'] units> <before the [Industrial era]>"
+			"[+4] Strength <vs ['Infantry'] units> <when attacking>"
 		],
 		"unitTypes": [
 			"Rider",
@@ -1884,12 +1904,70 @@
 		"row": 3
 	},
 	{
+		"name": "Primitive Rocket",
+		"prerequisites": [
+			"Renaissance Arms"
+		],
+		"uniques": [
+			"[+5] Strength <vs ['Dense Formation'] units> <when attacking>",
+			"[+25]% Strength <vs cities>"
+		],
+		"unitTypes": [
+			"Ranged Combat",
+			"Siege",
+			"Ranged Combat Ship"
+		],
+		"column": 30,
+		"row": 4
+	},
+	{
+		"name": "Volley Gun",
+		"prerequisites": [
+			"Renaissance Arms"
+		],
+		"uniques": [
+			"[+5] Strength <vs ['Dense Formation'] units> <when attacking>"
+		],
+		"unitTypes": [
+			"Close Combat",
+			"Close Combat Ship"
+		],
+		"column": 30,
+		"row": 5
+	},
+		{
+		"name": "Sapper Corps",
+		"prerequisites": [
+			"Renaissance Arms"
+		],
+		"unitTypes": [
+			"Close Combat",
+			"Ranged Combat",
+			"Scout",
+			"Rider",
+			"Assault",
+			"Siege"
+		],
+		"uniques": [
+			"[+25]% Strength <vs cities>",
+			"[+25]% Strength <when fighting in [City center] tiles>",
+			"[+5] Strength <when fighting in [Trench] tiles>",
+
+			"[+25]% Strength <when defending>",
+			"[+10]% Strength <when defending> <when fighting in [Rough terrain] tiles>",
+
+			"Can build [Trench] improvements on tiles"
+		],
+		"column": 30,
+		"row": 6
+	},
+	{
 		"name": "Large Hull",
 		"prerequisites": [
 			"Renaissance Arms"
 		],
 		"uniques": [
-			"Gain [-5] [Gold] <every [1] turns>",
+			"[+1] XP gained from combat",
 			"[+20]% Strength <vs ['Firearms'] units> <when defending>"
 		],
 		"unitTypes": [
@@ -1897,7 +1975,7 @@
 			"Ranged Combat Ship"
 		],
 		"column": 30,
-		"row": 4
+		"row": 7
 	},
 	{
 		"name": "Extra Cannon",
@@ -1905,7 +1983,6 @@
 			"Renaissance Arms"
 		],
 		"uniques": [
-			"Gain [-5] [Gold] <every [1] turns>",
 			"[+15]% Strength <vs ['Firearms'] units> <when attacking>"
 		],
 		"unitTypes": [
@@ -1913,7 +1990,7 @@
 			"Ranged Combat Ship"
 		],
 		"column": 30,
-		"row": 5
+		"row": 8
 	},
 	{
 		"name": "Wagon",
@@ -1927,7 +2004,7 @@
 			"Civilian"
 		],
 		"column": 30,
-		"row": 6
+		"row": 9
 	},
 	{
 		"name": "Industrial Arms",
@@ -1955,12 +2032,12 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Dynamite]>",
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+25]% Strength <vs ['Infantry'] units> <when attacking> <when fighting in [Rough terrain] tiles>",
+			"Instantly consumes [10] [Weapon Parts]",
+			"[+5] Strength <vs ['Infantry'] units> <when fighting in [Rough terrain] tiles>",
 			"[+25]% Strength <vs ['Infantry'] units> <when fighting in [Trench] tiles>",
 			"[+15]% Strength <vs ['Infantry'] units> <when fighting in [Fort] tiles>",
 			"[+10]% Strength <vs ['Infantry'] units> <when fighting in [Citadel] tiles>",
-			"[+25]% Strength <when attacking> <vs cities>"
+			"[+10]% Strength <when attacking> <vs cities>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1977,9 +2054,9 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Combustion]>",
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+15]% Strength <vs [{'Mechanised'} {Assault}] units>",
-			"[+18]% Strength <vs [{'Mechanised'} {Assault}] units> <when defending>"
+			"Instantly consumes [10] [Weapon Parts]",
+			"[+5] Strength <vs [{'Mechanised'} {Assault}] units>",
+			"[+25]% Strength <vs [{'Mechanised'} {Assault}] units> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -1996,7 +2073,8 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Mass Production]>",
-			"Gain [-2] [Gold] <every [1] turns>",
+			"Instantly consumes [10] [Weapon Parts]",
+			"[+5] Strength <vs ['Infantry'] units> <when fighting in [Open terrain] tiles>",
 			"[Target Unit] gains the [Surpressed] status for [1] turn(s) <upon damaging a [Military] unit>"
 		],
 		"unitTypes": [
@@ -2014,9 +2092,8 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Dynamite]>",
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+15]% Strength <when defending>",
-			"[-5]% Strength for enemy [Land] units in adjacent [All] tiles"
+			"Instantly consumes [10] [Weapon Parts]",
+			"[Target Unit] gains the [Delayed] status for [1] turn(s) <upon damaging a [Military] unit>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -2033,8 +2110,9 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Dynamite]>",
-			"[+20]% Strength <when attacking> <vs ['Infantry'] units>",
-			"[+10]% Strength <when attacking> <vs [non-['Infantry']] units>"
+			"Instantly consumes [5] [Weapon Parts]",
+			"[+4] Strength <vs ['Infantry'] units>",
+			"[+2] Strength <vs [non-['Infantry']] units>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -2045,33 +2123,7 @@
 		"column": 32,
 		"row": 2
 	},
-	{
-		"name": "Sapper Corps",
-		"prerequisites": [
-			"Industrial Arms"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege"
-		],
-		"uniques": [
-			"Only available <after discovering [Dynamite]>",
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+25]% Strength <vs cities>",
-			"[+25]% Strength <when fighting in [City center] tiles>",
-			"[+25]% Strength <when defending> <when fighting in [Fort] tiles>",
-			"[+25]% Strength <when fighting in [Trench] tiles>",
-			"[+25]% Strength <when defending> <when fighting in [Citadel] tiles>",
-			"[+10]% Strength <when defending> <when fighting in [Rough terrain] tiles>",
-			"Can build [Trench] improvements on tiles"
-		],
-		"column": 32,
-		"row": 3
-	},
+
 	{
 		"name": "Scouting Corps",
 		"prerequisites": [
@@ -2086,14 +2138,12 @@
 			"Siege"
 		],
 		"uniques": [
-			"Only available <after discovering [Replaceable Parts]>",
-			"Gain [-2] [Gold] <every [1] turns>",
 			"[+10]% Strength <when attacking>",
 			"[+1] Sight",
 			"[-5]% Strength for enemy [Land] units in adjacent [All] tiles"
 		],
 		"column": 32,
-		"row": 4
+		"row": 3
 	},
 		{
 		"name": "Smoke Screen",
@@ -2102,8 +2152,8 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Dynamite]>",
-			"[+20]% Strength <when defending> <when fighting in [Open terrain] tiles>",
-			"[+10]% Strength <vs cities> <when defending>"
+			"[+5] Strength <vs ['Firearms'] units> <when defending>",
+			"[+20]% Strength <vs cities> <when defending>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -2113,7 +2163,7 @@
 			"Assault"
 		],
 		"column": 32,
-		"row": 5
+		"row": 4
 	},
 	{
 		"name": "Carrier Refit",
@@ -2161,11 +2211,10 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Rocketry]>",
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+5]% Strength",
-			"[+20]% Strength <vs [{'Mechanised'} {Assault}] units>",
-			"[+20]% Strength <vs [{'Motorised'} {Rider}] units>",
-			"[+20]% Strength <vs [{'Mechanised'} {Rider}] units>",
+			"Instantly consumes [20] [Weapon Parts]",
+			"[+7] Strength",
+			"[+20]% Strength <vs ['Mechanised'] units>",
+			"[+20]% Strength <vs ['Motorised'] units>",
 			"[+20]% Strength <vs ['Low Altitude Aircraft'] units> <after discovering [Lasers]>"
 		],
 		"unitTypes": [
@@ -2181,9 +2230,10 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+15]% Strength <when attacking>",
-			"[+18]% Strength <when attacking> <vs cities>"
+			"Instantly consumes [20] [Weapon Parts]",
+			"[+7] Strength",
+			"[+10]% Strength <when attacking>",
+			"[+10]% Strength <when attacking> <vs cities>"
 		],
 		"unitTypes": [
 			"Close Combat",
@@ -2201,9 +2251,10 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Advanced Ballistics]>",
-			"[+25]% Strength <vs [{'Mechanised'} {Assault}] units>",
-			"[+25]% Strength <vs [{'Motorised'} {Rider}] units>",
-			"[+25]% Strength <vs [{'Mechanised'} {Rider}] units>"
+			"Instantly consumes [20] [Weapon Parts]",
+			"[+5] Strength",
+			"[+30]% Strength <vs ['Mechanised'] units>",
+			"[+30]% Strength <vs ['Motorised'] units>"
 		],
 		"unitTypes": [
 			"Scout",
@@ -2219,9 +2270,9 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Combustion]>",
+			"Instantly consumes [10] [Vehicle Parts]",
 			"Consumes [1] [Fuel]",
-			"[+1] Movement",
-			"[+10] HP when healing"
+			"Unit will heal every turn, even if it performs an action <for units without [Sabotaged]>"
 		],
 		"unitTypes": [
 			"Siege",
@@ -2244,15 +2295,15 @@
 			"Costs [12] [Aircraft Parts]",
 			"Consumes [1] [Fuel]",
 			"May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>",
-			"[+25] HP when healing <in [Foreign Land] tiles>"
+			"[+10] HP when healing"
 		],
 		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
 			"Close Combat",
-			"Ranged Combat"
+			"Ranged Combat",
+			"Scout",
+			"Rider",
+			"Assault",
+			"Siege"
 		],
 		"column": 33,
 		"row": 5
@@ -2263,8 +2314,8 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[25]% chance to intercept air attacks",
+			"Instantly consumes [20] [Weapon Parts]",
+			"[50]% chance to intercept air attacks",
 			"[+15]% Strength <vs ['Propeller Aircraft'] units>",
 			"[+15]% Strength <vs ['Jet Engine Aircraft'] units> <after discovering [Advanced Ballistics]>",
 			"[+15]% Strength <vs ['Low Altitude Aircraft'] units>"
@@ -2284,7 +2335,7 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
+			"Instantly consumes [20] [Weapon Parts]",
 			"[+25]% Strength <vs ['Mechanised'] units> <when defending>",
 			"[+25]% Strength <vs ['Motorised'] units> <when defending>"
 		],
@@ -2303,7 +2354,7 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <vs ['Firearms'] units> <when defending>"
+			"[+25]% Strength <when defending>"
 		],
 		"unitTypes": [
 			"Assault"
@@ -2317,6 +2368,8 @@
 			"Modern Arms"
 		],
 		"uniques": [
+			"Instantly consumes [10] [Weapon Parts]",
+			"[+20]% Strength <vs ['Motorised'] units>",
 			"[+20]% Strength <vs ['Mechanised'] units>"
 		],
 		"unitTypes": [
@@ -2332,7 +2385,9 @@
 		],
 		"uniques": [
 			"Only available <after discovering [Uranium Enrichment]>",
-			"[+33]% Strength <vs ['Mechanised'] units>"
+			"Instantly consumes [10] [Weapon Parts]",
+			"[+10] Strength <vs ['Motorised'] units>",
+			"[+10] Strength <vs ['Mechanised'] units>"
 		],
 		"unitTypes": [
 			"Assault"
@@ -2346,7 +2401,7 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <vs [{non-['Mechanised']} {Land}] units>",
+			"[+8] Strength <vs [{non-['Mechanised']} {Land}] units>",
 			"[+10]% Strength <vs cities>"
 		],
 		"unitTypes": [
@@ -2361,8 +2416,7 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"[15]% chance to intercept air attacks",
-			"[+10]% Strength <vs ['Propeller Aircraft'] units>",
+			"[25]% chance to intercept air attacks",
 			"[+25]% Strength <vs ['Low Altitude Aircraft'] units>"
 		],
 		"unitTypes": [
@@ -2391,7 +2445,7 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
+			"Instantly consumes [10] [Ship Parts]",
 			"[+25]% Strength <when defending>",
 			"[+1] Sight"
 		],
@@ -2409,8 +2463,9 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"Gain [-10] [Gold] <every [1] turns>",
-			"[+33]% Strength"
+			"Instantly consumes [20] [Ship Parts]",
+			"[+3] XP gained from combat",
+			"[+5] Strength"
 		],
 		"unitTypes": [
 			"Close Combat Ship",
@@ -2426,6 +2481,7 @@
 			"Modern Arms"
 		],
 		"uniques": [
+			"Instantly consumes [10] [Ship Parts]",
 			"[33]% chance to intercept air attacks",
 			"[+25]% Strength <vs ['Propeller Aircraft'] units>",
 			"[+25]% Strength <vs ['Jet Engine Aircraft'] units> <after discovering [Advanced Ballistics]>",
@@ -2445,8 +2501,9 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"[+16]% Strength <vs [Submarine] units>",
-			"[+15]% Strength <vs [Submarine] units> <when defending>"
+			"Instantly consumes [10] [Ship Parts]",
+			"[+5] Strength <vs [Submarine] units>",
+			"[+20]% Strength <vs [Submarine] units>"
 		],
 		"unitTypes": [
 			"Close Combat Ship",
@@ -2462,7 +2519,9 @@
 			"Modern Arms"
 		],
 		"uniques": [
-			"[+25]% Strength <vs [non-[Submarine]] units> <when attacking>"
+			"Instantly consumes [10] [Ship Parts]",
+			"[+5] Strength <vs [non-[Submarine]] units>",
+			"[+33]% Strength <vs [non-[Submarine]] units> <when attacking>"
 		],
 		"unitTypes": [
 			"Close Combat Ship",
@@ -2514,7 +2573,6 @@
 			"Atomic Arms"
 		],
 		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns>",
 			"Costs [12] [Weapon Parts]",
 			"Costs [2] [Electronic Parts]",
 			"[+33]% Strength <vs cities> <when attacking>"
@@ -2824,7 +2882,8 @@
 			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
 			"[-20]% Strength <vs ['Mounted'] units> <when defending>",
 			"[-20]% Strength <vs ['Mechanised'] units> <when defending>",
-			"Ignores Zone of Control"
+			"Ignores Zone of Control",
+			"[Target Unit] gains the [Sabotaged] status for [1] turn(s) <upon damaging a [{non-[Aircraft]} {non-['Low Altitude Aircraft']} {Military}] unit> <with [25]% chance>"
 		]
 	},
 	{
@@ -2890,9 +2949,8 @@
 			"[This Unit] loses the [The Garrison Army] promotion <hidden from users>",
 			"[This Unit] loses the [The Standing Army] promotion <hidden from users>",
 			"[This Unit] loses the [The Noble Army] promotion <hidden from users>",
-			"[+50]% XP gained from combat",
-			"Earn [-25]% of the damage done to [Military] units as [Gold]",
-			"Gain [-3] [Gold] <every [1] turns>"
+			"[+33]% XP gained from combat",
+			"Earn [-25]% of the damage done to [Military] units as [Gold]"
 		]
 	},
 	{
@@ -2941,29 +2999,59 @@
 		]
 	},
 	// Statuses
-	// Positives
-
 	{
 		"name": "Reserve Force Cooldown"
+	},
+	// Positives
+	{
+		"name": "Well Supplied",
+		"uniques": [
+			"[+1] Movement",
+			"[+10] HP when healing"
+		]
 	},
 	// Negatives
 	{
 		"name": "Breached",
 		"uniques": [
-			"[-15]% Strength <when defending>"
+			"[-25]% Strength <when defending>"
+		]
+	},
+	{
+		"name": "Delayed",
+		"uniques": [
+			"[-25]% Strength <when attacking>"
 		]
 	},
 	{
 		"name": "Ambushed",
 		"uniques": [
-			"[-33]% Strength <when defending>"
+			"[-25]% Strength"
+		]
+	},
+	{
+		"name": "Sabotaged",
+		"uniques": [
+			"[-10]% Strength <for units without [Ammo Conservation]>",
+			"[-1] Movement <for units without [Mobility First]>"
 		]
 	},
 	{
 		"name": "Surpressed",
 		"uniques": [
-			"[-1] Range",
-			"[-1] Sight"
+			"[-1] Range"
+		]
+	},
+	{
+		"name": "Light Attrition",
+		"uniques": [
+			"[This Unit] takes [5] damage <upon turn start>"
+		]
+	},
+	{
+		"name": "Heavy Attrition",
+		"uniques": [
+			"[This Unit] takes [10] damage <upon turn start>"
 		]
 	}
 ]

@@ -228,7 +228,7 @@
             {
                 "text": "Enslavement would teach them how to behave",
                 "uniques": [
-                    "Only available <after adopting [Military Tradition]>",
+                    "Only available <after adopting [Military Tradition]> <if [Abolition] is not constructed>",
                     "Instantly gain [34] [Slaves]"
                 ]
             },
@@ -457,8 +457,7 @@
                 "text": "Purge Minorities",
                 "uniques": [
                     "Only available <if [Unified] is constructed> <if [Medium Culture Diversity] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
-                    "Instantly consumes [20] [Influence]",
-                    "[-1] population in a random city",
+                    "Instantly consumes [10] [Influence]",
                     "[-1] population in a random city",
                     "Gain [200] [Gold] <(modified by game speed)>",
                     "Gain a free [Low Culture Diversity] [in capital] <hidden from users>",
@@ -470,12 +469,11 @@
                 "text": "Purge Minorities",
                 "uniques": [
                     "Only available <if [Unified] is constructed> <if [High Culture Diversity] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
-                    "Instantly consumes [20] [Influence]",
-                    "[-1] population in a random city",
+                    "Instantly consumes [10] [Influence]",
                     "[-1] population in a random city",
                     "Gain [200] [Gold] <(modified by game speed)>",
                     "Gain a free [Medium Culture Diversity] [in capital]  <hidden from users>",
-                    "Comment [Decrease the H by a level if it hasnt reached lowest level yet.]",
+                    "Comment [Decrease the Culture Diversity by a level if it hasnt reached lowest level yet.]",
                     "Play [metalhit] sound <hidden from users>"
                 ]
             },
@@ -1625,6 +1623,25 @@
                     "Only available <before adopting [Revolution]>",
                     "Gain a free [Caste System - Exploitation] [in capital]",
                     "Gain a free [Strife] [in capital]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Abolitionism Strikes",
+        "text": "As the productivity increases. The absurdity of seeing other people as objects soon came to be realised. People are supporting the abolition.",
+        "choices": [
+            {
+                "text": "Slavery is evil",
+                "uniques": [
+                    "Gain [-300] [Gold]",
+                    "Gain a free [Abolition] [in capital]"
+                ]
+            },
+            {
+                "text": "But we are the superior race!",
+                "uniques": [
+                    "[2] [Outlaws]s rebel <in [Capital] cities> <before adopting [Fascism]>"
                 ]
             }
         ]
