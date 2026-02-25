@@ -2944,9 +2944,8 @@
 			"[This Unit] loses the [The Garrison Army] promotion <hidden from users>",
 			"[This Unit] loses the [The Standing Army] promotion <hidden from users>",
 			"[This Unit] loses the [The Noble Army] promotion <hidden from users>",
-			"[+50]% XP gained from combat",
-			"Earn [-25]% of the damage done to [Military] units as [Gold]",
-			"Gain [-3] [Gold] <every [1] turns>"
+			"[+33]% XP gained from combat",
+			"Earn [-25]% of the damage done to [Military] units as [Gold]"
 		]
 	},
 	{
@@ -3007,16 +3006,40 @@
 		]
 	},
 	{
+		"name": "Halted",
+		"uniques": [
+			"[-15]% Strength <when attacking>"
+		]
+	},
+	{
 		"name": "Ambushed",
 		"uniques": [
-			"[-33]% Strength <when defending>"
+			"[-33]% Strength"
+		]
+	},
+	{
+		"name": "Sabotaged",
+		"uniques": [
+			"[-10]% Strength",
+			"[-1] Movement"
 		]
 	},
 	{
 		"name": "Surpressed",
 		"uniques": [
-			"[-1] Range",
-			"[-1] Sight"
+			"[-1] Range"
+		]
+	},
+	{
+		"name": "Light Attrition",
+		"uniques": [
+			"[This Unit] takes [5] damage <upon turn start>"
+		]
+	},
+	{
+		"name": "Heavy Attrition",
+		"uniques": [
+			"[This Unit] takes [10] damage <upon turn start>"
 		]
 	}
 ]
