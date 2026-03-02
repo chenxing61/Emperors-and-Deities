@@ -9,21 +9,16 @@
                 "uniques": [
                     "Only available <if [Harmony] is constructed> <when above [0] [Influence]>",
                     "Comment [Preventing losing stability for this one time...]",
-                    "Instantly consumes [3] [Influence]",
-                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-225] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>"
+                    "[-10]% [Gold] [in all cities] <for [5] turns>"
                 ]
             },
             {
                 "text": "We need to take precaution!",
                 "uniques": [
-                    "Only available <if [Peace] is constructed> <when above [0] [Influence]>",
+                    "Only available <if [Harmony] is not constructed>  <when above [0] [Influence]>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [5] [Influence]",
-                    "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-225] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>"
+                    "[-20]% [Gold] [in all cities] <for [5] turns>"
                 ]
             },
             {
@@ -81,17 +76,14 @@
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
                     "Instantly consumes [3] [Influence]",
-                    "Gain [-50] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-300] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>"
+                    "[-10]% [Gold] [in all cities] <for [5] turns>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
                     "Gain a free [Slum] [in capital]",
-                    "Gain a free [Slum] [in all cities] <when number of [Cities] is more than [6]>",
-                    "[-10]% growth [in all cities] <for [5] turns>"
+                    "Gain a free [Slum] [in all cities] <when number of [Cities] is more than [6]>"
                 ]
             }
         ]
@@ -104,17 +96,15 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Gain [-50] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-200] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>"
+                    "Instantly consumes [3] [Influence]",
+                    "[-10]% [Gold] [in all cities] <for [5] turns>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
                     "Gain a free [Unjust Ruling] [in capital]",
-                    "Gain a free [Unjust Ruling] [in all cities] <when number of [Cities] is more than [6]>",
-                    "[-10]% Strength <for [5] turns>"
+                    "Gain a free [Unjust Ruling] [in all cities] <when number of [Cities] is more than [6]>"
                 ]
             }
         ]
@@ -127,9 +117,8 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Gain [-50] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
-                    "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
-                    "Gain [-300] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>"
+                    "Instantly consumes [3] [Influence]",
+                    "[-10]% [Gold] [in all cities] <for [5] turns>"
                 ]
             },
             {
@@ -150,7 +139,7 @@
         ]
     },
     {
-        "name": "Spreading Chaos",
+        "name": "Chaos Spreading",
         "text": "Though the disorder can be better controlled in a small civilization, but it still needs a permanent solution.",
         "choices": [
             {
@@ -178,18 +167,19 @@
             {
                 "text": "Plunder them dry and banish them!",
                 "uniques": [
-                    "Gain [25] [Gold] <(modified by game speed)>",
-                    "Gain [25] [Gold] <(modified by game speed)> <starting from the [Medieval era]>"
+                    "Gain [50] [Gold] <(modified by game speed)>",
+                    "Gain [50] [Gold] <(modified by game speed)> <starting from the [Medieval era]>"
                 ]
             },
             {
                 "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
                 "uniques": [
                     "Only available <if [Low Culture Diversity] is constructed>",
+                    "Instantly consumes [10] [Influence]",
                     "Instantly provides [1] [Migrating Population]",
                     "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
                     "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
+                    "Gain [33] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
                     "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
                 ]
             },
@@ -197,10 +187,11 @@
                 "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
                 "uniques": [
                     "Only available <if [Medium Culture Diversity] is constructed>",
+                    "Instantly consumes [10] [Influence]",
                     "Instantly provides [1] [Migrating Population]",
                     "Gain a free [High Culture Diversity] [in capital] <hidden from users>",
                     "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
+                    "Gain [33] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
                     "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
                 ]
             },
@@ -208,6 +199,7 @@
                 "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
                 "uniques": [
                     "Only available <if [High Culture Diversity] is constructed>",
+                    "Instantly consumes [10] [Influence]",
                     "Instantly provides [1] [Migrating Population]",
                     "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
                     "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
@@ -218,16 +210,15 @@
                 "text": "Intergrate them into our glorious empire!",
                 "uniques": [
                     "Only available <if [Unified] is constructed>",
-                    "Gain [-25] [Gold] <(modified by game speed)> ",
                     "Instantly consumes [3] [Influence] <before adopting [Pantheon Incorporation]>",
-                    "Instantly provides [1] [Migrating Population]"
+                    "Instantly provides [2] [Migrating Population]"
                 ]
             },
             {
                 "text": "Enslavement would teach them how to behave",
                 "uniques": [
                     "Only available <after adopting [Military Tradition]> <if [Abolition] is not constructed>",
-                    "Instantly gain [34] [Slaves]"
+                    "Instantly gain [66] [Slaves]"
                 ]
             },
             {
@@ -434,7 +425,6 @@
                     "Play [policy] sound <hidden from users>",
                     "Comment [If your [Influence] is somehow above normal limit. You can trigger this.]",
                     "Comment [We can force the shift in politic to stop our civilization from a undesireable route...]",
-                    "Instantly consumes [5] [Influence]",
                     "Triggers a [Shift in Politic] event"
                 ]
             },
@@ -600,6 +590,7 @@
                 "text": "No significant changes",
                 "uniques": [
                     "Comment [We are still a bunch of countries prone to infighting and invasion, but what we do have is countless oppotunities.]",
+                    "Set [Influence] to [0.25*[Influence Limit]]",
                     "Only available <if [Unified] is not constructed> <if [Nomadic Tribes] is not constructed>",
                     "Gain a free [Tribes] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [Tribes] [in capital] <during the [Ancient era]> <hidden from users>",
@@ -614,6 +605,7 @@
                 "text": "Qin has collapsed!",
                 "uniques": [
                     "Only available <if [Great Qin] is constructed>",
+                    "Set [Influence] to [0.25*[Influence Limit]]",
                     "Triggers a [Collapse of the Great Qin] event"
                 ]
             },
@@ -622,6 +614,7 @@
                 "uniques": [
                     "Only available <if [Unified] is not constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <if [Nomadic Tribes] is not constructed>",
                     "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
+                    "Set [Influence] to [0.75*[Influence Limit]]",
                     "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
                     "Gain a free [Early Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
@@ -642,6 +635,7 @@
                 "uniques": [
                     "Comment [Our unification cannot last onto another stage of the world. Maybe its ultimately for the better, as it was stale.]",
                     "Only available <if [Unified] is constructed> <if [Unified Nomads] is not constructed>",
+                    "Set [Influence] to [0.25*[Influence Limit]]",
                     "Remove ['United'] [in all cities] <hidden from users>",
                     "Gain a free [City States] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [City States] [in capital] <during the [Ancient era]> <hidden from users>",
@@ -661,6 +655,7 @@
                 "uniques": [
                     "Only available <when number of [Influence] is more than [[Influence Limit]*0.5]> <if [Struggle] is not constructed> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <while the empire is happy>",
                     "Comment [Our empire survives... Maybe we can reform it continuesly unto forever.]",
+                    "Set [Influence] to [0.75*[Influence Limit]]",
                     "Only available <if [Unified] is constructed>",
                     "Remove [Unified] [in all cities] <hidden from users>",
                     "Triggers a [Reformation of the unified state] event"
@@ -694,7 +689,7 @@
             {
                 "text": "We must prevail at preserving our root.",
                 "uniques": [
-                    "Instantly consumes [5] [Influence]",
+                    "Set [Influence] to [0.5*[Influence Limit]]",
                     "Comment [Keep your current special civilization form]",
                     "Only available <if ['Neolithic era Form'] is constructed> <if [Unified] is not constructed> <during the [Classical era]>"
                 ]
@@ -702,7 +697,7 @@
             {
                 "text": "We must prevail at preserving our root.",
                 "uniques": [
-                    "Instantly consumes [10] [Influence]",
+                    "Set [Influence] to [0.5*[Influence Limit]]",
                     "Comment [Keep your current special civilization form]",
                     "Only available <if ['Ancient era Form'] is constructed> <if [Unified] is not constructed> <during the [Classical era]>"
                 ]
@@ -710,7 +705,7 @@
             {
                 "text": "We must prevail at preserving our root.",
                 "uniques": [
-                    "Instantly consumes [15] [Influence]",
+                    "Set [Influence] to [0.25*[Influence Limit]]",
                     "Comment [Keep your current special civilization form]",
                     "Only available <if ['Classical era Form'] is constructed> <if [Unified] is not constructed> <during the [Medieval era]>"
                 ]
@@ -718,7 +713,7 @@
             {
                 "text": "Our way of life must be protected.",
                 "uniques": [
-                    "Instantly consumes [30] [Influence]",
+                    "Set [Influence] to [0.25*[Influence Limit]]",
                     "Comment [Keep your current special civilization form]",
                     "Only available <if ['Ideology Form'] is constructed> <if [Unified] is not constructed> <starting from the [Modern era]>"
                 ]
@@ -916,7 +911,7 @@
                     "Only available <if [Unjust Ruling] is constructed> <during a Golden Age>",
                     "Comment [I wonder... what would they be trying to do when they have some track records right in our hands?]",
                     "Instantly consumes [20] [Influence]",
-                    "Gain [200] [Gold] <(modified by game speed)>",
+                    "Gain [200] [Gold] <(modified by game speed)>"
                 ]
             },
             {
