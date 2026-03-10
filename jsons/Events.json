@@ -241,8 +241,7 @@
                 "uniques": [
                     "Comment [In this decision tab, different actions are unlocked based on to how many [Influence] you have and how many unique action your civilization state has provided you with.]",
                     "Comment [In each era, you recieve a [Forced Shift In Politic Chance], and when you have more [Influence] than your limit in this era, you can trigger a Shift In Politic in this tab early to provide you with either a chance to unify or a chance to collapse, this grants you freedom on choices of ['Civilization State'].]",
-                    "Comment [Most option will appear when you are unified or have more [Influence] than half of your limit. At the same time, some options only appear when your civilization are divided or have severe debuffs. This tab will help you solve them.]"
-                ]
+                    "Comment [Most option will appear when you are unified or have more [Influence] than half of your limit. At the same time, some options only appear when your civilization are divided or have severe debuffs. This tab will help you solve them.]"]
             },
             {
                 "text": "Total mobilization in every cities!",
@@ -586,6 +585,20 @@
         "name": "Shift in Politic",
         "text": "The structure of our civilization changes to adapt to the time. What path shall we partake?",
         "choices": [
+            {
+                "text": "Introduction",
+                "uniques": [
+                    "Comment [The most convenient way to change your government form is to let it naturally evolve. When each Era begins, you are forced to have a political shift where you must actively decide what state you want to enter: ['United'] or ['Divided'].]",
+                    "Comment [Reaching over half of the [Influence] without being in low stability enables you to unify your civilization]",
+                    "Comment [Your [Influence] will be reseted back to a certain point below [Influence Limit]. If you can successfully unify your civilization, you will have a lot of [Influence] starting off.]"
+                ],
+                "civilopediaText": [
+                {
+                        "text": "See also: ED - Government Forms",
+                        "link": "Tutorials/ED - Government Forms"
+                }
+                ]
+            },
             {
                 "text": "No significant changes",
                 "uniques": [
