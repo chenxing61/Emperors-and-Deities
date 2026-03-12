@@ -6,7 +6,7 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"uniques": [
-			"Unbuildable <if [Nomadic Culture] is constructed>",
+			"Unbuildable <if [Nomadic Culture] is constructed> <for [non-[AI player]] Civilizations>",
 			"Can build [Land] improvements on tiles",
 			"Can build [Lakes] improvements on tiles",
 			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
@@ -5007,9 +5007,11 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"Cannot embark",
-			"[+25]% Strength <starting from the [Classical era]>",
-			"[+10]% Strength <starting from the [Medieval era]>",
-			"[+17]% Strength <starting from the [Renaissance era]>"
+			"[+3] Strength <starting from the [Classical era]>",
+			"[+4] Strength <starting from the [Medieval era]>",
+			"[+5] Strength <starting from the [Renaissance era]>",
+			"[+6] Strength <starting from the [Imperial era]>",
+			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
 			"Barbaric"
@@ -5130,8 +5132,10 @@
 			"'Skirmishers'",
 			"'Firearms'",
 			"Cannot embark",
-			"[+25]% Strength <starting from the [Atomic era]>",
-			"[+12]% Strength <starting from the [Information era]>"
+			"[-5] Strength <before the [Modern era]>",
+			"[+12]% Strength <starting from the [Atomic era]>",
+			"[+12]% Strength <starting from the [Information era]>",
+			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
 			"Asymmetric Warfare",

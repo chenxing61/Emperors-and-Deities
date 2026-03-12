@@ -92,6 +92,16 @@
 			//Tooltips
 			"Comment [Spawns free [The Levied Army] units to help with warfare.]",
 			"Comment [The number and type of unit spawned depends on the 'Military Building' in the city and your technological, cultural advancement.]",
+			"Comment [Here is a list of all the possible units if corresponding technologies are researched according to era.]",
+			"Comment [[Neolithic era]: [Primal Warrior], [Brute Warrior]]",
+			"Comment [[Ancient era]: [Javalineer], [Brute Warrior]]",
+			"Comment [[Classical era]: [Javalineer], [Spearman]]",
+			"Comment [[Medieval era]: [Levy Archer], [Spearman]]",
+			"Comment [[Renaissance era]: [Levy Crossbowman], [Pikeman]]",
+			"Comment [[Imperial era]: [Guerrilla], [Musketeer], [Gunboat]]",
+			"Comment [[Industrial era]: [Modern Guerrilla], [Rifleman], [Gunboat]]",
+			"Comment [[Modern era]: [Modern Guerrilla], [Modern Conscript], [Gunboat]]",
+
 			//Neolitic-Ancient
 			"Free [Primal Warrior] appears <before discovering [Mining]> <hidden from users> ",
 			"Free [Brute Warrior] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [non-[Europa]] Civilizations> <hidden from users> ",
@@ -2192,6 +2202,7 @@
 			"New [Military] units start with [10] XP [in this city]",
 			"[{Land} {Military}] units gain the [Classical Arms] promotion",
 			"Comment [Enables you to build new Siege Units unlocked by Engineering]",
+			"Free [Swordsman] appears <for [AI player] Civilizations>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Barrack",
@@ -9465,6 +9476,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Negative Event'",
 			"[-5]% Production when constructing [All] buildings [in all cities]",
 			"Triggers a [Chaos Spreading] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance> <upon turn start>"
 		]
@@ -9480,6 +9492,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Negative Event'",
 			"[Gold] cost of purchasing [All] buildings [+5]%",
 			"Triggers a [Chaos Spreading] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance> <upon turn start>"
 		]
@@ -9490,7 +9503,12 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
-			"Rebel units may spawn",
+			"'Negative Event'",
+			"[-5]% Production when constructing [All] units [in all cities]",
+			"[2] [Farmer Rebellion]s rebel <before the [Industrial era]>",
+			"a [Rogue Aristrocrat] rebels <if [Strife] is constructed> <before the [Industrial era]>",
+			"a [Rogue Aristrocrat] rebels <if [Anarchy] is constructed> <before the [Industrial era]>",
+			"[2] [Militia Movement]s rebel <starting from the [Industrial era]>",
 			"Triggers a [Chaos Spreading] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance> <upon turn start>"
 		]
 	},
@@ -9533,7 +9551,7 @@
 		]
 	},
 	{
-		"name": "Army Maintenance Cost",
+		"name": "Influence Maintenance Cost",
 		"cost": 50,
 		"uniques": [
 			"Unavailable <hidden from users>",
