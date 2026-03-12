@@ -220,5 +220,82 @@
                 "untilTurn": 1500
             }
         ]
+    },
+    ///Credit to Dankboy9000 on discord
+    {
+        "name": "Realistic",
+        "modifier": 20.0,
+        "productionCostModifier": 2.0,
+        "goldCostModifier": 2.0,
+        "scienceCostModifier": 20.0,
+        "cultureCostModifier": 20.0,
+        "faithCostModifier": 20.0,
+        "improvementBuildLengthModifier": 10.0,
+        "barbarianModifier": 2.0,
+        "goldGiftModifier": 0.05,
+        "cityStateTributeScalingInterval": 200.0,
+        "goldenAgeLengthModifier": 20.0,
+        "religiousPressureAdjacentCity": 1,
+        "peaceDealDuration": 20,
+        "dealDuration": 20,
+        "startYear": -4000,
+        "turns": [
+            { //Neolithic up to -2000
+                "yearsPerTurn": 4,
+                "untilTurn": 500
+            }, //Ancient up to -500
+            {
+                "yearsPerTurn": 3,
+                "untilTurn": 1000
+            }, //Classical up to 250
+            {
+                "yearsPerTurn": 1.25,
+                "untilTurn": 1500
+            }, //Medieval up to 1250
+            {
+                "yearsPerTurn": 1,
+                "untilTurn": 2500
+            }, //Renaissance up to 1500
+            {
+                "yearsPerTurn": 0.5,
+                "untilTurn": 3000
+            },
+            { //Imperial up to 1800
+                "yearsPerTurn": 0.3,
+                "untilTurn": 4000
+            },
+            { //Industrial up to 1925
+                "yearsPerTurn": 0.25,
+                "untilTurn": 4500
+            },
+            { //Modern up to 1950
+                "yearsPerTurn": 0.125,
+                "untilTurn": 4700
+            },
+            { //Atomic up to 1980
+                "yearsPerTurn": 0.0625,
+                "untilTurn": 5180
+            },
+            { //Information up to 2055
+                "yearsPerTurn": 0.05,
+                "untilTurn": 6680
+            },
+            { //Future up to... hopefully whenever I get to submod Alpha Frontier better
+                "yearsPerTurn": 0.02,
+                "untilTurn": 1000000
+            },
+            { //The Dark Age of Technology
+                "yearsPerTurn": 0.01,
+                "untilTurn": 1500000
+            },
+            { //Unification Wars
+                "yearsPerTurn": 0.05,
+                "untilTurn": 3000000
+            },
+            { //WarHammer40K
+                "yearsPerTurn": 0.1,
+                "untilTurn": 10000000
+            }
+        ]
     }
 ]

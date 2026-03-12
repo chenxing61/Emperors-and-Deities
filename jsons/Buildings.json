@@ -92,6 +92,16 @@
 			//Tooltips
 			"Comment [Spawns free [The Levied Army] units to help with warfare.]",
 			"Comment [The number and type of unit spawned depends on the 'Military Building' in the city and your technological, cultural advancement.]",
+			"Comment [Here is a list of all the possible units if corresponding technologies are researched according to era.]",
+			"Comment [[Neolithic era]: [Primal Warrior], [Brute Warrior]]",
+			"Comment [[Ancient era]: [Javalineer], [Brute Warrior]]",
+			"Comment [[Classical era]: [Javalineer], [Spearman]]",
+			"Comment [[Medieval era]: [Levy Archer], [Spearman]]",
+			"Comment [[Renaissance era]: [Levy Crossbowman], [Pikeman]]",
+			"Comment [[Imperial era]: [Guerrilla], [Musketeer], [Gunboat]]",
+			"Comment [[Industrial era]: [Modern Guerrilla], [Rifleman], [Gunboat]]",
+			"Comment [[Modern era]: [Modern Guerrilla], [Modern Conscript], [Gunboat]]",
+
 			//Neolitic-Ancient
 			"Free [Primal Warrior] appears <before discovering [Mining]> <hidden from users> ",
 			"Free [Brute Warrior] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [non-[Europa]] Civilizations> <hidden from users> ",
@@ -105,8 +115,8 @@
 			"Free [Nomad Warriors] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <in cities with a [Armory]> <hidden from users>  <if [Nomadic Culture] is constructed>",
 			"Free [Levy Archer] appears <after discovering [Tactics]> <before discovering [Hand Cannon]> <hidden from users> ",
 			//Renaissance-Imperial
-			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <hidden from users> ",
-			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <in cities with a [Armory]> <hidden from users> ",
+			"Free [Pikeman] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <hidden from users> ",
+			"Free [Pikeman] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <in cities with a [Armory]> <hidden from users> ",
 			"Free [Levy Crossbowman] appears <after discovering [Hand Cannon]> <before discovering [Rifling]> <hidden from users> ",
 			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <hidden from users> ",
 			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <in cities with a [Armory]>  <hidden from users> ",
@@ -296,22 +306,17 @@
 			"Gain a free [Intergration] [in this city]",
 			"Gain a free [Administrative Intergration] [in this city]",
 			"Gain a free [Cultural Intergration] [in this city]",
-			"[+300]% weight to this choice for AI decisions <hidden from users>",
+			"[+90]% weight to this choice for AI decisions <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Printing Press"
 	},
 	{
 		"name": "Intergration",
+		"happiness": 1,
 		"cost": 50,
 		"uniques": [
-			"[-5]% [Food] [in this city] <in cities without a [Administrative Intergration]>",
-			"[-25]% [Production] [in this city] <in cities without a [Administrative Intergration]>",
-			"[-25]% [Gold] [in this city] <in cities without a [Administrative Intergration]>",
-			"[-25]% [Culture] [in this city] <in cities without a [Cultural Intergration]>",
-			"[-10]% [Science] [in this city] <in cities without a [Cultural Intergration]>",
-			"[-25]% [Faith] [in this city] <in cities without a [Cultural Intergration]>",
-			"[-5]% [Happiness] [in this city] <in cities without a [Administrative Intergration]> <in cities without a [Cultural Intergration]>",
+			"[+90]% weight to this choice for AI decisions <hidden from users>",
 			"Only available <before adopting [Anarchism]>",
 			"Can only be built <in [Annexed] cities>",
 			"Removes extra unhappiness from annexed cities",
@@ -2197,6 +2202,7 @@
 			"New [Military] units start with [10] XP [in this city]",
 			"[{Land} {Military}] units gain the [Classical Arms] promotion",
 			"Comment [Enables you to build new Siege Units unlocked by Engineering]",
+			"Free [Swordsman] appears <for [AI player] Civilizations>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Barrack",
@@ -9470,8 +9476,9 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Negative Event'",
 			"[-5]% Production when constructing [All] buildings [in all cities]",
-			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance>"
+			"Triggers a [Chaos Spreading] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance> <upon turn start>"
 		]
 	},
 	{
@@ -9480,14 +9487,14 @@
 		"percentStatBonus": {
 			"production": -5,
 			"gold": -10,
-			"culture": -10,
 			"faith": -5
 		},
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Negative Event'",
 			"[Gold] cost of purchasing [All] buildings [+5]%",
-			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance>"
+			"Triggers a [Chaos Spreading] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance> <upon turn start>"
 		]
 	},
 	{
@@ -9496,9 +9503,13 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
-			"Rebel units may spawn",
-			"[-3]% Strength <vs [Barbarian] units>",
-			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance>"
+			"'Negative Event'",
+			"[-5]% Production when constructing [All] units [in all cities]",
+			"[2] [Farmer Rebellion]s rebel <before the [Industrial era]>",
+			"a [Rogue Aristrocrat] rebels <if [Strife] is constructed> <before the [Industrial era]>",
+			"a [Rogue Aristrocrat] rebels <if [Anarchy] is constructed> <before the [Industrial era]>",
+			"[2] [Militia Movement]s rebel <starting from the [Industrial era]>",
+			"Triggers a [Chaos Spreading] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance> <upon turn start>"
 		]
 	},
 	{
@@ -9540,7 +9551,7 @@
 		]
 	},
 	{
-		"name": "Army Maintenance Cost",
+		"name": "Influence Maintenance Cost",
 		"cost": 50,
 		"uniques": [
 			"Unavailable <hidden from users>",
