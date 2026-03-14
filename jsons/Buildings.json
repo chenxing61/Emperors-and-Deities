@@ -365,7 +365,7 @@
 	},
 	{
 		"name": "Remove Slums",
-		"cost": 80,
+		"cost": 70,
 		"uniques": [
 			"Only available <in cities with a [Slum]>",
 			"Unbuildable <for [Human player] Civilizations> <hidden from users>",
@@ -375,11 +375,11 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Town Hall",
-		"requiredTech": "Paper Making"
+		"requiredTech": "Writing"
 	},
 	{
 		"name": "Clear Corruption",
-		"cost": 80,
+		"cost": 70,
 		"uniques": [
 			"Only available <in cities with a [Unjust Ruling]>",
 			"Unbuildable <for [Human player] Civilizations> <hidden from users>",
@@ -390,11 +390,11 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Town Hall",
-		"requiredTech": "Paper Making"
+		"requiredTech": "Writing"
 	},
 	{
 		"name": "Stop Rebellion",
-		"cost": 80,
+		"cost": 70,
 		"uniques": [
 			"Only available <in cities with a [Peasant Rebellion]>",
 			"Unbuildable <for [Human player] Civilizations> <hidden from users>",
@@ -404,7 +404,7 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Town Hall",
-		"requiredTech": "Paper Making"
+		"requiredTech": "Writing"
 	},
 	//Expansion
 	{
@@ -7658,7 +7658,7 @@
 			"'Outcome'",
 			"Provides [2] [Noble Army Maintenance]",
 			"Provides [2] [Horse]",
-			"[+33]% Strength <for ['Noble Army'] units>",
+			"[+25]% Strength <for ['Noble Army'] units>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7691,7 +7691,6 @@
 			"[+5]% Strength <for ['Standing Army'] units>",
 			"[-10]% [Culture] [in all cities] <for [10] turns>",
 			"[-10]% [Gold] [in all cities] <for [10] turns>",
-			"Rebel units may spawn <for [8] turns>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
