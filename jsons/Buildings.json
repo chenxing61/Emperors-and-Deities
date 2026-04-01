@@ -148,8 +148,8 @@
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Only available <in [non-[Capital]] cities> <in cities connected to the capital>",
 			"[-100]% production cost <if [Nomadic Culture] is constructed>",
-			"Remove [Palace] [in all cities]",
-			"Gain a free [Palace] [in this city] <for [1] turns>"
+			"Indicates the capital city",
+			"Remove [Migrate Capital] [in this city] <in cities with a [Palace]>"
 		],
 		"requiredTech": "Horse Collar",
 		"hurryCostModifier": 100
@@ -6748,9 +6748,10 @@
 			"Provides [2] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]>",
 			///Stuff
 			"Provides [10] [Migration Limit]",
-			"Indicates the capital city",
+			"Indicates the capital city <if [Migrate Capital] is not constructed>",
 			//Tutorial
-			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]> <hidden from users>"
+			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]> <hidden from users>",
+			"Moves to new capital when capital changes <hidden from users>"
 			
 		]
 	},
