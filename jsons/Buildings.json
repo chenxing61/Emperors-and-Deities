@@ -140,20 +140,27 @@
 			"Destroyed when the city is captured"
 		]
 	},
-	{
-		"name": "Migrate Capital",
-		"cost": 50,
-		"uniques": [
-			"Limited to [1] per Civilization <hidden from users>",
-			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
-			"Only available <in [non-[Capital]] cities> <in cities connected to the capital>",
-			"[-100]% production cost <if [Nomadic Culture] is constructed>",
-			"Indicates the capital city <if [Palace] is constructed>",
-			"Remove [Migrate Capital] [in this city] <in cities with a [Palace]>"
-		],
-		"requiredTech": "Horse Collar",
-		"hurryCostModifier": 100
-	},
+	//{
+	//	"name": "Migrate Capital",
+	//	"cost": 50,
+	//	"uniques": [
+	//		"Limited to [1] per Civilization <hidden from users>",
+	//		"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+	//		"Only available <in [non-[Capital]] cities> <in cities connected to the capital>",
+	//		"[-100]% production cost <if [Nomadic Culture] is constructed>",
+	//		"Indicates the capital city <in cities without a [Palace]>",
+	//		"Remove ['Flag'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove ['Civilization Form'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove ['Civilization State'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove ['Economic Policy'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove ['Outcome'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove ['Culture Diversity State'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove [Palace] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove [Migrate Capital] [in this city] <in cities with a [Palace]>"
+	//	],
+	//	"requiredTech": "Horse Collar",
+	//	"hurryCostModifier": 100
+	//},
 	{
 		"name": "Resettlement",
 		"cost": 0,
@@ -9688,6 +9695,18 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Placeholder",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Comment [Migrate Capital] <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
