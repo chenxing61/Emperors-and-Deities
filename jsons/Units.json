@@ -129,7 +129,7 @@
 		"uniques": [
 			"Unbuildable <if [Nomadic Culture] is constructed>",
 			"Founds a new city <by consuming this unit> <for [Human player] Civilizations>",
-			"Founds a new city <in [non-[Luxury resource]] tiles> <by consuming this unit> <for [AI player] Civilizations>",
+			"Founds a new city <in [non-[Luxury resource]] tiles> <by consuming this unit> <for [AI player] Civilizations> <hidden from users>",
 			"Excess Food converted to Production when under construction",
 			"[+2] Movement <before turn number [2]>",
 			"[+1] Sight <before turn number [2]>",
@@ -148,7 +148,7 @@
 			"Only available <if [Nomadic Culture] is constructed>",
 			"[-1] population [in this city]",
 			"Founds a new city <by consuming this unit> <for [Human player] Civilizations>",
-			"Founds a new city <in [non-[Luxury resource]] tiles> <by consuming this unit> <for [AI player] Civilizations>",
+			"Founds a new city <in [non-[Luxury resource]] tiles> <by consuming this unit> <for [AI player] Civilizations> <hidden from users>",
 			"Excess Food converted to Production when under construction",
 			"[+2] Movement <before turn number [2]>",
 			"[+1] Sight <before turn number [2]>",
@@ -164,7 +164,7 @@
 		"movement": 3,
 		"uniques": [
 			"Founds a new city <by consuming this unit> <for [Human player] Civilizations>",
-			"Founds a new city <in [non-[Luxury resource]] tiles> <by consuming this unit> <for [AI player] Civilizations>",
+			"Founds a new city <in [non-[Luxury resource]] tiles> <by consuming this unit> <for [AI player] Civilizations> <hidden from users>",
 			"Excess Food converted to Production when under construction",
 			"[+1] Sight",
 			"Requires at least [1] population"
@@ -353,6 +353,7 @@
 			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <after discovering [Mathematics]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
 			"Can transform to [Early Rider] <removing the [The Levied Army] promotion/status> <after discovering [Horseback Riding]> <when above [0] [Horse]> <when above [0] [Standing Army Maintenance]> <costs [+125 Gold] stats>",
 			"Can transform to [Comitatus] <removing the [The Levied Army] promotion/status> <after discovering [Mining]> <after adopting [Unity]> <when above [0] [Noble Army Maintenance]> <costs [+100 Gold] stats>",
+			"Can upgrade to [Early Swordsman] <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -409,7 +410,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"Founds a new puppet city <by consuming this unit> <for [Human player] Civilizations>",
-			"Founds a new puppet city <in [non-[Luxury resource]] tiles> <by consuming this unit> <for [AI player] Civilizations>",
+			"Founds a new puppet city <in [non-[Luxury resource]] tiles> <by consuming this unit> <for [AI player] Civilizations> <hidden from users>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
@@ -745,6 +746,7 @@
 		"range": 1,
 		"uniques": [
 			"Can transform to [Archer] <when above [0] [Standing Army Maintenance]> <after discovering [Mathematics]> <costs [+100 Gold] stats>",
+			"Can upgrade to [Archer] <for [AI player] Civilizations> <hidden from users>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -1014,6 +1016,7 @@
 		"range": 1,
 		"uniques": [
 			"Can transform to [Qin Crossbowman] <if [Great Qin] is constructed>",
+			"Can upgrade to [Qin Crossbowman] <if [Great Qin] is constructed> <for [AI player] Civilizations> <hidden from users>",
 			"'Standing Army'",
 			"'Infantry'",
 			"'Edged Weapons'",
@@ -1042,6 +1045,7 @@
 		"range": 1,
 		"uniques": [
 			"Can transform to [Crossbowman] <after discovering [Engineering]> <costs [+50 Gold] stats>",
+			"Can upgrade to [Crossbowman] <for [AI player] Civilizations> <hidden from users>",
 			"Only available <if [Great Qin] is constructed>",
 			"'Standing Army'",
 			"'Infantry'",
@@ -1299,6 +1303,7 @@
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
 			"Can upgrade to [Pike and Shot] <for [AI player] Civilizations> <after discovering [Hand Cannon]> <hidden from users>",
 			"Can transform to [Pike and Shot] <after discovering [Hand Cannon]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]> <for [AI player] Civilizations> <hidden from users>",
 			"'Noble Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -1603,6 +1608,7 @@
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
 			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
+			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]> <for [AI player] Civilizations> <hidden from users>",
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
 			"Can transform to [Azadan Cavalry Archer] <requires [1] movement>",
 			"'Standing Army'",
@@ -1637,6 +1643,7 @@
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
 			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
+			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]> <for [AI player] Civilizations> <hidden from users>",
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
 			"Can transform to [Azadan Cavalry] <requires [1] movement>",
 			"'Standing Army'",
@@ -1730,6 +1737,7 @@
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
 			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
+			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]> <for [AI player] Civilizations> <hidden from users>",
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
 			"'Noble Army'",
 			"'Mounted'",
@@ -1759,6 +1767,7 @@
 		"uniques": [
 			"Unbuildable",
 			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
+			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]> <for [AI player] Civilizations> <hidden from users>",
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
 			"'Standing Army'",
 			"'Mounted'",
@@ -1823,6 +1832,7 @@
 		"uniques": [
 			"Only available <if [Carthage Obligarchy] is constructed>",
 			"Can transform to [Heavy Galley Fleet] <after discovering [Shipbuilding]>",
+			"Can upgrade to [Heavy Galley Fleet] <after discovering [Shipbuilding]> <for [AI player] Civilizations> <hidden from users>",
 			"'Standing Army'",
 			"'Galley'",
 			"'Dense Formation'",
@@ -2534,7 +2544,7 @@
 		"uniques": [
 			"Only available <after adopting [Unity]>",
 			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]>",
-			"Can upgrade to [Grenadier] <for [AI player] Civilizations>",
+			"Can upgrade to [Grenadier] <for [AI player] Civilizations> <hidden from users>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",

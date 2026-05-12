@@ -3434,23 +3434,414 @@
         ]
     },
     ///Scenario Tools
+    ///Tutorial MQ
     {
-        "name": "New Mission: Sargon's Reign",
-        "text": "Placeholder",
+        "name": "Mesopotamia, Spark of Civilization, 4000BCE",
+        "text": "Welcome to the Emperors and Deities mod. One of the biggest unciv ruleset. \nAlthough the content of the mod is vast, the story takes place in roughly the same place as the original civilization series. Namely the Journey of Humanity. The mod greatly expands the technological progess, element of customization and many other aspects of civ. It is going to be a bumpy ride so strap in.",
         "choices": [
             {
-                "text": "Problems and solutions never seen before!",
+                "text": "Start the Tutorial",
                 "uniques": [
-                    "Comment [Open up the [Enact Policies] tab and have a look!]",
-                    "Comment [You can open this in your capital at any moment to solve debuffs and manage a lot of stuff.]",
-                    "Triggers a [Enact Policies] event <hidden from users>",
+                    "Comment [Dont forget to check civilipedia if you are in need of understanding certain mechanics.]",
+                    "Triggers a [New Mission: Into The Bronze Age] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "New Mission: Into The Bronze Age, 4000BCE",
+        "text": "You have the city of Uruk under your control as the center of your civilization. It controls some lands which provides food and trade. Which abstracts into gold production. In the city, there are populations, which includes the people working on the lands.",
+        "choices": [
+            {
+                "text": "Whats my job?",
+                "uniques": [
+                    "Comment [Your job in every game is to send settlers, build cities and manage them and a bunch of units. Thats the most basic gameplay that civ series offers. However, emperors and deities brings more outside factors to this gameplay.]",
+                    "Comment [In this mission you need to build a [Foundry] to jump start the production of bronze to boost your city's [Production]. Afterwhich is another new mission. And so on and so fourth, if you are able to complete all missions, you will win this scenario.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "New Mission: Sargon's Reign, 2334BCE",
+        "text": "A brilliant Semitic leader named Sargon has risen in the north. His military innovations and administrative talent promise to unite all of Mesopotamia. This is not a threat—it is an opportunity. Sargon seeks a partner, not a conquest. Will you embrace unity or preserve the old city-states?",
+        "choices": [
+            {
+                "text": "Embrace Sargon's vision (Unify Mesopotamia)",
+                "uniques": [
+                    "Comment [Sargon welcomes your alliance. The united realm will share knowledge and resources.]",
+                    "Gain a free [Unified] [in capital]",
+                    "Instantly provides [15] [Influence]",
+                    "Triggers a [New Mission: Unify Mesopotamia] event"
                 ]
             },
             {
-                "text": "I already knew it",
+                "text": "Maintain the independence of city-states",
                 "uniques": [
-                    "Comment [You can open this in your capital at any moment to solve debuffs and manage a lot of stuff.]",
-                    "Comment [Good luck.]",
+                    "Comment [Sargon respects your decision. The cities remain separate but cooperate through trade and mutual defense.]",
+                    "Gain a free [Successor States] [in capital]",
+                    "Instantly provides [5] [Influence]",
+                    "Triggers a [New Mission: Unify Mesopotamia, 2200BCE] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "New Mission: Unify Mesopotamia, 2200BCE",
+        "text": "Whether through alliance or federation, the time has come to formalize the political structure of your civilization. Use the [Enact Policies] decision in your capital to consolidate your rule. If you have enough Influence, you can declare a unified empire. This will unlock new government bonuses and prepare you for future challenges.",
+        "choices": [
+            {
+                "text": "How do I unify?",
+                "uniques": [
+                    "Comment [Open the city screen of your capital, find the [Enact Policies] building (it is always present), and choose the option 'We are able to unify ourselves!' when you have at least half of your Influence Limit.]",
+                    "Comment [Completing this mission will reward you with a Golden Age and a unique government building.]"
+                ]
+            },
+            {
+                "text": "I have already unified!",
+                "uniques": [
+                    "Comment [Excellent! Your unified realm stands strong.]",
+                    "Only available <if [Unified] is constructed> <if [Earliest Empire] is constructed>",
+                    "Instantly provides [10] [Influence]",
+                    "Empire enters golden age",
+                    "Triggers a [New Mission: Survive the Bronze Age Collapse] event"
+                ]
+            },
+            {
+                "text": "I need more time",
+                "uniques": [
+                    "Comment [You can attempt unification later. But remember, the world is changing...]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "New Mission: Survive the Bronze Age Collapse, 1200BCE",
+        "text": "The old order is crumbling. Civilizations across the eastern Mediterranean are falling to famine, rebellion, and the loss of trade routes. But here in Mesopotamia, your leadership will determine whether our light fades or endures. Over the next five turns, you will face a series of crises. Each requires wise use of Influence and Gold.",
+        "choices": [
+            {
+                "text": "What must I do?",
+                "uniques": [
+                    "Comment [Over the following turns, disasters will strike: drought, civil unrest, economic collapse. Use the [Enact Policies] and your stored resources to mitigate them. Survive all five to complete the tutorial and unlock a special reward.]"
+                ]
+            },
+            {
+                "text": "I am ready",
+                "uniques": [
+                    "Triggers a [Drought and Famine] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Drought and Famine",
+        "text": "The harvest has failed for two consecutive years. Food stores are empty, and people are beginning to starve. Your capital’s population is shrinking.",
+        "choices": [
+            {
+                "text": "Distribute emergency grain (Cost: 10 Influence)",
+                "uniques": [
+                    "Comment [You order the royal granaries opened. The crisis is averted for now.]",
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [Civil Unrest] event"
+                ]
+            },
+            {
+                "text": "Hope for rain (No cost)",
+                "uniques": [
+                    "Comment [You do nothing. The famine deepens.]",
+                    "[-1] population [in capital]",
+                    "Triggers a [Civil Unrest] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Civil Unrest",
+        "text": "Desperate citizens have risen in revolt against the local governors. Armed mobs roam the streets of your second-largest city.",
+        "choices": [
+            {
+                "text": "Send in the army (Cost: 50 Gold)",
+                "uniques": [
+                    "Comment [Your soldiers restore order, but the city is damaged.]",
+                    "Gain [-50] [Gold]",
+                    "Gain a free [Peasant Rebellion] [in a random city]",
+                    "Triggers a [Trade Collapse] event"
+                ]
+            },
+            {
+                "text": "Negotiate reforms (Cost: 15 Influence)",
+                "uniques": [
+                    "Comment [You promise land redistribution and tax relief. The rebels stand down.]",
+                    "Instantly consumes [15] [Influence]",
+                    "Triggers a [Trade Collapse] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Trade Collapse",
+        "text": "The tin and copper routes from distant lands have been severed. Without metals, your artisans cannot produce bronze weapons or tools. Production slows across the empire.",
+        "choices": [
+            {
+                "text": "Rely on old stockpiles (Cost: 10 Influence)",
+                "uniques": [
+                    "Comment [You ration the remaining bronze. The slowdown is moderate.]",
+                    "Instantly consumes [10] [Influence]",
+                    "[-15]% [Production] [in all cities] <for [5] turns>",
+                    "Triggers a [Loss of Writing] event"
+                ]
+            },
+            {
+                "text": "Encourage local alternatives (No cost)",
+                "uniques": [
+                    "Comment [You shift to stone and wood, but efficiency plummets.]",
+                    "[-33]% [Production] [in all cities] <for [5] turns>",
+                    "Triggers a [Loss of Writing] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Loss of Writing",
+        "text": "Scribes are fleeing the cities to avoid conscription and taxes. The art of writing is being forgotten. Your scientific progress halts.",
+        "choices": [
+            {
+                "text": "Protect the scribal schools (Cost: 15 Influence)",
+                "uniques": [
+                    "Comment [You establish scribe sanctuaries. Knowledge survives.]",
+                    "Instantly consumes [15] [Influence]",
+                    "Triggers a [The Final Hour] event"
+                ]
+            },
+            {
+                "text": "Let the scribes go",
+                "uniques": [
+                    "Comment [Without scribes, records are lost. Science stalls for a generation.]",
+                    "[-50]% [Science] [in all cities] <for [5] turns>",
+                    "Triggers a [The Final Hour] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "The Final Hour",
+        "text": "The crises have passed. Mesopotamia is battered but alive. Your decisions have shaped the survival of civilization itself. One last choice awaits.",
+        "choices": [
+            {
+                "text": "Look to the future (Tutorial Completion)",
+                "uniques": [
+                    "Comment [You have completed the Spark of Civilization tutorial. Your people will remember your leadership.]"
+                ]
+            },
+            {
+                "text": "Look to the future",
+                "uniques": [
+                    "Comment [You may keep playing with your grand empire, but thats that.]"
+                ]
+            }
+        ]
+    },
+    ///Tutorial SQ
+    {
+        "name": "SQ1: Control Tyre and Ur",
+        "text": "The wealthy city-states of Tyre and Ur control vital trade routes and religious sites. If we could bring them under our influence, our culture would flourish.",
+        "choices": [
+            {
+                "text": "How do I gain control?",
+                "uniques": [
+                    "Comment [You can either conquer them with military force (attack the city-state) or become their ally through Influence and gifts. Each city-state has its own type: Tyre is a 'Resource Hoarder', Ur is a 'Library of Wisdom'.]",
+                    "Comment [Once both are under your control (either annexed or allied), return to this event to claim your reward.]"
+                ]
+            },
+            {
+                "text": "I have subdued Tyre and Ur",
+                "uniques": [
+                    "Only available <if [Tyre] is controlled by player and [Ur] is controlled by player>",
+                    "Comment [The wealth of the Phoenicians and the wisdom of the Sumerians now serve our empire.]",
+                    "Gain [50] [Culture]",
+                    "Gain a free [Monument] [in capital]",
+                    "Triggers a [SQ Reward: Culture] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ2: Establish Sea Trade for Tin",
+        "text": "Our bronze production requires tin, but the nearest sources lie across the sea. We must build a port and send ships to distant lands to secure this precious metal.",
+        "choices": [
+            {
+                "text": "What do I need?",
+                "uniques": [
+                    "Comment [Research [Sailing] and build a [Fishing Port] (or [Emporion] for Mediterranean civs) in a coastal city. Then establish a trade route with a coastal city that has tin – though tin does not appear as a resource in game, the mission represents acquiring rare metals. The game will detect when you have a sea trade route with another civilization.]"
+                ]
+            },
+            {
+                "text": "My sea trade routes are established",
+                "uniques": [
+                    "Only available <after discovering [Sailing]> <if [Fishing Port] is constructed in at least [1] of [Coastal] cities and [Trade Route] with another civilization exists>",
+                    "Comment [Tin flows into our workshops. Bronze production increases dramatically.]",
+                    "Gain a free [Foundry] [in capital]",
+                    "[+15]% [Production] [in all cities] for 10 turns",
+                    "Triggers a [SQ Reward: Production] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ3: Establish Trade with Egypt",
+        "text": "The great pharaohs of Egypt possess grain and gold that we lack. A trading partnership would fill our granaries and bring new knowledge.",
+        "choices": [
+            {
+                "text": "How to trade with Egypt?",
+                "uniques": [
+                    "Comment [First, meet the Egyptian civilization (North Africa). Then research [Writing] and [Trade Network]. Sign a research agreement or establish a trade route with them. Both nations will benefit.]"
+                ]
+            },
+            {
+                "text": "We have made contact and trade with Egypt",
+                "uniques": [
+                    "Only available <if [Writing] is discovered> <if [Trade Network] is discovered> <if [Research Agreement] with Egypt is active or [Trade Route] with Egypt exists>",
+                    "Comment [Egyptian grain and gold fill our markets. Our people are well-fed and prosperous.]",
+                    "Gain a free [Granary] [in capital]",
+                    "[+20]% [Food] [in all cities] for 10 turns",
+                    "Triggers a [SQ Reward: Food] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ4: Build a Religion",
+        "text": "The gods speak through many voices. Will our people follow the old polytheistic ways or embrace a single, all-powerful deity? The choice is yours, but faith will unite our growing empire.",
+        "choices": [
+            {
+                "text": "How do I found a religion?",
+                "uniques": [
+                    "Comment [Research [Calendar] to build a [Shrine] (polytheism) or later a [Chapel] (monotheism). After accumulating enough Faith, you will be prompted to choose a Pantheon and then a full religion. This event will complete when you have adopted either a [Polytheism] or [Monotheism] belief.]"
+                ]
+            },
+            {
+                "text": "Our religion is established",
+                "uniques": [
+                    "Only available <after adopting [Polytheism]> or <after adopting [Monotheism]>",
+                    "Comment [The priests bless our fields and our armies. Faith binds the hearts of our people.]",
+                    "Gain a free [Temple] [in capital]",
+                    "[+3] [Happiness] [in all cities]",
+                    "Triggers a [SQ Reward: Happiness] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ5: Build the Hanging Garden",
+        "text": "Legend says the king of Babylon built a wondrous garden of terraces and rare plants for his homesick wife. Such a marvel would make our capital the envy of the world.",
+        "choices": [
+            {
+                "text": "How do I build it?",
+                "uniques": [
+                    "Comment [Research [Plows] (Irrigation) and build the [Hanging Gardens] wonder. It must be built in a city on a river. The wonder provides food, culture, and a free Garden.]"
+                ]
+            },
+            {
+                "text": "The Hanging Gardens stand complete",
+                "uniques": [
+                    "Only available <if [Hanging Gardens] is constructed>",
+                    "Comment [The gardens draw visitors from every land. Our cultural influence grows.]",
+                    "Gain [10] [Influence]",
+                    "Gain a free [Garden] [in capital]",
+                    "Triggers a [SQ Reward: Influence] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ6: Build the Great Library",
+        "text": "All the knowledge of the ancient world should be collected in one place. A great library will preserve our history and advance our scholars.",
+        "choices": [
+            {
+                "text": "How do I build it?",
+                "uniques": [
+                    "Comment [Research [Writing] and build the [The Great Library] wonder. It provides science, culture, and a free Library in the city. It also boosts all other libraries.]"
+                ]
+            },
+            {
+                "text": "The Great Library is complete",
+                "uniques": [
+                    "Only available <if [The Great Library] is constructed>",
+                    "Comment [Works from every known civilization fill our shelves. Our scientists rejoice.]",
+                    "Gain [150] [Science]",
+                    "Gain a free [Library] [in capital]",
+                    "Triggers a [SQ Reward: Science] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ Reward: Culture",
+        "text": "Your efforts to control Tyre and Ur have paid off. The culture of the Phoenicians and Sumerians enriches your civilization.",
+        "choices": [
+            {
+                "text": "Excellent",
+                "uniques": [
+                    "Comment [You have received your reward.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ Reward: Production",
+        "text": "The tin from overseas trade has supercharged your bronze industry.",
+        "choices": [
+            {
+                "text": "Excellent",
+                "uniques": [
+                    "Comment [You have received your reward.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ Reward: Food",
+        "text": "Trade with Egypt ensures your people never go hungry.",
+        "choices": [
+            {
+                "text": "Excellent",
+                "uniques": [
+                    "Comment [You have received your reward.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ Reward: Happiness",
+        "text": "Faith brings peace and joy to your cities.",
+        "choices": [
+            {
+                "text": "Excellent",
+                "uniques": [
+                    "Comment [You have received your reward.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ Reward: Influence",
+        "text": "The Hanging Gardens attract pilgrims and diplomats, increasing your political influence.",
+        "choices": [
+            {
+                "text": "Excellent",
+                "uniques": [
+                    "Comment [You have received your reward.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ Reward: Science",
+        "text": "The Great Library accelerates your research.",
+        "choices": [
+            {
+                "text": "Excellent",
+                "uniques": [
+                    "Comment [You have received your reward.]"
                 ]
             }
         ]
