@@ -3443,7 +3443,7 @@
                 "text": "Start the Tutorial",
                 "uniques": [
                     "Comment [Dont forget to check civilipedia if you are in need of understanding certain mechanics.]",
-                    "Triggers a [New Mission: Into The Bronze Age] event"
+                    "Triggers a [New Mission: Into The Bronze Age, 4000BCE] event"
                 ]
             }
         ]
@@ -3471,7 +3471,7 @@
                     "Comment [Sargon welcomes your alliance. The united realm will share knowledge and resources.]",
                     "Gain a free [Unified] [in capital]",
                     "Instantly provides [15] [Influence]",
-                    "Triggers a [New Mission: Unify Mesopotamia] event"
+                    "Triggers a [New Mission: Unify Mesopotamia, 2200BCE] event"
                 ]
             },
             {
@@ -3503,7 +3503,7 @@
                     "Only available <if [Unified] is constructed> <if [Earliest Empire] is constructed>",
                     "Instantly provides [10] [Influence]",
                     "Empire enters golden age",
-                    "Triggers a [New Mission: Survive the Bronze Age Collapse] event"
+                    "Triggers a [New Mission: Survive the Bronze Age Collapse, 1200BCE] event"
                 ]
             },
             {
@@ -3563,7 +3563,6 @@
                 "uniques": [
                     "Comment [Your soldiers restore order, but the city is damaged.]",
                     "Gain [-50] [Gold]",
-                    "Gain a free [Peasant Rebellion] [in a random city]",
                     "Triggers a [Trade Collapse] event"
                 ]
             },
@@ -3651,16 +3650,6 @@
                     "Comment [You can either conquer them with military force (attack the city-state) or become their ally through Influence and gifts. Each city-state has its own type: Tyre is a 'Resource Hoarder', Ur is a 'Library of Wisdom'.]",
                     "Comment [Once both are under your control (either annexed or allied), return to this event to claim your reward.]"
                 ]
-            },
-            {
-                "text": "I have subdued Tyre and Ur",
-                "uniques": [
-                    "Only available <if [Tyre] is controlled by player and [Ur] is controlled by player>",
-                    "Comment [The wealth of the Phoenicians and the wisdom of the Sumerians now serve our empire.]",
-                    "Gain [50] [Culture]",
-                    "Gain a free [Monument] [in capital]",
-                    "Triggers a [SQ Reward: Culture] event"
-                ]
             }
         ]
     },
@@ -3672,16 +3661,6 @@
                 "text": "What do I need?",
                 "uniques": [
                     "Comment [Research [Sailing] and build a [Fishing Port] (or [Emporion] for Mediterranean civs) in a coastal city. Then establish a trade route with a coastal city that has tin – though tin does not appear as a resource in game, the mission represents acquiring rare metals. The game will detect when you have a sea trade route with another civilization.]"
-                ]
-            },
-            {
-                "text": "My sea trade routes are established",
-                "uniques": [
-                    "Only available <after discovering [Sailing]> <if [Fishing Port] is constructed in at least [1] of [Coastal] cities and [Trade Route] with another civilization exists>",
-                    "Comment [Tin flows into our workshops. Bronze production increases dramatically.]",
-                    "Gain a free [Foundry] [in capital]",
-                    "[+15]% [Production] [in all cities] for 10 turns",
-                    "Triggers a [SQ Reward: Production] event"
                 ]
             }
         ]
@@ -3695,16 +3674,6 @@
                 "uniques": [
                     "Comment [First, meet the Egyptian civilization (North Africa). Then research [Writing] and [Trade Network]. Sign a research agreement or establish a trade route with them. Both nations will benefit.]"
                 ]
-            },
-            {
-                "text": "We have made contact and trade with Egypt",
-                "uniques": [
-                    "Only available <if [Writing] is discovered> <if [Trade Network] is discovered> <if [Research Agreement] with Egypt is active or [Trade Route] with Egypt exists>",
-                    "Comment [Egyptian grain and gold fill our markets. Our people are well-fed and prosperous.]",
-                    "Gain a free [Granary] [in capital]",
-                    "[+20]% [Food] [in all cities] for 10 turns",
-                    "Triggers a [SQ Reward: Food] event"
-                ]
             }
         ]
     },
@@ -3716,16 +3685,6 @@
                 "text": "How do I found a religion?",
                 "uniques": [
                     "Comment [Research [Calendar] to build a [Shrine] (polytheism) or later a [Chapel] (monotheism). After accumulating enough Faith, you will be prompted to choose a Pantheon and then a full religion. This event will complete when you have adopted either a [Polytheism] or [Monotheism] belief.]"
-                ]
-            },
-            {
-                "text": "Our religion is established",
-                "uniques": [
-                    "Only available <after adopting [Polytheism]> or <after adopting [Monotheism]>",
-                    "Comment [The priests bless our fields and our armies. Faith binds the hearts of our people.]",
-                    "Gain a free [Temple] [in capital]",
-                    "[+3] [Happiness] [in all cities]",
-                    "Triggers a [SQ Reward: Happiness] event"
                 ]
             }
         ]
@@ -3739,16 +3698,6 @@
                 "uniques": [
                     "Comment [Research [Plows] (Irrigation) and build the [Hanging Gardens] wonder. It must be built in a city on a river. The wonder provides food, culture, and a free Garden.]"
                 ]
-            },
-            {
-                "text": "The Hanging Gardens stand complete",
-                "uniques": [
-                    "Only available <if [Hanging Gardens] is constructed>",
-                    "Comment [The gardens draw visitors from every land. Our cultural influence grows.]",
-                    "Gain [10] [Influence]",
-                    "Gain a free [Garden] [in capital]",
-                    "Triggers a [SQ Reward: Influence] event"
-                ]
             }
         ]
     },
@@ -3760,16 +3709,6 @@
                 "text": "How do I build it?",
                 "uniques": [
                     "Comment [Research [Writing] and build the [The Great Library] wonder. It provides science, culture, and a free Library in the city. It also boosts all other libraries.]"
-                ]
-            },
-            {
-                "text": "The Great Library is complete",
-                "uniques": [
-                    "Only available <if [The Great Library] is constructed>",
-                    "Comment [Works from every known civilization fill our shelves. Our scientists rejoice.]",
-                    "Gain [150] [Science]",
-                    "Gain a free [Library] [in capital]",
-                    "Triggers a [SQ Reward: Science] event"
                 ]
             }
         ]
