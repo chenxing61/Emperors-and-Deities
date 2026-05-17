@@ -241,7 +241,8 @@
                 "uniques": [
                     "Comment [In this decision tab, different actions are unlocked based on to how many [Influence] you have and how many unique action your civilization state has provided you with.]",
                     "Comment [In each era, you recieve a [Forced Shift In Politic Chance], and when you have more [Influence] than your limit in this era, you can trigger a Shift In Politic in this tab early to provide you with either a chance to unify or a chance to collapse, this grants you freedom on choices of ['Civilization State'].]",
-                    "Comment [Most option will appear when you are unified or have more [Influence] than half of your limit. At the same time, some options only appear when your civilization are divided or have severe debuffs. This tab will help you solve them.]"]
+                    "Comment [Most option will appear when you are unified or have more [Influence] than half of your limit. At the same time, some options only appear when your civilization are divided or have severe debuffs. This tab will help you solve them.]"
+                ]
             },
             {
                 "text": "Total mobilization in every cities!",
@@ -573,10 +574,10 @@
                     "Comment [Your [Influence] will be reseted back to a certain point below [Influence Limit]. If you can successfully unify your civilization, you will have a lot of [Influence] starting off.]"
                 ],
                 "civilopediaText": [
-                {
+                    {
                         "text": "See also: ED - Government Forms",
                         "link": "Tutorials/ED - Government Forms"
-                }
+                    }
                 ]
             },
             {
@@ -1344,12 +1345,15 @@
     },
     {
         "name": "Present Current Status",
-        "text": "Behold! The options below doesnt do anything, they just display what status your civilization is in.",
+        "text": "Here is the current status of your great civilization! What runs it, What state it is in and so on.",
         "choices": [
             {
                 "text": "Harmony",
                 "uniques": [
                     "Only available <if [Harmony] is constructed>",
+                    "Comment [[+10]% growth [in all cities]]",
+                    "Comment [[+10]% [Culture] [in all cities]]",
+                    "Comment [Influence of all other civilizations with all city-states degrades [-25]% faster]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1357,6 +1361,7 @@
                 "text": "Peace",
                 "uniques": [
                     "Only available <if [Peace] is constructed>",
+                    "Comment [No direct benefits – default stable state.]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1364,6 +1369,11 @@
                 "text": "Struggle",
                 "uniques": [
                     "Only available <if [Struggle] is constructed>",
+                    "Comment [[-20]% [Gold] from Trade Routes]",
+                    "Comment [[-10]% [Culture] [in all cities]]",
+                    "Comment [[-10]% [Science] [in all cities]]",
+                    "Comment [[-5]% [Food] [in all cities]]",
+                    "Comment [[-10]% Strength <for [All] units>]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1371,6 +1381,14 @@
                 "text": "Strife",
                 "uniques": [
                     "Only available <if [Strife] is constructed>",
+                    "Comment [[-33]% [Gold] from Trade Routes]",
+                    "Comment [[-20]% [Culture] [in all cities]]",
+                    "Comment [[-20]% [Science] [in all cities]]",
+                    "Comment [[-10]% [Food] [in all cities]]",
+                    "Comment [[-18]% Strength <for [All] units>]",
+                    "Comment [Rebel units may spawn]",
+                    "Comment [Cannot build [Settler] units]",
+                    "Comment [Cannot build [Pioneer] units]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1378,6 +1396,47 @@
                 "text": "Anarchy",
                 "uniques": [
                     "Only available <if [Anarchy] is constructed>",
+                    "Comment [Before adopting [Anarchism]:]",
+                    "Comment [[-100]% [Gold] from Trade Routes]",
+                    "Comment [[-33]% [Culture] [in all cities]]",
+                    "Comment [[-33]% [Science] [in all cities]]",
+                    "Comment [[-25]% [Food] [in all cities]]",
+                    "Comment [[-25]% Strength <for [All] units>]",
+                    "Comment [Cannot build [Settler], [Pioneer], [Worker], [Mechanised Worker], [Galley Work Ship], [Modern Work Ship] units]",
+                    "Comment [After adopting [Anarchism]:]",
+                    "Comment [[-15]% [Gold] from Trade Routes]",
+                    "Comment [[+17]% [Culture] [in all cities]]",
+                    "Comment [[+17]% [Science] [in all cities]]",
+                    "Comment [[-5]% [Production] [in all cities]]",
+                    "Comment [[-10]% Strength <for [All] units> <before adopting [Militia Army]>]",
+                    "Comment [Rebel units may spawn]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "High Culture Diversity",
+                "uniques": [
+                    "Only available <if [High Culture Diversity] is constructed>",
+                    "Comment [[+3]% [Science] [in all cities]]",
+                    "Comment [[+3]% [Culture] [in all cities]]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Medium Culture Diversity",
+                "uniques": [
+                    "Only available <if [Medium Culture Diversity] is constructed>",
+                    "Comment [[+3]% [Happiness] [in all cities]]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Low Culture Diversity",
+                "uniques": [
+                    "Only available <if [Low Culture Diversity] is constructed>",
+                    "Comment [[+8]% [Happiness] [in all cities]]",
+                    "Comment [[-3]% [Culture] [in all cities]]",
+                    "Comment [[-3]% [Science] [in all cities]]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1386,6 +1445,10 @@
                 "uniques": [
                     "Only available <if [Early City States] is not constructed>",
                     "Only available <if [Tribes] is constructed>",
+                    "Comment [Provides [10] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [1] [Standing Army Maintenance]]",
+                    "Comment [[-3]% Culture cost of adopting new Policies]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1393,6 +1456,12 @@
                 "text": "Early City States",
                 "uniques": [
                     "Only available <if [Early City States] is constructed>",
+                    "Comment [Provides [10] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [1] [Standing Army Maintenance]]",
+                    "Comment [Provides [1] [Noble Army Maintenance]]",
+                    "Comment [[-5]% Culture cost of adopting new Policies]",
+                    "Comment [[20]% Strength for cities]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1401,6 +1470,11 @@
                 "uniques": [
                     "Only available <if [Earliest Empire] is not constructed>",
                     "Only available <if [Tribal Union] is constructed>",
+                    "Comment [Provides [10] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [1] [Standing Army Maintenance]]",
+                    "Comment [Provides [1] [Noble Army Maintenance]]",
+                    "Comment [[+15]% growth [in all cities]]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1408,6 +1482,13 @@
                 "text": "Earliest Empire",
                 "uniques": [
                     "Only available <if [Earliest Empire] is constructed>",
+                    "Comment [Provides [10] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [1] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [[+10]% growth [in all cities]]",
+                    "Comment [[+33]% Production when constructing ['Military Building'] buildings [in all cities connected to capital]]",
+                    "Comment [[+2 Production] from [Strategic resource] tiles [in all cities]]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1415,6 +1496,10 @@
                 "text": "Nomadic Tribes",
                 "uniques": [
                     "Only available <if [Nomadic Tribes] is constructed>",
+                    "Comment [Provides [15] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [2] [Standing Army Maintenance]]",
+                    "Comment [[-33]% Strength for cities]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1422,6 +1507,11 @@
                 "text": "Unified Nomads",
                 "uniques": [
                     "Only available <if [Unified Nomads] is constructed>",
+                    "Comment [Provides [30] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [3] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [[-33]% Strength for cities]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1429,6 +1519,19 @@
                 "text": "Egyptian Dynasties",
                 "uniques": [
                     "Only available <if [Egyptian Dynasties] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [Carved in Stone]",
+                    "Comment [Provides [10] [Influence Limit]]",
+                    "Comment [Provides [8] [Influence Limit] <starting from the [Ancient era]>]",
+                    "Comment [Provides [7] [Influence Limit] <starting from the [Classical era]>]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [1] [Standing Army Maintenance]]",
+                    "Comment [Provides [1] [Noble Army Maintenance]]",
+                    "Comment [[+10]% growth [in all cities]]",
+                    "Comment [[+10]% growth [in all cities] <starting from the [Ancient era]>]",
+                    "Comment [[+10]% Production when constructing [All] wonders [in all cities]]",
+                    "Comment [[+5]% Production when constructing [All] wonders [in all cities] <starting from the [Classical era]>]",
+                    "Comment [[+1 Production, +1 Faith] from every [Governor] <starting from the [Classical era]>]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1437,6 +1540,12 @@
                 "uniques": [
                     "Only available <if [Greek City States] is not constructed>",
                     "Only available <if [City States] is constructed>",
+                    "Comment [Provides [15] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [1] [Standing Army Maintenance]]",
+                    "Comment [Provides [1] [Noble Army Maintenance]]",
+                    "Comment [[-5]% Culture cost of adopting new Policies]",
+                    "Comment [[20]% Strength for cities]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1444,6 +1553,14 @@
                 "text": "Greek City States",
                 "uniques": [
                     "Only available <if [Greek City States] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [Pioneers of Wisdoms]",
+                    "Comment [Provides [10] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [3] [Standing Army Maintenance]]",
+                    "Comment [[Gold] cost of purchasing items in cities [-15]%]",
+                    "Comment [Gain a free [Cultural Exchange] [in this city]]",
+                    "Comment [Free [Hoplite] appears]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1451,6 +1568,12 @@
                 "text": "Early Empire",
                 "uniques": [
                     "Only available <if [Early Empire] is constructed>",
+                    "Comment [Provides [15] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [1] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [[+10]% growth [in all cities]]",
+                    "Comment [[+15]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1458,6 +1581,16 @@
                 "text": "Shang Dynasty",
                 "uniques": [
                     "Only available <if [Shang Dynasty] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [Blessing of the Divine Swallow]",
+                    "Comment [Provides [15] [Influence Limit]]",
+                    "Comment [Provides [5] [Influence Limit] <starting from the [Classical era]>]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <while the empire is happy>]",
+                    "Comment [Provides [1] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [[+20]% growth [in all cities]]",
+                    "Comment [[+1 Culture, +1 Production] from [Luxury resource] tiles [in all cities]]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1465,6 +1598,51 @@
                 "text": "Zhou Dynasty",
                 "uniques": [
                     "Only available <if [Zhou Dynasty] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [Mandated Ruling]",
+                    "Comment [Provides [15] [Influence Limit]]",
+                    "Comment [Provides [5] [Influence Limit] <starting from the [Classical era]>]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <while the empire is happy>]",
+                    "Comment [Provides [1] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [[+10]% growth [in all cities]]",
+                    "Comment [[+1 Culture] [in all cities] <before adopting [Unity]>]",
+                    "Comment [[+2 Happiness] [in puppeted cities] <after adopting [Unity]>]",
+                    "Comment [Unique option in increasing [Influence] event]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Harappan City States",
+                "uniques": [
+                    "Only available <if [Harappan City States] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [Gifted City Planner]",
+                    "Comment [Provides [15] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [2] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [[+1 Culture, +1 Science] [in all cities]]",
+                    "Comment [[-5]% Culture cost of adopting new Policies]",
+                    "Comment [[33]% Strength for cities]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Vedic Kingdoms",
+                "uniques": [
+                    "Only available <if [Vedic Kingdoms] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [Hindu's Birth]",
+                    "Comment [Provides [15] [Influence Limit]]",
+                    "Comment [Provides [5] [Influence Limit] <starting from the [Classical era]>]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [2] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [[+15]% growth [in all cities]]",
+                    "Comment [[+1 Faith] [in all cities]]",
+                    "Comment [Gain access to [Aryan War Cart] unit.]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1472,6 +1650,16 @@
                 "text": "Persian Dynasties",
                 "uniques": [
                     "Only available <if [Persian Dynasties] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [Shāhanshāh]",
+                    "Comment [Provides [15] [Influence Limit]]",
+                    "Comment [Provides [8] [Influence Limit] <starting from the [Classical era]>]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [2] [Standing Army Maintenance]]",
+                    "Comment [Provides [3] [Noble Army Maintenance]]",
+                    "Comment [[+10]% growth [in all cities]]",
+                    "Comment [New ['Noble Army'] units start with [25] XP [in all cities]]",
+                    "Comment [Gain access to serveal uniques like[Zhayedan] and[Azadan Cavalry].]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1479,6 +1667,18 @@
                 "text": "SPQR",
                 "uniques": [
                     "Only available <if [SPQR] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [Veni Vidi Vici]",
+                    "Comment [Provides [20] [Influence Limit]]",
+                    "Comment [Provides [5] [Influence Limit] <starting from the [Medieval era]>]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [3] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Standing Army Maintenance] <while the empire is happy>]",
+                    "Comment [Provides [3] [Noble Army Maintenance]]",
+                    "Comment [[+1 Production] from every [Governor]]",
+                    "Comment [[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]]",
+                    "Comment [Free [Legio] appears]",
+                    "Comment [Gain access to serveal uniques like[Legio]and[Via Romana].]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1486,6 +1686,18 @@
                 "text": "Carthage Obligarchy",
                 "uniques": [
                     "Only available <if [Carthage Obligarchy] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [The Phoenician Last Stand]",
+                    "Comment [Provides [20] [Influence Limit]]",
+                    "Comment [Provides [5] [Influence Limit] <starting from the [Medieval era]>]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [3] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Standing Army Maintenance] <while the empire is happy>]",
+                    "Comment [Provides [5] [Mercenary Contract]]",
+                    "Comment [[+1 Production, +2 Gold, +1 Culture] from every [Governor]]",
+                    "Comment [New ['Mercenary Army'] units start with [10] XP [in all cities]]",
+                    "Comment [[+5]% [Production] [in all cities]]",
+                    "Comment [Gain access to serveal uniques like[Quinquereme Fleet]and[Sacred Band].]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1493,6 +1705,17 @@
                 "text": "Great Qin",
                 "uniques": [
                     "Only available <if [Great Qin] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [The First Emperor of China]",
+                    "Comment [Provides [15] [Influence Limit]]",
+                    "Comment [Consumes [1] [Influence]]",
+                    "Comment [Provides [4] [Standing Army Maintenance]]",
+                    "Comment [Provides [1] [Noble Army Maintenance]]",
+                    "Comment [[+15]% Production when constructing [All] wonders [in all cities connected to capital]]",
+                    "Comment [[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]]",
+                    "Comment [Gain a free [Honor Bound Territory] [in annexed cities]]",
+                    "Comment [Gain access to[Qin Crossbowman]and[Honor Bound Territory].]",
+                    "Comment [[Great Qin] will collapse in if theres not enough [Happiness] and [Influence].]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1500,20 +1723,41 @@
                 "text": "Feudal Empire",
                 "uniques": [
                     "Only available <if [Feudal Empire] is constructed>",
+                    "Comment [Provides [20] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [2] [Standing Army Maintenance]]",
+                    "Comment [Provides [3] [Noble Army Maintenance]]",
+                    "Comment [[+2 Culture] from every [Governor]]",
+                    "Comment [New ['Noble Army'] units start with [25] XP [in all cities]]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
             {
                 "text": "Centralized Empire",
                 "uniques": [
+                    "Only available <if [SPQR] is not constructed> <if [Carthage Obligarchy] is not constructed> <if [Great Qin] is not constructed> <if [Maurya Empire] is not constructed>",
                     "Only available <if [Centralized Empire] is constructed>",
+                    "Comment [Provides [20] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [2] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [[+1 Production] from every [Governor]]",
+                    "Comment [[+33]% Production when constructing ['Infrastructure'] buildings [in all cities connected to capital]]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
             {
                 "text": "Successor States",
                 "uniques": [
+                    "Only available <if [Diadochi States] is not constructed> <if [Warring States] is not constructed>",
                     "Only available <if [Successor States] is constructed>",
+                    "Comment [Provides [20] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [2] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [[+7]% growth [in all cities]]",
+                    "Comment [[-7]% Culture cost of adopting new Policies]",
+                    "Comment [[10]% Strength for cities]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1521,6 +1765,15 @@
                 "text": "Diadochi States",
                 "uniques": [
                     "Only available <if [Diadochi States] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [Cauldron of Cultures]",
+                    "Comment [Provides [20] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [2] [Standing Army Maintenance]]",
+                    "Comment [Provides [3] [Noble Army Maintenance]]",
+                    "Comment [[-25]% Culture cost of adopting new Policies]",
+                    "Comment [Gain access to [Phalanx] unit.]",
+                    "Comment [If nothing goes wrong, [Diadochi States] will develop [Fedualism] in Mediterranean upon entering Medieval era]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1528,6 +1781,14 @@
                 "text": "Warring States",
                 "uniques": [
                     "Only available <if [Warring States] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [The Hundred Schools of thoughts]",
+                    "Comment [Provides [20] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [2] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [Instantly provides [3] [Avaliable School of Thoughts]]",
+                    "Comment [Enable you to choose 3 Schools of thoughts in the total of 9 schools of thoughts with permanent effects]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1535,6 +1796,15 @@
                 "text": "Chu Dynasty",
                 "uniques": [
                     "Only available <if [Chu Dynasty] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [The Dominator's Warth]",
+                    "Comment [Provides [25] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [1] [Standing Army Maintenance]]",
+                    "Comment [Provides [3] [Noble Army Maintenance]]",
+                    "Comment [New [Military] units start with [15] XP [in all cities]]",
+                    "Comment [Gain access to [Cavalry of the Dominator] unit.]",
+                    "Comment [If nothing goes wrong, [Chu Dynasty] will develop [Fedualism] in East Asia upon entering Medieval era]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1542,6 +1812,33 @@
                 "text": "Han Dynasty",
                 "uniques": [
                     "Only available <if [Han Dynasty] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [The Fierce Han]",
+                    "Comment [Provides [25] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [3] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [Gain a free [Du Hu Protectorate] [in puppeted cities]]",
+                    "Comment [Gain access to[Yu Lin Cavalry]and[Du Hu Protectorate].]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Maurya Empire",
+                "uniques": [
+                    "Only available <if [Maurya Empire] is constructed>",
+                    "Comment [Unique Name:]",
+                    "Comment [Arthashastra]",
+                    "Comment [Provides [15] [Influence Limit]]",
+                    "Comment [Consumes [1] [Influence]]",
+                    "Comment [Provides [2] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [Gain an extra spy]",
+                    "Comment [[+1 Production] from all ['Political Building'] buildings]",
+                    "Comment [[+1 Science] from all ['Political Building'] buildings]",
+                    "Comment [[+1 Culture] from all ['Political Building'] buildings]",
+                    "Comment [[+1 Faith] from all ['Political Building'] buildings]",
+                    "Comment [If nothing goes wrong, [Maurya Empire] will develop [Meritocracy] in South Asia upon entering Medieval era]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1549,6 +1846,13 @@
                 "text": "Kingdoms",
                 "uniques": [
                     "Only available <if [Kingdoms] is constructed>",
+                    "Comment [Provides [25] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [3] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [[-7]% Culture cost of adopting new Policies]",
+                    "Comment [Free [Knight] appears]",
+                    "Comment [[20]% Strength for cities]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1556,6 +1860,13 @@
                 "text": "Empire of Electors",
                 "uniques": [
                     "Only available <if [Empire of Electors] is constructed>",
+                    "Comment [Provides [25] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [3] [Standing Army Maintenance]]",
+                    "Comment [Provides [5] [Noble Army Maintenance]]",
+                    "Comment [[+20]% growth [in all cities]]",
+                    "Comment [[20]% Strength for cities]",
+                    "Comment [Enable you to give [Free City] and [Prince Elector Territory] bonuses to cities, [Free City] provides economical bonuses while [Prince Elector Territory] provides military bonuses]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1563,6 +1874,14 @@
                 "text": "Celestial Empire",
                 "uniques": [
                     "Only available <if [Celestial Empire] is constructed>",
+                    "Comment [Provides [25] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [3] [Standing Army Maintenance]]",
+                    "Comment [Provides [2] [Noble Army Maintenance]]",
+                    "Comment [[+1 Production] from every [Governor]]",
+                    "Comment [[+10]% [Science] [in all cities]]",
+                    "Comment [Gifts of Gold to City-States generate [25]% more Influence]",
+                    "Comment [Enable you to build [Palace Guard]s, a variant of [Swordsman] that has extra promotion.]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1570,6 +1889,14 @@
                 "text": "Theocratic Empire",
                 "uniques": [
                     "Only available <if [Theocratic Empire] is constructed>",
+                    "Comment [Provides [25] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [3] [Standing Army Maintenance]]",
+                    "Comment [Provides [3] [Noble Army Maintenance]]",
+                    "Comment [[Faith] cost of purchasing [Faith] buildings [-23]%]",
+                    "Comment [[+1 Faith] from every ['Political Building']]",
+                    "Comment [[+17]% Faith cost of generating Great Prophet equivalents]",
+                    "Comment [Enable [Great Prophet] to give free policy after your religion is enhanced]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1577,6 +1904,12 @@
                 "text": "Colonial Empires",
                 "uniques": [
                     "Only available <if [Colonial Empires] is constructed>",
+                    "Comment [Provides [30] [Influence Limit]]",
+                    "Comment [Provides [2] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [3] [Standing Army Maintenance]]",
+                    "Comment [Provides [3] [Noble Army Maintenance]]",
+                    "Comment [[Gold] cost of purchasing [Civilian] units [-33]%]",
+                    "Comment [Gain a free [Martine Expansion] [in all coastal cities]]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1584,6 +1917,13 @@
                 "text": "Autocratic Empire",
                 "uniques": [
                     "Only available <if [Autocratic Empire] is constructed>",
+                    "Comment [Provides [30] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [3] [Standing Army Maintenance]]",
+                    "Comment [Provides [4] [Noble Army Maintenance]]",
+                    "Comment [[+1 Production] from ['Extraction Improvement'] tiles [in all cities]]",
+                    "Comment [New [{'Standing Army'} {Land}] units start with [10] XP [in all cities]]",
+                    "Comment [Gain a free [Military Expansion] [in all non-occupied cities]]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1591,6 +1931,12 @@
                 "text": "Republics",
                 "uniques": [
                     "Only available <if [Republics] is constructed>",
+                    "Comment [Provides [35] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [4] [Standing Army Maintenance]]",
+                    "Comment [Provides [1] [Noble Army Maintenance]]",
+                    "Comment [[-13]% Culture cost of adopting new Policies]",
+                    "Comment [[30]% Strength for cities]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1598,6 +1944,11 @@
                 "text": "Federation",
                 "uniques": [
                     "Only available <if [Federation] is constructed>",
+                    "Comment [Provides [35] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [5] [Standing Army Maintenance]]",
+                    "Comment [[+20]% growth [in all cities]]",
+                    "Comment [[-18]% construction time for [All] improvements <when not at war>]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1605,6 +1956,13 @@
                 "text": "United States",
                 "uniques": [
                     "Only available <if [United States] is constructed>",
+                    "Comment [Unique Unit: [State Militia Musketeer] and [State Militia Rifleman], which are garrison units..]",
+                    "Comment [Cannot Enter [Harmony] State.]",
+                    "Comment [Provides [35] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [4] [Standing Army Maintenance]]",
+                    "Comment [[Gold] cost of purchasing [Civilian] units [-17]%]",
+                    "Comment [May buy [Great Engineer] units for [1000] [Gold] [in all cities] at an increasing price ([500])]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1612,6 +1970,14 @@
                 "text": "Personal Union",
                 "uniques": [
                     "Only available <if [Personal Union] is constructed>",
+                    "Comment [Unique Ability: Commonwealth, You can still build ['Agreement'] via events.]",
+                    "Comment [If you ever have your [Influence] go down into 10 or below, You will lose this['Civilization Form'].]",
+                    "Comment [Provides [35] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [3] [Standing Army Maintenance]]",
+                    "Comment [Provides [3] [Noble Army Maintenance]]",
+                    "Comment [[+2 Culture, +1 Happiness] from every [Governor]]",
+                    "Comment [[+100]% Production when constructing ['Consolidation'] buildings [in all cities]]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1619,6 +1985,14 @@
                 "text": "Fascist Autocracy",
                 "uniques": [
                     "Only available <if [Fascist Autocracy] is constructed>",
+                    "Comment [Unique Building: [Recuitment Center]. Replaces [Mobilization Department] and acts as its upgrade. Increases the limit for [Protection Squardron]s.]",
+                    "Comment [Cannot pursue any victory condition other than Domination... Unless?]",
+                    "Comment [Provides [40] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [4] [Standing Army Maintenance]]",
+                    "Comment [Provides [3] [Protection Squadron Volunteer]]",
+                    "Comment [New [{'Standing Army'} {Land}] units start with [10] XP [in all cities]]",
+                    "Comment [[+50]% Production when constructing [{non-[Civilian]} {Land}] units [in all cities]]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1626,6 +2000,13 @@
                 "text": "Socialist Republics",
                 "uniques": [
                     "Only available <if [Socialist Republics] is constructed>",
+                    "Comment [If you ever have your [Happiness] go down into below 20, you will lose this ['Civilization Form'].]",
+                    "Comment [Provides [40] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [4] [Standing Army Maintenance]]",
+                    "Comment [[+3]% [Production] from every ['Political Building']]",
+                    "Comment [[+3]% [Culture] from every ['Infrastructure']]",
+                    "Comment [[-25]% construction time for [All] improvements <when not at war>]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1633,6 +2014,11 @@
                 "text": "Anarchist Alliances",
                 "uniques": [
                     "Only available <if [Anarchist Alliances] is constructed>",
+                    "Comment [You are permanently under [Anarchy] status, but its negative effects has been gutted.]",
+                    "Comment [Provides [40] [Influence Limit]]",
+                    "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
+                    "Comment [Provides [4] [Standing Army Maintenance]]",
+                    "Comment [[-50]% Culture cost of adopting new Policies]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1640,6 +2026,14 @@
                 "text": "Overproduction",
                 "uniques": [
                     "Only available <if [Overproduction] is constructed>",
+                    "Comment [[+10]% [Food] [in all cities]]",
+                    "Comment [[+5]% [Happiness] [in all cities]]",
+                    "Comment [[-33]% [Gold] [in all cities]]",
+                    "Comment [[-75]% Production when constructing ['Light Industry'] buildings [in all cities]]",
+                    "Comment [[-75]% Production when constructing ['Heavy Industry'] buildings [in all cities]]",
+                    "Comment [[-33]% Production when constructing ['Infrastructure'] buildings [in all cities]]",
+                    "Comment [[-33]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]]",
+                    "Comment [[-15]% Gold cost of purchasing items in cities]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1647,6 +2041,14 @@
                 "text": "Underproduction",
                 "uniques": [
                     "Only available <if [Underproduction] is constructed>",
+                    "Comment [[-10]% [Food] [in all cities]]",
+                    "Comment [[-20]% [Happiness] [in all cities]]",
+                    "Comment [[+20]% [Gold] [in all cities]]",
+                    "Comment [[+33]% Production when constructing ['Light Industry'] buildings [in all cities]]",
+                    "Comment [[+33]% Production when constructing ['Heavy Industry'] buildings [in all cities]]",
+                    "Comment [[+15]% Production when constructing ['Infrastructure'] buildings [in all cities]]",
+                    "Comment [[+15]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]]",
+                    "Comment [[+25]% Gold cost of purchasing items in cities]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1654,6 +2056,121 @@
                 "text": "Balanced Production",
                 "uniques": [
                     "Only available <starting from the [Industrial era]><if [Underproduction] is not constructed> <if [Overproduction] is not constructed>",
+                    "Comment [[+5]% [Food] [in all cities]]",
+                    "Comment [[+5]% [Happiness] [in all cities]]",
+                    "Comment [[+10]% [Gold] [in all cities]]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Free Trade",
+                "uniques": [
+                    "Only available <if [Free Trade] is constructed>",
+                    "Comment [[+25]% [Gold] [in all cities]]",
+                    "Comment [[+25]% [Consumption Demand] resource production]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Mercantilism",
+                "uniques": [
+                    "Only available <if [Mercantilism] is constructed>",
+                    "Comment [[Gold] cost of purchasing items in cities [-5]%]",
+                    "Comment [[+25]% [Consumption Supply] resource production]",
+                    "Comment [[+25]% [Horse] resource production]",
+                    "Comment [[+25]% [Alloy] resource production]",
+                    "Comment [[+25]% [Coal] resource production]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Market Interventionism",
+                "uniques": [
+                    "Only available <if [Market Interventionism] is constructed>",
+                    "Comment [[-10]% [Gold] [in all cities]]",
+                    "Comment [[Gold] cost of purchasing items in cities [-25]%]",
+                    "Comment [[-25]% maintenance cost for [all] buildings [in all cities]]",
+                    "Comment [[+25]% [Alloy] resource production]",
+                    "Comment [[+25]% [Coal] resource production]",
+                    "Comment [[+15]% [Oil] resource production]",
+                    "Comment [[+15]% [Natural Gas(Stored)] resource production]",
+                    "Comment [[+15]% [Uranium] resource production]",
+                    "Comment [[+15]% [Consumption Supply] resource production]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Free Market Focus",
+                "uniques": [
+                    "Only available <if [Free Market Focus] is constructed>",
+                    "Comment [[+3]% [Gold] from every ['Cultural Building']]",
+                    "Comment [[+3]% [Production] from every ['Economic Building']]",
+                    "Comment [[+20]% [Gold] [in all cities]]",
+                    "Comment [[+25]% [Consumption Demand] resource production]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Corporatism Focus",
+                "uniques": [
+                    "Only available <if [Corporatism Focus] is constructed>",
+                    "Comment [[+2 Gold] from all ['Light Industry'] buildings]",
+                    "Comment [[-1 Gold, +1 Happiness, +1 Culture] from all ['Economic Building'] buildings]",
+                    "Comment [[+3 Production] from all ['Military Building'] buildings]",
+                    "Comment [[+10]% [Consumption Demand] resource production]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Militristic Economy",
+                "uniques": [
+                    "Only available <if [Militristic Economy] is constructed>",
+                    "Comment [[Call to Arms] no longer provides lasting downsides other than [Happiness] drain.]",
+                    "Comment [[+5]% [Production] from every [{Industrial era} {'Military Building'}]]",
+                    "Comment [[+20]% [Weapon Parts] resource production]",
+                    "Comment [[+10]% [Vehicle Parts] resource production]",
+                    "Comment [[+10]% [Aircraft Parts] resource production]",
+                    "Comment [[+10]% [Ship Parts] resource production]",
+                    "Comment [[-10]% [Consumption Supply] resource production]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Planned Economy",
+                "uniques": [
+                    "Only available <if [Planned Economy] is constructed>",
+                    "Comment [[Gold] cost of purchasing ['Expansion'] buildings [-33]%]",
+                    "Comment [[Gold] cost of purchasing ['Consolidation'] buildings [-33]%]",
+                    "Comment [[Gold] cost of purchasing ['Modernization'] buildings [-25]%]",
+                    "Comment [[+100]% Production when constructing ['Expansion'] buildings [in all cities connected to capital]]",
+                    "Comment [[+125]% Production when constructing ['Consolidation'] buildings [in all cities connected to capital]]",
+                    "Comment [[+150]% Production when constructing ['Modernization'] buildings [in all cities connected to capital]]",
+                    "Comment [Unlocks [Five Year Plan] Ability. You can store [Production] using the [Five Year Plan] and use those [Production] to construct ['Heavy Industry'] and ['Military Building'] instantly.]",
+                    "Comment [Error: This ability is bugged, so dont use it.]",
+                    "Comment [[-10]% [Consumption Demand] resource production]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Cooperative Economy",
+                "uniques": [
+                    "Only available <if [Cooperative Economy] is constructed>",
+                    "Comment [[+1 Production] from ['Agricultural Improvement'] tiles [in all cities]]",
+                    "Comment [[+1 Production] from ['Water Improvement'] tiles [in all cities]]",
+                    "Comment [[+1 Science] from ['Lumber Improvement'] tiles [in all cities]]",
+                    "Comment [[+1 Culture] from ['Extraction Improvement'] tiles [in all cities]]",
+                    "Comment [[+10]% [Consumption Demand] resource production]",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Self-management Focus",
+                "uniques": [
+                    "Only available <if [Self-management Focus] is constructed>",
+                    "Comment [[+1 Science, +1 Culture, +3 Gold, +5 Production] per [10] population [in all cities]]",
+                    "Comment [[+33]% Production when constructing [Commune] buildings [in all cities]]",
+                    "Comment [[-50]% [Consumption Demand] resource production]",
+                    "Comment [[-50]% [Consumption Supply] resource production]",
                     "Triggers a [Present Current Status] event <hidden from users>"
                 ]
             },
@@ -1751,7 +2268,7 @@
             }
         ]
     },
-        {
+    {
         "name": "Great Exchange",
         "text": "Our settlement in the new land starts to adopt local plants and herds. If we import these stuff back into our continent. We could gain a lot more profits.",
         "choices": [
@@ -1887,8 +2404,7 @@
             },
             {
                 "text": "Can we wait?",
-                "uniques": [
-                ]
+                "uniques": []
             }
         ]
     },
@@ -1904,7 +2420,6 @@
                     "Gain a free [Early Empire] [in capital]"
                 ]
             },
-            
             {
                 "text": "Now we have stability in hand.",
                 "uniques": [
@@ -1913,7 +2428,6 @@
                     "Gain a free [Feudal Empire] [in capital]"
                 ]
             },
-            
             {
                 "text": "Now we have stability in hand.",
                 "uniques": [
@@ -1934,7 +2448,7 @@
                 "uniques": [
                     "Gain a free [Alexander Event Flag] [in capital] <hidden from users>",
                     "Instantly consumes [10] [Influence]",
-                    "Gain [-200] [Gold] <(modified by game speed)>", 
+                    "Gain [-200] [Gold] <(modified by game speed)>",
                     "[Gold] cost of purchasing ['Mercenary Army'] units [-75]% <for [5] turns>",
                     "[-50]% Production when constructing [non-['Military Building']] buildings [in all cities] <for [10] turns>",
                     "Instantly provides [10] [Alexandrian Empire Period]",
@@ -2907,40 +3421,366 @@
                 "uniques": [
                     "Comment [Open up the [Enact Policies] tab and have a look!]",
                     "Comment [You can open this in your capital at any moment to solve debuffs and manage a lot of stuff.]",
-                    "Triggers a [Enact Policies] event <hidden from users>",
-                    "Instantly provides [1] [Enact Policy Tutorial Triggered Flag] <hidden from users>"
+                    "Triggers a [Enact Policies] event <hidden from users>"
                 ]
             },
             {
                 "text": "I already knew it",
                 "uniques": [
                     "Comment [You can open this in your capital at any moment to solve debuffs and manage a lot of stuff.]",
-                    "Comment [Good luck.]",
-                    "Instantly provides [1] [Enact Policy Tutorial Triggered Flag] <hidden from users>"
+                    "Comment [Good luck.]"
                 ]
             }
         ]
     },
     ///Scenario Tools
+    ///Tutorial MQ
     {
-        "name": "New Mission: Sargon's Reign",
-        "text": "Placeholder",
+        "name": "Mesopotamia, Spark of Civilization, 4000BCE",
+        "text": "Welcome to the Emperors and Deities mod. One of the biggest unciv ruleset. \nAlthough the content of the mod is vast, the story takes place in roughly the same place as the original civilization series. Namely the Journey of Humanity. The mod greatly expands the technological progess, element of customization and many other aspects of civ. It is going to be a bumpy ride so strap in.",
         "choices": [
             {
-                "text": "Problems and solutions never seen before!",
+                "text": "Start the Tutorial",
                 "uniques": [
-                    "Comment [Open up the [Enact Policies] tab and have a look!]",
-                    "Comment [You can open this in your capital at any moment to solve debuffs and manage a lot of stuff.]",
-                    "Triggers a [Enact Policies] event <hidden from users>",
-                    "Instantly provides [1] [Enact Policy Tutorial Triggered Flag] <hidden from users>"
+                    "Comment [Dont forget to check civilipedia if you are in need of understanding certain mechanics.]",
+                    "Triggers a [New Mission: Into The Bronze Age, 4000BCE] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "New Mission: Into The Bronze Age, 4000BCE",
+        "text": "You have the city of Uruk under your control as the center of your civilization. It controls some lands which provides food and trade. Which abstracts into gold production. In the city, there are populations, which includes the people working on the lands.",
+        "choices": [
+            {
+                "text": "Whats my job?",
+                "uniques": [
+                    "Comment [Your job in every game is to send settlers, build cities and manage them and a bunch of units. Thats the most basic gameplay that civ series offers. However, emperors and deities brings more outside factors to this gameplay.]",
+                    "Comment [In this mission you need to build a [Foundry] to jump start the production of bronze to boost your city's [Production]. Afterwhich is another new mission. And so on and so fourth, if you are able to complete all missions, you will win this scenario.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "New Mission: Sargon's Reign, 2334BCE",
+        "text": "A brilliant Semitic leader named Sargon has risen in the north. His military innovations and administrative talent promise to unite all of Mesopotamia. This is not a threat—it is an opportunity. Sargon seeks a partner, not a conquest. Will you embrace unity or preserve the old city-states?",
+        "choices": [
+            {
+                "text": "Embrace Sargon's vision (Unify Mesopotamia)",
+                "uniques": [
+                    "Comment [Sargon welcomes your alliance. The united realm will share knowledge and resources.]",
+                    "Gain a free [Unified] [in capital]",
+                    "Instantly provides [15] [Influence]",
+                    "Triggers a [New Mission: Unify Mesopotamia, 2200BCE] event"
                 ]
             },
             {
-                "text": "I already knew it",
+                "text": "Maintain the independence of city-states",
                 "uniques": [
-                    "Comment [You can open this in your capital at any moment to solve debuffs and manage a lot of stuff.]",
-                    "Comment [Good luck.]",
-                    "Instantly provides [1] [Enact Policy Tutorial Triggered Flag] <hidden from users>"
+                    "Comment [Sargon respects your decision. The cities remain separate but cooperate through trade and mutual defense.]",
+                    "Gain a free [Successor States] [in capital]",
+                    "Instantly provides [5] [Influence]",
+                    "Triggers a [New Mission: Unify Mesopotamia, 2200BCE] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "New Mission: Unify Mesopotamia, 2200BCE",
+        "text": "Whether through alliance or federation, the time has come to formalize the political structure of your civilization. Use the [Enact Policies] decision in your capital to consolidate your rule. If you have enough Influence, you can declare a unified empire. This will unlock new government bonuses and prepare you for future challenges.",
+        "choices": [
+            {
+                "text": "How do I unify?",
+                "uniques": [
+                    "Comment [Open the city screen of your capital, find the [Enact Policies] building (it is always present), and choose the option 'We are able to unify ourselves!' when you have at least half of your Influence Limit.]",
+                    "Comment [Completing this mission will reward you with a Golden Age and a unique government building.]"
+                ]
+            },
+            {
+                "text": "I have already unified!",
+                "uniques": [
+                    "Comment [Excellent! Your unified realm stands strong.]",
+                    "Only available <if [Unified] is constructed> <if [Earliest Empire] is constructed>",
+                    "Instantly provides [10] [Influence]",
+                    "Empire enters golden age",
+                    "Triggers a [New Mission: Survive the Bronze Age Collapse, 1200BCE] event"
+                ]
+            },
+            {
+                "text": "I need more time",
+                "uniques": [
+                    "Comment [You can attempt unification later. But remember, the world is changing...]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "New Mission: Survive the Bronze Age Collapse, 1200BCE",
+        "text": "The old order is crumbling. Civilizations across the eastern Mediterranean are falling to famine, rebellion, and the loss of trade routes. But here in Mesopotamia, your leadership will determine whether our light fades or endures. Over the next five turns, you will face a series of crises. Each requires wise use of Influence and Gold.",
+        "choices": [
+            {
+                "text": "What must I do?",
+                "uniques": [
+                    "Comment [Over the following turns, disasters will strike: drought, civil unrest, economic collapse. Use the [Enact Policies] and your stored resources to mitigate them. Survive all five to complete the tutorial and unlock a special reward.]"
+                ]
+            },
+            {
+                "text": "I am ready",
+                "uniques": [
+                    "Triggers a [Drought and Famine] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Drought and Famine",
+        "text": "The harvest has failed for two consecutive years. Food stores are empty, and people are beginning to starve. Your capital’s population is shrinking.",
+        "choices": [
+            {
+                "text": "Distribute emergency grain (Cost: 10 Influence)",
+                "uniques": [
+                    "Comment [You order the royal granaries opened. The crisis is averted for now.]",
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [Civil Unrest] event"
+                ]
+            },
+            {
+                "text": "Hope for rain (No cost)",
+                "uniques": [
+                    "Comment [You do nothing. The famine deepens.]",
+                    "[-1] population [in capital]",
+                    "Triggers a [Civil Unrest] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Civil Unrest",
+        "text": "Desperate citizens have risen in revolt against the local governors. Armed mobs roam the streets of your second-largest city.",
+        "choices": [
+            {
+                "text": "Send in the army (Cost: 50 Gold)",
+                "uniques": [
+                    "Comment [Your soldiers restore order, but the city is damaged.]",
+                    "Gain [-50] [Gold]",
+                    "Triggers a [Trade Collapse] event"
+                ]
+            },
+            {
+                "text": "Negotiate reforms (Cost: 15 Influence)",
+                "uniques": [
+                    "Comment [You promise land redistribution and tax relief. The rebels stand down.]",
+                    "Instantly consumes [15] [Influence]",
+                    "Triggers a [Trade Collapse] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Trade Collapse",
+        "text": "The tin and copper routes from distant lands have been severed. Without metals, your artisans cannot produce bronze weapons or tools. Production slows across the empire.",
+        "choices": [
+            {
+                "text": "Rely on old stockpiles (Cost: 10 Influence)",
+                "uniques": [
+                    "Comment [You ration the remaining bronze. The slowdown is moderate.]",
+                    "Instantly consumes [10] [Influence]",
+                    "[-15]% [Production] [in all cities] <for [5] turns>",
+                    "Triggers a [Loss of Writing] event"
+                ]
+            },
+            {
+                "text": "Encourage local alternatives (No cost)",
+                "uniques": [
+                    "Comment [You shift to stone and wood, but efficiency plummets.]",
+                    "[-33]% [Production] [in all cities] <for [5] turns>",
+                    "Triggers a [Loss of Writing] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Loss of Writing",
+        "text": "Scribes are fleeing the cities to avoid conscription and taxes. The art of writing is being forgotten. Your scientific progress halts.",
+        "choices": [
+            {
+                "text": "Protect the scribal schools (Cost: 15 Influence)",
+                "uniques": [
+                    "Comment [You establish scribe sanctuaries. Knowledge survives.]",
+                    "Instantly consumes [15] [Influence]",
+                    "Triggers a [The Final Hour] event"
+                ]
+            },
+            {
+                "text": "Let the scribes go",
+                "uniques": [
+                    "Comment [Without scribes, records are lost. Science stalls for a generation.]",
+                    "[-50]% [Science] [in all cities] <for [5] turns>",
+                    "Triggers a [The Final Hour] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "The Final Hour",
+        "text": "The crises have passed. Mesopotamia is battered but alive. Your decisions have shaped the survival of civilization itself. One last choice awaits.",
+        "choices": [
+            {
+                "text": "Look to the future (Tutorial Completion)",
+                "uniques": [
+                    "Comment [You have completed the Spark of Civilization tutorial. Your people will remember your leadership.]"
+                ]
+            },
+            {
+                "text": "Look to the future",
+                "uniques": [
+                    "Comment [You may keep playing with your grand empire, but thats that.]"
+                ]
+            }
+        ]
+    },
+    ///Tutorial SQ
+    {
+        "name": "SQ1: Control Tyre and Ur",
+        "text": "The wealthy city-states of Tyre and Ur control vital trade routes and religious sites. If we could bring them under our influence, our culture would flourish.",
+        "choices": [
+            {
+                "text": "How do I gain control?",
+                "uniques": [
+                    "Comment [You can either conquer them with military force (attack the city-state) or become their ally through Influence and gifts. Each city-state has its own type: Tyre is a 'Resource Hoarder', Ur is a 'Library of Wisdom'.]",
+                    "Comment [Once both are under your control (either annexed or allied), return to this event to claim your reward.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ2: Establish Sea Trade for Tin",
+        "text": "Our bronze production requires tin, but the nearest sources lie across the sea. We must build a port and send ships to distant lands to secure this precious metal.",
+        "choices": [
+            {
+                "text": "What do I need?",
+                "uniques": [
+                    "Comment [Research [Sailing] and build a [Fishing Port] (or [Emporion] for Mediterranean civs) in a coastal city. Then establish a trade route with a coastal city that has tin – though tin does not appear as a resource in game, the mission represents acquiring rare metals. The game will detect when you have a sea trade route with another civilization.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ3: Establish Trade with Egypt",
+        "text": "The great pharaohs of Egypt possess grain and gold that we lack. A trading partnership would fill our granaries and bring new knowledge.",
+        "choices": [
+            {
+                "text": "How to trade with Egypt?",
+                "uniques": [
+                    "Comment [First, meet the Egyptian civilization (North Africa). Then research [Writing] and [Trade Network]. Sign a research agreement or establish a trade route with them. Both nations will benefit.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ4: Build a Religion",
+        "text": "The gods speak through many voices. Will our people follow the old polytheistic ways or embrace a single, all-powerful deity? The choice is yours, but faith will unite our growing empire.",
+        "choices": [
+            {
+                "text": "How do I found a religion?",
+                "uniques": [
+                    "Comment [Research [Calendar] to build a [Shrine] (polytheism) or later a [Chapel] (monotheism). After accumulating enough Faith, you will be prompted to choose a Pantheon and then a full religion. This event will complete when you have adopted either a [Polytheism] or [Monotheism] belief.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ5: Build the Hanging Garden",
+        "text": "Legend says the king of Babylon built a wondrous garden of terraces and rare plants for his homesick wife. Such a marvel would make our capital the envy of the world.",
+        "choices": [
+            {
+                "text": "How do I build it?",
+                "uniques": [
+                    "Comment [Research [Plows] (Irrigation) and build the [Hanging Gardens] wonder. It must be built in a city on a river. The wonder provides food, culture, and a free Garden.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ6: Build the Great Library",
+        "text": "All the knowledge of the ancient world should be collected in one place. A great library will preserve our history and advance our scholars.",
+        "choices": [
+            {
+                "text": "How do I build it?",
+                "uniques": [
+                    "Comment [Research [Writing] and build the [The Great Library] wonder. It provides science, culture, and a free Library in the city. It also boosts all other libraries.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ Reward: Culture",
+        "text": "Your efforts to control Tyre and Ur have paid off. The culture of the Phoenicians and Sumerians enriches your civilization.",
+        "choices": [
+            {
+                "text": "Excellent",
+                "uniques": [
+                    "Comment [You have received your reward.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ Reward: Production",
+        "text": "The tin from overseas trade has supercharged your bronze industry.",
+        "choices": [
+            {
+                "text": "Excellent",
+                "uniques": [
+                    "Comment [You have received your reward.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ Reward: Food",
+        "text": "Trade with Egypt ensures your people never go hungry.",
+        "choices": [
+            {
+                "text": "Excellent",
+                "uniques": [
+                    "Comment [You have received your reward.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ Reward: Happiness",
+        "text": "Faith brings peace and joy to your cities.",
+        "choices": [
+            {
+                "text": "Excellent",
+                "uniques": [
+                    "Comment [You have received your reward.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ Reward: Influence",
+        "text": "The Hanging Gardens attract pilgrims and diplomats, increasing your political influence.",
+        "choices": [
+            {
+                "text": "Excellent",
+                "uniques": [
+                    "Comment [You have received your reward.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SQ Reward: Science",
+        "text": "The Great Library accelerates your research.",
+        "choices": [
+            {
+                "text": "Excellent",
+                "uniques": [
+                    "Comment [You have received your reward.]"
                 ]
             }
         ]

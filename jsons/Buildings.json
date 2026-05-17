@@ -6758,7 +6758,7 @@
 			//"Indicates the capital city <if [Migrate Capital] is not constructed>",
 			"Indicates the capital city",
 			//Tutorial
-			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]> <hidden from users>",
+			"Triggers a [The internal affair...] event <for [Human player] Civilizations><hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 			
 		]
@@ -9707,7 +9707,8 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
-			"Comment [Migrate Capital] <hidden from users>",
+			"Comment [Migrate Capital]",
+			"Comment [Your citizens are revolting due to very high unhappiness!]",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9761,6 +9762,20 @@
 		]
 	},
 	//Spark of Civilization Scenario 
+	
+	{
+		"name": "Scenario: Spark of Civilization",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Triggers a [Mesopotamia, Spark of Civilization, 4000BCE] event <for [Human player] Civilizations> <for [2] turns>",
+			"Gain a free [Sub-Continent Sized Map] [in this city]",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	}
 	{
 		"name": "Mission: Into The Bronze Age",
 		"cost": 10,
@@ -9768,8 +9783,8 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
-			"Remove [Mission: Into The Bronze Age] [in all cities] <after discovering [Bronze Working]> <if [Smeltry] is constructed>",
-			"Triggers a [New Mission: Sargon's Reign] event <after discovering [Bronze Working]> <if [Smeltry] is constructed>",
+			"Remove [Mission: Into The Bronze Age] [in all cities] <after discovering [Bronze Working]> <if [Foundry] is constructed>",
+			"Triggers a [New Mission: Sargon's Reign, 2334BCE] event <after discovering [Bronze Working]> <if [Foundry] is constructed>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]

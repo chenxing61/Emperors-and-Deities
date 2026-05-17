@@ -46,6 +46,7 @@
 		"[-10]% [Faith] [in annexed cities] <in cities without a [Cultural Intergration]>",
 
         "[-15]% [Production] [in all cities] <when below [0] [Happiness]> <hidden from users>",
+        
         "Triggers a [Abolitionism Strikes] event <when above [1] [Slaves]> <if [Abolition] is not constructed> <starting from the [Imperial era]> <with [33]% chance> <upon turn start> <hidden from users>",
         ///Unhappy events
         "Triggers a [Wealth Gap Widens] event <starting from the [Ancient era]>  <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [5]% chance> <upon turn start> <hidden from users>",
@@ -71,8 +72,8 @@
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when between [0] and [-5] [Influence]> <with [6]% chance> <after turn number [30]> <upon turn start> <hidden from users>",
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when below [-6] [Influence]> <with [12]% chance> <after turn number [30]> <upon turn start> <hidden from users>",
         ///Alert
-        "Triggers a [State of Instability] event <if [{non-[Peace]} {non-[Harmony]} {'Civilization State'}] is constructed> <when above [3] [Influence]> <with [50]% chance> <hidden from users>",
-        "Triggers a [State of Ruins] event <if ['Negative Event'] is constructed> <when above [0] [Influence]> <when above [100] [Gold]> <with [50]% chance> <hidden from users>",
+        "Triggers a [State of Instability] event <if [{non-[Peace]} {non-[Harmony]} {'Civilization State'}] is constructed> <when above [3] [Influence]> <hidden from users>",
+        "Triggers a [State of Ruins] event <if ['Negative Event'] is constructed> <when above [0] [Influence]> <when above [100] [Gold]> <hidden from users>",
         ///Form Disbanment
         "Triggers a [Collapse of the Great Qin] event <if [Zhou Dynasty] is constructed> <when below [0] [Happiness]> <when below [0] [Influence]> <hidden from users>",
         "Triggers a [Collapse of the Great Qin] event <if [Great Qin] is constructed> <when below [0] [Happiness]> <when below [0] [Influence]> <hidden from users>",
@@ -81,6 +82,7 @@
 
         "Triggers a [Shift in Politic] event <if [Nomadic Culture] is not constructed> <for [non-[City-States]] Civilizations> <upon entering a new era> <starting from the [Classical era]> <hidden from users>",
         "Triggers a [Emergence of Nations] event <if [Nomadic Culture] is constructed> <upon entering a new era> <hidden from users>",
+        "Triggers a [Present Current Status] event <every [10] turns> <for [Human player] Civilizations> <hidden from users>",
         "Gain a free [Unified] [in capital] <if ['United'] is constructed in all [Capital] cities> <hidden from users>",
         "Gain a free [Unified] [in capital] <if ['United'] is constructed in all [Capital] cities> <upon turn start> <hidden from users>",
         "Remove [Unified] [in capital] <if ['Divided'] is constructed in all [Capital] cities> <hidden from users>",
