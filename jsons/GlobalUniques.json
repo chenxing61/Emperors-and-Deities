@@ -97,12 +97,19 @@
         "Remove ['Outcome'] [in annexed cities] <upon turn start> <hidden from users>",
         "Remove [Nomadic Culture] [in all cities] <upon turn start> <for [{AI player} {Euroasian Nomads}] Civilizations> <during the [Imperial era]> <hidden from users>",
         //AI handicap
-        "Cannot build [Close Combat] units <when number of [[Close Combat] Units] is more than [(2*[[Siege] Units]) + (2*[[Assault] Units])]> <for [AI player] Civilizations> <after turn number [100]> <hidden from users>",
-        "Cannot build [Scout] units <when number of [[Scout] Units] is more than [[{'Standing Army'} {Close Combat}] Units]> <for [AI player] Civilizations> <after turn number [25]> <hidden from users>",
+        "Cannot build [{non-['Military Building']} {non-['Static Defense']}] buildings <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [Cities]> <for [AI player] Civilizations> <starting from the [Ancient era]> <after discovering [Bronze Working]> <if [Anarchy] is not constructed> <hidden from users>",
+        "Cannot build [{non-['Military Building']} {non-['Static Defense']}] buildings <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [([Cities]*2)]> <for [AI player] Civilizations> <starting from the [Renaissance era]> <if [Anarchy] is not constructed> <hidden from users>",
+        "Cannot build [{non-['Military Building']} {non-['Static Defense']}] buildings <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [([Cities]*3)]> <for [AI player] Civilizations> <starting from the [Industrial era]> <if [Anarchy] is not constructed> <hidden from users>",
+        "Cannot build [non-['Solution']] buildings <in cities with a ['Negative Event']> <in cities with a [Town Hall]> <in cities with at least [10] [Population]> <after discovering [Writing]> <if [non-[{Peace} {'Civilization State'}]] is not constructed> <hidden from users>",
+        "Cannot build [Civilian] units <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [Cities]> <for [AI player] Civilizations> <starting from the [Ancient era]> <if [Anarchy] is not constructed> <after discovering [Bronze Working]> <hidden from users>",
+        "Cannot build [Civilian] units <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [([Cities]*2)]> <for [AI player] Civilizations> <starting from the [Renaissance era]> <if [Anarchy] is not constructed> <hidden from users>",
+        "Cannot build [Civilian] units <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [([Cities]*3)]> <for [AI player] Civilizations> <starting from the [Industrial era]> <if [Anarchy] is not constructed> <hidden from users>",
+        "Cannot build [Close Combat] units <when number of [[Close Combat] Units] is more than [(2*[[Siege] Units]) + (2*[[Assault] Units])]> <for [AI player] Civilizations> <starting from the [Renaissance era]> <hidden from users>",
+        "Cannot build [Scout] units <when number of [[Scout] Units] is more than [[{'Standing Army'} {non-[Scout]}] Units]> <for [AI player] Civilizations> <starting from the [Ancient era]> <hidden from users>",
         "Cannot build [Atomic Bomber] units <when number of [[Atomic Bomber] Units] is more than [0.05*([[Fighter] Units] + [[Bomber] Units])]> <for [AI player] Civilizations> <after turn number [50]> <hidden from users>",
         "Cannot build [Missile] units <when number of [[Missile] Units] is more than [0.25*([[Fighter] Units] + [[Bomber] Units])]> <for [AI player] Civilizations> <after turn number [50]> <hidden from users>",
-        "Cannot build ['Mercenary Army'] units <when number of [['Mercenary Army'] Units] is more than [(0.5*[['Standing Army'] Units])]> <for [AI player] Civilizations> <after turn number [50]> <hidden from users>",
-        "Cannot build [{Military} {Land}] units <when number of [[[Land] Units]*0.75] is more than [[Water] Units]> <for [AI player] Civilizations> <after turn number [50]> <hidden from users> <in [Coastal] cities>",
+        "Cannot build ['Mercenary Army'] units <when number of [['Mercenary Army'] Units] is more than [(0.5*[['Standing Army'] Units])]> <for [AI player] Civilizations> <starting from the [Ancient era]> <hidden from users>",
+        "Cannot build [{Military} {Land}] units <when number of [[[Land] Units]*0.75] is more than [[Water] Units]> <for [AI player] Civilizations> <starting from the [Renaissance era]> <hidden from users> <in [Coastal] cities>",
         ///HurryCostModifier
         "[Gold] cost of purchasing [{All} {non-['Economic Building']}] buildings [+25]%",
         "[Gold] cost of purchasing ['Economic Building'] buildings [+15]%",
@@ -201,7 +208,7 @@
         "Instantly provides [1] [Revolution Oppotunity] <upon entering the [Imperial era]> <hidden from users>",
         "Instantly provides [1] [Revolution Oppotunity] <upon entering the [Modern era]> <hidden from users>",
         "Instantly provides [1] [Forced Shift In Politic Chance] <upon entering a new era> <when number of [Forced Shift In Politic Chance] is less than [1]> <hidden from users>",
-        "Remove [Levies Disbandment] [in capital] <when number of [[The Levied Army] Units] is less than [1]> <upon turn end> <hidden from users>",
+        "Remove [Levies Disbandment] [in capital] <when number of [[The Levied Army] Units] is less than [5]> <upon turn end> <hidden from users>",
         //Stockpile Limits
         "[-100]% [Weapon Parts] resource production <when number of [Weapon Parts] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
         "[-100]% [Vehicle Parts] resource production <when number of [Vehicle Parts] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
@@ -222,7 +229,7 @@
         "Cannot build ['Engine Ship'] units <when below [-10] [Fuel]> <hidden from users>",
         "Cannot build [Air] units <when below [-10] [Fuel]> <hidden from users>",
         "[-33]% [Influence] resource production <on [Marathon] game speed> <hidden from users>",
-        "Free [Peon] appears <when above [100] [Slaves]> <if [Abolition] is not constructed> <upon turn start>",
+        "Free [Peon] appears <when above [100] [Slaves]> <if [Abolition] is not constructed> <upon turn start>"
         
         // TODO: Implement the uniques below
         // "[+20]% [Culture] [in all cities] <during a golden age>",
