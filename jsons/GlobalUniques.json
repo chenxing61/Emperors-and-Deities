@@ -46,7 +46,6 @@
 		"[-10]% [Faith] [in annexed cities] <in cities without a [Cultural Intergration]>",
 
         "[-15]% [Production] [in all cities] <when below [0] [Happiness]> <hidden from users>",
-        
         "Triggers a [Abolitionism Strikes] event <when above [1] [Slaves]> <if [Abolition] is not constructed> <starting from the [Imperial era]> <with [33]% chance> <upon turn start> <hidden from users>",
         ///Unhappy events
         "Triggers a [Wealth Gap Widens] event <starting from the [Ancient era]>  <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [5]% chance> <upon turn start> <hidden from users>",
@@ -97,9 +96,11 @@
         "Remove ['Outcome'] [in annexed cities] <upon turn start> <hidden from users>",
         "Remove [Nomadic Culture] [in all cities] <upon turn start> <for [{AI player} {Euroasian Nomads}] Civilizations> <during the [Imperial era]> <hidden from users>",
         //AI handicap
-        "Cannot build [{non-['Military Building']} {non-['Static Defense']}] buildings <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [Cities]> <for [AI player] Civilizations> <starting from the [Ancient era]> <after discovering [Bronze Working]> <if [Anarchy] is not constructed> <hidden from users>",
-        "Cannot build [{non-['Military Building']} {non-['Static Defense']}] buildings <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [([Cities]*2)]> <for [AI player] Civilizations> <starting from the [Renaissance era]> <if [Anarchy] is not constructed> <hidden from users>",
-        "Cannot build [{non-['Military Building']} {non-['Static Defense']}] buildings <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [([Cities]*3)]> <for [AI player] Civilizations> <starting from the [Industrial era]> <if [Anarchy] is not constructed> <hidden from users>",
+        "[+66]% Production when constructing ['Solution'] buildings [in all cities] <for [AI player] Civilizations> <hidden from users>",
+        "Cannot build [{non-['Military Building']} {non-['Static Defense']} {non-[Production]}] buildings <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [Cities]> <for [AI player] Civilizations> <starting from the [Ancient era]> <after discovering [Bronze Working]> <if [Anarchy] is not constructed> <hidden from users>",
+        "Cannot build [{non-['Military Building']} {non-['Static Defense']} {non-[Production]}] buildings <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [([Cities]*2)]> <for [AI player] Civilizations> <starting from the [Renaissance era]> <if [Anarchy] is not constructed> <hidden from users>",
+        "Cannot build [{non-['Military Building']} {non-['Static Defense']} {non-[Production]}] buildings <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [([Cities]*3)]> <for [AI player] Civilizations> <starting from the [Industrial era]> <if [Anarchy] is not constructed> <hidden from users>",
+        "Cannot build [{non-['Military Building']} {non-['Static Defense']} {non-[Production]}] buildings <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [Cities]> <for [AI player] Civilizations> <starting from the [Classical era]> <if [Peace] is constructed> <when at war> <hidden from users>",
         "Cannot build [non-['Solution']] buildings <in cities with a ['Negative Event']> <in cities with a [Town Hall]> <in cities with at least [10] [Population]> <after discovering [Writing]> <if [non-[{Peace} {'Civilization State'}]] is not constructed> <hidden from users>",
         "Cannot build [Civilian] units <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [Cities]> <for [AI player] Civilizations> <starting from the [Ancient era]> <if [Anarchy] is not constructed> <after discovering [Bronze Working]> <hidden from users>",
         "Cannot build [Civilian] units <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [([Cities]*2)]> <for [AI player] Civilizations> <starting from the [Renaissance era]> <if [Anarchy] is not constructed> <hidden from users>",
