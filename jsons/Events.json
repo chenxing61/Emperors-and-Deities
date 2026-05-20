@@ -245,28 +245,33 @@
                 ]
             },
             {
-                "text": "Total mobilization in every cities!",
+                "text": "Total mobilization in all city!",
                 "uniques": [
                     "Only available <when at war> <if [Unified] is constructed> <if [Levies Disbandment] is constructed>",
                     "Play [policy] sound <hidden from users>",
-                    "Comment [We need more soldiers at the frontline.]",
+                    "Comment [This Decision will instruct all the city to mobilise its [Levied Army] unit, regardless of the size of city. Usually you need at least 5 Population to [Call to Arms].]",
                     "Gain a free [Call to Arms] [in all non-occupied cities]",
+                    "[+1 Happiness] from every [Call to Arms] <for [3] turns> <on [Quick] game speed>",
+                    "[+1 Happiness] from every [Call to Arms] <for [4] turns> <on [Standard] game speed>",
+                    "[+1 Happiness] from every [Call to Arms] <for [5] turns> <on [Epic] game speed>",
+                    "[+1 Happiness] from every [Call to Arms] <for [8] turns> <on [Marathon] game speed>",
+                    "[+1 Happiness] from every [Call to Arms] <for [10] turns> <on [Realistic] game speed>",
                     "Triggers a [Enact Policies] event <hidden from users>"
                 ]
             },
             {
-                "text": "Disband the Levies.",
+                "text": "Disband all Levies.",
                 "uniques": [
                     "Only available <if [Call to Arms] is constructed> <when not at war>",
                     "Play [policy] sound <hidden from users>",
-                    "Comment [Since there are currently no conflict, we may disband our levied armies.]",
+                    "Comment [After Conflict dies down, we may disband our [Levied Army] units to eliminate negative effects from [Call to Arms].]",
                     "Remove [Call to Arms] [in all cities]",
                     "Gain a free [Levies Disbandment] [in capital]",
                     "Triggers a [Enact Policies] event <hidden from users>"
                 ]
             },
             {
-                "text": "Increase [Influence]",
+                "text": "Increase [Influence] through different means.",
                 "uniques": [
                     "Only available <before adopting [Anarchism]>",
                     "Play [policy] sound <hidden from users>",
@@ -274,7 +279,14 @@
                 ]
             },
             {
-                "text": "Spread our [Influence] to city states",
+                "text": "Increase [Culture Diversity] through different means.",
+                "uniques": [
+                    "Play [policy] sound <hidden from users>",
+                    "Triggers a [On the problem of Culture] event"
+                ]
+            },
+            {
+                "text": "Spread our [Influence] to city states.",
                 "uniques": [
                     "Only available <before adopting [Anarchism]> <if [Spread Influence] is not constructed> <when above [0] [Influence]>",
                     "Play [policy] sound <hidden from users>",
@@ -285,7 +297,7 @@
                 ]
             },
             {
-                "text": "Stop Spreading our [Influence] to city states",
+                "text": "Stop Spreading our [Influence] to city states.",
                 "uniques": [
                     "Only available <if [Spread Influence] is constructed>",
                     "Play [policy] sound <hidden from users>",
@@ -294,7 +306,7 @@
                 ]
             },
             {
-                "text": "Build Agreements",
+                "text": "Build Agreements (Divided Government Form Special Action)",
                 "uniques": [
                     "Only available <if [Unified] is not constructed>",
                     "Play [policy] sound <hidden from users>",
@@ -303,7 +315,7 @@
                 ]
             },
             {
-                "text": "Build Agreements",
+                "text": "Build Agreements (Personal Union Form Special Action)",
                 "uniques": [
                     "Only available <if [Personal Union] is constructed>",
                     "Only available <starting from the [Industrial era]>",
@@ -313,7 +325,7 @@
                 ]
             },
             {
-                "text": "Adoption of European Cultures",
+                "text": "Adoption of European Cultures ([Europa] Special Action)",
                 "uniques": [
                     "Only available <for [Europa] Civilizations> <before the [Medieval era]>",
                     "Only available <when above [5] [Influence]>",
@@ -322,7 +334,7 @@
                 ]
             },
             {
-                "text": "Adoption of Schools of Thought",
+                "text": "Adoption of Schools of Thought ([Warring States] Special Action)",
                 "uniques": [
                     "Only available <if [Warring States] is constructed>",
                     "Only available <when above [0] [Avaliable School of Thoughts]>",
@@ -332,7 +344,7 @@
                 ]
             },
             {
-                "text": "Tribe Assembly",
+                "text": "Tribe Assembly ([Nomadic Culture] Special Action)",
                 "uniques": [
                     "Only available <if [Nomadic Culture] is constructed>",
                     "Play [horse] sound <hidden from users>",
@@ -340,12 +352,12 @@
                 ]
             },
             {
-                "text": "Increasing Stability.",
+                "text": "One Step Above Peace.",
                 "uniques": [
                     "Only available <if [Peace] is constructed> <if [United States] is not constructed>",
                     "Only available <when above [4] [Influence]>",
                     "Play [policy] sound <hidden from users>",
-                    "Comment [We must make our empire even more stable]",
+                    "Comment [Through costing [Faith] and [Gold], We may propell our civilization into a even more stable state. [Harmony].]",
                     "Triggers a [Stablising our side of the globe] event"
                 ]
             },
@@ -382,7 +394,7 @@
             {
                 "text": "Crisis Solving",
                 "uniques": [
-                    "Only available <if ['Negative Event'] is constructed in at least [4] of [non-[Puppeted]] cities>",
+                    "Only available <if ['Negative Event'] is constructed in at least [3] of [non-[Puppeted]] cities>",
                     "Only available <when number of [Influence] is more than [[Influence Limit]/2]>",
                     "Play [policy] sound <hidden from users>",
                     "Comment [A lot of our cities are in a horrible state. We should do what we can to save them.]",
@@ -403,8 +415,8 @@
                 "uniques": [
                     "Only available <when number of [Influence] is more than [Influence Limit]> <when number of [Forced Shift In Politic Chance] is more than [0]> <if [Nomadic Culture] is not constructed> <hidden from users>",
                     "Play [policy] sound <hidden from users>",
-                    "Comment [If your [Influence] is somehow above normal limit. You can trigger this.]",
-                    "Comment [We can force the shift in politic to stop our civilization from a undesireable route...]",
+                    "Comment [If your [Influence] is somehow above your [Influence Limit]. You can trigger this.]",
+                    "Comment [We can force the shift in politic to stop our civilization from entering a undesireable route...]",
                     "Triggers a [Shift in Politic] event"
                 ]
             },
@@ -2183,6 +2195,94 @@
     {
         "name": "Popularity Crisis",
         "text": "As your civilization grows, the [Influence] of the ruler of your civilization fluctuates. Keeping it above a certain thershold will be beneficial for decision making.",
+        "choices": [
+            {
+                "text": "We shall arrange a great hunt to show our military prowess!",
+                "uniques": [
+                    "Only available <before the [Medieval era]> <if [Influence Maintenance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
+                    "Instantly provides [5] [Influence]",
+                    "[+1 Food] per [3] population [in capital] <for [1] turns>",
+                    "Gain a free [Influence Maintenance Cost] [in capital]",
+                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "We shall arrange a customary worship of our ancestry.",
+                "uniques": [
+                    "Only available <if [Zhou Dynasty] is constructed> <if [Influence Maintenance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
+                    "Instantly provides [8] [Influence]",
+                    "Provides [1] [Noble Army Maintenance] <for [10] turns>",
+                    "Gain a free [Influence Maintenance Cost] [in capital]",
+                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "We shall arrange a great feast to show our wealth!",
+                "uniques": [
+                    "Only available <starting from the [Ancient era]> <before the [Imperial era]> <if [Influence Maintenance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
+                    "Instantly provides [10] [Influence]",
+                    "[+1 Happiness] per [3] population [in capital] <for [1] turns>",
+                    "Gain a free [Influence Maintenance Cost] [in capital]",
+                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "We shall arrange a marriage in high class society to strengthen our internal ties!",
+                "uniques": [
+                    "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Influence Maintenance Cost] is not constructed> <if [Low Culture Diversity] is constructed> <when number of [Influence] is less than [Influence Limit]>",
+                    "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Instantly provides [10] [Influence]",
+                    "Instantly provides [3] [Influence] <after adopting [Personal Union]>",
+                    "Gain a free [Influence Maintenance Cost] [in capital]",
+                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "We shall arrange a marriage in high class society to strengthen our internal ties!",
+                "uniques": [
+                    "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Influence Maintenance Cost] is not constructed> <if [Medium Culture Diversity] is constructed> <when number of [Influence] is less than [Influence Limit]> <before adopting [Revolution]>",
+                    "Instantly provides [10] [Influence]",
+                    "Instantly provides [3] [Influence] <after adopting [Personal Union]>",
+                    "Gain a free [High Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Gain a free [Influence Maintenance Cost] [in capital]",
+                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "We shall do a military march to demostrate our might!",
+                "uniques": [
+                    "Only available <starting from the [Imperial era]> <if [Influence Maintenance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
+                    "Instantly provides [15] [Influence]",
+                    "Gain a free [Influence Maintenance Cost] [in capital]",
+                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Remove the [Influence Maintenance Cost]",
+                "uniques": [
+                    "Only available <if [Influence Maintenance Cost] is constructed> <when above [60] [Gold]> <(modified by game speed)>",
+                    "Gain [-60] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
+                    "Gain [-120] [Gold] <when number of [Cities] is between [4] and [10]>  <(modified by game speed)>",
+                    "Gain [-240] [Gold] <when number of [Cities] is more than [9]> <(modified by game speed)>",
+                    "Remove [Influence Maintenance Cost] [in all cities]",
+                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Can we wait?",
+                "uniques": [
+                    "Comment [We need more contemplation...]",
+                    "Triggers a [Enact Policies] event <hidden from users>",
+                    "Play [whoosh] sound"
+                ]
+            }
+        ]
+    },
+        {
+        "name": "On problem of Culture",
+        "text": "As your civilization grows, the lifestyle of your civilization fluctuates. It is sercretly a deciding factor of what unique and ability would your civilization be able to foster.",
         "choices": [
             {
                 "text": "We shall arrange a great hunt to show our military prowess!",
