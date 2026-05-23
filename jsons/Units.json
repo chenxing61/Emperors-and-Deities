@@ -179,6 +179,7 @@
 		"movement": 2,
 		"strength": 10,
 		"uniques": [
+			"Limited to [2] per Civilization <for [AI player] Civilizations>",
 			"Can upgrade to [Adventurer] <after discovering [Astronomy]>",
 			"Can upgrade to [Envoy] <after discovering [Astronomy]> <for [non-[City-State]] Civilizations>",
 			"'Standing Army'",
@@ -241,6 +242,7 @@
 	},
 	{
 		"name": "Primal Herder",
+		"cost": 25,
 		"uniqueTo": "Euroasian Nomads",
 		"replaces": "Hunter Gatherer",
 		"unitType": "Close Combat",
@@ -384,7 +386,7 @@
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
-			"The Levied Army",
+			"The Garrison Army",
 			"Hardened"
 		],
 		"requiredTech": "Copper Working",

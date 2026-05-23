@@ -50,7 +50,7 @@
 			"Only available <in [Capital] cities>",
 			"Play [setup] sound <hidden from users>",
 			"Remove [Show Status] [in this city] <hidden from users>",
-			"Triggers a [Present Current Status] event"
+			"Triggers a [Present Current Status] event <hidden from users>"
 		]
 	},
 	{
@@ -374,6 +374,7 @@
 		"name": "Remove Slums",
 		"cost": 70,
 		"uniques": [
+			"'Solution'",
 			"Only available <in cities with a [Slum]>",
 			"Unbuildable <for [Human player] Civilizations> <hidden from users>",
 			"Remove [Slum] [in this city]",
@@ -388,6 +389,7 @@
 		"name": "Clear Corruption",
 		"cost": 70,
 		"uniques": [
+			"'Solution'",
 			"Only available <in cities with a [Unjust Ruling]>",
 			"Unbuildable <for [Human player] Civilizations> <hidden from users>",
 			"Remove [Unjust Ruling] [in this city]",
@@ -403,6 +405,7 @@
 		"name": "Stop Rebellion",
 		"cost": 70,
 		"uniques": [
+			"'Solution'",
 			"Only available <in cities with a [Peasant Rebellion]>",
 			"Unbuildable <for [Human player] Civilizations> <hidden from users>",
 			"Remove [Peasant Rebellion] [in this city]",
@@ -844,7 +847,7 @@
 		"food": 2,
 		"uniques": [
 			"'Agricultural Building'",
-			"Unavailable <if [Nomadic Culture] is constructed>",
+			
 			"Must not be on [River]"
 		],
 		"requiredTech": "Agriculture"
@@ -935,7 +938,7 @@
 		"food": 1,
 		"uniques": [
 			"'Agricultural Building'",
-			"Unavailable <if [Nomadic Culture] is constructed>",
+			
 			"[+1 Food] from [Fruit] tiles [in this city]",
 			"[+1 Food] from [Grain] tiles [in this city]",
 			"[+1 Food] from [Tuber] tiles [in this city]"
@@ -1098,7 +1101,7 @@
 		"production": 2,
 		"uniques": [
 			"'Agricultural Building'",
-			"Unavailable <if [Nomadic Culture] is constructed>",
+			
 			"Must be on [River]"
 		],
 		"requiredTech": "The Wheel"
@@ -2326,7 +2329,7 @@
 		"cityHealth": 15,
 		"uniques": [
 			"'Static Defense'",
-			"Unavailable <if [Nomadic Culture] is constructed>",
+			
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Walls",
@@ -2375,7 +2378,7 @@
 		},
 		"uniques": [
 			"'Agricultural Building'",
-			"Unavailable <if [Nomadic Culture] is constructed>",
+			
 			"Must not be on [Hill]"
 		],
 		"requiredTech": "Construction"
@@ -3353,7 +3356,7 @@
 		"cityHealth": 20,
 		"uniques": [
 			"'Static Defense'",
-			"Unavailable <if [Nomadic Culture] is constructed>",
+			
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Watch Tower",
@@ -4053,7 +4056,7 @@
 		},
 		"uniques": [
 			"'Static Defense'",
-			"Unavailable <if [Nomadic Culture] is constructed>",
+			
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Monocular"
@@ -4070,7 +4073,7 @@
 		},
 		"uniques": [
 			"'Agricultural Building'",
-			"Unavailable <if [Nomadic Culture] is constructed>",
+			
 			"[+1]% Production when constructing ['Agricultural Building'] buildings [in all cities]"
 		],
 		"requiredTech": "Machinery"
@@ -4212,7 +4215,7 @@
 		},
 		"uniques": [
 			"'Static Defense'",
-			"Unavailable <if [Nomadic Culture] is constructed>",
+			
 			"Must be next to [Coast]"
 		],
 		"requiredTech": "Carriage"
@@ -4880,14 +4883,14 @@
 			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed> <hidden from users>",
 			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed> <hidden from users>",
 			"[+3]% Production when constructing ['Military Building'] buildings [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <if [Invention of Machine Tools] is constructed> <hidden from users>",
-			"[+2 Production] from every [Engineer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
+			"[+2 Production] from every [Engineer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
 			//Professionals Has Standards
-			"[+15]% Yield from every [Mechanised Lumber Mill] <in this city> <if [Invention of Professional Equipments] is constructed>",
-			"[+15]% Yield from every [Mechanised Farm] <in this city> <if [Invention of Professional Equipments] is constructed>",
-			"[+15]% Yield from every [Mechanised Mine] <in this city> <if [Invention of Professional Equipments] is constructed>",
+			"[+15]% Yield from every [Mechanised Lumber Mill] <in this city> <if [Invention of Professional Equipments] is constructed> <hidden from users>",
+			"[+15]% Yield from every [Mechanised Farm] <in this city> <if [Invention of Professional Equipments] is constructed> <hidden from users>",
+			"[+15]% Yield from every [Mechanised Mine] <in this city> <if [Invention of Professional Equipments] is constructed> <hidden from users>",
 			//Double Standards
-			"[+33]% Yield from every [Manufactory] <in this city> <if [Innovation of Processing Precision] is constructed>",
-			"[+33]% Yield from every [Academy] <in this city> <if [Innovation of Processing Precision] is constructed>",
+			"[+33]% Yield from every [Manufactory] <in this city> <if [Innovation of Processing Precision] is constructed> <hidden from users>",
+			"[+33]% Yield from every [Academy] <in this city> <if [Innovation of Processing Precision] is constructed> <hidden from users>",
 			//Actual Output
 			"Comment [-]",
 			"Comment [[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities]]",
@@ -6755,6 +6758,8 @@
 			"Provides [2] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]>",
 			///Stuff
 			"Provides [10] [Migration Limit]",
+			"Provides [8] [Standing Army Maintenance] <for [AI player] Civilizations>",
+			"Provides [4] [Noble Army Maintenance] <for [AI player] Civilizations>",
 			//"Indicates the capital city <if [Migrate Capital] is not constructed>",
 			"Indicates the capital city",
 			//Tutorial
@@ -6817,7 +6822,7 @@
 		"replaces": "Shrine",
 		"cost": 30,
 		"faith": 2,
-		"culture": 1,
+		"culture": 2,
 		"cityHealth": 5,
 		"cityStrength": 2,
 		"uniques": [
@@ -7880,10 +7885,10 @@
 			"[-33]% [Science] [in all cities]",
 			
 			"[-100]% growth [in all cities] <in cities with at least [10] [Population]>",
-			
+			"Cannot build ['Agricultural Building'] buildings",
 			"[-15]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [High Culture Diversity] is constructed>",
 			"[-33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Medium Culture Diversity] is constructed>",
-			"[-66]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Low Culture Diversity] is constructed>",
+			"[-50]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Low Culture Diversity] is constructed>",
 
 			"Upon capturing a city, receive [1] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is constructed> <if [Abolition] is not constructed>",
 			"Upon capturing a city, receive [2] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is not constructed> <if [Abolition] is not constructed>",
@@ -9074,7 +9079,7 @@
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
-	}
+	},
 	//Renaissance
 	{
 		"name": "Colonial Empires",
@@ -9726,6 +9731,20 @@
 		]
 	},
 	{
+		"name": "No Settler",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Cannot build [Settler] units",
+			"Cannot build [Nomadic Settler] units",
+			"Cannot build [Pioneer] units",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
 		"name": "Region Sized Map",
 		"cost": 10,
 		"uniques": [
@@ -9775,7 +9794,7 @@
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
-	}
+	},
 	{
 		"name": "Mission: Into The Bronze Age",
 		"cost": 10,
