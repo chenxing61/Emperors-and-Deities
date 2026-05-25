@@ -71,16 +71,16 @@
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when between [0] and [-5] [Influence]> <with [6]% chance> <after turn number [30]> <upon turn start> <hidden from users>",
         "Triggers a [Chaos Ensue] event <for [non-[City-States]] Civilizations> <when below [-6] [Influence]> <with [12]% chance> <after turn number [30]> <upon turn start> <hidden from users>",
         ///Alert
-        "Triggers a [State of Instability] event <if [{non-[Peace]} {non-[Harmony]} {'Civilization State'}] is constructed> <when above [3] [Influence]> <hidden from users>",
-        "Triggers a [State of Ruins] event <if ['Negative Event'] is constructed> <when above [0] [Influence]> <when above [50] [Gold]> <hidden from users>",
+        "Triggers a [State of Instability] event <if [{non-[Peace]} {non-[Harmony]} {'Civilization State'}] is constructed> <when above [3] [Influence]> <upon turn start> <hidden from users>",
+        "Triggers a [State of Ruins] event <if ['Negative Event'] is constructed> <when above [0] [Influence]> <when above [50] [Gold]> <upon turn start> <hidden from users>",
         ///Form Disbanment
         "Triggers a [Collapse of the Great Qin] event <if [Great Qin] is constructed> <if [{non-[Peace]} {non-[Harmony]} {'Civilization State'}] is constructed> <when below [0] [Happiness]> <when below [0] [Influence]> <upon turn start> <hidden from users>",
-        "Triggers a [Disolution of Union] event <if [Socialist Republics] is constructed> <when below [20] [Happiness]> <hidden from users>",
-        "Triggers a [Disolution of Union] event <if [Personal Union] is constructed> <when below [10] [Influence]> <hidden from users>",
+        "Triggers a [Disolution of Union] event <if [Socialist Republics] is constructed> <upon turn start> <when below [20] [Happiness]> <hidden from users>",
+        "Triggers a [Disolution of Union] event <if [Personal Union] is constructed> <upon turn start> <when below [10] [Influence]> <hidden from users>",
 
         "Triggers a [Shift in Politic] event <if [Nomadic Culture] is not constructed> <for [non-[City-States]] Civilizations> <upon entering a new era> <starting from the [Classical era]> <hidden from users>",
         "Triggers a [Emergence of Nations] event <if [Nomadic Culture] is constructed> <upon entering a new era> <hidden from users>",
-        "Triggers a [Present Current Status] event <every [10] turns> <for [Human player] Civilizations> <hidden from users>",
+        "Triggers a [Present Current Status] event <every [10] turns> <for [Human player] Civilizations> <upon turn start> <hidden from users>",
         "Gain a free [Unified] [in capital] <if ['United'] is constructed in all [Capital] cities> <hidden from users>",
         "Gain a free [Unified] [in capital] <if ['United'] is constructed in all [Capital] cities> <upon turn start> <hidden from users>",
         "Remove [Unified] [in capital] <if ['Divided'] is constructed in all [Capital] cities> <hidden from users>",
