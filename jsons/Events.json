@@ -433,7 +433,7 @@
             {
                 "text": "State Reform",
                 "uniques": [
-                    "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <when number of [State Reform Chance] is more than [0]>",
+                    "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <when number of [State Reform Chance] is more than [0]> <if [Nomadic Culture] is not constructed>",
                     "Play [policy] sound <hidden from users>",
                     "Instantly consumes [1] [State Reform Chance] <hidden from users>",
                     "Instantly consumes [10] [Influence] <when number of [Cities] is between [0] and [5]>",
@@ -2319,6 +2319,28 @@
                     "[-20]% Culture cost of adopting new Policies <for [5] turns> <on [Epic] game speed>",
                     "[-20]% Culture cost of adopting new Policies <for [8] turns> <on [Marathon] game speed>",
                     "[-20]% Culture cost of adopting new Policies <for [10] turns> <on [Realistic] game speed>",
+                    "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            },
+            {
+                "text": "I guess we can simply expand our pantheon to include marginalised gods.",
+                "uniques": [
+                    "Only available <when above [10] [Influence]> <if [Medium Culture Diversity] is constructed> <after adopting [Pantheon Incorporation]>",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain enough Faith for [10]% of a Great Prophet",
+                    "Gain a free [High Culture Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            },
+            {
+                "text": "I guess we can simply expand our pantheon to include marginalised gods.",
+                "uniques": [
+                    "Only available <when above [10] [Influence]> <if [Low Culture Diversity] is constructed> <after adopting [Pantheon Incorporation]>",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain enough Faith for [10]% of a Great Prophet",
                     "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
                     "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
