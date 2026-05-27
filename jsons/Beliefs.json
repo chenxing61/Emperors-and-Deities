@@ -83,6 +83,15 @@
             "[+1 Culture] from ['Herd'] tiles [in all cities]"
         ]
     },
+    {
+        "name": "Highland Tradition",
+        "type": "Pantheon",
+        "uniques": [
+            "Comment [Unlocks [Hillfort], a improvement which provides defensive bonuses and [Faith] for each adjacent [Hill]s or [Mountain]s",
+            "[{'Standing Army'} {Close Combat}] units gain the [Hill People Origin] promotion",
+            "[{'Noble Army'} {Close Combat}] units gain the [Hill People Origin] promotion"
+        ]
+    },
     ///Traditions
     {
         "name": "Marine Tradition",
@@ -175,11 +184,9 @@
         "name": "Caste System",
         "type": "Follower",
         "uniques": [
-            "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <before the [Industrial era]>",
-            "[-10]% Unhappiness from [Population] [in all cities] <before the [Renaissance era]>",
-            "[-5]% Unhappiness from [Population] [in all cities] <starting from the [Renaissance era]> <before the [Imperial era]>",
+            "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+            "[-10]% Unhappiness from [Population] [in all cities] <before the [Industrial era]>",
             "Comment [Special Event with [Revolution] or in [Modern era].]"
-            
         ]
     },
     {
@@ -195,7 +202,8 @@
         "type": "Follower",
         "uniques": [
             "[-2 Science, +2 Happiness, +2 Faith] from all ['Worship Place'] buildings",
-            "[+5 Faith] from [Landmark] tiles [in cities following this religion]"
+            "[+5 Faith] from [Landmark] tiles [in cities following this religion]",
+            "[+3 Science] from every [Alchemy Lab]"
         ]
     },
     {
@@ -321,7 +329,6 @@
             "[+1 Happiness] from every [5] global followers [in non-enemy foreign cities]"
         ]
     },
-
     {
         "name": "Order of the Faith",
         "type": "Enhancer",
@@ -401,6 +408,13 @@
             "[+3 Production] from [Holy site] tiles [in cities following this religion]"
         ]
     },
+    {
+        "name": "Religious Society",
+        "type": "Enhancer",
+        "uniques": [
+            "[Faith] cost of purchasing [All] buildings [-50]%"
+        ]
+    },
     ///Spread
     {
         "name": "Mentorship",
@@ -432,7 +446,8 @@
         "type": "Enhancer",
         "uniques": [
             "[+25]% Natural religion spread [in all cities]",
-            "[+25]% Natural religion spread [in all cities] <after discovering [Printing Press]>"
+            "[+25]% Natural religion spread [in all cities] <after discovering [Printing Press]>",
+            "[+25]% Natural religion spread [in all cities] <after discovering [Telecommunication]>"
         ]
     },
     {
@@ -478,7 +493,8 @@
         "type": "Founder",
         "uniques": [
             "Only available <before adopting [Monotheism]>",
-            "[+2 Faith, +1 Culture] for each global city following this religion"
+            "[+2 Faith, +1 Culture] for each global city following this religion",
+            "[+1 Faith] from every [{Culture} {Wonder}]"
         ]
     },
     {
@@ -494,7 +510,8 @@
         "type": "Founder",
         "uniques": [
             "Only available <before adopting [Monotheism]>",
-            "[+2 Happiness] from every [Wonder]"
+            "[+1 Happiness] from every [Wonder]",
+            "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>"
         ]
     },
     ///Abraham
@@ -503,7 +520,7 @@
         "type": "Founder",
         "uniques": [
             "Only available <after adopting [Monotheism]>",
-            "[+5 Happiness] [in holy cities]"
+            "[+6 Happiness] [in holy cities]"
         ]
     },
     {

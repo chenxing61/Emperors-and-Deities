@@ -476,7 +476,31 @@
 		],
 		"shortcutKey": "C"
 	},
-	// Policy
+	// Policy/Belief
+	{
+		"name": "Hillfort",
+		"terrainsCanBeBuiltOn": [
+			"Hill"
+		],
+		"culture": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Copper Working",
+		"uniques": [
+			"Cannot be built on [Snow] tiles",
+			"'Policy Improvement'",
+			"Only available <after adopting [Highland Tradition]>",
+			"Gives a defensive bonus of [20]%",
+			"[+1 Faith] for each adjacent [Hill]",
+			"[+2 Faith] for each adjacent [Mountain]",
+			"Pillaging this improvement yields approximately [+18 Gold]"
+		],
+		"civilopediaText": [
+			{
+				"text": "When in war, these are the prime shelter for the refugees, When not at war, these are places where the rituals are conducted."
+			}
+		],
+		"shortcutKey": "O"
+	},
 	{
 		"name": "Oasis Dwelling",
 		"terrainsCanBeBuiltOn": [
