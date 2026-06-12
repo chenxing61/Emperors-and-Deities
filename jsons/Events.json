@@ -3633,7 +3633,7 @@
                     "Comment [Dont forget to check civilipedia if you are in need of understanding certain mechanics.]",
                     "Triggers a [New Main Quest: Into The Bronze Age, 4000BCE] event",
                     "Remove [Scenario: Spark of Civilization] [in all cities]",
-                    "Gain a free [Mission Mechanic Activation] [in capital]"
+                    "Gain a free [Mission Mechanic Activated] [in capital]"
                 ]
             }
         ]
@@ -3660,14 +3660,14 @@
                 "text": "An Empire rises before my eyes!",
                 "uniques": [
                     "Comment [The united realm will share knowledge and resources.]",
-                    "Triggers a [New Mission: Unify Mesopotamia, 2200BCE] event"
+                    "Triggers a [New Main Quest: Unify Mesopotamia, 2200BCE] event"
                 ]
             },
             {
                 "text": "Maintain the independence of city-states!",
                 "uniques": [
                     "Comment [Sargon fails at his mission. The cities remain separate but cooperate through trade and mutual defense. Or not?]",
-                    "Triggers a [New Mission: A House Divided, 2200BCE] event"
+                    "Triggers a [New Main Quest: A House Divided, 2200BCE] event"
                 ]
             }
         ]
@@ -3680,7 +3680,7 @@
                 "text": "How do I unify?",
                 "uniques": [
                     "Comment [Open the city screen of your capital, find the [Enact Policies] building, and choose the option 'We are able to unify ourselves!' when you have at least half of your Influence Limit.]",
-                    "Gain a free [Main Quest: Sargon's Reign] [in capital]"
+                    "Gain a free [Main Quest: Unify Mesopotamia] [in capital]"
                 ]
             }
         ]
@@ -3693,7 +3693,7 @@
                 "text": "A pantheon? Or something greater...",
                 "uniques": [
                     "Comment [Choose between the [Polytheism] or [Monotheism], besides a unifying government that grants powerful uniques, you can also build a religion that outlive it.]",
-                    "Gain a free [Main Quest: Early Religion] [in capital]"
+                    "Gain a free [Main Quest: A House Divided] [in capital]"
                 ]
             }
         ]
@@ -3711,6 +3711,24 @@
     },
     {
         "name": "New Mission: Survive the Bronze Age Collapse, 1200BCE",
+        "text": "The old order is crumbling. Civilizations across the eastern Mediterranean are falling to famine, rebellion, and the loss of trade routes. But here in Mesopotamia, your leadership will determine whether our light fades or endures. Over the next five turns, you will face a series of crises. Each requires wise use of Influence and Gold.",
+        "choices": [
+            {
+                "text": "What must I do?",
+                "uniques": [
+                    "Comment [Over the following turns, disasters will strike: drought, civil unrest, economic collapse. Use the [Enact Policies] and your stored resources to mitigate them. Survive all five to complete the tutorial and unlock a special reward.]"
+                ]
+            },
+            {
+                "text": "I am ready",
+                "uniques": [
+                    "Triggers a [Drought and Famine] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Side Quest Completion",
         "text": "The old order is crumbling. Civilizations across the eastern Mediterranean are falling to famine, rebellion, and the loss of trade routes. But here in Mesopotamia, your leadership will determine whether our light fades or endures. Over the next five turns, you will face a series of crises. Each requires wise use of Influence and Gold.",
         "choices": [
             {
@@ -3824,7 +3842,7 @@
                 "text": "Look to the future (Tutorial Completion)",
                 "uniques": [
                     "Comment [You have completed the Spark of Civilization tutorial. Your people will remember your leadership.]",
-                    "Triggers victory"
+                    "Gain a free [Scenario Victory] [in capital]"
                 ]
             },
             {

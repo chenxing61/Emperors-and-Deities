@@ -70,7 +70,7 @@
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
-			"Only available <in [Capital] cities> <if [Mission Mechanic Activation] is constructed>",
+			"Only available <in [Capital] cities> <if [Mission Mechanic Activated] is constructed>",
 			"Triggers a [Mission List] event",
 			"Remove [Check Mission List] [in this city] <hidden from users>"
 		]
@@ -9757,6 +9757,18 @@
 		]
 	},
 	{
+		"name": "Scenario Victory",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Triggers victory",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
 		"name": "Region Sized Map",
 		"cost": 10,
 		"uniques": [
@@ -9869,7 +9881,7 @@
 			"Remove [Main Quest: A House Divided] [in all cities] <after adopting [Apotheosis of Leaders]> <upon turn start> <hidden from users>",
 			"Triggers a [The Old Babylon, 1900BCE] event <after adopting [Apotheosis of Leaders]> <upon turn start> <hidden from users>",
 			"Remove [Main Quest: A House Divided] [in all cities] <after adopting [Enlightenment from the Lord]> <upon turn start> <hidden from users>",
-			"Triggers a [The Old Babylon, 1900BCE] event <after adopting Enlightenment from the Lord]> <upon turn start> <hidden from users>",
+			"Triggers a [The Old Babylon, 1900BCE] event <after adopting [Enlightenment from the Lord]> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9882,7 +9894,7 @@
 			"Unsellable",
 			"'Flag'",
 			"Remove [Main Quest: The Old Babylon] [in all cities]",
-			"Triggers a [Survive the Collapse, 1200BCE] event",
+			"Triggers a [New Mission: Survive the Bronze Age Collapse, 1200BCE] event",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9920,8 +9932,8 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Side Quest'",
-			"Remove [Side Quest: Tin Trade] [in all cities] <when above [0] [Pearls]> <upon turn start> <hidden from users>",
-			"Triggers a [Side Quest Completion] event <when above [0] [Pearls]> <upon turn start> <hidden from users>",
+			"Remove [Side Quest: Tin Trade] [in all cities] <when above [0] [Pearl]> <upon turn start> <hidden from users>",
+			"Triggers a [Side Quest Completion] event <when above [0] [Pearl]> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9946,7 +9958,7 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Side Quest'",
-			"Remove [Side Quest: Strengthened Political Unity] [in all cities] <if [Town Hall] is constructed in at least [5] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
+			"Remove [Side Quest: Strengthened Unity] [in all cities] <if [Town Hall] is constructed in at least [5] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
 			"Triggers a [Side Quest Completion] event <if [Town Hall] is constructed in at least [5] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
