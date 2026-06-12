@@ -65,6 +65,16 @@
 			"Remove [Hide-Show Strategic Resources] [in this city] <hidden from users>"
 		]
 	},
+		{
+		"name": "Check Mission List",
+		"cost": 0,
+		"uniques": [
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Only available <in [Capital] cities> <if [Mission Mechanic Activation] is constructed>",
+			"Triggers a [Mission List] event",
+			"Remove [Check Mission List] [in this city] <hidden from users>"
+		]
+	},
 	{
 		"name": "Levies Disbandment",
 		"cost": 0,
@@ -246,7 +256,7 @@
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Unavailable <in cities with a [Export [Food]]> <hidden from users>",
 			"Only available <in cities connected to the capital> <when above [0] [Food Export Route]>",
-			"Remove [Import [Food]] [in this city] <hidden from users> <when below [0] [Food Export Route]>",
+			"Remove [Import [Food]] [in this city] <hidden from users> <upon turn start> <when below [0] [Food Export Route]>",
 			"Consumes [1] [Food Export Route]",
 			"Comment [Automatically removes itself when the export route is below 0.]"
 		],
@@ -278,7 +288,7 @@
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
 			"Unavailable <in cities with a [Export [Production]]> <hidden from users>",
 			"Only available <in cities connected to the capital> <when above [0] [Production Export Route]>",
-			"Remove [Import [Production]] [in this city] <hidden from users> <when below [0] [Production Export Route]>",
+			"Remove [Import [Production]] [in this city] <hidden from users> <upon turn start> <when below [0] [Production Export Route]>",
 			"Consumes [1] [Production Export Route]",
 			"Comment [Automatically removes itself when the export route is below 0.]"
 		],
@@ -847,7 +857,6 @@
 		"food": 2,
 		"uniques": [
 			"'Agricultural Building'",
-			
 			"Must not be on [River]"
 		],
 		"requiredTech": "Agriculture"
@@ -939,7 +948,6 @@
 		"food": 1,
 		"uniques": [
 			"'Agricultural Building'",
-			
 			"[+1 Food] from [Fruit] tiles [in this city]",
 			"[+1 Food] from [Grain] tiles [in this city]",
 			"[+1 Food] from [Tuber] tiles [in this city]"
@@ -1083,15 +1091,12 @@
 			"Engineer": 1
 		},
 		"uniques": [
+			"Must have an owned ['Useful Mineral'] within [3] tiles",
 			"'Heavy Industry'",
 			"[+10]% Production when constructing [Ancient era] units [in this city]",
 			"[+10]% Production when constructing [Classical era] units [in this city]",
 			"Provides [1] [Metal]",
 			"[+33]% weight to this choice for AI decisions <hidden from users>"
-		],
-		"requiredNearbyImprovedResources": [
-			"Metal",
-			"Minerals"
 		],
 		"requiredTech": "Bronze Working"
 	},
@@ -1102,7 +1107,6 @@
 		"production": 2,
 		"uniques": [
 			"'Agricultural Building'",
-			
 			"Must be on [River]"
 		],
 		"requiredTech": "The Wheel"
@@ -2379,7 +2383,6 @@
 		},
 		"uniques": [
 			"'Agricultural Building'",
-			
 			"Must not be on [Hill]"
 		],
 		"requiredTech": "Construction"
@@ -3978,7 +3981,7 @@
 			"'Economic Building'",
 			"[+1 Gold] from every [Merchant] <in this city>",
 			"[Great Merchant] is earned [+1]% faster",
-			"[+100]% Gold given to enemy if city is captured"
+			"[+100]% Gold given to enemy if city is captured <in this city>"
 		],
 		"requiredTech": "Banking"
 	},
@@ -4065,7 +4068,6 @@
 	{
 		"name": "Agricultural Machinery Workshop",
 		"maintenance": 5,
-		"food": 2,
 		"percentStatBonus": {
 			"food": 15
 		},
@@ -4074,7 +4076,6 @@
 		},
 		"uniques": [
 			"'Agricultural Building'",
-			
 			"[+1]% Production when constructing ['Agricultural Building'] buildings [in all cities]"
 		],
 		"requiredTech": "Machinery"
@@ -4385,7 +4386,7 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"Provides [3] [Industry Size]",
+			"Provides [3] [Industry Size] <in this city>",
 			"[+5]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in this city]",
 			"[+1 Production] from [Metal] tiles [in this city]",
 			"[+1 Production] from [Coal] tiles [in this city]",
@@ -4432,7 +4433,7 @@
 			"Labourer": 1
 		},
 		"uniques": [
-			"Provides [2] [Industry Size]",
+			"Provides [2] [Industry Size] <in this city>",
 			"'Heavy Industry'",
 			"Provides [2] [Aluminum]",
 			"[+1 Production] from [Aluminum] tiles [in this city]",
@@ -4747,7 +4748,7 @@
 		},
 		"uniques": [
 			"'Light Industry'",
-			"Provides [2] [Industry Size]",
+			"Provides [2] [Industry Size] <in this city>",
 			"Provides [4] [Consumption Supply]",
 			//Powered
 			"[+10]% [Food] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
@@ -4819,7 +4820,7 @@
 		},
 		"uniques": [
 			"'Light Industry'",
-			"Provides [2] [Industry Size]",
+			"Provides [2] [Industry Size] <in this city>",
 			"Provides [5] [Consumption Supply]",
 			//Blowtorch lol
 			"[+1 Culture, +2 Production] per [8] population [in this city] <if [Innovation of Modern Hardwares] is constructed>",
@@ -4877,7 +4878,7 @@
 			"'Heavy Industry'",
 			"Consumes [1] [Alloy]",
 			"Provides [1] [Consumption Supply]",
-			"Provides [3] [Industry Size]",
+			"Provides [3] [Industry Size] <in this city>",
 			//Machine tool goes brrrr
 			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed> <hidden from users>",
 			"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed> <hidden from users>",
@@ -4957,7 +4958,7 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"Provides [3] [Industry Size]",
+			"Provides [3] [Industry Size] <in this city>",
 			"Provides [2] [Consumption Supply]",
 			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities]",
 			"All newly-trained [Pioneer] units [in this city] receive the [Automobile] promotion",
@@ -5043,7 +5044,7 @@
 		},
 		"uniques": [
 			"'Light Industry'",
-			"Provides [2] [Industry Size]",
+			"Provides [2] [Industry Size] <in this city>",
 			"Provides [2] [Consumption Supply]",
 			//Powered
 			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
@@ -5077,7 +5078,7 @@
 		},
 		"uniques": [
 			"'Military Building'",
-			"Provides [3] [Industry Size]",
+			"Provides [3] [Industry Size] <in this city>",
 			"Consumes [3] [Alloy]",
 			"Provides [5] [Weapon Parts]",
 			//MG42
@@ -5110,7 +5111,7 @@
 		"uniques": [
 			"Must be next to [Coast]",
 			"'Heavy Industry'",
-			"Provides [2] [Industry Size]",
+			"Provides [2] [Industry Size] <in this city>",
 			"Provides [2] [Consumption Supply]",
 			"Provides [1] [Ship Parts]",
 			"[+2]% Production when constructing [Civil Ship] units [in all cities]",
@@ -5317,7 +5318,7 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"Provides [4] [Industry Size]",
+			"Provides [4] [Industry Size] <in this city>",
 			"Provides [5] [Fuel]",
 			"Provides [1] [Industrial Chemicals]",
 			"Consumes [2] [Oil]",
@@ -5362,7 +5363,7 @@
 		},
 		"uniques": [
 			"'Military Building'",
-			"Provides [3] [Industry Size]",
+			"Provides [3] [Industry Size] <in this city>",
 			"Consumes [2] [Alloy]",
 			"Consumes [1] [Rubber]",
 			"Provides [4] [Vehicle Parts]",
@@ -5462,9 +5463,9 @@
 			"Consumes [20] [Power] <in cities with between [190] and [200] [Population]> <hidden from users>",
 			"Gain a free [Power Shortage] [in this city] <when below [0] [Power]>",
 			"Remove [Power Shortage] [in this city] <when above [0] [Power]>",
-			"Gain a free [Low Industry Electricity Cost] [in this city] <when above [0] [Industry Size]> <when below [7] [Industry Size]>",
-			"Gain a free [Medium Industry Electricity Cost] [in this city] <when above [7] [Industry Size]> <when below [15] [Industry Size]>",
-			"Gain a free [High Industry Electricity Cost] [in this city] <when above [15] [Industry Size]>",
+			"Gain a free [Low Industry Electricity Cost] [in this city] <when above [0] [Industry Size]> <in this city> <when below [7] [Industry Size]> <in this city>",
+			"Gain a free [Medium Industry Electricity Cost] [in this city] <when above [7] [Industry Size]> <in this city> <when below [15] [Industry Size]> <in this city>",
+			"Gain a free [High Industry Electricity Cost] [in this city] <when above [15] [Industry Size]> <in this city>",
 			"Remove [Power Shortage] [in this city] <when above [0] [Power]>",
 			"Provides [3] [Power] <if [Innovation of Grid Energy Storage] is constructed>"
 		],
@@ -5985,7 +5986,7 @@
 		},
 		"uniques": [
 			"'High Tech Industry'",
-			"Provides [3] [Industry Size]",
+			"Provides [3] [Industry Size] <in this city>",
 			"Provides [1] [Consumption Supply]",
 			"Provides [1] [Electronic Parts]",
 			"Provides [1] [Electronic Parts] <after discovering [Quantum Theory]>",
@@ -7847,6 +7848,7 @@
 			"Remove [{non-[High Culture Diversity]} {'Culture Diversity State'}] [in all cities] <hidden from users>",
 			"[+3]% [Science] [in all cities]",
 			"[+3]% [Culture] [in all cities]",
+			"[+100]% Production when constructing [Cultural Intergration] buildings [in annexed cities]",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7860,6 +7862,7 @@
 			"'Culture Diversity State'",
 			"Remove [{non-[Medium Culture Diversity]} {'Culture Diversity State'}] [in all cities] <hidden from users>",
 			"[+3]% [Happiness] [in all cities]",
+			"[+50]% Production when constructing [Cultural Intergration] buildings [in annexed cities]",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9585,6 +9588,8 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
+			"Remove [Underproduction] [in this city]",
+			"Remove [Balanced Production] [in this city]",
 			"Destroyed when the city is captured",
 			"[+10]% [Food] [in all cities]",
 			"[+5]% [Happiness] [in all cities]",
@@ -9603,6 +9608,8 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
+			"Remove [Underproduction] [in this city]",
+			"Remove [Overproduction] [in this city]",
 			"[+5]% [Food] [in all cities]",
 			"[+5]% [Happiness] [in all cities]",
 			"[+10]% [Gold] [in all cities]",
@@ -9615,6 +9622,8 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"Remove [Balanced Production] [in this city]",
+			"Remove [Overproduction] [in this city]",
 			"'Flag'",
 			"[-10]% [Food] [in all cities]",
 			"[-20]% [Happiness] [in all cities]",
@@ -9783,8 +9792,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
-	//Spark of Civilization Scenario 
-	
+	//Spark of Civilization Scenario 	
 	{
 		"name": "Scenario: Spark of Civilization",
 		"cost": 10,
@@ -9799,27 +9807,160 @@
 		]
 	},
 	{
+		"name": "Mission Mechanic Activated",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Scenario: Spark of Civilization NPC",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Triggers a [Spark of Civilization: Wrong Civilization] event <upon turn start>",
+			"Gain a free [Sub-Continent Sized Map] [in this city]",
+			"Gain a free [No Settler] [in this city]",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
 		"name": "Main Quest: Into The Bronze Age",
 		"cost": 10,
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
-			"Remove [Main Quest: Into The Bronze Age] [in all cities] <after discovering [Bronze Working]> <if [Foundry] is constructed>",
-			"Triggers a [New Mission: Sargon's Reign, 2334BCE] event <after discovering [Bronze Working]> <if [Foundry] is constructed>",
+			"Remove [Main Quest: Into The Bronze Age] [in all cities] <if [Foundry] is constructed> <upon turn start> <hidden from users>",
+			"Triggers a [Sargon's Reign, 2334BCE] event <if [Foundry] is constructed> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
 	{
-		"name": "Main Quest: Sargon's Reign",
+		"name": "Main Quest: Unify Mesopotamia",
 		"cost": 10,
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
-			"Remove [Main Quest: Sargon's Reign] [in all cities] <after discovering [Bronze Working]> <if [Foundry] is constructed>",
-			"Triggers a [New Mission: Sargon's Reign, 2334BCE] event <after discovering [Bronze Working]> <if [Foundry] is constructed>",
+			"Remove [Main Quest: Unify Mesopotamia] [in all cities] <if [Unified] is constructed> <upon turn start> <hidden from users>",
+			"Triggers a [The Old Babylon, 1900BCE] event <if [Unified] is constructed> <upon turn start> <hidden from users>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Main Quest: A House Divided",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Remove [Main Quest: A House Divided] [in all cities] <after adopting [Creation Myths]> <upon turn start> <hidden from users>",
+			"Triggers a [The Old Babylon, 1900BCE] event <after adopting [Creation Myths]> <upon turn start> <hidden from users>",
+			"Remove [Main Quest: A House Divided] [in all cities] <after adopting [Apotheosis of Leaders]> <upon turn start> <hidden from users>",
+			"Triggers a [The Old Babylon, 1900BCE] event <after adopting [Apotheosis of Leaders]> <upon turn start> <hidden from users>",
+			"Remove [Main Quest: A House Divided] [in all cities] <after adopting [Enlightenment from the Lord]> <upon turn start> <hidden from users>",
+			"Triggers a [The Old Babylon, 1900BCE] event <after adopting Enlightenment from the Lord]> <upon turn start> <hidden from users>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Main Quest: The Old Babylon",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Remove [Main Quest: The Old Babylon] [in all cities]",
+			"Triggers a [Survive the Collapse, 1200BCE] event",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Side Quest: Great Library",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Side Quest'",
+			"Remove [Side Quest: Great Library] [in all cities] <if [The Great Library] is constructed> <upon turn start> <hidden from users>",
+			"Triggers a [Side Quest Completion] event <if [The Great Library] is constructed> <upon turn start> <hidden from users>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Side Quest: Hanging Gardens",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Side Quest'",
+			"Remove [Side Quest: Hanging Gardens] [in all cities] <if [Hanging Gardens] is constructed> <upon turn start> <hidden from users>",
+			"Triggers a [Side Quest Completion] event <if [Hanging Gardens] is constructed> <upon turn start> <hidden from users>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Side Quest: Tin Trade",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Side Quest'",
+			"Remove [Side Quest: Tin Trade] [in all cities] <when above [0] [Pearls]> <upon turn start> <hidden from users>",
+			"Triggers a [Side Quest Completion] event <when above [0] [Pearls]> <upon turn start> <hidden from users>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Side Quest: Egyptian Trade",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Side Quest'",
+			"Remove [Side Quest: Egyptian Trade] [in all cities] <when above [0] [Incense]> <upon turn start> <hidden from users>",
+			"Triggers a [Side Quest Completion] event <when above [0] [Incense]> <upon turn start> <hidden from users>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Side Quest: Strengthened Unity",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Side Quest'",
+			"Remove [Side Quest: Strengthened Political Unity] [in all cities] <if [Town Hall] is constructed in at least [5] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
+			"Triggers a [Side Quest Completion] event <if [Town Hall] is constructed in at least [5] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Main Quest: Survive the Collapse",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Remove [Main Quest: Survive the Collapse] [in all cities]",
+			"Triggers a [The Final Hour] event",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
