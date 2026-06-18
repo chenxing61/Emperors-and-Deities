@@ -3580,7 +3580,7 @@
     ///Scenario Tools
     {
         "name": "Mission List",
-        "text": "",
+        "text": "Here is a list of all of your active mission and their win condition.",
         "choices": [
             {
                 "text": "Main Quest: Into The Bronze Age",
@@ -3813,13 +3813,14 @@
     },
     {
         "name": "New Main Quest: Survive the Bronze Age Collapse, 1200BCE",
-        "text": "The old order is crumbling. Civilizations across the eastern Mediterranean are falling to famine, rebellion, and the loss of trade routes. But here in Mesopotamia, your leadership will determine whether our light fades or endures. Over the next five turns, you will face a series of crises. Each requires wise use of Influence and Gold.",
+        "text": "For whatever reason, a volcano event far far away has triggered an agricultural disaster across the entire ancient world.\nOld order is crumbling. Civilizations across the eastern Mediterranean are falling to famine, rebellion, and the loss of trade routes. But here in Mesopotamia, your leadership will determine whether our light fades or endures. Over the next 15 turns, you will face a series of crises. Each requires wise use of Influence and Gold.",
         "choices": [
             {
                 "text": "What must I do?",
                 "uniques": [
                     "Comment [Over the following turns, disasters will strike: drought, civil unrest, economic collapse. Use the [Enact Policies] and your stored resources to mitigate them. Survive all five to complete the tutorial and unlock a special reward.]",
-                    "Remove ['Side Quest'] [in capital] <hidden from users>"
+                    "Remove ['Side Quest'] [in capital] <hidden from users>",
+                    "Instantly provides [15] [Bronze Age Collapse Countdown] <hidden from users>"
                 ]
             }
         ]

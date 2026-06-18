@@ -9839,7 +9839,7 @@
 			"Triggers a [Spark of Civilization: Wrong Civilization] event <upon turn start>",
 			"Gain a free [Sub-Continent Sized Map] [in this city]",
 			"Gain a free [No Settler] [in this city]",
-			"Free [Nomadic Settler] appears <upon entering a new era> <for [Euroasian Nomads] Civilizations>",
+			"[2] free [Nomadic Settler] units appear <upon entering a new era> <for [Euroasian Nomads] Civilizations>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9906,6 +9906,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"'Side Quest'",
 			"Gain a free [The Epic of Gilgamesh] [in capital]",
 			"Remove [Side Quest: Great Library] [in all cities] <if [The Great Library] is constructed> <upon turn start> <hidden from users>",
@@ -9920,6 +9921,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"'Side Quest'",
 			"Remove [Side Quest: Hanging Gardens] [in all cities] <if [Hanging Gardens] is constructed> <upon turn start> <hidden from users>",
 			"Triggers a [Side Quest Completion] event <if [Hanging Gardens] is constructed> <upon turn start> <hidden from users>",
@@ -9933,6 +9935,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"'Side Quest'",
 			"Remove [Side Quest: Tin Trade] [in all cities] <when above [0] [Pearl]> <upon turn start> <hidden from users>",
 			"Triggers a [Side Quest Completion] event <when above [0] [Pearl]> <upon turn start> <hidden from users>",
@@ -9946,6 +9949,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"'Side Quest'",
 			"Remove [Side Quest: Egyptian Trade] [in all cities] <when above [0] [Incense]> <upon turn start> <hidden from users>",
 			"Triggers a [Side Quest Completion] event <when above [0] [Incense]> <upon turn start> <hidden from users>",
@@ -9959,6 +9963,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"'Side Quest'",
 			"Remove [Side Quest: Strengthened Unity] [in all cities] <if [Town Hall] is constructed in at least [6] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
 			"Triggers a [Side Quest Completion] event <if [Town Hall] is constructed in at least [6] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
@@ -9973,8 +9978,9 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
-			"Remove [Main Quest: Survive the Collapse] [in all cities]",
-			"Triggers a [The Final Hour] event",
+			"Consumes [1] [Bronze Age Collapse Countdown] <hidden from users>",
+			"Remove [Main Quest: Survive the Collapse] [in all cities] <when below [1] [Bronze Age Collapse Countdown]> <hidden from users>",
+			"Triggers a [The Final Hour] event <when below [1] [Bronze Age Collapse Countdown]> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
