@@ -9804,6 +9804,17 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
+	{
+		"name": "Mission Mechanic Activated",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
 	//Spark of Civilization Scenario 	
 	{
 		"name": "Scenario: Spark of Civilization",
@@ -9814,17 +9825,6 @@
 			"'Flag'",
 			"Triggers a [Mesopotamia, Spark of Civilization, 4000BCE] event <upon turn start>",
 			"Gain a free [Sub-Continent Sized Map] [in this city]",
-			"Will not be displayed in Civilopedia",
-			"Moves to new capital when capital changes <hidden from users>"
-		]
-	},
-	{
-		"name": "Mission Mechanic Activated",
-		"cost": 10,
-		"uniques": [
-			"Unavailable <hidden from users>",
-			"Unsellable",
-			"'Flag'",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9851,7 +9851,7 @@
 			"Unsellable",
 			"'Flag'",
 			"Remove [Main Quest: Into The Bronze Age] [in all cities] <if [Foundry] is constructed> <upon turn start> <hidden from users>",
-			"Triggers a [Sargon's Reign, 2334BCE] event <if [Foundry] is constructed> <upon turn start> <hidden from users>",
+			"Triggers a [Quest Reward: Into The Bronze Age, 4000BCE] event <if [Foundry] is constructed> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9864,7 +9864,7 @@
 			"Unsellable",
 			"'Flag'",
 			"Remove [Main Quest: Unify Mesopotamia] [in all cities] <if [Unified] is constructed> <upon turn start> <hidden from users>",
-			"Triggers a [The Old Babylon, 1900BCE] event <if [Unified] is constructed> <upon turn start> <hidden from users>",
+			"Triggers a [Quest Reward: Unify Mesopotamia, 2200BCE] event <if [Unified] is constructed> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9877,11 +9877,11 @@
 			"Unsellable",
 			"'Flag'",
 			"Remove [Main Quest: A House Divided] [in all cities] <after adopting [Creation Myths]> <upon turn start> <hidden from users>",
-			"Triggers a [The Old Babylon, 1900BCE] event <after adopting [Creation Myths]> <upon turn start> <hidden from users>",
+			"Triggers a [Quest Reward: A House Divided, 2200BCE] event <after adopting [Creation Myths]> <upon turn start> <hidden from users>",
 			"Remove [Main Quest: A House Divided] [in all cities] <after adopting [Apotheosis of Leaders]> <upon turn start> <hidden from users>",
-			"Triggers a [The Old Babylon, 1900BCE] event <after adopting [Apotheosis of Leaders]> <upon turn start> <hidden from users>",
+			"Triggers a [Quest Reward: A House Divided, 2200BCE] event <after adopting [Apotheosis of Leaders]> <upon turn start> <hidden from users>",
 			"Remove [Main Quest: A House Divided] [in all cities] <after adopting [Enlightenment from the Lord]> <upon turn start> <hidden from users>",
-			"Triggers a [The Old Babylon, 1900BCE] event <after adopting [Enlightenment from the Lord]> <upon turn start> <hidden from users>",
+			"Triggers a [Quest Reward: A House Divided, 2200BCE] event <after adopting [Enlightenment from the Lord]> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9893,8 +9893,8 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
-			"Remove [Main Quest: The Old Babylon] [in all cities]",
-			"Triggers a [New Mission: Survive the Bronze Age Collapse, 1200BCE] event",
+			"Remove [Main Quest: The Old Babylon] [in all cities] <when above [3] [Side Quest Point]> <hidden from users>",
+			"Triggers a [New Main Quest: Survive the Bronze Age Collapse, 1200BCE] event <when above [3] [Side Quest Point]> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9906,6 +9906,7 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Side Quest'",
+			"Gain a free [The Epic of Gilgamesh] [in capital]",
 			"Remove [Side Quest: Great Library] [in all cities] <if [The Great Library] is constructed> <upon turn start> <hidden from users>",
 			"Triggers a [Side Quest Completion] event <if [The Great Library] is constructed> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
@@ -9958,8 +9959,8 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Side Quest'",
-			"Remove [Side Quest: Strengthened Unity] [in all cities] <if [Town Hall] is constructed in at least [5] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
-			"Triggers a [Side Quest Completion] event <if [Town Hall] is constructed in at least [5] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
+			"Remove [Side Quest: Strengthened Unity] [in all cities] <if [Town Hall] is constructed in at least [6] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
+			"Triggers a [Side Quest Completion] event <if [Town Hall] is constructed in at least [6] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
