@@ -6748,8 +6748,7 @@
 			"Consumes [1] [Influence] <when below [50] [Happiness]> <starting from the [Modern era]>",
 			"Consumes [1] [Influence] <when below [30] [Happiness]> <starting from the [Industrial era]>",
 			"Consumes [1] [Influence] <when below [10] [Happiness]> <starting from the [Imperial era]>",
-			"Consumes [1] [Influence] <when below [4] [Happiness]>",
-			"Consumes [2] [Influence] <when below [-4] [Happiness]>",
+			"Consumes [1] [Influence] <when below [0] [Happiness]>",
 			"Consumes [2] [Influence] <when below [-9] [Happiness]>",
 			"Consumes [2] [Influence] <when below [-14] [Happiness]>",
 			"Consumes [3] [Influence] <when below [-19] [Happiness]>",
@@ -8005,7 +8004,6 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Provides [10] [Influence Limit]",
-			"Consumes [1] [Influence]",
 			"Remove ['Divided'] [in all cities]",
 			"Remove ['Agreement'] [in all cities]",
 			"Enables Research agreements",
@@ -9840,6 +9838,7 @@
 			"Gain a free [Sub-Continent Sized Map] [in this city]",
 			"Gain a free [No Settler] [in this city]",
 			"[2] free [Nomadic Settler] units appear <upon entering a new era> <for [Euroasian Nomads] Civilizations>",
+			"Gain a free [Scenario Victory] [in capital] <upon turn start> <if [Anarchy] is constructed by anybody> <if [Main Quest: Survive the Collapse] is constructed by anybody>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9894,8 +9893,8 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
-			"Remove [Main Quest: The Old Babylon] [in all cities] <when above [3] [Side Quest Point]> <hidden from users>",
-			"Triggers a [New Main Quest: Survive the Bronze Age Collapse, 1200BCE] event <when above [3] [Side Quest Point]> <hidden from users>",
+			"Remove [Main Quest: The Old Babylon] [in all cities] <upon turn start> <when above [3] [Side Quest Point]> <hidden from users>",
+			"Triggers a [New Main Quest: Survive the Bronze Age Collapse, 1200BCE] event <upon turn start> <when above [3] [Side Quest Point]> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9972,6 +9971,20 @@
 		]
 	},
 	{
+		"name": "Side Quest: Horse Power",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"'Side Quest'",
+			"Remove [Side Quest: Horse Power] [in all cities] <when above [10] [Horse]> <upon turn start> <hidden from users>",
+			"Triggers a [Side Quest Completion] event <when above [10] [Horse]> <upon turn start> <hidden from users>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
 		"name": "Main Quest: Survive the Collapse",
 		"cost": 10,
 		"uniques": [
@@ -9979,8 +9992,14 @@
 			"Unsellable",
 			"'Flag'",
 			"Consumes [1] [Bronze Age Collapse Countdown] <hidden from users>",
-			"Remove [Main Quest: Survive the Collapse] [in all cities] <when below [1] [Bronze Age Collapse Countdown]> <hidden from users>",
-			"Triggers a [The Final Hour] event <when below [1] [Bronze Age Collapse Countdown]> <hidden from users>",
+			"Remove [Main Quest: Survive the Collapse] [in all cities] <when below [1] [Bronze Age Collapse Countdown]> <upon turn start> <hidden from users>",
+			"Comment [Wow you actually look at the building list? Good job, heres all the chance for each bad event to occur.]",
+			"Triggers a [Drought and Famine] event <with [8]% chance> <when above [10] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [Userpers and Barbarians] event <when above [8] [Bronze Age Collapse Countdown]> <with [8]% chance> <upon turn start>",
+			"Triggers a [Trade Collapse] event <with [25]% chance> <when above [12] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [Loss of Writing] event <with [6]% chance> <when below [7] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [Loss of Faith] event <with [6]% chance> <when below [7] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [The Final Hour] event <upon turn start> <when below [1] [Bronze Age Collapse Countdown]> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
