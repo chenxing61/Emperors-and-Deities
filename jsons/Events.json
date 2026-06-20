@@ -3725,6 +3725,7 @@
                     "Comment [As for how loyal would they be? Well, the game doesnt allow them to rebel. However, new cities will take a big chunk of happiness away from you since the governing body of your civilization have to diverge their power.]",
                     "Comment [Low happiness can wreck havoc on unsuspecting civilizations as they decrease [influence] and make negative events occur more often.]",
                     "Free [Settler] appears",
+                    "Instantly gain [5] [Influence]",
                     "Triggers a [Sargon's Reign, 2334BCE] event <hidden from users>"
                 ]
             }
@@ -3805,7 +3806,7 @@
     },
     {
         "name": "New Main Quest: The Old Babylon, 1900BCE",
-        "text": "The Wheel of history turns its tide, the empire of akkad didnt last. But the west asian civilization is now going through an era of prosperity, complete 4 side quests and Prepare for the inevitable.",
+        "text": "The Wheel of history turns its tide, the empire of akkad didnt last. But the west asian civilization is now going through an era of prosperity, complete 4 side quests and \n Prepare for the inevitable.",
         "choices": [
             {
                 "text": "You may check the list of available side quests by [Check Mission List] in capital.",
@@ -3829,6 +3830,7 @@
                 "text": "What are you talking about?",
                 "uniques": [
                     "Gain a free [Town Square] [in capital]",
+                    "Instantly gain [20] [Influence]",
                     "Triggers a [New Main Quest: Survive the Bronze Age Collapse, 1200BCE] event <hidden from users>"
                 ]
             }
@@ -3902,18 +3904,19 @@
                     "Comment [Tighten the Rulership. The amount of [Town Hall]s will lessen the rebellions.]",
                     "Only available <when above [0] [Influence]>",
                     "Instantly consumes [10] [Influence] <when above [0] [Influence]>",
-                    "Gain [-200] [Gold]",
-                    "[1] [Aggressive Tribes]s rebel <in [all] cities> <in cities without a [Town Hall]>",
-                    "[1] [Barbaric Nomad]s rebel <in [all] cities>"
+                    "Gain [-100] [Gold]",
+                    "[1] [Aggressive Tribes]s rebel",
+                    "[2] [Aggressive Tribes]s rebel <when below [5] [Happiness]>",
+                    "[1] [Barbaric Nomad]s rebel"
                 ]
             },
             {
                 "text": "Let them come!",
                 "uniques": [
                     "Comment [Certainly, you have an army, why not use them?]",
-                    "[1] [Rogue Aristrocrat]s rebel <in [all] cities> <in cities without a [Town Hall]>",
-                    "[2] [Aggressive Tribes]s rebel <in [all] cities>",
-                    "[1] [Barbaric Nomad]s rebel <in [all] cities>"
+                    "[1] [Rogue Aristrocrat]s rebel",
+                    "[3] [Aggressive Tribes]s rebel",
+                    "[2] [Barbaric Nomad]s rebel"
                 ]
             }
         ]
@@ -3928,7 +3931,7 @@
                     "Comment [Because you have done the related side quest. You have enough [Pearl]s to buy up all the remaining tins on the market! If you can still call it a market.]",
                     "Only available <when above [0] [Influence]>",
                     "Instantly consumes [1] [Influence] <when above [0] [Influence]>",
-                    "Gain [-100] [Gold]"
+                    "Gain [-50] [Gold]"
                 ]
             },
             {
