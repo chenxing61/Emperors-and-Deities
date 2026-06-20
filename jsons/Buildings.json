@@ -6748,8 +6748,7 @@
 			"Consumes [1] [Influence] <when below [50] [Happiness]> <starting from the [Modern era]>",
 			"Consumes [1] [Influence] <when below [30] [Happiness]> <starting from the [Industrial era]>",
 			"Consumes [1] [Influence] <when below [10] [Happiness]> <starting from the [Imperial era]>",
-			"Consumes [1] [Influence] <when below [4] [Happiness]>",
-			"Consumes [2] [Influence] <when below [-4] [Happiness]>",
+			"Consumes [1] [Influence] <when below [0] [Happiness]>",
 			"Consumes [2] [Influence] <when below [-9] [Happiness]>",
 			"Consumes [2] [Influence] <when below [-14] [Happiness]>",
 			"Consumes [3] [Influence] <when below [-19] [Happiness]>",
@@ -8005,7 +8004,6 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Provides [10] [Influence Limit]",
-			"Consumes [1] [Influence]",
 			"Remove ['Divided'] [in all cities]",
 			"Remove ['Agreement'] [in all cities]",
 			"Enables Research agreements",
@@ -9526,8 +9524,8 @@
 			"'Negative Event'",
 			"[-5]% Production when constructing [All] units [in all cities]",
 			"[2] [Farmer Rebellion]s rebel <before the [Industrial era]>",
-			"A [Rogue Aristrocrat] rebels <if [Strife] is constructed> <before the [Industrial era]>",
-			"A [Rogue Aristrocrat] rebels <if [Anarchy] is constructed> <before the [Industrial era]>",
+			"A [Rogue Aristrocrat] rebels <if [Strife] is constructed> <starting from the [Classical era]> <before the [Industrial era]>",
+			"A [Rogue Aristrocrat] rebels <if [Anarchy] is constructed> <starting from the [Classical era]> <before the [Industrial era]>",
 			"[2] [Militia Movement]s rebel <starting from the [Industrial era]>",
 			"Triggers a [Chaos Spreading] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance> <upon turn start>"
 		]
@@ -9804,6 +9802,17 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
+	{
+		"name": "Mission Mechanic Activated",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
 	//Spark of Civilization Scenario 	
 	{
 		"name": "Scenario: Spark of Civilization",
@@ -9819,17 +9828,6 @@
 		]
 	},
 	{
-		"name": "Mission Mechanic Activated",
-		"cost": 10,
-		"uniques": [
-			"Unavailable <hidden from users>",
-			"Unsellable",
-			"'Flag'",
-			"Will not be displayed in Civilopedia",
-			"Moves to new capital when capital changes <hidden from users>"
-		]
-	},
-	{
 		"name": "Scenario: Spark of Civilization NPC",
 		"cost": 10,
 		"uniques": [
@@ -9839,6 +9837,8 @@
 			"Triggers a [Spark of Civilization: Wrong Civilization] event <upon turn start>",
 			"Gain a free [Sub-Continent Sized Map] [in this city]",
 			"Gain a free [No Settler] [in this city]",
+			"[2] free [Nomadic Settler] units appear <upon entering a new era> <for [Euroasian Nomads] Civilizations>",
+			"Gain a free [Scenario Victory] [in capital] <upon turn start> <if [Anarchy] is constructed by anybody> <if [Main Quest: Survive the Collapse] is constructed by anybody>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9851,7 +9851,7 @@
 			"Unsellable",
 			"'Flag'",
 			"Remove [Main Quest: Into The Bronze Age] [in all cities] <if [Foundry] is constructed> <upon turn start> <hidden from users>",
-			"Triggers a [Sargon's Reign, 2334BCE] event <if [Foundry] is constructed> <upon turn start> <hidden from users>",
+			"Triggers a [Quest Reward: Into The Bronze Age, 4000BCE] event <if [Foundry] is constructed> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9864,7 +9864,7 @@
 			"Unsellable",
 			"'Flag'",
 			"Remove [Main Quest: Unify Mesopotamia] [in all cities] <if [Unified] is constructed> <upon turn start> <hidden from users>",
-			"Triggers a [The Old Babylon, 1900BCE] event <if [Unified] is constructed> <upon turn start> <hidden from users>",
+			"Triggers a [Quest Reward: Unify Mesopotamia, 2200BCE] event <if [Unified] is constructed> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9877,11 +9877,11 @@
 			"Unsellable",
 			"'Flag'",
 			"Remove [Main Quest: A House Divided] [in all cities] <after adopting [Creation Myths]> <upon turn start> <hidden from users>",
-			"Triggers a [The Old Babylon, 1900BCE] event <after adopting [Creation Myths]> <upon turn start> <hidden from users>",
+			"Triggers a [Quest Reward: A House Divided, 2200BCE] event <after adopting [Creation Myths]> <upon turn start> <hidden from users>",
 			"Remove [Main Quest: A House Divided] [in all cities] <after adopting [Apotheosis of Leaders]> <upon turn start> <hidden from users>",
-			"Triggers a [The Old Babylon, 1900BCE] event <after adopting [Apotheosis of Leaders]> <upon turn start> <hidden from users>",
+			"Triggers a [Quest Reward: A House Divided, 2200BCE] event <after adopting [Apotheosis of Leaders]> <upon turn start> <hidden from users>",
 			"Remove [Main Quest: A House Divided] [in all cities] <after adopting [Enlightenment from the Lord]> <upon turn start> <hidden from users>",
-			"Triggers a [The Old Babylon, 1900BCE] event <after adopting [Enlightenment from the Lord]> <upon turn start> <hidden from users>",
+			"Triggers a [Quest Reward: A House Divided, 2200BCE] event <after adopting [Enlightenment from the Lord]> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9893,8 +9893,8 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
-			"Remove [Main Quest: The Old Babylon] [in all cities]",
-			"Triggers a [New Mission: Survive the Bronze Age Collapse, 1200BCE] event",
+			"Remove [Main Quest: The Old Babylon] [in all cities] <upon turn start> <when above [3] [Side Quest Point]> <hidden from users>",
+			"Triggers a [New Main Quest: Survive the Bronze Age Collapse, 1200BCE] event <upon turn start> <when above [3] [Side Quest Point]> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9905,7 +9905,9 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"'Side Quest'",
+			"Gain a free [The Epic of Gilgamesh] [in capital]",
 			"Remove [Side Quest: Great Library] [in all cities] <if [The Great Library] is constructed> <upon turn start> <hidden from users>",
 			"Triggers a [Side Quest Completion] event <if [The Great Library] is constructed> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
@@ -9918,6 +9920,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"'Side Quest'",
 			"Remove [Side Quest: Hanging Gardens] [in all cities] <if [Hanging Gardens] is constructed> <upon turn start> <hidden from users>",
 			"Triggers a [Side Quest Completion] event <if [Hanging Gardens] is constructed> <upon turn start> <hidden from users>",
@@ -9931,6 +9934,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"'Side Quest'",
 			"Remove [Side Quest: Tin Trade] [in all cities] <when above [0] [Pearl]> <upon turn start> <hidden from users>",
 			"Triggers a [Side Quest Completion] event <when above [0] [Pearl]> <upon turn start> <hidden from users>",
@@ -9944,6 +9948,7 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"'Side Quest'",
 			"Remove [Side Quest: Egyptian Trade] [in all cities] <when above [0] [Incense]> <upon turn start> <hidden from users>",
 			"Triggers a [Side Quest Completion] event <when above [0] [Incense]> <upon turn start> <hidden from users>",
@@ -9957,9 +9962,24 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Flag'",
 			"'Side Quest'",
-			"Remove [Side Quest: Strengthened Unity] [in all cities] <if [Town Hall] is constructed in at least [5] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
-			"Triggers a [Side Quest Completion] event <if [Town Hall] is constructed in at least [5] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
+			"Remove [Side Quest: Strengthened Unity] [in all cities] <if [Town Hall] is constructed in at least [6] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
+			"Triggers a [Side Quest Completion] event <if [Town Hall] is constructed in at least [6] of [non-[Puppeted]] cities> <upon turn start> <hidden from users>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Side Quest: Horse Power",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"'Side Quest'",
+			"Remove [Side Quest: Horse Power] [in all cities] <when above [10] [Horse]> <upon turn start> <hidden from users>",
+			"Triggers a [Side Quest Completion] event <when above [10] [Horse]> <upon turn start> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9971,8 +9991,15 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
-			"Remove [Main Quest: Survive the Collapse] [in all cities]",
-			"Triggers a [The Final Hour] event",
+			"Consumes [1] [Bronze Age Collapse Countdown] <hidden from users>",
+			"Remove [Main Quest: Survive the Collapse] [in all cities] <when below [1] [Bronze Age Collapse Countdown]> <upon turn start> <hidden from users>",
+			"Comment [Wow you actually look at the building list? Good job, heres all the chance for each bad event to occur.]",
+			"Triggers a [Drought and Famine] event <with [33]% chance> <when above [13] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [Userpers and Barbarians] event <with [10]% chance> <when above [10] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [Trade Collapse] event <with [25]% chance> <when above [7] [Bronze Age Collapse Countdown]> <when below [10] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [Loss of Writing] event <with [25]% chance> <when above [4] [Bronze Age Collapse Countdown]> <when below [7] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [Loss of Faith] event <with [25]% chance> <when above [1] [Bronze Age Collapse Countdown]> <when below [4] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [The Final Hour] event <upon turn start> <when below [1] [Bronze Age Collapse Countdown]> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]

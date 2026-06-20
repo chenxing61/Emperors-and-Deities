@@ -51,6 +51,27 @@
 			"Stockpiled"
 		]
 	},
+	//Scenario Resources
+	{
+		"name": "Side Quest Point",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Will not be displayed in Civilopedia",
+			"Cannot be traded",
+			"Stockpiled"
+		]
+	},
+	{
+		"name": "Bronze Age Collapse Countdown",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen",
+			"Will not be displayed in Civilopedia",
+			"Cannot be traded",
+			"Stockpiled"
+		]
+	},
+	//Civ Mechanic Resources
 	{
 		"name": "Avaliable School of Thoughts",
 		"resourceType": "Strategic",
@@ -75,23 +96,33 @@
 	{
 		"name": "Consumption Supply",
 		"resourceType": "Strategic",
-		"uniques": ["Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
-		"Comment [[Consumption Supply] is mainly gained by building ['Light Industry'] buildings. Some buildings and policies that encourage nationalisation also increases the output of this resource.]"],
+		"uniques": [
+			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
+			"Comment [[Consumption Supply] is mainly gained by building ['Light Industry'] buildings. Some buildings and policies that encourage nationalisation also increases the output of this resource.]"
+		],
 		"revealedBy": "Economics",
 		"civilopediaText": [
-		{"text": "See also: ED - The Industrial Ages", "link": "Tutorials/ED - The Industrial Ages"}
+			{
+				"text": "See also: ED - The Industrial Ages",
+				"link": "Tutorials/ED - The Industrial Ages"
+			}
 		]
 	},
 	{
 		"name": "Consumption Demand",
 		"resourceType": "Strategic",
-		"uniques": ["Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
-		"Comment [Every 5 population provides 2 [Consumption Demand]. Some buildings and policies that encourages free markets also increases the output of this resource.]","Cannot be traded"],
+		"uniques": [
+			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
+			"Comment [Every 5 population provides 2 [Consumption Demand]. Some buildings and policies that encourages free markets also increases the output of this resource.]",
+			"Cannot be traded"
+		],
 		"revealedBy": "Economics",
 		"civilopediaText": [
-		{"text": "See also: ED - The Industrial Ages", "link": "Tutorials/ED - The Industrial Ages"}
+			{
+				"text": "See also: ED - The Industrial Ages",
+				"link": "Tutorials/ED - The Industrial Ages"
+			}
 		]
-		
 	},
 	{
 		"name": "Industry Size",
@@ -102,7 +133,10 @@
 		],
 		"revealedBy": "Industrialization",
 		"civilopediaText": [
-		{"text": "See also: ED - The Industrial Ages", "link": "Tutorials/ED - The Industrial Ages"}
+			{
+				"text": "See also: ED - The Industrial Ages",
+				"link": "Tutorials/ED - The Industrial Ages"
+			}
 		]
 	},
 	{
@@ -113,7 +147,10 @@
 		],
 		"revealedBy": "Electricity",
 		"civilopediaText": [
-		{"text": "See also: ED - The Industrial Ages", "link": "Tutorials/ED - The Industrial Ages"}
+			{
+				"text": "See also: ED - The Industrial Ages",
+				"link": "Tutorials/ED - The Industrial Ages"
+			}
 		]
 	},
 	{
@@ -126,7 +163,10 @@
 		],
 		"revealedBy": "Wood Block Printing",
 		"civilopediaText": [
-		{"text": "See also: Great Merchant", "link": "Unit/Great Merchant"}
+			{
+				"text": "See also: Great Merchant",
+				"link": "Unit/Great Merchant"
+			}
 		]
 	},
 	{
@@ -269,7 +309,7 @@
 		"food": 1,
 		"improvedBy": [
 			"Manual Plantation",
-            "Colony Plantation",
+			"Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -498,8 +538,8 @@
 			"Atoll"
 		],
 		"production": 2,
-		"gold":2,
-		"science":1,
+		"gold": 2,
+		"science": 1,
 		"revealedBy": "Chemistry",
 		"improvedBy": [
 			"Coast Fishing Boats",
@@ -1014,11 +1054,13 @@
 		"name": "Elephant",
 		"revealedBy": "Horse Collar",
 		"resourceType": "Strategic",
-		"uniques":["Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>"]
+		"uniques": [
+			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>"
+		]
 	},
 	{
 		"name": "Silk",
-		"revealedBy":"Pottery",
+		"revealedBy": "Pottery",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": [
 			"Forest",
@@ -1027,7 +1069,7 @@
 		"gold": 2,
 		"improvedBy": [
 			"Manual Plantation",
-            "Colony Plantation",
+			"Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1156,7 +1198,7 @@
 	{
 		"name": "Cotton",
 		"resourceType": "Luxury",
-		"revealedBy":"Pottery",
+		"revealedBy": "Pottery",
 		"terrainsCanBeFoundOn": [
 			"Grassland",
 			"Flood plains"
@@ -1164,7 +1206,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
-            "Colony Plantation",
+			"Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1184,7 +1226,7 @@
 	{
 		"name": "Dyes",
 		"resourceType": "Luxury",
-		"revealedBy":"Pottery",
+		"revealedBy": "Pottery",
 		"terrainsCanBeFoundOn": [
 			"Jungle",
 			"Forest",
@@ -1194,7 +1236,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
-            "Colony Plantation",
+			"Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1213,7 +1255,7 @@
 	{
 		"name": "Incense",
 		"resourceType": "Luxury",
-		"revealedBy":"Pottery",
+		"revealedBy": "Pottery",
 		"terrainsCanBeFoundOn": [
 			"Plains",
 			"Desert",
@@ -1222,7 +1264,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
-            "Colony Plantation",
+			"Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1240,7 +1282,7 @@
 	{
 		"name": "Spices",
 		"resourceType": "Luxury",
-		"revealedBy":"Pottery",
+		"revealedBy": "Pottery",
 		"terrainsCanBeFoundOn": [
 			"Jungle",
 			"Forest",
@@ -1250,7 +1292,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
-            "Colony Plantation",
+			"Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1272,7 +1314,7 @@
 	{
 		"name": "Grape",
 		"resourceType": "Luxury",
-		"revealedBy":"Pottery",
+		"revealedBy": "Pottery",
 		"terrainsCanBeFoundOn": [
 			"Grassland",
 			"Plains"
@@ -1281,7 +1323,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
-            "Colony Plantation",
+			"Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1298,7 +1340,7 @@
 	{
 		"name": "Sugar",
 		"resourceType": "Luxury",
-		"revealedBy":"Pottery",
+		"revealedBy": "Pottery",
 		"terrainsCanBeFoundOn": [
 			"Flood plains",
 			"Grassland",
@@ -1309,7 +1351,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
-            "Colony Plantation",
+			"Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1329,7 +1371,7 @@
 	{
 		"name": "Citrus",
 		"resourceType": "Luxury",
-		"revealedBy":"Pottery",
+		"revealedBy": "Pottery",
 		"terrainsCanBeFoundOn": [
 			"Jungle",
 			"Forest",
@@ -1339,7 +1381,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
-            "Colony Plantation",
+			"Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1359,7 +1401,7 @@
 	{
 		"name": "Cocoa",
 		"resourceType": "Luxury",
-		"revealedBy":"Pottery",
+		"revealedBy": "Pottery",
 		"terrainsCanBeFoundOn": [
 			"Jungle",
 			"Forest"
@@ -1368,7 +1410,7 @@
 		"faith": 1,
 		"improvedBy": [
 			"Manual Plantation",
-            "Colony Plantation",
+			"Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1387,7 +1429,7 @@
 	{
 		"name": "Tea Leave",
 		"resourceType": "Luxury",
-		"revealedBy":"Pottery",
+		"revealedBy": "Pottery",
 		"terrainsCanBeFoundOn": [
 			"Jungle",
 			"Forest"
@@ -1396,7 +1438,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
-            "Colony Plantation",
+			"Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1416,7 +1458,7 @@
 	{
 		"name": "Coffee",
 		"resourceType": "Luxury",
-		"revealedBy":"Pottery",
+		"revealedBy": "Pottery",
 		"terrainsCanBeFoundOn": [
 			"Jungle",
 			"Forest"
@@ -1425,7 +1467,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
-            "Colony Plantation",
+			"Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1753,7 +1795,9 @@
 			"Stockpiled"
 		],
 		"civilopediaText": [
-		{"text": "You gain this by building ['Cultural Building']s and buildings unique to your civ and religion before industrial era."}
+			{
+				"text": "You gain this by building ['Cultural Building']s and buildings unique to your civ and religion before industrial era."
+			}
 		],
 		"revealedBy": "Archaeology"
 	},
@@ -1773,7 +1817,7 @@
 			"Stockpiled",
 			"Not shown on world screen <if [Hide Miscellaneous] is constructed>"
 		],
-		"revealedBy":"Horse Collar"
+		"revealedBy": "Horse Collar"
 	},
 	{
 		"name": "Migration Limit",
@@ -1782,7 +1826,7 @@
 			"Cannot be traded",
 			"Not shown on world screen <if [Hide Miscellaneous] is constructed>"
 		],
-		"revealedBy":"Horse Collar"
+		"revealedBy": "Horse Collar"
 	},
 	{
 		"name": "Food Export Route",
@@ -1790,15 +1834,15 @@
 		"uniques": [
 			"Not shown on world screen <if [Hide Miscellaneous] is constructed>"
 		],
-		"revealedBy":"Plows"
+		"revealedBy": "Plows"
 	},
 	{
 		"name": "Production Export Route",
 		"resourceType": "Strategic",
 		"uniques": [
-				"Not shown on world screen <if [Hide Miscellaneous] is constructed>"
+			"Not shown on world screen <if [Hide Miscellaneous] is constructed>"
 		],
-		"revealedBy":"Mining"
+		"revealedBy": "Mining"
 	},
 	{
 		"name": "Slaves",
@@ -1809,6 +1853,10 @@
 			"Cannot be traded"
 		],
 		"civilopediaText": [
-		{"text": "See also: Peon", "link": "Unit/Peon"}]
+			{
+				"text": "See also: Peon",
+				"link": "Unit/Peon"
+			}
+		]
 	}
 ]
