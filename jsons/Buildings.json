@@ -4702,8 +4702,8 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"Provides [3] [Fuel]",
-			"Provides [1] [Industrial Chemicals]",
+			"Provides [3] [Fuel] <when above [0] [Natural Gas(Stored)]>",
+			"Provides [1] [Industrial Chemicals] <when above [0] [Natural Gas(Stored)]>",
 			"Consumes [2] [Natural Gas(Stored)]",
 			"Only available <when above [0] [Natural Gas(Stored)]>"
 		],
@@ -5502,7 +5502,7 @@
 		"uniques": [
 			"'Power Building'",
 			"[+2 Production] from [Natural Gas] tiles [in this city]",
-			"Provides [6] [Power] <in this city>",
+			"Provides [6] [Power] <in this city> <when above [0] [Natural Gas(Stored)]>",
 			"Consumes [1] [Natural Gas(Stored)]",
 			"Only available <when above [0] [Natural Gas(Stored)]>"
 		],
@@ -9830,6 +9830,7 @@
 	{
 		"name": "Scenario: Spark of Civilization NPC",
 		"cost": 10,
+		"happiness": 10,
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
@@ -9838,6 +9839,7 @@
 			"Gain a free [Sub-Continent Sized Map] [in this city]",
 			"Gain a free [No Settler] [in this city]",
 			"[2] free [Nomadic Settler] units appear <upon entering a new era> <for [Euroasian Nomads] Civilizations>",
+			"Gain a free [Peace] [in this city] <upon turn start>",
 			"Gain a free [Scenario Victory] [in capital] <upon turn start> <if [Anarchy] is constructed by anybody> <if [Main Quest: Survive the Collapse] is constructed by anybody>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
