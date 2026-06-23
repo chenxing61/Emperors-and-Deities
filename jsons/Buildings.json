@@ -557,17 +557,19 @@
 	},
 	{
 		"name": "Business Expansion",
-		"cost": 280,
+		"cost": 320,
 		"uniques": [
 			"Unsellable",
 			"'Expansion'",
 			"Comment [Only when all buildings in this package have not been built, this package is available.]",
 			"Only available <in cities without a [Hunter's Hut]>",
 			"Only available <in cities without a [Crops Market]>",
+			"Only available <in cities without a [Jewellery Workshop]>",
 			"Only available <in cities without a [Trading Post]>",
 			"Only available <in cities without a [Warehouse]>",
 			"Gain a free [Hunter's Hut] [in this city]", //20
 			"Gain a free [Crops Market] [in this city]", //40
+			"Gain a free [Jewellery Workshop] [in this city]", //40
 			"Gain a free [Trading Post] [in this city]", //100
 			"Gain a free [Warehouse] [in this city]", //100
 			"[+300]% weight to this choice for AI decisions <hidden from users>"
@@ -1130,11 +1132,7 @@
 		"uniques": [
 			"'Economic Building'",
 			"'Political Building'",
-			"[+1 Gold] from [{'Extraction Improvement'} {Gold Ore}] tiles [in this city]",
-			"[+1 Gold] from [{'Extraction Improvement'} {Silver Ore}] tiles [in this city]",
-			"[+1 Gold] from [{'Extraction Improvement'} {Rich Copper Ore}] tiles [in this city]",
-			"[+1 Gold] from [{'Agricultural Improvement'} {Cocoa}] tiles [in this city]",
-			"[+1 Gold] per [4] population [in this city]",
+			"[+1 Gold] per [3] population [in this city]",
 			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredNearbyImprovedResources": [
@@ -1150,20 +1148,20 @@
 		"maintenance": 1,
 		"culture": 1,
 		"uniques": [
-			"'Light Industry'",
-			"[+1 Gold] from [{'Extraction Improvement'} {'Precious Mineral'}] tiles [in this city]",
-			"[+1 Gold] from [{Camp} {Ivory}] tiles [in this city]",
-			"[+1 Gold] from [{'Water Improvement'} {Coral}] tiles [in this city]",
-			"Consumes [1] [Glass] <with [Glass]>",
-			"[+1 Gold, +1 Science] <with [Glass]>"
-		],
-		"requiredNearbyImprovedResources": [
-			"Gold Ore",
-			"Silver Ore",
-			"Rich Copper Ore",
-			"Ivory",
-			"Gems",
-			"Coral"
+			"'Economic Building'",
+			"[+1]% [Gold] [in this city] <with [Stone]>",
+			"[+1]% [Gold] [in this city] <with [Minerals]>",
+			"[+1]% [Gold] [in this city] <with [Metal]>",
+			"[+3]% [Gold] [in this city] <with [Gems]>",
+			"[+3]% [Gold] [in this city] <with [Glass]>",
+			"[+3]% [Gold] [in this city] <with [Marble]>",
+			"[+3]% [Gold] [in this city] <with [Gold Ore]>",
+			"[+3]% [Gold] [in this city] <with [Silver Ore]>",
+			"[+3]% [Gold] [in this city] <with [Unique jewelry]>",
+			"[+3]% [Gold] [in this city] <with [Rich Copper Ore]>",
+			"[+3]% [Gold] [in this city] <with [Ivory]>",
+			"[+3]% [Gold] [in this city] <with [Pearl]>",
+			"[+3]% [Gold] [in this city] <with [Coral]>"
 		],
 		"requiredTech": "Currency"
 	},
