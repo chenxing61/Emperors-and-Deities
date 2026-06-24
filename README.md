@@ -1,4 +1,7 @@
 # Emperor and Deities (帝王和神明)
+
+ The Trailer: https://youtu.be/ZhHMAkBuZAg?si=iHjru9OQqDwQtoYd
+ 
  Major Overhaul of literary everything, if you are not satisfied with how civ 5 portrays human civilizations, you ought to try this mod!
 
  The Mod is WIP so civs dont have their full unique features and late game(info age) kinda lacks content, it is recommended that you enable short victories like nuclear monopoly and industrial.
