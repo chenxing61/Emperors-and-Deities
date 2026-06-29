@@ -1,7 +1,7 @@
 {
     "name": "Global uniques",
     "uniques": [
-        ///Nerf 4 general gameplay
+        ///Overpopulation
         "[-25]% growth [in all cities] <in cities with at least [10] [Population]> <hidden from users>",
         "[-25]% growth [in all cities] <in cities with at least [20] [Population]> <hidden from users>",
         "[-25]% growth [in all cities] <in cities with at least [30] [Population]> <hidden from users>",
@@ -24,7 +24,7 @@
         "[+75]% Unhappiness from [Population] [in all cities] <in cities with at least [65] [Population]> <hidden from users>",
         "[+100]% Unhappiness from [Population] [in all cities] <in cities with at least [70] [Population]> <hidden from users>",
         "[+100]% Unhappiness from [Population] [in all cities] <in cities with at least [75] [Population]> <hidden from users>",
-
+        ///Overexpansion
         "[+25]% unhappiness from the number of cities <when number of [Cities] is more than [5]> <hidden from users>",
         "[+15]% unhappiness from the number of cities <when number of [Cities] is more than [7]> <hidden from users>",
         "[+25]% unhappiness from the number of cities <when number of [Cities] is more than [10]> <hidden from users>",
@@ -37,17 +37,17 @@
         "[+15]% unhappiness from the number of cities <when number of [Cities] is more than [35]> <hidden from users>",
         "[+25]% unhappiness from the number of cities <when number of [Cities] is more than [37]> <hidden from users>",
         "[+15]% unhappiness from the number of cities <when number of [Cities] is more than [40]> <hidden from users>",
-
+        ///Aftermath of Conquer
         "[-10]% [Food] [in annexed cities] <in cities without a [Administrative Intergration]>",
 		"[-10]% [Production] [in annexed cities] <in cities without a [Administrative Intergration]>",
 		"[-10]% [Gold] [in annexed cities] <in cities without a [Administrative Intergration]>",
 		"[-10]% [Culture] [in annexed cities] <in cities without a [Cultural Intergration]>",
 		"[-10]% [Science] [in annexed cities] <in cities without a [Cultural Intergration]>",
 		"[-10]% [Faith] [in annexed cities] <in cities without a [Cultural Intergration]>",
+        
 
-        "[-15]% [Production] [in all cities] <when below [0] [Happiness]> <hidden from users>",
-        "Triggers a [Abolitionism Strikes] event <when above [1] [Slaves]> <if [Abolition] is not constructed> <starting from the [Imperial era]> <with [33]% chance> <upon turn start> <hidden from users>",
         ///Unhappy events
+        "[-15]% [Production] [in all cities] <when below [0] [Happiness]> <hidden from users>",
         "Triggers a [Wealth Gap Widens] event <starting from the [Ancient era]>  <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [5]% chance> <upon turn start> <hidden from users>",
         "Triggers a [Rampant Corruption] event <starting from the [Ancient era]>  <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [5]% chance> <upon turn start> <hidden from users>",
         "Triggers a [Vagrancy Crisis] event <starting from the [Ancient era]>  <when below [0] [Happiness]> <for [non-[City-States]] Civilizations> <with [5]% chance> <upon turn start> <hidden from users>",
@@ -231,8 +231,8 @@
         "Cannot build ['Engine Ship'] units <when below [-10] [Fuel]> <hidden from users>",
         "Cannot build [Air] units <when below [-10] [Fuel]> <hidden from users>",
         "[-33]% [Influence] resource production <on [Marathon] game speed> <hidden from users>",
-        "Free [Peon] appears <when above [100] [Slaves]> <if [Abolition] is not constructed> <upon turn start>"
-        
+        "Free [Peon] appears <when above [100] [Slaves]> <if [Abolition] is not constructed> <upon turn start>",
+        "Triggers a [Abolitionism Strikes] event <when above [1] [Slaves]> <if [Abolition] is not constructed> <starting from the [Imperial era]> <with [33]% chance> <upon turn start> <hidden from users>"
         // TODO: Implement the uniques below
         // "[+20]% [Culture] [in all cities] <during a golden age>",
         // "[+20]% [Production] [in all cities] <during a golden age>",

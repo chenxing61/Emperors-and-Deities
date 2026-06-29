@@ -1204,7 +1204,7 @@
 		],
 		"uniques": [
 			"[-10]% construction time for ['Agricultural Improvement'] improvements",
-			"Gain [2] [Food] <upon ending a turn in a ['Agricultural Improvement'] tile>"
+			"Gain [2] [Gold] <upon ending a turn in a ['Agricultural Improvement'] tile>"
 		],
 		"unitTypes": [
 			"Civilian",
@@ -1220,7 +1220,7 @@
 		],
 		"uniques": [
 			"[-10]% construction time for ['Extraction Improvement'] improvements",
-			"Gain [2] [Production] <upon ending a turn in a ['Extraction Improvement'] tile>"
+			"Gain [2] [Gold] <upon ending a turn in a ['Extraction Improvement'] tile>"
 		],
 		"unitTypes": [
 			"Civilian"
@@ -1235,8 +1235,7 @@
 		],
 		"uniques": [
 			"[-10]% construction time for ['Lumber Improvement'] improvements",
-			"Gain [2] [Production] <upon ending a turn in a ['Lumber Improvement'] tile>",
-			"Gain [1] [Gold] <upon ending a turn in a ['Lumber Improvement'] tile>"
+			"Gain [2] [Gold] <upon ending a turn in a ['Lumber Improvement'] tile>",
 		],
 		"unitTypes": [
 			"Civilian"
@@ -1269,8 +1268,7 @@
 		],
 		"uniques": [
 			"[-10]% construction time for ['Water Improvement'] improvements",
-			"Gain [1] [Gold] <upon ending a turn in a ['Water Improvement'] tile>",
-			"Gain [1] [Food] <upon ending a turn in a ['Water Improvement'] tile>"
+			"Gain [2] [Gold] <upon ending a turn in a ['Water Improvement'] tile>",
 		],
 		"unitTypes": [
 			"Civil Ship"
@@ -2905,7 +2903,8 @@
 		"name": "The Levied Army",
 		"uniques": [
 			"[This Unit] is destroyed <if [Levies Disbandment] is constructed> <upon turn start>",
-			"[This Unit] is destroyed <when not at war> <upon turn end> <for [AI player] Civilizations>"
+			"[This Unit] is destroyed <when not at war> <upon turn end> <for [AI player] Civilizations>",
+			"[This Unit] gains the [Revolutionary Zeal] status for [2] turn(s) <upon turn start> <when adjacent to a [Revolutionaries] unit>",
 		]
 	},
 	{
@@ -2915,6 +2914,7 @@
 			"[This Unit] loses the [The Standing Army] promotion <hidden from users>",
 			"[This Unit] loses the [The Noble Army] promotion <hidden from users>",
 			"[This Unit] loses the [Mercenary Habit] promotion <hidden from users>",
+			"[This Unit] gains the [Revolutionary Zeal] status for [2] turn(s) <upon turn start> <when adjacent to a [Revolutionaries] unit>",
 			"Gain [-3] [Gold] <every [1] turns>",
 			"[+33]% construction time for [Fort] improvements",
 			"[+33]% construction time for [Trench] improvements",
@@ -2929,6 +2929,7 @@
 			"[This Unit] loses the [The Garrison Army] promotion <hidden from users>",
 			"[This Unit] loses the [The Noble Army] promotion <hidden from users>",
 			"[This Unit] loses the [Mercenary Habit] promotion <hidden from users>",
+			"[This Unit] gains the [Revolutionary Zeal] status for [2] turn(s) <upon turn start> <when adjacent to a [Revolutionaries] unit>",
 			"[+5]% Strength <vs ['Levy Army'] units>",
 			"[+5]% Strength <vs ['Mercenary Army'] units>"
 		]
@@ -2997,8 +2998,8 @@
 		"name": "Nomadic Lifestyle",
 		"uniques": [
 			"[+1] XP gained from combat <when at war>",
-			"Gain [2] [Food] <upon ending a turn in a [Herding Tents] tile>",
-			"Gain [1] [Production] <upon ending a turn in a [Camp] tile>"
+			"Gain [2] [Gold] <upon ending a turn in a [Herding Tents] tile>",
+			"Gain [1] [Culture] <upon ending a turn in a [Camp] tile>"
 		]
 	},
 	// Statuses
@@ -3011,6 +3012,19 @@
 		"uniques": [
 			"[+1] Movement"
 		]
+	},
+	{
+		"name": "Revolutionary Zeal",
+		"uniques": [
+			"[+7]% Strength <when attacking>",
+			"[+1] XP gained from combat"
+		],
+		"civilopediaText": [
+			{
+				"text": "See also: Revolutionaries",
+				"link": "Units/Revolutionaries"
+			}
+		],
 	},
 	// Negatives
 	{

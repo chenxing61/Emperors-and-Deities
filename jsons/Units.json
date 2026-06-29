@@ -19,7 +19,7 @@
 			"Automation is a primary action"
 		],
 		"upgradesTo": "Mechanised Worker",
-		"requiredTech": "Fire Making"	
+		"requiredTech": "Fire Making"
 	},
 	{
 		"name": "Mechanised Worker",
@@ -41,7 +41,7 @@
 			"[This Unit] gains [3] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
-		"requiredTech": "Combustion"	
+		"requiredTech": "Combustion"
 	},
 	{
 		"name": "Galley Work Ship",
@@ -58,7 +58,7 @@
 			"Automation is a primary action"
 		],
 		"upgradesTo": "Modern Work Ship",
-		"requiredTech": "Fire Making"	
+		"requiredTech": "Fire Making"
 	},
 	{
 		"name": "Expeditionary Work Ship",
@@ -72,7 +72,7 @@
 		],
 		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo": "Modern Work Ship",
-		"requiredTech": "Cartography"	
+		"requiredTech": "Cartography"
 	},
 	{
 		"name": "Modern Work Ship",
@@ -85,7 +85,7 @@
 			"[This Unit] gains [3] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
-		"requiredTech": "Advanced Shipbuilding"	
+		"requiredTech": "Advanced Shipbuilding"
 	},
 	{
 		"name": "Peon",
@@ -119,7 +119,7 @@
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Instantly consumes [100] [Slaves] <when above [100] [Slaves]>"
 		],
-		"requiredTech": "Fire Making"	
+		"requiredTech": "Fire Making"
 	},
 	{
 		"name": "Settler",
@@ -137,7 +137,7 @@
 			"Requires at least [3] population"
 		],
 		"requiredTech": "Fire Making",
-		"obsoleteTech": "Navigation"	
+		"obsoleteTech": "Navigation"
 	},
 	{
 		"name": "Nomadic Settler",
@@ -155,7 +155,7 @@
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>"
 		],
 		"requiredTech": "Fire Making",
-		"obsoleteTech": "Navigation"	
+		"obsoleteTech": "Navigation"
 	},
 	{
 		"name": "Pioneer",
@@ -169,7 +169,7 @@
 			"[+1] Sight",
 			"Requires at least [1] population"
 		],
-		"requiredTech": "Navigation"	
+		"requiredTech": "Navigation"
 	},
 	///line 0
 	{
@@ -209,6 +209,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"Can upgrade to [Worker] <after discovering [Bronze Working]>",
+			"Can upgrade to [Archer] <after discovering [Mathematics]>",
 			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Manual Plantation] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Manual Farm] improvements on tiles <for [Human player] Civilizations>",
@@ -237,10 +238,12 @@
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
-		"promotions":["Nomadic Lifestyle"],
+		"promotions": [
+			"Nomadic Lifestyle"
+		],
 		"requiredTech": "Hunting and Fishing",
 		"obsoleteTech": "Horseback Riding",
-		"upgradesTo":"Nomad Horde",
+		"upgradesTo": "Nomad Horde",
 		"attackSound": "arrow"
 	},
 	{
@@ -275,8 +278,8 @@
 		"cost": 40,
 		"movement": 3,
 		"strength": 7,
-		"rangedStrength":10,
-		"range":1,
+		"rangedStrength": 10,
+		"range": 1,
 		"uniques": [
 			"'Standing Army'",
 			"'Galley'",
@@ -560,7 +563,7 @@
 		],
 		"requiredTech": "The Wheel",
 		"obsoleteTech": "Armorments",
-		"upgradesTo":"Noble Cataphract",
+		"upgradesTo": "Noble Cataphract",
 		"requiredResource": "Noble Army Maintenance",
 		"attackSound": "horse"
 	},
@@ -590,7 +593,7 @@
 		],
 		"requiredTech": "The Wheel",
 		"obsoleteTech": "Armorments",
-		"upgradesTo":"Noble Cataphract",
+		"upgradesTo": "Noble Cataphract",
 		"requiredResource": "Noble Army Maintenance",
 		"attackSound": "horse"
 	},
@@ -683,7 +686,7 @@
 		"movement": 3,
 		"strength": 14,
 		"rangedStrength": 18,
-		"range":1,
+		"range": 1,
 		"uniques": [
 			"[-1] population [in this city]",
 			"'Mounted'",
@@ -703,10 +706,12 @@
 			"[+75]% construction time for [Road] improvements <in [Mountain] tiles>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
-		"promotions":["Nomadic Lifestyle"],
+		"promotions": [
+			"Nomadic Lifestyle"
+		],
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Stirrup",
-		"requiredResource":"Horse",
+		"requiredResource": "Horse",
 		"attackSound": "arrow"
 	},
 	{
@@ -856,8 +861,8 @@
 	},
 	{
 		"name": "War Elephant",
-		"uniqueTo":"South Asia",
-		"replaces":"Elephant Rider",
+		"uniqueTo": "South Asia",
+		"replaces": "Elephant Rider",
 		"unitType": "Rider",
 		"cost": 100,
 		"movement": 2,
@@ -921,8 +926,8 @@
 	},
 	{
 		"name": "Elite Horse Archer",
-		"uniqueTo":"Euroasian Nomads",
-		"replaces":"Horse Archer",
+		"uniqueTo": "Euroasian Nomads",
+		"replaces": "Horse Archer",
 		"unitType": "Rider",
 		"cost": 90,
 		"movement": 3,
@@ -962,8 +967,8 @@
 		"cost": 75,
 		"movement": 3,
 		"strength": 14,
-		"range":1,
-		"rangedStrength":19,
+		"range": 1,
+		"rangedStrength": 19,
 		"uniques": [
 			"'Standing Army'",
 			"'Galley'",
@@ -1924,7 +1929,7 @@
 		"requiredTech": "Shipbuilding",
 		"obsoleteTech": "Monocular",
 		"requiredResource": "Mercenary Contract",
-		"upgradesTo":"Three-masted Ship",
+		"upgradesTo": "Three-masted Ship",
 		"attackSound": "throw"
 	},
 	{
@@ -2260,8 +2265,8 @@
 	},
 	{
 		"name": "Armored War Elephant",
-		"replaces":"Armored Elephant Rider",
-		"uniqueTo":"South Asia",
+		"replaces": "Armored Elephant Rider",
+		"uniqueTo": "South Asia",
 		"unitType": "Rider",
 		"cost": 200,
 		"movement": 2,
@@ -2737,7 +2742,7 @@
 		"requiredTech": "Monocular",
 		"obsoleteTech": "Replaceable Parts",
 		"requiredResource": "Mercenary Contract",
-		"upgradesTo":"Recon Unit",
+		"upgradesTo": "Recon Unit",
 		"attackSound": "metalhit"
 	},
 	{
@@ -2939,12 +2944,18 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Firearms'",
-			"[+7]% Strength bonus for [Military] units within [2] tiles",
+			"Comment [Gives nearby [The Levied Army],[The Garrison Army] and [The Standing Army] Units [Revolutionary Zeal] status.]",
 			"Never appears as a Barbarian unit <hidden from users>",
 			"[+25]% Strength <after discovering [Rifling]> <in [Land] tiles>"
 		],
 		"promotions": [
 			"The Standing Army"
+		],
+		"civilopediaText": [
+			{
+				"text": "See also: Revolutionary Zeal",
+				"link": "Promotions/Revolutionary Zeal"
+			}
 		],
 		"requiredTech": "Flintlock",
 		"obsoleteTech": "Replaceable Parts",
@@ -2978,7 +2989,7 @@
 		"requiredTech": "Carriage",
 		"obsoleteTech": "Rifling",
 		"requiredResource": "Standing Army Maintenance",
-		"upgradesTo":"Modern Cavalry",
+		"upgradesTo": "Modern Cavalry",
 		"attackSound": "horse"
 	},
 	///Line 15
@@ -3424,7 +3435,8 @@
 			"'Engine Ship'",
 			"'Dense Formation'",
 			"'Firearms'",
-			"[+30]% Strength <vs [Close Combat Ship] units>","Can see invisible [{Barbarian} {Water}] units",
+			"[+30]% Strength <vs [Close Combat Ship] units>",
+			"Can see invisible [{Barbarian} {Water}] units",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -5403,8 +5415,8 @@
 	},
 	{
 		"name": "Great Khan",
-		"uniqueTo":"Euroasian Nomads",
-		"replaces":"Great Commander",
+		"uniqueTo": "Euroasian Nomads",
+		"replaces": "Great Commander",
 		"cost": 1000,
 		"unitType": "Civilian",
 		"uniques": [
@@ -5504,7 +5516,6 @@
 		],
 		"requiredResource": "Graphene",
 		"requiredTech": "Space Elevator"
-		
 		// costs 1500 in BNW
 	},
 	{
@@ -5523,7 +5534,6 @@
 		],
 		"requiredResource": "Enriched Uranium",
 		"requiredTech": "Nuclear Fusion"
-		
 		// costs 1500 in BNW
 	},
 	{
