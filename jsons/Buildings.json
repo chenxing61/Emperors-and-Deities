@@ -65,7 +65,7 @@
 			"Remove [Hide-Show Strategic Resources] [in this city] <hidden from users>"
 		]
 	},
-		{
+	{
 		"name": "Check Mission List",
 		"cost": 0,
 		"uniques": [
@@ -111,7 +111,6 @@
 			"Comment [[Imperial era]: [Guerrilla], [Musketeer], [Gunboat]]",
 			"Comment [[Industrial era]: [Modern Guerrilla], [Rifleman], [Gunboat]]",
 			"Comment [[Modern era]: [Modern Guerrilla], [Modern Conscript], [Gunboat]]",
-
 			//Neolitic-Ancient
 			"Free [Primal Warrior] appears <before discovering [Mining]> <hidden from users> ",
 			"Free [Brute Warrior] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [non-[Europa]] Civilizations> <hidden from users> ",
@@ -1386,7 +1385,7 @@
 		},
 		"uniques": [
 			"'Worship Place'",
-			"[+2 Faith] <starting from the [Ancient era]>",
+			"[+2 Faith] ",
 			"[+2 Faith] <starting from the [Classical era]>",
 			"[+2 Culture] <starting from the [Medieval era]>",
 			"[+2 Culture] <starting from the [Renaissance era]>",
@@ -1400,7 +1399,7 @@
 	},
 	{
 		"name": "Sinai Deep Tunnels",
-		"cost":10,
+		"cost": 10,
 		"isWonder": true,
 		"uniques": [
 			"Only available <within [3] tiles of a [Mount Sinai]>",
@@ -1621,7 +1620,7 @@
 	},
 	{
 		"name": "Great Barrier Reef Expedition",
-		"cost":10,
+		"cost": 10,
 		"isWonder": true,
 		"uniques": [
 			"Only available <within [3] tiles of a [Great Barrier Reef]>",
@@ -1715,8 +1714,8 @@
 	{
 		"name": "Early Aqueduct",
 		"cost": 90,
-		"uniqueTo":"South Asia",
-		"replaces":"Aqueduct",
+		"uniqueTo": "South Asia",
+		"replaces": "Aqueduct",
 		"maintenance": 2,
 		"uniques": [
 			"'Infrastructure'",
@@ -2206,7 +2205,6 @@
 		],
 		"requiredTech": "Forging"
 	},
-
 	{
 		"name": "Military Blacksmith",
 		"maintenance": 1,
@@ -2332,7 +2330,6 @@
 		"cityHealth": 15,
 		"uniques": [
 			"'Static Defense'",
-			
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Walls",
@@ -3211,7 +3208,7 @@
 	//Line 9
 	{
 		"name": "Trading Port",
-		"maintenance": 1,	
+		"maintenance": 1,
 		"specialistSlots": {
 			"Merchant": 1,
 			"Labourer": 1
@@ -3229,9 +3226,9 @@
 	},
 	{
 		"name": "Salt Evaporation Pond",
-		"cost":80,
+		"cost": 80,
 		"gold": 3,
-		"production":2,
+		"production": 2,
 		"uniques": [
 			"'Marine Infrastructure'",
 			"Must be next to [Coast]"
@@ -3358,7 +3355,6 @@
 		"cityHealth": 20,
 		"uniques": [
 			"'Static Defense'",
-			
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Watch Tower",
@@ -4058,7 +4054,6 @@
 		},
 		"uniques": [
 			"'Static Defense'",
-			
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Monocular"
@@ -4217,7 +4212,6 @@
 		},
 		"uniques": [
 			"'Static Defense'",
-			
 			"Must be next to [Coast]"
 		],
 		"requiredTech": "Carriage"
@@ -6766,7 +6760,6 @@
 			//Tutorial
 			"Triggers a [The internal affair...] event <for [Human player] Civilizations><hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
-			
 		]
 	},
 	{
@@ -7889,24 +7882,22 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"[-33]% [Science] [in all cities]",
-			
 			"[-100]% growth [in all cities] <in cities with at least [10] [Population]>",
 			"Cannot build ['Agricultural Building'] buildings",
 			"[-15]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [High Cultural Diversity] is constructed>",
 			"[-33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Medium Cultural Diversity] is constructed>",
 			"[-50]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Low Cultural Diversity] is constructed>",
-
 			"Upon capturing a city, receive [1] times its [Food] production as [Slaves] immediately <if [Low Cultural Diversity] is constructed> <if [Abolition] is not constructed>",
 			"Upon capturing a city, receive [2] times its [Food] production as [Slaves] immediately <if [Low Cultural Diversity] is not constructed> <if [Abolition] is not constructed>",
 			"Earn [25]% of the damage done to [Military] units as [Slaves] <if [Low Cultural Diversity] is not constructed> <if [Abolition] is not constructed>",
 			"Earn [50]% of the damage done to [Military] units as [Slaves] <if [Low Cultural Diversity] is constructed> <if [Abolition] is not constructed>",
-
 			"[-50]% unhappiness from the number of cities <if [Low Cultural Diversity] is constructed>",
 			"[-67]% unhappiness from the number of cities <if [Medium Cultural Diversity] is constructed>",
 			"[-100]% unhappiness from the number of cities <if [High Cultural Diversity] is constructed>",
 			"[-100]% maintenance cost for [Export [Food]] buildings [in all cities]",
 			"[-100]% maintenance cost for [Export [Production]] buildings [in all cities]",
 			"[+33]% [Horse] resource production",
+        	"Triggers a [Emergence of Nations] event <upon entering a new era> <hidden from users>",
 			"Triggers a [Settle Down] event <when number of [Settlement Process] is more than [([Cities]*5)+[20]]> <upon turn start>",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Destroyed when the city is captured",
@@ -8277,7 +8268,6 @@
 			"Comment [Unique Name:]",
 			"Comment [Carved in Stone]",
 			"[+10]% growth [in all cities]",
-			"[+10]% growth [in all cities] <starting from the [Ancient era]>",
 			"[+10]% Production when constructing [All] wonders [in all cities]",
 			"[+5]% Production when constructing [All] wonders [in all cities] <starting from the [Classical era]>",
 			"[+1 Production, +1 Faith] from every [Governor] <starting from the [Classical era]>",
@@ -8675,6 +8665,9 @@
 			"Comment [Gain access to[Qin Crossbowman]and[Honor Bound Territory].]",
 			"Gain a free [Honor Bound Territory] [in annexed cities]",
 			"Comment [[Great Qin] will collapse in if theres not enough [Happiness] and [Influence].]",
+			"Triggers a [Collapse of the Great Qin] event <if [Great Qin] is constructed> <when below [3] [Stability]> <upon turn start> <hidden from users>",
+			"Triggers a [Collapse of the Great Qin] event <if [Great Qin] is constructed> <when below [0] [Happiness]> <when below [0] [Influence]> <upon turn start> <hidden from users>",
+			"Triggers a [Collapse of the Great Qin] event <if [Great Qin] is constructed> <when below [0] [Influence]> <upon turn start> <hidden from users>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9207,6 +9200,7 @@
 			"[+100]% Production when constructing ['Consolidation'] buildings [in all cities]",
 			"Comment [Unique Ability: Commonwealth, You can still build ['Agreement'] via events.]",
 			"Comment [If you ever have your [Influence] go down into 10 or below, You will lose this['Civilization Form'].]",
+			"Triggers a [Disolution of Union] event <upon turn start> <when below [10] [Influence]> <hidden from users>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9251,6 +9245,7 @@
 			"[+3]% [Culture] from every ['Infrastructure']",
 			"[-25]% construction time for [All] improvements <when not at war>",
 			"Comment [If you ever have your [Happiness] go down into below 20, you will lose this ['Civilization Form'].]",
+			"Triggers a [Disolution of Union] event <upon turn start> <when below [20] [Happiness]> <hidden from users>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9720,6 +9715,27 @@
 			"'Flag'",
 			"Comment [Migrate Capital]",
 			"Comment [Your citizens are revolting due to very high unhappiness!]",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	//Negative Events
+	{
+		"name": "Negative Events Activated",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+
+			"Triggers a [Wealth Gap Widens] event <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Rampant Corruption] event <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Vagrancy Crisis] event <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
+
+			"Triggers a [Chaos Ensue] event <if [Unified] is constructed> <when below [0] [Happiness]> <with [10]% chance> <upon turn start> <hidden from users>",
+
+			"Triggers a [Chaos Ensue] event <if [Unified] is not constructed> <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
+
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]

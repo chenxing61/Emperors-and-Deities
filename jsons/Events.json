@@ -1,49 +1,43 @@
 [
-    ///Disaster Events
+    ///Tips
     {
-        "name": "Chaos Ensue",
-        "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Influence], lack of [Happiness]!",
+        "name": "The internal affair...",
+        "text": "This mod offers some brand new mechanics that are of note, you might want to play through the Scenario Tutorial first in order to gain basic understandings of them. Since they are very relevant throughout the entire ruleset.",
         "choices": [
             {
-                "text": "We need to take precaution!",
+                "text": "Problems and solutions never seen before!",
                 "uniques": [
-                    "Only available <when number of [Stability] is equal to [4]> <when above [0] [Influence]>",
-                    "Comment [Preventing losing stability for this one time...]",
-                    "[-10]% [Gold] [in all cities] <for [5] turns>",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                    "Comment [Open up the [Enact Policies] tab and have a look!]",
+                    "Comment [You can open this in your capital at any moment to solve debuffs and manage a lot of stuff.]",
+                    "Comment [And then theres also a link to the in game documentation of the mod, which you also will NEED to take a look if you want to gain a greater understanding of this ruleset.]",
+                    "Triggers a [Enact Policies] event <for [Human player] Civilizations> <hidden from users>",
+                    "Set [Influence] to [0.5*[Influence Limit]]"
                 ]
             },
             {
-                "text": "We need to take precaution!",
+                "text": "I already knew it",
                 "uniques": [
-                    "Only available <when number of [Stability] is equal to [3]> <when above [0] [Influence]>",
-                    "Comment [Preventing losing stability for this one time...]",
-                    "Instantly consumes [5] [Influence]",
-                    "[-20]% [Gold] [in all cities] <for [5] turns>",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
-                ]
-            },
-            {
-                "text": "The situation gets worse",
-                "uniques": [
-                    "Comment [Lose your current stability and enter a worse state.]",
-                    "Instantly consumes [1] [Stability] <hidden from users>",
-                    "Triggers a [Downfall of Stability] event",
-                    "<hidden from users>"
-                ]
-            },
-            {
-                "text": "Rock Bottom",
-                "uniques": [
-                    "Only available <when number of [Stability] is equal to [0]>",
-                    "Instantly provides [5] [Influence]",
-                    "Comment [Orders are birthed from Chaos after all.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                    "Set [Influence] to [0.25*[Influence Limit]]",
+                    "Comment [Good luck.]"
                 ]
             }
         ]
     },
     {
+        "name": "The internal struggles",
+        "text": "There are no perfect world where our people will unite forever. Under just or unjust rulings from leaders of various competency. They will react differently, some reactions are more negative than others.",
+        "choices": [
+            {
+                "text": "Well that sucks",
+                "uniques": [
+                    "Comment [From now on, negative events will happen when certain conditions are met. The most common condition being low [Happiness]. Remember, they have lasting effects if you dont solve them by building counter measures either through city screen or [Enact Policies].]",
+                    "Gain a free [Negative Events Activated] [in capital] <hidden from users>"
+                ]
+            }
+        ]
+    },
+    ///Checks and Balance
+        {
         "name": "Downfall of Stability",
         "choices": [
             {
@@ -103,6 +97,55 @@
             }
         ]
     },
+    ///Disaster Events
+
+    {
+        "name": "Chaos Ensue",
+        "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Happiness]!",
+        "choices": [
+            {
+                "text": "Who do they think they are?",
+                "uniques": [
+                    "Only available <when number of [Influence] is more than [[Influence Limit]*0.75]>",
+                    "Comment [Preventing losing stability for this one time...]",
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            },
+            {
+                "text": "We need to take precaution!",
+                "uniques": [
+                    "Only available  <when above [0] [Influence]>",
+                    "Comment [Preventing losing stability for this one time...]",
+                    "Instantly consumes [5] [Influence]",
+                    "[-10]% [Gold] <for [3] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-10]% [Gold] <for [5] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-10]% [Gold] <for [7] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-10]% [Gold] <for [15] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-10]% [Gold] <for [100] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-10]% [Gold] for a fair amount of turns.]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Comment [Lose your current stability and enter a worse state.]",
+                    "Instantly consumes [1] [Stability] <hidden from users>",
+                    "Triggers a [Downfall of Stability] event"
+                ]
+            },
+            {
+                "text": "Rock Bottom",
+                "uniques": [
+                    "Only available <when number of [Stability] is equal to [0]>",
+                    "Instantly provides [5] [Influence]",
+                    "Comment [Orders are birthed from Chaos after all.]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            }
+        ]
+    },
     {
         "name": "Wealth Gap Widens",
         "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Happiness]! As inequality in wealth is detrimental to societal stability.",
@@ -111,8 +154,7 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Instantly consumes [3] [Influence]",
-                    "[-10]% [Gold] [in all cities] <for [5] turns>"
+                    "Instantly consumes [3] [Influence]"
                 ]
             },
             {
@@ -152,8 +194,7 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Instantly consumes [3] [Influence]",
-                    "[-10]% [Gold] [in all cities] <for [5] turns>"
+                    "Instantly consumes [3] [Influence]"
                 ]
             },
             {
@@ -196,6 +237,74 @@
         ]
     },
     {
+        "name": "The long lasting peace",
+        "text": "As our civilization became united and peaceful. Less and less people are willing to join the army.",
+        "choices": [
+            {
+                "text": "Even if we force them into military service, these weak men would not suffice either way.",
+                "uniques": [
+                    "[-25]% [Standing Army Maintenance] resource production <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-25]% [Standing Army Maintenance] resource production <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-25]% [Standing Army Maintenance] resource production <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-25]% [Standing Army Maintenance] resource production <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-25]% [Standing Army Maintenance] resource production <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [The number of [Standing Army Maintenance] and [Noble Army Maintenance] decreases to [75]% for a fair amount of turns. Which may impact our military in both size and strength.]"
+                ]
+            },
+            {
+                "text": "Unacceptable.",
+                "uniques": [
+                    "Instantly consumes [5] [Influence]",
+                    "[-10]% [Happiness] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-10]% [Happiness] for a fair amount of turns.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Stagnation",
+        "text": "In a united civilization, without much outer threat. The desire for advancement became lower day by day.",
+        "choices": [
+            {
+                "text": "Even if we force them into military service, these weak men would not suffice either way.",
+                "uniques": [
+                    "[-25]% [Standing Army Maintenance] resource production <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-25]% [Standing Army Maintenance] resource production <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-25]% [Standing Army Maintenance] resource production <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-25]% [Standing Army Maintenance] resource production <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-25]% [Standing Army Maintenance] resource production <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [The number of [Standing Army Maintenance] and [Noble Army Maintenance] decreases to [75]% for a fair amount of turns. Which may impact our military in both size and strength.]"
+                ]
+            },
+            {
+                "text": "Unacceptable.",
+                "uniques": [
+                    "Instantly consumes [5] [Influence]",
+                    "[-10]% [Happiness] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-10]% [Happiness] for a fair amount of turns.]"
+                ]
+            }
+        ]
+    },
+    {
         "name": "The Barbarian's Surrender",
         "text": "We successfully brought our fury to the Barbarian's Motherland. New problem arises.",
         "choices": [
@@ -209,12 +318,11 @@
             {
                 "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
                 "uniques": [
-                    "Only available <when number of [Cultural Diversity] is less than [2]>",
                     "Instantly consumes [10] [Influence]",
                     "Instantly provides [1] [Migrating Population]",
                     "Comment [Increase the Cultural Diversity by a level if it hasnt reached highest level yet.]",
                     "Instantly gain [1] [Cultural Diversity] <when number of [Cultural Diversity] is less than [2]>",
-                    "Triggers a [Diversified Culture] event <when number of [Cultural Diversity] is less than [2]>",
+                    "Triggers a [Diversified Culture] event",
                     "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
                     "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
                 ]
@@ -980,7 +1088,7 @@
             {
                 "text": "[Cultural Exchange] is the most elegant",
                 "uniques": [
-                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed> <when number of [Cultural Diversity] is less than [2]>",
+                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed>",
                     "Only available <when above [9] [Influence]> <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [8] [Influence]",
                     "Gain [-125] [Gold] <(modified by game speed)>",
@@ -988,7 +1096,7 @@
                     "Triggers a [Diversified Culture] event",
                     "Comment [Increase the Cultural Diversity by a level if it hasnt reached highest level yet.]",
                     "Instantly gain [1] [Cultural Diversity] <when number of [Cultural Diversity] is less than [2]>",
-                    "Triggers a [Diversified Culture] event <when number of [Cultural Diversity] is less than [2]>",
+                    "Triggers a [Diversified Culture] event",
                     "Gain a free [Cultural Exchange] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
                 ]
@@ -996,13 +1104,13 @@
             {
                 "text": "[Cultural Exchange] is the most elegant",
                 "uniques": [
-                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed> <when number of [Cultural Diversity] is less than [2]>",
+                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed>",
                     "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
                     "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
                     "Comment [Increase the Cultural Diversity by a level if it hasnt reached highest level yet.]",
                     "Instantly gain [1] [Cultural Diversity] <when number of [Cultural Diversity] is less than [2]>",
-                    "Triggers a [Diversified Culture] event <when number of [Cultural Diversity] is less than [2]>",
+                    "Triggers a [Diversified Culture] event",
                     "Gain a free [Cultural Exchange] [in capital]",
                     "Triggers a [Building Alliance] event <hidden from users>"
                 ]
@@ -2120,7 +2228,7 @@
                     "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Influence Maintenance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
                     "Comment [Increase the Cultural Diversity by a level if it hasnt reached highest level yet.]",
                     "Instantly gain [1] [Cultural Diversity] <when number of [Cultural Diversity] is less than [2]>",
-                    "Triggers a [Diversified Culture] event <when number of [Cultural Diversity] is less than [2]>",
+                    "Triggers a [Diversified Culture] event",
                     "Instantly provides [10] [Influence]",
                     "Instantly provides [3] [Influence] <after adopting [Personal Union]>",
                     "Gain a free [Influence Maintenance Cost] [in capital]",
@@ -3378,30 +3486,7 @@
             }
         ]
     },
-    ///Tips
-    {
-        "name": "The internal affair...",
-        "text": "This mod offers some brand new mechanics that are of note, you might want to play through the Scenario Tutorial first in order to gain basic understandings of them. Since they are very relevant throughout the entire ruleset.",
-        "choices": [
-            {
-                "text": "Problems and solutions never seen before!",
-                "uniques": [
-                    "Comment [Open up the [Enact Policies] tab and have a look!]",
-                    "Comment [You can open this in your capital at any moment to solve debuffs and manage a lot of stuff.]",
-                    "Comment [And then theres also a link to the in game documentation of the mod, which you also will NEED to take a look if you want to gain a greater understanding of this ruleset.]",
-                    "Triggers a [Enact Policies] event <for [Human player] Civilizations> <hidden from users>",
-                    "Set [Influence] to [0.5*[Influence Limit]]"
-                ]
-            },
-            {
-                "text": "I already knew it",
-                "uniques": [
-                    "Set [Influence] to [0.25*[Influence Limit]]",
-                    "Comment [Good luck.]"
-                ]
-            }
-        ]
-    },
+
     ///Scenario Tools
     {
         "name": "Mission List",
