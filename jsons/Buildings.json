@@ -7897,7 +7897,7 @@
 			"[-100]% maintenance cost for [Export [Food]] buildings [in all cities]",
 			"[-100]% maintenance cost for [Export [Production]] buildings [in all cities]",
 			"[+33]% [Horse] resource production",
-        	"Triggers a [Emergence of Nations] event <upon entering a new era> <hidden from users>",
+			"Triggers a [Emergence of Nations] event <upon entering a new era> <hidden from users>",
 			"Triggers a [Settle Down] event <when number of [Settlement Process] is more than [([Cities]*5)+[20]]> <upon turn start>",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Destroyed when the city is captured",
@@ -9522,6 +9522,44 @@
 		]
 	},
 	{
+	"name": "Civil War",
+	"cost": 50,
+	"uniques": [
+		"Unavailable <hidden from users>",
+		"Unsellable",
+		"Remove [Civil War] [in this city]",
+		// ========== 远古–古典早期（Mining → Gunpowder Making） ==========
+		// 3 近战（Farmer Rebellion），2 远程（Bandits），1 突击（Chariot）
+		"[3] [Farmer Rebellion]s rebel <after discovering [Mining]> <before discovering [Gunpowder Making]>",
+		"[2] [Bandits] rebel <after discovering [Mining]> <before discovering [Gunpowder Making]>",
+		"[1] [Chariot] rebel <after discovering [Mining]> <before discovering [Gunpowder Making]>",
+
+		// ========== 文艺复兴（Hand Cannon → Rifling） ==========
+		// 3 近战（Pikemen），2 远程（Outlaws），1 突击（Heavy Cavalry）
+		"[3] [Pikemen] rebel <after discovering [Hand Cannon]> <before discovering [Rifling]>",
+		"[2] [Outlaws] rebel <after discovering [Hand Cannon]> <before discovering [Rifling]>",
+		"[1] [Heavy Cavalry] rebel <after discovering [Hand Cannon]> <before discovering [Rifling]>",
+
+		// ========== 工业时代（Rifling → Ballistics） ==========
+		// 3 近战（Militia Movement），2 远程（Warlord Troop），1 突击（Modern Cavalry）
+		"[3] [Militia Movement]s rebel <after discovering [Rifling]> <before discovering [Ballistics]>",
+		"[2] [Warlord Troop]s rebel <after discovering [Rifling]> <before discovering [Ballistics]>",
+		"[1] [Modern Cavalry] rebel <after discovering [Rifling]> <before discovering [Ballistics]>",
+
+		// ========== 现代（Ballistics → Combined Arms） ==========
+		// 3 近战（Modern Conscripts），2 远程（Warlord Troop），1 突击（Armoured Car）
+		"[3] [Modern Conscript]s rebel <after discovering [Ballistics]> <before discovering [Combined Arms]>",
+		"[2] [Warlord Troop]s rebel <after discovering [Ballistics]> <before discovering [Combined Arms]>",
+		"[1] [Armoured Car]s rebel <after discovering [Ballistics]> <before discovering [Combined Arms]>",
+
+		// ========== 信息时代（Combined Arms 之后） ==========
+		// 3 近战（Terrorists），2 远程（Warlord Troop），1 突击（Tank）
+		"[3] [Terrorist]s rebel <after discovering [Combined Arms]>",
+		"[2] [Warlord Troop]s rebel <after discovering [Combined Arms]>",
+		"[1] [Tank]s rebel <after discovering [Combined Arms]>",
+	]
+	},
+	{
 		"name": "Power Shortage",
 		"cost": 50,
 		"uniques": [
@@ -9727,15 +9765,11 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
-
 			"Triggers a [Wealth Gap Widens] event <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
 			"Triggers a [Rampant Corruption] event <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
 			"Triggers a [Vagrancy Crisis] event <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
-
 			"Triggers a [Chaos Ensue] event <if [Unified] is constructed> <when below [0] [Happiness]> <with [10]% chance> <upon turn start> <hidden from users>",
-
 			"Triggers a [Chaos Ensue] event <if [Unified] is not constructed> <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
-
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
