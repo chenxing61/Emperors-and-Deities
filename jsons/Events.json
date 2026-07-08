@@ -97,6 +97,45 @@
             }
         ]
     },
+    {
+        "name": "Debug",
+        "choices": [
+            {
+                "text": "View all resources",
+                "uniques": [
+                    "Gain a free [Debug Building] [in capital]"
+                ]
+            },
+            {
+                "text": "Lesser ways to get life wrong",
+                "uniques": [
+                    "Instantly consumes [1] [Cultural Diversity] <when above [0] [Cultural Diversity]>",
+                    "Triggers a [Decreased Cultural Diversity] event"
+                ]
+            },
+            {
+                "text": "More ways to live a life",
+                "uniques": [
+                    "Instantly provides [1] [Cultural Diversity] <when below [2] [Cultural Diversity]>",
+                    "Triggers a [Diversified Culture] event"
+                ]
+            },
+            {
+                "text": "The situation gets better",
+                "uniques": [
+                    "Instantly provides [1] [Stability] <when below [4] [Stability]>",
+                    "Triggers a [Improvement of Stability] event"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Instantly consumes [1] [Stability] <when above [0] [Stability]>",
+                    "Triggers a [Downfall of Stability] event"
+                ]
+            }
+        ]
+    },
     ///Disaster Events
     {
         "name": "Chaos Ensue",
@@ -310,16 +349,7 @@
             {
                 "text": "One side is more correct than the others.",
                 "uniques": [
-                    "[-15]% [Science] <for [6] turns> <on [Quick] game speed> <hidden from users>",
-                    "[-15]% [Science] <for [8] turns> <on [Standard] game speed> <hidden from users>",
-                    "[-15]% [Science] <for [10] turns> <on [Epic] game speed> <hidden from users>",
-                    "[-15]% [Science] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
-                    "[-15]% [Science] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
-                    "[+10]% Culture cost of adopting new Policies <for [6] turns> <on [Quick] game speed> <hidden from users>",
-                    "[+10]% Culture cost of adopting new Policies <for [8] turns> <on [Standard] game speed> <hidden from users>",
-                    "[+10]% Culture cost of adopting new Policies <for [10] turns> <on [Epic] game speed> <hidden from users>",
-                    "[+10]% Culture cost of adopting new Policies <for [16] turns> <on [Marathon] game speed> <hidden from users>",
-                    "[+10]% Culture cost of adopting new Policies <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Gain a free [Civil War] [in capital] ",
                     "Comment [[Science] production falls by [15]% and Policy Cost Spikes by [10]% for a fair amount of turns.]"
                 ]
             },

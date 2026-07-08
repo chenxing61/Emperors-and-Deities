@@ -7848,7 +7848,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Cultural Diversity State'",
-			"Set [Cultural Diversity] to [2] <hidden from users>",
+			"Set [Cultural Diversity] to [2] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[High Cultural Diversity]} {'Cultural Diversity State'}] [in all cities] <hidden from users>",
 			"[+3]% [Science] [in all cities]",
 			"[+3]% [Culture] [in all cities]",
@@ -7864,7 +7864,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Cultural Diversity State'",
-			"Set [Cultural Diversity] to [1] <hidden from users>",
+			"Set [Cultural Diversity] to [1] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Medium Cultural Diversity]} {'Cultural Diversity State'}] [in all cities] <hidden from users>",
 			"[+3]% [Happiness] [in all cities]",
 			"[+50]% Production when constructing [Cultural Intergration] buildings [in annexed cities]",
@@ -7879,7 +7879,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Cultural Diversity State'",
-			"Set [Cultural Diversity] to [0] <hidden from users>",
+			"Set [Cultural Diversity] to [0] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Low Cultural Diversity]} {'Cultural Diversity State'}] [in all cities] <hidden from users>",
 			"[+8]% [Happiness] [in all cities]",
 			"[-3]% [Culture] [in all cities]",
@@ -7925,7 +7925,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization State'",
-			"Set [Stability] to [4] <hidden from users>",
+			"Set [Stability] to [4] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Harmony]} {'Civilization State'}] [in all cities] <hidden from users>",
 			"[+10]% growth [in all cities]",
 			"[+10]% [Culture] [in all cities]",
@@ -7939,7 +7939,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization State'",
-			"Set [Stability] to [3] <hidden from users>",
+			"Set [Stability] to [3] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Peace]} {'Civilization State'}] [in all cities] <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7950,7 +7950,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization State'",
-			"Set [Stability] to [2] <hidden from users>",
+			"Set [Stability] to [2] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Struggle]} {'Civilization State'}] [in all cities] <hidden from users>",
 			"[-20]% [Gold] from Trade Routes",
 			"[-10]% [Culture] [in all cities]",
@@ -7966,7 +7966,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization State'",
-			"Set [Stability] to [1] <hidden from users>",
+			"Set [Stability] to [1] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Strife]} {'Civilization State'}] [in all cities] <hidden from users>",
 			"[-33]% [Gold] from Trade Routes",
 			"[-20]% [Culture] [in all cities]",
@@ -7985,7 +7985,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization State'",
-			"Set [Stability] to [0] <hidden from users>",
+			"Set [Stability] to [0] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Anarchy]} {'Civilization State'}] [in all cities] <hidden from users>",
 			"Rebel units may spawn",
 			"[-100]% [Gold] from Trade Routes <before adopting [Anarchism]>",
@@ -9535,28 +9535,56 @@
 		]
 	},
 	{
-	"name": "Civil War",
-	"cost": 50,
-	"uniques": [
-		"Unavailable <hidden from users>",
-		"Unsellable",
-		"Remove [Civil War] [in this city]",
-		"[3] [Farmer Rebellion]s rebel <after discovering [Mining]> <before discovering [Gunpowder Making]>",
-		"[2] [Bandits]s rebel <after discovering [Mining]> <before discovering [Gunpowder Making]>",
-		"[1] [Chariot]s rebel <after discovering [Mining]> <before discovering [Gunpowder Making]>",
-		"[3] [Pikeman]s rebel <after discovering [Hand Cannon]> <before discovering [Rifling]>",
-		"[2] [Outlaws]s rebel <after discovering [Hand Cannon]> <before discovering [Rifling]>",
-		"[1] [Heavy Cavalry]s rebel <after discovering [Hand Cannon]> <before discovering [Rifling]>",
-		"[3] [Militia Movement]s rebel <after discovering [Rifling]> <before discovering [Ballistics]>",
-		"[2] [Warlord Troop]s rebel <after discovering [Rifling]> <before discovering [Ballistics]>",
-		"[1] [Modern Cavalry]s rebel <after discovering [Rifling]> <before discovering [Ballistics]>",
-		"[3] [Modern Conscript]s rebel <after discovering [Ballistics]> <before discovering [Combined Arms]>",
-		"[2] [Warlord Troop]s rebel <after discovering [Ballistics]> <before discovering [Combined Arms]>",
-		"[1] [Armoured Car]s rebel <after discovering [Ballistics]> <before discovering [Combined Arms]>",
-		"[3] [Terrorist]s rebel <after discovering [Combined Arms]>",
-		"[2] [Warlord Troop]s rebel <after discovering [Combined Arms]>",
-		"[1] [Tank]s rebel <after discovering [Combined Arms]>"
-	]
+		"name": "Civil War",
+		"cost": 50,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Negative Event'",
+			"[-5]% Production when constructing [All] units [in all cities]",
+			// ===== ANCIENT ERA =====
+			// After Bronze Working, before Iron Working
+			"[2] [Brute Warrior]s rebel <after discovering [Copper Working]> <before discovering [Iron Working]>",
+			"[1] [Mercenary Javalineer]s rebel <after discovering [Mining]> <before discovering [Mathematics]>",
+			"A [War Cart] rebels <after discovering [The Wheel]> <before discovering [Armorments]>",
+			// ===== CLASSICAL ERA =====
+			// After Iron Working, before Armorments
+			"[2] [Spearman]s rebel <after discovering [Iron Working]> <before discovering [Armorments]>",
+			"[1] [Mercenary Archer]s rebel <after discovering [Logistics]> <before discovering [Engineering]>",
+			"A [Chariot] rebels <after discovering [The Wheel]> <before discovering [Armorments]>",
+			// ===== CLASSICAL/MEDIEVAL (Armorments) =====
+			"[2] [Spearman]s rebel <after discovering [Armorments]> <before discovering [Hand Cannon]>",
+			"[1] [Mercenary Archer]s rebel <after discovering [Logistics]> <before discovering [Engineering]>",
+			"A [Cataphract] rebels <after discovering [Armorments]> <before discovering [Tactics]>",
+			// ===== MEDIEVAL (Tactics) =====
+			"[3] [Pikeman]s rebel <after discovering [Tactics]> <before discovering [Hand Cannon]>",
+			"[2] [Mercenary Crossbowman]s rebel <after discovering [Engineering]> <before discovering [Hand Cannon]>",
+			"A [Heavy Cavalry] rebels <after discovering [Tactics]> <before discovering [Hand Cannon]>",
+			// ===== RENAISSANCE (Hand Cannon) =====
+			"[3] [Musketeer]s rebel <after discovering [Hand Cannon]> <before discovering [Flintlock]>",
+			"[2] [Mercenary Skirmisher]s rebel <after discovering [Cartridge]> <before discovering [Replaceable Parts]>",
+			"A [Pistoleer] rebels <after discovering [Hand Cannon]> <before discovering [Military Science]>",
+			// ===== IMPERIAL (Flintlock) =====
+			"[3] [Musketeer]s rebel <after discovering [Flintlock]> <before discovering [Rifling]>",
+			"[2] [Mercenary Musketeer]s rebel <after discovering [Flintlock]> <before discovering [Replaceable Parts]>",
+			"A [Cuirassier] rebels <after discovering [Military Science]> <before discovering [Rifling]>",
+			// ===== INDUSTRIAL (Rifling) =====
+			"[3] [Rifleman]s rebel <after discovering [Rifling]> <before discovering [Ballistics]>",
+			"[2] [Mercenary Skirmisher]s rebel <after discovering [Cartridge]> <before discovering [Replaceable Parts]>",
+			"A [Modern Cavalry] rebels <after discovering [Rifling]> <before discovering [Combustion]>",
+			// ===== MODERN (Replaceable Parts) =====
+			"[3] [Modern Conscript]s rebel <after discovering [Replaceable Parts]> <before discovering [Mobile Tactics]>",
+			"[2] [Sharpshooter]s rebel <after discovering [Replaceable Parts]> <before discovering [Combined Arms]>",
+			"A [Armoured Car] rebels <after discovering [Combustion]> <before discovering [Combined Arms]>",
+			// ===== ATOMIC (Mobile Tactics) =====
+			"[3] [Modern Conscript]s rebel <after discovering [Mobile Tactics]> <before discovering [Lasers]>",
+			"[2] [Modern Guerrilla]s rebel <after discovering [Mobile Tactics]>",
+			"A [Tank] rebels <after discovering [Combustion]> <before discovering [Haptics]>",
+			// ===== INFORMATION (Haptics) =====
+			"[3] [Exoskeleton Infantry]s rebel <after discovering [Haptics]>",
+			"[2] [Exoskeleton Spec Ops]s rebel <after discovering [Haptics]>",
+			"A [Assault Mecha] rebels <after discovering [Nuclear Fusion]>",
+		]
 	},
 	{
 		"name": "Power Shortage",
@@ -10047,6 +10075,17 @@
 			"Triggers a [Loss of Writing] event <with [25]% chance> <when above [4] [Bronze Age Collapse Countdown]> <when below [7] [Bronze Age Collapse Countdown]> <upon turn start>",
 			"Triggers a [Loss of Faith] event <with [25]% chance> <when above [1] [Bronze Age Collapse Countdown]> <when below [4] [Bronze Age Collapse Countdown]> <upon turn start>",
 			"Triggers a [The Final Hour] event <upon turn start> <when below [1] [Bronze Age Collapse Countdown]> <hidden from users>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Debug Building",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
