@@ -2929,7 +2929,7 @@
 			"[This Unit] loses the [The Garrison Army] promotion <hidden from users>",
 			"[This Unit] loses the [The Noble Army] promotion <hidden from users>",
 			"[This Unit] loses the [Mercenary Habit] promotion <hidden from users>",
-			"[This Unit] gains the [Revolutionary Zeal] status for [2] turn(s) <upon turn start> <when adjacent to a [Revolutionaries] unit>",
+			"[This Unit] gains the [Revolutionary Zeal] status for [2] turn(s) <upon turn start> <when adjacent to a [Revolutionaries] unit> <hidden from users>",
 			"[+5]% Strength <vs ['Levy Army'] units>",
 			"[+5]% Strength <vs ['Mercenary Army'] units>"
 		]
@@ -2998,8 +2998,18 @@
 		"name": "Nomadic Lifestyle",
 		"uniques": [
 			"[+1] XP gained from combat <when at war>",
+			"[This Unit] gains the [Command from the Great Khan] status for [2] turn(s) <upon turn start> <when adjacent to a [Great Khan] unit> <hidden from users>",
 			"Gain [2] [Gold] <upon ending a turn in a [Herding Tents] tile>",
 			"Gain [1] [Culture] <upon ending a turn in a [Camp] tile>"
+		]
+	},
+	{
+		"name": "The Khan of his era",
+		"uniques": [
+			"Empire enters a [10]-turn Golden Age <by consuming this unit>",
+			"All adjacent units heal [+15] HP when healing",
+			"[+15] HP when healing",
+			"Can instantly construct a [Citadel] improvement <[2] times> <after which this unit is consumed>"
 		]
 	},
 	// Statuses
@@ -3014,6 +3024,19 @@
 		]
 	},
 	{
+		"name": "Command from the Great Khan",
+		"uniques": [
+			"[+10]% Strength <when attacking>",
+			"[+1] [Sight]"
+		],
+		"civilopediaText": [
+			{
+				"text": "See also: Great Khan",
+				"link": "Units/Great Khan"
+			}
+		]
+	},
+	{
 		"name": "Revolutionary Zeal",
 		"uniques": [
 			"[+7]% Strength <when attacking>",
@@ -3024,8 +3047,8 @@
 				"text": "See also: Revolutionaries",
 				"link": "Units/Revolutionaries"
 			}
-		],
-	},
+		]
+	}
 	// Negatives
 	{
 		"name": "Breached",

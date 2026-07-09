@@ -401,6 +401,18 @@
             }
         ]
     },
+    {
+        "name": "Khan's Death",
+        "text": "The [Great Khan] has been losing [Influence] gradually, until today, when he no longer has to worry about backstabs anymore. He is now one with the heaven.",
+        "choices": [
+            {
+                "text": "Khannnnnn!",
+                "uniques": [
+                    "Triggers a [Chaos Ensue] event"
+                ]
+            }
+        ]
+    },
     //Barb Camp Destruction
     {
         "name": "The Barbarian's Surrender",
@@ -2528,34 +2540,45 @@
             {
                 "text": "Organize a hunt for glory, and additional rations",
                 "uniques": [
-                    "Only available <if [Nomadic Tribes] is constructed> <when above [9] [Influence]>",
-                    "Instantly consumes [10] [Influence]",
-                    "[+100]% Yield from every [Camp] <for [2] turns>"
+                    "Only available <if [Nomadic Tribes] is constructed> <when above [0] [Influence]>",
+                    "Instantly consumes [3] [Influence] <for every [Cities]>",
+                    "[+100]% Yield from every [Camp] <for [1] turns> <on [Quick] game speed> <hidden from users>",
+                    "[+100]% Yield from every [Camp] <for [2] turns> <on [Standard] game speed> <hidden from users>",
+                    "[+100]% Yield from every [Camp] <for [3] turns> <on [Epic] game speed> <hidden from users>",
+                    "[+100]% Yield from every [Camp] <for [4] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[+100]% Yield from every [Camp] <for [10] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [Double Yield from [Camp] for a short amount of time.]"
                 ]
             },
             {
                 "text": "We should exchange our knowledges amongst our tribes",
                 "uniques": [
-                    "Only available <if [Nomadic Tribes] is constructed> <when above [4] [Influence]>",
-                    "Instantly consumes [5] [Influence]",
-                    "[+1 Science] [in all cities] <for [5] turns>"
+                    "Only available <when above [0] [Influence]>",
+                    "Instantly consumes [3] [Influence] <for every [Cities]>",
+                    "[+1 Science] [in all cities] <for [1] turns> <on [Quick] game speed> <hidden from users>",
+                    "[+1 Science] [in all cities] <for [2] turns> <on [Standard] game speed> <hidden from users>",
+                    "[+1 Science] [in all cities] <for [3] turns> <on [Epic] game speed> <hidden from users>",
+                    "[+1 Science] [in all cities] <for [4] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[+1 Science] [in all cities] <for [10] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[+1 Science] [in all cities] for a short amount of time.]"
                 ]
             },
             {
                 "text": "Elect a new Khan!",
                 "uniques": [
-                    "Only available <if [Unified Nomads] is constructed> <when above [14] [Influence]>",
-                    "Instantly consumes [15] [Influence]",
+                    "Only available <if [Unified Nomads] is constructed> <when above [10] [Influence]>",
+                    "Set [Influence] to [0]",
+                    "Comment [Sacrifice all your [Influence] to gain a [Great Khan] unit. If a certain amount of [Influence] is sacrificed, [Great Khan] may also double as a [Great Strategist].]",
                     "Free [Great Khan] appears",
-                    "[-3] Strength <for [3] turns>"
+                    "[Great Khan] units gain the [The Khan of his era] promotion <for [1] turns> <when number of [Influence] is more than [[Influence Limit]*0.5]>"
                 ]
             },
             {
                 "text": "Make use of our unified power",
                 "uniques": [
-                    "Only available <if [Unified Nomads] is constructed> <when above [19] [Influence]>",
-                    "Instantly consumes [20] [Influence]",
-                    "[+50]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities]<for [10] turns> <hidden from users>",
+                    "Only available <if [Unified Nomads] is constructed> <when above [0] [Influence]>",
+                    "Instantly consumes [5] [Influence] <for every [Cities]>",
+                    "[+50]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <for [10] turns> <hidden from users>",
                     "Comment [[+50%] Production when constructing all buildings <for [10] turns>]"
                 ]
             },
