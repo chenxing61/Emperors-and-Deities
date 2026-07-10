@@ -9792,11 +9792,22 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
-			"Triggers a [Wealth Gap Widens] event <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
-			"Triggers a [Rampant Corruption] event <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
-			"Triggers a [Vagrancy Crisis] event <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
-			"Triggers a [Chaos Ensue] event <if [Unified] is constructed> <when below [0] [Happiness]> <with [10]% chance> <upon turn start> <hidden from users>",
-			"Triggers a [Chaos Ensue] event <if [Unified] is not constructed> <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
+			"Set [Negative Event Count] to [2] <on [Casual] difficulty or lower> <upon entering a new era>",
+			"Set [Negative Event Count] to [3] <on [Playing Fair] difficulty> <upon entering a new era>",
+			"Set [Negative Event Count] to [4] <on [Battle of Wit and Strength] difficulty or higher> <upon entering a new era>",
+
+			"Triggers a [Wealth Gap Widens] event <when above [0] [Negative Event Count]> <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Rampant Corruption] event <when above [0] [Negative Event Count]> <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Vagrancy Crisis] event <when above [0] [Negative Event Count]> <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
+
+			"Triggers a [Chaos Ensue] event <when above [0] [Negative Event Count]> <if [Unified] is constructed> <when below [0] [Happiness]> <with [10]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Chaos Ensue] event <when above [0] [Negative Event Count]> <if [Unified] is not constructed> <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
+
+			"Triggers a [The long lasting peace] event <when above [0] [Negative Event Count]> <if [Unified] is constructed> <when not at war> <with [10]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Stagnation] event <when above [0] [Negative Event Count]> <if [Unified] is constructed> <with [10]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Risk of Civil War] event <when above [0] [Negative Event Count]> <if [Unified] is not constructed> <when below [0] [Happiness]> <with [10]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Tribalism permeates] event <when above [0] [Negative Event Count]> <if [Unified] is not constructed> <with [5]% chance> <upon turn start> <hidden from users>",
+
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]

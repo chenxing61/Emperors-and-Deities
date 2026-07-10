@@ -31,6 +31,7 @@
                 "text": "Well that sucks",
                 "uniques": [
                     "Comment [From now on, negative events will happen when certain conditions are met. The most common condition being low [Happiness]. Remember, they have lasting effects if you dont solve them by building counter measures either through city screen or [Enact Policies].]",
+                    "Set [Negative Event Count] to [2] <hidden from users>",
                     "Gain a free [Negative Events Activated] [in capital] <hidden from users>"
                 ]
             }
@@ -147,13 +148,14 @@
                     "Only available <when number of [Influence] is more than [[Influence Limit]*0.75]>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [10] [Influence]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
                 "text": "We need to take precaution!",
                 "uniques": [
-                    "Only available  <when above [0] [Influence]>",
+                    "Only available <when above [0] [Influence]>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [5] [Influence]",
                     "[-10]% [Gold] <for [3] turns> <on [Quick] game speed> <hidden from users>",
@@ -162,7 +164,8 @@
                     "[-10]% [Gold] <for [15] turns> <on [Marathon] game speed> <hidden from users>",
                     "[-10]% [Gold] <for [100] turns> <on [Realistic] game speed> <hidden from users>",
                     "Comment [[-10]% [Gold] for a fair amount of turns.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
@@ -170,7 +173,8 @@
                 "uniques": [
                     "Comment [Lose your current stability and enter a worse state.]",
                     "Instantly consumes [1] [Stability] <hidden from users>",
-                    "Triggers a [Downfall of Stability] event"
+                    "Triggers a [Downfall of Stability] event",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
@@ -179,7 +183,8 @@
                     "Only available <when number of [Stability] is equal to [0]>",
                     "Instantly provides [5] [Influence]",
                     "Comment [Orders are birthed from Chaos after all.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             }
         ]
@@ -192,14 +197,16 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Instantly consumes [3] [Influence]"
+                    "Instantly consumes [3] [Influence]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
                     "Gain a free [Slum] [in capital]",
-                    "Gain a free [Slum] [in all cities] <when number of [Cities] is more than [6]>"
+                    "Gain a free [Slum] [in all cities] <when number of [Cities] is more than [6]>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             }
         ]
@@ -212,14 +219,16 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Instantly consumes [3] [Influence]"
+                    "Instantly consumes [3] [Influence]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
                     "Gain a free [Unjust Ruling] [in capital]",
-                    "Gain a free [Unjust Ruling] [in all cities] <when number of [Cities] is more than [6]>"
+                    "Gain a free [Unjust Ruling] [in all cities] <when number of [Cities] is more than [6]>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             }
         ]
@@ -232,7 +241,8 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Instantly consumes [3] [Influence]"
+                    "Instantly consumes [3] [Influence]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
@@ -247,7 +257,8 @@
                     "[-5] population in a random city <when number of [Cities] is more than [4]> <hidden from users>",
                     "[+5] population in a random city <when number of [Cities] is more than [4]> <hidden from users>",
                     "[-5] population in a random city <when number of [Cities] is more than [4]> <hidden from users>",
-                    "Gain a free [Peasant Rebellion] [in capital]"
+                    "Gain a free [Peasant Rebellion] [in capital]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             }
         ]
@@ -291,7 +302,8 @@
                     "[-25]% [Noble Army Maintenance] resource production <for [10] turns> <on [Epic] game speed> <hidden from users>",
                     "[-25]% [Noble Army Maintenance] resource production <for [16] turns> <on [Marathon] game speed> <hidden from users>",
                     "[-25]% [Noble Army Maintenance] resource production <for [20] turns> <on [Realistic] game speed> <hidden from users>",
-                    "Comment [The number of [Standing Army Maintenance] and [Noble Army Maintenance] decreases to [75]% for a fair amount of turns. Which may impact our military in both size and strength.]"
+                    "Comment [The number of [Standing Army Maintenance] and [Noble Army Maintenance] decreases to [75]% for a fair amount of turns. Which may impact our military in both size and strength.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
@@ -303,7 +315,8 @@
                     "[-10]% [Happiness] <for [10] turns> <on [Epic] game speed> <hidden from users>",
                     "[-10]% [Happiness] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
                     "[-10]% [Happiness] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
-                    "Comment [[-10]% [Happiness] for a fair amount of turns.]"
+                    "Comment [[-10]% [Happiness] for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             }
         ]
@@ -325,7 +338,8 @@
                     "[+10]% Culture cost of adopting new Policies <for [10] turns> <on [Epic] game speed> <hidden from users>",
                     "[+10]% Culture cost of adopting new Policies <for [16] turns> <on [Marathon] game speed> <hidden from users>",
                     "[+10]% Culture cost of adopting new Policies <for [20] turns> <on [Realistic] game speed> <hidden from users>",
-                    "Comment [[Science] production falls by [15]% and Policy Cost Spikes by [10]% for a fair amount of turns.]"
+                    "Comment [[Science] production falls by [15]% and Policy Cost Spikes by [10]% for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
@@ -337,66 +351,95 @@
                     "[-15]% [Happiness] <for [10] turns> <on [Epic] game speed> <hidden from users>",
                     "[-15]% [Happiness] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
                     "[-15]% [Happiness] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
-                    "Comment [[-15]% [Happiness] for a fair amount of turns.]"
+                    "Comment [[-15]% [Happiness] for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             }
         ]
     },
     {
         "name": "Risk of Civil War",
-        "text": "Our civilization has been divided for too long, internal division is exacerbating, soon military conflict will rise.",
+        "text": "Because of our civilization's divided status, internal division is exacerbating, soon military conflict will rise.",
         "choices": [
             {
                 "text": "One side is more correct than the others.",
                 "uniques": [
                     "Gain a free [Civil War] [in Capital]",
-                    "Comment [[Science] production falls by [15]% and Policy Cost Spikes by [10]% for a fair amount of turns.]"
+                    "Comment [A Hostile force gathers around your capital.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
-                "text": "We must force progression by any means possible",
+                "text": "This is a chance that the entire civilization can unite under one will!",
                 "uniques": [
-                    "Instantly consumes [5] [Influence]",
-                    "[-15]% [Happiness] <for [6] turns> <on [Quick] game speed> <hidden from users>",
-                    "[-15]% [Happiness] <for [8] turns> <on [Standard] game speed> <hidden from users>",
-                    "[-15]% [Happiness] <for [10] turns> <on [Epic] game speed> <hidden from users>",
-                    "[-15]% [Happiness] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
-                    "[-15]% [Happiness] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
-                    "Comment [[-15]% [Happiness] for a fair amount of turns.]"
+                    "Only available <when above [15] [Influence]>",
+                    "Instantly consumes [15] [Influence]",
+                    "Provides a [Civil War] in your first [3] cities for free",
+                    "Comment [A Hostile force gathers around your first [3] cities.]",
+                    "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
+                    "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
+                    "Gain a free [Early Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
+                    "Gain a free [Centralized Empire] [in capital] <during the [Classical era]> <if [Successor States] is constructed> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Medieval era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Renaissance era]> <hidden from users>",
+                    "Gain a free [United States] [in capital] <during the [Imperial era]> <after adopting [Revolution]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Imperial era]> <before adopting [Revolution]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Industrial era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Modern era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Atomic era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Information era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Future era]> <hidden from users>",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            {
+                "text": "We cannot afford to fight ourselves...",
+                "uniques": [
+                    "Instantly consumes [2] [Influence] <for every [Cities]>",
+                    "[-15]% [Gold] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-15]% [Gold] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-15]% [Gold] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-15]% [Gold] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-15]% [Gold] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-15]% [Gold] for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             }
         ]
     },
     {
         "name": "Tribalism permeates",
-        "text": "In a divided civilization, internal division is exacerbating, soon military conflict will rise.",
+        "text": "Pride and Prejudice are disturbing relations between our civilization's states.",
         "choices": [
             {
-                "text": "We are too big to fall. It wouldnt matter either way.",
+                "text": "They will find out the answer by themselves",
                 "uniques": [
-                    "[-15]% [Science] <for [6] turns> <on [Quick] game speed> <hidden from users>",
-                    "[-15]% [Science] <for [8] turns> <on [Standard] game speed> <hidden from users>",
-                    "[-15]% [Science] <for [10] turns> <on [Epic] game speed> <hidden from users>",
-                    "[-15]% [Science] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
-                    "[-15]% [Science] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
-                    "[+10]% Culture cost of adopting new Policies <for [6] turns> <on [Quick] game speed> <hidden from users>",
-                    "[+10]% Culture cost of adopting new Policies <for [8] turns> <on [Standard] game speed> <hidden from users>",
-                    "[+10]% Culture cost of adopting new Policies <for [10] turns> <on [Epic] game speed> <hidden from users>",
-                    "[+10]% Culture cost of adopting new Policies <for [16] turns> <on [Marathon] game speed> <hidden from users>",
-                    "[+10]% Culture cost of adopting new Policies <for [20] turns> <on [Realistic] game speed> <hidden from users>",
-                    "Comment [[Science] production falls by [15]% and Policy Cost Spikes by [10]% for a fair amount of turns.]"
+                    "[-15]% [Production] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[Production] production falls by [15]% and Policy Cost Spikes by [20]% for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
-                "text": "We must force progression by any means possible",
+                "text": "This must be surpressed",
                 "uniques": [
-                    "Instantly consumes [5] [Influence]",
+                    "Instantly consumes [2] [Influence] <for every [Cities]>",
                     "[-15]% [Happiness] <for [6] turns> <on [Quick] game speed> <hidden from users>",
                     "[-15]% [Happiness] <for [8] turns> <on [Standard] game speed> <hidden from users>",
                     "[-15]% [Happiness] <for [10] turns> <on [Epic] game speed> <hidden from users>",
                     "[-15]% [Happiness] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
                     "[-15]% [Happiness] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
-                    "Comment [[-15]% [Happiness] for a fair amount of turns.]"
+                    "Comment [[-15]% [Happiness] for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             }
         ]
@@ -441,7 +484,7 @@
                 "text": "Intergrate them into our glorious empire!",
                 "uniques": [
                     "Only available <if [Unified] is constructed>",
-                    "Instantly consumes [3] [Influence] <before adopting [Pantheon Incorporation]>",
+                    "Instantly consumes [5] [Influence] <before adopting [Pantheon Incorporation]>",
                     "Instantly provides [2] [Migrating Population]"
                 ]
             },
