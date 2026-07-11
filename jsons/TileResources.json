@@ -5,10 +5,32 @@
 		"resourceType": "Strategic",
 		"uniques": [
 			"Stockpiled",
-			"Not shown on world screen",
+			"Not shown on world screen <if [Debug Building] is not constructed>",
 			"Cannot be traded"
 		],
 		"revealedBy": "Scientific Theory"
+	},
+	//0 = Anarchy,1 = Strife,2 = Struggle,3 = Peace,4 = Harmony
+	{
+		"name": "Stability",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen <if [Debug Building] is not constructed>",
+			"Will not be displayed in Civilopedia",
+			"Cannot be traded",
+			"Stockpiled"
+		]
+	},
+	//0 = Low,1 = Medium,2 = High
+	{
+		"name": "Cultural Diversity",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen <if [Debug Building] is not constructed>",
+			"Will not be displayed in Civilopedia",
+			"Cannot be traded",
+			"Stockpiled"
+		]
 	},
 	{
 		"name": "Influence",
@@ -35,7 +57,17 @@
 		"name": "Forced Shift In Politic Chance",
 		"resourceType": "Strategic",
 		"uniques": [
-			"Not shown on world screen",
+			"Not shown on world screen <if [Debug Building] is not constructed>",
+			"Will not be displayed in Civilopedia",
+			"Cannot be traded",
+			"Stockpiled"
+		]
+	},
+	{
+		"name": "Negative Event Count",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen <if [Debug Building] is not constructed>",
 			"Will not be displayed in Civilopedia",
 			"Cannot be traded",
 			"Stockpiled"
@@ -56,6 +88,7 @@
 		"name": "Side Quest Point",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Not shown on world screen <if [Debug Building] is not constructed>",
 			"Will not be displayed in Civilopedia",
 			"Cannot be traded",
 			"Stockpiled"
@@ -65,7 +98,7 @@
 		"name": "Bronze Age Collapse Countdown",
 		"resourceType": "Strategic",
 		"uniques": [
-			"Not shown on world screen",
+			"Not shown on world screen <if [Debug Building] is not constructed>",
 			"Will not be displayed in Civilopedia",
 			"Cannot be traded",
 			"Stockpiled"
@@ -76,7 +109,7 @@
 		"name": "Avaliable School of Thoughts",
 		"resourceType": "Strategic",
 		"uniques": [
-			"Not shown on world screen",
+			"Not shown on world screen <if [Debug Building] is not constructed>",
 			"Will not be displayed in Civilopedia",
 			"Cannot be traded",
 			"Stockpiled"
@@ -173,7 +206,7 @@
 		"name": "Academic Research",
 		"resourceType": "Strategic",
 		"uniques": [
-			"Not shown on world screen",
+			"Not shown on world screen <if [Debug Building] is not constructed>",
 			"Will not be displayed in Civilopedia",
 			"City-level resource"
 		],

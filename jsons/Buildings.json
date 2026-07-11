@@ -65,7 +65,7 @@
 			"Remove [Hide-Show Strategic Resources] [in this city] <hidden from users>"
 		]
 	},
-		{
+	{
 		"name": "Check Mission List",
 		"cost": 0,
 		"uniques": [
@@ -111,7 +111,6 @@
 			"Comment [[Imperial era]: [Guerrilla], [Musketeer], [Gunboat]]",
 			"Comment [[Industrial era]: [Modern Guerrilla], [Rifleman], [Gunboat]]",
 			"Comment [[Modern era]: [Modern Guerrilla], [Modern Conscript], [Gunboat]]",
-
 			//Neolitic-Ancient
 			"Free [Primal Warrior] appears <before discovering [Mining]> <hidden from users> ",
 			"Free [Brute Warrior] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [non-[Europa]] Civilizations> <hidden from users> ",
@@ -164,7 +163,7 @@
 	//		"Remove ['Civilization State'] [in all cities] <in [non-[Capital]] cities>",
 	//		"Remove ['Economic Policy'] [in all cities] <in [non-[Capital]] cities>",
 	//		"Remove ['Outcome'] [in all cities] <in [non-[Capital]] cities>",
-	//		"Remove ['Culture Diversity State'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove ['Cultural Diversity State'] [in all cities] <in [non-[Capital]] cities>",
 	//		"Remove [Palace] [in all cities] <in [non-[Capital]] cities>",
 	//		"Remove [Migrate Capital] [in this city] <in cities with a [Palace]>"
 	//	],
@@ -501,7 +500,7 @@
 			"Only available <in cities without a [Healer's Hut]>",
 			"Only available <in cities without a [Clinic]>",
 			"Only available <in cities without a [Granary]>",
-			"Only available <in cities without a [Road Network]> <if [Capital of Mountain Range] is not constructed>",
+			"Unavailable <in cities with a [Road Network]> <if [Capital of Mountain Range] is not constructed>",
 			"Gain a free [Aqueduct] [in this city]", //120
 			"Gain a free [Healer's Hut] [in this city]", //20
 			"Gain a free [Clinic] [in this city]", //100
@@ -1385,6 +1384,7 @@
 			"Great Engineer": 1
 		},
 		"uniques": [
+			"Only available <after adopting [Belief in Afterlife]>",
 			"'Worship Place'",
 			"[+2 Faith] <starting from the [Ancient era]>",
 			"[+2 Faith] <starting from the [Classical era]>",
@@ -1392,7 +1392,6 @@
 			"[+2 Culture] <starting from the [Renaissance era]>",
 			"[+3 Science] <starting from the [Imperial era]>",
 			"[+3 Science] <starting from the [Modern era]>",
-			"Only available <after adopting [Belief in Afterlife]>",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"requiredTech": "The Wheel",
@@ -1400,7 +1399,7 @@
 	},
 	{
 		"name": "Sinai Deep Tunnels",
-		"cost":10,
+		"cost": 10,
 		"isWonder": true,
 		"uniques": [
 			"Only available <within [3] tiles of a [Mount Sinai]>",
@@ -1621,7 +1620,7 @@
 	},
 	{
 		"name": "Great Barrier Reef Expedition",
-		"cost":10,
+		"cost": 10,
 		"isWonder": true,
 		"uniques": [
 			"Only available <within [3] tiles of a [Great Barrier Reef]>",
@@ -1715,8 +1714,8 @@
 	{
 		"name": "Early Aqueduct",
 		"cost": 90,
-		"uniqueTo":"South Asia",
-		"replaces":"Aqueduct",
+		"uniqueTo": "South Asia",
+		"replaces": "Aqueduct",
 		"maintenance": 2,
 		"uniques": [
 			"'Infrastructure'",
@@ -1730,7 +1729,7 @@
 		"maintenance": 2,
 		"culture": 1,
 		"specialistSlots": {
-			"Engineer": 1
+			"Artist": 1
 		},
 		"uniques": [
 			"'Light Industry'",
@@ -2206,7 +2205,6 @@
 		],
 		"requiredTech": "Forging"
 	},
-
 	{
 		"name": "Military Blacksmith",
 		"maintenance": 1,
@@ -2332,7 +2330,6 @@
 		"cityHealth": 15,
 		"uniques": [
 			"'Static Defense'",
-			
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Walls",
@@ -2486,7 +2483,7 @@
 			"gold": 25
 		},
 		"specialistSlots": {
-			"Merchant": 3
+			"Merchant": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2511,7 +2508,7 @@
 			"faith": 15
 		},
 		"specialistSlots": {
-			"Merchant": 3
+			"Merchant": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2537,7 +2534,7 @@
 		},
 		"specialistSlots": {
 			"Merchant": 1,
-			"Artist": 2
+			"Artist": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2563,7 +2560,7 @@
 			"production": 10
 		},
 		"specialistSlots": {
-			"Merchant": 3
+			"Merchant": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2588,7 +2585,7 @@
 			"food": 10
 		},
 		"specialistSlots": {
-			"Merchant": 3
+			"Merchant": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2612,7 +2609,7 @@
 			"gold": 25
 		},
 		"specialistSlots": {
-			"Merchant": 2,
+			"Merchant": 1,
 			"Artist": 1
 		},
 		"uniques": [
@@ -2637,7 +2634,7 @@
 			"gold": 25
 		},
 		"specialistSlots": {
-			"Merchant": 2,
+			"Merchant": 1,
 			"Artist": 1
 		},
 		"uniques": [
@@ -2662,7 +2659,7 @@
 			"gold": 25
 		},
 		"specialistSlots": {
-			"Merchant": 2,
+			"Merchant": 1,
 			"Artist": 1
 		},
 		"uniques": [
@@ -2689,8 +2686,8 @@
 			"culture": 10
 		},
 		"specialistSlots": {
-			"Merchant": 2,
-			"Artist": 2
+			"Merchant": 1,
+			"Artist": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2716,7 +2713,7 @@
 			"faith": 15
 		},
 		"specialistSlots": {
-			"Merchant": 2,
+			"Merchant": 1,
 			"Artist": 1
 		},
 		"uniques": [
@@ -2742,7 +2739,7 @@
 			"food": 10
 		},
 		"specialistSlots": {
-			"Merchant": 3
+			"Merchant": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2767,7 +2764,7 @@
 			"culture": 10
 		},
 		"specialistSlots": {
-			"Merchant": 3
+			"Merchant": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2795,7 +2792,7 @@
 			"culture": 5
 		},
 		"specialistSlots": {
-			"Merchant": 3
+			"Merchant": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2821,7 +2818,7 @@
 			"food": 10
 		},
 		"specialistSlots": {
-			"Merchant": 3
+			"Merchant": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2845,7 +2842,7 @@
 			"gold": 25
 		},
 		"specialistSlots": {
-			"Merchant": 3
+			"Merchant": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -2871,7 +2868,7 @@
 			"culture": 15
 		},
 		"specialistSlots": {
-			"Merchant": 2,
+			"Merchant": 1,
 			"Artist": 1
 		},
 		"uniques": [
@@ -2899,7 +2896,7 @@
 			"culture": 15
 		},
 		"specialistSlots": {
-			"Merchant": 2,
+			"Merchant": 1,
 			"Artist": 1
 		},
 		"uniques": [
@@ -2927,7 +2924,7 @@
 			"culture": 15
 		},
 		"specialistSlots": {
-			"Merchant": 2,
+			"Merchant": 1,
 			"Artist": 1
 		},
 		"uniques": [
@@ -2954,7 +2951,7 @@
 			"culture": 15
 		},
 		"specialistSlots": {
-			"Merchant": 2,
+			"Merchant": 1,
 			"Artist": 1
 		},
 		"uniques": [
@@ -2981,7 +2978,7 @@
 			"culture": 10
 		},
 		"specialistSlots": {
-			"Merchant": 2,
+			"Merchant": 1,
 			"Artist": 1
 		},
 		"uniques": [
@@ -3083,8 +3080,7 @@
 		},
 		"specialistSlots": {
 			"Merchant": 1,
-			"Artist": 1,
-			"Engineer": 1
+			"Artist": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -3109,7 +3105,7 @@
 			"food": 10
 		},
 		"specialistSlots": {
-			"Merchant": 2
+			"Merchant": 1
 		},
 		"uniques": [
 			"'Monopoly Trade'",
@@ -3130,9 +3126,9 @@
 		"name": "Alchemy Lab",
 		"cost": 125,
 		"maintenance": 3,
+		"science": 2,
 		"specialistSlots": {
-			"Engineer": 1,
-			"Scientist": 2
+			"Scientist": 1
 		},
 		"uniques": [
 			"Unbuildable <hidden from users>",
@@ -3197,7 +3193,7 @@
 		"faith": 2,
 		"happiness": 2,
 		"greatPersonPoints": {
-			"Great Engineer": 2
+			"Great Engineer": 1
 		},
 		"uniques": [
 			"'Worship Place'",
@@ -3211,7 +3207,7 @@
 	//Line 9
 	{
 		"name": "Trading Port",
-		"maintenance": 1,	
+		"maintenance": 1,
 		"specialistSlots": {
 			"Merchant": 1,
 			"Labourer": 1
@@ -3229,9 +3225,9 @@
 	},
 	{
 		"name": "Salt Evaporation Pond",
-		"cost":80,
+		"cost": 80,
 		"gold": 3,
-		"production":2,
+		"production": 2,
 		"uniques": [
 			"'Marine Infrastructure'",
 			"Must be next to [Coast]"
@@ -3358,7 +3354,6 @@
 		"cityHealth": 20,
 		"uniques": [
 			"'Static Defense'",
-			
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Watch Tower",
@@ -3516,7 +3511,7 @@
 		"faith": 3,
 		"happiness": 1,
 		"greatPersonPoints": {
-			"Great Engineer": 1
+			"Great Engineer": 2
 		},
 		"uniques": [
 			"'Worship Place'",
@@ -3552,7 +3547,7 @@
 		"cost": 250,
 		"isWonder": true,
 		"greatPersonPoints": {
-			"Great Strategist": 1
+			"Great Strategist": 2
 		},
 		"uniques": [
 			"Comment [Enable you to build 4 [Great Wall Pass]es in your cities. Which stops enemy mounted units effectively.]",
@@ -3619,7 +3614,7 @@
 		"uniques": [
 			"'Political Building'",
 			"[-5]% unhappiness from the number of cities",
-			"[-5]% Unhappiness from [Specialists] [in this city]",
+			"[-25]% Unhappiness from [Specialists] [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Town Hall",
@@ -3648,7 +3643,7 @@
 		},
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"[-10]% Unhappiness from [Specialists] [in all cities connected to capital]",
+			"[-25]% Unhappiness from [Specialists] [in all cities connected to capital]",
 			"[-25]% Gold cost of acquiring tiles [in all cities connected to capital]",
 			"[+10]% Production when constructing [All] units [in all cities connected to capital]",
 			"[+10]% Production when constructing [All] buildings [in all cities connected to capital]",
@@ -3680,7 +3675,7 @@
 		"faith": 4,
 		"happiness": 10,
 		"greatPersonPoints": {
-			"Great Merchant": 1
+			"Great Merchant": 2
 		},
 		"isWonder": true,
 		"uniques": [
@@ -3739,7 +3734,7 @@
 			"culture": 10
 		},
 		"specialistSlots": {
-			"Scientist": 2,
+			"Scientist": 1,
 			"Artist": 1,
 			"Engineer": 1
 		},
@@ -3773,7 +3768,7 @@
 		"name": "Military Academy",
 		"maintenance": 3,
 		"greatPersonPoints": {
-			"Great Strategist": 1
+			"Great Strategist": 2
 		},
 		"uniques": [
 			"'Educational Building'",
@@ -3806,8 +3801,7 @@
 		"name": "Porcelain Workshop",
 		"gold": 5,
 		"specialistSlots": {
-			"Artist": 1,
-			"Merchant": 1
+			"Artist": 1
 		},
 		"uniques": [
 			"Only available <if [Invention of Porcelain] is constructed>",
@@ -4058,7 +4052,6 @@
 		},
 		"uniques": [
 			"'Static Defense'",
-			
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Monocular"
@@ -4136,7 +4129,7 @@
 			"faith": 10
 		},
 		"specialistSlots": {
-			"Scientist": 2,
+			"Scientist": 1,
 			"Artist": 1
 		},
 		"uniques": [
@@ -4159,7 +4152,7 @@
 			"gold": 10
 		},
 		"specialistSlots": {
-			"Scientist": 2,
+			"Scientist": 1,
 			"Artist": 1,
 			"Merchant": 1
 		},
@@ -4180,7 +4173,7 @@
 			"production": 5
 		},
 		"specialistSlots": {
-			"Scientist": 2,
+			"Scientist": 1,
 			"Artist": 1
 		},
 		"uniques": [
@@ -4217,7 +4210,6 @@
 		},
 		"uniques": [
 			"'Static Defense'",
-			
 			"Must be next to [Coast]"
 		],
 		"requiredTech": "Carriage"
@@ -4309,11 +4301,23 @@
 	{
 		"name": "Sewer",
 		"maintenance": 5,
-		"food": 2,
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
-			"[25]% Food is carried over after population increases [in this city]"
+			"[-10]% Unhappiness from [Population] [in this city]",
+			"[+10]% growth [in this city]"
+		],
+		"requiredBuilding": "City Hall",
+		"requiredTech": "Architecture"
+	},
+	{
+		"name": "Water Supply",
+		"maintenance": 5,
+		"uniques": [
+			"'Infrastructure'",
+			"[-10]% Unhappiness from [Population] [in this city]",
+			"[15]% Food is carried over after population increases [in this city]",
+			"[8]% Food is carried over after population increases [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>"
 		],
 		"requiredBuilding": "City Hall",
 		"requiredTech": "Architecture"
@@ -4323,7 +4327,7 @@
 		"maintenance": 5,
 		"uniques": [
 			"'Political Building'",
-			"[-20]% Unhappiness from [Specialists] [in this city]",
+			"[-25]% Unhappiness from [Specialists] [in this city]",
 			"[-25]% enemy spy effectiveness [in this city]"
 		],
 		"requiredBuilding": "City Hall",
@@ -4634,14 +4638,14 @@
 		"name": "Hospital",
 		"cost": 500,
 		"maintenance": 10,
-		"happiness": 2,
+		"happiness": 3,
 		"uniques": [
 			"'Infrastructure'",
-			"[-10]% Unhappiness from [Population] [in this city]",
+			"[-15]% Unhappiness from [Population] [in this city]",
 			"[+25]% growth [in this city]",
 			"[All] Units adjacent to this city heal [10] HP per turn when healing",
 			//Powered
-			"[-5]% Unhappiness from [Population] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"[-10]% Unhappiness from [Population] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
 			"[+8]% growth [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
 			//Actual Output
 			"Comment [-]",
@@ -4651,7 +4655,7 @@
 			"Comment [-]",
 			"Comment [Powered Effect]",
 			"Comment [-]",
-			"Comment [[-5]% Unhappiness from [Population] [in this city]]",
+			"Comment [[-10]% Unhappiness from [Population] [in this city]]",
 			"Comment [[+8]% growth [in this city]]",
 			"Comment [-]"
 		],
@@ -4969,7 +4973,7 @@
 			//Powered
 			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
 			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
-			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]> <hidden from users>",
+			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
 			"[+1 Production] from every [Engineer] <in this city> <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
 			//Actual Output
 			"Comment [-]",
@@ -5006,6 +5010,7 @@
 		"uniques": [
 			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
 			"'Infrastructure'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"[+1 Happiness] <in cities with at least [20] [Population]>",
 			"[+1]% [Gold] from Trade Routes",
 			"[+2]% growth [in all cities]",
@@ -5343,6 +5348,7 @@
 		"uniques": [
 			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
 			"'Infrastructure'",
+			"[+1 Happiness] <in cities with at least [10] [Population]>",
 			"[+1 Happiness] <in cities with at least [20] [Population]>",
 			"[+1]% [Gold] from Trade Routes",
 			"[+1 Production] from ['Infrastructure Improvement'] tiles [in this city]"
@@ -5405,7 +5411,7 @@
 			//Powered
 			"[+5]% [Production] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
 			"[+20]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
-			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities without a [Power Shortage]>",
+			"[+5]% Production when constructing [{Civilian} {Land}] units [in all cities] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>",
 			"[+1 Production, +1 Gold] from every [Engineer] <in this city> <hidden from users>",
 			//Actual Output
 			"Comment [-]",
@@ -5437,30 +5443,31 @@
 		},
 		"uniques": [
 			"'Infrastructure'",
+			"[-20]% Unhappiness from [Population] [in this city] <in cities without a [Power Shortage]>",
 			"Comment [Enable this city's industries and citizens to consume [Power], which enables Industry and ['Infrastructure'] buildings to increase overall gain based on electricity surplus]",
 			"Comment [Every 10 population costs 1 [Power]]",
-			"Consumes [1] [Power] <in cities with between [0] and [10] [Population]> <hidden from users>",
-			"Consumes [2] [Power] <in cities with between [10] and [20] [Population]> <hidden from users>",
-			"Consumes [3] [Power] <in cities with between [20] and [30] [Population]> <hidden from users>",
-			"Consumes [4] [Power] <in cities with between [30] and [40] [Population]> <hidden from users>",
-			"Consumes [5] [Power] <in cities with between [40] and [50] [Population]> <hidden from users>",
-			"Consumes [6] [Power] <in cities with between [50] and [60] [Population]> <hidden from users>",
-			"Consumes [7] [Power] <in cities with between [60] and [70] [Population]> <hidden from users>",
-			"Consumes [8] [Power] <in cities with between [70] and [80] [Population]> <hidden from users>",
-			"Consumes [9] [Power] <in cities with between [80] and [90] [Population]> <hidden from users>",
-			"Consumes [10] [Power] <in cities with between [90] and [100] [Population]> <hidden from users>",
-			"Consumes [11] [Power] <in cities with between [100] and [110] [Population]> <hidden from users>",
-			"Consumes [12] [Power] <in cities with between [110] and [120] [Population]> <hidden from users>",
-			"Consumes [13] [Power] <in cities with between [120] and [130] [Population]> <hidden from users>",
-			"Consumes [14] [Power] <in cities with between [130] and [140] [Population]> <hidden from users>",
-			"Consumes [15] [Power] <in cities with between [140] and [150] [Population]> <hidden from users>",
-			"Consumes [16] [Power] <in cities with between [150] and [160] [Population]> <hidden from users>",
-			"Consumes [17] [Power] <in cities with between [160] and [170] [Population]> <hidden from users>",
-			"Consumes [18] [Power] <in cities with between [170] and [180] [Population]> <hidden from users>",
-			"Consumes [19] [Power] <in cities with between [180] and [190] [Population]> <hidden from users>",
-			"Consumes [20] [Power] <in cities with between [190] and [200] [Population]> <hidden from users>",
-			"Gain a free [Power Shortage] [in this city] <when below [0] [Power]>",
-			"Remove [Power Shortage] [in this city] <when above [0] [Power]>",
+			"Consumes [1] [Power] <in cities with between [0] and [10] [Population]> <in this city> <hidden from users>",
+			"Consumes [2] [Power] <in cities with between [10] and [20] [Population]> <in this city> <hidden from users>",
+			"Consumes [3] [Power] <in cities with between [20] and [30] [Population]> <in this city> <hidden from users>",
+			"Consumes [4] [Power] <in cities with between [30] and [40] [Population]> <in this city> <hidden from users>",
+			"Consumes [5] [Power] <in cities with between [40] and [50] [Population]> <in this city> <hidden from users>",
+			"Consumes [6] [Power] <in cities with between [50] and [60] [Population]> <in this city> <hidden from users>",
+			"Consumes [7] [Power] <in cities with between [60] and [70] [Population]> <in this city> <hidden from users>",
+			"Consumes [8] [Power] <in cities with between [70] and [80] [Population]> <in this city> <hidden from users>",
+			"Consumes [9] [Power] <in cities with between [80] and [90] [Population]> <in this city> <hidden from users>",
+			"Consumes [10] [Power] <in cities with between [90] and [100] [Population]> <in this city> <hidden from users>",
+			"Consumes [11] [Power] <in cities with between [100] and [110] [Population]> <in this city> <hidden from users>",
+			"Consumes [12] [Power] <in cities with between [110] and [120] [Population]> <in this city> <hidden from users>",
+			"Consumes [13] [Power] <in cities with between [120] and [130] [Population]> <in this city> <hidden from users>",
+			"Consumes [14] [Power] <in cities with between [130] and [140] [Population]> <in this city> <hidden from users>",
+			"Consumes [15] [Power] <in cities with between [140] and [150] [Population]> <in this city> <hidden from users>",
+			"Consumes [16] [Power] <in cities with between [150] and [160] [Population]> <in this city> <hidden from users>",
+			"Consumes [17] [Power] <in cities with between [160] and [170] [Population]> <in this city> <hidden from users>",
+			"Consumes [18] [Power] <in cities with between [170] and [180] [Population]> <in this city> <hidden from users>",
+			"Consumes [19] [Power] <in cities with between [180] and [190] [Population]> <in this city> <hidden from users>",
+			"Consumes [20] [Power] <in cities with between [190] and [200] [Population]> <in this city> <hidden from users>",
+			"Gain a free [Power Shortage] [in this city] <when below [0] [Power]> <upon turn start> <in this city>",
+			"Remove [Power Shortage] [in this city] <when above [0] [Power]> <upon turn start> <in this city>",
 			"Gain a free [Low Industry Electricity Cost] [in this city] <when above [0] [Industry Size]> <in this city> <when below [7] [Industry Size]> <in this city>",
 			"Gain a free [Medium Industry Electricity Cost] [in this city] <when above [7] [Industry Size]> <in this city> <when below [15] [Industry Size]> <in this city>",
 			"Gain a free [High Industry Electricity Cost] [in this city] <when above [15] [Industry Size]> <in this city>",
@@ -5625,7 +5632,7 @@
 		"culture": 2,
 		"cityStrength": 5,
 		"specialistSlots": {
-			"Governor": 1
+			"Governor": 2
 		},
 		"uniques": [
 			"'Political Building'",
@@ -6740,33 +6747,27 @@
 			"Gain a free [Information Era Start] [in capital] <for [1] turns> <if starting in the [Information era]> <when number of [Cities] is less than [2]> <hidden from users>",
 			"Gain a free [Future Era Start] [in capital] <for [1] turns> <if starting in the [Future era]> <when number of [Cities] is less than [2]> <hidden from users>",
 			///Influence Calculation
-			"Consumes [1] [Influence] <when below [500] [Happiness]> <starting from the [Future era]>",
-			"Consumes [1] [Influence] <when below [200] [Happiness]> <starting from the [Information era]>",
-			"Consumes [1] [Influence] <when below [100] [Happiness]> <starting from the [Atomic era]>",
-			"Consumes [1] [Influence] <when below [50] [Happiness]> <starting from the [Modern era]>",
-			"Consumes [1] [Influence] <when below [30] [Happiness]> <starting from the [Industrial era]>",
-			"Consumes [1] [Influence] <when below [10] [Happiness]> <starting from the [Imperial era]>",
-			"Consumes [1] [Influence] <when below [0] [Happiness]>",
-			"Consumes [2] [Influence] <when below [-9] [Happiness]>",
-			"Consumes [2] [Influence] <when below [-14] [Happiness]>",
-			"Consumes [3] [Influence] <when below [-19] [Happiness]>",
-			"Consumes [1] [Influence] <when below [-100] [Gold]>",
-			"Consumes [2] [Influence] <when below [-200] [Gold]>",
-			"Consumes [2] [Influence] <when below [-300] [Gold]>",
-			"Provides [1] [Influence] <when above [4] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
-			"Provides [1] [Influence] <when above [9] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
-			"Provides [1] [Influence] <when above [29] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
-			"Provides [2] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]>",
+			"Consumes [1] [Influence] <when below [10] [Happiness]> <starting from the [Imperial era]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [0] [Happiness]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [-9] [Happiness]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [-14] [Happiness]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [-19] [Happiness]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [-100] [Gold]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [-200] [Gold]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [-300] [Gold]> <hidden from users>",
+			"Provides [1] [Influence] <when above [4] [Happiness]> <when number of [Influence] is less than [Influence Limit]> <hidden from users>",
+			"Provides [1] [Influence] <when above [9] [Happiness]> <when number of [Influence] is less than [Influence Limit]> <hidden from users>",
+			"Provides [1] [Influence] <when above [29] [Happiness]> <when number of [Influence] is less than [Influence Limit]> <hidden from users>",
+			"Provides [1] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]> <hidden from users>",
 			///Stuff
-			"Provides [10] [Migration Limit]",
-			"Provides [8] [Standing Army Maintenance] <for [AI player] Civilizations>",
-			"Provides [4] [Noble Army Maintenance] <for [AI player] Civilizations>",
+			"Provides [10] [Migration Limit] <hidden from users>",
+			"Provides [8] [Standing Army Maintenance] <for [AI player] Civilizations> <hidden from users>",
+			"Provides [4] [Noble Army Maintenance] <for [AI player] Civilizations> <hidden from users>",
 			//"Indicates the capital city <if [Migrate Capital] is not constructed>",
 			"Indicates the capital city",
 			//Tutorial
-			"Triggers a [The internal affair...] event <for [Human player] Civilizations><hidden from users>",
+			"Triggers a [The internal affair...] event <for [Human player] Civilizations> <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
-			
 		]
 	},
 	{
@@ -6777,8 +6778,7 @@
 		"uniques": [
 			"'Worship Place'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Only available <after adopting [Polytheism]>",
-			"Only available <when religion is enabled>",
+			"Only available <when religion is enabled> <after adopting [Polytheism]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Calendar"
@@ -6794,8 +6794,7 @@
 		"uniques": [
 			"'Worship Place'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Only available <after adopting [Polytheism]> <in [non-[Puppeted]] cities>",
-			"Only available <when religion is enabled>",
+			"Only available <when religion is enabled> <after adopting [Polytheism]> <in [non-[Puppeted]] cities>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Calendar"
@@ -6957,8 +6956,7 @@
 		"uniques": [
 			"'Worship Place'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Only available <after adopting [Monotheism]>",
-			"Only available <when religion is enabled>",
+			"Only available <when religion is enabled> <after adopting [Monotheism]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Calendar"
@@ -6972,8 +6970,7 @@
 		"uniques": [
 			"'Worship Place'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Only available <after adopting [Monotheism]>",
-			"Only available <when religion is enabled>",
+			"Only available <when religion is enabled> <after adopting [Monotheism]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Calendar"
@@ -7836,13 +7833,14 @@
 	},
 	//Culture stuff
 	{
-		"name": "High Culture Diversity",
+		"name": "High Cultural Diversity",
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"'Culture Diversity State'",
-			"Remove [{non-[High Culture Diversity]} {'Culture Diversity State'}] [in all cities] <hidden from users>",
+			"'Cultural Diversity State'",
+			"Set [Cultural Diversity] to [2] <before turn number [2]> <hidden from users>",
+			"Remove [{non-[High Cultural Diversity]} {'Cultural Diversity State'}] [in all cities] <hidden from users>",
 			"[+3]% [Science] [in all cities]",
 			"[+3]% [Culture] [in all cities]",
 			"[+100]% Production when constructing [Cultural Intergration] buildings [in annexed cities]",
@@ -7851,13 +7849,14 @@
 		]
 	},
 	{
-		"name": "Medium Culture Diversity",
+		"name": "Medium Cultural Diversity",
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"'Culture Diversity State'",
-			"Remove [{non-[Medium Culture Diversity]} {'Culture Diversity State'}] [in all cities] <hidden from users>",
+			"'Cultural Diversity State'",
+			"Set [Cultural Diversity] to [1] <before turn number [2]> <hidden from users>",
+			"Remove [{non-[Medium Cultural Diversity]} {'Cultural Diversity State'}] [in all cities] <hidden from users>",
 			"[+3]% [Happiness] [in all cities]",
 			"[+50]% Production when constructing [Cultural Intergration] buildings [in annexed cities]",
 			"Limited to [1] per Civilization <hidden from users>",
@@ -7865,13 +7864,14 @@
 		]
 	},
 	{
-		"name": "Low Culture Diversity",
+		"name": "Low Cultural Diversity",
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"'Culture Diversity State'",
-			"Remove [{non-[Low Culture Diversity]} {'Culture Diversity State'}] [in all cities] <hidden from users>",
+			"'Cultural Diversity State'",
+			"Set [Cultural Diversity] to [0] <before turn number [2]> <hidden from users>",
+			"Remove [{non-[Low Cultural Diversity]} {'Cultural Diversity State'}] [in all cities] <hidden from users>",
 			"[+8]% [Happiness] [in all cities]",
 			"[-3]% [Culture] [in all cities]",
 			"[-3]% [Science] [in all cities]",
@@ -7886,24 +7886,22 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"[-33]% [Science] [in all cities]",
-			
 			"[-100]% growth [in all cities] <in cities with at least [10] [Population]>",
 			"Cannot build ['Agricultural Building'] buildings",
-			"[-15]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [High Culture Diversity] is constructed>",
-			"[-33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Medium Culture Diversity] is constructed>",
-			"[-50]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Low Culture Diversity] is constructed>",
-
-			"Upon capturing a city, receive [1] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is constructed> <if [Abolition] is not constructed>",
-			"Upon capturing a city, receive [2] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is not constructed> <if [Abolition] is not constructed>",
-			"Earn [25]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is not constructed> <if [Abolition] is not constructed>",
-			"Earn [50]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is constructed> <if [Abolition] is not constructed>",
-
-			"[-50]% unhappiness from the number of cities <if [Low Culture Diversity] is constructed>",
-			"[-67]% unhappiness from the number of cities <if [Medium Culture Diversity] is constructed>",
-			"[-100]% unhappiness from the number of cities <if [High Culture Diversity] is constructed>",
+			"[-15]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [High Cultural Diversity] is constructed>",
+			"[-33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Medium Cultural Diversity] is constructed>",
+			"[-50]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Low Cultural Diversity] is constructed>",
+			"Upon capturing a city, receive [1] times its [Food] production as [Slaves] immediately <if [Low Cultural Diversity] is constructed> <if [Abolition] is not constructed>",
+			"Upon capturing a city, receive [2] times its [Food] production as [Slaves] immediately <if [Low Cultural Diversity] is not constructed> <if [Abolition] is not constructed>",
+			"Earn [25]% of the damage done to [Military] units as [Slaves] <if [Low Cultural Diversity] is not constructed> <if [Abolition] is not constructed>",
+			"Earn [50]% of the damage done to [Military] units as [Slaves] <if [Low Cultural Diversity] is constructed> <if [Abolition] is not constructed>",
+			"[-50]% unhappiness from the number of cities <if [Low Cultural Diversity] is constructed>",
+			"[-67]% unhappiness from the number of cities <if [Medium Cultural Diversity] is constructed>",
+			"[-100]% unhappiness from the number of cities <if [High Cultural Diversity] is constructed>",
 			"[-100]% maintenance cost for [Export [Food]] buildings [in all cities]",
 			"[-100]% maintenance cost for [Export [Production]] buildings [in all cities]",
 			"[+33]% [Horse] resource production",
+			"Triggers a [Emergence of Nations] event <upon entering a new era> <hidden from users>",
 			"Triggers a [Settle Down] event <when number of [Settlement Process] is more than [([Cities]*5)+[20]]> <upon turn start>",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Destroyed when the city is captured",
@@ -7918,6 +7916,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization State'",
+			"Set [Stability] to [4] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Harmony]} {'Civilization State'}] [in all cities] <hidden from users>",
 			"[+10]% growth [in all cities]",
 			"[+10]% [Culture] [in all cities]",
@@ -7931,6 +7930,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization State'",
+			"Set [Stability] to [3] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Peace]} {'Civilization State'}] [in all cities] <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7941,6 +7941,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization State'",
+			"Set [Stability] to [2] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Struggle]} {'Civilization State'}] [in all cities] <hidden from users>",
 			"[-20]% [Gold] from Trade Routes",
 			"[-10]% [Culture] [in all cities]",
@@ -7956,6 +7957,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization State'",
+			"Set [Stability] to [1] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Strife]} {'Civilization State'}] [in all cities] <hidden from users>",
 			"[-33]% [Gold] from Trade Routes",
 			"[-20]% [Culture] [in all cities]",
@@ -7974,6 +7976,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Civilization State'",
+			"Set [Stability] to [0] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Anarchy]} {'Civilization State'}] [in all cities] <hidden from users>",
 			"Rebel units may spawn",
 			"[-100]% [Gold] from Trade Routes <before adopting [Anarchism]>",
@@ -8002,8 +8005,10 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"Provides [10] [Influence Limit]",
+			"Set [Influence] to [0.5*[Influence Limit]]",
 			"Remove ['Divided'] [in all cities]",
 			"Remove ['Agreement'] [in all cities]",
+			"Remove [Unified] [in all cities] <if ['Divided'] is constructed> <upon turn start>",
 			"Enables Research agreements",
 			"Enables Open Borders agreements",
 			"Enables Defensive Pacts",
@@ -8268,7 +8273,6 @@
 			"Comment [Unique Name:]",
 			"Comment [Carved in Stone]",
 			"[+10]% growth [in all cities]",
-			"[+10]% growth [in all cities] <starting from the [Ancient era]>",
 			"[+10]% Production when constructing [All] wonders [in all cities]",
 			"[+5]% Production when constructing [All] wonders [in all cities] <starting from the [Classical era]>",
 			"[+1 Production, +1 Faith] from every [Governor] <starting from the [Classical era]>",
@@ -8666,6 +8670,9 @@
 			"Comment [Gain access to[Qin Crossbowman]and[Honor Bound Territory].]",
 			"Gain a free [Honor Bound Territory] [in annexed cities]",
 			"Comment [[Great Qin] will collapse in if theres not enough [Happiness] and [Influence].]",
+			"Triggers a [Collapse of the Great Qin] event <if [Great Qin] is constructed> <when below [3] [Stability]> <upon turn start> <hidden from users>",
+			"Triggers a [Collapse of the Great Qin] event <if [Great Qin] is constructed> <when below [0] [Happiness]> <when below [0] [Influence]> <upon turn start> <hidden from users>",
+			"Triggers a [Collapse of the Great Qin] event <if [Great Qin] is constructed> <when below [0] [Influence]> <upon turn start> <hidden from users>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9198,6 +9205,7 @@
 			"[+100]% Production when constructing ['Consolidation'] buildings [in all cities]",
 			"Comment [Unique Ability: Commonwealth, You can still build ['Agreement'] via events.]",
 			"Comment [If you ever have your [Influence] go down into 10 or below, You will lose this['Civilization Form'].]",
+			"Triggers a [Disolution of Union] event <upon turn start> <when below [10] [Influence]> <hidden from users>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9242,6 +9250,7 @@
 			"[+3]% [Culture] from every ['Infrastructure']",
 			"[-25]% construction time for [All] improvements <when not at war>",
 			"Comment [If you ever have your [Happiness] go down into below 20, you will lose this ['Civilization Form'].]",
+			"Triggers a [Disolution of Union] event <upon turn start> <when below [20] [Happiness]> <hidden from users>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -9272,8 +9281,7 @@
 			"Only available <if starting in the [Neolithic era]>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"Instantly provides [5] [Influence]",
-			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Low Cultural Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Tribes] [in capital] <for [{non-[Central and West Asia]} {non-[North Africa]} {non-[Euroasian Nomads]}] Civilizations> <for [1] turns>",
 			"Gain a free [Early City States] [in capital] <for [Central and West Asia] Civilizations> <for [1] turns>",
@@ -9288,8 +9296,7 @@
 			"Only available <if starting in the [Ancient era]>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"Instantly provides [10] [Influence]",
-			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Low Cultural Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Greek City States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Tribal Union] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9307,8 +9314,7 @@
 			"Only available <if starting in the [Medieval era]>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"Instantly provides [15] [Influence]",
-			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Low Cultural Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Greek City States] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Persian Dynasties] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9326,8 +9332,7 @@
 			"Only available <if starting in the [Medieval era]>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"Instantly provides [20] [Influence]",
-			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Low Cultural Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [SPQR] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Persian Dynasties] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9345,8 +9350,7 @@
 			"Only available <if starting in the [Renaissance era]>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"Instantly provides [25] [Influence]",
-			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Low Cultural Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Kingdoms] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Theocratic Empire] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9364,8 +9368,7 @@
 			"Only available <if starting in the [Imperial era]>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"Instantly provides [30] [Influence]",
-			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Low Cultural Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Colonial Empires] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Theocratic Empire] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9383,8 +9386,7 @@
 			"Only available <if starting in the [Industrial era]>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"Instantly provides [35] [Influence]",
-			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Low Cultural Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9404,8 +9406,7 @@
 			"Only available <if starting in the [Modern era]>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"Instantly provides [40] [Influence]",
-			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Low Cultural Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9425,8 +9426,7 @@
 			"Only available <if starting in the [Atomic era]>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"Instantly provides [40] [Influence]",
-			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Low Cultural Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9446,8 +9446,7 @@
 			"Only available <if starting in the [Information era]>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"Instantly provides [40] [Influence]",
-			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Low Cultural Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9467,8 +9466,7 @@
 			"Only available <if starting in the [Future era]>",
 			"Unbuildable <hidden from users>",
 			"Unsellable",
-			"Instantly provides [40] [Influence]",
-			"Gain a free [Low Culture Diversity] [in capital] <for [1] turns> <hidden from users>",
+			"Gain a free [Low Cultural Diversity] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Peace] [in capital] <for [1] turns> <hidden from users>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Mediterranean] Civilizations>",
 			"Gain a free [Republics] [in capital] <for [1] turns> <for [Central and West Asia] Civilizations>",
@@ -9526,6 +9524,58 @@
 			"A [Rogue Aristrocrat] rebels <if [Anarchy] is constructed> <starting from the [Classical era]> <before the [Industrial era]>",
 			"[2] [Militia Movement]s rebel <starting from the [Industrial era]>",
 			"Triggers a [Chaos Spreading] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance> <upon turn start>"
+		]
+	},
+	{
+		"name": "Civil War",
+		"cost": 50,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Negative Event'",
+			"[-5]% Production when constructing [All] units [in all cities]",
+			// ===== ANCIENT ERA =====
+			// After Bronze Working, before Iron Working
+			"[2] [Brute Warrior]s rebel <after discovering [Copper Working]> <before discovering [Iron Working]>",
+			"[1] [Mercenary Javalineer]s rebel <after discovering [Mining]> <before discovering [Mathematics]>",
+			"A [War Cart] rebels <after discovering [The Wheel]> <before discovering [Armorments]>",
+			// ===== CLASSICAL ERA =====
+			// After Iron Working, before Armorments
+			"[2] [Spearman]s rebel <after discovering [Iron Working]> <before discovering [Armorments]>",
+			"[1] [Mercenary Archer]s rebel <after discovering [Logistics]> <before discovering [Engineering]>",
+			"A [Chariot] rebels <after discovering [The Wheel]> <before discovering [Armorments]>",
+			// ===== CLASSICAL/MEDIEVAL (Armorments) =====
+			"[2] [Spearman]s rebel <after discovering [Armorments]> <before discovering [Hand Cannon]>",
+			"[1] [Mercenary Archer]s rebel <after discovering [Logistics]> <before discovering [Engineering]>",
+			"A [Cataphract] rebels <after discovering [Armorments]> <before discovering [Tactics]>",
+			// ===== MEDIEVAL (Tactics) =====
+			"[3] [Pikeman]s rebel <after discovering [Tactics]> <before discovering [Hand Cannon]>",
+			"[2] [Mercenary Crossbowman]s rebel <after discovering [Engineering]> <before discovering [Hand Cannon]>",
+			"A [Heavy Cavalry] rebels <after discovering [Tactics]> <before discovering [Hand Cannon]>",
+			// ===== RENAISSANCE (Hand Cannon) =====
+			"[3] [Musketeer]s rebel <after discovering [Hand Cannon]> <before discovering [Flintlock]>",
+			"[2] [Mercenary Skirmisher]s rebel <after discovering [Cartridge]> <before discovering [Replaceable Parts]>",
+			"A [Pistoleer] rebels <after discovering [Hand Cannon]> <before discovering [Military Science]>",
+			// ===== IMPERIAL (Flintlock) =====
+			"[3] [Musketeer]s rebel <after discovering [Flintlock]> <before discovering [Rifling]>",
+			"[2] [Mercenary Musketeer]s rebel <after discovering [Flintlock]> <before discovering [Replaceable Parts]>",
+			"A [Cuirassier] rebels <after discovering [Military Science]> <before discovering [Rifling]>",
+			// ===== INDUSTRIAL (Rifling) =====
+			"[3] [Rifleman]s rebel <after discovering [Rifling]> <before discovering [Ballistics]>",
+			"[2] [Mercenary Skirmisher]s rebel <after discovering [Cartridge]> <before discovering [Replaceable Parts]>",
+			"A [Modern Cavalry] rebels <after discovering [Rifling]> <before discovering [Combustion]>",
+			// ===== MODERN (Replaceable Parts) =====
+			"[3] [Modern Conscript]s rebel <after discovering [Replaceable Parts]> <before discovering [Mobile Tactics]>",
+			"[2] [Sharpshooter]s rebel <after discovering [Replaceable Parts]> <before discovering [Combined Arms]>",
+			"A [Armoured Car] rebels <after discovering [Combustion]> <before discovering [Combined Arms]>",
+			// ===== ATOMIC (Mobile Tactics) =====
+			"[3] [Modern Conscript]s rebel <after discovering [Mobile Tactics]> <before discovering [Lasers]>",
+			"[2] [Modern Guerrilla]s rebel <after discovering [Mobile Tactics]>",
+			"A [Tank] rebels <after discovering [Combustion]> <before discovering [Haptics]>",
+			// ===== INFORMATION (Haptics) =====
+			"[3] [Exoskeleton Infantry]s rebel <after discovering [Haptics]>",
+			"[2] [Exoskeleton Spec Ops]s rebel <after discovering [Haptics]>",
+			"A [Assault Mecha] rebels <after discovering [Nuclear Fusion]>",
 		]
 	},
 	{
@@ -9722,6 +9772,34 @@
 			"'Flag'",
 			"Comment [Migrate Capital]",
 			"Comment [Your citizens are revolting due to very high unhappiness!]",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	//Negative Events
+	{
+		"name": "Negative Events Activated",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Set [Negative Event Count] to [2] <on [Casual] difficulty or lower> <upon entering a new era>",
+			"Set [Negative Event Count] to [3] <on [Playing Fair] difficulty> <upon entering a new era>",
+			"Set [Negative Event Count] to [4] <on [Battle of Wit and Strength] difficulty or higher> <upon entering a new era>",
+
+			"Triggers a [Wealth Gap Widens] event <when above [0] [Negative Event Count]> <when below [0] [Happiness]> <with [15]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Rampant Corruption] event <when above [0] [Negative Event Count]> <when below [0] [Happiness]> <with [15]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Vagrancy Crisis] event <when above [0] [Negative Event Count]> <when below [0] [Happiness]> <with [15]% chance> <upon turn start> <hidden from users>",
+
+			"Triggers a [Chaos Ensue] event <when above [0] [Negative Event Count]> <if [Unified] is constructed> <when below [0] [Happiness]> <with [15]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Chaos Ensue] event <when above [0] [Negative Event Count]> <if [Unified] is not constructed> <when below [0] [Happiness]> <with [10]% chance> <upon turn start> <hidden from users>",
+
+			"Triggers a [The long lasting peace] event <when above [0] [Negative Event Count]> <if [Unified] is constructed> <when not at war> <with [10]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Stagnation] event <when above [0] [Negative Event Count]> <if [Unified] is constructed> <with [10]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Risk of Civil War] event <when above [0] [Negative Event Count]> <if [Unified] is not constructed> <when below [0] [Happiness]> <with [20]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Tribalism permeates] event <when above [0] [Negative Event Count]> <if [Unified] is not constructed> <with [10]% chance> <upon turn start> <hidden from users>",
+
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -10000,6 +10078,17 @@
 			"Triggers a [Loss of Writing] event <with [25]% chance> <when above [4] [Bronze Age Collapse Countdown]> <when below [7] [Bronze Age Collapse Countdown]> <upon turn start>",
 			"Triggers a [Loss of Faith] event <with [25]% chance> <when above [1] [Bronze Age Collapse Countdown]> <when below [4] [Bronze Age Collapse Countdown]> <upon turn start>",
 			"Triggers a [The Final Hour] event <upon turn start> <when below [1] [Bronze Age Collapse Countdown]> <hidden from users>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Debug Building",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]

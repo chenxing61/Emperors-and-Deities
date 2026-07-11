@@ -1,75 +1,190 @@
 [
+    ///Tips
+    {
+        "name": "The internal affair...",
+        "text": "This mod offers some brand new mechanics that are of note, you might want to play through the Scenario Tutorial first in order to gain basic understandings of them. Since they are very relevant throughout the entire ruleset.",
+        "choices": [
+            {
+                "text": "Problems and solutions never seen before!",
+                "uniques": [
+                    "Comment [Open up the [Enact Policies] tab and have a look!]",
+                    "Comment [You can open this in your capital at any moment to solve debuffs and manage a lot of stuff.]",
+                    "Comment [And then theres also a link to the in game documentation of the mod, which you also will NEED to take a look if you want to gain a greater understanding of this ruleset.]",
+                    "Triggers a [Enact Policies] event <for [Human player] Civilizations> <hidden from users>",
+                    "Set [Influence] to [0.5*[Influence Limit]]"
+                ]
+            },
+            {
+                "text": "I already knew it",
+                "uniques": [
+                    "Set [Influence] to [0.5*[Influence Limit]]",
+                    "Comment [Good luck.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "The internal struggles",
+        "text": "There are no perfect world where our people will unite forever. Under just or unjust rulings from leaders of various competency. They will react differently, some reactions are more negative than others.",
+        "choices": [
+            {
+                "text": "Well that sucks",
+                "uniques": [
+                    "Comment [From now on, negative events will happen when certain conditions are met. The most common condition being low [Happiness]. Remember, they have lasting effects if you dont solve them by building counter measures either through city screen or [Enact Policies].]",
+                    "Set [Negative Event Count] to [2] <hidden from users>",
+                    "Gain a free [Negative Events Activated] [in capital] <hidden from users>"
+                ]
+            }
+        ]
+    },
+    ///Checks and Balance
+    {
+        "name": "Downfall of Stability",
+        "choices": [
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Comment [Lose your current stability and enter a worse state.]",
+                    "Gain a free [Peace] [in capital] <when number of [Stability] is equal to [3]> <hidden from users>",
+                    "Gain a free [Struggle] [in capital] <when number of [Stability] is equal to [2]> <hidden from users>",
+                    "Gain a free [Strife] [in capital] <when number of [Stability] is equal to [1]> <hidden from users>",
+                    "Gain a free [Anarchy] [in capital] <when number of [Stability] is equal to [0]> <hidden from users>",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Improvement of Stability",
+        "choices": [
+            {
+                "text": "The situation gets better",
+                "uniques": [
+                    "Comment [Enter a more stable state.]",
+                    "Gain a free [Harmony] [in capital] <when number of [Stability] is equal to [4]> <hidden from users>",
+                    "Gain a free [Peace] [in capital] <when number of [Stability] is equal to [3]> <hidden from users>",
+                    "Gain a free [Struggle] [in capital] <when number of [Stability] is equal to [2]> <hidden from users>",
+                    "Gain a free [Strife] [in capital] <when number of [Stability] is equal to [1]> <hidden from users>",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Diversified Culture",
+        "choices": [
+            {
+                "text": "More ways to live a life",
+                "uniques": [
+                    "Comment [Potentially, You have gained more options to develop your civilization.]",
+                    "Gain a free [Medium Cultural Diversity] [in capital] <when number of [Cultural Diversity] is equal to [1]> <hidden from users>",
+                    "Gain a free [High Cultural Diversity] [in capital] <when number of [Cultural Diversity] is equal to [2]> <hidden from users>",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Decreased Cultural Diversity",
+        "choices": [
+            {
+                "text": "Lesser ways to get life wrong",
+                "uniques": [
+                    "Comment [Potentially, You have lessened options to develop your civilization.]",
+                    "Gain a free [Medium Cultural Diversity] [in capital] <when number of [Cultural Diversity] is equal to [1]> <hidden from users>",
+                    "Gain a free [Low Cultural Diversity] [in capital] <when number of [Cultural Diversity] is equal to [0]> <hidden from users>",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Debug",
+        "choices": [
+            {
+                "text": "View all resources",
+                "uniques": [
+                    "Gain a free [Debug Building] [in capital]"
+                ]
+            },
+            {
+                "text": "Lesser ways to get life wrong",
+                "uniques": [
+                    "Instantly consumes [1] [Cultural Diversity] <when above [0] [Cultural Diversity]>",
+                    "Triggers a [Decreased Cultural Diversity] event"
+                ]
+            },
+            {
+                "text": "More ways to live a life",
+                "uniques": [
+                    "Instantly provides [1] [Cultural Diversity] <when below [2] [Cultural Diversity]>",
+                    "Triggers a [Diversified Culture] event"
+                ]
+            },
+            {
+                "text": "The situation gets better",
+                "uniques": [
+                    "Instantly provides [1] [Stability] <when below [4] [Stability]>",
+                    "Triggers a [Improvement of Stability] event"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Instantly consumes [1] [Stability] <when above [0] [Stability]>",
+                    "Triggers a [Downfall of Stability] event"
+                ]
+            }
+        ]
+    },
     ///Disaster Events
     {
         "name": "Chaos Ensue",
-        "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Influence], lack of [Happiness]!",
+        "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Happiness]!",
         "choices": [
             {
-                "text": "We need to take precaution!",
+                "text": "Who do they think they are?",
                 "uniques": [
-                    "Only available <if [Harmony] is constructed> <when above [0] [Influence]>",
+                    "Only available <when number of [Influence] is more than [[Influence Limit]*0.75]>",
                     "Comment [Preventing losing stability for this one time...]",
-                    "[-10]% [Gold] [in all cities] <for [5] turns>",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                    "Instantly consumes [10] [Influence]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
                 "text": "We need to take precaution!",
                 "uniques": [
-                    "Only available <if [Harmony] is not constructed>  <when above [0] [Influence]>",
+                    "Only available <when above [0] [Influence]>",
                     "Comment [Preventing losing stability for this one time...]",
                     "Instantly consumes [5] [Influence]",
-                    "[-20]% [Gold] [in all cities] <for [5] turns>",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                    "[-10]% [Gold] <for [3] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-10]% [Gold] <for [5] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-10]% [Gold] <for [7] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-10]% [Gold] <for [15] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-10]% [Gold] <for [100] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-10]% [Gold] for a fair amount of turns.]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
-                    "Only available <if [Harmony] is constructed>",
                     "Comment [Lose your current stability and enter a worse state.]",
-                    "Gain a free [Peace] [in capital] <if [Harmony] is constructed> <hidden from users>",
-                    "Remove [Harmony] [in all cities] <if [Harmony] is constructed> <hidden from users>",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
-                ]
-            },
-            {
-                "text": "The situation gets worse",
-                "uniques": [
-                    "Only available <if [Peace] is constructed>",
-                    "Comment [Lose your current stability and enter a worse state.]",
-                    "Gain a free [Struggle] [in capital] <if [Peace] is constructed> <hidden from users>",
-                    "Remove [Peace] [in all cities] <if [Peace] is constructed> <hidden from users>",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
-                ]
-            },
-            {
-                "text": "The situation gets worse",
-                "uniques": [
-                    "Only available <if [Struggle] is constructed>",
-                    "Comment [Lose your current stability and enter a worse state.]",
-                    "Gain a free [Strife] [in capital] <if [Struggle] is constructed> <hidden from users>",
-                    "Remove [Struggle] [in all cities] <if [Struggle] is constructed> <hidden from users>",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
-                ]
-            },
-            {
-                "text": "The situation gets worse",
-                "uniques": [
-                    "Only available <if [Strife] is constructed>",
-                    "Comment [Lose your current stability and enter a worse state.]",
-                    "Gain a free [Anarchy] [in capital] <if [Strife] is constructed> <hidden from users>",
-                    "Remove [Strife] [in all cities] <if [Strife] is constructed> <hidden from users>",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                    "Instantly consumes [1] [Stability] <hidden from users>",
+                    "Triggers a [Downfall of Stability] event",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
                 "text": "Rock Bottom",
                 "uniques": [
-                    "Only available <if [Anarchy] is constructed>",
+                    "Only available <when number of [Stability] is equal to [0]> <hidden from users>",
                     "Instantly provides [5] [Influence]",
                     "Comment [Orders are birthed from Chaos after all.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             }
         ]
@@ -83,14 +198,15 @@
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
                     "Instantly consumes [3] [Influence]",
-                    "[-10]% [Gold] [in all cities] <for [5] turns>"
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
                     "Gain a free [Slum] [in capital]",
-                    "Gain a free [Slum] [in all cities] <when number of [Cities] is more than [6]>"
+                    "Gain a free [Slum] [in all cities] <when number of [Cities] is more than [6]>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             }
         ]
@@ -103,14 +219,16 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Instantly consumes [3] [Influence]"
+                    "Instantly consumes [3] [Influence]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
                 "text": "The situation gets worse",
                 "uniques": [
                     "Gain a free [Unjust Ruling] [in capital]",
-                    "Gain a free [Unjust Ruling] [in all cities] <when number of [Cities] is more than [6]>"
+                    "Gain a free [Unjust Ruling] [in all cities] <when number of [Cities] is more than [6]>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             }
         ]
@@ -124,7 +242,7 @@
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
                     "Instantly consumes [3] [Influence]",
-                    "[-10]% [Gold] [in all cities] <for [5] turns>"
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
             {
@@ -139,7 +257,8 @@
                     "[-5] population in a random city <when number of [Cities] is more than [4]> <hidden from users>",
                     "[+5] population in a random city <when number of [Cities] is more than [4]> <hidden from users>",
                     "[-5] population in a random city <when number of [Cities] is more than [4]> <hidden from users>",
-                    "Gain a free [Peasant Rebellion] [in capital]"
+                    "Gain a free [Peasant Rebellion] [in capital]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             }
         ]
@@ -167,6 +286,165 @@
         ]
     },
     {
+        "name": "The long lasting peace",
+        "text": "As our civilization became united and peaceful. Less and less people are willing to join the army.",
+        "choices": [
+            {
+                "text": "Even if we force them into military service, these weak men would not suffice either way.",
+                "uniques": [
+                    "[-25]% [Standing Army Maintenance] resource production <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-25]% [Standing Army Maintenance] resource production <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-25]% [Standing Army Maintenance] resource production <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-25]% [Standing Army Maintenance] resource production <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-25]% [Standing Army Maintenance] resource production <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-25]% [Noble Army Maintenance] resource production <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [The number of [Standing Army Maintenance] and [Noble Army Maintenance] decreases to [75]% for a fair amount of turns. Which may impact our military in both size and strength.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Unacceptable.",
+                "uniques": [
+                    "Instantly consumes [5] [Influence]",
+                    "[-10]% [Happiness] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-10]% [Happiness] for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Stagnation",
+        "text": "In a united civilization, without much outer threat. The desire for advancement became lower day by day.",
+        "choices": [
+            {
+                "text": "We are too big to fall. It wouldnt matter either way.",
+                "uniques": [
+                    "[-15]% [Science] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-15]% [Science] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-15]% [Science] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-15]% [Science] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-15]% [Science] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "[+10]% Culture cost of adopting new Policies <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[+10]% Culture cost of adopting new Policies <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[+10]% Culture cost of adopting new Policies <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[+10]% Culture cost of adopting new Policies <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[+10]% Culture cost of adopting new Policies <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[Science] production falls by [15]% and Policy Cost Spikes by [10]% for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            {
+                "text": "We must force progression by any means possible",
+                "uniques": [
+                    "Instantly consumes [5] [Influence]",
+                    "[-15]% [Happiness] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-15]% [Happiness] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-15]% [Happiness] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-15]% [Happiness] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-15]% [Happiness] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-15]% [Happiness] for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Risk of Civil War",
+        "text": "Because of our civilization's divided status, internal division is exacerbating, soon military conflict will rise.",
+        "choices": [
+            {
+                "text": "One side is more correct than the others.",
+                "uniques": [
+                    "Gain a free [Civil War] [in capital]",
+                    "Comment [A Hostile force gathers around your capital.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            {
+                "text": "This is a chance that the entire civilization can unite under one will!",
+                "uniques": [
+                    "Only available <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Provides a [Civil War] in your first [3] cities for free",
+                    "Comment [Hostile forces gathers around your first [3] cities.]",
+                    "Triggers a [Shift in Politic] event",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            {
+                "text": "We cannot afford to fight ourselves...",
+                "uniques": [
+                    "Instantly consumes [2] [Influence] <for every [Cities]>",
+                    "[-15]% [Gold] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-15]% [Gold] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-15]% [Gold] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-15]% [Gold] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-15]% [Gold] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-15]% [Gold] for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Tribalism permeates",
+        "text": "Pride and Prejudice are disturbing relations between our civilization's states.",
+        "choices": [
+            {
+                "text": "They will find out the answer by themselves",
+                "uniques": [
+                    "[-15]% [Production] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[Production] production falls by [15]% and Policy Cost Spikes by [20]% for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            {
+                "text": "This must be surpressed",
+                "uniques": [
+                    "Instantly consumes [2] [Influence] <for every [Cities]>",
+                    "[-15]% [Happiness] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-15]% [Happiness] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-15]% [Happiness] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-15]% [Happiness] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-15]% [Happiness] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-15]% [Happiness] for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Khan's Death",
+        "text": "The [Great Khan] has been losing [Influence] gradually, until today, when he no longer has to worry about backstabs anymore. He is now one with the heaven.",
+        "choices": [
+            {
+                "text": "Khannnnnn!",
+                "uniques": [
+                    "Instantly provides [1] [Negative Event Count] <hidden from users>",
+                    "Triggers a [Chaos Ensue] event"
+                ]
+            }
+        ]
+    },
+    //Barb Camp Destruction
+    {
         "name": "The Barbarian's Surrender",
         "text": "We successfully brought our fury to the Barbarian's Motherland. New problem arises.",
         "choices": [
@@ -180,37 +458,11 @@
             {
                 "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
                 "uniques": [
-                    "Only available <if [Low Culture Diversity] is constructed>",
                     "Instantly consumes [10] [Influence]",
                     "Instantly provides [1] [Migrating Population]",
-                    "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
-                    "Gain [33] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
-                    "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
-                ]
-            },
-            {
-                "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
-                "uniques": [
-                    "Only available <if [Medium Culture Diversity] is constructed>",
-                    "Instantly consumes [10] [Influence]",
-                    "Instantly provides [1] [Migrating Population]",
-                    "Gain a free [High Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
-                    "Gain [33] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
-                    "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
-                ]
-            },
-            {
-                "text": "In the grand scheme of things, this counts as a uncivilized [Cultural Exchange].",
-                "uniques": [
-                    "Only available <if [High Culture Diversity] is constructed>",
-                    "Instantly consumes [10] [Influence]",
-                    "Instantly provides [1] [Migrating Population]",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Comment [Increase the Cultural Diversity by a level if it hasnt reached highest level yet.]",
+                    "Instantly gain [1] [Cultural Diversity] <when number of [Cultural Diversity] is less than [2]> <hidden from users>",
+                    "Triggers a [Diversified Culture] event",
                     "Gain [50] [Culture] <(modified by game speed)> <if [Cultural Exchange] is constructed>",
                     "Gain [25] [Science] <(modified by game speed)> <if [Cultural Exchange] is constructed>"
                 ]
@@ -219,7 +471,7 @@
                 "text": "Intergrate them into our glorious empire!",
                 "uniques": [
                     "Only available <if [Unified] is constructed>",
-                    "Instantly consumes [3] [Influence] <before adopting [Pantheon Incorporation]>",
+                    "Instantly consumes [5] [Influence] <before adopting [Pantheon Incorporation]>",
                     "Instantly provides [2] [Migrating Population]"
                 ]
             },
@@ -227,7 +479,8 @@
                 "text": "Enslavement would teach them how to behave",
                 "uniques": [
                     "Only available <after adopting [Military Tradition]> <if [Abolition] is not constructed>",
-                    "Instantly gain [66] [Slaves]"
+                    "Instantly gain [66] [Slaves]",
+                    "Free [Peon] appears"
                 ]
             },
             {
@@ -259,12 +512,13 @@
                     "Only available <when at war> <if [Unified] is constructed> <if [Levies Disbandment] is constructed>",
                     "Play [policy] sound <hidden from users>",
                     "Comment [This Decision will instruct all the city to mobilise its [Levied Army] unit, regardless of the size of city. Usually you need at least 5 Population to [Call to Arms].]",
+                    "Comment [By the merit of being [United], the negative [Happiness] from [Call to Arms] is also lessened. For a short amount of time.]",
                     "Gain a free [Call to Arms] [in all non-occupied cities]",
-                    "[+1 Happiness] from every [Call to Arms] <for [3] turns> <on [Quick] game speed>",
-                    "[+1 Happiness] from every [Call to Arms] <for [4] turns> <on [Standard] game speed>",
-                    "[+1 Happiness] from every [Call to Arms] <for [5] turns> <on [Epic] game speed>",
-                    "[+1 Happiness] from every [Call to Arms] <for [8] turns> <on [Marathon] game speed>",
-                    "[+1 Happiness] from every [Call to Arms] <for [10] turns> <on [Realistic] game speed>",
+                    "[+1 Happiness] from every [Call to Arms] <for [3] turns> <on [Quick] game speed> <hidden from users>",
+                    "[+1 Happiness] from every [Call to Arms] <for [5] turns> <on [Standard] game speed> <hidden from users>",
+                    "[+1 Happiness] from every [Call to Arms] <for [7] turns> <on [Epic] game speed> <hidden from users>",
+                    "[+1 Happiness] from every [Call to Arms] <for [10] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[+1 Happiness] from every [Call to Arms] <for [50] turns> <on [Realistic] game speed> <hidden from users>",
                     "Triggers a [Enact Policies] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -362,7 +616,7 @@
             {
                 "text": "One Step Above Peace.",
                 "uniques": [
-                    "Only available <if [Peace] is constructed> <if [United States] is not constructed>",
+                    "Only available <when number of [Stability] is equal to [3]> <hidden from users> <if [United States] is not constructed>",
                     "Only available <when above [4] [Influence]>",
                     "Play [policy] sound <hidden from users>",
                     "Comment [Through costing [Faith] and [Gold], We may propell our civilization into a even more stable state. [Harmony].]",
@@ -372,27 +626,7 @@
             {
                 "text": "Increasing Stability.",
                 "uniques": [
-                    "Only available <if [Struggle] is constructed>",
-                    "Only available <when above [4] [Influence]>",
-                    "Play [policy] sound <hidden from users>",
-                    "Comment [We must take action against the coming chaos.]",
-                    "Triggers a [Stablising our side of the globe] event"
-                ]
-            },
-            {
-                "text": "Increasing Stability.",
-                "uniques": [
-                    "Only available <if [Strife] is constructed>",
-                    "Only available <when above [4] [Influence]>",
-                    "Play [policy] sound <hidden from users>",
-                    "Comment [We must take action against the coming chaos.]",
-                    "Triggers a [Stablising our side of the globe] event"
-                ]
-            },
-            {
-                "text": "Increasing Stability.",
-                "uniques": [
-                    "Only available <if [Anarchy] is constructed> <before adopting [Anarchism]>",
+                    "Only available <when number of [Stability] is less than [3]> <hidden from users>",
                     "Only available <when above [4] [Influence]>",
                     "Play [policy] sound <hidden from users>",
                     "Comment [We must take action against the coming chaos.]",
@@ -434,8 +668,7 @@
                     "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <when number of [State Reform Chance] is more than [0]> <if [Nomadic Culture] is not constructed>",
                     "Play [policy] sound <hidden from users>",
                     "Instantly consumes [1] [State Reform Chance] <hidden from users>",
-                    "Instantly consumes [10] [Influence] <when number of [Cities] is between [0] and [5]>",
-                    "Instantly consumes [15] [Influence] <when number of [Cities] is more than [4]>",
+                    "Instantly consumes [3] [Influence] <for every [Cities]>",
                     "Triggers a [Reformation of the unified state] event"
                 ]
             },
@@ -473,7 +706,7 @@
                     "Comment [Including:]",
                     "Comment [[Influence], [Influence Limit], [Consumption Supply], [Consumption Demand],All the kinds of [Fuel]s, Victroy related resources and the Army Maintenances]",
                     "Gain a free [Hide Essential] [in capital] <hidden from users>",
-                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                    "Triggers a [Hide Strategic Resources] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -484,7 +717,7 @@
                     "Comment [Including:]",
                     "Comment [[Influence], [Influence Limit], [Consumption Supply], [Consumption Demand],All the kinds of [Fuel]s, Victroy related resources and the Army Maintenances]",
                     "Remove [Hide Essential] [in all cities] <hidden from users>",
-                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                    "Triggers a [Hide Strategic Resources] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -495,7 +728,7 @@
                     "Comment [Including:]",
                     "Comment [[Horse], [Metal], [Alloy], [Oil] and so on. All the resource on the map or being the prerequisite of buildings and parts productions]",
                     "Gain a free [Hide Resource] [in capital] <hidden from users>",
-                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                    "Triggers a [Hide Strategic Resources] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -506,7 +739,7 @@
                     "Comment [Including:]",
                     "Comment [[Horse], [Metal], [Alloy], [Oil] and so on. All the resource on the map or being the prerequisite of buildings and parts productions]",
                     "Remove [Hide Resource] [in all cities] <hidden from users>",
-                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                    "Triggers a [Hide Strategic Resources] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -517,7 +750,7 @@
                     "Comment [Including:]",
                     "Comment [[Weapon Parts], [Vehicle Parts], [Ship Parts] and so on and so fourth.]",
                     "Gain a free [Hide Parts] [in capital] <hidden from users>",
-                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                    "Triggers a [Hide Strategic Resources] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -528,7 +761,7 @@
                     "Comment [Including:]",
                     "Comment [[Weapon Parts], [Vehicle Parts], [Ship Parts] and so on and so fourth.]",
                     "Remove [Hide Parts] [in all cities] <hidden from users>",
-                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                    "Triggers a [Hide Strategic Resources] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -539,7 +772,7 @@
                     "Comment [[Iconic Brand], [Artifact], [Waste Material] and so on and so fourth.]",
                     "Play [promte] sound <hidden from users>",
                     "Gain a free [Hide Miscellaneous] [in capital] <hidden from users>",
-                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                    "Triggers a [Hide Strategic Resources] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -550,7 +783,7 @@
                     "Comment [[Iconic Brand], [Artifact], [Waste Material] and so on and so fourth.]",
                     "Play [promte] sound <hidden from users>",
                     "Remove [Hide Miscellaneous] [in all cities] <hidden from users>",
-                    "Triggers a [Hide Strategic Resources] event <hidden from users>"
+                    "Triggers a [Hide Strategic Resources] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -606,7 +839,6 @@
                 "uniques": [
                     "Only available <if [Unified] is not constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <if [Nomadic Tribes] is not constructed>",
                     "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
-                    "Set [Influence] to [0.75*[Influence Limit]]",
                     "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
                     "Gain a free [Early Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
@@ -649,9 +881,7 @@
                 "uniques": [
                     "Only available <when number of [Influence] is more than [[Influence Limit]*0.5]> <if [Struggle] is not constructed> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <while the empire is happy>",
                     "Comment [Our empire survives... Maybe we can reform it continuesly unto forever.]",
-                    "Set [Influence] to [0.75*[Influence Limit]]",
                     "Only available <if [Unified] is constructed>",
-                    "Remove [Unified] [in all cities] <hidden from users>",
                     "Triggers a [Reformation of the unified state] event"
                 ]
             }
@@ -802,86 +1032,47 @@
     },
     {
         "name": "Stablising our side of the globe",
-        "text": "The peace is no more. We are suffering from effects of low stability.",
+        "text": "We will find ways to make our civilization thrive again!",
         "choices": [
             {
                 "text": "Building a harmonious civilization is essential",
                 "uniques": [
-                    "Only available <if [Peace] is constructed> <when above [-10] [Influence]> <after founding a religion>",
+                    "Only available <when number of [Stability] is equal to [3]> <when above [-10] [Influence]> <after founding a religion> <hidden from users>",
                     "Comment [We can make it so that it takes more to unstablise our civilization]",
-                    "Instantly consumes [15] [Influence]",
-                    "Gain [-250] [Gold] <(modified by game speed)>",
-                    "Gain [-150] [Faith] <(modified by game speed)> <before the [Renaissance era]>",
-                    "Gain [-300] [Faith] <(modified by game speed)> <starting from the [Renaissance era]>",
-                    "Gain a free [Harmony] [in capital] <hidden from users>",
-                    "Remove [Peace] [in capital] <hidden from users>",
+                    "Instantly consumes [2] [Influence] <for every [Cities]>",
+                    "Gain [-50] [Gold] <for every [Cities]> <(modified by game speed)>",
+                    "Gain [-25] [Faith] <for every [Cities]> <(modified by game speed)>",
+                    "Triggers a [Improvement of Stability] event <hidden from users>",
+                    "Instantly gain [1] [Stability] <hidden from users>",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
                 "text": "We must make haste before situation gets any worse",
                 "uniques": [
-                    "Only available <if [Anarchy] is constructed>",
+                    "Only available <when number of [Stability] is less than [3]> <hidden from users>",
                     "Comment [By investing a vast amount of social-political capital, we can stablise the situation quickly.]",
-                    "Instantly consumes [10] [Influence]",
-                    "Gain [-200] [Gold] <(modified by game speed)>",
-                    "Gain a free [Struggle] [in capital] <hidden from users>",
-                    "Remove [Anarchy] [in capital] <hidden from users>",
-                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
-                ]
-            },
-            {
-                "text": "We must make haste before situation gets any worse",
-                "uniques": [
-                    "Only available <if [Strife] is constructed>",
-                    "Comment [By investing a vast amount of social-political capital, we can stablise the situation quickly.]",
-                    "Instantly consumes [10] [Influence]",
-                    "Gain [-200] [Gold] <(modified by game speed)>",
-                    "Gain a free [Peace] [in capital] <hidden from users>",
-                    "Remove [Strife] [in capital] <hidden from users>",
-                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
+                    "Instantly consumes [2] [Influence] <for every [Cities]>",
+                    "Gain [-50] [Gold] <for every [Cities]> <(modified by game speed)>",
+                    "Instantly gain [2] [Stability] <hidden from users>",
+                    "Triggers a [Improvement of Stability] event <hidden from users>"
                 ]
             },
             {
                 "text": "Ruling a country requires patience and subtlety",
                 "uniques": [
-                    "Only available <if [Anarchy] is constructed>",
+                    "Only available <when number of [Stability] is less than [3]> <hidden from users>",
                     "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
-                    "Instantly consumes [5] [Influence]",
-                    "Gain [-125] [Gold] <(modified by game speed)>",
-                    "Gain a free [Strife] [in capital] <hidden from users>",
-                    "Remove [Anarchy] [in capital] <hidden from users>",
-                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
-                ]
-            },
-            {
-                "text": "Ruling a country requires patience and subtlety",
-                "uniques": [
-                    "Only available <if [Strife] is constructed>",
-                    "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
-                    "Instantly consumes [5] [Influence]",
-                    "Gain [-125] [Gold] <(modified by game speed)>",
-                    "Gain a free [Struggle] [in capital] <hidden from users>",
-                    "Remove [Strife] [in capital] <hidden from users>",
-                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
-                ]
-            },
-            {
-                "text": "Ruling a country requires patience and subtlety",
-                "uniques": [
-                    "Only available <if [Struggle] is constructed>",
-                    "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
-                    "Instantly consumes [5] [Influence]",
-                    "Gain [-125] [Gold] <(modified by game speed)>",
-                    "Gain a free [Peace] [in capital] <hidden from users>",
-                    "Remove [Struggle] [in capital] <hidden from users>",
-                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
+                    "Instantly consumes [1] [Influence] <for every [Cities]>",
+                    "Gain [-25] [Gold] <for every [Cities]> <(modified by game speed)>",
+                    "Instantly gain [1] [Stability] <hidden from users>",
+                    "Triggers a [Improvement of Stability] event <hidden from users>"
                 ]
             },
             {
                 "text": "Can we wait?",
                 "uniques": [
-                    "Only available <for [non-[AI player]] Civilizations>",
+                    "Only available <for [non-[AI player]] Civilizations> <hidden from users>",
                     "Comment [We need more contemplation...]",
                     "Play [whoosh] sound"
                 ]
@@ -1000,7 +1191,7 @@
             {
                 "text": "Can we wait?",
                 "uniques": [
-                    "Only available <for [non-[AI player]] Civilizations>",
+                    "Only available <for [non-[AI player]] Civilizations> <hidden from users>",
                     "Comment [We need more contemplation...]",
                     "Play [whoosh] sound"
                 ]
@@ -1019,7 +1210,7 @@
                     "Instantly consumes [8] [Influence]",
                     "Gain [-125] [Gold] <(modified by game speed)>",
                     "Gain a free [Military Alliance] [in capital]",
-                    "Triggers a [Building Alliance] event <hidden from users>"
+                    "Triggers a [Building Alliance] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -1030,7 +1221,7 @@
                     "Instantly consumes [5] [Influence]",
                     "Gain [-63] [Gold] <(modified by game speed)>",
                     "Gain a free [Military Alliance] [in capital]",
-                    "Triggers a [Building Alliance] event <hidden from users>"
+                    "Triggers a [Building Alliance] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -1040,53 +1231,27 @@
                     "Only available <when above [9] [Influence]> <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [8] [Influence]",
                     "Gain [-125] [Gold] <(modified by game speed)>",
-                    "Gain a free [Medium Culture Diversity] [in capital] <if [Low Culture Diversity] is constructed> <hidden from users>",
-                    "Gain a free [High Culture Diversity] [in capital] <if [Medium Culture Diversity] is constructed> <hidden from users>",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Instantly gain [1] [Cultural Diversity]",
+                    "Triggers a [Diversified Culture] event",
+                    "Comment [Increase the Cultural Diversity by a level if it hasnt reached highest level yet.]",
+                    "Instantly gain [1] [Cultural Diversity] <when number of [Cultural Diversity] is less than [2]> <hidden from users>",
+                    "Triggers a [Diversified Culture] event",
                     "Gain a free [Cultural Exchange] [in capital]",
-                    "Triggers a [Building Alliance] event <hidden from users>"
+                    "Triggers a [Building Alliance] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
                 "text": "[Cultural Exchange] is the most elegant",
                 "uniques": [
-                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed> <if [Low Culture Diversity] is constructed>",
+                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed>",
                     "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
                     "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
                     "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
-                    "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Comment [Increase the Cultural Diversity by a level if it hasnt reached highest level yet.]",
+                    "Instantly gain [1] [Cultural Diversity] <when number of [Cultural Diversity] is less than [2]> <hidden from users>",
+                    "Triggers a [Diversified Culture] event",
                     "Gain a free [Cultural Exchange] [in capital]",
-                    "Triggers a [Building Alliance] event <hidden from users>"
-                ]
-            },
-            {
-                "text": "[Cultural Exchange] is the most elegant",
-                "uniques": [
-                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed> <if [Medium Culture Diversity] is constructed>",
-                    "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
-                    "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
-                    "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
-                    "Gain a free [High Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
-                    "Gain a free [Cultural Exchange] [in capital]",
-                    "Triggers a [Building Alliance] event <hidden from users>"
-                ]
-            },
-            {
-                "text": "[Cultural Exchange] is the most elegant",
-                "uniques": [
-                    "Only available <before the [Industrial era]> <if [Research Exchange] is not constructed> <if [Cultural Exchange] is not constructed> <if [High Culture Diversity] is constructed>",
-                    "Only available <when above [4] [Influence]> <for [Europa] Civilizations>",
-                    "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
-                    "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
-                    "Gain a free [Cultural Exchange] [in capital]",
-                    "Triggers a [Building Alliance] event <hidden from users>"
+                    "Triggers a [Building Alliance] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -1098,7 +1263,7 @@
                     "Gain [-125] [Gold] <(modified by game speed)>",
                     "Gain [50] [Gold] <(modified by game speed)><after adopting [Economic Ties]>",
                     "Gain a free [Trade Alliance] [in capital]",
-                    "Triggers a [Building Alliance] event <hidden from users>"
+                    "Triggers a [Building Alliance] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -1110,7 +1275,7 @@
                     "Gain [-63] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
                     "Gain [38] [Gold] <(modified by game speed)> <for [Europa] Civilizations> <after adopting [Economic Ties]>",
                     "Gain a free [Trade Alliance] [in capital]",
-                    "Triggers a [Building Alliance] event <hidden from users>"
+                    "Triggers a [Building Alliance] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -1122,7 +1287,7 @@
                     "Gain [-300] [Gold] <(modified by game speed)>",
                     "Gain a free [Collective Security] [in capital]",
                     "Remove [Military Alliance] [in all cities]",
-                    "Triggers a [Building Alliance] event <hidden from users>"
+                    "Triggers a [Building Alliance] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -1134,7 +1299,7 @@
                     "Gain [-300] [Gold] <(modified by game speed)>",
                     "Gain a free [Research Exchange] [in capital]",
                     "Remove [Cultural Exchange] [in all cities]",
-                    "Triggers a [Building Alliance] event <hidden from users>"
+                    "Triggers a [Building Alliance] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -1147,7 +1312,7 @@
                     "Gain [-180] [Gold] <(modified by game speed)> <after adopting [Economic Ties]>",
                     "Gain a free [Economic Community] [in capital]",
                     "Remove [Trade Alliance] [in all cities]",
-                    "Triggers a [Building Alliance] event <hidden from users>"
+                    "Triggers a [Building Alliance] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -1167,8 +1332,8 @@
             {
                 "text": "No!",
                 "uniques": [
+                    "Set [Stability] to [2] <hidden from users>",
                     "Gain a free [Struggle] [in capital]",
-                    "Remove [Unified] [in all cities]",
                     "Gain a free [Republics] [in capital]"
                 ]
             }
@@ -1181,61 +1346,23 @@
             {
                 "text": "We must make haste before situation gets any worse",
                 "uniques": [
-                    "Only available <if [Anarchy] is constructed>",
+                    "Only available <when number of [Stability] is less than [3]> <hidden from users>",
                     "Comment [By investing a vast amount of social-political capital, we can stablise the situation quickly.]",
-                    "Instantly consumes [10] [Influence]",
-                    "Gain [-200] [Gold] <(modified by game speed)>",
-                    "Gain a free [Struggle] [in capital] <hidden from users>",
-                    "Remove [Anarchy] [in capital] <hidden from users>",
-                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
-                ]
-            },
-            {
-                "text": "We must make haste before situation gets any worse",
-                "uniques": [
-                    "Only available <if [Strife] is constructed>",
-                    "Comment [By investing a vast amount of social-political capital, we can stablise the situation quickly.]",
-                    "Instantly consumes [10] [Influence]",
-                    "Gain [-200] [Gold] <(modified by game speed)>",
-                    "Gain a free [Peace] [in capital] <hidden from users>",
-                    "Remove [Strife] [in capital] <hidden from users>",
-                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
+                    "Instantly consumes [2] [Influence] <for every [Cities]>",
+                    "Gain [-50] [Gold] <for every [Cities]> <(modified by game speed)>",
+                    "Instantly gain [2] [Stability] <hidden from users>",
+                    "Triggers a [Improvement of Stability] event <hidden from users>"
                 ]
             },
             {
                 "text": "Ruling a country requires patience and subtlety",
                 "uniques": [
-                    "Only available <if [Anarchy] is constructed>",
+                    "Only available <when number of [Stability] is less than [3]> <hidden from users>",
                     "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
-                    "Instantly consumes [5] [Influence]",
-                    "Gain [-125] [Gold] <(modified by game speed)>",
-                    "Gain a free [Strife] [in capital] <hidden from users>",
-                    "Remove [Anarchy] [in capital] <hidden from users>",
-                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
-                ]
-            },
-            {
-                "text": "Ruling a country requires patience and subtlety",
-                "uniques": [
-                    "Only available <if [Strife] is constructed>",
-                    "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
-                    "Instantly consumes [5] [Influence]",
-                    "Gain [-125] [Gold] <(modified by game speed)>",
-                    "Gain a free [Struggle] [in capital] <hidden from users>",
-                    "Remove [Strife] [in capital] <hidden from users>",
-                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
-                ]
-            },
-            {
-                "text": "Ruling a country requires patience and subtlety",
-                "uniques": [
-                    "Only available <if [Struggle] is constructed>",
-                    "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
-                    "Instantly consumes [5] [Influence]",
-                    "Gain [-125] [Gold] <(modified by game speed)>",
-                    "Gain a free [Peace] [in capital] <hidden from users>",
-                    "Remove [Struggle] [in capital] <hidden from users>",
-                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
+                    "Instantly consumes [1] [Influence] <for every [Cities]>",
+                    "Gain [-25] [Gold] <for every [Cities]> <(modified by game speed)>",
+                    "Instantly gain [1] [Stability] <hidden from users>",
+                    "Triggers a [Improvement of Stability] event <hidden from users>"
                 ]
             },
             {
@@ -1354,7 +1481,7 @@
             {
                 "text": "Can we wait?",
                 "uniques": [
-                    "Only available <for [non-[AI player]] Civilizations>",
+                    "Only available <for [non-[AI player]] Civilizations> <hidden from users>",
                     "Comment [We need more contemplation...]",
                     "Play [whoosh] sound"
                 ]
@@ -1391,7 +1518,7 @@
                     "Comment [[-10]% [Culture] [in all cities]]",
                     "Comment [[-10]% [Science] [in all cities]]",
                     "Comment [[-5]% [Food] [in all cities]]",
-                    "Comment [[-10]% Strength <for [All] units>]",
+                    "Comment [[-10]% Strength<for [All] units>]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -1403,7 +1530,7 @@
                     "Comment [[-20]% [Culture] [in all cities]]",
                     "Comment [[-20]% [Science] [in all cities]]",
                     "Comment [[-10]% [Food] [in all cities]]",
-                    "Comment [[-18]% Strength <for [All] units>]",
+                    "Comment [[-18]% Strength<for [All] units>]",
                     "Comment [Rebel units may spawn]",
                     "Comment [Cannot build [Settler] units]",
                     "Comment [Cannot build [Pioneer] units]",
@@ -1419,22 +1546,22 @@
                     "Comment [[-33]% [Culture] [in all cities]]",
                     "Comment [[-33]% [Science] [in all cities]]",
                     "Comment [[-25]% [Food] [in all cities]]",
-                    "Comment [[-25]% Strength <for [All] units>]",
+                    "Comment [[-25]% Strength<for [All] units>]",
                     "Comment [Cannot build [Settler], [Pioneer], [Worker], [Mechanised Worker], [Galley Work Ship], [Modern Work Ship] units]",
                     "Comment [After adopting [Anarchism]:]",
                     "Comment [[-15]% [Gold] from Trade Routes]",
                     "Comment [[+17]% [Culture] [in all cities]]",
                     "Comment [[+17]% [Science] [in all cities]]",
                     "Comment [[-5]% [Production] [in all cities]]",
-                    "Comment [[-10]% Strength <for [All] units> <before adopting [Militia Army]>]",
+                    "Comment [[-10]% Strength<for [All] units><before adopting [Militia Army]>]",
                     "Comment [Rebel units may spawn]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
-                "text": "High Culture Diversity",
+                "text": "High Cultural Diversity",
                 "uniques": [
-                    "Only available <if [High Culture Diversity] is constructed>",
+                    "Only available <if [High Cultural Diversity] is constructed>",
                     "Comment [[+3]% [Science] [in all cities]]",
                     "Comment [[+3]% [Culture] [in all cities]]",
                     "Comment [[+100]% Production when constructing [Cultural Intergration] buildings [in annexed cities]]",
@@ -1442,18 +1569,18 @@
                 ]
             },
             {
-                "text": "Medium Culture Diversity",
+                "text": "Medium Cultural Diversity",
                 "uniques": [
-                    "Only available <if [Medium Culture Diversity] is constructed>",
+                    "Only available <if [Medium Cultural Diversity] is constructed>",
                     "Comment [[+3]% [Happiness] [in all cities]]",
                     "Comment [[+50]% Production when constructing [Cultural Intergration] buildings [in annexed cities]]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
-                "text": "Low Culture Diversity",
+                "text": "Low Cultural Diversity",
                 "uniques": [
-                    "Only available <if [Low Culture Diversity] is constructed>",
+                    "Only available <if [Low Cultural Diversity] is constructed>",
                     "Comment [[+8]% [Happiness] [in all cities]]",
                     "Comment [[-3]% [Culture] [in all cities]]",
                     "Comment [[-3]% [Science] [in all cities]]",
@@ -1548,9 +1675,9 @@
                     "Comment [Provides [1] [Standing Army Maintenance]]",
                     "Comment [Provides [1] [Noble Army Maintenance]]",
                     "Comment [[+10]% growth [in all cities]]",
-                    "Comment [[+10]% growth [in all cities] <starting from the [Ancient era]>]",
+                    "Comment [[+10]% growth [in all cities]<starting from the [Ancient era]>]",
                     "Comment [[+10]% Production when constructing [All] wonders [in all cities]]",
-                    "Comment [[+5]% Production when constructing [All] wonders [in all cities] <starting from the [Classical era]>]",
+                    "Comment [[+5]% Production when constructing [All] wonders [in all cities]<starting from the [Classical era]>]",
                     "Comment [[+1 Production, +1 Faith] from every [Governor] <starting from the [Classical era]>]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
@@ -1627,8 +1754,8 @@
                     "Comment [Provides [1] [Standing Army Maintenance]]",
                     "Comment [Provides [2] [Noble Army Maintenance]]",
                     "Comment [[+10]% growth [in all cities]]",
-                    "Comment [[+1 Culture] [in all cities] <before adopting [Unity]>]",
-                    "Comment [[+2 Happiness] [in puppeted cities] <after adopting [Unity]>]",
+                    "Comment [[+1 Culture] [in all cities]<before adopting [Unity]>]",
+                    "Comment [[+2 Happiness] [in puppeted cities]<after adopting [Unity]>]",
                     "Comment [Unique option in increasing [Influence] event]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
@@ -1968,7 +2095,7 @@
                     "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
                     "Comment [Provides [5] [Standing Army Maintenance]]",
                     "Comment [[+20]% growth [in all cities]]",
-                    "Comment [[-18]% construction time for [All] improvements <when not at war>]",
+                    "Comment [[-18]% construction time for [All] improvements<when not at war>]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -2026,7 +2153,7 @@
                     "Comment [Provides [4] [Standing Army Maintenance]]",
                     "Comment [[+3]% [Production] from every ['Political Building']]",
                     "Comment [[+3]% [Culture] from every ['Infrastructure']]",
-                    "Comment [[-25]% construction time for [All] improvements <when not at war>]",
+                    "Comment [[-25]% construction time for [All] improvements<when not at war>]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -2053,7 +2180,7 @@
                     "Comment [[-75]% Production when constructing ['Heavy Industry'] buildings [in all cities]]",
                     "Comment [[-33]% Production when constructing ['Infrastructure'] buildings [in all cities]]",
                     "Comment [[-33]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]]",
-                    "Comment [[-15]% Gold cost of purchasing items in cities]",
+                    "Comment [[Gold] cost of purchasing items in cities [-15]%]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -2068,7 +2195,7 @@
                     "Comment [[+33]% Production when constructing ['Heavy Industry'] buildings [in all cities]]",
                     "Comment [[+15]% Production when constructing ['Infrastructure'] buildings [in all cities]]",
                     "Comment [[+15]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]]",
-                    "Comment [[+25]% Gold cost of purchasing items in cities]",
+                    "Comment [[Gold] cost of purchasing items in cities [+25]%]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -2211,7 +2338,7 @@
                     "Instantly provides [5] [Influence]",
                     "[+1 Food] per [3] population [in capital] <for [1] turns>",
                     "Gain a free [Influence Maintenance Cost] [in capital]",
-                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                    "Triggers a [Popularity Crisis] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -2221,7 +2348,7 @@
                     "Instantly provides [8] [Influence]",
                     "Provides [1] [Noble Army Maintenance] <for [10] turns>",
                     "Gain a free [Influence Maintenance Cost] [in capital]",
-                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                    "Triggers a [Popularity Crisis] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -2231,33 +2358,20 @@
                     "Instantly provides [10] [Influence]",
                     "[+1 Happiness] per [3] population [in capital] <for [1] turns>",
                     "Gain a free [Influence Maintenance Cost] [in capital]",
-                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                    "Triggers a [Popularity Crisis] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
                 "text": "We shall arrange a marriage in high class society to strengthen our internal ties!",
                 "uniques": [
-                    "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Influence Maintenance Cost] is not constructed> <if [Low Culture Diversity] is constructed> <when number of [Influence] is less than [Influence Limit]>",
-                    "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Influence Maintenance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
+                    "Comment [Increase the Cultural Diversity by a level if it hasnt reached highest level yet.]",
+                    "Instantly gain [1] [Cultural Diversity] <when number of [Cultural Diversity] is less than [2]> <hidden from users>",
+                    "Triggers a [Diversified Culture] event",
                     "Instantly provides [10] [Influence]",
                     "Instantly provides [3] [Influence] <after adopting [Personal Union]>",
                     "Gain a free [Influence Maintenance Cost] [in capital]",
-                    "Triggers a [Popularity Crisis] event <hidden from users>"
-                ]
-            },
-            {
-                "text": "We shall arrange a marriage in high class society to strengthen our internal ties!",
-                "uniques": [
-                    "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Influence Maintenance Cost] is not constructed> <if [Medium Culture Diversity] is constructed> <when number of [Influence] is less than [Influence Limit]> <before adopting [Revolution]>",
-                    "Instantly provides [10] [Influence]",
-                    "Instantly provides [3] [Influence] <after adopting [Personal Union]>",
-                    "Gain a free [High Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
-                    "Gain a free [Influence Maintenance Cost] [in capital]",
-                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                    "Triggers a [Popularity Crisis] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -2266,7 +2380,7 @@
                     "Only available <starting from the [Imperial era]> <if [Influence Maintenance Cost] is not constructed> <when number of [Influence] is less than [Influence Limit]>",
                     "Instantly provides [15] [Influence]",
                     "Gain a free [Influence Maintenance Cost] [in capital]",
-                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                    "Triggers a [Popularity Crisis] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -2274,10 +2388,10 @@
                 "uniques": [
                     "Only available <if [Influence Maintenance Cost] is constructed> <when above [60] [Gold]> <(modified by game speed)>",
                     "Gain [-60] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
-                    "Gain [-120] [Gold] <when number of [Cities] is between [4] and [10]>  <(modified by game speed)>",
+                    "Gain [-120] [Gold] <when number of [Cities] is between [4] and [10]> <(modified by game speed)>",
                     "Gain [-240] [Gold] <when number of [Cities] is more than [9]> <(modified by game speed)>",
                     "Remove [Influence Maintenance Cost] [in all cities]",
-                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                    "Triggers a [Popularity Crisis] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -2297,108 +2411,55 @@
             {
                 "text": "Growth requires our culture to suit the needs for new eras.",
                 "uniques": [
-                    "Only available <when above [20] [Influence]> <if [Medium Culture Diversity] is constructed>",
+                    "Only available <when above [20] [Influence]> <when number of [Cultural Diversity] is less than [2]> <hidden from users>",
                     "Instantly consumes [20] [Influence]",
                     "[-20]% Culture cost of adopting new Policies <for [3] turns> <on [Quick] game speed>",
                     "[-20]% Culture cost of adopting new Policies <for [4] turns> <on [Standard] game speed>",
                     "[-20]% Culture cost of adopting new Policies <for [5] turns> <on [Epic] game speed>",
                     "[-20]% Culture cost of adopting new Policies <for [8] turns> <on [Marathon] game speed>",
                     "[-20]% Culture cost of adopting new Policies <for [10] turns> <on [Realistic] game speed>",
-                    "Gain a free [High Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
-                ]
-            },
-            {
-                "text": "Growth requires our culture to suit the needs for new eras.",
-                "uniques": [
-                    "Only available <when above [20] [Influence]> <if [Low Culture Diversity] is constructed>",
-                    "Instantly consumes [20] [Influence]",
-                    "[-20]% Culture cost of adopting new Policies <for [3] turns> <on [Quick] game speed>",
-                    "[-20]% Culture cost of adopting new Policies <for [4] turns> <on [Standard] game speed>",
-                    "[-20]% Culture cost of adopting new Policies <for [5] turns> <on [Epic] game speed>",
-                    "[-20]% Culture cost of adopting new Policies <for [8] turns> <on [Marathon] game speed>",
-                    "[-20]% Culture cost of adopting new Policies <for [10] turns> <on [Realistic] game speed>",
-                    "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                    "Comment [Increase the Cultural Diversity by a level if it hasnt reached highest level yet.]",
+                    "Instantly gain [1] [Cultural Diversity] <when number of [Cultural Diversity] is less than [2]> <hidden from users>",
+                    "Triggers a [Diversified Culture] event <when number of [Cultural Diversity] is less than [2]> <hidden from users>"
                 ]
             },
             {
                 "text": "I guess we can simply expand our pantheon to include marginalised gods.",
                 "uniques": [
-                    "Only available <when above [10] [Influence]> <if [Medium Culture Diversity] is constructed> <after adopting [Pantheon Incorporation]>",
+                    "Only available <when above [10] [Influence]> <when number of [Cultural Diversity] is less than [2]> <after adopting [Pantheon Incorporation]> <hidden from users>",
                     "Instantly consumes [10] [Influence]",
                     "Gain enough Faith for [10]% of a Great Prophet",
-                    "Gain a free [High Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
-                ]
-            },
-            {
-                "text": "I guess we can simply expand our pantheon to include marginalised gods.",
-                "uniques": [
-                    "Only available <when above [10] [Influence]> <if [Low Culture Diversity] is constructed> <after adopting [Pantheon Incorporation]>",
-                    "Instantly consumes [10] [Influence]",
-                    "Gain enough Faith for [10]% of a Great Prophet",
-                    "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Increase the Culture Diversity by a level if it hasnt reached highest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                    "Gain a free [Medium Cultural Diversity] [in capital] <hidden from users>",
+                    "Comment [Increase the Cultural Diversity by a level if it hasnt reached highest level yet.]",
+                    "Instantly gain [1] [Cultural Diversity] <when number of [Cultural Diversity] is less than [2]> <hidden from users>",
+                    "Triggers a [Diversified Culture] event <when number of [Cultural Diversity] is less than [2]> <hidden from users>"
                 ]
             },
             {
                 "text": "Purity of our nation is the reason why we stood fast to this era.",
                 "uniques": [
-                    "Only available <when above [10] [Influence]> <if [High Culture Diversity] is constructed>",
+                    "Only available <when above [10] [Influence]> <when number of [Cultural Diversity] is more than [0]> <hidden from users>",
                     "Instantly consumes [10] [Influence]",
                     "[+5]% Culture cost of adopting new Policies <for [3] turns> <on [Quick] game speed>",
                     "[+5]% Culture cost of adopting new Policies <for [4] turns> <on [Standard] game speed>",
                     "[+5]% Culture cost of adopting new Policies <for [5] turns> <on [Epic] game speed>",
                     "[+5]% Culture cost of adopting new Policies <for [8] turns> <on [Marathon] game speed>",
                     "[+5]% Culture cost of adopting new Policies <for [10] turns> <on [Realistic] game speed>",
-                    "Gain a free [Medium Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Decrease the Culture Diversity by a level if it hasnt reached lowest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
-                ]
-            },
-            {
-                "text": "Purity of our nation is the reason why we stood fast to this era.",
-                "uniques": [
-                    "Only available <when above [10] [Influence]> <if [Medium Culture Diversity] is constructed>",
-                    "Instantly consumes [10] [Influence]",
-                    "[+5]% Culture cost of adopting new Policies <for [3] turns> <on [Quick] game speed>",
-                    "[+5]% Culture cost of adopting new Policies <for [4] turns> <on [Standard] game speed>",
-                    "[+5]% Culture cost of adopting new Policies <for [5] turns> <on [Epic] game speed>",
-                    "[+5]% Culture cost of adopting new Policies <for [8] turns> <on [Marathon] game speed>",
-                    "[+5]% Culture cost of adopting new Policies <for [10] turns> <on [Realistic] game speed>",
-                    "Gain a free [Low Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Decrease the Culture Diversity by a level if it hasnt reached lowest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                    "Comment [Decrease the Cultural Diversity by a level if it hasnt reached lowest level yet.]",
+                    "Instantly consumes [1] [Cultural Diversity] <when number of [Cultural Diversity] is more than [0]> <hidden from users>",
+                    "Triggers a [Decreased Cultural Diversity] event <when number of [Cultural Diversity] is more than [0]> <hidden from users>"
                 ]
             },
             {
                 "text": "Time to trim the leaves...",
                 "uniques": [
-                    "Only available <if [Unified] is constructed> <if [Medium Culture Diversity] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
+                    "Only available <if [Unified] is constructed> <when number of [Cultural Diversity] is more than [0]> <when number of [Influence] is more than [[Influence Limit]/2]> <hidden from users>",
                     "Instantly consumes [25] [Influence]",
-                    "[-1] population in a random city",
+                    "[-1] population in a random city <for every [Cities]>",
                     "Gain [200] [Gold] <(modified by game speed)>",
-                    "Gain a free [Low Culture Diversity] [in capital] <hidden from users>",
-                    "Comment [Decrease the Culture Diversity by a level if it hasnt reached lowest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
-                    "Play [metalhit] sound <hidden from users>"
-                ]
-            },
-            {
-                "text": "Time to trim the leaves...",
-                "uniques": [
-                    "Only available <if [Unified] is constructed> <if [High Culture Diversity] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]>",
-                    "Instantly consumes [25] [Influence]",
-                    "[-1] population in a random city",
-                    "Gain [200] [Gold] <(modified by game speed)>",
-                    "Gain a free [Medium Culture Diversity] [in capital]  <hidden from users>",
-                    "Comment [Decrease the Culture Diversity by a level if it hasnt reached lowest level yet.]",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Comment [Decrease the Cultural Diversity by a level if it hasnt reached lowest level yet.]",
+                    "Instantly consumes [1] [Cultural Diversity] <when number of [Cultural Diversity] is more than [0]> <hidden from users>",
+                    "Triggers a [Decreased Cultural Diversity] event <when number of [Cultural Diversity] is more than [0]> <hidden from users>",
                     "Play [metalhit] sound <hidden from users>"
                 ]
             },
@@ -2467,6 +2528,7 @@
                 "uniques": [
                     "Only available <before adopting [Revolution]>",
                     "Gain a free [Caste System - Exploitation] [in capital]",
+                    "Set [Stability] to [1] <hidden from users>",
                     "Gain a free [Strife] [in capital]"
                 ]
             }
@@ -2506,42 +2568,57 @@
             {
                 "text": "Organize a hunt for glory, and additional rations",
                 "uniques": [
-                    "Only available <if [Nomadic Tribes] is constructed> <when above [9] [Influence]>",
-                    "Instantly consumes [10] [Influence]",
-                    "[+100]% Yield from every [Camp] <for [2] turns>"
+                    "Only available <if [Nomadic Tribes] is constructed> <when above [0] [Influence]>",
+                    "Instantly consumes [1] [Influence] <for every [Cities]>",
+                    "[+100]% Yield from every [Camp] <for [1] turns> <on [Quick] game speed> <hidden from users>",
+                    "[+100]% Yield from every [Camp] <for [2] turns> <on [Standard] game speed> <hidden from users>",
+                    "[+100]% Yield from every [Camp] <for [3] turns> <on [Epic] game speed> <hidden from users>",
+                    "[+100]% Yield from every [Camp] <for [4] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[+100]% Yield from every [Camp] <for [10] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [Double Yield from [Camp] for a short amount of time.]"
                 ]
             },
             {
                 "text": "We should exchange our knowledges amongst our tribes",
                 "uniques": [
-                    "Only available <if [Nomadic Tribes] is constructed> <when above [4] [Influence]>",
-                    "Instantly consumes [5] [Influence]",
-                    "[+1 Science] [in all cities] <for [5] turns>"
+                    "Only available <when above [0] [Influence]>",
+                    "Instantly consumes [3] [Influence] <for every [Cities]>",
+                    "[+1 Science] [in all cities] <for [1] turns> <on [Quick] game speed> <hidden from users>",
+                    "[+1 Science] [in all cities] <for [2] turns> <on [Standard] game speed> <hidden from users>",
+                    "[+1 Science] [in all cities] <for [3] turns> <on [Epic] game speed> <hidden from users>",
+                    "[+1 Science] [in all cities] <for [4] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[+1 Science] [in all cities] <for [10] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[+1 Science] [in all cities] for a short amount of time.]"
                 ]
             },
             {
                 "text": "Elect a new Khan!",
                 "uniques": [
-                    "Only available <if [Unified Nomads] is constructed> <when above [14] [Influence]>",
-                    "Instantly consumes [15] [Influence]",
+                    "Only available <if [Unified Nomads] is constructed> <when above [10] [Influence]>",
+                    "Set [Influence] to [0]",
+                    "Comment [Sacrifice all your [Influence] to gain a [Great Khan] unit. If a certain amount of [Influence] is sacrificed, [Great Khan] may also double as a [Great Strategist].]",
                     "Free [Great Khan] appears",
-                    "[-3] Strength <for [3] turns>"
+                    "[Great Khan] units gain the [The Khan of his era] promotion <for [1] turns> <when number of [Influence] is more than [[Influence Limit]*0.5]>"
                 ]
             },
             {
                 "text": "Make use of our unified power",
                 "uniques": [
-                    "Only available <if [Unified Nomads] is constructed> <when above [19] [Influence]>",
-                    "Instantly consumes [20] [Influence]",
-                    "[+50]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities]<for [10] turns> <hidden from users>",
-                    "Comment [[+50%] Production when constructing all buildings <for [10] turns>]"
+                    "Only available <if [Unified Nomads] is constructed> <when above [0] [Influence]>",
+                    "Instantly consumes [3] [Influence] <for every [Cities]>",
+                    "[+33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <for [3] turns> <on [Quick] game speed> <hidden from users>",
+                    "[+33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <for [5] turns> <on [Standard] game speed> <hidden from users>",
+                    "[+33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <for [7] turns> <on [Epic] game speed> <hidden from users>",
+                    "[+33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <for [10] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[+33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <for [40] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[+33%] Production when constructing all normal buildings for a short amount of time.]"
                 ]
             },
             {
                 "text": "Study the advanced culture of the other civilizations",
                 "uniques": [
-                    "Only available <if [Unified Nomads] is constructed> <when above [24] [Influence]>",
-                    "Instantly consumes [25] [Influence]",
+                    "Only available <if [Unified Nomads] is constructed> <when above [0] [Influence]>",
+                    "Instantly consumes [3] [Influence] <for every [Cities]>",
                     "Free Technology",
                     "Instantly provides [10] [Settlement Process]"
                 ]
@@ -2664,6 +2741,7 @@
                 "text": "Emperor Xin remain undefeated!",
                 "uniques": [
                     "Gain a free [Shang Dynasty] [in capital]",
+                    "Set [Stability] to [2] <hidden from users>",
                     "Gain a free [Struggle] [in capital]",
                     "Gain [100] [Gold] <(modified by game speed)>"
                 ]
@@ -2681,7 +2759,7 @@
                     "Gain a free [Confucianism Influence] [in capital]",
                     "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
                     "Instantly consumes [10] [Influence]",
-                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                    "Triggers a [The way to rule] event <for [Human player] Civilizations> <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
                 ]
             },
             {
@@ -2691,7 +2769,7 @@
                     "Gain a free [Daoism Influence] [in capital]",
                     "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
                     "Instantly consumes [10] [Influence]",
-                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                    "Triggers a [The way to rule] event <for [Human player] Civilizations> <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
                 ]
             },
             {
@@ -2701,7 +2779,7 @@
                     "Gain a free [Mohism Influence] [in capital]",
                     "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
                     "Instantly consumes [10] [Influence]",
-                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                    "Triggers a [The way to rule] event <for [Human player] Civilizations> <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
                 ]
             },
             {
@@ -2711,7 +2789,7 @@
                     "Gain a free [Legalism Influence] [in capital]",
                     "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
                     "Instantly consumes [10] [Influence]",
-                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                    "Triggers a [The way to rule] event <for [Human player] Civilizations> <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
                 ]
             },
             {
@@ -2721,7 +2799,7 @@
                     "Gain a free [Diplomatism Influence] [in capital]",
                     "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
                     "Instantly consumes [10] [Influence]",
-                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                    "Triggers a [The way to rule] event <for [Human player] Civilizations> <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
                 ]
             },
             {
@@ -2731,7 +2809,7 @@
                     "Gain a free [Early Rationalism Influence] [in capital]",
                     "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
                     "Instantly consumes [10] [Influence]",
-                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                    "Triggers a [The way to rule] event <for [Human player] Civilizations> <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
                 ]
             },
             {
@@ -2741,7 +2819,7 @@
                     "Gain a free [Naturalist Influence] [in capital]",
                     "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
                     "Instantly consumes [10] [Influence]",
-                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                    "Triggers a [The way to rule] event <for [Human player] Civilizations> <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
                 ]
             },
             {
@@ -2751,7 +2829,7 @@
                     "Gain a free [Agrarianism Influence] [in capital]",
                     "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
                     "Instantly consumes [10] [Influence]",
-                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                    "Triggers a [The way to rule] event <for [Human player] Civilizations> <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
                 ]
             },
             {
@@ -2761,7 +2839,7 @@
                     "Gain a free [Militant Influence] [in capital]",
                     "Instantly consumes [1] [Avaliable School of Thoughts] <hidden from users>",
                     "Instantly consumes [10] [Influence]",
-                    "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+                    "Triggers a [The way to rule] event <for [Human player] Civilizations> <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
                 ]
             },
             {
@@ -2783,6 +2861,7 @@
                     "Remove [Honor Bound Territory] [in all cities]",
                     "Gain a free [Han Dynasty] [in capital]",
                     "Free [Great Strategist] appears",
+                    "Set [Stability] to [1] <hidden from users>",
                     "Gain a free [Strife] [in capital]"
                 ]
             },
@@ -2792,6 +2871,7 @@
                     "Remove [Honor Bound Territory] [in all cities]",
                     "Gain a free [Chu Dynasty] [in capital]",
                     "Free [Great Commander] appears",
+                    "Set [Stability] to [1] <hidden from users>",
                     "Gain a free [Strife] [in capital]"
                 ]
             }
@@ -2809,7 +2889,7 @@
                     "Gain a free [Gaulish Influence] [in capital]",
                     "Instantly consumes [5] [Influence]",
                     "Gain [-200] [Gold] <(modified by game speed)>",
-                    "Triggers a [The Tribes of Europe] event <hidden from users>"
+                    "Triggers a [The Tribes of Europe] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -2819,17 +2899,17 @@
                     "Gain a free [Albions Influence] [in capital]",
                     "Instantly consumes [5] [Influence]",
                     "Gain [-200] [Gold] <(modified by game speed)>",
-                    "Triggers a [The Tribes of Europe] event <hidden from users>"
+                    "Triggers a [The Tribes of Europe] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
                 "text": "Goths",
                 "uniques": [
-                    "Only available <if [High Culture Diversity] is constructed> <if [Gothic Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
+                    "Only available <if [High Cultural Diversity] is constructed> <if [Gothic Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
                     "Gain a free [Gothic Influence] [in capital]",
                     "Instantly consumes [5] [Influence]",
                     "Gain [-200] [Gold] <(modified by game speed)>",
-                    "Triggers a [The Tribes of Europe] event <hidden from users>"
+                    "Triggers a [The Tribes of Europe] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -2839,17 +2919,17 @@
                     "Gain a free [Saxonian Influence] [in capital]",
                     "Instantly consumes [5] [Influence]",
                     "Gain [-200] [Gold] <(modified by game speed)>",
-                    "Triggers a [The Tribes of Europe] event <hidden from users>"
+                    "Triggers a [The Tribes of Europe] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
                 "text": "Slavs",
                 "uniques": [
-                    "Only available <if [High Culture Diversity] is constructed> <if [Slavic Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
+                    "Only available <if [High Cultural Diversity] is constructed> <if [Slavic Influence] is not constructed> <when above [4] [Influence]> <when above [199] [Gold]>",
                     "Gain a free [Slavic Influence] [in capital]",
                     "Instantly consumes [5] [Influence]",
                     "Gain [-200] [Gold] <(modified by game speed)>",
-                    "Triggers a [The Tribes of Europe] event <hidden from users>"
+                    "Triggers a [The Tribes of Europe] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
             {
@@ -2900,6 +2980,7 @@
                 "text": "The Harappans had successfully repelled the invasion.",
                 "uniques": [
                     "Gain a free [Harappan City States] [in capital]",
+                    "Set [Stability] to [2] <hidden from users>",
                     "Gain a free [Struggle] [in capital]",
                     "Gain [33] [Science] <(modified by game speed)>",
                     "Gain [50] [Culture] <(modified by game speed)>"
@@ -2938,7 +3019,7 @@
             {
                 "text": "The Scythians Emerges",
                 "uniques": [
-                    "Only available <during the [Classical era]> <when number of [Influence] is more than [[Influence Limit]*0.75]>",
+                    "Only available <during the [Classical era]> <when number of [Influence] is more than [[Influence Limit]*0.66]>",
                     "Instantly consumes [10] [Influence]",
                     "Gain a free [Scythian Influence] [in capital]",
                     "Gain a free [Unified Nomads] [in capital]"
@@ -2947,7 +3028,7 @@
             {
                 "text": "The Huns Emerges",
                 "uniques": [
-                    "Only available <during the [Medieval era]> <when number of [Influence] is more than [[Influence Limit]*0.75]>",
+                    "Only available <during the [Medieval era]> <when number of [Influence] is more than [[Influence Limit]*0.66]>",
                     "Instantly consumes [20] [Influence]",
                     "Gain a free [Huns Influence] [in capital]",
                     "Gain a free [Unified Nomads] [in capital]"
@@ -2956,7 +3037,7 @@
             {
                 "text": "The Xiong Nu Emerges",
                 "uniques": [
-                    "Only available <during the [Medieval era]> <when number of [Influence] is more than [[Influence Limit]*0.75]> <if [Low Culture Diversity] is not constructed>",
+                    "Only available <during the [Medieval era]> <when number of [Influence] is more than [[Influence Limit]*0.66]> <if [Low Cultural Diversity] is not constructed>",
                     "Instantly consumes [20] [Influence]",
                     "Gain a free [Xiong Nu Influence] [in capital]",
                     "Gain a free [Unified Nomads] [in capital]"
@@ -2965,10 +3046,18 @@
             {
                 "text": "We are able to unify ourselves!",
                 "uniques": [
-                    "Only available <starting from the [Renaissance era]> <when number of [Influence] is more than [[Influence Limit]*0.75]>",
+                    "Only available <starting from the [Medieval era]> <when number of [Influence] is more than [[Influence Limit]*0.75]>",
                     "Instantly consumes [10] [Influence]",
                     "Gain [100] [Gold] <(modified by game speed)>",
                     "Gain a free [Unified Nomads] [in capital]"
+                ]
+            },
+            {
+                "text": "Our empire lasts onto another era!",
+                "uniques": [
+                    "Only available <when number of [Influence] is more than [[Influence Limit]*0.8]> <while the empire is happy>",
+                    "Comment [Our empire survives... Maybe we can reform it continuesly unto forever.]",
+                    "Only available <if [Unified] is constructed>",
                 ]
             },
             {
@@ -3039,6 +3128,7 @@
                     "Free [Great Commander] appears",
                     "[2] free [Royal Cuirassier] units appear",
                     "[3] [Revolutionaries]s rebel",
+                    "Set [Stability] to [2] <hidden from users>",
                     "Gain a free [Struggle] [in capital]",
                     "Gain a free [Personal Union] [in capital]"
                 ]
@@ -3073,6 +3163,7 @@
                     "Gain a free [Violent Bourgeoisie Revolution] [in capital]",
                     "[3] free [Revolutionaries] units appear",
                     "[3] [Royal Cuirassier]s rebel",
+                    "Set [Stability] to [1] <hidden from users>",
                     "Gain a free [Strife] [in capital]",
                     "Gain a free [Republics] [in capital]"
                 ]
@@ -3222,6 +3313,7 @@
                     "Gain a free [Anti-Fascism Legacy] [in capital]",
                     "[2] [Protection Squadron]s rebel",
                     "Remove [Fascism] and refund [100]% of its cost",
+                    "Set [Stability] to [1] <hidden from users>",
                     "Gain a free [Strife] [in capital]"
                 ]
             },
@@ -3233,6 +3325,7 @@
                     "[2] free [Protection Squadron] units appear",
                     "A [Modern Guerrilla] rebels",
                     "A [Heavy Infantry] rebels",
+                    "Set [Stability] to [2] <hidden from users>",
                     "Gain a free [Struggle] [in capital]",
                     "Gain a free [Fascist Autocracy] [in capital]"
                 ]
@@ -3275,6 +3368,7 @@
                     "A [Guerrilla] rebels",
                     "Instantly consumes [1] [Revolution Oppotunity]",
                     "Gain a free [Worker's Socialist Revolution] [in capital]",
+                    "Set [Stability] to [2] <hidden from users>",
                     "Gain a free [Struggle] [in capital]",
                     "Gain a free [Socialist Republics] [in capital]"
                 ]
@@ -3288,6 +3382,7 @@
                     "[2] [Protection Squadron]s rebel",
                     "[3] [Guerrilla]s rebel",
                     "Gain a free [United Socialist Revolution] [in capital]",
+                    "Set [Stability] to [1] <hidden from users>",
                     "Gain a free [Strife] [in capital]",
                     "Gain a free [Socialist Republics] [in capital]"
                 ]
@@ -3551,28 +3646,6 @@
                     "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and free will shall reign surpreme.]",
                     "Gain a free [Self-management Focus] [in capital]",
                     "[-33]% [Gold] [in all cities] <for [5] turns>"
-                ]
-            }
-        ]
-    },
-    ///Tips
-    {
-        "name": "The internal affair...",
-        "text": "This mod offers some brand new mechanics that are of note, you might want to play through the Scenario Tutorial first in order to gain basic understandings of them. Since they are very relevant throughout the entire ruleset.",
-        "choices": [
-            {
-                "text": "Problems and solutions never seen before!",
-                "uniques": [
-                    "Comment [Open up the [Enact Policies] tab and have a look!]",
-                    "Comment [You can open this in your capital at any moment to solve debuffs and manage a lot of stuff.]",
-                    "Comment [And then theres also a link to the in game documentation of the mod, which you also will NEED to take a look if you want to gain a greater understanding of this ruleset.]",
-                    "Triggers a [Enact Policies] event <for [Human player] Civilizations> <hidden from users>"
-                ]
-            },
-            {
-                "text": "I already knew it",
-                "uniques": [
-                    "Comment [Good luck.]"
                 ]
             }
         ]
