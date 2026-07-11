@@ -6747,31 +6747,26 @@
 			"Gain a free [Information Era Start] [in capital] <for [1] turns> <if starting in the [Information era]> <when number of [Cities] is less than [2]> <hidden from users>",
 			"Gain a free [Future Era Start] [in capital] <for [1] turns> <if starting in the [Future era]> <when number of [Cities] is less than [2]> <hidden from users>",
 			///Influence Calculation
-			"Consumes [1] [Influence] <when below [500] [Happiness]> <starting from the [Future era]>",
-			"Consumes [1] [Influence] <when below [200] [Happiness]> <starting from the [Information era]>",
-			"Consumes [1] [Influence] <when below [100] [Happiness]> <starting from the [Atomic era]>",
-			"Consumes [1] [Influence] <when below [50] [Happiness]> <starting from the [Modern era]>",
-			"Consumes [1] [Influence] <when below [30] [Happiness]> <starting from the [Industrial era]>",
-			"Consumes [1] [Influence] <when below [10] [Happiness]> <starting from the [Imperial era]>",
-			"Consumes [1] [Influence] <when below [0] [Happiness]>",
-			"Consumes [2] [Influence] <when below [-9] [Happiness]>",
-			"Consumes [2] [Influence] <when below [-14] [Happiness]>",
-			"Consumes [3] [Influence] <when below [-19] [Happiness]>",
-			"Consumes [1] [Influence] <when below [-100] [Gold]>",
-			"Consumes [2] [Influence] <when below [-200] [Gold]>",
-			"Consumes [2] [Influence] <when below [-300] [Gold]>",
-			"Provides [1] [Influence] <when above [4] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
-			"Provides [1] [Influence] <when above [9] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
-			"Provides [1] [Influence] <when above [29] [Happiness]> <when number of [Influence] is less than [Influence Limit]>",
-			"Provides [2] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]>",
+			"Consumes [1] [Influence] <when below [10] [Happiness]> <starting from the [Imperial era]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [0] [Happiness]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [-9] [Happiness]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [-14] [Happiness]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [-19] [Happiness]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [-100] [Gold]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [-200] [Gold]> <hidden from users>",
+			"Consumes [1] [Influence] <when below [-300] [Gold]> <hidden from users>",
+			"Provides [1] [Influence] <when above [4] [Happiness]> <when number of [Influence] is less than [Influence Limit]> <hidden from users>",
+			"Provides [1] [Influence] <when above [9] [Happiness]> <when number of [Influence] is less than [Influence Limit]> <hidden from users>",
+			"Provides [1] [Influence] <when above [29] [Happiness]> <when number of [Influence] is less than [Influence Limit]> <hidden from users>",
+			"Provides [1] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]> <hidden from users>",
 			///Stuff
-			"Provides [10] [Migration Limit]",
-			"Provides [8] [Standing Army Maintenance] <for [AI player] Civilizations>",
-			"Provides [4] [Noble Army Maintenance] <for [AI player] Civilizations>",
+			"Provides [10] [Migration Limit] <hidden from users>",
+			"Provides [8] [Standing Army Maintenance] <for [AI player] Civilizations> <hidden from users>",
+			"Provides [4] [Noble Army Maintenance] <for [AI player] Civilizations> <hidden from users>",
 			//"Indicates the capital city <if [Migrate Capital] is not constructed>",
 			"Indicates the capital city",
 			//Tutorial
-			"Triggers a [The internal affair...] event <for [Human player] Civilizations><hidden from users>",
+			"Triggers a [The internal affair...] event <for [Human player] Civilizations> <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
@@ -6783,8 +6778,7 @@
 		"uniques": [
 			"'Worship Place'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Only available <after adopting [Polytheism]>",
-			"Only available <when religion is enabled>",
+			"Only available <when religion is enabled> <after adopting [Polytheism]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Calendar"
@@ -6800,8 +6794,7 @@
 		"uniques": [
 			"'Worship Place'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Only available <after adopting [Polytheism]> <in [non-[Puppeted]] cities>",
-			"Only available <when religion is enabled>",
+			"Only available <when religion is enabled> <after adopting [Polytheism]> <in [non-[Puppeted]] cities>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Calendar"
@@ -6963,8 +6956,7 @@
 		"uniques": [
 			"'Worship Place'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Only available <after adopting [Monotheism]>",
-			"Only available <when religion is enabled>",
+			"Only available <when religion is enabled> <after adopting [Monotheism]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Calendar"
@@ -6978,8 +6970,7 @@
 		"uniques": [
 			"'Worship Place'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
-			"Only available <after adopting [Monotheism]>",
-			"Only available <when religion is enabled>",
+			"Only available <when religion is enabled> <after adopting [Monotheism]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Calendar"
@@ -8017,6 +8008,7 @@
 			"Set [Influence] to [0.5*[Influence Limit]]",
 			"Remove ['Divided'] [in all cities]",
 			"Remove ['Agreement'] [in all cities]",
+			"Remove [Unified] [in all cities] <if ['Divided'] is constructed> <upon turn start>",
 			"Enables Research agreements",
 			"Enables Open Borders agreements",
 			"Enables Defensive Pacts",
@@ -9796,17 +9788,17 @@
 			"Set [Negative Event Count] to [3] <on [Playing Fair] difficulty> <upon entering a new era>",
 			"Set [Negative Event Count] to [4] <on [Battle of Wit and Strength] difficulty or higher> <upon entering a new era>",
 
-			"Triggers a [Wealth Gap Widens] event <when above [0] [Negative Event Count]> <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
-			"Triggers a [Rampant Corruption] event <when above [0] [Negative Event Count]> <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
-			"Triggers a [Vagrancy Crisis] event <when above [0] [Negative Event Count]> <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Wealth Gap Widens] event <when above [0] [Negative Event Count]> <when below [0] [Happiness]> <with [15]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Rampant Corruption] event <when above [0] [Negative Event Count]> <when below [0] [Happiness]> <with [15]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Vagrancy Crisis] event <when above [0] [Negative Event Count]> <when below [0] [Happiness]> <with [15]% chance> <upon turn start> <hidden from users>",
 
-			"Triggers a [Chaos Ensue] event <when above [0] [Negative Event Count]> <if [Unified] is constructed> <when below [0] [Happiness]> <with [10]% chance> <upon turn start> <hidden from users>",
-			"Triggers a [Chaos Ensue] event <when above [0] [Negative Event Count]> <if [Unified] is not constructed> <when below [0] [Happiness]> <with [5]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Chaos Ensue] event <when above [0] [Negative Event Count]> <if [Unified] is constructed> <when below [0] [Happiness]> <with [15]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Chaos Ensue] event <when above [0] [Negative Event Count]> <if [Unified] is not constructed> <when below [0] [Happiness]> <with [10]% chance> <upon turn start> <hidden from users>",
 
 			"Triggers a [The long lasting peace] event <when above [0] [Negative Event Count]> <if [Unified] is constructed> <when not at war> <with [10]% chance> <upon turn start> <hidden from users>",
 			"Triggers a [Stagnation] event <when above [0] [Negative Event Count]> <if [Unified] is constructed> <with [10]% chance> <upon turn start> <hidden from users>",
-			"Triggers a [Risk of Civil War] event <when above [0] [Negative Event Count]> <if [Unified] is not constructed> <when below [0] [Happiness]> <with [10]% chance> <upon turn start> <hidden from users>",
-			"Triggers a [Tribalism permeates] event <when above [0] [Negative Event Count]> <if [Unified] is not constructed> <with [5]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Risk of Civil War] event <when above [0] [Negative Event Count]> <if [Unified] is not constructed> <when below [0] [Happiness]> <with [20]% chance> <upon turn start> <hidden from users>",
+			"Triggers a [Tribalism permeates] event <when above [0] [Negative Event Count]> <if [Unified] is not constructed> <with [10]% chance> <upon turn start> <hidden from users>",
 
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"

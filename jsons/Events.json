@@ -364,7 +364,7 @@
             {
                 "text": "One side is more correct than the others.",
                 "uniques": [
-                    "Gain a free [Civil War] [in Capital]",
+                    "Gain a free [Civil War] [in capital]",
                     "Comment [A Hostile force gathers around your capital.]",
                     "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
@@ -372,24 +372,10 @@
             {
                 "text": "This is a chance that the entire civilization can unite under one will!",
                 "uniques": [
-                    "Only available <when above [15] [Influence]>",
-                    "Instantly consumes [15] [Influence]",
+                    "Only available <when number of [Influence] is more than [[Influence Limit]/2]>",
                     "Provides a [Civil War] in your first [3] cities for free",
-                    "Comment [A Hostile force gathers around your first [3] cities.]",
-                    "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
-                    "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
-                    "Gain a free [Early Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
-                    "Gain a free [Centralized Empire] [in capital] <during the [Classical era]> <if [Successor States] is constructed> <hidden from users>",
-                    "Gain a free [Feudal Empire] [in capital] <during the [Medieval era]> <hidden from users>",
-                    "Gain a free [Feudal Empire] [in capital] <during the [Renaissance era]> <hidden from users>",
-                    "Gain a free [United States] [in capital] <during the [Imperial era]> <after adopting [Revolution]> <hidden from users>",
-                    "Gain a free [Federation] [in capital] <during the [Imperial era]> <before adopting [Revolution]> <hidden from users>",
-                    "Gain a free [Federation] [in capital] <during the [Industrial era]> <hidden from users>",
-                    "Gain a free [Federation] [in capital] <during the [Modern era]> <hidden from users>",
-                    "Gain a free [Federation] [in capital] <during the [Atomic era]> <hidden from users>",
-                    "Gain a free [Federation] [in capital] <during the [Information era]> <hidden from users>",
-                    "Gain a free [Federation] [in capital] <during the [Future era]> <hidden from users>",
-                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>",
+                    "Comment [Hostile forces gathers around your first [3] cities.]",
+                    "Triggers a [Shift in Politic] event",
                     "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
@@ -451,6 +437,7 @@
             {
                 "text": "Khannnnnn!",
                 "uniques": [
+                    "Instantly provides [1] [Negative Event Count] <hidden from users>",
                     "Triggers a [Chaos Ensue] event"
                 ]
             }
@@ -525,12 +512,13 @@
                     "Only available <when at war> <if [Unified] is constructed> <if [Levies Disbandment] is constructed>",
                     "Play [policy] sound <hidden from users>",
                     "Comment [This Decision will instruct all the city to mobilise its [Levied Army] unit, regardless of the size of city. Usually you need at least 5 Population to [Call to Arms].]",
+                    "Comment [By the merit of being [United], the negative [Happiness] from [Call to Arms] is also lessened. For a short amount of time.]",
                     "Gain a free [Call to Arms] [in all non-occupied cities]",
-                    "[+1 Happiness] from every [Call to Arms] <for [3] turns> <on [Quick] game speed>",
-                    "[+1 Happiness] from every [Call to Arms] <for [4] turns> <on [Standard] game speed>",
-                    "[+1 Happiness] from every [Call to Arms] <for [5] turns> <on [Epic] game speed>",
-                    "[+1 Happiness] from every [Call to Arms] <for [8] turns> <on [Marathon] game speed>",
-                    "[+1 Happiness] from every [Call to Arms] <for [10] turns> <on [Realistic] game speed>",
+                    "[+1 Happiness] from every [Call to Arms] <for [3] turns> <on [Quick] game speed> <hidden from users>",
+                    "[+1 Happiness] from every [Call to Arms] <for [5] turns> <on [Standard] game speed> <hidden from users>",
+                    "[+1 Happiness] from every [Call to Arms] <for [7] turns> <on [Epic] game speed> <hidden from users>",
+                    "[+1 Happiness] from every [Call to Arms] <for [10] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[+1 Happiness] from every [Call to Arms] <for [50] turns> <on [Realistic] game speed> <hidden from users>",
                     "Triggers a [Enact Policies] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -680,8 +668,7 @@
                     "Only available <if [Unified] is constructed> <when number of [Influence] is more than [[Influence Limit]/2]> <when number of [State Reform Chance] is more than [0]> <if [Nomadic Culture] is not constructed>",
                     "Play [policy] sound <hidden from users>",
                     "Instantly consumes [1] [State Reform Chance] <hidden from users>",
-                    "Instantly consumes [10] [Influence] <when number of [Cities] is between [0] and [5]>",
-                    "Instantly consumes [15] [Influence] <when number of [Cities] is more than [4]>",
+                    "Instantly consumes [3] [Influence] <for every [Cities]>",
                     "Triggers a [Reformation of the unified state] event"
                 ]
             },
@@ -895,7 +882,6 @@
                     "Only available <when number of [Influence] is more than [[Influence Limit]*0.5]> <if [Struggle] is not constructed> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <while the empire is happy>",
                     "Comment [Our empire survives... Maybe we can reform it continuesly unto forever.]",
                     "Only available <if [Unified] is constructed>",
-                    "Remove [Unified] [in all cities] <hidden from users>",
                     "Triggers a [Reformation of the unified state] event"
                 ]
             }
@@ -1348,7 +1334,6 @@
                 "uniques": [
                     "Set [Stability] to [2]",
                     "Gain a free [Struggle] [in capital]",
-                    "Remove [Unified] [in all cities]",
                     "Gain a free [Republics] [in capital]"
                 ]
             }
@@ -1533,7 +1518,7 @@
                     "Comment [[-10]% [Culture] [in all cities]]",
                     "Comment [[-10]% [Science] [in all cities]]",
                     "Comment [[-5]% [Food] [in all cities]]",
-                    "Comment [[-10]% Strength <for [All] units>]",
+                    "Comment [[-10]% Strength<for [All] units>]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -1545,7 +1530,7 @@
                     "Comment [[-20]% [Culture] [in all cities]]",
                     "Comment [[-20]% [Science] [in all cities]]",
                     "Comment [[-10]% [Food] [in all cities]]",
-                    "Comment [[-18]% Strength <for [All] units>]",
+                    "Comment [[-18]% Strength<for [All] units>]",
                     "Comment [Rebel units may spawn]",
                     "Comment [Cannot build [Settler] units]",
                     "Comment [Cannot build [Pioneer] units]",
@@ -1561,14 +1546,14 @@
                     "Comment [[-33]% [Culture] [in all cities]]",
                     "Comment [[-33]% [Science] [in all cities]]",
                     "Comment [[-25]% [Food] [in all cities]]",
-                    "Comment [[-25]% Strength <for [All] units>]",
+                    "Comment [[-25]% Strength<for [All] units>]",
                     "Comment [Cannot build [Settler], [Pioneer], [Worker], [Mechanised Worker], [Galley Work Ship], [Modern Work Ship] units]",
                     "Comment [After adopting [Anarchism]:]",
                     "Comment [[-15]% [Gold] from Trade Routes]",
                     "Comment [[+17]% [Culture] [in all cities]]",
                     "Comment [[+17]% [Science] [in all cities]]",
                     "Comment [[-5]% [Production] [in all cities]]",
-                    "Comment [[-10]% Strength <for [All] units> <before adopting [Militia Army]>]",
+                    "Comment [[-10]% Strength<for [All] units><before adopting [Militia Army]>]",
                     "Comment [Rebel units may spawn]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
@@ -1690,9 +1675,9 @@
                     "Comment [Provides [1] [Standing Army Maintenance]]",
                     "Comment [Provides [1] [Noble Army Maintenance]]",
                     "Comment [[+10]% growth [in all cities]]",
-                    "Comment [[+10]% growth [in all cities] <starting from the [Ancient era]>]",
+                    "Comment [[+10]% growth [in all cities]<starting from the [Ancient era]>]",
                     "Comment [[+10]% Production when constructing [All] wonders [in all cities]]",
-                    "Comment [[+5]% Production when constructing [All] wonders [in all cities] <starting from the [Classical era]>]",
+                    "Comment [[+5]% Production when constructing [All] wonders [in all cities]<starting from the [Classical era]>]",
                     "Comment [[+1 Production, +1 Faith] from every [Governor] <starting from the [Classical era]>]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
@@ -1769,8 +1754,8 @@
                     "Comment [Provides [1] [Standing Army Maintenance]]",
                     "Comment [Provides [2] [Noble Army Maintenance]]",
                     "Comment [[+10]% growth [in all cities]]",
-                    "Comment [[+1 Culture] [in all cities] <before adopting [Unity]>]",
-                    "Comment [[+2 Happiness] [in puppeted cities] <after adopting [Unity]>]",
+                    "Comment [[+1 Culture] [in all cities]<before adopting [Unity]>]",
+                    "Comment [[+2 Happiness] [in puppeted cities]<after adopting [Unity]>]",
                     "Comment [Unique option in increasing [Influence] event]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
@@ -2110,7 +2095,7 @@
                     "Comment [Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
                     "Comment [Provides [5] [Standing Army Maintenance]]",
                     "Comment [[+20]% growth [in all cities]]",
-                    "Comment [[-18]% construction time for [All] improvements <when not at war>]",
+                    "Comment [[-18]% construction time for [All] improvements<when not at war>]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -2168,7 +2153,7 @@
                     "Comment [Provides [4] [Standing Army Maintenance]]",
                     "Comment [[+3]% [Production] from every ['Political Building']]",
                     "Comment [[+3]% [Culture] from every ['Infrastructure']]",
-                    "Comment [[-25]% construction time for [All] improvements <when not at war>]",
+                    "Comment [[-25]% construction time for [All] improvements<when not at war>]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -2195,7 +2180,7 @@
                     "Comment [[-75]% Production when constructing ['Heavy Industry'] buildings [in all cities]]",
                     "Comment [[-33]% Production when constructing ['Infrastructure'] buildings [in all cities]]",
                     "Comment [[-33]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]]",
-                    "Comment [[-15]% Gold cost of purchasing items in cities]",
+                    "Comment [[Gold] cost of purchasing items in cities [-15]%]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -2210,7 +2195,7 @@
                     "Comment [[+33]% Production when constructing ['Heavy Industry'] buildings [in all cities]]",
                     "Comment [[+15]% Production when constructing ['Infrastructure'] buildings [in all cities]]",
                     "Comment [[+15]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]]",
-                    "Comment [[+25]% Gold cost of purchasing items in cities]",
+                    "Comment [[Gold] cost of purchasing items in cities [+25]%]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -2403,7 +2388,7 @@
                 "uniques": [
                     "Only available <if [Influence Maintenance Cost] is constructed> <when above [60] [Gold]> <(modified by game speed)>",
                     "Gain [-60] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
-                    "Gain [-120] [Gold] <when number of [Cities] is between [4] and [10]>  <(modified by game speed)>",
+                    "Gain [-120] [Gold] <when number of [Cities] is between [4] and [10]> <(modified by game speed)>",
                     "Gain [-240] [Gold] <when number of [Cities] is more than [9]> <(modified by game speed)>",
                     "Remove [Influence Maintenance Cost] [in all cities]",
                     "Triggers a [Popularity Crisis] event <for [Human player] Civilizations> <hidden from users>"
@@ -3069,7 +3054,6 @@
                     "Only available <when number of [Influence] is more than [[Influence Limit]*0.8]> <while the empire is happy>",
                     "Comment [Our empire survives... Maybe we can reform it continuesly unto forever.]",
                     "Only available <if [Unified] is constructed>",
-                    "Remove [Unified] [in all cities] <hidden from users>"
                 ]
             },
             {
