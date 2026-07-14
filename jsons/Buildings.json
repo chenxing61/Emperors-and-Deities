@@ -185,12 +185,26 @@
 		"requiredTech": "Fire Making"
 	},
 	{
+		"name": "Nomadic Migration",
+		"cost": 0,
+		"uniques": [
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Only available <in cities with at least [2] [Population]> <when number of [Migrating Population] is between [0] and [Migration Limit]> <if [Nomadic Culture] is constructed>",
+			"[-1] population [in this city]",
+			"Instantly consumes [2] [Influence]",
+			"Instantly provides [1] [Migrating Population]",
+			"Remove [Nomadic Migration] [in this city] <hidden from users>",
+			"Comment [Each [Migrating Population] costs 2 [Happiness] to maintain if you dont resettle them immediately in a single turn.]"
+		],
+		"requiredTech": "Animal Husbandry",
+		"hurryCostModifier": -75
+	},
+	{
 		"name": "Migration",
 		"cost": 25,
 		"uniques": [
 			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
-			"Only available <in cities connected to the capital> <in cities with at least [5] [Population]> <when number of [Migrating Population] is between [0] and [Migration Limit]>",
-			"[-100]% production cost <if [Nomadic Culture] is constructed>",
+			"Only available <in cities connected to the capital> <in cities with at least [5] [Population]> <when number of [Migrating Population] is between [0] and [Migration Limit]> <if [Nomadic Culture] is not constructed>",
 			"[-1] population [in this city]",
 			"Instantly consumes [2] [Influence]",
 			"Instantly provides [1] [Migrating Population]",
@@ -9533,7 +9547,7 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Negative Event'",
-			"Remove [Civil War] [in this city]",
+			"Remove [Civil War] [in this city] <upon turn start>",
 			// ===== ANCIENT ERA =====
 			// After Bronze Working, before Iron Working
 			"[2] [Brute Warrior]s rebel <after discovering [Copper Working]> <before discovering [Iron Working]>",
