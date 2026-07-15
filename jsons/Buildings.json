@@ -395,13 +395,14 @@
 	},
 	{
 		"name": "Major Harbor (Construction)",
-		"cost": 350,
+		"cost": 400,
 		"uniques": [
-			"District Construction",
+			"'District Construction'",
 			"Cannot be purchased",
 			"Unavailable <with [Harbor Marker]> <in this city> <hidden from users>",
 			"Unsellable",
-			"Creates a [Major Harbor] improvement on a specific tile",
+			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
+			"Creates a [Major Harbor] improvement on a specific tile"
 			//"Remove [Major Harbor (Construction)] [in this city] <upon turn start>",
 		],
 		"requiredTech": "Navigation",
@@ -409,11 +410,12 @@
 	},
 	{
 		"name": "Harbor Area",
-		"cost": 350,
+		"cost": 300,
 		"uniques": [
-			"Area Construction",
+			"'Area Construction'",
 			"Unavailable <with [Harbor Marker]> <in this city> <hidden from users>",
 			"Unsellable",
+			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
 			"Provides [1] [Harbor Marker] <in this city> <hidden from users>",
 		],
 		"requiredTech": "Navigation",
@@ -421,12 +423,13 @@
 	},
 	{
 		"name": "Industrial District (Construction)",
-		"cost": 1,
+		"cost": 600,
 		"uniques": [
-			"District Construction",
+			"'District Construction'",
 			"Cannot be purchased",
 			"Unavailable <with [Industrial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
+			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
 			"Creates a [Industrial District] improvement on a specific tile",
 			//"Remove [Industrial District (Construction)] [in this city] <upon turn start>",
 		],
@@ -435,24 +438,26 @@
 	},
 	{
 		"name": "Industrial Area",
-		"hurryCostModifier": 25,
-		"cost": 1,
+		"cost": 450,
 		"uniques": [
-			"Area Construction",
+			"'Area Construction'",
 			"Unavailable <with [Industrial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
+			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
 			"Provides [1] [Industrial Zone Marker] <in this city> <hidden from users>",
 		],
-		"requiredTech": "Industrialization"
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Residential District (Construction)",
-		"cost": 1,
+		"cost": 450,
 		"uniques": [
-			"District Construction",
+			"'District Construction'",
 			"Cannot be purchased",
 			"Unavailable <with [Residential Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
+			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
 			"Creates a [Residential District] improvement on a specific tile",
 			//"Remove [Residential District (Construction)] [in this city] <upon turn start>",
 		],
@@ -463,9 +468,10 @@
 		"name": "Residential Area",
 		"cost": 1,
 		"uniques": [
-			"Area Construction",
+			"'Area Construction'",
 			"Unavailable <with [Residential Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
+			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
 			"Provides [1] [Residential Zone Marker] <in this city> <hidden from users>",
 		],
 		"requiredTech": "Concrete",
@@ -475,10 +481,11 @@
 		"name": "Commercial District (Construction)",
 		"cost": 1,
 		"uniques": [
-			"District Construction",
+			"'District Construction'",
 			"Cannot be purchased",
 			"Unavailable <with [Commercial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
+			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
 			"Creates a [Commercial District] improvement on a specific tile",
 			//"Remove [Commercial District (Construction)] [in this city] <upon turn start>",
 		],
@@ -489,9 +496,10 @@
 		"name": "Commercial Hub",
 		"cost": 1,
 		"uniques": [
-			"Area Construction",
+			"'Area Construction'",
 			"Unavailable <with [Commercial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
+			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
 			"Provides [1] [Commercial Zone Marker] <in this city> <hidden from users>",
 		],
 		"requiredTech": "Electricity",
@@ -501,10 +509,11 @@
 		"name": "Science Park District (Construction)",
 		"cost": 1,
 		"uniques": [
-			"District Construction",
+			"'District Construction'",
 			"Cannot be purchased",
 			"Unavailable <with [Science Park Marker]> <in this city> <hidden from users>",
 			"Unsellable",
+			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
 			"Creates a [Science Park] improvement on a specific tile",
 			//"Remove [Science Park District (Construction)] [in this city] <upon turn start>",
 		],
@@ -515,9 +524,10 @@
 		"name": "Science Complex",
 		"cost": 1,
 		"uniques": [
-			"Area Construction",
+			"'Area Construction'",
 			"Unavailable <with [Science Park Marker]> <in this city> <hidden from users>",
 			"Unsellable",
+			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
 			"Provides [1] [Science Park Marker] <in this city> <hidden from users>",
 		],
 		"requiredTech": "Computer",
@@ -1469,6 +1479,22 @@
 		"quote": "'Time crumbles things; everything grows old and is forgotten under the power of time' - Aristotle"
 	},
 	{
+		"name": "The Shrine of Sun",
+		"isWonder": true,
+		"faith": 3,
+		"happiness": 3,
+		"greatPersonPoints": {
+			"Great Artist": 1
+		},
+		"uniques": [
+			"Only available <after adopting [Belief in Sun]>",
+			"'Worship Place'",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
+		"requiredTech": "Bronze Working",
+		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
+	},
+	{
 		"name": "The Statue of Sea God",
 		"isWonder": true,
 		"culture": 2,
@@ -2064,6 +2090,8 @@
 		"culture": 1,
 		"uniques": [
 			"'Worship Place'",
+			"'Practice Place'",
+			"'Organise Place'",
 			"[+8]% [Culture] [in this city] <in cities with a [Shrine]>",
 			"[+8]% [Faith] [in this city] <in cities with a [Chapel]>",
 			"Only available <when religion is enabled>",
@@ -8158,6 +8186,8 @@
 			"Enables Defensive Pacts",
 			"Instantly provides [1] [State Reform Chance] <hidden from users>",
 			"Empire enters golden age <if [Mausoleum of the Unifier] is constructed>",
+			"Gain [50] [Faith] <if [The Shrine of Sun] is constructed> <(modified by game speed)>",
+			"Gain [50] [Culture] <if [The Shrine of Sun] is constructed> <(modified by game speed)>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
