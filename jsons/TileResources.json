@@ -1824,8 +1824,8 @@
 		"name": "Artifact",
 		"resourceType": "Strategic",
 		"uniques": [
-			"Not shown on world screen <if [Hide Miscellaneous] is constructed> <hidden from users>",
-			"Stockpiled"
+			"Stockpiled",
+			"Not shown on world screen <if [Hide Miscellaneous] is constructed> <hidden from users>"
 		],
 		"civilopediaText": [
 			{
@@ -1838,8 +1838,8 @@
 		"name": "Waste Material",
 		"resourceType": "Strategic",
 		"uniques": [
-			"Not shown on world screen <if [Hide Miscellaneous] is constructed> <hidden from users>",
-			"Stockpiled"
+			"Stockpiled",
+			"Not shown on world screen <if [Hide Miscellaneous] is constructed> <hidden from users>"
 		],
 		"revealedBy": "Ecology"
 	},
@@ -1891,5 +1891,55 @@
 				"link": "Unit/Peon"
 			}
 		]
+	},
+	{
+		"name": "Harbor Marker",
+		"resourceType": "Bonus",
+		"uniques":[
+			"City-level resource",
+			"Excluded from map editor",
+			"Not shown on world screen",
+			"Will not be displayed in Civilopedia",
+		],
+	},
+	{
+		"name": "Industrial Zone Marker",
+		"resourceType": "Bonus",
+		"uniques":[
+			"City-level resource",
+			"Excluded from map editor",
+			"Not shown on world screen",
+			"Will not be displayed in Civilopedia",
+		],
+	},
+	{
+		"name": "Residential Zone Marker",
+		"resourceType": "Bonus",
+		"uniques":[
+			"City-level resource",
+			"Excluded from map editor",
+			"Not shown on world screen",
+			"Will not be displayed in Civilopedia",
+		],
+	},
+	{
+		"name": "Commercial Zone Marker",
+		"resourceType": "Bonus",
+		"uniques":[
+			"City-level resource",
+			"Excluded from map editor",
+			"Not shown on world screen",
+			"Will not be displayed in Civilopedia",
+		],
+	},
+	{
+		"name": "Science Park Marker",
+		"resourceType": "Bonus",
+		"uniques":[
+			"City-level resource",
+			"Excluded from map editor",
+			"Not shown on world screen",
+			"Will not be displayed in Civilopedia",
+		],
 	}
 ]

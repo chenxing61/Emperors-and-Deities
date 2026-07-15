@@ -47,11 +47,13 @@
 	},
 	{
 		"name": "Rubber Plantation",
-		"production":1,
+		"production": 1,
 		"gold": 2,
 		"techRequired": "Industrialization",
-		"terrainsCanBeBuiltOn":["Forest",
-								"Jungle"],
+		"terrainsCanBeBuiltOn": [
+			"Forest",
+			"Jungle"
+		],
 		"uniques": [
 			"Can only be built on [Grassland] tiles",
 			"Does not need removal of [Forest]",
@@ -443,7 +445,6 @@
 		],
 		"shortcutKey": "F"
 	},
-	
 	{
 		"name": "Camp",
 		"turnsToBuild": 4,
@@ -675,7 +676,7 @@
 		"shortcutKey": "Q"
 	},
 	// Military improvement
-		{
+	{
 		"name": "Trench",
 		"turnsToBuild": 1,
 		"uniques": [
@@ -735,9 +736,17 @@
 		],
 		"shortcutKey": "R",
 		"civilopediaText": [
-			{"text":"Reduces movement cost to ½ if the other tile also has a Road or Railroad"},
-            {"text":"Reduces movement cost to ⅓ with Machinery", "link":"Technology/Machinery"},
-            {"text":"Requires Engineering to bridge rivers", "link":"Technology/Engineering"}
+			{
+				"text": "Reduces movement cost to ½ if the other tile also has a Road or Railroad"
+			},
+			{
+				"text": "Reduces movement cost to ⅓ with Machinery",
+				"link": "Technology/Machinery"
+			},
+			{
+				"text": "Requires Engineering to bridge rivers",
+				"link": "Technology/Engineering"
+			}
 		]
 	},
 	{
@@ -754,8 +763,12 @@
 		],
 		"shortcutKey": "R",
 		"civilopediaText": [
-            {"text":"Reduces movement cost to ⅒ if the other tile also has a Railroad"},
-            {"text":"Provides a +25% [Production] bonus to cities connected to the capital by Railroads"}
+			{
+				"text": "Reduces movement cost to ⅒ if the other tile also has a Railroad"
+			},
+			{
+				"text": "Provides a +25% [Production] bonus to cities connected to the capital by Railroads"
+			}
 		]
 	},
 	{
@@ -871,6 +884,76 @@
 		]
 	},
 	// Districts
+	{
+		"name": "Major Harbor",
+		"terrainsCanBeBuiltOn": [
+			"Coast"
+		],
+		"uniques": [
+			"'Urban Improvement'",
+			"Provides [1] [Harbor Marker] <hidden from users>",
+			"Must be next to [City center]",
+			"Removes removable features when built",
+			//"Nullifies all other stats this tile provides", // doesn't work on improvements
+			"Will not be replaced by automated units",
+		],
+	},
+	{
+		"name": "Industrial District",
+		"terrainsCanBeBuiltOn": [
+			"Land"
+		],
+		"uniques": [
+			"'Urban Improvement'",
+			"Provides [2] [Industrial Zone Marker] <hidden from users>",
+			"Must be next to [City center]",
+			"Removes removable features when built",
+			//"Nullifies all other stats this tile provides",
+			"Will not be replaced by automated units",
+		],
+	},
+	{
+		"name": "Residential District",
+		"terrainsCanBeBuiltOn": [
+			"Land"
+		],
+		"uniques": [
+			"'Urban Improvement'",
+			"Provides [2] [Residential Zone Marker] <hidden from users>",
+			"Must be next to [City center]",
+			"Removes removable features when built",
+			//"Nullifies all other stats this tile provides",
+			"Will not be replaced by automated units",
+		],
+	},
+	{
+		"name": "Commercial District",
+		"terrainsCanBeBuiltOn": [
+			"Land"
+		],
+		"uniques": [
+			"'Urban Improvement'",
+			"Provides [2] [Commercial Zone Marker] <hidden from users>",
+			"Must be next to [City center]",
+			"Removes removable features when built",
+			//"Nullifies all other stats this tile provides",
+			"Will not be replaced by automated units",
+		],
+	},
+	{
+		"name": "Science Park",
+		"terrainsCanBeBuiltOn": [
+			"Land"
+		],
+		"uniques": [
+			"'Urban Improvement'",
+			"Provides [2] [Science Park Marker] <hidden from users>",
+			"Must be next to [City center]",
+			"Removes removable features when built",
+			//"Nullifies all other stats this tile provides",
+			"Will not be replaced by automated units",
+		],
+	},
 	// Great Person improvements
 	{
 		"name": "Academy",
@@ -964,7 +1047,6 @@
 			"[+2 Faith] for each adjacent [Oasis]",
 			"[+2 Faith] for each adjacent [Ice]",
 			"[+1 Faith] for each adjacent [Coast]",
-			
 			"[+3 Faith] for each adjacent [Natural Wonder]",
 			"Removes removable features when built",
 			"Pillaging this improvement yields approximately [+50 Gold]"
@@ -1020,6 +1102,7 @@
 			"Land"
 		],
 		"uniques": [
+			"'Urban Improvement'",
 			"Ensures a minimum tile yield of [+2 Food, +1 Production]",
 			"[+1 Food] from [River] tiles",
 			"[+1 Food] from [Fresh water] tiles",
