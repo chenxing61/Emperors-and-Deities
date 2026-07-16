@@ -439,13 +439,30 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Industrial Area",
+		"name": "Civilian Industry Complex",
 		"cost": 500,
 		"uniques": [
 			"'Area Construction'",
 			"Unavailable <with [Industrial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
+			"[+1 Production] from [resource] tiles [in this city]",
+			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>",
+			"Provides [1] [Industrial Zone Marker] <in this city> <hidden from users>",
+		],
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Military Industry Complex",
+		"cost": 500,
+		"uniques": [
+			"'Area Construction'",
+			"Unavailable <with [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unsellable",
+			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
+			"Provides [2] [Standing Army Maintenance]",
+			"[Military] units gain the [Modern Arms] promotion <starting from the [Modern era]>",
 			"Provides [1] [Industrial Zone Marker] <in this city> <hidden from users>",
 		],
 		"requiredTech": "Industrialization",
@@ -896,22 +913,6 @@
 		"hurryCostModifier": -25
 	},
 	{
-		"name": "Industrial Complex Expansion",
-		"cost": 600,
-		"uniques": [
-			"Unsellable",
-			"'Expansion'",
-			"Comment [Only when all buildings in this package have not been built, this package is available.]",
-			"Only available <in cities without a [Civilian Factory Complex]>",
-			"Only available <in cities without a [Military Factory Complex]>",
-			"Gain a free [Civilian Factory Complex] [in this city]", //300
-			"Gain a free [Military Factory Complex] [in this city]", //300
-			"[+300]% weight to this choice for AI decisions <hidden from users>"
-		],
-		"requiredTech": "Industrialization",
-		"hurryCostModifier": -25
-	},
-	{
 		"name": "Light Industry Modernization",
 		"cost": 1500,
 		"uniques": [
@@ -927,7 +928,7 @@
 			"[+300]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredTech": "Concrete",
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"hurryCostModifier": -25
 	},
 	{
@@ -946,7 +947,7 @@
 			"[+300]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredTech": "Concrete",
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"hurryCostModifier": -25
 	},
 	{
@@ -4792,6 +4793,7 @@
 			"Engineer": 1
 		},
 		"uniques": [
+			"Only available <when above [1] [Habour Marker]> <hidden from users>",
 			"'Military Building'",
 			"Consumes [3] [Alloy]",
 			"Provides [4] [Ship Parts]",
@@ -4886,17 +4888,7 @@
 		"requiredTech": "Steam Power",
 		"requiredResource": "Natural Gas(Stored)"
 	},
-	{
-		"name": "Civilian Factory Complex",
-		"maintenance": 10,
-		"uniques": [
-			"Unsellable",
-			"'Light Industry'",
-			"[+1 Production] from [resource] tiles [in this city]",
-			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
-		],
-		"requiredTech": "Industrialization"
-	},
+
 	{
 		"name": "Invention of Canned Food",
 		"cost": 500,
@@ -4967,7 +4959,7 @@
 			"Comment [[+5]% [Gold] [in this city]]",
 			"Comment [-]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"requiredTech": "Industrialization"
 	},
 	{
@@ -5023,7 +5015,7 @@
 			"Comment [[+10]% [Happiness] [in this city]]",
 			"Comment [-]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"requiredTech": "Industrialization"
 	},
 	{
@@ -5090,24 +5082,10 @@
 			"Comment [Effect from [Invention of Machine Tools] doubles]",
 			"Comment [-]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"requiredTech": "Industrialization"
 	},
-	{
-		"name": "Military Factory Complex",
-		"maintenance": 10,
-		"percentStatBonus": {
-			"production": -5
-		},
-		"uniques": [
-			"'Military Building'",
-			"Unsellable",
-			"Provides [2] [Standing Army Maintenance]",
-			"[Military] units gain the [Modern Arms] promotion <starting from the [Modern era]>",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Industrialization"
-	},
+
 	{
 		"name": "The Big Clock Tower",
 		"isWonder": true,
@@ -5169,7 +5147,7 @@
 			"Comment [Speed Up of Civilian Unit Construction Doubles.]",
 			"Comment [-]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"requiredTech": "Railroads"
 	},
 	{
@@ -5242,7 +5220,7 @@
 			"Comment [[+5]% [Culture] [in this city]]",
 			"Comment [-]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"requiredTech": "Replaceable Parts"
 	},
 	{
@@ -5274,7 +5252,7 @@
 			"Comment [Provides [5] [Weapon Parts]]",
 			"Comment [-]"
 		],
-		"requiredBuilding": "Military Factory Complex",
+		
 		"requiredTech": "Replaceable Parts"
 	},
 	{
@@ -5312,7 +5290,7 @@
 			"Comment [Speed Up of Civil Ship Unit Construction Doubles.]",
 			"Comment [-]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"requiredTech": "Replaceable Parts"
 	},
 	{
@@ -5556,7 +5534,7 @@
 			"Comment [Provides [4] [Vehicle Parts]]",
 			"Comment [-]"
 		],
-		"requiredBuilding": "Military Factory Complex",
+		
 		"requiredTech": "Combustion"
 	},
 	{
@@ -5605,7 +5583,7 @@
 			"Comment [Speed Up of Civilian Unit Construction Doubles.]",
 			"Comment [-]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"requiredTech": "Combustion"
 	},
 	{
@@ -5845,7 +5823,7 @@
 			"[+1 Production] from ['Rock'] tiles [in this city]",
 			"[+2]% Production when constructing [All] buildings [in all cities]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"requiredTech": "Concrete"
 	},
 	{
@@ -6132,7 +6110,7 @@
 			"Comment [Provides [2] [Aircraft Parts]]",
 			"Comment [-]"
 		],
-		"requiredBuilding": "Military Factory Complex",
+		
 		"requiredTech": "Flight"
 	},
 	{
@@ -6187,7 +6165,7 @@
 			"Comment [[+1 Science] from every [Engineer] <in this city>]",
 			"Comment [-]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"requiredTech": "Electronics"
 	},
 	{
@@ -6466,7 +6444,6 @@
 			"Consumes [2] [Power]",
 			"Comment [Enables you to build Spacecrafts and Missiles in this City]"
 		],
-		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Rocketry"
 	},
 	{
@@ -6607,7 +6584,7 @@
 			"Provides [3] [Microchips]",
 			"Provides [2] [Microchips] <after discovering [Robotics]>"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"requiredTech": "Lasers"
 	},
 	{
@@ -6857,7 +6834,7 @@
 			"[+1 Production] from every specialist [in this city]",
 			"Consumes [1] [Microchips]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"requiredTech": "3D Printers"
 	},
 	{
@@ -6888,7 +6865,7 @@
 			"'High Tech Industry'",
 			"[+1 Production] per [1] population [in this city]"
 		],
-		"requiredBuilding": "Civilian Factory Complex",
+		
 		"requiredTech": "3D Printers"
 	},
 	//Special
@@ -7742,7 +7719,7 @@
 		"cost": 750,
 		"isWonder": true,
 		"uniques": [
-			"Only available <when [(Short Victory) Industrial] Victory is enabled> <if [Civilian Factory Complex] is constructed in at least [6] of [All] cities>",
+			"Only available <when [(Short Victory) Industrial] Victory is enabled> <if [Industrial District (Improvement)] is constructed in at least [6] of [All] cities>",
 			"Triggers a global alert upon completion",
 			"Cannot be hurried",
 			"Destroyed when the city is captured"
