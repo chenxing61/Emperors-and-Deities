@@ -3514,7 +3514,6 @@
 			"Provides [2] [Weapon Parts] <after discovering [Physics]>",
 			"Consumes [2] [Metal] <after discovering [Physics]><before discovering [Replaceable Parts]>",
 			"Consumes [1] [Alloy] <after discovering [Replaceable Parts]>",
-			"[+50]% Production when constructing [Military Factory Complex] buildings [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Military Blacksmith",
@@ -4672,6 +4671,7 @@
 		"maintenance": 10,
 		"uniques": [
 			"'Military Building'",
+			"Provides [1] [Standing Army Maintenance]",
 			"Comment [Increases [Call to Arms]'s amount of free unit.]",
 			"All newly-trained [Military] units [in this city] receive the [Reserve Force] promotion",
 			"Destroyed when the city is captured"
@@ -4685,10 +4685,22 @@
 		"uniques": [
 			"Only available <if [Fascist Autocracy] is constructed>",
 			"'Military Building'",
+			"Provides [1] [Standing Army Maintenance]",
 			"Gain a free [Mobilization Department] [in this city]",
 			"Comment [Increases [Call to Arms]'s amount of free unit.]",
 			"Provides [1] [Protection Squadron Volunteer]",
 			"All newly-trained [Military] units [in this city] receive the [Reserve Force] promotion",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Military Science"
+	},
+		{
+		"name": "Military Base",
+		"maintenance": 15,
+		"cityStrength": 10,
+		"uniques": [
+			"'Military Building'",
+			"New [Military] units start with [15] XP [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Military Science"
@@ -5826,18 +5838,7 @@
 		
 		"requiredTech": "Concrete"
 	},
-	{
-		"name": "Military Base",
-		"maintenance": 15,
-		"cityStrength": 10,
-		"uniques": [
-			"'Military Building'",
-			"Provides [2] [Standing Army Maintenance]",
-			"New [Military] units start with [15] XP [in this city]",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Concrete"
-	},
+
 	{
 		"name": "Bunker",
 		"maintenance": 10,
@@ -7724,7 +7725,7 @@
 			"Cannot be hurried",
 			"Destroyed when the city is captured"
 		],
-		"requiredTech": "Steam Power"
+		"requiredTech": "Mass Production"
 	},
 	{
 		"name": "Religious Order",
