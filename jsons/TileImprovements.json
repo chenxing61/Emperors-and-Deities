@@ -886,12 +886,14 @@
 	// Districts
 	{
 		"name": "Major Harbor",
+		"gold": 3,
+		"production": 3,
 		"terrainsCanBeBuiltOn": [
 			"Coast"
 		],
 		"uniques": [
 			"'Urban Improvement'",
-			"Provides [1] [Harbor Marker] <hidden from users>",
+			"Provides [2] [Harbor Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",
 			//"Nullifies all other stats this tile provides", // doesn't work on improvements
@@ -900,12 +902,14 @@
 	},
 	{
 		"name": "Industrial District",
+		"production": 3,
+		"science": 3,
 		"terrainsCanBeBuiltOn": [
 			"Land"
 		],
 		"uniques": [
 			"'Urban Improvement'",
-			"Provides [2] [Industrial Zone Marker] <hidden from users>",
+			"Provides [2] [Industrial Zone Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",
 			//"Nullifies all other stats this tile provides",
@@ -914,12 +918,14 @@
 	},
 	{
 		"name": "Residential District",
+		"culture": 3,
+		"happiness": 3,
 		"terrainsCanBeBuiltOn": [
 			"Land"
 		],
 		"uniques": [
 			"'Urban Improvement'",
-			"Provides [2] [Residential Zone Marker] <hidden from users>",
+			"Provides [2] [Residential Zone Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",
 			//"Nullifies all other stats this tile provides",
@@ -928,12 +934,13 @@
 	},
 	{
 		"name": "Commercial District",
+		"gold": 6,
 		"terrainsCanBeBuiltOn": [
 			"Land"
 		],
 		"uniques": [
 			"'Urban Improvement'",
-			"Provides [2] [Commercial Zone Marker] <hidden from users>",
+			"Provides [2] [Commercial Zone Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",
 			//"Nullifies all other stats this tile provides",
@@ -942,12 +949,14 @@
 	},
 	{
 		"name": "Science Park",
+		"science": 3,
+		"gold": 3,
 		"terrainsCanBeBuiltOn": [
 			"Land"
 		],
 		"uniques": [
 			"'Urban Improvement'",
-			"Provides [2] [Science Park Marker] <hidden from users>",
+			"Provides [2] [Science Park Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",
 			//"Nullifies all other stats this tile provides",
