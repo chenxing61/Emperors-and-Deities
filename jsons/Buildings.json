@@ -399,12 +399,13 @@
 		"uniques": [
 			"'District Construction'",
 			"Cannot be purchased",
-			"Unavailable <with [Harbor Marker]> <in this city> <hidden from users>",
+			//"Unavailable <when less than [2] [Harbor Marker]> <in this city> <hidden from users>",
 			"Must be next to [Coast]",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
-			"Creates a [Major Harbor] improvement on a specific tile"
+			"Creates a [Major Harbor] improvement on a specific tile",
 			//"Remove [Major Harbor (Improvement)] [in this city] <upon turn start>",
+			"Remove [Harbor Area] [in this city]",
 		],
 		"requiredTech": "Navigation",
 		"hurryCostModifier": 25
@@ -414,7 +415,7 @@
 		"cost": 300,
 		"uniques": [
 			"'Area Construction'",
-			"Unavailable <with [Harbor Marker]> <in this city> <hidden from users>",
+			"Unavailable <when less than [2] [Harbor Marker]> <in this city> <hidden from users>",
 			"Must be next to [Coast]",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
@@ -429,11 +430,13 @@
 		"uniques": [
 			"'District Construction'",
 			"Cannot be purchased",
-			"Unavailable <with [Industrial Zone Marker]> <in this city> <hidden from users>",
+			//"Unavailable <when less than [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Creates a [Industrial District] improvement on a specific tile",
 			//"Remove [Industrial District (Improvement)] [in this city] <upon turn start>",
+			"Remove [Civilian Industry Complex] [in this city]",
+			"Remove [Military Industry Complex] [in this city]",
 		],
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 25
@@ -443,7 +446,7 @@
 		"cost": 500,
 		"uniques": [
 			"'Area Construction'",
-			"Unavailable <with [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when less than [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"[+1 Production] from [resource] tiles [in this city]",
@@ -458,7 +461,7 @@
 		"cost": 500,
 		"uniques": [
 			"'Area Construction'",
-			"Unavailable <with [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when less than [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Provides [2] [Standing Army Maintenance]",
@@ -474,11 +477,12 @@
 		"uniques": [
 			"'District Construction'",
 			"Cannot be purchased",
-			"Unavailable <with [Residential Zone Marker]> <in this city> <hidden from users>",
+			//"Unavailable <when less than [2] [Residential Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Creates a [Residential District] improvement on a specific tile",
 			//"Remove [Residential District (Improvement)] [in this city] <upon turn start>",
+			"Remove [Residential Area] [in this city]",
 		],
 		"requiredTech": "Concrete",
 		"hurryCostModifier": 25
@@ -488,7 +492,7 @@
 		"cost": 400,
 		"uniques": [
 			"'Area Construction'",
-			"Unavailable <with [Residential Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when less than [2] [Residential Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Provides [1] [Residential Zone Marker] <in this city> <hidden from users>",
@@ -507,13 +511,14 @@
 		"uniques": [
 			"'District Construction'",
 			"Cannot be purchased",
-			"Unavailable <with [Commercial Zone Marker]> <in this city> <hidden from users>",
+			//"Unavailable <when less than [2] [Commercial Zone Marker]> <in this city> <hidden from users>",
 			"Only available <before adopting [Socialism]> <before adopting [Anarchism]>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Provides [4] [Consumption Demand]",
 			"Creates a [Commercial District] improvement on a specific tile",
 			//"Remove [Commercial District (Improvement)] [in this city] <upon turn start>",
+			"Remove [Commercial Hub] [in this city]",
 		],
 		"requiredTech": "Electrification",
 		"hurryCostModifier": 25
@@ -528,7 +533,7 @@
 		},
 		"uniques": [
 			"'Area Construction'",
-			"Unavailable <with [Commercial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when less than [2] [Commercial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Provides [1] [Commercial Zone Marker] <in this city> <hidden from users>",
@@ -543,11 +548,12 @@
 		"uniques": [
 			"'District Construction'",
 			"Cannot be purchased",
-			"Unavailable <with [Science Park Marker]> <in this city> <hidden from users>",
+			//"Unavailable <when less than [2] [Science Park Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Creates a [Science Park] improvement on a specific tile",
 			//"Remove [Science Park District (Improvement)] [in this city] <upon turn start>",
+			"Remove [Science Complex] [in this city]",
 		],
 		"requiredTech": "Computer",
 		"hurryCostModifier": 25
@@ -557,7 +563,7 @@
 		"cost": 750,
 		"uniques": [
 			"'Area Construction'",
-			"Unavailable <with [Science Park Marker]> <in this city> <hidden from users>",
+			"Unavailable <when less than [2] [Science Park Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Provides [1] [Science Park Marker] <in this city> <hidden from users>",
