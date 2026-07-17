@@ -886,13 +886,14 @@
 	// Districts
 	{
 		"name": "Major Harbor",
-		"gold": 3,
 		"production": 3,
 		"terrainsCanBeBuiltOn": [
 			"Coast"
 		],
 		"uniques": [
 			"'Urban Improvement'",
+			"[+2 Gold] for each adjacent ['Water Improvement']",
+			"[+2 Gold] for each adjacent ['Lumber Improvement']",
 			"Provides [2] [Harbor Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",
@@ -902,13 +903,13 @@
 	},
 	{
 		"name": "Industrial District",
-		"production": 3,
-		"science": 3,
+		"science": 1,
 		"terrainsCanBeBuiltOn": [
 			"Land"
 		],
 		"uniques": [
 			"'Urban Improvement'",
+			"[+2 Production] for each adjacent ['Extraction Improvement']",
 			"Provides [2] [Industrial Zone Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",
@@ -918,13 +919,15 @@
 	},
 	{
 		"name": "Residential District",
-		"culture": 3,
-		"happiness": 3,
+		"culture": 2,
+		"happiness": 1,
 		"terrainsCanBeBuiltOn": [
 			"Land"
 		],
 		"uniques": [
 			"'Urban Improvement'",
+			"[+1 Food, +1 Gold] for each adjacent ['Agricultural Improvement']",
+			"[+2 Gold] for each adjacent ['Infrastructure Improvement']",
 			"Provides [2] [Residential Zone Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",
@@ -940,6 +943,8 @@
 		],
 		"uniques": [
 			"'Urban Improvement'",
+			"[+2 Gold] for each adjacent ['Infrastructure Improvement']",
+			"[+2 Culture] for each adjacent ['Policy Improvement']",
 			"Provides [2] [Commercial Zone Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",
@@ -956,6 +961,7 @@
 		],
 		"uniques": [
 			"'Urban Improvement'",
+			"[+2 Science] for each adjacent ['Urban Improvement']",
 			"Provides [2] [Science Park Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",
