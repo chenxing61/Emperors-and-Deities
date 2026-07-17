@@ -499,29 +499,42 @@
 	{
 		"name": "Commercial District (Improvement)",
 		"cost": 600,
+		"specialistSlots": {
+			"Labourer": 2,
+			"Merchant": 2,
+			"Artist": 1
+		},
 		"uniques": [
 			"'District Construction'",
 			"Cannot be purchased",
 			"Unavailable <with [Commercial Zone Marker]> <in this city> <hidden from users>",
+			"Only available <before adopting [Socialism]> <before adopting [Anarchism]>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
+			"Provides [4] [Consumption Demand]",
 			"Creates a [Commercial District] improvement on a specific tile",
 			//"Remove [Commercial District (Improvement)] [in this city] <upon turn start>",
 		],
-		"requiredTech": "Electricity",
+		"requiredTech": "Electrification",
 		"hurryCostModifier": 25
 	},
 	{
 		"name": "Commercial Hub",
 		"cost": 500,
+		"specialistSlots": {
+			"Labourer": 1,
+			"Governor": 1,
+			"Artist": 1
+		},
 		"uniques": [
 			"'Area Construction'",
 			"Unavailable <with [Commercial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely.]",
 			"Provides [1] [Commercial Zone Marker] <in this city> <hidden from users>",
+			"Provides [2] [Consumption Demand]"
 		],
-		"requiredTech": "Electricity",
+		"requiredTech": "Electrification",
 		"hurryCostModifier": 25
 	},
 	{
@@ -2574,7 +2587,7 @@
 			"[Military] units gain the [Medieval Arms] promotion",
 			"[Military] units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>",
 			"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <before the [Industrial era]>",
-			"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <starting from the [Industrial era]> <after discovering [Electricity]>",
+			"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <starting from the [Industrial era]> <after discovering [Electrification]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Military Blacksmith",
@@ -4431,7 +4444,6 @@
 			"[+1]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
 			"Must be next to [Coast]"
 		],
-		"requiredBuilding": "Trading Port",
 		"requiredTech": "Navigation"
 	},
 	{
@@ -4453,7 +4465,6 @@
 			"Must be next to [Coast]",
 			"Destroyed when the city is captured"
 		],
-		"requiredBuilding": "Trading Port",
 		"requiredTech": "Navigation"
 	},
 	{
@@ -4788,6 +4799,7 @@
 		"happiness": 3,
 		"isWonder": true,
 		"uniques": [
+			"Only available <when above [20] [Artifact]>",
 			"Instantly consumes [20] [Artifact]",
 			"[2] free [Great Artist] units appear",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
@@ -4805,7 +4817,7 @@
 			"Engineer": 1
 		},
 		"uniques": [
-			"Only available <when above [1] [Habour Marker]> <hidden from users>",
+			"Only available <when above [1] [Harbor Marker]> <hidden from users>",
 			"'Military Building'",
 			"Consumes [3] [Alloy]",
 			"Provides [4] [Ship Parts]",
@@ -4819,7 +4831,6 @@
 			"Comment [-]",
 			"Must be next to [Coast]"
 		],
-		"requiredBuilding": "Military Port",
 		"requiredTech": "Ship Armour"
 	},
 	{
@@ -4867,6 +4878,60 @@
 		"requiredTech": "Biology"
 	},
 	{
+		"name": "Coal Power Plant",
+		"cost": 450,
+		"maintenance": 10,
+		"uniques": [
+			"'Power Building'",
+			"Provides [7] [Power] <in this city>",
+			"Consumes [2] [Coal]",
+			"Only available <when above [0] [Coal]>"
+		],
+		"requiredTech": "Steam Power"
+	},
+		{
+		"name": "Power Grid",
+		"cost": 375,
+		"maintenance": 10,
+		"specialistSlots": {
+			"Labourer": 1
+		},
+		"uniques": [
+			"'Infrastructure'",
+			"[-20]% Unhappiness from [Population] [in this city] <in cities without a [Power Shortage]>",
+			"Comment [Enable this city's industries and citizens to consume [Power], which enables Industry and ['Infrastructure'] buildings to increase overall gain based on electricity surplus]",
+			"Comment [Every 10 population costs 1 [Power]]",
+			"Consumes [1] [Power] <in cities with between [0] and [10] [Population]> <in this city> <hidden from users>",
+			"Consumes [2] [Power] <in cities with between [10] and [20] [Population]> <in this city> <hidden from users>",
+			"Consumes [3] [Power] <in cities with between [20] and [30] [Population]> <in this city> <hidden from users>",
+			"Consumes [4] [Power] <in cities with between [30] and [40] [Population]> <in this city> <hidden from users>",
+			"Consumes [5] [Power] <in cities with between [40] and [50] [Population]> <in this city> <hidden from users>",
+			"Consumes [6] [Power] <in cities with between [50] and [60] [Population]> <in this city> <hidden from users>",
+			"Consumes [7] [Power] <in cities with between [60] and [70] [Population]> <in this city> <hidden from users>",
+			"Consumes [8] [Power] <in cities with between [70] and [80] [Population]> <in this city> <hidden from users>",
+			"Consumes [9] [Power] <in cities with between [80] and [90] [Population]> <in this city> <hidden from users>",
+			"Consumes [10] [Power] <in cities with between [90] and [100] [Population]> <in this city> <hidden from users>",
+			"Consumes [11] [Power] <in cities with between [100] and [110] [Population]> <in this city> <hidden from users>",
+			"Consumes [12] [Power] <in cities with between [110] and [120] [Population]> <in this city> <hidden from users>",
+			"Consumes [13] [Power] <in cities with between [120] and [130] [Population]> <in this city> <hidden from users>",
+			"Consumes [14] [Power] <in cities with between [130] and [140] [Population]> <in this city> <hidden from users>",
+			"Consumes [15] [Power] <in cities with between [140] and [150] [Population]> <in this city> <hidden from users>",
+			"Consumes [16] [Power] <in cities with between [150] and [160] [Population]> <in this city> <hidden from users>",
+			"Consumes [17] [Power] <in cities with between [160] and [170] [Population]> <in this city> <hidden from users>",
+			"Consumes [18] [Power] <in cities with between [170] and [180] [Population]> <in this city> <hidden from users>",
+			"Consumes [19] [Power] <in cities with between [180] and [190] [Population]> <in this city> <hidden from users>",
+			"Consumes [20] [Power] <in cities with between [190] and [200] [Population]> <in this city> <hidden from users>",
+			"Gain a free [Power Shortage] [in this city] <when below [0] [Power]> <upon turn start> <in this city>",
+			"Remove [Power Shortage] [in this city] <when above [0] [Power]> <upon turn start> <in this city>",
+			"Gain a free [Low Industry Electricity Cost] [in this city] <when above [0] [Industry Size]> <in this city> <when below [7] [Industry Size]> <in this city>",
+			"Gain a free [Medium Industry Electricity Cost] [in this city] <when above [7] [Industry Size]> <in this city> <when below [15] [Industry Size]> <in this city>",
+			"Gain a free [High Industry Electricity Cost] [in this city] <when above [15] [Industry Size]> <in this city>",
+			"Remove [Power Shortage] [in this city] <when above [0] [Power]>",
+			"Provides [3] [Power] <in this city> <if [Innovation of Grid Energy Storage] is constructed>"
+		],
+		"requiredTech": "Steam Power"
+	},
+	{
 		"name": "Holiday Resort",
 		"cost": 200,
 		"maintenance": 5,
@@ -4891,6 +4956,8 @@
 			"Engineer": 1
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Requires at least one Industrial Area or the [Industrial District] in this city]",
 			"'Heavy Industry'",
 			"Provides [3] [Fuel] <when above [0] [Natural Gas(Stored)]>",
 			"Provides [1] [Industrial Chemicals] <when above [0] [Natural Gas(Stored)]>",
@@ -4927,6 +4994,8 @@
 			"Scientist": 1
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Requires at least one Industrial Area or the [Industrial District] in this city]",
 			"'Light Industry'",
 			"Provides [2] [Industry Size] <in this city>",
 			"Provides [4] [Consumption Supply]",
@@ -4999,6 +5068,9 @@
 			"Engineer": 1
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Civilian Industry Complex] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Light Industry'",
 			"Provides [2] [Industry Size] <in this city>",
 			"Provides [5] [Consumption Supply]",
@@ -5030,22 +5102,7 @@
 		
 		"requiredTech": "Industrialization"
 	},
-	{
-		"name": "Invention of Machine Tools",
-		"cost": 500,
-		"uniques": [
-			"'Invention'",
-			"Limited to [1] per Civilization <hidden from users>",
-			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Machine Tools] is not constructed by anybody> <hidden from users>",
-			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Machine Tools] is not constructed by anybody> <hidden from users>",
-			"[-50]% production cost <if [Invention of Machine Tools] is constructed by anybody> <hidden from users>",
-			"Comment [Enable [Machine Industry] to increase the building speed of other industries]",
-			"Unsellable",
-			"Moves to new capital when capital changes <hidden from users>"
-		],
-		"requiredBuilding": "Machine Industry",
-		"requiredTech": "Industrialization"
-	},
+
 	{
 		"name": "Machine Industry",
 		"cost": 1000,
@@ -5055,6 +5112,9 @@
 			"Engineer": 2
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Civilian Industry Complex] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Heavy Industry'",
 			"Consumes [1] [Alloy]",
 			"Provides [1] [Consumption Supply]",
@@ -5123,6 +5183,8 @@
 			"Engineer": 1
 		},
 		"uniques": [
+			"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Needs a [Industrial District]]",
 			"'Heavy Industry'",
 			"Provides [3] [Industry Size] <in this city>",
 			"Provides [2] [Consumption Supply]",
@@ -5182,6 +5244,22 @@
 		],
 		"requiredTech": "Railroads"
 	},
+		{
+		"name": "Invention of Machine Tools",
+		"cost": 500,
+		"uniques": [
+			"'Invention'",
+			"Limited to [1] per Civilization <hidden from users>",
+			"Gain [200] [Science] <(modified by game speed)> <if [Invention of Machine Tools] is not constructed by anybody> <hidden from users>",
+			"Gain [500] [Gold] <(modified by game speed)> <if [Invention of Machine Tools] is not constructed by anybody> <hidden from users>",
+			"[-50]% production cost <if [Invention of Machine Tools] is constructed by anybody> <hidden from users>",
+			"Comment [Enable [Machine Industry] to increase the building speed of other industries]",
+			"Unsellable",
+			"Moves to new capital when capital changes <hidden from users>"
+		],
+		"requiredBuilding": "Machine Industry",
+		"requiredTech": "Mass Production"
+	},
 	{
 		"name": "Invention of Stamping",
 		"cost": 500,
@@ -5210,6 +5288,9 @@
 			"Engineer": 1
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Civilian Industry Complex] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Light Industry'",
 			"Provides [2] [Industry Size] <in this city>",
 			"Provides [2] [Consumption Supply]",
@@ -5244,6 +5325,9 @@
 			"Engineer": 1
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Military Industry Complex] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Military Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Military Building'",
 			"Provides [3] [Industry Size] <in this city>",
 			"Consumes [3] [Alloy]",
@@ -5264,7 +5348,6 @@
 			"Comment [Provides [5] [Weapon Parts]]",
 			"Comment [-]"
 		],
-		
 		"requiredTech": "Replaceable Parts"
 	},
 	{
@@ -5276,6 +5359,11 @@
 			"Engineer": 2
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Civilian Industry Complex] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
+			"Only available <with [Harbor Marker]> <hidden from users>",
+			"Comment [Also Requires the Harbor Area or District]",
 			"Must be next to [Coast]",
 			"'Heavy Industry'",
 			"Provides [2] [Industry Size] <in this city>",
@@ -5302,7 +5390,6 @@
 			"Comment [Speed Up of Civil Ship Unit Construction Doubles.]",
 			"Comment [-]"
 		],
-		
 		"requiredTech": "Replaceable Parts"
 	},
 	{
@@ -5391,6 +5478,7 @@
 			"[Military] units gain the [Atomic Arms] promotion <starting from the [Atomic era]>",
 			"Destroyed when the city is captured"
 		],
+		"requiredBuilding": "Military Base",
 		"requiredTech": "Dynamite",
 		"hurryCostModifier": 50
 	},
@@ -5484,6 +5572,8 @@
 			"Labourer": 2
 		},
 		"uniques": [
+			"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Needs a [Industrial District]]",
 			"'Heavy Industry'",
 			"Provides [4] [Industry Size] <in this city>",
 			"Provides [5] [Fuel]",
@@ -5530,6 +5620,9 @@
 			"Engineer": 1
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Military Industry Complex] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Military Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Military Building'",
 			"Provides [3] [Industry Size] <in this city>",
 			"Consumes [2] [Alloy]",
@@ -5559,6 +5652,8 @@
 			"Artist": 1
 		},
 		"uniques": [
+			"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Needs a [Industrial District]]",
 			"'Heavy Industry'",
 			"Only available <in cities without a [Vehicle Industry]>",
 			"Only available <when above [0] [Iconic Brand]> <if [Vehicle Industry] is constructed>",
@@ -5599,48 +5694,6 @@
 		"requiredTech": "Combustion"
 	},
 	{
-		"name": "Power Grid",
-		"cost": 375,
-		"maintenance": 10,
-		"specialistSlots": {
-			"Labourer": 1
-		},
-		"uniques": [
-			"'Infrastructure'",
-			"[-20]% Unhappiness from [Population] [in this city] <in cities without a [Power Shortage]>",
-			"Comment [Enable this city's industries and citizens to consume [Power], which enables Industry and ['Infrastructure'] buildings to increase overall gain based on electricity surplus]",
-			"Comment [Every 10 population costs 1 [Power]]",
-			"Consumes [1] [Power] <in cities with between [0] and [10] [Population]> <in this city> <hidden from users>",
-			"Consumes [2] [Power] <in cities with between [10] and [20] [Population]> <in this city> <hidden from users>",
-			"Consumes [3] [Power] <in cities with between [20] and [30] [Population]> <in this city> <hidden from users>",
-			"Consumes [4] [Power] <in cities with between [30] and [40] [Population]> <in this city> <hidden from users>",
-			"Consumes [5] [Power] <in cities with between [40] and [50] [Population]> <in this city> <hidden from users>",
-			"Consumes [6] [Power] <in cities with between [50] and [60] [Population]> <in this city> <hidden from users>",
-			"Consumes [7] [Power] <in cities with between [60] and [70] [Population]> <in this city> <hidden from users>",
-			"Consumes [8] [Power] <in cities with between [70] and [80] [Population]> <in this city> <hidden from users>",
-			"Consumes [9] [Power] <in cities with between [80] and [90] [Population]> <in this city> <hidden from users>",
-			"Consumes [10] [Power] <in cities with between [90] and [100] [Population]> <in this city> <hidden from users>",
-			"Consumes [11] [Power] <in cities with between [100] and [110] [Population]> <in this city> <hidden from users>",
-			"Consumes [12] [Power] <in cities with between [110] and [120] [Population]> <in this city> <hidden from users>",
-			"Consumes [13] [Power] <in cities with between [120] and [130] [Population]> <in this city> <hidden from users>",
-			"Consumes [14] [Power] <in cities with between [130] and [140] [Population]> <in this city> <hidden from users>",
-			"Consumes [15] [Power] <in cities with between [140] and [150] [Population]> <in this city> <hidden from users>",
-			"Consumes [16] [Power] <in cities with between [150] and [160] [Population]> <in this city> <hidden from users>",
-			"Consumes [17] [Power] <in cities with between [160] and [170] [Population]> <in this city> <hidden from users>",
-			"Consumes [18] [Power] <in cities with between [170] and [180] [Population]> <in this city> <hidden from users>",
-			"Consumes [19] [Power] <in cities with between [180] and [190] [Population]> <in this city> <hidden from users>",
-			"Consumes [20] [Power] <in cities with between [190] and [200] [Population]> <in this city> <hidden from users>",
-			"Gain a free [Power Shortage] [in this city] <when below [0] [Power]> <upon turn start> <in this city>",
-			"Remove [Power Shortage] [in this city] <when above [0] [Power]> <upon turn start> <in this city>",
-			"Gain a free [Low Industry Electricity Cost] [in this city] <when above [0] [Industry Size]> <in this city> <when below [7] [Industry Size]> <in this city>",
-			"Gain a free [Medium Industry Electricity Cost] [in this city] <when above [7] [Industry Size]> <in this city> <when below [15] [Industry Size]> <in this city>",
-			"Gain a free [High Industry Electricity Cost] [in this city] <when above [15] [Industry Size]> <in this city>",
-			"Remove [Power Shortage] [in this city] <when above [0] [Power]>",
-			"Provides [3] [Power] <in this city> <if [Innovation of Grid Energy Storage] is constructed>"
-		],
-		"requiredTech": "Electricity"
-	},
-	{
 		"name": "Oil Power Plant",
 		"cost": 450,
 		"maintenance": 10,
@@ -5650,19 +5703,7 @@
 			"Consumes [3] [Fuel]",
 			"Only available <when above [0] [Fuel]>"
 		],
-		"requiredTech": "Electricity"
-	},
-	{
-		"name": "Coal Power Plant",
-		"cost": 450,
-		"maintenance": 10,
-		"uniques": [
-			"'Power Building'",
-			"Provides [7] [Power] <in this city>",
-			"Consumes [2] [Coal]",
-			"Only available <when above [0] [Coal]>"
-		],
-		"requiredTech": "Electricity"
+		"requiredTech": "Electrification"
 	},
 	{
 		"name": "Gas Fired Power Plant",
@@ -5675,7 +5716,7 @@
 			"Consumes [1] [Natural Gas(Stored)]",
 			"Only available <when above [0] [Natural Gas(Stored)]>"
 		],
-		"requiredTech": "Electricity"
+		"requiredTech": "Electrification"
 	},
 	{
 		"name": "Innovation of Electrical Appliances",
@@ -5691,7 +5732,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		],
 		"requiredBuilding": "Furniture Industry",
-		"requiredTech": "Electricity"
+		"requiredTech": "Electrification"
 	},
 	{
 		"name": "Invention of Professional Equipments",
@@ -5707,7 +5748,7 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		],
 		"requiredBuilding": "Machine Industry",
-		"requiredTech": "Electricity"
+		"requiredTech": "Electrification"
 	},
 	{
 		"name": "Hydro Plant",
@@ -5724,39 +5765,9 @@
 			"Provides [6] [Power] <in this city>",
 			"Must be on [River]"
 		],
-		"requiredTech": "Electricity"
+		"requiredTech": "Electrification"
 	},
-	{
-		"name": "Commercial Area",
-		"specialistSlots": {
-			"Labourer": 2,
-			"Merchant": 2,
-			"Artist": 1
-		},
-		"uniques": [
-			"Only available <before adopting [Socialism]> <before adopting [Anarchism]>",
-			"'Economic Building'",
-			"Provides [4] [Consumption Demand]",
-			"[+1 Gold] per [5] population [in this city]"
-		],
-		"requiredBuilding": "Bank",
-		"requiredTech": "Electricity"
-	},
-	{
-		"name": "Commercial Quarter",
-		"specialistSlots": {
-			"Labourer": 1,
-			"Governor": 1,
-			"Artist": 1
-		},
-		"uniques": [
-			"Only available <after adopting [Redistribution of Means of Production(Socialism)]>",
-			"'Economic Building'",
-			"Provides [2] [Consumption Demand]"
-		],
-		"requiredBuilding": "Bank",
-		"requiredTech": "Electricity"
-	},
+
 	{
 		"name": "Free Store",
 		"happiness": 3,
@@ -5770,7 +5781,7 @@
 			"Provides [1] [Consumption Supply]"
 		],
 		"requiredBuilding": "Bank",
-		"requiredTech": "Electricity"
+		"requiredTech": "Electrification"
 	},
 	{
 		"name": "Physic Lab",
@@ -5830,6 +5841,9 @@
 			"Labourer": 3
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Civilian Industry Complex] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Heavy Industry'",
 			"Provides [1] [Consumption Supply]",
 			"[+1 Production] from ['Rock'] tiles [in this city]",
@@ -5870,7 +5884,7 @@
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"quote": "'Art must not be concentrated in dead shrines called museums. It must be spread everywhere – on the streets, in the trams, factories, workshops, and in the workers' homes.' - El Lissitzky",
-		"requiredTech": "Electricity"
+		"requiredTech": "Electrification"
 	},
 	{
 		"name": "Hall of the Nation",
@@ -5888,7 +5902,7 @@
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
 		"quote": "'If you win, you need not have to explain...If you lose, you should not be there to explain!' - Austrian Mustache Man",
-		"requiredTech": "Electricity"
+		"requiredTech": "Electrification"
 	},
 	{
 		"name": "National Defense Department",
@@ -5962,6 +5976,9 @@
 			"Labourer": 2
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Civilian Industry Complex] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Heavy Industry'",
 			"Provides [2] [Fuel]",
 			"Provides [1] [Rubber]",
@@ -5977,6 +5994,9 @@
 			"Labourer": 2
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Civilian Industry Complex] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Heavy Industry'",
 			"[+1 Production] from ['Chemicals'] tiles [in this city]",
 			"Provides [1] [Industrial Chemicals] <with [Minerals]>",
@@ -6098,6 +6118,8 @@
 			"Engineer": 2
 		},
 		"uniques": [
+			"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Needs a [Industrial District]]",
 			"'Military Building'",
 			"Consumes [3] [Aluminum]",
 			"Consumes [1] [Rubber]",
@@ -6143,6 +6165,8 @@
 			"Engineer": 3
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Requires at least one Industrial Area or the [Industrial District] in this city]",
 			"'High Tech Industry'",
 			"Provides [3] [Industry Size] <in this city>",
 			"Provides [1] [Consumption Supply]",
@@ -6272,6 +6296,8 @@
 		"cost": 2500,
 		"maintenance": 100,
 		"uniques": [
+			"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Needs a [Industrial District]]",
 			"Only available <if [Nuclear Option] is constructed>",
 			"Consumes [2] [Power]",
 			"Consumes [4] [Enriched Uranium]",
@@ -6363,6 +6389,8 @@
 			"Scientist": 1
 		},
 		"uniques": [
+			"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Needs a [Industrial District]]",
 			"'Heavy Industry'",
 			"Consumes [3] [Power]",
 			"Consumes [2] [Uranium]",
@@ -6438,6 +6466,8 @@
 			"Scientist": 1
 		},
 		"uniques": [
+			"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Needs a [Industrial District]]",
 			"'Space Race Building'",
 			"Consumes [1] [Alloy]",
 			"Consumes [1] [Aluminum]",
@@ -6544,6 +6574,8 @@
 			"Labourer": 3
 		},
 		"uniques": [
+			"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Needs a [Industrial District]]",
 			"'Heavy Industry'",
 			"Consumes [3] [Power]",
 			"Provides [1] [Waste Material] <in cities with at least [10] [Population]>",
@@ -6565,6 +6597,9 @@
 			"Labourer": 3
 		},
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Civilian Industry Complex] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Heavy Industry'",
 			"Consumes [3] [Power]",
 			"Consumes [3] [Waste Material]",
@@ -6578,6 +6613,9 @@
 		"name": "Microchip Factory",
 		"maintenance": 5,
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Civilian Industry Complex] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'High Tech Industry'",
 			"Only available <in cities without a [Power Shortage]>",
 			"Consumes [4] [Power]",
@@ -6690,6 +6728,9 @@
 		"food": 5,
 		"happiness": -1,
 		"uniques": [
+			"Unavailable <without [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Civilian Industry Complex] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Light Industry'",
 			"Unsellable",
 			"Free [Great Merchant] appears",
