@@ -156,6 +156,7 @@
 			"Unavailable <in [Coast] tiles> <with [3] to [6] neighboring [{non-[Polder]} {Coast}] tiles>",
 			"Unavailable <in [Coast] tiles> <with [2] to [6] neighboring [Ocean] tiles>",
 			"Unavailable <in [Lakes] tiles> <with [3] to [6] neighboring [{non-[Polder]} {Lakes}] tiles>",
+			"Turn this tile into a [Grassland] tile",
 			"'Agricultural Improvement'",
 			"[+1 Food] <after discovering [Crop Rotation]>",
 			"Cannot be built on [{non-[Marsh]} {Land}] tiles",
@@ -560,9 +561,9 @@
 			"Forest",
 			"Jungle"
 		],
-		"gold": 4,
-		"production": 2,
-		"turnsToBuild": 4,
+		"gold": 3,
+		"production": 1,
+		"turnsToBuild": 5,
 		"uniques": [
 			"Does not need removal of [Forest]",
 			"'Policy Improvement'",
@@ -910,6 +911,8 @@
 		"uniques": [
 			"'Urban Improvement'",
 			"[+2 Production] for each adjacent ['Extraction Improvement']",
+			"[+1 Production] for each adjacent ['Infrastructure Improvement']",
+			"[+1 Production] for each adjacent ['Urban Improvement']",
 			"Provides [2] [Industrial Zone Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",
@@ -962,6 +965,7 @@
 		"uniques": [
 			"'Urban Improvement'",
 			"[+2 Science] for each adjacent ['Urban Improvement']",
+			"[+2 Science] for each adjacent [Academy]",
 			"Provides [2] [Science Park Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",

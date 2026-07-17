@@ -661,7 +661,6 @@
                 "uniques": [
                     "[+1 Happiness, +2 Culture] [in all cities] <after adopting [Polytheism]>",
                     "[+3 Faith] from every ['Worship Place'] <after adopting [Monotheism]>",
-                    "[+1 Faith, +1 Culture] <in cities with at least [5] [Population]>",
                     "Gain a free [Follower] belief"
                 ],
                 "requires": [
@@ -686,7 +685,7 @@
         "uniques": [
             "[-20]% Gold cost of upgrading <for [Military] units>",
             "[-13]% Gold cost of upgrading <for [Military] units> <after adopting [Militant]>",
-            "[+5]% Strength <for [All] units>",
+            "[+8]% Strength <for [All] units>",
             "Get the leader title of [The Superior [leaderName]]",
             "Comment [Enables you to build [Chartered Company], a 'Political/Economic Building' only available in annexed cities, copies local luxuries]",
             "Only available <before adopting [Revolution]>"
@@ -705,10 +704,10 @@
             {
                 "name": "Naval Superiority",
                 "uniques": [
+                    "[+33]% Production when constructing [Major Harbor (Improvement)] buildings [in all cities]",
+                    "[+33]% Production when constructing [Harbor Area] buildings [in all cities]",
                     "[+25]% Production when constructing ['Sailing Ship'] units [in all cities]",
                     "[+15]% Production when constructing ['Engine Ship'] units [in all cities]",
-                    "[+10]% Strength <for [Water] units>",
-                    "[+10]% Strength <for [Embarked] units>",
                     "[+8]% Production when constructing ['Sailing Ship'] units [in all cities] <after adopting [Meritocracy]>",
                     "[+5]% Production when constructing ['Engine Ship'] units [in all cities] <after adopting [Meritocracy]>"
                 ],
@@ -724,8 +723,7 @@
                     "[+25]% [Gold] [in annexed cities]",
                     "[-1 Happiness] [in annexed cities]",
                     "Gain an extra spy",
-                    "[+25]% Strength <for [All] units> <for [15] turns>",
-                    "[+2 Faith] [in annexed cities] <after adopting [Theocracy]>"
+                    "[+5 Faith] [in annexed cities] <after adopting [Proxy of the god]>"
                 ],
                 "row": 2,
                 "column": 5
@@ -762,8 +760,7 @@
             "Comment [[Revolution Oppotunity] is automatically gained upon entering Imperial era and Modern era.]",
             "Comment [During Imperial Era, You can get [United States] as your ['Civilization Form'] if you adopt this.]",
             "Triggers a [Casted Away] event <after adopting [Caste System]>",
-            "Only available <before adopting [Imperialism]>",
-            "Only available <with [Revolution Oppotunity]>"
+            "Only available <with [Revolution Oppotunity]> <before adopting [Imperialism]>"
         ],
         "policies": [
             {
@@ -780,7 +777,8 @@
                 "uniques": [
                     "New [Civilian] units start with [10] XP [in all cities]",
                     "New [Civil Ship] units start with [10] XP [in all cities]",
-                    "[+25]% growth [in all cities]"
+                    "[+25]% Production when constructing ['District Construction'] buildings [in all cities]",
+                    "[+25]% Production when constructing ['Area Construction'] buildings [in all cities]"
                 ],
                 "requires": [
                     "Long Live the Revolution!"
@@ -804,9 +802,7 @@
                 "name": "Spreading the Revolution",
                 "uniques": [
                     "Resting point for Influence with City-States is increased by [10]",
-                    "Allied City-States will occasionally gift Great People",
-                    "Allied City-States provide [Culture] equal to [10]% of what they produce for themselves",
-                    "Allied City-States provide [Science] equal to [10]% of what they produce for themselves"
+                    "Allied City-States will occasionally gift Great People"
                 ],
                 "requires": [
                     "Collective Rule"
