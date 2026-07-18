@@ -156,7 +156,6 @@
 			"Unavailable <in [Coast] tiles> <with [3] to [6] neighboring [{non-[Polder]} {Coast}] tiles>",
 			"Unavailable <in [Coast] tiles> <with [2] to [6] neighboring [Ocean] tiles>",
 			"Unavailable <in [Lakes] tiles> <with [3] to [6] neighboring [{non-[Polder]} {Lakes}] tiles>",
-			"Turn this tile into a [Grassland] tile",
 			"'Agricultural Improvement'",
 			"[+1 Food] <after discovering [Crop Rotation]>",
 			"Cannot be built on [{non-[Marsh]} {Land}] tiles",
@@ -964,8 +963,8 @@
 		],
 		"uniques": [
 			"'Urban Improvement'",
-			"[+2 Science] for each adjacent ['Urban Improvement']",
-			"[+2 Science] for each adjacent [Academy]",
+			"[+1 Science] for each adjacent ['Urban Improvement']",
+			"[+2 Science] for each adjacent [Great Improvement]",
 			"Provides [2] [Science Park Marker] <in this city> <hidden from users>",
 			"Must be next to [City center]",
 			"Removes removable features when built",
@@ -982,6 +981,7 @@
 		"science": 5,
 		"uniques": [
 			"Great Improvement",
+			"'Urban Improvement'",
 			"Comment [Enable your city to produce ['Invention'] and ['Innovation'] 33% faster after constructing a [University]]",
 			"Provides [1] [Academic Research] <hidden from users>",
 			"[+2 Science] <after discovering [Philosophy]>",
@@ -1030,6 +1030,7 @@
 			"[+2 Production] for each adjacent [Power Plant]",
 			"[+2 Production] for each adjacent [Storage Base]",
 			"Great Improvement",
+			"'Urban Improvement'",
 			"[+3 Production] <after discovering [Mass Production]>",
 			"Removes removable features when built",
 			"Pillaging this improvement yields approximately [+50 Gold]"
@@ -1044,6 +1045,7 @@
 		"uniques": [
 			"[+5 Gold] <for [AI player] Civilizations> <hidden from users>",
 			"Great Improvement",
+			"'Urban Improvement'",
 			"[+1 Gold] for each adjacent ['Infrastructure Improvement']",
 			"[+2 Gold] for each adjacent [Bonus resource]",
 			"[+4 Gold] for each adjacent [Luxury resource]",

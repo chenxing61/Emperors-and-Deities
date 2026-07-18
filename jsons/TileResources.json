@@ -33,6 +33,21 @@
 		]
 	},
 	{
+		"name": "Pollution Level",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
+			"Cannot be traded",
+			"Stockpiled"
+		],
+		"civilopediaText": [
+			{
+				"text": "See also: ED - The Industrial Ages",
+				"link": "Tutorials/ED - The Industrial Ages"
+			}
+		]
+	},
+	{
 		"name": "Influence",
 		"resourceType": "Strategic",
 		"uniques": [
@@ -79,6 +94,16 @@
 		"uniques": [
 			"Not shown on world screen <if [Hide Essential] is constructed> <if [Unified] is not constructed>",
 			"Will not be displayed in Civilopedia",
+			"Cannot be traded",
+			"Stockpiled"
+		]
+	},
+	{
+		"name": "Ideology Progress",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen <when number of [Adopted ['Ideology'] Policies] is less than [1]>",
+			"Not shown on world screen <if [Hide Essential] is constructed>",
 			"Cannot be traded",
 			"Stockpiled"
 		]
@@ -162,7 +187,8 @@
 		"resourceType": "Strategic",
 		"uniques": [
 			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
-			"Cannot be traded"
+			"Cannot be traded",
+			"Stockpiled"
 		],
 		"civilopediaText": [
 			{

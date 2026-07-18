@@ -275,8 +275,8 @@
         "name": "Scholarship",
         "era": "Classical era",
         "uniques": [
-            "[+2 Culture] per [3] population [in all cities] <in cities with at least [3] [Artist]>",
-            "[+1 Science] per [3] population [in all cities] <in cities with at least [3] [Scientist]>",
+            "[+2 Culture] per [4] population [in all cities] <in cities with at least [2] [Artist]>",
+            "[+1 Science] per [4] population [in all cities] <in cities with at least [2] [Scientist]>",
             "[+1 Happiness] per [6] population [in all cities] <in cities with at least [1] [Governor]>",
             "Get the leader title of [The Wise [leaderName]]",
             "Comment [Enables you to build [Forum], a 'Political/Cultural Building' that provides great person generation and specialist slots]"
@@ -285,8 +285,8 @@
             {
                 "name": "Inherit the Wisdom",
                 "uniques": [
-                    "[+50]% Production when constructing [{Classical era} {'Cultural Building'}] buildings [in all cities]",
-                    "[+50]% Production when constructing [{Medieval era} {'Cultural Building'}] buildings [in all cities]",
+                    "[+75]% Production when constructing [{Classical era} {'Cultural Building'}] buildings [in all cities]",
+                    "[+75]% Production when constructing [{Medieval era} {'Cultural Building'}] buildings [in all cities]",
                     "[+1 Faith] from every ['Cultural Building'] <after adopting [Early Theology]>",
                     "[+1 Culture] from every ['Political Building'] <after adopting [Codification]>"
                 ],
@@ -336,7 +336,7 @@
                 "name": "Scholarship Complete",
                 "uniques": [
                     "Instantly provides [5] [Influence]",
-                    "Free Social Policy"
+                    "Free Technology"
                 ]
             }
         ]
@@ -824,6 +824,7 @@
         "name": "Liberalism",
         "era": "Modern era",
         "uniques": [
+            "'Ideology'",
             "[+1] Happiness from each type of luxury resource",
             "Get the leader title of [The Free [leaderName]]",
             "Comment [Enables you to build [Statue of Liberty], an unique wonder that increase [Production] toward building any buildings that produce [Gold]]",
@@ -922,6 +923,7 @@
         "name": "Conservatism",
         "era": "Modern era",
         "uniques": [
+            "'Ideology'",
             "[+1 Culture] from every ['Cultural Building']",
             "Get the leader title of [The Loyal [leaderName]]",
             "Comment [Enables you to build [Cathedral of the Holy Family], an unique wonder that gives you the ability to buy any building that provides [Culture] with [Faith]]",
@@ -1016,6 +1018,7 @@
         "name": "Fascism",
         "era": "Modern era",
         "uniques": [
+            "'Ideology'",
             "Cities are razed [3] times as fast",
             "Get the leader title of [The Upmost Suprior Race, [leaderName]]",
             "Only available <if [Anti-Fascism Legacy] is not constructed> <hidden from users>",
@@ -1114,6 +1117,7 @@
         "name": "Socialism",
         "era": "Modern era",
         "uniques": [
+            "'Ideology'",
             "Triggers a [Socialist Revolution!] event",
             "Get the leader title of [The Democratic [leaderName]]",
             "Only available <after adopting [Revolution]>",
@@ -1215,6 +1219,7 @@
         "name": "Anarchism",
         "era": "Modern era",
         "uniques": [
+            "'Ideology'",
             "Triggers a [Anarchist Revolution!] event",
             "Get the leader title of [The Sovereign [leaderName]]",
             "Only available <after adopting [Revolution]>",

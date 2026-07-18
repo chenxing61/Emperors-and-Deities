@@ -399,7 +399,7 @@
 		"uniques": [
 			"'District Construction'",
 			"Cannot be purchased",
-			//"Unavailable <when less than [2] [Harbor Marker]> <in this city> <hidden from users>",
+			//"Unavailable <when below [2] [Harbor Marker]> <in this city> <hidden from users>",
 			"Must be next to [Coast]",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
@@ -415,7 +415,7 @@
 		"cost": 300,
 		"uniques": [
 			"'Area Construction'",
-			"Unavailable <when less than [2] [Harbor Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Harbor Marker]> <in this city> <hidden from users>",
 			"Must be next to [Coast]",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
@@ -430,7 +430,7 @@
 		"uniques": [
 			"'District Construction'",
 			"Cannot be purchased",
-			//"Unavailable <when less than [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			//"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Creates a [Industrial District] improvement on a specific tile",
@@ -446,7 +446,7 @@
 		"cost": 500,
 		"uniques": [
 			"'Area Construction'",
-			"Unavailable <when less than [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"[+1 Production] from [resource] tiles [in this city]",
@@ -461,7 +461,7 @@
 		"cost": 500,
 		"uniques": [
 			"'Area Construction'",
-			"Unavailable <when less than [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Provides [2] [Standing Army Maintenance]",
@@ -477,7 +477,7 @@
 		"uniques": [
 			"'District Construction'",
 			"Cannot be purchased",
-			//"Unavailable <when less than [2] [Residential Zone Marker]> <in this city> <hidden from users>",
+			//"Unavailable <when below [2] [Residential Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Creates a [Residential District] improvement on a specific tile",
@@ -492,7 +492,7 @@
 		"cost": 400,
 		"uniques": [
 			"'Area Construction'",
-			"Unavailable <when less than [2] [Residential Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Residential Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Provides [1] [Residential Zone Marker] <in this city> <hidden from users>",
@@ -511,7 +511,7 @@
 		"uniques": [
 			"'District Construction'",
 			"Cannot be purchased",
-			//"Unavailable <when less than [2] [Commercial Zone Marker]> <in this city> <hidden from users>",
+			//"Unavailable <when below [2] [Commercial Zone Marker]> <in this city> <hidden from users>",
 			"Only available <before adopting [Socialism]> <before adopting [Anarchism]>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
@@ -533,7 +533,7 @@
 		},
 		"uniques": [
 			"'Area Construction'",
-			"Unavailable <when less than [2] [Commercial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Commercial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Provides [1] [Commercial Zone Marker] <in this city> <hidden from users>",
@@ -548,7 +548,7 @@
 		"uniques": [
 			"'District Construction'",
 			"Cannot be purchased",
-			//"Unavailable <when less than [2] [Science Park Marker]> <in this city> <hidden from users>",
+			//"Unavailable <when below [2] [Science Park Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Creates a [Science Park] improvement on a specific tile",
@@ -563,7 +563,7 @@
 		"cost": 750,
 		"uniques": [
 			"'Area Construction'",
-			"Unavailable <when less than [2] [Science Park Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Science Park Marker]> <in this city> <hidden from users>",
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Provides [1] [Science Park Marker] <in this city> <hidden from users>",
@@ -4028,7 +4028,7 @@
 	},
 	{
 		"name": "Guild Complex",
-		"maintenance": 2,
+		"maintenance": 5,
 		"specialistSlots": {
 			"Labourer": 2,
 			"Engineer": 1,
@@ -4240,7 +4240,7 @@
 	//Line 13
 	{
 		"name": "Bastion",
-		"maintenance": 3,
+		"maintenance": 5,
 		"cityStrength": 20,
 		"cityHealth": 30,
 		"greatPersonPoints": {
@@ -4287,7 +4287,7 @@
 	//Line 14
 	{
 		"name": "Observatory",
-		"maintenance": 5,
+		"maintenance": 10,
 		"percentStatBonus": {
 			"science": 25
 		},
@@ -4342,6 +4342,7 @@
 	},
 	{
 		"name": "Private School",
+		"maintenance": 5,
 		"percentStatBonus": {
 			"science": 25,
 			"culture": 10,
@@ -4362,7 +4363,7 @@
 	},
 	{
 		"name": "Public School",
-		"maintenance": 5,
+		"maintenance": 10,
 		"percentStatBonus": {
 			"science": 25,
 			"culture": 15,
@@ -4451,6 +4452,7 @@
 		},
 		"uniques": [
 			"Only available <with [Harbor Marker]> <hidden from users>",
+			"Comment [Requires at least one [Harbor Area] or the [Major Harbor] in this city]",
 			"'Marine Infrastructure'",
 			"[+1]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
 			"Must be next to [Coast]"
@@ -4470,6 +4472,7 @@
 			"'Military Building'",
 			"'Marine Infrastructure'",
 			"Only available <when above [1] [Harbor Marker]> <hidden from users>",
+			"Comment [Needs a [Major Harbor]]",
 			"Comment [One more Free Levy Water Unit appears when [Call to Arms] is ordered]",
 			"Provides [2] [Standing Army Maintenance]",
 			"New [{Military} {Water}] units start with [10] XP [in this city]",
@@ -4513,7 +4516,11 @@
 			"'Infrastructure'",
 			"[-10]% Unhappiness from [Population] [in this city]",
 			"[15]% Food is carried over after population increases [in this city]",
-			"[8]% Food is carried over after population increases [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]>"
+			"[8]% Food is carried over after population increases [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
+			"Comment [Powered Effect]",
+			"Comment [-]",
+			"Comment [[8]% Food is carried over after population increases [in this city]]",
+			"Comment [-]"
 		],
 		"requiredBuilding": "City Hall",
 		"requiredTech": "Architecture"
@@ -4847,6 +4854,7 @@
 		},
 		"uniques": [
 			"Only available <when above [1] [Harbor Marker]> <hidden from users>",
+			"Comment [Needs a [Major Harbor]]",
 			"'Military Building'",
 			"Consumes [3] [Alloy]",
 			"Provides [4] [Ship Parts]",
@@ -4865,7 +4873,7 @@
 	{
 		"name": "Hospital",
 		"cost": 500,
-		"maintenance": 10,
+		"maintenance": 25,
 		"happiness": 3,
 		"uniques": [
 			"'Infrastructure'",
@@ -4921,7 +4929,7 @@
 		{
 		"name": "Power Grid",
 		"cost": 375,
-		"maintenance": 10,
+		"maintenance": 25,
 		"specialistSlots": {
 			"Labourer": 1
 		},
@@ -5323,7 +5331,7 @@
 	{
 		"name": "Furniture Industry",
 		"cost": 500,
-		"maintenance": 10,
+		"maintenance": 25,
 		"percentStatBonus": {
 			"production": 5
 		},
@@ -5363,7 +5371,7 @@
 	{
 		"name": "Firearms Industry",
 		"cost": 750,
-		"maintenance": 10,
+		"maintenance": 50,
 		"specialistSlots": {
 			"Labourer": 3,
 			"Engineer": 1
@@ -5397,7 +5405,7 @@
 	{
 		"name": "Shipmaking Industry",
 		"cost": 850,
-		"maintenance": 10,
+		"maintenance": 25,
 		"specialistSlots": {
 			"Labourer": 5,
 			"Engineer": 2
@@ -5471,7 +5479,7 @@
 	},
 	{
 		"name": "Technical School",
-		"maintenance": 3,
+		"maintenance": 10,
 		"specialistSlots": {
 			"Engineer": 1,
 			"Scientist": 1,
@@ -5608,7 +5616,7 @@
 	{
 		"name": "Oil Refinery",
 		"cost": 750,
-		"maintenance": 8,
+		"maintenance": 25,
 		"production": 2,
 		"science": 1,
 		"specialistSlots": {
@@ -5641,15 +5649,13 @@
 	},
 	{
 		"name": "Highway Network",
-		"maintenance": 5,
+		"maintenance": 10,
 		"happiness": 1,
 		"uniques": [
 			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
 			"'Infrastructure'",
-			"[+1 Happiness] <in cities with at least [10] [Population]>",
-			"[+1 Happiness] <in cities with at least [20] [Population]>",
 			"[+1]% [Gold] from Trade Routes",
-			"[+1 Production] from ['Infrastructure Improvement'] tiles [in this city]"
+			"[+1 Production] <for every [[Highway Network] Buildings by [Friendly] Civilizations]>"
 		],
 		"requiredBuilding": "Road Network",
 		"requiredTech": "Combustion"
@@ -5689,7 +5695,7 @@
 	{
 		"name": "Luxury Car Industry",
 		"cost": 1250,
-		"maintenance": 20,
+		"maintenance": 33,
 		"specialistSlots": {
 			"Labourer": 5,
 			"Engineer": 2,
@@ -5740,7 +5746,7 @@
 	{
 		"name": "Oil Power Plant",
 		"cost": 450,
-		"maintenance": 10,
+		"maintenance": 20,
 		"uniques": [
 			"'Power Building'",
 			"Provides [5] [Power] <in this city>",
@@ -5752,7 +5758,7 @@
 	{
 		"name": "Gas Fired Power Plant",
 		"cost": 450,
-		"maintenance": 10,
+		"maintenance": 20,
 		"uniques": [
 			"'Power Building'",
 			"[+2 Production] from [Natural Gas] tiles [in this city]",
@@ -5797,7 +5803,7 @@
 	{
 		"name": "Hydro Plant",
 		"cost": 600,
-		"maintenance": 5,
+		"maintenance": 10,
 		"percentStatBonus": {
 			"production": 10
 		},
@@ -5828,9 +5834,26 @@
 		"requiredTech": "Electrification"
 	},
 	{
+		"name": "Warehouse Complex",
+		"maintenance": 10,
+		"specialistSlots": {
+			"Labourer": 1
+		},
+		"uniques": [
+			"Unavailable <without [Commercial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Commercial Zone Marker]> <if [Commercial Hub] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Commercial Hub] or a [Commercial District] improvement in this city]",
+			"'Economic Building'",
+			"[+2 Gold] from every ['Light Industry']",
+			"[+1 Production] from every ['Heavy Industry']"
+		],
+		"requiredBuilding": "Warehouse",
+		"requiredTech": "Electrification"
+	},
+	{
 		"name": "Physic Lab",
 		"cost": 1000,
-		"maintenance": 5,
+		"maintenance": 25,
 		"specialistSlots": {
 			"Scientist": 1
 		},
@@ -5846,7 +5869,7 @@
 	},
 	{
 		"name": "Government Complex",
-		"maintenance": 20,
+		"maintenance": 25,
 		"happiness": 2,
 		"culture": 2,
 		"cityStrength": 5,
@@ -5878,7 +5901,7 @@
 	{
 		"name": "Cement Work",
 		"cost": 750,
-		"maintenance": 8,
+		"maintenance": 25,
 		"cityHealth": 5,
 		"specialistSlots": {
 			"Engineer": 1,
@@ -5998,7 +6021,7 @@
 	},
 	{
 		"name": "Greenhouse",
-		"maintenance": 5,
+		"maintenance": 15,
 		"percentStatBonus": {
 			"food": 25
 		},
@@ -6010,8 +6033,28 @@
 		"requiredTech": "Synthetic Materials"
 	},
 	{
+		"name": "Shopping Mall",
+		"maintenance": 15,
+		"happiness": 2,
+		"specialistSlots": {
+			"Labourer": 1,
+			"Merchant": 1
+		},
+		"uniques": [
+			"Unavailable <without [Commercial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Commercial Zone Marker]> <if [Commercial Hub] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Commercial Hub] or a [Commercial District] improvement in this city]",
+			"Only available <with [Harbor Marker]> <hidden from users>",
+			"Comment [Also Requires the [Residential Area] or [Residential District]]",
+			"'Economic Building'",
+			"Provides [4] [Consumption Demand]",
+			"[+1 Gold] per [5] population [in this city]"
+		],
+		"requiredTech": "Synthetic Materials"
+	},
+	{
 		"name": "Synthetic Oil Plant",
-		"maintenance": 8,
+		"maintenance": 25,
 		"percentStatBonus": {
 			"production": 10
 		},
@@ -6032,7 +6075,7 @@
 	},
 	{
 		"name": "Chemical Plant",
-		"maintenance": 5,
+		"maintenance": 25,
 		"specialistSlots": {
 			"Engineer": 1,
 			"Labourer": 2
@@ -6071,8 +6114,7 @@
 	},
 	{
 		"name": "Broadcast Tower",
-		"maintenance": 5,
-		"happiness": 1,
+		"maintenance": 20,
 		"percentStatBonus": {
 			"culture": 33,
 			"gold": 10
@@ -6083,23 +6125,40 @@
 		"requiredTech": "Radio"
 	},
 	{
-		"name": "Stadium",
-		"maintenance": 3,
-		"happiness": 1,
+		"name": "Telephone Circuit",
+		"maintenance": 10,
 		"uniques": [
+			"'Infrastructure'",
+			"[-1]% maintenance cost for [all] buildings [in all cities]"
+		],
+		"requiredTech": "Radio"
+	},
+	{
+		"name": "Stadium",
+		"maintenance": 15,
+		"happiness": 2,
+		"culture": 1,
+		"uniques": [
+			"Unavailable <without [Residential Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Requires at least one [Residential Area] or the [Residential District] in this city]",
 			"'Entertainment Building'",
 			"[-10]% Unhappiness from [Population] [in this city]"
 		],
 		"requiredTech": "Radio"
 	},
 	{
-		"name": "Telephone Circuit",
-		"maintenance": 3,
+		"name": "Pharmacy",
+		"maintenance": 10,
+		"happiness": 2,
+		"science": 1,
 		"uniques": [
+			"Unavailable <without [Residential Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Requires at least one [Residential Area] or the [Residential District] in this city]",
 			"'Infrastructure'",
-			"[-1]% maintenance cost for [all] buildings [in all cities]"
+			"[-33]% Food consumption by [Specialists] [in this city]"
 		],
-		"requiredTech": "Radio"
+		"requiredBuilding": "Hospital",
+		"requiredTech": "Pharmaceuticals"
 	},
 	{
 		"name": "Innovation of Instant Foods",
@@ -6137,7 +6196,8 @@
 	},
 	{
 		"name": "Bio Lab",
-		"maintenance": 10,
+		"cost": 1000,
+		"maintenance": 25,
 		"happiness": 1,
 		"specialistSlots": {
 			"Scientist": 1
@@ -6182,7 +6242,7 @@
 	},
 	{
 		"name": "Airport",
-		"maintenance": 3,
+		"maintenance": 50,
 		"happiness": 1,
 		"percentStatBonus": {
 			"gold": 10,
@@ -6201,7 +6261,7 @@
 	{
 		"name": "Electronic Industry",
 		"cost": 1350,
-		"maintenance": 20,
+		"maintenance": 25,
 		"percentStatBonus": {
 			"science": 10
 		},
@@ -6301,6 +6361,7 @@
 			"Comment [[+5]% [Production]]",
 			"Comment [after getting [LiDAR].]"
 		],
+		"requiredBuilding": "Military Base",
 		"requiredTech": "Radar"
 	},
 	{
