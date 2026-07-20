@@ -73,7 +73,7 @@
 			"Flood plains",
 			"Black Soil"
 		],
-		"food": 4,
+		"food": 5,
 		"turnsToBuild": 10,
 		"techRequired": "Fertilizer",
 		"uniques": [
@@ -189,9 +189,9 @@
 			"Forest",
 			"Jungle"
 		],
-		"food": 1,
-		"production": 1,
-		"gold": 1,
+		"food": 2,
+		"production": 3,
+		"gold": 2,
 		"turnsToBuild": 14,
 		"techRequired": "Ecology",
 		"uniques": [
@@ -789,6 +789,21 @@
 			"Cannot be built on [Land] tiles <with [2] to [6] neighboring [Canal] tiles>"
 		],
 		"techRequired": "Engineering"
+	},
+	{
+		"name": "Reforestation",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Grassland",
+			"Tundra"
+		],
+		"turnsToBuild": 10,
+		"uniques": [
+			"Turn this tile into a [Forest] tile",
+			"Cannot be built on [Forest] tiles",
+			"Cannot be built on [Jungle] tiles"
+		],
+		"techRequired": "Biology"
 	},
 	// Removals
 	// Any improvement that starts with 'Remove ' is automatically changed into
