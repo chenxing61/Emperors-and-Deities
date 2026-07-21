@@ -4988,6 +4988,10 @@
 		"name": "Food Industry",
 		"cost": 650,
 		"maintenance": 10,
+		"percentStatBonus": {
+			"food": 15,
+			"happiness": 5
+		},
 		"specialistSlots": {
 			"Labourer": 5,
 			"Scientist": 1
@@ -4997,7 +5001,7 @@
 			"Comment [Requires at least one Industrial Area or the [Industrial District] in this city]",
 			"'Light Industry'",
 			"Provides [2] [Industry Size] <in this city>",
-			"Provides [4] [Consumption Supply]",
+			"Provides [6] [Consumption Supply]",
 			//Powered
 			"[+10]% [Food] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
 			"[+5]% [Gold] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
@@ -5061,6 +5065,10 @@
 		"name": "Consumer Goods Industry",
 		"cost": 600,
 		"maintenance": 10,
+		"percentStatBonus": {
+			"gold": 10,
+			"culture": 10
+		},
 		"specialistSlots": {
 			"Labourer": 5,
 			"Engineer": 1
@@ -5071,7 +5079,7 @@
 			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Light Industry'",
 			"Provides [2] [Industry Size] <in this city>",
-			"Provides [5] [Consumption Supply]",
+			"Provides [8] [Consumption Supply]",
 			//Blowtorch lol
 			"[+1 Culture, +2 Production] per [8] population [in this city] <if [Innovation of Modern Hardwares] is constructed>",
 			//Powered
@@ -5103,6 +5111,9 @@
 		"name": "Machine Industry",
 		"cost": 1000,
 		"maintenance": 10,
+		"percentStatBonus": {
+			"production": 20
+		},
 		"specialistSlots": {
 			"Labourer": 5,
 			"Engineer": 2
@@ -5113,7 +5124,7 @@
 			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Heavy Industry'",
 			"Consumes [1] [Alloy]",
-			"Provides [1] [Consumption Supply]",
+			"Provides [2] [Consumption Supply]",
 			"Provides [3] [Industry Size] <in this city>",
 			//Machine tool goes brrrr
 			"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <if [Invention of Machine Tools] is constructed> <hidden from users>",
@@ -5171,6 +5182,9 @@
 		"name": "Vehicle Industry",
 		"cost": 850,
 		"maintenance": 10,
+		"percentStatBonus": {
+			"production": 10
+		},
 		"specialistSlots": {
 			"Labourer": 4,
 			"Engineer": 1
@@ -5243,7 +5257,7 @@
 		"maintenance": 10,
 		"happiness": 1,
 		"percentStatBonus": {
-			"gold":-5,
+			"gold": -5,
 			"happiness": 10
 		},
 		"uniques": [
@@ -5293,7 +5307,7 @@
 		"cost": 500,
 		"maintenance": 25,
 		"percentStatBonus": {
-			"production": 5
+			"production": 10
 		},
 		"specialistSlots": {
 			"Labourer": 5,
@@ -5612,7 +5626,7 @@
 			"Only available <in cities connected to the capital> <if [Vehicle Industry] is constructed>",
 			"'Infrastructure'",
 			"[+1]% [Gold] from Trade Routes",
-			"[+1 Production] <for every [[Highway Network] Buildings by [Friendly] Civilizations]>"
+			"[+1 Production] [in this city] <for every [[Highway Network] Buildings by [Friendly] Civilizations]>"
 		],
 		"requiredBuilding": "Road Network",
 		"requiredTech": "Combustion"
@@ -5803,8 +5817,8 @@
 			"Unavailable <when below [2] [Commercial Zone Marker]> <if [Commercial Hub] is not constructed> <in this city> <hidden from users>",
 			"Comment [Requires either a [Commercial Hub] or a [Commercial District] improvement in this city]",
 			"'Economic Building'",
-			"[+2 Gold] from every ['Light Industry']",
-			"[+1 Production] from every ['Heavy Industry']"
+			"[+2 Gold] from every ['Light Industry'] <in this city>",
+			"[+1 Production] from every ['Heavy Industry'] <in this city>"
 		],
 		"requiredBuilding": "Warehouse",
 		"requiredTech": "Electrification"
@@ -5821,6 +5835,7 @@
 		},
 		"uniques": [
 			"'Research Building'",
+			"Provides [2] [Industry Size] <in this city>",
 			"[Great Scientist] is earned [+1]% faster"
 		],
 		"requiredBuilding": "University",
@@ -5881,8 +5896,10 @@
 		"name": "Bicycle Lane",
 		"cost": 300,
 		"maintenance": 5,
-		"happiness":1,
-		"percentStatBonus":{"production":5},
+		"happiness": 1,
+		"percentStatBonus": {
+			"production": 5
+		},
 		"uniques": [
 			"Unavailable <without [Residential Zone Marker]> <in this city> <hidden from users>",
 			"Unavailable <if [Invention of Bicycle] is not constructed>",
