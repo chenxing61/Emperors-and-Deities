@@ -255,8 +255,10 @@
 			"Remove [Cancel Trade] [in this city] <hidden from users>",
 			"Remove [Import [Food]] [in this city] <hidden from users>",
 			"Remove [Import [Production]] [in this city] <hidden from users>",
+			"Remove [Import [Power]] [in this city] <hidden from users>",
 			"Remove [Export [Food]] [in this city] <hidden from users>",
-			"Remove [Export [Production]] [in this city] <hidden from users>"
+			"Remove [Export [Production]] [in this city] <hidden from users>",
+			"Remove [Export [Power]] [in this city] <hidden from users>"
 		]
 	},
 	{
@@ -323,6 +325,39 @@
 			"Comment [Automatically removes itself when the civilization is in high instability such as [Strife] or [Anarchy].]"
 		],
 		"requiredTech": "Mining"
+	},
+	{
+		"name": "Import [Power]",
+		"cost": 0,
+		"maintenance": 10,
+		"uniques": [
+			"'Trade Action'",
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Unavailable <in cities with a [Export [Power]]> <hidden from users>",
+			"Only available <in cities connected to the capital> <when above [0] [Power Export Route]>",
+			"Remove [Import [Power]] [in this city] <hidden from users> <upon turn start> <when below [0] [Power Export Route]>",
+			"Provides [5] [Power] <in this city>",
+			"Consumes [1] [Power Export Route]",
+			"Comment [Automatically removes itself when the export route is below 0.]"
+		],
+		"requiredTech": "Electronics"
+	},
+	{
+		"name": "Export [Power]",
+		"cost": 0,
+		"maintenance": 10,
+		"uniques": [
+			"'Trade Action'",
+			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+			"Unavailable <in cities with a [Import [Power]]> <hidden from users>",
+			"Only available <in cities connected to the capital> <when above [20] [Power]>",
+			"Remove [Export [Power]] [in this city] <hidden from users> <if [Strife] is constructed>",
+			"Remove [Export [Power]] [in this city] <hidden from users> <if [Anarchy] is constructed>",
+			"Consumes [5] [Power]",
+			"Provides [1] [Power Export Route]",
+			"Comment [Automatically removes itself when the civilization is in high instability such as [Strife] or [Anarchy].]"
+		],
+		"requiredTech": "Electronics"
 	},
 	{
 		"name": "Complete Intergration",
@@ -2181,7 +2216,7 @@
 		"requiredTech": "Horse Collar"
 	},
 	{
-		"name": "National Epic",
+		"name": "Civilizational Epic",
 		"maintenance": 3,
 		"isNationalWonder": true,
 		"culture": 5,
@@ -3813,10 +3848,10 @@
 		},
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"[-25]% Unhappiness from [Specialists] [in all cities connected to capital]",
-			"[-25]% Gold cost of acquiring tiles [in all cities connected to capital]",
-			"[+10]% Production when constructing [All] units [in all cities connected to capital]",
-			"[+10]% Production when constructing [All] buildings [in all cities connected to capital]",
+			"[-25]% Unhappiness from [Specialists] [in all cities connected to capital] <if [United] is constructed>",
+			"[-25]% Gold cost of acquiring tiles [in all cities connected to capital] <if [United] is constructed>",
+			"[+10]% Production when constructing [All] units [in all cities connected to capital] <if [United] is constructed>",
+			"[+10]% Production when constructing [All] buildings [in all cities connected to capital] <if [United] is constructed>",
 			"Only available <if [Town Hall] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [33] per owned city <if [Unified] is constructed>",
 			"Cost increases by [50] per owned city <if [Unified] is not constructed>",
@@ -4264,7 +4299,7 @@
 		"requiredTech": "Heliocentrism"
 	},
 	{
-		"name": "National Academy of Science",
+		"name": "Society of Science",
 		"isNationalWonder": true,
 		"science": 5,
 		"percentStatBonus": {
@@ -4751,7 +4786,7 @@
 		"uniques": [
 			"'Economic Building'",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
-			"[+1 Gold] from all ['Economic Building'] buildings",
+			"[+1 Gold] from all ['Economic Building'] buildings <if [United] is constructed>",
 			"Only available <if [Bank] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [33] per owned city <if [Unified] is constructed>",
 			"Cost increases by [50] per owned city <if [Unified] is not constructed>"
@@ -4767,13 +4802,13 @@
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"'Economic Building'",
-			"[+20]% [Gold] [in all cities]",
+			"[+20]% [Gold] [in all cities] <if [United] is constructed>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Economics"
 	},
 	{
-		"name": "National Museum",
+		"name": "Civilizational Museum",
 		"cost": 750,
 		"isNationalWonder": true,
 		"culture": 8,
@@ -4782,6 +4817,7 @@
 		},
 		"uniques": [
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"[+1 Culture] from all ['Cultural Building'] buildings",
 			"Only available <if [Museum] is constructed in at least [6] of [non-[Puppeted]] cities>",
 			"Cost increases by [33] per owned city <if [Unified] is constructed>",
 			"Cost increases by [50] per owned city <if [Unified] is not constructed>"
@@ -5784,9 +5820,10 @@
 			"Engineer": 1
 		},
 		"uniques": [
-			"'Renewable Energy'",
+			"'Renewable Power'",
 			"'Power Building'",
-			"Provides [6] [Power] <in this city>",
+			"Provides [5] [Power] <in this city>",
+			"Provides [3] [Power] <in this city> <after discovering [Renewable Energy]>",
 			"Must be on [River]"
 		],
 		"requiredTech": "Electrification"
@@ -5862,12 +5899,32 @@
 	},
 	{
 		"name": "Stock Exchange",
+		"maintenance":10,
 		"specialistSlots": {
 			"Merchant": 1
 		},
 		"uniques": [
+			"Unavailable <without [Commercial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Commercial Zone Marker]> <if [Commercial Hub] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Commercial Hub] or a [Commercial District] improvement in this city]",
 			"'Economic Building'",
 			"[+1 Gold] from every specialist [in this city]"
+		],
+		"requiredBuilding": "Bank",
+		"requiredTech": "Telegram"
+	},
+	{
+		"name": "Commercial Office",
+		"maintenance":10,
+		"specialistSlots": {
+			"Merchant": 1
+		},
+		"uniques": [
+			"Unavailable <when below [2] [Commercial Zone Marker]> <in this city> <hidden from users>",
+			"Comment [Requires a [Commercial District] improvement in this city]",
+			"'Economic Building'",
+			"[Gold] cost of purchasing [All] buildings [-3]%",
+			"[+1 Production] from every [Merchant] <in this city>"
 		],
 		"requiredBuilding": "Bank",
 		"requiredTech": "Telegram"
@@ -5947,10 +6004,11 @@
 		"cost": 2400,
 		"isWonder": true,
 		"greatPersonPoints": {
-			"Great Strategist": 5
+			"Great Strategist": 3
 		},
 		"percentStatBonus": {
-			"culture": 25
+			"culture": 25,
+			"happiness": 10
 		},
 		"uniques": [
 			"Only available <after adopting [Fascism]>",
@@ -5962,7 +6020,7 @@
 	{
 		"name": "National Defense Department",
 		"isNationalWonder": true,
-		"culture": 3,
+		"culture": 5,
 		"greatPersonPoints": {
 			"Great Strategist": 3
 		},
@@ -5970,8 +6028,8 @@
 			"'Military Building'",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [3] [Standing Army Maintenance]",
-			"[The Levied Army] units gain the [Stewardship] promotion",
-			"[The Levied Army] units gain the [Hardened] promotion",
+			"[The Levied Army] units gain the [Stewardship] promotion <if [United] is constructed>",
+			"[The Levied Army] units gain the [Hardened] promotion <if [United] is constructed>"
 		],
 		"quote": "'In preparing for battle I have always found that plans are useless, but planning is indispensable.' - Dwight D. Eisenhower",
 		"requiredTech": "Telegram"
@@ -6033,7 +6091,7 @@
 			"Only available <with [Residential Zone Marker]> <hidden from users>",
 			"Comment [Also Requires the [Residential Area] or [Residential District]]",
 			"'Economic Building'",
-			"Provides [4] [Consumption Demand]",
+			"Provides [2] [Consumption Demand] <for every [Worked ['Urban Improvement'] Tiles in this city]>",
 			"[+1 Gold] per [5] population [in this city]"
 		],
 		"requiredTech": "Synthetic Materials"
@@ -6072,6 +6130,7 @@
 			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Heavy Industry'",
 			"[+1 Production] from ['Chemicals'] tiles [in this city]",
+			"Provides [1] [Industrial Chemicals]",
 			"Provides [1] [Industrial Chemicals] <with [Minerals]>",
 			"Provides [1] [Industrial Chemicals] <with [Stone]>"
 		],
@@ -6504,6 +6563,7 @@
 		"happiness": 2,
 		"uniques": [
 			"'Infrastructure'",
+			"Instantly consumes [5] [Electronic Parts]",
 			"[-2]% maintenance cost for [all] buildings [in all cities]"
 		],
 		"requiredBuilding": "Telephone Circuit",
@@ -6521,11 +6581,12 @@
 		},
 		"uniques": [
 			"'Research Building'",
+			"Instantly consumes [5] [Electronic Parts]",
 			"Provides [1] [Industry Size] <in this city>",
 			"[Great Scientist] is earned [+1]% faster"
 		],
 		"requiredBuilding": "University",
-		"requiredTech": "Telecommunications"
+		"requiredTech": "Computer"
 	},
 	{
 		"name": "Studios",
@@ -6661,9 +6722,10 @@
 			"production": 5
 		},
 		"uniques": [
-			"'Renewable Energy'",
+			"'Renewable Power'",
 			"'Power Building'",
-			"Provides [5] [Power] <in this city>"
+			"Provides [4] [Power] <in this city>",
+			"Provides [4] [Power] <in this city> <after discovering [Renewable Energy]>"
 		],
 		"requiredTech": "Ecology"
 	},
@@ -6674,10 +6736,11 @@
 			"science": 5
 		},
 		"uniques": [
-			"'Renewable Energy'",
+			"'Renewable Power'",
 			"'Power Building'",
 			"Must be next to [Coast]",
-			"Provides [5] [Power] <in this city>"
+			"Provides [4] [Power] <in this city>",
+			"Provides [4] [Power] <in this city> <after discovering [Renewable Energy]>"
 		],
 		"requiredTech": "Ecology"
 	},
@@ -6757,25 +6820,7 @@
 		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying",
 		"requiredTech": "Ecology"
 	},
-	{
-		"name": "Great Dam",
-		"isWonder": true,
-		"greatPersonPoints": {
-			"Great Engineer": 3
-		},
-		"percentStatBonus": {
-			"production": 50
-		},
-		"uniques": [
-			"'Renewable Energy'",
-			"[+2 Production, +5 Gold] from all [Hydro Plant] buildings",
-			"Population loss from nuclear attacks [-15]% [in all cities]",
-			"Must have an owned [Mountain] within [2] tiles",
-			"Must be on [River]"
-		],
-		"quote": "'Use the first tier quality. Guard the first tier Dam. And get the first tier record!' - Three Gorge Dam's Slogan",
-		"requiredTech": "Ecology"
-	},
+
 	//Line 25
 	{
 		"name": "Particle Accelerator",
@@ -6789,6 +6834,7 @@
 			"[+33]% [Science] from every [Physic Lab] <in this city>",
 			"[Great Scientist] is earned [+1]% faster"
 		],
+		"requiredBuilding":"Physic Lab",
 		"requiredTech": "Particle Physics",
 		"hurryCostModifier": 50
 	},
@@ -6869,6 +6915,25 @@
 		"quote": "'I seemed to vow to myself that some day I would go to the region of ice and snow and go on and on till I came to one of the poles of the earth, the end of the axis upon which this great round ball turns.' - Ernest Shackleton"
 	},
 	{
+		"name": "Great Dam",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Engineer": 3
+		},
+		"percentStatBonus": {
+			"production": 50
+		},
+		"uniques": [
+			"'Renewable Power'",
+			"[+2 Production, +1 Science] from all [Hydro Plant] buildings",
+			"Population loss from nuclear attacks [-15]% [in all cities]",
+			"Must have an owned [Mountain] within [2] tiles",
+			"Must be on [River]"
+		],
+		"quote": "'Use the first tier quality. Guard the first tier Dam. And get the first tier record!' - Three Gorge Dam's Slogan",
+		"requiredTech": "Renewable Energy"
+	},
+	{
 		"name": "International Space Station",
 		"isWonder": true,
 		"greatPersonPoints": {
@@ -6935,11 +7000,11 @@
 		},
 		"uniques": [
 			"'Research Building'",
-			"Consumes [5] [Power]",
-			"Consumes [3] [Coal]",
+			"Provides [3] [Industry Size] <in this city>",
+			"Consumes [2] [Coal]",
 			"Provides [2] [Graphene]"
 		],
-		"requiredBuilding": "University",
+		"requiredBuilding": "Chemistry Lab",
 		"requiredTech": "Graphene"
 	},
 	{
@@ -7354,7 +7419,7 @@
 			"'Economic Building'",
 			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Only available <after adopting [Plutocracy]>",
-			"[-20]% Production when constructing [All] buildings [in this city]",
+			"[-10]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in this city]",
 			"[+1 Gold] per [5] population [in this city]",
 			"Destroyed when the city is captured"
 		],
@@ -7439,9 +7504,12 @@
 			"Merchant": 1
 		},
 		"uniques": [
+			"Unavailable <without [Commercial Zone Marker]> <in this city> <hidden from users>",
+			"Unavailable <when below [2] [Commercial Zone Marker]> <if [Commercial Hub] is not constructed> <in this city> <hidden from users>",
+			"Comment [Requires either a [Commercial Hub] or a [Commercial District] improvement in this city]",
 			"'Economic Building'",
 			"Only available <after adopting [Privatised Property]>",
-			"[-15]% Production when constructing [All] buildings [in this city]",
+			"[-15]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in this city]",
 			"[Gold] cost of purchasing [All] buildings [-2]%",
 			"Destroyed when the city is captured"
 		],
@@ -7643,22 +7711,10 @@
 	},
 	{
 		"name": "Carbon Capture",
-		"maintenance": 3,
-		"production": 1,
-		"specialistSlots": {
-			"Engineer": 1,
-			"Labourer": 1
-		},
+		"cost":2000,
 		"uniques": [
-			"Unbuildable <hidden from users>",
-			"Unsellable",
-			"'Heavy Industry'",
-			"Provides [1] [Waste Material]",
-			"[+10]% [Science] [in this city] <in cities with a [Coal Power Plant]>",
-			"[+10]% [Culture] [in this city] <in cities with a [Coal Power Plant]>",
-			"[-10]% [Production] [in this city] <in cities with a [Coal Power Plant]>",
-			"Provides [2] [Coal]",
-			"Destroyed when the city is captured"
+			"Instantly consumes [50] [Pollution] <(modified by game speed)>",
+			"Remove [Carbon Capture] [in this city]"
 		],
 		"requiredTech": "Renewable Energy"
 	},
@@ -7697,7 +7753,6 @@
 	//'Economic Policy'
 	{
 		"name": "Mercantilism",
-		"isNationalWonder": true,
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
@@ -7716,7 +7771,6 @@
 	},
 	{
 		"name": "Free Trade",
-		"isNationalWonder": true,
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
@@ -7732,7 +7786,6 @@
 	},
 	{
 		"name": "Market Interventionism",
-		"isNationalWonder": true,
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
@@ -7754,7 +7807,6 @@
 	},
 	{
 		"name": "Free Market Focus",
-		"isNationalWonder": true,
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
@@ -7771,7 +7823,6 @@
 	},
 	{
 		"name": "Corporatism Focus",
-		"isNationalWonder": true,
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
@@ -7788,7 +7839,6 @@
 	},
 	{
 		"name": "Militristic Economy",
-		"isNationalWonder": true,
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
@@ -7808,7 +7858,6 @@
 	},
 	{
 		"name": "Planned Economy",
-		"isNationalWonder": true,
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
@@ -7830,7 +7879,6 @@
 	},
 	{
 		"name": "Cooperative Economy",
-		"isNationalWonder": true,
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
@@ -7848,7 +7896,6 @@
 	},
 	{
 		"name": "Self-management Focus",
-		"isNationalWonder": true,
 		"cost": 0,
 		"uniques": [
 			"Unbuildable <hidden from users>",
@@ -7965,7 +8012,6 @@
 	//'Outcome'
 	{
 		"name": "Failed Bourgeoisie Revolution",
-		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7979,7 +8025,6 @@
 	},
 	{
 		"name": "Peaceful Bourgeoisie Revolution",
-		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -7993,7 +8038,6 @@
 	},
 	{
 		"name": "Chaotic Bourgeoisie Revolution",
-		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -8011,7 +8055,6 @@
 	},
 	{
 		"name": "Violent Bourgeoisie Revolution",
-		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -8030,7 +8073,6 @@
 	},
 	{
 		"name": "Failed Socialist Revolution",
-		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -8044,7 +8086,6 @@
 	},
 	{
 		"name": "Socialist Democracy Reform",
-		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -8057,7 +8098,6 @@
 	},
 	{
 		"name": "Worker's Socialist Revolution",
-		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -8077,7 +8117,6 @@
 	},
 	{
 		"name": "United Socialist Revolution",
-		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -8098,7 +8137,6 @@
 	},
 	{
 		"name": "Failed Anarchist Revolution",
-		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -8111,7 +8149,6 @@
 	},
 	{
 		"name": "The Last Revolution",
-		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -8122,7 +8159,6 @@
 	},
 	{
 		"name": "Anti-Fascism Legacy",
-		"isNationalWonder": true,
 		"uniques": [
 			"Unbuildable <hidden from users>",
 			"Unsellable",
@@ -9752,6 +9788,25 @@
 	},
 	//Renaissance
 	{
+		"name": "Universalismus Empire",
+		"uniques": [
+			"Limited to [1] per Civilization <hidden from users>",
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Civilization Form'",
+			"'United'",
+			"Remove [{non-[Universalismus Empire]} {'Civilization Form'}] [in all cities] <hidden from users>",
+			"Provides [50] [Influence Limit]",
+			"Provides [2] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [3] [Standing Army Maintenance]",
+			"Provides [5] [Noble Army Maintenance]",
+			"[Faith] cost of purchasing [Faith] buildings [-33]%",
+			"[+2 Faith] from every ['Political Building']",
+			"Triggers a global alert upon completion",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
 		"name": "Colonial Empire",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
@@ -9792,6 +9847,27 @@
 	},
 	//Imperial
 	{
+		"name": "Revolutionary Government",
+		"uniques": [
+			"Limited to [1] per Civilization <hidden from users>",
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Civilization Form'",
+			"'Divided'",
+			"Remove [{non-[Revolutionary Government]} {'Civilization Form'}] [in all cities] <hidden from users>",
+			"Provides [25] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [4] [Standing Army Maintenance]",
+			"[-50]% Culture cost of adopting new Policies <for [3] turns> <on [Quick] game speed> <hidden from users>",
+			"[-50]% Culture cost of adopting new Policies <for [5] turns> <on [Standard] game speed> <hidden from users>",
+			"[-50]% Culture cost of adopting new Policies <for [8] turns> <on [Epic] game speed> <hidden from users>",
+			"[-50]% Culture cost of adopting new Policies <for [10] turns> <on [Marathon] game speed> <hidden from users>",
+			"[-50]% Culture cost of adopting new Policies <for [100] turns> <on [Realistic] game speed> <hidden from users>",
+			"Comment [Halfed Policy Cost a fair amount of turns.]",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
 		"name": "Republics",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
@@ -9810,6 +9886,23 @@
 		]
 	},
 	{
+		"name": "Warlord Governments",
+		"uniques": [
+			"Limited to [1] per Civilization <hidden from users>",
+			"Unbuildable <hidden from users>",
+			"Unsellable",
+			"'Civilization Form'",
+			"'Divided'",
+			"Remove [{non-[Warlord Governments]} {'Civilization Form'}] [in all cities] <hidden from users>",
+			"Provides [30] [Influence Limit]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+			"Provides [5] [Standing Army Maintenance]",
+			"[-33]% [Culture] [in all cities]",
+			"[50]% Strength for cities",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
 		"name": "Federation",
 		"uniques": [
 			"Limited to [1] per Civilization <hidden from users>",
@@ -9821,7 +9914,7 @@
 			"Provides [35] [Influence Limit]",
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [5] [Standing Army Maintenance]",
-			"[+20]% growth [in all cities]",
+			"[+25]% growth [in all cities]",
 			"[-18]% construction time for [All] improvements <when not at war>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
