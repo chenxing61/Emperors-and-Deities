@@ -90,9 +90,21 @@
             {
                 "text": "Lesser ways to get life wrong",
                 "uniques": [
-                    "Comment [Potentially, You have lessened options to develop your civilization.]",
+                    "Comment [Potentially, You have chosen to focus development on existing civilizations. ]",
                     "Gain a free [Medium Cultural Diversity] [in capital] <when number of [Cultural Diversity] is equal to [1]> <hidden from users>",
                     "Gain a free [Low Cultural Diversity] [in capital] <when number of [Cultural Diversity] is equal to [0]> <hidden from users>",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Change in Environment",
+        "text":"As our industries exponentially grows, we are facing an unexpected outcome derived from nature itself.",
+        "choices": [
+            {
+                "text": "We reap what we sow.",
+                "uniques": [
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             }
@@ -133,6 +145,18 @@
                 "uniques": [
                     "Instantly consumes [1] [Stability] <when above [0] [Stability]>",
                     "Triggers a [Downfall of Stability] event"
+                ]
+            },
+            {
+                "text": "The environment gets better",
+                "uniques": [
+                    "Instantly consumes [1] [Pollution Level] <when above [0] [Pollution Level]>"
+                ]
+            },
+            {
+                "text": "The environment gets worse",
+                "uniques": [
+                    "Instantly provides [1] [Pollution Level] <when below [5] [Pollution Level]>"
                 ]
             }
         ]
@@ -443,6 +467,164 @@
             }
         ]
     },
+    {
+        "name": "The Great Depression",
+        "text": "As the financial bubble bursts because of [Overproduction], the stockmarket has crashed hard.",
+        "choices": [
+            {
+                "text": "We need as much aid as possible",
+                "uniques": [
+                    "Only available <when above [0] [Influence]>",
+                    "Instantly consumes [2] [Influence] <for every [Cities]>",
+                    "Gain [-150] [Gold] <for every [Cities]> <(modified by game speed)>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            
+            {
+                "text": "I wish we could do something!",
+                "uniques": [
+                    "Gain a free [Depression Hit] [in all cities]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Wasteful Habits",
+        "text": "[Overproduction] meant disposability. And it has found its way into our people's mentality.",
+        "choices": [
+            {
+                "text": "Bad habit die hard, but it must die.",
+                "uniques": [
+                    "Only available <when above [0] [Influence]>",
+                    "Instantly consumes [1] [Influence] <for every [Cities]>",
+                    "[-10]% [Happiness] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-10]% [Happiness] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-10]% [Happiness] for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            {
+                "text": "We must save the earth.",
+                "uniques": [
+                    "Only available <when above [0] [Influence]>",
+                    "Instantly consumes [2] [Influence] <for every [Cities]>",
+                    "Instantly consumes [50] [Pollution] <for every [Cities]>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Whatever floats my boat.",
+                "uniques": [
+                    "[-15]% [Production] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[+20]% Culture cost of adopting new Policies <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[Production] production falls by [15]% and Policy Cost Spikes by [20]% for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Goods Shortage",
+        "text": "The shelves are running out of goods. [Underproduction] had its effect on our people's daily lives.",
+        "choices": [
+            {
+                "text": "We must stabilise the production of necessary goods.",
+                "uniques": [
+                    "Instantly consumes [1] [Influence] <for every [Cities]>",
+                    "[-15]% [Production] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-15]% [Production] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-15]% [Production] for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Import!",
+                "uniques": [
+                    "Only available <starting from the [Modern era]>",
+                    "Instantly consumes [1] [Influence] <for every [Cities]>",
+                    "[-25]% [Gold] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-25]% [Gold] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-25]% [Gold] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-25]% [Gold] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-25]% [Gold] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-25]% [Gold] for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            {
+                "text": "I wish we could do something!",
+                "uniques": [
+                    "[-15]% [Happiness] <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-15]% [Happiness] <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-15]% [Happiness] <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-15]% [Happiness] <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-15]% [Happiness] <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-15]% [Happiness] for a fair amount of turns.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Machine Shortage",
+        "text": "Even though theres enough incentive to build new factories, [Underproduction] slowed our industrial growth!",
+        "choices": [
+            {
+                "text": "We shall intervene officially.",
+                "uniques": [
+                    "Instantly consumes [2] [Influence] <for every [Cities]>",
+                    "Gain [-200] [Gold] <for every [Cities]> <(modified by game speed)>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            {
+                "text": "If we could just buy it, why should we produce it?",
+                "uniques": [
+                    "Gain [-100] [Gold] <for every [Cities]> <(modified by game speed)>",
+                    "[-33]% Production when constructing ['Heavy Industry'] buildings [in all cities] <for [3] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Heavy Industry'] buildings [in all cities] <for [5] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Heavy Industry'] buildings [in all cities] <for [7] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Heavy Industry'] buildings [in all cities] <for [10] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Heavy Industry'] buildings [in all cities] <for [40] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Only available <starting from the [Modern era]>",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Leave it be for a while.",
+                "uniques": [
+                    "[-33]% Production when constructing ['Heavy Industry'] buildings [in all cities] <for [3] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Heavy Industry'] buildings [in all cities] <for [5] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Heavy Industry'] buildings [in all cities] <for [7] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Heavy Industry'] buildings [in all cities] <for [10] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Heavy Industry'] buildings [in all cities] <for [40] turns> <on [Realistic] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Light Industry'] buildings [in all cities] <for [3] turns> <on [Quick] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Light Industry'] buildings [in all cities] <for [5] turns> <on [Standard] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Light Industry'] buildings [in all cities] <for [7] turns> <on [Epic] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Light Industry'] buildings [in all cities] <for [10] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[-33]% Production when constructing ['Light Industry'] buildings [in all cities] <for [40] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [[-33%] Production when constructing all normal buildings for a short amount of time.]",
+                    "Instantly consumes [1] [Negative Event Count] <hidden from users>"
+                ]
+            }
+        ]
+    }
     //Barb Camp Destruction
     {
         "name": "The Barbarian's Surrender",
@@ -987,7 +1169,7 @@
             {
                 "text": "We shall dominate the Land!",
                 "uniques": [
-                    "Only available <starting from the [Renaissance era]> <before the [Industrial era]> <if [Colonial Empires] is not constructed>",
+                    "Only available <starting from the [Renaissance era]> <before the [Industrial era]> <if [Colonial Empire] is not constructed>",
                     "Comment [Although our empire has stood tall, it would be more efficient if we take the new route...]",
                     "Gain a free [Autocratic Empire] [in capital]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
@@ -996,9 +1178,9 @@
             {
                 "text": "We shall dominate the Ocean!",
                 "uniques": [
-                    "Only available <starting from the [Renaissance era]> <before the [Industrial era]> <if [Autocratic Empire] is not constructed> <if [Colonial Empires] is not constructed>",
+                    "Only available <starting from the [Renaissance era]> <before the [Industrial era]> <if [Autocratic Empire] is not constructed> <if [Colonial Empire] is not constructed>",
                     "Comment [Although our empire has stood tall, it would be more efficient if we take the new route...]",
-                    "Gain a free [Colonial Empires] [in capital]",
+                    "Gain a free [Colonial Empire] [in capital]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -1231,7 +1413,6 @@
                     "Only available <when above [9] [Influence]> <for [non-[Europa]] Civilizations>",
                     "Instantly consumes [8] [Influence]",
                     "Gain [-125] [Gold] <(modified by game speed)>",
-                    "Instantly gain [1] [Cultural Diversity]",
                     "Triggers a [Diversified Culture] event",
                     "Comment [Increase the Cultural Diversity by a level if it hasnt reached highest level yet.]",
                     "Instantly gain [1] [Cultural Diversity] <when number of [Cultural Diversity] is less than [2]> <hidden from users>",
@@ -1479,6 +1660,19 @@
                 ]
             },
             {
+                "text": "We need new jobs for the people.",
+                "uniques": [
+                    "Only available <if [Depression Hit] is constructed>",
+                    "Instantly consumes [1] [Influence] <for every [Cities]>",
+                     "[+33]% [Consumption Demand] resource production <for [6] turns> <on [Quick] game speed> <hidden from users>",
+                    "[+33]% [Consumption Demand] resource production <for [8] turns> <on [Standard] game speed> <hidden from users>",
+                    "[+33]% [Consumption Demand] resource production <for [10] turns> <on [Epic] game speed> <hidden from users>",
+                    "[+33]% [Consumption Demand] resource production <for [16] turns> <on [Marathon] game speed> <hidden from users>",
+                    "[+33]% [Consumption Demand] resource production <for [20] turns> <on [Realistic] game speed> <hidden from users>",
+                    "Comment [The number of [Consumption Demand] increases by [33]% for a fair amount of turns. Which may provide breathing rooms for our economy.]"
+                ]
+            },
+            {
                 "text": "Can we wait?",
                 "uniques": [
                     "Only available <for [non-[AI player]] Civilizations> <hidden from users>",
@@ -1584,6 +1778,74 @@
                     "Comment [[+8]% [Happiness] [in all cities]]",
                     "Comment [[-3]% [Culture] [in all cities]]",
                     "Comment [[-3]% [Science] [in all cities]]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            },
+            {
+                "text": "No Pollution",
+                "uniques": [
+                    "Only available <if [No Pollution] is constructed>",
+                    "Comment [No direct penalties – baseline environment.]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Light Pollution",
+                "uniques": [
+                    "Only available <if [Light Pollution] is constructed>",
+                    "Comment [[-10]% growth [in all cities]]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Medium Pollution",
+                "uniques": [
+                    "Only available <if [Medium Pollution] is constructed>",
+                    "Comment [[-25]% growth [in all cities]]",
+                    "Comment [[-10]% [Happiness] [in all cities]]",
+                    "Comment [[-10]% [Culture] [in all cities]]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Heavy Pollution",
+                "uniques": [
+                    "Only available <if [Heavy Pollution] is constructed>",
+                    "Comment [[-33]% growth [in all cities]]",
+                    "Comment [[-18]% [Happiness] [in all cities]]",
+                    "Comment [[-18]% [Culture] [in all cities]]",
+                    "Comment [[-10]% [Gold] [in all cities]]",
+                    "Comment [Consumes [1] [Influence]<for every [[Cities]/4]>]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Diabolical Pollution",
+                "uniques": [
+                    "Only available <if [Diabolical Pollution] is constructed>",
+                    "Comment [[-50]% growth [in all cities]]",
+                    "Comment [[-25]% [Happiness] [in all cities]]",
+                    "Comment [[-25]% [Culture] [in all cities]]",
+                    "Comment [[-20]% [Gold] [in all cities]]",
+                    "Comment [Consumes [1] [Influence]<for every [[Cities]/3]>]",
+                    "Comment [[-10]% Strength<for [All] units>]",
+                    "Comment [[-33]% [Faith] [in all cities]]",
+                    "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Inhabitable Pollution",
+                "uniques": [
+                    "Only available <if [Inhabitable Pollution] is constructed>",
+                    "Comment [[-100]% growth [in all cities]]",
+                    "Comment [[-50]% [Happiness] [in all cities]]",
+                    "Comment [[-50]% [Culture] [in all cities]]",
+                    "Comment [[-33]% [Gold] [in all cities]]",
+                    "Comment [Consumes [1] [Influence]<for every [[Cities]/2]>]",
+                    "Comment [[-20]% Strength<for [All] units>]",
+                    "Comment [[-50]% [Faith] [in all cities]]",
+                    "Comment [[-10]% [Science] [in all cities]]",
+                    "Comment [[-10]% [Production] [in all cities]]",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
                 ]
             },
@@ -2048,9 +2310,9 @@
                 ]
             },
             {
-                "text": "Colonial Empires",
+                "text": "Colonial Empire",
                 "uniques": [
-                    "Only available <if [Colonial Empires] is constructed>",
+                    "Only available <if [Colonial Empire] is constructed>",
                     "Comment [Provides [30] [Influence Limit]]",
                     "Comment [Provides [2] [Influence] <when number of [Influence] is less than [Influence Limit]>]",
                     "Comment [Provides [3] [Standing Army Maintenance]]",

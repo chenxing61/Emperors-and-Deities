@@ -63,6 +63,9 @@
         "Remove ['Outcome'] [in puppeted cities] <upon turn start> <hidden from users>",
         "Remove ['Outcome'] [in annexed cities] <upon turn start> <hidden from users>",
         "Remove [Nomadic Culture] [in all cities] <upon turn start> <for [{AI player} {Euroasian Nomads}] Civilizations> <during the [Imperial era]> <hidden from users>",
+        "[-1] Sight <for [Embarked] units>",
+        "Notified of new Barbarian encampments",
+        "[+100]% Culture cost of natural border growth [in all cities] <for [City-States] Civilizations>",
         //AI handicap
         "[+66]% Production when constructing ['Solution'] buildings [in all cities] <for [AI player] Civilizations> <hidden from users>",
         "Cannot build [{non-['Military Building']} {non-['Static Defense']} {non-[Production]}] buildings <when number of [[{non-['Levy Army']} {non-[Scout]}] Units] is less than [Cities]> <for [AI player] Civilizations> <starting from the [Ancient era]> <after discovering [Bronze Working]> <if [Anarchy] is not constructed> <hidden from users>",
@@ -86,6 +89,8 @@
         "[Gold] cost of purchasing [Civil Ship] units [+10]%",
         "[Gold] cost of purchasing [Siege] units [+10]%",
         "[Gold] cost of purchasing [{non-[Classical era]} {'Mercenary Army'}] units [+15]%",
+        "[Gold] cost of purchasing ['Innovation'] buildings [+50]%",
+        "[Gold] cost of purchasing ['Invention'] buildings [+50]%",
         "[+33]% Faith cost of generating Great Prophet equivalents",
         
         
@@ -139,14 +144,36 @@
         "[-2 Happiness] <for every [Migrating Population]> <for [non-[AI player]] Civilizations> <hidden from users>",
         "[+1] population in a random city <for [AI player] Civilizations> <when above [0] [Migrating Population]>",
         "Instantly consumes [1] [Migrating Population] <for [AI player] Civilizations> <when above [0] [Migrating Population]>",
+        
         //Stockpile grant
-        "[-1] Sight <for [Embarked] units>",
-        "Notified of new Barbarian encampments",
         "Instantly provides [1] [Iconic Brand] <upon expending a [Great Merchant] unit>",
         "Instantly provides [1] [Revolution Oppotunity] <upon entering the [Imperial era]> <hidden from users>",
         "Instantly provides [1] [Revolution Oppotunity] <upon entering the [Modern era]> <hidden from users>",
         "Instantly provides [1] [Forced Shift In Politic Chance] <upon entering a new era> <when number of [Forced Shift In Politic Chance] is less than [1]> <hidden from users>",
         "Remove [Levies Disbandment] [in capital] <when number of [[The Levied Army] Units] is less than [1]> <upon turn start> <hidden from users>",
+
+		"Set [Pollution Level] to [0] <if ['Pollution Level State'] is not constructed> <upon turn end>",
+		"Gain a free [No Pollution] [in capital] <if ['Pollution Level State'] is not constructed> <upon turn end>",
+
+        "Instantly provides [1] [Pollution Level] <upon turn start> <when number of [[Pollution] resource of [All] Civilizations] is more than [([Cities]*5)+([[Vegetation] Tiles]*5)+([Pollution Level]^1.1)*250]> <on [Quick] game speed> <when below [5] [Pollution Level]> <hidden from users>",
+        "Instantly provides [1] [Pollution Level] <upon turn start> <when number of [[Pollution] resource of [All] Civilizations] is more than [([Cities]*10)+([[Vegetation] Tiles]*10)+([Pollution Level]^1.1)*500]> <on [Standard] game speed> <when below [5] [Pollution Level]> <hidden from users>",
+        "Instantly provides [1] [Pollution Level] <upon turn start> <when number of [[Pollution] resource of [All] Civilizations] is more than [([Cities]*15)+([[Vegetation] Tiles]*15)+([Pollution Level]^1.1)*750]> <on [Epic] game speed> <when below [5] [Pollution Level]> <hidden from users>",
+        "Instantly provides [1] [Pollution Level] <upon turn start> <when number of [[Pollution] resource of [All] Civilizations] is more than [([Cities]*20)+([[Vegetation] Tiles]*20)+([Pollution Level]^1.1)*1000]> <on [Marathon] game speed> <when below [5] [Pollution Level]> <hidden from users>",
+        "Instantly provides [1] [Pollution Level] <upon turn start> <when number of [[Pollution] resource of [All] Civilizations] is more than [([Cities]*200)+([[Vegetation] Tiles]*200)+([Pollution Level]^1.1)*20000]> <on [Realistic] game speed> <when below [5] [Pollution Level]> <hidden from users>",
+
+        "Instantly consumes [1] [Pollution Level] <upon turn start> <when number of [[Pollution] resource of [All] Civilizations] is less than [([Cities]*5)+([[Vegetation] Tiles]*5)+([Pollution Level]^1.1)*250]> <on [Quick] game speed> <when above [0] [Pollution Level]> <hidden from users>",
+        "Instantly consumes [1] [Pollution Level] <upon turn start> <when number of [[Pollution] resource of [All] Civilizations] is less than [([Cities]*10)+([[Vegetation] Tiles]*10)+([Pollution Level]^1.1)*500]> <on [Standard] game speed> <when above [0] [Pollution Level]> <hidden from users>",
+        "Instantly consumes [1] [Pollution Level] <upon turn start> <when number of [[Pollution] resource of [All] Civilizations] is less than [([Cities]*15)+([[Vegetation] Tiles]*15)+([Pollution Level]^1.1)*750]> <on [Epic] game speed> <when above [0] [Pollution Level]> <hidden from users>",
+        "Instantly consumes [1] [Pollution Level] <upon turn start> <when number of [[Pollution] resource of [All] Civilizations] is less than [([Cities]*20)+([[Vegetation] Tiles]*20)+([Pollution Level]^1.1)*1000]> <on [Marathon] game speed> <when above [0] [Pollution Level]> <hidden from users>",
+        "Instantly consumes [1] [Pollution Level] <upon turn start> <when number of [[Pollution] resource of [All] Civilizations] is less than [([Cities]*200)+([[Vegetation] Tiles]*200)+([Pollution Level]^1.1)*20000]> <on [Realistic] game speed> <when above [0] [Pollution Level]> <hidden from users>",
+
+        "Gain a free [No Pollution] [in capital] <upon turn start> <when number of [Pollution Level] is equal to [0]>",
+        "Gain a free [Light Pollution] [in capital] <upon turn start> <when number of [Pollution Level] is equal to [1]>",
+        "Gain a free [Medium Pollution] [in capital] <upon turn start> <when number of [Pollution Level] is equal to [2]>",
+        "Gain a free [Heavy Pollution] [in capital] <upon turn start> <when number of [Pollution Level] is equal to [3]>",
+        "Gain a free [Diabolical Pollution] [in capital] <upon turn start> <when number of [Pollution Level] is equal to [4]>",
+        "Gain a free [Inhabitable Pollution] [in capital] <upon turn start> <when number of [Pollution Level] is equal to [5]>",
+
         //Stockpile Limits
         "[-100]% [Weapon Parts] resource production <when number of [Weapon Parts] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
         "[-100]% [Vehicle Parts] resource production <when number of [Vehicle Parts] is more than [([Cities]*10)+([[Arsenal] Buildings]*5)+([[Military Base] Buildings]*5)]> <hidden from users>",
