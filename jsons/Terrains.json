@@ -28,6 +28,7 @@
 			216
 		], //Darker87, 139, 199  Lighter59, 137, 227
 		"uniques": [
+			"Coastal Water",
 			"[+2] to Fertility for Map Generation",
 			"Considered [Desirable] when determining start locations <on water maps>",
 			"Every [60] tiles with this terrain will receive a major deposit of a strategic resource.",
@@ -457,13 +458,11 @@
 	},
 	{
 		"name": "Canal",
-		"type": "TerrainFeature",
-		"occursOn": [
-			"Coast"
-		],
+		"type": "Water",
 		"movementCost": 1,
 		"uniques": [
-			"Doesn't generate naturally"
+			"Doesn't generate naturally",
+			"Coastal Water"
 		],
 		"civilopediaText": [
 			{
