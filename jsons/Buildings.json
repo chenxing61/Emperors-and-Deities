@@ -445,6 +445,21 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Demolish Major Harbor",
+		"cost": 400,
+		"uniques": [
+			"'District Construction'",
+			"Unavailable <when below [2] [Harbor Marker]> <in this city> <hidden from users>",
+			"Cannot be purchased",
+			"Unsellable",
+			"Comment [Removes a single specified district within the city's borders.]",
+			
+			"Remove [Major Harbor (Improvement)] [in this city]",
+			"Remove [Dismantle Major Harbor] [in this city]",
+		],
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Harbor Area",
 		"cost": 300,
 		"uniques": [
@@ -471,6 +486,21 @@
 			"Remove [Military Industry Complex] [in this city]",
 		],
 		"requiredTech": "Industrialization",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Demolish Industrial District",
+		"cost": 400,
+		"uniques": [
+			"'District Construction'",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Cannot be purchased",
+			"Unsellable",
+			"Comment [Removes a single specified district within the city's borders.]",
+			
+			"Remove [Industrial District (Improvement)] [in this city]",
+			"Remove [Demolish Industrial District] [in this city]",
+		],
 		"hurryCostModifier": 25
 	},
 	{
@@ -518,6 +548,21 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Demolish Residential District",
+		"cost": 400,
+		"uniques": [
+			"'District Construction'",
+			"Unavailable <when below [2] [Residential Zone Marker]> <in this city> <hidden from users>",
+			"Cannot be purchased",
+			"Unsellable",
+			"Comment [Removes a single specified district within the city's borders.]",
+			
+			"Remove [Residential District (Improvement)] [in this city]",
+			"Remove [Demolish Residential District] [in this city]",
+		],
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Residential Area",
 		"cost": 400,
 		"uniques": [
@@ -552,6 +597,21 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Demolish Commercial District",
+		"cost": 400,
+		"uniques": [
+			"'District Construction'",
+			"Unavailable <when below [2] [Commercial Zone Marker]> <in this city> <hidden from users>",
+			"Cannot be purchased",
+			"Unsellable",
+			"Comment [Removes a single specified district within the city's borders.]",
+			
+			"Remove [Commercial District (Improvement)] [in this city]",
+			"Remove [Demolish Commercial District] [in this city]",
+		],
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Commercial Hub",
 		"cost": 500,
 		"specialistSlots": {
@@ -582,6 +642,21 @@
 			"Remove [Science Complex] [in this city]",
 		],
 		"requiredTech": "Computer",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Demolish Science Park",
+		"cost": 400,
+		"uniques": [
+			"'District Construction'",
+			"Unavailable <when below [2] [Science Park Marker]> <in this city> <hidden from users>",
+			"Cannot be purchased",
+			"Unsellable",
+			"Comment [Removes a single specified district within the city's borders.]",
+			
+			"Remove [Science Park District (Improvement)] [in this city]",
+			"Remove [Demolish Science Park] [in this city]",
+		],
 		"hurryCostModifier": 25
 	},
 	{
@@ -1721,7 +1796,14 @@
 			"[+1]% [Gold] from Trade Routes <if [Capital of Mountain Range] is constructed> <hidden from users>",
 			"[-5]% maintenance cost for [all] buildings [in this city]",
 			"All newly-trained [Settler] units [in this city] receive the [Cart] promotion",
-			"All newly-trained [Pioneer] units [in this city] receive the [Cart] promotion"
+			"All newly-trained [Pioneer] units [in this city] receive the [Cart] promotion",
+			"Comment [Enables districts to be built in this city]",
+			"Comment [Also automatically provides the corresponding district construction building if the city have acquired a district tile without constructing it]",
+			"Gain a free [Major Harbor (Improvement)] [in this city] <in cities without a [Major Harbor (Improvement)]> <when above [1] [Harbor Marker]> <in this city> <hidden from users>",
+			"Gain a free [Industrial District (Improvement)] [in this city] <in cities without a [Industrial District (Improvement)]> <when above [1] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Gain a free [Residential District (Improvement)] [in this city] <in cities without a [Residential District (Improvement)]> <when above [1] [Residential Zone Marker]> <in this city> <hidden from users>",
+			"Gain a free [Commercial District (Improvement)] [in this city] <in cities without a [Commercial District (Improvement)]> <when above [1] [Commercial Zone Marker]> <in this city> <hidden from users>",
+			"Gain a free [Science Park District (Improvement)] [in this city] <in cities without a [Science Park District (Improvement)]> <when above [1] [Science Park Marker]> <in this city> <hidden from users>",
 		],
 		"requiredTech": "Trade Network"
 	},
