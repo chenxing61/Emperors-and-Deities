@@ -104,7 +104,7 @@
 			"Flood plains",
 			"Hill",
 			"Tundra",
-			"Black Soil"
+			"Black Soil",
 		],
 		"food": 3,
 		"culture": 2,
@@ -146,7 +146,7 @@
 		"terrainsCanBeBuiltOn": [
 			"Coast",
 			"Lakes",
-			"Marsh"
+			"Marsh",
 		],
 		"food": 1,
 		"gold": 1,
@@ -187,7 +187,7 @@
 			"Hill",
 			"Tundra",
 			"Forest",
-			"Jungle"
+			"Jungle",
 		],
 		"food": 2,
 		"production": 3,
@@ -327,12 +327,13 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
 			"Forest",
 			"Jungle",
-			"Flood plains"
+			"Flood plains",
 		],
 		"turnsToBuild": 9,
 		"techRequired": "Horse Collar",
@@ -350,13 +351,14 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
 			"Snow",
 			"Forest",
 			"Jungle",
-			"Flood plains"
+			"Flood plains",
 		],
 		"turnsToBuild": 9,
 		"techRequired": "Cartridge",
@@ -375,12 +377,13 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
 			"Forest",
 			"Jungle",
-			"Flood plains"
+			"Flood plains",
 		],
 		"production": 1,
 		"science": 1,
@@ -536,7 +539,8 @@
 		"name": "Manor",
 		"terrainsCanBeBuiltOn": [
 			"Plains",
-			"Flood plains"
+			"Flood plains",
+			"Black Soil",
 		],
 		"culture": 1,
 		"happiness": 1,
@@ -584,6 +588,7 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
@@ -614,6 +619,7 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
@@ -621,7 +627,7 @@
 			"Jungle",
 			"Flood plains",
 			"Snow",
-			"Oasis"
+			"Oasis",
 		],
 		"science": 6,
 		"happiness": 1,
@@ -690,12 +696,13 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
 			"Snow",
 			"Forest",
-			"Jungle"
+			"Jungle",
 		],
 		"techRequired": "Mathematics",
 		"shortcutKey": "O"
@@ -714,12 +721,13 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
 			"Snow",
 			"Forest",
-			"Jungle"
+			"Jungle",
 		],
 		"techRequired": "Engineering",
 		"shortcutKey": "O"
@@ -784,13 +792,14 @@
 			"Snow",
 			"Flood plains",
 			"Black Soil",
+			"Oasis",
 		],
 		"turnsToBuild": 14,
 		"uniques": [
 			"'Infrastructure Improvement'",
 			"Turn this tile into a [Canal] tile",
 			"Cannot be built on [Hill] tiles",
-			"Can only be built on [Coastal] tiles",
+			"Must be next to [Water]",
 			"Cannot be built on [Land] tiles <with [2] to [6] neighboring [Canal] tiles>"
 		],
 		"techRequired": "Engineering"
@@ -812,6 +821,45 @@
 			"Cannot be built on [Jungle] tiles"
 		],
 		"techRequired": "Biology"
+	},
+	{
+		"name": "Lake Reclamation",
+		"terrainsCanBeBuiltOn": [
+			"Lakes",
+		],
+		"turnsToBuild": 14,
+		"techRequired": "Irrigation",
+		"uniques": [
+			"Turn this tile into a [Grassland] tile",
+			"Unavailable <in [Lakes] tiles> <with [4] to [6] neighboring [Lakes] tiles>",
+			"Excluded from map editor"
+		],
+	},
+	{
+		"name": "Coast Reclamation",
+		"terrainsCanBeBuiltOn": [
+			"Coast",
+		],
+		"turnsToBuild": 14,
+		"techRequired": "Irrigation",
+		"uniques": [
+			"Turn this tile into a [Grassland] tile",
+			"Unavailable <in [Coast] tiles> <with [4] to [6] neighboring [Water] tiles>",
+			"Unavailable <in [Coast] tiles> <with [1] to [6] neighboring [Ocean] tiles>",
+			"Excluded from map editor"
+		],
+	},
+	{
+		"name": "Canal Removal",
+		"terrainsCanBeBuiltOn": [
+			"Canal",
+		],
+		"turnsToBuild": 14,
+		"techRequired": "Engineering",
+		"uniques": [
+			"Turn this tile into a [Grassland] tile",
+			"Excluded from map editor"
+		],
 	},
 	// Removals
 	// Any improvement that starts with 'Remove ' is automatically changed into
@@ -915,6 +963,8 @@
 		],
 		"uniques": [
 			"'Urban Improvement'",
+			"'District Improvement'",
+			"Cannot be built on ['District Improvement'] tiles", //prevent replacing existing districts
 			"[+2 Gold] for each adjacent ['Water Improvement']",
 			"[+2 Gold] for each adjacent ['Lumber Improvement']",
 			"Provides [2] [Harbor Marker] <in this city> <hidden from users>",
@@ -932,6 +982,8 @@
 		],
 		"uniques": [
 			"'Urban Improvement'",
+			"'District Improvement'",
+			"Cannot be built on ['District Improvement'] tiles",
 			"[+2 Production] for each adjacent ['Extraction Improvement']",
 			"[+1 Production] for each adjacent ['Infrastructure Improvement']",
 			"[+1 Production] for each adjacent ['Urban Improvement']",
@@ -951,6 +1003,8 @@
 		],
 		"uniques": [
 			"'Urban Improvement'",
+			"'District Improvement'",
+			"Cannot be built on ['District Improvement'] tiles",
 			"[+1 Food, +1 Gold] for each adjacent ['Agricultural Improvement']",
 			"[+2 Gold] for each adjacent ['Infrastructure Improvement']",
 			"Provides [2] [Residential Zone Marker] <in this city> <hidden from users>",
@@ -968,6 +1022,8 @@
 		],
 		"uniques": [
 			"'Urban Improvement'",
+			"'District Improvement'",
+			"Cannot be built on ['District Improvement'] tiles",
 			"[+2 Gold] for each adjacent ['Infrastructure Improvement']",
 			"[+2 Culture] for each adjacent ['Policy Improvement']",
 			"Provides [2] [Commercial Zone Marker] <in this city> <hidden from users>",
@@ -986,6 +1042,8 @@
 		],
 		"uniques": [
 			"'Urban Improvement'",
+			"'District Improvement'",
+			"Cannot be built on ['District Improvement'] tiles",
 			"[+1 Science] for each adjacent ['Urban Improvement']",
 			"[+2 Science] for each adjacent [Great Improvement]",
 			"Provides [2] [Science Park Marker] <in this city> <hidden from users>",
