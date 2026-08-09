@@ -445,6 +445,21 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Demolish Major Harbor",
+		"cost": 400,
+		"uniques": [
+			"'District Construction'",
+			"Unavailable <when below [2] [Harbor Marker]> <in this city> <hidden from users>",
+			"Cannot be purchased",
+			"Unsellable",
+			"Comment [Removes a single specified district within the city's borders.]",
+			
+			"Remove [Major Harbor (Improvement)] [in this city]",
+			"Remove [Demolish Major Harbor] [in this city]",
+		],
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Harbor Area",
 		"cost": 300,
 		"uniques": [
@@ -474,12 +489,28 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Demolish Industrial District",
+		"cost": 400,
+		"uniques": [
+			"'District Construction'",
+			"Unavailable <when below [2] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Cannot be purchased",
+			"Unsellable",
+			"Comment [Removes a single specified district within the city's borders.]",
+			
+			"Remove [Industrial District (Improvement)] [in this city]",
+			"Remove [Demolish Industrial District] [in this city]",
+		],
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Civilian Industry Complex",
 		"cost": 500,
 		"uniques": [
 			"'Area Construction'",
 			"Unavailable <with [Industrial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
+			"Comment [Only available<in cities without a [Military Industry Complex]>]",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"[+1 Production] from [resource] tiles [in this city]",
 			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>",
@@ -495,6 +526,7 @@
 			"'Area Construction'",
 			"Unavailable <with [Industrial Zone Marker]> <in this city> <hidden from users>",
 			"Unsellable",
+			"Comment [Only available<in cities without a [Civilian Industry Complex]>]",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Provides [2] [Standing Army Maintenance]",
 			"[Military] units gain the [Modern Arms] promotion <starting from the [Modern era]>",
@@ -515,6 +547,21 @@
 			"Remove [Residential Area] [in this city]",
 		],
 		"requiredTech": "Concrete",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Demolish Residential District",
+		"cost": 400,
+		"uniques": [
+			"'District Construction'",
+			"Unavailable <when below [2] [Residential Zone Marker]> <in this city> <hidden from users>",
+			"Cannot be purchased",
+			"Unsellable",
+			"Comment [Removes a single specified district within the city's borders.]",
+			
+			"Remove [Residential District (Improvement)] [in this city]",
+			"Remove [Demolish Residential District] [in this city]",
+		],
 		"hurryCostModifier": 25
 	},
 	{
@@ -552,6 +599,21 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Demolish Commercial District",
+		"cost": 400,
+		"uniques": [
+			"'District Construction'",
+			"Unavailable <when below [2] [Commercial Zone Marker]> <in this city> <hidden from users>",
+			"Cannot be purchased",
+			"Unsellable",
+			"Comment [Removes a single specified district within the city's borders.]",
+			
+			"Remove [Commercial District (Improvement)] [in this city]",
+			"Remove [Demolish Commercial District] [in this city]",
+		],
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Commercial Hub",
 		"cost": 500,
 		"specialistSlots": {
@@ -582,6 +644,21 @@
 			"Remove [Science Complex] [in this city]",
 		],
 		"requiredTech": "Computer",
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Demolish Science Park",
+		"cost": 400,
+		"uniques": [
+			"'District Construction'",
+			"Unavailable <when below [2] [Science Park Marker]> <in this city> <hidden from users>",
+			"Cannot be purchased",
+			"Unsellable",
+			"Comment [Removes a single specified district within the city's borders.]",
+			
+			"Remove [Science Park District (Improvement)] [in this city]",
+			"Remove [Demolish Science Park] [in this city]",
+		],
 		"hurryCostModifier": 25
 	},
 	{
@@ -1546,6 +1623,7 @@
 		"uniques": [
 			"Only available <after adopting [Belief in Sun]>",
 			"'Worship Place'",
+			"Comment [Gives a small amount of [Faith] and [Culture] upon Unifing]"
 		],
 		"requiredTech": "Bronze Working",
 		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
@@ -1721,7 +1799,14 @@
 			"[+1]% [Gold] from Trade Routes <if [Capital of Mountain Range] is constructed> <hidden from users>",
 			"[-5]% maintenance cost for [all] buildings [in this city]",
 			"All newly-trained [Settler] units [in this city] receive the [Cart] promotion",
-			"All newly-trained [Pioneer] units [in this city] receive the [Cart] promotion"
+			"All newly-trained [Pioneer] units [in this city] receive the [Cart] promotion",
+			"Comment [Enables districts to be built in this city in later eras.]",
+			"Comment [Also automatically provides the corresponding district construction building if the city have acquired a district tile without constructing it.]",
+			"Gain a free [Major Harbor (Improvement)] [in this city] <in cities without a [Major Harbor (Improvement)]> <when above [1] [Harbor Marker]> <in this city> <hidden from users>",
+			"Gain a free [Industrial District (Improvement)] [in this city] <in cities without a [Industrial District (Improvement)]> <when above [1] [Industrial Zone Marker]> <in this city> <hidden from users>",
+			"Gain a free [Residential District (Improvement)] [in this city] <in cities without a [Residential District (Improvement)]> <when above [1] [Residential Zone Marker]> <in this city> <hidden from users>",
+			"Gain a free [Commercial District (Improvement)] [in this city] <in cities without a [Commercial District (Improvement)]> <when above [1] [Commercial Zone Marker]> <in this city> <hidden from users>",
+			"Gain a free [Science Park District (Improvement)] [in this city] <in cities without a [Science Park District (Improvement)]> <when above [1] [Science Park Marker]> <in this city> <hidden from users>",
 		],
 		"requiredTech": "Trade Network"
 	},
@@ -5944,7 +6029,7 @@
 			"Comment [Requires at least one [Residential Area] or the [Residential District] in this city]",
 			"'Infrastructure'",
 			"[1]% [Fuel] resource production <when above [0] [Fuel]>",
-			"Comment [Consumes [5] [Pollution] <(modified by game speed)>] <Civilopedia link [Resources/Pollution]>",
+			"Comment [Consumes [5] [Pollution]<(modified by game speed)>] <Civilopedia link [Resources/Pollution]>",
 			"Provides [-5] [Pollution] <(modified by game speed)> <hidden from users>",
 		],
 		"requiredTech": "Concrete"
@@ -6494,7 +6579,7 @@
 			"[+1 Culture] from [Fresh water] tiles [in this city]",
 			"[+1 Culture] from [River] tiles [in this city]",
 			"[20]% Food is carried over after population increases [in this city]",
-			"Comment [Consumes [20] [Pollution] <(modified by game speed)>] <Civilopedia link [Resources/Pollution]>",
+			"Comment [Consumes [20] [Pollution]<(modified by game speed)>] <Civilopedia link [Resources/Pollution]>",
 			"Provides [-20] [Pollution] <(modified by game speed)> <hidden from users>",
 		],
 		"requiredBuilding": "Sewer",
@@ -6738,7 +6823,7 @@
 			"Provides [1] [Waste Material] <in cities with at least [60] [Population]>",
 			"Provides [1] [Waste Material] <in cities with at least [70] [Population]>",
 			"Provides [1] [Waste Material] <in cities with at least [80] [Population]>",
-			"Comment [Consumes [10] [Pollution] <(modified by game speed)>] <Civilopedia link [Resources/Pollution]>",
+			"Comment [Consumes [10] [Pollution]<(modified by game speed)>] <Civilopedia link [Resources/Pollution]>",
 			"Provides [-10] [Pollution] <(modified by game speed)> <hidden from users>",
 		],
 		"requiredTech": "Ecology"
@@ -6760,7 +6845,7 @@
 			"Provides [2] [Alloy]",
 			"Provides [1] [Aluminum]",
 			"Provides [1] [Industrial Chemicals]",
-			"Comment [Consumes [10] [Pollution] <(modified by game speed)>] <Civilopedia link [Resources/Pollution]>",
+			"Comment [Consumes [10] [Pollution]<(modified by game speed)>] <Civilopedia link [Resources/Pollution]>",
 			"Provides [-10] [Pollution] <(modified by game speed)> <hidden from users>",
 		],
 		"requiredTech": "Ecology"
