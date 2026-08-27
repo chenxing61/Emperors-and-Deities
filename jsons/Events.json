@@ -233,7 +233,7 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Instantly consumes [3] [Influence]",
+                    "Instantly consumes [3] [Influence] <for every [2] [Cities]>",
                     "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
@@ -255,7 +255,7 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Instantly consumes [3] [Influence]",
+                    "Instantly consumes [3] [Influence] <for every [2] [Cities]>",
                     "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
@@ -277,7 +277,7 @@
                 "text": "We need to take precaution!",
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
-                    "Instantly consumes [3] [Influence]",
+                    "Instantly consumes [3] [Influence] <for every [2] [Cities]>",
                     "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
@@ -525,7 +525,7 @@
                 "uniques": [
                     "Only available <when above [0] [Influence]>",
                     "Instantly consumes [2] [Influence] <for every [Cities]>",
-                    "Instantly consumes [50] [Pollution] <for every [Cities]>",
+                    "Instantly consumes [25] [Pollution] <for every [Cities]>",
                     "Instantly consumes [1] [Negative Event Count] <hidden from users>"
                 ]
             },
@@ -864,6 +864,15 @@
                     "Instantly consumes [1] [State Reform Chance] <hidden from users>",
                     "Instantly consumes [3] [Influence] <for every [Cities]>",
                     "Triggers a [Reformation of the unified state] event"
+                ]
+            },
+            {
+                "text": "Social Reform",
+                "uniques": [
+                    "Only available <when number of [State Reform Chance] is more than [0]>",
+                    "Play [policy] sound <hidden from users>",
+                    "Instantly consumes [1] [State Reform Chance] <hidden from users>",
+                    "Triggers a [Reformation of our society] event"
                 ]
             },
             {
@@ -1219,6 +1228,46 @@
                     "Instantly provides [3] [Influence] <for every [[Cities]/2]>",
                     "Play [whoosh] sound",
                     "Triggers a [Present Current Status] event <for [Human player] Civilizations> <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Reformation of our society",
+        "text": "As the society develops, the social structure of our civilization began to shift.",
+        "choices": [
+            {
+                "text": "Focus on expanding the faith",
+                "uniques": [
+                    "Unavailable <before founding a religion>",
+                    "[2] free [Missionary] units appear"
+                ]
+            },
+            {
+                "text": "Focus on empowering the leadership",
+                "uniques": [
+                    "Unavailable <after adopting [Anarchism]>",
+                    "Instantly gain [20] [Influence]"
+                ]
+            },
+            {
+                "text": "Focus on civic advancement",
+                "uniques": [
+                    "Instantly gain [33] [Culture] <for every [Cities]> <(modified by game speed)>"
+                ]
+            },
+            {
+                "text": "Focus on developing trade",
+                "uniques": [
+                    "Unavailable <before discovering [Currency]>",
+                    "Instantly gain [50] [Gold] <for every [Cities]> <(modified by game speed)>"
+                ]
+            },
+            {
+                "text": "Focus on mitigating incoming societal issue",
+                "uniques": [
+                    "Comment [This can avoid negative events that natrually occurs because of change of era, but if unhappiness presists, there are still risks of more negative events.]",
+                    "Set [Negative Event Count] to [0] <hidden from users>"
                 ]
             }
         ]
@@ -2711,7 +2760,7 @@
                 "text": "Purity of our nation is the reason why we stood fast to this era.",
                 "uniques": [
                     "Only available <when above [10] [Influence]> <when number of [Cultural Diversity] is more than [0]> <hidden from users>",
-                    "Instantly consumes [10] [Influence]",
+                    "Instantly consumes [3] [Influence] <for every [Cities]>",
                     "[+5]% Culture cost of adopting new Policies <for [3] turns> <on [Quick] game speed>",
                     "[+5]% Culture cost of adopting new Policies <for [4] turns> <on [Standard] game speed>",
                     "[+5]% Culture cost of adopting new Policies <for [5] turns> <on [Epic] game speed>",
@@ -2726,7 +2775,7 @@
                 "text": "Time to trim the leaves...",
                 "uniques": [
                     "Only available <if [Unified] is constructed> <when number of [Cultural Diversity] is more than [0]> <when number of [Influence] is more than [[Influence Limit]/2]> <hidden from users>",
-                    "Instantly consumes [25] [Influence]",
+                    "Instantly consumes [5] [Influence] <for every [Cities]>",
                     "[-1] population in a random city <for every [Cities]>",
                     "Gain [200] [Gold] <(modified by game speed)>",
                     "Comment [Decrease the Cultural Diversity by a level if it hasnt reached lowest level yet.]",
@@ -2743,6 +2792,26 @@
                     "Play [whoosh] sound"
                 ]
             }
+        ]
+    },
+    {
+        "name": "Exploration Focus",
+        "text": "To begin our grand exploration, we must have a clear judgement of what we are dealing with.",
+        "choices": [
+            {
+                "text": "We shall find new oppotunities across the ocean.",
+                "uniques": [
+                    "Gain a free [Exploration Focus - Across the Ocean] [in capital]",
+                    "Free [Pioneer] appears"
+                ]
+            },
+            {
+                "text": "We shall find new oppotunities in the vast wild.",
+                "uniques": [
+                    "Gain a free [Exploration Focus - Across the Wilderness] [in capital]",
+                    "Free [Pioneer] appears"
+                ]
+            },
         ]
     },
     {
@@ -3565,7 +3634,16 @@
                 "text": "Our glorious empire",
                 "uniques": [
                     "Comment [Flower and Beauty doesnt keep our splendor. Iron and Blood Does!]",
-                    "Only available <after adopting [Imperialism]>",
+                    "Only available <after adopting [Colonialism]>",
+                    "[2] free [Elite Guard] units appear",
+                    "Gain a free [Pride and Prejudice] [in capital]"
+                ]
+            }
+            {
+                "text": "Our glorious empire",
+                "uniques": [
+                    "Comment [Flower and Beauty doesnt keep our splendor. Iron and Blood Does!]",
+                    "Only available <after adopting [Nationalism]>",
                     "[2] free [Elite Guard] units appear",
                     "Gain a free [Pride and Prejudice] [in capital]"
                 ]

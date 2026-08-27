@@ -58,7 +58,7 @@
             {
                 "name": "Polytheism Complete",
                 "uniques": [
-                    "Instantly provides [5] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "Gain a free [Pantheon] belief"
                 ]
             }
@@ -124,7 +124,7 @@
             {
                 "name": "Monotheism Complete",
                 "uniques": [
-                    "Instantly provides [5] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "Gain a free [Pantheon] belief <for [South Asia] Civilizations> <hidden from users>",
                     "Gain a free [Follower] belief <upon enhancing a Religion>"
                 ]
@@ -197,7 +197,7 @@
             {
                 "name": "Unity Complete",
                 "uniques": [
-                    "Instantly provides [5] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "Free Great Person"
                 ]
             }
@@ -264,7 +264,7 @@
             {
                 "name": "Militant Complete",
                 "uniques": [
-                    "Instantly provides [5] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[+25]% XP gained from combat",
                     "Free [Great Commander] appears"
                 ]
@@ -335,7 +335,7 @@
             {
                 "name": "Scholarship Complete",
                 "uniques": [
-                    "Instantly provides [5] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "Free Technology"
                 ]
             }
@@ -403,8 +403,8 @@
             {
                 "name": "Plutocracy Complete",
                 "uniques": [
-                    "Instantly provides [5] [Influence]",
-                    "[+50]% resources gifted by City-States",
+                    "Instantly provides [1] [State Reform Chance]",
+                    "[+100]% resources gifted by City-States",
                     "[+50]% Gold from Great Merchant trade missions"
                 ]
             }
@@ -471,7 +471,7 @@
             {
                 "name": "Meritocracy Complete",
                 "uniques": [
-                    "Instantly provides [5] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[-17]% Culture cost of adopting new Policies"
                 ]
             }
@@ -536,7 +536,7 @@
             {
                 "name": "Feudalism Complete",
                 "uniques": [
-                    "Instantly provides [5] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "Militaristic City-States grant units [2] times as fast when you are at war with a common nation",
                     "[+10]% Strength <for ['Noble Army'] units>"
                 ]
@@ -603,7 +603,7 @@
             {
                 "name": "Theocracy Complete",
                 "uniques": [
-                    "Instantly provides [5] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[+25]% Natural religion spread [in all non-occupied cities]",
                     "[+33]% Production when constructing ['Organise Place'] buildings [in all cities connected to capital]",
                     "Gain a free [Enhancer] belief"
@@ -615,7 +615,7 @@
         "name": "Humanism",
         "era": "Renaissance era",
         "uniques": [
-            "[+1 Happiness] per [6] population [in all cities] <in cities with at least [20] [Population]>",
+            "[+1 Happiness] per [5] population [in all cities] <in cities with at least [15] [Population]>",
             "Get the leader title of [The Open-minded [leaderName]]",
             "Comment [Enables you to build [Printing House], a ['Cultural Building'] that gives various bonuses]"
         ],
@@ -632,7 +632,7 @@
             {
                 "name": "Education Focus",
                 "uniques": [
-                    "[+1 Science] per [6] population [in all cities] <in cities with at least [20] [Population]>",
+                    "[+1 Science] per [6] population [in all cities] <in cities with at least [18] [Population]>",
                     "[-1 Gold, +1 Culture] from every ['Educational Building']",
                     "[+1 Culture, +1 Happiness] from every ['Worship Place'] <after adopting [Theocracy]>"
                 ],
@@ -673,80 +673,142 @@
             {
                 "name": "Humanism Complete",
                 "uniques": [
-                    "Instantly provides [5] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[+25]% Golden Age length"
                 ]
             }
         ]
     },
     {
-        "name": "Imperialism",
+        "name": "Colonialism",
         "era": "Renaissance era",
         "uniques": [
-            "[-20]% Gold cost of upgrading <for [Military] units>",
-            "[-13]% Gold cost of upgrading <for [Military] units> <after adopting [Militant]>",
-            "[+8]% Strength <for [All] units>",
-            "Get the leader title of [The Superior [leaderName]]",
-            "Comment [Enables you to build [Chartered Company], a 'Political/Economic Building' only available in annexed cities, copies local luxuries]",
-            "Only available <before adopting [Revolution]>"
+            "[+50]% Production when constructing [Settler] units [in all cities]",
+            "[+50]% Production when constructing [Pioneer] units [in all cities]",
+            "[+50]% Production when constructing [Nomadic Settler] units [in all cities]",
+            "Triggers a [Exploration Focus] event",
+            "Get the leader title of [The Ambitious [leaderName]]"
         ],
         "policies": [
             {
-                "name": "Colonialism",
+                "name": "Exploration Funds",
                 "uniques": [
-                    "Comment [Enables you to build [Colony Plantation], An 'Policy Improvement' that generates lots of [Gold]]",
-                    "[+1] Movement <for [Settler] units>",
-                    "[+1] Movement <for [Pioneer] units>"
+                    "[+1] Sight <for [Scout] units>",
+                    "[+1 Science, -1 Gold] from every ['Marine Infrastructure'] <if [Exploration Focus - Across the Ocean] is constructed>",
+                    "[+1 Science, -1 Gold] from every ['Economic Building'] <if [Exploration Focus - Across the Wilderness] is constructed>"
                 ],
                 "row": 1,
-                "column": 3
+                "column": 2
             },
+
             {
-                "name": "Naval Superiority",
+                "name": "Colonial Craze",
                 "uniques": [
-                    "[+33]% Production when constructing [Major Harbor (Improvement)] buildings [in all cities]",
-                    "[+33]% Production when constructing [Harbor Area] buildings [in all cities]",
-                    "[+25]% Production when constructing ['Sailing Ship'] units [in all cities]",
-                    "[+15]% Production when constructing ['Engine Ship'] units [in all cities]",
-                    "[+8]% Production when constructing ['Sailing Ship'] units [in all cities] <after adopting [Meritocracy]>",
-                    "[+5]% Production when constructing ['Engine Ship'] units [in all cities] <after adopting [Meritocracy]>"
+                    "[+1] Movement <for [Settler] units>",
+                    "[+1] Movement <for [Pioneer] units>",
+                    "[+1] Movement <for [Nomadic Settler] units>",
+                    "Comment [[Colony] instantly provides a fair amount of [Faith] upon being constructed<after adopting [Sanctity]>]",
+                    "Instantly provides [1] [Influence] <upon turn start> <when number of [Influence] is less than [Influence Limit]> <for every [3] [Owned [Colony] Tiles]> <after adopting [Vassalage]> <hidden from users>",
+                    "Comment [Every [3] [Colony] provides [1] [Influence]<after adopting [Vassalage]>]"
                 ],
                 "requires": [
-                    "Colonialism"
-                ],
-                "row": 2,
-                "column": 1
-            },
-            {
-                "name": "Iron Fists",
-                "uniques": [
-                    "[+25]% [Gold] [in annexed cities]",
-                    "[-1 Happiness] [in annexed cities]",
-                    "Gain an extra spy",
-                    "[+5 Faith] [in annexed cities] <after adopting [Proxy of the god]>"
+                    "Exploration Funds"
                 ],
                 "row": 2,
                 "column": 5
             },
             {
-                "name": "Nationalism",
+                "name": "Colonial Exploitation",
                 "uniques": [
-                    "[+3 Culture] from every [Palace]",
-                    "[+5]% [Culture] from every [Wonder]",
-                    "[+2 Culture] from every ['Military Building'] <after adopting [Knighthood]>"
+                    "[+2 Culture, +1 Science, +2 Production, +2 Food] from every [Colony] <after adopting [Supervisory System]>",
+                    "Comment [Enables you to build [Colony Plantation], An 'Policy Improvement' that generates lots of [Gold]]",
+                    "Comment [Enables you to build [Chartered Company], a 'Political/Economic Building' only available in annexed cities, copies local luxuries]"
                 ],
-                "row": 3,
                 "requires": [
-                    "Iron Fists"
+                    "Exploration Funds"
                 ],
-                "column": 3
+                "row": 2,
+                "column": 1
             },
             {
-                "name": "Imperialism Complete",
+                "name": "Global Empire",
                 "uniques": [
-                    "Instantly provides [5] [Influence]",
-                    "[+15]% [Science] <while the empire is happy>",
-                    "[+15]% [Culture] <while the empire is happy>"
+                    "[Gold] cost of purchasing items in cities [-1]% <for every [[Luxury] resource of [Friendly] Civilizations]>",
+                    "[+1] Movement <for [Embarked] units>",
+                    "[+10]% Strength <for [Ranged Combat Ship] units> <if [Exploration Focus - Across the Ocean] is constructed>",
+                    "[+10]% Strength <for [Rider] units> <if [Exploration Focus - Across the Wilderness] is constructed>"
+                ],
+                "requires": [
+                    "Colonial Craze",
+                    "Colonial Exploitation"
+                ],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "Colonialism Complete",
+                "uniques": [
+                    "Instantly provides [1] [State Reform Chance]",
+                    "[+100]% Production when constructing [Major Harbor (Improvement)] buildings [in all cities]",
+                    "[+100]% Production when constructing [Harbor Area] buildings [in all cities]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Nationalism",
+        "era": "Renaissance era",
+        "uniques": [            
+            "[-33]% Gold cost of upgrading <for [Military] units>",
+            "Get the leader title of [The Superior [leaderName]]"
+        ],
+        "policies": [
+            {
+                "name": "National Identity",
+                "uniques": [
+                    "[+5]% [Culture] from every [Wonder]",
+                    "[+1] XP gained from combat <if [Unified] is not constructed>",
+                    "[+25]% Strength <for ['Levy Army'] units> <if [Unified] is constructed>",
+                    "[+2 Culture] from every ['Military Building'] <after adopting [Knighthood]>"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "National Pride",
+                "uniques": [
+                    "[+1]% growth [in all cities] <for every [['Civilization Anchor'] Buildings]>",
+                    "[+10]% [Science] <while the empire is happy>",
+                    "[+10]% [Culture] <while the empire is happy>",
+                    "[+10]% [Faith] <while the empire is happy> <after adopting [Theology Conferences]>"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Cultural Unity",
+                "uniques": [
+                    "Gain a free [Civil Expansion] [in all cities] <when above [50] [Influence]> <when above [3] [Stability]>",
+                    "Free Great Person <after adopting [Court of Scholars]>"
+                ],
+                "row": 3,
+                "column": 1
+            },
+            {
+                "name": "Pan-nationalism",
+                "uniques": [
+                    "[+25]% Strength <when attacking> <when fighting units from a Civilization with more Cities than you> <when above [25] [Influence]>",
+                    "Gain an extra spy",
+                    "[+50]% Production when constructing [Complete Intergration] buildings [in all cities]"
+                ],
+                "row": 3,
+                "column": 5
+            },
+            {
+                "name": "Nationalism Complete",
+                "uniques": [
+                    "Instantly provides [1] [State Reform Chance]",
+                    "[-50]% maintenance cost for ['Cultural Building'] buildings [in all cities]"
                 ]
             }
         ]
@@ -759,8 +821,8 @@
             "Get the leader title of [[leaderName], the liberator of]",
             "Comment [[Revolution Oppotunity] is automatically gained upon entering Imperial era and Modern era.]",
             "Comment [During Imperial Era, You can get [United States] as your ['Civilization Form'] if you adopt this.]",
-            "Triggers a [Casted Away] event <after adopting [Caste System]>",
-            "Only available <with [Revolution Oppotunity]> <before adopting [Imperialism]>"
+            "Triggers a [Casted Away] event <after adopting [Caste System]> <hidden from users>",
+            "Only available <with [Revolution Oppotunity]>"
         ],
         "policies": [
             {
@@ -813,7 +875,7 @@
             {
                 "name": "Revolution Complete",
                 "uniques": [
-                    "Instantly provides [5] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[-10]% Culture cost of adopting new Policies",
                     "[-5]% Culture cost of adopting new Policies <after adopting [Humanism]>"
                 ]
@@ -912,7 +974,7 @@
             {
                 "name": "Liberalism Complete",
                 "uniques": [
-                    "Instantly provides [10] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[+33]% Yield from every [Great Improvement]",
                     "[50]% of excess happiness converted to [Science]"
                 ]
@@ -1007,7 +1069,7 @@
             {
                 "name": "Conservatism Complete",
                 "uniques": [
-                    "Instantly provides [10] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[+100]% [Noble Army Maintenance] resource production",
                     "[-33]% spy effectiveness [in all cities]"
                 ]
@@ -1107,7 +1169,7 @@
             {
                 "name": "Fascism Complete",
                 "uniques": [
-                    "Instantly provides [10] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[+23]% growth [in all cities]"
                 ]
             }
@@ -1208,7 +1270,7 @@
             {
                 "name": "Socialism Complete",
                 "uniques": [
-                    "Instantly provides [10] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[+1 Production] from every ['Extraction Improvement']",
                     "[+1 Science, +1 Production] from every ['Educational Building']"
                 ]
@@ -1302,7 +1364,7 @@
             {
                 "name": "Anarchism Complete",
                 "uniques": [
-                    "Instantly provides [10] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[+1 Happiness] from every [Labourer]",
                     "[-33]% Food consumption by [Specialists] [in all cities]"
                 ]
@@ -1368,7 +1430,7 @@
             {
                 "name": "Sustainability Complete",
                 "uniques": [
-                    "Instantly provides [10] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "Empire enters golden age",
                     "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
                     "[+25]% Great Person generation [in all cities]"
@@ -1431,7 +1493,7 @@
             {
                 "name": "Digitization Complete",
                 "uniques": [
-                    "Instantly provides [10] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[+100]% [Electronic Parts] resource production",
                     "[+100]% [Microchips] resource production"
                 ]
@@ -1503,7 +1565,7 @@
             {
                 "name": "Space Race Complete",
                 "uniques": [
-                    "Instantly provides [10] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[2] Free Technologies"
                 ]
             }
@@ -1574,7 +1636,7 @@
             {
                 "name": "Automation Complete",
                 "uniques": [
-                    "Instantly provides [10] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[+1 Faith] [in all cities]"
                 ]
             }
@@ -1644,7 +1706,7 @@
             {
                 "name": "Transhumanism Complete",
                 "uniques": [
-                    "Instantly provides [10] [Influence]",
+                    "Instantly provides [1] [State Reform Chance]",
                     "[+1 Faith] [in all cities]"
                 ]
             }

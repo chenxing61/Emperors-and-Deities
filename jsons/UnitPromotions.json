@@ -32,7 +32,8 @@
 		"name": "Stewardship",
 		"uniques": [
 			"[+5]% XP gained from combat",
-			"[This Unit] gains the [Well Supplied] status for [2] turn(s) <upon entering a ['Urban Improvement'] tile>"
+			"[This Unit] gains the [Well Supplied] status for [2] turn(s) <upon entering a ['Urban Improvement'] tile>",
+			"Gain control over [all] tiles in a [1]-tile radius <in [{Enemy Land} {Colony}] tiles>"
 		],
 		"unitTypes": [
 			"Siege",
@@ -2969,6 +2970,12 @@
 		"uniques": [
 			"Withdraws before melee combat <with [75]% chance>",
 			"[+33]% Strength <when fighting in [Rough terrain] tiles>"
+		]
+	},
+	{
+		"name": "Colonizer",
+		"uniques": [
+			"Can instantly construct a [Colony] improvement <[1] times> <in tiles not adjacent to [Colony] tiles>"
 		]
 	},
 	{
