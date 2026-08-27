@@ -529,7 +529,6 @@
 			"Comment [Only available<in cities without a [Civilian Industry Complex]>]",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Provides [2] [Standing Army Maintenance]",
-			"[Military] units gain the [Modern Arms] promotion <starting from the [Modern era]>",
 			"Provides [1] [Industrial Zone Marker] <in this city> <hidden from users>",
 		],
 		"requiredTech": "Industrialization",
@@ -3649,12 +3648,13 @@
 	{
 		"name": "Elite Barrack",
 		"isNationalWonder": true,
-		"maintenance": 3,
+		"maintenance": 5,
 		"culture": 1,
 		"cityStrength": 5,
 		"uniques": [
 			"'Military Building'",
-			"Provides [3] [Standing Army Maintenance]",
+			"Provides [2] [Standing Army Maintenance]",
+			"Provides [1] [Noble Army Maintenance]",
 			"All newly-trained [Military] units [in this city] receive the [Elite Training] promotion"
 		],
 		"requiredBuilding": "Barrack",
@@ -4819,6 +4819,7 @@
 		"uniques": [
 			"'Military Building'",
 			"New [Military] units start with [15] XP [in this city]",
+			"[Military] units gain the [Modern Arms] promotion <starting from the [Modern era]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Military Science"
@@ -6030,7 +6031,7 @@
 			"'Infrastructure'",
 			"[1]% [Fuel] resource production <when above [0] [Fuel]>",
 			"Comment [Consumes [5] [Pollution]<(modified by game speed)>]<Civilopedia link [Resources/Pollution]>",
-			"Provides [-5] [Pollution] <(modified by game speed)> <hidden from users>",
+			"Provides [-5] [Pollution] <if [No Pollution] is not constructed> <hidden from users>",
 		],
 		"requiredTech": "Concrete"
 	},
@@ -6580,7 +6581,7 @@
 			"[+1 Culture] from [River] tiles [in this city]",
 			"[20]% Food is carried over after population increases [in this city]",
 			"Comment [Consumes [20] [Pollution]<(modified by game speed)>] <Civilopedia link [Resources/Pollution]>",
-			"Provides [-20] [Pollution] <(modified by game speed)> <hidden from users>",
+			"Provides [-20] [Pollution] <if [No Pollution] is not constructed> <hidden from users>",
 		],
 		"requiredBuilding": "Sewer",
 		"requiredTech": "Plastics"
@@ -6642,6 +6643,8 @@
 			"science": 15
 		},
 		"uniques": [
+			"Unavailable <without [Science Park Marker]> <in this city> <hidden from users>",
+			"Comment [Requires at least one [Science Complex] or the [Science Park] in this city]",
 			"'Research Building'",
 			"Instantly consumes [5] [Electronic Parts]",
 			"Provides [1] [Industry Size] <in this city>",
@@ -6824,7 +6827,7 @@
 			"Provides [1] [Waste Material] <in cities with at least [70] [Population]>",
 			"Provides [1] [Waste Material] <in cities with at least [80] [Population]>",
 			"Comment [Consumes [10] [Pollution]<(modified by game speed)>] <Civilopedia link [Resources/Pollution]>",
-			"Provides [-10] [Pollution] <(modified by game speed)> <hidden from users>",
+			"Provides [-10] [Pollution] <if [No Pollution] is not constructed> <hidden from users>",
 		],
 		"requiredTech": "Ecology"
 	},
@@ -6846,7 +6849,7 @@
 			"Provides [1] [Aluminum]",
 			"Provides [1] [Industrial Chemicals]",
 			"Comment [Consumes [10] [Pollution]<(modified by game speed)>] <Civilopedia link [Resources/Pollution]>",
-			"Provides [-10] [Pollution] <(modified by game speed)> <hidden from users>",
+			"Provides [-10] [Pollution] <if [No Pollution] is not constructed> <hidden from users>",
 		],
 		"requiredTech": "Ecology"
 	},
@@ -6890,6 +6893,8 @@
 			"Scientist": 3
 		},
 		"uniques": [
+			"Unavailable <without [Science Park Marker]> <in this city> <hidden from users>",
+			"Comment [Requires at least one [Science Complex] or the [Science Park] in this city]",
 			"'Research Building'",
 			"[+33]% [Science] from every [Physic Lab] <in this city>",
 			"[Great Scientist] is earned [+1]% faster"
@@ -7009,6 +7014,7 @@
 			"Great Scientist": 3
 		},
 		"uniques": [
+			"Only available <in cities with a [Rocketry Industry]>",
 			"'Space Race Building'",
 			"[+25]% Production when constructing [Spaceship part] units [in all cities]",
 			"Allied City-States provide [Science] equal to [25]% of what they produce for themselves",
@@ -7023,6 +7029,7 @@
 			"Great Scientist": 3
 		},
 		"uniques": [
+			"Only available <in cities with a [Rocketry Industry]>",
 			"'Space Race Building'",
 			"[1] free [Great Scientist] units appear",
 			"[+25]% Production when constructing [Spaceship part] units [in all cities]",
@@ -7068,6 +7075,8 @@
 			"Scientist": 1
 		},
 		"uniques": [
+			"Unavailable <without [Science Park Marker]> <in this city> <hidden from users>",
+			"Comment [Requires at least one [Science Complex] or the [Science Park] in this city]",
 			"'Research Building'",
 			"Provides [3] [Industry Size] <in this city>",
 			"Consumes [2] [Coal]",
@@ -7555,11 +7564,11 @@
 			"Governor": 1
 		},
 		"uniques": [
+			"Only available <after adopting [Colonial Exploitation]>",
+			"Can only be built <in [Annexed] cities>",
 			"'Economic Building'",
 			"'Political Building'",
 			"Provides 1 extra copy of each improved luxury resource near this City",
-			"Can only be built <in [Annexed] cities>",
-			"Only available <after adopting [Imperialism]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Banking"
@@ -7809,6 +7818,28 @@
 			"Unsellable",
 			"'Outcome'",
 			"[-1 Culture, +1 Production] from every [Labourer]"
+		]
+	},
+	{
+		"name": "Exploration Focus - Across the Ocean",
+		"cost": 0,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Outcome'",
+			"[{Renaissance era} {Scout}] units gain the [Sailor Origin] promotion",
+			"[{Renaissance era} {Scout}] units gain the [Colonizer] promotion"
+		]
+	},
+	{
+		"name": "Exploration Focus - Across the Wilderness",
+		"cost": 0,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Outcome'",
+			"[Rider] units gain the [Colonizer] promotion <before the [Industrial era]>",
+			"[{Renaissance era} {non-['Levy Army']} {Close Combat}] units gain the [Colonizer] promotion <before the [Industrial era]>"
 		]
 	},
 	//'Economic Policy'
@@ -8239,8 +8270,6 @@
 			"'Cultural Diversity State'",
 			"Set [Cultural Diversity] to [2] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[High Cultural Diversity]} {'Cultural Diversity State'}] [in all cities] <hidden from users>",
-			"[+3]% [Science] [in all cities]",
-			"[+3]% [Culture] [in all cities]",
 			"[+100]% Production when constructing [Cultural Intergration] buildings [in annexed cities]",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -8255,7 +8284,7 @@
 			"'Cultural Diversity State'",
 			"Set [Cultural Diversity] to [1] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Medium Cultural Diversity]} {'Cultural Diversity State'}] [in all cities] <hidden from users>",
-			"[+3]% [Happiness] [in all cities]",
+			"Provides [10] [Influence Limit]",
 			"[+50]% Production when constructing [Cultural Intergration] buildings [in annexed cities]",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
@@ -8270,9 +8299,7 @@
 			"'Cultural Diversity State'",
 			"Set [Cultural Diversity] to [0] <before turn number [2]> <hidden from users>",
 			"Remove [{non-[Low Cultural Diversity]} {'Cultural Diversity State'}] [in all cities] <hidden from users>",
-			"[+8]% [Happiness] [in all cities]",
-			"[-3]% [Culture] [in all cities]",
-			"[-3]% [Science] [in all cities]",
+			"Provides [15] [Influence Limit]",
 			"Limited to [1] per Civilization <hidden from users>",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -8921,7 +8948,7 @@
 			"'Outcome'",
 			"Comment [Unique Name:]",
 			"Comment [Vercingetorix's Vengence]",
-			"Adopt [Military Nobilities] <starting from the [Classical era]>",
+			"Adopt [Military Nobilities] <upon entering the [Classical era]>",
 			"[Gaulish Karros] units gain the [War Axe] promotion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -10485,23 +10512,23 @@
 			"[-33]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
 			"[Gold] cost of purchasing items in cities [-15]%",
 			///Building Pollution
-			"[75]% of [Gold] from every ['Light Industry'] in the city added to [Pollution] <in [all] cities>",
-			"[75]% of [Gold] from every ['Economic Building'] in the city added to [Pollution] <in [all] cities>",
-			"[75]% of [Gold] from every ['Infrastructure'] in the city added to [Pollution] <in [all] cities>",
-			"[75]% of [Gold] from every ['Marine Infrastructure'] in the city added to [Pollution] <in [all] cities>",
-			"[75]% of [Production] from every ['Light Industry'] in the city added to [Pollution] <in [all] cities>",
-			"[75]% of [Production] from every ['Economic Building'] in the city added to [Pollution] <in [all] cities>",
-			"[75]% of [Production] from every ['Infrastructure'] in the city added to [Pollution] <in [all] cities>",
-			"[75]% of [Production] from every ['Marine Infrastructure'] in the city added to [Pollution] <in [all] cities>",
-			"Provides [1] [Pollution] <for every [[['Heavy Industry'] Buildings]/2]>",
-			"Provides [1] [Pollution] <for every [[['Military Building'] Buildings]/4]>",
-			"Provides [1] [Pollution] <for every [[[{'Fossil Fuel'} {'Power Building'}] Buildings]]>",
+			"[50]% of [Gold] from every ['Light Industry'] in the city added to [Pollution] <in [all] cities>",
+			"[50]% of [Gold] from every ['Economic Building'] in the city added to [Pollution] <in [all] cities>",
+			"[50]% of [Gold] from every ['Infrastructure'] in the city added to [Pollution] <in [all] cities>",
+			"[50]% of [Gold] from every ['Marine Infrastructure'] in the city added to [Pollution] <in [all] cities>",
+			"[50]% of [Production] from every ['Light Industry'] in the city added to [Pollution] <in [all] cities>",
+			"[50]% of [Production] from every ['Economic Building'] in the city added to [Pollution] <in [all] cities>",
+			"[50]% of [Production] from every ['Infrastructure'] in the city added to [Pollution] <in [all] cities>",
+			"[50]% of [Production] from every ['Marine Infrastructure'] in the city added to [Pollution] <in [all] cities>",
+			"Provides [1] [Pollution] <for every [[['Heavy Industry'] Buildings]/3]>",
+			"Provides [1] [Pollution] <for every [[['Military Building'] Buildings]/6]>",
+			"Provides [1] [Pollution] <for every [[[{'Fossil Fuel'} {'Power Building'}] Buildings]/2]>",
 			///Improvement Pollution
-			"[25]% of [Production] from every ['Extraction Improvement'] in the city added to [Pollution] <in [all] cities>",
-			"[25]% of [Food] from every ['Agricultural Improvement'] in the city added to [Pollution] <in [all] cities>",
-			"[25]% of [Gold] from every ['Water Improvement'] in the city added to [Pollution] <in [all] cities>",
-			"[100]% of [Gold] from every ['Urban Improvement'] in the city added to [Pollution] <in [all] cities>",
-			"[100]% of [Production] from every ['Urban Improvement'] in the city added to [Pollution] <in [all] cities>"
+			"[15]% of [Production] from every ['Extraction Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[15]% of [Food] from every ['Agricultural Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[15]% of [Gold] from every ['Water Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[66]% of [Gold] from every ['Urban Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[66]% of [Production] from every ['Urban Improvement'] in the city added to [Pollution] <in [all] cities>"
 		]
 	},
 	{

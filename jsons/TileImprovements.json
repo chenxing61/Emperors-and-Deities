@@ -33,6 +33,8 @@
 		"turnsToBuild": 10,
 		"techRequired": "Agriculture",
 		"uniques": [
+			"Does not need removal of [Forest]",
+			"Does not need removal of [Jungle]",
 			"'Agricultural Improvement'",
 			"[+1 Food] <after discovering [Crop Rotation]>",
 			"Can only be built to improve a resource",
@@ -486,6 +488,33 @@
 		],
 		"shortcutKey": "C"
 	},
+	{
+		"name": "Colony",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Grassland",
+			"Desert",
+			"Tundra",
+			"Snow"
+		],
+		"gold":1,
+		"uniques": [
+			"'Policy Improvement'",
+			"Can be built outside your borders",
+			"Gain [250] [Faith] <after adopting [Sanctity]> <after adopting [Colonial Craze]> <(modified by game speed)>",
+			"Pillaging this improvement yields approximately [+36 Gold]",
+			"Gain control over [all] tiles in a [1]-tile radius",
+			"Does not need removal of [Forest]",
+			"Does not need removal of [Jungle]"
+		],
+		"techRequired":"Cartography",
+		"civilopediaText": [
+			{
+				"text": "Grabs land."
+			}
+		],
+		"shortcutKey": "M"
+	},
 	// Policy/Belief
 	{
 		"name": "Hillfort",
@@ -560,6 +589,7 @@
 		],
 		"shortcutKey": "M"
 	},
+
 	{
 		"name": "Colony Plantation",
 		"terrainsCanBeBuiltOn": [
@@ -573,7 +603,7 @@
 			"Does not need removal of [Forest]",
 			"'Policy Improvement'",
 			"'Agricultural Improvement'",
-			"Only available <after adopting [Colonialism]>",
+			"Only available <after adopting [Colonial Exploitation]>",
 			"Pillaging this improvement yields approximately [+18 Gold]"
 		],
 		"civilopediaText": [

@@ -27,6 +27,7 @@
 		"unitType": "Civilian",
 		"movement": 3,
 		"uniques": [
+			"Unbuildable <if [Nomadic Culture] is constructed> <for [non-[AI player]] Civilizations>",
 			"Only available <if [Invention of Professional Vehicles] is constructed>",
 			"'Mechanised'",
 			"Costs [5] [Vehicle Parts]",
@@ -169,6 +170,7 @@
 			"[+1] Sight",
 			"Requires at least [1] population"
 		],
+		"promotions":["Colonizer"],
 		"requiredTech": "Navigation"
 	},
 	///line 0
