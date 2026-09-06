@@ -15,6 +15,11 @@
 			"Every [60] tiles with this terrain will receive a major deposit of a strategic resource.",
 			"Becomes [Atoll] when adjacent to [Ocean] <with [5]% chance>",
 			"Becomes [Atoll] when adjacent to [Coast] <with [2]% chance>"
+		],
+		"civilopediaText":[
+			{
+				"text": "Before researching [Cartography], All unit will lose [33] HP upon passing a turn on this tile."
+			}
 		]
 	},
 	{
@@ -351,7 +356,12 @@
 			"Marsh",
 			"Oasis"
 		],
-		"defenceBonus": -0.33
+		"defenceBonus": -0.33,
+		"civilopediaText":[
+			{
+				"text": "Before being promoted with [NBC suit], All unit will lose [20] HP upon passing a turn on this tile."
+			}
+		]
 	},
 	{
 		"name": "Oasis",
