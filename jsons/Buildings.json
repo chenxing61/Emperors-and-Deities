@@ -438,7 +438,6 @@
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Creates a [Major Harbor] improvement on a specific tile",
-			
 			"Remove [Harbor Area] [in this city]",
 		],
 		"requiredTech": "Navigation",
@@ -453,7 +452,6 @@
 			"Cannot be purchased",
 			"Unsellable",
 			"Comment [Removes a single specified district within the city's borders.]",
-			
 			"Remove [Major Harbor (Improvement)] [in this city]",
 			"Remove [Demolish Major Harbor] [in this city]",
 		],
@@ -497,7 +495,6 @@
 			"Cannot be purchased",
 			"Unsellable",
 			"Comment [Removes a single specified district within the city's borders.]",
-			
 			"Remove [Industrial District (Improvement)] [in this city]",
 			"Remove [Demolish Industrial District] [in this city]",
 		],
@@ -557,7 +554,6 @@
 			"Cannot be purchased",
 			"Unsellable",
 			"Comment [Removes a single specified district within the city's borders.]",
-			
 			"Remove [Residential District (Improvement)] [in this city]",
 			"Remove [Demolish Residential District] [in this city]",
 		],
@@ -606,7 +602,6 @@
 			"Cannot be purchased",
 			"Unsellable",
 			"Comment [Removes a single specified district within the city's borders.]",
-			
 			"Remove [Commercial District (Improvement)] [in this city]",
 			"Remove [Demolish Commercial District] [in this city]",
 		],
@@ -654,7 +649,6 @@
 			"Cannot be purchased",
 			"Unsellable",
 			"Comment [Removes a single specified district within the city's borders.]",
-			
 			"Remove [Science Park District (Improvement)] [in this city]",
 			"Remove [Demolish Science Park] [in this city]",
 		],
@@ -1173,7 +1167,7 @@
 		"name": "Stepwell",
 		"uniqueTo": "South Asia",
 		"replaces": "Well",
-		"food": 1,
+		"food": 2,
 		"uniques": [
 			"'Agricultural Building'",
 			"[+1 Faith] <starting from the [Medieval era]>"
@@ -1328,13 +1322,11 @@
 	},
 	{
 		"name": "Pottery Workshop",
+		"production":1,
 		"gold": 1,
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Production] per [3] population [in this city] <in cities with between [1] and [9] [Population]>",
-			"[+1 Production] per [5] population [in this city] <in cities with between [9] and [15] [Population]>",
-			"[+1 Production] per [8] population [in this city] <in cities with between [15] and [24] [Population]>",
-			"[+1 Production] per [10] population [in this city] <in cities with at least [24] [Population]>",
+			"[+1 Production] per [3] population [in this city] <with [Clay]>",
 			"[+1 Production] from [Clay] tiles [in this city]",
 			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
@@ -1345,10 +1337,7 @@
 		"maintenance": 1,
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Culture] per [3] population [in this city] <in cities with between [1] and [9] [Population]>",
-			"[+1 Culture] per [5] population [in this city] <in cities with between [9] and [15] [Population]>",
-			"[+1 Culture] per [8] population [in this city] <in cities with between [15] and [24] [Population]>",
-			"[+1 Culture] per [10] population [in this city] <in cities with at least [24] [Population]>",
+			"[+1 Culture] per [3] population [in this city]",
 			"[+1 Production] from [{'Agricultural Improvement'} {'Textile'}] tiles [in this city]",
 			"[+2 Gold] from [{Camp} {Furs}] tiles [in this city]",
 			"[+2 Gold] from [{'Agricultural Improvement'} {Silk}] tiles [in this city]",
@@ -1370,11 +1359,16 @@
 		"name": "Hunter's Hut",
 		"cost": 20,
 		"food": 1,
-		"gold": 1,
+		"gold": 2,
 		"uniques": [
-			"'Economic Building'",
-			"Unsellable",
-			"Creates a [Camp] improvement on a specific tile"
+			"'Economic Building'"
+		],
+		"requiredNearbyResources": [
+			"Wild Animals",
+			"Furs",
+			"Ivory",
+			"Truffles",
+			"Honey"
 		],
 		"requiredTech": "Trapping"
 	},
@@ -1485,6 +1479,7 @@
 			"'Worship Place'",
 			"[+1 Culture, +1 Food] [in all cities]",
 			"[+25]% Production when constructing [Settler] units [in all cities]",
+			"[+25]% Production when constructing [Nomadic Settler] units [in all cities]",
 			"[+25]% Production when constructing [Pioneer] units [in all cities]",
 		],
 		"requiredTech": "Calendar",
@@ -1631,7 +1626,7 @@
 		"name": "The Statue of Sea God",
 		"isWonder": true,
 		"culture": 2,
-		"happiness": 1,
+		"happiness": 2,
 		"greatPersonPoints": {
 			"Great Artist": 1
 		},
@@ -5966,7 +5961,7 @@
 	},
 	{
 		"name": "Stock Exchange",
-		"maintenance":10,
+		"maintenance": 10,
 		"specialistSlots": {
 			"Merchant": 1
 		},
@@ -5982,7 +5977,7 @@
 	},
 	{
 		"name": "Commercial Office",
-		"maintenance":10,
+		"maintenance": 10,
 		"specialistSlots": {
 			"Merchant": 1
 		},
@@ -6883,7 +6878,6 @@
 		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying",
 		"requiredTech": "Ecology"
 	},
-
 	//Line 25
 	{
 		"name": "Particle Accelerator",
@@ -6899,7 +6893,7 @@
 			"[+33]% [Science] from every [Physic Lab] <in this city>",
 			"[Great Scientist] is earned [+1]% faster"
 		],
-		"requiredBuilding":"Physic Lab",
+		"requiredBuilding": "Physic Lab",
 		"requiredTech": "Particle Physics",
 		"hurryCostModifier": 50
 	},
@@ -6950,7 +6944,7 @@
 	//Line 26
 	{
 		"name": "Carbon Capture",
-		"cost":2000,
+		"cost": 2000,
 		"uniques": [
 			"Instantly consumes [50] [Pollution] <(modified by game speed)>",
 			"Remove [Carbon Capture] [in this city]"
@@ -7803,7 +7797,6 @@
 		],
 		"requiredTech": "Radio"
 	},
-
 	{
 		"name": "Caste System - Casted Away",
 		"cost": 0,
