@@ -7,6 +7,7 @@
 		"movement": 2,
 		"uniques": [
 			"Unbuildable <if [Nomadic Culture] is constructed> <for [non-[AI player]] Civilizations>",
+			"Limited to [3] per Civilization <if [Nomadic Culture] is constructed> <for [AI player] Civilizations>",
 			"Can build [Land] improvements on tiles",
 			"Can build [Lakes] improvements on tiles",
 			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
@@ -27,6 +28,7 @@
 		"movement": 3,
 		"uniques": [
 			"Unbuildable <if [Nomadic Culture] is constructed> <for [non-[AI player]] Civilizations>",
+			"Limited to [3] per Civilization <if [Nomadic Culture] is constructed> <for [AI player] Civilizations>",
 			"Only available <if [Invention of Professional Vehicles] is constructed>",
 			"'Mechanised'",
 			"Costs [5] [Vehicle Parts]",
@@ -208,36 +210,14 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"Can upgrade to [Worker] <after discovering [Bronze Working]>",
-			"Can upgrade to [Archer] <after discovering [Mathematics]>",
 			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Manual Plantation] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Manual Farm] improvements on tiles <for [Human player] Civilizations>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
+		"upgradesTo":"Archer",
 		"requiredTech": "Hunting and Fishing",
-		"obsoleteTech": "Bronze Working",
-		"upgradesTo":"Worker",
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Primal Herder",
-		"unitType": "Close Combat",
-		"movement": 3,
-		"strength": 9,
-		"uniques": [
-			"Unbuildable",
-			"'Infantry'",
-			"'Dense Formation'",
-			"'Edged Weapons'",
-			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
-			"Can build [Pasture] improvements on tiles <for [Human player] Civilizations>",
-			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
-			"Never appears as a Barbarian unit <hidden from users>"
-		],
-		"requiredTech": "Hunting and Fishing",
-		"obsoleteTech": "Horseback Riding",
-		"upgradesTo":"Nomad Horde",
+		"obsoleteTech": "Mathematics",
 		"attackSound": "arrow"
 	},
 	{
