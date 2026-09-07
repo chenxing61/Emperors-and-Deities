@@ -7,6 +7,7 @@
 		"movement": 2,
 		"uniques": [
 			"Unbuildable <if [Nomadic Culture] is constructed> <for [non-[AI player]] Civilizations>",
+			"Limited to [3] per Civilization <if [Nomadic Culture] is constructed> <for [AI player] Civilizations>",
 			"Can build [Land] improvements on tiles",
 			"Can build [Lakes] improvements on tiles",
 			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
@@ -27,6 +28,7 @@
 		"movement": 3,
 		"uniques": [
 			"Unbuildable <if [Nomadic Culture] is constructed> <for [non-[AI player]] Civilizations>",
+			"Limited to [3] per Civilization <if [Nomadic Culture] is constructed> <for [AI player] Civilizations>",
 			"Only available <if [Invention of Professional Vehicles] is constructed>",
 			"'Mechanised'",
 			"Costs [5] [Vehicle Parts]",
@@ -208,16 +210,14 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Edged Weapons'",
-			"May upgrade to [Archer] through ruins-like effects",
-			"Can upgrade to [Worker] <after discovering [Bronze Working]>",
-			"Can upgrade to [Archer] <after discovering [Mathematics]>",
 			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Manual Plantation] improvements on tiles <for [Human player] Civilizations>",
 			"Can build [Manual Farm] improvements on tiles <for [Human player] Civilizations>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
+		"upgradesTo":"Archer",
 		"requiredTech": "Hunting and Fishing",
-		"obsoleteTech": "Bronze Working",
+		"obsoleteTech": "Mathematics",
 		"attackSound": "arrow"
 	},
 	{
