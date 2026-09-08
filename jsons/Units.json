@@ -15,7 +15,7 @@
 			"[+75]% construction time for [Railroad] improvements <in [Rough terrain] tiles>",
 			"[+75]% construction time for [Road] improvements <in [Mountain] tiles>",
 			"[+75]% construction time for [Railroad] improvements <in [Mountain] tiles>",
-			"[This Unit] gains [2] XP <upon building a [All] improvement>",
+			"[This Unit] gains [3] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
 		"upgradesTo": "Mechanised Worker",
@@ -25,14 +25,14 @@
 		"name": "Mechanised Worker",
 		"cost": 280,
 		"unitType": "Civilian",
-		"movement": 3,
+		"movement": 2,
 		"uniques": [
 			"Unbuildable <if [Nomadic Culture] is constructed> <for [non-[AI player]] Civilizations>",
 			"Limited to [3] per Civilization <if [Nomadic Culture] is constructed> <for [AI player] Civilizations>",
 			"Only available <if [Invention of Professional Vehicles] is constructed>",
 			"'Mechanised'",
 			"Costs [5] [Vehicle Parts]",
-			"[-25]% construction time for [All] improvements",
+			"[-15]% construction time for [All] improvements",
 			"Can build [Land] improvements on tiles",
 			"Can build [Lakes] improvements on tiles",
 			"Can pass through impassable tiles <after discovering [Robotics]>",
@@ -40,10 +40,22 @@
 			"[+50]% construction time for [Railroad] improvements <in [Rough terrain] tiles>",
 			"[+50]% construction time for [Road] improvements <in [Mountain] tiles>",
 			"[+50]% construction time for [Railroad] improvements <in [Mountain] tiles>",
-			"[This Unit] gains [3] XP <upon building a [All] improvement>",
+			"[This Unit] gains [5] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
+		"promotions":["Automobile"],
 		"requiredTech": "Combustion"
+	},
+	{
+		"name": "Rubber Transplanter",
+		"cost": 250,
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": [
+			"Only available <when above [1] [Rubber]>",
+			"Add [Rubber] to this tile <by consuming this unit>"
+		],
+		"requiredTech": "Mass Production"
 	},
 	{
 		"name": "Galley Work Ship",

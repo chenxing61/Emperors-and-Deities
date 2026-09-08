@@ -1190,7 +1190,6 @@
 		"gold": 1,
 		"uniques": [
 			"'Marine Infrastructure'",
-			"Creates a [Coast Fishing Boats] improvement on a specific tile",
 			"Consumes [1] [Deep Sea Fish(Stored)] <when above [1] [Deep Sea Fish(Stored)]>",
 			"[+5 Food, +3 Gold] <when above [1] [Deep Sea Fish(Stored)]>",
 			"Comment [When will we be able to get those big fish?]",
@@ -1208,7 +1207,6 @@
 		"uniques": [
 			"'Marine Infrastructure'",
 			"Connects trade routes over water",
-			"Creates a [Coast Fishing Boats] improvement on a specific tile",
 			"Consumes [1] [Deep Sea Fish(Stored)] <when above [1] [Deep Sea Fish(Stored)]>",
 			"[+5 Food, +3 Gold] <when above [1] [Deep Sea Fish(Stored)]>",
 			"Comment [When will we be able to get those big fish?]",
@@ -1322,11 +1320,10 @@
 	},
 	{
 		"name": "Pottery Workshop",
-		"production":1,
+		"production":2,
 		"gold": 1,
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Production] per [3] population [in this city] <with [Clay]>",
 			"[+1 Production] from [Clay] tiles [in this city]",
 			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
@@ -1334,10 +1331,9 @@
 	},
 	{
 		"name": "Textile Workshop",
-		"maintenance": 1,
+		"culture":1,
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Culture] per [3] population [in this city]",
 			"[+1 Production] from [{'Agricultural Improvement'} {'Textile'}] tiles [in this city]",
 			"[+2 Gold] from [{Camp} {Furs}] tiles [in this city]",
 			"[+2 Gold] from [{'Agricultural Improvement'} {Silk}] tiles [in this city]",
@@ -5564,17 +5560,6 @@
 		"uniques": [
 			"'Educational Building'",
 			"[+1 Production] from all ['Educational Building'] buildings <in this city>"
-		],
-		"requiredTech": "Mass Production"
-	},
-	{
-		"name": "Rubber Transplant",
-		"maintenance": 3,
-		"uniques": [
-			"Must have an owned [{non-[improved]} {Jungle}] within [3] tiles",
-			"Only available <when above [0] [Rubber]>",
-			"Creates a [Rubber Plantation] improvement on a specific tile",
-			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Mass Production"
 	},
@@ -10389,12 +10374,11 @@
 			// After Bronze Working, before Iron Working
 			"[2] [Brute Warrior]s rebel <after discovering [Copper Working]> <before discovering [Iron Working]>",
 			"[1] [Mercenary Javalineer]s rebel <after discovering [Mining]> <before discovering [Mathematics]>",
-			"A [War Cart] rebels <after discovering [The Wheel]> <before discovering [Armorments]>",
+			"A [Chariot] rebels <after discovering [The Wheel]> <before discovering [Armorments]>",
 			// ===== CLASSICAL ERA =====
 			// After Iron Working, before Armorments
 			"[2] [Spearman]s rebel <after discovering [Iron Working]> <before discovering [Armorments]>",
 			"[1] [Mercenary Archer]s rebel <after discovering [Logistics]> <before discovering [Engineering]>",
-			"A [Chariot] rebels <after discovering [The Wheel]> <before discovering [Armorments]>",
 			// ===== CLASSICAL/MEDIEVAL (Armorments) =====
 			"[2] [Spearman]s rebel <after discovering [Armorments]> <before discovering [Hand Cannon]>",
 			"[1] [Mercenary Archer]s rebel <after discovering [Logistics]> <before discovering [Engineering]>",
