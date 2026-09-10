@@ -4726,9 +4726,7 @@
 		"unitType": "Scout",
 		"cost": 800,
 		"movement": 5,
-		"strength": 50,
-		"requiredResource": "Standing Army Maintenance",
-		"requiredTech": "Data Science",
+		"strength": 60,
 		"uniques": [
 			"Unbuildable <in cities without a [Military Base]>",
 			"Only available <if [Invention of Helicopter] is constructed>",
@@ -4740,6 +4738,7 @@
 			"Can see over obstacles",
 			"Invisible to non-adjacent units",
 			"Can see invisible [All] units",
+			"Cannot attack",
 			"[+2] Sight",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
@@ -4747,6 +4746,8 @@
 			"The Standing Army",
 			"Scouting Unit"
 		],
+		"requiredResource": "Standing Army Maintenance",
+		"requiredTech": "Data Science",
 		"attackSound": "jetgun"
 	},
 	{
