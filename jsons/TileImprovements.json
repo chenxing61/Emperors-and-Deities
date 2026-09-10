@@ -319,6 +319,7 @@
 			"Forest",
 			"Jungle",
 			"Flood plains",
+			"Canal",
 		],
 		"turnsToBuild": 9,
 		"techRequired": "Horse Collar",
@@ -344,6 +345,7 @@
 			"Forest",
 			"Jungle",
 			"Flood plains",
+			"Canal",
 		],
 		"turnsToBuild": 9,
 		"techRequired": "Cartridge",
@@ -369,6 +371,7 @@
 			"Forest",
 			"Jungle",
 			"Flood plains",
+			"Canal",
 		],
 		"production": 1,
 		"science": 1,
@@ -641,6 +644,7 @@
 			"Flood plains",
 			"Snow",
 			"Oasis",
+			"Canal",
 		],
 		"science": 6,
 		"happiness": 1,
@@ -749,12 +753,14 @@
 	{
 		"name": "Road",
 		"terrainsCanBeBuiltOn": [
-			"Land"
+			"Land",
+			"Canal",
 		],
 		"turnsToBuild": 4,
 		"techRequired": "Currency",
 		"uniques": [
 			"'Infrastructure Improvement'",
+			"Must not be next to [{All Road} {Canal}]"
 			"Can be built outside your borders",
 			"Costs [1] [Gold] per turn"
 		],
@@ -776,7 +782,8 @@
 	{
 		"name": "Railroad",
 		"terrainsCanBeBuiltOn": [
-			"Land"
+			"Land",
+			"Canal",
 		],
 		"turnsToBuild": 6,
 		"techRequired": "Railroads",
@@ -1238,6 +1245,7 @@
 		"name": "City ruins",
 		"terrainsCanBeBuiltOn": [
 			"Land"
+			"Canal",
 		],
 		"uniques": [
 			"Unpillagable",
@@ -1254,6 +1262,7 @@
 		"name": "City center",
 		"terrainsCanBeBuiltOn": [
 			"Land"
+			"Canal",
 		],
 		"uniques": [
 			"'Urban Improvement'",
