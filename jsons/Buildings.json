@@ -1237,8 +1237,11 @@
 		"uniques": [
 			"'Agricultural Building'",
 			"[+1 Food] from [Fruit] tiles [in this city]",
+			"[+1 Food] from [Hybrid Fruit] tiles [in this city]",
 			"[+1 Food] from [Grain] tiles [in this city]",
-			"[+1 Food] from [Tuber] tiles [in this city]"
+			"[+1 Food] from [Hybrid Grain] tiles [in this city]",
+			"[+1 Food] from [Tuber] tiles [in this city]",
+			"[+1 Food] from [Hybrid Tuber] tiles [in this city]"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -1254,8 +1257,11 @@
 		"uniques": [
 			"'Agricultural Building'",
 			"[+1 Food] from [Fruit] tiles [in this city]",
+			"[+1 Food] from [Hybrid Fruit] tiles [in this city]",
 			"[+1 Food] from [Grain] tiles [in this city]",
-			"[+1 Food] from [Tuber] tiles [in this city]"
+			"[+1 Food] from [Hybrid Grain] tiles [in this city]",
+			"[+1 Food] from [Tuber] tiles [in this city]",
+			"[+1 Food] from [Hybrid Tuber] tiles [in this city]"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -1265,7 +1271,9 @@
 		"food": 2,
 		"uniques": [
 			"Only available <if [Nomadic Culture] is constructed>",
+			"[+1 Food] from [Dairy] tiles [in this city]",
 			"[+1 Food] from [Caprinae] tiles [in this city]",
+			//"[+1 Production] from [Wool] tiles [in this city]",
 			"[+1 Food] from [Bovine] tiles [in this city]",
 			"[+1 Food] from [Wild Animals] tiles [in this city]"
 		],
@@ -1282,7 +1290,9 @@
 		],
 		"requiredNearbyImprovedResources": [
 			"Tuber",
-			"Grain"
+			"Hybrid Tuber",
+			"Grain",
+			"Hybrid Grain",
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -1313,6 +1323,7 @@
 			"Provides [1] [Alcohol] <with [Sugar]> <after discovering [Chemistry]>",
 			"Provides [1] [Alcohol] <with [Tuber]> <after discovering [Chemistry]>",
 			"Provides [1] [Alcohol] <with [Horse]> <for [Euroasian Nomads] Civilizations>",
+			"Provides [1] [Alcohol] <with [Dairy]> <for [Euroasian Nomads] Civilizations>",
 			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
 		],
 		"requiredTech": "Pottery",
@@ -1344,6 +1355,7 @@
 		"requiredNearbyImprovedResources": [
 			"Bovine",
 			"Caprinae",
+			//"Wool",
 			"Furs",
 			"Cotton",
 			"Silk",
@@ -1361,6 +1373,7 @@
 		],
 		"requiredNearbyResources": [
 			"Wild Animals",
+			"Pets",
 			"Furs",
 			"Ivory",
 			"Truffles",
@@ -1381,6 +1394,8 @@
 			"'Heavy Industry'",
 			"[+10]% Production when constructing [Ancient era] units [in this city]",
 			"[+10]% Production when constructing [Classical era] units [in this city]",
+			//"[+10]% Production when constructing [Ancient era] units [in this city] <with [Tin]>",
+			//"[+5]% Production when constructing [Classical era] units [in this city] <with [Tin]>",
 			"Provides [1] [Metal]",
 			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
@@ -1437,6 +1452,8 @@
 			"[+1]% [Gold] [in this city] <with [Minerals]>",
 			"[+1]% [Gold] [in this city] <with [Metal]>",
 			"[+3]% [Gold] [in this city] <with [Gems]>",
+			"[+3]% [Gold] [in this city] <with [Jade]>",
+			"[+3]% [Gold] [in this city] <with [Quartz]>",
 			"[+3]% [Gold] [in this city] <with [Glass]>",
 			"[+3]% [Gold] [in this city] <with [Marble]>",
 			"[+3]% [Gold] [in this city] <with [Gold Ore]>",
@@ -1827,7 +1844,9 @@
 			"[+3]% [Gold] [in this city] <with [Bovine]>",
 			"[+3]% [Gold] [in this city] <with [Caprinae]>",
 			"[+3]% [Gold] [in this city] <with [Camel]>",
+			"[+3]% [Gold] [in this city] <with [Dairy]>",
 			"[+3]% [Culture] [in this city] <with [Wild Animals]>",
+			"[+3]% [Culture] [in this city] <with [Pets]>",
 			"[+3]% [Gold] [in this city] <with [Horse]>",
 			"[+50]% Production when constructing [Stable] buildings [in this city] <with [Horse]>",
 			"Must have an owned ['Herd'] within [3] tiles"
@@ -1841,8 +1860,11 @@
 		"uniques": [
 			"'Economic Building'",
 			"[+1]% [Gold] [in this city] <with [Grain]>",
+			"[+1]% [Gold] [in this city] <with [Hybrid Grain]>",
 			"[+1]% [Gold] [in this city] <with [Tuber]>",
+			"[+1]% [Gold] [in this city] <with [Hybrid Tuber]>",
 			"[+1]% [Gold] [in this city] <with [Fruit]>",
+			"[+1]% [Gold] [in this city] <with [Hybrid Fruit]>",
 			"[+3]% [Gold] [in this city] <with [Incense]>",
 			"[+3]% [Gold] [in this city] <with [Spices]>",
 			"[+3]% [Gold] [in this city] <with [Grape]>",
@@ -1968,7 +1990,9 @@
 		],
 		"requiredNearbyImprovedResources": [
 			"Marble",
-			"Stone"
+			"Stone",
+			"Jade",
+			"Quartz"
 		],
 		"requiredTech": "Masonry"
 	},
@@ -2562,7 +2586,8 @@
 		],
 		"requiredTech": "Optics",
 		"requiredNearbyImprovedResources": [
-			"Minerals"
+			"Minerals",
+			"Quartz"
 		]
 	},
 	{
@@ -2778,6 +2803,32 @@
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
+	/*
+	{
+		"name": "Exotic Pets Trade",
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 25
+		},
+		"specialistSlots": {
+			"Merchant": 1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Pets]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Pets]",
+			"[+1 Gold] from [Forest] tiles [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources": [
+			"Pets"
+		],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	*/
 	{
 		"name": "Ivory Trade",
 		"cost": 150,
@@ -3349,6 +3400,62 @@
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
+	/*
+	{
+		"name": "Quartz Trade",
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"production": 10
+		},
+		"specialistSlots": {
+			"Merchant": 1,
+			"Artist": 1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Quartz]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Quatrz]",
+			"[+10]% Production when constructing [All] wonders [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources": [
+			"Quartz"
+		],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	*/
+	/*
+	{
+		"name": "Jade Trade",
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"production": 10
+		},
+		"specialistSlots": {
+			"Merchant": 1,
+			"Artist": 1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Jade]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Jade]",
+			"[+10]% Production when constructing [All] wonders [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources": [
+			"Jade"
+		],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	*/
 	{
 		"name": "Rich Copper Ore Export",
 		"cost": 150,
@@ -3901,6 +4008,8 @@
 			"Comment [Enables you to build ['Firearms'] Units]",
 			"New ['Firearms'] units start with [10] XP [in this city]",
 			"[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>",
+			//"[+10]% Production when constructing [Ancient era] units [in this city] <with [Sulfur]>",
+			//"[+5]% Production when constructing [Classical era] units [in this city] <with [Sulfur]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Military Blacksmith",
@@ -4556,7 +4665,8 @@
 		},
 		"uniques": [
 			"'Research Building'",
-			"Provides [1] [Industrial Chemicals]"
+			"Provides [1] [Industrial Chemicals]",
+			//"Provides [1] [Industrial Chemicals] <with [Sulfur]>"
 		],
 		"requiredBuilding": "University",
 		"requiredTech": "Chemistry"
@@ -6180,11 +6290,13 @@
 			"[+1 Production] from ['Chemicals'] tiles [in this city]",
 			"Provides [1] [Industrial Chemicals]",
 			"Provides [1] [Industrial Chemicals] <with [Minerals]>",
+			"Provides [1] [Industrial Chemicals] <with [Sulfur]>",
 			"Provides [1] [Industrial Chemicals] <with [Stone]>"
 		],
 		"requiredNearbyImprovedResources": [
 			"Minerals",
-			"Stone"
+			"Stone",
+			"Sulfur"
 		],
 		"requiredTech": "Synthetic Materials"
 	},
@@ -6843,6 +6955,7 @@
 			"'High Tech Industry'",
 			"Only available <in cities without a [Power Shortage]>",
 			"Consumes [4] [Power]",
+			//"Consumes [2] [Rare Earth]",
 			"Consumes [5] [Electronic Parts]",
 			"Provides [3] [Microchips]",
 			"Provides [2] [Microchips] <after discovering [Robotics]>"
