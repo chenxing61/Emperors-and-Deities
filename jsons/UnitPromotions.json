@@ -1204,8 +1204,24 @@
 			"Development Doctrine"
 		],
 		"uniques": [
-			"[-10]% construction time for ['Agricultural Improvement'] improvements",
-			"Can build [Resource Upgrade Attempt] improvements on tiles"
+			"[-25]% construction time for ['Agricultural Improvement'] improvements <in ['Crops'] tiles>",
+			"Can build [Crop Improvement Attempt] improvements on tiles"
+		],
+		"unitTypes": [
+			"Civilian",
+			"Civil Ship"
+		],
+		"column": 19,
+		"row": 1
+	},
+	{
+		"name": "Animal Husbandry Expert",
+		"prerequisites": [
+			"Development Doctrine"
+		],
+		"uniques": [
+			"[-50]% construction time for ['Agricultural Improvement'] improvements <in ['Herds'] tiles>",
+			"Can build [Crop Improvement Attempt] improvements on tiles"
 		],
 		"unitTypes": [
 			"Civilian",
@@ -1221,13 +1237,13 @@
 		],
 		"uniques": [
 			"[-10]% construction time for ['Extraction Improvement'] improvements",
-			"Gain [10] [Gold] <upon ending a turn in a ['Extraction Improvement'] tile>"
+			"Can build [Ore Prospecting Attempt] improvements on tiles"
 		],
 		"unitTypes": [
 			"Civilian"
 		],
 		"column": 19,
-		"row": 2
+		"row": 3
 	},
 	{
 		"name": "Lumber Expert",
@@ -1242,7 +1258,7 @@
 			"Civilian"
 		],
 		"column": 19,
-		"row": 3
+		"row": 4
 	},
 	{
 		"name": "Caravan Group",
@@ -1260,7 +1276,7 @@
 			"Civil Ship"
 		],
 		"column": 19,
-		"row": 4
+		"row": 5
 	},
 	{
 		"name": "Oversea Connections",
@@ -1275,7 +1291,7 @@
 			"Civil Ship"
 		],
 		"column": 19,
-		"row": 5
+		"row": 6
 	},
 	{
 		"name": "Artisanal Dedication",
@@ -1291,7 +1307,7 @@
 			"Civil Ship"
 		],
 		"column": 19,
-		"row": 6
+		"row": 7
 	},
 	///Equipments
 	{

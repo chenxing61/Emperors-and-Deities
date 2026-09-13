@@ -896,26 +896,71 @@
 			"Snow",
 			"Mountain"
 		],
-		"turnsToBuild": 4,
+		"turnsToBuild": 5,
 		"uniques": [
 			"'Fundamental Improvement'",
 			"Can only be built to improve a resource",
-			"Improves ['Crop'] resource in this tile",
+			"Improves [{non-[Strategic resource]} {non-[Luxury resource]} {non-['Crossbreed']} {'Crop'}] resource in this tile <hidden from users>",
+			"Comment [Updates a [Bonus] resource with [10%]/[33%]/[66%]/[100%] chance scaling with relevant technologies]",
+			"Comment [Relevant technologies: [Plows],[Guilds],[Fertilizer] and [Pharmaceuticals]]",
 			//Hybrid Grains
-			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [10]% chance> <before discovering [Guilds]>",
-			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [33]% chance> <after discovering [Guilds]> <before discovering [Fertilizer]>",
-			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [66]% chance> <after discovering [Fertilizer]> <before discovering [Pharmaceuticals]>",
-			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <after discovering [Pharmaceuticals]>",
-			
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [10]% chance> <before discovering [Guilds]> <hidden from users>",
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [33]% chance> <after discovering [Guilds]> <before discovering [Fertilizer]> <hidden from users>",
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [66]% chance> <after discovering [Fertilizer]> <before discovering [Pharmaceuticals]> <hidden from users>",
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <after discovering [Pharmaceuticals]> <hidden from users>",
+			//Hybrid Tubers
+			"Add [Hybrid Tuber] to this tile <in [Tuber] tiles> <with [20]% chance> <before discovering [Guilds]> <hidden from users>",
+			"Add [Hybrid Tuber] to this tile <in [Tuber] tiles> <with [50]% chance> <after discovering [Guilds]> <before discovering [Fertilizer]> <hidden from users>",
+			"Add [Hybrid Tuber] to this tile <in [Tuber] tiles> <with [75]% chance> <after discovering [Fertilizer]> <before discovering [Pharmaceuticals]> <hidden from users>",
+			"Add [Hybrid Tuber] to this tile <in [Tuber] tiles> <after discovering [Pharmaceuticals]> <hidden from users>",
+			//Hybrid Fruits
+			"Add [Hybrid Fruit] to this tile <in [Fruit] tiles> <with [10]% chance> <before discovering [Guilds]> <hidden from users>",
+			"Add [Hybrid Fruit] to this tile <in [Fruit] tiles> <with [33]% chance> <after discovering [Guilds]> <before discovering [Fertilizer]> <hidden from users>",
+			"Add [Hybrid Fruit] to this tile <in [Fruit] tiles> <with [66]% chance> <after discovering [Fertilizer]> <before discovering [Pharmaceuticals]> <hidden from users>",
+			"Add [Hybrid Fruit] to this tile <in [Fruit] tiles> <after discovering [Pharmaceuticals]> <hidden from users>",
 			"Remove [Crop Improvement Attempt] improvements from this tile"
 		],
 		"civilopediaText": [
 			{
-				"text": "Upgrade your ['Crop'] to better forms of themselves."
+				"text": "Selectively Breed your ['Crop']s to make them more productive."
 			}
 		],
 		"techRequired": "Plows",
-		"shortcutKey": "F"
+		"shortcutKey": "C"
+	},
+	{
+		"name": "Herds Crossbreeding Attempt",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Grassland",
+			"Desert",
+			"Ocean",
+			"Coast",
+			"Tundra",
+			"Snow",
+			"Mountain"
+		],
+		"turnsToBuild": 5,
+		"uniques": [
+			"'Fundamental Improvement'",
+			"Can only be built to improve a resource",
+			"Improves [{non-[Strategic resource]} {non-[Luxury resource]} {non-['Crossbreed']} {'Herd'}] resource in this tile <hidden from users>",
+			"Comment [Updates a [Bonus] resource with [15%]/[25%]/[50%]/[100%] chance scaling with relevant technologies]",
+			"Comment [Relevant technologies: [Animal Husbandry],[Stirrup],[Biology] and [Pharmaceuticals]]",
+			//Dairy
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [10]% chance> <before discovering [Guilds]> <hidden from users>",
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [33]% chance> <after discovering [Guilds]> <before discovering [Fertilizer]> <hidden from users>",
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [66]% chance> <after discovering [Fertilizer]> <before discovering [Pharmaceuticals]> <hidden from users>",
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <after discovering [Pharmaceuticals]> <hidden from users>",
+			"Remove [Herds Crossbreeding Attempt] improvements from this tile"
+		],
+		"civilopediaText": [
+			{
+				"text": "Selectively Breed your ['Herd']s to make them more productive."
+			}
+		],
+		"techRequired": "Horseback Riding",
+		"shortcutKey": "C"
 	},
 	// Removals
 	// Any improvement that starts with 'Remove ' is automatically changed into
