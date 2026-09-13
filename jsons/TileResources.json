@@ -333,6 +333,53 @@
 		]
 	},
 	{
+		"name": "Wool",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Hill"
+		],
+		"production": 2,
+		"improvedBy": [
+			"Pasture",
+			"Mechanised Livestock Farm",
+			"Herding Tents"
+		],
+		"improvementStats": {
+			"production": 1,
+			"culture": 1
+		},
+		"uniques": [
+			"'Herd'",
+			"'Textile'",
+			"'Crossbreed'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
+		"name": "Beef Cattle",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Grassland"
+		],
+		"food": 1,
+		"gold": 1,
+		"improvedBy": [
+			"Pasture",
+			"Mechanised Livestock Farm",
+			"Herding Tents"
+		],
+		"improvementStats": {
+			"food": 1,
+			"culture": 1
+		},
+		"uniques": [
+			"'Herd'",
+			"'Textile'",
+			"'Crossbreed'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
 		"name": "Cattle Horde",
 		"resourceType": "Strategic",
 		"uniques": [
@@ -482,8 +529,7 @@
 			"Manual Farm",
 			"Mechanised Farm",
 			"Permaculture",
-			"Terrace Farm",
-			"Resource Upgrade Attempt"
+			"Terrace Farm"
 		],
 		"improvementStats": {
 			"food": 1

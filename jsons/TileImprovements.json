@@ -885,7 +885,7 @@
 		],
 	},
 	{
-		"name": "Crops Improve Attempt",
+		"name": "Crop Improvement Attempt",
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
@@ -898,15 +898,23 @@
 		],
 		"turnsToBuild": 4,
 		"uniques": [
-			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [50]% chance>",
-			"Add [Hybrid Tuber] to this tile <in [Tuber] tiles> <with [50]% chance>",
-			"Remove [Resource Upgrade Attempt] improvements from this tile"
+			"'Fundamental Improvement'",
+			"Can only be built to improve a resource",
+			"Improves ['Crop'] resource in this tile",
+			//Hybrid Grains
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [10]% chance> <before discovering [Guilds]>",
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [33]% chance> <after discovering [Guilds]> <before discovering [Fertilizer]>",
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [66]% chance> <after discovering [Fertilizer]> <before discovering [Pharmaceuticals]>",
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <after discovering [Pharmaceuticals]>",
+			
+			"Remove [Crop Improvement Attempt] improvements from this tile"
 		],
 		"civilopediaText": [
 			{
-				"text": "Upgrade your ['Crop'] to better resources"
+				"text": "Upgrade your ['Crop'] to better forms of themselves."
 			}
 		],
+		"techRequired": "Plows",
 		"shortcutKey": "F"
 	},
 	// Removals
@@ -1247,7 +1255,7 @@
 	{
 		"name": "City ruins",
 		"terrainsCanBeBuiltOn": [
-			"Land"
+			"Land",
 			"Canal",
 		],
 		"uniques": [
@@ -1264,7 +1272,7 @@
 	{
 		"name": "City center",
 		"terrainsCanBeBuiltOn": [
-			"Land"
+			"Land",
 			"Canal",
 		],
 		"uniques": [
