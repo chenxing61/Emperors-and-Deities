@@ -1008,12 +1008,6 @@
 			"Add [Quartz] to this tile <in [Stone] tiles> <with [13]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
 			"Add [Quartz] to this tile <in [Stone] tiles> <with [18]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
 			"Add [Quartz] to this tile <in [Stone] tiles> <with [25]% chance> <after discovering [LiDAR]> <hidden from users>",
-			//Jade
-			"Add [Jade] to this tile <in [Stone] tiles> <with [5]% chance> <before discovering [Alchemy]> <hidden from users>",
-			"Add [Jade] to this tile <in [Stone] tiles> <with [8]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
-			"Add [Jade] to this tile <in [Stone] tiles> <with [13]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
-			"Add [Jade] to this tile <in [Stone] tiles> <with [18]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
-			"Add [Jade] to this tile <in [Stone] tiles> <with [25]% chance> <after discovering [LiDAR]> <hidden from users>",
 			//Tin
 			"Add [Tin] to this tile <in [Minerals] tiles> <with [25]% chance> <before discovering [Alchemy]> <hidden from users>",
 			"Add [Tin] to this tile <in [Minerals] tiles> <with [12]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
@@ -1046,6 +1040,48 @@
 			"Add [Rare Earth] to this tile <in [Minerals] tiles> <with [10]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
 			"Add [Rare Earth] to this tile <in [Minerals] tiles> <with [25]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
 			"Add [Rare Earth] to this tile <in [Minerals] tiles> <with [40]% chance> <after discovering [LiDAR]> <hidden from users>",
+			"Remove [Ore Prospecting Attempt] improvements from this tile"
+		],
+		"civilopediaText": [
+			{
+				"text": "Dig into the hidden gems offered by the land."
+			}
+		],
+		"techRequired": "Mining",
+		"shortcutKey": "O"
+	},
+	{
+		"name": "Rare Ore Prospecting Attempt",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Grassland",
+			"Desert",
+			"Ocean",
+			"Coast",
+			"Tundra",
+			"Snow",
+			"Mountain"
+		],
+		"turnsToBuild": 5,
+		"uniques": [
+			"'Fundamental Improvement'",
+			"Improves [Stone] resource in this tile",
+			"Improves [Minerals] resource in this tile",
+			"Can only be built to improve a resource",
+			"Comment [Updates a [Bonus] resource with irregular chance scaling with relevant technologies researched and the value of possible transfromations]",
+			"Comment [Relevant technologies: [Mining], [Alchemy], [Coal Working], [Geology] and [LiDAR]]",
+			//Jade
+			"Add [Jade] to this tile <in [Stone] tiles> <with [5]% chance> <before discovering [Alchemy]> <hidden from users>",
+			"Add [Jade] to this tile <in [Stone] tiles> <with [8]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
+			"Add [Jade] to this tile <in [Stone] tiles> <with [13]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Jade] to this tile <in [Stone] tiles> <with [18]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Jade] to this tile <in [Stone] tiles> <with [25]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Marble
+			"Add [Marble] to this tile <in [Stone] tiles> <with [5]% chance> <before discovering [Alchemy]> <hidden from users>",
+			"Add [Marble] to this tile <in [Stone] tiles> <with [8]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
+			"Add [Marble] to this tile <in [Stone] tiles> <with [13]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Marble] to this tile <in [Stone] tiles> <with [18]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Marble] to this tile <in [Stone] tiles> <with [25]% chance> <after discovering [LiDAR]> <hidden from users>",
 			//Rich Copper Ore
 			"Add [Rich Copper Ore] to this tile <in [Minerals] tiles> <with [2]% chance> <before discovering [Alchemy]> <hidden from users>",
 			"Add [Rich Copper Ore] to this tile <in [Minerals] tiles> <with [3]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
@@ -1070,15 +1106,15 @@
 			"Add [Silver Ore] to this tile <in [Minerals] tiles> <with [5]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
 			"Add [Silver Ore] to this tile <in [Minerals] tiles> <with [7]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
 			"Add [Silver Ore] to this tile <in [Minerals] tiles> <with [9]% chance> <after discovering [LiDAR]> <hidden from users>",
-			"Remove [Ore Prospecting Attempt] improvements from this tile"
+			"Remove [Rare Ore Prospecting Attempt] improvements from this tile"
 		],
 		"civilopediaText": [
 			{
-				"text": "Dig into the hidden gems offered by the land."
+				"text": "A riskier attempt focused purely on luxury resources. May strike precious minerals, or may find little."
 			}
 		],
-		"techRequired": "Mining",
-		"shortcutKey": "O"
+		"techRequired": "Forging",
+		"shortcutKey": "G"
 	},
 	{
 		"name": "Trading Goods Development Attempt",
