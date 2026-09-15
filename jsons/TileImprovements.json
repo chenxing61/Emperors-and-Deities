@@ -326,6 +326,7 @@
 			"Jungle",
 			"Flood plains",
 			"Canal",
+			"Oasis",
 		],
 		"turnsToBuild": 9,
 		"techRequired": "Horse Collar",
@@ -360,6 +361,8 @@
 			"[+1 Production] for each adjacent [Strategic resource]",
 			"[+1 Production] for each adjacent [Strategic resource] <after discovering [Replaceable Parts]>",
 			"[+1 Production] for each adjacent [Strategic resource] <after discovering [Ballistics]>",
+			"[+1 Production] for each adjacent [{Oil well} {Natural Gas}]",
+			"[+1 Production] for each adjacent [{Oil well} {Natural Gas}] <after discovering [Replaceable Parts]>",
 			"[+2 Production] for each adjacent [Manufactory]",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
@@ -485,8 +488,13 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
+			"Hill",
 			"Tundra",
+			"Flood plains",
+			"Canal",
+			"Oasis",
 			"Snow"
 		],
 		"gold":1,
