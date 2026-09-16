@@ -863,6 +863,50 @@
 		]
 	},
 	{
+		"name": "Shell Fish",
+		"resourceType": "Bonus",
+		"revealedBy": "Sailing",
+		"terrainsCanBeFoundOn": [
+			"Coast",
+			"Lakes",
+			"Atoll"
+		],
+		"food": 1,
+		"improvedBy": [
+			"Coast Fishing Boats",
+			"Aquaculture"
+		],
+		"improvementStats": {
+			"food": 1,
+			"gold": 1
+		},
+		"uniques": [
+			"Doesn't generate naturally"
+		]
+	},
+	{
+		"name": "Game Fish",
+		"resourceType": "Bonus",
+		"revealedBy": "Sailing",
+		"terrainsCanBeFoundOn": [
+			"Coast",
+			"Lakes",
+			"Atoll"
+		],
+		"culture": 1,
+		"improvedBy": [
+			"Coast Fishing Boats",
+			"Aquaculture"
+		],
+		"improvementStats": {
+			"food": 2,
+			"gold": 1
+		},
+		"uniques": [
+			"Doesn't generate naturally"
+		]
+	},
+	{
 		"name": "Deep Sea Fish",
 		"resourceType": "Bonus",
 		"revealedBy": "Compass",
