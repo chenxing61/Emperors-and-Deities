@@ -8,14 +8,15 @@
 		"uniques": [
 			"Unbuildable <if [Nomadic Culture] is constructed> <for [non-[AI player]] Civilizations>",
 			"Limited to [3] per Civilization <if [Nomadic Culture] is constructed> <for [AI player] Civilizations>",
-			"Can build [Land] improvements on tiles",
-			"Can build [Lakes] improvements on tiles",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Land] tiles>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Lakes] tiles>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Canal] tiles>",
 			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
 			"[+75]% construction time for [Road] improvements <in [Rough terrain] tiles>",
 			"[+75]% construction time for [Railroad] improvements <in [Rough terrain] tiles>",
 			"[+75]% construction time for [Road] improvements <in [Mountain] tiles>",
 			"[+75]% construction time for [Railroad] improvements <in [Mountain] tiles>",
-			"[This Unit] gains [2] XP <upon building a [All] improvement>",
+			"[This Unit] gains [3] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
 		"upgradesTo": "Mechanised Worker",
@@ -25,25 +26,38 @@
 		"name": "Mechanised Worker",
 		"cost": 280,
 		"unitType": "Civilian",
-		"movement": 3,
+		"movement": 2,
 		"uniques": [
 			"Unbuildable <if [Nomadic Culture] is constructed> <for [non-[AI player]] Civilizations>",
 			"Limited to [3] per Civilization <if [Nomadic Culture] is constructed> <for [AI player] Civilizations>",
 			"Only available <if [Invention of Professional Vehicles] is constructed>",
 			"'Mechanised'",
 			"Costs [5] [Vehicle Parts]",
-			"[-25]% construction time for [All] improvements",
-			"Can build [Land] improvements on tiles",
-			"Can build [Lakes] improvements on tiles",
+			"[-15]% construction time for [All] improvements",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Land] tiles>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Lakes] tiles>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Canal] tiles>",
 			"Can pass through impassable tiles <after discovering [Robotics]>",
 			"[+50]% construction time for [Road] improvements <in [Rough terrain] tiles>",
 			"[+50]% construction time for [Railroad] improvements <in [Rough terrain] tiles>",
 			"[+50]% construction time for [Road] improvements <in [Mountain] tiles>",
 			"[+50]% construction time for [Railroad] improvements <in [Mountain] tiles>",
-			"[This Unit] gains [3] XP <upon building a [All] improvement>",
+			"[This Unit] gains [5] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
+		"promotions":["Automobile"],
 		"requiredTech": "Combustion"
+	},
+	{
+		"name": "Rubber Transplanter",
+		"cost": 250,
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": [
+			"Only available <when above [1] [Rubber]>",
+			"Add [Rubber] to this tile <by consuming this unit>"
+		],
+		"requiredTech": "Mass Production"
 	},
 	{
 		"name": "Galley Work Ship",
@@ -55,8 +69,8 @@
 			"'Galley'",
 			"Cannot enter ocean tiles",
 			"[+1] Movement <after discovering [Shipbuilding]>",
-			"Can build [Water] improvements on tiles",
-			"[This Unit] gains [2] XP <upon building a [All] improvement>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Water] tiles>",
+			"[This Unit] gains [3] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
 		"upgradesTo": "Modern Work Ship",
@@ -69,7 +83,7 @@
 		"movement": 3,
 		"uniques": [
 			"'Sailing Ship'",
-			"May create improvements on water resources <in [Deep Sea Fish] tiles>",
+			"May create improvements on water resources <in [Ocean] tiles>",
 			"Automation is a primary action"
 		],
 		"obsoleteTech": "Advanced Shipbuilding",
@@ -83,7 +97,7 @@
 		"movement": 4,
 		"uniques": [
 			"[-25]% construction time for [All] improvements",
-			"Can build [Water] improvements on tiles",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Water] tiles>",
 			"[This Unit] gains [3] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
@@ -688,6 +702,8 @@
 			"[+25]% construction time for [Road] improvements <in [Open terrain] tiles>",
 			"[+75]% construction time for [Road] improvements <in [Rough terrain] tiles>",
 			"[+75]% construction time for [Road] improvements <in [Mountain] tiles>",
+			"Add [Caprinae] to this tile <costs [100] [Sheep Horde]> <in [{non-[Strategic resource]} {Hill}] tiles> <[2] times>",
+			"Add [Bovine] to this tile <costs [100] [Cattle Horde]> <in [{non-[Strategic resource]} {Grassland}] tiles> <[2] times>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -2482,7 +2498,9 @@
 		"strength": 40,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <when above [0] [Weapon Parts]> <costs [12] [Weapon Parts]>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]> <when above [0] [Weapon Parts]> <costs [12] [Weapon Parts]>",
+			"Can upgrade to [State Militia Musketeer] <if [United States] is constructed>",
 			"Can upgrade to [Grenadier] <for [AI player] Civilizations> <hidden from users>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
@@ -2658,6 +2676,7 @@
 			"'Skirmishers'",
 			"'Firearms'",
 			"[+33]% Strength <vs [Barbarian] units>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Land] tiles> <if [Great Exchange - Furcoat and Pets] is constructed> <hidden from users>",
 			"Can move immediately once bought",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
@@ -2768,6 +2787,8 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Firearms'",
+			"Can transform to [State Militia Musketeer] <if [United States] is constructed> <costs [+125 Gold] stats>",
+			"Can upgrade to [State Militia Rifleman] <if [United States] is constructed>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -3181,6 +3202,7 @@
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Firearms'",
+			"Can transform to [State Militia Rifleman] <if [United States] is constructed> <costs [+250 Gold] stats>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -4714,9 +4736,7 @@
 		"unitType": "Scout",
 		"cost": 800,
 		"movement": 5,
-		"strength": 50,
-		"requiredResource": "Standing Army Maintenance",
-		"requiredTech": "Data Science",
+		"strength": 60,
 		"uniques": [
 			"Unbuildable <in cities without a [Military Base]>",
 			"Only available <if [Invention of Helicopter] is constructed>",
@@ -4728,6 +4748,7 @@
 			"Can see over obstacles",
 			"Invisible to non-adjacent units",
 			"Can see invisible [All] units",
+			"Cannot attack",
 			"[+2] Sight",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
@@ -4735,6 +4756,8 @@
 			"The Standing Army",
 			"Scouting Unit"
 		],
+		"requiredResource": "Standing Army Maintenance",
+		"requiredTech": "Data Science",
 		"attackSound": "jetgun"
 	},
 	{

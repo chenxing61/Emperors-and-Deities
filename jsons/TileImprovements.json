@@ -17,6 +17,8 @@
 			"[+1 Gold] <in [Black Soil] tiles>",
 			"Cannot be built on [Hill] tiles",
 			"Cannot be built on [Coast] tiles",
+			"Cannot be built on [Lakes] tiles",
+			"Cannot be built on [Canal] tiles",
 			"Pillaging this improvement yields approximately [+18 Gold]"
 		],
 		"civilopediaText": [
@@ -48,25 +50,6 @@
 		"shortcutKey": "P"
 	},
 	{
-		"name": "Rubber Plantation",
-		"production": 1,
-		"gold": 2,
-		"techRequired": "Industrialization",
-		"terrainsCanBeBuiltOn": [
-			"Forest",
-			"Jungle"
-		],
-		"uniques": [
-			"Can only be built on [Grassland] tiles",
-			"Does not need removal of [Forest]",
-			"Does not need removal of [Jungle]",
-			"'Agricultural Improvement'",
-			"Provides [2] [Rubber]",
-			"Pillaging this improvement yields approximately [+18 Gold]"
-		],
-		"shortcutKey": "P"
-	},
-	{
 		"name": "Mechanised Farm",
 		"terrainsCanBeBuiltOn": [
 			"Plains",
@@ -88,6 +71,8 @@
 			"Tile provides yield without assigned population",
 			"Cannot be built on [Hill] tiles",
 			"Cannot be built on [Coast] tiles",
+			"Cannot be built on [Lakes] tiles",
+			"Cannot be built on [Canal] tiles",
 			"Pillaging this improvement yields approximately [+36 Gold]"
 		],
 		"civilopediaText": [
@@ -120,6 +105,8 @@
 			"Can also be built on tiles adjacent to fresh water",
 			"Cannot be built on [Hill] tiles",
 			"Cannot be built on [Coast] tiles",
+			"Cannot be built on [Lakes] tiles",
+			"Cannot be built on [Canal] tiles",
 			"Pillaging this improvement yields approximately [+36 Gold]"
 		],
 		"shortcutKey": "P"
@@ -235,6 +222,7 @@
 		"uniques": [
 			"'Extraction Improvement'",
 			"Unavailable <after discovering [Steam Power]>",
+			"Provides [1] [Metal] <in [Tin] tiles>",
 			"[+1 Production] <after discovering [Geology]>",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
@@ -252,6 +240,7 @@
 			"'Extraction Improvement'",
 			"Tile provides yield without assigned population",
 			"[+2 Production] for each adjacent [Power Plant]",
+			"Provides [1] [Metal] <in [Tin] tiles>",
 			"Provides [1] [Metal] <in [Metal] tiles>",
 			"Provides [2] [Coal] <in [Coal] tiles>",
 			"Pillaging this improvement yields approximately [+40 Gold]"
@@ -336,10 +325,14 @@
 			"Forest",
 			"Jungle",
 			"Flood plains",
+			"Canal",
+			"Oasis",
 		],
+		"gold": 1,
 		"turnsToBuild": 9,
 		"techRequired": "Horse Collar",
 		"uniques": [
+			"Must be next to [improved]",
 			"'Infrastructure Improvement'",
 			"[+1 Gold] for each adjacent [Bonus resource]",
 			"[+2 Gold] for each adjacent [Luxury resource]",
@@ -361,14 +354,19 @@
 			"Forest",
 			"Jungle",
 			"Flood plains",
+			"Canal",
 		],
+		"production": 1,
 		"turnsToBuild": 9,
 		"techRequired": "Cartridge",
 		"uniques": [
+			"Must be next to [improved]",
 			"'Infrastructure Improvement'",
 			"[+1 Production] for each adjacent [Strategic resource]",
 			"[+1 Production] for each adjacent [Strategic resource] <after discovering [Replaceable Parts]>",
 			"[+1 Production] for each adjacent [Strategic resource] <after discovering [Ballistics]>",
+			"[+1 Production] for each adjacent [{Oil well} {Natural Gas}]",
+			"[+1 Production] for each adjacent [{Oil well} {Natural Gas}] <after discovering [Replaceable Parts]>",
 			"[+2 Production] for each adjacent [Manufactory]",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
@@ -386,6 +384,7 @@
 			"Forest",
 			"Jungle",
 			"Flood plains",
+			"Canal",
 		],
 		"production": 1,
 		"science": 1,
@@ -423,6 +422,7 @@
 		"terrainsCanBeBuiltOn": [
 			"Ocean"
 		],
+		"food": 1,
 		"turnsToBuild": 7,
 		"uniques": [
 			"'Water Improvement'",
@@ -439,9 +439,9 @@
 		"terrainsCanBeBuiltOn": [
 			"Coast"
 		],
-		"food": 3,
+		"food": 2,
 		"gold": 1,
-		"turnsToBuild": 10,
+		"turnsToBuild": 6,
 		"techRequired": "Biology",
 		"uniques": [
 			"'Water Improvement'",
@@ -493,11 +493,16 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
+			"Hill",
 			"Tundra",
+			"Flood plains",
+			"Canal",
+			"Oasis",
 			"Snow"
 		],
-		"gold":1,
+		"gold": 1,
 		"uniques": [
 			"'Policy Improvement'",
 			"Can be built outside your borders",
@@ -507,7 +512,7 @@
 			"Does not need removal of [Forest]",
 			"Does not need removal of [Jungle]"
 		],
-		"techRequired":"Cartography",
+		"techRequired": "Cartography",
 		"civilopediaText": [
 			{
 				"text": "Grabs land."
@@ -589,7 +594,6 @@
 		],
 		"shortcutKey": "M"
 	},
-
 	{
 		"name": "Colony Plantation",
 		"terrainsCanBeBuiltOn": [
@@ -658,6 +662,7 @@
 			"Flood plains",
 			"Snow",
 			"Oasis",
+			"Canal",
 		],
 		"science": 6,
 		"happiness": 1,
@@ -766,7 +771,7 @@
 	{
 		"name": "Road",
 		"terrainsCanBeBuiltOn": [
-			"Land"
+			"Land",
 		],
 		"turnsToBuild": 4,
 		"techRequired": "Currency",
@@ -793,7 +798,7 @@
 	{
 		"name": "Railroad",
 		"terrainsCanBeBuiltOn": [
-			"Land"
+			"Land",
 		],
 		"turnsToBuild": 6,
 		"techRequired": "Railroads",
@@ -842,15 +847,15 @@
 			"Tundra",
 			"Hill"
 		],
-		"turnsToBuild": 10,
+		"turnsToBuild": 7,
 		"uniques": [
+			"'Fundamental Improvement'",
 			"Turn this tile into a [Forest] tile",
 			"Cannot be built on [{Desert} {Hill}] tiles",
 			"Cannot be built on [{Snow} {Hill}] tiles",
 			"Cannot be built on [Forest] tiles",
 			"Cannot be built on [Jungle] tiles"
 		],
-		"techRequired": "Biology"
 	},
 	{
 		"name": "Lake Reclamation",
@@ -858,12 +863,12 @@
 			"Lakes",
 		],
 		"turnsToBuild": 14,
-		"techRequired": "Irrigation",
 		"uniques": [
 			"Turn this tile into a [Grassland] tile",
 			"Unavailable <in [Lakes] tiles> <with [4] to [6] neighboring [Lakes] tiles>",
 			"Excluded from map editor"
 		],
+		"techRequired": "Irrigation",
 	},
 	{
 		"name": "Coast Reclamation",
@@ -890,6 +895,350 @@
 			"Turn this tile into a [Grassland] tile",
 			"Excluded from map editor"
 		],
+	},
+	{
+		"name": "Crop Improvement Attempt",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Grassland",
+			"Desert",
+			"Tundra",
+			"Snow",
+			"Mountain"
+		],
+		"food": 1,
+		"turnsToBuild": 4,
+		"uniques": [
+			"'Fundamental Improvement'",
+			"Can only be built to improve a resource",
+			"Improves [Grain] resource in this tile",
+			"Improves [Tuber] resource in this tile",
+			"Improves [Fruit] resource in this tile",
+			"Comment [Updates a [Bonus resource] with [10%]/[33%]/[66%]/[100%] chance scaling with relevant technologies researched]",
+			"Comment [Relevant technologies: [Plows], [Guilds], [Fertilizer] and [Pharmaceuticals]]",
+			"Comment [Relevant Resources:]",
+			"Comment [Hybrid Grain] <Civilopedia link [Resources/Hybrid Grain]>",
+			"Comment [Hybrid Tuber] <Civilopedia link [Resources/Hybrid Tuber]>",
+			"Comment [Hybrid Fruit] <Civilopedia link [Resources/Hybrid Fruit]>",
+			//Hybrid Grains
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [10]% chance> <before discovering [Guilds]> <hidden from users>",
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [33]% chance> <after discovering [Guilds]> <before discovering [Fertilizer]> <hidden from users>",
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <with [66]% chance> <after discovering [Fertilizer]> <before discovering [Pharmaceuticals]> <hidden from users>",
+			"Add [Hybrid Grain] to this tile <in [Grain] tiles> <after discovering [Pharmaceuticals]> <hidden from users>",
+			//Hybrid Tubers
+			"Add [Hybrid Tuber] to this tile <in [Tuber] tiles> <with [20]% chance> <before discovering [Guilds]> <hidden from users>",
+			"Add [Hybrid Tuber] to this tile <in [Tuber] tiles> <with [50]% chance> <after discovering [Guilds]> <before discovering [Fertilizer]> <hidden from users>",
+			"Add [Hybrid Tuber] to this tile <in [Tuber] tiles> <with [75]% chance> <after discovering [Fertilizer]> <before discovering [Pharmaceuticals]> <hidden from users>",
+			"Add [Hybrid Tuber] to this tile <in [Tuber] tiles> <after discovering [Pharmaceuticals]> <hidden from users>",
+			//Hybrid Fruits
+			"Add [Hybrid Fruit] to this tile <in [Fruit] tiles> <with [10]% chance> <before discovering [Guilds]> <hidden from users>",
+			"Add [Hybrid Fruit] to this tile <in [Fruit] tiles> <with [33]% chance> <after discovering [Guilds]> <before discovering [Fertilizer]> <hidden from users>",
+			"Add [Hybrid Fruit] to this tile <in [Fruit] tiles> <with [66]% chance> <after discovering [Fertilizer]> <before discovering [Pharmaceuticals]> <hidden from users>",
+			"Add [Hybrid Fruit] to this tile <in [Fruit] tiles> <after discovering [Pharmaceuticals]> <hidden from users>",
+			"Remove [Crop Improvement Attempt] improvements from this tile"
+		],
+		"civilopediaText": [
+			{
+				"text": "Selectively Breed your ['Crop']s to make them more productive."
+			}
+		],
+		"techRequired": "Plows",
+		"shortcutKey": "C"
+	},
+	{
+		"name": "Advanced Domestication Attempt",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Grassland",
+			"Desert",
+			"Tundra",
+			"Snow",
+			"Mountain"
+		],
+		"food": 1,
+		"turnsToBuild": 4,
+		"uniques": [
+			"'Fundamental Improvement'",
+			"Improves [Bovine] resource in this tile",
+			"Improves [Caprinae] resource in this tile",
+			"Improves [Wild Animals] resource in this tile",
+			"Can only be built to improve a resource",
+			"Comment [Updates a [Bonus resource] with [15%]/[25%]/[50%]/[75%] chance scaling with relevant technologies researched]",
+			"Comment [Relevant technologies: [Animal Husbandry], [Stirrup], [Biology] and [Pharmaceuticals]]",
+			"Comment [Relevant Resources:]",
+			"Comment [Beef Cattle] <Civilopedia link [Resources/Beef Cattle]>",
+			"Comment [Wool] <Civilopedia link [Resources/Wool]>",
+			"Comment [Phasianidae] <Civilopedia link [Resources/Phasianidae]>",
+			"Comment [Suidae] <Civilopedia link [Resources/Suidae]>",
+			//Beef Cattle
+			"Add [Beef Cattle] to this tile <in [Bovine] tiles> <with [15]% chance> <before discovering [Stirrup]> <hidden from users>",
+			"Add [Beef Cattle] to this tile <in [Bovine] tiles> <with [25]% chance> <after discovering [Stirrup]> <before discovering [Biology]> <hidden from users>",
+			"Add [Beef Cattle] to this tile <in [Bovine] tiles> <with [50]% chance> <after discovering [Biology]> <before discovering [Pharmaceuticals]> <hidden from users>",
+			"Add [Beef Cattle] to this tile <in [Bovine] tiles> <with [75]% chance> <after discovering [Pharmaceuticals]> <hidden from users>",
+			//Wool
+			"Add [Wool] to this tile <in [Caprinae] tiles> <with [15]% chance> <before discovering [Stirrup]> <hidden from users>",
+			"Add [Wool] to this tile <in [Caprinae] tiles> <with [25]% chance> <after discovering [Stirrup]> <before discovering [Biology]> <hidden from users>",
+			"Add [Wool] to this tile <in [Caprinae] tiles> <with [50]% chance> <after discovering [Biology]> <before discovering [Pharmaceuticals]> <hidden from users>",
+			"Add [Wool] to this tile <in [Caprinae] tiles> <with [75]% chance> <after discovering [Pharmaceuticals]> <hidden from users>",
+			//Phasianidae
+			"Add [Phasianidae] to this tile <in [Wild Animals] tiles> <with [15]% chance> <before discovering [Stirrup]> <hidden from users>",
+			"Add [Phasianidae] to this tile <in [Wild Animals] tiles> <with [25]% chance> <after discovering [Stirrup]> <before discovering [Biology]> <hidden from users>",
+			"Add [Phasianidae] to this tile <in [Wild Animals] tiles> <with [50]% chance> <after discovering [Biology]> <before discovering [Pharmaceuticals]> <hidden from users>",
+			"Add [Phasianidae] to this tile <in [Wild Animals] tiles> <with [66]% chance> <after discovering [Pharmaceuticals]> <hidden from users>",
+			//Suidae
+			"Add [Suidae] to this tile <in [Wild Animals] tiles> <with [15]% chance> <before discovering [Stirrup]> <hidden from users>",
+			"Add [Suidae] to this tile <in [Wild Animals] tiles> <with [25]% chance> <after discovering [Stirrup]> <before discovering [Biology]> <hidden from users>",
+			"Add [Suidae] to this tile <in [Wild Animals] tiles> <with [50]% chance> <after discovering [Biology]> <before discovering [Pharmaceuticals]> <hidden from users>",
+			"Add [Suidae] to this tile <in [Wild Animals] tiles> <with [75]% chance> <after discovering [Pharmaceuticals]> <hidden from users>",
+			"Remove [Advanced Domestication Attempt] improvements from this tile"
+		],
+		"civilopediaText": [
+			{
+				"text": "Selectively Breed your ['Herd']s to make them more productive."
+			}
+		],
+		"techRequired": "Animal Husbandry",
+		"shortcutKey": "H"
+	},
+	{
+		"name": "Ore Prospecting Attempt",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Grassland",
+			"Desert",
+			"Tundra",
+			"Snow",
+			"Mountain"
+		],
+		"production": 1,
+		"turnsToBuild": 4,
+		"uniques": [
+			"'Fundamental Improvement'",
+			"Improves [Stone] resource in this tile",
+			"Improves [Minerals] resource in this tile",
+			"Can only be built to improve a resource",
+			"Comment [Updates a [Bonus resource] with irregular chance scaling with relevant technologies researched and the value of possible transfromations]",
+			"Comment [Relevant technologies: [Mining], [Alchemy], [Coal Working], [Geology] and [LiDAR]]",
+			"Comment [Relevant Resources:]",
+			"Comment [Quartz] <Civilopedia link [Resources/Quartz]>",
+			"Comment [Tin] <Civilopedia link [Resources/Tin]>",
+			"Comment [Sulfur] <Civilopedia link [Resources/Sulfur]>",
+			"Comment [Metal] <Civilopedia link [Resources/Metal]>",
+			"Comment [Coal] <Civilopedia link [Resources/Coal]>",
+			"Comment [Aluminum] <Civilopedia link [Resources/Aluminum]>",
+			"Comment [Uranium] <Civilopedia link [Resources/Uranium]>",
+			"Comment [Rare Earth] <Civilopedia link [Resources/Rare Earth]>",
+			//Quartz
+			"Add [Quartz] to this tile <in [Stone] tiles> <with [5]% chance> <before discovering [Alchemy]> <hidden from users>",
+			"Add [Quartz] to this tile <in [Stone] tiles> <with [8]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
+			"Add [Quartz] to this tile <in [Stone] tiles> <with [13]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Quartz] to this tile <in [Stone] tiles> <with [18]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Quartz] to this tile <in [Stone] tiles> <with [25]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Tin
+			"Add [Tin] to this tile <in [Minerals] tiles> <with [25]% chance> <before discovering [Alchemy]> <hidden from users>",
+			"Add [Tin] to this tile <in [Minerals] tiles> <with [12]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
+			"Add [Tin] to this tile <in [Minerals] tiles> <with [8]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Tin] to this tile <in [Minerals] tiles> <with [12]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Tin] to this tile <in [Minerals] tiles> <with [25]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Sulfur
+			"Add [Sulfur] to this tile <in [Minerals] tiles> <with [8]% chance> <before discovering [Alchemy]> <hidden from users>",
+			"Add [Sulfur] to this tile <in [Minerals] tiles> <with [25]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
+			"Add [Sulfur] to this tile <in [Minerals] tiles> <with [12]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Sulfur] to this tile <in [Minerals] tiles> <with [33]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Sulfur] to this tile <in [Minerals] tiles> <with [33]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Metal
+			"Add [Metal] to this tile <in [Minerals] tiles> <with [5]% chance> <before discovering [Alchemy]> <hidden from users>",
+			"Add [Metal] to this tile <in [Minerals] tiles> <with [8]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
+			"Add [Metal] to this tile <in [Minerals] tiles> <with [10]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Metal] to this tile <in [Minerals] tiles> <with [12]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Metal] to this tile <in [Minerals] tiles> <with [14]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Coal
+			"Add [Coal] to this tile <in [Minerals] tiles> <with [8]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Coal] to this tile <in [Minerals] tiles> <with [10]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Coal] to this tile <in [Minerals] tiles> <with [12]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Aluminum
+			"Add [Aluminum] to this tile <in [Minerals] tiles> <with [8]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Aluminum] to this tile <in [Minerals] tiles> <with [12]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Uranium
+			"Add [Uranium] to this tile <in [Minerals] tiles> <with [5]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Uranium] to this tile <in [Minerals] tiles> <with [8]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Rare Earth
+			"Add [Rare Earth] to this tile <in [Minerals] tiles> <with [10]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Rare Earth] to this tile <in [Minerals] tiles> <with [25]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Rare Earth] to this tile <in [Minerals] tiles> <with [40]% chance> <after discovering [LiDAR]> <hidden from users>",
+			"Remove [Ore Prospecting Attempt] improvements from this tile"
+		],
+		"civilopediaText": [
+			{
+				"text": "Dig into the hidden gems offered by the land."
+			}
+		],
+		"techRequired": "Mining",
+		"shortcutKey": "O"
+	},
+	{
+		"name": "Rare Ore Prospecting Attempt",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Grassland",
+			"Desert",
+			"Tundra",
+			"Snow",
+			"Mountain"
+		],
+		"gold": 1,
+		"turnsToBuild": 5,
+		"uniques": [
+			"'Fundamental Improvement'",
+			"Improves [Stone] resource in this tile",
+			"Improves [Minerals] resource in this tile",
+			"Can only be built to improve a resource",
+			"Comment [Updates a [Bonus resource] with irregular chance scaling with relevant technologies researched and the value of possible transfromations]",
+			"Comment [Relevant technologies: [Mining], [Alchemy], [Coal Working], [Geology] and [LiDAR]]",
+			"Comment [Relevant Resources:]",
+			"Comment [Jade] <Civilopedia link [Resources/Jade]>",
+			"Comment [Marble] <Civilopedia link [Resources/Marble]>",
+			"Comment [Rich Copper Ore] <Civilopedia link [Resources/Rich Copper Ore]>",
+			"Comment [Gems] <Civilopedia link [Resources/Gems]>",
+			"Comment [Gold Ore] <Civilopedia link [Resources/Gold Ore]>",
+			"Comment [Silver Ore] <Civilopedia link [Resources/Silver Ore]>",
+			//Jade
+			"Add [Jade] to this tile <in [Stone] tiles> <with [5]% chance> <before discovering [Alchemy]> <hidden from users>",
+			"Add [Jade] to this tile <in [Stone] tiles> <with [8]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
+			"Add [Jade] to this tile <in [Stone] tiles> <with [13]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Jade] to this tile <in [Stone] tiles> <with [18]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Jade] to this tile <in [Stone] tiles> <with [25]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Marble
+			"Add [Marble] to this tile <in [Stone] tiles> <with [5]% chance> <before discovering [Alchemy]> <hidden from users>",
+			"Add [Marble] to this tile <in [Stone] tiles> <with [8]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
+			"Add [Marble] to this tile <in [Stone] tiles> <with [13]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Marble] to this tile <in [Stone] tiles> <with [18]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Marble] to this tile <in [Stone] tiles> <with [25]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Rich Copper Ore
+			"Add [Rich Copper Ore] to this tile <in [Minerals] tiles> <with [2]% chance> <before discovering [Alchemy]> <hidden from users>",
+			"Add [Rich Copper Ore] to this tile <in [Minerals] tiles> <with [3]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
+			"Add [Rich Copper Ore] to this tile <in [Minerals] tiles> <with [5]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Rich Copper Ore] to this tile <in [Minerals] tiles> <with [7]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Rich Copper Ore] to this tile <in [Minerals] tiles> <with [9]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Gems
+			"Add [Gems] to this tile <in [Minerals] tiles> <with [2]% chance> <before discovering [Alchemy]> <hidden from users>",
+			"Add [Gems] to this tile <in [Minerals] tiles> <with [3]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
+			"Add [Gems] to this tile <in [Minerals] tiles> <with [5]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Gems] to this tile <in [Minerals] tiles> <with [7]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Gems] to this tile <in [Minerals] tiles> <with [9]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Gold Ore
+			"Add [Gold Ore] to this tile <in [Minerals] tiles> <with [2]% chance> <before discovering [Alchemy]> <hidden from users>",
+			"Add [Gold Ore] to this tile <in [Minerals] tiles> <with [3]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
+			"Add [Gold Ore] to this tile <in [Minerals] tiles> <with [5]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Gold Ore] to this tile <in [Minerals] tiles> <with [7]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Gold Ore] to this tile <in [Minerals] tiles> <with [9]% chance> <after discovering [LiDAR]> <hidden from users>",
+			//Silver Ore
+			"Add [Silver Ore] to this tile <in [Minerals] tiles> <with [2]% chance> <before discovering [Alchemy]> <hidden from users>",
+			"Add [Silver Ore] to this tile <in [Minerals] tiles> <with [3]% chance> <after discovering [Alchemy]> <before discovering [Coal Working]> <hidden from users>",
+			"Add [Silver Ore] to this tile <in [Minerals] tiles> <with [5]% chance> <after discovering [Coal Working]> <before discovering [Geology]> <hidden from users>",
+			"Add [Silver Ore] to this tile <in [Minerals] tiles> <with [7]% chance> <after discovering [Geology]> <before discovering [LiDAR]> <hidden from users>",
+			"Add [Silver Ore] to this tile <in [Minerals] tiles> <with [9]% chance> <after discovering [LiDAR]> <hidden from users>",
+			"Remove [Rare Ore Prospecting Attempt] improvements from this tile"
+		],
+		"civilopediaText": [
+			{
+				"text": "A riskier attempt focused purely on luxury resources. May strike precious minerals, or may find little."
+			}
+		],
+		"techRequired": "Forging",
+		"shortcutKey": "G"
+	},
+	{
+		"name": "Trading Goods Development Attempt",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Grassland",
+			"Desert",
+			"Tundra",
+			"Snow"
+		],
+		"gold": 1,
+		"turnsToBuild": 5,
+		"uniques": [
+			"'Fundamental Improvement'",
+			"Improves [Wild Animals] resource in this tile",
+			"Improves [Fruit] resource in this tile",
+			"Can only be built to improve a resource",
+			"Comment [Updates a [Bonus resource] with [2%]/[3%]/[5%]/[7%] chance scaling with relevant technologies researched]",
+			"Comment [Relevant technologies: [Trade Network], [Diplomacy], [Economics] and [E-commerce]]",
+			"Comment [Relevant Resources:]",
+			"Comment [Pets] <Civilopedia link [Resources/Pets]>",
+			"Comment [Furs] <Civilopedia link [Resources/Furs]>",
+			"Comment [Grape] <Civilopedia link [Resources/Grape]>",
+			"Comment [Citrus] <Civilopedia link [Resources/Citrus]>",
+			//Pets
+			"Add [Pets] to this tile <in [Wild Animals] tiles> <with [2]% chance> <before discovering [Diplomacy]> <hidden from users>",
+			"Add [Pets] to this tile <in [Wild Animals] tiles> <with [3]% chance> <after discovering [Diplomacy]> <before discovering [Economics]> <hidden from users>",
+			"Add [Pets] to this tile <in [Wild Animals] tiles> <with [5]% chance> <after discovering [Economics]> <before discovering [E-commerce]> <hidden from users>",
+			"Add [Pets] to this tile <in [Wild Animals] tiles> <with [7]% chance> <after discovering [E-commerce]> <hidden from users>",
+			//Furs
+			"Add [Furs] to this tile <in [Wild Animals] tiles> <with [2]% chance> <before discovering [Diplomacy]> <hidden from users>",
+			"Add [Furs] to this tile <in [Wild Animals] tiles> <with [3]% chance> <after discovering [Diplomacy]> <before discovering [Economics]> <hidden from users>",
+			"Add [Furs] to this tile <in [Wild Animals] tiles> <with [5]% chance> <after discovering [Economics]> <before discovering [E-commerce]> <hidden from users>",
+			"Add [Furs] to this tile <in [Wild Animals] tiles> <with [7]% chance> <after discovering [E-commerce]> <hidden from users>",
+			//Grape
+			"Add [Grape] to this tile <in [Fruit] tiles> <with [2]% chance> <before discovering [Diplomacy]> <hidden from users>",
+			"Add [Grape] to this tile <in [Fruit] tiles> <with [3]% chance> <after discovering [Diplomacy]> <before discovering [Economics]> <hidden from users>",
+			"Add [Grape] to this tile <in [Fruit] tiles> <with [5]% chance> <after discovering [Economics]> <before discovering [E-commerce]> <hidden from users>",
+			"Add [Grape] to this tile <in [Fruit] tiles> <with [7]% chance> <after discovering [E-commerce]> <hidden from users>",
+			//Citrus
+			"Add [Citrus] to this tile <in [Fruit] tiles> <with [2]% chance> <before discovering [Diplomacy]> <hidden from users>",
+			"Add [Citrus] to this tile <in [Fruit] tiles> <with [3]% chance> <after discovering [Diplomacy]> <before discovering [Economics]> <hidden from users>",
+			"Add [Citrus] to this tile <in [Fruit] tiles> <with [5]% chance> <after discovering [Economics]> <before discovering [E-commerce]> <hidden from users>",
+			"Add [Citrus] to this tile <in [Fruit] tiles> <with [7]% chance> <after discovering [E-commerce]> <hidden from users>",
+			"Remove [Trading Goods Development Attempt] improvements from this tile"
+		],
+		"civilopediaText": [
+			{
+				"text": "Develop wild goods into tradable luxuries."
+			}
+		],
+		"techRequired": "Trade Network",
+		"shortcutKey": "O"
+	},
+	{
+		"name": "Aquatic Development Attempt",
+		"terrainsCanBeBuiltOn": [
+			"Coast",
+			"Lakes",
+			"Atoll",
+			"Ocean"
+		],
+		"food": 1,
+		"turnsToBuild": 5,
+		"uniques": [
+			"'Fundamental Improvement'",
+			"Improves [Coastal Fish] resource in this tile",
+			"Can only be built to improve a resource",
+			"Comment [Updates a [Bonus resource] with [10%]/[33%]/[66%]/[100%] chance scaling with relevant technologies researched]",
+			"Comment [Relevant technologies: [Sailing], [Compass], [Monocular] and [Biology]]",
+			"Comment [Relevant Resources:]",
+			"Comment [Game Fish] <Civilopedia link [Resources/Game Fish]>",
+			"Comment [Shell Fish] <Civilopedia link [Resources/Shell Fish]>",
+			//Game Fish
+			"Add [Game Fish] to this tile <in [Coastal Fish] tiles> <with [10]% chance> <before discovering [Compass]> <hidden from users>",
+			"Add [Game Fish] to this tile <in [Coastal Fish] tiles> <with [33]% chance> <after discovering [Compass]> <before discovering [Monocular]> <hidden from users>",
+			"Add [Game Fish] to this tile <in [Coastal Fish] tiles> <with [66]% chance> <after discovering [Monocular]> <before discovering [Biology]> <hidden from users>",
+			"Add [Game Fish] to this tile <in [Coastal Fish] tiles> <after discovering [Biology]> <hidden from users>",
+			//Shell Fish
+			"Add [Shell Fish] to this tile <in [Coastal Fish] tiles> <with [10]% chance> <before discovering [Compass]> <hidden from users>",
+			"Add [Shell Fish] to this tile <in [Coastal Fish] tiles> <with [33]% chance> <after discovering [Compass]> <before discovering [Monocular]> <hidden from users>",
+			"Add [Shell Fish] to this tile <in [Coastal Fish] tiles> <with [66]% chance> <after discovering [Monocular]> <before discovering [Biology]> <hidden from users>",
+			"Add [Shell Fish] to this tile <in [Coastal Fish] tiles> <after discovering [Biology]> <hidden from users>",
+			"Remove [Aquatic Development Attempt] improvements from this tile"
+		],
+		"civilopediaText": [
+			{
+				"text": "Develop your coastal fisheries into more specialised aquatic goods."
+			}
+		],
+		"techRequired": "Sailing",
+		"shortcutKey": "A"
 	},
 	// Removals
 	// Any improvement that starts with 'Remove ' is automatically changed into
@@ -1229,7 +1578,8 @@
 	{
 		"name": "City ruins",
 		"terrainsCanBeBuiltOn": [
-			"Land"
+			"Land",
+			"Canal",
 		],
 		"uniques": [
 			"Unpillagable",
@@ -1245,33 +1595,15 @@
 	{
 		"name": "City center",
 		"terrainsCanBeBuiltOn": [
-			"Land"
+			"Land",
+			"Canal",
 		],
 		"uniques": [
 			"'Urban Improvement'",
 			"Ensures a minimum tile yield of [+2 Food, +1 Production]",
 			"[+1 Food] from [River] tiles",
 			"[+1 Food] from [Fresh water] tiles",
-			"Provides [2] [Consumption Demand] <in cities with between [0] and [5] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [4] [Consumption Demand] <in cities with between [5] and [10] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [6] [Consumption Demand] <in cities with between [10] and [15] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [8] [Consumption Demand] <in cities with between [15] and [20] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [10] [Consumption Demand] <in cities with between [20] and [25] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [12] [Consumption Demand] <in cities with between [25] and [30] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [14] [Consumption Demand] <in cities with between [30] and [35] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [16] [Consumption Demand] <in cities with between [35] and [40] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [18] [Consumption Demand] <in cities with between [40] and [45] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [20] [Consumption Demand] <in cities with between [45] and [50] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [22] [Consumption Demand] <in cities with between [50] and [55] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [24] [Consumption Demand] <in cities with between [55] and [60] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [26] [Consumption Demand] <in cities with between [60] and [65] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [28] [Consumption Demand] <in cities with between [65] and [70] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [30] [Consumption Demand] <in cities with between [70] and [75] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [32] [Consumption Demand] <in cities with between [75] and [80] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [34] [Consumption Demand] <in cities with between [80] and [85] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [36] [Consumption Demand] <in cities with between [85] and [90] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [38] [Consumption Demand] <in cities with between [90] and [95] [Population]> <starting from the [Industrial era]> <hidden from users>",
-			"Provides [40] [Consumption Demand] <in cities with between [95] and [100] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [2] [Consumption Demand] <for every [5] [[[Population] in [in this city] Cities]]> <starting from the [Industrial era]> <hidden from users>",
 			"Unpillagable",
 			"Irremovable",
 			"Unbuildable",

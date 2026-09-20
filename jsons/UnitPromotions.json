@@ -1183,8 +1183,8 @@
 	{
 		"name": "Development Doctrine",
 		"uniques": [
-			"Only available <when above [125] [Gold]> <(modified by game speed)>",
-			"Gain [-125] [Gold] <(modified by game speed)>",
+			"Only available <when above [100] [Gold]> <(modified by game speed)>",
+			"Gain [-100] [Gold] <(modified by game speed)>",
 			"This Promotion is free <hidden from users> <for [Worker] units>",
 			"This Promotion is free <hidden from users> <for [Mechanised Worker] units>",
 			"This Promotion is free <hidden from users> <for [Galley Work Ship] units>",
@@ -1204,8 +1204,8 @@
 			"Development Doctrine"
 		],
 		"uniques": [
-			"[-10]% construction time for ['Agricultural Improvement'] improvements",
-			"Gain [10] [Gold] <upon ending a turn in a ['Agricultural Improvement'] tile>"
+			"[-50]% construction time for ['Agricultural Improvement'] improvements <in ['Crop'] tiles>",
+			"Can build [Crop Improvement Attempt] improvements on tiles"
 		],
 		"unitTypes": [
 			"Civilian",
@@ -1215,28 +1215,29 @@
 		"row": 1
 	},
 	{
-		"name": "Strike the Earth",
+		"name": "Animal Husbandry Expert",
 		"prerequisites": [
 			"Development Doctrine"
 		],
 		"uniques": [
-			"[-10]% construction time for ['Extraction Improvement'] improvements",
-			"Gain [10] [Gold] <upon ending a turn in a ['Extraction Improvement'] tile>"
+			"[-50]% construction time for ['Agricultural Improvement'] improvements <in ['Herd'] tiles>",
+			"Can build [Advanced Domestication Attempt] improvements on tiles"
 		],
 		"unitTypes": [
-			"Civilian"
+			"Civilian",
+			"Civil Ship"
 		],
 		"column": 19,
 		"row": 2
 	},
 	{
-		"name": "Lumber Expert",
+		"name": "Strike the Earth",
 		"prerequisites": [
 			"Development Doctrine"
 		],
 		"uniques": [
-			"[-10]% construction time for ['Lumber Improvement'] improvements",
-			"Gain [10] [Gold] <upon ending a turn in a ['Lumber Improvement'] tile>",
+			"[-50]% construction time for ['Extraction Improvement'] improvements <in ['Useful Mineral'] tiles>",
+			"Can build [Ore Prospecting Attempt] improvements on tiles"
 		],
 		"unitTypes": [
 			"Civilian"
@@ -1245,22 +1246,36 @@
 		"row": 3
 	},
 	{
+		"name": "Lumber Expert",
+		"prerequisites": [
+			"Development Doctrine"
+		],
+		"uniques": [
+			"[-25]% construction time for ['Lumber Improvement'] improvements",
+			"Can build [Reforestation] improvements on tiles"
+		],
+		"unitTypes": [
+			"Civilian"
+		],
+		"column": 19,
+		"row": 4
+	},
+	{
 		"name": "Caravan Group",
 		"prerequisites": [
 			"Development Doctrine"
 		],
 		"uniques": [
-			"[-10]% construction time for ['Infrastructure Improvement'] improvements",
+			"[-25]% construction time for ['Infrastructure Improvement'] improvements",
 			"[-10]% Strength <vs ['Standing Army'] units>",
-			"Gain [10] [Gold] <upon ending a turn in a ['Urban Improvement'] tile>",
-			"Gain [10] [Gold] <upon ending a turn in a [Civilian Market] tile>"
+			"Can build [Trading Goods Development Attempt] improvements on tiles"
 		],
 		"unitTypes": [
 			"Civilian",
 			"Civil Ship"
 		],
 		"column": 19,
-		"row": 4
+		"row": 5
 	},
 	{
 		"name": "Oversea Connections",
@@ -1268,14 +1283,14 @@
 			"Development Doctrine"
 		],
 		"uniques": [
-			"[-10]% construction time for ['Water Improvement'] improvements",
-			"Gain [10] [Gold] <upon ending a turn in a ['Water Improvement'] tile>",
+			"[-25]% construction time for ['Water Improvement'] improvements",
+			"Can build [Aquatic Development Attempt] improvements on tiles"
 		],
 		"unitTypes": [
 			"Civil Ship"
 		],
 		"column": 19,
-		"row": 5
+		"row": 6
 	},
 	{
 		"name": "Artisanal Dedication",
@@ -1283,15 +1298,15 @@
 			"Development Doctrine"
 		],
 		"uniques": [
-			"[-10]% construction time for ['Policy Improvement'] improvements",
-			"Gain [10] [Culture] <upon ending a turn in a ['Policy Improvement'] tile>"
+			"Can speed up construction of a building <for [Human player] Civilizations>",
+			"[-50]% construction time for ['Fundamental Improvement'] improvements"
 		],
 		"unitTypes": [
 			"Civilian",
 			"Civil Ship"
 		],
 		"column": 19,
-		"row": 6
+		"row": 7
 	},
 	///Equipments
 	{
@@ -2538,7 +2553,9 @@
 		"prerequisites":["Vehicle Upgrades"],
 		"uniques": [
 			"Only available <after discovering [Combustion]>",
+			"[This Unit] loses the [Cart] promotion",
 			"[This Unit] loses the [Wagon] promotion",
+			"[-10]% construction time for [All] improvements",
 			"[+2] Movement"
 		],
 		"unitTypes": [
@@ -2880,12 +2897,13 @@
 	{
 		"name": "Skirmisher Training",
 		"uniques": [
-			"[-5]% Strength <when attacking>",
+			"[-10]% Strength <when attacking>",
+			"[-10]% Strength <vs cities> <when attacking>",
 			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
 			"[-20]% Strength <vs ['Mounted'] units> <when defending>",
 			"[-20]% Strength <vs ['Mechanised'] units> <when defending>",
 			"Ignores Zone of Control",
-			"[Target Unit] gains the [Sabotaged] status for [1] turn(s) <upon damaging a [{non-[Aircraft]} {non-['Low Altitude Aircraft']} {Military}] unit> <with [25]% chance>"
+			"[Target Unit] gains the [Sabotaged] status for [2] turn(s) <upon damaging a [{non-[Aircraft]} {non-['Low Altitude Aircraft']} {Military}] unit> <with [25]% chance>"
 		]
 	},
 	{

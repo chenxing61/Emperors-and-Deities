@@ -1,43 +1,39 @@
-# Emperor and Deities (帝王和神明)
+# Emperor and Deities
 
- The Trailer: https://youtu.be/ZhHMAkBuZAg?si=iHjru9OQqDwQtoYd
- 
- Major Overhaul of literary everything, if you are not satisfied with how civ 5 portrays human civilizations, you ought to try this mod!
+*Major Overhaul of literary everything, if you are not satisfied with how civ 5 portrays human civilizations, you ought to try this mod!*
 
- The Mod is WIP so civs dont have their full unique features and late game(info age) kinda lacks content, it is recommended that you enable short victories like nuclear monopoly and industrial.
+## What does this mod have:
 
- Credit to 
+1. **Overhauled and extended units, buildings, policies, technologies, unit promotions, resources, terrains and tile improvements etc.** To curate a more detailed/immersive experience from neolithic era to future era.
+2. **Custom mechanics** like influence point/events and civilization forms. Which gave more depth to the overall gameplay and enables more features like civilization switching and decision tabs akin to paradox games.
+3. More detailed mid-post industrial era late gameplay with more mechanics. (WIP)
+4. **Adequate tutorials** and walls of text in the civilpedia for the features above so that new players can learn it. You can enter the tutorial scenario by switching the map generation to scenario in game.
+5. Translation in Simplified and Traditional Chinese （简体繁体中文全部支持），German（Diese Mod unterstützt Deutsch），and Russian（Этот мод поддерживает русский язык）
 
-**CX61 aka me for the vast majority of code and ideas.**
- 
- **Buckeeter aka Wadaling for making most of the vector icons(another credit to flaticon.com/game-icon.net) and the entire hexarealm tile sets.**
+## What doesn't this mod have:
 
- **Yanggestar from qq group chat for creating many original grahpics for the mod.**
+1. A lot of civilization. (Civilizations in this mod contains a lot of countries across historical periods, it is hard to make. But its intergeral to how civ switching works in this mod.)
+2. A continueous line of civilization feature all the way to imperial era. (It is WIP, right now it only goes down to classical era)
+3. Ultra late game tech trees. (It is WIP, right now we are still developing modern era.)
+4. Custom music, UI and Video tutorials. (again it is WIP, would like some dubes to pick up the slack tho.)
+5. Features that Unciv currently hardcodes to death like diplomacy, spy, rivers and road.
 
- **Caballeroarepa for providing the code for canal building**
+## Credit to:
 
- **RapidPup for providing a large part of late game tech tree**
- 
- *Special thanks to:*
- 
- **EmperorPenguin for some help with proofreading, bug fixing advices.**
+**Precursor Mods like Deciv and its extension: Outlaw of waste, Alpha Frontier, Leaders Mission 1 and 2, CS rework, Rek mod, The Great Unciv Rework and the rest of the community. Without their prior effort and experimentation this mod would not exist.**
 
- **FastDoubloon115_ for some help with playtesting.**
- 
- Authors of Deciv 2 and Deciv redux, Outlaws of the Waste, Alpha Frontier, Leaders mission 1 and 2, CS Reworked, Rek Mod, The Great Unciv Rework and the rest of the community. 
- ---
- Great mods and bad mods both pushed CX61 to this point. Its all your fault!
+**Buckeeter aka Wadaling for being the second largest contributor of this mod. Responsible for the vast majority of icons and tile/unit graphics and codes regarding mainly late game areas.**
 
- Feedback goes to official unciv discord's Emperors and Deities thread, or just open a issue here!
+**Yanggestar from qq group chat for creating many original grahpics for the mod.**
 
- Feel free to translate this mod and send them to me, so that I may implement it in the mod.
+Many community members for playtesting, seeking out spelling bugs and providing translations.
 
- Traditional & Simpified Chinese Translation done by CX61 himself.
+## Contact:
 
- Some Russian Translation done by Nori_Bori from discord with help of Genemi AI.
- 
- To give feedback and participate in discussions:
- https://discord.gg/XHNtmxfPay
- To support cx61 and his helpers:
- https://buymeacoffee.com/chenxing61
+Obviously you can just open an issue here in github or contact me via email chenxing6161@gmail.com
 
+To support cx61 and his helpers: https://buymeacoffee.com/chenxing61
+
+Discord Link for Feedback and sharing strategies: https://discord.gg/DmNWq9SMA8
+
+QQ group chat for chinese users: 1012872371

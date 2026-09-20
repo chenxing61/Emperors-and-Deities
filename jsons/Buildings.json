@@ -438,7 +438,6 @@
 			"Unsellable",
 			"Comment [A ['District Construction'] allows for larger specified buildings to be built. While an ['Area Construction'] doesnt require tile useage. Choose wisely]",
 			"Creates a [Major Harbor] improvement on a specific tile",
-			
 			"Remove [Harbor Area] [in this city]",
 		],
 		"requiredTech": "Navigation",
@@ -453,7 +452,6 @@
 			"Cannot be purchased",
 			"Unsellable",
 			"Comment [Removes a single specified district within the city's borders.]",
-			
 			"Remove [Major Harbor (Improvement)] [in this city]",
 			"Remove [Demolish Major Harbor] [in this city]",
 		],
@@ -497,7 +495,6 @@
 			"Cannot be purchased",
 			"Unsellable",
 			"Comment [Removes a single specified district within the city's borders.]",
-			
 			"Remove [Industrial District (Improvement)] [in this city]",
 			"Remove [Demolish Industrial District] [in this city]",
 		],
@@ -557,7 +554,6 @@
 			"Cannot be purchased",
 			"Unsellable",
 			"Comment [Removes a single specified district within the city's borders.]",
-			
 			"Remove [Residential District (Improvement)] [in this city]",
 			"Remove [Demolish Residential District] [in this city]",
 		],
@@ -606,7 +602,6 @@
 			"Cannot be purchased",
 			"Unsellable",
 			"Comment [Removes a single specified district within the city's borders.]",
-			
 			"Remove [Commercial District (Improvement)] [in this city]",
 			"Remove [Demolish Commercial District] [in this city]",
 		],
@@ -654,7 +649,6 @@
 			"Cannot be purchased",
 			"Unsellable",
 			"Comment [Removes a single specified district within the city's borders.]",
-			
 			"Remove [Science Park District (Improvement)] [in this city]",
 			"Remove [Demolish Science Park] [in this city]",
 		],
@@ -1139,11 +1133,13 @@
 		"culture": 1,
 		"uniques": [
 			"'Cultural Building'",
+			"'Worship Place' <after discovering [Theology]> <hidden from users>",
+			"Comment [after getting [Theology].]",
+			"Comment [Gain the ['Worship Place'] tag]",
 			"Unavailable <for [North Africa] Civilizations> <after adopting [Unity]> <hidden from users>",
 			"Unavailable <for [South Asia] Civilizations> <after adopting [Unity]> <hidden from users>",
-			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"[-1]% Culture cost of natural border growth [in all cities]",
-			"[+1 Gold] <after discovering [Theology]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Agriculture"
@@ -1173,10 +1169,10 @@
 		"name": "Stepwell",
 		"uniqueTo": "South Asia",
 		"replaces": "Well",
-		"food": 1,
+		"food": 2,
 		"uniques": [
 			"'Agricultural Building'",
-			"[+1 Faith] <starting from the [Medieval era]>"
+			"[+1 Faith] <after founding a religion>"
 		],
 		"requiredTech": "Agriculture"
 	},
@@ -1192,11 +1188,10 @@
 	//Line 1
 	{
 		"name": "Fishing Port",
-		"food": 2,
+		"food": 1,
 		"gold": 1,
 		"uniques": [
 			"'Marine Infrastructure'",
-			"Creates a [Coast Fishing Boats] improvement on a specific tile",
 			"Consumes [1] [Deep Sea Fish(Stored)] <when above [1] [Deep Sea Fish(Stored)]>",
 			"[+5 Food, +3 Gold] <when above [1] [Deep Sea Fish(Stored)]>",
 			"Comment [When will we be able to get those big fish?]",
@@ -1209,12 +1204,11 @@
 		"name": "Emporion",
 		"uniqueTo": "Mediterranean",
 		"replaces": "Fishing Port",
-		"food": 2,
+		"food": 1,
 		"gold": 2,
 		"uniques": [
 			"'Marine Infrastructure'",
 			"Connects trade routes over water",
-			"Creates a [Coast Fishing Boats] improvement on a specific tile",
 			"Consumes [1] [Deep Sea Fish(Stored)] <when above [1] [Deep Sea Fish(Stored)]>",
 			"[+5 Food, +3 Gold] <when above [1] [Deep Sea Fish(Stored)]>",
 			"Comment [When will we be able to get those big fish?]",
@@ -1244,9 +1238,7 @@
 		"food": 1,
 		"uniques": [
 			"'Agricultural Building'",
-			"[+1 Food] from [Fruit] tiles [in this city]",
-			"[+1 Food] from [Grain] tiles [in this city]",
-			"[+1 Food] from [Tuber] tiles [in this city]"
+			"[+1 Food] from [{'Crop'} {Bonus resource}] tiles [in this city]"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -1261,21 +1253,17 @@
 		"cityHealth": 5,
 		"uniques": [
 			"'Agricultural Building'",
-			"[+1 Food] from [Fruit] tiles [in this city]",
-			"[+1 Food] from [Grain] tiles [in this city]",
-			"[+1 Food] from [Tuber] tiles [in this city]"
+			"[+1 Food] from [{'Crop'} {Bonus resource}] tiles [in this city]"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
 	},
 	{
 		"name": "Animal Pen",
-		"food": 2,
+		"food": 1,
 		"uniques": [
 			"Only available <if [Nomadic Culture] is constructed>",
-			"[+1 Food] from [Caprinae] tiles [in this city]",
-			"[+1 Food] from [Bovine] tiles [in this city]",
-			"[+1 Food] from [Wild Animals] tiles [in this city]"
+			"[+1 Food] from [{'Herd'} {Bonus resource}] tiles [in this city]",
 		],
 		"requiredTech": "Animal Husbandry",
 		"hurryCostModifier": 5
@@ -1290,21 +1278,24 @@
 		],
 		"requiredNearbyImprovedResources": [
 			"Tuber",
-			"Grain"
+			"Hybrid Tuber",
+			"Grain",
+			"Hybrid Grain"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
 	},
 	{
 		"name": "Smokery",
-		"happiness": 2,
-		"gold": 3,
-		"food": 3,
+		"happiness": 1,
+		"gold": 1,
+		"food": 1,
 		"uniques": [
 			"'Light Industry'",
 			"Only available <if [Nomadic Culture] is constructed>",
-			"Consumes [1] [Sheep Horde]",
-			"Consumes [1] [Cattle Horde]"
+		],
+		"requiredNearbyImprovedResources": [
+			"'Herd'"
 		],
 		"requiredTech": "Animal Husbandry",
 		"hurryCostModifier": 5
@@ -1315,12 +1306,15 @@
 		"gold": 1,
 		"uniques": [
 			"'Light Industry'",
-			"Provides [1] [Alcohol] <with [Grain]>",
-			"Provides [1] [Alcohol] <with [Fruit]>",
+			"Provides [1] [Alcohol] <with [Grain]> <without [Hybrid Grain]>",
+			"Provides [1] [Alcohol] <with [Hybrid Grain]>",
+			"Provides [1] [Alcohol] <with [Fruit]> <without [Hybrid Fruit]>",
+			"Provides [1] [Alcohol] <with [Hybrid Fruit]>",
 			"Provides [1] [Alcohol] <with [Grape]>",
 			"Provides [1] [Alcohol] <with [Sugar]> <after discovering [Chemistry]>",
-			"Provides [1] [Alcohol] <with [Tuber]> <after discovering [Chemistry]>",
+			"Provides [1] [Alcohol] <with [Hybrid Tuber]> <after discovering [Chemistry]>",
 			"Provides [1] [Alcohol] <with [Horse]> <for [Euroasian Nomads] Civilizations>",
+			"Provides [1] [Alcohol] <with [Dairy]> <for [Euroasian Nomads] Civilizations>",
 			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
 		],
 		"requiredTech": "Pottery",
@@ -1328,13 +1322,9 @@
 	},
 	{
 		"name": "Pottery Workshop",
-		"gold": 1,
+		"production": 2,
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Production] per [3] population [in this city] <in cities with between [1] and [9] [Population]>",
-			"[+1 Production] per [5] population [in this city] <in cities with between [9] and [15] [Population]>",
-			"[+1 Production] per [8] population [in this city] <in cities with between [15] and [24] [Population]>",
-			"[+1 Production] per [10] population [in this city] <in cities with at least [24] [Population]>",
 			"[+1 Production] from [Clay] tiles [in this city]",
 			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
@@ -1342,46 +1332,44 @@
 	},
 	{
 		"name": "Textile Workshop",
-		"maintenance": 1,
+		"culture": 1,
 		"uniques": [
 			"'Light Industry'",
-			"[+1 Culture] per [3] population [in this city] <in cities with between [1] and [9] [Population]>",
-			"[+1 Culture] per [5] population [in this city] <in cities with between [9] and [15] [Population]>",
-			"[+1 Culture] per [8] population [in this city] <in cities with between [15] and [24] [Population]>",
-			"[+1 Culture] per [10] population [in this city] <in cities with at least [24] [Population]>",
 			"[+1 Production] from [{'Agricultural Improvement'} {'Textile'}] tiles [in this city]",
 			"[+2 Gold] from [{Camp} {Furs}] tiles [in this city]",
-			"[+2 Gold] from [{'Agricultural Improvement'} {Silk}] tiles [in this city]",
-			"[+2 Gold] from [{'Agricultural Improvement'} {Dyes}] tiles [in this city]",
+			"[+1 Culture] from [{'Agricultural Improvement'} {Silk}] tiles [in this city]",
+			"[+1 Culture] from [{'Agricultural Improvement'} {Dyes}] tiles [in this city]",
 			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>",
 			"Provides [1] [Consumption Supply] <starting from the [Industrial era]> <if [Cotton Trade] is constructed>"
 		],
 		"requiredNearbyImprovedResources": [
-			"Bovine",
-			"Caprinae",
-			"Furs",
-			"Cotton",
-			"Silk",
+			"'Textile'",
 			"Dyes"
 		],
 		"requiredTech": "Animal Husbandry"
 	},
 	{
 		"name": "Hunter's Hut",
-		"cost": 20,
+		"cost": 25,
 		"food": 1,
-		"gold": 1,
+		"gold": 2,
 		"uniques": [
-			"'Economic Building'",
-			"Unsellable",
-			"Creates a [Camp] improvement on a specific tile"
+			"'Economic Building'"
+		],
+		"requiredNearbyResources": [
+			"Wild Animals",
+			"Pets",
+			"Furs",
+			"Ivory",
+			"Truffles",
+			"Honey"
 		],
 		"requiredTech": "Trapping"
 	},
 	//Line 2
 	{
 		"name": "Foundry",
-		"maintenance": 1,
+		"maintenance": 2,
 		"production": 1,
 		"specialistSlots": {
 			"Engineer": 1
@@ -1392,15 +1380,15 @@
 			"[+10]% Production when constructing [Ancient era] units [in this city]",
 			"[+10]% Production when constructing [Classical era] units [in this city]",
 			"Provides [1] [Metal]",
+			"Provides [1] [Metal] <with [Tin]>",
 			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredTech": "Bronze Working"
 	},
 	{
 		"name": "Watermill",
-		"maintenance": 1,
-		"food": 2,
-		"production": 2,
+		"food": 1,
+		"production": 1,
 		"uniques": [
 			"'Agricultural Building'",
 			"Must be on [River]"
@@ -1439,7 +1427,6 @@
 	},
 	{
 		"name": "Jewellery Workshop",
-		"maintenance": 1,
 		"culture": 1,
 		"uniques": [
 			"'Economic Building'",
@@ -1447,12 +1434,14 @@
 			"[+1]% [Gold] [in this city] <with [Minerals]>",
 			"[+1]% [Gold] [in this city] <with [Metal]>",
 			"[+3]% [Gold] [in this city] <with [Gems]>",
-			"[+3]% [Gold] [in this city] <with [Glass]>",
+			"[+3]% [Gold] [in this city] <with [Jade]>",
+			"[+3]% [Gold] [in this city] <with [Quartz]>",
 			"[+3]% [Gold] [in this city] <with [Marble]>",
 			"[+3]% [Gold] [in this city] <with [Gold Ore]>",
 			"[+3]% [Gold] [in this city] <with [Silver Ore]>",
-			"[+3]% [Gold] [in this city] <with [Unique jewelry]>",
 			"[+3]% [Gold] [in this city] <with [Rich Copper Ore]>",
+			"[+3]% [Gold] [in this city] <with [Glass]>",
+			"[+3]% [Gold] [in this city] <with [Unique jewelry]>",
 			"[+3]% [Gold] [in this city] <with [Ivory]>",
 			"[+3]% [Gold] [in this city] <with [Pearl]>",
 			"[+3]% [Gold] [in this city] <with [Coral]>"
@@ -1461,7 +1450,7 @@
 	},
 	{
 		"name": "Tavern",
-		"maintenance": 1,
+		"maintenance": 3,
 		"happiness": 2,
 		"uniques": [
 			"'Entertainment Building'",
@@ -1485,6 +1474,7 @@
 			"'Worship Place'",
 			"[+1 Culture, +1 Food] [in all cities]",
 			"[+25]% Production when constructing [Settler] units [in all cities]",
+			"[+25]% Production when constructing [Nomadic Settler] units [in all cities]",
 			"[+25]% Production when constructing [Pioneer] units [in all cities]",
 		],
 		"requiredTech": "Calendar",
@@ -1631,7 +1621,7 @@
 		"name": "The Statue of Sea God",
 		"isWonder": true,
 		"culture": 2,
-		"happiness": 1,
+		"happiness": 2,
 		"greatPersonPoints": {
 			"Great Artist": 1
 		},
@@ -1774,7 +1764,7 @@
 	{
 		"name": "Library",
 		"cost": 60,
-		"maintenance": 2,
+		"maintenance": 3,
 		"specialistSlots": {
 			"Scientist": 1,
 			"Artist": 1
@@ -1789,7 +1779,7 @@
 	},
 	{
 		"name": "Road Network",
-		"maintenance": 2,
+		"maintenance": 3,
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
@@ -1829,15 +1819,22 @@
 	},
 	{
 		"name": "Livestock Market",
-		"gold": 1,
+		"maintenance": 1,
 		"production": 1,
 		"uniques": [
 			"'Economic Building'",
-			"[+3]% [Gold] [in this city] <with [Bovine]>",
-			"[+3]% [Gold] [in this city] <with [Caprinae]>",
-			"[+3]% [Gold] [in this city] <with [Camel]>",
-			"[+3]% [Culture] [in this city] <with [Wild Animals]>",
-			"[+3]% [Gold] [in this city] <with [Horse]>",
+			"[+1]% [Gold] [in this city] <with [Bovine]>",
+			"[+1]% [Gold] [in this city] <with [Caprinae]>",
+			"[+3]% [Gold] [in this city] <with [Dairy]>",
+			"[+3]% [Gold] [in this city] <with [Wool]>",
+			"[+3]% [Gold] [in this city] <with [Beef Cattle]>",
+			"[+1]% [Gold] [in this city] <with [Camel]>",
+			"[+3]% [Gold] [in this city] <with [Phasianidae]>",
+			"[+3]% [Gold] [in this city] <with [Suidae]>",
+			"[+1]% [Gold] [in this city] <with [Wild Animals]>",
+			"[+3]% [Gold] [in this city] <with [Pets]>",
+			"[+3]% [Gold] [in this city] <with [Furs]>",
+			"[+3]% [Gold] [in this city] <with [Ivory]>",
 			"[+50]% Production when constructing [Stable] buildings [in this city] <with [Horse]>",
 			"Must have an owned ['Herd'] within [3] tiles"
 		],
@@ -1845,23 +1842,27 @@
 	},
 	{
 		"name": "Crops Market",
+		"maintenance": 1,
 		"food": 1,
-		"gold": 1,
 		"uniques": [
 			"'Economic Building'",
-			"[+1]% [Gold] [in this city] <with [Grain]>",
-			"[+1]% [Gold] [in this city] <with [Tuber]>",
 			"[+1]% [Gold] [in this city] <with [Fruit]>",
+			"[+1]% [Gold] [in this city] <with [Hybrid Fruit]>",
+			"[+1]% [Gold] [in this city] <with [Grain]>",
+			"[+1]% [Gold] [in this city] <with [Hybrid Grain]>",
+			"[+1]% [Gold] [in this city] <with [Tuber]>",
+			"[+1]% [Gold] [in this city] <with [Hybrid Tuber]>",
+			"[+3]% [Gold] [in this city] <with [Cotton]>",
 			"[+3]% [Gold] [in this city] <with [Incense]>",
 			"[+3]% [Gold] [in this city] <with [Spices]>",
 			"[+3]% [Gold] [in this city] <with [Grape]>",
 			"[+3]% [Gold] [in this city] <with [Sugar]>",
-			"[+3]% [Gold] [in this city] <with [Truffles]>",
-			"[+3]% [Gold] [in this city] <with [Honey]>",
 			"[+3]% [Gold] [in this city] <with [Citrus]>",
+			"[+3]% [Gold] [in this city] <with [Cocoa]>",
 			"[+3]% [Gold] [in this city] <with [Tea Leave]>",
 			"[+3]% [Gold] [in this city] <with [Coffee]>",
-			"[+3]% [Gold] [in this city] <with [Rubber]>"
+			"[+3]% [Gold] [in this city] <with [Truffles]>",
+			"[+3]% [Gold] [in this city] <with [Honey]>"
 		],
 		"requiredTech": "Trade Network"
 	},
@@ -1965,7 +1966,7 @@
 	//Line 4
 	{
 		"name": "Stone Works",
-		"maintenance": 1,
+		"maintenance": 2,
 		"culture": 1,
 		"specialistSlots": {
 			"Labourer": 1
@@ -1977,13 +1978,15 @@
 		],
 		"requiredNearbyImprovedResources": [
 			"Marble",
-			"Stone"
+			"Stone",
+			"Jade",
+			"Quartz"
 		],
 		"requiredTech": "Masonry"
 	},
 	{
 		"name": "Brick Works",
-		"maintenance": 1,
+		"maintenance": 2,
 		"specialistSlots": {
 			"Labourer": 1
 		},
@@ -2001,7 +2004,7 @@
 	{
 		"name": "Walls",
 		"cost": 50,
-		"maintenance": 1,
+		"maintenance": 2,
 		"happiness": 1,
 		"cityStrength": 5,
 		"cityHealth": 30,
@@ -2026,7 +2029,6 @@
 	},
 	{
 		"name": "Furniture Workshop",
-		"maintenance": 2,
 		"culture": 1,
 		"specialistSlots": {
 			"Artist": 1
@@ -2141,7 +2143,7 @@
 	//Line 5
 	{
 		"name": "Bathhouse",
-		"maintenance": 3,
+		"maintenance": 5,
 		"culture": 1,
 		"happiness": 1,
 		"uniques": [
@@ -2191,7 +2193,7 @@
 		"uniqueTo": "Central and West Asia",
 		"replaces": "Town Square",
 		"cost": 85,
-		"maintenance": 2,
+		"maintenance": 1,
 		"culture": 1,
 		"happiness": 1,
 		"specialistSlots": {
@@ -2224,7 +2226,7 @@
 	},
 	{
 		"name": "Military Stable",
-		"maintenance": 1,
+		"maintenance": 3,
 		"uniques": [
 			"'Military Building'",
 			"Provides [1] [Horse]",
@@ -2555,6 +2557,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Marine Infrastructure'",
+			"[+1 Food] from [Coast] tiles [in this city]",
 			"Connects trade routes over water",
 			"Must be next to [Coast]"
 		],
@@ -2563,6 +2566,7 @@
 	},
 	{
 		"name": "Glass Workshop",
+		"maintenance": 3,
 		"production": 1,
 		"science": 1,
 		"uniques": [
@@ -2571,16 +2575,17 @@
 		],
 		"requiredTech": "Optics",
 		"requiredNearbyImprovedResources": [
-			"Minerals"
+			"Quartz"
 		]
 	},
 	{
 		"name": "Clinic",
-		"maintenance": 2,
+		"maintenance": 3,
 		"happiness": 1,
 		"uniques": [
 			"'Infrastructure'",
-			"[+15]% growth [in this city]"
+			"[All] Units adjacent to this city heal [5] HP per turn when healing",
+			"[+10]% growth [in this city]"
 		],
 		"requiredBuilding": "Healer's Hut",
 		"requiredTech": "Philosophy"
@@ -2601,7 +2606,7 @@
 	},
 	{
 		"name": "Courthouse",
-		"maintenance": 3,
+		"maintenance": 5,
 		"happiness": 1,
 		"uniques": [
 			"'Political Building'",
@@ -2614,7 +2619,7 @@
 	},
 	{
 		"name": "Watch Tower",
-		"maintenance": 1,
+		"maintenance": 2,
 		"happiness": 1,
 		"cityStrength": 5,
 		"cityHealth": 15,
@@ -2630,9 +2635,6 @@
 		"percentStatBonus": {
 			"gold": 10
 		},
-		"specialistSlots": {
-			"Merchant": 1
-		},
 		"uniques": [
 			"'Economic Building'",
 			"Comment [Enable you to build ['Monopoly Trade'] buildings in this city]",
@@ -2643,7 +2645,7 @@
 	},
 	{
 		"name": "Warehouse",
-		"maintenance": 2,
+		"maintenance": 1,
 		"specialistSlots": {
 			"Labourer": 1
 		},
@@ -2670,11 +2672,12 @@
 			"'Agricultural Building'",
 			"Must not be on [Hill]"
 		],
+		"requiredBuilding": "Granary",
 		"requiredTech": "Construction"
 	},
 	{
 		"name": "Aqueduct",
-		"maintenance": 2,
+		"maintenance": 3,
 		"uniques": [
 			"'Infrastructure'",
 			"[-10]% Unhappiness from [Population] [in this city]",
@@ -2685,7 +2688,7 @@
 	},
 	{
 		"name": "Armour Workshop",
-		"maintenance": 1,
+		"maintenance": 3,
 		"uniques": [
 			"'Military Building'",
 			"[Military] units gain the [Medieval Arms] promotion",
@@ -2733,11 +2736,7 @@
 		"name": "Tea House",
 		"maintenance": 2,
 		"happiness": 2,
-		"gold": 1,
 		"culture": 1,
-		"specialistSlots": {
-			"Artist": 1
-		},
 		"uniques": [
 			"'Cultural Building'",
 			"Provides [1] [Tea Leave]",
@@ -2751,8 +2750,7 @@
 		"name": "Cafe",
 		"maintenance": 2,
 		"happiness": 2,
-		"gold": 1,
-		"culture": 1,
+		"science": 1,
 		"uniques": [
 			"'Cultural Building'",
 			"Provides [1] [Coffee]",
@@ -2783,6 +2781,30 @@
 		],
 		"requiredNearbyImprovedResources": [
 			"Furs"
+		],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Exotic Pets Trade",
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 25
+		},
+		"specialistSlots": {
+			"Merchant": 1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Pets]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Pets]",
+			"[+1 Gold] from all [{Ancient era} {'Economic Building'}] buildings",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources": [
+			"Pets"
 		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
@@ -2877,14 +2899,14 @@
 		},
 		"uniques": [
 			"'Monopoly Trade'",
-			"Only available <when above [0] [Iconic Brand]> <when above [1] [Crab]>",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Lobster]>",
 			"Instantly consumes [1] [Iconic Brand]",
-			"Consumes [2] [Crab]",
+			"Consumes [2] [Lobster]",
 			"[+15]% growth [in all coastal cities]",
 			"Destroyed when the city is captured"
 		],
 		"requiredNearbyImprovedResources": [
-			"Crab"
+			"Lobster"
 		],
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
@@ -3359,6 +3381,58 @@
 		"requiredTech": "Wood Block Printing"
 	},
 	{
+		"name": "Glass Trade",
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"science": 10
+		},
+		"specialistSlots": {
+			"Merchant": 1,
+			"Artist": 1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Glass]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Glass]",
+			"[+33]% Production when constructing ['Research Building'] buildings [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources": [
+			"Glass"
+		],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
+		"name": "Jade Trade",
+		"cost": 150,
+		"isWonder": true,
+		"percentStatBonus": {
+			"gold": 15,
+			"production": 10
+		},
+		"specialistSlots": {
+			"Merchant": 1,
+			"Artist": 1
+		},
+		"uniques": [
+			"'Monopoly Trade'",
+			"Only available <when above [0] [Iconic Brand]> <when above [1] [Jade]>",
+			"Instantly consumes [1] [Iconic Brand]",
+			"Consumes [2] [Jade]",
+			"[+1 Culture, +1 Faith, +1 Gold] from [Quarry] tiles [in all cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredNearbyImprovedResources": [
+			"Jade"
+		],
+		"requiredBuilding": "Trading Post",
+		"requiredTech": "Wood Block Printing"
+	},
+	{
 		"name": "Rich Copper Ore Export",
 		"cost": 150,
 		"isWonder": true,
@@ -3422,6 +3496,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Research Building'",
+			"[+1 Science] <with [Sulfur]>",
 			"Gain a free [Chemistry Lab] [in this city] <after discovering [Chemistry]>"
 		],
 		"requiredTech": "Alchemy"
@@ -3496,7 +3571,6 @@
 		"name": "Trading Port",
 		"maintenance": 1,
 		"specialistSlots": {
-			"Merchant": 1,
 			"Labourer": 1
 		},
 		"uniques": [
@@ -3910,6 +3984,7 @@
 			"Comment [Enables you to build ['Firearms'] Units]",
 			"New ['Firearms'] units start with [10] XP [in this city]",
 			"[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>",
+			"[+10]% Production when constructing ['Firearms'] units [in this city] <with [Sulfur]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Military Blacksmith",
@@ -4157,8 +4232,8 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Outcome'",
-			"[5]% Food is carried over after population increases [in all cities]",
-			"[-5]% unhappiness from the number of cities"
+			"[10]% Food is carried over after population increases [in all cities]",
+			"[-10]% unhappiness from the number of cities"
 		]
 	},
 	{
@@ -4180,9 +4255,9 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Outcome'",
-			"[+6]% [Gold] from every [Livestock Market]",
-			"[+1 Production] from every [Camp]",
-			"[+3 Gold] from every [Camp] <in [Jungle] tiles>"
+			"Provides [1] [Pets]",
+			"[+2 Gold] from [Camp] tiles [in all cities]",
+			"Comment [[Explorer] can build [land] tile improvements and with no penalties building [road] in [rough terrain]]"
 		]
 	},
 	{
@@ -4340,6 +4415,7 @@
 			"'Agricultural Building'",
 			"[+1]% Production when constructing ['Agricultural Building'] buildings [in all cities]"
 		],
+		"requiredBuilding": "Windmill",
 		"requiredTech": "Machinery"
 	},
 	{
@@ -4368,7 +4444,6 @@
 		},
 		"uniques": [
 			"'Research Building'",
-			"Only available <with [Glass]>",
 			"Must have an owned [Mountain] within [2] tiles"
 		],
 		"requiredBuilding": "University",
@@ -4458,7 +4533,7 @@
 	},
 	{
 		"name": "Opera House",
-		"maintenance": 2,
+		"maintenance": 5,
 		"culture": 2,
 		"happiness": 1,
 		"specialistSlots": {
@@ -4565,7 +4640,8 @@
 		},
 		"uniques": [
 			"'Research Building'",
-			"Provides [1] [Industrial Chemicals]"
+			"Provides [1] [Industrial Chemicals]",
+			//"Provides [1] [Industrial Chemicals] <with [Sulfur]>"
 		],
 		"requiredBuilding": "University",
 		"requiredTech": "Chemistry"
@@ -4753,7 +4829,7 @@
 			"'Agricultural Building'",
 			"Consumes [1] [Industrial Chemicals]",
 			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]",
-			"[+1 Gold] from ['Crops'] tiles [in this city]"
+			"[+1 Gold] from [{'Crop'} {'Upgraded Resource'}] tiles [in this city]"
 		],
 		"requiredTech": "Fertilizer"
 	},
@@ -4949,7 +5025,7 @@
 			"'Infrastructure'",
 			"[-15]% Unhappiness from [Population] [in this city]",
 			"[+25]% growth [in this city]",
-			"[All] Units adjacent to this city heal [10] HP per turn when healing",
+			"[All] Units adjacent to this city heal [5] HP per turn when healing",
 			//Powered
 			"[-10]% Unhappiness from [Population] [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
 			"[+8]% growth [in this city] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
@@ -5573,17 +5649,6 @@
 		"requiredTech": "Mass Production"
 	},
 	{
-		"name": "Rubber Transplant",
-		"maintenance": 3,
-		"uniques": [
-			"Must have an owned [{non-[improved]} {Jungle}] within [3] tiles",
-			"Only available <when above [0] [Rubber]>",
-			"Creates a [Rubber Plantation] improvement on a specific tile",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Mass Production"
-	},
-	{
 		"name": "Innovation of Chemical Processes",
 		"cost": 500,
 		"uniques": [
@@ -5966,7 +6031,7 @@
 	},
 	{
 		"name": "Stock Exchange",
-		"maintenance":10,
+		"maintenance": 10,
 		"specialistSlots": {
 			"Merchant": 1
 		},
@@ -5982,7 +6047,7 @@
 	},
 	{
 		"name": "Commercial Office",
-		"maintenance":10,
+		"maintenance": 10,
 		"specialistSlots": {
 			"Merchant": 1
 		},
@@ -6197,14 +6262,16 @@
 			"Unavailable <when below [2] [Industrial Zone Marker]> <if [Civilian Industry Complex] is not constructed> <in this city> <hidden from users>",
 			"Comment [Requires either a [Civilian Industry Complex] or a [Industrial District] improvement in this city]",
 			"'Heavy Industry'",
-			"[+1 Production] from ['Chemicals'] tiles [in this city]",
+			"[+1 Production] from ['Chemical'] tiles [in this city]",
 			"Provides [1] [Industrial Chemicals]",
 			"Provides [1] [Industrial Chemicals] <with [Minerals]>",
+			"Provides [1] [Industrial Chemicals] <with [Sulfur]>",
 			"Provides [1] [Industrial Chemicals] <with [Stone]>"
 		],
 		"requiredNearbyImprovedResources": [
 			"Minerals",
-			"Stone"
+			"Stone",
+			"Sulfur"
 		],
 		"requiredTech": "Synthetic Materials"
 	},
@@ -6863,6 +6930,7 @@
 			"'High Tech Industry'",
 			"Only available <in cities without a [Power Shortage]>",
 			"Consumes [4] [Power]",
+			//"Consumes [2] [Rare Earth]",
 			"Consumes [5] [Electronic Parts]",
 			"Provides [3] [Microchips]",
 			"Provides [2] [Microchips] <after discovering [Robotics]>"
@@ -6883,7 +6951,6 @@
 		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying",
 		"requiredTech": "Ecology"
 	},
-
 	//Line 25
 	{
 		"name": "Particle Accelerator",
@@ -6899,7 +6966,7 @@
 			"[+33]% [Science] from every [Physic Lab] <in this city>",
 			"[Great Scientist] is earned [+1]% faster"
 		],
-		"requiredBuilding":"Physic Lab",
+		"requiredBuilding": "Physic Lab",
 		"requiredTech": "Particle Physics",
 		"hurryCostModifier": 50
 	},
@@ -6950,7 +7017,7 @@
 	//Line 26
 	{
 		"name": "Carbon Capture",
-		"cost":2000,
+		"cost": 2000,
 		"uniques": [
 			"Instantly consumes [50] [Pollution] <(modified by game speed)>",
 			"Remove [Carbon Capture] [in this city]"
@@ -7803,7 +7870,6 @@
 		],
 		"requiredTech": "Radio"
 	},
-
 	{
 		"name": "Caste System - Casted Away",
 		"cost": 0,
@@ -10339,6 +10405,18 @@
 	},
 	//Negatives
 	{
+		"name": "Urban Problems",
+		"cost": 0,
+		"uniques": [
+			"Only available <in cities with at least [10] [Population]>",
+			"Unsellable",
+			"Automatically built in all cities where it is buildable",
+			"[-25]% growth [in this city] <for every [[[Population] in [in this city] Cities]/10]> <hidden from users>",
+			"[+10]% Unhappiness from [Population] [in this city] <for every [[[Population] in [in this city] Cities]/10]> <hidden from users>",
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
 		"name": "Slum",
 		"cost": 50,
 		"percentStatBonus": {
@@ -10396,12 +10474,11 @@
 			// After Bronze Working, before Iron Working
 			"[2] [Brute Warrior]s rebel <after discovering [Copper Working]> <before discovering [Iron Working]>",
 			"[1] [Mercenary Javalineer]s rebel <after discovering [Mining]> <before discovering [Mathematics]>",
-			"A [War Cart] rebels <after discovering [The Wheel]> <before discovering [Armorments]>",
+			"A [Chariot] rebels <after discovering [The Wheel]> <before discovering [Armorments]>",
 			// ===== CLASSICAL ERA =====
 			// After Iron Working, before Armorments
 			"[2] [Spearman]s rebel <after discovering [Iron Working]> <before discovering [Armorments]>",
 			"[1] [Mercenary Archer]s rebel <after discovering [Logistics]> <before discovering [Engineering]>",
-			"A [Chariot] rebels <after discovering [The Wheel]> <before discovering [Armorments]>",
 			// ===== CLASSICAL/MEDIEVAL (Armorments) =====
 			"[2] [Spearman]s rebel <after discovering [Armorments]> <before discovering [Hand Cannon]>",
 			"[1] [Mercenary Archer]s rebel <after discovering [Logistics]> <before discovering [Engineering]>",
@@ -10519,8 +10596,6 @@
 			"Destroyed when the city is captured",
 			"Remove [Underproduction] [in this city]",
 			"Remove [Balanced Production] [in this city]",
-			"[+10]% [Food] [in all cities]",
-			"[+5]% [Happiness] [in all cities]",
 			"[-33]% [Gold] [in all cities]",
 			"[-75]% Production when constructing ['Light Industry'] buildings [in all cities]",
 			"[-75]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
@@ -10540,9 +10615,9 @@
 			"Provides [1] [Pollution] <for every [[['Military Building'] Buildings]/6]>",
 			"Provides [1] [Pollution] <for every [[[{'Fossil Fuel'} {'Power Building'}] Buildings]/2]>",
 			///Improvement Pollution
-			"[15]% of [Production] from every ['Extraction Improvement'] in the city added to [Pollution] <in [all] cities>",
-			"[15]% of [Food] from every ['Agricultural Improvement'] in the city added to [Pollution] <in [all] cities>",
-			"[15]% of [Gold] from every ['Water Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[33]% of [Production] from every ['Extraction Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[33]% of [Food] from every ['Agricultural Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[33]% of [Gold] from every ['Water Improvement'] in the city added to [Pollution] <in [all] cities>",
 			"[66]% of [Gold] from every ['Urban Improvement'] in the city added to [Pollution] <in [all] cities>",
 			"[66]% of [Production] from every ['Urban Improvement'] in the city added to [Pollution] <in [all] cities>"
 		]
@@ -10557,7 +10632,7 @@
 			"Destroyed when the city is captured",
 			"Remove [Underproduction] [in this city]",
 			"Remove [Overproduction] [in this city]",
-			"[+5]% [Food] [in all cities]",
+			"[+25]% [Food] [in all cities]",
 			"[+5]% [Happiness] [in all cities]",
 			"[+10]% [Gold] [in all cities]",
 			///Building Pollution
@@ -10573,9 +10648,9 @@
 			"Provides [1] [Pollution] <for every [[['Military Building'] Buildings]/6]>",
 			"Provides [1] [Pollution] <for every [[[{'Fossil Fuel'} {'Power Building'}] Buildings]/2]>",
 			///Improvement Pollution
-			"[15]% of [Production] from every ['Extraction Improvement'] in the city added to [Pollution] <in [all] cities>",
-			"[15]% of [Food] from every ['Agricultural Improvement'] in the city added to [Pollution] <in [all] cities>",
-			"[15]% of [Gold] from every ['Water Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[25]% of [Production] from every ['Extraction Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[25]% of [Food] from every ['Agricultural Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[25]% of [Gold] from every ['Water Improvement'] in the city added to [Pollution] <in [all] cities>",
 			"[66]% of [Gold] from every ['Urban Improvement'] in the city added to [Pollution] <in [all] cities>",
 			"[66]% of [Production] from every ['Urban Improvement'] in the city added to [Pollution] <in [all] cities>"
 		]
@@ -10590,13 +10665,12 @@
 			"Remove [Overproduction] [in this city]",
 			"'Flag'",
 			"Destroyed when the city is captured",
-			"[-10]% [Food] [in all cities]",
-			"[-20]% [Happiness] [in all cities]",
+			"[-33]% [Happiness] [in all cities]",
 			"[+20]% [Gold] [in all cities]",
 			"[+33]% Production when constructing ['Light Industry'] buildings [in all cities]",
 			"[+33]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
-			"[+15]% Production when constructing ['Infrastructure'] buildings [in all cities]",
-			"[+15]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
+			"[+25]% Production when constructing ['Infrastructure'] buildings [in all cities]",
+			"[+25]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
 			"[Gold] cost of purchasing items in cities [+25]%",
 			///Building Pollution
 			"[25]% of [Gold] from every ['Light Industry'] in the city added to [Pollution] <in [all] cities>",
@@ -10611,9 +10685,9 @@
 			"Provides [1] [Pollution] <for every [[['Military Building'] Buildings]/8]>",
 			"Provides [1] [Pollution] <for every [[[{'Fossil Fuel'} {'Power Building'}] Buildings]/3]>",
 			///Improvement Pollution
-			"[5]% of [Production] from every ['Extraction Improvement'] in the city added to [Pollution] <in [all] cities>",
-			"[5]% of [Food] from every ['Agricultural Improvement'] in the city added to [Pollution] <in [all] cities>",
-			"[5]% of [Gold] from every ['Water Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[20]% of [Production] from every ['Extraction Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[20]% of [Food] from every ['Agricultural Improvement'] in the city added to [Pollution] <in [all] cities>",
+			"[20]% of [Gold] from every ['Water Improvement'] in the city added to [Pollution] <in [all] cities>",
 			"[33]% of [Gold] from every ['Urban Improvement'] in the city added to [Pollution] <in [all] cities>",
 			"[33]% of [Production] from every ['Urban Improvement'] in the city added to [Pollution] <in [all] cities>"
 		]
@@ -11029,14 +11103,14 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
-			"Consumes [1] [Bronze Age Collapse Countdown] <hidden from users>",
+			"Instantly consumes [1] [Bronze Age Collapse Countdown] <upon turn end> <hidden from users>",
 			"Remove [Main Quest: Survive the Collapse] [in all cities] <when below [1] [Bronze Age Collapse Countdown]> <upon turn start> <hidden from users>",
 			"Comment [Wow you actually look at the building list? Good job, heres all the chance for each bad event to occur.]",
-			"Triggers a [Drought and Famine] event <with [33]% chance> <when above [13] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [Drought and Famine] event <with [20]% chance> <when above [13] [Bronze Age Collapse Countdown]> <upon turn start>",
 			"Triggers a [Usurpers and Barbarians] event <with [10]% chance> <when above [10] [Bronze Age Collapse Countdown]> <upon turn start>",
-			"Triggers a [Trade Collapse] event <with [25]% chance> <when above [7] [Bronze Age Collapse Countdown]> <when below [10] [Bronze Age Collapse Countdown]> <upon turn start>",
-			"Triggers a [Loss of Writing] event <with [25]% chance> <when above [4] [Bronze Age Collapse Countdown]> <when below [7] [Bronze Age Collapse Countdown]> <upon turn start>",
-			"Triggers a [Loss of Faith] event <with [25]% chance> <when above [1] [Bronze Age Collapse Countdown]> <when below [4] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [Trade Collapse] event <with [20]% chance> <when above [7] [Bronze Age Collapse Countdown]> <when below [10] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [Loss of Writing] event <with [20]% chance> <when above [4] [Bronze Age Collapse Countdown]> <when below [7] [Bronze Age Collapse Countdown]> <upon turn start>",
+			"Triggers a [Loss of Faith] event <with [20]% chance> <when above [1] [Bronze Age Collapse Countdown]> <when below [4] [Bronze Age Collapse Countdown]> <upon turn start>",
 			"Triggers a [The Final Hour] event <upon turn start> <when below [1] [Bronze Age Collapse Countdown]> <hidden from users>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"

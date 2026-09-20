@@ -302,15 +302,86 @@
 		},
 		"uniques": [
 			"'Herd'",
-			"'Textile'",
 			"Generated on every [13] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
 			"Generated on every [8] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]> <in tiles without [Fresh Water]> <in [Hill] Regions>"
+		]
+	},
+	{
+		"name": "Dairy",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Grassland",
+			"Hill"
+		],
+		"food": 1,
+		"culture": 1,
+		"improvedBy": [
+			"Pasture",
+			"Mechanised Livestock Farm",
+			"Herding Tents"
+		],
+		"improvementStats": {
+			"food": 1,
+			"production": 1
+		},
+		"uniques": [
+			"'Herd'",
+			"'Textile'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
+		"name": "Wool",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Hill"
+		],
+		"production": 1,
+		"culture": 1,
+		"improvedBy": [
+			"Pasture",
+			"Mechanised Livestock Farm",
+			"Herding Tents"
+		],
+		"improvementStats": {
+			"production": 1,
+			"gold":1
+		},
+		"uniques": [
+			"'Herd'",
+			"'Textile'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
+		"name": "Beef Cattle",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Grassland"
+		],
+		"food": 2,
+		"improvedBy": [
+			"Pasture",
+			"Mechanised Livestock Farm",
+			"Herding Tents"
+		],
+		"improvementStats": {
+			"gold":2
+		},
+		"uniques": [
+			"'Herd'",
+			"'Textile'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
 		]
 	},
 	{
 		"name": "Cattle Horde",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Stockpiled",
 			"Not shown on world screen <if [Nomadic Culture] is not constructed> <hidden from users>",
 			"Cannot be traded"
 		]
@@ -319,6 +390,7 @@
 		"name": "Sheep Horde",
 		"resourceType": "Strategic",
 		"uniques": [
+			"Stockpiled",
 			"Not shown on world screen <if [Nomadic Culture] is not constructed> <hidden from users>",
 			"Cannot be traded"
 		]
@@ -373,6 +445,75 @@
 		]
 	},
 	{
+		"name": "Phasianidae",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Plains",
+			"Grassland"
+		], 
+		"food": 2,
+		"improvedBy": [
+			"Pasture",
+			"Mechanised Livestock Farm"
+		],
+		"improvementStats": {
+			"food": 1,
+			"gold": 1
+		},
+		"uniques": [
+			"'Herd'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
+		"name": "Suidae",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Plains",
+			"Tundra"
+		], 
+		"food": 2,
+		"improvedBy": [
+			"Pasture",
+			"Mechanised Livestock Farm"
+		],
+		"improvementStats": {
+			"food": 1,
+			"culture":1
+		},
+		"uniques": [
+			"'Herd'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
+		"name": "Pets",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": [
+			"Plains",
+			"Grassland",
+			"Tundra",
+			"Snow"
+		],
+		"improvedBy": [
+			"Camp"
+		],
+		"improvementStats": {
+			"gold": 1,
+			"culture": 1,
+			"science": 1,
+			"happiness": 1
+		},
+		"uniques": [
+			"'Hunt'",
+			"'Herd'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
 		"name": "Fruit",
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": [
@@ -389,11 +530,35 @@
 			"food": 1
 		},
 		"uniques": [
-			"'Crops'",
+			"'Crop'",
 			"Generated on every [20] tiles <in [Forest] tiles>",
 			"Generated on every [18] tiles <in [Forest] tiles> <in [Hill] Regions>",
 			"Generated on every [16] tiles <in [Jungle] tiles>",
 			"Generated on every [14] tiles <in [Jungle] tiles> <in [Hill] Regions>"
+		]
+	},
+	{
+		"name": "Hybrid Fruit",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Jungle",
+			"Forest"
+		],
+		"food": 1,
+		"gold": 1,
+		"improvedBy": [
+			"Manual Plantation",
+			"Colony Plantation",
+			"Permaculture"
+		],
+		"improvementStats": {
+			"food": 1,
+			"gold": 2
+		},
+		"uniques": [
+			"'Crop'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
 		]
 	},
 	{
@@ -402,18 +567,19 @@
 		"terrainsCanBeFoundOn": [
 			"Plains",
 			"Flood plains",
-			"Desert",
 			"Tundra"
 		], // Desert only if fresh water
-		"food": 1,
 		"improvedBy": [
 			"Manual Farm",
 			"Mechanised Farm",
 			"Permaculture",
 			"Terrace Farm"
 		],
+		"improvementStats": {
+			"food": 1
+		},
 		"uniques": [
-			"'Crops'",
+			"'Crop'",
 			"Generated on every [18] tiles <in [{Featureless} {Plains}] tiles>",
 			"Generated on every [10] tiles <in [{Desert} {Fresh Water}] tiles> <in tiles without [Hill]>",
 			"Generated on every [27] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
@@ -423,14 +589,72 @@
 		]
 	},
 	{
-		"name": "Tuber",
+		"name": "Hybrid Grain",
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": [
 			"Plains",
+			"Grassland",
+			"Flood plains",
+			"Tundra",
+			"Desert",
+			"Snow"
+		], // Desert only if fresh water
+		"food":1,
+		"improvedBy": [
+			"Manual Farm",
+			"Mechanised Farm",
+			"Permaculture",
+			"Terrace Farm"
+		],
+		"improvementStats": {
+			"food": 3
+		},
+		"uniques": [
+			"'Crop'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
+		"name": "Tuber",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
 			"Jungle",
 			"Forest",
 			"Hill"
 		],
+		"improvedBy": [
+			"Manual Farm",
+			"Mechanised Farm",
+			"Permaculture",
+			"Terrace Farm"
+		],
+		"improvementStats": {
+			"food": 1
+		},
+		"uniques": [
+			"'Crop'",
+			"Must not be on [1] largest landmasses",
+			"Generated on every [20] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
+			"Generated on every [14] tiles <in [Jungle] tiles>",
+			"Generated on every [14] tiles <in [Forest] tiles>"
+		],
+		"civilopediaText": [
+			{
+				"text": "It very easy to crossbreed this type of crop due to its unique properties."
+			}
+		]
+	},
+	{
+		"name": "Hybrid Tuber",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Plains",
+			"Grassland",
+			"Tundra",
+			"Snow",
+			"Desert"
+		], // Desert only if fresh water
 		"food": 1,
 		"improvedBy": [
 			"Manual Farm",
@@ -438,12 +662,14 @@
 			"Permaculture",
 			"Terrace Farm"
 		],
+		"improvementStats": {
+			"food": 2,
+			"culture": 1
+		},
 		"uniques": [
-			"'Crops'",
-			"Must not be on [1] largest landmasses",
-			"Generated on every [20] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
-			"Generated on every [14] tiles <in [Jungle] tiles>",
-			"Generated on every [14] tiles <in [Forest] tiles>"
+			"'Crop'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
 		]
 	},
 	{
@@ -492,6 +718,53 @@
 		]
 	},
 	{
+		"name": "Quartz",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": [
+			"Grassland",
+			"Desert",
+			"Tundra"
+		],
+		"production": 1,
+		"science":1,
+		"improvedBy": [
+			"Quarry"
+		],
+		"improvementStats": {
+			"production": 1,
+			"gold":2
+		},
+		"uniques": [
+			"'Rock'",
+			"'Precious Mineral'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
+		"name": "Jade",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": [
+			"Grassland",
+			"Desert",
+			"Tundra"
+		],
+		"gold":1,
+		"improvedBy": [
+			"Quarry"
+		],
+		"improvementStats": {
+			"culture": 1,
+			"faith": 1
+		},
+		"uniques": [
+			"'Rock'",
+			"'Precious Mineral'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
 		"name": "Clay",
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": [
@@ -503,7 +776,8 @@
 			"Quarry"
 		],
 		"improvementStats": {
-			"production": 1
+			"production": 1,
+			"culture": 1
 		},
 		"uniques": [
 			"'Useful Mineral'",
@@ -522,19 +796,99 @@
 			"Desert",
 			"Tundra"
 		],
-		"production": 2,
+		"production": 1,
 		"improvedBy": [
 			"Manual Mine",
 			"Mechanised Mine"
 		],
+		"improvementStats": {
+			"production": 1
+		},
 		"uniques": [
 			"'Useful Mineral'",
-			"Generated on every [20] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+			"Generated on every [15] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
 			"Generated on every [12] tiles <in [{Hill} {Grassland}] tiles> <in [Hill] Regions>",
-			"Generated on every [20] tiles <in [{Featureless} {Tundra}] tiles>",
-			"Generated on every [20] tiles <in [{Featureless} {Desert}] tiles>",
-			"Generated on every [15] tiles <in [{Featureless} {Tundra}] tiles> <in [Hill] Regions>",
-			"Generated on every [15] tiles <in [{Featureless} {Desert}] tiles> <in [Hill] Regions>"
+			"Generated on every [12] tiles <in [{Hill} {Desert}] tiles>",
+			"Generated on every [15] tiles <in [{Featureless} {Tundra}] tiles>",
+			"Generated on every [15] tiles <in [{Featureless} {Desert}] tiles>",
+			"Generated on every [10] tiles <in [{Featureless} {Tundra}] tiles> <in [Hill] Regions>",
+			"Generated on every [10] tiles <in [{Featureless} {Desert}] tiles> <in [Hill] Regions>"
+		]
+	},
+	{
+		"name": "Tin",
+		"resourceType": "Bonus",
+		"revealedBy": "Bronze Working",
+		"terrainsCanBeFoundOn": [
+			"Grassland",
+			"Plains",
+			"Desert",
+			"Tundra"
+		],
+		"production": 1,
+		"improvedBy": [
+			"Manual Mine",
+			"Mechanised Mine"
+		],
+		"improvementStats": {
+			"production": 2,
+			"gold":1
+		},
+		"uniques": [
+			"'Useful Mineral'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
+		"name": "Sulfur",
+		"resourceType": "Bonus",
+		"revealedBy": "Mining",
+		"terrainsCanBeFoundOn": [
+			"Grassland",
+			"Plains",
+			"Desert",
+			"Tundra"
+		],
+		"science":1,
+		"improvedBy": [
+			"Manual Mine",
+			"Mechanised Mine"
+		],
+		"improvementStats": {
+			"production": 1,
+			"science":1,
+			"gold":1
+		},
+		"uniques": [
+			"'Useful Mineral'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
+		"name": "Rare Earth",
+		"resourceType": "Strategic",
+		"revealedBy": "Geology",
+		"terrainsCanBeFoundOn": [
+			"Grassland",
+			"Plains",
+			"Desert",
+			"Tundra"
+		],
+		"production": 1,
+		"improvedBy": [
+			"Manual Mine",
+			"Mechanised Mine"
+		],
+		"improvementStats": {
+			"production": 1,
+			"science":2
+		},
+		"uniques": [
+			"'Useful Mineral'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
 		]
 	},
 	{
@@ -551,10 +905,63 @@
 			"Coast Fishing Boats",
 			"Aquaculture"
 		],
+		"improvementStats": {
+			"food": 1
+		},
 		"uniques": [
-			"Generated on every [5] tiles <in [{Featureless} {Coast}] tiles>",
-			"Generated on every [7] tiles <in [Lakes] tiles>",
-			"Generated on every [8] tiles <in [Atoll] tiles>"
+			"'Seafood'",
+			"Generated on every [5] tiles <in [Coast] tiles>",
+			"Generated on every [5] tiles <in [Lakes] tiles>",
+			"Generated on every [10] tiles <in [Atoll] tiles>"
+		]
+	},
+	{
+		"name": "Shell Fish",
+		"resourceType": "Bonus",
+		"revealedBy": "Sailing",
+		"terrainsCanBeFoundOn": [
+			"Coast",
+			"Lakes",
+			"Atoll"
+		],
+		"food": 1,
+		"improvedBy": [
+			"Coast Fishing Boats",
+			"Aquaculture"
+		],
+		"improvementStats": {
+			"food": 1,
+			"gold": 2
+		},
+		"uniques": [
+			"'Seafood'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
+		]
+	},
+	{
+		"name": "Game Fish",
+		"resourceType": "Bonus",
+		"revealedBy": "Sailing",
+		"terrainsCanBeFoundOn": [
+			"Coast",
+			"Lakes",
+			"Atoll"
+		],
+		"food": 1,
+		"improvedBy": [
+			"Coast Fishing Boats",
+			"Aquaculture"
+		],
+		"improvementStats": {
+			"food": 1,
+			"gold": 1,
+			"culture": 1
+		},
+		"uniques": [
+			"'Seafood'",
+			"'Upgraded Resource'",
+			"Doesn't generate naturally"
 		]
 	},
 	{
@@ -568,7 +975,12 @@
 		"improvedBy": [
 			"Deep Sea Fishing Boats"
 		],
+		"improvementStats": {
+			"food": 2,
+			"production": 1
+		},
 		"uniques": [
+			"'Seafood'",
 			"Generated on every [14] tiles <in [{Featureless} {Ocean}] tiles>"
 		]
 	},
@@ -590,14 +1002,17 @@
 			"Desert",
 			"Tundra"
 		],
-		"production": 1,
 		"revealedBy": "Geology",
 		"improvedBy": [
 			"Oil well",
 			"Offshore Platform"
 		],
+		"improvementStats": {
+			"production": 1,
+			"science":1
+		},
 		"uniques": [
-			"'Chemicals'",
+			"'Chemical'",
 			"Generated on every [33] tiles <in [{Featureless} {Coast}] tiles>",
 			"Generated on every [25] tiles <in [{Featureless} {Ocean}] tiles>",
 			"Generated on every [25] tiles <in [{Featureless} {Desert}] tiles>",
@@ -619,7 +1034,7 @@
 			"Deep Sea Fishing Boats"
 		],
 		"uniques": [
-			"'Chemicals'",
+			"'Chemical'",
 			"Generated on every [8] tiles <in [Atoll] tiles>"
 		]
 	},
@@ -656,13 +1071,13 @@
 			"Must be on [1] largest landmasses",
 			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Guaranteed with Strategic Balance resource option",
-			"Generated with weight [100] <in [{Featureless} {Grassland}] tiles>",
-			"Generated with weight [100] <in [{Featureless} {Plains}] tiles>",
+			"Generated with weight [80] <in [{Featureless} {Grassland}] tiles>",
+			"Generated with weight [80] <in [{Featureless} {Plains}] tiles>",
 			"Minor deposits generated with weight [15] <in [{Grassland} {Hill}] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
 			"Minor deposits generated with weight [15] <in [{Plains} {Hill}] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
 			"Minor deposits generated with weight [25] <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
 			"Minor deposits generated with weight [30] <in [{Featureless} {Plains}] tiles>",
-			"Generated on every [7] tiles <in [{Featureless} {Grassland} {Fresh Water}] tiles>"
+			"Generated on every [10] tiles <in [{Featureless} {Grassland} {Fresh Water}] tiles>"
 		],
 		"majorDepositAmount": {
 			"sparse": 5,
@@ -693,6 +1108,7 @@
 			"Manual Mine",
 			"Mechanised Mine"
 		],
+		"improvementStats":{"production":1},
 		"uniques": [
 			"'Useful Mineral'",
 			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
@@ -736,8 +1152,8 @@
 			"Permaculture"
 		],
 		"uniques": [
-			"'Crops'",
-			"'Chemicals'",
+			"'Crop'",
+			"'Chemical'",
 			"Must not be on [1] largest landmasses",
 			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Guaranteed with Strategic Balance resource option",
@@ -823,7 +1239,7 @@
 			"production": 3
 		},
 		"uniques": [
-			"'Chemicals'",
+			"'Chemical'",
 			"Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>",
 			"Deposits in [Coast] tiles always provide [3] resources",
 			"Deposits in [Ocean] tiles always provide [6] resources",
@@ -1188,7 +1604,7 @@
 		]
 	},
 	{
-		"name": "Crab",
+		"name": "Lobster",
 		"revealedBy": "Sailing",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": [
@@ -1288,7 +1704,7 @@
 		},
 		"uniques": [
 			"'Textile'",
-			"'Crops'",
+			"'Crop'",
 			"Generated with weight [15] <in [Desert] Regions>",
 			"Generated with weight [30] <in [Grassland] Regions>",
 			"Generated with weight [15] <in [Hybrid] Regions>",
@@ -1317,7 +1733,7 @@
 			"gold": 1
 		},
 		"uniques": [
-			"'Chemicals'",
+			"'Chemical'",
 			"Generated with weight [5] <in [Tundra] Regions>",
 			"Generated with weight [5] <in [Jungle] Regions>",
 			"Generated with weight [30] <in [Forest] Regions>",
@@ -1345,7 +1761,7 @@
 			"faith": 1
 		},
 		"uniques": [
-			"'Crops'",
+			"'Crop'",
 			"Generated with weight [35] <in [Desert] Regions>",
 			"Generated with weight [10] <in [Plains] Regions>",
 			"Generated with weight [5] <in [Hybrid] Regions>",
@@ -1373,7 +1789,7 @@
 			"gold": 1
 		},
 		"uniques": [
-			"'Crops'",
+			"'Crop'",
 			"Generated with weight [30] <in [Jungle] Regions>",
 			"Generated with weight [10] <in [Forest] Regions>",
 			"Generated with weight [5] <in [Plains] Regions>",
@@ -1404,7 +1820,7 @@
 			"gold": 1
 		},
 		"uniques": [
-			"'Crops'",
+			"'Crop'",
 			"Generated with weight [35] <in [Hill] Regions>",
 			"Generated with weight [15] <in [Hybrid] Regions>",
 			"Generated near City States with weight [10]"
@@ -1432,7 +1848,7 @@
 			"gold": 1
 		},
 		"uniques": [
-			"'Crops'",
+			"'Crop'",
 			"Generated with weight [20] <in [Jungle] Regions>",
 			"Generated with weight [15] <in [Desert] Regions>",
 			"Generated with weight [20] <in [Grassland] Regions>",
@@ -1462,7 +1878,7 @@
 			"gold": 1
 		},
 		"uniques": [
-			"'Crops'",
+			"'Crop'",
 			"Generated with weight [35] <in [Jungle] Regions>",
 			"Generated with weight [5] <in [Forest] Regions>",
 			"Generated with weight [5] <in [Desert] Regions>",
@@ -1490,7 +1906,7 @@
 			"gold": 2
 		},
 		"uniques": [
-			"'Crops'",
+			"'Crop'",
 			"Must not be on [1] largest landmasses",
 			"Generated with weight [35] <in [Jungle] Regions> ",
 			"Generated with weight [5] <in [Forest] Regions><in tiles without [Hill]>",
@@ -1519,7 +1935,7 @@
 			"gold": 1
 		},
 		"uniques": [
-			"'Crops'",
+			"'Crop'",
 			"Generated with weight [20] <in [Hill] Regions> ",
 			"Generated with weight [20] <in [Jungle] Regions> ",
 			"Generated with weight [5] <in [Forest] Regions><in tiles without [Hill]>",
@@ -1547,7 +1963,7 @@
 			"gold": 2
 		},
 		"uniques": [
-			"'Crops'",
+			"'Crop'",
 			"Generated with weight [30] <in [Jungle] Regions> ",
 			"Generated with weight [5] <in [Forest] Regions><in tiles without [Hill]>",
 			"Generated with weight [5] <in [Hybrid] Regions>",
@@ -1573,7 +1989,7 @@
 			"gold": 1
 		},
 		"uniques": [
-			"'Crops'",
+			"'Crop'",
 			"Generated with weight [5] <in [Jungle] Regions>",
 			"Generated with weight [30] <in [Forest] Regions>",
 			"Generated with weight [5] <in [Plains] Regions>",
@@ -1601,7 +2017,7 @@
 			"food": 1
 		},
 		"uniques": [
-			"'Crops'",
+			"'Crop'",
 			"Generated with weight [5] <in [Jungle] Regions>",
 			"Generated with weight [35] <in [Forest] Regions>",
 			"Generated with weight [5] <in [Plains] Regions>",
@@ -1784,7 +2200,7 @@
 			"food": 1
 		},
 		"uniques": [
-			"'Chemicals'",
+			"'Chemical'",
 			"Generated with weight [10] <in [Tundra] Regions>",
 			"Generated with weight [5] <in [Forest] Regions>",
 			"Generated with weight [25] <in [Desert] Regions>",
@@ -1917,7 +2333,7 @@
 		],
 		"revealedBy": "Mining"
 	},
-		{
+	{
 		"name": "Power Export Route",
 		"resourceType": "Strategic",
 		"uniques": [
@@ -1943,7 +2359,7 @@
 	{
 		"name": "Harbor Marker",
 		"resourceType": "Bonus",
-		"uniques":[
+		"uniques": [
 			"City-level resource",
 			"Excluded from map editor",
 			"Not shown on world screen <if [Debug Building] is not constructed>",
@@ -1953,7 +2369,7 @@
 	{
 		"name": "Industrial Zone Marker",
 		"resourceType": "Bonus",
-		"uniques":[
+		"uniques": [
 			"City-level resource",
 			"Excluded from map editor",
 			"Not shown on world screen <if [Debug Building] is not constructed>",
@@ -1963,7 +2379,7 @@
 	{
 		"name": "Residential Zone Marker",
 		"resourceType": "Bonus",
-		"uniques":[
+		"uniques": [
 			"City-level resource",
 			"Excluded from map editor",
 			"Not shown on world screen <if [Debug Building] is not constructed>",
@@ -1973,7 +2389,7 @@
 	{
 		"name": "Commercial Zone Marker",
 		"resourceType": "Bonus",
-		"uniques":[
+		"uniques": [
 			"City-level resource",
 			"Excluded from map editor",
 			"Not shown on world screen <if [Debug Building] is not constructed>",
@@ -1983,7 +2399,7 @@
 	{
 		"name": "Science Park Marker",
 		"resourceType": "Bonus",
-		"uniques":[
+		"uniques": [
 			"City-level resource",
 			"Excluded from map editor",
 			"Not shown on world screen <if [Debug Building] is not constructed>",
