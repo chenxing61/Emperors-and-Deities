@@ -1133,11 +1133,13 @@
 		"culture": 1,
 		"uniques": [
 			"'Cultural Building'",
+			"'Worship Place' <after discovering [Theology]> <hidden from users>",
+			"Comment [after getting [Theology].]",
+			"Comment [Gain the ['Worship Place'] tag]",
 			"Unavailable <for [North Africa] Civilizations> <after adopting [Unity]> <hidden from users>",
 			"Unavailable <for [South Asia] Civilizations> <after adopting [Unity]> <hidden from users>",
-			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"[-1]% Culture cost of natural border growth [in all cities]",
-			"[+1 Gold] <after discovering [Theology]>",
+			"Instantly provides [1] [Artifact] <before the [Industrial era]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Agriculture"
@@ -1278,7 +1280,7 @@
 			"Tuber",
 			"Hybrid Tuber",
 			"Grain",
-			"Hybrid Grain",
+			"Hybrid Grain"
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -1320,7 +1322,7 @@
 	},
 	{
 		"name": "Pottery Workshop",
-		"production":1,
+		"production": 2,
 		"uniques": [
 			"'Light Industry'",
 			"[+1 Production] from [Clay] tiles [in this city]",
@@ -1330,7 +1332,7 @@
 	},
 	{
 		"name": "Textile Workshop",
-		"culture":1,
+		"culture": 1,
 		"uniques": [
 			"'Light Industry'",
 			"[+1 Production] from [{'Agricultural Improvement'} {'Textile'}] tiles [in this city]",
@@ -1341,14 +1343,7 @@
 			"Provides [1] [Consumption Supply] <starting from the [Industrial era]> <if [Cotton Trade] is constructed>"
 		],
 		"requiredNearbyImprovedResources": [
-			"Bovine",
-			"Caprinae",
-			"Wool",
-			"Beef Cattle",
-			"Dairy",
-			"Furs",
-			"Cotton",
-			"Silk",
+			"'Textile'",
 			"Dyes"
 		],
 		"requiredTech": "Animal Husbandry"
@@ -1435,7 +1430,16 @@
 		"culture": 1,
 		"uniques": [
 			"'Economic Building'",
-			"[+3]% [Gold] [in this city] <for every [['Precious Mineral'] resource of [Friendly] Civilizations]>",
+			"[+1]% [Gold] [in this city] <with [Stone]>",
+			"[+1]% [Gold] [in this city] <with [Minerals]>",
+			"[+1]% [Gold] [in this city] <with [Metal]>",
+			"[+3]% [Gold] [in this city] <with [Gems]>",
+			"[+3]% [Gold] [in this city] <with [Jade]>",
+			"[+3]% [Gold] [in this city] <with [Quartz]>",
+			"[+3]% [Gold] [in this city] <with [Marble]>",
+			"[+3]% [Gold] [in this city] <with [Gold Ore]>",
+			"[+3]% [Gold] [in this city] <with [Silver Ore]>",
+			"[+3]% [Gold] [in this city] <with [Rich Copper Ore]>",
 			"[+3]% [Gold] [in this city] <with [Glass]>",
 			"[+3]% [Gold] [in this city] <with [Unique jewelry]>",
 			"[+3]% [Gold] [in this city] <with [Ivory]>",
@@ -1815,14 +1819,22 @@
 	},
 	{
 		"name": "Livestock Market",
-		"maintenance":1,
+		"maintenance": 1,
 		"production": 1,
 		"uniques": [
 			"'Economic Building'",
-			"[+1]% [Gold] [in this city] <for every [[{'Herd'} {Bonus resource}] resource of [Friendly] Civilizations]>",
-			"[+1]% [Gold] [in this city] <for every [[{'Hunt'} {Bonus resource}] resource of [Friendly] Civilizations]>",
-			"[+3]% [Gold] [in this city] <for every [[{'Herd'} {'Upgraded Resource'}] resource of [Friendly] Civilizations]>",
-			"[+3]% [Gold] [in this city] <for every [[{'Hunt'} {Luxury resource}] resource of [Friendly] Civilizations]>",
+			"[+1]% [Gold] [in this city] <with [Bovine]>",
+			"[+1]% [Gold] [in this city] <with [Caprinae]>",
+			"[+3]% [Gold] [in this city] <with [Dairy]>",
+			"[+3]% [Gold] [in this city] <with [Wool]>",
+			"[+3]% [Gold] [in this city] <with [Beef Cattle]>",
+			"[+1]% [Gold] [in this city] <with [Camel]>",
+			"[+3]% [Gold] [in this city] <with [Phasianidae]>",
+			"[+3]% [Gold] [in this city] <with [Suidae]>",
+			"[+1]% [Gold] [in this city] <with [Wild Animals]>",
+			"[+3]% [Gold] [in this city] <with [Pets]>",
+			"[+3]% [Gold] [in this city] <with [Furs]>",
+			"[+3]% [Gold] [in this city] <with [Ivory]>",
 			"[+50]% Production when constructing [Stable] buildings [in this city] <with [Horse]>",
 			"Must have an owned ['Herd'] within [3] tiles"
 		],
@@ -1830,12 +1842,27 @@
 	},
 	{
 		"name": "Crops Market",
-		"maintenance":1,
+		"maintenance": 1,
 		"food": 1,
 		"uniques": [
 			"'Economic Building'",
-			"[+1]% [Gold] [in this city] <for every [[{'Crop'} {Bonus resource}] resource of [Friendly] Civilizations]>",
-			"[+3]% [Gold] [in this city] <for every [[{'Crop'} {Luxury resource}] resource of [Friendly] Civilizations]>"
+			"[+1]% [Gold] [in this city] <with [Fruit]>",
+			"[+1]% [Gold] [in this city] <with [Hybrid Fruit]>",
+			"[+1]% [Gold] [in this city] <with [Grain]>",
+			"[+1]% [Gold] [in this city] <with [Hybrid Grain]>",
+			"[+1]% [Gold] [in this city] <with [Tuber]>",
+			"[+1]% [Gold] [in this city] <with [Hybrid Tuber]>",
+			"[+3]% [Gold] [in this city] <with [Cotton]>",
+			"[+3]% [Gold] [in this city] <with [Incense]>",
+			"[+3]% [Gold] [in this city] <with [Spices]>",
+			"[+3]% [Gold] [in this city] <with [Grape]>",
+			"[+3]% [Gold] [in this city] <with [Sugar]>",
+			"[+3]% [Gold] [in this city] <with [Citrus]>",
+			"[+3]% [Gold] [in this city] <with [Cocoa]>",
+			"[+3]% [Gold] [in this city] <with [Tea Leave]>",
+			"[+3]% [Gold] [in this city] <with [Coffee]>",
+			"[+3]% [Gold] [in this city] <with [Truffles]>",
+			"[+3]% [Gold] [in this city] <with [Honey]>"
 		],
 		"requiredTech": "Trade Network"
 	},
@@ -2166,7 +2193,7 @@
 		"uniqueTo": "Central and West Asia",
 		"replaces": "Town Square",
 		"cost": 85,
-		"maintenance": 2,
+		"maintenance": 1,
 		"culture": 1,
 		"happiness": 1,
 		"specialistSlots": {
@@ -2530,6 +2557,7 @@
 		"happiness": 1,
 		"uniques": [
 			"'Marine Infrastructure'",
+			"[+1 Food] from [Coast] tiles [in this city]",
 			"Connects trade routes over water",
 			"Must be next to [Coast]"
 		],
@@ -2538,6 +2566,7 @@
 	},
 	{
 		"name": "Glass Workshop",
+		"maintenance": 3,
 		"production": 1,
 		"science": 1,
 		"uniques": [
@@ -2556,7 +2585,7 @@
 		"uniques": [
 			"'Infrastructure'",
 			"[All] Units adjacent to this city heal [5] HP per turn when healing",
-			"[+15]% growth [in this city]"
+			"[+10]% growth [in this city]"
 		],
 		"requiredBuilding": "Healer's Hut",
 		"requiredTech": "Philosophy"
@@ -2577,7 +2606,7 @@
 	},
 	{
 		"name": "Courthouse",
-		"maintenance": 3,
+		"maintenance": 5,
 		"happiness": 1,
 		"uniques": [
 			"'Political Building'",
@@ -2590,7 +2619,7 @@
 	},
 	{
 		"name": "Watch Tower",
-		"maintenance": 1,
+		"maintenance": 2,
 		"happiness": 1,
 		"cityStrength": 5,
 		"cityHealth": 15,
@@ -2606,9 +2635,6 @@
 		"percentStatBonus": {
 			"gold": 10
 		},
-		"specialistSlots": {
-			"Merchant": 1
-		},
 		"uniques": [
 			"'Economic Building'",
 			"Comment [Enable you to build ['Monopoly Trade'] buildings in this city]",
@@ -2619,7 +2645,7 @@
 	},
 	{
 		"name": "Warehouse",
-		"maintenance": 2,
+		"maintenance": 1,
 		"specialistSlots": {
 			"Labourer": 1
 		},
@@ -2646,11 +2672,12 @@
 			"'Agricultural Building'",
 			"Must not be on [Hill]"
 		],
+		"requiredBuilding": "Granary",
 		"requiredTech": "Construction"
 	},
 	{
 		"name": "Aqueduct",
-		"maintenance": 2,
+		"maintenance": 3,
 		"uniques": [
 			"'Infrastructure'",
 			"[-10]% Unhappiness from [Population] [in this city]",
@@ -2661,7 +2688,7 @@
 	},
 	{
 		"name": "Armour Workshop",
-		"maintenance": 1,
+		"maintenance": 3,
 		"uniques": [
 			"'Military Building'",
 			"[Military] units gain the [Medieval Arms] promotion",
@@ -2709,11 +2736,7 @@
 		"name": "Tea House",
 		"maintenance": 2,
 		"happiness": 2,
-		"gold": 1,
 		"culture": 1,
-		"specialistSlots": {
-			"Artist": 1
-		},
 		"uniques": [
 			"'Cultural Building'",
 			"Provides [1] [Tea Leave]",
@@ -2727,8 +2750,7 @@
 		"name": "Cafe",
 		"maintenance": 2,
 		"happiness": 2,
-		"gold": 1,
-		"culture": 1,
+		"science": 1,
 		"uniques": [
 			"'Cultural Building'",
 			"Provides [1] [Coffee]",
@@ -2763,7 +2785,6 @@
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
-	/*
 	{
 		"name": "Exotic Pets Trade",
 		"cost": 150,
@@ -2779,7 +2800,7 @@
 			"Only available <when above [0] [Iconic Brand]> <when above [1] [Pets]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Pets]",
-			"[+1 Gold] from [Forest] tiles [in all cities]",
+			"[+1 Gold] from all [{Ancient era} {'Economic Building'}] buildings",
 			"Destroyed when the city is captured"
 		],
 		"requiredNearbyImprovedResources": [
@@ -2788,7 +2809,6 @@
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
-	*/
 	{
 		"name": "Ivory Trade",
 		"cost": 150,
@@ -3360,14 +3380,13 @@
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
-	/*
 	{
 		"name": "Glass Trade",
 		"cost": 150,
 		"isWonder": true,
 		"percentStatBonus": {
 			"gold": 15,
-			"production": 10
+			"science": 10
 		},
 		"specialistSlots": {
 			"Merchant": 1,
@@ -3378,7 +3397,7 @@
 			"Only available <when above [0] [Iconic Brand]> <when above [1] [Glass]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Glass]",
-			"[+10]% Production when constructing [All] wonders [in all cities]",
+			"[+33]% Production when constructing ['Research Building'] buildings [in all cities]",
 			"Destroyed when the city is captured"
 		],
 		"requiredNearbyImprovedResources": [
@@ -3404,7 +3423,7 @@
 			"Only available <when above [0] [Iconic Brand]> <when above [1] [Jade]>",
 			"Instantly consumes [1] [Iconic Brand]",
 			"Consumes [2] [Jade]",
-			"[+10]% Production when constructing [All] wonders [in all cities]",
+			"[+1 Culture, +1 Faith, +1 Gold] from [Quarry] tiles [in all cities]",
 			"Destroyed when the city is captured"
 		],
 		"requiredNearbyImprovedResources": [
@@ -3413,7 +3432,6 @@
 		"requiredBuilding": "Trading Post",
 		"requiredTech": "Wood Block Printing"
 	},
-	*/
 	{
 		"name": "Rich Copper Ore Export",
 		"cost": 150,
@@ -3478,6 +3496,7 @@
 			"Unbuildable <hidden from users>",
 			"Unsellable",
 			"'Research Building'",
+			"[+1 Science] <with [Sulfur]>",
 			"Gain a free [Chemistry Lab] [in this city] <after discovering [Chemistry]>"
 		],
 		"requiredTech": "Alchemy"
@@ -3552,7 +3571,6 @@
 		"name": "Trading Port",
 		"maintenance": 1,
 		"specialistSlots": {
-			"Merchant": 1,
 			"Labourer": 1
 		},
 		"uniques": [
@@ -3966,8 +3984,7 @@
 			"Comment [Enables you to build ['Firearms'] Units]",
 			"New ['Firearms'] units start with [10] XP [in this city]",
 			"[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>",
-			//"[+10]% Production when constructing [Ancient era] units [in this city] <with [Sulfur]>",
-			//"[+5]% Production when constructing [Classical era] units [in this city] <with [Sulfur]>",
+			"[+10]% Production when constructing ['Firearms'] units [in this city] <with [Sulfur]>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Military Blacksmith",
@@ -4215,8 +4232,8 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Outcome'",
-			"[5]% Food is carried over after population increases [in all cities]",
-			"[-5]% unhappiness from the number of cities"
+			"[10]% Food is carried over after population increases [in all cities]",
+			"[-10]% unhappiness from the number of cities"
 		]
 	},
 	{
@@ -4238,9 +4255,9 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Outcome'",
-			"[+6]% [Gold] from every [Livestock Market]",
-			"[+1 Production] from every [Camp]",
-			"[+3 Gold] from every [Camp] <in [Jungle] tiles>"
+			"Provides [1] [Pets]",
+			"[+2 Gold] from [Camp] tiles [in all cities]",
+			"Comment [[Explorer] can build [land] tile improvements and with no penalties building [road] in [rough terrain]]"
 		]
 	},
 	{
@@ -4398,6 +4415,7 @@
 			"'Agricultural Building'",
 			"[+1]% Production when constructing ['Agricultural Building'] buildings [in all cities]"
 		],
+		"requiredBuilding": "Windmill",
 		"requiredTech": "Machinery"
 	},
 	{
@@ -4811,7 +4829,7 @@
 			"'Agricultural Building'",
 			"Consumes [1] [Industrial Chemicals]",
 			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]",
-			"[+1 Gold] from ['Crop'] tiles [in this city]"
+			"[+1 Gold] from [{'Crop'} {'Upgraded Resource'}] tiles [in this city]"
 		],
 		"requiredTech": "Fertilizer"
 	},
