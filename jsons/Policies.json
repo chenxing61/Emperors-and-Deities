@@ -22,7 +22,7 @@
             {
                 "name": "Apotheosis of Leaders",
                 "uniques": [
-                    "[+1 Faith, +1 Science, +1 Happiness] [in capital]",
+                    "[+1 Production, +1 Faith, +1 Science, +3 Happiness] [in capital]",
                     "[+17]% Production when constructing [Military] units [in all cities] <in cities with a [Shrine]> <before the [Medieval era]>",
                     "[+16]% Production when constructing [Military] units [in all cities] <in cities with a [Shrine]>"
                     
@@ -70,7 +70,7 @@
         "uniques": [
             "Only available <before adopting [Polytheism]>",
             "Only available <before the [Medieval era]>",
-            "[+2 Faith, +2 Culture] [in capital]",
+            "[+2 Faith, +2 Culture, +1 Happiness] [in capital]",
             "Get the leader title of [The Faithful [leaderName]]",
             "Comment [Enables you to build [Chapel]s, a low cost 'Worship Place' that produces [Faith] exclusively]",
             "Comment [Disable you to build non-monotheism wonders like [Shrine of the Rain God], but enables you to build monotheism wonders like [Cathedral of Mercy].]"
@@ -79,7 +79,7 @@
             {
                 "name": "Enlightenment from the Lord",
                 "uniques": [
-                    "[-5]% Unhappiness from [Population] [in all cities]",
+                    "[-10]% Unhappiness from [Population] [in all cities]",
                     "[+10]% [Faith] [in all cities]"
                 ],
                 "row": 1,
@@ -88,7 +88,7 @@
             {
                 "name": "Testaments",
                 "uniques": [
-                    "[+33]% Production when constructing [Faith] wonders [in holy cities]",
+                    "[+50]% Production when constructing [Faith] wonders [in capital]",
                     "[+1 Happiness] [in all cities]"
                 ],
                 "requires": [
@@ -113,7 +113,7 @@
                 "name": "Early Theology",
                 "uniques": [
                     "[+1 Gold, +1 Faith] per [2] population [in holy cities]",
-                    "[Faith] cost of purchasing [Faith] buildings [-15]%"
+                    "[Faith] cost of purchasing [Faith] buildings [-25]%"
                 ],
                 "requires": [
                     "Enlightenment from the Lord"
@@ -138,8 +138,7 @@
             "Only available <before the [Medieval era]>",
             "Comment [Enables you to build Garrison Units, a variant of Levy close combat units that has bonus promotions and have expertise in defense, they can also be trained like the standing army.]",
             "Get the leader title of [The Strengthened [leaderName]]",
-            "[+2 Production] [in capital]",
-            "[+2 Happiness] [in all cities] <when number of [Cities] is less than [5]>"
+            "[+1 Happiness] [in all cities] <when number of [Influence] is more than [[Influence Limit] / 2]>"
         ],
         "policies": [
             
@@ -155,7 +154,7 @@
             {
                 "name": "Chiefdom Confederation",
                 "uniques": [
-                    "Each city founded increases culture cost of policies [33]% less than normal",
+                    "[+2 Production] [in capital]",
                     "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>"
                 ],
                 "requires": [
@@ -167,6 +166,7 @@
             {
                 "name": "Peace Under Force",
                 "uniques": [
+                    "Each city founded increases culture cost of policies [33]% less than normal",
                     "[+25]% Production when constructing [National Wonder] buildings [in all cities connected to capital]",
                     "[+50]% Production when constructing [Ancient era] wonders [in all cities connected to capital]"
                 ],
