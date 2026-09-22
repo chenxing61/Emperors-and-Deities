@@ -8,7 +8,7 @@
 2. **Custom mechanics** like influence point/events and civilization forms. Which gave more depth to the overall gameplay and enables more features like civilization switching and decision tabs akin to paradox games.
 3. More detailed mid-post industrial era late gameplay with more mechanics. (WIP)
 4. **Adequate tutorials** and walls of text in the civilpedia for the features above so that new players can learn it. You can enter the tutorial scenario by switching the map generation to scenario in game.
-5. Translation in Simplified and Traditional Chinese （简体繁体中文全部支持），German（Diese Mod unterstützt Deutsch），and Russian（Этот мод поддерживает русский язык）
+5. Translation in Simplified and Traditional Chinese （简体繁体中文全部支持），German（Diese Mod unterstützt Deutsch），Russian（Этот мод поддерживает русский язык）and Spanish (Este mod es compatible con el español)
 
 ## What doesn't this mod have:
 
