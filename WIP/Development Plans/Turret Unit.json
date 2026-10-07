@@ -1,0 +1,5531 @@
+[
+	///CV
+	{
+		"name": "Worker",
+		"cost": 70,
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": [
+			"Unbuildable <if [Nomadic Culture] is constructed> <for [non-[AI player]] Civilizations>",
+			"Limited to [3] per Civilization <if [Nomadic Culture] is constructed> <for [AI player] Civilizations>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Land] tiles>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Lakes] tiles>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Canal] tiles>",
+			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
+			"[+75]% construction time for [Road] improvements <in [Rough terrain] tiles>",
+			"[+75]% construction time for [Railroad] improvements <in [Rough terrain] tiles>",
+			"[+75]% construction time for [Road] improvements <in [Mountain] tiles>",
+			"[+75]% construction time for [Railroad] improvements <in [Mountain] tiles>",
+			"[This Unit] gains [3] XP <upon building a [All] improvement>",
+			"Automation is a primary action"
+		],
+		"upgradesTo": "Mechanised Worker",
+		"requiredTech": "Fire Making"
+	},
+	{
+		"name": "Mechanised Worker",
+		"cost": 280,
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": [
+			"Unbuildable <if [Nomadic Culture] is constructed> <for [non-[AI player]] Civilizations>",
+			"Limited to [3] per Civilization <if [Nomadic Culture] is constructed> <for [AI player] Civilizations>",
+			"Only available <if [Invention of Professional Vehicles] is constructed>",
+			"'Mechanised'",
+			"Costs [5] [Vehicle Parts]",
+			"[-15]% construction time for [All] improvements",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Land] tiles>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Lakes] tiles>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Canal] tiles>",
+			"Can pass through impassable tiles <after discovering [Robotics]>",
+			"[+50]% construction time for [Road] improvements <in [Rough terrain] tiles>",
+			"[+50]% construction time for [Railroad] improvements <in [Rough terrain] tiles>",
+			"[+50]% construction time for [Road] improvements <in [Mountain] tiles>",
+			"[+50]% construction time for [Railroad] improvements <in [Mountain] tiles>",
+			"[This Unit] gains [5] XP <upon building a [All] improvement>",
+			"Automation is a primary action"
+		],
+		"promotions":["Automobile"],
+		"requiredTech": "Combustion"
+	},
+	{
+		"name": "Rubber Transplanter",
+		"cost": 250,
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": [
+			"Only available <when above [1] [Rubber]>",
+			"Add [Rubber] to this tile <by consuming this unit>"
+		],
+		"requiredTech": "Mass Production"
+	},
+	{
+		"name": "Galley Work Ship",
+		"cost": 55,
+		"unitType": "Civil Ship",
+		"movement": 2,
+		"uniques": [
+			"Limited to [1] per Civilization <for [City-States] Civilizations>",
+			"'Galley'",
+			"Cannot enter ocean tiles",
+			"[+1] Movement <after discovering [Shipbuilding]>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Water] tiles>",
+			"[This Unit] gains [3] XP <upon building a [All] improvement>",
+			"Automation is a primary action"
+		],
+		"upgradesTo": "Modern Work Ship",
+		"requiredTech": "Fire Making"
+	},
+	{
+		"name": "Expeditionary Work Ship",
+		"unitType": "Civil Ship",
+		"cost": 125,
+		"movement": 3,
+		"uniques": [
+			"'Sailing Ship'",
+			"May create improvements on water resources <in [Ocean] tiles>",
+			"Automation is a primary action"
+		],
+		"obsoleteTech": "Advanced Shipbuilding",
+		"upgradesTo": "Modern Work Ship",
+		"requiredTech": "Cartography"
+	},
+	{
+		"name": "Modern Work Ship",
+		"unitType": "Civil Ship",
+		"cost": 220,
+		"movement": 4,
+		"uniques": [
+			"[-25]% construction time for [All] improvements",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Water] tiles>",
+			"[This Unit] gains [3] XP <upon building a [All] improvement>",
+			"Automation is a primary action"
+		],
+		"requiredTech": "Advanced Shipbuilding"
+	},
+	{
+		"name": "Peon",
+		"cost": 70,
+		"unitType": "Civilian",
+		"movement": 1,
+		"uniques": [
+			"Unbuildable",
+			"[+1] Movement <after adopting [Military Tradition]>",
+			"Can speed up construction of a building <after discovering [Civil Service]> <for [Human player] Civilizations>",
+			"Can instantly construct a [Manual Farm] improvement <once> <after which this unit is consumed> <for [Human player] Civilizations>",
+			"Can instantly construct a [Manual Plantation] improvement <once> <after which this unit is consumed> <for [Human player] Civilizations>",
+			"Can instantly construct a [Manual Lumber Mill] improvement <once> <after which this unit is consumed> <after discovering [Carpentry]> <for [Human player] Civilizations>",
+			"Can instantly construct a [Manual Mine] improvement <once> <after which this unit is consumed> <after discovering [Mining]> <for [Human player] Civilizations>",
+			"Can instantly construct a [Quarry] improvement <once> <after which this unit is consumed> <after discovering [Masonry]> <for [Human player] Civilizations>",
+			"Can instantly construct a [Remove Forest] improvement <once> <after which this unit is consumed> <after discovering [Bronze Working]> <for [Human player] Civilizations>",
+			"Can instantly construct a [Remove Jungle] improvement <once> <after which this unit is consumed> <after discovering [Bronze Working]> <for [Human player] Civilizations>",
+			"Can instantly construct a [Remove Marsh] improvement <once> <after which this unit is consumed> <after discovering [Masonry]> <for [Human player] Civilizations>",
+			"Can build [Manual Farm] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Manual Plantation] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Pasture] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Camp] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Manual Lumber Mill] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Manual Mine] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Quarry] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Remove Forest] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Remove Jungle] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"Can build [Remove Marsh] improvements on tiles <for [AI player] Civilizations> <hidden from users>",
+			"[This Unit] takes [100] damage <upon building a [All] improvement> <for [AI player] Civilizations> <hidden from users>",
+			"[-99]% construction time for [All] improvements <for [AI player] Civilizations> <hidden from users>"
+		],
+		"requiredTech": "Fire Making"
+	},
+	{
+		"name": "Settler",
+		"unitType": "Civilian",
+		"cost": 100,
+		"movement": 2,
+		"uniques": [
+			"Unbuildable <if [Nomadic Culture] is constructed>",
+			"Founds a new city <by consuming this unit> <for [Human player] Civilizations>",
+			"Founds a new city <in [non-[Luxury resource]] tiles> <by consuming this unit> <for [AI player] Civilizations> <hidden from users>",
+			"Excess Food converted to Production when under construction",
+			"[+2] Movement <before turn number [2]>",
+			"[+1] Sight <before turn number [2]>",
+			"Requires at least [3] population"
+		],
+		"requiredTech": "Fire Making",
+		"obsoleteTech": "Navigation"
+	},
+	{
+		"name": "Nomadic Settler",
+		"unitType": "Civilian",
+		"cost": 75,
+		"movement": 2,
+		"uniques": [
+			"Only available <if [Nomadic Culture] is constructed>",
+			"[-1] population [in this city]",
+			"Founds a new city <by consuming this unit> <for [Human player] Civilizations>",
+			"Founds a new city <in [non-[Luxury resource]] tiles> <by consuming this unit> <for [AI player] Civilizations> <hidden from users>",
+			"Excess Food converted to Production when under construction",
+			"[+2] Movement <before turn number [2]>",
+			"[+1] Sight <before turn number [2]>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>"
+		],
+		"requiredTech": "Fire Making",
+		"obsoleteTech": "Navigation"
+	},
+	{
+		"name": "Pioneer",
+		"unitType": "Civilian",
+		"cost": 250,
+		"movement": 3,
+		"uniques": [
+			"Founds a new city <by consuming this unit> <for [Human player] Civilizations>",
+			"Founds a new city <in [non-[Luxury resource]] tiles> <by consuming this unit> <for [AI player] Civilizations> <hidden from users>",
+			"Excess Food converted to Production when under construction",
+			"[+1] Sight",
+			"Requires at least [1] population"
+		],
+		"promotions": [
+			"Colonizer"
+		],
+		"requiredTech": "Navigation"
+	},
+	///line 0
+	{
+		"name": "Wanderer",
+		"unitType": "Scout",
+		"cost": 25,
+		"movement": 2,
+		"strength": 10,
+		"uniques": [
+			"Limited to [2] per Civilization <for [AI player] Civilizations>",
+			"Can upgrade to [Adventurer] <after discovering [Astronomy]>",
+			"Can upgrade to [Envoy] <after discovering [Astronomy]> <for [non-[City-State]] Civilizations>",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Scouting Unit"
+		],
+		"requiredTech": "Hunting and Fishing",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Hunter Gatherer",
+		"unitType": "Ranged Combat",
+		"movement": 2,
+		"strength": 8,
+		"rangedStrength": 11,
+		"range": 1,
+		"uniques": [
+			"Unbuildable",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
+			"Can build [Manual Plantation] improvements on tiles <for [Human player] Civilizations>",
+			"Can build [Manual Farm] improvements on tiles <for [Human player] Civilizations>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"upgradesTo":"Archer",
+		"requiredTech": "Hunting and Fishing",
+		"obsoleteTech": "Mathematics",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Primal Herder",
+		"cost": 25,
+		"uniqueTo": "Euroasian Nomads",
+		"replaces": "Hunter Gatherer",
+		"unitType": "Close Combat",
+		"movement": 3,
+		"strength": 10,
+		"uniques": [
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
+			"Can build [Pasture] improvements on tiles <for [Human player] Civilizations>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Nomadic Lifestyle"
+		],
+		"requiredTech": "Hunting and Fishing",
+		"obsoleteTech": "Horseback Riding",
+		"upgradesTo": "Nomad Horde",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Primal Warrior",
+		"unitType": "Ranged Combat",
+		"cost": 0,
+		"movement": 2,
+		"strength": 8,
+		"rangedStrength": 11,
+		"range": 1,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Skirmisher Training",
+			"The Levied Army"
+		],
+		"requiredTech": "Hunting and Fishing",
+		"obsoleteTech": "Mining",
+		"attackSound": "arrow"
+	},
+	///line 1
+	{
+		"name": "Canoes",
+		"unitType": "Ranged Combat Ship",
+		"cost": 40,
+		"movement": 3,
+		"strength": 7,
+		"rangedStrength": 10,
+		"range": 1,
+		"uniques": [
+			"'Standing Army'",
+			"'Galley'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Light Galley Fleet",
+		"requiredTech": "Sailing",
+		"obsoleteTech": "Mathematics",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Brute Warrior",
+		"unitType": "Close Combat",
+		"cost": 0,
+		"movement": 2,
+		"strength": 12,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army"
+		],
+		"requiredTech": "Copper Working",
+		"obsoleteTech": "Iron Working",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Garrison Warrior",
+		"unitType": "Close Combat",
+		"cost": 50,
+		"movement": 2,
+		"strength": 12,
+		"uniques": [
+			"Only available <after adopting [Unity]>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <in [Friendly Land] tiles> <when defending>",
+			"[-33]% Strength <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Garrison Army"
+		],
+		"requiredTech": "Copper Working",
+		"obsoleteTech": "Logistics",
+		"upgradesTo": "Garrison Spearman",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Warband",
+		"unitType": "Close Combat",
+		"uniqueTo": "Europa",
+		"cost": 45,
+		"movement": 2,
+		"strength": 12,
+		"uniques": [
+			"Limited to [5] per Civilization",
+			"Can transform to [Early Swordsman] <after discovering [Bronze Working]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
+			"Can transform to [Archer] <after discovering [Mathematics]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
+			"Can transform to [Early Rider] <after discovering [Horseback Riding]> <when above [0] [Horse]> <when above [0] [Standing Army Maintenance]> <costs [+125 Gold] stats>",
+			"Can transform to [Comitatus] <after discovering [Mining]> <after adopting [Unity]> <when above [0] [Noble Army Maintenance]> <costs [+100 Gold] stats>",
+			"Can upgrade to [Early Swordsman] <for [AI player] Civilizations> <hidden from users>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+50]% Strength <starting from the [Classical era]> <in [Land] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Garrison Army",
+			"Hardened"
+		],
+		"requiredTech": "Copper Working",
+		"obsoleteTech": "Iron Working",
+		"upgradesTo": "Spearman",
+		"attackSound": "nonmetalhit"
+	},
+	///Line 2
+	{
+		"name": "Early Swordsman",
+		"unitType": "Close Combat",
+		"cost": 55,
+		"movement": 2,
+		"strength": 16,
+		"uniques": [
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+15]% Strength <when fighting in [Rough terrain] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Armorments",
+		"upgradesTo": "Swordsman",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Gong Shi Colonizer",
+		"uniqueTo": "East Asia",
+		"unitType": "Close Combat",
+		"cost": 75,
+		"movement": 2,
+		"strength": 16,
+		"uniques": [
+			"Only available <after adopting [Early Colonization]>",
+			"'Noble Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Founds a new puppet city <by consuming this unit> <for [Human player] Civilizations>",
+			"Founds a new puppet city <in [non-[Luxury resource]] tiles> <by consuming this unit> <for [AI player] Civilizations> <hidden from users>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army"
+		],
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Armorments",
+		"requiredResource": "Noble Army Maintenance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Hoplite",
+		"uniqueTo": "Mediterranean",
+		"replaces": "Early Swordsman",
+		"unitType": "Close Combat",
+		"cost": 60,
+		"movement": 2,
+		"strength": 16,
+		"uniques": [
+			"Can upgrade to [Legio] <if [SPQR] is constructed>",
+			"Can upgrade to [Phalanx] <if [Diadochi States] is constructed>",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Intensive Doctrine"
+		],
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Armorments",
+		"upgradesTo": "Swordsman",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Chariot",
+		"unitType": "Assault",
+		"cost": 65,
+		"movement": 3,
+		"strength": 18,
+		"uniques": [
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+6] Strength <after discovering [Carpentry]>",
+			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"upgradesTo": "Cataphract",
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Stirrup",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "War Cart",
+		"uniqueTo": "Central and West Asia",
+		"unitType": "Assault",
+		"cost": 60,
+		"movement": 3,
+		"strength": 16,
+		"uniques": [
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+6] Strength <after discovering [Carpentry]>",
+			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"upgradesTo": "Cataphract",
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Stirrup",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Aryan War Cart",
+		"uniqueTo": "South Asia",
+		"unitType": "Assault",
+		"cost": 70,
+		"movement": 3,
+		"strength": 18,
+		"uniques": [
+			"Only available <if [Vedic Kingdoms] is constructed>",
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+6] Strength <after discovering [Carpentry]>",
+			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Stewardship",
+			"Hardened"
+		],
+		"upgradesTo": "Cataphract",
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Stirrup",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Noble Chariot",
+		"unitType": "Assault",
+		"cost": 60,
+		"movement": 3,
+		"strength": 20,
+		"uniques": [
+			"Consumes [1] [Horse]",
+			"'Noble Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+6] Strength <after discovering [Carpentry]>",
+			"[-20]% Strength <when fighting in [Rough terrain] tiles>",
+			"[-20]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army"
+		],
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Armorments",
+		"upgradesTo": "Noble Cataphract",
+		"requiredResource": "Noble Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Gaulish Karros",
+		"uniqueTo": "Europa",
+		"replaces": "Noble Chariot",
+		"unitType": "Assault",
+		"cost": 60,
+		"movement": 3,
+		"strength": 20,
+		"uniques": [
+			"Consumes [1] [Horse]",
+			"'Noble Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+6] Strength <after discovering [Carpentry]>",
+			"[-20]% Strength <when fighting in [Rough terrain] tiles>",
+			"[-20]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Assault Doctrine"
+		],
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Armorments",
+		"upgradesTo": "Noble Cataphract",
+		"requiredResource": "Noble Army Maintenance",
+		"attackSound": "horse"
+	},
+	///Line 3
+	{
+		"name": "Galley Fleet",
+		"unitType": "Close Combat Ship",
+		"cost": 65,
+		"movement": 3,
+		"strength": 20,
+		"uniques": [
+			"'Standing Army'",
+			"'Galley'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Heavy Galley Fleet",
+		"requiredTech": "Astronomy",
+		"obsoleteTech": "Shipbuilding",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Adventurer",
+		"unitType": "Scout",
+		"cost": 60,
+		"movement": 3,
+		"strength": 14,
+		"uniques": [
+			"Unbuildable <for [Human player] Civilizations>",
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"'Mercenary Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Can move immediately once bought",
+			"[+50]% Strength <vs ['Barbaric Army'] units> <when attacking>",
+			"[+25]% Strength <vs ['Barbaric Army'] units> <when defending>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit",
+			"Scouting Unit"
+		],
+		"requiredTech": "Astronomy",
+		"obsoleteTech": "Monocular",
+		"requiredResource": "Mercenary Contract",
+		"upgradesTo": "Explorer",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Envoy",
+		"unitType": "Scout",
+		"cost": 100,
+		"movement": 3,
+		"strength": 15,
+		"uniques": [
+			"Limited to [2] per Civilization",
+			"Unbuildable <for [City-State] Civilizations>",
+			"Can upgrade to [Explorer] <after discovering [Monocular]>",
+			"Can upgrade to [Recon Unit] <after discovering [Replaceable Parts]>",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"May enter foreign tiles without open borders",
+			"[-100]% Strength <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Scouting Unit"
+		],
+		"requiredTech": "Astronomy",
+		"obsoleteTech": "Replaceable Parts",
+		"attackSound": "metalhit"
+	},
+	///Line 4
+	{
+		"name": "Nomad Horde",
+		"uniqueTo": "Euroasian Nomads",
+		"unitType": "Ranged Combat",
+		"cost": 125,
+		"movement": 3,
+		"strength": 14,
+		"rangedStrength": 18,
+		"range": 1,
+		"uniques": [
+			"[-1] population [in this city]",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Can build [Camp] improvements on tiles <for [Human player] Civilizations>",
+			"Can build [Pasture] improvements on tiles <for [Human player] Civilizations>",
+			"Can build [Road] improvements on tiles <for [Human player] Civilizations>",
+			"[+2] Strength <starting from the [Classical era]>",
+			"[+3] Strength <starting from the [Medieval era]>",
+			"[+4] Strength <starting from the [Renaissance era]>",
+			"[+5] Strength <starting from the [Imperial era]>",
+			"Instantly provides [1] [Migrating Population] <by consuming this unit>",
+			"[+25]% construction time for [Road] improvements <in [Open terrain] tiles>",
+			"[+75]% construction time for [Road] improvements <in [Rough terrain] tiles>",
+			"[+75]% construction time for [Road] improvements <in [Mountain] tiles>",
+			"Add [Caprinae] to this tile <costs [100] [Sheep Horde]> <in [{non-[Strategic resource]} {Hill}] tiles> <[2] times>",
+			"Add [Bovine] to this tile <costs [100] [Cattle Horde]> <in [{non-[Strategic resource]} {Grassland}] tiles> <[2] times>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Nomadic Lifestyle"
+		],
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Stirrup",
+		"requiredResource": "Horse",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Javalineer",
+		"unitType": "Ranged Combat",
+		"cost": 0,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 19,
+		"range": 1,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army",
+			"Skirmisher Training",
+			"Javalin"
+		],
+		"requiredTech": "Mining",
+		"obsoleteTech": "Tactics",
+		"upgradesTo": "Levy Archer",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Nubian Archer",
+		"uniqueTo": "North Africa",
+		"unitType": "Ranged Combat",
+		"replaces": "Mercenary Javalineer",
+		"cost": 80,
+		"movement": 3,
+		"strength": 15,
+		"rangedStrength": 19,
+		"range": 1,
+		"uniques": [
+			"Can transform to [Archer] <when above [0] [Standing Army Maintenance]> <after discovering [Mathematics]> <costs [+100 Gold] stats>",
+			"Can upgrade to [Archer] <for [AI player] Civilizations> <hidden from users>",
+			"'Mercenary Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit",
+			"Skirmisher Training",
+			"Accuracy Doctrine"
+		],
+		"requiredTech": "Mining",
+		"obsoleteTech": "Tactics",
+		"upgradesTo": "Mercenary Archer",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Mercenary Javalineer",
+		"unitType": "Ranged Combat",
+		"cost": 60,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 19,
+		"range": 1,
+		"uniques": [
+			"Unbuildable <for [Human player] Civilizations>",
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"'Mercenary Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit",
+			"Skirmisher Training",
+			"Javalin"
+		],
+		"requiredTech": "Mining",
+		"obsoleteTech": "Logistics",
+		"upgradesTo": "Mercenary Archer",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Early Rider",
+		"unitType": "Rider",
+		"cost": 65,
+		"movement": 3,
+		"strength": 18,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+1] Sight",
+			"[-25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[-50]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredResource": "Standing Army Maintenance",
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Stirrup",
+		"upgradesTo": "Light Cavalry",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Elephant Rider",
+		"unitType": "Rider",
+		"cost": 100,
+		"movement": 2,
+		"strength": 24,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Consumes [1] [Elephant]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Blunt Weapons'",
+			"No defensive terrain bonus",
+			"[+12] Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"[-33]% Strength <vs ['Siege Weapons'] units>",
+			"[-33]% Strength <vs ['Firearms'] units>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Tactics",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Armored Elephant Rider",
+		"attackSound": "elephant"
+	},
+	{
+		"name": "War Elephant",
+		"uniqueTo": "South Asia",
+		"replaces": "Elephant Rider",
+		"unitType": "Rider",
+		"cost": 100,
+		"movement": 2,
+		"strength": 24,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Consumes [1] [Elephant]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Blunt Weapons'",
+			"No defensive terrain bonus",
+			"[+12] Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+10]% Strength <vs cities> <when attacking>",
+			"[-25]% Strength <vs ['Siege Weapons'] units>",
+			"[-33]% Strength <vs ['Firearms'] units>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Tactics",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Armored War Elephant",
+		"attackSound": "elephant"
+	},
+	{
+		"name": "Horse Archer",
+		"unitType": "Rider",
+		"cost": 90,
+		"movement": 3,
+		"strength": 13,
+		"rangedStrength": 17,
+		"range": 1,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+1] Sight",
+			"[+1] Range <after discovering [Stirrup]> <in [Land] tiles>",
+			"[+4] Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+8] Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Elite Horse Archer",
+		"uniqueTo": "Euroasian Nomads",
+		"replaces": "Horse Archer",
+		"unitType": "Rider",
+		"cost": 90,
+		"movement": 3,
+		"strength": 14,
+		"rangedStrength": 20,
+		"range": 1,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+1] Sight",
+			"[+1] Range <after discovering [Stirrup]> <in [Land] tiles>",
+			"[+5] Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+10] Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Skirmisher Training",
+			"Nomadic Lifestyle"
+		],
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "arrow"
+	},
+	///Line 5
+	{
+		"name": "Light Galley Fleet",
+		"unitType": "Ranged Combat Ship",
+		"cost": 75,
+		"movement": 3,
+		"strength": 14,
+		"range": 1,
+		"rangedStrength": 19,
+		"uniques": [
+			"'Standing Army'",
+			"'Galley'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Heavy Galley Fleet",
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Shipbuilding",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Archer",
+		"unitType": "Ranged Combat",
+		"cost": 85,
+		"movement": 2,
+		"strength": 20,
+		"rangedStrength": 25,
+		"range": 1,
+		"uniques": [
+			"'Standing Army'",
+			"'Infantry'",
+			"'Edged Weapons'",
+			"'Dense Formation'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Engineering",
+		"upgradesTo": "Crossbowman",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Early Crossbowman",
+		"uniqueTo": "East Asia",
+		"replaces": "Archer",
+		"unitType": "Ranged Combat",
+		"cost": 85,
+		"movement": 2,
+		"strength": 20,
+		"rangedStrength": 25,
+		"range": 1,
+		"uniques": [
+			"Can transform to [Qin Crossbowman] <if [Great Qin] is constructed>",
+			"Can upgrade to [Qin Crossbowman] <if [Great Qin] is constructed> <for [AI player] Civilizations> <hidden from users>",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Edged Weapons'",
+			"'Dense Formation'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Crossbow"
+		],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Engineering",
+		"upgradesTo": "Crossbowman",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Qin Crossbowman",
+		"uniqueTo": "East Asia",
+		"unitType": "Ranged Combat",
+		"cost": 85,
+		"movement": 2,
+		"strength": 20,
+		"rangedStrength": 25,
+		"range": 1,
+		"uniques": [
+			"Can transform to [Crossbowman] <after discovering [Engineering]> <costs [+50 Gold] stats>",
+			"Can upgrade to [Crossbowman] <for [AI player] Civilizations> <hidden from users>",
+			"Only available <if [Great Qin] is constructed>",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Stewardship",
+			"Hardened",
+			"Firepower Doctrine",
+			"Crossbow"
+		],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Engineering",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Catapult",
+		"unitType": "Siege",
+		"cost": 110,
+		"movement": 2,
+		"strength": 18,
+		"rangedStrength": 24,
+		"range": 2,
+		"uniques": [
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+100]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Physics",
+		"upgradesTo": "Trebuchet",
+		"requiredResource": "Standing Army Maintenance",
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
+		"name": "Ballista",
+		"unitType": "Siege",
+		"cost": 110,
+		"movement": 2,
+		"strength": 18,
+		"rangedStrength": 24,
+		"range": 2,
+		"uniques": [
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+50]% Strength <vs cities> <when attacking>",
+			"[+33]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Engineering",
+		"upgradesTo": "Heavy Ballista",
+		"requiredResource": "Standing Army Maintenance",
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
+		"name": "Spearman",
+		"unitType": "Close Combat",
+		"cost": 0,
+		"movement": 2,
+		"strength": 21,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+33]% Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+33]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pikeman",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Nomad Warriors",
+		"unitType": "Close Combat",
+		"cost": 0,
+		"movement": 3,
+		"strength": 21,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+33]% Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+33]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Phalanx",
+		"uniqueTo": "Mediterranean",
+		"unitType": "Close Combat",
+		"cost": 75,
+		"movement": 2,
+		"strength": 26,
+		"uniques": [
+			"Only available <if [Diadochi States] is constructed>",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Hardened",
+			"Intensive Doctrine",
+			"Pike"
+		],
+		"requiredTech": "Horse Collar",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Legio",
+		"uniqueTo": "Mediterranean",
+		"unitType": "Close Combat",
+		"cost": 80,
+		"movement": 2,
+		"strength": 25,
+		"uniques": [
+			"Only available <if [SPQR] is constructed>",
+			"Consumes [1] [Metal]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Stewardship",
+			"Hardened",
+			"Javalin",
+			"Legio Ability"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Sacred Band",
+		"uniqueTo": "North Africa",
+		"unitType": "Close Combat",
+		"cost": 80,
+		"movement": 2,
+		"strength": 26,
+		"uniques": [
+			"Only available <if [Carthage Obligarchy] is constructed>",
+			"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Hardened",
+			"Intensive Doctrine"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Swordsman",
+		"unitType": "Close Combat",
+		"cost": 80,
+		"movement": 2,
+		"strength": 25,
+		"uniques": [
+			"Consumes [1] [Metal]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+20]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[+33]% Strength <after discovering [Steels]> <in [Land] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Pike and Shot",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Comitatus",
+		"uniqueTo": "Europa",
+		"unitType": "Close Combat",
+		"cost": 100,
+		"movement": 2,
+		"strength": 25,
+		"uniques": [
+			"Only available <after adopting [Unity]>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
+			"Can upgrade to [Pike and Shot] <for [AI player] Civilizations> <after discovering [Hand Cannon]> <hidden from users>",
+			"Can transform to [Pike and Shot] <after discovering [Hand Cannon]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]> <for [AI player] Civilizations> <hidden from users>",
+			"'Noble Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+20]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[+33]% Strength <after discovering [Steels]> <in [Land] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Hardened",
+			"Shock Doctrine",
+			"Shield Wall"
+		],
+		"requiredTech": "Mining",
+		"obsoleteTech": "Flintlock",
+		"requiredResource": "Noble Army Maintenance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Noble Swordsman",
+		"unitType": "Close Combat",
+		"cost": 100,
+		"movement": 2,
+		"strength": 25,
+		"uniques": [
+			"Unavailable <for [Europa] Civilizations> <after adopting [Unity]> <hidden from users>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
+			"Can upgrade to [Pike and Shot] <for [AI player] Civilizations> <after discovering [Hand Cannon]> <hidden from users>",
+			"Can transform to [Pike and Shot] <after discovering [Hand Cannon]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Consumes [1] [Metal]",
+			"'Noble Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+20]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[+33]% Strength <after discovering [Steels]> <in [Land] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Chainmail Armour"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Flintlock",
+		"requiredResource": "Noble Army Maintenance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Zhayedan",
+		"unitType": "Close Combat",
+		"uniqueTo": "Central and West Asia",
+		"cost": 120,
+		"movement": 2,
+		"strength": 25,
+		"uniques": [
+			"Only available <if [Persian Dynasties] is constructed>",
+			"Limited to [2] per Civilization",
+			"Can transform to [Azadan Cavalry] <removing the [Fast Regrouping] promotion/status> <after discovering [Armorments]> <when above [0] [Horse]>",
+			"Can upgrade to [Pike and Shot] <for [AI player] Civilizations> <after discovering [Hand Cannon]> <hidden from users>",
+			"Can transform to [Pike and Shot] <after discovering [Hand Cannon]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"'Noble Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"'Legendary Unit'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+20]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[+33]% Strength <after discovering [Steels]> <in [Land] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Hardened",
+			"Stewardship",
+			"Fast Regrouping",
+			"Recurve bow"
+		],
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Flintlock",
+		"requiredResource": "Noble Army Maintenance",
+		"attackSound": "metalhit"
+	},
+	///Line 6
+	{
+		"name": "Sailing Ships",
+		"unitType": "Close Combat Ship",
+		"cost": 90,
+		"movement": 4,
+		"strength": 21,
+		"uniques": [
+			"'Standing Army'",
+			"'Sailing Ship'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <after discovering [Shipbuilding]>",
+			"[This Unit] takes [15] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Dry Dock",
+		"obsoleteTech": "Cartography",
+		"upgradesTo": "Three-masted Ship",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Long Boat Fleet",
+		"uniqueTo": "Europa",
+		"replaces": "Sailing Ships",
+		"unitType": "Close Combat Ship",
+		"cost": 75,
+		"movement": 4,
+		"strength": 21,
+		"uniques": [
+			"'Standing Army'",
+			"'Sailing Ship'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <after discovering [Dry Dock]>",
+			"[+25]% Strength <after discovering [Shipbuilding]>",
+			"[This Unit] takes [10] damage <upon ending a turn in a [Ocean] tile>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Sailing Doctrine"
+		],
+		"requiredTech": "Astronomy",
+		"obsoleteTech": "Cartography",
+		"upgradesTo": "Three-masted Ship",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Garrison Spearman",
+		"unitType": "Close Combat",
+		"cost": 50,
+		"movement": 2,
+		"strength": 21,
+		"uniques": [
+			"Only available <after adopting [Unity]>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+33]% Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+33]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[+25]% Strength <in [Friendly Land] tiles> <when defending>",
+			"[-33]% Strength <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Garrison Army",
+			"Stewardship",
+			"Defence Doctrine"
+		],
+		"requiredTech": "Logistics",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Garrison Pike and Shot",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Mercenary Archer",
+		"unitType": "Ranged Combat",
+		"cost": 70,
+		"movement": 2,
+		"strength": 20,
+		"rangedStrength": 25,
+		"range": 1,
+		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Mercenary Army'",
+			"'Edged Weapons'",
+			"Can move immediately once bought",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit"
+		],
+		"requiredTech": "Logistics",
+		"obsoleteTech": "Engineering",
+		"upgradesTo": "Mercenary Crossbowman",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Camel Rider",
+		"unitType": "Rider",
+		"cost": 90,
+		"movement": 3,
+		"strength": 24,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Only available <with [Camel]>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+33]% Strength <vs ['Mounted'] units>",
+			"[+25]% Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Logistics",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Mercenary Camel Rider",
+		"unitType": "Rider",
+		"cost": 90,
+		"movement": 3,
+		"strength": 24,
+		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"Only available <with [Camel]>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Mercenary Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+33]% Strength <vs ['Mounted'] units>",
+			"[+25]% Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Logistics",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Mercenary Contract",
+		"upgradesTo": "Hussar",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Giant Galley Warship",
+		"unitType": "Ranged Combat Ship",
+		"cost": 130,
+		"movement": 4,
+		"strength": 27,
+		"rangedStrength": 30,
+		"range": 1,
+		"uniques": [
+			"Unbuildable <when below [0] [War Machine Blueprint]>",
+			"Costs [1] [War Machine Blueprint]",
+			"'Standing Army'",
+			"'Galley'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+25]% Strength <after discovering [Shipbuilding]>",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Classical Arms",
+			"Medieval Arms"
+		],
+		"requiredTech": "Dry Dock",
+		"obsoleteTech": "Navigation",
+		"upgradesTo": "Frigate Fleet",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "arrow"
+	},
+	///Line 7
+	{
+		"name": "Azadan Cavalry",
+		"uniqueTo": "Central and West Asia",
+		"unitType": "Assault",
+		"cost": 130,
+		"movement": 3,
+		"strength": 32,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Only available <if [Persian Dynasties] is constructed>",
+			"Consumes [1] [Horse]",
+			"Consumes [1] [Metal]",
+			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
+			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]> <for [AI player] Civilizations> <hidden from users>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
+			"Can transform to [Azadan Cavalry Archer] <requires [1] movement>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Strip Armour"
+		],
+		"requiredTech": "Armorments",
+		"obsoleteTech": "Tactics",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Azadan Cavalry Archer",
+		"uniqueTo": "Central and West Asia",
+		"unitType": "Rider",
+		"movement": 3,
+		"strength": 27,
+		"rangedStrength": 30,
+		"range": 2,
+		"uniques": [
+			"Unbuildable",
+			"Consumes [1] [Horse]",
+			"Consumes [1] [Metal]",
+			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
+			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]> <for [AI player] Civilizations> <hidden from users>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
+			"Can transform to [Azadan Cavalry] <requires [1] movement>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Strip Armour"
+		],
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Cavalry of the Dominator",
+		"uniqueTo": "East Asia",
+		"unitType": "Assault",
+		"cost": 120,
+		"movement": 3,
+		"strength": 32,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Only available <if [Chu Dynasty] is constructed>",
+			"Consumes [1] [Horse]",
+			"Consumes [1] [Metal]",
+			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Strip Armour",
+			"Centralised Command"
+		],
+		"requiredTech": "Armorments",
+		"obsoleteTech": "Tactics",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Cataphract",
+		"unitType": "Assault",
+		"cost": 110,
+		"movement": 3,
+		"strength": 32,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Consumes [1] [Horse]",
+			"Consumes [1] [Metal]",
+			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Armorments",
+		"obsoleteTech": "Tactics",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Noble Cataphract",
+		"unitType": "Assault",
+		"cost": 140,
+		"movement": 3,
+		"strength": 32,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Consumes [1] [Horse]",
+			"Consumes [1] [Metal]",
+			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
+			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]> <for [AI player] Civilizations> <hidden from users>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
+			"'Noble Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Strip Armour"
+		],
+		"requiredTech": "Armorments",
+		"obsoleteTech": "Tactics",
+		"requiredResource": "Noble Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Hetairoi Cavalry",
+		"uniqueTo": "Mediterranean",
+		"unitType": "Assault",
+		"movement": 3,
+		"strength": 32,
+		"uniques": [
+			"Unbuildable",
+			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
+			"Can upgrade to [Heavy Cavalry] <after discovering [Tactics]> <for [AI player] Civilizations> <hidden from users>",
+			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"'Legendary Unit'",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-15]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Strip Armour",
+			"Centralised Command",
+			"Assault Doctrine",
+			"Hetairoi Glory"
+		],
+		"requiredTech": "Armorments",
+		"obsoleteTech": "Tactics",
+		"requiredResource": "Noble Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Mercenary Swordsman",
+		"unitType": "Close Combat",
+		"cost": 100,
+		"movement": 2,
+		"strength": 25,
+		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Mercenary Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+20]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[+33]% Strength <after discovering [Steels]> <in [Land] tiles>",
+			"Can move immediately once bought",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit"
+		],
+		"requiredTech": "Armorments",
+		"obsoleteTech": "Flintlock",
+		"upgradesTo": "Mercenary Musketeer",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "metalhit"
+	},
+	///Line 8
+	{
+		"name": "Quinquereme Fleet",
+		"unitType": "Close Combat Ship",
+		"uniqueTo": "North Africa",
+		"cost": 100,
+		"movement": 3,
+		"strength": 30,
+		"uniques": [
+			"Only available <if [Carthage Obligarchy] is constructed>",
+			"Can transform to [Heavy Galley Fleet] <after discovering [Shipbuilding]>",
+			"Can upgrade to [Heavy Galley Fleet] <after discovering [Shipbuilding]> <for [AI player] Civilizations> <hidden from users>",
+			"'Standing Army'",
+			"'Galley'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Sailing Doctrine"
+		],
+		"requiredTech": "Dry Dock",
+		"obsoleteTech": "Monocular",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "throw"
+	},
+	{
+		"name": "Lou Chuan Fleet",
+		"uniqueTo": "East Asia",
+		"replaces": "Heavy Galley Fleet",
+		"unitType": "Close Combat Ship",
+		"cost": 110,
+		"movement": 3,
+		"strength": 32,
+		"uniques": [
+			"'Standing Army'",
+			"'Galley'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Intensive Doctrine"
+		],
+		"requiredTech": "Shipbuilding",
+		"obsoleteTech": "Monocular",
+		"upgradesTo": "Cannon Galley Fleet",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "throw"
+	},
+	{
+		"name": "Heavy Galley Fleet",
+		"unitType": "Close Combat Ship",
+		"cost": 120,
+		"movement": 3,
+		"strength": 32,
+		"uniques": [
+			"'Standing Army'",
+			"'Galley'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Shipbuilding",
+		"obsoleteTech": "Monocular",
+		"upgradesTo": "Cannon Galley Fleet",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "throw"
+	},
+	{
+		"name": "Merchant Fleet",
+		"unitType": "Ranged Combat Ship",
+		"cost": 120,
+		"movement": 3,
+		"strength": 21,
+		"rangedStrength": 23,
+		"range": 2,
+		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"'Mercenary Army'",
+			"'Sailing Ship'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[This Unit] takes [15] damage <upon ending a turn in a [Ocean] tile><before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit",
+			"Caravan Group"
+		],
+		"requiredTech": "Shipbuilding",
+		"obsoleteTech": "Monocular",
+		"requiredResource": "Mercenary Contract",
+		"upgradesTo": "Three-masted Ship",
+		"attackSound": "throw"
+	},
+	{
+		"name": "Yu Lin Cavalry",
+		"uniqueTo": "East Asia",
+		"cost": 90,
+		"unitType": "Rider",
+		"movement": 3,
+		"strength": 28,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Only available <if [Han Dynasty] is constructed>",
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+1] Sight",
+			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[+25]% Strength <vs [Rider] units> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Hardened",
+			"Resourceful Army"
+		],
+		"requiredTech": "Logistics",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Light Cavalry",
+		"cost": 90,
+		"unitType": "Rider",
+		"movement": 3,
+		"strength": 28,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+1] Sight",
+			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[-25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[-50]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Stirrup",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Mercenary Rider",
+		"unitType": "Rider",
+		"cost": 90,
+		"movement": 3,
+		"strength": 28,
+		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"Unbuildable",
+			"'Mercenary Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+1] Sight",
+			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[-25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[-50]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit"
+		],
+		"requiredTech": "Stirrup",
+		"obsoleteTech": "Carriage",
+		"upgradesTo": "Hussar",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Proto-Flamethrower",
+		"unitType": "Siege",
+		"cost": 150,
+		"movement": 2,
+		"strength": 32,
+		"rangedStrength": 32,
+		"range": 1,
+		"uniques": [
+			"Unavailable <in cities without a [Alchemy Lab]>",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+75]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"[+75]% Strength <vs cities> <when attacking>",
+			"[-33]% Strength <vs ['Siege Weapons'] units>",
+			"[-33]% Strength <vs [Ranged Combat] units> <when defending>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Alchemy",
+		"obsoleteTech": "Steels",
+		"upgradesTo": "Cannon",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "fire"
+	},
+	///Line 9
+	{
+		"name": "Crossbowman",
+		"unitType": "Ranged Combat",
+		"cost": 100,
+		"movement": 2,
+		"strength": 30,
+		"rangedStrength": 36,
+		"range": 1,
+		"uniques": [
+			"Costs [6] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Crossbow"
+		],
+		"requiredTech": "Engineering",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Hand Cannoneer",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "crossbow"
+	},
+	{
+		"name": "Mercenary Crossbowman",
+		"unitType": "Ranged Combat",
+		"cost": 150,
+		"movement": 2,
+		"strength": 30,
+		"rangedStrength": 36,
+		"range": 1,
+		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Mercenary Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Can move immediately once bought",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit",
+			"Crossbow"
+		],
+		"requiredTech": "Engineering",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Mercenary Hand Cannoneer",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "crossbow"
+	},
+	{
+		"name": "Palace Guard",
+		"unitType": "Close Combat",
+		"cost": 150,
+		"movement": 2,
+		"strength": 30,
+		"uniques": [
+			"Limited to [3] per Civilization",
+			"Only available <if [Celestial Empire] is constructed>",
+			"Can upgrade to [Pike and Shot] <for [AI player] Civilizations> <after discovering [Hand Cannon]> <hidden from users>",
+			"Can transform to [Pike and Shot] <after discovering [Hand Cannon]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Consumes [1] [Metal]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+33]% Strength <after discovering [Steels]> <in [Land] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Hardened",
+			"Stewardship",
+			"Shock Doctrine",
+			"Chainmail Armour",
+			"Halberd"
+		],
+		"requiredTech": "Tactics",
+		"obsoleteTech": "Flintlock",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Levy Archer",
+		"unitType": "Ranged Combat",
+		"cost": 0,
+		"movement": 2,
+		"strength": 20,
+		"rangedStrength": 25,
+		"range": 1,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Tactics",
+		"obsoleteTech": "Hand Cannon",
+		"upgradesTo": "Levy Crossbowman",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Heavy Cavalry",
+		"unitType": "Assault",
+		"cost": 200,
+		"movement": 3,
+		"strength": 40,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Consumes [1] [Horse]",
+			"Consumes [1] [Metal]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>",
+			"Only available <before adopting [Knighthood]>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Chainmail Armour"
+		],
+		"requiredTech": "Tactics",
+		"obsoleteTech": "Hand Cannon",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Pistoleer",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Knight",
+		"unitType": "Assault",
+		"cost": 175,
+		"movement": 3,
+		"strength": 40,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Only available <after adopting [Knighthood]>",
+			"Consumes [1] [Horse]",
+			"Consumes [1] [Metal]",
+			"'Noble Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Chivalry",
+			"Chainmail Armour"
+		],
+		"requiredTech": "Tactics",
+		"obsoleteTech": "Hand Cannon",
+		"requiredResource": "Noble Army Maintenance",
+		"upgradesTo": "Royal Knight",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Armored Elephant Rider",
+		"unitType": "Rider",
+		"cost": 200,
+		"movement": 2,
+		"strength": 40,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Consumes [1] [Elephant]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Blunt Weapons'",
+			"No defensive terrain bonus",
+			"[-15]% Strength <vs cities> <when attacking>",
+			"[-33]% Strength <vs ['Siege Weapons'] units>",
+			"[-33]% Strength <vs ['Firearms'] units>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Tactics",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "elephant"
+	},
+	{
+		"name": "Armored War Elephant",
+		"replaces": "Armored Elephant Rider",
+		"uniqueTo": "South Asia",
+		"unitType": "Rider",
+		"cost": 200,
+		"movement": 2,
+		"strength": 42,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Consumes [1] [Elephant]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Blunt Weapons'",
+			"No defensive terrain bonus",
+			"[+20]% Strength <vs cities> <when attacking>",
+			"[-20]% Strength <vs ['Siege Weapons'] units>",
+			"[-20]% Strength <vs ['Firearms'] units>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Tactics",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "elephant"
+	},
+	{
+		"name": "Heavy Ballista",
+		"unitType": "Siege",
+		"cost": 200,
+		"movement": 2,
+		"strength": 28,
+		"rangedStrength": 36,
+		"range": 2,
+		"uniques": [
+			"Unavailable <in cities without a [Military Blacksmith]>",
+			"Costs [12] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+50]% Strength <vs cities> <when attacking>",
+			"[+50]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Engineering",
+		"obsoleteTech": "Steels",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Cannon",
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	///Line 9
+	{
+		"name": "Trebuchet",
+		"unitType": "Siege",
+		"cost": 200,
+		"movement": 2,
+		"strength": 28,
+		"rangedStrength": 36,
+		"range": 2,
+		"uniques": [
+			"Unavailable <in cities without a [Military Blacksmith]>",
+			"Costs [12] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+100]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Physics",
+		"obsoleteTech": "Steels",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Cannon",
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
+		"name": "Mercenary Heavy Cavalry",
+		"unitType": "Assault",
+		"cost": 200,
+		"movement": 3,
+		"strength": 40,
+		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Mercenary Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit"
+		],
+		"requiredTech": "Diplomacy",
+		"obsoleteTech": "Hand Cannon",
+		"requiredResource": "Mercenary Contract",
+		"upgradesTo": "Mercenary Pistoleer",
+		"attackSound": "horse"
+	},
+	///Line 12
+	{
+		"name": "Three-masted Ship",
+		"unitType": "Close Combat Ship",
+		"cost": 175,
+		"movement": 4,
+		"strength": 38,
+		"uniques": [
+			"'Standing Army'",
+			"'Sailing Ship'",
+			"'Dense Formation'",
+			"'Edged Weapons' <before discovering [Steel]>",
+			"'Firearms' <after discovering [Steel]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Cartography",
+		"obsoleteTech": "Ship Armour",
+		"upgradesTo": "Ironclad Fleet",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Levy Crossbowman",
+		"unitType": "Ranged Combat",
+		"cost": 0,
+		"movement": 2,
+		"strength": 30,
+		"rangedStrength": 36,
+		"range": 1,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Hand Cannon",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Guerrilla",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Hand Cannoneer",
+		"unitType": "Ranged Combat",
+		"cost": 200,
+		"movement": 2,
+		"strength": 36,
+		"rangedStrength": 40,
+		"range": 1,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Can upgrade to [Skirmisher] <after discovering [Military Science]>",
+			"Can upgrade to [Field Gun] <after discovering [Carriage]>",
+			"Costs [9] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Hand Cannon",
+		"obsoleteTech": "Military Science",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mercenary Hand Cannoneer",
+		"unitType": "Ranged Combat",
+		"cost": 250,
+		"movement": 2,
+		"strength": 36,
+		"rangedStrength": 40,
+		"range": 1,
+		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Mercenary Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Can move immediately once bought",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit"
+		],
+		"upgradesTo": "Mercenary Skirmisher",
+		"requiredTech": "Hand Cannon",
+		"obsoleteTech": "Military Science",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Pike and Shot",
+		"unitType": "Close Combat",
+		"cost": 200,
+		"movement": 2,
+		"strength": 40,
+		"uniques": [
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]>",
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Costs [5] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Pike"
+		],
+		"requiredTech": "Hand Cannon",
+		"obsoleteTech": "Flintlock",
+		"upgradesTo": "Grenadier",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Pikeman",
+		"unitType": "Close Combat",
+		"cost": 0,
+		"movement": 2,
+		"strength": 36,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army",
+			"Pike"
+		],
+		"requiredTech": "Hand Cannon",
+		"obsoleteTech": "Flintlock",
+		"upgradesTo": "Musketeer",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Garrison Pike and Shot",
+		"unitType": "Close Combat",
+		"cost": 150,
+		"movement": 2,
+		"strength": 40,
+		"uniques": [
+			"Only available <after adopting [Unity]>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <when above [0] [Weapon Parts]> <costs [12] [Weapon Parts]>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]> <when above [0] [Weapon Parts]> <costs [12] [Weapon Parts]>",
+			"Can upgrade to [State Militia Musketeer] <if [United States] is constructed>",
+			"Can upgrade to [Grenadier] <for [AI player] Civilizations> <hidden from users>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <in [Friendly Land] tiles> <when defending>",
+			"[-33]% Strength <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Garrison Army",
+			"Stewardship",
+			"Defence Doctrine",
+			"Pike"
+		],
+		"requiredTech": "Hand Cannon",
+		"obsoleteTech": "Flintlock",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Pistoleer",
+		"unitType": "Assault",
+		"cost": 210,
+		"movement": 3,
+		"strength": 48,
+		"uniques": [
+			"Only available <before adopting [Knighthood]>",
+			"Costs [6] [Weapon Parts]",
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Hand Cannon",
+		"obsoleteTech": "Military Science",
+		"upgradesTo": "Cuirassier",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Mercenary Pistoleer",
+		"unitType": "Assault",
+		"cost": 250,
+		"movement": 3,
+		"strength": 48,
+		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"Can transform to [Cuirassier] <after discovering [Rifling]> <when above [0] [Standing Army Maintenance]> <removing the [Mercenary Habit] promotion/status>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Mercenary Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can move immediately once bought",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit"
+		],
+		"requiredTech": "Hand Cannon",
+		"obsoleteTech": "Military Science",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Royal Knight",
+		"unitType": "Assault",
+		"cost": 300,
+		"movement": 3,
+		"strength": 48,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Only available <after adopting [Knighthood]>",
+			"Consumes [1] [Horse]",
+			"'Edged Weapons'",
+			"'Dense Formation'",
+			"'Noble Army'",
+			"'Mounted'",
+			"No defensive terrain bonus",
+			"[-10]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Chivalry",
+			"Plate Armour"
+		],
+		"upgradesTo": "Royal Cuirassier",
+		"requiredTech": "Hand Cannon",
+		"obsoleteTech": "Military Science",
+		"requiredResource": "Noble Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Cannon",
+		"unitType": "Siege",
+		"cost": 250,
+		"movement": 2,
+		"strength": 40,
+		"rangedStrength": 50,
+		"range": 2,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Can transform to [Siege Bombard] <after discovering [Machinery]> <costs [+200 Gold] stats> <costs [9] [Weapon Parts]>",
+			"Costs [15] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+75]% Strength <vs cities> <when attacking>",
+			"[+50]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Steels",
+		"obsoleteTech": "Carriage",
+		"upgradesTo": "Field Gun",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "cannon"
+	},
+	///Line 13
+	{
+		"name": "Cannon Galley Fleet",
+		"unitType": "Close Combat Ship",
+		"cost": 300,
+		"movement": 4,
+		"strength": 45,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Costs [15] [Weapon Parts]",
+			"'Standing Army'",
+			"'Galley'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Monocular",
+		"obsoleteTech": "Advanced Shipbuilding",
+		"upgradesTo": "Torpedo Boat Flotilla",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Explorer",
+		"unitType": "Scout",
+		"cost": 200,
+		"movement": 4,
+		"strength": 36,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Mercenary Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"[+33]% Strength <vs [Barbarian] units>",
+			"Can build [non-['Fundamental Improvement']] improvements on tiles <in [Land] tiles> <if [Great Exchange - Furcoat and Pets] is constructed> <hidden from users>",
+			"Can move immediately once bought",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Scouting Unit",
+			"Mercenary Habit",
+			"Sailor Origin"
+		],
+		"requiredTech": "Monocular",
+		"obsoleteTech": "Replaceable Parts",
+		"requiredResource": "Mercenary Contract",
+		"upgradesTo": "Recon Unit",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Gun Boat",
+		"unitType": "Ranged Combat Ship",
+		"cost": 0,
+		"movement": 3,
+		"strength": 38,
+		"rangedStrength": 43,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Sailing Ship'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"[This Unit] takes [10] damage <upon ending a turn in a [Ocean] tile>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Machinery",
+		"obsoleteTech": "Advanced Shipbuilding",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Siege Bombard",
+		"unitType": "Siege",
+		"cost": 320,
+		"movement": 2,
+		"strength": 35,
+		"rangedStrength": 50,
+		"range": 2,
+		"uniques": [
+			"Unbuildable",
+			"Can transform to [Field Gun]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Siege Weapons'",
+			"[+133]% Strength <vs cities> <when attacking>",
+			"[+75]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Machinery",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "artillery"
+	},
+	///Line 14
+	{
+		"name": "Field Gun",
+		"unitType": "Siege",
+		"cost": 400,
+		"movement": 2,
+		"strength": 48,
+		"rangedStrength": 60,
+		"range": 2,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Costs [21] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+66]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"[+100]% Strength <vs cities> <when attacking>",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Carriage",
+		"obsoleteTech": "Dynamite",
+		"upgradesTo": "Howitzer",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Musketeer",
+		"unitType": "Close Combat",
+		"cost": 0,
+		"movement": 2,
+		"strength": 48,
+		"uniques": [
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can transform to [State Militia Musketeer] <if [United States] is constructed> <costs [+125 Gold] stats>",
+			"Can upgrade to [State Militia Rifleman] <if [United States] is constructed>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army"
+		],
+		"requiredTech": "Flintlock",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Rifleman",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mercenary Musketeer",
+		"unitType": "Close Combat",
+		"cost": 280,
+		"movement": 2,
+		"strength": 48,
+		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"Can only be built <in cities with a [Mercenary Office]>",
+			"'Mercenary Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can move immediately once bought",
+			"Never appears as a Barbarian unit <hidden from users>",
+			"[+33]% Strength <after discovering [Rifling]> <in [Land] tiles>"
+		],
+		"promotions": [
+			"Mercenary Habit"
+		],
+		"requiredTech": "Flintlock",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Security Company",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "shot"
+	},
+	{
+		"name": "State Militia Musketeer",
+		"unitType": "Close Combat",
+		"cost": 280,
+		"movement": 2,
+		"strength": 48,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Only available <if [United States] is constructed>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Garrison Army"
+		],
+		"requiredTech": "Flintlock",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "State Militia Rifleman",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Grenadier",
+		"unitType": "Close Combat",
+		"cost": 350,
+		"movement": 2,
+		"strength": 55,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Only available <before adopting [Long Live the Revolution!]>",
+			"Costs [12] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"Never appears as a Barbarian unit <hidden from users>",
+			"[+25]% Strength <after discovering [Rifling]> <in [Land] tiles>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Flintlock",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Heavy Infantry",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Revolutionaries",
+		"unitType": "Close Combat",
+		"cost": 300,
+		"movement": 2,
+		"strength": 55,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Only available <after adopting [Long Live the Revolution!]>",
+			"Costs [12] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Comment [Gives nearby [The Levied Army],[The Garrison Army] and [The Standing Army] Units [Revolutionary Zeal] status.]",
+			"Never appears as a Barbarian unit <hidden from users>",
+			"[+25]% Strength <after discovering [Rifling]> <in [Land] tiles>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"civilopediaText": [
+			{
+				"text": "See also: Revolutionary Zeal",
+				"link": "Promotions/Revolutionary Zeal"
+			}
+		],
+		"requiredTech": "Flintlock",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Heavy Infantry",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Hussar",
+		"unitType": "Rider",
+		"cost": 300,
+		"movement": 3,
+		"strength": 55,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+1] Sight",
+			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[-25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[-50]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Carriage",
+		"obsoleteTech": "Rifling",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Modern Cavalry",
+		"attackSound": "horse"
+	},
+	///Line 15
+	{
+		"name": "Frigate Fleet",
+		"unitType": "Ranged Combat Ship",
+		"cost": 360,
+		"movement": 3,
+		"strength": 45,
+		"rangedStrength": 60,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Costs [21] [Weapon Parts]",
+			"'Standing Army'",
+			"'Sailing Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can see invisible [{Barbarian} {Water}] units",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Navigation",
+		"obsoleteTech": "Advanced Shipbuilding",
+		"upgradesTo": "Battleship Fleet",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Skirmisher",
+		"unitType": "Ranged Combat",
+		"cost": 250,
+		"movement": 2,
+		"strength": 45,
+		"rangedStrength": 54,
+		"range": 1,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Costs [15] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Skirmisher Training",
+			"The Standing Army"
+		],
+		"requiredTech": "Cartridge",
+		"obsoleteTech": "Replaceable Parts",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Sharpshooter",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mercenary Skirmisher",
+		"unitType": "Ranged Combat",
+		"cost": 250,
+		"movement": 2,
+		"strength": 45,
+		"rangedStrength": 54,
+		"range": 1,
+		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Mercenary Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Can move immediately once bought",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Cartridge",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Security Company",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "shot"
+	},
+	///line 16
+	{
+		"name": "Cuirassier",
+		"unitType": "Assault",
+		"cost": 350,
+		"movement": 3,
+		"strength": 58,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Only available <before adopting [Knighthood]>",
+			"Consumes [2] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Partial Plate Armour",
+			"Intensive Doctrine"
+		],
+		"upgradesTo": "Modern Cavalry",
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Rifling",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Royal Cuirassier",
+		"unitType": "Assault",
+		"cost": 325,
+		"movement": 3,
+		"strength": 58,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Can transform to [Modern Cavalry] <after discovering [Rifling]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Only available <after adopting [Knighthood]>",
+			"Consumes [2] [Horse]",
+			"'Noble Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Chivalry",
+			"Partial Plate Armour",
+			"Intensive Doctrine"
+		],
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Rifling",
+		"requiredResource": "Noble Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Dragoons",
+		"unitType": "Close Combat",
+		"cost": 300,
+		"movement": 3,
+		"strength": 56,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Costs [15] [Weapon Parts]",
+			"Consumes [2] [Horse]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Firearms'",
+			"'Dense Formation'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Shock Doctrine"
+		],
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Heavy Infantry",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	///Line 17
+	{
+		"name": "Ironclad Fleet",
+		"unitType": "Close Combat Ship",
+		"cost": 400,
+		"movement": 4,
+		"strength": 65,
+		"uniques": [
+			"Unavailable <in cities without a [Military Port]>",
+			"Consumes [1] [Coal]",
+			"Costs [8] [Alloy]",
+			"Costs [15] [Ship Parts]",
+			"'Standing Army'",
+			"'Engine Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can see invisible [{Barbarian} {Water}] units",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Ship Armour",
+		"obsoleteTech": "Advanced Shipbuilding",
+		"upgradesTo": "Destroyer Fleet",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Dreadnaught Fleet",
+		"unitType": "Ranged Combat Ship",
+		"cost": 450,
+		"movement": 4,
+		"strength": 62,
+		"rangedStrength": 68,
+		"uniques": [
+			"Unavailable <in cities without a [Military Port]>",
+			"Consumes [1] [Coal]",
+			"Costs [10] [Alloy]",
+			"Costs [25] [Ship Parts]",
+			"'Standing Army'",
+			"'Engine Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can see invisible [{Barbarian} {Water}] units",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Ship Armour",
+		"obsoleteTech": "Advanced Shipbuilding",
+		"upgradesTo": "Battleship Fleet",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Guerrilla",
+		"unitType": "Ranged Combat",
+		"cost": 0,
+		"movement": 3,
+		"strength": 50,
+		"rangedStrength": 56,
+		"range": 1,
+		"uniques": [
+			"Can upgrade to [Modern Guerrilla] <after adopting [Anarchism]> <after discovering [Mobile Tactics]>",
+			"Can transform to [Red Army Troop] <after adopting [Red Army]> <when above [0] [Standing Army Maintenance]>",
+			"Unbuildable",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army",
+			"Skirmisher Training",
+			"Skirmishing Doctrine"
+		],
+		"requiredTech": "Rifling",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Rifleman",
+		"unitType": "Close Combat",
+		"cost": 0,
+		"movement": 2,
+		"strength": 56,
+		"uniques": [
+			"Unbuildable",
+			"Costs [6] [Weapon Parts]",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can transform to [State Militia Rifleman] <if [United States] is constructed> <costs [+250 Gold] stats>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army"
+		],
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Ballistics",
+		"upgradesTo": "Modern Conscript",
+		"attackSound": "shot"
+	},
+	{
+		"name": "State Militia Rifleman",
+		"unitType": "Close Combat",
+		"cost": 320,
+		"movement": 2,
+		"strength": 58,
+		"uniques": [
+			"Unavailable <in cities without a [Firearms Workshop]>",
+			"Can transform to [Heavy Infantry] <after discovering [Replaceable Parts]> <when above [0] [Standing Army Maintenance]> <removing the [The Garrison Army] promotion/status>",
+			"Only available <if [United States] is constructed>",
+			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Garrison Army"
+		],
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Ballistics",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Modern Cavalry",
+		"unitType": "Rider",
+		"cost": 350,
+		"movement": 3,
+		"strength": 65,
+		"uniques": [
+			"Unavailable <in cities without a [Military Stable]>",
+			"Can upgrade to [Motorised Infantry] <after discovering [Combustion]>",
+			"Can upgrade to [Armoured Car] <after discovering [Combustion]>",
+			"Costs [18] [Weapon Parts]",
+			"Consumes [2] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"No defensive terrain bonus",
+			"[-15]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Combustion",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	///Line 18
+	{
+		"name": "Early Marine",
+		"unitType": "Close Combat",
+		"cost": 400,
+		"movement": 2,
+		"strength": 65,
+		"uniques": [
+			"Costs [21] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Marine Training"
+		],
+		"requiredTech": "Advanced Shipbuilding",
+		"obsoleteTech": "Combined Arms",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Torpedo Boat Flotilla",
+		"unitType": "Close Combat Ship",
+		"cost": 300,
+		"movement": 4,
+		"strength": 60,
+		"uniques": [
+			"Costs [10] [Ship Parts]",
+			"'Standing Army'",
+			"'Engine Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can only attack [Water] tiles",
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Advanced Shipbuilding",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "Submarines",
+		"unitType": "Submarine",
+		"cost": 400,
+		"movement": 3,
+		"strength": 50,
+		"rangedStrength": 80,
+		"range": 2,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
+			"Consumes [1] [Fuel]",
+			"Costs [24] [Ship Parts]",
+			"'Standing Army'",
+			"'Engine Ship'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Can only attack [Water] tiles",
+			"Invisible to non-adjacent units",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Advanced Shipbuilding",
+		"upgradesTo": "Nuclear Submarines",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "Destroyer Fleet",
+		"unitType": "Close Combat Ship",
+		"cost": 500,
+		"movement": 3,
+		"strength": 70,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
+			"Consumes [1] [Fuel]",
+			"Costs [24] [Ship Parts]",
+			"'Standing Army'",
+			"'Engine Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			//"Can only attack [Water] tiles",
+			"[+15]% Strength <vs [Submarine]> <when defending>",
+			"[+15]% Strength <when stacked with a [Civilian] unit> <when defending>",
+			"Can see invisible [Water] units",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Advanced Shipbuilding",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Battleship Fleet",
+		"unitType": "Ranged Combat Ship",
+		"cost": 600,
+		"movement": 3,
+		"strength": 70,
+		"rangedStrength": 80,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
+			"Can upgrade to [Missile Crusier] <after discovering [Rocketry]>",
+			"Consumes [1] [Fuel]",
+			"Costs [36] [Ship Parts]",
+			"'Standing Army'",
+			"'Engine Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Free [Main Gun] appears",
+			"Can carry [3] ['Turret'] units",
+			"[+30]% Strength <vs [Close Combat Ship] units>",
+			"Can see invisible [{Barbarian} {Water}] units",
+			"Ranged attacks may be performed over obstacles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Advanced Shipbuilding",
+		"upgradesTo": "Nuclear Battleship Fleet",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Main Gun",
+		"unitType": "Bomber",
+		"cost": 200,
+		"movement": 0,
+		"strength": 70,
+		"rangedStrength": 80,
+		"range": 2,
+		"uniques": [
+			"Unbuildable",
+			"'Engine Ship'",
+			"'Turret'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"requiredTech": "Advanced Shipbuilding",
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Recon Unit",
+		"unitType": "Scout",
+		"cost": 350,
+		"movement": 3,
+		"strength": 60,
+		"uniques": [
+			"Can upgrade to [Mountaineer] <after discovering [Dynamite]>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"[+1] Sight",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Resourceful Army",
+			"Scouting Unit"
+		],
+		"upgradesTo": "Mobile Recon Unit",
+		"requiredResource": "Standing Army Maintenance",
+		"requiredTech": "Replaceable Parts",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Sharpshooter",
+		"unitType": "Ranged Combat",
+		"cost": 370,
+		"movement": 2,
+		"strength": 60,
+		"rangedStrength": 70,
+		"range": 2,
+		"uniques": [
+			"Can upgrade to [Mountaineer] <after discovering [Dynamite]>",
+			"Can upgrade to [Spec Ops] <after discovering [Combined Arms]>",
+			"Costs [18] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Replaceable Parts",
+		"obsoleteTech": "Combined Arms",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Red Army Troop",
+		"unitType": "Ranged Combat",
+		"cost": 370,
+		"movement": 3,
+		"strength": 60,
+		"rangedStrength": 65,
+		"range": 2,
+		"uniques": [
+			"Only available <after adopting [Red Army]>",
+			"Can upgrade to [Motorised Infantry] <after discovering [Combustion]>",
+			"Can upgrade to [Mountaineer] <after discovering [Dynamite]>",
+			"Can upgrade to [Spec Ops] <after discovering [Combined Arms]>",
+			"Costs [18] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Replaceable Parts",
+		"obsoleteTech": "Combined Arms",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Heavy Infantry",
+		"unitType": "Close Combat",
+		"cost": 400,
+		"movement": 2,
+		"strength": 68,
+		"uniques": [
+			"Costs [21] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Machinegun"
+		],
+		"requiredTech": "Replaceable Parts",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Elite Guard",
+		"unitType": "Close Combat",
+		"cost": 500,
+		"movement": 2,
+		"strength": 70,
+		"uniques": [
+			"Only available <after adopting [Romantised Tradition]>",
+			"Costs [24] [Weapon Parts]",
+			"'Noble Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Machinegun"
+		],
+		"requiredTech": "Replaceable Parts",
+		"requiredResource": "Noble Army Maintenance",
+		"upgradesTo": "Mechanised Elite Guard",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Protection Squadron",
+		"unitType": "Close Combat",
+		"cost": 390,
+		"movement": 2,
+		"strength": 68,
+		"uniques": [
+			"Only available <after adopting [Militarised Nation]>",
+			"Costs [21] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Protection Squadron Ability",
+			"Machinegun"
+		],
+		"requiredTech": "Replaceable Parts",
+		"upgradesTo": "Mechanised Protection Squadron",
+		"requiredResource": "Protection Squadron Volunteer",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Security Company",
+		"unitType": "Close Combat",
+		"cost": 400,
+		"movement": 2,
+		"strength": 65,
+		"uniques": [
+			"Unavailable <in cities without a [Mercenary Office]>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Mercenary Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can move immediately once bought",
+			"[+50]% Strength <vs ['Barbaric Army'] units>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit"
+		],
+		"requiredTech": "Replaceable Parts",
+		"requiredResource": "Mercenary Contract",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Early Scout Plane",
+		"unitType": "Fighter",
+		"cost": 300,
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 50,
+		"range": 6,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [30] [Weapon Parts]",
+			"'Standing Army'",
+			"'Propeller Aircraft'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Replaceable Parts",
+		"obsoleteTech": "Flight",
+		"upgradesTo": "Propeller Fighter",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "AA Guns",
+		"unitType": "Ranged Combat",
+		"cost": 325,
+		"movement": 2,
+		"strength": 60,
+		"rangedStrength": 65,
+		"range": 1,
+		"interceptRange": 2,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [21] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[50]% chance to intercept air attacks",
+			"[25]% chance to intercept air attacks <after discovering [Radar]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Mass Production",
+		"upgradesTo": "AA Missile System",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mountaineer",
+		"unitType": "Ranged Combat",
+		"cost": 450,
+		"movement": 2,
+		"strength": 58,
+		"rangedStrength": 66,
+		"range": 2,
+		"uniques": [
+			"Costs [21] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Resourceful Army",
+			"Mountaineer Training"
+		],
+		"upgradesTo": "Spec Ops",
+		"requiredTech": "Dynamite",
+		"obsoleteTech": "Combined Arms",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Howitzer",
+		"unitType": "Siege",
+		"cost": 550,
+		"movement": 2,
+		"strength": 60,
+		"rangedStrength": 70,
+		"range": 3,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Can upgrade to [Rocket Artillery] <after discovering [Ballistics]>",
+			"Costs [36] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+66]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"[+100]% Strength <vs cities> <when attacking>",
+			"Ranged attacks may be performed over obstacles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Dynamite",
+		"upgradesTo": "Self Propelled Artillery",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Zeppelin",
+		"unitType": "Helicopter",
+		"cost": 750,
+		"movement": 3,
+		"strength": 60,
+		"rangedStrength": 70,
+		"range": 2,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Unbuildable <when below [0] [War Machine Blueprint]>",
+			"Costs [1] [War Machine Blueprint]",
+			"Costs [50] [Weapon Parts]",
+			"'Standing Army'",
+			"'Low Altitude Aircraft'",
+			"'Giants'",
+			"'Firearms'",
+			"[+66]% Strength <vs ['Dense Formation'] units>",
+			"[+75]% Strength <vs cities> <when attacking>",
+			"Ranged attacks may be performed over obstacles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Industrial Arms"
+		],
+		"requiredTech": "Dynamite",
+		"obsoleteTech": "Flight",
+		"upgradesTo": "Propeller Bomber",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Ultra Heavy Cannon",
+		"unitType": "Siege",
+		"cost": 790,
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 80,
+		"range": 4,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Unbuildable <when below [0] [War Machine Blueprint]>",
+			"Costs [1] [War Machine Blueprint]",
+			"Costs [50] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Giants'",
+			"'Firearms'",
+			"[+100]% Strength <vs cities> <when attacking>",
+			"Ranged attacks may be performed over obstacles",
+			"Must set up to ranged attack",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Industrial Arms"
+		],
+		"requiredTech": "Dynamite",
+		"obsoleteTech": "Mobile Tactics",
+		"upgradesTo": "Self Propelled Artillery",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "artillery"
+	},
+	///Line 17
+	{
+		"name": "Motorised Infantry",
+		"unitType": "Rider",
+		"cost": 450,
+		"movement": 3,
+		"strength": 68,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [10] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"Costs [20] [Weapon Parts]",
+			"'Standing Army'",
+			"'Motorised'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Machinegun"
+		],
+		"requiredTech": "Combustion",
+		"upgradesTo": "Mechanised Infantry",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mobile Recon Unit",
+		"unitType": "Scout",
+		"cost": 350,
+		"movement": 4,
+		"strength": 63,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [10] [Vehicle Parts]",
+			"'Standing Army'",
+			"'Motorised'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"[+1] Sight",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Scouting Unit",
+			"Skirmishing Doctrine"
+		],
+		"requiredTech": "Combustion",
+		"upgradesTo": "Spy Drone",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Armoured Car",
+		"unitType": "Rider",
+		"cost": 300,
+		"movement": 4,
+		"strength": 64,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [24] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"'Standing Army'",
+			"'Motorised'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"No defensive terrain bonus",
+			"[+10]% Strength <vs ['Infantry'] units> <when attacking>",
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Combustion",
+		"obsoleteTech": "Combined Arms",
+		"upgradesTo": "Humvee",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Tank",
+		"unitType": "Assault",
+		"cost": 600,
+		"movement": 3,
+		"strength": 75,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [30] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"'Standing Army'",
+			"'Mechanised'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can move after attacking",
+			"[+25]% Strength <after discovering [Mobile Tactics]> <in [Land] tiles>",
+			"[+25]% Strength <after discovering [Lasers]> <in [Land] tiles>",
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"upgradesTo": "Assault Mecha",
+		"requiredTech": "Combustion",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "tankshot"
+	},
+	///Line 18
+	{
+		"name": "Modern Guerrilla",
+		"unitType": "Ranged Combat",
+		"cost": 400,
+		"movement": 3,
+		"strength": 68,
+		"rangedStrength": 70,
+		"range": 1,
+		"uniques": [
+			"Only available <after adopting [Militia Army]>",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>",
+			"[33]% chance to intercept air attacks"
+		],
+		"promotions": [
+			"The Garrison Army",
+			"Skirmisher Training",
+			"Skirmishing Doctrine",
+			"Resourceful Army",
+			"Machinegun"
+		],
+		"requiredTech": "Mobile Tactics",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mechanised Infantry",
+		"unitType": "Close Combat",
+		"cost": 750,
+		"movement": 3,
+		"strength": 72,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [15] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"Costs [20] [Weapon Parts]",
+			"'Standing Army'",
+			"'Mechanised'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Machinegun"
+		],
+		"requiredTech": "Mobile Tactics",
+		"obsoleteTech": "Haptics",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Exoskeleton Infantry",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mechanised Elite Guard",
+		"unitType": "Close Combat",
+		"cost": 800,
+		"movement": 3,
+		"strength": 74,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Can transform to [Exoskeleton Infantry] <after discovering [Haptics]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Costs [15] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"Costs [24] [Weapon Parts]",
+			"'Noble Army'",
+			"'Mechanised'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Noble Army",
+			"Machinegun"
+		],
+		"requiredTech": "Mobile Tactics",
+		"obsoleteTech": "Haptics",
+		"requiredResource": "Noble Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mechanised Protection Squadron",
+		"unitType": "Close Combat",
+		"cost": 650,
+		"movement": 3,
+		"strength": 74,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Only available <after adopting [Militarised Nation]>",
+			"Costs [15] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"Costs [24] [Weapon Parts]",
+			"'Standing Army'",
+			"'Mechanised'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Protection Squadron Ability",
+			"Machinegun"
+		],
+		"requiredTech": "Mobile Tactics",
+		"obsoleteTech": "Haptics",
+		"requiredResource": "Protection Squadron Volunteer",
+		"upgradesTo": "Exoskeleton Infantry",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Self Propelled Artillery",
+		"unitType": "Siege",
+		"cost": 700,
+		"movement": 3,
+		"strength": 65,
+		"rangedStrength": 75,
+		"range": 3,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [24] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"Costs [24] [Weapon Parts]",
+			"'Standing Army'",
+			"'Mechanised'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+66]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"[+100]% Strength <vs cities> <when attacking>",
+			"Ranged attacks may be performed over obstacles",
+			"Can move after attacking",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Mobile Tactics",
+		"upgradesTo": "Missile System",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Carrier Fleet",
+		"unitType": "Carrier",
+		"cost": 850,
+		"movement": 4,
+		"strength": 50,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
+			"Consumes [1] [Fuel]",
+			"Costs [30] [Ship Parts]",
+			"'Standing Army'",
+			"'Engine Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>",
+			"Can carry [3] [Aircraft] units"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Flight",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Nuclear Carrier Fleet",
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Propeller Fighter",
+		"unitType": "Fighter",
+		"cost": 550,
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 65,
+		"range": 5,
+		"interceptRange": 5,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Consumes [1] [Fuel]",
+			"Costs [21] [Aircraft Parts]",
+			"'Standing Army'",
+			"'Propeller Aircraft'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can perform Air Sweep",
+			"[-33]% Strength <vs [Land] units> <when attacking>",
+			"[50]% chance to intercept air attacks",
+			"[25]% chance to intercept air attacks <after discovering [Radar]>",
+			"[+125]% Strength <vs [Bomber] units>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Flight",
+		"obsoleteTech": "Rocketry",
+		"upgradesTo": "Jet Fighter",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Propeller Bomber",
+		"unitType": "Bomber",
+		"cost": 580,
+		"movement": 1,
+		"strength": 62,
+		"rangedStrength": 69,
+		"range": 6,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Consumes [1] [Fuel]",
+			"Costs [21] [Aircraft Parts]",
+			"'Standing Army'",
+			"'Propeller Aircraft'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+100]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Flight",
+		"upgradesTo": "Jet Bomber",
+		"obsoleteTech": "Rocketry",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Early Paratrooper",
+		"unitType": "Close Combat",
+		"cost": 600,
+		"movement": 2,
+		"strength": 65,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [24] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Transport Plane"
+		],
+		"requiredTech": "Flight",
+		"obsoleteTech": "Lasers",
+		"upgradesTo": "Paratrooper",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	///Line 19
+	{
+		"name": "Modern Conscript",
+		"unitType": "Close Combat",
+		"cost": 240,
+		"movement": 2,
+		"strength": 68,
+		"uniques": [
+			"Unbuildable",
+			"Costs [15] [Weapon Parts]",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Levied Army",
+			"Machinegun",
+			"Sapper Corps"
+		],
+		"requiredTech": "Ballistics",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Rocket Artillery",
+		"unitType": "Siege",
+		"cost": 640,
+		"movement": 3,
+		"strength": 60,
+		"rangedStrength": 68,
+		"range": 2,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Only available <if [Military Base] is constructed>",
+			"Costs [30] [Weapon Parts]",
+			"Consumes [1] [Fuel]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+150]% Strength <vs [{'Dense Formation'} {'Infantry'}] units> <when attacking>",
+			"[+125]% Strength <vs cities> <when attacking>",
+			"Ranged attacks may be performed over obstacles",
+			"Can move after attacking",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Ballistics",
+		"upgradesTo": "Missile System",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "missile"
+	},
+	{
+		"name": "Early Missile",
+		"unitType": "Missile",
+		"cost": 300,
+		"movement": 1,
+		"strength": 20,
+		"rangedStrength": 75,
+		"range": 6,
+		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
+			"Costs [5] [Aircraft Parts]",
+			"Costs [5] [Weapon Parts]",
+			"[-100]% maintenance costs",
+			"[+100]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"requiredTech": "Ballistics",
+		"attackSound": "missile"
+	},
+	///Line 21
+	{
+		"name": "Atomic Bomb",
+		"unitType": "Atomic Bomber",
+		"cost": 1000,
+		"movement": 1,
+		"strength": 150,
+		"rangedStrength": 150,
+		"range": 10,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Only available <if [Nuclear Option] is constructed>",
+			"Costs [2] [Enriched Uranium]",
+			"Nuclear weapon of Strength [1]",
+			"Self-destructs when attacking",
+			"Blast radius [1]",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"requiredTech": "Nuclear Fission",
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Nuclear Submarines",
+		"unitType": "Submarine",
+		"cost": 800,
+		"movement": 6,
+		"strength": 52,
+		"rangedStrength": 62,
+		"range": 2,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
+			"Costs [27] [Ship Parts]",
+			"Consumes [1] [Enriched Uranium]",
+			"[+100]% maintenance costs",
+			"'Standing Army'",
+			"'Nuclear Powered Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can only attack [Water] tiles <before discovering [Advanced Ballistics]>",
+			"Can carry [3] [Missile] units <after discovering [Advanced Ballistics]>",
+			"[+25]% Strength <when attacking>",
+			"[+5] HP when healing",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Nuclear Fission",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "Nuclear Battleship Fleet",
+		"unitType": "Ranged Combat Ship",
+		"cost": 1000,
+		"movement": 5,
+		"strength": 68,
+		"rangedStrength": 75,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
+			"Costs [42] [Ship Parts]",
+			"Consumes [1] [Enriched Uranium]",
+			"[+100]% maintenance costs",
+			"'Standing Army'",
+			"'Nuclear Powered Ship'",
+			"'Firearms'",
+			"'Dense Formation'",
+			"Never appears as a Barbarian unit <hidden from users>",
+			"Ranged attacks may be performed over obstacles",
+			"[+33]% Strength <vs [Carrier] units>",
+			"[+5] HP when healing",
+			"Can see invisible [Barbaric] units"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Nuclear Fission",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Nuclear Carrier Fleet",
+		"unitType": "Carrier",
+		"cost": 1250,
+		"movement": 5,
+		"strength": 70,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
+			"Costs [42] [Ship Parts]",
+			"Consumes [1] [Enriched Uranium]",
+			"[+100]% maintenance costs",
+			"'Standing Army'",
+			"'Nuclear Powered Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can carry [5] [Aircraft] units",
+			"[+5] HP when healing",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Nuclear Fission",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Spec Ops",
+		"unitType": "Ranged Combat",
+		"cost": 600,
+		"movement": 2,
+		"strength": 75,
+		"rangedStrength": 70,
+		"range": 2,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [27] [Weapon Parts]",
+			"Costs [3] [Electronic Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Invisible to non-adjacent units",
+			"Can pass through impassable tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Skirmisher Training",
+			"Mountaineer Training",
+			"Marine Training"
+		],
+		"requiredTech": "Combined Arms",
+		"upgradesTo": "Exoskeleton Spec Ops",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mechanised Marine",
+		"unitType": "Close Combat",
+		"cost": 750,
+		"movement": 3,
+		"strength": 75,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [20] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"Costs [16] [Weapon Parts]",
+			"'Standing Army'",
+			"'Mechanised'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Marine Training"
+		],
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Humvee",
+		"unitType": "Rider",
+		"cost": 600,
+		"movement": 4,
+		"strength": 70,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [20] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"'Standing Army'",
+			"'Motorised'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"No defensive terrain bonus",
+			"[+1] Sight",
+			"[+20]% Strength <vs ['Infantry'] units> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Rocket Launcher"
+		],
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Attack Helicopter",
+		"unitType": "Helicopter",
+		"cost": 850,
+		"movement": 5,
+		"strength": 65,
+		"rangedStrength": 72,
+		"range": 2,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Only available <if [Invention of Helicopter] is constructed>",
+			"Costs [24] [Aircraft Parts]",
+			"Consumes [1] [Fuel]",
+			"'Standing Army'",
+			"'Low Altitude Aircraft'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"No defensive terrain bonus",
+			"[+1] Sight",
+			"[+10]% Strength <vs [Rider] units> <when attacking>",
+			"[+25]% Strength <vs [Assault] units> <when attacking>",
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "Marine Attack Helicopter",
+		"unitType": "Helicopter",
+		"cost": 900,
+		"movement": 5,
+		"strength": 65,
+		"rangedStrength": 70,
+		"range": 2,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
+			"Only available <if [Invention of Helicopter] is constructed>",
+			"Costs [27] [Aircraft Parts]",
+			"Consumes [1] [Fuel]",
+			"'Standing Army'",
+			"'Low Altitude Aircraft'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Can see invisible [Water] units",
+			"[+33]% Strength <vs [Submarine] units> <when attacking>",
+			"[+25]% Strength <vs [Close Combat Ship] units> <when attacking>",
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Marine Training"
+		],
+		"requiredTech": "Combined Arms",
+		"attackSound": "torpedo"
+	},
+	///Line 22
+	{
+		"name": "Jet Fighter",
+		"unitType": "Fighter",
+		"cost": 800,
+		"movement": 2,
+		"strength": 68,
+		"rangedStrength": 72,
+		"range": 10,
+		"interceptRange": 10,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Consumes [1] [Fuel]",
+			"Costs [36] [Aircraft Parts]",
+			"Costs [3] [Electronic Parts]",
+			"'Standing Army'",
+			"'Jet Engine Aircraft'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can perform Air Sweep",
+			"[85]% chance to intercept air attacks",
+			"[+150]% Strength <vs [Bomber] units>",
+			"[+25]% Strength <vs [Helicopter] units>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Rocketry",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Jet Bomber",
+		"unitType": "Bomber",
+		"cost": 800,
+		"movement": 2,
+		"strength": 70,
+		"rangedStrength": 85,
+		"range": 10,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Consumes [1] [Fuel]",
+			"Costs [36] [Aircraft Parts]",
+			"Costs [6] [Electronic Parts]",
+			"'Standing Army'",
+			"'Jet Engine Aircraft'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Rocketry",
+		"upgradesTo": "Stealth Bomber",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Missile Crusier",
+		"unitType": "Ranged Combat Ship",
+		"cost": 1200,
+		"movement": 3,
+		"strength": 68,
+		"rangedStrength": 78,
+		"range": 5,
+		"interceptRange": 4,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
+			"Consumes [1] [Fuel]",
+			"Costs [36] [Ship Parts]",
+			"Costs [12] [Electronic Parts]",
+			"'Standing Army'",
+			"'Engine Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Ranged attacks may be performed over obstacles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Rocketry",
+		"upgradesTo": "Nuclear Missile Crusier",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "missile"
+	},
+	///Line 23
+	{
+		"name": "Paratrooper",
+		"unitType": "Close Combat",
+		"cost": 800,
+		"movement": 2,
+		"strength": 75,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [27] [Weapon Parts]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Transport Plane"
+		],
+		"requiredTech": "Lasers",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Nuclear Missile Crusier",
+		"unitType": "Ranged Combat Ship",
+		"cost": 1500,
+		"movement": 5,
+		"strength": 70,
+		"rangedStrength": 80,
+		"range": 5,
+		"interceptRange": 4,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Port]>",
+			"Costs [36] [Ship Parts]",
+			"Costs [12] [Electronic Parts]",
+			"Consumes [1] [Enriched Uranium]",
+			"[+100]% maintenance costs",
+			"'Standing Army'",
+			"'Nuclear Powered Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+5] HP when healing",
+			"Ranged attacks may be performed over obstacles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Lasers",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "missile"
+	},
+	{
+		"name": "Stealth Bomber",
+		"unitType": "Bomber",
+		"cost": 1750,
+		"movement": 2,
+		"strength": 50,
+		"rangedStrength": 85,
+		"range": 16,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [50] [Aircraft Parts]",
+			"Consumes [1] [Electronic Parts]",
+			"Consumes [1] [Fuel]",
+			"Damage taken from interception reduced by [90]%",
+			"'Standing Army'",
+			"'Jet Engine Aircraft'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Stealth",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "bombing"
+	},
+	{
+		"name": "ICBM",
+		"unitType": "Missile",
+		"cost": 800,
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 100,
+		"range": 32,
+		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
+			"Can transform to [Nuclear Warhead ICBM] <costs [1] [Nuclear Warhead]> <costs [+1500 Gold] stats>",
+			"Consumes [1] [Electronic Parts]",
+			"Blast radius [2]",
+			"[-75]% maintenance costs",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"requiredTech": "Advanced Ballistics",
+		"attackSound": "missile"
+	},
+	{
+		"name": "Nuclear Warhead ICBM",
+		"unitType": "Missile",
+		"cost": 1000,
+		"movement": 1,
+		"strength": 300,
+		"rangedStrength": 300,
+		"range": 32,
+		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
+			"Only available <if [Nuclear Option] is constructed>",
+			"Costs [1] [Nuclear Warhead]",
+			"Nuclear weapon of Strength [2]",
+			"Blast radius [2]",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"requiredTech": "Advanced Ballistics",
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Missile System",
+		"unitType": "Siege",
+		"cost": 1200,
+		"movement": 3,
+		"strength": 68,
+		"rangedStrength": 85,
+		"range": 4,
+		"interceptRange": 3,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]> <in cities without a [Rocketry Industry]>",
+			"Costs [20] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"Costs [10] [Electronic Parts]",
+			"'Standing Army'",
+			"'Motorised'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+50]% Strength <vs ['Dense Formation'] units> <when attacking>",
+			"[+100]% Strength <vs cities> <when attacking>",
+			"Ranged attacks may be performed over obstacles",
+			"Can move after attacking",
+			"Blast radius [1]",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Advanced Ballistics",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "missile"
+	},
+	{
+		"name": "AA Missile System",
+		"unitType": "Ranged Combat",
+		"cost": 900,
+		"movement": 3,
+		"strength": 70,
+		"rangedStrength": 90,
+		"range": 4,
+		"interceptRange": 4,
+		"requiredResource": "Standing Army Maintenance",
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]> <in cities without a [Rocketry Industry]>",
+			"Costs [20] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"Costs [10] [Electronic Parts]",
+			"'Standing Army'",
+			"'Motorised'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[-100]% Strength <vs cities> <when attacking>",
+			"[-100]% Strength <vs [{non-['Low Altitude Aircraft']} {Land}] units> <when attacking>",
+			"[100]% chance to intercept air attacks",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Lasers",
+		"attackSound": "missile"
+	},
+	///Line 25
+	{
+		"name": "The Prototype",
+		"unitType": "Assault",
+		"cost": 1600,
+		"movement": 4,
+		"strength": 100,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Only available <if [GDR Project] is constructed>",
+			"Costs [40] [Vehicle Parts]",
+			"Costs [3] [Electronic Parts]",
+			"Consumes [1] [Enriched Uranium]",
+			"[+100]% maintenance costs",
+			"Limited to [1] per Civilization",
+			"'Standing Army'",
+			"'Mechanised'",
+			"'Giants'",
+			"'Firearms'",
+			"'Wonder Weapons'",
+			"Can move after attacking",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredResource": "Standing Army Maintenance",
+		"requiredTech": "Robotics",
+		"attackSound": "gdrAttack"
+	},
+	///Line 28
+	{
+		"name": "Spy Drone",
+		"unitType": "Scout",
+		"cost": 800,
+		"movement": 5,
+		"strength": 60,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Only available <if [Invention of Helicopter] is constructed>",
+			"Costs [1] [Microchips]",
+			"'Standing Army'",
+			"'Low Altitude Aircraft'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Can see over obstacles",
+			"Invisible to non-adjacent units",
+			"Can see invisible [All] units",
+			"Cannot attack",
+			"[+2] Sight",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Scouting Unit"
+		],
+		"requiredResource": "Standing Army Maintenance",
+		"requiredTech": "Data Science",
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "Exoskeleton Spec Ops",
+		"unitType": "Ranged Combat",
+		"cost": 1200,
+		"movement": 3,
+		"strength": 80,
+		"rangedStrength": 90,
+		"range": 2,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Invisible to non-adjacent units",
+			"Costs [30] [Weapon Parts]",
+			"Costs [10] [Vehicle Parts]",
+			"Costs [5] [Microchips]",
+			"'Standing Army'",
+			"'Mechanised'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Can pass through impassable tiles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Skirmisher Training",
+			"Marine Training",
+			"Mountaineer Training",
+			"Machinegun"
+		],
+		"requiredTech": "Haptics",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Exoskeleton Infantry",
+		"unitType": "Close Combat",
+		"cost": 1200,
+		"movement": 3,
+		"strength": 88,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [30] [Weapon Parts]",
+			"Costs [10] [Vehicle Parts]",
+			"Costs [5] [Microchips]",
+			"'Standing Army'",
+			"'Mechanised'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Machinegun"
+		],
+		"requiredTech": "Haptics",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "shot"
+	},
+	///Line 29
+	{
+		"name": "Assault Mecha",
+		"unitType": "Assault",
+		"cost": 1950,
+		"movement": 4,
+		"strength": 120,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Only available <if [GDR Project] is constructed>",
+			"Costs [30] [Vehicle Parts]",
+			"Costs [20] [Graphene]",
+			"Costs [10] [Microchips]",
+			"Consumes [1] [Enriched Uranium]",
+			"[+100]% maintenance costs",
+			"'Standing Army'",
+			"'Mechanised'",
+			"'Giants'",
+			"'Energy Weapons'",
+			"Can move after attacking",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Transport Plane",
+			"Rocket Launcher"
+		],
+		"requiredTech": "Nuclear Fusion",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "gdrAttack"
+	},
+	///Line 30
+	{
+		"name": "Railgun",
+		"unitType": "Siege",
+		"cost": 2250,
+		"movement": 2,
+		"strength": 70,
+		"rangedStrength": 100,
+		"range": 5,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [20] [Vehicle Parts]",
+			"Consumes [1] [Fuel]",
+			"Costs [10] [Graphene]",
+			"Costs [5] [Microchips]",
+			"'Standing Army'",
+			"'Mechanised'",
+			"'Dense Formation'",
+			"'Energy Weapons'",
+			"[+25]% Strength <vs ['Giants'] units> <when attacking>",
+			"[+100]% Strength <vs cities> <when attacking>",
+			"Blast radius [1]",
+			"Ranged attacks may be performed over obstacles",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Railguns",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "missile"
+	},
+	{
+		"name": "Railgun Gun Boat",
+		"unitType": "Ranged Combat Ship",
+		"cost": 2050,
+		"movement": 4,
+		"strength": 70,
+		"rangedStrength": 90,
+		"range": 5,
+		"uniques": [
+			"Unbuildable <in cities without a [Military Base]>",
+			"Costs [20] [Ship Parts]",
+			"Consumes [1] [Fuel]",
+			"Costs [10] [Graphene]",
+			"Costs [5] [Microchips]",
+			"'Standing Army'",
+			"'Engine Ship'",
+			"'Dense Formation'",
+			"'Energy Weapons'",
+			"[+25]% Strength <vs ['Giants'] units> <when attacking>",
+			"[+100]% Strength <vs cities> <when attacking>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredTech": "Railguns",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "gdrAttack"
+	},
+	///Barbarian related
+	{
+		"name": "Negotiator",
+		"cost": 150,
+		"unitType": "Close Combat",
+		"movement": 3,
+		"strength": 20,
+		"uniques": [
+			"Unbuildable",
+			"Can be purchased with [Gold] [in all cities]",
+			"[+1000]% Strength <vs [Barbarians] units> <when attacking>",
+			"[-1000]% Strength <vs [non-[Barbarians]] units>",
+			"Self-destructs when attacking",
+			"May capture killed [Barbarians] units <with [50]% chance>",
+			"Can see invisible [Barbaric] units"
+		],
+		"requiredTech": "Diplomacy",
+		"attackSound": "paper"
+	},
+	{
+		"name": "Aggressive Tribes",
+		"unitType": "Close Combat",
+		"uniqueTo": "Barbarians",
+		"movement": 2,
+		"strength": 8,
+		"uniques": [
+			"'Barbaric Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Cannot embark",
+			"[+140]% Strength <starting from the [Ancient era]>",
+			"Cannot enter ocean tiles"
+		],
+		"promotions": [
+			"Barbaric"
+		],
+		"obsoleteTech": "Writing",
+		"upgradesTo": "Brute Warrior",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Barbaric Nomad",
+		"unitType": "Rider",
+		"uniqueTo": "Barbarians",
+		"movement": 3,
+		"strength": 8,
+		"rangedStrength": 10,
+		"range": 1,
+		"uniques": [
+			"'Barbaric Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Cannot embark",
+			"[+70]% Strength <starting from the [Ancient era]>",
+			"[+25]% Strength <starting from the [Classical era]>",
+			"Can move after attacking"
+		],
+		"promotions": [
+			"Barbaric"
+		],
+		"requiredTech": "Animal Husbandry",
+		"obsoleteTech": "Stirrup",
+		"upgradesTo": "Early Rider",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Farmer Rebellion",
+		"unitType": "Close Combat",
+		"movement": 2,
+		"strength": 15,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"'Barbaric Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Cannot embark",
+			"[-5] Strength <before the [Classical era]>",
+			"[+3] Strength <starting from the [Classical era]>",
+			"[+4] Strength <starting from the [Medieval era]>",
+			"[+5] Strength <starting from the [Renaissance era]>",
+			"[+6] Strength <starting from the [Imperial era]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Barbaric"
+		],
+		"requiredTech": "Writing",
+		"obsoleteTech": "Scientific Theory",
+		"upgradesTo": "Spearman",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Bandits",
+		"unitType": "Ranged Combat",
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 25,
+		"range": 1,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"'Barbaric Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Cannot embark",
+			"[+10]% Strength <starting from the [Medieval era]>",
+			"[+17]% Strength <starting from the [Renaissance era]>"
+		],
+		"promotions": [
+			"Barbaric",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Mining",
+		"obsoleteTech": "Gunpowder Making",
+		"upgradesTo": "Levy Archer",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Raider Horse Archer",
+		"unitType": "Rider",
+		"movement": 3,
+		"strength": 20,
+		"rangedStrength": 25,
+		"range": 2,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"'Barbaric Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"Cannot embark",
+			"[+17]% Strength <starting from the [Renaissance era]>",
+			"[+25]% Strength <starting from the [Imperial era]>"
+		],
+		"promotions": [
+			"Barbaric",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Stirrup",
+		"obsoleteTech": "Flintlock",
+		"upgradesTo": "Horse Archer",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Rogue Aristrocrat",
+		"unitType": "Assault",
+		"movement": 3,
+		"strength": 26,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"'Barbaric Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Cannot embark",
+			"[-10] Strength <before the [Medieval era]>",
+			"[+17]% Strength <starting from the [Renaissance era]>",
+			"[+25]% Strength <starting from the [Imperial era]>"
+		],
+		"promotions": [
+			"Barbaric",
+			"The Noble Army"
+		],
+		"requiredTech": "Armorments",
+		"obsoleteTech": "Flintlock",
+		"upgradesTo": "Heavy Cavalry",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Outlaws",
+		"unitType": "Ranged Combat",
+		"movement": 3,
+		"strength": 30,
+		"rangedStrength": 36,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"'Barbaric Army'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Cannot embark",
+			"[+25]% Strength <starting from the [Imperial era]>"
+		],
+		"promotions": [
+			"Barbaric"
+		],
+		"requiredTech": "Gunpowder Making",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Skirmisher",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Militia Movement",
+		"unitType": "Close Combat",
+		"movement": 2,
+		"strength": 54,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"'Extremist Militias'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Cannot embark",
+			"[-5] Strength <before the [Modern era]>",
+			"[+12]% Strength <starting from the [Atomic era]>",
+			"[+12]% Strength <starting from the [Information era]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Asymmetric Warfare",
+			"Pilliging"
+		],
+		"requiredTech": "Rifling",
+		"upgradesTo": "Rifleman",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Warlord Troop",
+		"unitType": "Ranged Combat",
+		"movement": 2,
+		"strength": 50,
+		"rangedStrength": 55,
+		"range": 1,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"Cannot enter ocean tiles",
+			"'Levy Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Cannot embark",
+			"[+25]% Strength <starting from the [Atomic era]>",
+			"[+12]% Strength <starting from the [Information era]>"
+		],
+		"promotions": [
+			"Barbaric"
+		],
+		"requiredTech": "Rifling",
+		"upgradesTo": "Sharpshooter",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Terrorist",
+		"unitType": "Close Combat",
+		"movement": 2,
+		"strength": 95,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"'Extremist Militias'",
+			"'Infantry'",
+			"'Skirmishers'",
+			"'Firearms'"
+		],
+		"promotions": [
+			"Asymmetric Warfare",
+			"Pilliging"
+		],
+		"requiredTech": "Combined Arms",
+		"upgradesTo": "Modern Conscript",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Sea People",
+		"unitType": "Close Combat",
+		"movement": 2,
+		"strength": 16,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"'Barbaric Army'",
+			"'Infantry'",
+			"'Galley'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"Invisible to non-adjacent units",
+			"[+15]% Strength <starting from the [Classical era]>"
+		],
+		"promotions": [
+			"Barbaric",
+			"Sailor Origin"
+		],
+		"requiredTech": "Trade Network",
+		"obsoleteTech": "Shipbuilding",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Pirate",
+		"unitType": "Close Combat Ship",
+		"movement": 3,
+		"strength": 16,
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"'Barbaric Army'",
+			"'Sailing Ship'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+10]% Strength <starting from the [Medieval era]>",
+			"[+17]% Strength <starting from the [Renaissance era]>",
+			"Can move after attacking",
+			"Invisible to non-adjacent units"
+		],
+		"promotions": [
+			"Barbaric"
+		],
+		"requiredTech": "Astronomy",
+		"obsoleteTech": "Monocular",
+		"upgradesTo": "Merchant Fleet",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Pirate Fleet",
+		"uniqueTo": "Barbarians",
+		"unitType": "Close Combat Ship",
+		"movement": 2,
+		"strength": 40,
+		"uniques": [
+			"'Barbaric Army'",
+			"'Sailing Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"[+25]% Strength <starting from the [Imperial era]>",
+			"Can move after attacking",
+			"Invisible to non-adjacent units"
+		],
+		"promotions": [
+			"Barbaric",
+			"Wheellock Pistol"
+		],
+		"requiredTech": "Monocular",
+		"obsoleteTech": "Steam Power",
+		"upgradesTo": "Frigate Fleet",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Modern Pirate",
+		"uniqueTo": "Barbarians",
+		"unitType": "Ranged Combat Ship",
+		"movement": 2,
+		"strength": 75,
+		"uniques": [
+			"'Barbaric Army'",
+			"'Engine Ship'",
+			"'Skirmishers'",
+			"'Firearms'",
+			"Can move after attacking",
+			"Invisible to non-adjacent units"
+		],
+		"promotions": [
+			"Barbaric"
+		],
+		"requiredTech": "Mobile Tactics",
+		"upgradesTo": "Torpedo Boat Flotilla",
+		"attackSound": "shot"
+	},
+	/* Great people */
+	{
+		"name": "Great Artist",
+		"cost": 1000,
+		"unitType": "Civilian",
+		"uniques": [
+			"Instantly provides [40] [Influence] <by consuming this unit>",
+			"Can instantly construct a [Landmark] improvement <by consuming this unit>",
+			"Great Person - [Culture]",
+			"Is part of Great Person group [Culture]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Scientist",
+		"cost": 1000,
+		"unitType": "Civilian",
+		"uniques": [
+			"Can hurry technology research",
+			"Can instantly construct a [Academy] improvement <by consuming this unit>",
+			"Great Person - [Science]",
+			"Is part of Great Person group [Science]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Merchant",
+		"cost": 1000,
+		"unitType": "Civilian",
+		"uniques": [
+			"Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
+			"Can instantly construct a [Customs house] improvement <by consuming this unit>",
+			"Comment [After consuming the [Great Merchant] in various ways, you can get a [Iconic Brand] for free.]",
+			"Great Person - [Gold]",
+			"Is part of Great Person group [Gold]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Engineer",
+		"cost": 1000,
+		"unitType": "Civilian",
+		"uniques": [
+			"Can speed up construction of a building",
+			"Can instantly construct a [Manufactory] improvement <by consuming this unit>",
+			"Instantly provides [1] [War Machine Blueprint] <by consuming this unit>",
+			"Great Person - [Production]",
+			"Is part of Great Person group [Production]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Prophet",
+		"cost": 1000,
+		"unitType": "Civilian",
+		"uniques": [
+			"Can instantly construct a [Holy site] improvement <by consuming this unit>",
+			"Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>",
+			"Removes other religions when spreading religion",
+			"May found a religion <if it hasn't used other actions yet>",
+			"May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
+			"Free Social Policy <after enhancing a religion> <by consuming this unit> <if it hasn't used other actions yet> <if [Theocratic Empire] is constructed in all [Capital] cities>",
+			"May enter foreign tiles without open borders",
+			"[-1] Sight",
+			"Great Person - [Faith]",
+			"Is part of Great Person group [Faith]",
+			"Unbuildable",
+			"Religious Unit",
+			"Only available <when religion is enabled>",
+			"Takes your religion over the one in their birth city"
+		],
+		"movement": 2,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Great Commander",
+		"cost": 1000,
+		"unitType": "Civilian",
+		"uniques": [
+			"[+15]% Strength bonus for [Military] units within [2] tiles <before discovering [Tactics]>",
+			"[+20]% Strength bonus for [Military] units within [3] tiles <after discovering [Tactics]><before discovering [Radio]>",
+			"[+25]% Strength bonus for [Military] units within [4] tiles <after discovering [Radio]>",
+			"Can be earned through combat",
+			"Triggers a [Great Commander's Retirement] event <by consuming this unit>",
+			"Great Person - [War]",
+			"Is part of Great Person group [Military]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Khan",
+		"uniqueTo": "Euroasian Nomads",
+		"replaces": "Great Commander",
+		"cost": 1000,
+		"unitType": "Civilian",
+		"uniques": [
+			"[+12]% Strength bonus for [Military] units within [3] tiles <before discovering [Tactics]>",
+			"[+17]% Strength bonus for [Military] units within [4] tiles <after discovering [Tactics]> <before discovering [Radio]>",
+			"[+22]% Strength bonus for [Military] units within [5] tiles <after discovering [Radio]>",
+			"[This Unit] is destroyed <upon turn start> <when below [0] [Influence]> <hidden from users>",
+			"Triggers a [Khan's Death] event <upon turn start> <when below [0] [Influence]> <hidden from users>",
+			"Triggers a [Khan's Death] event <upon being defeated> <hidden from users>",
+			"Comment [Gives nearby [Nomadic Lifestyle] Units [Command from the Great Khan] status.]",
+			"Comment [The [Great Khan] repersents the unity of the horde. If [Great Khan] is slain, there will be dire consequences.]",
+			"Comment [You should also keep your [Influence] in the positive to avoid a coup d'etat.]",
+			"Great Person - [War]",
+			"Is part of Great Person group [Military]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 3
+	},
+	{
+		"name": "Great Strategist",
+		"cost": 1000,
+		"unitType": "Civilian",
+		"uniques": [
+			"Empire enters a [8]-turn Golden Age <by consuming this unit>",
+			"All adjacent units heal [+15] HP when healing",
+			"[+15] HP when healing",
+			"Can instantly construct a [Citadel] improvement <[2] times> <after which this unit is consumed>",
+			"Great Person - [Strategy]",
+			"Is part of Great Person group [Strategy]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	/* Religious units */
+	{
+		"name": "Missionary",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can Spread Religion <for [4] movement> <[2] times> <after which this unit is consumed>",
+			"May enter foreign tiles without open borders, but loses [25] religious strength each turn it ends there",
+			"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+			"Gain [3]-[5] [Science] <upon ending a turn in a [City center] tile> <after adopting [Scholasticism]>",
+			"[-1] Sight",
+			"Unbuildable",
+			"Religious Unit",
+			"Only available <when religion is enabled>"
+		],
+		"movement": 4,
+		"religiousStrength": 200
+	},
+	{
+		"name": "Inquisitor",
+		"unitType": "Civilian",
+		"uniques": [
+			"Prevents spreading of religion to the city it is next to",
+			"Can remove other religions from cities <in [Friendly] tiles> <once> <after which this unit is consumed>",
+			"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+			"[+1] Sight",
+			"Only available <when religion is enabled>",
+			"Unbuildable",
+			"Religious Unit"
+		],
+		"movement": 3
+	},
+	/* Spaceship Parts */
+	// Must be transported to the Capital for launch.
+	// Can be destroyed by any hostile military unit walking in their tile.
+	{
+		"name": "SS Booster",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 3000,
+		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
+			"Spaceship part",
+			"Cannot be purchased",
+			"Only available <if [Space Program] is constructed>",
+			"Uncapturable",
+			"Can be added to [The Spaceship] in the Capital",
+			"Limited to [3] per Civilization"
+		],
+		"requiredResource": "Aluminum",
+		"requiredTech": "Railguns"
+		// costs 1500 in BNW
+	},
+	{
+		"name": "SS Cockpit",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 3000,
+		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
+			"Spaceship part",
+			"Cannot be purchased",
+			"Only available <if [Space Program] is constructed>",
+			"Uncapturable",
+			"Can be added to [The Spaceship] in the Capital",
+			"Limited to [1] per Civilization"
+		],
+		"requiredResource": "Graphene",
+		"requiredTech": "Space Elevator"
+		// costs 1500 in BNW
+	},
+	{
+		"name": "SS Engine",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 3000,
+		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
+			"Spaceship part",
+			"Cannot be purchased",
+			"Only available <if [Space Program] is constructed>",
+			"Uncapturable",
+			"Can be added to [The Spaceship] in the Capital",
+			"Limited to [1] per Civilization"
+		],
+		"requiredResource": "Enriched Uranium",
+		"requiredTech": "Nuclear Fusion"
+		// costs 1500 in BNW
+	},
+	{
+		"name": "SS Stasis Chamber",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 3000,
+		"uniques": [
+			"Unbuildable <in cities without a [Rocketry Industry]>",
+			"Spaceship part",
+			"Cannot be purchased",
+			"Only available <if [Space Program] is constructed>",
+			"Uncapturable",
+			"Can be added to [The Spaceship] in the Capital",
+			"Limited to [1] per Civilization"
+		],
+		"requiredResource": "Microchips",
+		"requiredTech": "Nanotechnology"
+		// costs 1500 in BNW
+	}
+]
